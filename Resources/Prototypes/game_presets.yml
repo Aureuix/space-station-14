@@ -49,6 +49,8 @@
     - SLChangeling #Starlight
     - SpaceTrafficControlEventScheduler
     - BasicRoundstartVariation
+    - Vampire #Starlight
+#    - SiliconLiberation #Starlight
 
 - type: gamePreset
   id: AllerAtOnce
@@ -76,6 +78,7 @@
     - SpaceTrafficControlEventScheduler
     - SpaceTrafficControlFriendlyEventScheduler
     - BasicRoundstartVariation
+#    - SiliconLiberation #Starlight
 
 - type: gamePreset
   id: Extended
@@ -295,7 +298,7 @@
   - vampires
   name: vampire-gamemode-title
   description: vampire-gamemode-description
-  showInVote: false # 🌟Starlight🌟 - Leave disabled until they are reworked
+  showInVote: True # 🌟Starlight🌟 - Leave disabled until they are reworked
   minPlayers: 50 # 🌟Starlight🌟
   rules:
   - Vampire
