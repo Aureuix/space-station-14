@@ -95,7 +95,8 @@ public sealed partial class RecordEntryEditPopup : FancyWindow
             new ValidationRule(
                 () => string.IsNullOrWhiteSpace(descriptionText),
                 "cd-records-entry-edit-popup-description-required"),
-
+            // (SpL) Removed length limit to allow for more reading. put your glasses on
+            /*
             new ValidationRule(
                 () => descriptionLength > PlayerProvidedCharacterRecords.TextVeryLargeLen,
                 "cd-records-entry-edit-popup-description-too-long",
@@ -103,7 +104,7 @@ public sealed partial class RecordEntryEditPopup : FancyWindow
                 {
                     ("current", (object)descriptionLength),
                     ("max", PlayerProvidedCharacterRecords.TextVeryLargeLen)
-                }),
+                }),*/
         };
 
         // Find first failing validation rule
