@@ -171,6 +171,7 @@
       children:
       - id: NukiePlanetSpawn
       - id: NukiePlanetSpawnWestern
+      - id: NukiePlanetSpawnGeiger
   # Starlight end
   # Starlight - removing the LoadMapRule from here to instead handle it in the dynamic rules above
   #- type: LoadMapRule
@@ -257,7 +258,7 @@
   - type: AntagRandomObjectives
     sets:
     - groups: TraitorObjectiveGroups
-    maxDifficulty: 5
+    maxDifficulty: 6 # Starlight. Ultrapop + ton of new targets means some objectives become really easy in the chaos.
   - type: AntagSelection
     agentName: traitor-round-end-agent-name
   - type: DynamicRuleCost
