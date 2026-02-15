@@ -158,6 +158,16 @@
   categories:
   - UplinkWeaponry
 
+- type: listing
+  id: UplinkSwitchblade
+  name: uplink-switchblade-name
+  description: uplink-switchblade-desc
+  productEntity: WeaponMeleeSwitchblade
+  cost:
+    Telecrystal: 1
+  categories:
+  - UplinkWeaponry
+
 # Ammo
 
 - type: listing
@@ -283,7 +293,7 @@
   categories:
     - UplinkCybernetics
 
-- type: listing
+- type: listing # Starlight
   id: UplinkEnergyDomeSyndie
   name: uplink-energy-dome-name
   description: uplink-energy-dome-desc
@@ -699,3 +709,35 @@
     Telecrystal: 4
   categories:
       - UplinkExplosives
+
+- type: listing
+  id: UplinkDarkGygaxLoneOps
+  name: uplink-mech-teleporter-assault-name
+  description: uplink-mech-teleporter-assault-desc
+  icon: { sprite: /Textures/Objects/Specific/Mech/mecha.rsi, state: darkgygax }
+  productEntity: CrateCybersunDarkGygaxBundle
+  cost:
+    Telecrystal: 30
+  categories:
+    - UplinkAllies
+  conditions:
+    - !type:StoreWhitelistCondition
+      whitelist:
+        tags:
+          - LoneOpsUplink
+
+- type: listing
+  id: UplinkMaulerLoneOps
+  name: uplink-mech-teleporter-heavy-name
+  description: uplink-mech-teleporter-heavy-desc
+  icon: { sprite: /Textures/Objects/Specific/Mech/mecha.rsi, state: mauler }
+  productEntity: CrateCybersunMaulerBundle
+  cost:
+    Telecrystal: 45
+  categories:
+    - UplinkAllies
+  conditions:
+    - !type:StoreWhitelistCondition
+      whitelist:
+        tags:
+          - LoneOpsUplink
