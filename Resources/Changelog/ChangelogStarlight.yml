@@ -30736,5 +30736,564 @@ Entries:
   id: 331001
   time: '2026-02-15T22:02:07.000000+00:00'
   url: https://github.com/ss14Starlight/space-station-14/pull/3310
+- author: FeralCreature
+  changes:
+  - message: Following a major breakthrough a method of transporting liquids through
+      pipe-like ducts has been discovered... We have decided to call this new technology
+      plumbing.
+    type: Add
+  - message: Plumbing input, a small tank that you can pour reagents into.
+    type: Add
+  - message: Plumbing output, a small tank that you can draw reagents from using a
+      container.
+    type: Add
+  - message: Plumbing Tank, a large tank for storing greater quantities of reagents.
+    type: Add
+  - message: Plumbing Filter, used to separate off specific reagents from a plumbing
+      network.
+    type: Add
+  - message: Plumbing Reactor, pulls in specified reagents at specified quantities
+      and then fully reacts them.
+    type: Add
+  - message: Plumbing Pill Press, pulls in reagents and presses them into pills or
+      patches.
+    type: Add
+  - message: Plumbing Synthesizer, generates basic reagents using power.
+    type: Add
+  - message: Plumbing Smart Fridge, pulls in and stores reagents for dispensing into
+      labeled jugs.
+    type: Add
+  - message: Plumbing Sink, a sink with plumbing connectors.
+    type: Add
+  - message: Plumbing Drain, a drain with plumbing connectors.
+    type: Add
+  - message: Adds plumbing connectors to the ChemMaster.
+    type: Tweak
+  - message: Adds plumbing connectors to the Chemical Dispenser.
+    type: Tweak
+  - message: Adds plumbing connectors to the Industrial Reagent Grinder.
+    type: Tweak
+  - message: The singularity allowing the ChemMaster to hold infinite reagents has
+      collapsed... it is now limited to 5000u.
+    type: Tweak
+  - message: Plungers now have a use and spill all solutions in plumbing machines
+      onto the floor.
+    type: Tweak
+  id: 293201
+  time: '2026-02-16T00:38:18.000000+00:00'
+  url: https://github.com/ss14Starlight/space-station-14/pull/2932
+- author: FeralCreature
+  changes:
+  - message: ChemMaster buffer can now hold up to 10000u of reagents.
+    type: Tweak
+  - message: Added the Rapid Plumbing Device (RPLD) to chemist lockers.
+    type: Add
+  - message: Bad reagent transfer logic inside ChemMaster.
+    type: Fix
+  id: 331501
+  time: '2026-02-16T05:28:25.000000+00:00'
+  url: https://github.com/ss14Starlight/space-station-14/pull/3315
+- author: walksanatora
+  changes:
+  - message: Felinoids can now be fried straight into the bucket.
+    type: Tweak
+  - message: If you can hold it can be fried.
+    type: Tweak
+  - message: Making a burned mess by frying says what item it USED to be before you
+      fried it.
+    type: Add
+  id: 331101
+  time: '2026-02-16T07:10:20.000000+00:00'
+  url: https://github.com/ss14Starlight/space-station-14/pull/3311
+- author: Tess the Evil
+  changes:
+  - message: Changed heat damage from 0.05 to 1.00.
+    type: Tweak
+  id: 328801
+  time: '2026-02-16T07:13:41.000000+00:00'
+  url: https://github.com/ss14Starlight/space-station-14/pull/3288
+- author: wonderfulnewworld
+  changes:
+  - message: Traitors can now show up in Zombies and Zombieteors! These Traitors are
+      a special variant, and will not get Kill/Lesson targets/DAGD. Only up to 6 of
+      these Traitors will spawn. Cross-antag interactions are a treat in this game.
+      Fight back against the horde, together. Maybe you'll find alternative ways to
+      achieve your goals by working together with the crew...
+    type: Add
+  - message: Tweaked antag scaling, increasing the player ratio for most scalable
+      antags (Traitors, Thieves, Vampires, Changelings) by roughly 20%. (For example,
+      Traitors now scales on 1:12 instead of 1:10.)
+    type: Tweak
+  - message: Increases action gamemodes on Alpha by 4% (1% each to NukeOps, Zombie,
+      Survival, Revolutionary), to account for this scaling shift. (Changeling, Vampires,
+      Traitorling, Xenoborgs -1% each.)
+    type: Tweak
+  - message: Made the brigmed bedsheet steal objective half as common.
+    type: Tweak
+  - message: Adjusts Changelings' chance to show up in the Vampires gamemode to be
+      equal to the chance that Vampires show up in the Changeling gamemode. (I missed
+      this one in my last PR to equalize them.)
+    type: Fix
+  id: 321601
+  time: '2026-02-16T07:17:00.000000+00:00'
+  url: https://github.com/ss14Starlight/space-station-14/pull/3216
+- author: FeralCreature
+  changes:
+  - message: Borg battery display updating
+    type: Fix
+  id: 331401
+  time: '2026-02-16T07:25:59.000000+00:00'
+  url: https://github.com/ss14Starlight/space-station-14/pull/3314
+- author: CrazyPhantom
+  changes:
+  - message: Quaternary and Quinary Pipe layers for a total of 5 layers.
+    type: Add
+  - message: Makes pipe sprites thinner to make room.
+    type: Tweak
+  id: 299701
+  time: '2026-02-16T07:29:18.000000+00:00'
+  url: https://github.com/ss14Starlight/space-station-14/pull/2997
+- author: SevenShades
+  changes:
+  - message: Renamed the cargo cyborg's advanced module to make it sit with the other
+      advanced modules
+    type: Tweak
+  id: 331801
+  time: '2026-02-16T08:56:08.000000+00:00'
+  url: https://github.com/ss14Starlight/space-station-14/pull/3318
+- author: FeralCreature
+  changes:
+  - message: The Plumbing SmartFridge has been renamed to the Plumbing Smart Dispenser
+      to fix a bug breaking the regular smart fridge and to distinguish them better.
+    type: Fix
+  - message: Plumbing tanks can now hold up to 2000u of reagents.
+    type: Tweak
+  - message: In-game plumbing machine names and descriptions are now cleaner.
+    type: Tweak
+  id: 332101
+  time: '2026-02-16T09:37:14.000000+00:00'
+  url: https://github.com/ss14Starlight/space-station-14/pull/3321
+- author: AndrewTateOfficialSS14
+  changes:
+  - message: Fixed Tritium energy conversion.
+    type: Tweak
+  id: 332001
+  time: '2026-02-16T09:40:53.000000+00:00'
+  url: https://github.com/ss14Starlight/space-station-14/pull/3320
+- author: Arkanic
+  changes:
+  - message: recent test failures
+    type: Fix
+  id: 330001
+  time: '2026-02-16T11:47:20.000000+00:00'
+  url: https://github.com/ss14Starlight/space-station-14/pull/3300
+- author: R3v3l4t1on
+  changes:
+  - message: Someone forgot to connect the forward thrusters to power... This is now
+      fixed.
+    type: Fix
+  id: 332301
+  time: '2026-02-16T12:39:36.000000+00:00'
+  url: https://github.com/ss14Starlight/space-station-14/pull/3323
+- author: PubliclyExecutedPig
+  changes:
+  - message: Reporters on Sepultum are real
+    type: Tweak
+  id: 332201
+  time: '2026-02-16T13:05:05.000000+00:00'
+  url: https://github.com/ss14Starlight/space-station-14/pull/3322
+- author: Fractalflower
+  changes:
+  - message: CED reenabled their double emergency oxygen tank compression pipeline.
+      (They are 1x2 again).
+    type: Fix
+  id: 332501
+  time: '2026-02-16T13:32:39.000000+00:00'
+  url: https://github.com/ss14Starlight/space-station-14/pull/3325
+- author: Shades
+  changes:
+  - message: ERT Leader / TSF Elite now need External Roles (before they needed 10h
+      of ERT)
+    type: Tweak
+  - message: Changed TSF Armor be patched correctly, including stamina resist.
+    type: Tweak
+  - message: TSF Backpack range is now unlimited.
+    type: Tweak
+  - message: TSF have now their own allignement.
+    type: Tweak
+  id: 329101
+  time: '2026-02-16T14:49:53.000000+00:00'
+  url: https://github.com/ss14Starlight/space-station-14/pull/3291
+- author: Conflee
+  changes:
+  - message: Reduced the height of the new canister sprites so they are only slightly
+      taller than a full tile. Should reduce clipping issues and look more fitting
+      ingame.
+    type: Tweak
+  id: 332801
+  time: '2026-02-16T17:40:49.000000+00:00'
+  url: https://github.com/ss14Starlight/space-station-14/pull/3328
+- author: Fractalflower
+  changes:
+  - message: ChemVends now have eight jugs per restock, up from 4.
+    type: Tweak
+  - message: Golden and silver jugs - store 400u and 300u respectively.
+    type: Add
+  - message: Golden and silver jugs to the tech tree.
+    type: Add
+  - message: Large beaker box to chemical lockers, stores 4 large beakers.
+    type: Add
+  - message: Small beaker box, like its large variant - with small beakers.
+    type: Add
+  - message: Jug box. You get the drill.
+    type: Add
+  id: 332601
+  time: '2026-02-16T17:59:59.000000+00:00'
+  url: https://github.com/ss14Starlight/space-station-14/pull/3326
+- author: STARLIGHT TEAM
+  changes:
+  - message: OldWarp for Tiders... in loadout for 10h of assistant.
+    type: Add
+  - message: Added ClothWrap Shoes for all loadouts.
+    type: Add
+  - message: Removed ClothWrap trinket.
+    type: Remove
+  id: 333401
+  time: '2026-02-17T00:40:29.000000+00:00'
+  url: https://github.com/ss14Starlight/space-station-14/pull/3334
+- author: Sparlight
+  changes:
+  - message: Fixed juice that makes you a corgi forever inevitably corgifying cyclorites
+      at low dosages.
+    type: Fix
+  id: 333301
+  time: '2026-02-17T01:15:40.000000+00:00'
+  url: https://github.com/ss14Starlight/space-station-14/pull/3333
+- author: Sparlight
+  changes:
+  - message: Corgis can now wear the CentComm Beret, Centcomm Officer's Glasses, and
+      Centcomm Carapace.
+    type: Add
+  id: 333201
+  time: '2026-02-17T02:23:42.000000+00:00'
+  url: https://github.com/ss14Starlight/space-station-14/pull/3332
+- author: Fractalflower
+  changes:
+  - message: ERT Leader and TSF Elite no longer need Extra Roles.
+    type: Remove
+  id: 334201
+  time: '2026-02-17T03:06:38.000000+00:00'
+  url: https://github.com/ss14Starlight/space-station-14/pull/3342
+- author: walksanator
+  changes:
+  - message: character slot autocomplete for "characterforceprototype"
+    type: Add
+  id: 334401
+  time: '2026-02-17T07:04:23.000000+00:00'
+  url: https://github.com/ss14Starlight/space-station-14/pull/3344
+- author: SevenShades
+  changes:
+  - message: Added a diagnostic HuD to engineering cyborgs
+    type: Add
+  id: 334001
+  time: '2026-02-17T07:08:41.000000+00:00'
+  url: https://github.com/ss14Starlight/space-station-14/pull/3340
+- author: VINCOLAN
+  changes:
+  - message: Reporter Digiboard now has Standard Batteries.
+    type: Tweak
+  id: 334101
+  time: '2026-02-17T07:13:44.000000+00:00'
+  url: https://github.com/ss14Starlight/space-station-14/pull/3341
+- author: redmushie
+  changes:
+  - message: Twinpointers, station pinpointers and universal pinpointers are no longer
+      shown to be "high value targets" on examination
+    type: Fix
+  id: 333501
+  time: '2026-02-17T07:29:23.000000+00:00'
+  url: https://github.com/ss14Starlight/space-station-14/pull/3335
+- author: PubliclyExecutedPig
+  changes:
+  - message: Updated Lagan
+    type: Tweak
+  id: 326301
+  time: '2026-02-17T07:36:15.000000+00:00'
+  url: https://github.com/ss14Starlight/space-station-14/pull/3263
+- author: Xale
+  changes:
+  - message: 12 gauge tranquilizer slugs are no longer contraband for Zookeepers
+    type: Tweak
+  id: 331201
+  time: '2026-02-17T07:39:57.000000+00:00'
+  url: https://github.com/ss14Starlight/space-station-14/pull/3312
+- author: Fractalflower
+  changes:
+  - message: Combat gloves for HoS/BSO/Ward no longer need 60h Security playtime.
+    type: Fix
+  - message: Roboticists have more head loadout options now.
+    type: Add
+  - message: Road cone to head loadouts
+    type: Add
+  - message: Lily flower head item. No, it's not myself.
+    type: Add
+  id: 333001
+  time: '2026-02-17T07:57:25.000000+00:00'
+  url: https://github.com/ss14Starlight/space-station-14/pull/3330
+- author: ZombieNub
+  changes:
+  - message: Added a recharging RPLD to the Engineering Cyborg Module.
+    type: Tweak
+  id: 334501
+  time: '2026-02-17T08:05:03.000000+00:00'
+  url: https://github.com/ss14Starlight/space-station-14/pull/3345
+- author: Shades
+  changes:
+  - message: New Lobby Music "The Station".
+    type: Add
+  - message: New Nuclear Music "nuclearoperations".
+    type: Add
+  - message: NukiePlanets has now its own Ambiance Tracks! PLANNING WITH EVIL SOUNDS!
+    type: Add
+  id: 326901
+  time: '2026-02-17T08:14:58.000000+00:00'
+  url: https://github.com/ss14Starlight/space-station-14/pull/3269
+- author: mrjajkes, kirb
+  changes:
+  - message: Added Nuke music track specifically for lone Ops
+    type: Add
+  id: 333801
+  time: '2026-02-17T08:18:27.000000+00:00'
+  url: https://github.com/ss14Starlight/space-station-14/pull/3338
+- author: redmushie
+  changes:
+  - message: The Central Medical Division apologizes for moving the Eject buttons
+      of the ChemMaster and reagent dispenser, and has returned them to their original
+      positions.
+    type: Tweak
+  id: 334701
+  time: '2026-02-17T10:16:29.000000+00:00'
+  url: https://github.com/ss14Starlight/space-station-14/pull/3347
+- author: CrazyPhantom
+  changes:
+  - message: Description to Electrolyzers.
+    type: Add
+  - message: Electrolyzers Now correctly accept Plasma and Uranium sheets.
+    type: Fix
+  - message: Missing localizations for BZ chem guidebook entry.
+    type: Fix
+  id: 334901
+  time: '2026-02-17T15:41:11.000000+00:00'
+  url: https://github.com/ss14Starlight/space-station-14/pull/3349
+- author: Shades
+  changes:
+  - message: Sunglasses now fully cover Shadekin eyes (only sunglasses for now).
+    type: Add
+  - message: Reverted a change regarding times req on TSFElite, TSFLeader now take
+      TSFMarine Time req.
+    type: Tweak
+  id: 335301
+  time: '2026-02-17T20:20:18.000000+00:00'
+  url: https://github.com/ss14Starlight/space-station-14/pull/3353
+- author: Conflee
+  changes:
+  - message: Added the Emergency Medical Pod, a new 'Armory' that can be requested
+      by Command and sent by CentComm. Comes with a stocked chem setup for 2, med
+      beds, a stasis bed, a crate of starting healing chems, NanoMed machine, body
+      bags and freezer, etc.
+    type: Add
+  id: 335101
+  time: '2026-02-17T20:30:10.000000+00:00'
+  url: https://github.com/ss14Starlight/space-station-14/pull/3351
+- author: Conflee
+  changes:
+  - message: Added Brigmedic Airlocks. Comes in Normal, Glass, and Maints. Also features
+      a set with Paramedic access, so Paramedics can enter Brigmed from external hallways
+      but not enter the rest of Security.
+    type: Add
+  - message: Removed Brigmedic's Chemistry access, they can't just walk in and grab
+      now, they need to speak.
+    type: Remove
+  - message: Gave Brigmedic Paramedic access so they can use the Paramedic room in
+      Medical.
+    type: Tweak
+  id: 335201
+  time: '2026-02-18T05:53:24.000000+00:00'
+  url: https://github.com/ss14Starlight/space-station-14/pull/3352
+- author: Born Stellar.
+  changes:
+  - message: Exterminator Backgorund.
+    type: Add
+  - message: Exterminator to Corporate Secret (Only rumors, as secret as Decimus).
+    type: Add
+  id: 335401
+  time: '2026-02-18T05:51:13.000000+00:00'
+  url: https://github.com/ss14Starlight/space-station-14/pull/3354
+- author: TaserTheFox
+  changes:
+  - message: Brass is now actually named Brass.
+    type: Fix
+  id: 335501
+  time: '2026-02-18T10:11:03.000000+00:00'
+  url: https://github.com/ss14Starlight/space-station-14/pull/3355
+- author: Vincolan
+  changes:
+  - message: NT Representative Cane is now able to be used like a crowbar.
+    type: Add
+  id: 335601
+  time: '2026-02-18T10:15:18.000000+00:00'
+  url: https://github.com/ss14Starlight/space-station-14/pull/3356
+- author: FeralCreature
+  changes:
+  - message: The Plumbing Pill Press now only produces one pill per 2 second plumbing
+      update and only allows 30 pills on it at one time.
+    type: Tweak
+  - message: Plumbing Reactors no longer behave weirdly when doing reactions that
+      create an item.
+    type: Fix
+  - message: Plumbing Smart Dispensers are now more exact when dispensing reagents
+      allowing automenders to be functional after being filled by them.
+    type: Fix
+  - message: The RPLD can now place ducts that cross other ducts without making you
+      have to anchor them after.
+    type: Fix
+  - message: RPLDs no longer allow you to place multiple plumbing machines on top
+      of each other.
+    type: Fix
+  - message: Chemical Dispensers and ChemMasters can now be rotated to allow for easier
+      plumbing access to their inlets/outlets.
+    type: Tweak
+  - message: Plumbing machines now cost a bit less compressed matter to be placed
+      by RPLD.
+    type: Tweak
+  - message: You can now walk over Plumbing inputs, outputs, and filters.
+    type: Fix
+  - message: 2 more outlets have been added to the plumbing synthesizer allowing for
+      more compact factory layouts.
+    type: Tweak
+  - message: The RPLD is now correctly set as Medical and Engineering contraband,
+      and comes in a secure crate that can only be opened with either access.
+    type: Fix
+  id: 335901
+  time: '2026-02-18T10:18:59.000000+00:00'
+  url: https://github.com/ss14Starlight/space-station-14/pull/3359
+- author: Scarlet Lightweaver
+  changes:
+  - message: Added a phase skip option for terminators.
+    type: Add
+  id: 335001
+  time: '2026-02-18T10:22:32.000000+00:00'
+  url: https://github.com/ss14Starlight/space-station-14/pull/3350
+- author: gabbl0
+  changes:
+  - message: Thaven markings.
+    type: Add
+  id: 332901
+  time: '2026-02-18T15:54:06.000000+00:00'
+  url: https://github.com/ss14Starlight/space-station-14/pull/3329
+- author: Awriko
+  changes:
+  - message: (cork) Reworked EVERY department's existing playable area and added relevant
+      missing sub-departments (yes, including the Morgue and Sauna)
+    type: Tweak
+  - message: (cork) Engineering now has a TEG and RTG engine, complete with a burn
+      chamber and secure storage.
+    type: Add
+  - message: (cork) Added spawns and support for all playable roles as of current.
+    type: Add
+  - message: '(cork) Added the following subdepartment areas: Maintsbar and Dorms,
+      AI core, Robotics, Xenobiology, Conference Room, NTR/NTCT Office, Cryopod, Virology,
+      Surgery, Brigmed, IAA/Magistrate office, an (outdoor) Shooting Range'
+    type: Add
+  - message: (cork) Law radio now is mapped and works
+    type: Fix
+  - message: (cork) Air and waste distributions entirely reworked to fit SL standards.
+    type: Fix
+  id: 336301
+  time: '2026-02-19T05:45:31.000000+00:00'
+  url: https://github.com/ss14Starlight/space-station-14/pull/3363
+- author: SiTW
+  changes:
+  - message: Guidebook entry for records.
+    type: Add
+  id: 337101
+  time: '2026-02-19T06:11:27.000000+00:00'
+  url: https://github.com/ss14Starlight/space-station-14/pull/3371
+- author: TeapotError
+  changes:
+  - message: Added NTSF Battlecruiser "Minos".
+    type: Add
+  - message: Gamerule for admins to spawn NTSF Battlecruiser "Minos".
+    type: Add
+  - message: Added Decimus Breaching Craft "Magnus".
+    type: Add
+  - message: Gamerule for admins to spawn Decimus Breaching Craft "Magnus".
+    type: Add
+  - message: Removes the original "Deathsquad" Ship Gamerule.
+    type: Remove
+  id: 244301
+  time: '2026-02-19T06:41:59.000000+00:00'
+  url: https://github.com/ss14Starlight/space-station-14/pull/2443
+- author: CrazyPhantom779
+  changes:
+  - message: Increased the max Pinktext from 128 to 256.
+    type: Tweak
+  id: 337801
+  time: '2026-02-19T10:51:05.000000+00:00'
+  url: https://github.com/ss14Starlight/space-station-14/pull/3378
+- author: redmushie
+  changes:
+  - message: Paramedics are now mindshielded.
+    type: Tweak
+  id: 336801
+  time: '2026-02-19T10:56:24.000000+00:00'
+  url: https://github.com/ss14Starlight/space-station-14/pull/3368
+- author: Born Stellar
+  changes:
+  - message: Mothership Core now requires 2.5 Roboticist hours in addition to the
+      5 hours of AI.
+    type: Tweak
+  id: 337901
+  time: '2026-02-19T19:40:34.000000+00:00'
+  url: https://github.com/ss14Starlight/space-station-14/pull/3379
+- author: Citrea
+  changes:
+  - message: Double emergency tanks are small items again.
+    type: Fix
+  id: 338301
+  time: '2026-02-19T20:02:36.000000+00:00'
+  url: https://github.com/ss14Starlight/space-station-14/pull/3383
+- author: Citrea
+  changes:
+  - message: Company-approved outfit list has been adjusted to remove items well beyond
+      the acceptable dresscode. Employees are still free to bring such items.
+    type: Tweak
+  - message: Moved animal ears and paws, as well as road cones and maid outfits for
+      most jobs back into trinkets, where they belong. Service jobs and Janitors may
+      still bring maid outfits as part of their uniform. Assistants may still bring
+      all of these items as part of their 'Uniform'.
+    type: Tweak
+  - message: Added hair flowers and lilies to headgear for everyone.
+    type: Tweak
+  - message: Returned hair flowers to trinkets, so they are no longer exclusive with
+      hats, in case you want both.
+    type: Tweak
+  - message: Added cloth wraps to gloves where apropriate and returned them to trinkets
+      so everyone can still have them.
+    type: Tweak
+  - message: Moved roller skates and programmer socks back to trinkets, where they
+      belong. Exceptions are made for cargo techs and mail techs, as well as clowns.
+      Assistants may still bring all of these items as part of their 'Uniform'.
+    type: Tweak
+  - message: Company dresscode is now felionoid-friendly. Non-felionoid crew are still
+      advised to bring shoes.
+    type: Tweak
+  - message: Cat ears and elegant maid outfits are once again locked by overall playtime.
+    type: Tweak
+  - message: Lilyflower now has a sprite.
+    type: Fix
+  id: 326101
+  time: '2026-02-20T00:55:32.000000+00:00'
+  url: https://github.com/ss14Starlight/space-station-14/pull/3261
 Order: -1
 
