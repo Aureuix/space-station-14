@@ -369,6 +369,9 @@
   id: Nexus
 
 - type: Tag
+  id: NukiePlanet
+
+- type: Tag
   id: OmniCyberEyes
 
 - type: Tag
@@ -394,6 +397,9 @@
 
 - type: Tag
   id: PlasteelFilament
+
+- type: Tag
+  id: PlumbingDuct
 
 - type: Tag
   id: PowerCellTiny
