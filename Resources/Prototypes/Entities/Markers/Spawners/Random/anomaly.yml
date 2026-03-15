@@ -19,7 +19,7 @@
     - AnomalyIce
     - RandomRockAnomalySpawner
     - AnomalyLiquid
-    - AnomalyFlora
+    #- AnomalyFlora #Spectra. too dangerous for lowpop with no sci.
     - AnomalyShadow
     - AnomalyTech
     #- AnomalySanta
@@ -67,7 +67,7 @@
     - AnomalyTrapElectricity
     - AnomalyTrapShadow
     - AnomalyTrapIce
-    - AnomalyTrapFlora
+    - AnomalyTrapFlora #Spectra. keeping for now, should be manageable bc it wont crit without someone getting infected
     - AnomalyTrapBluespace
     - AnomalyTrapFlesh
     - AnomalyTrapGravity
