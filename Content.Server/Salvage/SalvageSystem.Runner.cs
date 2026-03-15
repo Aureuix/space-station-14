@@ -13,6 +13,7 @@ using Content.Shared.Station.Components;
 using Robust.Shared.Map.Components;
 using Robust.Shared.Player;
 using Content.Server.NPC.HTN;
+using Content.Shared.Weather;
 
 namespace Content.Server.Salvage;
 
@@ -165,6 +166,7 @@ public sealed partial class SalvageSystem
                 _audio.SetMapAudio(audio);
                 comp.Stage = ExpeditionStage.MusicCountdown;
                 Dirty(uid, comp);
+                Announce(uid, "The weather seems to be worsening...");
                 Announce(uid, Loc.GetString("salvage-expedition-announcement-countdown-minutes", ("duration", audioLength.Minutes)));
             }
             else if (comp.Stage < ExpeditionStage.Countdown && remaining < TimeSpan.FromMinutes(4))

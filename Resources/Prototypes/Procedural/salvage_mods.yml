@@ -15,6 +15,7 @@
     - Moderate
     - Easy
     - Difficult
+    - Impossible #Spectra
 
 - type: salvageBiomeMod
   id: Grasslands
@@ -26,6 +27,7 @@
     - Moderate
     - Easy
     - Difficult
+    - Impossible #Spectra
 
 - type: salvageBiomeMod
   id: Snow
@@ -38,6 +40,7 @@
     - Moderate
     - Easy
     - Difficult
+    - Impossible #Spectra
 
 - type: salvageBiomeMod
   id: Lava
@@ -50,6 +53,7 @@
     - Moderate
     - Easy
     - Difficult
+    - Impossible #Spectra
 
 #- type: salvageBiomeMod
 #  id: Space
@@ -73,7 +77,7 @@
     - Lava
 
 - type: salvageLightMod
-  id: Evening
+  id: Evening 
   desc: salvage-light-mod-evening
   color: "#2b3143"
 

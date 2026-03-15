@@ -14,17 +14,19 @@
   difficulties: 
     - Impossible
 
-#- type: salvageDungeonMod
-#  id: SyndieStronghold
-#  desc: salvage-dungeon-mod-syndie-stronghold
-#  proto: SyndieDungeon
-#  biomes:
-#    - Lava
-#    - Grasslands
-#    - Caves
-#    - Snow
-#  difficulties: 
-#    - Impossible
+- type: salvageDungeonMod
+  id: SyndieStronghold
+  desc: salvage-dungeon-mod-syndie-stronghold
+  proto: SyndieDungeon
+  biomes:
+    - Lava
+    - Grasslands
+    - Caves
+    - Snow
+    - Mountains # Far Horizons
+    - LowDesert # Far Horizons
+  difficulties: 
+    - Impossible
   
 - type: salvageDungeonMod
   id: ShipWreck
@@ -47,6 +49,8 @@
     - Grasslands
     - Caves
     - Snow
+    - Mountains # Far Horizons
+    - LowDesert # Far Horizons
   difficulties: 
     - Difficult
 
@@ -73,9 +77,11 @@
   desc: salvage-dungeon-mod-experiment
   proto: Experiment
   biomes:
-    #- LowDesert
+    - LowDesert
     - Abyss
     - Grasslands
+    - Mountains
+    - Shadow # Spectra
   difficulties: 
     - Challenging
     - Moderate
@@ -98,6 +104,7 @@
   proto: Mineshaft
   biomes:
     - Caves
+    - LowDesert
   difficulties: 
     - Challenging
     - Moderate
@@ -109,6 +116,7 @@
   proto: SnowyLabs
   biomes:
     - Snow
+    - Mountains
   difficulties: 
     - Challenging
     - Moderate
@@ -140,7 +148,7 @@
   temperature: 323.15 # 50C
   biomes:
     - Caves
-    #- LowDesert
+    - LowDesert
     - Grasslands
     - Lava
   difficulties: 
@@ -155,7 +163,7 @@
   temperature: 423.15 # 200C
   biomes:
     - Caves
-    #- LowDesert
+    - LowDesert
     - Lava
   difficulties: 
     - Challenging
@@ -178,9 +186,11 @@
   temperature: 275.15 # 2C
   biomes:
     - Caves
-    #- LowDesert
+    - LowDesert
     - Grasslands
     - Snow
+    - Mountains # Far Horizons
+    - Shadow # Spectra
   difficulties: 
     - Challenging
     - Moderate
@@ -194,6 +204,8 @@
   biomes:
     - Caves
     - Snow
+    - Mountains # Far Horizons
+    - Shadow # Spectra
   difficulties: 
     - Challenging
     - Moderate
@@ -205,6 +217,8 @@
   temperature: 123.15 # -150C
   biomes:
     - Snow
+    - Mountains # Far Horizons
+    - Shadow # Spectra
   difficulties: 
     - Challenging
 
@@ -217,6 +231,7 @@
   biomes:
     - Caves
     - Lava
+    - Shadow # Spectra
   difficulties: 
     - Challenging
     - Moderate
@@ -245,10 +260,11 @@
     - 10 # nitrous oxide
   biomes:
     - Caves
-    #- LowDesert
+    - LowDesert
     - Snow
     - Grasslands
     - Lava
+    - Mountains # Far Horizons
   difficulties: 
     - Challenging
     - Moderate
@@ -263,10 +279,11 @@
     - 10 # carbon dioxide
   biomes:
     - Caves
-    #- LowDesert
+    - LowDesert
     - Snow
     - Grasslands
     - Lava
+    - Mountains # Far Horizons
   difficulties: 
     - Challenging
     - Moderate
@@ -283,6 +300,7 @@
     - Caves
     - Snow
     - Lava
+    - Mountains # Far Horizons
   difficulties: 
     - Challenging
     - Moderate
@@ -299,6 +317,8 @@
   biomes:
     - Caves
     - Lava
+    - Mountains # Far Horizons
+    - Shadow # Spectra
   difficulties: 
     - Challenging
  

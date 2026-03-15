@@ -1,0 +1,23 @@
+- type: salvageFaction
+  id: ArgocytesEasy
+  desc: salvage-faction-argocyteseasy
+  entries:
+    - proto: MobArgocyteSkitter
+      cost: 4
+    - proto: MobArgocyteCrawler
+      cost: 10
+      prob: 0.4
+    - proto: MobArgocyteEnforcer
+      cost: 20
+      prob: 0.2
+    - proto: MobArgocyteSwiper
+      cost: 10
+    - proto: MobArgocyteHarvester
+      cost: 6
+      prob: 0.3
+    - proto: MobArgocyteGlider
+      cost: 2
+  difficulties: 
+    - Challenging
+  configs:
+    DefenseStructure: WeaponTurretSyndicate
