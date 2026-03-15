@@ -143,6 +143,7 @@ namespace Content.IntegrationTests.Tests
             "StarlightElkridge",
             "StarlightFland",
             "StarlightHotel",
+            "StarlightOasis",
             "StarlightPacked",
             "StarlightReach",
             "StarlightSaltern",
@@ -151,7 +152,9 @@ namespace Content.IntegrationTests.Tests
             "StarlightStationBuilding",
             "StarlightPlasma",
 			"StarlightSpaceMall",
-            "StarlightSepultum"
+            "StarlightSepultum",
+            "StarlightBoxcars",
+            "StarlightSerpentcrest"
             #endregion
         };
 

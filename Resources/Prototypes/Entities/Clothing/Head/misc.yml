@@ -37,6 +37,12 @@
     - Hair
     - HeadTop
     - HeadSide
+#Starlight
+  - type: Tag
+    tags:
+    - CorgiWearable
+    - WhitelistChameleon
+#Starlight End
 
 - type: entity
   parent: ClothingHeadBase
@@ -79,6 +85,11 @@
     slots:
       cell_slot:
         name: power-cell-slot-component-slot-name-default
+        #Starlight Start
+        blacklist:
+          tags:
+          - MechReactor
+        #Starlight End
   - type: HideLayerClothing
     slots:
     - Hair

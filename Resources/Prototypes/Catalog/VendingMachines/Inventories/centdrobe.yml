@@ -1,6 +1,10 @@
 - type: vendingMachineInventory
   id: CentDrobeInventory
   startingInventory:
+    BoxStampsCCDepartments: 3 # Starlight begin #
+    BoxStampsCCAdministrative: 3
+    MindShieldImplanter: 8
+    DeathRattleImplanter: 6 # Starlight end #
     ClothingShoesBootsLaceup: 3
     ClothingShoesBootsJack: 3
     ClothingHandsGlovesCombat: 3

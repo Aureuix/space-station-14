@@ -232,7 +232,6 @@
     - FootstepSound
     - DoorBumpOpener
     - AnomalyHost
-    - Labelable # Starlight
   - type: ActiveInputMover # Starlight
   # Starlight Start: Social Interactions
   - type: PhysicalSocialInteractionGiver
@@ -241,6 +240,7 @@
     - Pet
     - Boop
   # Starlight End
+  - type: CosmicCenserTarget # Stellar - Cosmic Cult
 
 - type: entity
   save: false
