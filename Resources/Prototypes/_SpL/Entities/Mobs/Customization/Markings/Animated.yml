@@ -1,0 +1,253 @@
+# 1
+- type: marking
+  id: DwarfConstellationChest
+  bodyPart: Chest
+  markingCategory: Overlay
+  speciesRestriction: [Dwarf, Human, Reptilian, Arachnid, Elf, Vulpkanin, Avali, SlimePerson, Shadekin, Moth, Thaven] # May writing this at 3 am be the worst mistake i commit in my life. Start time 2:45 AM
+  sprites:
+  - sprite: _Impstation/Mobs/Customization/animatedmarkings.rsi
+    state: dwarfconstellationchest
+
+- type: marking
+  id: DionaBigFireFly
+  bodyPart: Head
+  markingCategory: Overlay
+  speciesRestriction: [Dwarf, Human, Reptilian, Arachnid, Elf, Vulpkanin, Avali, SlimePerson, Shadekin, Moth, Thaven] 
+  sprites:
+  - sprite: _Impstation/Mobs/Customization/animatedmarkings.rsi
+    state: dionabigfirefly
+
+- type: marking
+  id: DionaFireFly # 3AM starts here:
+  bodyPart: Head
+  markingCategory: Overlay
+  speciesRestriction: [Dwarf, Human, Reptilian, Arachnid, Elf, Vulpkanin, Avali, SlimePerson, Shadekin, Moth, Thaven] 
+  sprites:
+  - sprite: _Impstation/Mobs/Customization/animatedmarkings.rsi
+    state: dionafirefly
+
+- type: marking
+  id: DionaLivingNymph
+  bodyPart: Chest
+  markingCategory: Overlay
+  speciesRestriction: [Dwarf, Human, Reptilian, Arachnid, Elf, Vulpkanin, Avali, SlimePerson, Shadekin, Moth, Thaven] 
+  sprites:
+  - sprite: _Impstation/Mobs/Customization/animatedmarkings.rsi
+    state: dionalivingnymph
+
+- type: marking
+  id: DionaPollendust
+  bodyPart: Head
+  markingCategory: Overlay
+  speciesRestriction: [Dwarf, Human, Reptilian, Arachnid, Elf, Vulpkanin, Avali, SlimePerson, Shadekin, Moth, Thaven] 
+  sprites:
+  - sprite: _Impstation/Mobs/Customization/animatedmarkings.rsi
+    state: dionapollendust
+
+- type: marking
+  id: DwarfConstellationHead
+  bodyPart: Head
+  markingCategory: Overlay
+  speciesRestriction: [Dwarf, Human, Reptilian, Arachnid, Elf, Vulpkanin, Avali, SlimePerson, Shadekin, Moth, Thaven] 
+  sprites:
+  - sprite: _Impstation/Mobs/Customization/animatedmarkings.rsi
+    state: dwarfconstellationhead
+
+- type: marking
+  id: DwarfConstellationLFoot
+  bodyPart: LFoot
+  markingCategory: Overlay
+  speciesRestriction: [Dwarf, Human, Reptilian, Arachnid, Elf, Vulpkanin, Avali, SlimePerson, Shadekin, Moth, Thaven] 
+  sprites:
+  - sprite: _Impstation/Mobs/Customization/animatedmarkings.rsi
+    state: dwarfconstellationlfoot
+
+- type: marking
+  id: DwarfConstellationRFoot
+  bodyPart: RFoot
+  markingCategory: Overlay
+  speciesRestriction: [Dwarf, Human, Reptilian, Arachnid, Elf, Vulpkanin, Avali, SlimePerson, Shadekin, Moth, Thaven] 
+  sprites:
+  - sprite: _Impstation/Mobs/Customization/animatedmarkings.rsi
+    state: dwarfconstellationrfoot
+
+- type: marking
+  id: DwarfConstellationLLeg
+  bodyPart: LLeg
+  markingCategory: Overlay
+  speciesRestriction: [Dwarf, Human, Reptilian, Arachnid, Elf, Vulpkanin, Avali, SlimePerson, Shadekin, Moth, Thaven] 
+  sprites:
+  - sprite: _Impstation/Mobs/Customization/animatedmarkings.rsi
+    state: dwarfconstellationlleg
+
+- type: marking
+  id: DwarfConstellationRLeg
+  bodyPart: RLeg
+  markingCategory: Overlay
+  speciesRestriction: [Dwarf, Human, Reptilian, Arachnid, Elf, Vulpkanin, Avali, SlimePerson, Shadekin, Moth, Thaven] 
+  sprites:
+  - sprite: _Impstation/Mobs/Customization/animatedmarkings.rsi
+    state: dwarfconstellationrleg
+
+- type: marking
+  id: DwarfConstellationLArm
+  bodyPart: LArm
+  markingCategory: Overlay
+  speciesRestriction: [Dwarf, Human, Reptilian, Arachnid, Elf, Vulpkanin, Avali, SlimePerson, Shadekin, Moth, Thaven] 
+  sprites:
+  - sprite: _Impstation/Mobs/Customization/animatedmarkings.rsi
+    state: dwarfconstellationlarm
+
+- type: marking
+  id: DwarfConstellationRArm
+  bodyPart: RArm
+  markingCategory: Overlay
+  speciesRestriction: [Dwarf, Human, Reptilian, Arachnid, Elf, Vulpkanin, Avali, SlimePerson, Shadekin, Moth, Thaven] 
+  sprites:
+  - sprite: _Impstation/Mobs/Customization/animatedmarkings.rsi
+    state: dwarfconstellationrarm
+
+- type: marking
+  id: DwarfConstellationLHand
+  bodyPart: LHand
+  markingCategory: Overlay
+  speciesRestriction: [Dwarf, Human, Reptilian, Arachnid, Elf, Vulpkanin, Avali, SlimePerson, Shadekin, Moth, Thaven] 
+  sprites:
+  - sprite: _Impstation/Mobs/Customization/animatedmarkings.rsi
+    state: dwarfconstellationlhand
+
+- type: marking
+  id: DwarfConstellationRHand
+  bodyPart: RHand
+  markingCategory: Overlay
+  speciesRestriction: [Dwarf, Human, Reptilian, Arachnid, Elf, Vulpkanin, Avali, SlimePerson, Shadekin, Moth, Thaven] 
+  sprites:
+  - sprite: _Impstation/Mobs/Customization/animatedmarkings.rsi
+    state: dwarfconstellationrhand
+
+- type: marking
+  id: DwarfHeadGlow
+  bodyPart: Head
+  markingCategory: Overlay
+  speciesRestriction: [Dwarf, Human, Reptilian, Arachnid, Elf, Vulpkanin, Avali, SlimePerson, Shadekin, Moth, Thaven] 
+  sprites:
+  - sprite: _Impstation/Mobs/Customization/animatedmarkings.rsi
+    state: dwarfheadglow
+
+- type: marking
+  id: DwarfMarkBear
+  bodyPart: Chest
+  markingCategory: Overlay
+  speciesRestriction: [Dwarf, Human, Reptilian, Arachnid, Elf, Vulpkanin, Avali, SlimePerson, Shadekin, Moth, Thaven] 
+  sprites:
+  - sprite: _Impstation/Mobs/Customization/animatedmarkings.rsi
+    state: dwarfmarkbear
+
+- type: marking
+  id: DwarfMarkCobra
+  bodyPart: Chest
+  markingCategory: Overlay
+  speciesRestriction: [Dwarf, Human, Reptilian, Arachnid, Elf, Vulpkanin, Avali, SlimePerson, Shadekin, Moth, Thaven] 
+  sprites:
+  - sprite: _Impstation/Mobs/Customization/animatedmarkings.rsi
+    state: dwarfmarkcobra
+
+- type: marking
+  id: DwarfMarkKangaroo
+  bodyPart: RHand
+  markingCategory: Overlay
+  speciesRestriction: [Dwarf, Human, Reptilian, Arachnid, Elf, Vulpkanin, Avali, SlimePerson, Shadekin, Moth, Thaven] 
+  sprites:
+  - sprite: _Impstation/Mobs/Customization/animatedmarkings.rsi
+    state: dwarfmarkkangaroo
+
+- type: marking
+  id: DwarfMarkKangarooLHand
+  bodyPart: LHand
+  markingCategory: Overlay
+  speciesRestriction: [Dwarf, Human, Reptilian, Arachnid, Elf, Vulpkanin, Avali, SlimePerson, Shadekin, Moth, Thaven] 
+  sprites:
+  - sprite: _Impstation/Mobs/Customization/animatedmarkings.rsi
+    state: dwarfmarkkangaroolhand
+
+- type: marking
+  id: DwarfMarkSpider
+  bodyPart: Chest
+  markingCategory: Overlay
+  speciesRestriction: [Dwarf, Human, Reptilian, Arachnid, Elf, Vulpkanin, Avali, SlimePerson, Shadekin, Moth, Thaven] 
+  sprites:
+  - sprite: _Impstation/Mobs/Customization/animatedmarkings.rsi
+    state: dwarfmarkspider
+
+- type: marking
+  id: FadingStars
+  bodyPart: Chest
+  markingCategory: Overlay
+  speciesRestriction: [Dwarf, Human, Reptilian, Arachnid, Elf, Vulpkanin, Avali, SlimePerson, Shadekin, Moth, Thaven] 
+  sprites:
+  - sprite: _Impstation/Mobs/Customization/animatedmarkings.rsi
+    state: fadingstars1
+  - sprite: _Impstation/Mobs/Customization/animatedmarkings.rsi
+    state: fadingstars2
+  - sprite: _Impstation/Mobs/Customization/animatedmarkings.rsi
+    state: fadingstars3
+
+
+- type: marking
+  id: FishBowl
+  bodyPart: Chest
+  markingCategory: Overlay
+  speciesRestriction: [Dwarf, Human, Reptilian, Arachnid, Elf, Vulpkanin, Avali, SlimePerson, Shadekin, Moth, Thaven] 
+  sprites:
+  - sprite: _Impstation/Mobs/Customization/animatedmarkings.rsi
+    state: fishbowl1
+  - sprite: _Impstation/Mobs/Customization/animatedmarkings.rsi
+    state: fishbowl2
+
+
+- type: marking 
+  id: Fizz # <--- realized just now she fucked up ID capitalization
+  bodyPart: Chest
+  markingCategory: Overlay
+  speciesRestriction: [Dwarf, Human, Reptilian, Arachnid, Elf, Vulpkanin, Avali, SlimePerson, Shadekin, Moth, Thaven] 
+  sprites:
+  - sprite: _Impstation/Mobs/Customization/animatedmarkings.rsi
+    state: fizz
+
+- type: marking 
+  id: Bubble
+  bodyPart: Chest
+  markingCategory: Overlay
+  speciesRestriction: [Dwarf, Human, Reptilian, Arachnid, Elf, Vulpkanin, Avali, SlimePerson, Shadekin, Moth, Thaven] 
+  sprites:
+  - sprite: _Impstation/Mobs/Customization/animatedmarkings.rsi
+    state: bubble
+
+- type: marking 
+  id: MothFireFly
+  bodyPart: Tail
+  markingCategory: Tail
+  speciesRestriction: [Dwarf, Human, Reptilian, Arachnid, Elf, Vulpkanin, Avali, SlimePerson, Shadekin, Moth, Thaven]
+  sprites:
+  - sprite: _Impstation/Mobs/Customization/animatedmarkings.rsi
+    state: mothfirefly1
+  - sprite: _Impstation/Mobs/Customization/markingsbundle.rsi
+    state: mothfirefly2
+
+- type: marking 
+  id: MothGlowAntenna
+  bodyPart: Chest
+  markingCategory: Overlay
+  speciesRestriction: [Dwarf, Human, Reptilian, Arachnid, Elf, Vulpkanin, Avali, SlimePerson, Shadekin, Moth, Thaven] 
+  sprites:
+  - sprite: _Impstation/Mobs/Customization/animatedmarkings.rsi
+    state: mothglowantenna
+
+- type: marking 
+  id: SpiderMirror
+  bodyPart: Chest
+  markingCategory: Overlay
+  speciesRestriction: [Dwarf, Human, Reptilian, Arachnid, Elf, Vulpkanin, Avali, SlimePerson, Shadekin, Moth, Thaven] # Finish time: 3:20 AM
+  sprites:
+  - sprite: _Impstation/Mobs/Customization/animatedmarkings.rsi
+    state: spidermirror

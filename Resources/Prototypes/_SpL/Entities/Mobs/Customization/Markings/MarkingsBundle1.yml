@@ -1,0 +1,585 @@
+#4
+# :(
+# Start time: 3:37 AM
+- type: marking 
+  id: DionaMoonBloom
+  bodyPart: Head
+  markingCategory: Head
+  speciesRestriction: [Dwarf, Human, Reptilian, Arachnid, Elf, Vulpkanin, Avali, SlimePerson, Shadekin, Moth, Thaven] 
+  sprites:
+  - sprite: _Impstation/Mobs/Customization/markingsbundle.rsi
+    state: dionamoonbloom
+
+- type: marking 
+  id: DionaMossChest
+  bodyPart: Chest
+  markingCategory: Chest
+  speciesRestriction: [Dwarf, Human, Reptilian, Arachnid, Elf, Vulpkanin, Avali, SlimePerson, Shadekin, Moth, Thaven]
+  sprites:
+  - sprite: _Impstation/Mobs/Customization/markingsbundle.rsi
+    state: dionamosschest
+
+- type: marking 
+  id: DwarfArmHair
+  bodyPart: LArm
+  markingCategory: Arms
+  speciesRestriction: [Dwarf, Human, Reptilian, Arachnid, Elf, Vulpkanin, Avali, SlimePerson, Shadekin, Moth, Thaven] 
+  sprites:
+  - sprite: _Impstation/Mobs/Customization/markingsbundle.rsi
+    state: dwarfarmhair
+
+- type: marking 
+  id: DwarfBearCheeks
+  bodyPart: Head
+  markingCategory: Head
+  speciesRestriction: [Dwarf, Human, Reptilian, Arachnid, Elf, Vulpkanin, Avali, SlimePerson, Shadekin, Moth, Thaven] 
+  sprites:
+  - sprite: _Impstation/Mobs/Customization/markingsbundle.rsi
+    state: dwarfbearcheeks
+
+- type: marking 
+  id: DwarfChestHair
+  bodyPart: Chest
+  markingCategory: Chest
+  speciesRestriction: [Dwarf, Human, Reptilian, Arachnid, Elf, Vulpkanin, Avali, SlimePerson, Shadekin, Moth, Thaven] # Listening to cacola rn
+  sprites:
+  - sprite: _Impstation/Mobs/Customization/markingsbundle.rsi
+    state: dwarfchesthair
+
+- type: marking 
+  id: DwarfLegHair
+  bodyPart: LLeg
+  markingCategory: Legs
+  speciesRestriction: [Dwarf, Human, Reptilian, Arachnid, Elf, Vulpkanin, Avali, SlimePerson, Shadekin, Moth, Thaven] 
+  sprites:
+  - sprite: _Impstation/Mobs/Customization/markingsbundle.rsi
+    state: dwarfleghair
+
+- type: marking 
+  id: DwarfTattooShootingStar
+  bodyPart: Chest
+  markingCategory: Chest
+  speciesRestriction: [Dwarf, Human, Reptilian, Arachnid, Elf, Vulpkanin, Avali, SlimePerson, Shadekin, Moth, Thaven] 
+  sprites:
+  - sprite: _Impstation/Mobs/Customization/markingsbundle.rsi
+    state: dwarftattooshootingstar
+
+- type: marking 
+  id: Bee
+  bodyPart: Tail
+  markingCategory: Tail
+  speciesRestriction: [Dwarf, Human, Reptilian, Arachnid, Elf, Vulpkanin, Avali, SlimePerson, Shadekin, Moth, Thaven] 
+  sprites:
+  - sprite: _Impstation/Mobs/Customization/markingsbundle.rsi
+    state: bee1
+  - sprite: _Impstation/Mobs/Customization/markingsbundle.rsi
+    state: bee2
+  - sprite: _Impstation/Mobs/Customization/markingsbundle.rsi
+    state: bee3
+
+- type: marking 
+  id: Bee
+  bodyPart: Tail
+  markingCategory: Tail
+  speciesRestriction: [Dwarf, Human, Reptilian, Arachnid, Elf, Vulpkanin, Avali, SlimePerson, Shadekin, Moth, Thaven] 
+  sprites:
+  - sprite: _Impstation/Mobs/Customization/markingsbundle.rsi
+    state: bee1
+  - sprite: _Impstation/Mobs/Customization/markingsbundle.rsi
+    state: bee2
+  - sprite: _Impstation/Mobs/Customization/markingsbundle.rsi
+    state: bee3
+
+- type: marking 
+  id: Beetle
+  bodyPart: Tail
+  markingCategory: Tail
+  speciesRestriction: [Dwarf, Human, Reptilian, Arachnid, Elf, Vulpkanin, Avali, SlimePerson, Shadekin, Moth, Thaven] 
+  sprites:
+  - sprite: _Impstation/Mobs/Customization/markingsbundle.rsi
+    state: beetle1
+  - sprite: _Impstation/Mobs/Customization/markingsbundle.rsi
+    state: beetle2
+  - sprite: _Impstation/Mobs/Customization/markingsbundle.rsi
+    state: beetle3
+
+- type: marking 
+  id: GlassWing
+  bodyPart: Tail
+  markingCategory: Tail
+  speciesRestriction: [Dwarf, Human, Reptilian, Arachnid, Elf, Vulpkanin, Avali, SlimePerson, Shadekin, Moth, Thaven] 
+  sprites:
+  - sprite: _Impstation/Mobs/Customization/markingsbundle.rsi
+    state: glasswing1
+  - sprite: _Impstation/Mobs/Customization/markingsbundle.rsi
+    state: glasswing2
+  - sprite: _Impstation/Mobs/Customization/markingsbundle.rsi
+    state: glasswing3
+
+- type: marking 
+  id: MothBeetleHorn1
+  bodyPart: HeadTop
+  markingCategory: HeadTop
+  speciesRestriction: [Dwarf, Human, Reptilian, Arachnid, Elf, Vulpkanin, Avali, SlimePerson, Shadekin, Moth, Thaven] # 4 am mark
+  sprites:
+  - sprite: _Impstation/Mobs/Customization/markingsbundle.rsi
+    state: mothbeetlehorn1
+
+- type: marking 
+  id: MothBeetleHorn2
+  bodyPart: HeadTop
+  markingCategory: HeadTop
+  speciesRestriction: [Dwarf, Human, Reptilian, Arachnid, Elf, Vulpkanin, Avali, SlimePerson, Shadekin, Moth, Thaven] 
+  sprites:
+  - sprite: _Impstation/Mobs/Customization/markingsbundle.rsi
+    state: mothbeetlehorn2
+
+- type: marking 
+  id: MothBiggerEyes
+  bodyPart: Head
+  markingCategory: Head
+  speciesRestriction: [Dwarf, Human, Reptilian, Arachnid, Elf, Vulpkanin, Avali, SlimePerson, Shadekin, Moth, Thaven] 
+  sprites:
+  - sprite: _Impstation/Mobs/Customization/markingsbundle.rsi
+    state: mothbiggereyes
+  
+- type: marking 
+  id: MothTrueButterfly
+  bodyPart: Tail
+  markingCategory: Tail
+  speciesRestriction: [Dwarf, Human, Reptilian, Arachnid, Elf, Vulpkanin, Avali, SlimePerson, Shadekin, Moth, Thaven] 
+  sprites:
+  - sprite: _Impstation/Mobs/Customization/markingsbundle.rsi
+    state: mothtruebutterfly1
+  - sprite: _Impstation/Mobs/Customization/markingsbundle.rsi
+    state: mothtruebutterfly2
+  - sprite: _Impstation/Mobs/Customization/markingsbundle.rsi
+    state: mothtruebutterfly3
+
+- type: marking 
+  id: RhinoBeetle
+  bodyPart: Tail
+  markingCategory: Tail
+  speciesRestriction: [Dwarf, Human, Reptilian, Arachnid, Elf, Vulpkanin, Avali, SlimePerson, Shadekin, Moth, Thaven] 
+  sprites:
+  - sprite: _Impstation/Mobs/Customization/markingsbundle.rsi
+    state: rhinobeetle1
+  - sprite: _Impstation/Mobs/Customization/markingsbundle.rsi
+    state: rhinobeetle2
+  - sprite: _Impstation/Mobs/Customization/markingsbundle.rsi
+    state: rhinobeetle3
+
+- type: marking 
+  id: Snoth
+  bodyPart: Tail
+  markingCategory: Tail
+  speciesRestriction: [Dwarf, Human, Reptilian, Arachnid, Elf, Vulpkanin, Avali, SlimePerson, Shadekin, Moth, Thaven] # End time 2/24/2026 4:25 AM
+  sprites:
+  - sprite: _Impstation/Mobs/Customization/markingsbundle.rsi
+    state: snoth1
+  - sprite: _Impstation/Mobs/Customization/markingsbundle.rsi
+    state: snoth2
+
+#- type: marking 
+#  id: SpiderEyesMulti
+#  bodyPart: Head
+#  markingCategory: Head
+#  speciesRestriction: [Dwarf, Human, Reptilian, Arachnid, Elf, Vulpkanin, Avali, SlimePerson, Shadekin, Moth, Thaven] 
+#  sprites:
+#  - sprite: _Impstation/Mobs/Customization/markingsbundle.rsi
+#    state: spidereyesmulti1
+#  - sprite: _Impstation/Mobs/Customization/markingsbundle.rsi
+#    state: spidereyesmulti2
+#  - sprite: _Impstation/Mobs/Customization/markingsbundle.rsi
+#    state: spidereyesmulti3
+#  - sprite: _Impstation/Mobs/Customization/markingsbundle.rsi
+#    state: spidereyesmulti4
+
+#- type: marking 
+#  id: SpiderGloweyes
+#  bodyPart: Head
+#  markingCategory: Head
+#  speciesRestriction: [Dwarf, Human, Reptilian, Arachnid, Elf, Vulpkanin, Avali, SlimePerson, Shadekin, Moth, Thaven] 
+#  sprites:
+#  - sprite: _Impstation/Mobs/Customization/markingsbundle.rsi
+#    state: spidergloweyes
+
+- type: marking 
+  id: VitiligoArmR # Start time. 2/24/2026 2:21 PM
+  bodyPart: RArm
+  markingCategory: Arms
+  speciesRestriction: [Dwarf, Human, Reptilian, Arachnid, Elf, Vulpkanin, Avali, SlimePerson, Shadekin, Moth, Thaven]
+  sprites:
+  - sprite: _Impstation/Mobs/Customization/markingsbundle.rsi
+    state: vitiligoarmr
+
+- type: marking 
+  id: VitiligoChestF
+  bodyPart: Chest
+  markingCategory: Chest
+  speciesRestriction: [Dwarf, Human, Reptilian, Arachnid, Elf, Vulpkanin, Avali, SlimePerson, Shadekin, Moth, Thaven]
+  sprites:
+  - sprite: _Impstation/Mobs/Customization/markingsbundle.rsi
+    state: vitiligochestf
+
+- type: marking 
+  id: VitiligoChestSpots
+  bodyPart: Chest
+  markingCategory: Chest
+  speciesRestriction: [Dwarf, Human, Reptilian, Arachnid, Elf, Vulpkanin, Avali, SlimePerson, Shadekin, Moth, Thaven]
+  sprites:
+  - sprite: _Impstation/Mobs/Customization/markingsbundle.rsi
+    state: vitiligochestspots
+
+- type: marking 
+  id: VitiligoHandR
+  bodyPart: RHand
+  markingCategory: Arms
+  speciesRestriction: [Dwarf, Human, Reptilian, Arachnid, Elf, Vulpkanin, Avali, SlimePerson, Shadekin, Moth, Thaven]
+  sprites:
+  - sprite: _Impstation/Mobs/Customization/markingsbundle.rsi
+    state: vitiligohandr
+
+- type: marking 
+  id: VitiligoHandL
+  bodyPart: LHand
+  markingCategory: Arms
+  speciesRestriction: [Dwarf, Human, Reptilian, Arachnid, Elf, Vulpkanin, Avali, SlimePerson, Shadekin, Moth, Thaven]
+  sprites:
+  - sprite: _Impstation/Mobs/Customization/markingsbundle.rsi
+    state: vitiligohandl
+
+- type: marking 
+  id: VitiligoHeadJaw
+  bodyPart: Head
+  markingCategory: Head
+  speciesRestriction: [Dwarf, Human, Reptilian, Arachnid, Elf, Vulpkanin, Avali, SlimePerson, Shadekin, Moth, Thaven]
+  sprites:
+  - sprite: _Impstation/Mobs/Customization/markingsbundle.rsi
+    state: vitiligoheadjaw
+
+- type: marking 
+  id: VitiligoHeadR
+  bodyPart: Head
+  markingCategory: Head
+  speciesRestriction: [Dwarf, Human, Reptilian, Arachnid, Elf, Vulpkanin, Avali, SlimePerson, Shadekin, Moth, Thaven]
+  sprites:
+  - sprite: _Impstation/Mobs/Customization/markingsbundle.rsi
+    state: vitiligoheadr
+
+- type: marking 
+  id: VitiligoHeadl
+  bodyPart: Head
+  markingCategory: Head
+  speciesRestriction: [Dwarf, Human, Reptilian, Arachnid, Elf, Vulpkanin, Avali, SlimePerson, Shadekin, Moth, Thaven]
+  sprites:
+  - sprite: _Impstation/Mobs/Customization/markingsbundle.rsi
+    state: vitiligoheadl
+
+- type: marking 
+  id: VitiligoLegR
+  bodyPart: RLeg
+  markingCategory: Legs
+  speciesRestriction: [Dwarf, Human, Reptilian, Arachnid, Elf, Vulpkanin, Avali, SlimePerson, Shadekin, Moth, Thaven]
+  sprites:
+  - sprite: _Impstation/Mobs/Customization/markingsbundle.rsi
+    state: vitiligolegr
+
+- type: marking 
+  id: VitiligoLegL
+  bodyPart: LLeg
+  markingCategory: Legs
+  speciesRestriction: [Dwarf, Human, Reptilian, Arachnid, Elf, Vulpkanin, Avali, SlimePerson, Shadekin, Moth, Thaven]
+  sprites:
+  - sprite: _Impstation/Mobs/Customization/markingsbundle.rsi
+    state: vitiligolegl
+
+# VOX.
+
+- type: marking 
+  id: VoxArmProstheticL
+  bodyPart: LArm
+  markingCategory: Arms
+  speciesRestriction: [Vox]
+  sprites:
+  - sprite: _Impstation/Mobs/Customization/markingsbundle.rsi
+    state: voxarmprostheticl
+
+- type: marking 
+  id: VoxArmProstheticR
+  bodyPart: RArm
+  markingCategory: Arms
+  speciesRestriction: [Vox]
+  sprites:
+  - sprite: _Impstation/Mobs/Customization/markingsbundle.rsi
+    state: voxarmprostheticr
+
+- type: marking 
+  id: VoxArmsStripesL
+  bodyPart: LArm
+  markingCategory: Arms
+  speciesRestriction: [Vox]
+  sprites:
+  - sprite: _Impstation/Mobs/Customization/markingsbundle.rsi
+    state: voxarmsstripesl
+
+- type: marking 
+  id: VoxArmsStripesR
+  bodyPart: RArm
+  markingCategory: Arms
+  speciesRestriction: [Vox]
+  sprites:
+  - sprite: _Impstation/Mobs/Customization/markingsbundle.rsi
+    state: voxarmsstripesr
+
+- type: marking 
+  id: VoxBeakColor
+  bodyPart: Head
+  markingCategory: Head
+  speciesRestriction: [Vox]
+  sprites:
+  - sprite: _Impstation/Mobs/Customization/markingsbundle.rsi
+    state: voxbeakcolor
+
+- type: marking 
+  id: VoxBeakSplit
+  bodyPart: Head
+  markingCategory: Head
+  speciesRestriction: [Vox]
+  sprites:
+  - sprite: _Impstation/Mobs/Customization/markingsbundle.rsi
+    state: voxbeaksplit1
+  - sprite: _Impstation/Mobs/Customization/markingsbundle.rsi
+    state: voxbeaksplit2
+
+- type: marking 
+  id: VoxBeakTipped
+  bodyPart: Head
+  markingCategory: Head
+  speciesRestriction: [Vox]
+  sprites:
+  - sprite: _Impstation/Mobs/Customization/markingsbundle.rsi
+    state: voxbeaktipped
+
+- type: marking 
+  id: VoxBelly
+  bodyPart: Chest
+  markingCategory: Chest
+  speciesRestriction: [Vox]
+  sprites:
+  - sprite: _Impstation/Mobs/Customization/markingsbundle.rsi
+    state: voxbelly
+
+- type: marking 
+  id: VoxChains
+  bodyPart: Chest
+  markingCategory: Chest
+  speciesRestriction: [Vox]
+  sprites:
+  - sprite: _Impstation/Mobs/Customization/markingsbundle.rsi
+    state: voxchains
+
+- type: marking 
+  id: VoxCheeks
+  bodyPart: HeadSide
+  markingCategory: HeadSide
+  speciesRestriction: [Vox]
+  sprites:
+  - sprite: _Impstation/Mobs/Customization/markingsbundle.rsi
+    state: voxcheeks
+
+- type: marking 
+  id: VoxChestPlumage
+  bodyPart: Chest
+  markingCategory: Chest
+  speciesRestriction: [Vox]
+  sprites:
+  - sprite: _Impstation/Mobs/Customization/markingsbundle.rsi
+    state: voxchestplumage
+
+- type: marking 
+  id: VoxCockTail
+  bodyPart: Tail
+  markingCategory: Tail
+  speciesRestriction: [Vox]
+  sprites:
+  - sprite: _Impstation/Mobs/Customization/markingsbundle.rsi
+    state: voxcocktail1
+  - sprite: _Impstation/Mobs/Customization/markingsbundle.rsi
+    state: voxcocktail2
+  - sprite: _Impstation/Mobs/Customization/markingsbundle.rsi
+    state: voxcocktail3
+  - sprite: _Impstation/Mobs/Customization/markingsbundle.rsi
+    state: voxcocktail4
+
+- type: marking 
+  id: VoxFootGradientL
+  bodyPart: LFoot
+  markingCategory: Legs
+  speciesRestriction: [Vox]
+  sprites:
+  - sprite: _Impstation/Mobs/Customization/markingsbundle.rsi
+    state: voxfootgradientl1
+  - sprite: _Impstation/Mobs/Customization/markingsbundle.rsi
+    state: voxfootgradientl2
+
+- type: marking 
+  id: VoxFootGradientR
+  bodyPart: RFoot
+  markingCategory: Legs
+  speciesRestriction: [Vox]
+  sprites:
+  - sprite: _Impstation/Mobs/Customization/markingsbundle.rsi
+    state: voxfootgradientr1
+  - sprite: _Impstation/Mobs/Customization/markingsbundle.rsi
+    state: voxfootgradientr2
+  
+- type: marking 
+  id: VoxFootSpines
+  bodyPart: LFoot
+  markingCategory: Legs
+  speciesRestriction: [Vox]
+  sprites:
+  - sprite: _Impstation/Mobs/Customization/markingsbundle.rsi
+    state: voxfootspines
+
+- type: marking 
+  id: VoxHandGradientL
+  bodyPart: LHand
+  markingCategory: Arms
+  speciesRestriction: [Vox]
+  sprites:
+  - sprite: _Impstation/Mobs/Customization/markingsbundle.rsi
+    state: voxhandgradientl1
+  - sprite: _Impstation/Mobs/Customization/markingsbundle.rsi
+    state: voxhandgradientl2
+  - sprite: _Impstation/Mobs/Customization/markingsbundle.rsi
+    state: voxhandgradientl3
+
+
+- type: marking 
+  id: VoxHandGradientR
+  bodyPart: RHand
+  markingCategory: Arms
+  speciesRestriction: [Vox]
+  sprites:
+  - sprite: _Impstation/Mobs/Customization/markingsbundle.rsi
+    state: voxhandgradientr1
+  - sprite: _Impstation/Mobs/Customization/markingsbundle.rsi
+    state: voxhandgradientr2
+  - sprite: _Impstation/Mobs/Customization/markingsbundle.rsi
+    state: voxhandgradientr3
+
+- type: marking 
+  id: VoxHeadGradient
+  bodyPart: Head
+  markingCategory: Head
+  speciesRestriction: [Vox]
+  sprites:
+  - sprite: _Impstation/Mobs/Customization/markingsbundle.rsi
+    state: voxheadgradient1
+  - sprite: _Impstation/Mobs/Customization/markingsbundle.rsi
+    state: voxheadgradient2
+  - sprite: _Impstation/Mobs/Customization/markingsbundle.rsi
+    state: voxheadgradient3
+
+- type: marking 
+  id: VoxLegsStripesL
+  bodyPart: LLeg
+  markingCategory: Legs
+  speciesRestriction: [Vox]
+  sprites:
+  - sprite: _Impstation/Mobs/Customization/markingsbundle.rsi
+    state: voxlegsstripesl
+
+- type: marking 
+  id: VoxLegsStripesR
+  bodyPart: RLeg
+  markingCategory: Legs
+  speciesRestriction: [Vox]
+  sprites:
+  - sprite: _Impstation/Mobs/Customization/markingsbundle.rsi
+    state: voxlegsstripesr
+
+- type: marking 
+  id: VoxSunAndMoon
+  bodyPart: Overlay
+  markingCategory: Tail
+  speciesRestriction: [Vox, Dwarf, Human, Reptilian, Arachnid, Elf, Vulpkanin, Avali, SlimePerson, Shadekin, Moth, Thaven]
+  sprites:
+  - sprite: _Impstation/Mobs/Customization/markingsbundle.rsi
+    state: voxsunandmoon
+
+- type: marking 
+  id: VoxTailBalled
+  bodyPart: Overlay
+  markingCategory: Tail
+  speciesRestriction: [Vox]
+  sprites:
+  - sprite: _Impstation/Mobs/Customization/markingsbundle.rsi
+    state: voxtailballed
+
+- type: marking 
+  id: VoxTailBell
+  bodyPart: Overlay
+  markingCategory: Tail
+  speciesRestriction: [Vox, Dwarf, Human, Reptilian, Arachnid, Elf, Vulpkanin, Avali, SlimePerson, Shadekin, Moth, Thaven]
+  sprites:
+  - sprite: _Impstation/Mobs/Customization/markingsbundle.rsi
+    state: voxtailbell1
+  - sprite: _Impstation/Mobs/Customization/markingsbundle.rsi
+    state: voxtailbell2
+
+#- type: marking 
+#  id: VoxTailColorable
+#  bodyPart: Tail
+#  markingCategory: Tail
+#  speciesRestriction: [Vox]
+#  sprites:
+#  - sprite: _Impstation/Mobs/Customization/markingsbundle.rsi
+#    state: voxtailcolorable
+
+- type: marking 
+  id: VoxTailLantern
+  bodyPart: Tail
+  markingCategory: Tail
+  speciesRestriction: [Vox, Dwarf, Human, Reptilian, Arachnid, Elf, Vulpkanin, Avali, SlimePerson, Shadekin, Moth, Thaven]
+  sprites:
+  - sprite: _Impstation/Mobs/Customization/markingsbundle.rsi
+    state: voxtaillantern
+
+- type: marking 
+  id: VoxTailSingleStripe
+  bodyPart: Tail
+  markingCategory: Tail
+  speciesRestriction: [Vox]
+  sprites:
+  - sprite: _Impstation/Mobs/Customization/markingsbundle.rsi
+    state: voxtailsinglestripe
+
+- type: marking 
+  id: VoxTailSmallPlume
+  bodyPart: Tail
+  markingCategory: Tail
+  speciesRestriction: [Vox]
+  sprites:
+  - sprite: _Impstation/Mobs/Customization/markingsbundle.rsi
+    state: voxtailsmallplume
+
+- type: marking 
+  id: VoxTailSplit
+  bodyPart: Tail
+  markingCategory: Tail
+  speciesRestriction: [Vox]
+  sprites:
+  - sprite: _Impstation/Mobs/Customization/markingsbundle.rsi
+    state: voxtailsplit
+
+- type: marking 
+  id: VoxTailStripes
+  bodyPart: Overlay
+  markingCategory: Tail
+  speciesRestriction: [Vox]
+  sprites:
+  - sprite: _Impstation/Mobs/Customization/markingsbundle.rsi
+    state: voxtailstripes #finishing time 3:32 PM

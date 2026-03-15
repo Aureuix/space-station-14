@@ -1,0 +1,64 @@
+#8
+- type: marking 
+  id: ClawTorso
+  bodyPart: Chest
+  markingCategory: Chest
+  speciesRestriction: [Vox]
+  sprites:
+  - sprite: _Impstation/Mobs/Customization/markingsbundle.rsi
+    state: claw_torso
+
+- type: marking 
+  id: BigslashLHead
+  bodyPart: Head
+  markingCategory: Head
+  speciesRestriction: [Vox]
+  sprites:
+  - sprite: _Impstation/Mobs/Customization/markingsbundle.rsi
+    state: bigslash_l_head
+
+- type: marking 
+  id: BigslashRHead
+  bodyPart: Head
+  markingCategory: Head
+  speciesRestriction: [Vox]
+  sprites:
+  - sprite: _Impstation/Mobs/Customization/markingsbundle.rsi
+    state: bigslash_r_head
+
+- type: marking 
+  id: SlashLHead
+  bodyPart: Head
+  markingCategory: Head
+  speciesRestriction: [Vox]
+  sprites:
+  - sprite: _Impstation/Mobs/Customization/markingsbundle.rsi
+    state: bigslash_l_head
+
+- type: marking 
+  id: SlashRHead
+  bodyPart: Head
+  markingCategory: Head
+  speciesRestriction: [Vox]
+  sprites:
+  - sprite: _Impstation/Mobs/Customization/markingsbundle.rsi
+    state: slash_r_head
+
+- type: marking 
+  id: RoadrashLHead
+  bodyPart: Head
+  markingCategory: Head
+  speciesRestriction: [Vox]
+  sprites:
+  - sprite: _Impstation/Mobs/Customization/markingsbundle.rsi
+    state: roadrash_l_head
+
+- type: marking 
+  id: RoadrashRHead
+  bodyPart: Head
+  markingCategory: Head
+  speciesRestriction: [Vox]
+  sprites:
+  - sprite: _Impstation/Mobs/Customization/markingsbundle.rsi
+    state: roadrash_r_head #done: 5:15 pm\
+# all of this code was written before Hardlight PR #939 was made.
