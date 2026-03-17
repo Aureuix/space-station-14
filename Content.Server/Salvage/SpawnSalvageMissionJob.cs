@@ -35,6 +35,8 @@ using Robust.Shared.Utility;
 using Content.Server.Shuttles.Components;
 using Content.Server._FarHorizons.Salvage;
 using Content.Shared.Weather;
+using Content.Shared.StatusEffectNew;
+using Content.Shared.StatusEffectNew.Components;
 
 namespace Content.Server.Salvage;
 
@@ -48,6 +50,7 @@ public sealed class SpawnSalvageMissionJob : Job<bool>
     private readonly DungeonSystem _dungeon;
     private readonly MetaDataSystem _metaData;
     private readonly SharedMapSystem _map;
+    [Dependency] private readonly StatusEffectsSystem _statusEffects = default!;
 
     public readonly EntityUid Station;
     public readonly EntityUid? CoordinatesDisk;
@@ -145,15 +148,15 @@ public sealed class SpawnSalvageMissionJob : Job<bool>
             _entManager.System<AtmosphereSystem>().SetMapGasMixture(mapUid, new GasMixture(moles, mission.Temperature), atmos);
 
             // Far Horizons weather start
-            if (!air.Space)
+            /*if (!air.Space)
             {
                 var weather = _prototypeManager.Index(mission.Weather);
                 if (weather.Weather != null)
                 {
                     var weatherProto = _prototypeManager.Index(weather.Weather);
-                    _entManager.System<SharedWeatherSystem>().SetWeather(mapId, weatherProto, null);
+                    _entManager.System<SharedWeatherSystem>().TrySetWeather(mapId, weatherProto, _statusEffects.TryEffectsWithComp<WeatherStatusEffectComponent>(mapUid, out var effects), null);
                 }
-            }
+            }*/
             // Far Horisons end
 
             if (mission.Color != null)
