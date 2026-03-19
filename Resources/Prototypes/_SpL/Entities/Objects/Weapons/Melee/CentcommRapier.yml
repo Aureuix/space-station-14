@@ -1,0 +1,52 @@
+#Longswords
+- type: entity
+  name: Vibrorapier
+  parent: [BaseSword, BaseCommandContraband]
+  id: VibroRapier
+  description: An ornimental vibroblade commissioned by central command. Pierces through flesh and bone like butter, but sears the skin in the process. Meant for one handed sword combat.
+  components:
+  - type: Sprite
+    sprite: _SpL/Objects/Weapons/Melee/Vibrorapier.rsi
+  - type: MeleeWeapon
+    angle: 0
+    range: 1.65
+    attackRate: 1.5
+    clickDamageModifier: 1.35 
+    damage:
+      types:
+        Piercing: 16
+        Structural: 25
+        Heat: 10
+    soundHit:
+        path: /Audio/Items/unsheath.ogg
+  - type: Reflect
+    reflectProb: .75
+    spread: 90
+  - type: Item
+    storedSprite:
+      state: storage
+      sprite: Objects/Weapons/Melee/captain_sabre_storage_64x.rsi #Done in 64x64 because it looks way too puny in 32x32
+    sprite: _SpL/Objects/Weapons/Melee/Vibrorapierinhand.rsi
+    inhandVisuals:
+      left:
+      - state: inhand-left
+      right:
+      - state: inhand-right
+    shape:
+    - 0,0,0,3
+  - type: Tag
+    tags:
+    - VibroRapier
+  - type: DisarmMalus
+  - type: EmbeddableProjectile
+    removalTime: 2
+    sound: /Audio/Weapons/Guns/Hits/energy_metal1.ogg
+  - type: DamageOtherOnHit
+    damage:
+      types:
+        Piercing: 24
+        Structural: 50
+        Heat: 15
+  - type: ThrowingAngle
+    angle: 225
+  - type: LandAtCursor

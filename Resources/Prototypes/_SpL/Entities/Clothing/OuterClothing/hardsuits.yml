@@ -1,0 +1,70 @@
+- type: entity
+  parent: [ClothingOuterHardsuitBase, BaseSyndicateContraband ]
+  id: ClothingOuterHardsuitCSElite
+  name: CyberSun Elite Suit
+  description: A suit made by CyberSun's R&D department, who decided to one-up the Gorlex Marauders in the world of advanced hardsuits.
+  components:
+  - type: Sprite
+    sprite: _SpL/Clothing/OuterClothing/Hardsuits/CybersunElite.rsi
+  - type: Item
+    size: Huge
+  - type: Clothing
+    sprite: _SpL/Clothing/OuterClothing/Hardsuits/CybersunElite.rsi
+  - type: PressureProtection
+    highPressureMultiplier: 0.05
+    lowPressureMultiplier: 1000
+  - type: TemperatureProtection
+    heatingCoefficient: 0.001
+    coolingCoefficient: 0.001
+  - type: ExplosionResistance
+    damageCoefficient: 0.2
+  - type: FireProtection
+    reduction: 0.8
+  - type: StaminaResistance # do not add these to other equipment or mobs, we don't want to microbalance these everywhere
+    damageCoefficient: 0.6
+  - type: Pierceable
+    level: Metal
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.7
+        Slash: 0.7
+        Piercing: 0.55
+        Heat: 0.75
+        Radiation: 0.01
+        Caustic: 0.4
+  - type: ClothingSpeedModifier
+    walkModifier: 0.9
+    sprintModifier: 0.9
+  - type: HeldSpeedModifier
+  - type: ToggleableClothing
+    clothingPrototype: ClothingHeadHelmetHardsuitCSElite
+  - type: ContainerContainer
+    containers:
+      cell_slot: !type:ContainerSlot
+      toggleable-clothing: !type:ContainerSlot
+  - type: PowerCellSlot
+    cellSlotId: cell_slot
+  - type: ItemSlots
+    slots:
+      cell_slot:
+        name: power-cell-slot-component-slot-name-default
+        startingItem: PowerCellSmall
+        whitelist:
+          tags:
+            - PowerCellSmall
+  - type: EnergyDomeGenerator
+    damageEnergyDraw: 32
+    domePrototype: EnergyDomeSmallPink
+  - type: PowerCellDraw
+    enabled: false
+    drawRate: 8
+    useRate: 0
+  - type: UseDelay
+    delay: 10.0
+  - type: Tag
+    tags:
+    - Hardsuit
+    - WhitelistChameleon
+  - type: StaticPrice
+    price: 5000

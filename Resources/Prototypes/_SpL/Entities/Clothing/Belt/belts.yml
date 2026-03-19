@@ -1,0 +1,31 @@
+- type: entity
+  parent: [ClothingBeltBase, ClothingSlotBase, BaseCommandContraband]
+  id: ClothingBeltVibroSheath
+  name: Vibrorapier Sheath
+  description: An ornate sheath for holding a Vibrorapier.
+  components:
+  - type: Sprite
+    sprite: _SpL/Clothing/Belt/VibrorapierSheath.rsi
+    state: sheath
+  - type: Clothing
+    sprite: _SpL/Clothing/Belt/VibrorapierSheath.rsi
+  - type: Item
+    size: Ginormous
+  - type: ItemSlots
+    slots:
+      item:
+        name: Sword
+        insertVerbText: sheath-insert-verb
+        ejectVerbText: sheath-eject-verb
+        insertSound: /Audio/Items/sheath.ogg
+        ejectSound: /Audio/Items/unsheath.ogg
+        whitelist:
+          tags:
+          - VibroRapier
+  - type: ItemMapper
+    mapLayers:
+      sheath-sword:
+        whitelist:
+          tags:
+          - VibroRapier
+  - type: Appearance
