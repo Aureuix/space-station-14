@@ -8,6 +8,9 @@
   },
   "states": [
     {
+      "name": "ball-emp"
+    },
+    {
       "name": "ball-emp-unlit",
       "delays": [
         [
