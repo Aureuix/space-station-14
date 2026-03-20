@@ -84,6 +84,7 @@
     - CorgiWearable
     - Hardsuit
     - WhitelistChameleon
+    - IPCExternalCooling # Far Horizons
 
 #Spationaut Hardsuit
 - type: entity
@@ -121,6 +122,7 @@
     - WhitelistChameleon
     - HardsuitSpatio
     - CorgiWearable
+    - IPCExternalCooling # Far Horizons
 
 #Salvage Hardsuit
 - type: entity
@@ -162,6 +164,7 @@
     - CorgiWearable
     - Hardsuit
     - WhitelistChameleon
+    - IPCExternalCooling # Far Horizons
 
 #Goliath Hardsuit
 - type: entity
@@ -202,6 +205,7 @@
     - CorgiWearable
     - Hardsuit
     - WhitelistChameleon
+    - IPCExternalCooling # Far Horizons
 
 # Hardsuit
 - type: entity
@@ -308,6 +312,7 @@
     - CorgiWearable
     - Hardsuit
     - WhitelistChameleon
+    - IPCExternalCooling # Far Horizons
 
 #Brigmedic Hardsuit
 - type: entity
@@ -352,6 +357,7 @@
     - Hardsuit
     - CorgiWearable
     - WhitelistChameleon
+    - IPCExternalCooling # Far Horizons
 #Starlight end
 
 #Warden's Hardsuit
@@ -429,6 +435,7 @@
     - CorgiWearable
     - Hardsuit
     - WhitelistChameleon
+    - IPCExternalCooling # Far Horizons
   - type: StealTarget # Starlight
     stealGroup: CaptainHardsuit # Starlight
 
@@ -472,6 +479,7 @@
     - CorgiWearable
     - Hardsuit
     - WhitelistChameleon
+    - IPCExternalCooling # Far Horizons
   - type: StealTarget # Starlight
     stealGroup: CEHardsuit # Starlight
 
@@ -508,6 +516,7 @@
     - CorgiWearable
     - Hardsuit
     - WhitelistChameleon
+    - IPCExternalCooling # Far Horizons
   - type: StealTarget # Starlight
     stealGroup: CMOHardsuit # Starlight
 
@@ -552,6 +561,7 @@
     - HighRiskItem
     - CorgiWearable
     - Hardsuit
+    - IPCExternalCooling # Far Horizons
   - type: ToggleableClothing
     clothingPrototype: ClothingHeadHelmetHardsuitRd
   - type: StaticPrice
@@ -661,6 +671,7 @@
     - CorgiWearable
     - Hardsuit
     - WhitelistChameleon
+    - IPCExternalCooling # Far Horizons
 
 #ANTAG HARDSUITS
 #Blood-red Hardsuit
@@ -710,6 +721,7 @@
     - WhitelistChameleon
     - CorgiWearable
     - ScurretWearable
+    - IPCExternalCooling # Far Horizons
   - type: StaticPrice
     price: 5000
 
@@ -733,6 +745,7 @@
     - Hardsuit
     - CorgiWearable # Starlight
     - WhitelistChameleon
+    - IPCExternalCooling # Far Horizons
 
 #Syndicate Elite Hardsuit
 - type: entity
@@ -784,6 +797,7 @@
     - CorgiWearable
     - Hardsuit
     - WhitelistChameleon
+    - IPCExternalCooling # Far Horizons
 
 #Syndicate Commander Hardsuit
 - type: entity
@@ -828,6 +842,7 @@
     - CorgiWearable
     - Hardsuit
     - WhitelistChameleon
+    - IPCExternalCooling # Far Horizons
 
 
 #Cybersun Juggernaut Hardsuit
@@ -885,6 +900,7 @@
     - Hardsuit
     - WhitelistChameleon
     - RequiredForLmgTag #Starlight
+    - IPCExternalCooling # Far Horizons
 
 #Wizard Hardsuit
 - type: entity
@@ -924,6 +940,7 @@
     - CorgiWearable
     - Hardsuit
     - WhitelistChameleon
+    - IPCExternalCooling # Far Horizons
 
 #Ling Space Suit
 - type: entity
@@ -1066,6 +1083,7 @@
     - Hardsuit
     - WhitelistChameleon
     - CorgiWearable
+    - IPCExternalCooling # Far Horizons
 
 #ERT Chaplain Hardsuit
 - type: entity
@@ -1086,6 +1104,7 @@
     - Hardsuit
     - WhitelistChameleon
     - CorgiWearable
+    - IPCExternalCooling # Far Horizons
 
 #ERT Engineer Hardsuit
 - type: entity
@@ -1108,6 +1127,7 @@
     - Hardsuit
     - WhitelistChameleon
     - CorgiWearable
+    - IPCExternalCooling # Far Horizons
 
 #ERT Medic Hardsuit
 - type: entity
@@ -1128,6 +1148,7 @@
     - Hardsuit
     - WhitelistChameleon
     - CorgiWearable
+    - IPCExternalCooling # Far Horizons
 
 #ERT Security Hardsuit
 - type: entity
@@ -1164,6 +1185,7 @@
     - Hardsuit
     - WhitelistChameleon
     - CorgiWearable
+    - IPCExternalCooling # Far Horizons
 
 #ERT Janitor Hardsuit
 - type: entity
@@ -1184,6 +1206,7 @@
     - Hardsuit
     - WhitelistChameleon
     - CorgiWearable
+    - IPCExternalCooling # Far Horizons
 
 #Deathsquad
 - type: entity
@@ -1234,6 +1257,7 @@
     - Hardsuit
     - WhitelistChameleon
     - CorgiWearable
+    - IPCExternalCooling # Far Horizons
 
 #CBURN Hardsuit
 - type: entity
