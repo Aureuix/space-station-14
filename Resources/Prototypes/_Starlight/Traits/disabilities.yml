@@ -136,6 +136,7 @@
     - !type:SpeciesRequirement
       species:
         - Shadekin
+        - IPC
       inverted: true
 
 - type: trait
