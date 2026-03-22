@@ -270,3 +270,10 @@
     - BibleRigVeda
 
 # end of starlight additions
+
+#Spectra
+- type: loadout
+  id: BibleHeretic
+  storage:
+    back:
+    - BibleHeretic

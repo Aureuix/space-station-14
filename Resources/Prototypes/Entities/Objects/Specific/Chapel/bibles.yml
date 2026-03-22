@@ -198,3 +198,14 @@
     sprite: Objects/Specific/Chapel/ratvartablet.rsi
   - type: Item
     sprite: Objects/Specific/Chapel/ratvartablet.rsi
+
+- type: entity
+  id: BibleHeretic
+  name: Codex Cicatrix
+  parent: Bible
+  description: "An unholy book used by worshippers of the Mansus, performs miracles but not rituals."
+  components:
+  - type: Sprite
+    sprite: Objects/Specific/Chapel/codexcicatrix.rsi
+  - type: Item
+    sprite: Objects/Specific/Chapel/codexcicatrix.rsi
