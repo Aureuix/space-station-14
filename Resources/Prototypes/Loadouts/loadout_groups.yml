@@ -619,6 +619,7 @@
   - BibleTorah
   - BibleTripitaka
   - BibleRigVeda # starlight end
+  - BibleHeretic # Spectra
 
 - type: loadoutGroup
   id: JanitorHead
