@@ -1,0 +1,27 @@
+- type: entity
+  parent: ClothingBackpackDuffelSyndicateBundle
+  id: ClothingBackpackDuffelHardsuitCSEliteBundle
+  name: cybersun elite hardsuit bundle
+  description: "Contains CyberSun's competition with Gorlex."
+  components:
+  - type: EntityTableContainerFill
+    containers:
+      storagebase: !type:AllSelector
+        children:
+        - id: ClothingOuterHardsuitCSElite
+        - !type:NestedSelector
+          tableId: SyndicateHardsuitExtrasEntityTable
+
+- type: entity
+  parent: ClothingBackpackDuffelSyndicateBundle
+  id: ClothingBackpackDuffelSyndicateFilledLecter
+  name: M90 GL bundle
+  description: "The M90, a competitor to NanoTrasen's Lecter, bundled with three magazines."
+  components:
+  - type: EntityTableContainerFill
+    containers:
+      storagebase: !type:AllSelector
+        children:
+        - id: WeaponRifleM90GrenadeLauncher
+        - id: MagazineRifleSP
+          amount: 3

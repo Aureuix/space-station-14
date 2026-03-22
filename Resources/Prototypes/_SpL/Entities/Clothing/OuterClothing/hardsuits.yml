@@ -2,7 +2,7 @@
   parent: [ClothingOuterHardsuitBase, BaseSyndicateContraband ]
   id: ClothingOuterHardsuitCSElite
   name: CyberSun Elite Suit
-  description: A suit made by CyberSun's R&D department, who decided to one-up the Gorlex Marauders in the world of advanced hardsuits.
+  description: A suit made by CyberSun's R&D department, who decided to one-up the Gorlex Marauders in the world of advanced hardsuits. Comes with a built in 3 hit shield, no capacity increases.
   components:
   - type: Sprite
     sprite: _SpL/Clothing/OuterClothing/Hardsuits/CybersunElite.rsi
@@ -20,8 +20,8 @@
     damageCoefficient: 0.2
   - type: FireProtection
     reduction: 0.8
-  - type: StaminaResistance # do not add these to other equipment or mobs, we don't want to microbalance these everywhere
-    damageCoefficient: 0.6
+  #- type: StaminaResistance # do not add these to other equipment or mobs, we don't want to microbalance these everywhere
+  #  damageCoefficient: 0.6
   - type: Pierceable
     level: Metal
   - type: Armor
@@ -29,10 +29,11 @@
       coefficients:
         Blunt: 0.7
         Slash: 0.7
-        Piercing: 0.55
-        Heat: 0.75
+        Piercing: 0.6
+        Heat: 0.25
         Radiation: 0.01
         Caustic: 0.4
+        staminaModifier: 0.2
   - type: ClothingSpeedModifier
     walkModifier: 0.9
     sprintModifier: 0.9
