@@ -24,9 +24,9 @@
     - id: SpiderClownSpawn
     - id: SpiderSpawn
     - id: VentClog
-    - id: PsychicScreach # SL
-    - id: SecurityDrill # SL
-    - id: DoorRuntime # SL
+#    - id: PsychicScreach # SL # Spectra, Removed this because it sucks
+#    - id: SecurityDrill # SL #Spectra, Removed this because it rarely provided meaningful roleplay and triggered absurdly often
+#    - id: DoorRuntime # SL # Spectra, Removed this because it sucks
     - id: RadStorm # SL
     - id: AuroraCaelus # SL
     - id: SpaceWhale # SL
