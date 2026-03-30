@@ -133,6 +133,7 @@
     - id: JetpackCaptainFilled
     - id: OxygenTankFilled
     - id: NitrogenTankFilled # Starlight - vox gang
+    - id: CoolingUnit # Starlight
 
 # No laser locker, used when the antique laser is placed in the special display crate
 - type: entity
@@ -266,6 +267,7 @@
     - id: JetpackVoidEngineerFilled #Starlight edit: CE's custom pack for steal objective
     - id: OxygenTankFilled
     - id: NitrogenTankFilled # Starlight - vox gang
+    - id: CoolingUnit # Starlight
 
 # No hardsuit locker
 - type: entity
@@ -338,6 +340,7 @@
     - id: ClothingOuterHardsuitMedical
     - id: OxygenTankFilled
     - id: NitrogenTankFilled # Starlight - vox gang
+    - id: CoolingUnit # Starlight
 
 # No hardsuit locker
 - type: entity
@@ -405,6 +408,7 @@
     - id: ClothingOuterHardsuitRd
     - id: OxygenTankFilled
     - id: NitrogenTankFilled # Starlight - vox gang
+    - id: CoolingUnit # Starlight
 
 # No hardsuit locker
 - type: entity
@@ -480,6 +484,7 @@
     - id: JetpackSecurityFilled
     - id: OxygenTankFilled
     - id: NitrogenTankFilled # Starlight - vox gang
+    - id: CoolingUnit # Starlight
     - id: ClothingShoesBootsMagSec
 
 # No hardsuit locker
