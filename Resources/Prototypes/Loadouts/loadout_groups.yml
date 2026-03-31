@@ -2118,6 +2118,7 @@
   - EmergencyNitrogenMilitaryDouble
   - EmergencyOxygenMilitaryDouble
   - EmergencyElfOxygenMilitaryDouble # Starlight
+  - EmergencyIPC # 🌟Starlight🌟
 
 - type: loadoutGroup
   id: GroupSpeciesBreathTool
