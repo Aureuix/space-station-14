@@ -201,6 +201,7 @@
     - Biological
     - BiologicalMetaphysicalKitsune
     - Inorganic
+    - IPC # SL
   - type: ShowSyndicateIcons
 
 - type: entity
@@ -219,9 +220,6 @@
     - BiologicalMetaphysicalKitsune
     - Inorganic
     - IPC # SL
-  - type: ShowHealthIcons # SL
-    damageContainers:
-      - IPC
   - type: ShowHungerIcons
   - type: ShowThirstIcons
   - type: ShowSyndicateIcons
