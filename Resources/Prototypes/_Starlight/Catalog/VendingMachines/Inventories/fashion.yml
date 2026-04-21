@@ -167,8 +167,8 @@
 
 
 - type: listing
-  id: ClothingUniformJumpskirtPunkDress
-  productEntity: ClothingUniformJumpskirtPunkDress
+  id: ClothingUniformJumpskirtPunkSkirt
+  productEntity: ClothingUniformJumpskirtPunkSkirt
   cost:
     NTCredit: 990
   categories:
