@@ -167,6 +167,17 @@
 
 
 - type: listing
+  id: ClothingUniformJumpskirtPunkDress
+  productEntity: ClothingUniformJumpskirtPunkDress
+  cost:
+    NTCredit: 990
+  categories:
+    - SLFashionSkirt
+  conditions:
+    - !type:ListingLimitedStockCondition
+      stock: 1
+
+- type: listing
   id: ClothingUniformJumpsuitSuitCheckered
   productEntity: ClothingUniformJumpsuitSuitCheckered
   cost:
