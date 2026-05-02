@@ -10,7 +10,7 @@
   startingGear: ParamedicGear
   icon: "JobIconParamedic"
   supervisors: job-supervisors-cmo
-  canBeAntag: false # Starlight
+  canBeAntag: true
   access:
   - Medical
   - Maintenance
@@ -19,9 +19,6 @@
   extendedAccess:
   - Chemistry
   - Surgery # Starlight BEGIN
-  special:
-    - !type:AddImplantSpecial
-      implants: [ MindShieldImplant ]  # Starlight END
 
 - type: startingGear
   id: ParamedicGear
