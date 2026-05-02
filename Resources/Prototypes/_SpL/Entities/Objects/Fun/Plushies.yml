@@ -1,0 +1,79 @@
+- type: entity
+  parent: BaseKitsunePlushie
+  id: PlushieKosame
+  name: sunshower plushie
+  description: A life sized plushie of one of the members of CentComm's hired metaphysical security team. The tag says "44 unique informational phrases! She has removable glasses! Sword not included." Its right arm is missing and leaking stuffing...
+  components:
+  - type: Item
+    size: Small
+#    sprite: _SpL/Objects/Fun/Plushies/kosame_plushie.rsi
+  - type: Sprite
+    sprite: _SpL/Objects/Fun/Plushies/kosame_plushie.rsi
+    state: iconALT
+  - type: ItemToggle
+    onUse: false
+    verbToggleOn: plushie-voicebox-activate
+    verbToggleOff: plushie-voicebox-deactivate
+  - type: ComponentToggler
+    components:
+      - type: DatasetVocalizer
+        dataset: PlushiesKosame
+  - type: Vocalizer
+    minVocalizeInterval: 15
+    maxVocalizeInterval: 45
+  - type: LanguageSpeaker
+  - type: LanguageKnowledge
+    speaks:
+    - GalacticCommon
+    - Fox
+    - CHaet
+    understands:
+    - Fox
+    - GalacticCommon
+    - CHaet
+
+  - type: ItemSlots
+    slots:
+      item:
+        name: Glasses
+        insertVerbText: sheath-insert-verb
+        ejectVerbText: sheath-eject-verb
+        insertSound: /Audio/_Starlight/Effects/yip.ogg
+        ejectSound: /Audio/_Starlight/Effects/whine/whine_12.ogg
+        whitelist:
+          tags:
+          - EyeGlasses
+  - type: ItemMapper
+    mapLayers:
+      icon:
+        whitelist:
+          tags:
+          - EyeGlasses
+  - type: Appearance
+
+
+- type: entity
+  parent: BaseVulpkaninPlushie
+  id: PlushieKanna
+  name: kanna plushie
+  description: A strange, lemon-scented plushie. Letting her into the chemistry lab surely couldn't result in anything bad happening.
+  components:
+  - type: Item
+    size: Small
+    sprite: _SpL/Objects/Fun/Plushies/kanna_plushie.rsi
+  - type: Sprite
+    sprite: _SpL/Objects/Fun/Plushies/kanna_plushie.rsi
+    state: icon
+
+- type: entity
+  parent: BaseVulpkaninPlushie
+  id: PlushieVogel
+  name: vogel plushie
+  description: The latest from Syndicate High Command's ground team; Their fluffiest representative, now in plushie form. The tag says, "Revolver not included."
+  components:
+  - type: Item
+    size: Small
+    sprite: _SpL/Objects/Fun/Plushies/vogel_plushie.rsi
+  - type: Sprite
+    sprite: _SpL/Objects/Fun/Plushies/vogel_plushie.rsi
+    state: icon

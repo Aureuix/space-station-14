@@ -14,7 +14,13 @@
   categories: [ HideSpawnMenu ]
   components:
   - type: ShowHealthBars
+    damageContainers:
+    - Biological
+    - BiologicalMetaphysicalKitsune
   - type: ShowHealthIcons
+    damageContainers:
+    - Biological
+    - BiologicalMetaphysicalKitsune
 
 - type: entity
   parent: ClothingEyesBase
@@ -191,6 +197,7 @@
   - type: ShowHealthBars
     damageContainers:
     - Biological
+    - BiologicalMetaphysicalKitsune
     - Inorganic
   - type: ShowSyndicateIcons
 
@@ -207,6 +214,7 @@
   - type: ShowHealthBars
     damageContainers:
     - Biological
+    - BiologicalMetaphysicalKitsune
     - Inorganic
   - type: ShowHungerIcons
   - type: ShowThirstIcons
