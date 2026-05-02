@@ -1,0 +1,58 @@
+- type: entity
+  name: Kitsune
+  parent: [MobFox, BaseSpeciesPickupable ]
+  id: MobFoxKitsune
+  description: A Kitsune's fox form!
+  components:
+  - type: LanguageSpeaker
+  - type: LanguageKnowledge
+    speaks:
+    - GalacticCommon
+    - Fox
+    - CHaet
+    understands:
+    - Fox
+    - GalacticCommon
+    - CHaet
+  - type: Tag
+    tags:
+    - VimPilot
+    - DoorBumpOpener
+  - type: MeleeWeapon
+    angle: 0
+    animation: WeaponArcBite
+    soundHit:
+      path: /Audio/Effects/bite.ogg
+    damage:
+      types:
+        Heat: 8
+  - type: MovementSpeedModifier
+    baseWalkSpeed: 3.25
+    baseSprintSpeed: 6.25
+  - type: Speech
+    speechVerb: KitsuneFox
+    allowedEmotes: [ 'Whine', 'Growl', 'Yip', 'Squeak']
+  - type: Vocal
+    sounds:
+      Male: MaleKitsune
+      Female: FemaleKitsune
+      Unsexed: MaleKitsune
+  - type: Emoting
+  - type: BodyEmotes
+    soundsId: GeneralBodyEmotes
+  - type: MobState
+  - type: Deathgasp
+  - type: MobStateActions
+    actions:
+      Critical:
+      - ActionCritSuccumb
+      - ActionCritFakeDeath
+      - ActionCritLastWords
+  - type: MobThresholds
+    thresholds:
+      0: Alive
+      80: Critical
+      160: Dead
+  - type: Damageable
+    damageContainer: BiologicalMetaphysicalKitsune
+    damageModifierSet: KitsuneFox

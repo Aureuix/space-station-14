@@ -119,14 +119,14 @@
         - CaveElf
       inverted: true
 
-# Species Languages // Should cost: 2
+# Species Languages // Should cost: 2 //Spectra fuck this shit, i ahte starlgiht balance why the fuck alar langagesu balanced like thyeu fkcing combat elemwent fuck 
 
 - type: trait
   id: Nekomimetic
   name: trait-language-nekomimetic-name
   description: trait-language-nekomimetic-desc
   category: LanguageTraits
-  cost: 2
+  cost: 1
   effects:
     - !type:LanguageEffect
       languagesSpoken:
@@ -149,7 +149,7 @@
   name: trait-language-canilunzt-name
   description: trait-language-canilunzt-desc
   category: LanguageTraits
-  cost: 2
+  cost: 1
   effects:
     - !type:LanguageEffect
       languagesSpoken:
@@ -173,7 +173,7 @@
   name: trait-language-scratch-name
   description: trait-language-scratch-desc
   category: LanguageTraits
-  cost: 2
+  cost: 1
   effects:
     - !type:LanguageEffect
       languagesSpoken:
@@ -196,7 +196,7 @@
   name: trait-language-aielic-name
   description: trait-language-aielic-desc
   category: LanguageTraits
-  cost: 2
+  cost: 1
   effects:
     - !type:LanguageEffect
       languagesSpoken:
@@ -218,7 +218,7 @@
   name: trait-language-grumbakul-name
   description: trait-language-grumbakul-desc
   category: LanguageTraits
-  cost: 2
+  cost: 1
   effects:
     - !type:LanguageEffect
       languagesSpoken:
@@ -240,7 +240,7 @@
   name: trait-language-solcommon-name
   description: trait-language-solcommon-desc
   category: LanguageTraits
-  cost: 2
+  cost: 1
   effects:
     - !type:LanguageEffect
       languagesSpoken:
@@ -262,7 +262,7 @@
   name: trait-language-voxpidgin-name
   description: trait-language-voxpidgin-desc
   category: LanguageTraits
-  cost: 2
+  cost: 1
   effects:
     - !type:LanguageEffect
       languagesSpoken:
@@ -284,7 +284,7 @@
   name: trait-language-draconic-name
   description: trait-language-draconic-desc
   category: LanguageTraits
-  cost: 2
+  cost: 1
   effects:
     - !type:LanguageEffect
       languagesSpoken:
@@ -306,7 +306,7 @@
   name: trait-language-marish-name
   description: trait-language-marish-desc
   category: LanguageTraits
-  cost: 2
+  cost: 1
   effects:
     - !type:LanguageEffect
       languagesSpoken:
@@ -328,7 +328,7 @@
   name: trait-language-bubblish-name
   description: trait-language-bubblish-desc
   category: LanguageTraits
-  cost: 2
+  cost: 1
   effects:
     - !type:LanguageEffect
       languagesSpoken:
@@ -350,7 +350,7 @@
   name: trait-language-terrum-name
   description: trait-language-terrum-desc
   category: LanguageTraits
-  cost: 2
+  cost: 1
   effects:
     - !type:LanguageEffect
       languagesSpoken:
@@ -372,7 +372,7 @@
   name: trait-language-sylvan-name
   description: trait-language-sylvan-desc
   category: LanguageTraits
-  cost: 2
+  cost: 1
   effects:
     - !type:LanguageEffect
       languagesSpoken:
@@ -398,7 +398,7 @@
   name: trait-language-moffic-name
   description: trait-language-moffic-desc
   category: LanguageTraits
-  cost: 2
+  cost: 1
   effects:
     - !type:LanguageEffect
       languagesSpoken:
@@ -421,7 +421,7 @@
   name: trait-language-thaveyan-name
   description: trait-language-thaveyan-desc
   category: LanguageTraits
-  cost: 2
+  cost: 1
   effects:
     - !type:LanguageEffect
       languagesSpoken:
@@ -444,7 +444,7 @@
   name: trait-language-lagomorphian-name
   description: trait-language-lagomorphian-desc
   category: LanguageTraits
-  cost: 2
+  cost: 1
   effects:
     - !type:LanguageEffect
       languagesSpoken:

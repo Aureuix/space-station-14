@@ -61,7 +61,6 @@
   - type: Visibility
     layer: 2 #ghost vis layer
   #region Starlight languages
-  - type: LanguageKnowledge
   - type: UniversalLanguageSpeaker
   #endregion
 
@@ -126,7 +125,6 @@
        isLooped: true
        reverseWhenFinished: true
   #region Starlight languages
-  - type: LanguageKnowledge
   - type: UniversalLanguageSpeaker
   #endregion
 

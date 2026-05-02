@@ -156,7 +156,7 @@ public partial class MobStateSystem
         else if (IsCritical(target, component))
             args.Multiplier /= 2;
     }
-
+    //Spectra Start
     private void OnSpeakAttempt(EntityUid uid, MobStateComponent component, SpeakAttemptEvent args)
     {
         if (HasComp<AllowNextCritSpeechComponent>(uid))
@@ -165,8 +165,8 @@ public partial class MobStateSystem
             return;
         }
 
-        CheckAct(uid, component, args);
-    }
+        CheckActDeadOnly(uid, component, args);
+    }//Spectra end
 
     private void CheckAct(EntityUid target, MobStateComponent component, CancellableEntityEventArgs args)
     {
@@ -178,7 +178,17 @@ public partial class MobStateSystem
                 break;
         }
     }
-
+    //Spectra Start
+    private void CheckActDeadOnly(EntityUid target, MobStateComponent component, CancellableEntityEventArgs args)
+    {
+        switch (component.CurrentState)
+        {
+            case MobState.Dead:
+                args.Cancel();
+                break;
+        }
+    }
+    //Spectra End
     private void OnEquipAttempt(EntityUid target, MobStateComponent component, IsEquippingAttemptEvent args)
     {
         // is this a self-equip, or are they being stripped?

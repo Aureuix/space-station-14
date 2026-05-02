@@ -1,6 +1,13 @@
 #- type: salvageFaction
 #  id: Syndicate
 #  desc: salvage-faction-syndicate
+#  biomes:
+#    - Lava
+#    - Grasslands
+#    - Caves
+#    - Snow
+#    - Mountains # Spectra
+#    - LowDesert # Spectra
 #  entries:
 #    - proto: MobSyndicateFootsoldierFireAxe
 #      cost: 6
@@ -44,6 +51,8 @@
     - Grasslands
     - Caves
     - Snow
+    - Mountains # Far Horizons
+    - LowDesert # Far Horizons
   entries:
     - proto: MobSovietComradeBrokenBottle
       cost: 3
@@ -82,18 +91,18 @@
   configs:
     DefenseStructure: WeaponTurretSyndicateBroken
 
-- type: salvageFaction
-  id: Worms
-  desc: salvage-faction-worms
-  entries:
-    - proto: MobWorm
-      cost: 4
-  biomes:
-    - Abyss
-  difficulties: 
-    - Challenging
-  configs:
-    DefenseStructure: WeaponTurretSyndicate
+#- type: salvageFaction
+#  id: Worms
+#  desc: salvage-faction-worms
+#  entries:
+#    - proto: MobWorm
+#      cost: 4
+#  biomes:
+#    - Abyss
+#  difficulties: 
+#    - Challenging
+#  configs:
+#    DefenseStructure: WeaponTurretSyndicate
 
 # - type: salvageFaction
 #   id: Elder

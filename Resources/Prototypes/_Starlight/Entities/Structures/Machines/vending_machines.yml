@@ -182,7 +182,8 @@
     - SLBrigmedic
 
 - type: entity
-  parent: SLVendingMachine
+  parent: [SLVendingMachine, BaseGSLContraband] #Spectra, Contraband so salvs dont steal it
+  description: A vending machine rented to NanoTrasen by a salvage company. Yay capitalism! #Spectra, canon reason for contra level
   id: SLVendingMachineSalvage
   name: salvage ticket machine
   components:
@@ -202,8 +203,9 @@
     - SalvageTicket
 
 - type: entity
-  parent: SLVendingMachine
+  parent: [SLVendingMachine, BaseGSLContraband] #Spectra, Contraband so salvs dont steal it
   id: SLVendingMachineMining
+  description: A vending machine rented to NanoTrasen by a salvage company. Yay capitalism! #Spectra, canon reason for contra level
   name: mining ticket machine
   components:
     - type: AccessReader

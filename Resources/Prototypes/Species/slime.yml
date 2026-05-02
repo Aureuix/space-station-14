@@ -45,7 +45,7 @@
       points: 1
       required: false
     Chest:
-      points: 2 #imp
+      points: 4 #imp
       required: false
     Legs:
       points: 4

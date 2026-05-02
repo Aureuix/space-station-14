@@ -1,6 +1,6 @@
 <Document>
 # Metashields
-A full version of this may be viewed on the Starlight Wiki.
+!!METASHIELD IS A GUIDELINE, NOT HARD ENFORCED. YOU KNOW WHAT YOUR CHARACTER WOULD RESONABLY KNOW!!
 
 ## What is the 'Metashield'?
 The [bold]Metashield[/bold] is the system that determines what your character can know at the start of every round, and is used in conjunction with the Continuity Guideline rule. Something that is "shielded" can not be known by your character unless they meet certain criteria. This also means your character can not do things based on "shielded" information.
@@ -41,13 +41,12 @@ Meta Information such as the current gamemode and the possible antagonists there
 Examples:
 - You may never know that because the gamemode is Survival, there will be an escalating number of threats.
 - You may never know that the player Gregman69 only ever plays Security, and thus since he is an Assistant this shift he must be an Antagonist.
-- You may never know that the last round was Nukies, or any other Metashielded gamemode, per Continuity Rules.
 - You may never know anything that you did not learn in character, such as things witnessed while observing as a ghost before spawning, things you were told by a friend out of game, etc.
 - You may never know an item has a secret use by right clicking it, such as exploding pens or chameleon gloves.
 
 
 [bold][color=#ff6200]Unconscious Information || [/color][/bold]
-Unconscious Information is information you learned while your character was asleep, in critical condition, dead, or while you were moving around as a ghost while you were dead. If you are injured to the point that you enter critical condition or die, you forget the previous 5 minutes and do not remember details about what killed you or how you died. You may use common sense to notice what type of wounds you have however.
+Unconscious Information is information you learned while your character was asleep, in critical condition, dead, or while you were moving around as a ghost while you were dead. If you are injured to the point that you enter critical condition or die, you forget some amount of time from your crit/death, usually around 5 minutes, but it can depend based on what would be good for a particular roleplay moment. and do not remember details about what killed you or how you died. You may use common sense to notice what type of wounds you have however.
 
 Examples:
 - You may never remember who attacked and killed you.
@@ -58,7 +57,7 @@ Examples:
 
 
 ## Corporate Secrets
-[color=#9819ff]Corporate Secrets[/color] are only known by high value members of the corporation. These are; All of Command, the Station AI, NanoTrasen Representative, Blue Shield Officer, Magistrate, and all Central Command roles such as ERT, OPs, CBURN, etc. Corporate Secrets should be kept secret until it is necessary to reveal them, revealing them frivolously is frowned upon by Central Command. This information is considered sensitive and libel to cause mass panic if learned by the Crew.
+[color=#9819ff]Corporate Secrets[/color] are USUALLY only known by high value members of the corporation. These are; All of Command, the Station AI, NanoTrasen Representative, Blue Shield Officer, Magistrate, and all Central Command roles such as ERT, OPs, CBURN, etc. Corporate Secrets should be kept secret until it is necessary to reveal them, revealing them frivolously is frowned upon by Central Command. This information is considered sensitive and libel to cause mass panic if learned by the Crew. WHEN MAKING A CHARACTER THAT KNOWS ABOUT CORPORATE SECRETS, THEY SHOULD KNOW AN IC REASONABLE AMOUNT. Your character can have survived a nukie attack, or been rescued by a ninja, but that DOESNT mean you can know everything about an antagonist's objectives, mechanics, and goals. (temp. lmk how this feels ->) Characters that know corporate secrets should NOT reveal them to non command members without roleplay reasoning. NT wouldnt hire you if you spill their beans every round. Decimus is exempt from this, you are not allowed to know they exist (for our revs rework, where rev flash will reveal decimus and how NTCC will kill you if you stop working for them)
 
 Corporate Secrets may be revealed to individuals, departments, or the station as a whole if deemed necessary. You had better have a good reason to do so however, and expect your reasoning to be cross examined and scrutinized heavily by Central Command. Revealing Corporate Secrets to Security is generally deemed more acceptable, better for them to clean up an issue without panicking the rest of the Crew.
 
@@ -77,6 +76,8 @@ Romerol is a highly violent contagion that pilots the dead to facilitate its own
 [bold][color=#9819ff]Paradox Clones || [/color][/bold]
 Cracks in reality sometimes result in intrusions from other parallel worlds. This phenominon is exclusive to sectors near the Null Scar, and is a matter of great interest to NanoTrasen. Should a duplicate be discovered it should be observed and studied, and only terminated if it proves to be hostile.
 
+[bold][color=#9819ff]Cults || [/color][/bold]
+Although the concept and existence of 'cults' is known to the Crew, as they have existed since the dawn of time, the specifics of any cult with real power, such as the Cosmic Cult, are kept secret. Often intentionally by the cults themselves. Chaplains hold the most knowledge of the Crew about these sects, having long studied the religions and faiths of the universe.
 
 [bold][color=#9819ff]Nuclear Operatives || [/color][/bold]
 The Syndicate is a shell of its former self, due to their involvement in and defeat during the Pod Wars. They have grown increasingly more irrational and hostile since their resurgence however, and the rumors you have heard about Nuclear attacks are true. You must protect the Warhead onboard your station, and the Authentication Disk to activate it, at all costs. A confirmed attack from Nuclear Operatives is grounds to suspend Corporate Law and Standard Operating Procedure. Contact Central Command immediately to establish Martial Law.
@@ -91,7 +92,7 @@ Code Epsilon is the designation for this necessary last resort measure, should i
 
 
 ## Secure Knowledge
-[color=#f00000]Secure Knowledge[/color] is only known by members of Security, Internal Affairs Agents, and everyone who knows Corporate Secrets. This includes the Brig Medic, Warden, Security Cadets- all Security jobs. Secure Knowledge should be kept secret until necessary, but may be revealed in order to preserve Crew lives at the discretion of the Head of Security.
+[color=#f00000]Secure Knowledge[/color] is USUALLY only known by members of Security, Internal Affairs Agents, and everyone who knows Corporate Secrets. This includes the Brig Medic, Warden, Security Cadets- all Security jobs. Secure Knowledge should be kept secret until necessary, but may be revealed in order to preserve Crew lives at the discretion of the Head of Security. WHEN MAKING A CHARACTER THAT KNOWS ABOUT SECURE KNOWLEDGE, THEY SHOULD KNOW AN IC REASONABLE AMOUNT. Your character MAY be a changeling, vampire, xenoborg victim, USSP refugee, etc but they MAY NOT use this knowledge to ruin the rounds of antagonist players (IE. ussp affiliated salvager knowing they use flashes and calling it out when they see the cargo tech flash someone; or a changeling janitor seeing ferrochromic acid spills in sci maints and using it to call out that the roboticist is a ling.) Characters that do know corporate knowledge via job may not know EVERYTHING about specific antagonists. It is fine to know what a changeling is and what they do, and be prepared for a changeling to use its powers to attack sec, but it is not okay for a secoff to lethal a changeling because they "know" the changeling will just break out of cuffs and kill them if they attempt a ROE arrest.
 
 
 [bold][color=#f00000]Revolutionary Methods || [/color][/bold]
@@ -216,14 +217,14 @@ Giving a person or character preferential treatment based on something that your
 Friendships between characters may grow and develop and carry over between rounds, so long as they are not based solely on knowing someone out of character and this friendship does not impede or prevent you from fulfilling traitor objectives that harm them.
 
 Metafriending Examples
-- Doing any of the following because you are friends with the player who is playing a character or because you have made friends in character in a previous shift or during a previous life:
+- Doing any of the following because you are friends with the player who is playing a character or because you have made friends in character during a previous life:
 - Giving a character additional access or a job beyond what makes sense
 - Trusting a character beyond what makes sense
 - Refusing to fight a character when it would otherwise make sense
 - Ignoring your objective to kill a character
 
 Metagrudging Examples
-- Doing any of the following because of out of character reasons or something that happened in a previous round or during a previous life:
+- Doing any of the following because of out of character reasons or something that happened during a previous life:
 - Not giving a character additional access or a job when it would otherwise make sense
 - Not trusting a character when it would otherwise make sense
 - Starting a fight with a character without in-character reason

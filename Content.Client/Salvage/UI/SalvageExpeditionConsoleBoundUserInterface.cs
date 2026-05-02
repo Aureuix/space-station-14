@@ -1,5 +1,6 @@
 using System.Linq;
 using Content.Client.Stylesheets;
+using Content.Shared._FarHorizons.Salvage;
 using Content.Shared.CCVar;
 using Content.Shared.Procedural;
 using Content.Shared.Salvage.Expeditions;
@@ -63,6 +64,41 @@ public sealed class SalvageExpeditionConsoleBoundUserInterface : BoundUserInterf
             var difficultyProto = _protoManager.Index<SalvageDifficultyPrototype>(difficultyId);
             var mission = salvage.GetMission(difficultyProto, missionParams.Seed);
 
+            // Far Horizons start
+            var objectiveProto = _protoManager.Index(mission.Objective);
+
+            offering.AddContent(new Label() { Text = Loc.GetString("salvage-expedition-window-objective") });
+            offering.AddContent(new Label
+            {
+                Text = Loc.GetString(objectiveProto.Name),
+                FontColorOverride = objectiveProto.Color,
+                HorizontalAlignment = Control.HAlignment.Left,
+                Margin = new Thickness(0f, 0f, 0f, 5f),
+                StyleClasses = { StyleClass.LabelKeyText }
+            });
+
+            offering.AddContent(new Label() { Text = Loc.GetString("salvage-expedition-window-objective-description") });
+            offering.AddContent(new RichTextLabel
+            {
+                Text = $"[color={StyleNano.NanoGold.ToHex()}][bold]{Loc.GetString(objectiveProto.Description)}[/bold][/color]",
+                MaxWidth = 200,
+                HorizontalAlignment = Control.HAlignment.Left,
+                Margin = new Thickness(0f, 0f, 0f, 5f)
+            });
+
+            var ticketReward = objectiveProto.BaseReward.GetValueOrDefault(difficultyId, 0);
+
+            offering.AddContent(new Label() { Text = Loc.GetString("salvage-expedition-window-objective-reward") });
+            offering.AddContent(new Label
+            {
+                Text = $"{ticketReward} tickets | ${ticketReward * objectiveProto.CashMultiplier}",
+                FontColorOverride = StyleNano.NanoGold,
+                HorizontalAlignment = Control.HAlignment.Left,
+                Margin = new Thickness(0f, 0f, 0f, 5f),
+                StyleClasses = { StyleClass.LabelKeyText }
+            });
+            // Far Horizons end
+
             // Difficulty
             // Details
             offering.AddContent(new Label()
@@ -80,19 +116,20 @@ public sealed class SalvageExpeditionConsoleBoundUserInterface : BoundUserInterf
                 Margin = new Thickness(0f, 0f, 0f, 5f),
             });
 
-            offering.AddContent(new Label
-            {
-                Text = Loc.GetString("salvage-expedition-difficulty-players"),
-                HorizontalAlignment = Control.HAlignment.Left,
-            });
+            // Far Horizons - freeing some visual space in UI
+            // offering.AddContent(new Label
+            // {
+            //     Text = Loc.GetString("salvage-expedition-difficulty-players"),
+            //     HorizontalAlignment = Control.HAlignment.Left,
+            // });
 
-            offering.AddContent(new Label
-            {
-                Text = difficultyProto.RecommendedPlayers.ToString(),
-                HorizontalAlignment = Control.HAlignment.Left,
-                Margin = new Thickness(0f, 0f, 0f, 5f),
-                StyleClasses = { StyleClass.LabelKeyText },
-            });
+            // offering.AddContent(new Label
+            // {
+            //     Text = difficultyProto.RecommendedPlayers.ToString(),
+            //     FontColorOverride = StyleNano.NanoGold,
+            //     HorizontalAlignment = Control.HAlignment.Left,
+            //     Margin = new Thickness(0f, 0f, 0f, 5f),
+            // });
 
             // Details
             offering.AddContent(new Label
@@ -118,19 +155,20 @@ public sealed class SalvageExpeditionConsoleBoundUserInterface : BoundUserInterf
                 return Loc.GetString(_protoManager.Index<SalvageFactionPrototype>(faction).ID);
             }
 
+            // Far Horizons - freeing space in UI
             // Duration
-            offering.AddContent(new Label
-            {
-                Text = Loc.GetString("salvage-expedition-window-duration")
-            });
+            // offering.AddContent(new Label
+            // {
+            //     Text = Loc.GetString("salvage-expedition-window-duration")
+            // });
 
-            offering.AddContent(new Label
-            {
-                Text = mission.Duration.ToString(),
-                HorizontalAlignment = Control.HAlignment.Left,
-                Margin = new Thickness(0f, 0f, 0f, 5f),
-                StyleClasses = { StyleClass.LabelKeyText },
-            });
+            // offering.AddContent(new Label
+            // {
+            //     Text = mission.Duration.ToString(),
+            //     FontColorOverride = StyleNano.NanoGold,
+            //     HorizontalAlignment = Control.HAlignment.Left,
+            //     Margin = new Thickness(0f, 0f, 0f, 5f),
+            // });
 
             // Biome
             offering.AddContent(new Label

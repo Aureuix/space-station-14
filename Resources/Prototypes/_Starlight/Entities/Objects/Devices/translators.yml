@@ -6,7 +6,7 @@
   components:
     - type: ToggleCellDraw
     - type: PowerCellDraw
-      drawRate: 0.6 # 10 min with low-cap / 20 min with med-cap / 30 min with high-cap power cells
+      drawRate: 0.3 # 20 min with low-cap / 40 min with med-cap / 60 min with high-cap power cells #Spectra: Doubled battery life!
     - type: ItemToggle
     - type: PowerCellSlot
       cellSlotId: cell_slot

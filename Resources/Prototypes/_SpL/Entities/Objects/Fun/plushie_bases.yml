@@ -1,0 +1,28 @@
+- type: entity
+  parent: BasePlushieVocalizer
+  id: BaseKitsunePlushie
+  abstract: true
+  components:
+  - type: EmitSoundOnUse
+    sound:
+      path: /Audio/DeltaV/Voice/Kitsune/fox_squeal1.ogg
+  - type: EmitSoundOnLand
+    sound:
+      path: /Audio/_Starlight/Effects/yip.ogg
+  - type: EmitSoundOnActivate
+    sound:
+      path: /Audio/DeltaV/Voice/Kitsune/fox_squeal1.ogg
+  - type: EmitSoundOnCollide
+    sound:
+      path: /Audio/DeltaV/Voice/Kitsune/fox_scream1.ogg
+  - type: EmitSoundOnTrigger
+    sound:
+       path: /Audio/_Starlight/Effects/yip.ogg
+  - type: MeleeWeapon
+    wideAnimationRotation: 180
+    soundHit:
+      path: /Audio/DeltaV/Voice/Kitsune/fox_growl1.ogg
+  - type: Edible
+    requiresSpecialDigestion: true
+    useSound:
+      path: /Audio/DeltaV/Voice/Kitsune/fox_scream1.ogg

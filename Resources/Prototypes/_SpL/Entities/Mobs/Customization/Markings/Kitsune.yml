@@ -1,0 +1,220 @@
+- type: marking
+  id: KitsuneEars
+  bodyPart: HeadTop
+  markingCategory: HeadTop
+  speciesRestriction: [Human, Kitsune]
+  sprites:
+  - sprite: DeltaV/Mobs/Customization/ears.rsi
+    state: foxears
+
+- type: marking
+  id: KitsuneLegLeft
+  bodyPart: LLeg
+  markingCategory: Legs
+  speciesRestriction: [Human, Kitsune]
+  sprites:
+  - sprite: _SpL/Mobs/Species/Kitsune/parts.rsi
+    state: l_leg
+
+- type: marking
+  id: KitsuneLegRight
+  bodyPart: RLeg
+  markingCategory: Legs
+  speciesRestriction: [Human, Kitsune]
+  sprites:
+  - sprite: _SpL/Mobs/Species/Kitsune/parts.rsi
+    state: r_leg
+
+- type: marking
+  id: KitsuneEarsFluffy
+  bodyPart: HeadTop
+  markingCategory: HeadTop
+  speciesRestriction: [Human, Kitsune]
+  sprites:
+  - sprite: DeltaV/Mobs/Customization/ears.rsi
+    state: kitsune_fluffy_ears
+  - sprite: DeltaV/Mobs/Customization/ears.rsi
+    state: kitsune_fluffy_fluff
+
+- type: marking
+  id: KitsuneNineTailsStone
+  bodyPart: Tail
+  markingCategory: Tail
+  speciesRestriction: [Human, Kitsune]
+  sprites:
+  - sprite: DeltaV/Mobs/Customization/tails.rsi
+    state: foxninetailstone1
+  - sprite: DeltaV/Mobs/Customization/tails.rsi
+    state: foxninetailstone2
+
+- type: marking
+  id: KitsuneThreeTailsStone
+  bodyPart: Tail
+  markingCategory: Tail
+  speciesRestriction: [Human, Kitsune]
+  sprites:
+  - sprite: DeltaV/Mobs/Customization/tails.rsi
+    state: foxthreetailstone1
+  - sprite: DeltaV/Mobs/Customization/tails.rsi
+    state: foxthreetailstone2
+
+- type: marking
+  id: KitsuneTwoTailsStone
+  bodyPart: Tail
+  markingCategory: Tail
+  speciesRestriction: [Human, Kitsune]
+  sprites:
+  - sprite: DeltaV/Mobs/Customization/tails.rsi
+    state: foxtwotailstone1
+  - sprite: DeltaV/Mobs/Customization/tails.rsi
+    state: foxtwotailstone2
+
+- type: marking
+  id: KitsuneTwoTails
+  bodyPart: Tail
+  markingCategory: Tail
+  speciesRestriction: [Human, Kitsune]
+  sprites:
+  - sprite: DeltaV/Mobs/Customization/tails.rsi
+    state: kitsune_primary
+  - sprite: DeltaV/Mobs/Customization/tails.rsi
+    state: kitsune_secondary
+
+- type: marking
+  id: KitsuneSevenTails
+  bodyPart: Tail
+  markingCategory: Tail
+  speciesRestriction: [Human, Kitsune]
+  sprites:
+  - sprite: _Floof/Mobs/Customization/skyrattails.rsi
+    state: m_tail_sevenkitsune_BEHIND_primary
+  - sprite: _Floof/Mobs/Customization/skyrattails.rsi
+    state: m_tail_sevenkitsune_BEHIND_secondary
+
+# Not kitsune but i'm lazy!
+
+- type: marking
+  id: VulpPointsHandL
+  bodyPart: LHand
+  markingCategory: Arms
+  speciesRestriction: [Human, Kitsune, Vulpkanin]
+  sprites:
+  - sprite: _Floof/Mobs/Customization/Vulpkanin/Body_Markings.rsi
+    state: points_handL
+
+- type: marking
+  id: VulpPointsHandR
+  bodyPart: RHand
+  markingCategory: Arms
+  speciesRestriction: [Human, Kitsune, Vulpkanin]
+  sprites:
+  - sprite: _Floof/Mobs/Customization/Vulpkanin/Body_Markings.rsi
+    state: points_handR
+
+- type: marking
+  id: VulpPointsCrestArmL
+  bodyPart: LArm
+  markingCategory: Arms
+  speciesRestriction: [Human, Kitsune, Vulpkanin]
+  sprites:
+  - sprite: _Floof/Mobs/Customization/Vulpkanin/Body_Markings.rsi
+    state: points_crest-armsL
+
+- type: marking
+  id: VulpPointsCrestHandR
+  bodyPart: RArm
+  markingCategory: Arms
+  speciesRestriction: [Human, Kitsune, Vulpkanin]
+  sprites:
+  - sprite: _Floof/Mobs/Customization/Vulpkanin/Body_Markings.rsi
+    state: points_crest-armsR
+
+- type: marking
+  id: VulpPointsCrestLegL
+  bodyPart: LLeg
+  markingCategory: Legs
+  speciesRestriction: [Human, Kitsune, Vulpkanin]
+  sprites:
+  - sprite: _Floof/Mobs/Customization/Vulpkanin/Body_Markings.rsi
+    state: points_crest-legsL
+
+- type: marking
+  id: VulpPointsCrestHLegR
+  bodyPart: RLeg
+  markingCategory: Legs
+  speciesRestriction: [Human, Kitsune, Vulpkanin]
+  sprites:
+  - sprite: _Floof/Mobs/Customization/Vulpkanin/Body_Markings.rsi
+    state: points_crest-legsR
+
+- type: marking
+  id: VulpPointssharpArmL
+  bodyPart: LArm
+  markingCategory: Arms
+  speciesRestriction: [Human, Kitsune, Vulpkanin]
+  sprites:
+  - sprite: _Floof/Mobs/Customization/Vulpkanin/Body_Markings.rsi
+    state: points_sharp-armsL
+
+- type: marking
+  id: VulpPointssharpHandR
+  bodyPart: RArm
+  markingCategory: Arms
+  speciesRestriction: [Human, Kitsune, Vulpkanin]
+  sprites:
+  - sprite: _Floof/Mobs/Customization/Vulpkanin/Body_Markings.rsi
+    state: points_sharp-armsR
+
+- type: marking
+  id: VulpPointssharpLegL
+  bodyPart: LLeg
+  markingCategory: Legs
+  speciesRestriction: [Human, Kitsune, Vulpkanin]
+  sprites:
+  - sprite: _Floof/Mobs/Customization/Vulpkanin/Body_Markings.rsi
+    state: points_sharp-legsL
+
+- type: marking
+  id: VulpPointssharpHLegR
+  bodyPart: RLeg
+  markingCategory: Legs
+  speciesRestriction: [Human, Kitsune, Vulpkanin]
+  sprites:
+  - sprite: _Floof/Mobs/Customization/Vulpkanin/Body_Markings.rsi
+    state: points_sharp-legsR
+
+- type: marking
+  id: VulpPointsfadeArmL
+  bodyPart: LArm
+  markingCategory: Arms
+  speciesRestriction: [Human, Kitsune, Vulpkanin]
+  sprites:
+  - sprite: _Floof/Mobs/Customization/Vulpkanin/Body_Markings.rsi
+    state: points_fade-armsL
+
+- type: marking
+  id: VulpPointsfadeHandR
+  bodyPart: RArm
+  markingCategory: Arms
+  speciesRestriction: [Human, Kitsune, Vulpkanin]
+  sprites:
+  - sprite: _Floof/Mobs/Customization/Vulpkanin/Body_Markings.rsi
+    state: points_fade-armsR
+
+- type: marking
+  id: VulpPointsfadeLegL
+  bodyPart: LLeg
+  markingCategory: Legs
+  speciesRestriction: [Human, Kitsune, Vulpkanin]
+  sprites:
+  - sprite: _Floof/Mobs/Customization/Vulpkanin/Body_Markings.rsi
+    state: points_fade-legsL
+
+- type: marking
+  id: VulpPointsfadeHLegR
+  bodyPart: RLeg
+  markingCategory: Legs
+  speciesRestriction: [Human, Kitsune, Vulpkanin]
+  sprites:
+  - sprite: _Floof/Mobs/Customization/Vulpkanin/Body_Markings.rsi
+    state: points_fade-legsR

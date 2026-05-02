@@ -86,6 +86,7 @@
     tags:
     - HamsterWearable
     - WhitelistChameleon
+    - EyeGlasses #Spectra Edit: Added tag for use on a plushie.
 
 - type: entity
   parent: ClothingEyesBase

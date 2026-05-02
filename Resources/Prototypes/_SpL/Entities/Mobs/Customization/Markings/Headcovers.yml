@@ -1,0 +1,108 @@
+#3
+- type: marking 
+  id: BurqaLizard
+  bodyPart: HeadSide
+  markingCategory: HeadSide
+  speciesRestriction: [Reptilian] 
+  sprites:
+  - sprite: _Impstation/Mobs/Customization/headcovers.rsi
+    state: burqalizard
+  
+- type: marking 
+  id: NiqabLizard
+  bodyPart: HeadSide
+  markingCategory: HeadSide
+  speciesRestriction: [Reptilian]
+  sprites:
+  - sprite: _Impstation/Mobs/Customization/headcovers.rsi
+    state: niqablizard
+
+- type: marking 
+  id: HijabChicVox
+  bodyPart: HeadSide
+  markingCategory: HeadSide
+  speciesRestriction: [Vox] 
+  sprites:
+  - sprite: _Impstation/Mobs/Customization/headcovers.rsi
+    state: hijabchicvox
+  
+- type: marking 
+  id: HijabSimpleVox
+  bodyPart: HeadSide
+  markingCategory: HeadSide
+  speciesRestriction: [Vox]
+  sprites:
+  - sprite: _Impstation/Mobs/Customization/headcovers.rsi
+    state: hijabsimplevox
+
+- type: marking 
+  id: TichelFashionableVox
+  bodyPart: HeadSide
+  markingCategory: HeadSide
+  speciesRestriction: [Vox] 
+  sprites:
+  - sprite: _Impstation/Mobs/Customization/headcovers.rsi
+    state: tichelfashionablevox
+  
+- type: marking 
+  id: TichelSimpleVox
+  bodyPart: HeadSide
+  markingCategory: HeadSide
+  speciesRestriction: [Vox]
+  sprites:
+  - sprite: _Impstation/Mobs/Customization/headcovers.rsi
+    state: tichelsimplevox
+
+- type: marking 
+  id: BurqaSolid
+  bodyPart: HeadSide
+  markingCategory: HeadSide
+  speciesRestriction: [Dwarf, Human, Kitsune, Arachnid, Elf, Vulpkanin, Avali, SlimePerson, Shadekin, Moth]
+  sprites:
+  - sprite: _Impstation/Mobs/Customization/headcovers.rsi
+    state: burqasolid
+  
+- type: marking 
+  id: HijabChic
+  bodyPart: HeadSide
+  markingCategory: HeadSide
+  speciesRestriction: [Dwarf, Human, Kitsune, Arachnid, Elf, Vulpkanin, Avali, SlimePerson, Shadekin, Moth]
+  sprites:
+  - sprite: _Impstation/Mobs/Customization/headcovers.rsi
+    state: hijabchic
+
+- type: marking 
+  id: HijabSimple
+  bodyPart: HeadSide
+  markingCategory: HeadSide
+  speciesRestriction: [Dwarf, Human, Kitsune, Arachnid, Elf, Vulpkanin, Avali, SlimePerson, Shadekin, Moth]
+  sprites:
+  - sprite: _Impstation/Mobs/Customization/headcovers.rsi
+    state: hijabsimple
+
+- type: marking 
+  id: Niqab
+  bodyPart: HeadSide
+  markingCategory: HeadSide
+  speciesRestriction: [Dwarf, Human, Kitsune, Arachnid, Elf, Vulpkanin, Avali, SlimePerson, Shadekin, Moth]
+  sprites:
+  - sprite: _Impstation/Mobs/Customization/headcovers.rsi
+    state: niqab
+
+- type: marking 
+  id: TichelFashionable
+  bodyPart: HeadSide
+  markingCategory: HeadSide
+  speciesRestriction: [Dwarf, Human, Kitsune, Arachnid, Elf, Vulpkanin, Avali, SlimePerson, Shadekin, Moth]
+  sprites:
+  - sprite: _Impstation/Mobs/Customization/headcovers.rsi
+    state: tichelfashionable
+
+- type: marking 
+  id: TichelSimple
+  bodyPart: HeadSide
+  markingCategory: HeadSide
+  speciesRestriction: [Dwarf, Human, Kitsune, Arachnid, Elf, Vulpkanin, Avali, SlimePerson, Shadekin, Moth] # Finish time: 3:32 AM
+  sprites:
+  - sprite: _Impstation/Mobs/Customization/headcovers.rsi
+    state: tichelsimple

@@ -1,0 +1,16 @@
+- type: entity
+  parent: BaseActionPolymorph
+  id: ActionPolymorphKitsune
+  name: Fox Polymroph
+  description: Go fox mode.
+  components:
+  - type: Action
+    useDelay: 5
+    icon:
+      sprite: Mobs/Animals/fox.rsi
+      state: fox
+
+  - type: InstantAction
+    event: !type:PolymorphActionEvent
+      protoId: KitsuneMorph
+

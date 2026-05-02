@@ -26,6 +26,11 @@
   <GuideEntityEmbed Entity="MobAvali" Caption="Avali"/>
   <GuideEntityEmbed Entity="MobShadekin" Caption="Shadekin"/>
   <GuideEntityEmbed Entity="MobLagomorph" Caption="Lagomorph"/>
+  <GuideEntityEmbed Entity="MobKitsune" Caption="Kitsune"/>
   </Box>
+  <Box>
+  <GuideEntityEmbed Entity="MobKitsune" Caption="Kitsune"/>
+  </Box>
+
 
 </Document>

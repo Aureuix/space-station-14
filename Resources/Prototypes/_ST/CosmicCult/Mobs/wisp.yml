@@ -88,6 +88,5 @@
         layer:
         - WallLayer
   #region Starlight languages
-  - type: LanguageKnowledge
   - type: UniversalLanguageSpeaker
   #endregion

@@ -1,0 +1,1 @@
+﻿contraband-examine-text-gsl = [color=brown]This item is GSL property! Taking it off station may result in legal action![/color]

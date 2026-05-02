@@ -1,0 +1,144 @@
+#7
+- type: marking 
+  id: BoneArmLeft
+  bodyPart: LArm
+  markingCategory: Arms
+  speciesRestriction: [SlimePerson]
+  sprites:
+  - sprite: _Impstation/Mobs/Customization/slime_parts.rsi
+    state: bonearmleft
+
+- type: marking 
+  id: BoneArmRight
+  bodyPart: RArm
+  markingCategory: Arms
+  speciesRestriction: [SlimePerson]
+  sprites:
+  - sprite: _Impstation/Mobs/Customization/slime_parts.rsi
+    state: bonearmright
+
+- type: marking 
+  id: BoneHandLeft
+  bodyPart: LHand
+  markingCategory: Arms
+  speciesRestriction: [SlimePerson]
+  sprites:
+  - sprite: _Impstation/Mobs/Customization/slime_parts.rsi
+    state: bonearmleft
+
+- type: marking 
+  id: BoneHandRight
+  bodyPart: RHand
+  markingCategory: Arms
+  speciesRestriction: [SlimePerson]
+  sprites:
+  - sprite: _Impstation/Mobs/Customization/slime_parts.rsi
+    state: bonehandright
+
+- type: marking 
+  id: BoneLegRight
+  bodyPart: RLeg
+  markingCategory: Legs
+  speciesRestriction: [SlimePerson]
+  sprites:
+  - sprite: _Impstation/Mobs/Customization/slime_parts.rsi
+    state: bonelegright
+
+- type: marking 
+  id: BoneLegLeft
+  bodyPart: LLeg
+  markingCategory: Legs
+  speciesRestriction: [SlimePerson]
+  sprites:
+  - sprite: _Impstation/Mobs/Customization/slime_parts.rsi
+    state: bonelegleft
+
+- type: marking 
+  id: BoneFootRight
+  bodyPart: RFoot
+  markingCategory: Legs
+  speciesRestriction: [SlimePerson]
+  sprites:
+  - sprite: _Impstation/Mobs/Customization/slime_parts.rsi
+    state: bonefootright
+
+- type: marking 
+  id: BoneFootLeft
+  bodyPart: LFoot
+  markingCategory: Legs
+  speciesRestriction: [SlimePerson]
+  sprites:
+  - sprite: _Impstation/Mobs/Customization/slime_parts.rsi
+    state: bonefootleft
+
+- type: marking 
+  id: BoneChest
+  bodyPart: Chest
+  markingCategory: Chest
+  speciesRestriction: [SlimePerson]
+  sprites:
+  - sprite: _Impstation/Mobs/Customization/slime_parts.rsi
+    state: bonechest
+
+- type: marking 
+  id: BoneHead
+  bodyPart: Head
+  markingCategory: Head
+  speciesRestriction: [SlimePerson]
+  sprites:
+  - sprite: _Impstation/Mobs/Customization/slime_parts.rsi
+    state: bonehead
+
+- type: marking 
+  id: Brain
+  bodyPart: Head
+  markingCategory: Head
+  speciesRestriction: [SlimePerson]
+  sprites:
+  - sprite: _Impstation/Mobs/Customization/slime_parts.rsi
+    state: brain
+
+- type: marking 
+  id: Core
+  bodyPart: Head
+  markingCategory: Head
+  speciesRestriction: [SlimePerson]
+  sprites:
+  - sprite: _Impstation/Mobs/Customization/slime_parts.rsi
+    state: core
+
+- type: marking 
+  id: Lungs
+  bodyPart: Chest
+  markingCategory: Chest
+  speciesRestriction: [SlimePerson]
+  sprites:
+  - sprite: _Impstation/Mobs/Customization/slime_parts.rsi
+    state: lungs
+
+- type: marking 
+  id: Nose
+  bodyPart: Head
+  markingCategory: Head
+  speciesRestriction: [SlimePerson]
+  sprites:
+  - sprite: _Impstation/Mobs/Customization/slime_parts.rsi
+    state: nose
+
+- type: marking 
+  id: Mouth
+  bodyPart: Head
+  markingCategory: Head
+  speciesRestriction: [SlimePerson]
+  sprites:
+  - sprite: _Impstation/Mobs/Customization/slime_parts.rsi
+    state: mouth
+
+- type: marking 
+  id: EyeGlow
+  bodyPart: Head
+  markingCategory: Head
+  speciesRestriction: [SlimePerson]
+  sprites:
+  - sprite: _Impstation/Mobs/Customization/slime_parts.rsi
+    state: eyeglow #done: 5:11PM

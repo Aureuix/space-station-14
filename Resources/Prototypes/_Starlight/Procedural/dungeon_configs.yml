@@ -72,8 +72,8 @@
   table: !type:GroupSelector
     children:
     - id: CableApcExtension
-    - id: WallBrick
-    - id: LandMineExplosive
+    # - id: WallBrick Spectra
+    # - id: LandMineExplosive Spectra
     - id: PoweredSmallLight
 
 - type: entityTable
@@ -82,7 +82,7 @@
     children:
     # Posters
     - id: PosterContrabandEnlistGorlex
-    - id: PosterLegitEnlist
+    # - id: PosterLegitEnlist Spectra
     - id: PosterContrabandFreeDrone
     - id: PosterContrabandFreeSyndicateEncryptionKey
     - id: PosterContrabandSyndicatePistol

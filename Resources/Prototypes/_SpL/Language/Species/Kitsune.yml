@@ -1,0 +1,64 @@
+- type: language
+  id: KitsuneOld
+  icon: LanguageIconVulp
+  chatPrefix: kit
+  speech:
+    color: "#f77c00"
+
+  obfuscation:
+    !type:SyllableObfuscation
+    minSyllables: 2
+    maxSyllables: 4
+    replacement:
+    - a
+    - i
+    - u
+    - e
+    - o
+    - ka
+    - ki
+    - ku
+    - ke
+    - ko
+    - za
+    - si
+    - ji
+    - ja
+    - ju
+    - jo
+    - zu
+    - ze
+    - zo
+    - ta
+    - da
+    - dzi
+    - dzu
+    - dza
+    - dze
+    - te
+    - de
+    - do
+    - to
+    - ha
+    - pa
+    - hi
+    - pi
+    - fu
+    - bu
+    - pu
+    - he
+    - pe
+    - ho
+    - po
+    - me
+    - mo
+    - ra
+    - ri
+    - ru
+    - re
+    - ro
+    - n
+    - we
+    - wu
+    - wo
+    - nn

@@ -1,0 +1,121 @@
+- type: emoteSounds
+  id: MaleKitsune
+  params:
+    variation: 0.125
+  sounds:
+    Scream:
+      path: /Audio/DeltaV/Voice/Kitsune/fox_scream1.ogg
+    Laugh:
+      collection: MaleLaugh
+    Sneeze:
+      collection: MaleSneezes
+    Cough:
+      collection: MaleCoughs
+    CatMeow:
+      collection: CatMeows
+    CatHisses:
+      collection: CatHisses
+    MonkeyScreeches:
+      collection: MonkeyScreeches
+    RobotBeep:
+      collection: RobotBeeps
+    Yawn:
+      collection: MaleYawn
+    Snore:
+      collection: Snores
+    Honk:
+      collection: BikeHorn
+    Sigh:
+      collection: MaleSigh
+    Crying:
+      collection: MaleCry
+    Whistle:
+      collection: Whistles
+    Weh:
+      collection: Weh
+    Hew:
+      collection: Hew
+    Gasp:
+      collection: MaleGasp
+    DefaultDeathgasp:
+      collection: MaleDeathGasp
+    #region Starlight
+    Mew:
+      collection: FelionoidMews
+    Meow:
+      collection: FelionoidMeows
+    Trill:
+      collection: FelionoidTrills
+    Bark:
+      collection: Bark
+    Yip:
+      path: /Audio/_Starlight/Effects/yip.ogg
+    Whine:
+      collection: Whine
+    Growl:
+      path: /Audio/DeltaV/Voice/Kitsune/fox_growl1.ogg
+    Howl:
+      path: /Audio/_Starlight/Effects/howl.ogg
+    Squeak:
+      path: /Audio/DeltaV/Voice/Kitsune/fox_squeal1.ogg
+
+- type: emoteSounds
+  id: FemaleKitsune
+  params:
+    variation: 0.125
+  sounds:
+    Scream:
+      path: /Audio/DeltaV/Voice/Kitsune/fox_scream1.ogg
+    Laugh:
+      collection: FemaleLaugh
+    Sneeze:
+      collection: FemaleSneezes
+    Cough:
+      collection: FemaleCoughs
+    CatMeow:
+      collection: CatMeows
+    CatHisses:
+      collection: CatHisses
+    MonkeyScreeches:
+      collection: MonkeyScreeches
+    RobotBeep:
+      collection: RobotBeeps
+    Yawn:
+      collection: FemaleYawn
+    Snore:
+      collection: Snores
+    Honk:
+      collection: BikeHorn
+    Sigh:
+      collection: FemaleSigh
+    Crying:
+      collection: FemaleCry
+    Whistle:
+      collection: Whistles
+    Weh:
+      collection: Weh
+    Hew:
+      collection: Hew
+    Gasp:
+      collection: FemaleGasp
+    DefaultDeathgasp:
+      collection: FemaleDeathGasp
+    #region Starlight
+    Mew:
+      collection: FelionoidMews
+    Meow:
+      collection: FelionoidMeows
+    Trill:
+      collection: FelionoidTrills
+    Bark:
+      collection: Bark
+    Yip:
+      path: /Audio/_Starlight/Effects/yip.ogg
+    Whine:
+      collection: Whine
+    Growl:
+      path: /Audio/DeltaV/Voice/Kitsune/fox_growl1.ogg
+    Howl:
+      path: /Audio/_Starlight/Effects/howl.ogg
+    Squeak:
+      path: /Audio/DeltaV/Voice/Kitsune/fox_squeal1.ogg

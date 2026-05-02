@@ -1,0 +1,18 @@
+#2
+- type: marking 
+  id: HumanBodyHairFemale
+  bodyPart: Chest
+  markingCategory: Chest
+  speciesRestriction: [Dwarf, Human, Kitsune, Reptilian, Arachnid, Elf, Vulpkanin, Avali, SlimePerson, Shadekin, Moth, Thaven] 
+  sprites:
+  - sprite: _Impstation/Mobs/Customization/bodyhair.rsi
+    state: human_bodyhair_female
+  
+- type: marking 
+  id: HumanBodyHairMale
+  bodyPart: Chest
+  markingCategory: Chest
+  speciesRestriction: [Dwarf, Human, Kitsune, Reptilian, Arachnid, Elf, Vulpkanin, Avali, SlimePerson, Shadekin, Moth, Thaven] # Finish time: 3:22 AM
+  sprites:
+  - sprite: _Impstation/Mobs/Customization/bodyhair.rsi
+    state: human_bodyhair_male

@@ -24,14 +24,17 @@
     - id: SpiderClownSpawn
     - id: SpiderSpawn
     - id: VentClog
-    - id: PsychicScreach # SL
-    - id: SecurityDrill # SL
-    - id: DoorRuntime # SL
-    - id: RadStorm # SL
-    - id: AuroraCaelus # SL
-    - id: SpaceWhale # SL
-    - id: CommunicationBlackout # SL
-    - id: NightShift # SL
+    # Starlight Start
+    #- id: PsychicScreach Spectra: Removing this shit for the 3rd time. Not retyping. Fuck github
+    #- id: SecurityDrill 
+    #- id: DoorRuntime 
+    - id: RadStorm 
+    - id: AuroraCaelus 
+    - id: SpaceWhale 
+    - id: CommunicationBlackout 
+    - id: NightShift 
+    - id: SyndicateDeadDrop
+    # Starlight End
 
 - type: entityTable
   id: BasicAntagEventsTable
@@ -55,7 +58,7 @@
  #   - id: ZombieOutbreak starlight - no more midround zeds
     - id: LoneOpsSpawn
     - id: WizardSpawn
-    - id: AbductorsSpawn # Starlight
+ #   - id: AbductorsSpawn # Starlight Spectra, Removed abductors for now.
     - !type:NestedSelector
       tableId: DerelictBorgEventTable
 
@@ -245,7 +248,7 @@
     duration: null
     earliestStart: 45 # 🌟Starlight🌟 Casualization
     reoccurrenceDelay: 45 # 🌟Starlight🌟 Casualization
-    minimumPlayers: 30
+    minimumPlayers: 25
   - type: SpaceSpawnRule
   - type: AntagLoadProfileRule
   - type: AntagObjectives

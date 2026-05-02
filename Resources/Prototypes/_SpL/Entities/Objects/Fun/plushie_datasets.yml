@@ -1,0 +1,5 @@
+- type: localizedDataset
+  id: PlushiesKosame
+  values:
+    prefix: plushie-kosame-
+    count: 44

@@ -17,9 +17,9 @@
   description: Standard issue NanoTrasen Navy Marine jumpsuit. This one's for an officer.
   components:
   - type: Sprite
-    sprite: _Starlight/Admeme/Clothing/Uniforms/Jumpsuit/ntnc-officer.rsi
+    sprite: _Starlight/Admeme/Clothing/Uniforms/Jumpsuit/ntnc_officer.rsi
   - type: Clothing
-    sprite: _Starlight/Admeme/Clothing/Uniforms/Jumpsuit/ntnc-officer.rsi
+    sprite: _Starlight/Admeme/Clothing/Uniforms/Jumpsuit/ntnc_officer.rsi
 
 - type: entity
   parent: [ ClothingUniformSkirtBase, BaseCentcommContraband ]
@@ -28,6 +28,6 @@
   description: Standard issue NanoTrasen Navy Marine jumpsuit. This one's for an ensign.
   components:
   - type: Sprite
-    sprite: _Starlight/Admeme/Clothing/Uniforms/Jumpsuit/ntnc-officer.rsi
+    sprite: _Starlight/Admeme/Clothing/Uniforms/Jumpsuit/ntnc_officer.rsi
   - type: Clothing
-    sprite: _Starlight/Admeme/Clothing/Uniforms/Jumpsuit/ntnc-officer.rsi
+    sprite: _Starlight/Admeme/Clothing/Uniforms/Jumpsuit/ntnc_officer.rsi

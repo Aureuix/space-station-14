@@ -1,0 +1,9 @@
+- type: damageContainer
+  id: BiologicalMetaphysicalKitsune
+  supportedGroups:
+  - Brute
+  - Burn
+  - Toxin
+  - Airloss
+  - Genetic
+  - Metaphysical

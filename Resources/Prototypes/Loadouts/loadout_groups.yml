@@ -81,7 +81,6 @@
   - ClothWrapGloveTrinket
   - ClothWrapShoeTrinket
   - RollerSkates
-  - LilyFlower
   - RolliePack
   - GoldRing
   - SilverRing
@@ -121,10 +120,10 @@
   - CigPackBub
   - PillCanisterPsicodine
   - ClothingDogTags
-  - Boxblacklight
   - PersonalAI
   - GoldenPersonalAI # Starlight end
   - AACTablet # DeltaV
+  - ClothingKitsuneMask #Spectra
 
 - type: loadoutGroup
   id: Glasses
@@ -621,6 +620,7 @@
   - BibleTorah
   - BibleTripitaka
   - BibleRigVeda # starlight end
+  - BibleHeretic # Spectra
 
 - type: loadoutGroup
   id: JanitorHead

@@ -346,6 +346,7 @@
   - type: SolutionContainerManager
     solutions:
       coal:
+        canReact: false
         reagents:
         - ReagentId: Carbon
           Quantity: 8.4
@@ -357,6 +358,7 @@
           Quantity: 0.2
         - ReagentId: Mercury
           Quantity: 0.1
+        
   - type: PhysicalComposition
     materialComposition:
       Coal: 100

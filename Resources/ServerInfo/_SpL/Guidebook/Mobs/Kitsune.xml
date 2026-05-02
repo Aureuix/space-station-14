@@ -1,0 +1,30 @@
+<Document>
+  # Kitsune
+
+  <Box>
+    <GuideEntityEmbed Entity="MobKitsune" Caption=""/>
+  </Box>
+  
+  A humanoid foxlike species with built in transformative abilities.
+  
+  ## Racial Features
+  - Kitsune are naturally unholy beings, making them able to take Holy damage when hit with holy books.
+  - Kitsune receive [color=#1e90ff]20% less Caustic and Shock damage, 10% less Heat damage, and 25% less Cold damage[/color].
+  - Kitsune are physically smaller and weaker, leading them to take [color=#ffa500]15% more Blunt damage[/color].
+  - Due to their biology being hardwired to allow for transformation into both foxes, and an assortment of other handheld objects at will, Kitsune take [color=#ffa500]20% more Poison and Cellular damage[/color].
+  - Kitsune can form a short lived illusion of any item they hold in their hands, though this disguise tends to be easy to see through by those who look closely. (WIP)
+  - Kitsune deal [color=red]5[/color] Heat damage with their claws.
+
+  ## Fox Transformation
+  Kitsune can shapeshift into a fox to move faster than they can normally move, allowing them to close distance or run away from bad situations.
+  - Kitsune Foxes [color=red]CANNOT[/color] hold items or open access locked doors. They can however, pull a single item with their tail.
+  - Kitsune Foxes deal [color=red]8[/color] Heat damage with their teeth.
+  - Kitsune Foxes take [color=#ffa500]25% more Piercing and Slash damage, and 35% more Blunt damage[/color]. They also share their Caustic and Poison weakness with their regular form.
+  - Kitsune Foxes take [color=#ffa500]100% more Holy damage[/color].
+  - Kitsune keep their languages, actions, and name when turning into a fox. Kitsune cannot use actions that require hands (such as changeling stings), even if they carry over into their fox form.
+  - Kitsune Foxes fall into a critical state at [color=red]80[/color] points of damage, and die at [color=red]160[/color] points of damage.
+
+ ## Actions
+  Kitsune keep all of their actions when turning into their fox form. Antagonist kitsune can use this to do things such as cast Wizard or Vampire spells in their fox form. Remember that your fox form does not have hands, and cannot use actions that require hands, such as stings or spectral blades.
+  (When added!) Kitsune illusions are a great way to hide from security or antagonists, but remember that you must be holding an item to cast an illusion, and will emit a slight glow, visible if you hide in the dark. Getting caught in an illusion could be worse than just running away.
+</Document>

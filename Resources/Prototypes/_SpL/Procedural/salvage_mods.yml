@@ -1,0 +1,17 @@
+- type: salvageBiomeMod
+  id: Shadow
+  desc: salvage-biome-mod-shadow
+  cost: 2
+  biome: Shadow
+  difficulties:
+    - Challenging
+    - Moderate
+    - Easy
+
+- type: salvageWeatherMod
+  id: Fallout
+  desc: salvage-biome-mod-weather-dummy
+  weather: Fallout
+  cost: 1
+  biomes:
+    - LowDesert

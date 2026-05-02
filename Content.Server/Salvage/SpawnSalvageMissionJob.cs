@@ -33,6 +33,10 @@ using Robust.Shared.Random;
 using Robust.Shared.Timing;
 using Robust.Shared.Utility;
 using Content.Server.Shuttles.Components;
+using Content.Server._FarHorizons.Salvage;
+using Content.Shared.Weather;
+using Content.Shared.StatusEffectNew;
+using Content.Shared.StatusEffectNew.Components;
 
 namespace Content.Server.Salvage;
 
@@ -46,6 +50,7 @@ public sealed class SpawnSalvageMissionJob : Job<bool>
     private readonly DungeonSystem _dungeon;
     private readonly MetaDataSystem _metaData;
     private readonly SharedMapSystem _map;
+    [Dependency] private readonly StatusEffectsSystem _statusEffects = default!;
 
     public readonly EntityUid Station;
     public readonly EntityUid? CoordinatesDisk;
@@ -142,6 +147,18 @@ public sealed class SpawnSalvageMissionJob : Job<bool>
             _entManager.System<AtmosphereSystem>().SetMapSpace(mapUid, air.Space, atmos);
             _entManager.System<AtmosphereSystem>().SetMapGasMixture(mapUid, new GasMixture(moles, mission.Temperature), atmos);
 
+            // Far Horizons weather start
+            /*if (!air.Space)
+            {
+                var weather = _prototypeManager.Index(mission.Weather);
+                if (weather.Weather != null)
+                {
+                    var weatherProto = _prototypeManager.Index(weather.Weather);
+                    _entManager.System<SharedWeatherSystem>().TrySetWeather(mapId, weatherProto, _statusEffects.TryEffectsWithComp<WeatherStatusEffectComponent>(mapUid, out var effects), null);
+                }
+            }*/
+            // Far Horisons end
+
             if (mission.Color != null)
             {
                 var lighting = _entManager.EnsureComponent<MapLightComponent>(mapUid);
@@ -158,6 +175,8 @@ public sealed class SpawnSalvageMissionJob : Job<bool>
         expedition.Station = Station;
         expedition.EndTime = _timing.CurTime + mission.Duration;
         expedition.MissionParams = _missionParams;
+        expedition.Objective = mission.Objective; // Far Horizons
+
 
         var landingPadRadius = 24;
         var minDungeonOffset = landingPadRadius + 4;
@@ -285,7 +304,13 @@ public sealed class SpawnSalvageMissionJob : Job<bool>
                     throw new NotImplementedException();
             }
         }
-
+        // Far Horizons start
+        var objective = _prototypeManager.Index(mission.Objective);
+        if (objective.HandlerId != null &&
+            _prototypeManager.TryIndex<SalvageMissionObjectiveHandlerPrototype>(objective.HandlerId, out var handler))
+            handler.Handler?.Run(_sawmill, _entManager, _prototypeManager, random, objective, _anchorable, _map, difficultyProto, dungeon, (mapUid, grid));
+        // Far Horizons end
+            
         return true;
     }
 

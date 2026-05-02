@@ -1,0 +1,17 @@
+- type: speechVerb
+  id: Kitsune
+  name: chat-speech-verb-name-kitsune
+  speechVerbStrings:
+  - chat-speech-verb-kitsune-1
+  - chat-speech-verb-kitsune-2
+  - chat-speech-verb-kitsune-3
+  - chat-speech-verb-kitsune-4
+
+- type: speechVerb
+  id: KitsuneFox
+  name: chat-speech-verb-name-kitsunefox
+  speechVerbStrings:
+  - chat-speech-verb-kitsunefox-1
+  - chat-speech-verb-kitsunefox-2
+  - chat-speech-verb-kitsunefox-3
+  - chat-speech-verb-kitsunefox-4
