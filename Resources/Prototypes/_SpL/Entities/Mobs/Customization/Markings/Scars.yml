@@ -3,7 +3,7 @@
   id: ArmLProsthetic
   bodyPart: LArm
   markingCategory: Arms
-  speciesRestriction: [Dwarf, Human, Reptilian, Arachnid, Elf, Vulpkanin, Avali, SlimePerson, Shadekin, Thaven]
+  speciesRestriction: [Dwarf, Human, Kitsune, Reptilian, Arachnid, Elf, Vulpkanin, Avali, SlimePerson, Shadekin, Thaven]
   sprites:
   - sprite: _Impstation/Mobs/Customization/scars.rsi
     state: arm_l_prosthetic
@@ -12,7 +12,7 @@
   id: ArmLTwisting
   bodyPart: LArm
   markingCategory: Arms
-  speciesRestriction: [Dwarf, Human, Reptilian, Arachnid, Elf, Vulpkanin, Avali, SlimePerson, Shadekin, Thaven]
+  speciesRestriction: [Dwarf, Human, Kitsune, Reptilian, Arachnid, Elf, Vulpkanin, Avali, SlimePerson, Shadekin, Thaven]
   sprites:
   - sprite: _Impstation/Mobs/Customization/scars.rsi
     state: arm_l_twisting
@@ -21,7 +21,7 @@
   id: ArmRProsthetic
   bodyPart: RArm
   markingCategory: Arms
-  speciesRestriction: [Dwarf, Human, Reptilian, Arachnid, Elf, Vulpkanin, Avali, SlimePerson, Shadekin, Thaven]
+  speciesRestriction: [Dwarf, Human, Kitsune, Reptilian, Arachnid, Elf, Vulpkanin, Avali, SlimePerson, Shadekin, Thaven]
   sprites:
   - sprite: _Impstation/Mobs/Customization/scars.rsi
     state: arm_r_prosthetic
@@ -30,7 +30,7 @@
   id: ArmRTwisting
   bodyPart: RArm
   markingCategory: Arms
-  speciesRestriction: [Dwarf, Human, Reptilian, Arachnid, Elf, Vulpkanin, Avali, SlimePerson, Shadekin, Thaven]
+  speciesRestriction: [Dwarf, Human, Kitsune, Reptilian, Arachnid, Elf, Vulpkanin, Avali, SlimePerson, Shadekin, Thaven]
   sprites:
   - sprite: _Impstation/Mobs/Customization/scars.rsi
     state: arm_r_twisting
@@ -39,7 +39,7 @@
   id: ChestRTwisting
   bodyPart: Chest
   markingCategory: Chest
-  speciesRestriction: [Dwarf, Human, Reptilian, Arachnid, Elf, Vulpkanin, Avali, SlimePerson, Shadekin, Thaven]
+  speciesRestriction: [Dwarf, Human, Kitsune, Reptilian, Arachnid, Elf, Vulpkanin, Avali, SlimePerson, Shadekin, Thaven]
   sprites:
   - sprite: _Impstation/Mobs/Customization/scars.rsi
     state: chest_r_twisting
@@ -48,7 +48,7 @@
   id: ChestLTwisting
   bodyPart: Chest
   markingCategory: Chest
-  speciesRestriction: [Dwarf, Human, Reptilian, Arachnid, Elf, Vulpkanin, Avali, SlimePerson, Shadekin, Thaven]
+  speciesRestriction: [Dwarf, Human, Kitsune, Reptilian, Arachnid, Elf, Vulpkanin, Avali, SlimePerson, Shadekin, Thaven]
   sprites:
   - sprite: _Impstation/Mobs/Customization/scars.rsi
     state: chest_l_twisting
@@ -57,7 +57,7 @@
   id: ChestBackstabbed
   bodyPart: Chest
   markingCategory: Chest
-  speciesRestriction: [Dwarf, Human, Reptilian, Arachnid, Elf, Vulpkanin, Avali, SlimePerson, Shadekin, Thaven]
+  speciesRestriction: [Dwarf, Human, Kitsune, Reptilian, Arachnid, Elf, Vulpkanin, Avali, SlimePerson, Shadekin, Thaven]
   sprites:
   - sprite: _Impstation/Mobs/Customization/scars.rsi
     state: chest_backstabbed
@@ -66,7 +66,7 @@
   id: HandLProsthetic
   bodyPart: LHand
   markingCategory: Arms
-  speciesRestriction: [Dwarf, Human, Reptilian, Arachnid, Elf, Vulpkanin, Avali, SlimePerson, Shadekin, Thaven]
+  speciesRestriction: [Dwarf, Human, Kitsune, Reptilian, Arachnid, Elf, Vulpkanin, Avali, SlimePerson, Shadekin, Thaven]
   sprites:
   - sprite: _Impstation/Mobs/Customization/scars.rsi
     state: hand_l_prosthetic
@@ -75,7 +75,7 @@
   id: HandRTwisting
   bodyPart: RHand
   markingCategory: Arms
-  speciesRestriction: [Dwarf, Human, Reptilian, Arachnid, Elf, Vulpkanin, Avali, SlimePerson, Shadekin, Thaven]
+  speciesRestriction: [Dwarf, Human, Kitsune, Reptilian, Arachnid, Elf, Vulpkanin, Avali, SlimePerson, Shadekin, Thaven]
   sprites:
   - sprite: _Impstation/Mobs/Customization/scars.rsi
     state: hand_r_twisting
@@ -84,7 +84,7 @@
   id: HandRProsthetic
   bodyPart: RHand
   markingCategory: Arms
-  speciesRestriction: [Dwarf, Human, Reptilian, Arachnid, Elf, Vulpkanin, Avali, SlimePerson, Shadekin, Thaven]
+  speciesRestriction: [Dwarf, Human, Kitsune, Reptilian, Arachnid, Elf, Vulpkanin, Avali, SlimePerson, Shadekin, Thaven]
   sprites:
   - sprite: _Impstation/Mobs/Customization/scars.rsi
     state: hand_r_prosthetic
@@ -93,7 +93,7 @@
   id: HandLTwisting
   bodyPart: LHand
   markingCategory: Arms
-  speciesRestriction: [Dwarf, Human, Reptilian, Arachnid, Elf, Vulpkanin, Avali, SlimePerson, Shadekin, Thaven]
+  speciesRestriction: [Dwarf, Human, Kitsune, Reptilian, Arachnid, Elf, Vulpkanin, Avali, SlimePerson, Shadekin, Thaven]
   sprites:
   - sprite: _Impstation/Mobs/Customization/scars.rsi
     state: hand_l_twisting
@@ -102,7 +102,7 @@
   id: ChestStar
   bodyPart: Chest
   markingCategory: Chest
-  speciesRestriction: [Dwarf, Human, Reptilian, Arachnid, Elf, Vulpkanin, Avali, SlimePerson, Shadekin, Thaven]
+  speciesRestriction: [Dwarf, Human, Kitsune, Reptilian, Arachnid, Elf, Vulpkanin, Avali, SlimePerson, Shadekin, Thaven]
   sprites:
   - sprite: _Impstation/Mobs/Customization/scars.rsi
     state: chest_star
@@ -111,7 +111,7 @@
   id: FootLProsthetic
   bodyPart: LFoot
   markingCategory: Legs
-  speciesRestriction: [Dwarf, Human, Reptilian, Arachnid, Elf, Vulpkanin, Avali, SlimePerson, Shadekin, Thaven]
+  speciesRestriction: [Dwarf, Human, Kitsune, Reptilian, Arachnid, Elf, Vulpkanin, Avali, SlimePerson, Shadekin, Thaven]
   sprites:
   - sprite: _Impstation/Mobs/Customization/scars.rsi
     state: foot_l_prosthetic
@@ -121,7 +121,7 @@
   id: FootRProsthetic
   bodyPart: RFoot
   markingCategory: Legs
-  speciesRestriction: [Dwarf, Human, Reptilian, Arachnid, Elf, Vulpkanin, Avali, SlimePerson, Shadekin, Thaven]
+  speciesRestriction: [Dwarf, Human, Kitsune, Reptilian, Arachnid, Elf, Vulpkanin, Avali, SlimePerson, Shadekin, Thaven]
   sprites:
   - sprite: _Impstation/Mobs/Customization/scars.rsi
     state: foot_r_prosthetic
@@ -131,7 +131,7 @@
   id: LegRProsthetic
   bodyPart: RLeg
   markingCategory: Legs
-  speciesRestriction: [Dwarf, Human, Reptilian, Arachnid, Elf, Vulpkanin, Avali, SlimePerson, Shadekin, Thaven]
+  speciesRestriction: [Dwarf, Human, Kitsune, Reptilian, Arachnid, Elf, Vulpkanin, Avali, SlimePerson, Shadekin, Thaven]
   sprites:
   - sprite: _Impstation/Mobs/Customization/scars.rsi
     state: leg_r_prosthetic
@@ -140,7 +140,7 @@
   id: LegLTwisting
   bodyPart: LLeg
   markingCategory: Legs
-  speciesRestriction: [Dwarf, Human, Reptilian, Arachnid, Elf, Vulpkanin, Avali, SlimePerson, Shadekin, Thaven]
+  speciesRestriction: [Dwarf, Human, Kitsune, Reptilian, Arachnid, Elf, Vulpkanin, Avali, SlimePerson, Shadekin, Thaven]
   sprites:
   - sprite: _Impstation/Mobs/Customization/scars.rsi
     state: leg_l_twisting
@@ -149,7 +149,7 @@
   id: LegLProsthetic
   bodyPart: LLeg
   markingCategory: Legs
-  speciesRestriction: [Dwarf, Human, Reptilian, Arachnid, Elf, Vulpkanin, Avali, SlimePerson, Shadekin, Thaven]
+  speciesRestriction: [Dwarf, Human, Kitsune, Reptilian, Arachnid, Elf, Vulpkanin, Avali, SlimePerson, Shadekin, Thaven]
   sprites:
   - sprite: _Impstation/Mobs/Customization/scars.rsi
     state: leg_l_prosthetic
@@ -158,7 +158,7 @@
   id: LegRTwisting
   bodyPart: RLeg
   markingCategory: Legs
-  speciesRestriction: [Dwarf, Human, Reptilian, Arachnid, Elf, Vulpkanin, Avali, SlimePerson, Shadekin, Thaven]
+  speciesRestriction: [Dwarf, Human, Kitsune, Reptilian, Arachnid, Elf, Vulpkanin, Avali, SlimePerson, Shadekin, Thaven]
   sprites:
   - sprite: _Impstation/Mobs/Customization/scars.rsi
     state: leg_r_twisting
@@ -167,7 +167,7 @@
   id: HeadSmile
   bodyPart: Head
   markingCategory: Head
-  speciesRestriction: [Dwarf, Human, Reptilian, Arachnid, Elf, Vulpkanin, Avali, SlimePerson, Shadekin, Thaven]
+  speciesRestriction: [Dwarf, Human, Kitsune, Reptilian, Arachnid, Elf, Vulpkanin, Avali, SlimePerson, Shadekin, Thaven]
   sprites:
   - sprite: _Impstation/Mobs/Customization/scars.rsi
     state: head_smile
@@ -176,7 +176,7 @@
   id: HeadTwisting
   bodyPart: Head
   markingCategory: Head
-  speciesRestriction: [Dwarf, Human, Reptilian, Arachnid, Elf, Vulpkanin, Avali, SlimePerson, Shadekin, Thaven]
+  speciesRestriction: [Dwarf, Human, Kitsune, Reptilian, Arachnid, Elf, Vulpkanin, Avali, SlimePerson, Shadekin, Thaven]
   sprites:
   - sprite: _Impstation/Mobs/Customization/scars.rsi
     state: head_twisting
@@ -185,7 +185,7 @@
   id: TorsoIncision
   bodyPart: Chest
   markingCategory: Chest
-  speciesRestriction: [Dwarf, Human, Reptilian, Arachnid, Elf, Vulpkanin, Avali, SlimePerson, Shadekin, Thaven] #done 4:25 PM
+  speciesRestriction: [Dwarf, Human, Kitsune, Reptilian, Arachnid, Elf, Vulpkanin, Avali, SlimePerson, Shadekin, Thaven] #done 4:25 PM
   sprites:
   - sprite: _Impstation/Mobs/Customization/scars.rsi
     state: torso_incision

@@ -1,0 +1,10 @@
+- type: polymorph
+  id: KitsuneMorph
+  configuration:
+    entity: MobFoxKitsune
+    forced: false
+    transferName: true
+    revertOnCrit: false
+    revertOnDeath: true
+    allowRepeatedMorphs: true
+    transferDamage: true

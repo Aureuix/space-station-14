@@ -57,7 +57,7 @@
   id: BurqaSolid
   bodyPart: HeadSide
   markingCategory: HeadSide
-  speciesRestriction: [Dwarf, Human, Arachnid, Elf, Vulpkanin, Avali, SlimePerson, Shadekin, Moth]
+  speciesRestriction: [Dwarf, Human, Kitsune, Arachnid, Elf, Vulpkanin, Avali, SlimePerson, Shadekin, Moth]
   sprites:
   - sprite: _Impstation/Mobs/Customization/headcovers.rsi
     state: burqasolid
@@ -66,7 +66,7 @@
   id: HijabChic
   bodyPart: HeadSide
   markingCategory: HeadSide
-  speciesRestriction: [Dwarf, Human, Arachnid, Elf, Vulpkanin, Avali, SlimePerson, Shadekin, Moth]
+  speciesRestriction: [Dwarf, Human, Kitsune, Arachnid, Elf, Vulpkanin, Avali, SlimePerson, Shadekin, Moth]
   sprites:
   - sprite: _Impstation/Mobs/Customization/headcovers.rsi
     state: hijabchic
@@ -75,7 +75,7 @@
   id: HijabSimple
   bodyPart: HeadSide
   markingCategory: HeadSide
-  speciesRestriction: [Dwarf, Human, Arachnid, Elf, Vulpkanin, Avali, SlimePerson, Shadekin, Moth]
+  speciesRestriction: [Dwarf, Human, Kitsune, Arachnid, Elf, Vulpkanin, Avali, SlimePerson, Shadekin, Moth]
   sprites:
   - sprite: _Impstation/Mobs/Customization/headcovers.rsi
     state: hijabsimple
@@ -84,7 +84,7 @@
   id: Niqab
   bodyPart: HeadSide
   markingCategory: HeadSide
-  speciesRestriction: [Dwarf, Human, Arachnid, Elf, Vulpkanin, Avali, SlimePerson, Shadekin, Moth]
+  speciesRestriction: [Dwarf, Human, Kitsune, Arachnid, Elf, Vulpkanin, Avali, SlimePerson, Shadekin, Moth]
   sprites:
   - sprite: _Impstation/Mobs/Customization/headcovers.rsi
     state: niqab
@@ -93,7 +93,7 @@
   id: TichelFashionable
   bodyPart: HeadSide
   markingCategory: HeadSide
-  speciesRestriction: [Dwarf, Human, Arachnid, Elf, Vulpkanin, Avali, SlimePerson, Shadekin, Moth]
+  speciesRestriction: [Dwarf, Human, Kitsune, Arachnid, Elf, Vulpkanin, Avali, SlimePerson, Shadekin, Moth]
   sprites:
   - sprite: _Impstation/Mobs/Customization/headcovers.rsi
     state: tichelfashionable
@@ -102,7 +102,7 @@
   id: TichelSimple
   bodyPart: HeadSide
   markingCategory: HeadSide
-  speciesRestriction: [Dwarf, Human, Arachnid, Elf, Vulpkanin, Avali, SlimePerson, Shadekin, Moth] # Finish time: 3:32 AM
+  speciesRestriction: [Dwarf, Human, Kitsune, Arachnid, Elf, Vulpkanin, Avali, SlimePerson, Shadekin, Moth] # Finish time: 3:32 AM
   sprites:
   - sprite: _Impstation/Mobs/Customization/headcovers.rsi
     state: tichelsimple

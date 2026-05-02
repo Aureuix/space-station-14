@@ -1,0 +1,75 @@
+- type: language
+  id: CHaet
+  icon: LanguageIconVulp
+  chatPrefix: cha
+
+  
+  speech:
+    color: "#f77c00"
+    obfuscationFont: true
+    fontId: CHaet
+
+  obfuscation:
+    !type:SyllableObfuscation
+    minSyllables: 1
+    maxSyllables: 3
+    replacement:
+    - ki
+    - ko 
+    - ri
+    - ron
+    - ro
+    - a
+    - æt
+    - æk
+    - æy
+    - ka
+    - ken
+    - kæ
+    - kiin
+    - sen
+    - so
+    - sin
+    - si
+    - sun
+    - so
+    - gjaa
+    - te
+    - to
+    - ta
+    - tai
+    - tæ
+    - te
+    - tek
+    - zæn
+    - zo
+    - zon
+    - ñion
+    - æn
+    - et
+    - ñi
+    - ñii
+    - ñæ
+    - ñe
+    - ñen
+    - ñee
+    - ñoo
+    - ce
+    - cæt
+    - ci
+    - co
+    - goo
+    - gon
+    - gyaa
+    - ga
+    - yo
+    - ye
+    - yaa
+    - yæ
+    - ne
+    - næ
+    - ni
+    - no
+    - xi
+    - xan 
+    - o

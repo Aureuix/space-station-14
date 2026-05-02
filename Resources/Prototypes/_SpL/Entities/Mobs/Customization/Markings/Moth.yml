@@ -192,7 +192,7 @@
   id: HeadBadMoltMoth
   bodyPart: Head
   markingCategory: Head
-  speciesRestriction: [Dwarf, Human, Reptilian, Arachnid, Elf, Vulpkanin, Avali, SlimePerson, Shadekin, Moth]
+  speciesRestriction: [Dwarf, Human, Kitsune, Reptilian, Arachnid, Elf, Vulpkanin, Avali, SlimePerson, Shadekin, Moth]
   sprites:
   - sprite: _Impstation/Mobs/Customization/moth.rsi
     state: head_badmolt_moth

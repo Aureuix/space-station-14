@@ -5,7 +5,7 @@
   id: UndergarmentBottomBoxers
   bodyPart: UndergarmentBottom
   markingCategory: UndergarmentBottom
-  speciesRestriction: [Arachnid, Diona, Human, Dwarf, Moth, SlimePerson, Shadekin, Elf] # Starlight Edit: Add Shadekin and Elf
+  speciesRestriction: [Arachnid, Diona, Human, Dwarf, Moth, SlimePerson, Shadekin, Elf] # Starlight Edit: Add Shadekin and Elf #Spectra Added kitsune
   coloring:
     default:
       type: null
@@ -18,7 +18,7 @@
   id: UndergarmentBottomBriefs
   bodyPart: UndergarmentBottom
   markingCategory: UndergarmentBottom
-  speciesRestriction: [Arachnid, Diona, Human, Dwarf, Moth, SlimePerson, Shadekin, Elf] # Starlight Edit: Add Shadekin and Elf
+  speciesRestriction: [Arachnid, Diona, Human, Dwarf, Moth, SlimePerson, Shadekin, Elf] # Starlight Edit: Add Shadekin and Elf #Spectra Added kitsune
   coloring:
     default:
       type: null
@@ -31,7 +31,7 @@
   id: UndergarmentBottomSatin
   bodyPart: UndergarmentBottom
   markingCategory: UndergarmentBottom
-  speciesRestriction: [Arachnid, Diona, Human, Dwarf, Moth, SlimePerson, Shadekin, Elf] # Starlight Edit: Add Shadekin and Elf
+  speciesRestriction: [Arachnid, Diona, Human, Dwarf, Moth, SlimePerson, Shadekin, Elf] # Starlight Edit: Add Shadekin and Elf #Spectra Added kitsune
   coloring:
     default:
       type: null

@@ -29,6 +29,7 @@
       - Grumbakul
       - Aielic
       - Lagomorphian
+      - CHaet
 
 - type: entity
   id: BaseBorgiLanguages
@@ -63,6 +64,7 @@
       - Grumbakul
       - Aielic
       - Lagomorphian
+      - CHaet
 
 - type: entity
   id: BaseSiliconBrainLanguages

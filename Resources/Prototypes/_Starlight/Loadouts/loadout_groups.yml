@@ -8,6 +8,7 @@
   - InsulsCombat
   - InsulsMercenary
   - InsulsScrapper
+  - InsulsTacticalMaid #Spectra
 
 - type: loadoutGroup
   id: InsulsCombat
@@ -19,6 +20,7 @@
   - InsulsRegular
   - InsulsMercenary
   - InsulsScrapper
+  - InsulsTacticalMaid #Spectra
 
 - type: loadoutGroup
   id: InsulsCaptain
@@ -31,6 +33,7 @@
   - InsulsCombat
   - InsulsMercenary
   - InsulsScrapper
+  - InsulsTacticalMaid #Spectra
 
 - type: loadoutGroup
   id: Scarves

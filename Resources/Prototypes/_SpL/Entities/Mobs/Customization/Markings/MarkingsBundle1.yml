@@ -5,7 +5,7 @@
   id: DionaMoonBloom
   bodyPart: Head
   markingCategory: Head
-  speciesRestriction: [Dwarf, Human, Reptilian, Arachnid, Elf, Vulpkanin, Avali, SlimePerson, Shadekin, Moth, Thaven] 
+  speciesRestriction: [Dwarf, Human, Kitsune, Reptilian, Arachnid, Elf, Vulpkanin, Avali, SlimePerson, Shadekin, Moth, Thaven] 
   sprites:
   - sprite: _Impstation/Mobs/Customization/markingsbundle.rsi
     state: dionamoonbloom
@@ -14,7 +14,7 @@
   id: DionaMossChest
   bodyPart: Chest
   markingCategory: Chest
-  speciesRestriction: [Dwarf, Human, Reptilian, Arachnid, Elf, Vulpkanin, Avali, SlimePerson, Shadekin, Moth, Thaven]
+  speciesRestriction: [Dwarf, Human, Kitsune, Reptilian, Arachnid, Elf, Vulpkanin, Avali, SlimePerson, Shadekin, Moth, Thaven]
   sprites:
   - sprite: _Impstation/Mobs/Customization/markingsbundle.rsi
     state: dionamosschest
@@ -23,7 +23,7 @@
   id: DwarfArmHair
   bodyPart: LArm
   markingCategory: Arms
-  speciesRestriction: [Dwarf, Human, Reptilian, Arachnid, Elf, Vulpkanin, Avali, SlimePerson, Shadekin, Moth, Thaven] 
+  speciesRestriction: [Dwarf, Human, Kitsune, Reptilian, Arachnid, Elf, Vulpkanin, Avali, SlimePerson, Shadekin, Moth, Thaven] 
   sprites:
   - sprite: _Impstation/Mobs/Customization/markingsbundle.rsi
     state: dwarfarmhair
@@ -32,7 +32,7 @@
   id: DwarfBearCheeks
   bodyPart: Head
   markingCategory: Head
-  speciesRestriction: [Dwarf, Human, Reptilian, Arachnid, Elf, Vulpkanin, Avali, SlimePerson, Shadekin, Moth, Thaven] 
+  speciesRestriction: [Dwarf, Human, Kitsune, Reptilian, Arachnid, Elf, Vulpkanin, Avali, SlimePerson, Shadekin, Moth, Thaven] 
   sprites:
   - sprite: _Impstation/Mobs/Customization/markingsbundle.rsi
     state: dwarfbearcheeks
@@ -41,7 +41,7 @@
   id: DwarfChestHair
   bodyPart: Chest
   markingCategory: Chest
-  speciesRestriction: [Dwarf, Human, Reptilian, Arachnid, Elf, Vulpkanin, Avali, SlimePerson, Shadekin, Moth, Thaven] # Listening to cacola rn
+  speciesRestriction: [Dwarf, Human, Kitsune, Reptilian, Arachnid, Elf, Vulpkanin, Avali, SlimePerson, Shadekin, Moth, Thaven] # Listening to cacola rn
   sprites:
   - sprite: _Impstation/Mobs/Customization/markingsbundle.rsi
     state: dwarfchesthair
@@ -50,7 +50,7 @@
   id: DwarfLegHair
   bodyPart: LLeg
   markingCategory: Legs
-  speciesRestriction: [Dwarf, Human, Reptilian, Arachnid, Elf, Vulpkanin, Avali, SlimePerson, Shadekin, Moth, Thaven] 
+  speciesRestriction: [Dwarf, Human, Kitsune, Reptilian, Arachnid, Elf, Vulpkanin, Avali, SlimePerson, Shadekin, Moth, Thaven] 
   sprites:
   - sprite: _Impstation/Mobs/Customization/markingsbundle.rsi
     state: dwarfleghair
@@ -59,7 +59,7 @@
   id: DwarfTattooShootingStar
   bodyPart: Chest
   markingCategory: Chest
-  speciesRestriction: [Dwarf, Human, Reptilian, Arachnid, Elf, Vulpkanin, Avali, SlimePerson, Shadekin, Moth, Thaven] 
+  speciesRestriction: [Dwarf, Human, Kitsune, Reptilian, Arachnid, Elf, Vulpkanin, Avali, SlimePerson, Shadekin, Moth, Thaven] 
   sprites:
   - sprite: _Impstation/Mobs/Customization/markingsbundle.rsi
     state: dwarftattooshootingstar
@@ -68,20 +68,7 @@
   id: Bee
   bodyPart: Tail
   markingCategory: Tail
-  speciesRestriction: [Dwarf, Human, Reptilian, Arachnid, Elf, Vulpkanin, Avali, SlimePerson, Shadekin, Moth, Thaven] 
-  sprites:
-  - sprite: _Impstation/Mobs/Customization/markingsbundle.rsi
-    state: bee1
-  - sprite: _Impstation/Mobs/Customization/markingsbundle.rsi
-    state: bee2
-  - sprite: _Impstation/Mobs/Customization/markingsbundle.rsi
-    state: bee3
-
-- type: marking 
-  id: Bee
-  bodyPart: Tail
-  markingCategory: Tail
-  speciesRestriction: [Dwarf, Human, Reptilian, Arachnid, Elf, Vulpkanin, Avali, SlimePerson, Shadekin, Moth, Thaven] 
+  speciesRestriction: [Dwarf, Human, Kitsune, Reptilian, Arachnid, Elf, Vulpkanin, Avali, SlimePerson, Shadekin, Moth, Thaven] 
   sprites:
   - sprite: _Impstation/Mobs/Customization/markingsbundle.rsi
     state: bee1
@@ -94,7 +81,7 @@
   id: Beetle
   bodyPart: Tail
   markingCategory: Tail
-  speciesRestriction: [Dwarf, Human, Reptilian, Arachnid, Elf, Vulpkanin, Avali, SlimePerson, Shadekin, Moth, Thaven] 
+  speciesRestriction: [Dwarf, Human, Kitsune, Reptilian, Arachnid, Elf, Vulpkanin, Avali, SlimePerson, Shadekin, Moth, Thaven] 
   sprites:
   - sprite: _Impstation/Mobs/Customization/markingsbundle.rsi
     state: beetle1
@@ -107,7 +94,7 @@
   id: GlassWing
   bodyPart: Tail
   markingCategory: Tail
-  speciesRestriction: [Dwarf, Human, Reptilian, Arachnid, Elf, Vulpkanin, Avali, SlimePerson, Shadekin, Moth, Thaven] 
+  speciesRestriction: [Dwarf, Human, Kitsune, Reptilian, Arachnid, Elf, Vulpkanin, Avali, SlimePerson, Shadekin, Moth, Thaven] 
   sprites:
   - sprite: _Impstation/Mobs/Customization/markingsbundle.rsi
     state: glasswing1
@@ -120,7 +107,7 @@
   id: MothBeetleHorn1
   bodyPart: HeadTop
   markingCategory: HeadTop
-  speciesRestriction: [Dwarf, Human, Reptilian, Arachnid, Elf, Vulpkanin, Avali, SlimePerson, Shadekin, Moth, Thaven] # 4 am mark
+  speciesRestriction: [Dwarf, Human, Kitsune, Reptilian, Arachnid, Elf, Vulpkanin, Avali, SlimePerson, Shadekin, Moth, Thaven] # 4 am mark
   sprites:
   - sprite: _Impstation/Mobs/Customization/markingsbundle.rsi
     state: mothbeetlehorn1
@@ -129,7 +116,7 @@
   id: MothBeetleHorn2
   bodyPart: HeadTop
   markingCategory: HeadTop
-  speciesRestriction: [Dwarf, Human, Reptilian, Arachnid, Elf, Vulpkanin, Avali, SlimePerson, Shadekin, Moth, Thaven] 
+  speciesRestriction: [Dwarf, Human, Kitsune, Reptilian, Arachnid, Elf, Vulpkanin, Avali, SlimePerson, Shadekin, Moth, Thaven] 
   sprites:
   - sprite: _Impstation/Mobs/Customization/markingsbundle.rsi
     state: mothbeetlehorn2
@@ -138,7 +125,7 @@
   id: MothBiggerEyes
   bodyPart: Head
   markingCategory: Head
-  speciesRestriction: [Dwarf, Human, Reptilian, Arachnid, Elf, Vulpkanin, Avali, SlimePerson, Shadekin, Moth, Thaven] 
+  speciesRestriction: [Dwarf, Human, Kitsune, Reptilian, Arachnid, Elf, Vulpkanin, Avali, SlimePerson, Shadekin, Moth, Thaven] 
   sprites:
   - sprite: _Impstation/Mobs/Customization/markingsbundle.rsi
     state: mothbiggereyes
@@ -147,7 +134,7 @@
   id: MothTrueButterfly
   bodyPart: Tail
   markingCategory: Tail
-  speciesRestriction: [Dwarf, Human, Reptilian, Arachnid, Elf, Vulpkanin, Avali, SlimePerson, Shadekin, Moth, Thaven] 
+  speciesRestriction: [Dwarf, Human, Kitsune, Reptilian, Arachnid, Elf, Vulpkanin, Avali, SlimePerson, Shadekin, Moth, Thaven] 
   sprites:
   - sprite: _Impstation/Mobs/Customization/markingsbundle.rsi
     state: mothtruebutterfly1
@@ -160,7 +147,7 @@
   id: RhinoBeetle
   bodyPart: Tail
   markingCategory: Tail
-  speciesRestriction: [Dwarf, Human, Reptilian, Arachnid, Elf, Vulpkanin, Avali, SlimePerson, Shadekin, Moth, Thaven] 
+  speciesRestriction: [Dwarf, Human, Kitsune, Reptilian, Arachnid, Elf, Vulpkanin, Avali, SlimePerson, Shadekin, Moth, Thaven] 
   sprites:
   - sprite: _Impstation/Mobs/Customization/markingsbundle.rsi
     state: rhinobeetle1
@@ -173,7 +160,7 @@
   id: Snoth
   bodyPart: Tail
   markingCategory: Tail
-  speciesRestriction: [Dwarf, Human, Reptilian, Arachnid, Elf, Vulpkanin, Avali, SlimePerson, Shadekin, Moth, Thaven] # End time 2/24/2026 4:25 AM
+  speciesRestriction: [Dwarf, Human, Kitsune, Reptilian, Arachnid, Elf, Vulpkanin, Avali, SlimePerson, Shadekin, Moth, Thaven] # End time 2/24/2026 4:25 AM
   sprites:
   - sprite: _Impstation/Mobs/Customization/markingsbundle.rsi
     state: snoth1
@@ -184,7 +171,7 @@
 #  id: SpiderEyesMulti
 #  bodyPart: Head
 #  markingCategory: Head
-#  speciesRestriction: [Dwarf, Human, Reptilian, Arachnid, Elf, Vulpkanin, Avali, SlimePerson, Shadekin, Moth, Thaven] 
+#  speciesRestriction: [Dwarf, Human, Kitsune, Reptilian, Arachnid, Elf, Vulpkanin, Avali, SlimePerson, Shadekin, Moth, Thaven] 
 #  sprites:
 #  - sprite: _Impstation/Mobs/Customization/markingsbundle.rsi
 #    state: spidereyesmulti1
@@ -199,7 +186,7 @@
 #  id: SpiderGloweyes
 #  bodyPart: Head
 #  markingCategory: Head
-#  speciesRestriction: [Dwarf, Human, Reptilian, Arachnid, Elf, Vulpkanin, Avali, SlimePerson, Shadekin, Moth, Thaven] 
+#  speciesRestriction: [Dwarf, Human, Kitsune, Reptilian, Arachnid, Elf, Vulpkanin, Avali, SlimePerson, Shadekin, Moth, Thaven] 
 #  sprites:
 #  - sprite: _Impstation/Mobs/Customization/markingsbundle.rsi
 #    state: spidergloweyes
@@ -208,7 +195,7 @@
   id: VitiligoArmR # Start time. 2/24/2026 2:21 PM
   bodyPart: RArm
   markingCategory: Arms
-  speciesRestriction: [Dwarf, Human, Reptilian, Arachnid, Elf, Vulpkanin, Avali, SlimePerson, Shadekin, Moth, Thaven]
+  speciesRestriction: [Dwarf, Human, Kitsune, Reptilian, Arachnid, Elf, Vulpkanin, Avali, SlimePerson, Shadekin, Moth, Thaven]
   sprites:
   - sprite: _Impstation/Mobs/Customization/markingsbundle.rsi
     state: vitiligoarmr
@@ -217,7 +204,7 @@
   id: VitiligoChestF
   bodyPart: Chest
   markingCategory: Chest
-  speciesRestriction: [Dwarf, Human, Reptilian, Arachnid, Elf, Vulpkanin, Avali, SlimePerson, Shadekin, Moth, Thaven]
+  speciesRestriction: [Dwarf, Human, Kitsune, Reptilian, Arachnid, Elf, Vulpkanin, Avali, SlimePerson, Shadekin, Moth, Thaven]
   sprites:
   - sprite: _Impstation/Mobs/Customization/markingsbundle.rsi
     state: vitiligochestf
@@ -226,7 +213,7 @@
   id: VitiligoChestSpots
   bodyPart: Chest
   markingCategory: Chest
-  speciesRestriction: [Dwarf, Human, Reptilian, Arachnid, Elf, Vulpkanin, Avali, SlimePerson, Shadekin, Moth, Thaven]
+  speciesRestriction: [Dwarf, Human, Kitsune, Reptilian, Arachnid, Elf, Vulpkanin, Avali, SlimePerson, Shadekin, Moth, Thaven]
   sprites:
   - sprite: _Impstation/Mobs/Customization/markingsbundle.rsi
     state: vitiligochestspots
@@ -235,7 +222,7 @@
   id: VitiligoHandR
   bodyPart: RHand
   markingCategory: Arms
-  speciesRestriction: [Dwarf, Human, Reptilian, Arachnid, Elf, Vulpkanin, Avali, SlimePerson, Shadekin, Moth, Thaven]
+  speciesRestriction: [Dwarf, Human, Kitsune, Reptilian, Arachnid, Elf, Vulpkanin, Avali, SlimePerson, Shadekin, Moth, Thaven]
   sprites:
   - sprite: _Impstation/Mobs/Customization/markingsbundle.rsi
     state: vitiligohandr
@@ -244,7 +231,7 @@
   id: VitiligoHandL
   bodyPart: LHand
   markingCategory: Arms
-  speciesRestriction: [Dwarf, Human, Reptilian, Arachnid, Elf, Vulpkanin, Avali, SlimePerson, Shadekin, Moth, Thaven]
+  speciesRestriction: [Dwarf, Human, Kitsune, Reptilian, Arachnid, Elf, Vulpkanin, Avali, SlimePerson, Shadekin, Moth, Thaven]
   sprites:
   - sprite: _Impstation/Mobs/Customization/markingsbundle.rsi
     state: vitiligohandl
@@ -253,7 +240,7 @@
   id: VitiligoHeadJaw
   bodyPart: Head
   markingCategory: Head
-  speciesRestriction: [Dwarf, Human, Reptilian, Arachnid, Elf, Vulpkanin, Avali, SlimePerson, Shadekin, Moth, Thaven]
+  speciesRestriction: [Dwarf, Human, Kitsune, Reptilian, Arachnid, Elf, Vulpkanin, Avali, SlimePerson, Shadekin, Moth, Thaven]
   sprites:
   - sprite: _Impstation/Mobs/Customization/markingsbundle.rsi
     state: vitiligoheadjaw
@@ -262,7 +249,7 @@
   id: VitiligoHeadR
   bodyPart: Head
   markingCategory: Head
-  speciesRestriction: [Dwarf, Human, Reptilian, Arachnid, Elf, Vulpkanin, Avali, SlimePerson, Shadekin, Moth, Thaven]
+  speciesRestriction: [Dwarf, Human, Kitsune, Reptilian, Arachnid, Elf, Vulpkanin, Avali, SlimePerson, Shadekin, Moth, Thaven]
   sprites:
   - sprite: _Impstation/Mobs/Customization/markingsbundle.rsi
     state: vitiligoheadr
@@ -271,7 +258,7 @@
   id: VitiligoHeadl
   bodyPart: Head
   markingCategory: Head
-  speciesRestriction: [Dwarf, Human, Reptilian, Arachnid, Elf, Vulpkanin, Avali, SlimePerson, Shadekin, Moth, Thaven]
+  speciesRestriction: [Dwarf, Human, Kitsune, Reptilian, Arachnid, Elf, Vulpkanin, Avali, SlimePerson, Shadekin, Moth, Thaven]
   sprites:
   - sprite: _Impstation/Mobs/Customization/markingsbundle.rsi
     state: vitiligoheadl
@@ -280,7 +267,7 @@
   id: VitiligoLegR
   bodyPart: RLeg
   markingCategory: Legs
-  speciesRestriction: [Dwarf, Human, Reptilian, Arachnid, Elf, Vulpkanin, Avali, SlimePerson, Shadekin, Moth, Thaven]
+  speciesRestriction: [Dwarf, Human, Kitsune, Reptilian, Arachnid, Elf, Vulpkanin, Avali, SlimePerson, Shadekin, Moth, Thaven]
   sprites:
   - sprite: _Impstation/Mobs/Customization/markingsbundle.rsi
     state: vitiligolegr
@@ -289,7 +276,7 @@
   id: VitiligoLegL
   bodyPart: LLeg
   markingCategory: Legs
-  speciesRestriction: [Dwarf, Human, Reptilian, Arachnid, Elf, Vulpkanin, Avali, SlimePerson, Shadekin, Moth, Thaven]
+  speciesRestriction: [Dwarf, Human, Kitsune, Reptilian, Arachnid, Elf, Vulpkanin, Avali, SlimePerson, Shadekin, Moth, Thaven]
   sprites:
   - sprite: _Impstation/Mobs/Customization/markingsbundle.rsi
     state: vitiligolegl
@@ -503,17 +490,17 @@
 
 - type: marking 
   id: VoxSunAndMoon
-  bodyPart: Overlay
-  markingCategory: Tail
-  speciesRestriction: [Vox, Dwarf, Human, Reptilian, Arachnid, Elf, Vulpkanin, Avali, SlimePerson, Shadekin, Moth, Thaven]
+  bodyPart: Tail
+  markingCategory: Overlay
+  speciesRestriction: [Vox, Dwarf, Human, Kitsune, Reptilian, Arachnid, Elf, Vulpkanin, Avali, SlimePerson, Shadekin, Moth, Thaven]
   sprites:
   - sprite: _Impstation/Mobs/Customization/markingsbundle.rsi
     state: voxsunandmoon
 
 - type: marking 
   id: VoxTailBalled
-  bodyPart: Overlay
-  markingCategory: Tail
+  bodyPart: Tail
+  markingCategory: Overlay
   speciesRestriction: [Vox]
   sprites:
   - sprite: _Impstation/Mobs/Customization/markingsbundle.rsi
@@ -521,9 +508,9 @@
 
 - type: marking 
   id: VoxTailBell
-  bodyPart: Overlay
-  markingCategory: Tail
-  speciesRestriction: [Vox, Dwarf, Human, Reptilian, Arachnid, Elf, Vulpkanin, Avali, SlimePerson, Shadekin, Moth, Thaven]
+  bodyPart: Tail
+  markingCategory: Overlay
+  speciesRestriction: [Vox, Dwarf, Human, Kitsune, Reptilian, Arachnid, Elf, Vulpkanin, Avali, SlimePerson, Shadekin, Moth, Thaven]
   sprites:
   - sprite: _Impstation/Mobs/Customization/markingsbundle.rsi
     state: voxtailbell1
@@ -543,7 +530,7 @@
   id: VoxTailLantern
   bodyPart: Tail
   markingCategory: Tail
-  speciesRestriction: [Vox, Dwarf, Human, Reptilian, Arachnid, Elf, Vulpkanin, Avali, SlimePerson, Shadekin, Moth, Thaven]
+  speciesRestriction: [Vox, Dwarf, Human, Kitsune, Reptilian, Arachnid, Elf, Vulpkanin, Avali, SlimePerson, Shadekin, Moth, Thaven]
   sprites:
   - sprite: _Impstation/Mobs/Customization/markingsbundle.rsi
     state: voxtaillantern
@@ -567,18 +554,9 @@
     state: voxtailsmallplume
 
 - type: marking 
-  id: VoxTailSplit
-  bodyPart: Tail
-  markingCategory: Tail
-  speciesRestriction: [Vox]
-  sprites:
-  - sprite: _Impstation/Mobs/Customization/markingsbundle.rsi
-    state: voxtailsplit
-
-- type: marking 
   id: VoxTailStripes
-  bodyPart: Overlay
-  markingCategory: Tail
+  bodyPart: Tail
+  markingCategory: Overlay
   speciesRestriction: [Vox]
   sprites:
   - sprite: _Impstation/Mobs/Customization/markingsbundle.rsi

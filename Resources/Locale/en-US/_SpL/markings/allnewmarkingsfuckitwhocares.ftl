@@ -18,8 +18,8 @@ marking-DwarfMarkCobra = Dwarven Cobra Marking
 marking-DwarfMarkKangaroo = Dwarven Kangaroo Marking (Right Hand)
 marking-DwarfMarkKangarooLHand = Dwarven Kangaroo Marking (Left Hand)
 marking-DwarfMarkSpider = Dwarven Spider Marking
-marking-FadingStars = Fading Stars
-marking-FishBowl Fish Bowl
+marking-FadingStars1 = Fading Stars1
+marking-FishBowl = Fish Bowl
 marking-Fizz = Fizz
 marking-Bubble = Bubbles
 marking-MothFireFly = Firefly Abdomen
@@ -95,7 +95,6 @@ marking-VoxTailBell = Bell
 marking-VoxTailLantern = Lantern
 marking-VoxTailSingleStripe = Single Stripe
 marking-VoxTailSmallPlume = Small Plume
-marking-VoxTailSplit = Split Tail
 marking-VoxTailStripes = Stripes Tail
 
 marking-ArmLChimeraMoth = Chimera (Left Arm)
@@ -113,5 +112,5 @@ marking-ChestRTwistingMMoth = Twisting Scar (Chest Right Alt.)
 marking-ChestStarMoth = Star (Chest)
 marking-EyesHeterochromiaMoth = Heterochromia
 marking-FootLChimeraMoth = Chimera (Left Foot)
-marking-FootLProstheticMoth Prosthetic (Left Foot)
+marking-FootLProstheticMoth = Prosthetic (Left Foot)
 marking-FootRProstheticMoth = Prosthetic (Right Foot)

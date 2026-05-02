@@ -123,6 +123,7 @@
   - PersonalAI
   - GoldenPersonalAI # Starlight end
   - AACTablet # DeltaV
+  - ClothingKitsuneMask #Spectra
 
 - type: loadoutGroup
   id: Glasses

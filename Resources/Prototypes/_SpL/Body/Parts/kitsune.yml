@@ -1,0 +1,117 @@
+- type: entity
+  id: PartKitsune
+  parent: [BaseItem, BasePart]
+  name: "Kitsune body part"
+  abstract: true
+  components:
+  - type: Extractable
+    juiceSolution:
+      reagents:
+      - ReagentId: Fat
+        Quantity: 3
+      - ReagentId: Blood
+        Quantity: 10
+
+- type: entity
+  id: TorsoKitsune
+  name: "Kitsune torso"
+  parent: [PartKitsune, BaseTorso]
+  components:
+  - type: Sprite
+    sprite: _SpL/Mobs/Species/Kitsune/parts.rsi
+    state: "torso_m"
+  - type: Extractable
+    juiceSolution:
+      reagents:
+      - ReagentId: Fat
+        Quantity: 10
+      - ReagentId: Blood
+        Quantity: 20
+
+- type: entity
+  id: HeadKitsune
+  name: "Kitsune head"
+  parent: [PartKitsune, BaseHead]
+  components:
+  - type: Sprite
+    sprite: _SpL/Mobs/Species/Kitsune/parts.rsi
+    state: "head_m"
+  - type: Extractable
+    juiceSolution:
+      reagents:
+      - ReagentId: Fat
+        Quantity: 5
+      - ReagentId: Blood
+        Quantity: 10
+
+- type: entity
+  id: LeftArmKitsune
+  name: "left kitsune arm"
+  parent: [PartKitsune, BaseLeftArm]
+  components:
+  - type: Sprite
+    sprite: _SpL/Mobs/Species/Kitsune/parts.rsi
+    state: "l_arm"
+
+- type: entity
+  id: RightArmKitsune
+  name: "right kitsune arm"
+  parent: [PartKitsune, BaseRightArm]
+  components:
+  - type: Sprite
+    sprite: _SpL/Mobs/Species/Kitsune/parts.rsi
+    state: "r_arm"
+
+- type: entity
+  id: LeftHandKitsune
+  name: "left kitsune hand"
+  parent: [PartKitsune, BaseLeftHand]
+  components:
+  - type: Sprite
+    sprite: _SpL/Mobs/Species/Kitsune/parts.rsi
+    state: "l_hand"
+
+- type: entity
+  id: RightHandKitsune
+  name: "right kitsune hand"
+  parent: [PartKitsune, BaseRightHand]
+  components:
+  - type: Sprite
+    sprite: _SpL/Mobs/Species/Kitsune/parts.rsi
+    state: "r_hand"
+
+- type: entity
+  id: LeftLegKitsune
+  name: "left kitsune leg"
+  parent: [PartKitsune, BaseLeftLeg]
+  components:
+  - type: Sprite
+    sprite: _SpL/Mobs/Species/Kitsune/parts.rsi
+    state: "l_leg"
+
+- type: entity
+  id: RightLegKitsune
+  name: "right kitsune leg"
+  parent: [PartKitsune, BaseRightLeg]
+  components:
+  - type: Sprite
+    sprite: _SpL/Mobs/Species/Kitsune/parts.rsi
+    state: "r_leg"
+
+- type: entity
+  id: LeftFootKitsune
+  name: "left kitsune foot"
+  parent: [PartKitsune, BaseLeftFoot]
+  components:
+  - type: Sprite
+    sprite: _SpL/Mobs/Species/Kitsune/parts.rsi
+    state: "l_foot"
+
+- type: entity
+  id: RightFootKitsune
+  name: "right kitsune foot"
+  parent: [PartKitsune, BaseRightFoot]
+  components:
+  - type: Sprite
+    sprite: _SpL/Mobs/Species/Kitsune/parts.rsi
+    state: "r_foot"
