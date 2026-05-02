@@ -632,14 +632,7 @@ namespace Content.Shared.Preferences
             var installedCybernetics = allCybernetics.Where(p => Cybernetics.Contains(p.ID))
                                        .Where(p => p.Type == CyberneticImplantType.Limb)
                                        .ToList();
-            if (installedCybernetics.Select(p => p.Cost).Sum() <= speciesPrototype.RoundstartCyberwareCapacity)
-            {
-                Cybernetics = installedCybernetics.Select(p => p.ID).ToList();
-            }
-            else
-            {
-                Cybernetics = [];
-            }
+            Cybernetics = installedCybernetics.Select(p => p.ID).ToList();
             // Starlight - End
 
             string flavortext;

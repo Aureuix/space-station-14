@@ -27,16 +27,6 @@ public sealed partial class CyberneticsPicker : Control
     private readonly Dictionary<string, SpriteSpecifier.Rsi> CollectionAllIcons = [];
 
     public Action<List<CyberneticImplant>>? OnCyberneticsUpdated;
-    private int CyberneticsMaxPoints = 0;
-    private int CurrentPoints {
-        get {
-            int points = 0;
-            foreach (var part in CollectionInstalledCybernetics){
-                points += part.Cost;
-            }
-            return points;
-        }
-    }
 
     public CyberneticsPicker()
     {
@@ -62,9 +52,8 @@ public sealed partial class CyberneticsPicker : Control
     }
 
     // On any state update full state is sent and entire UI is rebuilt
-    public void SetData(List<string> cyberneticIds, int maxPoints = 0) {
+    public void SetData(List<string> cyberneticIds) {
         CollectionInstalledCybernetics = CollectionAllCybernetics.Where(p => cyberneticIds.Contains(p.ID)).ToList();
-        CyberneticsMaxPoints = maxPoints;
         PopulateUI();
     }
 
@@ -124,9 +113,7 @@ public sealed partial class CyberneticsPicker : Control
         if (_selectedAvailableCybernetics is null || _selectedAvailableCybernetics.Metadata is not CyberneticImplant selectedImplant){
             return;
         }
-        if (CurrentPoints + CalculateCost(selectedImplant) <= CyberneticsMaxPoints){
-            InstallPart(selectedImplant);
-        }
+        InstallPart(selectedImplant);
         PopulateUI();
         OnCyberneticsUpdated?.Invoke(CollectionInstalledCybernetics);
     }
@@ -160,7 +147,5 @@ public sealed partial class CyberneticsPicker : Control
             var item = InstalledCybernetics.AddItem($"{part.Name}", _sprite.Frame0(CollectionAllIcons[part.ID]));
             item.Metadata = part;
         }
-
-        CyberneticsPoints.Text = Loc.GetString("cybernetics-points-remaining", ("points", CyberneticsMaxPoints - CurrentPoints), ("points_total", CyberneticsMaxPoints));
     }
 }
