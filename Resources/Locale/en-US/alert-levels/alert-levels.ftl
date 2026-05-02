@@ -32,5 +32,5 @@ alert-level-delta-announcement = The station is currently under threat of immine
 alert-level-delta-instructions = Crewmembers are advised to listen to heads of staff for more information.
 
 alert-level-epsilon = Epsilon
-alert-level-epsilon-announcement = Central Command has ordered the Epsilon security level on the station. Consider all contracts terminated.
-alert-level-epsilon-instructions = Consider all contracts terminated.
+alert-level-epsilon-announcement = Central Command has ordered the Epsilon security level on the station. All heads of staff are to step down from their positions and await Central Command orders.
+alert-level-epsilon-instructions = Crewmembers are to listen to Central Command operators for more information.

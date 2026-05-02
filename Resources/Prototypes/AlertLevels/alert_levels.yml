@@ -89,7 +89,7 @@
       announcement: alert-level-theta-announcement
       selectable: false
       sound:
-        path: /Audio/_Starlight/StationEvents/Burn_The_Hive_by_Bolgarich.ogg
+        path: /Audio/Misc/epsilon.ogg
         params:
           volume: -2
       disableSelection: true
