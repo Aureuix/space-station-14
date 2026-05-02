@@ -654,6 +654,14 @@
         damage:
           types:
             Cold: -4
+      - !type:HealthChange
+        conditions:
+        - !type:MetabolizerTypeCondition #starliight
+          type: [ Avali, Resomi ]
+        damage:
+          types:
+            Heat: 2
+            Poison: 2
       - !type:AdjustTemperature
         conditions:
         - !type:TemperatureCondition
