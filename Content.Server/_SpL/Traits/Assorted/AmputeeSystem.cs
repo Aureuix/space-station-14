@@ -6,7 +6,7 @@ using Content.Shared.Humanoid;
 using Content.Server.Humanoid;
 using Content.Server._Starlight.Medical.Limbs;
 using Content.Shared._Starlight.Medical.Body;
-using Content.Server._Starlight.Traits.Assorted;
+using Content.Server._SpL.Traits.Assorted;
 using Content.Server.Body.Systems;  
 using Content.Server.Station.Systems;
 using Robust.Shared.Prototypes;
@@ -15,7 +15,7 @@ using System.Collections.Generic;
 using System;
 using System.Reflection;
 
-namespace Contant.Server._Starlight.Traits.Assorted;
+namespace Contant.Server._SpL.Traits.Assorted;
 public sealed class AmputeeSystem : EntitySystem
 {
     [Dependency] private readonly LimbSystem _limbSystem = default!;

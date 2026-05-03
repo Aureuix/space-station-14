@@ -6,7 +6,7 @@ using System.Runtime.InteropServices.Java;
 using Robust.Shared.GameStates;
 using Robust.Shared.Serialization.TypeSerializers.Implementations.Custom;
 
-namespace Content.Server._Starlight.Traits.Assorted;
+namespace Content.Server._SpL.Traits.Assorted;
 
 /// <summary>
 /// This component specifies which limbs are marked as removed or replaced on spawn.
