@@ -2,10 +2,6 @@
 <Control xmlns="https://spacestation14.io">
     <!-- Primary container -->
     <BoxContainer Orientation="Vertical" HorizontalExpand="True">
-        <!-- Cybernetics points container -->
-        <BoxContainer Orientation="Horizontal" HorizontalExpand="True">
-            <Label Name="CyberneticsPoints" Text="{Loc 'cybernetics-points-remaining'}" />
-        </BoxContainer>
         <!-- Main cybernetics container -->
         <BoxContainer Orientation="Horizontal" SeparationOverride="5" HorizontalExpand="True">
             <!-- Available cybernetics -->
