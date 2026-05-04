@@ -26,8 +26,8 @@ public sealed partial class CyberneticsPicker : Control
     private List<CyberneticImplant> CollectionInstalledCybernetics = [];
     private readonly Dictionary<string, SpriteSpecifier.Rsi> CollectionAllIcons = [];
 
-    public Action<List<CyberneticImplant>>? OnCyberneticsUpdated;
-    private int CyberneticsMaxPoints = 0;
+/*  Spectra: Removed cybernetic points
+    private int CyberneticsMaxPoints = 0; 
     private int CurrentPoints {
         get {
             int points = 0;
@@ -36,7 +36,9 @@ public sealed partial class CyberneticsPicker : Control
             }
             return points;
         }
-    }
+    }*/ 
+
+    public Action<List<CyberneticImplant>>? OnCyberneticsUpdated;
 
     public CyberneticsPicker()
     {
@@ -62,9 +64,10 @@ public sealed partial class CyberneticsPicker : Control
     }
 
     // On any state update full state is sent and entire UI is rebuilt
-    public void SetData(List<string> cyberneticIds, int maxPoints = 0) {
+    //public void SetData(List<string> cyberneticIds, int maxPoints = 0) { 
+    public void SetData(List<string> cyberneticIds) {
         CollectionInstalledCybernetics = CollectionAllCybernetics.Where(p => cyberneticIds.Contains(p.ID)).ToList();
-        CyberneticsMaxPoints = maxPoints;
+        //CyberneticsMaxPoints = maxPoints; SPECTRALIGHT: removed cybernetics points
         PopulateUI();
     }
 
@@ -124,9 +127,7 @@ public sealed partial class CyberneticsPicker : Control
         if (_selectedAvailableCybernetics is null || _selectedAvailableCybernetics.Metadata is not CyberneticImplant selectedImplant){
             return;
         }
-        if (CurrentPoints + CalculateCost(selectedImplant) <= CyberneticsMaxPoints){
-            InstallPart(selectedImplant);
-        }
+        InstallPart(selectedImplant);
         PopulateUI();
         OnCyberneticsUpdated?.Invoke(CollectionInstalledCybernetics);
     }
@@ -161,6 +162,6 @@ public sealed partial class CyberneticsPicker : Control
             item.Metadata = part;
         }
 
-        CyberneticsPoints.Text = Loc.GetString("cybernetics-points-remaining", ("points", CyberneticsMaxPoints - CurrentPoints), ("points_total", CyberneticsMaxPoints));
+        //CyberneticsPoints.Text = Loc.GetString("cybernetics-points-remaining", ("points", CyberneticsMaxPoints - CurrentPoints), ("points_total", CyberneticsMaxPoints));
     }
 }

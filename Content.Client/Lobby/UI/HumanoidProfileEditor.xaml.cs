@@ -1957,7 +1957,8 @@ namespace Content.Client.Lobby.UI
             {
                 return;
             }
-            Cybernetics.SetData(Profile.Cybernetics, (_species.Find(x => x.ID == Profile?.Species) ?? _species.First()).RoundstartCyberwareCapacity);
+            //Cybernetics.SetData(Profile.Cybernetics, (_species.Find(x => x.ID == Profile?.Species) ?? _species.First()).RoundstartCyberwareCapacity);
+            Cybernetics.SetData(Profile.Cybernetics); //Spectra: Removed cybernetic points```
         }
 
         private void UpdateSaveButton()
