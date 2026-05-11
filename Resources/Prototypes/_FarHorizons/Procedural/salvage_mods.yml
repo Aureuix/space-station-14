@@ -42,7 +42,7 @@
     - Moderate
     - Easy
     - Difficult
-    - Impossible
+#    - Impossible
 
 - type: salvageBiomeMod
   id: Mountains
@@ -53,7 +53,7 @@
     - Moderate
     - Easy
     - Difficult
-    - Impossible
+#    - Impossible
 
 # Weathers
 - type: salvageWeatherMod
