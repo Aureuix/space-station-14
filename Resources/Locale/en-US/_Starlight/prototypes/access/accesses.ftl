@@ -39,3 +39,4 @@ id-card-access-level-solgov = SolGov
 
 id-card-access-level-pirate = Pirate
 
+id-card-access-level-blackstar-agent = Blackstar Agent
