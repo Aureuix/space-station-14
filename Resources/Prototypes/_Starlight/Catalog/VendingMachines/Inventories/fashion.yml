@@ -514,3 +514,13 @@
   categories:
     - SLFashionHead
 
+- type: listing
+  id: ClothingBackpackBunnyGangBundle
+  productEntity: ClothingBackpackBunnyGangBundle
+  cost:
+    NTCredit: 200
+  categories:
+    - SLFashionOther
+  conditions:
+    - !type:ListingLimitedStockCondition
+      stock: 2
