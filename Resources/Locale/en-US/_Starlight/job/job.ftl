@@ -1,7 +1,7 @@
 job-name-magistrate = Magistrate
 job-name-ntrep = NanoTrasen Representative
 job-name-iaa = Internal Affairs Agent
-job-name-blueshield = Blue Shield Officer
+job-name-blueshield = Blueshield Officer
 job-name-ntncblueshield = NanoTrasen Navy Corps Marine
 job-name-greenshield = Greenshield Officer
 job-name-miningspec = Mining Specialist
@@ -22,6 +22,23 @@ job-title-borgi = Borgi
 
 job-title-tsf-Phantom = Phantom Marine
 job-title-tsf-MARSOC = MARSOC Marine
+
+job-name-blackstar = Blackstar Mercenary
+
+job-name-blackstar-legion-commander = Legion Commander
+job-name-blackstar-high-legate = High Legate
+job-name-blackstar-legate = Legate
+job-name-blackstar-dreadwalker = Dreadwalker
+job-name-blackstar-legionnaire = Legionnaire
+job-name-blackstar-blackguard = Blackguard
+job-name-blackstar-initiate = Initiate
+
+job-name-medtak-dispatcher = MedTak Dispatcher
+job-name-medtak-leader = MedTak Team Leader
+job-name-medtak-medic = MedTak Medic
+job-name-medtak-pilot = MedTak Pilot
+job-name-medtak-security = MedTak Security
+job-name-medtak-borg = MedTak Silicon
 
 job-greet-information-rules = {$jobRules}
 
