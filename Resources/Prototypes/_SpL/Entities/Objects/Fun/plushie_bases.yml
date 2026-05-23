@@ -26,3 +26,32 @@
     requiresSpecialDigestion: true
     useSound:
       path: /Audio/DeltaV/Voice/Kitsune/fox_scream1.ogg
+
+- type: entity
+  parent: BasePlushieVocalizer
+  id: BaseVulpkaninFoxPlushie
+  abstract: true
+  components:
+  - type: EmitSoundOnUse
+    sound:
+      path: /Audio/_Starlight/Effects/yip.ogg
+  - type: EmitSoundOnLand
+    sound:
+      path: /Audio/_Starlight/Effects/yip.ogg
+  - type: EmitSoundOnActivate
+    sound:
+      path:/Audio/_Starlight/Effects/yip.ogg
+  - type: EmitSoundOnCollide
+    sound:
+      path: /Audio/_Starlight/Effects/yip.ogg
+  - type: EmitSoundOnTrigger
+    sound:
+       path: /Audio/_Starlight/Effects/yip.ogg
+  - type: MeleeWeapon
+    wideAnimationRotation: 180
+    soundHit:
+      path: /Audio/_Starlight/Effects/yip.ogg
+  - type: Edible
+    requiresSpecialDigestion: true
+    useSound:
+      path: /Audio/_Starlight/Effects/yip.ogg

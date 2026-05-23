@@ -53,7 +53,7 @@
 
 
 - type: entity
-  parent: BaseVulpkaninPlushie
+  parent: BaseVulpkaninFoxPlushie
   id: PlushieKanna
   name: kanna plushie
   description: A strange, lemon-scented plushie. Letting her into the chemistry lab surely couldn't result in anything bad happening.
@@ -66,7 +66,7 @@
     state: icon
 
 - type: entity
-  parent: BaseVulpkaninPlushie
+  parent: BaseVulpkaninFoxPlushie
   id: PlushieVogel
   name: vogel plushie
   description: The latest from Syndicate High Command's ground team; Their fluffiest representative, now in plushie form. The tag says, "Revolver not included."
@@ -76,4 +76,17 @@
     sprite: _SpL/Objects/Fun/Plushies/vogel_plushie.rsi
   - type: Sprite
     sprite: _SpL/Objects/Fun/Plushies/vogel_plushie.rsi
+    state: icon
+
+- type: entity
+  parent: BaseAvaliPlushie
+  id: PlushieEini
+  name: eini plushie
+  description: A small plushie of everyone's favorite hardworking Avali. Surely this one won't overwork herself too...? The tag warns you against trying to remove her scarf.
+  components:
+  - type: Item
+    size: Small
+    sprite: _SpL/Objects/Fun/Plushies/eini_plushie.rsi
+  - type: Sprite
+    sprite: _SpL/Objects/Fun/Plushies/eini_plushie.rsi
     state: icon
