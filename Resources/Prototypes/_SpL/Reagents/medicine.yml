@@ -217,3 +217,19 @@
         effectProto: StatusEffectWoozy
         time: 7.5
         type: Add
+      - !type:HealthChange
+        conditions:
+        - !type:ReagentCondition
+          reagent: Lidocaine
+          min: 20
+        damage:
+          types:
+            Asphyxiation: 1
+      - !type:ModifyStatusEffect
+        conditions:
+        - !type:ReagentCondition
+          reagent: Lidocaine
+          min: 15
+        effectProto: StatusEffectDrowsiness
+        time: 3
+        type: Add
