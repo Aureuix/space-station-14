@@ -192,3 +192,28 @@
         messages: ["ethyloxyephedrine-effect-feeling-awake", "ethyloxyephedrine-effect-clear-mind"]
         type: Local
         probability: 0.3
+
+- type: reagent
+  id: Lidocaine
+  group: Medicine
+  name: reagent-name-lidocaine
+  desc: reagent-desc-lidocaine
+  physicalDesc: reagent-physical-desc-translucent
+  flavor: tingly #duh
+  color: "#f6fae8"
+  metabolisms:
+    Medicine:
+      metabolismRate: 0.2
+      effects:
+      - !type:ModifyStatusEffect
+        effectProto: StatusEffectPainNumbness
+        time: 5
+        type: Add
+      - !type:ModifyStatusEffect
+        effectProto: StatusEffectSlurred
+        time: 7.5
+        type: Add
+      - !type:ModifyStatusEffect
+        effectProto: StatusEffectWoozy
+        time: 7.5
+        type: Add

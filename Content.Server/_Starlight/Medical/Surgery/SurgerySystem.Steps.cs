@@ -17,6 +17,10 @@ using Content.Server.Administration.Systems;
 using Robust.Shared.Timing;
 using Content.Shared.Damage.Components;
 
+// SPECTRALIGHT 
+using Content.Shared.StatusEffectNew.Components;
+using Content.Shared.StatusEffectNew;
+using Robust.Shared.Prototypes;
 
 namespace Content.Server.Starlight.Medical.Surgery;
 // Based on the RMC14.
@@ -31,6 +35,7 @@ public sealed partial class SurgerySystem : SharedSurgerySystem
     [Dependency] private readonly LimbSystem _limbSystem = default!;
     [Dependency] private readonly StarlightEntitySystem _entity = default!;
     [Dependency] private readonly SharedBloodstreamSystem _bloodstreamSystem = default!;
+    [Dependency] private readonly StatusEffectsSystem _statusSystem = default!;
 
     public void InitializeSteps()
     {
@@ -158,11 +163,29 @@ public sealed partial class SurgerySystem : SharedSurgerySystem
 
     private void OnStepEmoteEffectComplete(Entity<SurgeryStepEmoteEffectComponent> ent, ref SurgeryStepEvent args)
     {
-
-        if (!HasComp<PainNumbnessStatusEffectComponent>(args.Body) && !HasComp<SleepingComponent>(args.Body))
-            _chat.TryEmoteWithChat(args.Body, ent.Comp.Emote);
-        else
+        if (HasComp<SleepingComponent>(args.Body)){
             _sleeping.TryWaking(args.Body); // If the patient sleeping without n2o or reagents, wake them up.
+            return;
+        }
+    }
+
+    private void OnStepEmoteEffectComplete(Entity<SurgeryStepEmoteEffectComponent> ent, ref SurgeryStepEvent args)
+    {
+        if (HasComp<SleepingComponent>(args.Body)){
+            _sleeping.TryWaking(args.Body); // If the patient sleeping without n2o or reagents, wake them up.
+            return;
+        }
+
+        // SpL: Fixed Numbness not being properly checked in the code, Numb characters now shouldn't scream during surgery
+        EntProtoId numbnessTrait = "PainNumbnessTraitStatusEffect";
+        EntProtoId numbnessEffect = "StatusEffectPainNumbness";
+        EntityUid? effect = new EntityUid();
+        if (_statusSystem.TryGetStatusEffect(args.Body, numbnessTrait, out effect) ||
+            _statusSystem.TryGetStatusEffect(args.Body, numbnessEffect, out effect)){
+            return;
+        }
+        _chat.TryEmoteWithChat(args.Body, ent.Comp.Emote); //@screams!
+        // end SpL
     }
 
     private void OnStepSpawnComplete(Entity<SurgeryStepSpawnEffectComponent> ent, ref SurgeryStepEvent args)
