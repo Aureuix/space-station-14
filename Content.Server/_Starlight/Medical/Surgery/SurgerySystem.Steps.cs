@@ -167,6 +167,7 @@ public sealed partial class SurgerySystem : SharedSurgerySystem
             return;
         }
 
+        // start SpL
         EntProtoId numbnessTrait = "PainNumbnessTraitStatusEffect";
         EntProtoId numbnessEffect = "StatusEffectPainNumbness";
         EntityUid? effect = new EntityUid();

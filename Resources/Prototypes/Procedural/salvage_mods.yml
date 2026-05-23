@@ -15,7 +15,7 @@
     - Moderate
     - Easy
     - Difficult
-    - Impossible #Spectra
+#    - Impossible #Spectra
 
 - type: salvageBiomeMod
   id: Grasslands
@@ -27,7 +27,7 @@
     - Moderate
     - Easy
     - Difficult
-    - Impossible #Spectra
+#    - Impossible #Spectra
 
 - type: salvageBiomeMod
   id: Snow
@@ -40,7 +40,7 @@
     - Moderate
     - Easy
     - Difficult
-    - Impossible #Spectra
+#    - Impossible #Spectra
 
 - type: salvageBiomeMod
   id: Lava
@@ -53,7 +53,7 @@
     - Moderate
     - Easy
     - Difficult
-    - Impossible #Spectra
+#    - Impossible #Spectra
 
 #- type: salvageBiomeMod
 #  id: Space
