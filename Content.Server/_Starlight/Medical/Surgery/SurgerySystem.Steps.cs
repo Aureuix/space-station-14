@@ -169,11 +169,14 @@ public sealed partial class SurgerySystem : SharedSurgerySystem
         }
 
         // SpL: Fixed Numbness not being properly checked in the code, Numb characters now shouldn't scream during surgery
-        EntProtoId numbness = "PainNumbnessTraitStatusEffect";
+        EntProtoId numbnessTrait = "PainNumbnessTraitStatusEffect";
+        EntProtoId numbnessEffect = "StatusEffectPainNumbness";
         EntityUid? effect = new EntityUid();
-        if (!_statusSystem.TryGetStatusEffect(args.Body, numbness, out effect)){
-            _chat.TryEmoteWithChat(args.Body, ent.Comp.Emote); //@screams!
+        if (_statusSystem.TryGetStatusEffect(args.Body, numbnessTrait, out effect) ||
+            _statusSystem.TryGetStatusEffect(args.Body, numbnessEffect, out effect)){
+            return;
         }
+        _chat.TryEmoteWithChat(args.Body, ent.Comp.Emote); //@screams!
     }
 
     private void OnStepSpawnComplete(Entity<SurgeryStepSpawnEffectComponent> ent, ref SurgeryStepEvent args)
