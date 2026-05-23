@@ -167,6 +167,14 @@ public sealed partial class SurgerySystem : SharedSurgerySystem
             _sleeping.TryWaking(args.Body); // If the patient sleeping without n2o or reagents, wake them up.
             return;
         }
+    }
+
+    private void OnStepEmoteEffectComplete(Entity<SurgeryStepEmoteEffectComponent> ent, ref SurgeryStepEvent args)
+    {
+        if (HasComp<SleepingComponent>(args.Body)){
+            _sleeping.TryWaking(args.Body); // If the patient sleeping without n2o or reagents, wake them up.
+            return;
+        }
 
         // SpL: Fixed Numbness not being properly checked in the code, Numb characters now shouldn't scream during surgery
         EntProtoId numbnessTrait = "PainNumbnessTraitStatusEffect";
@@ -177,6 +185,7 @@ public sealed partial class SurgerySystem : SharedSurgerySystem
             return;
         }
         _chat.TryEmoteWithChat(args.Body, ent.Comp.Emote); //@screams!
+        // end SpL
     }
 
     private void OnStepSpawnComplete(Entity<SurgeryStepSpawnEffectComponent> ent, ref SurgeryStepEvent args)
