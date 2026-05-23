@@ -29,3 +29,36 @@
           tags:
           - VibroRapier
   - type: Appearance
+
+
+- type: entity
+  parent: [ClothingBeltBase, ClothingSlotBase, BaseCommandContraband]
+  id: ClothingBeltRegaliaSheath
+  name: Regalia Sheath
+  description: A decorated sheath fit for a mafioso's blade.
+  components:
+  - type: Sprite
+    sprite: _SpL/Clothing/Belt/RegaliaSheath.rsi
+    state: sheath
+  - type: Clothing
+    sprite: _SpL/Clothing/Belt/RegaliaSheath.rsi
+  - type: Item
+    size: Ginormous
+  - type: ItemSlots
+    slots:
+      item:
+        name: Sword
+        insertVerbText: sheath-insert-verb
+        ejectVerbText: sheath-eject-verb
+        insertSound: /Audio/Items/sheath.ogg
+        ejectSound: /Audio/Items/unsheath.ogg
+        whitelist:
+          tags:
+          - RedRegaliaSword
+  - type: ItemMapper
+    mapLayers:
+      sheath-sword:
+        whitelist:
+          tags:
+          - RedRegaliaSword
+  - type: Appearance

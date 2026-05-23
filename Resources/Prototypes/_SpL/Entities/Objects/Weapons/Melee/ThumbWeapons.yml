@@ -1,0 +1,115 @@
+- type: entity
+  parent: [BaseSword, BaseHighlyIllegalContraband]
+  id: RedRegaliaSword
+  name: la spada di palermo
+  description: A family heirloom of La Famiglia Pasticcio, made in tandem with the family's special "Swordcatcher" parrying dagger. Its technique is primarily meant to focus entirely on relentless, one-on-one offense, disallowing the opponent to land proper blows outside of engaging with the same aggression. Without its partner dagger, however, it is an adaptable blade... Not to mention, the cylinder at the guard holding up to six rounds of .45 is useful for ending a fight before it can even begin.
+  components:
+  - type: Sprite
+    sprite: _SpL/Objects/Weapons/Melee/RedRegaliaSword.rsi
+  - type: MeleeWeapon
+    attackRate: 2.0
+    range: 1.5
+    damage:
+      types:
+        Slash: 15
+        Piercing: 15
+    soundHit:
+      path: /Audio/Weapons/bladeslice.ogg
+  - type: Reflect
+    reflectProb: .65
+    spread: 90
+  - type: Item
+    storedSprite:
+      state: storage
+      sprite: Objects/Weapons/Melee/captain_sabre_storage_64x.rsi #Done in 64x64 because it looks way too puny in 32x32
+    shape:
+    - 0,0,0,3
+  - type: Tag
+    tags:
+    - RedRegaliaSword
+  - type: Gun
+    soundGunshot:
+      path: /Audio/Weapons/Guns/Gunshots/mateba.ogg
+      params:
+        variation: 0.246
+    fireRate: 3
+  - type: UseDelay
+    delay: 0.66
+  - type: ContainerContainer
+    containers:
+      revolver-ammo: !type:Container
+  - type: RevolverAmmoProvider
+    whitelist:
+      tags:
+        - CartridgeMagnum
+        - SpeedLoaderMagnum
+    proto: CartridgeMagnumSP
+    capacity: 6
+    chambers: [ True, True, True, True, True, True ]
+    ammoSlots: [ null, null, null, null, null, null ]
+    soundEject:
+      path: /Audio/Weapons/Guns/MagOut/revolver_magout.ogg
+    soundInsert:
+      path: /Audio/Weapons/Guns/MagIn/revolver_magin.ogg
+  - type: AmmoCounter
+  - type: Clothing
+    sprite: _SpL/Objects/Weapons/Melee/RedRegaliaSword.rsi
+    quickEquip: false
+    slots:
+    - suitStorage
+  - type: AltFireMelee
+    attackType: Heavy
+
+- type: entity
+  name: regalia parrying knife
+  parent: [BaseKnife, BaseHighlyIllegalContraband]
+  id: RedRegaliaKnife
+  description: A defensive blade made to be used in tandem with a partner, preferably one that can carry the momentum of its smaller form.
+  components:
+  - type: Tag
+    tags:
+    - CombatKnife
+    - Knife
+  - type: Sprite
+    sprite: _SpL/Objects/Weapons/Melee/RedRegaliaDagger.rsi
+    state: icon
+  - type: MeleeWeapon
+    wideAnimationRotation: -135
+    attackRate: 1.5
+    damage:
+      types:
+        Slash: 14
+  - type: EmbeddableProjectile
+    sound: /Audio/Weapons/star_hit.ogg
+    offset: -0.15,0.0
+  - type: LandAtCursor
+  - type: DamageOtherOnHit
+    damage:
+      types:
+        Slash: 12
+  - type: Item
+    sprite: _SpL/Objects/Weapons/Melee/RedRegaliaDagger.rsi
+    storedSprite:
+      state: storage
+      sprite: _SpL/Objects/Weapons/Melee/RedRegaliaDagger.rsi
+  - type: DisarmMalus
+    malus: 0.225
+  - type: ThrowingAngle
+    angle: 225
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape: !type:PolygonShape
+          vertices:
+          - -0.4,-0.2
+          - -0.2,-0.4
+          - 0.4,0.2
+          - 0.2,0.4
+        density: 20 # derived from base_item
+        mask:
+        - ItemMask
+        restitution: 0.3
+        friction: 0.2
+  - type: Reflect
+    reflectProb: .25
+    spread: 90
