@@ -4,7 +4,7 @@ meta:
   engineVersion: 272.0.0
   forkId: ""
   forkVersion: ""
-  time: 05/23/2026 12:30:48
+  time: 05/23/2026 12:41:35
   entityCount: 28855
 maps:
 - 1
@@ -18863,6 +18863,21 @@ entities:
     components:
     - type: Transform
       pos: -9.521362,-27.39506
+      parent: 2
+  - uid: 22420
+    components:
+    - type: Transform
+      pos: -10.932475,27.48853
+      parent: 2
+  - uid: 22421
+    components:
+    - type: Transform
+      pos: -8.630391,26.51978
+      parent: 2
+  - uid: 22422
+    components:
+    - type: Transform
+      pos: -10.953308,25.76978
       parent: 2
 - proto: BodyBagFolded
   entities:
@@ -148693,23 +148708,6 @@ entities:
     components:
     - type: Transform
       pos: 24.598976,-7.3620048
-      parent: 2
-- proto: SalvageHumanCorpseSpawner
-  entities:
-  - uid: 22420
-    components:
-    - type: Transform
-      pos: -8.5,25.5
-      parent: 2
-  - uid: 22421
-    components:
-    - type: Transform
-      pos: -11.5,26.5
-      parent: 2
-  - uid: 22422
-    components:
-    - type: Transform
-      pos: -9.5,27.5
       parent: 2
 - proto: SalvageMagnet
   entities:
