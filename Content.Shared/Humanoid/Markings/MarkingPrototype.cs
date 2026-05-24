@@ -50,7 +50,7 @@ namespace Content.Shared.Humanoid.Markings
 
         public Marking AsMarking()
         {
-            return new Marking(ID, Sprites.Count);
+            return new Marking(ID, ColorSlotCount);
         }
     }
 }
