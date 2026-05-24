@@ -1,0 +1,63 @@
+- type: humanoidBaseSprite
+  id: ProstheticLPegleg
+  matchSkin: false
+  markingsMatchSkin: false
+  baseSprite:
+    sprite: _SpL/Mobs/Customization/prosthetics.rsi
+    state: l_pegleg
+
+- type: humanoidBaseSprite
+  id: ProstheticRPegleg
+  matchSkin: false
+  markingsMatchSkin: false
+  baseSprite:
+    sprite: _SpL/Mobs/Customization/prosthetics.rsi
+    state: r_pegleg
+
+- type: humanoidBaseSprite
+  id: ProstheticLArm
+  matchSkin: false
+  markingsMatchSkin: false
+  baseSprite:
+    sprite: _SpL/Mobs/Customization/prosthetics.rsi
+    state: l_arm
+
+- type: humanoidBaseSprite
+  id: ProstheticRArm
+  matchSkin: false
+  markingsMatchSkin: false
+  baseSprite:
+    sprite: _SpL/Mobs/Customization/prosthetics.rsi
+    state: r_arm
+
+- type: humanoidBaseSprite
+  id: ProstheticLClaw
+  matchSkin: false
+  markingsMatchSkin: false
+  baseSprite:
+    sprite: _SpL/Mobs/Customization/prosthetics.rsi
+    state: l_claw
+
+- type: humanoidBaseSprite
+  id: ProstheticRClaw
+  matchSkin: false
+  markingsMatchSkin: false
+  baseSprite:
+    sprite: _SpL/Mobs/Customization/prosthetics.rsi
+    state: r_claw
+
+- type: humanoidBaseSprite
+  id: SacrificialPartLFoot
+  matchSkin: false
+  markingsMatchSkin: false
+  baseSprite:
+    sprite: _SpL/Mobs/Customization/prosthetics.rsi
+    state: l_foot
+
+- type: humanoidBaseSprite
+  id: SacrificialPartRFoot
+  matchSkin: false
+  markingsMatchSkin: false
+  baseSprite:
+    sprite: _SpL/Mobs/Customization/prosthetics.rsi
+    state: r_foot

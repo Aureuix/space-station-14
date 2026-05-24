@@ -1,0 +1,165 @@
+- type: entity
+  id: PartProsthetic
+  parent: [BaseItem, BasePart]
+  name: "prosthetic body part"
+  abstract: true
+  components:
+  - type: Extractable
+    juiceSolution:
+      reagents:
+      - ReagentId: Iron
+        Quantity: 30
+  - type: Item
+    size: Large
+    shape:
+      - 0,0,0,1
+  - type: LimbProsthetic
+
+- type: entity
+  id: LeftArmProsthetic
+  name: "prosthetic left arm"
+  parent: [PartProsthetic, BaseLeftArm]
+  components:
+    - type: BaseLayerId
+      layers:
+        Default: ProstheticLArm
+    - type: Sprite
+      sprite: _Starlight/Mobs/Species/Cyberlimbs/parts.rsi
+      state: "l_arm"
+    - type: Icon
+      sprite: _Starlight/Mobs/Species/Cyberlimbs/parts.rsi
+      state: "l_arm"
+    - type: WithAttachedBodyParts
+      parts:
+        left hand: LeftHandProsthetic
+    - type: RoundstartImplantable
+      cost: 1
+
+- type: entity
+  id: LeftHandProsthetic
+  name: "left prosthetic claw"
+  parent: [PartProsthetic, BaseLeftHand]
+  components:
+    - type: BaseLayerId
+      layers:
+        Default: ProstheticLClaw
+    - type: Sprite
+      sprite: _Starlight/Mobs/Species/Cyberlimbs/parts.rsi
+      state: "l_hand"
+    - type: Icon
+      sprite: _Starlight/Mobs/Species/Cyberlimbs/parts.rsi
+      state: "l_hand"
+    - type: RoundstartImplantable
+      cost: 1
+
+- type: entity
+  id: RightArmProsthetic
+  name: "prosthetic right arm"
+  parent: [PartProsthetic, BaseRightArm]
+  components:
+    - type: BaseLayerId
+      layers:
+        Default: ProstheticRArm
+    - type: Sprite
+      sprite: _Starlight/Mobs/Species/Cyberlimbs/parts.rsi
+      state: "r_arm"
+    - type: Icon
+      sprite: _Starlight/Mobs/Species/Cyberlimbs/parts.rsi
+      state: "r_arm"
+    - type: WithAttachedBodyParts
+      parts:
+        right hand: RightHandProsthetic
+    - type: RoundstartImplantable
+      cost: 1
+  
+- type: entity
+  id: RightHandProsthetic
+  name: "right prosthetic claw"
+  parent: [PartProsthetic, BaseRightHand]
+  components:
+    - type: BaseLayerId
+      layers:
+        Default: ProstheticRClaw
+    - type: Sprite
+      sprite: _Starlight/Mobs/Species/Cyberlimbs/parts.rsi
+      state: "r_hand"
+    - type: Icon
+      sprite: _Starlight/Mobs/Species/Cyberlimbs/parts.rsi
+      state: "r_hand"
+    - type: RoundstartImplantable
+      cost: 1
+  
+- type: entity
+  id: LeftLegProstheticTall
+  name: "left pegleg (tall)"
+  parent: [PartProsthetic, BaseLeftLeg]
+  components:
+    - type: BaseLayerId
+      layers:
+        Default: ProstheticLPegleg
+    - type: Sprite
+      sprite: _SpL/Mobs/Customization/prosthetics.rsi
+      state: "l_pegleg"
+    - type: Icon
+      sprite: _SpL/Mobs/Customization/prosthetics.rsi
+      state: "l_pegleg"
+    - type: MovementBodyPart
+      sprintSpeed : 4.05 # -10% 
+      maxDensity: 75
+    - type: RoundstartImplantable
+      cost: 2
+    - type: LimbProsthetic
+      children: false
+    - type: WithAttachedBodyParts
+      parts:
+        left foot: PartSacrificialLeftFoot
+
+- type: entity
+  id: RightLegProstheticTall
+  name: "right pegleg (tall)"
+  parent: [PartProsthetic, BaseRightLeg]
+  components:
+    - type: BaseLayerId
+      layers:
+        Default: ProstheticRPegleg
+    - type: Sprite
+      sprite: _SpL/Mobs/Customization/prosthetics.rsi
+      state: "r_pegleg"
+    - type: Icon
+      sprite: _SpL/Mobs/Customization/prosthetics.rsi
+      state: "r_pegleg"
+    - type: MovementBodyPart
+      sprintSpeed : 4.05 # -10%
+      maxDensity: 75
+    - type: RoundstartImplantable
+      cost: 2
+    - type: LimbProsthetic
+      children: false
+    - type: WithAttachedBodyParts
+      parts:
+        right foot: PartSacrificialRightFoot
+
+# Sacrificial Parts (empty sprite, deleted on init)
+- type: entity
+  id: PartSacrificialRightFoot
+  name: "sacrifical right foot"
+  parent: [BaseRightFoot]
+  components:
+    - type: BaseLayerId
+      layers:
+        Default: SacrificialPartRFoot
+    - type: Sprite
+      sprite: _SpL/Mobs/Customization/prosthetics.rsi
+      state: "r_foot"
+
+- type: entity
+  id: PartSacrificialLeftFoot
+  name: "sacrifical left foot"
+  parent: [BaseLeftFoot]
+  components:
+    - type: BaseLayerId
+      layers:
+        Default: SacrificialPartLFoot
+    - type: Sprite
+      sprite: _SpL/Mobs/Customization/prosthetics.rsi
+      state: "l_foot"

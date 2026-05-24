@@ -16,7 +16,14 @@ using Robust.Shared.Utility;
 using Content.Shared.Starlight.Medical.Surgery.Events;
 using Robust.Shared.Physics;
 using Robust.Shared.Physics.Systems;
+using System.Diagnostics.Tracing;
+using System.Globalization;
+using System.Runtime.CompilerServices;
 #endregion Starlight
+
+#region Spectralight
+using Content.Shared._SpL.Medical.Limbs;
+#endregion
 
 namespace Content.Shared.Body.Systems;
 
@@ -31,7 +38,7 @@ public partial class SharedBodySystem
         SubscribeLocalEvent<BodyPartComponent, EntInsertedIntoContainerMessage>(OnBodyPartInserted);
         SubscribeLocalEvent<BodyPartComponent, EntRemovedFromContainerMessage>(OnBodyPartRemoved);
     }
-
+    
     private void OnBodyPartInserted(Entity<BodyPartComponent> ent, ref EntInsertedIntoContainerMessage args)
     {
         // Body part inserted into another body part.
@@ -65,8 +72,8 @@ public partial class SharedBodySystem
         // Body part removed from another body part.
         var removedUid = args.Entity;
         var slotId = args.Container.ID;
-
-        DebugTools.Assert(!TryComp(removedUid, out BodyPartComponent? b) || b.Body == ent.Comp.Body);
+        if (!TryComp(removedUid, out BodyPartComponent? b)) return;
+        DebugTools.Assert(b.Body == ent.Comp.Body);
         DebugTools.Assert(!TryComp(removedUid, out OrganComponent? o) || o.Body == ent.Comp.Body);
 
         if (TryComp(removedUid, out BodyPartComponent? part) && part.Body is not null)
@@ -694,6 +701,21 @@ public partial class SharedBodySystem
         return GetBodyChildrenOfType(bodyId, type, body).Any();
     }
 
+    /// SPECTRALIGHT
+    /// Returns true if the bodyId has any parts of this type and symmetry (left & right)
+    public bool BodyHasPartTypeOfSymmetry(
+        EntityUid bodyId,
+        BodyPartType type,
+        BodyPartSymmetry symmetry,
+        BodyComponent? body = null)
+    {
+        var children = GetBodyChildrenOfType(bodyId, type, body);
+        foreach(var child in children){
+            if(child.Component.Symmetry == symmetry) return true;
+        }
+        return false;
+    }
+
     /// <summary>
     /// Returns true if the parentId has the specified childId.
     /// </summary>
@@ -910,6 +932,18 @@ public partial class SharedBodySystem
                 yield return slotId;
             }
         }
+    }
+
+    /// Spectralight
+    /// RecursiveBodyUpdate isn't a public function but i do still need it so go my spaghetti
+    /// This is being called to assign the body variable on init, since that was missing and without it the server fatals when
+    /// trying to delete limbs.
+    public void FixBodyVar(Entity<BodyPartComponent> part, EntityUid body){
+        RecursiveBodyUpdate(part, body); //I am so tired
+    }
+
+    public void UpdateProstheticParts(){
+        
     }
     #endregion
 }
