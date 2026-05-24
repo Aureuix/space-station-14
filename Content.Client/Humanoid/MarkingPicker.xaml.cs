@@ -92,6 +92,7 @@ public sealed partial class MarkingPicker : Control
         {
             _currentMarkings.EnsureSpecies(species, skinColor, _markingManager); // should be validated server-side but it can't hurt
         }
+        // Starlight - normalize markings that use shared color slots before rendering the picker.
         _currentMarkings.EnsureValid(_markingManager);
 
         _currentSpecies = species;
@@ -111,6 +112,7 @@ public sealed partial class MarkingPicker : Control
         {
             _currentMarkings.EnsureSpecies(species, skinColor, _markingManager); // should be validated server-side but it can't hurt
         }
+        // Starlight - normalize markings that use shared color slots before rendering the picker.
         _currentMarkings.EnsureValid(_markingManager);
 
         _currentSpecies = species;
@@ -202,6 +204,7 @@ public sealed partial class MarkingPicker : Control
 
     private string GetMarkingName(MarkingPrototype marking) => Loc.GetString($"marking-{marking.ID}");
 
+    // Starlight start - color controls can represent shared color slots instead of raw sprite layers.
     private List<string> GetMarkingColorNames(MarkingPrototype marking)
     {
         var result = new List<string>();
@@ -232,6 +235,7 @@ public sealed partial class MarkingPicker : Control
 
         return result;
     }
+    // Starlight end
 
     private IReadOnlyDictionary<string, MarkingPrototype> GetMarkings(MarkingCategories category)
     {
@@ -433,6 +437,7 @@ public sealed partial class MarkingPicker : Control
             return;
         }
 
+        // Starlight start - build one picker per color slot, not per sprite.
         var colorNames = GetMarkingColorNames(prototype);
         _currentMarkingColors.Clear();
         CMarkingColors.RemoveAllChildren();
@@ -471,6 +476,7 @@ public sealed partial class MarkingPicker : Control
             };
             colorSelector.OnColorChanged += colorChanged;
         }
+        // Starlight end
 
         CMarkingColors.Visible = true;
 
@@ -544,6 +550,7 @@ public sealed partial class MarkingPicker : Control
         else
         {
             // Color everything in skin color
+            // Starlight edit - color only the marking's exposed color slots.
             for (var i = 0; i < marking.ColorSlotCount; i++)
             {
                 markingObject.SetColor(i, CurrentSkinColor);
