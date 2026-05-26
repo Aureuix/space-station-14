@@ -90,3 +90,16 @@
   - type: Sprite
     sprite: _SpL/Objects/Fun/Plushies/eini_plushie.rsi
     state: icon
+
+- type: entity
+  parent: BaseShadekinPlushie
+  id: PlushieSymmetry
+  name: symmetry plushie
+  description: A plushie dedicated in memoriam to your former Bright-Eyed CDD secretary. She'd be accurate to her namesake if not for the sword... and also her tail.
+  components:
+  - type: Item
+    size: Small
+    sprite: _SpL/Objects/Fun/Plushies/symmetry_plushie.rsi
+  - type: Sprite
+    sprite: _SpL/Objects/Fun/Plushies/symmetry_plushie.rsi
+    state: icon
