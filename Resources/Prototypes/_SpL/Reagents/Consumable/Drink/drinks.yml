@@ -4,7 +4,7 @@
   parent: BaseDrink
   desc: "The classic Australian party drink. Not to be confused with lemon lime. That's a different thing."
   physicalDesc: reagent-physical-desc-tart
-  flavor: "like lemons, like limes, and like bitters"
+  flavor: lemonlimebitters
   color: "#d84e00"
   metamorphicSprite:
     sprite: _SpL/Objects/Consumable/Drinks/lemonlimebitters.rsi
@@ -19,4 +19,4 @@
         factor: 2
       - !type:AdjustReagent
         reagent: Ethanol
-        amount: 0.002
+        amount: 0.01
