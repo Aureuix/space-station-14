@@ -52,7 +52,7 @@
     - ShipWreck
     - Haunted
     - Mineshaft
-    - Reactor
+    - SovietStronghold
 
 - type: salvageMissionObjective
   id: MissionObjectiveCapture
@@ -155,6 +155,7 @@
     - Easy
     - Moderate
     - Challenging
+    - Difficult
   allowedDungeons:
     - Experiment
     - LavaBrig
@@ -162,4 +163,4 @@
     - ShipWreck
     - Haunted
     - Mineshaft
-    - Reactor
+    - SovietStronghold
