@@ -5,7 +5,7 @@
   maxRandomOffset: 0
   randomRotation: false
   minPlayers: 0
-  maxPlayers: 24
+  maxPlayers: 27
   stations:
     SpLFrontier:
       stationProto: StandardNanotrasenStation
