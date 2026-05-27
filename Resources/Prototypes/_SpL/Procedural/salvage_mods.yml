@@ -11,7 +11,7 @@
 - type: salvageWeatherMod
   id: Fallout
   desc: salvage-biome-mod-weather-dummy
-  weather: Fallout
+  weather: WeatherFallout
   cost: 1
   biomes:
     - LowDesert
