@@ -97,9 +97,10 @@
       - id: WizardSpawn
       - id: Xenoborgs
       # Starlight gamerules:
-      - id: AbductorsSpawn
-      - id: RailroadingTerminator
+#      - id: AbductorsSpawn # SpL change
+#      - id: RailroadingTerminator # SpL change
       - id: Brighteye
+      - id: ColossusSpawn # SpL change
 
 - type: entity
   parent: BaseGameRule
