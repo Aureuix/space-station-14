@@ -17,6 +17,7 @@
             prefixCreator: 'CRV'
         - type: StationCargoShuttle
           path: /Maps/_Starlight/Shuttles/cargo_silica.yml
+          nameGrid: false
         - type: GridSpawn
           groups:
             trade: !type:GridSpawnGroup
@@ -29,77 +30,81 @@
               paths:
                 - /Maps/_SpL/Shuttles/Salvage/Mining_Hammerhead.yml
               nameGrid: false
-          ruins: !type:GridSpawnGroup
-            hide: true
-            nameGrid: true
-            minCount: 2
-            maxCount: 3 
-            stationGrid: false
-            paths:
-              - /Maps/Ruins/abandoned_outpost.yml
-              - /Maps/Ruins/atmos_interchange.yml
-              - /Maps/Ruins/chunked_tcomms.yml
-              - /Maps/Ruins/biodome_satellite.yml
-              - /Maps/Ruins/derelict.yml
-              - /Maps/Ruins/djstation.yml
-              - /Maps/Ruins/empty_flagship.yml
-              - /Maps/Ruins/hydro_outpost.yml
-              - /Maps/Ruins/old_ai_sat.yml
-              - /Maps/Ruins/ruined_prison_ship.yml
-              - /Maps/Ruins/syndicate_dropship.yml
-              - /Maps/Ruins/whiteship_ancient.yml
-              - /Maps/Ruins/whiteship_bluespacejumper.yml
-              - /Maps/Ruins/wrecklaimer.yml
-              - /Maps/Ruins/displaced_telescience.yml
-              - /Maps/_Starlight/Ruins/Salv_Sus.yml 
-          wrecks: !type:DungeonSpawnGroup
-            minimumDistance: 150
-            maximumDistance: 300
-            stationGrid: false
-            minCount: 16 
-            maxCount: 20 
-            addComponents:
-              - type: Gravity
-                enabled: true
-                inherent: true
-              - type: IFF
-                flags: HideLabel
-                color: "#88b0d1"
-            protos:
-              - ChunkDebrisSmall
-              - ChunkDebrisSmall
-              - ChunkDebrisSmall
-              - ChunkDebrisSmall
-              - ChunkDebris
-              - ClusterAsteroid
-              - SpindlyAsteroid
-              - BlobAsteroid
-              - SwissCheeseAsteroid
-              - ClusterTrash
-              - SpindlyTrash
-              - BlobAsteroidTrash
-              - SwissCheeseTrash
-              - ClusterTrash
-              - SpindlyTrash
-              - BlobAsteroidTrash
-              - ClusterMeat
-              - SpindlyMeat
-              - BlobAsteroidSnow
-              - ClusterSnow
-              - SwissCheeseSnow
-              - ChunkDebrisSmall
-              - ChunkDebrisSmall
-          vgroid: !type:DungeonSpawnGroup
-            minimumDistance: 300
-            maximumDistance: 350
-            nameDataset: NamesBorer
-            stationGrid: false
-            addComponents:
-              - type: Gravity
-                enabled: true
-                inherent: true
-            protos:
-              - VGRoid
+            cargo_salvage_shuttle: !type:GridSpawnGroup
+              paths:
+                - /Maps/_SpL/Shuttles/Salvage/Salvage_Tribute.yml
+              nameGrid: false
+            ruins: !type:GridSpawnGroup
+              hide: true
+              nameGrid: true
+              minCount: 2
+              maxCount: 3 
+              stationGrid: false
+              paths:
+                - /Maps/Ruins/abandoned_outpost.yml
+                - /Maps/Ruins/atmos_interchange.yml
+                - /Maps/Ruins/chunked_tcomms.yml
+                - /Maps/Ruins/biodome_satellite.yml
+                - /Maps/Ruins/derelict.yml
+                - /Maps/Ruins/djstation.yml
+                - /Maps/Ruins/empty_flagship.yml
+                - /Maps/Ruins/hydro_outpost.yml
+                - /Maps/Ruins/old_ai_sat.yml
+                - /Maps/Ruins/ruined_prison_ship.yml
+                - /Maps/Ruins/syndicate_dropship.yml
+                - /Maps/Ruins/whiteship_ancient.yml
+                - /Maps/Ruins/whiteship_bluespacejumper.yml
+                - /Maps/Ruins/wrecklaimer.yml
+                - /Maps/Ruins/displaced_telescience.yml
+                - /Maps/_Starlight/Ruins/Salv_Sus.yml 
+            wrecks: !type:DungeonSpawnGroup
+              minimumDistance: 150
+              maximumDistance: 300
+              stationGrid: false
+              minCount: 16 
+              maxCount: 20 
+              addComponents:
+                - type: Gravity
+                  enabled: true
+                  inherent: true
+                - type: IFF
+                  flags: HideLabel
+                  color: "#88b0d1"
+              protos:
+                - ChunkDebrisSmall
+                - ChunkDebrisSmall
+                - ChunkDebrisSmall
+                - ChunkDebrisSmall
+                - ChunkDebris
+                - ClusterAsteroid
+                - SpindlyAsteroid
+                - BlobAsteroid
+                - SwissCheeseAsteroid
+                - ClusterTrash
+                - SpindlyTrash
+                - BlobAsteroidTrash
+                - SwissCheeseTrash
+                - ClusterTrash
+                - SpindlyTrash
+                - BlobAsteroidTrash
+                - ClusterMeat
+                - SpindlyMeat
+                - BlobAsteroidSnow
+                - ClusterSnow
+                - SwissCheeseSnow
+                - ChunkDebrisSmall
+                - ChunkDebrisSmall
+            vgroid: !type:DungeonSpawnGroup
+              minimumDistance: 300
+              maximumDistance: 350
+              nameDataset: NamesBorer
+              stationGrid: false
+              addComponents:
+                - type: Gravity
+                  enabled: true
+                  inherent: true
+              protos:
+                - VGRoid
         - type: StationJobs
           availableJobs:
             # command
