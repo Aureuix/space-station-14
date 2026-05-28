@@ -17,6 +17,12 @@
             prefixCreator: 'CRV'
         - type: StationCargoShuttle
           path: /Maps/_Starlight/Shuttles/cargo_silica.yml
+        - type: GridSpawn
+          groups:
+            cargo_mining_shuttle: !type:GridSpawnGroup
+              paths:
+                - /Maps/_SpL/Shuttles/Salvage/Mining_Hammerhead.yml
+              nameGrid: false
         - type: StationJobs
           availableJobs:
             # command
