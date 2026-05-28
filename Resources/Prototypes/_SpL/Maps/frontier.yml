@@ -1,0 +1,48 @@
+- type: gameMap
+  id: SpLFrontier
+  mapName: 'Frontier Outpost'
+  mapPath: /Maps/_SpL/Stations/Frontier.yml
+  maxRandomOffset: 0
+  randomRotation: false
+  minPlayers: 0
+  maxPlayers: 27
+  stations:
+    SpLFrontier:
+      stationProto: StandardNanotrasenStation
+      components:
+        - type: StationNameSetup
+          mapNameTemplate: '{0} Outpost {1}'
+          nameGenerator:
+            !type:NanotrasenNameGenerator
+            prefixCreator: 'X'
+        - type: StationJobs
+          availableJobs:
+            # command
+            Captain: [ 1, 1 ]
+            HeadOfPersonnel: [ 1, 1 ]
+            # cargo
+            SalvageSpecialist: [ 2, 2 ]
+            MiningSpecialist: [ 2, 2 ]
+            CargoTechnician: [ 2, 2 ]
+            # engineering
+            StationEngineer: [ 1, 1 ]
+            AtmosphericTechnician: [ 1, 1 ]
+            # medical
+            MedicalDoctor: [ 1, 1 ]
+            Paramedic: [ 1, 1 ]
+            Chemist: [ 1, 1 ]
+            # science
+            Roboticist: [ 1, 1 ]
+            Scientist: [ 2, 2 ]
+            # security
+            # law
+            # service
+            Botanist: [ 1, 1 ]
+            Janitor: [ 1, 1 ]
+            ServiceWorker: [ 2, 2 ]
+            Assistant: [ -1, -1 ]
+            # silicon
+            StationAi: [ 1, 1 ]
+            Borg: [ 2, 2 ]
+            #Representives
+
