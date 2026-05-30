@@ -1,0 +1,13 @@
+- type: reaction
+  id: LemonLimeBitters
+  requiredMixerCategories:
+  - Stir
+  reactants:
+    Lemonade:
+      amount: 3
+    JuiceLime:
+      amount: 2
+    Absinthe:
+      amount: 1
+  products:
+    LemonLimeBitters: 6

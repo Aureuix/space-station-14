@@ -1,0 +1,6 @@
+﻿- type: gameMapPool
+  id: DefaultStarlightMapPool
+  maps:
+  - SpLBazaar
+  - SpLPrefab
+  - SpLFrontier

@@ -1,0 +1,22 @@
+- type: reagent
+  id: LemonLimeBitters
+  name: "Lemon Lime and Bitters"
+  parent: BaseDrink
+  desc: "The classic Australian party drink. Not to be confused with lemon lime. That's a different thing."
+  physicalDesc: reagent-physical-desc-tart
+  flavor: lemonlimebitters
+  color: "#d84e00"
+  metamorphicSprite:
+    sprite: _SpL/Objects/Consumable/Drinks/lemonlimebitters.rsi
+    state: icon_empty
+  metamorphicMaxFillLevels: 5
+  metamorphicFillBaseName: fill-
+  metamorphicChangeColor: false
+  metabolisms:
+    Drink:
+      effects:
+      - !type:SatiateThirst
+        factor: 2
+      - !type:AdjustReagent
+        reagent: Ethanol
+        amount: 0.01

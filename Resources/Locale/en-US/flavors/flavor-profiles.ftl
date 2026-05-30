@@ -184,6 +184,7 @@ flavor-complex-paper = like mushy pulp
 flavor-complex-compressed-meat = like compressed meat
 flavor-complex-dog-food = like dog food
 flavor-complex-canned-tuna = like canned tuna
+flavor-complex-llb = like lemons, like limes, and like bitters
 
 # Drink-specific flavors.
 
