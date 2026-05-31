@@ -4,7 +4,7 @@ meta:
   engineVersion: 272.0.0
   forkId: ""
   forkVersion: ""
-  time: 05/31/2026 21:02:50
+  time: 05/31/2026 21:28:59
   entityCount: 11712
 maps:
 - 1
@@ -4530,6 +4530,8 @@ entities:
       rot: -1.5707963267948966 rad
       pos: -29.5,-28.5
       parent: 2
+    - type: AccessReader
+      accessListsOriginal: []
   - uid: 180
     components:
     - type: Transform
@@ -4543,12 +4545,6 @@ entities:
     - type: Transform
       rot: -1.5707963267948966 rad
       pos: -29.5,-2.5
-      parent: 2
-  - uid: 182
-    components:
-    - type: Transform
-      rot: -1.5707963267948966 rad
-      pos: -29.5,-4.5
       parent: 2
   - uid: 183
     components:
@@ -23104,12 +23100,6 @@ entities:
       rot: 1.5707963267948966 rad
       pos: -29.5,-3.5
       parent: 2
-  - uid: 3718
-    components:
-    - type: Transform
-      rot: 1.5707963267948966 rad
-      pos: -29.5,-4.5
-      parent: 2
   - uid: 3719
     components:
     - type: Transform
@@ -23121,12 +23111,6 @@ entities:
     - type: Transform
       rot: 1.5707963267948966 rad
       pos: -28.5,-3.5
-      parent: 2
-  - uid: 3721
-    components:
-    - type: Transform
-      rot: 1.5707963267948966 rad
-      pos: -28.5,-4.5
       parent: 2
   - uid: 3722
     components:
@@ -60954,6 +60938,12 @@ entities:
       parent: 2
 - proto: Railing
   entities:
+  - uid: 3718
+    components:
+    - type: Transform
+      rot: 1.5707963267948966 rad
+      pos: -28.5,-5.5
+      parent: 2
   - uid: 9066
     components:
     - type: Transform
@@ -61067,7 +61057,7 @@ entities:
     components:
     - type: Transform
       rot: 1.5707963267948966 rad
-      pos: -28.5,-5.5
+      pos: -28.5,-4.5
       parent: 2
   - uid: 9086
     components:
@@ -61083,11 +61073,23 @@ entities:
       parent: 2
 - proto: RailingCornerSmall
   entities:
+  - uid: 182
+    components:
+    - type: Transform
+      rot: -1.5707963267948966 rad
+      pos: -29.5,-10.5
+      parent: 2
+  - uid: 3721
+    components:
+    - type: Transform
+      rot: 3.141592653589793 rad
+      pos: -29.5,-6.5
+      parent: 2
   - uid: 9088
     components:
     - type: Transform
       rot: -1.5707963267948966 rad
-      pos: -29.5,-5.5
+      pos: -29.5,-4.5
       parent: 2
   - uid: 9089
     components:
