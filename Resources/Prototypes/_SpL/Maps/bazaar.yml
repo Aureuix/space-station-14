@@ -128,6 +128,7 @@
             Psychologist: [ 1, 1 ]
             Paramedic: [ 2, 2 ]
             Chemist: [ 2, 2 ]
+            Surgeon: [ 1, 1 ]
             # science
             ResearchDirector: [ 1, 1 ]
             Roboticist: [ 2, 2 ]
