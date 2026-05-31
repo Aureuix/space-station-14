@@ -238,7 +238,6 @@ entities:
     - type: GasTileOverlay
     - type: ExplosionAirtightGrid
     - type: RadiationGridResistance
-    - type: MiningShuttle
 - proto: AirAlarm
   entities:
   - uid: 125
