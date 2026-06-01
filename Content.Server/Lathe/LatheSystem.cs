@@ -200,7 +200,11 @@ namespace Content.Server.Lathe
             var recipe = _proto.Index(batch.Recipe);
 
             var time = _reagentSpeed.ApplySpeed(uid, recipe.CompleteTime) * component.TimeMultiplier;
-
+            // Starlight Begin
+            // Ensure the production time is at least one tick to avoid issue with multiple recipes completing at once causing lag.
+            time = MathHelper.Max(time, _timing.TickPeriod);
+            // Starlight End
+            
             var lathe = EnsureComp<LatheProducingComponent>(uid);
             lathe.StartTime = _timing.CurTime;
             lathe.ProductionLength = time;
@@ -212,11 +216,13 @@ namespace Content.Server.Lathe
             _audio.PlayPvs(component.ProducingSound, uid);
             UpdateRunningAppearance(uid, true);
             UpdateUserInterfaceState(uid, component);
-
-            if (time == TimeSpan.Zero)
-            {
-                FinishProducing(uid, component, lathe);
-            }
+            
+            // Starlight Begin
+            // if (time == TimeSpan.Zero)
+            // {
+            //     FinishProducing(uid, component, lathe);
+            // }
+            // Starlight End
             return true;
         }
 
