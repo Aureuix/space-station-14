@@ -32,6 +32,7 @@ using Content.Shared.Stunnable;
 using Content.Shared.Movement.Pulling.Events;
 using Content.Shared.Power.Components;
 using Content.Shared.Power.EntitySystems;
+using Content.Shared.Electrocution;
 using Content.Shared._Starlight.Mech;
 #endregion
 
@@ -87,6 +88,7 @@ public abstract partial class SharedMechSystem : EntitySystem
         SubscribeLocalEvent<MechComponent, ShotAttemptedEvent>(OnShootAttempt); // Moved from server side, broken
         SubscribeLocalEvent<MechComponent, CanRepairEvent>(OnRepairAttempt); //  Moved from server side, broken
         SubscribeLocalEvent<MechPilotComponent, KnockDownAttemptEvent>(OnKnockdownAttempt);
+        SubscribeLocalEvent<MechPilotComponent, ElectrocutionAttemptEvent>(OnMechPilotElectrocutionAttempt);
         #endregion
 
         InitializeRelay();
@@ -684,6 +686,9 @@ public abstract partial class SharedMechSystem : EntitySystem
         component.EquipmentWhitelist = null;
         Dirty(uid, component);
     }
+    
+    private void OnMechPilotElectrocutionAttempt(EntityUid uid, MechPilotComponent comp, ElectrocutionAttemptEvent args)
+        => args.SiemensCoefficient *= 0f; // Fully insulate the pilot
 }
 
 /// <summary>
