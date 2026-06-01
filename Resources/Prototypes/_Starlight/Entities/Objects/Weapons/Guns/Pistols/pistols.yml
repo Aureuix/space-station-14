@@ -170,7 +170,7 @@
       stealGroup: OfficerHandgun
 
 - type: entity
-  name: sp-8t
+  name: service pistol "Blueguard"
   parent: [WeaponPistolDP, BaseBlueShieldContraband, BaseGrandTheftContraband]
   id: WeaponPistolBlueguard
   components:
