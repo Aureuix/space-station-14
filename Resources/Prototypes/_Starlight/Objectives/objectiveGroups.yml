@@ -64,7 +64,7 @@
     VampireCaptainHardsuitStealObjective: 0.75 # Good luck.
     VampireNTRepHardsuitStealObjective: 0.75 # Usually in the bridge... hard to get to.
     VampireBSOHardsuitStealObjective: 0.75 # Same as the above...
-    VampireBSOWeaponStealObjective: 1
+    VampireBSOWeaponStealObjective: 0.75 # Blue Shield weapons. Includes the X-01 and Blueguard Service Pistol.
 
 - type: weightedRandom
   id: VampireObjectiveGroupKill
