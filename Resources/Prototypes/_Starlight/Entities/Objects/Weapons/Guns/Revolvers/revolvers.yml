@@ -103,7 +103,7 @@
     storedOffset: 0,-2
   - type: Gun
     fireRate: 2.0
-    selectedMode: Burst
+    selectedMode: SemiAuto
     availableModes:
     - SemiAuto
     - Burst
