@@ -1555,16 +1555,3 @@
       amount: 1
   products:
     BacchusBlessing: 4
-
-# SpectaLight
-- type: reaction
-  id: ConstantSorrow
-  requiredMixerCategories:
-  - Stir
-  reactants:
-    Whiskey:
-      amount: 1
-    TearGas:
-      amount: 1
-  products:
-    ConstantSorrow: 2

@@ -140,7 +140,6 @@
     - id: ClothingOuterApronBotanist
     - id: ClothingHeadBandBotany
     - id: ChemistryBottleRobustHarvest
-    - id: PlushieTumma
       prob: 0.3
     - id: ClothingBeltPlant
     - id: PlantBag ##Some maps don't have nutrivend

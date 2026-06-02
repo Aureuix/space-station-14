@@ -1313,16 +1313,3 @@
 #  - type: FoodSequenceElement - does not work with randomized sprites
 #    entries:
 #      CottonBurger: AmongPequeno
-
-# SpectaLight
-- type: entity
-  parent: PlushieLizard
-  id: PlushieTumma
-  name: tumma plushie
-  description: Smells of gin fizz and cigaretts, this adorable plushie is sure to keep you company while you are dealing with plants. Smokko guardian not included.
-  components:
-  - type: Sprite
-    sprite: Objects/Fun/Plushies/tumma.rsi
-    state: icon
-  - type: Item
-    sprite: Objects/Fun/Plushies/tumma.rsi

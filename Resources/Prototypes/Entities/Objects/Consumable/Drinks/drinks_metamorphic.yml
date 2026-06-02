@@ -2589,20 +2589,3 @@
   - type: Icon
     sprite: Objects/Consumable/Drinks/bacchusblessing.rsi
     state: icon
-
-# SpectaLight
-- type: entity
-  parent: DrinkGlass
-  id: DrinkConstantSorrow
-  suffix: constant sorrow
-  components:
-  - type: SolutionContainerManager
-    solutions:
-      drink:
-        maxVol: 30
-        reagents:
-        - ReagentId: ConstantSorrow
-          Quantity: 30
-  - type: Icon
-    sprite: Objects/Consumable/Drinks/theconstantsorrow.rsi
-    state: icon
