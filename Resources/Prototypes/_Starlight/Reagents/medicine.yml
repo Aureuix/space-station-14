@@ -48,7 +48,7 @@
       - !type:HealthChange
         conditions:
         - !type:MetabolizerTypeCondition
-          type: [ Avali, Resomi ]
+          type: [ Avali, Resomi, Vox ]
         damage:
           types:
             Asphyxiation: -3.5 
@@ -72,7 +72,7 @@
       - !type:HealthChange
         conditions:
         - !type:MetabolizerTypeCondition
-          type: [ Avali, Resomi ]
+          type: [ Avali, Resomi, Vox ]
           inverted: true
         damage:
           types:

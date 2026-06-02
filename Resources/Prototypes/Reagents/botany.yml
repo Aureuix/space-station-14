@@ -233,7 +233,7 @@
       - !type:HealthChange
         conditions: #Starlight
         - !type:MetabolizerTypeCondition
-          type: [ Avali, Resomi ]
+          type: [ Avali, Resomi, Vox ] # The birds, including Vox
           inverted: true
         damage:
           types:

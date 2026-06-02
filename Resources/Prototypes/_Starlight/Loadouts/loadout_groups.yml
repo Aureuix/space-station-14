@@ -402,8 +402,10 @@
   name: loadout-group-security-sidearm
   loadouts:
   - SecurityMk58
-  - SecurityPistolDP
   - SecurityPistolEnforcer
+  - SecurityRevolverDispatcher
+  - SecurityPistolDP
+  - SecurityMk58Gold
 
 # Assorted Boots
 - type: loadoutGroup

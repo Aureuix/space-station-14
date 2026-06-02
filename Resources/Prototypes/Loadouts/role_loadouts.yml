@@ -478,7 +478,7 @@
   - HeadofSecurityOuterClothing
   - SecurityEyewear
   - SecurityShoes
-  - SurvivalSecurity
+  - SurvivalExtended # Starlight, since they can pick their mask now, they shouldn't get an extra security mask.
   - InsulsCombat # Starlight
   - Trinkets
   - Scarves # Starlight
@@ -499,7 +499,7 @@
   - WardenOuterClothing
   - SecurityEyewear
   - SecurityShoes
-  - SurvivalSecurity
+  - SurvivalExtended # Starlight
   - InsulsCombat # Starlight
   - Trinkets
   - Scarves # Starlight
