@@ -2527,6 +2527,33 @@
         reagent: Ethanol
         amount: 0.2
 
+# SpectaLight
+- type: reagent
+  id: ConstantSorrow
+  name: reagent-name-constant-sorrow
+  parent: BaseAlcohol
+  desc: reagent-desc-constant-sorrow
+  physicalDesc: reagent-physical-desc-constant-sorrow
+  flavor: constantsorrow
+  color: "#ce9b52"
+  metamorphicSprite:
+    sprite: Objects/Consumable/Drinks/theconstantsorrow.rsi
+    state: icon_empty
+  metamorphicMaxFillLevels: 4
+  metamorphicFillBaseName: fill-
+  metamorphicChangeColor: false
+  metabolisms:
+    Drink:
+      effects:
+      - !type:SatiateThirst
+        factor: 2
+      - !type:AdjustReagent
+        reagent: Ethanol
+        amount: 0.1
+      - !type:AdjustReagent
+        reagent: TearGas
+        amount: 0.65
+
 - type: reagent
   id: ZombieCocktail
   name: reagent-name-zombiecocktail
