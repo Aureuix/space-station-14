@@ -361,3 +361,7 @@ reagent-desc-zombiecocktail = It gets in your head. Your he-eyeh-ead.
 
 reagent-name-bacchus-blessing = bacchus's blessing
 reagent-desc-bacchus-blessing = You didn't think it was possible for a liquid to be so utterly revolting. Are you sure about this...?
+
+# SpectaLight
+reagent-name-constant-sorrow = constant sorrow
+reagent-desc-constant-sorrow = When you want to get drunk and go blind with one glass
