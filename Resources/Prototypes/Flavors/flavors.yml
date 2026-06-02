@@ -1503,9 +1503,3 @@
   id: lemonlimebitters
   flavorType: Complex
   description: flavor-complex-llb
-
-# SpectaLight
-- type: flavor
-  id: constantsorrow
-  flavorType: Complex
-  description: flavor-complex-constant-sorrow
