@@ -199,7 +199,6 @@
   categories:
     - UplinkAmmo
 
-
 - type: listing
   id: UplinkPistol9mmMagazineHP
   name: uplink-pistol-hp-magazine-name # Starlight
@@ -208,7 +207,8 @@
   productEntity: MagazinePistolHP
   cost:
     Telecrystal: 1
-
+  categories:
+    - UplinkAmmo
 
 - type: listing
   id: UplinkPistol9mmMagazineFMJ
