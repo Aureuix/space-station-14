@@ -42,14 +42,14 @@
       - !type:HealthChange
         conditions:
         - !type:MetabolizerTypeCondition
-          type: [ Avali, Resomi ]
+          type: [ Avali, Resomi Vox ]
         damage:
           types:
             Heat: -2
       - !type:HealthChange
         conditions:
         - !type:MetabolizerTypeCondition
-          type: [ Avali, Resomi ]
+          type: [ Avali, Resomi Vox ]
           inverted: true
         damage:
           types:
@@ -93,14 +93,14 @@
       - !type:HealthChange
         conditions:
         - !type:MetabolizerTypeCondition
-          type: [ Avali, Resomi ]
+          type: [ Avali, Resomi, Vox ]
         damage:
           types:
             Shock: -2 # 4 per u
       - !type:HealthChange
         conditions:
         - !type:MetabolizerTypeCondition 
-          type: [ Avali, Resomi ]
+          type: [ Avali, Resomi, Vox ]
           inverted: true
         damage:
           types:
@@ -148,7 +148,7 @@
         effectProto: StatusEffectCyberneticDisruption
         conditions:
         - !type:MetabolizerTypeCondition 
-          type: [ Avali, Resomi ]
+          type: [ Avali, Resomi, Vox ]
           inverted: true
         type: Add
         time: 2
