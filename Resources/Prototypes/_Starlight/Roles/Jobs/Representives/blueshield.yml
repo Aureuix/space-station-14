@@ -20,7 +20,7 @@
   rules: job-rules-corporate-aligned
   supervisors: job-supervisors-nt-personnel
   canBeAntag: false
-  displayWeight: 4
+  displayWeight: 5
   access:
     - Command
     - Bar

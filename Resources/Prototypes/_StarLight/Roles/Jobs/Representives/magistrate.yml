@@ -18,6 +18,7 @@
   supervisors: job-supervisors-nanotrasen
   canBeAntag: false
   setPreference: true
+  displayWeight: 4
   access:
   - Magistrate
   - IAA
