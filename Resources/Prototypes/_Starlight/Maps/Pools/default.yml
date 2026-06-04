@@ -1,4 +1,5 @@
 - type: gameMapPool
+  parent: DefaultSpectraMapPool
   id: DefaultStarlightMapPool
   maps:
   - StarlightBagel
