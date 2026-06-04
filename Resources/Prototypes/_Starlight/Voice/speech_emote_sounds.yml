@@ -287,7 +287,7 @@
     variation: 0.125
   sounds:
     Scream:
-      collection: ShadekinMaleScreams
+      path: /Audio/_Starlight/Voice/Shadekin/scream_m1.ogg #SpL change
     Laugh:
       collection: MaleLaugh
     Sneeze:
@@ -329,7 +329,7 @@
     variation: 0.125
   sounds:
     Scream:
-      collection: ShadekinFemaleScreams
+      path: /Audio/_Starlight/Voice/Shadekin/scream_m1.ogg #SpL change
     Laugh:
       collection: FemaleLaugh
     Sneeze:
