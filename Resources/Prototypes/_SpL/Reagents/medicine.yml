@@ -42,14 +42,14 @@
       - !type:HealthChange
         conditions:
         - !type:MetabolizerTypeCondition
-          type: [ Avali, Resomi Vox ]
+          type: [ Avali, Resomi, Vox ]
         damage:
           types:
             Heat: -2
       - !type:HealthChange
         conditions:
         - !type:MetabolizerTypeCondition
-          type: [ Avali, Resomi Vox ]
+          type: [ Avali, Resomi, Vox ]
           inverted: true
         damage:
           types:
