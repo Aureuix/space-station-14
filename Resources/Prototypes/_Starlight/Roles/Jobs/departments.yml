@@ -11,7 +11,7 @@
   primary: false
   
 - type: department
-  id: Representives
+  id: Representatives
   name: department-NT
   description: department-NT-description
   color: "#05255D"
@@ -24,7 +24,7 @@
   - NanotrasenCareerTrainer
   - Decimus
   - NanoTrasenSpecialForces
-  - NanotrasenCareerTrainer
+  - NTNCBlueShield
   primary: false
   weight: 50
 
