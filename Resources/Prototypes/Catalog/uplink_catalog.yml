@@ -531,38 +531,38 @@
 
 # Ammo
 
-- type: listing
-  id: UplinkPistol9mmMagazineSP
-  name: uplink-pistol-magazine-name
-  description: uplink-pistol-magazine-desc
-  icon: { sprite: /Textures/Objects/Weapons/Guns/Ammunition/Magazine/Pistol/pistol_high_capacity_mag.rsi, state: base-icon }
-  productEntity: MagazinePistolSP
-  cost:
-    Telecrystal: 1
-  categories:
-  - UplinkAmmo
+#- type: listing
+#  id: UplinkPistol9mmMagazineSP
+#  name: uplink-pistol-magazine-name
+#  description: uplink-pistol-magazine-desc
+#  icon: { sprite: /Textures/Objects/Weapons/Guns/Ammunition/Magazine/Pistol/pistol_high_capacity_mag.rsi, state: base-icon }
+#  productEntity: MagazinePistolSP
+#  cost:
+#    Telecrystal: 1
+#  categories:
+#  - UplinkAmmo
 
-- type: listing
-  id: UplinkPistol9mmMagazineHP
-  name: uplink-pistol-magazine-name
-  description: uplink-pistol-magazine-desc
-  icon: { sprite: /Textures/Objects/Weapons/Guns/Ammunition/Magazine/Pistol/pistol_mag.rsi, state: sp }
-  productEntity: MagazinePistolHP
-  cost:
-    Telecrystal: 1
-  categories:
-  - UplinkAmmo
+#- type: listing
+#  id: UplinkPistol9mmMagazineHP
+# name: uplink-pistol-magazine-name
+# description: uplink-pistol-magazine-desc
+# icon: { sprite: /Textures/Objects/Weapons/Guns/Ammunition/Magazine/Pistol/pistol_mag.rsi, state: sp }
+#  productEntity: MagazinePistolHP
+#  cost:
+#    Telecrystal: 1
+#  categories:
+#  - UplinkAmmo
 
-- type: listing
-  id: UplinkPistol9mmMagazineFMJ
-  name: uplink-pistol-magazine-name
-  description: uplink-pistol-magazine-desc
-  icon: { sprite: /Textures/Objects/Weapons/Guns/Ammunition/Magazine/Pistol/pistol_mag.rsi, state: fmj }
-  productEntity: MagazinePistolFMJ
-  cost:
-    Telecrystal: 1
-  categories:
-  - UplinkAmmo
+#- type: listing
+#  id: UplinkPistol9mmMagazineFMJ
+#  name: uplink-pistol-magazine-name
+#  description: uplink-pistol-magazine-desc
+#  icon: { sprite: /Textures/Objects/Weapons/Guns/Ammunition/Magazine/Pistol/pistol_mag.rsi, state: fmj }
+#  productEntity: MagazinePistolFMJ
+#  cost:
+#    Telecrystal: 1
+#  categories:
+#  - UplinkAmmo
 
 # For the C20R
 - type: listing
