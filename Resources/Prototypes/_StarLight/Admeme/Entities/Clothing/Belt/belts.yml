@@ -1,7 +1,7 @@
 - type: entity
-  parent: [ClothingBeltStorageBase, ContentsExplosionResistanceBase, BaseCentcommContraband]
+  parent: [ClothingBeltStorageBase, ContentsExplosionResistanceBase, BaseNanoTrasenContraband]
   id: ClothingBeltNTNCRig
-  name: ntnc rig
+  name: NTNC rig
   description: A military rig worn by NanoTrasen Navy Marines.
   components:
   - type: Storage #Starlight
@@ -23,7 +23,7 @@
 - type: entity
   parent: ClothingBeltNTNCRig
   id: ClothingBeltNTNC
-  name: ntnc belt
+  name: NTNC belt
   description: A military belt worn by NanoTrasen Navy Marines.
   components:
   - type: Sprite

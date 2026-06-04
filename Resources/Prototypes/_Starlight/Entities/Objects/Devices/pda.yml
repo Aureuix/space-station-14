@@ -639,10 +639,10 @@
 - type: entity
   parent: BasePDA
   id: NanotrasenCareerTrainerPDA
-  name: Nanotrasen Career Trainer PDA
+  name: NanoTrasen Career Trainer PDA
   components:
   - type: Pda
-    id: NanotrasenCareerTrainerIDCard
+    id: NanoTrasenCareerTrainerIDCard
   - type: Appearance
     appearanceDataInit:
      enum.PdaVisuals.PdaType:

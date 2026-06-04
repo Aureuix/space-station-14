@@ -7,16 +7,21 @@
   roles:
   - Magistrate
   - IAA
+  editorHidden: true
+  primary: false
   
 - type: department
   id: Representives
-  name: department-Representives
-  description: department-Representives-description
+  name: department-NT
+  description: department-NT-description
   color: "#05255D"
   roles:
   - BlueShield
   - Magistrate
   - NanoTrasenRepresentative
+  - StationAi
+  - IAA
+  - NanotrasenCareerTrainer
   - Decimus
   - NanoTrasenSpecialForces
   - NanotrasenCareerTrainer
