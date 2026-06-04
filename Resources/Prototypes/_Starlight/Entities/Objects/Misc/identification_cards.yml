@@ -81,7 +81,6 @@
       state: stripe_bottom
       color: "#876c00"
     - sprite: *starlight-icon-rsi
-    - sprite: *icon-rsi
       offset: *icon-offset
       state: NanoTrasenRepresentative
   - type: PresetIdCard
