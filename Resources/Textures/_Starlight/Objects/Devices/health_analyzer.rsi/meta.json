@@ -1,7 +1,7 @@
 {
   "version": 1,
   "license": "CC-BY-SA-3.0",
-  "copyright": "Made by github @AegisShieldDev",
+  "copyright": "Made by github @AegisShieldDev. Metaphysical and Holy by nykaestra",
   "size": {
     "x": 15,
     "y": 15
@@ -91,6 +91,16 @@
       "name": "shock",
       "directions": 1,
       "copyright": "Made by github @AegisShieldDev"
+    },
+    {
+      "name": "metaphysical",
+      "directions": 1,
+      "copyright": "Made by nykaestra"
+    },
+    {
+      "name": "holy",
+      "directions": 1,
+      "copyright": "Made by nykaestra"
     }
   ]
 }
