@@ -21,4 +21,4 @@
   - CentralCommand
   special:
     - !type:AddImplantSpecial
-      implants: [ MindShieldImplant, DeathRattleImplantCentcomm, RadioImplantCentcomm ]
+      implants: [ MindShieldImplant, DeathRattleImplantNanoTrasen, RadioImplantNanoTrasen ]

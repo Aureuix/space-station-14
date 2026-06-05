@@ -10,7 +10,8 @@
   startingGear: ParamedicGear
   icon: "JobIconParamedic"
   supervisors: job-supervisors-cmo
-  canBeAntag: true
+  canBeAntag: false
+  displayWeight: 3 # Starlight
   access:
   - Medical
   - Maintenance

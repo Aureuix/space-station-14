@@ -4,18 +4,18 @@
   description: job-description-iaa
   playTimeTracker: JobIAA
   requirements:
-  - !type:DepartmentTimeRequirement
-    department: Command
-    time: 36000 # 10h
-  - !type:DepartmentTimeRequirement
-    department: Security
-    time: 36000 # 10h
+    - !type:DepartmentTimeRequirement
+      department: Command
+      time: 36000 # 10h
+    - !type:DepartmentTimeRequirement
+      department: Security
+      time: 36000 # 10h
   startingGear: IAAGear
   icon: "JobIconIAA"
   rules: job-rules-corporate-aligned
-  supervisors: job-supervisors-magistrate
+  supervisors: job-supervisors-nt-personnel
   canBeAntag: false
-  displayWeight: 40
+  displayWeight: 3
   access:
   - IAA
   - Brig
@@ -23,6 +23,8 @@
   - Lawyer
   - GenpopEnter
   - GenpopLeave
+  - Command
+  - Debrief
   special:
   - !type:AddImplantSpecial
     implants: [ MindShieldImplant ]
