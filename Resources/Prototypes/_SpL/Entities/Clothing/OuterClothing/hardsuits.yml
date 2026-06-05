@@ -33,7 +33,7 @@
         Heat: 0.25
         Radiation: 0.01
         Caustic: 0.4
-        staminaModifier: 0.3
+        StaminaModifier: 0.3
   - type: ClothingSpeedModifier
     walkModifier: 0.9
     sprintModifier: 0.9
@@ -60,7 +60,6 @@
   - type: PowerCellDraw
     enabled: false
     drawRate: 8
-    useRate: 0
   - type: UseDelay
     delay: 10.0
   - type: Tag

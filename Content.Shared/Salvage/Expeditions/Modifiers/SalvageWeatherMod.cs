@@ -29,6 +29,6 @@ public sealed partial class SalvageWeatherMod : IPrototype, IBiomeSpecificMod
     /// </summary>
     /// Far Horizons
     [DataField]
-    public ProtoId<WeatherPrototype>? Weather = null;
+    public EntProtoId? Weather = null;
 
 }

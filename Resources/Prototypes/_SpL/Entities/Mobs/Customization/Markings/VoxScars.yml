@@ -5,7 +5,7 @@
   markingCategory: Chest
   speciesRestriction: [Vox]
   sprites:
-  - sprite: _Impstation/Mobs/Customization/markingsbundle.rsi
+  - sprite: _Impstation/Mobs/Customization/vox_scars.rsi
     state: claw_torso
 
 - type: marking 
@@ -14,7 +14,7 @@
   markingCategory: Head
   speciesRestriction: [Vox]
   sprites:
-  - sprite: _Impstation/Mobs/Customization/markingsbundle.rsi
+  - sprite: _Impstation/Mobs/Customization/vox_scars.rsi
     state: bigslash_l_head
 
 - type: marking 
@@ -23,7 +23,7 @@
   markingCategory: Head
   speciesRestriction: [Vox]
   sprites:
-  - sprite: _Impstation/Mobs/Customization/markingsbundle.rsi
+  - sprite: _Impstation/Mobs/Customization/vox_scars.rsi
     state: bigslash_r_head
 
 - type: marking 
@@ -32,7 +32,7 @@
   markingCategory: Head
   speciesRestriction: [Vox]
   sprites:
-  - sprite: _Impstation/Mobs/Customization/markingsbundle.rsi
+  - sprite: _Impstation/Mobs/Customization/vox_scars.rsi
     state: bigslash_l_head
 
 - type: marking 
@@ -41,7 +41,7 @@
   markingCategory: Head
   speciesRestriction: [Vox]
   sprites:
-  - sprite: _Impstation/Mobs/Customization/markingsbundle.rsi
+  - sprite: _Impstation/Mobs/Customization/vox_scars.rsi
     state: slash_r_head
 
 - type: marking 
@@ -50,7 +50,7 @@
   markingCategory: Head
   speciesRestriction: [Vox]
   sprites:
-  - sprite: _Impstation/Mobs/Customization/markingsbundle.rsi
+  - sprite: _Impstation/Mobs/Customization/vox_scars.rsi
     state: roadrash_l_head
 
 - type: marking 
@@ -59,6 +59,6 @@
   markingCategory: Head
   speciesRestriction: [Vox]
   sprites:
-  - sprite: _Impstation/Mobs/Customization/markingsbundle.rsi
+  - sprite: _Impstation/Mobs/Customization/vox_scars.rsi
     state: roadrash_r_head #done: 5:15 pm\
 # all of this code was written before Hardlight PR #939 was made.
