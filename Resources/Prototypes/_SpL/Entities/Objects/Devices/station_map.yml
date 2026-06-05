@@ -1,5 +1,5 @@
 ﻿- type: entity
-  parent: HandheldStationMap
+  parent: [ HandheldStationMapUnpowered, BaseIlluminateContraband ]
   id: HandheldStationMapIlluminate
   name: illuminate target station map
   suffix: Handheld, Illuminate

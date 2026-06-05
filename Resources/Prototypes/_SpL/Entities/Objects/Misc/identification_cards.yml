@@ -15,6 +15,6 @@
           state: stripe_bottom
           color: "#ffffff"
         - sprite: _SpL/Interface/Misc/job_icons.rsi
-          state: Illuminate
+          state: illuminate_icon
     - type: PresetIdCard
-      job: Magistrate
+      job: Illuminate
