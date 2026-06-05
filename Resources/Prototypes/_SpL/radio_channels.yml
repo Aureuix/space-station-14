@@ -4,3 +4,4 @@
   keycode: 'i'
   frequency: 2111
   color: "#fc7921"
+  longRange: true
