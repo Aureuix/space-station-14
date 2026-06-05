@@ -18,7 +18,7 @@
       defaultChannel: Illuminate
     - type: Sprite
       layers:
-        - sprite: _Starlight/Objects/Devices/encryption_keys.rsi
+        - sprite: Objects/Devices/encryption_keys.rsi
           state: crypt_orange
         - sprite: _SpL/Objects/Devices/encryption_keys.rsi
           state: illuminate_label
