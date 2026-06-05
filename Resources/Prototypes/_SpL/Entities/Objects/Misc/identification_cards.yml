@@ -18,3 +18,8 @@
         - sprite: _SpL/Interface/Misc/job_icons.rsi
           offset: &icon-offset -0.09375, 0.0625 #3 pixels left, 2 pixels up
           state: illuminate_icon
+    - type: IdCard
+      path: _SpL/Textures/Misc/job_icons.rsi
+      jobIcon: JobIconIlluminate
+    - type: NanoChatCard
+      listNumber: false
