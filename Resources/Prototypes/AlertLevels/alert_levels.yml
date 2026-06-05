@@ -57,7 +57,7 @@
       color: DarkRed
       emergencyLightColor: '#ffba9c' #Starlight
       forceEnableEmergencyLights: true
-      shuttleTime: 1200
+      shuttleTime: 180 # SpL- why would we try to make it harder to evacuate a nuke??? won't make a difference unless it's called frame 1 anyway
       dimmedLightMultiplier: 0.2 # Starlight
     epsilon:
       announcement: alert-level-epsilon-announcement
@@ -70,7 +70,7 @@
       color: DarkViolet
       emergencyLightColor: '#938aff' #Starlight
       forceEnableEmergencyLights: true
-      shuttleTime: 1200
+      shuttleTime: 300 #SpL- epsilon's change makes it more logical to make the shuttle come faster rather than slower
       dimmedLightMultiplier: 0 # Starlight
     omega: # begin starlight
       announcement: alert-level-omega-announcement
@@ -83,7 +83,7 @@
       color: '#FFE4E1'
       emergencyLightColor: '#FFE4E1'
       forceEnableEmergencyLights: true
-      shuttleTime: 1200
+      shuttleTime: 6666 #SpL- if omega gets called, you are NOT leaving
       dimmedLightMultiplier: 0.2
     theta:
       announcement: alert-level-theta-announcement
@@ -109,7 +109,7 @@
       color: "#2288ff"
       emergencyLightColor: "#2288ff"
       forceEnableEmergencyLights: true
-      shuttleTime: 1200
+      shuttleTime: 600 #SpL- Why the hell was this doubled? come on starlight do better
     orange:
       announcement: alert-level-orange-announcement
       selectable: true
@@ -120,7 +120,7 @@
       color: "#ff8119"
       emergencyLightColor: "#ff8119"
       forceEnableEmergencyLights: true
-      shuttleTime: 600
+      shuttleTime: 300 #SpL- if it's orange, people want out. we can penalize for misuse at cc
       # end starlight
     octarine: # Stellar - Cosmic Cult
       announcement: alert-level-octarine-announcement
@@ -131,3 +131,4 @@
       emergencyLightColor: CadetBlue
       forceEnableEmergencyLights: true
       shuttleTime: 600
+      dimmedLightMultiplier: 0.2 # SpL- same as delta. it's hype
