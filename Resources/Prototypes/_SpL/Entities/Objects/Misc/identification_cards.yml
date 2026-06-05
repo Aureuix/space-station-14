@@ -20,6 +20,6 @@
           state: illuminate_icon
     - type: IdCard
       path: _SpL/Textures/Misc/job_icons.rsi
-      jobIcon: JobIconIlluminate
+      jobIcon: illuminate
     - type: NanoChatCard
       listNumber: false
