@@ -12,4 +12,3 @@
     - type: Contraband
       severity: Illuminate
       allowedDepartments: [ CentComm ]
-      allowedJobs: [ Illuminate ]
