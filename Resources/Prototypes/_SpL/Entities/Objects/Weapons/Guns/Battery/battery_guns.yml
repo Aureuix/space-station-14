@@ -5,43 +5,41 @@
   description: The standard longarm of the Illuminate, the AR12 uses energy to generate and fire aerogel bolts at supersonic speeds via a powerful compact railgun configuration.
   components:
     - type: CanDualWield
-    - type: Appearance
     - type: Sprite
-      sprite: _SpL/Objects/Weapons/Guns/Battery/blizzard.rsi
+      sprite: /Textures/_SpL/Objects/Weapons/Guns/Battery/blizzard.rsi
       layers:
-        - state: base
-          map: ["enum.GunVisualLayers.MagUnshaded"]
-          shader: unshaded
-    - type: Clothing
-      sprite: _SpL/Objects/Weapons/Guns/Battery/blizzard.rsi
-    - type: MagazineVisuals
-      magState: laser
-      steps: 5
-      zeroVisible: true
-    - type: Gun
-      fireRate: 4
-      selectedMode: FullAuto
-      availableModes:
-        - FullAuto
-        - SemiAuto
-      soundGunshot:
-        path: /Audio/Weapons/Guns/Gunshots/ship_svalinn.ogg
-        params:
-          volume: -2
-    - type: BatteryAmmoProvider
-      proto: BulletRailgun
-      fireCost: 50
+      - state: base
+        map: ["enum.GunVisualLayers.Base"]
+      - state: mag-unshaded-0
+        map: ["enum.GunVisualLayers.MagUnshaded"]
+        shader: unshaded  
     - type: Item
       size: Large
       shape:
         - 0,0,2,1
-  
+    - type: Clothing
+      sprite: /Textures/_SpL/Objects/Weapons/Guns/Battery/blizzard.rsi
+    - type: Gun
+      shotsPerBurst: 4
+      selectedMode: Burst
+      availableModes:
+        - Burst
+      burstFireRate: 40
+      burstCooldown: 0.8
+      soundGunshot:
+        path: /Audio/Weapons/Guns/Gunshots/ship_svalinn.ogg
+        params:
+          volume: -2
+      soundEmpty:
+        path: /Audio/Machines/Nuke/angry_beep.ogg
+        params:
+          volume: -2
+    - type: BatteryAmmoProvider
+      proto: BulletRailgun
+      fireCost: 20
     - type: Battery
-      maxCharge: 1000
-      startingCharge: 1000
-    - type: BatterySelfRecharger
-      autoRechargeRate: 100
-      autoRechargePauseTime: 5
+      maxCharge: 800
+      startingCharge: 800
     - type: ContainerContainer
       containers:
         firing_pin: !type:Container
@@ -51,3 +49,11 @@
           - FiringPinAdvancedLaser
     - type: FiringPinHolder
       supportedPins: [ AdvancedLaser ]
+    - type: MagazineVisuals
+      magState: mag
+      steps: 5
+      zeroVisible: true
+    - type: Appearance
+    - type: GunWieldBonus
+      minAngle: -19
+      maxAngle: -16

@@ -1,21 +1,22 @@
 ﻿- type: entity
   categories: [ HideSpawnMenu ]
-  parent: BaseBulletStarLight
+  parent: BaseBulletStarlight
   id: BulletRailgun
   name: railgun round
   components:
   - type: Projectile
     damage:
       types:
-        Piercing: 20
-        Blunt: 5
-        Structural: 50
+        Piercing: 12
+        Structural: 20
     bloodlossModifier: 1
-    penetrationThreshold: 200
+    penetrationThreshold: 400
     penetrationDamageTypeRequirement:
-    - Structural
+      - Structural
   - type: PointLight
     enabled: true
     color: "#fc7921"
     radius: 2.0
     energy: 5.0
+  - type: TimedDespawn
+    lifetime: 1
