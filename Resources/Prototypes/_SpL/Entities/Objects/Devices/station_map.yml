@@ -1,0 +1,25 @@
+﻿- type: entity
+  parent: HandheldStationMap
+  id: HandheldStationMapIlluminate
+  name: illuminate target station map
+  suffix: Handheld, Illuminate
+  description: Displays a readout of the target station.
+  components:
+    - type: Sprite
+      sprite: _SpL/Objects/Devices/tablets.rsi
+      layers:
+        - state: tabletilluminate
+        - state: illuminate
+          shader: unshaded
+    - type: Item
+      sprite: _SpL/Objects/Devices/tablets.rsi
+      inhandVisuals:
+        left:
+          - state: inhand-left-illuminate
+        right:
+          - state: inhand-right-illuminate
+    - type: StationMap
+      showLocation: true
+      initializeWithStation: true
+    - type: NukeopsStationMap
+

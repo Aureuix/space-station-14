@@ -1,0 +1,16 @@
+﻿- type: entity
+  parent: [ClothingHeadsetAlt, BaseIlluminateContraband]
+  id: ClothingHeadsetAltIlluminate
+  name: Illuminate over-ear headset
+  components:
+    - type: ContainerFill
+      containers:
+        key_slots:
+          - EncryptionKeyIlluminate
+    - type: Sprite
+      sprite: _SpL/Clothing/Ears/Headsets/illuminate.rsi
+    - type: Clothing
+      sprite: _SpL/Clothing/Ears/Headsets/illuminate.rsi
+    - type: RadioChime
+      sound:
+        path: /Audio/_Starlight/Effects/Radio/tsf.ogg
