@@ -155,11 +155,8 @@ public sealed class SpawnSalvageMissionJob : Job<bool>
                 var weather = _prototypeManager.Index(mission.Weather);
                 if (weather.Weather != null)
                 {
-                    //var weatherProto = _prototypeManager.Index(weather.Weather);
-                    var weatherProto = weather.Weather;
-                    //EntProtoId? weatherProto = weather.Weather.ToString();
-                    _entManager.System<SharedWeatherSystem>().TrySetWeather(mapId, weatherProto, out _);
-                    //_entManager.System<SharedWeatherSystem>().TryAddWeather(mapId,  weatherProto.ID, out _);
+                    var weatherProto = weather.Weather; //Spectra. Salvage weather rewrite
+                    _entManager.System<SharedWeatherSystem>().TrySetWeather(mapId, weatherProto, out _); //Spectra. Salvage weather rewrite
                 }
             }
             // Far Horisons end
