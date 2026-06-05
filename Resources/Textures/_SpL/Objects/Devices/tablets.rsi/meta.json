@@ -1,0 +1,31 @@
+﻿{
+  "version": 1,
+  "license": "CC-BY-SA-3.0",
+  "copyright": "Taken from Baystation12 at https://github.com/Baystation12/Baystation12/tree/17e84546562b97d775cb26790a08e6d87e7f8077 and modified by nykaestra for SpectraLight. Inhands by carousel.",
+  "size": {
+    "x": 32,
+    "y": 32
+  },
+  "states": [
+    {
+      "name": "tabletilluminate"
+    },
+    {
+      "name": "illuminate",
+      "delays": [
+        [
+          0.3,
+          0.3
+        ]
+      ]
+    },
+    {
+      "name": "inhand-left-illuminate",
+      "directions": 4
+    },
+    {
+      "name": "inhand-right-illuminate",
+      "directions": 4
+    }
+  ]
+}

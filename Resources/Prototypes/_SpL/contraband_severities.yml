@@ -1,3 +1,7 @@
 - type: contrabandSeverity
   id: GSL
   examineText: contraband-examine-text-gsl
+  
+- type: contrabandSeverity
+  id: Illuminate
+  examineText: contraband-examine-text-illuminate

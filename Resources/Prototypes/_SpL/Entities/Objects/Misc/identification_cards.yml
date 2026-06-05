@@ -1,0 +1,20 @@
+﻿- type: entity
+  parent: [ IDCardStandard, BaseIlluminateContraband ]
+  id: IlluminateIDCard
+  name: Illuminate ID card
+  components:
+    - type: Sprite
+      sprite: _Starlight/Objects/Misc/id_cards.rsi
+      layers:
+        - sprite: &id-rsi Objects/Misc/id_cards.rsi
+          state: orange
+        - sprite: *id-rsi
+          state: stripe_top
+          color: "#ffffff"
+        - sprite: *id-rsi
+          state: stripe_bottom
+          color: "#ffffff"
+        - sprite: _SpL/Interface/Misc/job_icons.rsi
+          state: Illuminate
+    - type: PresetIdCard
+      job: Magistrate

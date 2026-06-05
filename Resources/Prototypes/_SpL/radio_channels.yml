@@ -1,0 +1,6 @@
+﻿- type: radioChannel
+  id: Illuminate
+  name: chat-radio-illuminate
+  keycode: 'i'
+  frequency: 2111
+  color: "#fc7921"

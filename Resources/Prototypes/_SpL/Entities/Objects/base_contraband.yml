@@ -4,3 +4,12 @@
   components:
   - type: Contraband
     severity: GSL
+    
+- type: entity
+  id: BaseIlluminateContraband
+  abstract: true
+  components:
+    - type: Contraband
+      severity: Illuminate
+      allowedDepartments: [ CentComm ]
+      allowedJobs: [ Illuminate ]
