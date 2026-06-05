@@ -1,5 +1,6 @@
 ﻿- type: gameMapPool
-  id: DefaultStarlightMapPool
+  id: DefaultSpectraMapPool
+  abstract: true
   maps:
   - SpLBazaar
   - SpLPrefab
