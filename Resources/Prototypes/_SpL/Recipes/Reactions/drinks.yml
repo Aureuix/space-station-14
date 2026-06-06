@@ -11,3 +11,15 @@
       amount: 1
   products:
     LemonLimeBitters: 6
+
+- type: reaction
+  id: ConstantSorrow
+  requiredMixerCategories:
+  - Stir
+  reactants:
+    Whiskey:
+      amount: 1
+    TearGas:
+      amount: 1
+  products:
+    ConstantSorrow: 2
