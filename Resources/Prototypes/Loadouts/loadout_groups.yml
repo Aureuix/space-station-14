@@ -208,6 +208,7 @@
   - CaptainCloak
   - CaptainCloakFormal
   - CaptainMantle
+  - CaptainBoatCloak #DeltaV
 
 - type: loadoutGroup
   id: CaptainBackpack
@@ -247,6 +248,7 @@
   minLimit: 0
   loadouts:
   - HoPHead
+  - HopHeadFormal # Delta V
 
 - type: loadoutGroup
   id: HoPJumpsuit
@@ -256,6 +258,8 @@
   - HoPJumpskirt
   - HoPTurtleneckJumpsuit # afterlight
   - HoPTurtleneckJumpskirt # afterlight
+  - HopFormalSuit # DeltaV
+  - HopFormalSkirt # DeltaV
 
 - type: loadoutGroup
   id: HoPNeck
@@ -264,6 +268,7 @@
   loadouts:
   - HoPCloak
   - HoPMantle
+  - HopCloakFormal # DeltaV
 
 - type: loadoutGroup
   id: HoPBackpack
@@ -918,6 +923,7 @@
   - QuartermasterTurtleneck
   - QuartermasterTurtleneckSkirt
   - QuartermasterFormalSuit
+  - QuartermasterFormalSkirt # DeltaV
 
 - type: loadoutGroup
   id: QuartermasterNeck
@@ -974,6 +980,7 @@
   - CargoTechnicianJumpsuitFormal
   - CargoTechnicianJumpskirtFormal # afterlight end
   - CargoTechnicianOveralls # Starlight
+  - CargoTechnicianJumpsuitInformal # DeltaV
 
 - type: loadoutGroup
   id: CargoTechnicianBackpack
@@ -1351,6 +1358,7 @@
   minLimit: 0
   loadouts:
   - RegularLabCoat
+  - RegularLabCoatLong # DeltaV
   - ScienceLabCoat
   - ScienceWintercoat
   - RoboticistLabCoat
@@ -1442,6 +1450,8 @@
   - ClothingNeckCloakHosRetro #STARLIGHT
   - HeadofSecurityCloak
   - HeadofSecurityMantle
+  - HeadofSecurityBoatCloak #DeltaV
+  - HeadofSecurityRobe #DeltaV
 
 - type: loadoutGroup
   id: HeadofSecurityOuterClothing
@@ -1741,6 +1751,11 @@
   - ChiefMedicalOfficerJumpskirt
   - ChiefMedicalOfficerTurtleneckJumpsuit
   - ChiefMedicalOfficerTurtleneckJumpskirt
+  - ChiefMedicalOfficerFormalSuit # DeltaV
+  - ChiefMedicalOfficerFormalSkirt # DeltaV
+  - ChiefMedicalOfficerVestSuit # DeltaV
+  - ChiefMedicalOfficerVestSkirt # DeltaV
+  - ChiefMedicalOfficerSummerSuit # DeltaV
 
 
 - type: loadoutGroup
@@ -1749,6 +1764,7 @@
   minLimit: 0
   loadouts:
   - ChiefMedicalOfficerLabCoat
+  - ChiefMedicalOfficerLabCoatLong # DeltaV
   - ChiefMedicalOfficerWintercoat
 
 - type: loadoutGroup
@@ -1758,6 +1774,8 @@
   loadouts:
   - ChiefMedicalOfficerCloak
   - ChiefMedicalOfficerMantle
+  - ChiefMedicalOfficerShawl # DeltaV
+  - ChiefMedicalOfficerOverShoulder # DeltaV
 
 - type: loadoutGroup
   id: ChiefMedicalOfficerShoes
@@ -1790,6 +1808,11 @@
   - BlueSurgeryCap
   - GreenSurgeryCap
   - PurpleSurgeryCap
+  - BlackSurgeryCap # Delta V
+  - CyanSurgeryCap # Delta V
+  - PinkSurgeryCap # Delta V
+  - RainbowSurgeryCap # Delta V
+  - WhiteSurgeryCap # Delta V
   - NurseHat
 
 - type: loadoutGroup
@@ -1803,10 +1826,15 @@
   - MedicalBlueScrubs
   - MedicalGreenScrubs
   - MedicalPurpleScrubs
-  - NurseJumpskirt # afterlight start
-  - CoronerJumpskirt
-  - CoronerJumpsuit
-  - CoronerJumpsuitAlt # afterlight end
+  - MedicalBlackScrubs # DeltaV
+  - MedicalCyanScrubs # DeltaV
+  - MedicalPinkScrubs # DeltaV
+  - MedicalRainbowScrubs # DeltaV
+  - MedicalWhiteScrubs # DeltaV
+  - NurseJumpskirt # afterlight
+  - CoronerJumpskirt # afterlight
+  - CoronerJumpsuit # afterlight
+  - CoronerJumpsuitAlt # afterlight
 
 
 - type: loadoutGroup
@@ -1818,6 +1846,7 @@
   - MedicalDoctorWintercoat
   - SeniorPhysicianLabCoat
   - WindbreakerMedical #Starlight
+  - RegularLabCoatLong # DeltaV
 
 - type: loadoutGroup
   id: MedicalBackpack
@@ -1903,6 +1932,8 @@
   - ChemistWintercoat
   - SeniorChemistLabCoat # Starlight
   - SeniorChemistWintercoat # Starlight
+  - RegularLabCoatLong # DeltaV
+  - ChemistLabCoatLong # DeltaV
 
 - type: loadoutGroup
   id: ChemistBackpack
@@ -1953,6 +1984,7 @@
   loadouts:
   - ParamedicWindbreaker
   - ParamedicWintercoat
+  - ParamedicJacket # DeltaV
 
 - type: loadoutGroup
   id: ParamedicShoes

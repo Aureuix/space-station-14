@@ -13,4 +13,5 @@ JobPerformer = Performer
 JobRoboticist = Roboticist
 JobSalvageLead = Salvage Lead
 JobSurgeon = Surgeon
+JobMagistrate = Magistrate
 JobZookeeper = Zookeeper
