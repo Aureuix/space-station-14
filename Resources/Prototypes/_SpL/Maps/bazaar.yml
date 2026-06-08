@@ -17,7 +17,7 @@
             prefixCreator: 'CRV'
         - type: StationCargoShuttle
           path: /Maps/_Starlight/Shuttles/cargo_silica.yml
-          nameGrid: false
+          nameGrid: true
         - type: GridSpawn
           groups:
             trade: !type:GridSpawnGroup

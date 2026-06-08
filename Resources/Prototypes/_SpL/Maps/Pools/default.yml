@@ -1,7 +1,0 @@
-﻿- type: gameMapPool
-  id: DefaultSpectraMapPool
-  abstract: true
-  maps:
-  - SpLBazaar
-  - SpLPrefab
-  - SpLFrontier
