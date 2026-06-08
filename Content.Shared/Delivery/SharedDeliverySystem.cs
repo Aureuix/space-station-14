@@ -162,7 +162,6 @@ public abstract class SharedDeliverySystem : EntitySystem
 
                 UpdateDeliverySpawnerVisuals(ent, ent.Comp.ContainedDeliveryAmount);
             },
-            Text = Loc.GetString("delivery-teleporter-empty-verb"),
             Text = access ? Loc.GetString("delivery-teleporter-empty-verb") : Loc.GetString("delivery-teleporter-no-access-verb"),
             Disabled = !access, //Starlight
         });
