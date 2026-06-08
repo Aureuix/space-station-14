@@ -33,7 +33,6 @@
         Heat: 0.25
         Radiation: 0.01
         Caustic: 0.4
-        StaminaModifier: 0.3
   - type: ClothingSpeedModifier
     walkModifier: 0.9
     sprintModifier: 0.9
