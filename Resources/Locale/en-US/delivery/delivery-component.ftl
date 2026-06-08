@@ -1,3 +1,4 @@
+delivery-teleporter-no-access-verb = No access
 delivery-recipient-examine = This one is meant for {$recipient}, {$job}.
 delivery-already-opened-examine = It was already opened.
 delivery-earnings-examine = Delivering this will earn the station [color=yellow]{$spesos}[/color] spesos.

@@ -21,6 +21,7 @@
   - External
   extendedAccess:
   - Mining # Starlight
+  - Mail # Starlight
   special:
   - !type:AddImplantSpecial
     implants: [ MindShieldImplant ]
