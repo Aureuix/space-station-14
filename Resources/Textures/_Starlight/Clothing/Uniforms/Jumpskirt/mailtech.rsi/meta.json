@@ -1,7 +1,7 @@
 ﻿{
   "version": 1,
-  "license": "CC-BY-SA-3.0",
-  "copyright": "Sprites by retrobit23, recolored into Mail Tech by wonderfulnewworld (GitHub).",
+  "license": "CC-BY-SA-4.0",
+  "copyright": "Base by @Vordenburg, recolored for Starlight by wonderfulnewworld (Github)",
   "size": {
     "x": 32,
     "y": 32
@@ -9,26 +9,26 @@
   "states": [
     {
       "name": "icon",
-      "copyright": "retrobit23, wonderfulnewworld",
-      "license": "CC-BY-SA-3.0"
+      "copyright": "Vordenburg, wonderfulnewworld",
+      "license": "CC-BY-SA-4.0"
     },
     {
-      "name": "equipped-FEET",
+      "name": "equipped-INNERCLOTHING",
       "directions": 4,
-      "copyright": "retrobit23, wonderfulnewworld",
-      "license": "CC-BY-SA-3.0"
+      "copyright": "Vordenburg, wonderfulnewworld",
+      "license": "CC-BY-SA-4.0"
     },
     {
       "name": "inhand-left",
       "directions": 4,
-      "copyright": "retrobit23, wonderfulnewworld",
-      "license": "CC-BY-SA-3.0"
+      "copyright": "Vordenburg, wonderfulnewworld",
+      "license": "CC-BY-SA-4.0"
     },
     {
       "name": "inhand-right",
       "directions": 4,
-      "copyright": "retrobit23, wonderfulnewworld",
-      "license": "CC-BY-SA-3.0"
+      "copyright": "Vordenburg, wonderfulnewworld",
+      "license": "CC-BY-SA-4.0"
     }
   ]
 }
