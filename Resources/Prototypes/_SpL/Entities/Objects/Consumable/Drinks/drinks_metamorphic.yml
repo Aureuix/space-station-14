@@ -13,3 +13,19 @@
   - type: Icon
     sprite: _SpL/Objects/Consumable/Drinks/lemonlimebitters.rsi
     state: icon
+
+- type: entity
+  parent: DrinkGlass
+  id: DrinkConstantSorrow
+  suffix: constant sorrow
+  components:
+  - type: SolutionContainerManager
+    solutions:
+      drink:
+        maxVol: 30
+        reagents:
+        - ReagentId: ConstantSorrow
+          Quantity: 30
+  - type: Icon
+    sprite: _Spl/Objects/Consumable/Drinks/theconstantsorrow.rsi
+    state: icon

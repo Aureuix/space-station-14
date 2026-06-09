@@ -1,0 +1,4 @@
+- type: flavor
+  id: constantsorrow
+  flavorType: Complex
+  description: flavor-complex-constant-sorrow
