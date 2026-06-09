@@ -1,5 +1,4 @@
 - type: gameMapPool
-  parent: DefaultSpectraMapPool
   id: DefaultStarlightMapPool
   maps:
   - StarlightBagel
@@ -29,4 +28,9 @@
   - StarlightSpaceMall
   - StarlightBoxcars
   - StarlightSerpentcrest
-# - StarlightBarratry
+  - StarlightBarratry
+# SpL Start
+  - SpLBazaar
+  - SpLPrefab
+  - SpLFrontier
+# SpL End

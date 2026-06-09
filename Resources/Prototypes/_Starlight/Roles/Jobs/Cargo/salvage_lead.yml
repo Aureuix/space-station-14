@@ -20,6 +20,8 @@
   - External
   extendedAccess:
   - Mining
+  - Mail
+
   special:
   - !type:AddImplantSpecial
     implants: [ MindShieldImplant ]

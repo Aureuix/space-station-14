@@ -20,6 +20,7 @@
   - External
   extendedAccess:
   - Salvage
+  - Mail
 
 - type: startingGear
   id: MiningSpecialistGear

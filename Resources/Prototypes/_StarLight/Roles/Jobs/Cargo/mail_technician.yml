@@ -9,7 +9,11 @@
   displayWeight: 2
   access:
   - Cargo
+  - Mail
   - Maintenance
+  extendedAccess:
+  - Salvage
+  - Mining
   special:
   - !type:GiveItemOnHolidaySpecial
     holiday: BoxingDay
@@ -18,12 +22,9 @@
 - type: startingGear
   id: MailTechGear
   equipment:
-    id: MailPDA
-    ears: ClothingHeadsetCargo
-    belt: MailBag
+    ears: ClothingHeadsetCargo # SpL- no mailcompanion so no pocket fill
   storage:
-    back:
-    - MailTrolleyFlatpack
+    back: # literally just comment to update folder
     - Multitool #maybe not a good idea? idk makes unpacking it quick
 
 - type: chameleonOutfit

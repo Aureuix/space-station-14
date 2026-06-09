@@ -1,8 +1,8 @@
 - type: reagent
   id: LemonLimeBitters
-  name: "Lemon Lime and Bitters"
+  name: reagent-name-lemon-lime-bitters
   parent: BaseDrink
-  desc: "The classic Australian party drink. Not to be confused with lemon lime. That's a different thing."
+  desc: reagent-desc-lemon-lime-bitters
   physicalDesc: reagent-physical-desc-tart
   flavor: lemonlimebitters
   color: "#d84e00"
