@@ -251,6 +251,13 @@
   - NanoTrasenRepresentativeCap
 
 - type: loadoutGroup
+  id: NanoTrasenRepresentativeNeck
+  name: loadout-group-nanotrasenrepresentative-neck
+  minLimit: 0
+  loadouts:
+    - NanoTrasenRepresentativeCloak
+
+- type: loadoutGroup
   id: NanoTrasenRepresentativeJumpsuit
   name: loadout-group-nanotrasenrepresentative-jumpsuit
   loadouts:
@@ -301,6 +308,13 @@
   loadouts:
   - MagistrateSecGlasses
   - MagistrateSkillGlasses
+
+- type: loadoutGroup
+  id: MagistrateNeck
+  name: loadout-group-magistrate-neck
+  minLimit: 0
+  loadouts:
+    - MagistrateMantle
 
 - type: loadoutGroup
   id: MagistrateHands
@@ -511,6 +525,99 @@
   - JackBoots
   - CombatBoots
   - HighHeelBootsFilled
+
+# Cargo
+# Cargo Technician
+- type: loadoutGroup
+  id: CargoTechnicianAppraisalTool
+  name: loadout-group-cargo-technician-appraisal-tool
+  loadouts:
+    - AppraisalTool
+    - GoldenAppraisalTool
+
+# Mail Technician
+- type: loadoutGroup
+  id: MailTechnicianHead
+  name: loadout-group-mail-technician-head
+  minLimit: 0
+  loadouts:
+    - MailTechnicianHeadVisor
+    - MailTechnicianHeadVisorSenior
+    - CargoTechnicianBeret
+    - CargoTechnicianBeretFormal
+
+- type: loadoutGroup
+  id: MailTechnicianJumpsuit
+  name: loadout-group-mail-technician-jumpsuit
+  loadouts:
+    - MailTechnicianJumpsuit
+    - MailTechnicianJumpskirt
+    - MailTechnicianJumpsuitSenior
+    - MailTechnicianJumpskirtSenior
+    - CargoTechnicianJumpsuitAlt # afterlight start
+    - CargoTechnicianJumpsuitFormal
+    - CargoTechnicianJumpskirtFormal # afterlight end
+
+- type: loadoutGroup
+  id: MailTechnicianBackpack
+  name: loadout-group-mail-technician-backpack
+  loadouts:
+    - CargoTechnicianBackpack
+    - CargoTechnicianSatchel
+    - CargoTechnicianDuffel
+    - MailTechnicianTrunk
+    - SeniorCourierBackpack
+    - SeniorCourierSatchel
+    - SeniorCourierDuffel
+    - MailTechnicianTrunkSenior
+    - LeatherSatchel
+
+- type: loadoutGroup
+  id: MailTechnicianOuterClothing
+  name: loadout-group-mail-technician-outerclothing
+  minLimit: 0
+  loadouts:
+    - CargoTechnicianWintercoat
+    - SeniorCourierWintercoat
+    - WindbreakerCargo
+
+- type: loadoutGroup
+  id: MailTechnicianShoes
+  name: loadout-group-mail-technician-shoes
+  minLimit: 0
+  defaultSelected: 1
+  loadouts:
+    - MailTechnicianBoots
+    - MailTechnicianBootsSenior
+    - RollerSkatesLoadout
+    - BlackShoes
+    - YellowShoes
+    - CargoWinterBoots
+    - SeniorCourierWinterBoots
+    - LeatherShoes
+    - WorkBoots
+    - Heels
+
+- type: loadoutGroup
+  id: MailTechnicianPDA
+  name: loadout-group-mail-technician-id
+  loadouts:
+    - MailPDA
+    - SeniorMailPDA
+
+- type: loadoutGroup
+  id: MailTechnicianBag
+  name: loadout-group-mail-technician-bag
+  loadouts:
+    - MailBag
+    - SeniorMailBag
+
+- type: loadoutGroup
+  id: MailTechnicianTrolley
+  name: loadout-group-mail-technician-trolley
+  loadouts:
+    - MailTrolleyFlatpack
+    - GoldenMailTrolleyFlatpack
 
 # Salvage Lead
 - type: loadoutGroup
@@ -787,6 +894,7 @@
   name: loadout-group-dutyofficer-head
   loadouts:
   - DutyOfficerHead
+  - DutyOfficerHeadOrange # DeltaV
   - DutyOfficerBeret
   - DutyOfficerHelmetRiot
 
@@ -798,6 +906,8 @@
   - DutyOfficerJumpskirt
   - DutyOfficerJumpsuitBlue
   - DutyOfficerJumpskirtBlue
+  - DutyOfficerJumpsuitOrange # DeltaV
+  - DutyOfficerJumpskirtOrange # DeltaV
 
 - type: loadoutGroup
   id: DutyOfficerBelt

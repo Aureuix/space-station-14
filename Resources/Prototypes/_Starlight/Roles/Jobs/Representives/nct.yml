@@ -30,9 +30,9 @@
     - Research
     - Security
     - Cargo
+    - Mail
     - Medical
     - IAA
-    - Debrief
   special:
     - !type:AddImplantSpecial
       implants: [MindShieldImplant]

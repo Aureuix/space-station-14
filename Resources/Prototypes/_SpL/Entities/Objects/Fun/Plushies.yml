@@ -103,3 +103,15 @@
   - type: Sprite
     sprite: _SpL/Objects/Fun/Plushies/symmetry_plushie.rsi
     state: icon
+
+- type: entity
+  parent: PlushieLizard
+  id: PlushieTumma
+  name: tumma plushie
+  description: Smells of gin fizz and cigaretts, this adorable plushie is sure to keep you company while you are dealing with plants. Smokko guardian not included.
+  components:
+  - type: Sprite
+    sprite: _SpL/Objects/Fun/Plushies/tumma_plushie.rsi
+    state: icon
+  - type: Item
+    sprite: _SpL/Objects/Fun/Plushies/tumma_pluhsie.rsi

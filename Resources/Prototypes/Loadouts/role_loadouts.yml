@@ -294,6 +294,7 @@
   - Pens # Starlight
   - QuartermasterJobTrinkets
   - GroupSpeciesBreathTool
+  - CargoTechnicianAppraisalTool # SpL
 
 - type: roleLoadout
   id: JobCargoTechnician
@@ -313,6 +314,7 @@
   - Pens # Starlight
   - CargoTechnicianJobTrinkets
   - GroupSpeciesBreathTool
+  - CargoTechnicianAppraisalTool # Starlight
 
 - type: roleLoadout
   id: JobSalvageSpecialist

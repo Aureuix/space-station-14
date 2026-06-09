@@ -4,7 +4,7 @@ meta:
   engineVersion: 272.0.0
   forkId: ""
   forkVersion: ""
-  time: 05/31/2026 21:03:15
+  time: 06/08/2026 20:28:36
   entityCount: 6323
 maps:
 - 1
@@ -28482,6 +28482,13 @@ entities:
     - type: Transform
       pos: 12.5,12.5
       parent: 2
+    - type: StationAiCore
+      lawConsole: 5235
+    - type: DeviceLinkSource
+      linkedPorts:
+        5235:
+        - - AiLawConsoleSender
+          - AiLawConsoleReceiver
 - proto: PlushieEini
   entities:
   - uid: 3753
@@ -37088,6 +37095,8 @@ entities:
       rot: 3.141592653589793 rad
       pos: 6.5,10.5
       parent: 2
+    - type: SiliconLawUpdater
+      core: 3752
 - proto: StationAnchor
   entities:
   - uid: 5236

@@ -237,6 +237,16 @@
   categories:
     - SLFashionSuit
 
+- type: listing
+  id: ClothingNeckCloakBoatCC
+  productEntity: ClothingNeckCloakBoatCC
+  cost:
+    NTCredit: 2000
+  categories:
+    - SLFashionOther
+  conditions:
+    - !type:ListingLimitedStockCondition
+      stock: 1
 
 - type: listing
   id: ClothingUniformJumpsuitCentcomAdmiral
@@ -394,6 +404,17 @@
   categories:
     - SLFashionOther
 
+- type: listing
+  id: BoxCourierPAI
+  icon: { sprite: _Starlight/Interface/fashion.rsi, state: courier }
+  productEntity: BoxCourierPAI
+  cost:
+    NTCredit: 150
+  categories:
+    - SLFashionOther
+  conditions:
+    - !type:ListingLimitedStockCondition
+      stock: 1
 
 - type: listing
   id: ClothingOuterBrimstoneDT4
