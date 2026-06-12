@@ -942,8 +942,13 @@ public partial class SharedBodySystem
         RecursiveBodyUpdate(part, body); //I am so tired
     }
 
-    public void UpdateProstheticParts(){
-        
+    /// Spectralight: Updates the  ProstheticParts list in BodyComponent to properly represent the list of prosthetic limbs on a character
+    public List<EntityUid> GetProstheticParts(Entity<BodyComponent> ent, IEnumerable<EntityUid> parts){
+        var list = new List<EntityUid>();
+        foreach(var part in ent.Comp.ProstheticParts){
+            list.Add(part);
+        }
+        return list;
     }
     #endregion
 }

@@ -15,6 +15,38 @@
     state: r_pegleg
 
 - type: humanoidBaseSprite
+  id: ProstheticLBladeleg
+  matchSkin: false
+  markingsMatchSkin: false
+  baseSprite:
+    sprite: _SpL/Mobs/Customization/prosthetics.rsi
+    state: l_bladeleg
+
+- type: humanoidBaseSprite
+  id: ProstheticRBladeleg
+  matchSkin: false
+  markingsMatchSkin: false
+  baseSprite:
+    sprite: _SpL/Mobs/Customization/prosthetics.rsi
+    state: r_bladeleg
+
+- type: humanoidBaseSprite
+  id: ProstheticLBladelegShort
+  matchSkin: false
+  markingsMatchSkin: false
+  baseSprite:
+    sprite: _SpL/Mobs/Customization/prosthetics.rsi
+    state: l_bladeleg_short
+
+- type: humanoidBaseSprite
+  id: ProstheticRBladelegShort
+  matchSkin: false
+  markingsMatchSkin: false
+  baseSprite:
+    sprite: _SpL/Mobs/Customization/prosthetics.rsi
+    state: r_bladeleg_short
+
+- type: humanoidBaseSprite
   id: ProstheticLArm
   matchSkin: false
   markingsMatchSkin: false
@@ -61,3 +93,11 @@
   baseSprite:
     sprite: _SpL/Mobs/Customization/prosthetics.rsi
     state: r_foot
+
+- type: soundCollection
+  id: FootstepProsthetic
+  files:
+  - /Audio/_SpL/Footsteps/prosthetic_footstep_1.ogg
+  - /Audio/_SpL/Footsteps/prosthetic_footstep_2.ogg
+  - /Audio/_SpL/Footsteps/prosthetic_footstep_3.ogg
+  - /Audio/_SpL/Footsteps/prosthetic_footstep_4.ogg

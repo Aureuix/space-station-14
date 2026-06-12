@@ -45,6 +45,10 @@ public sealed partial class BodyPartComponent : Component
     [DataField, AutoNetworkedField]
     public Dictionary<string, OrganSlot> Organs = new();
 
+    /// Spectralight: If this part is a prosthetic or not.
+    [DataField, AutoNetworkedField]
+    public bool isProsthetic = false;
+
     /// <summary>
     /// These are only for VV/Debug do not use these for gameplay/systems
     /// </summary>

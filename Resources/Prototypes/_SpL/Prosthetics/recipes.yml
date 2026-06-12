@@ -1,0 +1,59 @@
+- type: latheRecipe
+  id: ProstheticLArm
+  result: LeftArmProsthetic
+  categories:
+  - Cyberlimbs
+  completetime: 3
+  materials:
+    Plastic: 400
+    Steel: 250
+
+- type: latheRecipe
+  id: ProstheticRArm
+  result: RightArmProsthetic
+  categories:
+  - Cyberlimbs
+  completetime: 3
+  materials:
+    Plastic: 400
+    Steel: 250
+
+- type: latheRecipe
+  id: ProstheticLHand
+  result: LeftHandProsthetic
+  categories:
+  - Cyberlimbs
+  completetime: 3
+  materials:
+    Plastic: 400
+    Steel: 50
+
+- type: latheRecipe
+  id: ProstheticRHand
+  result: RightHandProsthetic
+  categories:
+  - Cyberlimbs
+  completetime: 3
+  materials:
+    Plastic: 400
+    Steel: 50
+
+- type: latheRecipe
+  id: ProstheticLLeg
+  result: LeftLegProstheticTall
+  categories:
+  - Cyberlimbs
+  completetime: 3
+  materials:
+    Plastic: 200
+    Steel: 450
+
+- type: latheRecipe
+  id: ProstheticRLeg
+  result: RightLegProstheticTall
+  categories:
+  - Cyberlimbs
+  completetime: 3
+  materials:
+    Plastic: 200
+    Steel: 450

@@ -17,17 +17,17 @@
 
 - type: entity
   id: LeftArmProsthetic
-  name: "prosthetic left arm"
+  name: "left prosthetic arm"
   parent: [PartProsthetic, BaseLeftArm]
   components:
     - type: BaseLayerId
       layers:
         Default: ProstheticLArm
     - type: Sprite
-      sprite: _Starlight/Mobs/Species/Cyberlimbs/parts.rsi
+      sprite: _SpL/Mobs/Customization/prosthetics.rsi
       state: "l_arm"
     - type: Icon
-      sprite: _Starlight/Mobs/Species/Cyberlimbs/parts.rsi
+      sprite: _SpL/Mobs/Customization/prosthetics.rsi
       state: "l_arm"
     - type: WithAttachedBodyParts
       parts:
@@ -44,27 +44,27 @@
       layers:
         Default: ProstheticLClaw
     - type: Sprite
-      sprite: _Starlight/Mobs/Species/Cyberlimbs/parts.rsi
-      state: "l_hand"
+      sprite: _SpL/Mobs/Customization/prosthetics.rsi
+      state: "l_claw"
     - type: Icon
-      sprite: _Starlight/Mobs/Species/Cyberlimbs/parts.rsi
-      state: "l_hand"
+      sprite: _SpL/Mobs/Customization/prosthetics.rsi
+      state: "l_claw"
     - type: RoundstartImplantable
       cost: 1
 
 - type: entity
   id: RightArmProsthetic
-  name: "prosthetic right arm"
+  name: "right prosthetic arm"
   parent: [PartProsthetic, BaseRightArm]
   components:
     - type: BaseLayerId
       layers:
         Default: ProstheticRArm
     - type: Sprite
-      sprite: _Starlight/Mobs/Species/Cyberlimbs/parts.rsi
+      sprite: _SpL/Mobs/Customization/prosthetics.rsi
       state: "r_arm"
     - type: Icon
-      sprite: _Starlight/Mobs/Species/Cyberlimbs/parts.rsi
+      sprite: _SpL/Mobs/Customization/prosthetics.rsi
       state: "r_arm"
     - type: WithAttachedBodyParts
       parts:
@@ -81,22 +81,28 @@
       layers:
         Default: ProstheticRClaw
     - type: Sprite
-      sprite: _Starlight/Mobs/Species/Cyberlimbs/parts.rsi
-      state: "r_hand"
+      sprite: _SpL/Mobs/Customization/prosthetics.rsi
+      state: "r_claw"
     - type: Icon
-      sprite: _Starlight/Mobs/Species/Cyberlimbs/parts.rsi
-      state: "r_hand"
+      sprite: _SpL/Mobs/Customization/prosthetics.rsi
+      state: "r_claw"
     - type: RoundstartImplantable
       cost: 1
   
 - type: entity
   id: LeftLegProstheticTall
-  name: "left pegleg (tall)"
+  name: "left prosthetic leg"
   parent: [PartProsthetic, BaseLeftLeg]
   components:
     - type: BaseLayerId
       layers:
         Default: ProstheticLPegleg
+        Avali: ProstheticLBladelegShort
+        Felionoid: ProstheticLBladelegShort
+        Kitsune: ProstheticLBladeleg
+        Resomi: ProstheticLBladelegShort
+        Vox: ProstheticLBladeleg
+        Vulpkanin: ProstheticLBladeleg
     - type: Sprite
       sprite: _SpL/Mobs/Customization/prosthetics.rsi
       state: "l_pegleg"
@@ -104,7 +110,7 @@
       sprite: _SpL/Mobs/Customization/prosthetics.rsi
       state: "l_pegleg"
     - type: MovementBodyPart
-      sprintSpeed : 4.05 # -10% 
+      sprintSpeed : 4.275 # -10% 
       maxDensity: 75
     - type: RoundstartImplantable
       cost: 2
@@ -113,15 +119,28 @@
     - type: WithAttachedBodyParts
       parts:
         left foot: PartSacrificialLeftFoot
+    - type: ProtectedFromStepTriggers
+    - type: FootstepModifier
+      footstepSoundCollection:
+        collection: FootstepProsthetic
+        params:
+          volume: 0.1
+          variation: 0.07
 
 - type: entity
   id: RightLegProstheticTall
-  name: "right pegleg (tall)"
+  name: "right prosthetic leg"
   parent: [PartProsthetic, BaseRightLeg]
   components:
     - type: BaseLayerId
       layers:
         Default: ProstheticRPegleg
+        Avali: ProstheticRBladelegShort
+        Felionoid: ProstheticRBladelegShort
+        Kitsune: ProstheticRBladeleg
+        Resomi: ProstheticRBladelegShort
+        Vox: ProstheticRBladeleg
+        Vulpkanin: ProstheticRBladeleg
     - type: Sprite
       sprite: _SpL/Mobs/Customization/prosthetics.rsi
       state: "r_pegleg"
@@ -129,7 +148,7 @@
       sprite: _SpL/Mobs/Customization/prosthetics.rsi
       state: "r_pegleg"
     - type: MovementBodyPart
-      sprintSpeed : 4.05 # -10%
+      sprintSpeed : 4.275 # -10%
       maxDensity: 75
     - type: RoundstartImplantable
       cost: 2
@@ -138,6 +157,13 @@
     - type: WithAttachedBodyParts
       parts:
         right foot: PartSacrificialRightFoot
+    - type: ProtectedFromStepTriggers
+    - type: FootstepModifier
+      footstepSoundCollection:
+        collection: FootstepProsthetic
+        params:
+          volume: 0.1
+          variation: 0.07
 
 # Sacrificial Parts (empty sprite, deleted on init)
 - type: entity

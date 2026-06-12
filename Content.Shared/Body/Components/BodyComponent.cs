@@ -9,7 +9,6 @@ using Robust.Shared.Prototypes;
 namespace Content.Shared.Body.Components;
 
 [RegisterComponent, NetworkedComponent, AutoGenerateComponentState]
-[Access(typeof(SharedBodySystem))]
 public sealed partial class BodyComponent : Component
 {
     /// <summary>
@@ -60,5 +59,7 @@ public sealed partial class BodyComponent : Component
     [DataField, AutoNetworkedField]
     public HashSet<EntityUid> LegEntities = new();
 
+    [ViewVariables]
+    [DataField, AutoNetworkedField]
     public List<EntityUid> ProstheticParts = new();
 }

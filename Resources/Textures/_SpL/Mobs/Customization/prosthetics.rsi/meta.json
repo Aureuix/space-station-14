@@ -34,6 +34,22 @@
 	  "directions": 4
 	},
 	{
+	  "name": "l_bladeleg",
+	  "directions": 4
+	},
+	{
+	  "name": "r_bladeleg",
+	  "directions": 4
+	},
+	{
+	  "name": "l_bladeleg_short",
+	  "directions": 4
+	},
+	{
+	  "name": "r_bladeleg_short",
+	  "directions": 4
+	},
+	{
 	  "name": "l_arm",
 	  "directions": 4
 	},
