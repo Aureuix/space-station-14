@@ -1,0 +1,1 @@
+prosthetic-verb-get-data-text = Check Prosthetics
