@@ -36,8 +36,9 @@ namespace Content.Shared.Humanoid
                                 Name = p.Name,
                                 Cost = implantComp.Cost,
                                 Type = p.Parents.Contains("PartCyber") ? CyberneticImplantType.Limb 
-                                        : p.Parents.Contains("OrganCyber") ? CyberneticImplantType.Organ 
-                                            : CyberneticImplantType.Undefined,
+                                        : p.Parents.Contains("PartProsthetic") ? CyberneticImplantType.Limb //SPECTRALIGHT CHANGE
+                                            : p.Parents.Contains("OrganCyber") ? CyberneticImplantType.Organ 
+                                                : CyberneticImplantType.Undefined,
                                 AttachedParts = p.Components.TryGetValue("WithAttachedBodyParts", out var parts) && parts.Component is WithAttachedBodyPartsComponent partComp ? 
                                                     partComp.Parts.Values.Select(p => (string)p).Distinct().ToList() : []
                                 };

@@ -1,3 +1,4 @@
+using System.Collections.Generic;
 using Content.Shared.Body.Prototypes;
 using Content.Shared.Body.Systems;
 using Robust.Shared.Audio;
@@ -8,7 +9,6 @@ using Robust.Shared.Prototypes;
 namespace Content.Shared.Body.Components;
 
 [RegisterComponent, NetworkedComponent, AutoGenerateComponentState]
-[Access(typeof(SharedBodySystem))]
 public sealed partial class BodyComponent : Component
 {
     /// <summary>
@@ -58,4 +58,8 @@ public sealed partial class BodyComponent : Component
     [ViewVariables]
     [DataField, AutoNetworkedField]
     public HashSet<EntityUid> LegEntities = new();
+
+    [ViewVariables]
+    [DataField, AutoNetworkedField]
+    public List<EntityUid> ProstheticParts = new();
 }

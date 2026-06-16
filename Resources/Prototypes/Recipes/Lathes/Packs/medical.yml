@@ -49,6 +49,12 @@
   - OffsetCane
   - OffsetCaneWood
   - JetInjector
+  - ProstheticLArm #SpL start
+  - ProstheticRArm
+  - ProstheticLHand 
+  - ProstheticRHand
+  - ProstheticLLeg
+  - ProstheticRLeg #SpL end
 
 - type: latheRecipePack
   id: RollerBedsStatic

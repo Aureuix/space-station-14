@@ -32,6 +32,9 @@ using Content.Shared.Body.Components;
 using Content.Shared.Body.Part;
 using Prometheus;
 using Content.Server._Starlight.Administration.Systems;
+using Content.Shared._SpL.Medical.Limbs;
+using System.Diagnostics.Tracing;
+using System.Threading.Tasks;
 // Starlight End
 
 namespace Content.Server.Station.Systems;
@@ -336,8 +339,33 @@ public sealed class StationSpawningSystem : SharedStationSpawningSystem
             _limbSystem.Amputatate(body, oldPart);
             Del(oldPartId.Id);
             _limbSystem.AttachLimb((entity, appearance), slot, (parentUid.Value, parentBodyPart), (newPart, bodyPartComp));
+
+            /// SPECTRALIGHT CHANGE: This is slop code but i am praying this fixes LimbProstheticSystem.DeleteSuperfluousChildrenOnIt()
+            AssignBodyToParts(entity);
+            var ev = new LimbInitializedEvent();
+            RaiseLocalEvent(bodyPartComp.Owner, ev);
         }
     }
+
+    
+    #region Spectralight
+    private void AssignBodyToParts(EntityUid body){
+        if (!TryComp(body, out BodyComponent? comp)) return;
+        var root = _bodySystem.GetRootPartOrNull(body, comp);
+        if (root != null){
+            IEnumerable<Entity<BodyPartComponent>> _allLimbs = _bodySystem.GetAllBodyPart(root.Value.Entity, root.Value.BodyPart);
+            foreach (var bodyPart in _allLimbs)
+            {   
+                if (!TryComp(bodyPart, out BodyPartComponent? bodyPartComp)){
+                    continue;
+                }
+                var limb = _bodySystem.GetBodyChildrenOfType(body, bodyPartComp.PartType).FirstOrDefault(p => p.Component.Symmetry == bodyPartComp.Symmetry);
+                _bodySystem.FixBodyVar(limb, body);
+            }
+        }
+    }
+
+    #endregion
 
     /// <summary>
     /// Sets the ID card and PDA name, job, and access data.
