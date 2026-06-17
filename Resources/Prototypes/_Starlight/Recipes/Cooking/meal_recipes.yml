@@ -177,3 +177,13 @@
   solids:
     FoodDonutPlain: 1
     FoodMeatCutlet: 1
+    
+- type: microwaveMealRecipe
+  id: RecipeLollipopPlain
+  name: plain lollipop recipe
+  result: FoodLollipopPlain
+  time: 15
+  group: Dessert
+  reagents:
+    Sugar: 15
+    Water: 5
