@@ -739,7 +739,7 @@
 
 #Greenshield Officer
 - type: entity
-  parent: [ BaseCentcommContraband, ClothingHeadLightParamsProfessional, ClothingHeadHelmetHardsuitSyndieCommander ] # Starlight
+  parent: [ BaseCentcommContraband, ClothingHeadHelmetHardsuitSyndieCommander ] # Starlight
   id: ClothingHeadHelmetHardsuitGreenshield
   categories: [ DoNotMap ]
   name: Greenshield hardsuit helmet
