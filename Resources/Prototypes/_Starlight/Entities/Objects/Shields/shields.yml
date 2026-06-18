@@ -384,7 +384,7 @@
     - type: ForceQuickDraw
     - type: ToggleCellDraw
     - type: PowerCellDraw
-      drawRate: 1  # watts while active # Final stats from SpL
+      drawRate: 4  # watts while active # Final stats from SpL
     - type: Blocking # SpL
       passiveBlockModifier:
         coefficients:
