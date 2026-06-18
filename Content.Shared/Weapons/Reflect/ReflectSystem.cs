@@ -45,7 +45,7 @@ public sealed class ReflectSystem : EntitySystem
     [Dependency] private readonly PowerCellSystem _powerCell = default!;
     [Dependency] private readonly IGameTiming _timing = default!;
     #endregion
-    
+
     public override void Initialize()
     {
         base.Initialize();
@@ -128,7 +128,7 @@ public sealed class ReflectSystem : EntitySystem
             if (availableEnergy <= 0)
                 return false;
         }
-        
+
         var reflectionChance = reflector.Comp.ReflectProb;
 
         // Check for enhanced reflection against specific projectile types
@@ -149,7 +149,7 @@ public sealed class ReflectSystem : EntitySystem
 
         if (availableEnergy > 0 && !_powerCell.TryUseCharge(reflector.Owner, reflector.Comp.ReflectEnergyDraw, user: user))
             return false; // if no battery or no charge, doesn't work and reflect fails
-        
+
         if (reflector.Comp.OverrideAngle is not null)
         {
             var overrideAngle = _transform.GetWorldRotation(reflector) + reflector.Comp.OverrideAngle.Value;
@@ -221,7 +221,7 @@ public sealed class ReflectSystem : EntitySystem
         // Check for enhanced reflection against specific bullet types
         if (hitscanId != null && reflector.Comp.EnhancedReflection.TryGetValue(hitscanId, out var enhancedChance))
             reflectionChance = enhancedChance;
-        
+
         var availableEnergy = 0;
         if (HasComp<PowerCellSlotComponent>(reflector.Owner)) //if the shield has a battery slot, then we consume charge to perform the reflection
         {
@@ -235,7 +235,7 @@ public sealed class ReflectSystem : EntitySystem
 
         if (availableEnergy > 0 && !_powerCell.TryUseCharge(reflector.Owner, reflector.Comp.ReflectEnergyDraw, user: user))
             return false; // if no battery or no charge, doesn't work and reflect fails
-        
+
         PlayAudioAndPopup(reflector.Comp, user);
 
         if (reflector.Comp.OverrideAngle is { } newAngle)
