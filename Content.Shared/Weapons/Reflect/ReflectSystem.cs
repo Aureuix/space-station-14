@@ -230,9 +230,6 @@ public sealed class ReflectSystem : EntitySystem
                 return false;
         }
 
-        if (!_random.ProbPredicted(_timing, reflectionChance))
-            return false;
-
         if (availableEnergy > 0 && !_powerCell.TryUseCharge(reflector.Owner, reflector.Comp.ReflectEnergyDraw, user: user))
             return false; // if no battery or no charge, doesn't work and reflect fails
 
