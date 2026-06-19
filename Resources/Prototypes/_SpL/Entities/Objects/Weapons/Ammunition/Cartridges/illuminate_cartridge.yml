@@ -1,0 +1,40 @@
+﻿- type: entity
+  parent: [BasePowerCell, BaseIlluminateContraband]
+  id: IlluminateCartridgeCoilgun
+  name: coilgun cartridge
+  description: A high-tech cartridge for coilgun flechettes, used by Illuminate-model longarms. Comes with an integrated battery.
+  components:
+    - type: Item
+      storedRotation: -90
+    - type: Battery
+      maxCharge: 2500
+      startingCharge: 2500
+    - type: Sprite
+      sprite: _SpL/Objects/Weapons/Ammunition/coilguncartridge.rsi
+      layers:
+        - map: [ "enum.PowerCellVisualLayers.Base" ]
+          state: base
+        - map: [ "enum.PowerCellVisualLayers.Unshaded" ]
+          state: o2
+          shader: unshaded
+    - type: Tag
+      tags:
+        - CartridgeCoilgun
+        - IlluminateTech
+
+- type: entity
+  id: CartridgeCoilgunEmpty
+  parent: [IlluminateCartridgeCoilgun, BaseIlluminateContraband]
+  suffix: Empty
+  components:
+    - type: Sprite
+      sprite: _SpL/Objects/Weapons/Ammunition/coilguncartridge.rsi
+      layers:
+        - map: [ "enum.PowerCellVisualLayers.Base" ]
+          state: base
+        - map: [ "enum.PowerCellVisualLayers.Unshaded" ]
+          state: o2
+          shader: unshaded
+          visible: false
+    - type: Battery
+      startingCharge: 0

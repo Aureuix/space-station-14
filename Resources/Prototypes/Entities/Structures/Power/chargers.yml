@@ -177,6 +177,7 @@
           tags:
           - PotatoBattery
           - MechReactor #Starlight
+          - IlluminateTech #SpL
 
 - type: entity
   parent: BaseItemRecharger
@@ -203,6 +204,7 @@
           tags:
           - PotatoBattery
           - MechReactor #Starlight
+          - IlluminateTech #SpL
 
 - type: entity
   parent: [ BaseItemRecharger, BaseWallmount ]
@@ -232,6 +234,7 @@
           tags:
           - PotatoBattery
           - MechReactor #Starlight
+          - IlluminateTech #SpL
 
 - type: entity
   parent: BaseRecharger

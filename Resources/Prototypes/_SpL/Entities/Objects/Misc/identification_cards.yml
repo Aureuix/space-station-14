@@ -1,24 +1,24 @@
-﻿- type: entity
-  parent: [ IDCardStandard, BaseIlluminateContraband ]
-  id: IlluminateIDCard
-  name: Illuminate ID card
-  description: This doesn't work yet! 
-  components:
-    - type: Sprite
-      sprite: _Starlight/Objects/Misc/id_cards.rsi
-      layers:
-        - sprite: &id-rsi Objects/Misc/id_cards.rsi
-          state: orange
-        - sprite: *id-rsi
-          state: stripe_top
-          color: "#ffffff"
-        - sprite: *id-rsi
-          state: stripe_bottom
-          color: "#ffffff"
-        - sprite: _SpL/Interface/Misc/job_icons.rsi
-          offset: &icon-offset -0.09375, 0.0625 #3 pixels left, 2 pixels up
-          state: illuminate
+﻿#- type: entity
+#  parent: [ IDCardStandard, BaseIlluminateContraband ]
+#  id: IlluminateIDCard
+# name: Illuminate ID card
+# description: This doesn't work yet! 
+# components:
+#   - type: Sprite
+#     sprite: _Starlight/Objects/Misc/id_cards.rsi
+#     layers:
+#       - sprite: &id-rsi Objects/Misc/id_cards.rsi
+#         state: orange
+#       - sprite: *id-rsi
+#         state: stripe_top
+#         color: "#ffffff"
+#       - sprite: *id-rsi
+#         state: stripe_bottom
+#         color: "#ffffff"
+#       - sprite: _SpL/Interface/Misc/job_icons.rsi
+#         offset: &icon-offset -0.09375, 0.0625 #3 pixels left, 2 pixels up
+#         state: illuminate
 #    - type: IdCard #SpL- temp disable until bugfixing is doable
 #      jobIcon: JobIconIlluminate
-    - type: NanoChatCard
-      listNumber: false
+#   - type: NanoChatCard
+#     listNumber: false

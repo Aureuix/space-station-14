@@ -1,8 +1,8 @@
 ﻿- type: entity
-  name: AR12 "blizzard"
   parent: [BaseWeaponBattery, BaseIlluminateContraband, BaseGunWieldable]
   id: WeaponIlluminateBlizzard
-  description: The standard longarm of the Illuminate, the AR12 uses energy to generate and fire aerogel bolts at supersonic speeds via a powerful compact railgun configuration.
+  name: AR12 "blizzard"
+  description: The standard longarm of the Illuminate, the AR12 uses electromagnetic coils to propel flechettes at supersonic speeds.
   components:
     - type: CanDualWield
     - type: Sprite
@@ -19,29 +19,44 @@
         - 0,0,2,1
     - type: Clothing
       sprite: /Textures/_SpL/Objects/Weapons/Guns/Battery/blizzard.rsi
+    - type: AmmoCounter
     - type: Gun
-      shotsPerBurst: 4
-      selectedMode: Burst
+      selectedMode: FullAuto
       availableModes:
-        - Burst
-      burstFireRate: 40
-      burstCooldown: 0.8
+        - SemiAuto
+        - FullAuto
+      fireRate: 5
       soundGunshot:
-        path: /Audio/Weapons/Guns/Gunshots/ship_svalinn.ogg
+        path: /Audio/_SpL/Effects/coilgun.ogg
         params:
           volume: -2
       soundEmpty:
         path: /Audio/Machines/Nuke/angry_beep.ogg
         params:
           volume: -2
-    - type: BatteryAmmoProvider
-      proto: BulletRailgun
-      fireCost: 20
     - type: Battery
-      maxCharge: 800
-      startingCharge: 800
+      maxCharge: 0
+      startingCharge: 0
+    - type: BatteryAmmoProvider
+      proto: BulletGauss
+      fireCost: 50
+    - type: ItemSlots
+      slots:
+        cell_slot:
+          name: Magazine
+          startingItem: IlluminateCartridgeCoilgun
+          insertSound: /Audio/Weapons/Guns/MagIn/batrifle_magin.ogg
+          ejectSound: /Audio/Weapons/Guns/MagOut/batrifle_magout.ogg
+          whitelist:
+            tags:
+              - CartridgeCoilgun
+    - type: PowerCellSlot
+      cellSlotId: cell_slot
+    - type: StaticPrice
+      price: 500
     - type: ContainerContainer
       containers:
+        cell_slot: !type:ContainerSlot
         firing_pin: !type:Container
     - type: ContainerFill
       containers:
@@ -55,5 +70,8 @@
       zeroVisible: true
     - type: Appearance
     - type: GunWieldBonus
-      minAngle: -19
-      maxAngle: -16
+      minAngle: -20
+      maxAngle: -30
+    - type: Tag
+      tags:
+        - IlluminateTech

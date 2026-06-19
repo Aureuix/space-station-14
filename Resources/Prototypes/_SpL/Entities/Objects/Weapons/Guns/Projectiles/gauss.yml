@@ -1,0 +1,32 @@
+﻿- type: entity
+  categories: [ HideSpawnMenu ]
+  parent: BasicHitscanNoBeam
+  id: BulletGauss
+  name: gauss round
+  components:
+  - type: HitscanBasicDamage
+    armorPenetration: 0.35
+    damage:
+      types:
+        Piercing: 20
+        Structural: 20
+    bloodlossModifier: 4
+  - type: HitscanStaminaDamage
+    staminaDamage: 4
+  - type: HitscanPierce
+    chance: 0.75
+    pierceLevel: Rock
+    deviation: 0.005
+  - type: HitscanReflect
+    reflectiveType: NonEnergy
+    maxReflections: 20
+  - type: HitscanBasicVisuals
+    muzzleFlash:
+      sprite: _SpL/Objects/Weapons/Guns/Projectiles/projectiles.rsi
+      state: muzzle_illuminate
+    travelFlash:
+      sprite: _SpL/Objects/Weapons/Guns/Projectiles/projectiles.rsi
+      state: beam_illuminate
+    impactFlash:
+      sprite: _SpL/Objects/Weapons/Guns/Projectiles/projectiles.rsi
+      state: impact_illuminate
