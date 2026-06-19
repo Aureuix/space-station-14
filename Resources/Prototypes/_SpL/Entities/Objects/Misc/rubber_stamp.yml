@@ -1,0 +1,14 @@
+- type: entity
+  name: Avali Illuminate rubber stamp
+  parent: [ RubberStampBase, BaseIlluminateContraband ]
+  id: RubberStampIlluminate
+  description: "A feathered stamp for stamping important documents."
+  suffix: DO NOT MAP
+  components:
+  - type: Stamp
+    stampedName: ‛Λ|¨|¨‖¡≥‛Λ≤‛/⌊|_\‛
+    stampedColor: "#ff7a00"
+    stampState: "paper_stamp-standby"
+  - type: Sprite
+    sprite: _SpL/Misc/stamps.rsi
+    state: stamp-illuminate
