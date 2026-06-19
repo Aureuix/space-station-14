@@ -1,2 +1,2 @@
 ﻿slur-accent-confused = ...huuuhhh...
-slur-accent-burp = *BURP*.
+# slur-accent-burp = *BURP*. #SpL change- always hated this

@@ -670,8 +670,8 @@
   - type: Clothing
     sprite: Clothing/Head/Hats/ushanka.rsi
   - type: Appearance
-  - type: AddAccentClothing
-    accent: RussianAccent
+#  - type: AddAccentClothing # SpL change- FUCK YOU.
+#    accent: RussianAccent
   - type: Foldable
     canFoldInsideContainer: true
   - type: FoldableClothing
