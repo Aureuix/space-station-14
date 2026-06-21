@@ -177,9 +177,9 @@
         types:
           Slash: 6.25
 # SpL Start
-    - type: ChatListenerRange # way better at hearing, +2 to all
+    - type: ChatListenerRange # slightly better at hearing, but not better than lagomorphs
       voiceRange: 12
-      whisperClearRange: 4
+      whisperClearRange: 3
       whisperMuffledRange: 7
       allowExtendListenRange: true
 # \/\/ SpL- moved elsewhere \/\/
