@@ -81,7 +81,6 @@
     - type: Body
       prototype: Avali
       requiredLegs: 2
-    - type: AvaliAccent
     - type: Inventory
       speciesId: avali
       displacements:
