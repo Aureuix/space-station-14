@@ -9,5 +9,5 @@
   id: LagoTraits
   name: trait-category-lagomorph
   priority: 9
-  maxTraits: 2
+  maxTraits: 3
   accentColor: "#f4e3bb" # cream
