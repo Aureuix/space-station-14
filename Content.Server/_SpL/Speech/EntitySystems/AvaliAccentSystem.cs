@@ -19,6 +19,9 @@ public sealed partial class AvaliAccentSystem : EntitySystem
     [GeneratedRegex(@"n", RegexOptions.IgnoreCase)]
     private static partial Regex RegexN();
     
+    [GeneratedRegex(@"\bn", RegexOptions.IgnoreCase)]
+    private static partial Regex RegexNCap();
+    
     public override void Initialize()
     {
         base.Initialize();
@@ -32,6 +35,7 @@ public sealed partial class AvaliAccentSystem : EntitySystem
         args.Message.Text = RegexF().Replace(args.Message.Text, m => PreserveCase(m.Value, "th"));
         args.Message.Text = RegexV().Replace(args.Message.Text, m => PreserveCase(m.Value, "b"));
         args.Message.Text = RegexN().Replace(args.Message.Text, m => PreserveCase(m.Value, "'"));
+        args.Message.Text = RegexNCap().Replace(args.Message.Text, m => PreserveCase(m.Value, "'h"));
     }
 
     private static string PreserveCase(string original, string replacement)
