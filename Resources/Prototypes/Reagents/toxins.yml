@@ -570,10 +570,20 @@
     Poison:
       metabolismRate: 0.05
       effects:
+    # SpL Start
+      - !type:PopupMessage
+        conditions:
+          - !type:MetabolizerTypeCondition
+            type: [ Animal, Avali ]
+        type: Local
+        visualType: MediumCaution
+        messages: [ "generic-reagent-effect-sick" ]
+        probability: 0.5
+    # SpL End
       - !type:HealthChange
         conditions:
         - !type:MetabolizerTypeCondition
-          type: [Animal] # Applying damage to the mobs with lower metabolism capabilities
+          type: [ Animal, Avali ] # Applying damage to the mobs with lower metabolism capabilities # SpL- added Avali
         damage:
           types:
             Poison: 0.4
@@ -581,7 +591,7 @@
         probability: 0.04 #Scaled for time, not metabolismrate.
         conditions:
           - !type:MetabolizerTypeCondition
-            type: [Animal]
+            type: [Animal, Avali] # SpL- added Avali
       # Starlight-Start: Cyclorite Metabolism
       - !type:AdjustReagent
         conditions:
@@ -762,6 +772,16 @@
     Poison:
       metabolismRate: 0.05
       effects:
+    # SpL Start
+      - !type:PopupMessage
+        conditions:
+          - !type:MetabolizerTypeCondition
+            type: [ Animal ] 
+        type: Local
+        visualType: MediumCaution
+        messages: [ "generic-reagent-effect-sick" ]
+        probability: 0.5
+    # SpL End
       - !type:HealthChange
         conditions:
         - !type:ReagentCondition

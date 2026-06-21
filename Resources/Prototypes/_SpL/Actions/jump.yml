@@ -1,0 +1,12 @@
+﻿- type: entity
+  parent: Jump
+  id: JumpAvali
+  components:
+  - type: Action
+    useDelay: 15
+  - type: WorldTargetAction
+    event: !type:JumpActionEvent
+      distance: 3
+      speed: 20
+      sound:
+        path: /Audio/Effects/thudswoosh.ogg

@@ -1,0 +1,6 @@
+﻿- type: traitCategory
+  id: AvaliTraits
+  name: trait-category-avali
+  priority: 8
+  maxTraits: 1
+  accentColor: "#ed5900" # bright orange
