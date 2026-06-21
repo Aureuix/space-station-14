@@ -4,3 +4,10 @@
   priority: 8
   maxTraits: 1
   accentColor: "#ed5900" # bright orange
+  
+- type: traitCategory
+  id: LagoTraits
+  name: trait-category-lagomorph
+  priority: 9
+  maxTraits: 2
+  accentColor: "#f4e3bb" # cream
