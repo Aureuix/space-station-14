@@ -58,10 +58,10 @@
     speechSounds: ALLagomorph
     speechVerb: Lagomorph
     allowedEmotes: ['Squee', 'Snort', 'LagomorphSneeze', 'LagomorphSnore', 'LagomorphStomp']
-  - type: ChatListenerRange # way better at hearing, +2 to all # SpL change, even better with whispers, +1 to both
+  - type: ChatListenerRange # way better at hearing, +2 to all
     voiceRange: 12
-    whisperClearRange: 5 # SpL change- up from 4
-    whisperMuffledRange: 8 # SpL change- up from 7
+    whisperClearRange: 4 
+    whisperMuffledRange: 7 
     allowExtendListenRange: true
   - type: Vocal
     sounds:
