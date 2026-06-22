@@ -716,7 +716,7 @@
     </ColorBox>
     <ColorBox Color="#813042">
         <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
-            To assault another with a weapon, or to commit unarmed assault resulting in near-death injury. Near-death injury is defined as any damages measured by a Health Analyzer to be exceeding 60 total.
+            To assault another with a weapon, or to commit unarmed assault resulting in life-threatening injury. life-threatening injury is defined as any damages measured by a Health Analyzer to be exceeding 60 total.
         </Box>
     </ColorBox>
     <ColorBox Color="#4d2e2e">
