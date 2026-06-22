@@ -3,7 +3,28 @@
 
 <GuideEntityEmbed Entity="ToyFigurineSecurity" Caption="Cadet"/>
 
-1. Cadets are to assign themselves to a Security Officer if one is not assigned to them.
+    Cadets are junior security officers in training.
+    A cadet should understand the fundamentals of the Security Department, but is not expected to perform at the level of full officers.
+    
+    1. Standard [color=#00a933]Code Green[/color] equipment is:
+<Box>
+    <GuideEntityEmbed Entity="WeaponDisabler"/>
+    <GuideEntityEmbed Entity="Stunbaton"/>
+</Box>
+    
+    2. Cadets should not operate alone unless authorised by the Head of Security, and should closely tail a mentoring [color=#ffe100]Senior Officer[/color].
 
-2. Cadets may only use lethal equipment on [color=#ff0000]Code Red[/color].
+    3. Cadets are [color=#ff0000]not[/color] to sentence arrested individuals directly unless authorised, or if there is no other option. 
+    
+    4. Cadets may only use lethal equipment for training purposes, or on [color=#ff0000]Code Red[/color].
+    
+    5. At the discretion of the Head of Security or Captain/ACO, cadets may be field [color=#ffe100]promoted to full officers[/color] after proving their capability.
+    
+    ## Senior Officer Assignment
+    Cadets are to assign themselves to a Security Officer if one is not assigned to them. 
+    This officer is responsible for oversight of the cadet, including answering of [color=#ffe100]department-related questions[/color], [color=#00a933]general mentoring[/color], and training in [color=#ff0000]firearms and arrests[/color].
+    
+    Officers assigned to cadets should help explain equipment and their uses, the operation of the department, the [color=#ffe100]Corporate Law structure[/color], and any information not readily available through other means.
+    
+    Cadets accompanying officers may act alongside their officer in the enactment of arrests or in pursuit of suspects. Cadets are [color=#ff0000]highly discouraged[/color] from acting alone.
 </Document>

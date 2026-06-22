@@ -156,3 +156,6 @@ guide-entry-plumbingmachines = Plumbing Machines
 
 # Records
 guide-entry-records = Character Records
+
+# SpL Additions
+guide-entry-spl-code-epsilon = Code Epsilon

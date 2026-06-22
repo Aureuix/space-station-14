@@ -3,7 +3,9 @@
 
 <GuideEntityEmbed Entity="ToyFigurineHeadOfSecurity" Caption="Head of Security"/>
 
-1. Standard [color=#00a933]Code Green[/color] equipment is:
+    The Head of Security is the commander of the station's Security forces.
+    
+    1. Standard [color=#00a933]Code Green[/color] equipment is:
 <Box>
 	<GuideEntityEmbed Entity="WeaponSubMachineGunWt550"/>
 	or
@@ -12,36 +14,52 @@
 <Box>
 	<GuideEntityEmbed Entity="Stunbaton"/>
 </Box>
-<Box>
-	<GuideEntityEmbed Entity="HoloprojectorSecurity"/>
-	<GuideEntityEmbed Entity="FlashlightSeclite"/>
-	<GuideEntityEmbed Entity="RadioHandheldSecurity"/>
-</Box>
-<Box>
-	<GuideEntityEmbed Entity="CombatKnife"/>
-	in
-	<GuideEntityEmbed Entity="ClothingShoesBootsJack"/>
-</Box>
-<Box>
-	<GuideEntityEmbed Entity="GrenadeFlashBang"/>
-	or
-	<GuideEntityEmbed Entity="TearGasGrenade"/>
-</Box>
-<Box>
-	<GuideEntityEmbed Entity="Handcuffs"/>
-	or
-	<GuideEntityEmbed Entity="Zipties"/>
-</Box>
 
-2. The standard Command SOP applies with the exception of section 6, as for which, refer to the standard equipment listed above.
+    2. The standard Command SOP applies with the exception of section 6, which is overridden by the listed equipment above.
+    
+    3. When patrolling, you must follow all Security Officer protocols and comply with permitted equipment levels. 
+    The WT550 and Proto-5x are considered sidearms for this purpose.
+    
+    4. You are responsible for your staff and are expected to coordinate and delegate roles to your personnel as necessary.
+    Remember, if you are not the sole officer in the Security Department, then you are [color=#ff0000]not[/color] to do everything yourself.
+    
+    5. You may [color=#ff0000]not[/color] utilise the Armory for your own benefit, and any equipment you use must be for the appropriate alert level.
+    If your equipment requires a permit for use, then you [color=#ff0000]must[/color] fill a permit and have it on person.
+    
+    6. Issued permits may [color=#ff0000]not[/color] be for your own benefit, and must have justifiable reason behind them.
+    You may [color=#ff0000]not[/color] issue permits for [color=#8d281e]highly illegal contraband[/color] [color=#ff0000]whatsoever[/color].
 
-3. When patrolling, the Head of Security must follow all Security Officer protocols as above, however the WT550 is considered a sidearm.
+    6. You may authorise the Warden with [color=#ffe100]Command comms[/color] (using the spare headset in your locker) if you believe it to be beneficial for them to have.
+    You may [color=#ff0000]not[/color] authorise any interim Warden in this manner, nor any other member of the department.
+    
+    ## Additional Duties
+    
+    NanoTrasen Research Stations in your sector are often short-staffed, and as such your skills and qualifications may necessitate you take on extra responsibilities.
+    This section of the SOP will cover what duties fall to you in lieu of dedicated personnel.
 
-4. The Head of Security may overrule any sentence that is not assigned by an official NT Magistrate, but not for prisoners who have already had their sentences read to them.
+    1. You are expected to fulfill the duties of the Warden, Detective, and Brigmedic in that order of priority if you do not have personnel available.
+    You are also expected to follow [color=#ffe100]all relevant SOP[/color] for these roles when acting in their capacity.
+    
+    2. If you have rank-and-file Officers that express interests in taking on responsibilities associated with these roles, you should [color=#00a933]delegate[/color] the work to them.
+    A full field promotion is [color=#ffe100]highly recommended[/color] if time is not of the essence.
+    
+    3. Warden duties should be your [color=#ffe100]priority[/color] secondary only to your own, and in the absence of a Warden you should prioritise the integrity of the department.
+    It may be necessary to adjust or limit your patrol schedule to accomodate for this.
+    
+    4. Detective duties permit use of all Detective equipment for forensics and interrogation purposes. You may [color=#ff0000]not[/color] go undercover when acting as a Detective.
 
-6. The Head of Security may not utilize the armory for their own personal benefit.
-
-6. The Head of Security must follow the Warden procedures for distributing any armory equipment, portable flashers, or deployable barriers.
-
-7. If a [color=#ff0000]Code Red[/color] is called, the Head of Security must state the reason for the [color=#ff0000]Code Red[/color]. The Captain may perform this duty instead, with permission from the Head of Security.
+    5. Brigmedic duties should only involve preparing basic chemical treatment. You should not be aiming to stock the entire bay as the Head of Security.
+    You may [color=#00a933]forego Brigmedic duties[/color] entirely if you are unfamiliar with chemical synthesis, or there are more pressing matters to attend to.
+    
+    ## Sentencing and Prisoner Oversight
+    
+    The Head of Security is responsible for overseeing sentencing in the absence of a Warden, and is expected to provide oversight of the process even with one.
+    This section of the SOP will detail your powers and responsibilities in this regard.
+    
+    1. You [color=#ff0000]must[/color] ensure that you and the Warden are aware of every sentencing, and that every arrest comes with a report unless there is threat of imminent station destruction.
+    
+    2. You may [color=#00a933]parole cooperative prisoners[/color] sentenced for non-violent crimes at your discretion, provided the department is made aware and the SOP for such a procedure is followed.
+    
+    3. You may [color=#ffe100]overrule any sentence[/color] that is not assigned by an official NT Magistrate, but [color=#ff0000]not[/color]  for prisoners who have already had their sentences read to them.
+    
 </Document>

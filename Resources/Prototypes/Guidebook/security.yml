@@ -29,7 +29,7 @@
   text: "/ServerInfo/Guidebook/ServerRules/SpaceLaw/SpaceLaw.xml"
   children:
   - SpaceLawCrimeList
-  - ChangelingClause #Starlight
+#  - ChangelingClause #Starlight # SpL- hid this 
 
 # Starlight Start
 - type: guideEntry
@@ -37,8 +37,8 @@
   name: guide-entry-rules-sl-crime-list
   text: "/ServerInfo/Guidebook/ServerRules/SpaceLaw/SLCrimeList.xml"
 
-- type: guideEntry
-  id: ChangelingClause
-  name: guide-entry-rules-changeling-clause
-  text: "/ServerInfo/Guidebook/ServerRules/SpaceLaw/ChangelingClause.xml"
+#- type: guideEntry #SpL change- Changelings work differently here
+#  id: ChangelingClause
+#  name: guide-entry-rules-changeling-clause
+#  text: "/ServerInfo/Guidebook/ServerRules/SpaceLaw/ChangelingClause.xml"
 #Starlight End

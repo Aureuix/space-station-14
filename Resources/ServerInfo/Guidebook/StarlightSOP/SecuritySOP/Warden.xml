@@ -3,42 +3,74 @@
 
 <GuideEntityEmbed Entity="ToyFigurineWarden" Caption="Warden"/>
 
-1 . Standard [color=#00a933]Code Green[/color] equipment is:
+    The Warden is responsible for the Armory and for the defense and organisation of the Brig.
+    Wardens should be competent, experienced officers with a firm grasp of Corporate Law.
+    
+    1 . Standard [color=#00a933]Code Green[/color] equipment is:
 <Box>
 	<GuideEntityEmbed Entity="Stunbaton"/>
 	<GuideEntityEmbed Entity="WeaponPistolDP"/>
 	<GuideEntityEmbed Entity="WeaponEnergyShotgun"/>
 </Box>
-<Box>
-	<GuideEntityEmbed Entity="HoloprojectorSecurity"/>
-	<GuideEntityEmbed Entity="FlashlightSeclite"/>
-	<GuideEntityEmbed Entity="RadioHandheldSecurity"/>
-</Box>
-<Box>
-	<GuideEntityEmbed Entity="CombatKnife"/>
-	in
-	<GuideEntityEmbed Entity="ClothingShoesBootsJack"/>
-</Box>
-<Box>
-	<GuideEntityEmbed Entity="GrenadeFlashBang"/>
-	or
-	<GuideEntityEmbed Entity="TearGasGrenade"/>
-</Box>
-<Box>
-	<GuideEntityEmbed Entity="Handcuffs"/>
-	or
-	<GuideEntityEmbed Entity="Zipties"/>
-</Box>
 
-2. The Warden may not perform normal Security Officer duties, or arrests, if sufficient numbers of Security Officers are active. This is waived on [color=#ff0000]Code Red[/color] or above.
+    2. The Warden may not perform normal Security Officer duties or make arrests if sufficient numbers of Security Officers are active. This is waived on [color=#ff0000]Code Red[/color] or above.
+    
+    3. If leaving the brig, the Warden should announce such over Security comms. The Warden should be [color=#00a933]very aware[/color] of their equipment and personal effects when operating outside the department.
+    
+    4. The Warden is [color=#ff0000]not[/color] to leave the department if there is currently at least one detained prisoner, dire circumstances notwithstanding.
+    
+    5. The Warden has authorisation to [color=#ffe100]command Security personnel[/color] operating within the department itself, although they [color=#ff0000]must[/color] defer to the Head of Security for general Security matters.
+    
+    6. The Warden may overrule any sentence that is not assigned by the Head of Security or an official NT Magistrate, but not for prisoners who have already had their sentences read to them.
 
-3. The Warden may choose to hand out lethal weapons on [color=#2a6099]Code Blue[/color] with a permit, or [color=#ff0000]Code Red[/color] or above.
-
-4. The Warden may choose to hand out body armor on [color=#2a6099]Code Blue[/color] or above.
-
-4. Uncooperative prisoners, or those deemed to be a flight risk may be cuffed, straightjacketed, or have an electropack placed on them.
-
-5. Portable flashers and deployable barriers may be deployed on [color=#2a6099]Code Blue[/color] or above.
-
-6. The Warden may appoint a Duty Officer to assist with prisoner keeping duties with permission from the HoS.
+    7. The Warden must ensure that all departmental paperwork is up to code with paper copies stored in a secure location, including permits, arrest reports, and search warrants.
+    
+    ## Armory Management
+    
+    Maintenance and defense of the Armory is the Warden's [color=#ffe100]priority[/color]. This section of the SOP details the expectations of the Warden in this regard.
+    
+    1. The Warden is responsible for stocking the Armory with materials, ensuring the Armory's structural integrity, and organising Armory equipment.
+    
+    2. The Warden is responsible for handling the distribution of departmental equipment and issuing of permits. 
+    The Warden should ensure that [color=#ffe100]all contraband permits[/color] are filed with a valid reason and are permissible under SOP.
+    
+    3. The Warden may provide SP, HP, and FMJ ammunition from the Security Techfab to Security Officers and permitted individuals on any Alert Level at their discretion.
+    Other forms of ammunition should be reserved for [color=#ff0000]Code Red[/color].
+    
+    4. The Warden may [color=#ff0000]not[/color] distribute Armory equipment on Code Green except when outlined otherwise in Permit Acquisition and Alert Level SOP. 
+    The Warden may still approve contraband permits and issue non-Armory Security departmental equipment at their discretion.
+    
+    5. The Warden may distribute the following equipment without permits to Security and Command personnel on [color=#2a6099]Code Blue[/color] and above:
+    <Box>
+        <GuideEntityEmbed Entity="ClothingHeadHelmetRiot"/>
+        <GuideEntityEmbed Entity="ClothingOuterArmorRiot"/>
+        <GuideEntityEmbed Entity="RiotShield"/>
+    </Box>
+    <Box>
+        <GuideEntityEmbed Entity="WeaponDisabler"/>
+        <GuideEntityEmbed Entity="Flash"/>
+        <GuideEntityEmbed Entity="WeaponPistolMk58"/>
+    </Box>
+    The Warden may distribute any armour or weaponry from the Armory with a valid permit on [color=#2a6099]Code Blue[/color] and above.
+    [color=#ffe100]Non-lethal equipment[/color] should be prioritised where possible, and weapons issued should be issued with less-lethal rounds unless unfeasible.
+    The Warden should advise for [color=#ff0000]Code Red[/color] to be called if the majority of the department needs to field permitted Armory equipment.
+    
+    6. The Warden may distribute any equipment from the Armory to Security and Command personnel during [color=#ff0000]Code Red[/color].
+    The Warden may also enable [color=#ffe100]Emergency Access[/color] to the Armory to facilitate easier arming and disarming of personnel, but should disable it after.
+    
+    ## Deputisation and Crew Arming
+    
+    In the case of [color=#8d281e]imminent station destruction[/color], the Warden may authorise the additional arming of members of crew. 
+    This part of the SOP will detail the extent to which such is permissible, in order of escalation level.
+    
+    1. Under normal Code Red scenarios, [color=#ffe100]Command members[/color] are authorised to equip themselves with longarms and armour for their own defense.
+    Command members are [color=#ff0000]highly discouraged[/color] from engaging directly however.
+    
+    2. In the case that the situation is dire but not untenable, the [color=#875d3c]Salvage Arm[/color] of the Cargo department may be deputised and granted access to arms and armour.
+    Salvage may also opt to use their own equipment. Regardless of their choice, deputised Salvagers are under the command of the Security department.
+    
+    3. In the event of a [color=#8d281e]Delta Alert[/color] caused by hostile factions, the entire Security Department may be placed on [color=#ffe100]Emergency Access[/color], and all procedures may be suspended. 
+    Crew who choose to join the general rally to arms should accept the risks associated, and should be escorted to evacuation locations otherwise.
+    Armed crew are under the command of the Security department.
+    
 </Document>

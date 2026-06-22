@@ -34,28 +34,29 @@
         Code
       </Box>
     </ColorBox>
-    <ColorBox>
+    <ColorBox Color="#593a4e">
       <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
+      Failure to Comply 
       </Box>
     </ColorBox>
     <ColorBox Color="#593a4e">
       <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
-        Failure to Comply (1)
+        Violation of Parole 
       </Box>
     </ColorBox>
     <ColorBox Color="#593a4e">
       <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
-        Breach of Arrest (1)
+        Breach of Arrest 
       </Box>
     </ColorBox>
     <ColorBox Color="#593a4e">
       <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
-        Breach of Custody (1)
+        Breach of Custody 
       </Box>
     </ColorBox>
     <ColorBox Color="#593a4e">
       <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
-        Refusal of Mental Shielding (1)
+        Refusal of Mental Shielding 
       </Box>
     </ColorBox>
     <ColorBox>
@@ -65,21 +66,22 @@
     </ColorBox>
     <ColorBox Color="#2f3832">
       <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
-        Possession or Use of Minor Contraband (2)
+        Possession or Use of Minor Contraband 
       </Box>
     </ColorBox>
     <ColorBox Color="#2f3832">
       <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
-        Possession: Major (2)
+        Possession: Major 
       </Box>
     </ColorBox>
-    <ColorBox>
+      <ColorBox Color="#2f3832">
       <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
+        Possession: Highly Illegal
       </Box>
     </ColorBox>
     <ColorBox Color="#2f3832">
       <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
-        Possession: Significant Syndicate (2)
+        Possession: Humanoid Tissues/ Organs
       </Box>
     </ColorBox>
     <ColorBox>
@@ -93,20 +95,22 @@
     </ColorBox>
     <ColorBox Color="#2e422e">
       <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
-        Petty Theft (3)
-      </Box>
-    </ColorBox>
-    <ColorBox>
-      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
+        Petty Theft 
       </Box>
     </ColorBox>
     <ColorBox Color="#2e422e">
       <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
-        Grand Theft (3)
+        Grand Theft 
       </Box>
     </ColorBox>
-    <ColorBox>
+    <ColorBox Color="#2e422e">
       <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
+        Armed Robbery 
+      </Box>
+    </ColorBox>
+    <ColorBox Color="#2e422e">
+      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
+        Theft of Vital Infrastructure
       </Box>
     </ColorBox>
     <ColorBox>
@@ -118,26 +122,29 @@
         02
       </Box>
     </ColorBox>
-        <ColorBox>
+    <ColorBox Color="#453a59">
       <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
+        Vandalism 
       </Box>
     </ColorBox>
-    <ColorBox>
+    <ColorBox Color="#453a59">
       <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
-        Tampering with Machinery (4)
+        Property Damage or Tampering 
       </Box>
     </ColorBox>
-    <ColorBox Color="#2e422e">
+    <ColorBox Color="#453a59">
       <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
-        Armed Robbery (3)
+        Destruction of Property 
       </Box>
     </ColorBox>
-    <ColorBox>
+    <ColorBox Color="#453a59">
       <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
+      Mass Destruction
       </Box>
     </ColorBox>
-    <ColorBox>
+  <ColorBox Color="#453a59">
       <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
+      Terrorism
       </Box>
     </ColorBox>
     <ColorBox>
@@ -145,29 +152,27 @@
         03
       </Box>
     </ColorBox>
-    <ColorBox Color="#453a59">
+    <ColorBox Color="#59563a">
       <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
-        Vandalism (4)
+        Trespass 
       </Box>
     </ColorBox>
-    <ColorBox Color="#453a59">
+    <ColorBox Color="#59563a">
       <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
-        Damage of Property (4)
+        Stalking
       </Box>
     </ColorBox>
-    <ColorBox Color="#453a59">
+    <ColorBox Color="#59563a">
       <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
-        Destruction of Property (4)
+        Secure Trespass
       </Box>
     </ColorBox>
     <ColorBox>
       <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
-        Mass Destruction (4)
       </Box>
     </ColorBox>
-    <ColorBox Color="#453a59">
+    <ColorBox>
       <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
-        Terrorism (4)
       </Box>
     </ColorBox>
     <ColorBox>
@@ -175,55 +180,59 @@
         04
       </Box>
     </ColorBox>
-    <ColorBox Color="#59563a">
+    <ColorBox Color="#3b4354">
       <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
-        Trespass (5)
+        Disturbance
+      </Box>
+    </ColorBox>
+    <ColorBox Color="#3b4354">
+      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
+        Vigilantism
+      </Box>
+    </ColorBox>
+    <ColorBox Color="#3b4354">
+      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
+        Rioting
+      </Box>
+    </ColorBox>
+    <ColorBox Color="#3b4354">
+      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
+        Agitation
+      </Box>
+    </ColorBox>
+    <ColorBox Color="#3b4354">
+      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
+        Revolutionary Activity
       </Box>
     </ColorBox>
     <ColorBox>
       <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
+          05
       </Box>
     </ColorBox>
-    <ColorBox Color="#59563a">
+    <ColorBox Color="#813042">
       <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
-        Secure Trespass (5)
+        Assault/ Cruelty 
       </Box>
     </ColorBox>
-    <ColorBox>
+    <ColorBox Color="#813042">
       <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
+        Battery
       </Box>
     </ColorBox>
-    <ColorBox>
+    <ColorBox Color="#813042">
       <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
+        Aggravated Assault
       </Box>
     </ColorBox>
-    <ColorBox>
+    <ColorBox Color="#813042">
       <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
-        05
+        Attempted Murder 
       </Box>
     </ColorBox>
-    <ColorBox>
+    <ColorBox Color="#813042">
       <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
-      </Box>
-    </ColorBox>
-    <ColorBox Color="#4d2e2e">
-      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
-        Minor Assault (6)
-      </Box>
-    </ColorBox>
-    <ColorBox Color="#4d2e2e">
-      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
-        Major Assault (6)
-      </Box>
-    </ColorBox>
-    <ColorBox Color="#4d2e2e">
-      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
-        Attempted Murder (6)
-      </Box>
-    </ColorBox>
-    <ColorBox Color="#4d2e2e">
-      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
-        Prevention of Revival (6)
+        Unlawful Execution/ Prevention of Revival
       </Box>
     </ColorBox>
     <ColorBox>
@@ -231,28 +240,29 @@
         06
       </Box>
     </ColorBox>
-    <ColorBox>
+    <ColorBox Color="#4d2e2e">
       <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
+        Criminal Negligence
       </Box>
     </ColorBox>
     <ColorBox Color="#4d2e2e">
       <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
-        Endangerment (6)
+        Reckless Endangerment
       </Box>
     </ColorBox>
     <ColorBox Color="#4d2e2e">
       <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
-        Manslaughter (6)
+        Manslaughter 
       </Box>
     </ColorBox>
     <ColorBox Color="#4d2e2e">
       <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
-        Murder (6)
+        Murder 
       </Box>
     </ColorBox>
     <ColorBox Color="#4d2e2e">
       <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
-        Mass Murder (6)
+        Mass Murder 
       </Box>
     </ColorBox>
     <ColorBox>
@@ -260,29 +270,29 @@
         07
       </Box>
     </ColorBox>
-    <ColorBox Color="#3b4354">
+    <ColorBox Color="#888888">
       <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
-        Disturbance (7)
+        Fraud
       </Box>
     </ColorBox>
-    <ColorBox Color="#3b4354">
+    <ColorBox Color="#888888">
       <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
-        Vigilantism (7)
+        Bribery
       </Box>
     </ColorBox>
-    <ColorBox Color="#3b4354">
+    <ColorBox Color="#888888">
       <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
-        Rioting (7)
+        Forgery/ Perjury
       </Box>
     </ColorBox>
-    <ColorBox>
+    <ColorBox Color="#888888">
       <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
-        Unlawful Detainment
+        Unlawful Imprisonment
       </Box>
     </ColorBox>
-    <ColorBox Color="#4d2e2e">
+    <ColorBox Color="#888888">
       <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
-        Unlawful Execution (6)
+        Mind Control
       </Box>
     </ColorBox>
     <ColorBox>
@@ -290,23 +300,24 @@
         08
       </Box>
     </ColorBox>
-    <ColorBox>
+    <ColorBox Color="#b6815f">
       <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
-        Impersonation and Fraud
+        Impersonation
       </Box>
     </ColorBox>
-    <ColorBox>
+    <ColorBox Color="#b6815f">
       <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
-        Bribery
+        Impersonation: Security
       </Box>
     </ColorBox>
-    <ColorBox>
+    <ColorBox Color="#b6815f">
       <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
-        Forgery
+        Impersonation: Command
       </Box>
     </ColorBox>
-    <ColorBox>
+    <ColorBox Color="#b6815f">
       <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
+      Impersonation: Corporate
       </Box>
     </ColorBox>
     <ColorBox>
@@ -318,27 +329,29 @@
         09
       </Box>
     </ColorBox>
-    <ColorBox>
+    <ColorBox Color="#475c7d">
       <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
-        Animal Cruelty
+        Insubordination/ Malfeasance
       </Box>
     </ColorBox>
-    <ColorBox>
+    <ColorBox Color="#475c7d">
       <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
+        Conspiracy
       </Box>
     </ColorBox>
-    <ColorBox>
+    <ColorBox Color="#475c7d">
       <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
-        Perjury
+        Sedition
       </Box>
     </ColorBox>
-    <ColorBox>
+    <ColorBox Color="#475c7d">
       <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
-        Cannibalism
+        Treason
       </Box>
     </ColorBox>
-    <ColorBox>
+    <ColorBox Color="#475c7d">
       <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
+        Enemy of Corporation
       </Box>
     </ColorBox>
     <ColorBox>
@@ -346,80 +359,32 @@
         10
       </Box>
     </ColorBox>
-    <ColorBox>
-      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
-      </Box>
-    </ColorBox>
-    <ColorBox>
-      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
-      </Box>
-    </ColorBox>
-    <ColorBox Color="#475c7d">
-      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
-        Sedition (8)
-      </Box>
-    </ColorBox>
-    <ColorBox>
-      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
-      </Box>
-    </ColorBox>
-    <ColorBox>
-      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
-      </Box>
-    </ColorBox>
-    <ColorBox>
-      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
-        11
-      </Box>
-    </ColorBox>
-    <ColorBox>
-      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
-      </Box>
-    </ColorBox>
-    <ColorBox>
-      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
-      </Box>
-    </ColorBox>
-    <ColorBox Color="#475c7d">
-      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
-        Conspiracy (8)
-      </Box>
-    </ColorBox>
-    <ColorBox Color="#475c7d">
-      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
-        Treason (8)
-      </Box>
-    </ColorBox>
-    <ColorBox Color="#475c7d">
-      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
-        Enemy of Corporation (8)
-      </Box>
-    </ColorBox>
-    <ColorBox>
-      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
-        12
-      </Box>
-    </ColorBox>
   </Table>
 
   ## Linked Crimes:
   Crimes that are linked can not be charged together. For more information, refer to Sentencing.
 
-  1. Failure to Comply, Breach of Arrest, Breach of Custody, Refusal of Mental Shielding
+  0. [color=#8b376d]Criminal Procedure[/color]. Covers Failure to Comply, Violation of Parole, Breach of Arrest, Breach of Custody, Refusal of Mental Shielding
   
-  2. Possession or Use of Minor Contraband, Major Contraband, or Significant Syndicate Contraband
+  1. [color=#458159]Unlawful Possession[/color]. Covers Possession or Use of Minor Contraband, Major Contraband, Highly Illegal Contraband, or Humanoid Tissues/Organs
   
-  3. Petty Theft, Grand Theft, and Armed Robbery
+  2. [color=#327e32]Larceny[/color]. Covers Petty Theft, Grand Theft, Armed Robbery, or Theft of Vital Infrastructure
   
-  4. Vandalism, Tampering with Machinery, Damage of Property, Destruction of Property, Mass Destruction, Terrorism
+  3. [color=#61429a]Property Crime[/color]. Covers Vandalism, Property Damage or Tampering, Destruction of Property, Mass Destruction, or Terrorism
   
-  5. Trespass, Secure Trespass
+  4. [color=#877f38]Unlawful Entry[/color]. Covers Trespass, Stalking, or Secure Trespass
   
-  6. Endangerment, Minor Assault, Major Assault, Manslaughter, Attempted Murder, Murder, Prevention of Revival, Mass Murder, Unlawful Execution
+  5. [color=#6a7896]Rebellion[/color]. Covers Disturbance, Vigilantism, Agitation, Rioting, or Revolutionary Activity
   
-  7. Disturbance, Vigilantism, Rioting
+  6. [color=#ac3a54]Violence[/color]. Covers Assault/Cruelty, Battery, Aggravated Assault, Attempted Murder, or Unlawful Execution/Prevention of Revival
+    
+  7. [color=#8e3535]Risk to Life[/color]. Covers Criminal Negligence, Reckless Endangerment, Manslaughter, Murder, or Mass Murder
   
-  8. Sedition, Conspiracy, Treason, Enemy of Corporation
+  8. [color=#c9c9c9]Fraudulence[/color]. Covers Fraud, Bribery, Forgery/Perjury, Unlawful Imprisonment, or Mind Control
+    
+  9. [color=#df8348]Impersonation[/color]. Covers Impersonation, of Security, of Command, or of Corporate
+    
+  10. [color=#4472ba]Corporate Crime[/color]. Covers Insubordination/Malfeasance, Conspiracy, Sedition, Treason, or Enemy of Corporation
   
   ## Minor Crimes
   Those who commit a minor crime should be issued a warning for their first offense, however repeat offenses are cumulative and should result in jail time of up to 5 minutes per minor crime committed. 
@@ -434,14 +399,14 @@
         Description
       </Box>
     </ColorBox>
-    <ColorBox>
+    <ColorBox Color="#593a4e">
       <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
-        Animal Cruelty
+        Failure to Comply
       </Box>
     </ColorBox>
-    <ColorBox>
+    <ColorBox Color="#593a4e">
       <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
-        To inflict unnecessary suffering or harm on a non-sentient being with malicious intent. This does not include legitimate and authorized animal testing, or the butchering of livestock for meat. This also does not extend to vermin, or hostile creatures.
+        To resist reasonable orders given by an authority. This includes lawful detainment and authorized searches. Officers are required to warn the individual before resorting to arrest.
       </Box>
     </ColorBox>
     <ColorBox Color="#2f3832">
@@ -451,7 +416,7 @@
     </ColorBox>
     <ColorBox Color="#2f3832">
       <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
-        To make, hold, or use minor contraband without authorization. Authorization may only be granted by the Warden, the Head of Security, or the Captain.
+        To make, hold, or use minor contraband without authorization. Department or Job restricted decorative items (e.g. uniforms, belts and bags, and boxcutters) are considered minor contraband.
       </Box>
     </ColorBox>
     <ColorBox Color="#2e422e">
@@ -481,7 +446,7 @@
     </ColorBox>
     <ColorBox Color="#59563a">
       <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
-        Trespass - To enter a non-secured area without permission, such as climbing over counters to enter employee areas like the Bar or Kitchen.
+        To enter a non-secured area without permission, such as climbing over counters to enter employee areas like the Bar or Kitchen or entering locked non-secure areas using a crowbar during blackouts.
       </Box>
     </ColorBox>
     <ColorBox Color="#3b4354">
@@ -494,14 +459,54 @@
         To cause a public disturbance. This is the catch-all for excessive obnoxious behavior, and includes public nudity, harassment, inciting crime, repeated and intentional misgendering, and disruption of authorities or communications.
       </Box>
     </ColorBox>
-    <ColorBox>
+    <ColorBox Color="#813042">
       <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
-        Impersonation and Fraud
+        Assault/Cruelty
       </Box>
     </ColorBox>
-    <ColorBox>
+    <ColorBox Color="#813042">
       <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
-        To pretend to be someone you are not, or attempting to commit fraud in any fashion. Impersonation may be elevated to a Moderate crime if the perpetrator is impersonating a member of Security, or a Major crime if they are impersonating a member of Command or Central Command.
+        To assault another without a weapon, or to inflict unnecessary suffering or harm on a non-humanoid being with malicious intent. This does not include legitimate and authorized animal testing, butchering of livestock for meat, or elimination of vermin and hostile creatures.
+      </Box>
+    </ColorBox>
+    <ColorBox Color="#4d2e2e">
+      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
+        Criminal Negligence
+      </Box>
+    </ColorBox>
+    <ColorBox Color="#4d2e2e">
+      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
+        To cause loss to an individual through incompetence, unreasonable inaction, or subpar work. This should be charged for ineptitude or workplace accidents, and not for malicious activity or endangerment.
+      </Box>
+    </ColorBox>
+    <ColorBox Color="#888888">
+      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
+        Fraud
+      </Box>
+    </ColorBox>
+    <ColorBox Color="#888888">
+      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
+        To attempt to commit fraud in any fashion. Fraudulent activities include but are not limited to selling departmental equipment for personal profit, and engaging in scamming.
+      </Box>
+    </ColorBox>
+    <ColorBox Color="#b6815f">
+      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
+        Impersonation
+      </Box>    
+    </ColorBox>
+    <ColorBox Color="#b6815f">
+        <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
+            To pretend to be someone you are not. Extra penalties should be added for committing an act of impersonation using illegal equipment such as vocal modifiers or stolen identification.
+        </Box>
+    </ColorBox>
+    <ColorBox Color="#475c7d">
+      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
+        Insubordination or Malfeasance
+      </Box>
+    </ColorBox>
+    <ColorBox Color="#475c7d">
+      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
+          To willingly disobey a lawful order from a superior (as dictated by Departmental and Job SOP), or engage in misconduct or wrongful activity as a member of Security or Command. 
       </Box>
     </ColorBox>
   </Table>
@@ -521,72 +526,52 @@
     </ColorBox>
     <ColorBox Color="#593a4e">
       <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
-        Failure to Comply
+        Violation of Parole
       </Box>
     </ColorBox>
     <ColorBox Color="#593a4e">
       <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
-        To resist reasonable orders given by an authority. This includes lawful detainment and authorized searches. Officers are required to warn the individual before resorting to arrest.
+        To fail to comply with a lawful, clearly communicated order to report to Security while under parole. This can only be charged five or more minutes after the order was given.
       </Box>
     </ColorBox>
     <ColorBox Color="#2f3832">
       <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
-        Possession/Use of Major Contraband
+        Possession or Use of Major Contraband
       </Box>
     </ColorBox>
     <ColorBox Color="#2f3832">
       <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
-        To make, hold, or use major contraband without authorization. Authorization may only be granted by the Warden, the Head of Security, or the Captain. Any items restricted to a Department or Job are considered major contraband.
+        To make, hold, or use major contraband without authorization. Any Department or Job restricted functional items (e.g. RCDs, firearms, fultons) are considered major contraband.
+      </Box>
+    </ColorBox>
+    <ColorBox Color="#2e422e">
+      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
+          Grand Theft
+      </Box>
+    </ColorBox>
+    <ColorBox Color="#2e422e">
+      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
+        To take critical or irreplaceable property of another individual or organization without consent. This includes command items such as door remotes, hardsuits, machine parts, and hijacking a department shuttle.
       </Box>
     </ColorBox>
     <ColorBox Color="#453a59">
       <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
-        Tampering with Machinery
+        Property Damage or Tampering
       </Box>
     </ColorBox>
     <ColorBox Color="#453a59">
       <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
-        To tamper with a machine such as cutting wires or modifying their functions. Includes but is not limited to; consoles, airlocks, and Silicons.
+        To damage the integrity or functionality of equipment or structures through deconstruction, wire-snipping, or physical force. Includes but is not limited to consoles, airlocks, walls, and Silicons. Certain wire tampering is permissible based on severity, role of the offender, and offending context.
       </Box>
     </ColorBox>
-    <ColorBox Color="#453a59">
+    <ColorBox Color="#59563a">
       <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
-        Damage of Property
+        Stalking
       </Box>
     </ColorBox>
-    <ColorBox Color="#453a59">
+    <ColorBox Color="#59563a">
       <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
-        To maliciously damage or deface public or private property or equipment. This includes equipment vendors, drink dispensers, computers, and machinery such as lathes.
-      </Box>
-    </ColorBox>
-    <ColorBox Color="#4d2e2e">
-      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
-        Endangerment
-      </Box>
-    </ColorBox>
-    <ColorBox Color="#4d2e2e">
-      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
-        To recklessly put yourself or others in danger, either through direct action or failure to act. This includes negligence, accidents, medical malpractice, destruction or impairment of safety features such as firelocks and exterior windows, and reckless piloting of shuttles.
-      </Box>
-    </ColorBox>
-    <ColorBox Color="#4d2e2e">
-      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
-        Minor Assault
-      </Box>
-    </ColorBox>
-    <ColorBox Color="#4d2e2e">
-      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
-        To assault another without a weapon and without causing serious injury. Serious injury is defined as any life altering injury such as loss of limb, damage to the eyes or ears, or any other damages measured by a Health Analyzer to be exceeding 30 total.
-      </Box>
-    </ColorBox>
-    <ColorBox>
-      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
-        Bribery
-      </Box>
-    </ColorBox>
-    <ColorBox>
-      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
-        To attempt or succeed to bribe officials to be derelict of their duties or commit a crime with any payment including but not limited to; Services, favors, spesos, credits, materials, or items of any kind. This also applies to anyone caught accepting a bribe, and is cumulative with whatever crime they were bribed to commit.
+        To tailgate an individual into non-authorised departments, commit offenses of trespassing while following an individual without their consent, or to tail an individual for an unreasonably extended period without their consent.
       </Box>
     </ColorBox>
     <ColorBox Color="#3b4354">
@@ -596,148 +581,188 @@
     </ColorBox>
     <ColorBox Color="#3b4354">
       <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
-        To attempt to unlawfully enforce Corporate Law without vested authority. See: Enforcement of the Law.
+        To attempt to enforce Corporate Law without vested authority. This charge applies to any non-deputised, non-Security personnel who attempt to make an arrest, to enact frontier justice, or to otherwise take Corporate Law into their own hands without authorisation.
+      </Box>
+    </ColorBox>
+    <ColorBox Color="#813042">
+      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
+        Battery
+      </Box>
+    </ColorBox>
+    <ColorBox Color="#813042">
+      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
+        To assault another without a weapon, resulting in serious injury to the victim. Serious injury is defined as any life altering injury such as loss of limb, damage to the eyes or ears, or any other damages measured by a Health Analyzer to be exceeding 30 total.
+      </Box>
+    </ColorBox>
+    <ColorBox Color="#4d2e2e">
+      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
+        Reckless Endangerment
+      </Box>
+    </ColorBox>
+    <ColorBox Color="#4d2e2e">
+      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
+          To recklessly put oneself or others in danger, either through direct action or failure to act. This includes negligence, accidents, medical malpractice, destruction or impairment of safety features such as firelocks and exterior windows, and reckless piloting of shuttles.
+      </Box>
+    </ColorBox>
+    <ColorBox Color="#888888">
+      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
+        Bribery
+      </Box>
+    </ColorBox>
+    <ColorBox Color="#888888">
+      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
+          To attempt or succeed to bribe officials to be derelict of their duties or commit a crime with any payment including but not limited to; Services, favors, spesos, credits, materials, or items of any kind. This also applies to anyone caught accepting a bribe, and is cumulative with whatever crime they were bribed to commit.
+      </Box>
+    </ColorBox>
+    <ColorBox Color="#b6815f">
+      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
+          Impersonation: Security
+      </Box>
+    </ColorBox>
+    <ColorBox Color="#b6815f">
+      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
+          To pretend to be a member of the Security Department. Extra penalties should be added for committing an act of impersonation using illegal equipment such as vocal modifiers or stolen identification.
+      </Box>
+    </ColorBox>
+    <ColorBox Color="#475c7d">
+      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
+          Conspiracy
+      </Box>
+    </ColorBox>
+    <ColorBox Color="#475c7d">
+      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
+          To willingly aid in or plan to commit a major crime with other individuals. If multiple individuals are implicated in a criminal conspiracy, they should also be charged appropriately.
       </Box>
     </ColorBox>
   </Table>
 
   ## Major Crimes
   Those who commit a major crime should receive up to 10 minutes of jail time per major crime committed. Major assault and manslaughter are linked crimes and do not stack against a suspect.
-  <Table Columns="2">
+<Table Columns="2">
     <ColorBox>
-      <Box>
-        Offense
-      </Box>
-    </ColorBox>
-    <ColorBox>
-      <Box>
-        Description
-      </Box>
-    </ColorBox>
-    <ColorBox Color="#475c7d">
-      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
-        Conspiracy
-      </Box>
-    </ColorBox>
-    <ColorBox Color="#475c7d">
-      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
-        To conspire or plan to commit a moderate or major crime with reasonable evidence that the suspect was going to go through with the plan. This would include declaring they are going to commit a crime.
-      </Box>
-    </ColorBox>
-    <ColorBox Color="#2e422e">
-      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
-        Armed Robbery
-      </Box>
-    </ColorBox>
-    <ColorBox Color="#2e422e">
-      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
-        To steal something with the threat of violence using anything that can be considered a weapon, whether or not the weapon is contraband or not. This can include knives, toolboxes, crowbars, or any number of other improvised weaponry. There must be an active threat of violence, or the implication of violence if the victim does not comply, in order to be considered armed robbery.
-      </Box>
-    </ColorBox>
-    <ColorBox Color="#475c7d">
-      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
-        Sedition
-      </Box>
-    </ColorBox>
-    <ColorBox Color="#475c7d">
-      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
-      	To incite rebellion against the authority of the station including but not limited to; Command, Security, Central Command, or Nanotrasen.
-      </Box>
+        <Box>
+            Offense
+        </Box>
     </ColorBox>
     <ColorBox>
-      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
-       Perjury
-      </Box>
-    </ColorBox>
-    <ColorBox>
-      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
-     	  To intentionally lie under oath or make a false statement in a written document
-      </Box>
-    </ColorBox>
-    <ColorBox>
-      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
-        Forgery
-      </Box>
-    </ColorBox>
-    <ColorBox>
-      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
-        To forge a written document through illicit means, such as rewriting a stamped document, unauthorized use of an official stamp, or any other means.
-      </Box>
+        <Box>
+            Description
+        </Box>
     </ColorBox>
     <ColorBox Color="#593a4e">
-      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
-        Breach of Arrest
-      </Box>
+        <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
+            Breach of Arrest
+        </Box>
     </ColorBox>
     <ColorBox Color="#593a4e">
-      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
-        	To intentionally resist and flee arrest or detainment by an authorized staff. This only applies if someone is actively being physically arrested. People uncuffing or assisting others out of an arrest can also be charged with this. Breach of custody is a separate crime.
-      </Box>
+        <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
+            To intentionally resist and flee arrest or detainment by an authorized staff. This only applies if someone is actively being physically arrested. This charge also applies to uncuffing an arrested individual or assisting others out of an arrest. 
+        </Box>
+    </ColorBox>
+    <ColorBox Color="#2f3832">
+        <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
+            Possession or Use of Highly Illegal Contraband
+        </Box>
+    </ColorBox>
+    <ColorBox Color="#2f3832">
+        <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
+            To make, hold, or use highly illegal contraband without authorization. Any equipment manufactured by non-NT certified providers typically falls under this category.
+        </Box>
     </ColorBox>
     <ColorBox Color="#2e422e">
-      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
-        Grand Theft
-      </Box>
+        <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
+            Armed Robbery
+        </Box>
     </ColorBox>
     <ColorBox Color="#2e422e">
-      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
-      	To take critical or irreplaceable property of another individual or organization without consent. This includes command items such as door remotes, hardsuits, machine parts, and hijacking a department shuttle.
-      </Box>
+        <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
+            To steal something with the threat of violence using anything that can be considered a weapon, regardless of the item's contraband status. There must be an active threat of violence or the implication of violence if the victim does not comply in order to be considered armed robbery.
+        </Box>
     </ColorBox>
-    <ColorBox Color="#2e422e">
-      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
-       Destruction of Property
-      </Box>
+    <ColorBox Color="#453a59">
+        <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
+            Destruction of Property
+        </Box>
     </ColorBox>
-    <ColorBox>
-      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
-      	To destroy the property of another or the station. This includes but is not limited to work consoles, airlocks, and destroying or critically damaging a Cyborg's chassis.
-      </Box>
+    <ColorBox Color="#453a59">
+        <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
+            To destroy the property of another or the station. This includes but is not limited to work consoles, airlocks, and destroying or critically damaging a Cyborg's chassis.
+        </Box>
     </ColorBox>
     <ColorBox Color="#59563a">
-      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
-        Secure Trespass
-      </Box>
+        <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
+            Secure Trespass
+        </Box>
     </ColorBox>
     <ColorBox Color="#59563a">
-      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
-       To enter a secured area without permission. If the area is behind a locked door, it is secure trespass. This includes telecomms, department head offices, command areas, the vault, and the armory.
-      </Box>
-    </ColorBox>
-    <ColorBox Color="#4d2e2e">
-      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
-       Major Assault
-      </Box>
-    </ColorBox>
-    <ColorBox Color="#4d2e2e">
-      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
-      	To assault another with a weapon or unarmed assault resulting in serious injury. Serious injury is defined as any life altering injury such as loss of limb, damage to the eyes or ears, or any other damages measured by a Health Analyzer to be exceeding 30 total.
-      </Box>
-    </ColorBox>
-    <ColorBox Color="#4d2e2e">
-      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
-        Manslaughter
-      </Box>
-    </ColorBox>
-    <ColorBox Color="#4d2e2e">
-      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
-      	To incidentally kill a sentient humanoid without intent. This includes manslaughter in self-defense and negligent manslaughter.
-      </Box>
+        <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
+            To enter a secured area without permission. This includes but is not limited to the Engineering department for non-Engineers, Telecomms, AI Core, Department Head offices, Bridge, Vault, and Security department for non-Security personnel.
+        </Box>
     </ColorBox>
     <ColorBox Color="#3b4354">
-      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
-        Rioting
-      </Box>
+        <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
+            Rioting
+        </Box>
     </ColorBox>
     <ColorBox Color="#3b4354">
-      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
-        To participate in a large group of personnel creating an unlawful public disturbance. Leaders of a riot may be charged with all the crimes committed under their lead, plus sedition.
-      </Box>
+        <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
+            To participate in a large group of personnel creating an unlawful public disturbance. This can involve conventional riots, strikes and similar industrial action, and organised and coordinated resistance against the station authority.
+        </Box>
     </ColorBox>
-  </Table>
+    <ColorBox Color="#813042">
+        <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
+            Aggravated Assault
+        </Box>
+    </ColorBox>
+    <ColorBox Color="#813042">
+        <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
+            To assault another with a weapon, or to commit unarmed assault resulting in near-death injury. Near-death injury is defined as any damages measured by a Health Analyzer to be exceeding 60 total.
+        </Box>
+    </ColorBox>
+    <ColorBox Color="#4d2e2e">
+        <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
+            Manslaughter
+        </Box>
+    </ColorBox>
+    <ColorBox Color="#4d2e2e">
+        <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
+            To incidentally kill a sentient humanoid without intent. This includes manslaughter in self-defense and negligent manslaughter.
+        </Box>
+    </ColorBox>
+    <ColorBox Color="#888888">
+        <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
+            Forgery and Perjury
+        </Box>
+    </ColorBox>
+    <ColorBox Color="#888888">
+        <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
+            To forge a written document through illicit means, intentionally lie under oath or make a false statement in a written document. This includes but is not limited to rewriting a stamped document or misusing an official stamp.
+        </Box>
+    </ColorBox>
+    <ColorBox Color="#b6815f">
+        <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
+            Impersonation: Command
+        </Box>
+    </ColorBox>
+    <ColorBox Color="#b6815f">
+        <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
+            To pretend to be a member of Station Command. Extra penalties should be added for committing an act of impersonation using illegal equipment such as vocal modifiers or stolen identification.
+        </Box>
+    </ColorBox>
+    <ColorBox Color="#475c7d">
+        <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
+            Sedition
+        </Box>
+    </ColorBox>
+    <ColorBox Color="#475c7d">
+        <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
+            To incite rebellion or disseminate propaganda encouraging rebellion against the authority of the station. If seditious action led to the outbreak of mass disturbance or rioting, Agitation should be charged instead.
+        </Box>
+    </ColorBox>
+</Table>
 
   ## Extreme Crimes
-  Those who commit an extreme crime may receive up to 20 minutes of jail time per extreme crime committed. Particularly violent offenders may be placed in perma. Attempted murder and murder are linked crimes and cannot be stacked together.
+  Those who commit an extreme crime may receive up to 20 minutes of jail time per extreme crime committed. Particularly violent offenders may be placed in permanent confinement. Attempted murder and murder are linked crimes and cannot be stacked together.
   <Table Columns="2">
     <ColorBox>
       <Box>
@@ -754,59 +779,89 @@
         Breach of Custody
       </Box>
     </ColorBox>
-    <ColorBox>
+    <ColorBox Color="#593a4e">
       <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
-        To break out of a cell or custody with the intention of escaping. This applies to people breaking others out. Repeat offenses may have this charge increased to permanent confinement and later elevated to an execution with the Captain's authority only if the suspect has repeatedly committed breach of custody. Breach of custody for the preservation of life, not including to escape execution, such as to vacate a location made dangerous due to gunfire, fire, spacing, or lack of oxygen- may be reduced or ignored at the Warden or Head of Security's discretion.
+        To break out of a cell or custody with the intention of escaping, or to assist in a breakout. Repeat offenses may have this charge increased to permanent confinement. Breach of custody for the preservation of life (not including to escape execution) may be reduced or ignored at the Warden or Head of Security's discretion.
       </Box>
     </ColorBox>
     <ColorBox Color="#2f3832">
       <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
-        Possession or Use of Significant Syndicate Contraband
+         Possession of Humanoid Tissues or Organs
       </Box>
     </ColorBox>
     <ColorBox Color="#2f3832">
       <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
-        To make, hold, or use Significant Syndicate contraband. Significant Syndicate contraband may only be used in emergencies, and only to prevent death or gross bodily harm. Significant Syndicate contraband is any Syndicate contraband that can be used to hinder the station or aid it's enemies in an obvious way. Any syndicate contraband that does not meet this definition is to be considered minor contraband.
+          To possess any part of a sentient humanoid. Possession of vital components should be treated more harshly. This can be charged on top of other charges such as Murder or Assault if the suspect committed these crimes to obtain the parts. 
       </Box>
     </ColorBox>
     <ColorBox Color="#2e422e">
       <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
+          Theft of Vital Infrastructure
+      </Box>
+    </ColorBox>
+    <ColorBox Color="#2e422e">
+        <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
+            To steal a vital and irreplaceable structure or item necessary for the station's operation, such as the Research Server, Crew Monitoring Server, Nuclear Fission Explosive, Nuclear Authentication Disk, Station AI, or Thermo-Electric Generator.
+        </Box>
+    </ColorBox>
+    <ColorBox Color="#453a59">
+      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
        Mass Destruction
       </Box>
     </ColorBox>
-    <ColorBox>
+    <ColorBox Color="#453a59">
       <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
       	To cause massive damage to an area or major station system. This includes major bombings and sabotage of critical station systems like power, medical, chemistry, substations, and atmospherics.
       </Box>
     </ColorBox>
-    <ColorBox>
+    <ColorBox Color="#3b4354">
       <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
-        Unlawful Detainment
+          Agitation
       </Box>
     </ColorBox>
-    <ColorBox>
+    <ColorBox Color="#3b4354">
       <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
-        To unlawfully restrain, transport, control, or confine a sentient humanoid being against that individual's will. This is a catchall to cover any form of kidnapping or forced control.
+          To cause the outbreak of a rebellion, strike, or other large-scale riot, either through direct leadership, incessant incitement, or subversive methods. An Agitation charge also permits charging for all crimes committed under the criminal's lead.
       </Box>
     </ColorBox>
-    <ColorBox Color="#4d2e2e">
+      <ColorBox Color="#813042">
+          <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
+              Attempted Murder
+          </Box>
+      </ColorBox>
+      <ColorBox Color="#813042">
+          <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
+              To make an attempt to end someone's life, using physical force or otherwise. Proof that action was taken with the intent to kill is necessary, such as a lethal weapon being used.
+          </Box>
+      </ColorBox>
+      <ColorBox Color="#4d2e2e">
+          <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
+              Murder
+          </Box>
+      </ColorBox>
+      <ColorBox Color="#4d2e2e">
+          <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
+              To kill a sentient humanoid with malicious intent. If the victim must be revived, it is murder and not attempted murder.
+          </Box>
+      </ColorBox>
+    <ColorBox Color="#888888">
       <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
-        Attempted Murder
+        Unlawful Imprisonment
       </Box>
     </ColorBox>
-    <ColorBox Color="#4d2e2e">
+    <ColorBox Color="#888888">
       <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
-        To make an attempt to end someone's life, using physical force or otherwise. Proof that action was taken with the intent to kill is necessary, such as a lethal weapon being used.
+        To unlawfully restrain, transport, control, or confine a sentient humanoid being against that individual's will. This extends to any and all forms of kidnapping and unlawful detainment.
       </Box>
     </ColorBox>
-    <ColorBox Color="#4d2e2e">
+    <ColorBox Color="#b6815f">
       <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
-        Murder
+          Impersonation: Corporate
       </Box>
     </ColorBox>
-    <ColorBox Color="#4d2e2e">
+    <ColorBox Color="#b6815f">
       <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
-        To kill a sentient humanoid with malicious intent. If the victim must be revived, it is murder and not attempted murder.
+          To pretend to be a member of Central Command, NanoTrasen, or any other Government or Corporate official. Extra penalties should be added for committing an act of impersonation using illegal equipment such as vocal modifiers or stolen identification.
       </Box>
     </ColorBox>
     <ColorBox Color="#475c7d">
@@ -819,20 +874,11 @@
         To willfully betray allegiances to NanoTrasen. This includes collaborating with terrorists, and especially applies to members of Command attempting to illegally forsake their duties to the detriment of the Station and Nanotrasen.
       </Box>
     </ColorBox>
-    <ColorBox>
-      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
-        Cannibalism
-      </Box>
-    </ColorBox>
-    <ColorBox>
-      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
-        To consume any part of a sentient humanoid. Consumption of vital components should be treated more harshly. This can be charged on top of other charges such as Murder or Assault if the suspect committed these crimes to obtain the parts consumed. Consumption of blood is considered cannibalism unless the source is consensual under the Religious Freedoms act (Paperwork with the Chaplin and Captian's stamp are required for this exception). Discarded blood (Such as blood that a janitor would mop) is considered consensually given and does not reqire paperwork to be consumed.
-      </Box>
-    </ColorBox>
   </Table>
 
   ## Capital Crimes
-  Those who commit a capital crime should be detained in perma with confirmation from Captain. If a capital criminal escapes they are to be executed and transported to CC in a body bag at the end of shift. Emergency executions may be enacted by Captain or the Head of Security with at least 3 other Command as witnesses, but must be reported directly to Central Command afterwards for review.
+    Those who commit a capital crime should be detained in permanent confinement with confirmation from the Captain. If a capital criminal escapes they are to be executed and transported to CC in a body bag at the end of shift. 
+    Emergency executions may be enacted by the Captain or the Head of Security with at least 3 other Command as witnesses, but must be reported directly to Central Command afterward for review.
   <Table Columns="2">
     <ColorBox>
       <Box>
@@ -851,7 +897,7 @@
     </ColorBox>
     <ColorBox Color="#593a4e">
       <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
-        To refuse to comply with a reasonable Mind Shielding procedure. Applies if the suspect is excessively uncooperative or the implant fails to function due to the mental state of the prisoner being too far gone. [bold]If the implant fails, execution is heavily recommended and may be approved by the Captain or Central Command. See Implantation for more.[/bold]
+        To refuse to comply with a reasonable Mind Shielding procedure within the context of Martial Law. Applies only if the suspect is excessively uncooperative or the implant fails to function due to the mental state of the prisoner being too far gone.
       </Box>
     </ColorBox>
     <ColorBox Color="#2e422e">
@@ -864,24 +910,34 @@
       	To engage in malicious destructive actions which threaten to destroy or successfully destroy a vessel, habitat, or station. This includes extreme sabotage of station systems or setting off the self-destruction systems.
       </Box>
     </ColorBox>
-    <ColorBox Color="#4d2e2e">
+    <ColorBox Color="#3b4354">
+      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
+          Revolutionary Activity
+      </Box>
+    </ColorBox>
+    <ColorBox Color="#3b4354">
+      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
+          To act in a leading capacity on behalf of a large-scale revolt against the station authority. This includes enacting industrial-scale sabotage, supplying revolters with arms, and driving a riot forward with extremist rhetoric.
+      </Box>
+    </ColorBox>
+    <ColorBox Color="#813042">
       <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
         Unlawful Execution
       </Box>
     </ColorBox>
-    <ColorBox Color="#4d2e2e">
+    <ColorBox Color="#813042">
       <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
         To unlawfully execute an individual without authorization or outside of Standard Operating Procedure. This law is distinct from murder, and applies primarily to Security, Command, and Central Command forces such as Emergency Response Teams.
       </Box>
     </ColorBox>
-    <ColorBox Color="#4d2e2e">
+    <ColorBox Color="#813042">
       <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
         Prevention of Revival
       </Box>
     </ColorBox>
-    <ColorBox Color="#4d2e2e">
+    <ColorBox Color="#813042">
       <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
-        To render a body un-resurrectable. This includes gibbing, throwing a body into space, intentionally hiding a body, unlawfully incinerating a body, or any other ways of preventing a body with a soul from being resurrected.
+        To render a body un-resurrectable. This includes destroying a body, throwing a body into space, intentionally hiding a body, unlawfully incinerating a body, committing cannibalism, or any other ways of preventing a body with a soul from being resurrected.
       </Box>
     </ColorBox>
     <ColorBox Color="#4d2e2e">
@@ -891,7 +947,17 @@
     </ColorBox>
     <ColorBox Color="#4d2e2e">
       <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
-        To kill three or more sentient humanoid with malicious intent. Only applies when there have been multiple killings with intention.
+          To kill three or more sentient humanoid with malicious intent. Only applies when there have been multiple killings with intention.
+      </Box>
+    </ColorBox>
+    <ColorBox Color="#888888">
+      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
+          Mind Control
+      </Box>
+    </ColorBox>
+    <ColorBox Color="#888888">
+      <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
+          To use any form of mind controlling technique or technology to force an individual to act against their will. This only applies beyond a shadow of a doubt.
       </Box>
     </ColorBox>
     <ColorBox Color="#475c7d">
@@ -901,7 +967,7 @@
     </ColorBox>
     <ColorBox Color="#475c7d">
       <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
-        To act as or knowingly aid a known enemy of the Station and NT-CC. Only applies beyond a shadow of doubt.
+        To act directly on behalf of a known enemy of the Station and/or of NanoTrasen. This only applies against individuals confirmed as such by Central Command, or individuals engaging in an act of Terrorism on behalf of an enemy organisation.
       </Box>
     </ColorBox>
   </Table>
