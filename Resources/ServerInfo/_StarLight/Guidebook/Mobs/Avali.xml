@@ -1,25 +1,77 @@
 <Document>
-  # Avali
+    # Avali
 
-  <Box>
-    <GuideEntityEmbed Entity="MobAvali" Caption=""/>
-  </Box>
- 
-  [color=#ffa500]Warning! This species is not recommended for new players due to major gameplay changes![/color]
+    <Box>
+        <GuideEntityEmbed Entity="MobAvali" Caption=""/>
+    </Box>
 
-  Avali are a species of ammonia-based intelligent bird/raptor people and due to this odd combination many refer to them as "Space Raptors" and, as you might expect, are carnivores. Their unique biology allows them to deal exceedingly well with the cold, and is capable of basic flight in no to low gravity environments. 
+    [color=#ffa500]Warning! This species is not recommended for new players due to major gameplay changes![/color]
 
-  ## Racial Features
+        Avali are a species of diminuitive, intelligent "Space Raptors", as they're sometimes referred to as. 
+    Hailing from the frozen moon of Avalon in a distant star system, Avali have a number of unique biological and technological adaptations that both allowed them to survive the hostile environment of their homeworld and in the foreign reaches of space.
 
-  - Receive [color=#ffa500]40% more fire damage[/color] and [color=#1e90ff]40% less cold damage[/color].
-  - Can stand in tempatures of up to [color=#1e90ff]-50c before taking cold damage[/color].
-  - Deal [color=red]6.25[/color] slashing damage with claws.
-  - Can fly in Zero-G.
-  - [color=#ffbc48]Nanite Technology![/color] Can encase themselves in a [color=#ffbc48]Nanite Shell[/color] to heal most common types of damage.
-  - Can talk over [color=#ffbc48]The Nexus with +N.[/color]
-  - 2x Hunger rate, stay fed!
-  - Can only eat meat-related food items (including organs) and pills.
-  - Heal airloss from Ammonia and Amoxla but..
-  - Saline will burn you, and both Dexalin and Dexalin+ are lethal to you. Remember to remind doctors about it!
-  - Fall into crit at 90 and dead at 180.
+    ## Packs
+        Avali, like Resomi, are [bold]pack animals[/bold]. Much of their worldview tends to revolve around their pack, with a pack often being closer for Avali than conventional families would be for anyone else.
+    
+        Avali that become estranged or otherwise separated from their pack risk developing [bold]Pack Loss[/bold], a condition characterised by depression and separation anxiety.
+    
+        Avali that are packless often end up isolated, paranoid, estranged, and sometimes violent. A healthy Avali is one with a healthy pack.
+
+    ## The Illuminate
+        Most (but not all) Avali originate from the sector of space controlled by an interstellar government known as [color=#ffbc48]the Illuminate[/color]. The Illuminate is a meritocratic, technocratic government that ensures the needs of its people are met with the assistance of an advanced AI known as the [color=#ffbc48]Oracle[/color], which helps to set production quotas and distribute incentives and supplies.
+
+        The vast majority of Avali are from Avalon, the capital of the Illuminate and homeworld of the species, although in recent decades the species has began to associate further with the rest of the galaxy. It is uncommon but not unusual to find Avali in conventional families, mixed-species packs and individuals from colonies or tribes independent (and sometimes rogue) from the Illuminate.
+
+    ## The Nexus
+        Almost all Avali have a neural implant granting them access to the Nexus, a shared technological network between them and Resomi (as well as anyone else with an implant).
+    Due to the lack of supporting infrastructure in NanoTrasen controlled space, the true potential of the Nexus isn't accessible to those working aboard NT stations, and the network solely functions as a means of communication.
+    
+        Use the [color=orange]+n[/color] prefix in chat to send a message to all Avali and Resomi semi-anonymously. You will only be defined by your unique user number.
+
+    ## Age and Names
+        Avali are hatched from eggs, typically within communal hatcheries, and enter eligibility NT employment at the age of [color=yellow]23[/color] standard galactic years. 
+    Due to their unique metabolism, Avali can live up to [color=yellow]430[/color] years old.
+    
+        Most Avali names are nicknames, due to full names being difficult to use in day-to-day life or pronounce by coworkers. 
+    Avali station identities will list their nickname first, followed by their pack name (for example, [color=yellow]Tashira, Darkfeathers Pack[/color]). 
+    Some Avali forego this system and go by other nicknames or names.
+
+    ## Health
+        Avali have lower health due to their small stature and semi-hollow bone structure, falling into a critical state at [color=#ffa500]90[/color] points of damage and dying at [color=#ffa500]180[/color] points of damage.
+
+        Avali prefer colder temperatures than humans due to their ammonia-based biology, often being hot and uncomfortable in room temperature conditions. They take [color=#1e90ff]40% less cold damage[/color], and can stand in temperatures of up to [color=#1e90ff]-60c before taking cold damage[/color].
+    
+        Conversely, heat-based weaponry is lethal to Avali, with them taking [color=#ffa500]40% more Heat damage[/color] as their feathers and fur catch aflame.
+    
+    ## Medical Treatment
+        Avali are ammonia and silicon based, having evolved to survive in the harsh conditions of their homeworld. As such, they have a unique biological makeup that requires more care from medical personnel seeking to provide treatment.
+    
+        Due to the lack of iron in their bloodstreams, Avali patients take an alternative set of chemical treatments. Airloss is treated via [color=cyan]Amoxla[/color], and the analogous [color=cyan]Scorizine and Voltizol[/color] can treat extreme burns.
+    
+        Conversely, [color=red]iron[/color] behaves like a slow acting but [color=red]highly toxic[/color] substance, similar to lead. Be careful not to administer any chemicals that contain iron to Avali, such as [color=red]Dexalin Plus or Pyrazine[/color]!
+
+        Avali run very cold compared to their coworkers, but they stop self-thermoregulating upon death. Be cautious with deceased Avali- they will begin to burn and may eventually be [color=#ffa500]reduced to ashes[/color] if not given adequate treatment or cooling!
+    
+    ## Dietary Requirements
+    
+        Water is less effective for quenching an Avali's thirst, and they prefer ammonia (or, if available, ammonium) for maximum satiation. Effectiveness doesn't equal enjoyment though!
+    
+        Due to their obligate carnivorism, Avali are [color=yellow]unable to digest plant matter[/color], alongside being poisoned by common cocoa and coffee based drinks like lattes and hot chocolates. They can however digest raw meat and organs.
+    
+    ## Weapon Knockback
+        Due to their small stature and light bodies, Avali have difficulty handling [color=red]recoil[/color] with larger-caliber longarms. This is especially evident in shotguns, but occurs for rocket launchers, rifles, and machine guns too.
+    These weapons will deal [color=yellow]Stun Damage[/color] with use. Keep in mind that any stamina resistance you have DOES work to reduce the stamina damage from these weapons!
+        
+        The safest weapons to use that will give you no knockback are [color=green]Pistols, lasers, and SMGs[/color]. You can also comfortably use any equipment originating from [color=#ffbc48]the Illuminate[/color], if you happen to find any.
+
+    ## Augmentations
+        Self-modification is a core part of most modern Avali culture. While there are traditionalists who prefer their organic forms, the majority of Avali have some sort of augmentations, from the Nexus uplink and basic vision improvements to full-body cybernetics. 
+    This is represented through [bold][color=#ffbc48]Augments Trait Options[/color][/bold], allowing you to select the sort of modifications you may have undergone prior to entering NanoTrasen's payroll.
+
+    ## Miscellaneous Traits
+        Avali have incredibly good hearing, and are able to hear voices and whispers from a further distance than most.
+    
+        Avali wings are designed for movement in low-gravity scenarios, providing them with excellent mobility in 0G conditions.
+    
+        Avali also have razor sharp claws, which deal [color=red]6.25[/color] slashing damage when unarmed.
 </Document>
