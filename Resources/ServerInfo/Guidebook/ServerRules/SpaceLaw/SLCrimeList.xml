@@ -1,6 +1,10 @@
 <Document>
   # Corporate Law: Crime Listing
-  Crime codes are colored by linked crime groups, which are collections of non-stackable crimes. Suffixes are also included in the Quick Crime Guide to identify linked crimes.
+  Crime codes are colored by linked crime groups, which are collections of non-stackable crimes. 
+  Non-stackable crimes cannot be charged simultaneously, and a sentence should use the most severe applicable crime in the category.
+  
+  In the case of violent crimes (06 and 07), only the most severe crime committed against each victim should be charged.
+  In the case of a criminal committing acts of physical violence against multiple victims, each attack can be charged accordingly if they do not involve linked crimes.
 
   ## Quick Crime Guide
   <Table Columns="6">
@@ -591,7 +595,7 @@
     </ColorBox>
     <ColorBox Color="#813042">
       <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
-        To assault another without a weapon, resulting in serious injury to the victim. Serious injury is defined as any life altering injury such as loss of limb, damage to the eyes or ears, or any other damages measured by a Health Analyzer to be exceeding 30 total.
+        To assault another without use of a deadly weapon, resulting in serious injury to the victim. Serious injury is defined as any life altering injury such as loss of limb, damage to the eyes or ears, or any other damages measured by a Health Analyzer to be exceeding 30 total.
       </Box>
     </ColorBox>
     <ColorBox Color="#4d2e2e">
@@ -637,7 +641,7 @@
   </Table>
 
   ## Major Crimes
-  Those who commit a major crime should receive up to 10 minutes of jail time per major crime committed. Major assault and manslaughter are linked crimes and do not stack against a suspect.
+  Those who commit a major crime should receive up to 10 minutes of jail time per major crime committed. Aggravated Assault and Manslaughter do not stack against a suspect.
 <Table Columns="2">
     <ColorBox>
         <Box>
@@ -716,7 +720,7 @@
     </ColorBox>
     <ColorBox Color="#813042">
         <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
-            To assault another with a weapon, or to commit unarmed assault resulting in life-threatening injury. life-threatening injury is defined as any damages measured by a Health Analyzer to be exceeding 60 total.
+            To assault another with a deadly weapon, or to commit assault resulting in life-threatening injury. life-threatening injury is defined as any damages measured by a Health Analyzer to be exceeding 60 total.
         </Box>
     </ColorBox>
     <ColorBox Color="#4d2e2e">
@@ -762,7 +766,7 @@
 </Table>
 
   ## Extreme Crimes
-  Those who commit an extreme crime may receive up to 20 minutes of jail time per extreme crime committed. Particularly violent offenders may be placed in permanent confinement. Attempted murder and murder are linked crimes and cannot be stacked together.
+  Those who commit an extreme crime may receive up to 20 minutes of jail time per extreme crime committed. Particularly violent offenders may be placed in permanent confinement. Attempted Murder and Murder cannot be stacked together.
   <Table Columns="2">
     <ColorBox>
       <Box>
