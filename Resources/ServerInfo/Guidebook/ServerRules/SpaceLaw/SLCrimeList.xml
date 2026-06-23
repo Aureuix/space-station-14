@@ -159,7 +159,7 @@
     </ColorBox>
     <ColorBox Color="#59563a">
       <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
-        Stalking
+        Tailgating
       </Box>
     </ColorBox>
     <ColorBox Color="#59563a">
@@ -372,7 +372,7 @@
   
   3. [color=#61429a]Property Crime[/color]. Covers Vandalism, Property Damage or Tampering, Destruction of Property, Mass Destruction, or Terrorism
   
-  4. [color=#877f38]Unlawful Entry[/color]. Covers Trespass, Stalking, or Secure Trespass
+  4. [color=#877f38]Unlawful Entry[/color]. Covers Trespass, Tailgating, or Secure Trespass
   
   5. [color=#6a7896]Rebellion[/color]. Covers Disturbance, Vigilantism, Agitation, Rioting, or Revolutionary Activity
   
@@ -566,12 +566,12 @@
     </ColorBox>
     <ColorBox Color="#59563a">
       <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
-        Stalking
+        Tailgating
       </Box>
     </ColorBox>
     <ColorBox Color="#59563a">
       <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
-        To tailgate an individual into non-authorised departments, commit offenses of trespassing while following an individual without their consent, or to tail an individual for an unreasonably extended period without their consent.
+        To follow an individual into a department without sufficient access or permission. This applies to following coworkers through locked airlocks. If the area entered is considered Secure, charge with Secure Trespass instead.
       </Box>
     </ColorBox>
     <ColorBox Color="#3b4354">
@@ -786,12 +786,12 @@
     </ColorBox>
     <ColorBox Color="#2f3832">
       <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
-         Possession of Humanoid Tissues or Organs
+         Possession or of Humanoid Tissues or Organs
       </Box>
     </ColorBox>
     <ColorBox Color="#2f3832">
       <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
-          To possess any part of a sentient humanoid. Possession of vital components should be treated more harshly. This can be charged on top of other charges such as Murder or Assault if the suspect committed these crimes to obtain the parts. 
+          To unlawfully possess or consume any part of a sentient humanoid. Possession or consumption of vital components should be treated more harshly. This can be charged on top of other charges such as Murder or Assault if the suspect committed these crimes to obtain the parts. Any act of cannibalism falls under this category.
       </Box>
     </ColorBox>
     <ColorBox Color="#2e422e">
@@ -900,12 +900,12 @@
         To refuse to comply with a reasonable Mind Shielding procedure within the context of Martial Law. Applies only if the suspect is excessively uncooperative or the implant fails to function due to the mental state of the prisoner being too far gone.
       </Box>
     </ColorBox>
-    <ColorBox Color="#2e422e">
+    <ColorBox Color="#453a59">
       <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
         Terrorism
       </Box>
     </ColorBox>
-    <ColorBox Color="#2e422e">
+    <ColorBox Color="#453a59">
       <Box HorizontalAlignment="Left" VerticalAlignment="Stretch" Margin="2">
       	To engage in malicious destructive actions which threaten to destroy or successfully destroy a vessel, habitat, or station. This includes extreme sabotage of station systems or setting off the self-destruction systems.
       </Box>
