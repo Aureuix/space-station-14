@@ -2,7 +2,7 @@
   id: StarlightOasis
   mapName: 'Oasis'
   mapPath: /Maps/_Starlight/Stations/Oasis.yml
-  minPlayers: 50
+  minPlayers: 20 # SpL Change
   maxPlayers: 150
   stations:
     StarlightOasis:

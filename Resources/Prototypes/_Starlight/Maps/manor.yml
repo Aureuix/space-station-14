@@ -2,7 +2,7 @@
   id: StarlightManor
   mapName: 'Manor Station'
   mapPath: /Maps/_Starlight/Stations/Manor.yml
-  minPlayers: 50
+  minPlayers: 20 # SpL Change
   maxPlayers: 180
   stations:
     StarlightManor:

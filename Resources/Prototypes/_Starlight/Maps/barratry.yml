@@ -2,7 +2,7 @@
   id: StarlightBarratry
   mapName: 'Barratry'
   mapPath: /Maps/_Starlight/Stations/Barratry.yml
-  minPlayers: 40
+  minPlayers: 15 # SpL Change
   maxPlayers: 130
   stations:
     StarlightBarratry:

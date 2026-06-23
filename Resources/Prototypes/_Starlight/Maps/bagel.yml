@@ -2,7 +2,7 @@
   id: StarlightBagel
   mapName: 'Bagel Station'
   mapPath: /Maps/_Starlight/Stations/Bagel.yml
-  minPlayers: 35
+  minPlayers: 20 # SpL Change
   maxPlayers: 140
   stations:
     StarlightBagel:
