@@ -19,7 +19,7 @@
     
     4. The Warden is [color=#ff0000]not[/color] to leave the department if there is currently at least one detained prisoner, dire circumstances notwithstanding.
     
-    5. The Warden has authorisation to [color=#ffe100]command Security personnel[/color] operating within the department itself, although they [color=#ff0000]must[/color] defer to the Head of Security for general Security matters.
+    5. The Warden has authorisation to [color=#ffe100]command Security personnel[/color] operating within the Brig itself, although they [color=#ff0000]must[/color] defer to the Head of Security for general Security matters.
     
     6. The Warden may overrule any sentence that is not assigned by the Head of Security or an official NT Magistrate, but not for prisoners who have already had their sentences read to them.
 
@@ -52,11 +52,11 @@
         <GuideEntityEmbed Entity="WeaponPistolMk58"/>
     </Box>
     The Warden may distribute any armour or weaponry from the Armory with a valid permit on [color=#2a6099]Code Blue[/color] and above.
-    [color=#ffe100]Non-lethal equipment[/color] should be prioritised where possible, and weapons issued should be issued with less-lethal rounds unless unfeasible.
+    [color=#ffe100]Non-lethal equipment[/color] should be prioritised where possible, and weapons should be issued with less-lethal rounds unless unfeasible.
     The Warden should advise for [color=#ff0000]Code Red[/color] to be called if the majority of the department needs to field permitted Armory equipment.
     
     6. The Warden may distribute any equipment from the Armory to Security and Command personnel during [color=#ff0000]Code Red[/color].
-    The Warden may also enable [color=#ffe100]Emergency Access[/color] to the Armory to facilitate easier arming and disarming of personnel, but should disable it after.
+    The Warden may also enable [color=#ffe100]Emergency Access[/color] to the Armory to facilitate easier arming and disarming of personnel, but must disable it once arming or disarming is complete.
     
     ## Deputisation and Crew Arming
     

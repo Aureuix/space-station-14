@@ -3,7 +3,8 @@
 
 <GuideEntityEmbed Entity="ToyFigurineSecurity" Caption="Duty Officer"/>
 
-    Duty Officers are Security Officers specialising in defense of the Brig and management of prisoners.
+    Duty Officers are Security Officers specialising in the defense of the Brig and the management of prisoners.
+    
     1 . Standard [color=#00a933]Code Green[/color] equipment is:
 <Box>
     <GuideEntityEmbed Entity="WeaponDisabler"/>
@@ -22,8 +23,8 @@
     4. Duty Officers may perform the duties of a Security Officer with the Warden's approval, but [color=#ff0000]must[/color] comply with the SOP of Security Officers in doing so.
     In particular, Duty Officers may [color=#ff0000]not[/color] wear their riot gear outside the Security department unless the alert level is appropriate.
     
-    4a. If performing standard Officer duties, Duty Officers [color=#00a933]may[/color] request a lethal sidearm. This sidearm is [color=#ff0000]not[/color] to be used in the Brig unless the alert level is appropriate.
+    5. If performing standard Officer duties, Duty Officers [color=#00a933]may[/color] request a lethal sidearm. This sidearm is [color=#ff0000]not[/color] to be used in the Brig unless the alert level is appropriate.
 
-    5. Prisoner treatment guidelines are your [color=#ffe100]top priority[/color] and must be strictly followed. Non-lethal means should be used against prisoners whenever possible. 
+    6. Prisoner treatment guidelines are your [color=#ffe100]top priority[/color] and must be strictly followed. Non-lethal means should be used against prisoners whenever possible. 
     Refer to the section on Prisoner Treatment for a further outline of your duties and expectations.
 </Document>
