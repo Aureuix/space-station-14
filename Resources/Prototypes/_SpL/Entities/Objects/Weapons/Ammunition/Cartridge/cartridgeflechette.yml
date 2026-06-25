@@ -1,5 +1,4 @@
 ﻿- type: entity
-  abstract: true
   parent: [ BaseCartridge, BaseIlluminateContraband ]
   id: CartridgeFlechette
   name: cartridge (flechette)
