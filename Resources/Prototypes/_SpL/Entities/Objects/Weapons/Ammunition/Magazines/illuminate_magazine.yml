@@ -40,9 +40,9 @@
       startingCharge: 0
       
 - type: entity
-  id: Magazine Flechette
+  id: MagazineFlechette
   parent: [BaseCartridge, BaseIlluminateContraband]
-  name: Magazine Flechette
+  name: Flechette Magazine
   components:
     - type: Tag
       tags:
@@ -50,7 +50,7 @@
     - type: BallisticAmmoProvider
       whitelist:
         tags:
-          - CartridgeFlechette
+          - Flechette
       proto: CartridgeFlechette
       capacity: 24
     - type: Item

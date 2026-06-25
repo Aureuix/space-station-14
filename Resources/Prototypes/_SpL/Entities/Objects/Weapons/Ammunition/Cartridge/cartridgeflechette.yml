@@ -1,13 +1,15 @@
 ﻿- type: entity
   abstract: true
   parent: [ BaseCartridge, BaseIlluminateContraband ]
-  id: BaseCartridgeFlechette
+  id: CartridgeFlechette
   name: cartridge (flechette)
   components:
     - type: Tag
       tags:
         - CartridgeFlechette
+        - IlluminateTech
     - type: CartridgeAmmo
+      proto: BulletFlechette
       deleteOnSpawn: true
     - type: Sprite
       noRot: false
@@ -19,5 +21,3 @@
     - type: SpentAmmoVisuals
     - type: StaticPrice
       price: 10
-    - type: CartridgeAmmo
-      proto: BulletFlechette
