@@ -16,7 +16,7 @@
       - id: ClothingHeadsetRobotics
 #      - !type:GroupSelector # SpL
 #        children:
-      - id: ClothingHeadHatBlacksoft
+#      - id: ClothingHeadHatBlacksoft
 #          - id: ClothingHeadHatCorpsoft
       - id: ClothingUniformJumpsuitRoboticist
       - id: ClothingUniformJumpskirtRoboticist
@@ -26,7 +26,7 @@
 #          - id: ClothingBackpackRoboticist
 #          - id: ClothingBackpackSatchelRoboticist
 #          - id: ClothingBackpackDuffelRoboticist
-      - id: ClothingShoesColorBlack
+#      - id: ClothingShoesColorBlack
       - id: ClothingHandsGlovesRobohands
       - id: ClothingMaskRoboticist
       - id: ClothingEyesHudDiagnostic

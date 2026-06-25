@@ -59,51 +59,51 @@
   id: LockerFillSurgeon
   table: !type:AllSelector
     children:
-      - !type:GroupSelector
-        children:
-          - id: ClothingHeadHatSurgcapBlue
-          - id: ClothingHeadHatSurgcapGreen
-          - id: ClothingHeadHatSurgcapPurple
-          - id: ClothingHeadHatSurgcapBlack
-          - id: ClothingHeadHatSurgcapCyan
-          - id: ClothingHeadHatSurgcapPink
-          - id: ClothingHeadHatSurgcapWhite
+#      - !type:GroupSelector # SpL Change
+#        children:
+#          - id: ClothingHeadHatSurgcapBlue
+#          - id: ClothingHeadHatSurgcapGreen
+#          - id: ClothingHeadHatSurgcapPurple
+#          - id: ClothingHeadHatSurgcapBlack
+#          - id: ClothingHeadHatSurgcapCyan
+#          - id: ClothingHeadHatSurgcapPink
+#          - id: ClothingHeadHatSurgcapWhite
       - id: ClothingHeadsetMedical
       - id: ClothingUniformJumpsuitMedicalDoctor
       - id: ClothingUniformJumpskirtMedicalDoctor
-      - !type:GroupSelector
-        children:
-          - id: ClothingBackpackMedical
-          - id: ClothingBackpackSatchelMedical
-          - id: ClothingBackpackDuffelMedical
-      - !type:GroupSelector
-        children:
-          - id: ClothingShoesColorWhite
-          - id: ClothingShoesLeather
-      - !type:GroupSelector
-        children:
-          - id: ClothingHandsGlovesLatex
-          - id: ClothingHandsGlovesNitrile
+#      - !type:GroupSelector # SpL
+#        children:
+#          - id: ClothingBackpackMedical
+#          - id: ClothingBackpackSatchelMedical
+#          - id: ClothingBackpackDuffelMedical
+#      - !type:GroupSelector
+#        children:
+#          - id: ClothingShoesColorWhite
+#          - id: ClothingShoesLeather
+#      - !type:GroupSelector # SpL
+#        children:
+#          - id: ClothingHandsGlovesLatex
+      - id: ClothingHandsGlovesNitrile # SpL
       - id: ClothingMaskSterile
       - id: ClothingEyesHudMedical
       - id: HandheldHealthAnalyzer
       - id: ClothingBeltMedicalFilled
 #      - id: SurgicalKitMedicalFilled # SpL
-      - id: BottleCaseParamedicFilled
-      - id: HealiumTankFilled
+#      - id: BottleCaseParamedicFilled
+#      - id: HealiumTankFilled
       - id: NitrousOxideTankFilled
       - id: MedkitFilled
       - id: Bloodpack
-      - id: Bloodpack
+        amount: 2
       - id: UniformScrubsColorBlue
-      - !type:GroupSelector
-        children:
-          - id: UniformScrubsColorGreen
-          - id: UniformScrubsColorPurple
-          - id: UniformScrubsColorBlack
-          - id: UniformScrubsColorCyan
-          - id: UniformScrubsColorPink
-          - id: UniformScrubsColorWhite
+#      - !type:GroupSelector
+#        children:
+#          - id: UniformScrubsColorGreen
+#          - id: UniformScrubsColorPurple
+#          - id: UniformScrubsColorBlack
+#          - id: UniformScrubsColorCyan
+#          - id: UniformScrubsColorPink
+#          - id: UniformScrubsColorWhite
       - !type:GroupSelector
         children:
           - id: BoxFolderClipboard
@@ -116,12 +116,12 @@
           - id: BoxFolderPlasticClipboardEmpty
           - id: BoxFolderPlasticClipboardThreePapers
             weight: 0.3
-      - !type:GroupSelector
-        children:
-          - id: Pen
-          - id: LuxuryPen
-            weight: 0.2
-#      - id: PlushieLizardJobMedicaldoctor # SpL Change
+#      - !type:GroupSelector # SpL Change
+#        children:
+#          - id: Pen
+#          - id: LuxuryPen
+#            weight: 0.2
+#      - id: PlushieLizardJobMedicaldoctor 
 #        prob: 0.02
 #      - id: ChemistryBottleLaughter # Widely recognized as the best medicine :o)
 #        prob: 0.01
