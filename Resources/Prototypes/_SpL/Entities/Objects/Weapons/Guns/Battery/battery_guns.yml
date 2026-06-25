@@ -25,6 +25,8 @@
       availableModes:
         - SemiAuto
         - FullAuto
+        - Burst
+      shotsPerBurst: 3
       fireRate: 5
       soundGunshot:
         path: /Audio/_SpL/Effects/coilgun.ogg
@@ -33,7 +35,8 @@
       soundEmpty:
         path: /Audio/Machines/Nuke/angry_beep.ogg
         params:
-          volume: -2
+          volume: -3
+          rolloffFactor: 1.3
     - type: Battery
       maxCharge: 0
       startingCharge: 0
@@ -45,8 +48,8 @@
         cell_slot:
           name: Magazine
           startingItem: IlluminateCartridgeCoilgun
-          insertSound: /Audio/Weapons/Guns/MagIn/batrifle_magin.ogg
-          ejectSound: /Audio/Weapons/Guns/MagOut/batrifle_magout.ogg
+          insertSound: /Audio/Weapons/Guns/MagIn/ltrifle_magin.ogg
+          ejectSound: /Audio/Weapons/Guns/MagOut/ltrifle_magout.ogg
           whitelist:
             tags:
               - CartridgeCoilgun

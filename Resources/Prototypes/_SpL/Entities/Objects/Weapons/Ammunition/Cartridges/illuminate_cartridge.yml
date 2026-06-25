@@ -38,3 +38,35 @@
           visible: false
     - type: Battery
       startingCharge: 0
+      
+- type: entity
+  id: CartridgeFlechette
+  parent: [BaseCartridge, BaseIlluminateContraband]
+  name: cartridge (flechette)
+  components:
+    - type: Tag
+      tags:
+        - IlluminateTech
+    - type: BallisticAmmoProvider
+      whitelist:
+        tags:
+          - CartridgeFlechette
+      proto: CartridgeFlechette
+      capacity: 24
+    - type: Item
+      size: Small
+    - type: ContainerContainer
+      containers:
+        ballistic-ammo: !type:Container
+    - type: Sprite
+      sprite: /Textures/_SpL/Objects/Weapons/Ammunition/Magazines/flechette.rsi
+      layers:
+        - state: base
+          map: ["enum.GunVisualLayers.Base"]
+        - state: mag-1
+          map: ["enum.GunVisualLayers.Mag"]
+    - type: MagazineVisuals
+      magState: mag
+      steps: 8
+      zeroVisible: false
+    - type: Appearance

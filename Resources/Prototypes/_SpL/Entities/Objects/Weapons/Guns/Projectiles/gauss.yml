@@ -5,7 +5,7 @@
   name: gauss round
   components:
   - type: HitscanBasicDamage
-    armorPenetration: 0.35
+    armorPenetration: 0.5
     damage:
       types:
         Piercing: 20
