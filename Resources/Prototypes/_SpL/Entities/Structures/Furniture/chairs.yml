@@ -1,0 +1,62 @@
+﻿- type: entity
+  name: maglev armchair
+  description: A padded, magnetically levitating armchair capable of absorbing the momentum of being collapsed into after a long day.
+  id: ChairMaglev
+  parent: StoolBase
+  components:
+    - type: Sprite
+      sprite: _SpL/Structures/Furniture/Chairs/maglev_chair.rsi
+      state: base
+    - type: Construction
+      graph: Seat
+      node: chairPilotSeat
+
+- type: entity
+  name: orange beanbag chair
+  description: An extremely comfy looking beanbag. Perfect for sinking into!
+  id: ChairBeanbag
+  parent: ChairBase
+  components:
+    - type: Sprite
+      sprite: _SpL/Structures/Furniture/Chairs/beanbag_chair.rsi
+      state: orange
+    - type: Damageable
+      damageModifierSet: Web
+    - type: Destructible
+      thresholds:
+        - trigger: # Excess damage, don't spawn entities
+            !type:DamageTrigger
+            damage: 100
+          behaviors:
+            - !type:PlaySoundBehavior
+              sound:
+                collection: WoodDestroy
+            - !type:DoActsBehavior
+              acts: ["Destruction"]
+        - trigger:
+            !type:DamageTrigger
+            damage: 25
+          behaviors:
+            - !type:DoActsBehavior
+              acts: ["Destruction"]
+            - !type:PlaySoundBehavior
+              sound:
+                collection: WoodDestroy
+            - !type:SpawnEntitiesBehavior
+              spawn:
+                MaterialCloth:
+                  min: 1
+                  max: 1        
+    - type: Construction
+      graph: Gauze
+      node: gauze
+      
+- type: entity
+  name: orange pillow seat
+  description: An comfy looking pillow for sitting or perching upon.
+  id: ChairPillow
+  parent: ChairBeanbag
+  components:
+    - type: Sprite
+      sprite: _SpL/Structures/Furniture/Chairs/pillow_chair.rsi
+      state: orange
