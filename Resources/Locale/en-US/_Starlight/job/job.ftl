@@ -3,6 +3,7 @@ job-name-ntrep = NanoTrasen Representative
 job-name-iaa = Internal Affairs Agent
 job-name-blueshield = Blue Shield Officer
 job-name-ntncblueshield = Nanotrasen Navy Corps Marine
+job-name-greenshield = Greenshield Officer
 job-name-miningspec = Mining Specialist
 job-name-surgeon = Surgeon
 job-name-mailtech = Mail Technician
@@ -35,4 +36,11 @@ role-type-tsf-aligned-name = Trans-Solar Federation Aligned
 role-type-tsf-aligned-color = #22a7ff
 job-rules-tsf-aligned = You are {role-type-tsf-aligned-name}.
                               You are to serve the interests of the Trans-Solar Federation.
+                              Remember, you do NOT serve the crew.
+                              
+role-type-cc-aligned-name = Central Command Aligned
+role-type-cc-aligned-color = #00b600
+role-type-cc-aligned-alternate-color = #439909
+job-rules-cc-aligned = You are {role-type-cc-aligned-name}.
+                              You are to serve the interests of Central Command, even if they differ from NanoTrasen or the stations'.
                               Remember, you do NOT serve the crew.

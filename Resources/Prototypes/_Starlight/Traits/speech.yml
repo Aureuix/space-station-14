@@ -146,7 +146,7 @@
   name: trait-archaic-accent-name
   description: trait-archaic-accent-desc
   category: SpeechTraits
-  cost: 2
+#  cost: 2 #SpL
   effects:
     - !type:AddCompsEffect
       components:
@@ -157,7 +157,7 @@
   name: trait-socialanxiety-name
   description: trait-socialanxiety-desc
   category: SpeechTraits
-  cost: 2
+#  cost: 2 # SpL
   effects:
     - !type:AddCompsEffect
       components:
@@ -172,7 +172,7 @@
   name: trait-frontal-lisp-name
   description: trait-frontal-lisp-desc
   category: SpeechTraits
-  cost: 2
+#  cost: 2 #SpL
   effects:
     - !type:AddCompsEffect
       components:
@@ -183,8 +183,20 @@
   name: trait-scottish-accent-name
   description: trait-scottish-accent-desc
   category: SpeechTraits
-  cost: 2
+#  cost: 2 # SpL
   effects:
     - !type:AddCompsEffect
       components:
         - type: ScottishAccent
+
+# SpL Start
+- type: trait
+  id: Russian
+  name: trait-russian-name
+  description: trait-russian-desc
+  category: SpeechTraits
+  effects:
+    - !type:AddCompsEffect
+      components:
+        - type: RussianAccent
+# SpL End
