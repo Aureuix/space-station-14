@@ -40,9 +40,9 @@
       startingCharge: 0
       
 - type: entity
-  id: CartridgeFlechette
+  id: Magazine Flechette
   parent: [BaseCartridge, BaseIlluminateContraband]
-  name: cartridge (flechette)
+  name: Magazine Flechette
   components:
     - type: Tag
       tags:

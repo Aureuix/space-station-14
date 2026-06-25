@@ -1,0 +1,23 @@
+﻿- type: entity
+  abstract: true
+  parent: [ BaseCartridge, BaseIlluminateContraband ]
+  id: BaseCartridgeFlechette
+  name: cartridge (flechette)
+  components:
+    - type: Tag
+      tags:
+        - CartridgeFlechette
+    - type: CartridgeAmmo
+      deleteOnSpawn: true
+    - type: Sprite
+      noRot: false
+      sprite: Resources/Textures/_SpL/Objects/Weapons/Ammunition/Casings/cartridge_flechette.rsi
+      layers:
+        - state: base
+          map: ["enum.AmmoVisualLayers.Base"]
+    - type: Appearance
+    - type: SpentAmmoVisuals
+    - type: StaticPrice
+      price: 10
+    - type: CartridgeAmmo
+      proto: BulletFlechette
