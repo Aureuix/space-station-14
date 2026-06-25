@@ -88,7 +88,7 @@
       - id: ClothingEyesHudMedical
       - id: HandheldHealthAnalyzer
       - id: ClothingBeltMedicalFilled
-      - id: SurgicalKitMedicalFilled
+#      - id: SurgicalKitMedicalFilled # SpL
       - id: BottleCaseParamedicFilled
       - id: HealiumTankFilled
       - id: NitrousOxideTankFilled
