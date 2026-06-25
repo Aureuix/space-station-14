@@ -20,3 +20,9 @@
   
 - type: Tag
   id: IlluminateTech
+  
+- type: Tag
+  id: MagazineFlechette
+  
+- type: Tag
+  id: CartridgeFlechette
