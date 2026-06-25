@@ -21,8 +21,8 @@
       - id: ClothingUniformJumpsuitRoboticist
       - id: ClothingUniformJumpskirtRoboticist
       - id: ClothingOuterCoatRobo
-      - !type:GroupSelector
-        children: # SpL
+#      - !type:GroupSelector # SpL
+#        children: 
 #          - id: ClothingBackpackRoboticist
 #          - id: ClothingBackpackSatchelRoboticist
 #          - id: ClothingBackpackDuffelRoboticist
