@@ -47,10 +47,11 @@
     - type: Tag
       tags:
         - IlluminateTech
+        - MagazineFlechette
     - type: BallisticAmmoProvider
       whitelist:
         tags:
-          - Flechette
+          - CartridgeFlechette
       proto: CartridgeFlechette
       capacity: 24
     - type: Item
