@@ -32,12 +32,12 @@
       - id: ClothingEyesHudDiagnostic
       - id: HandheldHealthAnalyzer
 #      - id: HandheldMachineAnalyzer # SpL
-#      - id: SurgicalKitRoboticsFilled
-#      - id: BottleCaseRoboticsFilled
-#      - id: HealiumTankFilled # SpL
+      - id: ClothingBackpackDuffelSurgeryFilled # SpL
+#      - id: BottleCaseRoboticsFilled # SpL
+#      - id: HealiumTankFilled 
       - id: NitrousOxideTankFilled
-      - id: MedkitFilled
-#      - id: MedkitRoboticFilled # SpL
+#      - id: MedkitFilled # SpL
+#      - id: MedkitRoboticFilled 
       - id: Welder
 #      - id: OilPack # SpL
 #      - id: OilPack

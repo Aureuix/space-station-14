@@ -88,7 +88,7 @@
       - id: ClothingEyesHudMedical
       - id: HandheldHealthAnalyzer
       - id: ClothingBeltMedicalFilled
-#      - id: SurgicalKitMedicalFilled # SpL
+      - id: ClothingBackpackDuffelSurgeryFilled # SpL
 #      - id: BottleCaseParamedicFilled
 #      - id: HealiumTankFilled
       - id: NitrousOxideTankFilled
@@ -146,26 +146,26 @@
       - id: ClothingHeadsetMedical
       - id: ClothingUniformJumpsuitCoroner
       - id: ClothingUniformJumpskirtCoroner
-      - !type:GroupSelector
-        children:
-          - id: ClothingBackpackMedical
-          - id: ClothingBackpackSatchelMedical
-          - id: ClothingBackpackDuffelMedical
-      - !type:GroupSelector
-        children:
-          - id: ClothingShoesColorWhite
-          - id: ClothingShoesLeather
-      - !type:GroupSelector
-        children:
-          - id: ClothingHandsGlovesLatex
-          - id: ClothingHandsGlovesNitrile
+#      - !type:GroupSelector # SpL 
+#        children:
+#          - id: ClothingBackpackMedical
+#          - id: ClothingBackpackSatchelMedical
+#          - id: ClothingBackpackDuffelMedical
+#      - !type:GroupSelector
+#        children:
+#          - id: ClothingShoesColorWhite
+#          - id: ClothingShoesLeather
+#      - !type:GroupSelector
+#        children:
+#          - id: ClothingHandsGlovesLatex
+      - id: ClothingHandsGlovesNitrile # SpL Change
       - id: ClothingMaskSterile
       - id: BoxFolderBlackMorgue
       - id: BoxBodyBag
       - id: BoxBodyBag
       - id: RollerBedSpawnFolded
       - id: RollerBedSpawnFolded
-      - id: SurgicalKitMedicalFilled
+      - id: ClothingBackpackDuffelSurgeryFilled # SpL
       - id: ClothingEyesHudMedical
       - id: HandheldHealthAnalyzer
 #      - id: PlushieLizardJobMedicaldoctor # SpL Change
@@ -193,13 +193,13 @@
       - id: ClothingOuterBioVirology
       - id: ClothingUniformJumpsuitVirology
       - id: ClothingUniformJumpskirtVirology
-      - !type:GroupSelector
-        children:
-          - id: ClothingBackpackVirology
-          - id: ClothingBackpackSatchelVirology
-          - id: ClothingBackpackDuffelVirology
-      - id: ClothingShoesColorWhite
-      - id: ClothingHandsGlovesLatex
+#      - !type:GroupSelector # SpL
+#        children:
+#          - id: ClothingBackpackVirology
+#          - id: ClothingBackpackSatchelVirology
+#          - id: ClothingBackpackDuffelVirology
+#      - id: ClothingShoesColorWhite
+      - id: ClothingHandsGlovesNitrile # SpL
       - id: ClothingMaskSterile
       - id: Syringe
       - id: BoxMouthSwab
@@ -232,13 +232,13 @@
       - id: ClothingHeadsetMedical
       - id: ClothingUniformJumpsuitGenetics
       - id: ClothingUniformJumpskirtGenetics
-      - !type:GroupSelector
-        children:
-          - id: ClothingBackpackGenetics
-          - id: ClothingBackpackSatchelGenetics
-          - id: ClothingBackpackDuffelGenetics
-      - id: ClothingShoesColorWhite
-      - id: ClothingHandsGlovesLatex
+#      - !type:GroupSelector # SpL
+#        children:
+#          - id: ClothingBackpackGenetics
+#          - id: ClothingBackpackSatchelGenetics
+#          - id: ClothingBackpackDuffelGenetics
+#      - id: ClothingShoesColorWhite
+      - id: ClothingHandsGlovesNitrile # SpL
       - id: ClothingMaskSterile
       - id: Syringe
       - id: JetInjector
