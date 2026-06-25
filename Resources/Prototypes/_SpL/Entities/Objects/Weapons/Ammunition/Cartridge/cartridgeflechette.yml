@@ -12,7 +12,7 @@
       deleteOnSpawn: true
     - type: Sprite
       noRot: false
-      sprite: Resources/Textures/_SpL/Objects/Weapons/Ammunition/Casings/cartridge_flechette.rsi
+      sprite: /Textures/_SpL/Objects/Weapons/Ammunition/Casings/cartridge_flechette.rsi
       layers:
         - state: base
           map: ["enum.AmmoVisualLayers.Base"]
