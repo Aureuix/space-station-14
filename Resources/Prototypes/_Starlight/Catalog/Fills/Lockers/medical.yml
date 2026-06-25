@@ -203,7 +203,7 @@
       - id: ClothingMaskSterile
       - id: Syringe
       - id: BoxMouthSwab
-      - id: BottleCaseMedicalFilled
+#      - id: BottleCaseMedicalFilled
       - id: ClothingEyesHudMedical
       - id: ClothingBeltMedicalFilled
       - id: HandheldHealthAnalyzer
@@ -242,7 +242,7 @@
       - id: ClothingMaskSterile
       - id: Syringe
       - id: JetInjector
-      - id: BottleCaseMedicalFilled
+#      - id: BottleCaseMedicalFilled
       - id: ClothingEyesHudMedical
       - id: ClothingBeltMedicalFilled
       - id: HandheldHealthAnalyzer
