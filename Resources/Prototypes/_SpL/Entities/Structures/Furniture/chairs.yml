@@ -8,8 +8,8 @@
       sprite: _SpL/Structures/Furniture/Chairs/maglev_chair.rsi
       state: base
     - type: Construction
-      graph: Seat
-      node: chairPilotSeat
+      graph: AvaliChair
+      node: chairMaglev
 
 - type: entity
   name: orange beanbag chair
@@ -48,8 +48,8 @@
                   min: 1
                   max: 1        
     - type: Construction
-      graph: Gauze
-      node: gauze
+      graph: AvaliChair
+      node: chairBeanbag
       
 - type: entity
   name: orange pillow seat
@@ -60,3 +60,6 @@
     - type: Sprite
       sprite: _SpL/Structures/Furniture/Chairs/pillow_chair.rsi
       state: orange
+    - type: Construction
+      graph: AvaliChair
+      node: chairPillow
