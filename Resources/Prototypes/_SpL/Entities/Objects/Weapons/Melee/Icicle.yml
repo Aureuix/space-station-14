@@ -28,7 +28,7 @@
           Slash: 5
           Piercing: 5
       soundHit:
-        collection: GlassBreak
+        path: /Audio/Effects/glass_break1.ogg
     - type: Wieldable
     - type: IncreaseDamageOnWield
       damage:
