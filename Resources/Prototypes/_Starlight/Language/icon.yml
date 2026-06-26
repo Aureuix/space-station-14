@@ -221,3 +221,21 @@
     sprite: /Textures/_Starlight/Interface/language_icon.rsi
     state: lagomorph
   allowSelection: false
+  
+# SpL Start
+- type: jobIcon
+  parent: JobIcon
+  id: LanguageIconChaet
+  icon:
+    sprite: /Textures/_SpL/Interface/language_icon.rsi
+    state: chaet
+  allowSelection: false
+  
+- type: jobIcon
+  parent: JobIcon
+  id: LanguageIconNovaCygni
+  icon:
+    sprite: /Textures/_SpL/Interface/language_icon.rsi
+    state: novacygni
+  allowSelection: false
+# SpL End

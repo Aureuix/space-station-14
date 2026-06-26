@@ -5,7 +5,14 @@
   color: "#b48b57"
   radioChannel: Supply
   acquisitionSlip: PaperAcquisitionSlipCargo
-
+  # Starlight BEGIN
+  tamperSealName: tamper-seal-account-name-cargo
+  tamperSealColor: "#b38b56"
+  tamperSealAccesses:
+    - allOf: [ "Cargo" ] # Regular crew
+    - allOf: [ "Borg" ] # Cyborg
+  # Starlight END
+  
 - type: cargoAccount
   id: Engineering
   name: cargo-account-engineering-name
@@ -13,7 +20,14 @@
   color: "#ff733c"
   radioChannel: Engineering
   acquisitionSlip: PaperAcquisitionSlipEngineering
-
+  # Starlight BEGIN
+  tamperSealName: tamper-seal-account-name-engineering
+  tamperSealColor: "#ffff00"
+  tamperSealAccesses:
+    - allOf: [ "Engineering" ] # Regular crew
+    - allOf: [ "Borg" ] # Cyborg
+  # Starlight END
+  
 - type: cargoAccount
   id: Medical
   name: cargo-account-medical-name
@@ -21,7 +35,14 @@
   color: "#57b8f0"
   radioChannel: Medical
   acquisitionSlip: PaperAcquisitionSlipMedical
-
+  # Starlight BEGIN
+  tamperSealName: tamper-seal-account-name-medical
+  tamperSealColor: "#00ffff"
+  tamperSealAccesses:
+    - allOf: [ "Medical" ] # Regular crew
+    - allOf: [ "Borg" ] # Cyborg
+  # Starlight END
+  
 - type: cargoAccount
   id: Science
   name: cargo-account-science-name
@@ -29,7 +50,14 @@
   color: "#cd7ccd"
   radioChannel: Science
   acquisitionSlip: PaperAcquisitionSlipScience
-
+  # Starlight BEGIN
+  tamperSealName: tamper-seal-account-name-science
+  tamperSealColor: "#ff73ff"
+  tamperSealAccesses:
+    - allOf: [ "Research" ] # Regular crew
+    - allOf: [ "Borg" ] # Cyborg
+  # Starlight END
+  
 - type: cargoAccount
   id: Security
   name: cargo-account-security-name
@@ -37,7 +65,14 @@
   color: "#ff4242"
   radioChannel: Security
   acquisitionSlip: PaperAcquisitionSlipSecurity
-
+  # Starlight BEGIN
+  tamperSealName: tamper-seal-account-name-security
+  tamperSealColor: "#e63c3c"
+  tamperSealAccesses:
+    - allOf: [ "Security" ] # Regular crew
+    - allOf: [ "Borg" ] # Cyborg
+  # Starlight END
+  
 - type: cargoAccount
   id: Service
   name: cargo-account-service-name
@@ -45,3 +80,11 @@
   color: "#539c00"
   radioChannel: Service
   acquisitionSlip: PaperAcquisitionSlipService
+  # Starlight BEGIN
+  tamperSealName: tamper-seal-account-name-service
+  tamperSealColor: "#5eff00"
+  tamperSealAccesses:
+    - allOf: [ "Service" ] # Regular crew
+      noneOf: [ "Borg" ]
+    - allOf: [ "Borg" ] # Cyborg
+  # Starlight END
