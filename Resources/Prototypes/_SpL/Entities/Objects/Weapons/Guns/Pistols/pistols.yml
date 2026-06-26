@@ -34,10 +34,6 @@
         params:
           volume: -3
           rolloffFactor: 1.3
-      soundBolt:
-        path: /Audio/Weapons/Guns/Cock/shotgun_close.ogg
-      soundUnbolt:
-        path: /Audio/Weapons/Guns/Cock/shotgun_open.ogg
       fireRate: 5
       selectedMode: FullAuto
       availableModes:
@@ -70,4 +66,4 @@
           priority: 1
           whitelist:
             tags:
-              - IlluminateCartridgeFlechette
+              - CartridgeFlechette
