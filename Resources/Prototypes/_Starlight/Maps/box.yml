@@ -2,7 +2,7 @@
   id: StarlightBox
   mapName: 'Box Station'
   mapPath: /Maps/_Starlight/Stations/Box.yml
-  minPlayers: 50
+  minPlayers: 20 # SpL Change
   maxPlayers: 120
   stations:
     StarlightBox:

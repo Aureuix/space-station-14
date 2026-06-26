@@ -19,42 +19,42 @@
     - id: SalvageShuttleConsoleCircuitboard #starlight
     - id: MiningShuttleConsoleCircuitboard #starlight
     - id: EncryptionKeySalvage #starlight
-    - id: PrintedDocumentGreenshiftAlert #SL
-      conditions: #SL
-      - !type:GamemodeCondition #SL
-        presets: #SL
-        - Greenshift #SL
-        - Sandbox #SL
-    - id: SpaceCash1000 #SL
-      conditions: #SL
-      - !type:GamemodeCondition #SL
-        presets: #SL
-        - Greenshift #SL
-        - Sandbox #SL
-    - id: SpaceCash1000 #SL
-      conditions: #SL
-      - !type:GamemodeCondition #SL
-        presets: #SL
-        - Greenshift #SL
-        - Sandbox #SL
-    - id: SpaceCash1000 #SL
-      conditions: #SL
-      - !type:GamemodeCondition #SL
-        presets: #SL
-        - Greenshift #SL
-        - Sandbox #SL
-    - id: SpaceCash1000 #SL
-      conditions: #SL
-      - !type:GamemodeCondition #SL
-        presets: #SL
-        - Greenshift #SL
-        - Sandbox #SL
-    - id: SpaceCash1000 #SL
-      conditions: #SL
-      - !type:GamemodeCondition #SL
-        presets: #SL
-        - Greenshift #SL
-        - Sandbox #SL
+#    - id: PrintedDocumentGreenshiftAlert #SL # SpL- removed
+#      conditions: #SL
+#      - !type:GamemodeCondition #SL
+#        presets: #SL
+#        - Greenshift #SL
+#        - Sandbox #SL
+#    - id: SpaceCash1000 #SL
+#      conditions: #SL
+#      - !type:GamemodeCondition #SL
+#        presets: #SL
+#        - Greenshift #SL
+#        - Sandbox #SL
+#    - id: SpaceCash1000 #SL
+#      conditions: #SL
+#      - !type:GamemodeCondition #SL
+#        presets: #SL
+#        - Greenshift #SL
+#        - Sandbox #SL
+#    - id: SpaceCash1000 #SL
+#      conditions: #SL
+#      - !type:GamemodeCondition #SL
+#        presets: #SL
+#        - Greenshift #SL
+#        - Sandbox #SL
+#    - id: SpaceCash1000 #SL
+#      conditions: #SL
+#      - !type:GamemodeCondition #SL
+#        presets: #SL
+#        - Greenshift #SL
+#        - Sandbox #SL
+#    - id: SpaceCash1000 #SL
+#      conditions: #SL
+#      - !type:GamemodeCondition #SL
+#        presets: #SL
+#        - Greenshift #SL
+#        - Sandbox #SL
 
 - type: entity
   id: LockerQuarterMasterFilled
@@ -97,12 +97,12 @@
       conditions:
       - !type:PlayerCountCondition
         max: 15
-    - id: PrintedDocumentGreenshiftAlert #SL
-      conditions: #SL
-      - !type:GamemodeCondition #SL
-        presets: #SL
-        - Greenshift #SL
-        - Sandbox #SL
+#    - id: PrintedDocumentGreenshiftAlert #SL #SpL- removed
+#      conditions: #SL
+#      - !type:GamemodeCondition #SL
+#        presets: #SL
+#        - Greenshift #SL
+#        - Sandbox #SL
     #region Starlight
     # - id: PaperEndGreenshift
     #   conditions:
@@ -197,12 +197,12 @@
     - id: ClothingEyesHudCommand
     - id: BoxFolderHoPClipboard #Starlight Change
     # Starlight Start
-    - id: PrintedDocumentGreenshiftAlert
-      conditions:
-      - !type:GamemodeCondition
-        presets:
-        - Greenshift
-        - Sandbox
+#    - id: PrintedDocumentGreenshiftAlert #SpL- removed
+#      conditions:
+#      - !type:GamemodeCondition
+#        presets:
+#        - Greenshift
+#        - Sandbox
     - id: FloraTreeChristmas02Flatpack
       conditions:
         - !type:HolidayActiveCondition
@@ -247,12 +247,12 @@
     - id: RubberStampCE
     - id: MetalFoamGrenade
     - id: PlushieMatthew #starlight
-    - id: PrintedDocumentGreenshiftAlert #SL
-      conditions: #SL
-      - !type:GamemodeCondition #SL
-        presets: #SL
-        - Greenshift #SL
-        - Sandbox #SL
+#    - id: PrintedDocumentGreenshiftAlert #SL #SpL- removed
+#      conditions: #SL
+#      - !type:GamemodeCondition #SL
+#        presets: #SL
+#        - Greenshift #SL
+#        - Sandbox #SL
 
 # Hardsuit table, used for suit storage as well
 - type: entityTable
@@ -316,12 +316,12 @@
     - id: CMOLicense #STARLIGHT
     - id: EncryptionKeyMedicalScience # Starlight, steal target
       prob: 0.5 # Starlight
-    - id: PrintedDocumentGreenshiftAlert #SL
-      conditions: #SL
-      - !type:GamemodeCondition #SL
-        presets: #SL
-        - Greenshift #SL
-        - Sandbox #SL
+#    - id: PrintedDocumentGreenshiftAlert #SL #SpL- removed
+#      conditions: #SL
+#      - !type:GamemodeCondition #SL
+#        presets: #SL
+#        - Greenshift #SL
+#        - Sandbox #SL
     - id: JawsOfLifeMed #Starlight
 
 # Hardsuit table, used for suit storage as well
@@ -376,12 +376,12 @@
     - id: RubberStampRd
     - id: EncryptionKeyMedicalScience # Starlight, steal target
       prob: 0.5 # Starlight
-    - id: PrintedDocumentGreenshiftAlert #SL
-      conditions: #SL
-      - !type:GamemodeCondition #SL
-        presets: #SL
-        - Greenshift #SL
-        - Sandbox #SL
+#    - id: PrintedDocumentGreenshiftAlert #SL # SpL- removed
+#      conditions: #SL
+#      - !type:GamemodeCondition #SL
+#        presets: #SL
+#        - Greenshift #SL
+#        - Sandbox #SL
     #region Starlight
     - id: RDDiploma
     - id: XenobiologyConsoleCameraTagger
@@ -433,10 +433,10 @@
     - id: ClothingNeckCloakHosElite # Starlight
     - id: WeaponEnergySMG # Starlight
     # - id: WeaponEnergyMagnum # Starlight - Removed, given to det
-    - id: BookSpaceLaw
+#    - id: BookSpaceLaw # SpL- removed
     - id: BoxEncryptionKeySecurity
     - id: CigarGoldCase
-      prob: 0.50
+#      prob: 0.50 # SpL - removed
     - id: ClothingBeltSecurityFilled
     - id: ClothingEyesGlassesSecurity
     - id: ClothingEyesHudSecurity # Starlight
@@ -446,7 +446,7 @@
     - id: FlashlightSeclite
     - id: DoorRemoteSecurity
     - id: HoloprojectorSecurity
-    - id: RubberStampHos
+    - id: BoxStampsHos # SpL
     - id: BoxHoSCircuitboards
     - id: WeaponDisabler
     - id: WeaponTaser
@@ -456,12 +456,12 @@
     - id: ClothingOuterWinterHoS
     - id: ClothingHandsGlovesCombat
     - id: SecureBriefings
-    - id: PrintedDocumentGreenshiftAlert
-      conditions:
-      - !type:GamemodeCondition
-        presets:
-        - Greenshift
-        - Sandbox # Starlight end
+#    - id: PrintedDocumentGreenshiftAlert # SpL- removed
+#      conditions:
+#      - !type:GamemodeCondition
+#        presets:
+#        - Greenshift
+#        - Sandbox # Starlight end
 
 # Hardsuit table, used for suit storage as well
 - type: entityTable

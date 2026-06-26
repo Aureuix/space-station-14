@@ -1847,6 +1847,7 @@
   - SeniorPhysicianLabCoat
   - WindbreakerMedical #Starlight
   - RegularLabCoatLong # DeltaV
+  - CoronerLabCoatLong # Starlight
 
 - type: loadoutGroup
   id: MedicalBackpack
@@ -1934,6 +1935,7 @@
   - SeniorChemistWintercoat # Starlight
   - RegularLabCoatLong # DeltaV
   - ChemistLabCoatLong # DeltaV
+  - SeniorChemistLabCoatLong # Starlight
 
 - type: loadoutGroup
   id: ChemistBackpack

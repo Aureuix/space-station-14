@@ -3,7 +3,10 @@
 
 <GuideEntityEmbed Entity="ToyFigurineSecurity" Caption="Brigmedic"/>
 
-1 . Standard [color=#00a933]Code Green[/color] equipment is:
+    Brigmedics are responsible for the health and wellbeing of the Security department and members of Command.
+    Brigmedics are expected to be capable chemists and medical practicioners, as well as being experienced in Security work.
+    
+    1 . Standard [color=#00a933]Code Green[/color] equipment is:
 <Box>
 	<GuideEntityEmbed Entity="MedkitAdvancedFilled"/>
 	<GuideEntityEmbed Entity="DefibrillatorBrigmedical"/>
@@ -14,24 +17,35 @@
 	<GuideEntityEmbed Entity="Stunbaton"/>
 	<GuideEntityEmbed Entity="WeaponPistolMk58"/>
 </Box>
-<Box>
-	<GuideEntityEmbed Entity="FlashlightSeclite"/>
-	<GuideEntityEmbed Entity="RadioHandheldSecurity"/>
-</Box>
-<Box>
-	<GuideEntityEmbed Entity="CombatKnife"/>
-	in
-	<GuideEntityEmbed Entity="ClothingShoesBootsJack"/>
-</Box>
-<Box>
-	<GuideEntityEmbed Entity="Handcuffs"/>
-	or
-	<GuideEntityEmbed Entity="Zipties"/>
-</Box>
 
-2. Brigmedics may not perform Security Officer duties unless security is severely understaffed, or a crime has occurred in their sight.
+    2. Brigmedics should prioritise the synthesis of chemicals to cover for the [color=#ffe100]majority of likely threats[/color] Security and Command members may face.
+    Brigmedics are permitted to leave the Brig prior to completion of chemicals in order to [color=#ffe100]gather supplies[/color], [color=#2a6099]attend to medical emergencies[/color], or [color=#ff0000]respond to sudden threats[/color] that warrant mobilisation.
 
-3. Brigmedics must prioritize the health and safety of Security Officers and Prisoners over all other priorities.
+    3. The Brigmedic are responsible for the medical treatment of [color=#ff0000]Security personnel[/color], [color=#ffe100]Command members[/color], and [color=#2a6099]prisoners[/color]. 
+    The Brigmedic is [color=#ff0000]not[/color] to treat other crew except in the case of ongoing crises where standard medical care would be unfeasible, or in the aftermath of conflict.
+    
+    4. The Brigmedical Bay should [color=#ff0000]not[/color] be open to public use unless there is an ongoing crisis, in which case it may be used to shelter and treat refugees and the injured.
+    The Brigmedic is still to prioritise [color=#ffe100]Command and Security personnel[/color] during these periods.
+    
+    ## Chemicals and Permissions
+    
+    This section of the SOP details what is permissible to Brigmedics in terms of their chemical production and usage.
+    
+    1. The Brigmedic may provide topicals, chemicals, and other self-administered medical supplies and equipment to other members of the Security department [color=#00a933]without restriction[/color].
+    
+    2. Brigmedics are [color=#ff0000]not[/color] to produce or distribute contraband chemicals, or Security/Medical-authorised chemicals (such as ephedrine or chloral hydrate) for unauthorised personnel.
+    [color=#555555]Vestine compounds[/color] are [color=#ff0000]never[/color] to be produced, and all such compounds must be [color=#ff0000]discarded immediately[/color] upon being acquired.
 
-4. Brigmedics putting themselves in excessive danger, and by extension the entire department, are to be considered negligent in their duties.
+    ## Corpsman Conduct
+    
+    This section of the SOP details the expected procedures and conduct of any Brigmedic acting in a Corpsman role or capacity. 
+    A Brigmedic is classified as a Corpsman if they are actively involved in combat or other security duties and providing field medical aid or other support to combatants.
+    
+    1. Corpsmen are [color=#ff0000]not[/color] the tip of the spear, and should not be first in the line of fire unless there are no other officers available. 
+    A Corpsman putting themself in excessive danger, and by extension the entire department, are to be considered [color=#ff0000]negligent in their duties[/color].
+
+    2. Corpsmen are [color=#ff0000]not[/color] permitted to utilise chemical warfare or distribute the means for chemical warfare. 
+    Toxins, narcotics, and other debilitating chemicals may [color=#ff0000]not[/color] be used against hostiles.
+    The only exception to this rule is the use of [color=#ffe100]Pax[/color], which may be administered to hostile targets via conventional means or syringe gun.
+    
 </Document>

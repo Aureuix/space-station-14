@@ -1,0 +1,25 @@
+﻿- type: entity
+  name: warden's stamp box
+  parent: BoxStamps
+  id: BoxStampsWarden
+  components:
+    - type: EntityTableContainerFill
+      containers:
+        storagebase: !type:AllSelector
+          children:
+            - id: RubberStampApproved
+            - id: RubberStampDenied
+            - id: RubberStampWarden
+
+- type: entity
+  name: head of security's stamp box
+  parent: BoxStamps
+  id: BoxStampsHos
+  components:
+    - type: EntityTableContainerFill
+      containers:
+        storagebase: !type:AllSelector
+          children:
+            - id: RubberStampApproved
+            - id: RubberStampDenied
+            - id: RubberStampHos

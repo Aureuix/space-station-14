@@ -1,0 +1,29 @@
+﻿- type: language 
+  id: CodeSpeak
+  icon: LanguageIconCodeSpeak
+  chatPrefix: cde
+
+  iconNotUnderstood: false
+  iconUnderstood: true
+
+  obfuscation:
+    !type:ReplacementObfuscation
+    replacement:
+      - Whiskey, Echo, Whiskey. Lima, Alpha, Delta.
+      - Bravo-Zulu. Echo, X-Ray, Foxtrot, India, Lima.
+      - Sierra-Hotel, Oscar, Oscar, Tango.
+      - Delta, Echo, Alfa, Tango-Hotel.
+      - Kilo, India, Lima-Lima. Charlie, Alfa, Papa.
+      - Golf, Echo, Tango. Delta, India, Sierra, Kilo.
+      - Echo, Mike, Alfa, Golf.
+      - Whiskey, Hotel, India, Sierra, Kilo, Echo, Yankee.
+      - Tango, Charlie.
+      - Sierra-Hotel, India, Tango, Sierra, Echo, Charlie.
+      - Victor, India, Papa, Echo, Romeo.
+      - Charlie, Oscar, Bravo, Romeo, Alfa.
+      - Papa, Yankee, Tango-Hotel, Oscar, November.
+      - Charlie, Oscar, Delta, Echo. Romeo, Echo, Delta.
+      - Lima, Mike, Foxtrot, Alfa, Oscar.
+      - Bravo, Oscar, Mike, Bravo.
+      - Golf, Lima, Oscar, Romeo, Yankee.
+      - Charlie, Oscar, Delta, Echo.

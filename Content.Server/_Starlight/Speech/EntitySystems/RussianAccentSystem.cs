@@ -16,35 +16,7 @@ public sealed class RussianAccentSystem : EntitySystem
     public SpeechMessage Accentuate(SpeechMessage message)
     {
         message = _replacement.ApplyReplacements(message, "russian");
-
-        // Visual cyrillic replacement (only for displayed text)
-        var accentedMessage = new StringBuilder(message.Text);
-
-        for (var i = 0; i < accentedMessage.Length; i++)
-        {
-            var c = accentedMessage[i];
-
-            accentedMessage[i] = c switch
-            {
-                'A' => 'Д',
-                'b' => 'в',
-                'N' => 'И',
-                'n' => 'и',
-                'K' => 'К',
-                'k' => 'к',
-                'm' => 'м',
-                'h' => 'н',
-                't' => 'т',
-                'R' => 'Я',
-                'r' => 'я',
-                'Y' => 'У',
-                'W' => 'Ш',
-                'w' => 'ш',
-                _ => accentedMessage[i]
-            };
-        }
-
-        message.Text = accentedMessage.ToString();
+        
         return message;
     }
 

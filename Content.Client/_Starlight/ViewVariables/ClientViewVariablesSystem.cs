@@ -11,10 +11,13 @@ namespace Content.Client._Starlight.ViewVariables;
 public sealed class ClientViewVariablesSystem : EntitySystem
 {
     [Dependency] private readonly IClientConsoleHost _shell = default!;
+    [Dependency] private IViewVariableControlFactory _vvFactory = default!;
     
     public override void Initialize()
     {
         base.Initialize();
+        
+        _vvFactory.RegisterForType<LocId>(_ => new VVPropEditorLocId());
         
         SubscribeNetworkEvent<OpenViewVariablesEvent>(OnOpenViewVariables);
     }

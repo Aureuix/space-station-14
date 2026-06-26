@@ -1,0 +1,72 @@
+﻿- type: trait
+  id: Stasis
+  name: trait-stasis-name
+  description: trait-stasis-desc
+  category: AvaliTraits
+  effects:
+    - !type:AddCompsEffect
+      components:
+        - type: Stasis
+          enterStasisAction: ActionStasisEnter
+          exitStasisAction: ActionStasisExit
+          updateInterval: 1s
+          healingPerUpdate:
+            types:
+              Heat: 2
+              Cold: 2
+            groups:
+              Brute: 6
+          bleedHealPerUpdate: 1.0
+          critHealingModifier: 0.5
+          stasisDamageReduction: 0.7
+  requirements:
+    - !type:SpeciesRequirement
+      species:
+        - Avali
+
+- type: trait
+  id: Nanites
+  name: trait-nanites-name
+  description: trait-nanites-desc
+  category: AvaliTraits
+  effects:
+    - !type:OverrideCompsEffect
+      components:
+        - type: PassiveDamage
+          allowedStates:
+            - Alive
+            - Dead # Nanites are machines- no reason they wouldn't work in this situation
+          damageCap: 50 # Explicitly cannot help with severe injury
+          damage:
+            groups:
+              Brute: -1
+            types:
+              Poison: -0.1
+              Heat: -0.25
+              Shock: -0.25
+              Cold: -0.25
+  requirements:
+    - !type:SpeciesRequirement
+      species:
+        - Avali
+
+- type: trait
+  id: AvaliJump
+  name: trait-avalijump-name
+  description: trait-avalijump-desc
+  category: AvaliTraits
+  effects:
+    - !type:AddCompsEffect
+      components:
+        - type: Jump
+          action: JumpAvali
+    - !type:OverrideCompsEffect
+      components:
+        - type: MovementSpeedModifier
+          baseSprintSpeed: 5 # Approximately 10% faster
+        - type: Hunger
+          baseDecayRate: 0.03 # Restores to base SL rates
+  requirements:
+    - !type:SpeciesRequirement
+      species:
+        - Avali

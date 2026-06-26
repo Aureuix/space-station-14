@@ -2,7 +2,7 @@
   id: StarlightOrwell
   mapName: 'Orwell "Citadel" Station'
   mapPath: /Maps/_Starlight/Stations/Orwell.yml
-  minPlayers: 50
+  minPlayers: 20 # SpL Change
   stations:
     StarlightOrwell:
       stationProto: StandardNanotrasenStation
