@@ -2,7 +2,7 @@
   parent: [BaseWeaponBattery, BaseIlluminateContraband, BaseGunWieldable]
   id: WeaponIlluminateBlizzard
   name: AR12 "blizzard"
-  description: The standard longarm of the Illuminate, the AR12 uses electromagnetic coils to propel flechettes at supersonic speeds.
+  description: The standard longarm of the Illuminate, the AR12 uses electromagnetic coils to propel flechettes at supersonic speeds with minimal recoil.
   components:
     - type: CanDualWield
     - type: Sprite

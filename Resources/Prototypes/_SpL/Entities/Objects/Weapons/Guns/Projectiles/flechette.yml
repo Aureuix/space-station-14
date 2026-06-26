@@ -8,7 +8,7 @@
       armorPenetration: 0.25
       damage:
         types:
-          Piercing: 30
+          Piercing: 25
           Structural: 5
       bloodlossModifier: 2
     - type: HitscanPierce
