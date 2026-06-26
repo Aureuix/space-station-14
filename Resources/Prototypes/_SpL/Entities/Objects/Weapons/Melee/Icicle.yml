@@ -33,9 +33,9 @@
     - type: IncreaseDamageOnWield
       damage:
         types:
-          Slash: 5
+          Slash: 10
           Piercing: 15
-        bloodlossModifier: 2
+    - type: DisarmMalus
     - type: Tool
       qualities:
         - Slicing
@@ -104,3 +104,5 @@
       damage:
         types:
           Blunt: 7
+          
+          # TODO - Refactor all of this to be an ejectable rechargable blade system

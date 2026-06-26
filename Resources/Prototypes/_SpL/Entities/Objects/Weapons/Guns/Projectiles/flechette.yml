@@ -8,9 +8,8 @@
       armorPenetration: 0.25
       damage:
         types:
-          Piercing: 25
+          Piercing: 30
           Structural: 5
-      bloodlossModifier: 2
     - type: HitscanPierce
       chance: 0.5
       pierceLevel: Rock
