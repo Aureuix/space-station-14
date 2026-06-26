@@ -1,0 +1,57 @@
+﻿- type: entity
+  name: VL15 "icicle"
+  description: An aerogel-bladed Illuminate glaive, commonly carried by hatchery guards. Its self-restoring blade is designed to shard and lodge in enemy flesh, causing severe bleeding.
+  id: WeaponIlluminateIcicle
+  parent: [ BaseItem, BaseIlluminateContraband ]
+  components:
+    - type: Sprite
+      sprite: _SpL/Objects/Weapons/Melee/Icicle.rsi
+    - type: Item
+      size: Ginormous
+      sprite: _SpL/Objects/Weapons/Melee/Icicle.rsi
+    - type: Clothing
+      sprite: _SpL/Objects/Weapons/Melee/Icicle.rsi
+      quickEquip: false
+      slots:
+        - Back
+        - suitStorage
+    - type: MeleeWeapon
+      wideAnimationRotation: -135
+      swingLeft: true
+      attackRate: 1
+      soundOnHit:
+        path: /Audio/Effects/glass_break1.ogg
+        params:
+          variation: 0.250
+          volume: -2
+      soundOnHitNoDamage:
+        path: /Audio/Effects/glass_break1.ogg
+        params:
+          variation: 0.250
+          volume: -2
+      soundOnSwing:
+        path: /Audio/Weapons/punchmiss.ogg
+        params:
+          variation: 0.125
+      damage:
+        types:
+          Slash: 5
+          Piercing: 10
+    - type: Wieldable
+    - type: IncreaseDamageOnWield
+      damage:
+        types:
+          Slash: 5
+          Piercing: 15
+        bloodlossModifier: 2
+    - type: PointLight
+      enabled: false
+      radius: 1.5
+      energy: 1.5
+      color: "#ff7a00"
+      castShadows: false
+      netsync: false
+    - type: Appearance
+    - type: Reflect
+      reflectProb: 0.25
+      spread: 75
