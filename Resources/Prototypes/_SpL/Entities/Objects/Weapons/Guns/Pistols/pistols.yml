@@ -25,12 +25,24 @@
         params:
           volume: -2
           rolloffFactor: 1.3
+      soundEmpty:
+        path: /Audio/Machines/Nuke/angry_beep.ogg
+        params:
+          volume: -3
+          rolloffFactor: 1.3
+      soundBolt:
+        path: /Audio/Weapons/Guns/Cock/shotgun_close.ogg
+      soundUnbolt:
+        path: /Audio/Weapons/Guns/Cock/shotgun_open.ogg
       fireRate: 6
       selectedMode: SemiAuto
       availableModes:
         - SemiAuto
         - Burst
       shotsPerBurst: 3
+    - type: ChamberMagazineAmmoProvider
+      soundRack:
+        path: /Audio/Weapons/Guns/Cock/lmg_cock.ogg
     - type: ItemSlots
       slots:
         gun_magazine:

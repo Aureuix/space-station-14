@@ -23,10 +23,14 @@
     - type: HitscanBasicVisuals
       muzzleFlash:
         sprite: _Starlight/Objects/Weapons/Guns/Projectiles/projectiles.rsi
-        state: pd_muzzle
+        state: muzzle
       travelFlash:
         sprite: _Starlight/Objects/Weapons/Guns/Projectiles/projectiles.rsi
-        state: pd_trace
+        state: trace
       impactFlash:
         sprite: _Starlight/Objects/Weapons/Guns/Projectiles/projectiles.rsi
-        state: pd_impact
+        state: impact
+      bullet:
+        sprite:
+          sprite: /Textures/_SpL/Objects/Weapons/Guns/Projectiles/projectiles.rsi
+          state: flechette
