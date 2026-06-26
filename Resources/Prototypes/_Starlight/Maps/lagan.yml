@@ -2,7 +2,7 @@
   id: StarlightLagan
   mapName: 'Lagan'
   mapPath: /Maps/_Starlight/Stations/Lagan.yml
-  minPlayers: 50
+  minPlayers: 20 # SpL Change
   stations:
     StarlightLagan:
       stationProto: StandardNanotrasenStation

@@ -1,14 +1,5 @@
-trait-amputee-name = Amputee
-trait-amputee-desc = You are the reason the average amount of limbs in this sector isn't a round and even 4.
+trait-redshirt-name = Redshirt
+trait-redshirt-desc = Dark at the edges and closing in, I look down in my red shirt. Removes the critical state, rendering you instantly dead to any critical injury.
 
-trait-amputee-leftarm-name = Amputee: Left Arm 
-trait-amputee-leftarm-desc = Well, at least you're alright now.
-
-trait-amputee-rightarm-name = Amputee: Right Arm 
-trait-amputee-rightarm-desc = Hey I think you might've left something.
-
-trait-amputee-leftleg-name = Amputee: Left Leg 
-trait-amputee-leftleg-desc = I am running out of puns already.
-
-trait-amputee-rightleg-name = Amputee: Right Leg 
-trait-amputee-rightleg-desc = Self-explanatory :slumber:
+trait-brittlebones-name = Brittle Bones
+trait-brittlebones-desc = This is scientifically known as Osteogenesis Imperfecta, and it means sticks and stones break your bones. Makes critical injuries far more common.

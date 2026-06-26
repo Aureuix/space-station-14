@@ -3,40 +3,28 @@
 
 <GuideEntityEmbed Entity="ToyFigurineSecurity" Caption="Duty Officer"/>
 
-1 . Standard [color=#00a933]Code Green[/color] equipment is:
+    Duty Officers are Security Officers specialising in the defense of the Brig and the management of prisoners.
+    
+    1 . Standard [color=#00a933]Code Green[/color] equipment is:
 <Box>
+    <GuideEntityEmbed Entity="WeaponDisabler"/>
 	<GuideEntityEmbed Entity="Stunbaton"/>
-</Box>
-<Box>
-	<GuideEntityEmbed Entity="HoloprojectorSecurity"/>
-	<GuideEntityEmbed Entity="FlashlightSeclite"/>
-	<GuideEntityEmbed Entity="RadioHandheldSecurity"/>
 </Box>
 <Box>
 	<GuideEntityEmbed Entity="ClothingHeadHelmetRiot"/>
 	<GuideEntityEmbed Entity="ClothingOuterArmorRiot"/>
     <GuideEntityEmbed Entity="RiotShield"/>
 </Box>
-<Box>
-    <GuideEntityEmbed Entity="GrenadeFlashBang"/>
-    or
-	<GuideEntityEmbed Entity="TearGasGrenade"/>
-    x4
-</Box>
-<Box>
-    <GuideEntityEmbed Entity="Handcuffs"/>
-	x2
-	<GuideEntityEmbed Entity="Zipties"/>
-    x2
-</Box>
 
-2. The Duty Officer reports directly to the Warden. The Duty Officer is to assist in the processing of prisoners.
+    2. Duty Officers report [color=#ffe100]directly to the Warden[/color], or the Head of Security if there is no Warden. The Duty Officer is to assist in the processing of prisoners.
 
-3. The Duty Officer is to directly communicate to the Warden at the start of the shift, and any time they are required to leave the department.
+    3. Duty Officers are to directly communicate to the Warden at the start of the shift, and any time they are required to leave the department.
 
-4. The Duty Officer may not perform the duties of a Security Officer, unless the department is short on staff, or during emergencies.
+    4. Duty Officers may perform the duties of a Security Officer with the Warden's approval, but [color=#ff0000]must[/color] comply with the SOP of Security Officers in doing so.
+    In particular, Duty Officers may [color=#ff0000]not[/color] wear their riot gear outside the Security department unless the alert level is appropriate.
+    
+    5. If performing standard Officer duties, Duty Officers [color=#00a933]may[/color] request a lethal sidearm. This sidearm is [color=#ff0000]not[/color] to be used in the Brig unless the alert level is appropriate.
 
-5. Prisoner treatment guidelines must be strictly followed and is your top priority.
-
-6. Non-lethal means should be used against prisoners whenever possible.
+    6. Prisoner treatment guidelines are your [color=#ffe100]top priority[/color] and must be strictly followed. Non-lethal means should be used against prisoners whenever possible. 
+    Refer to the section on Prisoner Treatment for a further outline of your duties and expectations.
 </Document>

@@ -3,32 +3,39 @@
 
 <GuideEntityEmbed Entity="ToyFigurineDetective" Caption="Detective"/>
 
-1 . Standard [color=#00a933]Code Green[/color] equipment is:
+    Detectives find evidence of wrongdoing and piece together a case against suspects.
+    Detectives should have a solid grasp of Corporate Law, as well as good intuition for criminal behaviour.
+    
+    1 . Standard [color=#00a933]Code Green[/color] equipment is:
 <Box>
 	<GuideEntityEmbed Entity="ClothingHandsGlovesForensic"/>
 	<GuideEntityEmbed Entity="ForensicScanner"/>
 	<GuideEntityEmbed Entity="ForensicPad"/>
 </Box>
 <Box>
+    <GuideEntityEmbed Entity="WeaponDisabler"/>
 	<GuideEntityEmbed Entity="Stunbaton"/>
 	<GuideEntityEmbed Entity="WeaponRevolverInspector"/>
 </Box>
-<Box>
-	<GuideEntityEmbed Entity="HoloprojectorSecurity"/>
-	<GuideEntityEmbed Entity="FlashlightSeclite"/>
-	<GuideEntityEmbed Entity="RadioHandheldSecurity"/>
-</Box>
-<Box>
-	<GuideEntityEmbed Entity="CombatKnife"/>
-	in
-	<GuideEntityEmbed Entity="ClothingShoesBootsJack"/>
-</Box>
 
-2. The Detective is permitted to patrol with a Security Officer on all alert levels, but should focus on collecting of evidence and investigations at all times.
+2. The Detective is permitted to patrol with a Security Officer on [color=#ffe100]all alert levels[/color], but should focus on collecting of evidence and investigations at all times.
 
-3. When acting as a Security Officer, the Detective must follow all Security Officer guidelines listed above.
+3. If there is a lack of adequate staffing, the Detective [color=#00a933]may[/color] act alone as a Security Officer. When acting as an officer, the Detective must follow [color=#ffe100]Security Officer SOP[/color].
 
-4. The Detective is permitted to wear non-security uniforms for undercover investigations, with approval from the Head of Security. The Detective's security ID should be on their person at all times, however.
+4. The Detective is permitted to wear non-security uniforms for undercover investigations. When disguised, the Detective's security ID should be on their person [color=#ffe100]at all times[/color].
 
-5. The Detective is permitted to interrogate detained suspects, however any detainment must be subtracted from their overall arrest time.
+5. The Detective is permitted to interrogate detained suspects, however any detainment [color=#ff0000]must[/color] be subtracted from their overall arrest time.
+    
+    ## Building a case
+    
+    The goal of the Detective is to identify suspects in crimes and establish enough cause to make an arrest of the suspect. 
+    This section of the SOP details the basics of how that looks.
+    
+    1. Avoid [color=#ff0000]anecdotal evidence, hearsay, or unprovable claims[/color]. Suspects cannot be charged based on accusation of crime alone, and evidence must exist to justify any given arrest.
+    
+    2. Act by [color=#ffe100]process of elimination[/color] where possible. Detectives should ensure that the evidence points towards a given suspect and not the other way around.
+    A Detective that knowingly or by negligence frames an individual is liable to be charged accordingly under Corporate Law.
+    
+    3. Evidence should provide cause [color=#00a933]beyond reasonable doubt[/color] where possible. The more watertight a Detective's case is, the better. 
+    It is recommended that Detectives keep a paper trail for accountability purposes, and in case of legal action.
 </Document>

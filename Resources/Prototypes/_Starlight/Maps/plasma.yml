@@ -2,7 +2,7 @@
   id: StarlightPlasma
   mapName: 'Plasma'
   mapPath: /Maps/_Starlight/Stations/Plasma.yml
-  minPlayers: 25
+  minPlayers: 10 # SpL Change
   maxPlayers: 80
   stations:
     StarlightPlasma:

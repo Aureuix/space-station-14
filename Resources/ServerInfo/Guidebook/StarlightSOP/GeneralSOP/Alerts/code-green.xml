@@ -5,28 +5,49 @@
 
         Any Command member.
 
-        Conditions:
+        ## Conditions:
 
         Default Alert Code at the start of the shift. Should not change unless a threat is suspected/confirmed.
 
         OR
 
-        All confirmed/suspected threats to the station and/or crew have been handled, or simply vanished on their own. Unless there is further evidence of a threat after 10+ minutes on Code Blue, Code Green should be called.
+        All confirmed/suspected threats to the station and/or crew have been handled, or simply vanished on their own. 
+        Unless there is further evidence of a threat after 10+ minutes on Code Blue, Code Green should be called.
         
-        ## Security:
+        ## Security− Equipment:
+
+    1. Officers are permitted one lethal sidearm (ballistic or laser) unless otherwise stated by their respective SOP.
         
-        1. All weapons must not be visible unless in pursuit of a suspect.
+    2. Officers may carry medical equipment and consumables for personal and squad use. Officers may carry rubber, SP, HP, and FMJ ammunition for their sidearm.
         
-        2. Armory weapons must remain inside of the brig, however may be used for training purposes.
+    3. Officers may wear armour vests but not full body armour. Officers should not carry shields.
         
-        3. Random searches are not permitted without a search warrant. However, searches may be conducted against an individual if a member of security or command has witnessed that individual committing a crime.
+    5. Although not mandatory, officers are encouraged not to cover their faces or significantly mask their identity without cause (e.g. atmospheric disturbances).
+        
+    6. All non-lethal Security grenades are permitted, though use on Code Green is discouraged unless necessary due to crossfire risks.
+        
+    7. All SecTech, SecVend, and job locker equipment besides shields are permitted for carry.
+
+    8. Security personnel are [color=#ff0000]not[/color] to visibly carry any issued long-arms unless in combat or pursuit. This does not apply to suit storage, back, or belt holstering.
+        
+    9. Lasers can be issued with permit to officers assigned to the removal of hostile fauna, although they must not be used against any humanoids and must be discreetly stowed when not in use.
+        
+    10. Should the situation escalate to a point where Code Green equipment no longer suffices, or should a threat to crew or station wellbeing be identified, Code Blue should be called.
+
+        ## Security− Procedure
+    
+    1. Security personnel are not to visibly carry any lethal equipment unless in combat or pursuit. This does not apply to suit storage, back, or belt holstering.
+    
+    2. Security personnel should prioritise de-escalation. Lethals are not to be used on any crew members or visitors unless absolutely necessary to prevent greater harm.
+    
+    3. Random searches are not permitted without a search warrant. However, searches may be conducted against an individual if a member of security or command has witnessed that individual committing a crime.
 
         
         ## Secure Areas:
         
         1. Secure areas require an access permit, unless required by a staff job.
         
-        2. Secure areas: Security department, EVA Storage, Tech Storage, Gravity Generator, All Engineering areas beyond the lobby, Vault, and areas requiring command access.
+        2. Secure areas: Security department, EVA Storage, Tech Storage, Gravity Generator, all Engineering areas beyond the lobby, Vault, and areas requiring Command access.
         
         3. Secure areas are to be left unbolted and ready to be used for their intended purposes.
         

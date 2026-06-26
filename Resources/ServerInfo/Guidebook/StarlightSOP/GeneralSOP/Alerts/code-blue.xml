@@ -3,29 +3,39 @@
 
         ## Called by:
 
-        Any two Command members, HoS, or Captain.
+        Any two Command members, Head of Security, or Captain/ACO.
 
         ## Conditions:
 
-        There is a suspected threat on-board the station, or at a nearby location in space. This includes any evidence of hostile activity that has not damaged the station or crew. This may also include multiple eye witness testimonies.
+        There is a suspected threat on-board the station, or at a nearby location in space. 
+        This includes any evidence of hostile activity that has not damaged the station or crew. 
+        This may also include multiple eye witness testimonies.
 
         OR
 
-        Confirmed Code Red threats have been properly handled or subsided on their own. It is recommended that, after 10+ minutes on Code Red without any hostile activity, Code Blue be called.
+        Confirmed Code Red threats have been properly handled or subsided on their own. 
+        It is recommended that, after 10+ minutes on Code Red without any hostile activity, Code Blue be called.
 
         ## Security:
 
-        1. Weapons may be visible.
-        
-        2. Armory weapons are permitted outside of the brig on a selective basis. Should all of sec be required to use armory weapons, red alert should be called .
-        
-        3. Random searches are encouraged. Security personnel may detain any personnel refusing a random search to conduct the search.
+        1. Officers may be provided with riot suits, helmets, truncheons (if available), the breaching hammer, and shields. 
+    
+        2. Bulletproof and Reflective armour may be issued with permit to a minority of officers.
+    
+        3. Officers may be issued permits for long-arms. The Riot Shotgun and SP-91-RC are recommended for non-lethal deployment, for loading with beanbag/rubber rounds respectively.
+    
+        4. Assuming a reasonable justification for lethal long-arm authorisation, any available ballistic or laser weapon may be issued with permit to a limited amount of station security staff.
+    
+        5. Security personnel are not to visibly carry any issued long-arms unless in combat or pursuit. This does not apply to suit storage, back, or belt holstering.
 
-        ## Secure Areas:
+        6. Should the situation escalate to the point where the majority of security staff require long-arms and/or combat armour, Code Red should be called.
+
+
+    ## Secure Areas:
 
         1. Secure areas require an access permit, unless required by a staff job.
         
-        2. Secure areas: Security department, EVA Storage, Tech Storage, Gravity Generator, All Engineering areas beyond the lobby, Vault, and areas requiring command access.
+        2. Secure areas: Security department, EVA Storage, Tech Storage, Gravity Generator, all Engineering areas beyond the lobby, Vault, and areas requiring Command access.
         
         3. Secure areas may be bolted if attempted unauthorized access is likely based on previous evidence.
 
@@ -44,11 +54,11 @@
 
         1. Personnel are to report any suspicious activity to the nearest member of Security, or use common radio if urgent.
         
-        2. Personnel are highly encouraged to exercise caution, all crew should follow simple safety procedures (such as not going through Maintenance alone).
+        2. Personnel are highly encouraged to exercise caution. All crew should follow simple safety procedures (such as not going through Maintenance alone).
         
         3. Visitors to the station such as refugees are recommended to stay in public areas, for their safety.
         
-        4. The Vault is not to be opened by non-command members. Exceptions for repairs, or storage of critical items will be made. All other access is by permit only.
+        4. The Vault is not to be opened by non-command members. Exceptions for repairs or storage of critical items will be made. All other access is by permit only.
         
         5. All personnel are highly recommended to set their suit sensors to coordinates.
 
@@ -58,5 +68,5 @@
         
         2. A disabler or flash should be carried at all times.
         
-        3. Non-security Command members may request with permit further armament.
+        3. Non-security Command members may request permits for further armament, within reason.
 </Document>

@@ -1,27 +1,92 @@
 <Document>
-# Security SOP
+    # Security SOP
 
-These procedures apply to all security members, unless otherwise stated in their specific SOP
+    These procedures apply to all security members, unless otherwise stated in their specific SOP
+    
+    ## Equipment− Alert levels
+    
+    This section of the SOP details the equipment officers are permitted to carry during all three Security-related station alert levels.
+    [color=#acb20c]Code Yellow[/color] and [color=#ff8119]Code Orange[/color] are to be treated as identical to the previous alert code unless ordered otherwise by the Head of Security or Captain. 
+    Any and all available equipment may be used on [color=#ec9ba4]Code Gamma[/color] and [color=#8d281e]Code Delta[/color]. Security personnel should defer to Central Command for equipment standards on [color=#8913ff]Code Epsilon[/color].
+    
+    ## Code Green
+    
+    1. Officers are permitted [color=#ff0000]one lethal sidearm[/color] (ballistic or laser) unless otherwise stated by their respective SOP.
+    
+    2. Officers may carry [color=#2a6099]medical equipment and topicals[/color] for personal and squad use. Officers may carry [color=#ffe100]rubber, SP, HP, and FMJ ammunition[/color].
+    
+    3. Officers may wear [color=#ffe100]armour vests[/color] but [color=#ff0000]not[/color] full body armour. Officers should not carry shields.
+    
+    4. Although not mandatory, officers are encouraged not to cover their faces or significantly mask their identity without cause (e.g. [color=#ff8119]atmospheric disturbances[/color]).
+    
+    5. All non-lethal Security grenades are permitted, though use on [color=#00a933]Code Green[/color] is discouraged unless necessary due to crossfire risks.
+    
+    6. All SecTech, SecVend, and job locker equipment [color=#ff0000]besides shields[/color] are permitted for carry.
 
-1. Long guns shall not be taken outside the brig on [color=#00a933]Code Green[/color]. Long guns (including those mounted on mechs) are any firearms that are not pistols or revolvers.
+    7. Security personnel are [color=#ff0000]not[/color] to visibly carry any lethals unless in combat or pursuit. This does not apply to suit storage, back, or belt holstering.
+    
+    8. Lasers can be issued with permit to officers assigned to the removal of [color=#ff0000]hostile fauna[/color], although they must [color=#ff0000]not[/color] be used against any humanoids and must be discreetly stowed when not in use.
+    
+    9. Should the situation escalate to a point where [color=#00a933]Code Green[/color] equipment no longer suffices, or should a threat to crew or station wellbeing be identified, [color=#2a6099]Code Blue[/color] should be called.
 
-2. A maximum of 1 long gun (with permit) and 1 sidearm (pistol or revolver) may be carried on [color=#2a6099]Code Blue[/color] or above. Only a sidearm and disabler may be carried on [color=#00a933]Code Green[/color].
+    ## Code Blue
+    
+    1. Officers may be provided with [color=#2a6099]riot suits, helmets, truncheons, the breaching hammer, and shields[/color]. Bulletproof and Reflective armour may be issued [color=#ffe100]with permit[/color] to a minority of officers.
+    
+    2. Officers may be issued [color=#ffe100]permits for long-arms[/color]. The Riot Shotgun and SP-91-RC are recommended for non-lethal deployment, for loading with beanbag/rubber rounds respectively.
+    
+    3. Assuming a reasonable justification for lethal long-arm authorisation, any available ballistic or laser weapon may be issued with permit to a limited amount of station security staff.
+    
+    4. Security personnel are [color=#ff0000]not[/color] to visibly carry any issued long-arms unless in combat or pursuit. This does not apply to suit storage, back, or belt holstering.
+    
+    5. Should the situation escalate to the point where the majority of security staff require long-arms and/or combat armour, [color=#ff0000]Code Red[/color] should be called.
+    
+    ## Code Red
 
-3. Long guns will be issued on a permit basis on [color=#2a6099]Code Blue[/color], and are allowed to all security personnel on [color=#ff0000]Code Red[/color]. Disabler SMGs are not considered long guns.
+    1. Officers may be provided with any Security department equipment without permit. Officers may carry any form of ammunition available to them from the Security Techfab.
+    
+    2. Officers may brandish any weaponry at any time, and may freely use both non-lethal and lethal grenades permitted for departmental use. Officer discretion is still highly recommended.
+    
+    3. Officers may [color=#ff0000]not[/color] utilise any contraband equipment without a permit, and are [color=#ff0000]not[/color] to use any form of [color=#8d281e]highly illegal contraband[/color] whatsoever without a Central Command-issued permit.
 
-4. Weapons must remain holstered unless in active pursuit or on [color=#ff0000]Code Red[/color].
+    ## Procedure
+    
+    This section of the SOP details how officers are expected to present and carry themselves when on duty. 
+    Remember− [color=#ffe100]your priority is the defense of the crew and the station[/color]. Justice is important, but safety should not be sacrificed in its pursuit. 
 
-5. Security personnel are required to state the reason for an arrest before any action may be taken against a suspect. This does not apply on [color=#ff0000]Code Red[/color], or if a suspect flees when approached.
+    1. All Security personnel must be [color=#ffe100]identifiable as Security Officers[/color] (exempting the detective) and must wear at least one piece of an official security uniform at all times. 
+    An official Security uniform consists of any piece of standard issue jumpsuit or jumpskirt (i.e. any uniform you are issued prior to starting your shift).
+    
+    2. Security personnel should attempt to resolve situations [color=#00a933]peacefully[/color], and should [color=#ffe100]prioritise de-escalation where possible[/color] when dealing with an ongoing situation.
+    Escalation should make sense within the context of events− an officer is [color=#ff0000]not[/color] permitted to draw lethals unless authorised (by senior officer or alert level) or judged [color=#ffe100]necessary to prevent further harm[/color].
+    Failure of non-lethals is not automatic authorisation for lethals, and officers should seek Head of Security approval for hostile engagements.
+    
+    3. Security may use lethal equipment to combat [color=#ff0000]non-humanoid threats[/color] such as vent infestations, anomalous entities, and spaceborne fauna. 
+    When dealing with these threats, Security personnel are to check fire, exercise restraint, and ensure the elimination of the threats with minimal civilian casualties or crossfire.
 
-6. Security personnel must attempt to bring suspects to the brig uncuffed. This does not apply on [color=#ff0000]Code Red[/color], or if a suspect has already fled or become uncooperative.
+    4. When making an arrest, Security personnel are [color=#ff0000]required[/color] to state the reason for the arrest before any action may be taken against a suspect. 
+    This does not apply on [color=#ff0000]Code Red[/color], or if a suspect flees when approached. Fleeing suspects should be pursued, with rules of escalation in mind.
 
-7. Security personnel may not request entry to a department, unless in pursuit of a suspect, or on [color=#2a6099]Code Blue[/color] or [color=#ff0000]Code Red[/color].
+    5. Security personnel must attempt to bring suspects to the brig uncuffed. This does not apply on [color=#ff0000]Code Red[/color], or if a suspect has already fled or become uncooperative.
+    Cooperative suspects may be granted [color=#00a933]lesser sentences[/color], or in the case of minor crimes may have their sentences [color=#00a933]entirely mitigated[/color], at the arresting officer's discretion.
+    The Warden or Head of Security should be made aware of any arrests and sentences, as well as deviations from standard Corporate Law enacted during and after the arrest and sentencing.
 
-8. Searches may be conducted randomly on [color=#2a6099]Code Blue[/color] and [color=#ff0000]Code Red[/color], and on [color=#00a933]Code Green[/color] with an applicable warrant. Crew refusing searches on [color=#2a6099]Code Blue[/color] or [color=#ff0000]Code Red[/color] may be detained.
+    6. Security personnel may [color=#ff0000]not[/color] force entry to a department unless in pursuit of a suspect, or on [color=#ff0000]Code Red[/color].
+    Security personnel may [color=#ffe100]request entry[/color] to a department for the apprehension of a suspect or for conducting a departmental search on [color=#2a6099]Code Blue[/color] or above.
+    Departmental personnel may invite Security personnel into their department at their discretion.
+    
+    7. Searches may be conducted randomly on [color=#2a6099]Code Blue[/color] and [color=#ff0000]Code Red[/color], and on [color=#00a933]Code Green[/color] with an applicable warrant. 
+    Crew refusing searches on [color=#2a6099]Code Blue[/color] or [color=#ff0000]Code Red[/color] may be detained. Crew have a right to refuse a search on [color=#00a933]Code Green[/color].
 
-9. All security personnel must wear at least one piece of an official security uniform at all times. An official security uniform is defined as: The security jumpsuit/skirt, the senior security jumpsuit/skirt, the security winter coat, the trooper uniform, the blue jumpsuit/skirt and tie, or job specific variants of these for the Warden, Head of Security or Brigmedic.
+    8. Security personnel should refrain from wearing hardsuits or magboots unless operating in EVA/0G conditions, or unless there is an imminent or ongoing [color=#ff0000]hostile[/color] or [color=#ff8119]atmospheric/structural threat[/color].
 
-10. Security personnel should refrain from wearing hardsuits or magboots unless an imminent threat or massive station damage is present.
-
-11. Security personnel may forcefully relocate crew members to their departments on [color=#ff0000]Code Red[/color], [color=#8d1d75]Code Violet[/color], [color=#acb20c]Code Yellow[/color] or [color=#ec9ba4]Code Gamma[/color].
+    9. Security personnel may forcefully relocate crew members to their departments on [color=#ff0000]Code Red[/color], [color=#8d1d75]Code Violet[/color], or [color=#ec9ba4]Code Gamma[/color].
+    
+    10. New Security personnel should [color=#ff0000]not[/color] be hired without proper screening, mindshielding, and ensurance of loyalty. 
+    The employment of new Security personnel must follow a similar procedure to [color=#ffe100]appointing Command members[/color].
+    
+    11. In extreme circumstances, mindshielded non-Security personnel (such as [color=#875d3c]Salvagers[/color]) may be deputised to assist with the neutralisation of station threats.
+    Deputised personnel are to answer to Security personnel, as well as their own departmental seniors, and should be dismissed from their deputy role once the threat has subsided.
+    The conduct of deputised personnel is to align with Security SOP, and charges may be pressed for violations.
+    
 </Document> 
