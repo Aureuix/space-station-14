@@ -11,4 +11,4 @@
   components:
     - type: Contraband
       severity: Illuminate
-      allowedDepartments: [ CentCom ]
+      allowedDepartments: [ CentralCommand ]

@@ -1,1 +1,1 @@
-﻿chat-radio-lluminate = Illuminate
+﻿chat-radio-illuminate = Illuminate
