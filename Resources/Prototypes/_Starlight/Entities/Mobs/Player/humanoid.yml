@@ -548,7 +548,6 @@
       name: ghost-role-information-green-shield-officer-name
       description: ghost-role-information-green-shield-officer-description
       rules: ghost-role-information-cc-aligned-rules
-      important: true
       raffle:
         settings: short
       mindRoles:
