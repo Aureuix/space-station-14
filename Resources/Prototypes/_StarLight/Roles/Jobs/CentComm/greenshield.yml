@@ -15,7 +15,6 @@
   rules: job-rules-cc-aligned
   supervisors: job-supervisors-centcom
   canBeAntag: false
-  bypassEorPacification: true
   accessGroups:
     - AllAccess
   access:
