@@ -1,5 +1,5 @@
 ﻿- type: entity
-  parent: [BasePowerCell, BaseIlluminateContraband]
+  parent: [ BasePowerCell, BaseIlluminateContraband ]
   id: IlluminateCartridgeCoilgun
   name: coilgun cartridge
   description: A high-tech cartridge for coilgun flechettes, used by Illuminate-model longarms. Comes with a round fabricator and inbuilt battery, with a limited supply of matter.
@@ -23,8 +23,8 @@
         - IlluminateTech
 
 - type: entity
-  id: CartridgeCoilgunEmpty
-  parent: [IlluminateCartridgeCoilgun, BaseIlluminateContraband]
+  id: IlluminateCartridgeCoilgunEmpty
+  parent: [ IlluminateCartridgeCoilgun, BaseIlluminateContraband ]
   suffix: Empty
   components:
     - type: Sprite
@@ -40,8 +40,8 @@
       startingCharge: 0
       
 - type: entity
-  id: MagazineFlechette
-  parent: [BaseCartridge, BaseIlluminateContraband]
+  id: IlluminateMagazineFlechette
+  parent: [ BaseCartridge, BaseIlluminateContraband ]
   name: flechette magazine
   description: a cartridge for jet-propelled flechettes, as used in Illuminate small arms.
   components:
@@ -53,7 +53,7 @@
       whitelist:
         tags:
           - CartridgeFlechette
-      proto: CartridgeFlechette
+      proto: IlluminateCartridgeFlechette
       capacity: 18
     - type: Item
       size: Small

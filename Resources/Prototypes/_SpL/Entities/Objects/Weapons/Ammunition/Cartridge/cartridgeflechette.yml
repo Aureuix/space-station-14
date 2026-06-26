@@ -1,6 +1,6 @@
 ﻿- type: entity
   parent: [ BaseCartridge, BaseIlluminateContraband ]
-  id: CartridgeFlechette
+  id: IlluminateCartridgeFlechette
   name: flechette round
   description: a jet-propelled flechette round. Not as scary as a coil-launched one, but still hurts like hell.
   components:

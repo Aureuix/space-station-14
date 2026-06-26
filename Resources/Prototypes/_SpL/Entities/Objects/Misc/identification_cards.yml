@@ -21,4 +21,6 @@
 #    - type: IdCard #SpL- temp disable until bugfixing is doable
 #      jobIcon: JobIconIlluminate
 #   - type: NanoChatCard
-#     listNumber: false
+#     listNumber: false 
+
+# TODO - get this working

@@ -57,7 +57,7 @@
       slots:
         gun_magazine:
           name: Magazine
-          startingItem: MagazineFlechette
+          startingItem: IlluminateMagazineFlechette
           insertSound: /Audio/Weapons/Guns/MagIn/sfrifle_magin.ogg
           ejectSound: /Audio/Weapons/Guns/MagOut/sfrifle_magout.ogg
           priority: 2
@@ -70,4 +70,4 @@
           priority: 1
           whitelist:
             tags:
-              - CartridgeFlechette
+              - IlluminateCartridgeFlechette
