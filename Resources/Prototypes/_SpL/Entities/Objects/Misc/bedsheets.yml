@@ -1,0 +1,11 @@
+﻿- type: entity
+  id: BedsheetIlluminate
+  parent: BedsheetBase
+  name: illuminate bedsheet
+  description: Despite being made with the same woven nanocarbon fibers as traditional Avali tent fabrics, this bedsheet does not inherit their bulletproof nature.
+  components:
+    - type: Sprite
+      sprite: _SpL/Misc/bedsheets.rsi
+      state: sheetilluminate
+    - type: Clothing
+      sprite: _SpL/Clothing/Neck/Bedsheets/illuminate.rsi

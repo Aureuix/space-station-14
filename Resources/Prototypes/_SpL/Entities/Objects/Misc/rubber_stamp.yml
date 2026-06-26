@@ -1,0 +1,15 @@
+- type: entity
+  name: Avali Illuminate rubber stamp
+  parent: [ RubberStampBase, BaseIlluminateContraband ]
+  id: RubberStampIlluminate
+  description: "A feathered stamp for stamping important documents."
+  suffix: DO NOT MAP
+  components:
+  - type: Stamp
+    stampedName: ‛Λ|¨|¨‖¡≥‛Λ≤‛/⌊|_\‛
+#    fontId: Scratch # It'd be nice to figure out how to make that work but I'm scared it's hardcoded to language
+    stampedColor: "#ff7a00"
+    stampState: "paper_stamp-standby" # TODO- resprite this
+  - type: Sprite
+    sprite: _SpL/Misc/stamps.rsi
+    state: stamp-illuminate

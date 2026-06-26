@@ -1,0 +1,60 @@
+﻿- type: constructionGraph
+  id: AvaliChair
+  start: start
+  graph:
+    - node: start
+      edges:
+        - to: chairMaglev
+          steps:
+            - material: Steel
+              amount: 2
+              doAfter: 1
+        - to: chairBeanbag
+          steps:
+            - material: Cloth
+              amount: 2
+              doAfter: 1
+        - to: chairPillow
+          steps:
+            - material: Cloth
+              amount: 1
+              doAfter: 1
+              
+    - node: chairMaglev
+      entity: ChairMaglev
+      edges:
+        - to: start
+          completed:
+            - !type:GivePrototype
+              prototype: SheetSteel1
+              amount: 2
+            - !type:DeleteEntity {}
+          steps:
+            - tool: Screwing
+              doAfter: 2
+
+    - node: chairBeanbag
+      entity: ChairBeanbag
+      edges:
+        - to: start
+          completed:
+            - !type:GivePrototype
+              prototype: MaterialCloth1
+              amount: 2
+            - !type:DeleteEntity {}
+          steps:
+            - tool: Slicing
+              doAfter: 2
+              
+    - node: chairPillow
+      entity: ChairPillow
+      edges:
+        - to: start
+          completed:
+            - !type:GivePrototype
+              prototype: MaterialCloth1
+              amount: 1
+            - !type:DeleteEntity { }
+          steps:
+            - tool: Slicing
+              doAfter: 1

@@ -1,0 +1,74 @@
+﻿- type: entity
+  parent: [ BasePowerCell, BaseIlluminateContraband ]
+  id: IlluminateCartridgeCoilgun
+  name: coilgun cartridge
+  description: A high-tech cartridge for coilgun flechettes, used by Illuminate-model longarms. Comes with a round fabricator and inbuilt battery, with a limited supply of matter.
+  components:
+    - type: Item
+      storedRotation: -90
+    - type: Battery
+      maxCharge: 2400
+      startingCharge: 2400
+    - type: Sprite
+      sprite: _SpL/Objects/Weapons/Ammunition/coilguncartridge.rsi
+      layers:
+        - map: [ "enum.PowerCellVisualLayers.Base" ]
+          state: base
+        - map: [ "enum.PowerCellVisualLayers.Unshaded" ]
+          state: o2
+          shader: unshaded
+    - type: Tag
+      tags:
+        - CartridgeCoilgun
+        - IlluminateTech
+
+- type: entity
+  id: IlluminateCartridgeCoilgunEmpty
+  parent: [ IlluminateCartridgeCoilgun, BaseIlluminateContraband ]
+  suffix: Empty
+  components:
+    - type: Sprite
+      sprite: _SpL/Objects/Weapons/Ammunition/coilguncartridge.rsi
+      layers:
+        - map: [ "enum.PowerCellVisualLayers.Base" ]
+          state: base
+        - map: [ "enum.PowerCellVisualLayers.Unshaded" ]
+          state: o2
+          shader: unshaded
+          visible: false
+    - type: Battery
+      startingCharge: 0
+      
+- type: entity
+  id: IlluminateMagazineFlechette
+  parent: [ BaseCartridge, BaseIlluminateContraband ]
+  name: flechette magazine
+  description: a cartridge for jet-propelled flechettes, as used in Illuminate small arms.
+  components:
+    - type: Tag
+      tags:
+        - IlluminateTech
+        - MagazineFlechette
+    - type: BallisticAmmoProvider
+      whitelist:
+        tags:
+          - CartridgeFlechette
+      proto: IlluminateCartridgeFlechette
+      capacity: 18
+    - type: Item
+      size: Small
+    - type: ContainerContainer
+      containers:
+        ballistic-ammo: !type:Container
+    - type: Sprite
+      sprite: /Textures/_SpL/Objects/Weapons/Ammunition/Magazines/flechette.rsi
+      layers:
+        - state: base
+          map: ["enum.GunVisualLayers.Base"]
+        - state: mag-1
+          map: ["enum.GunVisualLayers.Mag"]
+    - type: MagazineVisuals
+      magState: mag
+      steps: 8
+      zeroVisible: false
+    - type: Appearance
