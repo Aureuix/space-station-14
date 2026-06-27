@@ -70,7 +70,7 @@ public sealed partial class ReflectComponent : Component
     [DataField, AutoNetworkedField]
     public float ReflectEnergyDraw = 80f;
     #endregion
-    
+
     /// <summary>
     /// The sound to play when reflecting.
     /// </summary>
