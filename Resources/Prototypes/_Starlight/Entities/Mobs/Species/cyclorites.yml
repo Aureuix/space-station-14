@@ -1,6 +1,7 @@
 ﻿- type: entity
   parent: [BaseMobSpeciesOrganic, BaseSpeciesPickupableHuge]
   id: BaseMobCyclorite
+  name: Urist McRocks
   abstract: true
   components:
   - type: LanguageKnowledge
