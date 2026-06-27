@@ -2,7 +2,7 @@
   id: StarlightSilica
   mapName: 'Silica Station'
   mapPath: /Maps/_Starlight/Stations/Silica.yml
-  minPlayers: 25
+  minPlayers: 10 # SpL
   maxPlayers: 120
   stations:
     StarlightSilica:

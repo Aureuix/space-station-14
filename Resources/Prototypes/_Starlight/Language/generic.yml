@@ -64,8 +64,8 @@
     - a signal
     - a message
 
-- type: language
-  id: CodeSpeak
-  icon: LanguageIconCodeSpeak
-  chatPrefix: cde
-  iconNotUnderstood: false
+#- type: language # SpL commented out because I wanted to actually implement codespeak
+#  id: CodeSpeak
+#  icon: LanguageIconCodeSpeak
+#  chatPrefix: cde
+#  iconNotUnderstood: false

@@ -3,7 +3,7 @@
 
     ## Called by:
 
-    Any two Command members, or Captain.
+    Any two Command members, Chief Medical Officer, or Captain/ACO.
 
     ## Conditions:
 
@@ -11,33 +11,29 @@
 
     ## Security:
 
-    1. Medbay should be secured ASAP. Quarantine of infected is top priority.
+    1. Medbay should be secured ASAP. Quarantine of infected is the top priority.
     
     2. Should securing medbay not be possible, the evacuation shuttle arrival area should be secured.
-
 
     ## Secure Areas:
 
     1. Secure areas require an access permit, unless required by a staff job.
     
-    2. Secure areas: Medical department, Security department, EVA Storage, Tech Storage, Gravity Generator, All Engineering areas beyond the lobby, Vault, and areas requiring command access.
+    2. Secure areas: Medical department, Security department, EVA Storage, Tech Storage, Gravity Generator, all Engineering areas beyond the lobby, Vault, and areas requiring Command access.
     
     3. There are no restrictions on bolting Secure Areas. Secure Areas may be left bolted or unbolted at the discretion of Command personnel.
     
     4. Secure areas are not to be entered by non-command, unless required by their job.
-
-
+    
     ## Medical:
 
     1. Chemistry is to immediately begin researching the cure to the infection.
     
     2. Medical entrances should be locked down to prevent further infection of medical personnel. Crew should be let into medical in a controlled manner.
     
-    3. Any potentially infected personnel should be isolated.
+    3. Any potentially infected personnel should be isolated to prevent further spread of the infection.
     
-    4. Any pacified infected personnel should be brought to chemistry to aid in cure production.
-    
-    5. A cure should be distributed to the crew once available.
+    4. A cure should be distributed to the crew once available.
 
     ## General Crew:
 
@@ -49,5 +45,5 @@
 
     ## Command:
 
-    Should the station threat become too high to handle, emergency shuttle should be called.
+    Should the station threat become too high to handle, the emergency shuttle should be called.
 </Document>

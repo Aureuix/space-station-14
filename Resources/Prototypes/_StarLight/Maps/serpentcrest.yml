@@ -2,7 +2,7 @@
   id: StarlightSerpentcrest
   mapName: 'Serpentcrest'
   mapPath: /Maps/_Starlight/Stations/Serpentcrest.yml
-  minPlayers: 60
+  minPlayers: 25 # SpL Change
   maxPlayers: 150
   stations:
     StarlightSerpentcrest:

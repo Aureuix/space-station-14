@@ -32,6 +32,18 @@
       "license": "CC-BY-SA-3.0"
     },
     {
+      "name": "tail_dodge",
+      "directions": 4,
+      "copyright": "Darkrell",
+      "license": "CC-BY-SA-3.0"
+    },
+    {
+      "name": "tail_front",
+      "directions": 4,
+      "copyright": "Darkrell",
+      "license": "CC-BY-SA-3.0"
+    },
+    {
       "name": "tail_wagging",
       "directions": 4,
       "copyright": "Darkrell",

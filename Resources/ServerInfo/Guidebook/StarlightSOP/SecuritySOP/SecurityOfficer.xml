@@ -3,36 +3,26 @@
 
 <GuideEntityEmbed Entity="ToyFigurineSecurity" Caption="Security Officer"/>
 
-1 . Standard [color=#00a933]Code Green[/color] equipment is:
+    Security Officers are the rank and file of the Security Department.
+    
+    1 . Standard [color=#00a933]Code Green[/color] equipment is:
 <Box>
 	<GuideEntityEmbed Entity="WeaponDisabler"/>
 	<GuideEntityEmbed Entity="Stunbaton"/>
 	<GuideEntityEmbed Entity="WeaponPistolMk58"/>
 </Box>
-<Box>
-	<GuideEntityEmbed Entity="HoloprojectorSecurity"/>
-	<GuideEntityEmbed Entity="FlashlightSeclite"/>
-	<GuideEntityEmbed Entity="RadioHandheldSecurity"/>
-</Box>
-<Box>
-	<GuideEntityEmbed Entity="CombatKnife"/>
-	in
-	<GuideEntityEmbed Entity="ClothingShoesBootsJack"/>
-</Box>
-<Box>
-	<GuideEntityEmbed Entity="GrenadeFlashBang"/>
-	or
-	<GuideEntityEmbed Entity="TearGasGrenade"/>
-</Box>
-<Box>
-	<GuideEntityEmbed Entity="Handcuffs"/>
-	or
-	<GuideEntityEmbed Entity="Zipties"/>
-</Box>
 
-2. Security Officers are to patrol the station unless an active threat has been recognized.
+    In the case of [color=#ff0000]shifting alert codes[/color], Security personnel are to defer to relevant SOP, or failing that to their superiors.
+    
+    2. Security Officers are to patrol the station unless an active threat has been identified. 
+    Officers may act within SOP to [color=#ffe100]prevent crimes[/color], and to charge fines or [color=#ff0000]make arrests[/color] of offending individuals if necessary.
 
-3. Security Officers are responsible for assigning sentences up to 20 minutes, but should inform the Warden of the accusation and sentencing if timing exceeds 10 minutes. Sentences over 20 minutes must be approved by the warden or Head of Security. 
+    3. Security Officers may assign sentences of [color=#ffe100]up to 20 minutes[/color], but should inform the Warden of the accusation and sentencing if timing exceeds 10 minutes. 
+    The Warden or Head of Security is highly encouraged to personally approve all sentences. Sentences over 20 minutes [color=#ff0000]must[/color] be approved by the Warden or Head of Security. 
 
-4. It is advised on [color=#2a6099]Code Blue[/color] or above that Security Officers patrol the station in pairs.
+    4. It is advised on [color=#2a6099]Code Blue[/color] or above that Security Officers patrol the station in pairs. 
+    If patrolling in pairs is not feasible due to the scale of a given threat or lack of personnel, officers are highly encouraged to carry a [color=#ff0000]Crisis Button[/color].
+    
+    5. Security Officers may be field promoted to Detective, Brigmedic, or Warden roles by the Head of Security, or to the Head of Security role by the Captain/ACO.
+    This is encouraged if officers express an interest in covering for absent roles, although they should be noted as an interim on their ID.
 </Document>

@@ -1,0 +1,40 @@
+﻿- type: entity
+  parent: Jump
+  id: JumpAvali
+  categories: [ HideSpawnMenu ]
+  name: Dash
+  description: You dash in the selected direction.
+  components:
+  - type: Action
+    useDelay: 15
+  - type: WorldTargetAction
+    event: !type:JumpActionEvent
+      distance: 3
+      speed: 20
+      sound:
+        path: /Audio/Effects/thudswoosh.ogg
+        
+- type: entity
+  parent: Jump
+  id: LagoHop
+  categories: [ HideSpawnMenu ]
+  name: "[color=orange]Bunny Hop[/color]"
+  description: You hop in the selected direction.
+  components:
+  - type: Action
+    useDelay: 0.5
+    itemIconStyle: NoItem
+    icon:
+      sprite: _Starlight/Actions/resomi.rsi
+      state: jump
+  - type: LimitedCharges
+    maxCharges: 6
+  - type: AutoRecharge
+    rechargeDuration: 50
+  - type: WorldTargetAction
+    event: !type:JumpActionEvent
+      distance: 1.5  # a litle less than three tiles
+      toPointer: false # only control over direction, not distance
+      speed: 8       # almost double movement speed
+      sound:
+        path: /Audio/_Starlight/Effects/Jump/resomi.ogg

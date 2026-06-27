@@ -1,17 +1,40 @@
 <Document>
-# Prisoner Treatment
+# Prisoner Handling
+    
+    ## Arrest and Processing Procedure
 
-1. Prisoners must be read their list of crimes before the warden before sentencing can commence. Any time spent in confinement must be subtracted from the total time of their sentence.
+    1. Prisoners [color=#ff0000]must[/color] be read their list of crimes before sentencing can commence. Sentencing should be done in accordance with Corporate Law. 
+    Any time spent in processing and confinement [color=#ff0000]must[/color] be subtracted from the total time of their sentence.
 
-2. Arrested prisoners are to be searched upon entry to Security. ID's and PDA's are to be removed from prisoners while in confinement. Prisoners are to be provided/allowed their own radio communications equipment.
+    2. Arrested prisoners are to be searched upon entry to Security. IDs, PDAs, and searched items are to be [color=#ff0000]removed[/color] from prisoners while in confinement. 
+    Prisoners are to be provided/allowed their own radio communications equipment.
+    
+    Prisoner searches include:
+    - Pockets
+    - PDA Slot
+    - Bags
+    - Coats/overwear
+    
+    3. Once an arrest has been made, the prisoner should be marked as "[color=#2a6099]Detained[/color]" in the Security Records Computer, and an Arrest Report should be filled out at the earliest convenience.
+    Arrest reports may be waived in the face of [color=#8d281e]imminent station destruction[/color], or if hostilities are still ongoing. There can be time for paperwork later.
+    
+    4. Once a prisoner has served their sentence, their possessions should be returned to them and they should be marked as "[color=#2a6099]Discharged[/color]" in the Security Records Computer.
+    Prisoners' temporary IDs should be recovered and stored in a secure location following their release.
 
-Prisoner searches include:
-- Pockets
-- PDA Slot
-- Bags
-- Coats/overwear
+    ## Prisoner Treatment
+    
+    1. Prisoners placed into confinement are to be unrestrained. Prisoners who become combative or pose a flight risk may be restrained at the Warden's discretion.
+    
+    2. Prisoners not accused of a violent crime are permitted to keep their current clothing unless there is evidence beyond reasonable doubt that said clothing is contraband or may aid in their escape.
 
-3. Prisoners placed into confinement are to be unrestrained. Prisoners who become combative or pose a flight risk may be restrained at the Warden's discretion.
-
-4. Prisoners who receive perma/execution sentences may request a trial for their crimes, as decided by a jury of 12 of their peers. This may be waived in the face of imminent station destruction.
+    3. Prisoners are to be kept watch of where possible, and should be provided adequate sustenance and enrichment. Prisoners who attempt to escape should be prevented using [color=#ffe100]non-lethal means[/color].
+    
+    ## Legal Rights
+    
+    1. If there is an [color=#ffe100]Internal Affairs Agent[/color] or [color=#ffe100]Magistrate[/color] on shift, prisoners may request a review of their sentencing if they believe it to be wrongful or draconic.
+    
+    2. Prisoners who receive permanent or execution sentences may [color=#00a933]request a trial[/color] for their crimes, as decided by a jury of 12 of their peers. 
+    This may be waived in the face of [color=#8d281e]imminent station destruction[/color].
+    
+    3. Prisoners may request a copy of their arrest report following their release.
 </Document> 

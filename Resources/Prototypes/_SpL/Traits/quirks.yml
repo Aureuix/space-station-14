@@ -1,0 +1,11 @@
+﻿- type: trait
+  id: AlcoholTolerance
+  name: trait-alcoholtolerance-name
+  description: trait-alcoholtolerance-desc
+  category: Quirks
+  cost: 0
+  effects:
+    - !type:AddCompsEffect
+      components:
+        - type: LightweightDrunk
+          boozeStrengthMultiplier: 0.5

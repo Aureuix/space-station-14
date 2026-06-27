@@ -17,6 +17,8 @@
     - Lagomorphian
   - type: StaminaSurge
   - type: Zoomies
+  - type: Jump # SpL Change
+    action: LagoHop # SpL Change
   - type: Icon
     sprite: _Starlight/Mobs/Species/Lagomorph/parts.rsi
     state: full
@@ -37,7 +39,7 @@
       Peckish: 110
       Starving: 55
       Dead: 0
-    baseDecayRate: 0.02
+    baseDecayRate: 0.03 # SpL Change- Hungy
   - type: Thirst
     thresholds:
       OverHydrated: 610
@@ -45,14 +47,21 @@
       Thirsty: 310
       Parched: 155
       Dead: 0
+  - type: MobThresholds # SpL Change
+    thresholds: # SpL Change
+      0: Alive # SpL Change
+      90: Critical # SpL Change
+      180: Dead # SpL Change
+  - type: StaminaResistance 
+    damageCoefficient: 1.5 # SpL Change- they have so much motion potential that this just grants counterplay options
   - type: Speech
     speechSounds: ALLagomorph
     speechVerb: Lagomorph
     allowedEmotes: ['Squee', 'Snort', 'LagomorphSneeze', 'LagomorphSnore', 'LagomorphStomp']
   - type: ChatListenerRange # way better at hearing, +2 to all
     voiceRange: 12
-    whisperClearRange: 4
-    whisperMuffledRange: 7
+    whisperClearRange: 4 
+    whisperMuffledRange: 7 
     allowExtendListenRange: true
   - type: Vocal
     sounds:

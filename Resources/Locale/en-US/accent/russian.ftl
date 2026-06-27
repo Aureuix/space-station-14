@@ -2,18 +2,58 @@ accent-russian-words-1 = yes
 accent-russian-words-replace-1 = da
 
 accent-russian-words-2 = no
-accent-russian-words-replace-2 = nyet
+accent-russian-words-replace-2 = nět
 
 accent-russian-words-3 = grandma
 accent-russian-words-3-2 = grandmother
 accent-russian-words-3-3 = granny
-accent-russian-words-replace-3 = babushka
+accent-russian-words-replace-3 = bábuška
 
-accent-russian-words-4 = friend
-accent-russian-words-replace-4 = comrade
+accent-russian-words-4 = greetings
+accent-russian-words-replace-4 = zdrávstvujte
 
-accent-russian-words-5 = friends
-accent-russian-words-replace-5 = comrades
+accent-russian-words-5 = hi
+accent-russian-words-5-2 = hello
+accent-russian-words-replace-5 = privét
 
 accent-russian-words-6 = cheers
-accent-russian-words-replace-6 = na zdorovje
+accent-russian-words-replace-6 = na zdoróvʹje
+
+accent-russian-word-7 = goodbye
+accent-russian-word-7-2 = bye
+accent-russian-word-7-3 = farewell
+accent-russian-words-replace-7 = do svidánʹja
+
+accent-russian-word-8 = you're welcome
+accent-russian-word-8-2 = no problem
+accent-russian-words-replace-8 = né za što
+
+accent-russian-word-9 = this is
+accent-russian-word-9-2 = it is
+accent-russian-word-9-3 = it's
+accent-russian-words-replace-9 = is
+
+accent-russian-word-10 = cap
+accent-russian-word-10-2 = captain
+accent-russian-words-replace-10 = komandír
+
+accent-russian-word-11 = the 
+accent-russian-word-11-2 = a 
+accent-russian-words-replace-11 = '
+
+accent-russian-word-12 = bomb
+accent-russian-words-replace-12 = bomba
+
+accent-russian-word-13 = king
+accent-russian-word-13-2 = emperor
+accent-russian-word-13-3 = ruler
+accent-russian-word-13-4 = queen
+accent-russian-words-replace-13 = tsar
+
+accent-russian-word-14 = glory to
+accent-russian-word-14-2 = long live
+accent-russian-words-replace-14 = slava
+
+accent-russian-words-15 = thanks
+accent-russian-words-15-2 = thank you
+accent-russian-words-replace-15 = spasíbo

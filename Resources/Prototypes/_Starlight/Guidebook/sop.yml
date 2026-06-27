@@ -31,6 +31,7 @@
     - code-red
     - code-gamma
     - code-delta
+    - code-epsilon
     - code-yellow
     - code-orange
     - code-violet
@@ -65,24 +66,32 @@
   name: guide-entry-sl-code-delta
   text: "/ServerInfo/Guidebook/StarlightSOP/GeneralSOP/Alerts/code-delta.xml"
   priority: 5
+  
+# SpL Start
+- type: guideEntry
+  id: code-epsilon
+  name: guide-entry-spl-code-epsilon
+  text: "/ServerInfo/Guidebook/StarlightSOP/GeneralSOP/Alerts/code-epsilon.xml"
+  priority: 6
+# SpL End
 
 - type: guideEntry
   id: code-yellow
   name: guide-entry-sl-code-yellow
   text: "/ServerInfo/Guidebook/StarlightSOP/GeneralSOP/Alerts/code-yellow.xml"
-  priority: 6
+  priority: 7 # SpL
 
 - type: guideEntry
   id: code-orange
   name: guide-entry-sl-code-orange
   text: "/ServerInfo/Guidebook/StarlightSOP/GeneralSOP/Alerts/code-orange.xml"
-  priority: 7
+  priority: 8 # SpL
 
 - type: guideEntry
   id: code-violet
   name: guide-entry-sl-code-violet
   text: "/ServerInfo/Guidebook/StarlightSOP/GeneralSOP/Alerts/code-violet.xml"
-  priority: 8
+  priority: 9 # SpL
 
 
 
@@ -267,7 +276,7 @@
   - security-sop-prisonertreatment
   - security-sop-parole
   - security-sop-permitacquisition
-  - security-sop-specialsituations
+#  - security-sop-specialsituations # SpL change- monetary limits for hostage situations are fucking stupid
 
 
 - type: guideEntry
@@ -330,11 +339,11 @@
   text: "/ServerInfo/Guidebook/StarlightSOP/SecuritySOP/PermitAcquisition.xml"
   priority: 10
 
-- type: guideEntry
-  id: security-sop-specialsituations
-  name: guide-entry-sl-security-sop-specialsituations
-  text: "/ServerInfo/Guidebook/StarlightSOP/SecuritySOP/SpecialSituations.xml"
-  priority: 11
+#- type: guideEntry # SpL Change
+#  id: security-sop-specialsituations
+#  name: guide-entry-sl-security-sop-specialsituations
+#  text: "/ServerInfo/Guidebook/StarlightSOP/SecuritySOP/SpecialSituations.xml"
+#  priority: 11
 
 - type: guideEntry
   id: legal-sop-intro

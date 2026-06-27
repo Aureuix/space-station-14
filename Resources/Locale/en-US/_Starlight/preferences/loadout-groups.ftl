@@ -22,6 +22,7 @@ loadout-group-nanotrasenrepresentative-outerclothing = NanoTrasen representative
 loadout-group-nanotrasenrepresentative-jumpsuit = NanoTrasen representative jumpsuit
 loadout-group-nanotrasenrepresentative-eyewear = NanoTrasen representative eyewear
 loadout-group-nanotrasenrepresentative-shoes = NanoTrasen representative shoes
+loadout-group-nanotrasenrepresentative-neck = NanoTrasen representative neck
 
 loadout-group-captain-shoes = Captain shoes
 loadout-group-hop-shoes = Head of Personnel shoes
@@ -57,6 +58,7 @@ loadout-group-dutyofficer-belt = Duty officer belt
 # Law
 loadout-group-magistrate-jumpsuit = Magistrate jumpsuit
 loadout-group-magistrate-eyewear = Magistrate eyewear
+loadout-group-magistrate-neck = Magistrate neck
 loadout-group-magistrate-shoes = Magistrate shoes
 loadout-group-iia-shoes = Lawyer shoes
 loadout-group-magistrate-outer = Magistrate Outer Clothing

@@ -1,0 +1,21 @@
+﻿- type: trait
+  id: Redshirt
+  name: trait-redshirt-name
+  description: trait-redshirt-desc
+  category: Disabilities
+  cost: 0
+  effects:
+    - !type:AddCompsEffect
+      components:
+        - type: Redshirt
+          
+- type: trait
+  id: BrittleBones
+  name: trait-brittlebones-name
+  description: trait-brittlebones-desc
+  category: Disabilities
+  cost: 0
+  effects:
+    - !type:AddCompsEffect
+      components:
+        - type: BrittleBones

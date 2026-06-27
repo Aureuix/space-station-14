@@ -88,11 +88,11 @@ public sealed class SlurredSystem : SharedSlurredSystem
             {
                 if (character == ' ')
                     sb.Append(Loc.GetString("slur-accent-confused"));
-                else if (character == '.')
+/*                else if (character == '.') /// SpL removal
                 {
                     sb.Append(' ');
                     sb.Append(Loc.GetString("slur-accent-burp"));
-                }
+                } */
             }
 
             if (!_random.Prob(scale * 3/20))

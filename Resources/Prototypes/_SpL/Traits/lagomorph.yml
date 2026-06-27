@@ -1,0 +1,60 @@
+﻿- type: trait
+  id: StaminaSurge
+  name: trait-stamsurge-name
+  description: trait-stamsurge-desc
+  category: LagoTraits
+  effects:
+    - !type:AddCompsEffect
+      components:
+        - type: StaminaSurge
+  requirements:
+    - !type:SpeciesRequirement
+      species:
+        - Lagomorph
+
+- type: trait
+  id: Zoomies
+  name: trait-zoomies-name
+  description: trait-zoomies-desc
+  category: LagoTraits
+  effects:
+    - !type:AddCompsEffect
+      components:
+        - type: Zoomies
+  requirements:
+    - !type:SpeciesRequirement
+      species:
+        - Lagomorph
+
+- type: trait
+  id: LagoHop
+  name: trait-lagohop-name
+  description: trait-lagohop-desc
+  category: LagoTraits
+  effects:
+    - !type:AddCompsEffect
+      components:
+        - type: Jump
+          action: LagoHop
+  requirements:
+    - !type:SpeciesRequirement
+      species:
+        - Lagomorph
+      
+- type: trait
+  id: LagoEars
+  name: trait-lagoears-name
+  description: trait-lagoears-desc
+  category: LagoTraits
+  effects:
+    - !type:OverrideCompsEffect
+      components:
+        - type: ChatListenerRange 
+          voiceRange: 14
+          whisperClearRange: 5
+          whisperMuffledRange: 10
+          allowExtendListenRange: true
+  requirements:
+    - !type:SpeciesRequirement
+      species:
+        - Lagomorph

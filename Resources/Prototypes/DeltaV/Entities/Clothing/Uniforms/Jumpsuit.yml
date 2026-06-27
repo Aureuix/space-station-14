@@ -109,3 +109,4 @@
   description: A bright security suit to distinguish yourself from the warden, while giving them an excuse to beat you saying you looked like a prisoner.
   components:
     - type: Sprite
+      sprite: DeltaV/Clothing/Uniforms/Jumpsuit/prisonguard.rsi

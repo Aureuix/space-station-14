@@ -9,6 +9,7 @@
       - EncryptionKeyCommand
       - EncryptionKeyCommon
       - EncryptionKeySecurity
+      - EncryptionKeyNanoTrasen
   - type: Sprite
     sprite: _Starlight/Admeme/Clothing/Ears/Headsets/ntnc.rsi
   - type: Clothing
