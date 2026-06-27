@@ -37,9 +37,9 @@ accent-russian-word-10 = cap
 accent-russian-word-10-2 = captain
 accent-russian-words-replace-10 = komandír
 
-accent-russian-word-11 = the 
-accent-russian-word-11-2 = a 
-accent-russian-words-replace-11 = '
+accent-russian-word-11 = thanks
+accent-russian-word-11-2 = thank you
+accent-russian-words-replace-11 = spasíbo
 
 accent-russian-word-12 = bomb
 accent-russian-words-replace-12 = bomba
@@ -53,7 +53,3 @@ accent-russian-words-replace-13 = tsar
 accent-russian-word-14 = glory to
 accent-russian-word-14-2 = long live
 accent-russian-words-replace-14 = slava
-
-accent-russian-words-15 = thanks
-accent-russian-words-15-2 = thank you
-accent-russian-words-replace-15 = spasíbo
