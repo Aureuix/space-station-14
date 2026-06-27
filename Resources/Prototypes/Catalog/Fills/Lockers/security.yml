@@ -133,31 +133,31 @@
     - id: ClothingOuterCoatAMG
     - id: ClothingUniformJumpsuitBrigmedic
     - id: ClothingUniformJumpskirtBrigmedic
-    - id: ClothingUniformJumpskirtOfLife
-      prob: 0.1
-    - id: ClothingUniformJumpsuitOfLife # Starlight
-      prob: 0.1 # Starlight
+#    - id: ClothingUniformJumpskirtOfLife # SpL Removal
+#      prob: 0.1
+#    - id: ClothingUniformJumpsuitOfLife # Starlight
+#      prob: 0.1 # Starlight
     - id: MedkitFilled
     - id: BedsheetBrigmedicStrange # Starlight
     - id: BedsheetBrigmedic # Starlight
-    - !type:GroupSelector
-      prob: 0.7
-      children:
-      - id: MedkitCombatFilled
-        weight: 1.6
-      - id: MedkitAdvancedFilled
-      - id: MedkitOxygenFilled
-        weight: 0.8
-      - id: MedkitBruteFilled
-        weight: 0.8
-      - id: MedkitToxinFilled
-        weight: 0.8
-      - id: MedkitBurnFilled
-        prob: 1.8
-    - id: ClothingNeckCloakMoth #bzzz Moth-pocalypse
-      prob: 0.15
+#    - !type:GroupSelector # SpL
+#      prob: 0.7
+#      children:
+    - id: MedkitCombatFilled
+#        weight: 1.6
+#      - id: MedkitAdvancedFilled
+#      - id: MedkitOxygenFilled
+#        weight: 0.8
+#      - id: MedkitBruteFilled
+#        weight: 0.8
+#      - id: MedkitToxinFilled
+#        weight: 0.8
+#      - id: MedkitBurnFilled
+#        prob: 1.8
+#    - id: ClothingNeckCloakMoth #bzzz Moth-pocalypse
+#      prob: 0.15
     - id: PlushieMorgana #starlight
-    - id: PlushieKiller #starlight
+#    - id: PlushieKiller #starlight # SpL
     - id: JawsOfLifeMed #Starlight
 
 

@@ -1,7 +1,7 @@
 - type: entity
   parent: [ClothingOuterHardsuitBase, BaseSyndicateContraband ]
   id: ClothingOuterHardsuitCSElite
-  name: CyberSun Elite Suit
+  name: cybersun elite suit
   description: A suit made by CyberSun's R&D department, who decided to one-up the Gorlex Marauders in the world of advanced hardsuits. Comes with a built in 3 hit shield, no capacity increases.
   components:
   - type: Sprite

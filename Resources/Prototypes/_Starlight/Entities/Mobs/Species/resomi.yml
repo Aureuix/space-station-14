@@ -305,9 +305,6 @@
     - AnomalyHost
     - Resomi
     - NotLabelable
-  - type: NightVision
-  - type: FlashModifier
-    modifier: 2
 
 - type: entity
   parent: BaseSpeciesDummy

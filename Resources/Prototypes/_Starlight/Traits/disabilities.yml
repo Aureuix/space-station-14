@@ -183,3 +183,20 @@
         - Shadekin
   conflicts:
     - HighLightSensitivity
+  
+- type: trait
+  id: Nightblind
+  name: trait-nightblind-name
+  description: trait-nightblind-desc
+  category: Disabilities
+  cost: 0
+  effects:
+    - !type:AddCompsEffect
+      components:
+        - type: NightVisionBlocker
+  requirements:
+    - !type:SpeciesRequirement
+      species:
+        - Cyclorite
+        - Resomi
+        - Shadekin
