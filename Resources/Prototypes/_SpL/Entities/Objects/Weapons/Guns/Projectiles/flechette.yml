@@ -1,0 +1,35 @@
+﻿- type: entity
+  categories: [ HideSpawnMenu ]
+  parent: AntiMaterielBulletTrace
+  id: BulletFlechette
+  name: flechette
+  components:
+    - type: HitscanBasicDamage
+      armorPenetration: 0.25
+      damage:
+        types:
+          Piercing: 30
+          Structural: 5
+    - type: HitscanPierce
+      chance: 0.5
+      pierceLevel: Rock
+      deviation: 0.03
+    - type: HitscanRicochet
+      chance: 0.5
+    - type: HitscanReflect
+      reflectiveType: NonEnergy
+      maxReflections: 20
+    - type: HitscanBasicVisuals
+      muzzleFlash:
+        sprite: _Starlight/Objects/Weapons/Guns/Projectiles/projectiles.rsi
+        state: muzzle
+      travelFlash:
+        sprite: _Starlight/Objects/Weapons/Guns/Projectiles/projectiles.rsi
+        state: trace
+      impactFlash:
+        sprite: _Starlight/Objects/Weapons/Guns/Projectiles/projectiles.rsi
+        state: impact
+      bullet:
+        sprite:
+          sprite: /Textures/_SpL/Objects/Weapons/Guns/Projectiles/projectiles.rsi
+          state: flechette

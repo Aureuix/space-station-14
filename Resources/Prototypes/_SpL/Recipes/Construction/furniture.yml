@@ -1,0 +1,36 @@
+﻿- type: construction
+  id: ChairMaglev
+  graph: AvaliChair
+  startNode: start
+  targetNode: chairMaglev
+  category: construction-category-furniture
+  objectType: Structure
+  placementMode: SnapgridCenter
+  canBuildInImpassable: false
+  conditions:
+    - !type:TileNotBlocked
+      
+- type: construction
+  id: ChairBeanbag
+  graph: AvaliChair
+  startNode: start
+  targetNode: chairBeanbag
+  category: construction-category-furniture
+  objectType: Structure
+  placementMode: SnapgridCenter
+  canBuildInImpassable: false
+  conditions:
+    - !type:TileNotBlocked
+      
+- type: construction
+  id: ChairPillow
+  graph: AvaliChair
+  startNode: start
+  targetNode: chairPillow
+  category: construction-category-furniture
+  objectType: Structure
+  placementMode: SnapgridCenter
+  canBuildInImpassable: false
+  conditions:
+    - !type:TileNotBlocked
+      

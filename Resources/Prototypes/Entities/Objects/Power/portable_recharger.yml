@@ -37,3 +37,6 @@
         whitelist:
           components:
           - BatteryAmmoProvider
+        blacklist: 
+          tags:
+          - IlluminateTech #SpL

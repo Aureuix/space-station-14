@@ -1,0 +1,16 @@
+﻿- type: entity
+  id: PottedPlantIlluminateCrystal
+  name: aerogel crystal garden
+  description: A small, carefully crafted display in a pot.
+  parent: PottedPlantBase
+  components:
+    - type: Sprite
+      sprite: _SpL/Structures/Furniture/potted_plants.rsi
+      state: plant-01
+    - type: PointLight
+      offset: 0, 0.2 
+      radius: 1.5
+      energy: 1.5
+      falloff: 2
+      color: "#ff7a00"
+      castShadows: false 

@@ -1,0 +1,22 @@
+﻿- type: entity
+  parent: [ BaseCartridge, BaseIlluminateContraband ]
+  id: IlluminateCartridgeFlechette
+  name: flechette round
+  description: a jet-propelled flechette round. Not as scary as a coil-launched one, but still hurts like hell.
+  components:
+    - type: Tag
+      tags:
+        - CartridgeFlechette
+        - IlluminateTech
+    - type: CartridgeAmmo
+      proto: BulletFlechette
+      deleteOnSpawn: true
+    - type: Sprite
+      noRot: false
+      sprite: /Textures/_SpL/Objects/Weapons/Ammunition/Casings/cartridge_flechette.rsi
+      layers:
+        - state: base
+          map: ["enum.AmmoVisualLayers.Base"]
+    - type: Appearance
+    - type: StaticPrice
+      price: 10
