@@ -63,7 +63,7 @@
     - !type:OverrideCompsEffect
       components:
         - type: MovementSpeedModifier
-          baseSprintSpeed: 5 # Approximately 10% faster
+          baseSprintSpeed: 4.7 # Approximately 5% faster
         - type: Hunger
           baseDecayRate: 0.03 # Restores to base SL rates
   requirements:
