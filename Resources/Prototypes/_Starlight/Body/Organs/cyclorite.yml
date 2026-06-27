@@ -47,8 +47,9 @@
       - state: eyeball
   - type: FunctionalOrgan
     comps: 
-    - type: CycloriteVision
+#    - type: CycloriteVision
     - type: NightVision
+      disabilityBlockable: true
   - type: OrganVisualization
     layer: Eyes
     prototypes:

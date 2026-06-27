@@ -478,6 +478,7 @@
   - ChefJumpsuit
   - ChefJumpskirt
   - MaidOutfit # Starlight
+  - ChefJumpsuitSenior # Starlight
 
 
 - type: loadoutGroup
@@ -488,6 +489,7 @@
   - ChefApron
   - ChefJacket
   - ChefWintercoat
+  - ChefJacketSenior # Starlight
 
 - type: loadoutGroup
   id: ChefJobTrinkets

@@ -4,7 +4,7 @@
       "x": 32,
       "y": 32
     },
-    "copyright": "Original Sec locker taken from tgstation, Doublesec done by Killer Tamashi | Double salv/mining by mikeysaurus",
+    "copyright": "Original Sec locker taken from tgstation, Doublesec done by Killer Tamashi | Double salv/mining by mikeysaurus, double cargo/mail by wonderfulnewworld (GitHub)",
     "license": "CC-BY-SA-3.0",
     "states": [
         {
@@ -75,6 +75,18 @@
         },
         {
             "name": "salvage_open"
+        },
+        {
+          "name": "cargo"
+        },
+        {
+          "name": "cargo_door"
+        },
+        {
+          "name": "mail"
+        },
+        {
+          "name": "mail_door"
         }
     ]
 }

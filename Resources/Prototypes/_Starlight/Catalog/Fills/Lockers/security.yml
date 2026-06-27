@@ -25,8 +25,8 @@
           amount: 2
         - id: WeaponDisabler
           amount: 2
-        - id: ClothingUniformJumpsuitSecGrey
-          prob: 0.6
+#        - id: ClothingUniformJumpsuitSecGrey # SpL Change
+#          prob: 0.6
         - id: ClothingHeadHelmetBasic
           amount: 2
         - id: ClothingOuterArmorBasic
@@ -45,8 +45,8 @@
           amount: 2
         - id: ClothingShoesBootsJack
           amount: 2
-        - id: WeaponMeleeNeedle
-          prob: 0.5
+#        - id: WeaponMeleeNeedle # SpL Change
+#          prob: 0.5
         - id: HoloprojectorSecurity
           amount: 2
         - id: BookSpaceLaw
@@ -91,31 +91,31 @@
         - id: MedkitFilled
           amount: 2
         - id: MedkitCombatFilled
-          prob: 0.6
-        - id: MedkitCombatFilled
-          prob: 0.6
-        - id: MedkitAdvancedFilled
-          prob: 0.4
-        - id: MedkitAdvancedFilled
-          prob: 0.4
-        - id: MedkitOxygenFilled
-          prob: 0.3
-        - id: MedkitOxygenFilled
-          prob: 0.3
-        - id: MedkitBruteFilled
-          prob: 0.3
-        - id: MedkitBruteFilled
-          prob: 0.3
-        - id: MedkitToxinFilled
-          prob: 0.3
-        - id: MedkitToxinFilled
-          prob: 0.3
-        - id: MedkitBurnFilled
-          prob: 0.7
-        - id: MedkitBurnFilled
-          prob: 0.7
-        - id: ClothingNeckCloakMoth #bzzz Moth-pocalypse
-          prob: 0.35
+#          prob: 0.6 # SpL Change
+#        - id: MedkitCombatFilled
+#          prob: 0.6
+#        - id: MedkitAdvancedFilled
+#          prob: 0.4
+#        - id: MedkitAdvancedFilled
+#          prob: 0.4
+#        - id: MedkitOxygenFilled
+#          prob: 0.3
+#        - id: MedkitOxygenFilled
+#          prob: 0.3
+#        - id: MedkitBruteFilled
+#          prob: 0.3
+#        - id: MedkitBruteFilled
+#          prob: 0.3
+#        - id: MedkitToxinFilled
+#          prob: 0.3
+#        - id: MedkitToxinFilled
+#          prob: 0.3
+#        - id: MedkitBurnFilled
+#          prob: 0.7
+#        - id: MedkitBurnFilled
+#          prob: 0.7
+#        - id: ClothingNeckCloakMoth #bzzz Moth-pocalypse
+#          prob: 0.35
         - id: RubberStampBrigmedic
           amount: 2
         - id: PlushieMorgana

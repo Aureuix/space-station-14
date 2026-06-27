@@ -10,6 +10,7 @@
           - id: Paper
           - id: Pen
           - id: RubberStampIAA
+          - id: Flash
 
 # Syndicate dead drop
 - type: entity
