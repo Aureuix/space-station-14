@@ -24,5 +24,5 @@ public sealed partial class TargetCryoTeleportationComponent : Component
     /// Determines how much extra time we need to wait for cryo teleportation.
     /// </summary>
     [DataField]
-    public TimeSpan TimeDelay = TimeSpan.FromSeconds(0);
+    public TimeSpan TimeDelay = TimeSpan.FromMinutes(60); // SpL change
 }
