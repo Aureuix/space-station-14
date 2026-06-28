@@ -20,14 +20,14 @@ public sealed partial class CryostorageComponent : Component
     /// </summary>
     [DataField, ViewVariables(VVAccess.ReadWrite)]
     [AutoNetworkedField]
-    public TimeSpan NoMindGracePeriod = TimeSpan.FromSeconds(30f);
+    public TimeSpan NoMindGracePeriod = TimeSpan.FromSeconds(5f); // SpL change, down from 30 seconds
 
     /// <summary>
     /// How long a player can remain inside Cryostorage before automatically being taken care of.
     /// </summary>
     [DataField, ViewVariables(VVAccess.ReadWrite)]
     [AutoNetworkedField]
-    public TimeSpan GracePeriod = TimeSpan.FromMinutes(5f);
+    public TimeSpan GracePeriod = TimeSpan.FromMinutes(120f); // SpL change, up from 5 minutes
 
     /// <summary>
     /// A list of players who have actively entered cryostorage.
