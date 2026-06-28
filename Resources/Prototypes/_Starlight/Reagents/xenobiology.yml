@@ -53,26 +53,26 @@
   metabolisms:
     Medicine:
       effects:
-        - !type:ChangeSpeciesFromList
-          speciesList:
-            - Arachnid
-            - Diona
-            - Dwarf
-            - Gingerbread
-            - Human
-            - Moth
-            - Reptilian
-            - Resomi
-            - Skeleton
-            - SlimePerson
-            - Vox
-            - Vulpkanin
-            - Abductor
-            - Avali
-            - Cyclorite
-            - Felionoid
-            - Shadekin
-            - Thaven
+#        - !type:ChangeSpeciesFromList # SpL change
+#          speciesList:
+#            - Arachnid
+#            - Diona
+#            - Dwarf
+#            - Gingerbread
+#            - Human
+#            - Moth
+#            - Reptilian
+#            - Resomi
+#            - Skeleton
+#            - SlimePerson
+#            - Vox
+#            - Vulpkanin
+#            - Abductor
+#            - Avali
+#            - Cyclorite
+#            - Felionoid
+#            - Shadekin
+#            - Thaven
         # Starlight-Start: Cyclorite Metabolism
         - !type:AdjustReagent
           conditions:
@@ -93,8 +93,8 @@
   metabolisms:
     Medicine:
       effects:
-        - !type:ChangeSpecies
-          species: SlimePerson
+#        - !type:ChangeSpecies # SpL Removal
+#          species: SlimePerson
         # Starlight-Start: Cyclorite Metabolism
         - !type:AdjustReagent
           conditions:
@@ -115,8 +115,8 @@
   metabolisms:
     Medicine:
       effects:
-        - !type:MutateIntoEntity
-          entity: XenobiologySlimeGray
+#        - !type:MutateIntoEntity # SpL removal
+#          entity: XenobiologySlimeGray
         # Starlight-Start: Cyclorite Metabolism
         - !type:AdjustReagent
           conditions:
