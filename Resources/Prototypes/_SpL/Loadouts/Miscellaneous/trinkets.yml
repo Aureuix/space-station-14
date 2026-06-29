@@ -2,10 +2,11 @@
   id: ClothingKitsuneMask
   equipment:
     mask: ClothingKitsuneMask
-  groupBy: "trinkets"
+  groupBy: "masks"
   
 - type: loadout
   id: Umbrella
   storage:
-    back: Umbrella
-  groupBy: "trinkets"
+    back: 
+    - ItemUmbrella
+  groupBy: "umbrellas"
