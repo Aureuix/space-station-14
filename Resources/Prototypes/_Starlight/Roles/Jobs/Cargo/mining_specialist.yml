@@ -12,7 +12,7 @@
   icon: "JobIconMiningSpecialist"
   startingGear: MiningSpecialistGear
   supervisors: job-supervisors-qm
-  displayWeight: 2
+  displayWeight: 3 # SpL
   access:
   - Cargo
   - Mining
