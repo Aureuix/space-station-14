@@ -3,3 +3,9 @@
   equipment:
     mask: ClothingKitsuneMask
   groupBy: "trinkets"
+  
+- type: loadout
+  id: Umbrella
+  storage:
+    back: Umbrella
+  groupBy: "trinkets"
