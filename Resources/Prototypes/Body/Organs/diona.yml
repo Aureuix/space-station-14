@@ -28,7 +28,8 @@
 - type: entity
   id: OrganDionaBrain
   parent: [BaseOrganBrain, BaseDionaOrgan]
-  name: brain
+  name: diona brain
+  suffix: Diona
   description: "The central hub of a diona's pseudo-neurological activity, its root-like tendrils search for its former body."
   components:
   - type: Sprite
@@ -38,8 +39,9 @@
 - type: entity
   id: OrganDionaEyes
   parent: [BaseDionaOrgan, BaseOrganEyes]
-  name: eyes
-  description: "I see you!"
+  name: diona eyes
+  suffix: Diona
+  description: "We see you!"
   components:
   - type: Sprite
     layers:
@@ -55,7 +57,8 @@
 - type: entity
   id: OrganDionaStomach
   parent: [BaseDionaOrgan, BaseOrganStomach]
-  name: stomach
+  name: diona stomach
+  suffix: Diona
   description: "The diona's equivalent of a stomach, it reeks of asparagus and vinegar."
   components:
   - type: Sprite
@@ -88,7 +91,8 @@
 - type: entity
   id: OrganDionaLungs
   parent: [BaseDionaOrgan, BaseOrganLungs]
-  name: lungs
+  name: diona lungs
+  suffix: Diona
   description: "A spongy mess of slimy, leaf-like structures. Capable of breathing both carbon dioxide and oxygen."
   components:
   - type: Sprite

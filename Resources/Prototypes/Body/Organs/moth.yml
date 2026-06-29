@@ -1,7 +1,9 @@
 - type: entity
   id: OrganMothStomach
   parent: [OrganAnimalStomach, OrganHumanStomach]
-  categories: [ HideSpawnMenu ]
+  name: moth stomach
+  description: "A stomach specialized for digesting normally inedible cloth."
+  suffix: Moth
   components:
   - type: Stomach
     specialDigestible:
