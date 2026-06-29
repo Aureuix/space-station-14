@@ -46,7 +46,7 @@
 
 - type: entity
   id: OrganAvaliLiver
-  ame: avali liver
+  name: avali liver
   parent: OrganHumanLiver
   suffix: Avali
   description: "The liver of an Avali."
