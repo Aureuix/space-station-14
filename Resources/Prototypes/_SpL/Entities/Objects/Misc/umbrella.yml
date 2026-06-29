@@ -1,0 +1,44 @@
+﻿- type: entity
+  name: umbrella
+  parent: BaseItem
+  id: Umbrella
+  description: ...All those moments will be lost in time, like tears in rain...
+  components:
+    - type: ItemToggle
+      soundActivate:
+        path: /Audio/Weapons/telescopicon.ogg
+        params:
+          volume: -3
+      soundDeactivate:
+        path: /Audio/Weapons/telescopicoff.ogg
+        params:
+          volume: -3
+    - type: ItemToggleSize
+      activatedSize: Huge
+    - type: Sprite
+      sprite: _NF/Objects/Tools/umbrella.rsi
+      layers:
+        - state: icon
+        - state: icon_open
+          visible: false
+          map: [ "open" ]
+    - type: Item
+      size: Small
+      sprite: _NF/Objects/Tools/umbrella.rsi
+      heldPrefix: inhand
+    - type: UseDelay
+      delay: 0.5
+    - type: ToggleableVisuals
+      spriteLayer: open
+      inhandVisuals:
+        left:
+          - state: inhand-left-open
+        right:
+          - state: inhand-right-open
+    - type: Appearance
+    - type: MeleeWeapon
+      wideAnimationRotation: -135
+      attackRate: 1
+      damage:
+        types:
+          Blunt: 4.5
