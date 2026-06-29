@@ -384,8 +384,6 @@ public sealed class RadioSystem : EntitySystem
         }
 
         jobName ??= "";
-        
-        jobName = FormattedMessage.EscapeStringParameter(jobName); // Starlight: Prevent markup injection
 
         return (iconId, jobName);
     }
