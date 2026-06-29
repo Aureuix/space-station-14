@@ -12,6 +12,7 @@
     state: iconALT
   - type: ItemToggle
     onUse: false
+    activated: true
     verbToggleOn: plushie-voicebox-activate
     verbToggleOff: plushie-voicebox-deactivate
   - type: ComponentToggler
@@ -20,7 +21,8 @@
         dataset: PlushiesKosame
   - type: Vocalizer
     minVocalizeInterval: 15
-    maxVocalizeInterval: 45
+    maxVocalizeInterval: 30
+    hideChat: true
   - type: LanguageSpeaker
   - type: LanguageKnowledge
     speaks:
@@ -64,6 +66,18 @@
   - type: Sprite
     sprite: _SpL/Objects/Fun/Plushies/kanna_plushie.rsi
     state: icon
+  - type: ItemToggle
+    activated: true
+    onUse: false
+    verbToggleOn: plushie-voicebox-activate
+    verbToggleOff: plushie-voicebox-deactivate
+  - type: ComponentToggler
+    components:
+      - type: DatasetVocalizer
+        dataset: PlushiesKanna
+  - type: Vocalizer
+    minVocalizeInterval: 600
+    maxVocalizeInterval: 1200
 
 - type: entity
   parent: BaseVulpkaninFoxPlushie
@@ -90,6 +104,26 @@
   - type: Sprite
     sprite: _SpL/Objects/Fun/Plushies/eini_plushie.rsi
     state: icon
+  - type: ItemToggle
+    onUse: false
+    activated: true
+    verbToggleOn: plushie-voicebox-activate
+    verbToggleOff: plushie-voicebox-deactivate
+  - type: ComponentToggler
+    components:
+      - type: DatasetVocalizer
+        dataset: PlushiesEini
+  - type: Vocalizer
+    minVocalizeInterval: 120
+    maxVocalizeInterval: 240
+  - type: LanguageSpeaker
+  - type: LanguageKnowledge
+    speaks:
+      - GalacticCommon
+      - Scratch
+    understands:
+      - Scratch
+      - GalacticCommon
 
 - type: entity
   parent: BaseShadekinPlushie
@@ -115,3 +149,51 @@
     state: icon
   - type: Item
     sprite: _SpL/Objects/Fun/Plushies/tumma_plushie.rsi
+    
+- type: entity
+  parent: BaseVulpkaninPlushie
+  id: PlushieMaximilian
+  name: maximilian plushie
+  description: Maximilian Von Weber! A tired looking Vulp that seems like he could kill you in one shot, now in tiny squishy plush form! He looks angry. He seems like he's missing his other half.
+  components:
+    - type: Sprite
+      sprite: _SpL/Objects/Fun/Plushies/maximilian_plushie.rsi
+      state: icon
+    - type: Item
+      sprite: _SpL/Objects/Fun/Plushies/maximilian_plushie.rsi
+    - type: ItemToggle
+      onUse: false
+      activated: true
+      verbToggleOn: plushie-voicebox-activate
+      verbToggleOff: plushie-voicebox-deactivate
+    - type: ComponentToggler
+      components:
+        - type: DatasetVocalizer
+          dataset: PlushiesMaximilian
+    - type: Vocalizer
+      minVocalizeInterval: 120
+      maxVocalizeInterval: 240
+      
+- type: entity
+  parent: BaseMothPlushie
+  id: PlushieAzrael
+  name: azrael plushie
+  description: Your local large-ish and goth butterfly doctor in a huggable and marketable size! They look a bit sad. Maybe give them a squeeze or find their other half to make them feel better.
+  components:
+    - type: Sprite
+      sprite: _SpL/Objects/Fun/Plushies/azrael_plushie.rsi
+      state: icon
+    - type: Item
+      sprite: _SpL/Objects/Fun/Plushies/azrael_plushie.rsi
+    - type: ItemToggle
+      onUse: false
+      activated: true
+      verbToggleOn: plushie-voicebox-activate
+      verbToggleOff: plushie-voicebox-deactivate
+    - type: ComponentToggler
+      components:
+        - type: DatasetVocalizer
+          dataset: PlushiesAzrael
+    - type: Vocalizer
+      minVocalizeInterval: 120
+      maxVocalizeInterval: 240

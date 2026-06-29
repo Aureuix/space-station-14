@@ -3,3 +3,27 @@
   values:
     prefix: plushie-kosame-
     count: 44
+    
+- type: localizedDataset
+  id: PlushiesMaximilian
+  values:
+    prefix: plushie-maximilian-
+    count: 5
+      
+- type: localizedDataset
+  id: PlushiesAzrael
+  values:
+    prefix: plushie-azrael-
+    count: 8
+      
+- type: localizedDataset
+  id: PlushiesEini
+  values:
+    prefix: plushie-eini-
+    count: 8
+
+- type: localizedDataset
+  id: PlushiesKanna
+  values:
+    prefix: plushie-kanna-
+    count: 1
