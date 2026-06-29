@@ -1,7 +1,7 @@
 - type: gameMap
-  id: StarlightPrism
+  id: SpLPrism
   mapName: 'Prism Station'
-  mapPath: /Maps/_Starlight/Stations/Prism.yml
+  mapPath: /Maps/_SpL/Stations/Prism.yml # SpL Change
   minPlayers: 10 # SpL Change
   maxPlayers: 80
   stations:
