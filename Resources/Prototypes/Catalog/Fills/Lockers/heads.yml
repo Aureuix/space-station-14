@@ -8,17 +8,18 @@
     - id: BoxQMCircuitboards
     - id: BoxQMStamps
     - id: CigPackGreen
-      prob: 0.50
+#      prob: 0.50 # SpL- removed
     - id: ClothingHeadsetAltCargo
     - id: DoorRemoteCargo
     - id: AstroNavCartridge
     - id: ClothingHandsKnuckleDustersQM
-    - id: PlushieLance #starlight
+#    - id: PlushieLance #starlight # SpL- sorry, replaced
     - id: RadioHandheldExpedition #starlight
     - id: ClothingOuterHardsuitLuxmax #starlight
     - id: SalvageShuttleConsoleCircuitboard #starlight
     - id: MiningShuttleConsoleCircuitboard #starlight
     - id: EncryptionKeySalvage #starlight
+    - id: PlushieMaximilian # SpL
 #    - id: PrintedDocumentGreenshiftAlert #SL # SpL- removed
 #      conditions: #SL
 #      - !type:GamemodeCondition #SL
@@ -93,10 +94,10 @@
     - id: EncryptionKeyExpedition #starlight
     - id: SpyglassCaptain #Starlight
     - id: CommunicationTablet #Starlight
-    - id: HeadSkeleton # A skull to accompany your skeleton crew
-      conditions:
-      - !type:PlayerCountCondition
-        max: 15
+#    - id: HeadSkeleton # A skull to accompany your skeleton crew # SpL- Joke wasn't that funny
+#      conditions:
+#      - !type:PlayerCountCondition
+#        max: 15
 #    - id: PrintedDocumentGreenshiftAlert #SL #SpL- removed
 #      conditions: #SL
 #      - !type:GamemodeCondition #SL
@@ -184,11 +185,11 @@
     - id: BoxID
     - id: BoxPDA
     - id: CigarGoldCase
-      prob: 0.25
+#      prob: 0.25 # SpL
       # Fuck the HoP they don't deserve fucking cigars.
       # Yes they do fuck you.
     - id: ClothingBackpackIan
-      prob: 0.5
+#      prob: 0.5 # SpL
     - id: ClothingHeadsetHoP
     - id: ClothingNeckGoldmedal
     - id: DoorRemoteService
@@ -228,7 +229,7 @@
     - id: AccessConfigurator
     - id: BoxEncryptionKeyEngineering
     - id: CigarCase
-      prob: 0.15
+#      prob: 0.15 # SpL removal
     - id: ClothingBeltChiefEngineerFilled
     - id: ClothingEyesGlassesMeson
     - id: ClothingHandsGlovesColorYellow
@@ -246,7 +247,7 @@
     - id: RCDAmmo
     - id: RubberStampCE
     - id: MetalFoamGrenade
-    - id: PlushieMatthew #starlight
+#    - id: PlushieMatthew #starlight # SpL- removed
 #    - id: PrintedDocumentGreenshiftAlert #SL #SpL- removed
 #      conditions: #SL
 #      - !type:GamemodeCondition #SL
@@ -315,7 +316,7 @@
     - id: AutoMenderBruteFilled #Starlight
     - id: CMOLicense #STARLIGHT
     - id: EncryptionKeyMedicalScience # Starlight, steal target
-      prob: 0.5 # Starlight
+#      prob: 0.5 # Starlight # SpL- removed
 #    - id: PrintedDocumentGreenshiftAlert #SL #SpL- removed
 #      conditions: #SL
 #      - !type:GamemodeCondition #SL
@@ -323,6 +324,10 @@
 #        - Greenshift #SL
 #        - Sandbox #SL
     - id: JawsOfLifeMed #Starlight
+    - id: MedicalVitalsImplanter # SpL
+      amount: 3 # SpL
+    - id: PlushieAzrael # SpL
+      
 
 # Hardsuit table, used for suit storage as well
 - type: entityTable
@@ -375,7 +380,7 @@
     - id: HandTeleporter
     - id: RubberStampRd
     - id: EncryptionKeyMedicalScience # Starlight, steal target
-      prob: 0.5 # Starlight
+#      prob: 0.5 # Starlight # SpL- removed
 #    - id: PrintedDocumentGreenshiftAlert #SL # SpL- removed
 #      conditions: #SL
 #      - !type:GamemodeCondition #SL
@@ -385,6 +390,8 @@
     #region Starlight
     - id: RDDiploma
     - id: XenobiologyConsoleCameraTagger
+    - id: MedicalVitalsImplanter # SpL
+      amount: 2 # SpL
     #- id: PaperIonstormBorgs
     #  prob: 0.10 #1/10 rounds will have this paper that can be signed repeatedly for no discernable effect!
     #endregion Starlight
