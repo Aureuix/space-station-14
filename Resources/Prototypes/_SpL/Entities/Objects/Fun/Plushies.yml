@@ -197,3 +197,27 @@
     - type: Vocalizer
       minVocalizeInterval: 120
       maxVocalizeInterval: 240
+      
+- type: entity
+  parent: BaseMothPlushie
+  id: PlushieChesedM
+  name: chesed plushie
+  description: "A one-eyed moth plush with the faint scent of petrichor. This plushie depicts a real doctor, composed of the sacred gender fluid."
+  components:
+    - type: Sprite
+      sprite: _SpL/Objects/Fun/Plushies/chesed_m_plushie.rsi
+      state: icon
+    - type: Item
+      sprite: _SpL/Objects/Fun/Plushies/chesed_m_plushie.rsi
+      
+- type: entity
+  parent: BaseMothPlushie
+  id: PlushieChesedF
+  name: chesed plushie
+  description: "A one-eyed moth plush with the faint scent of petrichor. This plushie depicts a real doctor, composed of the sacred gender fluid."
+  components:
+    - type: Sprite
+      sprite: _SpL/Objects/Fun/Plushies/chesed_f_plushie.rsi
+      state: icon
+    - type: Item
+      sprite: _SpL/Objects/Fun/Plushies/chesed_f_plushie.rsi
