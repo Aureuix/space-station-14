@@ -6,13 +6,12 @@
   requirements:
     - !type:RoleTimeRequirement
       role: JobAtmosphericTechnician
-      time: 7h # Starlight
+      time: 1h # Starlight # SpL adjustment
     - !type:RoleTimeRequirement
       role: JobStationEngineer
-      time: 7h # Starlight
-    - !type:DepartmentTimeRequirement
-      department: Engineering
-      time: 20h # Starlight
+      time: 1h # Starlight # SpL adjustment
+    - !type:OverallPlaytimeRequirement # SpL
+      time: 10h # SpL
   weight: 10
   startingGear: ChiefEngineerGear
   icon: "JobIconChiefEngineer"

@@ -6,7 +6,7 @@
   requirements:
   - !type:RoleTimeRequirement
     role: JobSecurityOfficer
-    time: 10h # Starlight
+    time: 1h # Starlight # SpL adjustment
   startingGear: DetectiveGear
   icon: "JobIconDetective"
   supervisors: job-supervisors-hos

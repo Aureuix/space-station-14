@@ -5,8 +5,10 @@
   playTimeTracker: JobSalvageLead
   requirements:
     - !type:RoleTimeRequirement
-      role: JobQuartermaster
-      time: 18000 # 5 hours
+      role: JobSalvageSpecialist
+      time: 1h # SpL- you should know how to salv before you lead
+    - !type:OverallPlaytimeRequirement
+      time: 10h # Same as above
   icon: "JobIconSalvageLead"
   startingGear: SalvageLeadGear
   supervisors: job-supervisors-qm

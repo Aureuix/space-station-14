@@ -7,12 +7,12 @@
   # Starlight start
   requirements:
   - !type:OverallPlaytimeRequirement
-    time: 48h # You should at least have some familiarity with the community to actually be able to pull this off.
+    time: 20h # You should at least have some familiarity with the community to actually be able to pull this off. # SpL- reduced
   playTimeTracker: AntagParadoxClone
   # Starlight end
 
-# they need to be able to espace when spawning inside a locked room
-# TODO: remove this once we got a better spawning loacation selection
+# they need to be able to escape when spawning inside a locked room
+# TODO: remove this once we got a better spawning location selection
 - type: startingGear
   id: ParadoxCloneGear
   inhand:

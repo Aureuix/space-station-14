@@ -3,9 +3,9 @@
   name: ghost-role-information-tsf-crew-name
   description: ghost-role-information-tsf-marine-desc
   playTimeTracker: JobTSFCrew
-  requirements:
-    - !type:OverallPlaytimeRequirement
-      time: 72000 # 20h
+#  requirements: # SpL- timereqs for admeme ghostroles????
+#    - !type:OverallPlaytimeRequirement
+#      time: 72000 # 20h
   setPreference: false
   icon: JobIconTSF
   rules: job-rules-tsf-aligned
@@ -22,12 +22,12 @@
   name: ghost-role-information-tsf-marine-name
   description: ghost-role-information-tsf-marine-desc
   playTimeTracker: JobTSFMarine
-  requirements:
-    - !type:OverallPlaytimeRequirement
-      time: 72000 # 20h
-    - !type:DepartmentTimeRequirement
-      department: Security
-      time: 18000 # 5h
+#  requirements: # SpL- timereqs for admeme ghostroles????
+#    - !type:OverallPlaytimeRequirement
+#      time: 72000 # 20h
+#    - !type:DepartmentTimeRequirement
+#      department: Security
+#      time: 18000 # 5h
   setPreference: false
   icon: JobIconTSF
   rules: job-rules-tsf-aligned
@@ -44,14 +44,14 @@
   name: ghost-role-information-tsf-specops-name
   description: ghost-role-information-tsf-marine-desc
   playTimeTracker: TSFMarineElite
-  requirements:
-    - !type:OverallPlaytimeRequirement
-      time: 72000 # 20h
-    - !type:DepartmentTimeRequirement
-      department: Security
-      time: 18000 # 5h
-    - !type:RolesRequirement
-      proto: ExtRolesReq
+#  requirements: # SpL- timereqs for admeme ghostroles????
+#    - !type:OverallPlaytimeRequirement
+#      time: 72000 # 20h
+#    - !type:DepartmentTimeRequirement
+#      department: Security
+#      time: 18000 # 5h
+#    - !type:RolesRequirement
+#      proto: ExtRolesReq
   setPreference: false
   icon: JobIconTSF
   rules: job-rules-tsf-aligned
