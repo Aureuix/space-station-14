@@ -7,7 +7,7 @@
   guides: [ Zombies ]
   requirements:
   - !type:OverallPlaytimeRequirement
-    time: 2147483647h # Starlight start. It's like legal raiding. # SpL start. Yes, and that's why.
+    time: 1000000000h # Starlight start. It's like legal raiding. # SpL start. Yes, and that's why.
 #  - !type:DepartmentTimeRequirement # Mainly to know that you can treat yourself. Also teaches you what your primary target as an II is.
 #    department: Medical
 #    time: 4h
