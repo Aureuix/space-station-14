@@ -28,7 +28,7 @@
                 - /Maps/Shuttles/trading_outpost.yml
             cargo_mining_shuttle: !type:GridSpawnGroup
               paths:
-                - /Maps/_SpL/Shuttles/Salvage/Mining_Cracker.yml
+                - /Maps/_SpL/Shuttles/Salvage/Mining_Hammerhead.yml
               nameGrid: false
             cargo_salvage_shuttle: !type:GridSpawnGroup
               paths:
