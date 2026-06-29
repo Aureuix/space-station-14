@@ -103,7 +103,8 @@
   components:
   - type: Sprite
     sprite: _Starlight/Mobs/Species/Avali/organs.rsi
-    state: eyes
+    layers:
+      - state: eyes
 
 - type: entity
   id: OrganAvaliBrain
