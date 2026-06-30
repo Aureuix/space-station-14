@@ -1,6 +1,6 @@
 - type: entity
   name: bat
-  parent: [ SimpleMobBase, FlyingMobBase, MobCombat ]
+  parent: [ SimpleMobBase, FlyingMobBase, MobCombat, MobNightVision ]
   id: MobBat
   description: Some cultures find them terrifying, others crunchy on the teeth.
   components:
@@ -378,7 +378,7 @@
 
 - type: entity
   name: cockroach
-  parent: SimpleMobBase
+  parent: [SimpleMobBase, MobNightVision]
   id: MobCockroach
   description: This station is just crawling with bugs.
   components:
@@ -1798,7 +1798,7 @@
 
 - type: entity
   name: mouse
-  parent: SimpleMobBase
+  parent: [SimpleMobBase, MobNightVision]
   id: MobMouse
   description: Squeak!
   components:
@@ -2589,7 +2589,7 @@
 # Code unique spider prototypes or combine them all into one spider and get a
 # random sprite state when you spawn it.
 - type: entity
-  parent: [ SimpleMobBase, MobCombat ]
+  parent: [ SimpleMobBase, MobCombat, MobNightVision ]
   id: MobSpiderBase
   abstract: true
   components:
@@ -3653,7 +3653,7 @@
 
 - type: entity
   name: hamster
-  parent: [ SimpleMobBase, MobCombat, StripableInventoryBase]
+  parent: [ SimpleMobBase, MobCombat, StripableInventoryBase, MobNightVision]
   id: MobHamster
   description: A cute, fluffy, robust hamster.
   components:
