@@ -6,13 +6,13 @@
   requirements:
     - !type:DepartmentTimeRequirement
       department: Cargo
-      time: 3h # Less complex than salv, just learn how to use the shuttle
+      time: 1h # Less complex than salv, just learn how to use the shuttle # SpL reduction
     - !type:OverallPlaytimeRequirement 
       time: 5h # Same as above
   icon: "JobIconMiningSpecialist"
   startingGear: MiningSpecialistGear
   supervisors: job-supervisors-qm
-  displayWeight: 2
+  displayWeight: 3 # SpL
   access:
   - Cargo
   - Mining

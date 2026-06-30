@@ -4,18 +4,11 @@
   description: job-description-captain
   playTimeTracker: JobCaptain
   requirements:
-    - !type:DepartmentTimeRequirement
-      department: Engineering
-      time: 20h # Starlight
-    - !type:DepartmentTimeRequirement
-      department: Medical
-      time: 20h # Starlight
-    - !type:DepartmentTimeRequirement
-      department: Security
-      time: 20h # Starlight
-    - !type:DepartmentTimeRequirement
+    - !type:DepartmentTimeRequirement # SpL Start
       department: Command
-      time: 25h # Starlight
+      time: 5h
+    - !type:OverallPlaytimeRequirement
+      time: 20h # SpL end
   weight: 20
   startingGear: CaptainGear
   icon: "JobIconCaptain"

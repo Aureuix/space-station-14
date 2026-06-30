@@ -15,10 +15,10 @@
     understands:
     - GalacticCommon
     - Lagomorphian
-  - type: StaminaSurge
-  - type: Zoomies
-  - type: Jump # SpL Change
-    action: LagoHop # SpL Change
+#  - type: StaminaSurge # SpL Change
+#  - type: Zoomies
+#  - type: Jump 
+#    action: LagoHop 
   - type: Icon
     sprite: _Starlight/Mobs/Species/Lagomorph/parts.rsi
     state: full

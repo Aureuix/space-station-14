@@ -7,7 +7,7 @@
   # Starlight start
   guides: [ Changelings ]
   requirements:
-  - !type:OverallPlaytimeRequirement
-    time: 24h
+    - !type:OverallPlaytimeRequirement # SpL
+      time: 10h # SpL
   playTimeTracker: AntagChangeling
   # Starlight end

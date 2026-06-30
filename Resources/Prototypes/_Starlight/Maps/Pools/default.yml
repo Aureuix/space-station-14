@@ -19,7 +19,7 @@
   - StarlightStarboard
   - StarlightKiloton
   - StarlightElkridge
-  - StarlightPrism
+#  - StarlightPrism # SpL
   - StarlightSilica
   - StarlightCluster
   - StarlightBox
@@ -28,9 +28,12 @@
   - StarlightSpaceMall
   - StarlightBoxcars
   - StarlightSerpentcrest
-  - StarlightBarratry
+#  - StarlightBarratry # SpL
 # SpL Start
   - SpLBazaar
   - SpLPrefab
   - SpLFrontier
+  - SpLOmega
+  - SpLBarratry
+  - SpLPrism
 # SpL End

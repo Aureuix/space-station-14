@@ -5,9 +5,9 @@
   setPreference: false
   objective: roles-antag-ssf-objective
   requirements:
-  - !type:OverallPlaytimeRequirement
-    time: 72000 # 20h
-  - !type:DepartmentTimeRequirement
-    department: Security
-    time: 36000 # 10h
+  - !type:OverallPlaytimeRequirement # SpL
+    time: 10h # SpL
+#  - !type:DepartmentTimeRequirement
+#    department: Security
+#    time: 36000 # 10h
   playTimeTracker: AntagSSF

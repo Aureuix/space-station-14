@@ -4,15 +4,17 @@
   description: job-description-qm
   playTimeTracker: JobQuartermaster
   requirements:
-    - !type:RoleTimeRequirement
-      role: JobCargoTechnician
-      time: 5h
-    - !type:RoleTimeRequirement
-      role: JobSalvageSpecialist
-      time: 5h # Starlight
+#    - !type:RoleTimeRequirement # SpL removals
+#      role: JobCargoTechnician
+#      time: 5h
+#    - !type:RoleTimeRequirement
+#      role: JobSalvageSpecialist
+#      time: 5h # Starlight
     - !type:DepartmentTimeRequirement
       department: Cargo
-      time: 30h # Starlight
+      time: 5h # SpL
+    - !type:OverallPlaytimeRequirement
+      time: 10h # SpL
   weight: 10
   startingGear: QuartermasterGear
   icon: "JobIconQuartermaster" #Starlight

@@ -4,12 +4,12 @@
   description: job-description-technical-assistant
   playTimeTracker: JobTechnicalAssistant
   requirements:
-    - !type:OverallPlaytimeRequirement
-      time: 1h
-    - !type:DepartmentTimeRequirement
-      department: Engineering
-      time: 5h
-      inverted: true # stop playing intern if you're good at engineering!
+#    - !type:OverallPlaytimeRequirement # SpL- removed all of this because it's a learning role
+#      time: 1h
+#    - !type:DepartmentTimeRequirement
+#      department: Engineering
+#      time: 5h
+#      inverted: true # stop playing intern if you're good at engineering! # SpL- LET PEOPLE DO WHAT THEY WANT
   weight: -1 #Starlight
   startingGear: TechnicalAssistantGear
   icon: "JobIconTechnicalAssistant"

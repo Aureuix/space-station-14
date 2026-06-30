@@ -6,9 +6,9 @@
   requirements:
     - !type:DepartmentTimeRequirement
       department: Cargo
-      time: 5h # Starlight start. You should learn how to drive the shuttle, or at least sell stuff at ATS.
+      time: 1h # SpL
     - !type:OverallPlaytimeRequirement 
-      time: 8h
+      time: 5h # SpL
   icon: "JobIconSalvageSpecialist" # Starlight - New distinct icon, Starlight end
   startingGear: SalvageSpecialistGear
   supervisors: job-supervisors-qm

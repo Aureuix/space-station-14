@@ -167,7 +167,7 @@ public sealed partial class ZombieSystem
 
         _language.AddLanguage(target, "Zombie");
 
-        RemComp<VampireComponent>(target); //De-vamps Vampire zombies
+        // RemComp<VampireComponent>(target); //De-vamps Vampire zombies // SpL removal- we're doing a different thing with zombies
         RemComp<EggLayerComponent>(target); //Prevent infinite egg production
         RemComp<UdderComponent>(target); //Prevent infinite milk production
         RemComp<WoolyComponent>(target); //Prevent infinite wool production

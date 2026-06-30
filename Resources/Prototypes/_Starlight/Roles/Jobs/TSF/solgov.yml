@@ -3,10 +3,10 @@
   name: ghost-role-information-tsf-officer-name
   description: ghost-role-information-tsf-officer-desc
   playTimeTracker: JobSolGovOfficer
-  requirements:
-    - !type:DepartmentTimeRequirement
-      department: Security
-      time: 36000 # 10 hrs
+#  requirements: # SpL- timereqs for admeme ghostroles????
+#    - !type:DepartmentTimeRequirement
+#      department: Security
+#      time: 36000 # 10 hrs
   startingGear: SolGovOfficerGear
   setPreference: false
   icon: JobIconTSFOfficer
@@ -21,13 +21,13 @@
   name: ghost-role-information-tsf-officer-Sheriff-name
   description: ghost-role-information-tsf-officer-desc
   playTimeTracker: JobSolGovOfficerSheriff
-  requirements:
-    - !type:DepartmentTimeRequirement
-      department: Security
-      time: 36000 # 10 hrs
-    - !type:RoleTimeRequirement
-      role: JobSolGovOfficer
-      time: 7200 # 2 hrs
+#  requirements: # SpL- timereqs for admeme ghostroles????
+#    - !type:DepartmentTimeRequirement
+#      department: Security
+#      time: 36000 # 10 hrs
+#    - !type:RoleTimeRequirement
+#      role: JobSolGovOfficer
+#      time: 7200 # 2 hrs
   startingGear: SolGovOfficerSheriffGear
   setPreference: false
   icon: JobIconTSFOfficer

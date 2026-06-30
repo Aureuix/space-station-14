@@ -6,10 +6,10 @@
   requirements:
     - !type:DepartmentTimeRequirement
       department: Science
-      time: 14400 # 4 hrs
-    - !type:DepartmentTimeRequirement
-      department: Engineering
-      time: 14400 # 4 hrs
+      time: 1h # SpL change
+#    - !type:DepartmentTimeRequirement # SpL removal- why??
+#      department: Engineering
+#      time: 14400 # 4 hrs
   startingGear: RoboticistGear
   icon: JobIconRoboticist
   supervisors: job-supervisors-rd

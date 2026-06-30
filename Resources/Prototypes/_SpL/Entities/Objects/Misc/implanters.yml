@@ -1,0 +1,7 @@
+﻿- type: entity
+  id: MedicalVitalsImplanter
+  name: vitals implanter
+  parent: BaseImplantOnlyImplanter
+  components:
+    - type: Implanter
+      implant: MedicalVitalsImplant

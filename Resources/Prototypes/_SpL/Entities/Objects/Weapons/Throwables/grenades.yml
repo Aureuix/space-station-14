@@ -1,0 +1,36 @@
+﻿- type: entity
+  name: red lobster plushie
+  parent: PlushieBlueLobster
+  suffix: Instabomb
+  id: BlueLobsterBomb
+  components:
+    - type: Sprite
+      sprite: _Mono/Objects/Fun/blue_lobster.rsi
+      state: icon_red
+    - type: TriggerOnSpawn
+      keyOut: timerstart
+    - type: SpawnOnTrigger
+      proto: EffectFlashRedspace
+      keysIn:
+        - timerstart
+    - type: TimerTrigger
+      delay: 5
+      keysIn: 
+        - timerstart
+    - type: ExplodeOnTrigger
+      keysIn:
+        - timer
+    - type: Explosive
+      explosionType: Default
+      totalIntensity: 5000
+      intensitySlope: 15
+      maxIntensity: 60
+      canCreateVacuum: true
+    - type: Appearance
+    - type: EmitSoundOnSpawn
+      sound:
+        path: /Audio/_SpL/Items/bluelobster.ogg
+        params:
+          volume: 8
+    - type: StaticPrice
+      price: 2000

@@ -1,7 +1,8 @@
 ﻿- type: entity
+  parent: OrganHumanHeart
   id: OrganVulpkaninHeart
-  parent: OrganAnimalHeart
-  name: heart
+  name: vulpkanin heart
+  suffix: Vulpkanin
   description: "A disgustingly hyperactive pump designed to keep things animate."
   components:
     - type: Metabolizer
