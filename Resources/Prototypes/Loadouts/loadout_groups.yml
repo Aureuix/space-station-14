@@ -124,6 +124,7 @@
   - GoldenPersonalAI # Starlight end
   - AACTablet # DeltaV
   - ClothingKitsuneMask #Spectra
+  - Umbrella # SpL
 
 - type: loadoutGroup
   id: Glasses
