@@ -1,0 +1,18 @@
+﻿- type: entity
+  parent: BaseSubdermalImplant
+  id: MedicalVitalsImplant
+  name: vitals implant
+  description: This implant will inform the Medical radio channel should the user fall into critical condition or die.
+  categories: [ HideSpawnMenu ]
+  components:
+    - type: SubdermalImplant
+      whitelist:
+        components:
+          - MobState # admeme implanting chairs need to be able to die first- do I have a gas leak?
+    - type: TriggerOnMobstateChange
+      mobState:
+        - Critical
+        - Dead
+    - type: RattleOnTrigger
+      targetUser: true
+      radioChannel: Medical

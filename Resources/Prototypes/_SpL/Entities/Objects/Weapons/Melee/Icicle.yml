@@ -72,19 +72,19 @@
           Blunt: 25 # This provides 60 melee hits total
           
 - type: entity
-  name: VL15 "icicle" (empty)
+  name: VL15 "icicle" (depleted)
   description: A lightweight aerogel-bladed glaive commonly carried by Illuminate hatchery guards. This one's fabricator is out of matter, best you can do until it's recharged is whack people with the handle.
   id: WeaponIlluminateIcicleEmpty
   parent: [ BaseItem, BaseIlluminateContraband ]
   components:
     - type: Sprite
-      sprite: _SpL/Objects/Weapons/Melee/Illuminate/Icicle-Empty.rsi
+      sprite: _SpL/Objects/Weapons/Melee/Illuminate/Icicle-Depleted.rsi
       state: icon
     - type: Item
       size: Ginormous
-      sprite: _SpL/Objects/Weapons/Melee/Illuminate/Icicle-Empty-Inhands.rsi
+      sprite: _SpL/Objects/Weapons/Melee/Illuminate/Icicle-Depleted-Inhands.rsi
     - type: Clothing
-      sprite: _SpL/Objects/Weapons/Melee/Illuminate/Icicle-Empty.rsi
+      sprite: _SpL/Objects/Weapons/Melee/Illuminate/Icicle-Depleted.rsi
       quickEquip: false
       slots:
         - Back

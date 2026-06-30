@@ -2,8 +2,8 @@
   id: OrganAvaliStomach
   parent: OrganAnimalStomach
   suffix: Avali
-  name: stomach
-  description: "The stomach of an avali, on closer inspection, actually consists of two stomachs."
+  name: avali stomach
+  description: "On closer inspection, actually consists of two stomachs."
   components:
   - type: Stomach
     specialDigestible: 
@@ -30,7 +30,8 @@
   id: OrganAvaliHeart
   parent: OrganHumanHeart
   suffix: Avali
-  description: "The heart of an avali."
+  name: avali heart
+  description: "The heart of an Avali."
   components:
   - type: Metabolizer
     maxReagents: 2
@@ -45,9 +46,10 @@
 
 - type: entity
   id: OrganAvaliLiver
+  name: avali liver
   parent: OrganHumanLiver
   suffix: Avali
-  description: "The liver of an avali."
+  description: "The liver of an Avali."
   components:
   - type: Metabolizer # The liver metabolizes certain chemicals only, like alcohol.
     maxReagents: 1
@@ -61,8 +63,9 @@
 - type: entity
   id: OrganAvaliKidneys
   parent: OrganHumanKidneys
+  name: avali kidneys
   suffix: Avali
-  description: "The kidneys of an avali."
+  description: "The kidneys of an Avali."
   components:
   - type: Sprite
     sprite: _Starlight/Mobs/Species/Avali/organs.rsi
@@ -73,8 +76,9 @@
 - type: entity
   id: OrganAvaliLungs
   parent: OrganHumanLungs
+  name: avali lungs
   suffix: Avali
-  description: "The lungs of an avali."
+  description: "The lungs of an Avali."
   components:
   - type: Metabolizer
     removeEmpty: true
@@ -93,20 +97,21 @@
 - type: entity
   id: OrganAvaliEyes
   parent: OrganHumanEyes
-  name: eyes
+  name: avali eyes
   suffix: Avali
   description: "The eyes of an Avali."
   components:
-  - type: OrganVisualization
-    layer: Eyes
-    prototypes:
-      Default: MobAvaliEyes
+  - type: Sprite
+    sprite: _Starlight/Mobs/Species/Avali/organs.rsi
+    layers:
+      - state: eyes
 
 - type: entity
   id: OrganAvaliBrain
   parent: OrganHumanBrain
+  name: avali brain
   suffix: Avali
-  description: "The brain of an Avali. Where Avali think of evil thoughts"
+  description: "Where Avali think of evil thoughts"
   components:
   - type: Sprite
     sprite: _Starlight/Mobs/Species/Avali/organs.rsi

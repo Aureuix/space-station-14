@@ -156,10 +156,9 @@
 #        prob: 1.8
 #    - id: ClothingNeckCloakMoth #bzzz Moth-pocalypse
 #      prob: 0.15
-    - id: PlushieMorgana #starlight
+#    - id: PlushieMorgana #starlight # SpL
 #    - id: PlushieKiller #starlight # SpL
     - id: JawsOfLifeMed #Starlight
-
 
 - type: entity
   id: LockerDetectiveFilled

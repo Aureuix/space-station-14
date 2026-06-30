@@ -6,9 +6,11 @@
   description: job-description-station-ai
   playTimeTracker: JobStationAi
   requirements:
-  - !type:RoleTimeRequirement
+  - !type:RoleTimeRequirement # SpL Start
     role: JobBorg
-    time: 5h
+    time: 1h
+  - !type:OverallPlaytimeRequirement
+    time: 10h # SpL End
   weight: 10
   displayWeight: 1 # Starlight, we're reordering things
   canBeAntag: false
@@ -31,7 +33,7 @@
   playTimeTracker: JobBorg
   requirements:
     - !type:OverallPlaytimeRequirement
-      time: 10h
+      time: 1h # SpL change
   canBeAntag: false
   displayWeight: 0 # Starlight, we're reordering things
   icon: JobIconBorg

@@ -3,12 +3,29 @@
   name: job-name-nct
   description: job-description-nct
   playTimeTracker: JobNanotrasenCareerTrainer
-  requirements:
-    - !type:RolesRequirement
-      proto: StaffAndMentorOnlyRolesReq
+  requirements: # SpL start
+#    - !type:RolesRequirement # SpL- this is why we ever have NCTs
+#      proto: StaffAndMentorOnlyRolesReq
+    - !type:DepartmentTimeRequirement
+      department: Cargo
+      time: 1h
+    - !type:DepartmentTimeRequirement
+      department: Engineering
+      time: 1h
+    - !type:DepartmentTimeRequirement
+      department: Medical
+      time: 1h
+    - !type:DepartmentTimeRequirement
+      department: Science
+      time: 1h
+    - !type:DepartmentTimeRequirement
+      department: Civilian
+      time: 1h
+    - !type:OverallPlaytimeRequirement
+      time: 20h # You gotta know what you're doing to teach it
     - !type:TraitsRequirement
       traits:
-        - Iterator
+#        - Iterator # SpL end
         - Muted
       inverted: true
   startingGear: NanotrasenCareerTrainerGear

@@ -4,9 +4,12 @@
   description: job-description-atmostech
   playTimeTracker: JobAtmosphericTechnician
   requirements:
+  - !type:RoleTimeRequirement # SpL
+    role: JobStationEngineer # SpL
+    time: 1h # SpL
   - !type:DepartmentTimeRequirement
     department: Engineering
-    time: 15h # Starlight
+    time: 5h # Starlight # SpL reduction
   weight: 0 # Starlight
   startingGear: AtmosphericTechnicianGear
   icon: "JobIconAtmosphericTechnician"

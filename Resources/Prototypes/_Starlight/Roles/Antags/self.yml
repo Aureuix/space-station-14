@@ -8,16 +8,16 @@
   #roleLoadout: [ SELFAgentGear ] #TODO commenting out for now, I may add like, a hat or protest signs for SELF later locked in loadouts behind playtime
   requirements:
   - !type:OverallPlaytimeRequirement
-    time: 24h
-  - !type:RoleTimeRequirement
-    role: JobBorg
-    time: 6h
-  - !type:RoleTimeRequirement
-    role: JobScientist
-    time: 5h # Starlight
+    time: 10h # SpL reduction
+#  - !type:RoleTimeRequirement
+#    role: JobBorg
+#    time: 6h
+#  - !type:RoleTimeRequirement
+#    role: JobScientist
+#    time: 5h # Starlight
   - !type:RoleTimeRequirement
     role: JobRoboticist
-    time: 5h # Starlight
+    time: 1h # Starlight # SpL- reduction
   playTimeTracker: AntagSELFAgent
 
 - type: startingGear

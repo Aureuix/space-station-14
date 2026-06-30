@@ -52,7 +52,7 @@ public sealed class NewLifeSystem : EntitySystem
     private readonly Dictionary<NetUserId, HashSet<int>> _roundCharactersUsed = [];
     private readonly Dictionary<NetUserId, int> _newLifesLeft = [];
     private readonly Dictionary<NetUserId, TimeSpan> _lastGhostTime = [];
-    private int MaxNewLifes = 5;
+    private int MaxNewLifes = 12; // SpL change- up from 5
     private TimeSpan Cooldown;
     public override void Initialize()
     {
@@ -72,7 +72,7 @@ public sealed class NewLifeSystem : EntitySystem
 
     private void UpdateCooldown(int value)
     {
-        Cooldown = TimeSpan.FromSeconds(value);
+        Cooldown = TimeSpan.FromSeconds(10); // SpL change
         //update all open uis
         UpdateAllEui();
     }
