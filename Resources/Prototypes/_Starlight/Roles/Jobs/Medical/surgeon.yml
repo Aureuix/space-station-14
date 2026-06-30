@@ -6,7 +6,7 @@
   requirements:
     - !type:DepartmentTimeRequirement
       department: Medical
-      time: 57600 #16 hrs
+      time: 1h # SpL change
   startingGear: SurgeonGear
   icon: "JobIconSurgeon"
   supervisors: job-supervisors-cmo

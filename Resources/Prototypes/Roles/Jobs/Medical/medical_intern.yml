@@ -3,11 +3,11 @@
   name: job-name-intern
   description: job-description-intern
   playTimeTracker: JobMedicalIntern
-  requirements:
-    - !type:DepartmentTimeRequirement
-      department: Medical
-      time: 5h
-      inverted: true # stop playing intern if you're good at med!
+#  requirements:
+#    - !type:DepartmentTimeRequirement
+#      department: Medical
+#      time: 5h
+#      inverted: true # stop playing intern if you're good at med! # SpL- LET PEOPLE DO WHAT THEY WANT
   weight: -1
   startingGear: MedicalInternGear
   icon: "JobIconMedicalIntern"

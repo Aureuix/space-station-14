@@ -3,13 +3,13 @@
   name: job-name-cadet
   description: job-description-cadet
   playTimeTracker: JobSecurityCadet
-  requirements:
-    - !type:OverallPlaytimeRequirement
-      time: 16h # Starlight
-    - !type:DepartmentTimeRequirement
-      department: Security
-      time: 20h # Starlight
-      inverted: true # stop playing intern if you're good at security!
+#  requirements: # SpL removal- Everyone should have a right to try sec. Sec isn't special. We need to stop elevating sec above other depts.
+#    - !type:OverallPlaytimeRequirement
+#      time: 16h # Starlight
+#    - !type:DepartmentTimeRequirement
+#      department: Security
+#      time: 20h # Starlight
+#      inverted: true # stop playing intern if you're good at security!
   weight: -1
   startingGear: SecurityCadetGear
   icon: "JobIconSecurityCadet"

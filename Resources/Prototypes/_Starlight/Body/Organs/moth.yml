@@ -1,9 +1,9 @@
 - type: entity
   id: OrganMothEyes
   parent: OrganHumanEyes
-  name: eyes
+  name: moth eyes
   suffix: Moth
-  description: "Moth eyes are very big, to catch the light"
+  description: "Large compound eyes used to catch light."
   components:
   - type: OrganVisualization
     layer: Eyes

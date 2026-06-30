@@ -6,16 +6,26 @@
   requirements:
     - !type:RoleTimeRequirement
       role: JobSecurityOfficer
-      time: 36000 # 10 hrs
+      time: 1h # SpL change
     - !type:RoleTimeRequirement
       role: JobChemist
-      time: 3h
-    - !type:RoleTimeRequirement
-      role: JobParamedic
-      time: 5h
-    - !type:DepartmentTimeRequirement
-      department: Medical
-      time: 15h # You'll realistically clear this if you clear the chem requirements. Brigmed is being changed to be more-paramedical anyways, so this works with that. Chem time should be removed later on.
+      time: 1h # SpL change
+#    - !type:RoleTimeRequirement # SpL- FUCK YOU.
+#      role: JobParamedic
+#      time: 5h
+#    - !type:DepartmentTimeRequirement
+#      department: Medical
+#      time: 15h # You'll realistically clear this if you clear the chem requirements. Brigmed is being changed to be more-paramedical anyways, so this works with that. Chem time should be removed later on.
+      # Ahem.
+      # Let me just say. Fuck all of you who wanted this changed. You had NO reasoning. You had NO understanding. You didn't even LISTEN to your players.
+      # You have caused SO MUCH frustration for EVERYONE and this sort of shit is why the retention rate of your server is collapsing. "MRP" as fucking if.
+      # It's nothing but pvp, pvp, pvp for you all. Nothing but microbalance because you keep feeding into shitters who exploit your system instead of punishing them.
+      # And even then, this change doesn't even make SENSE. You all but gutted a role and the potential for a second for, functionally, no reason besides vibes.
+      # A server of your size that has the open source label on it should not have features implemented against common agreement just because a high ranking individual wants it.
+      # There's a reason we broke off of your upstream. The influx of genAI slop and even more incentives for "robustness" and treating all non-sec/antags as meatshields is just more points in favour.
+      # These role timer changes are for SpL's main server only, and anyone who for some godforsaken reason forks us for their own development should adjust to fit their goals.
+      # However, I HIGHLY implore you maintain brigmed chem access and expectations, instead of having brigmeds try a variety of fingers to stick up their ass until people start dying.
+      # Sincerely, nykaestra.
   startingGear: BrigmedicGear
   icon: "JobIconBrigmedic"
   supervisors: job-supervisors-hos

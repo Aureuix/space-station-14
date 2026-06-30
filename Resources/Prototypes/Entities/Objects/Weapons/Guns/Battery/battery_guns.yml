@@ -126,7 +126,19 @@
   parent: BaseWeaponBattery
   abstract: true
   components:
-  - type: CanDualWield # 🌟Starlight🌟
+  #starlight start
+  - type: CanDualWield 
+  - type: MeleeWeapon
+    wideAnimationRotation: 0
+    damage:
+      types:
+        Blunt: 6
+    angle: 0
+    animation: WeaponArcThrust
+    soundHit:
+      collection: MetalThud
+  - type: AltFireMelee
+  # starlight end
   - type: Item
     size: Small
     shape:
@@ -613,8 +625,21 @@
   id: WeaponDisablerSMG
   description: Advanced weapon that exhausts organic targets, weakening them until they collapse.
   components:
-  - type: CanDualWield # 🌟Starlight🌟
+  # starlight start
+  - type: CanDualWield 
     dualWieldInaccuracyPenalty: 25
+  - type: MeleeWeapon
+    wideAnimationRotation: 90
+    damage:
+      types:
+        Blunt: 7
+    angle: 0
+    animation: WeaponArcThrust
+    soundHit:
+      collection: MetalThud
+  - type: MeleeRequiresWield
+  - type: AltFireMelee
+    # starlight end
   - type: Item
     size: Large
     shape:

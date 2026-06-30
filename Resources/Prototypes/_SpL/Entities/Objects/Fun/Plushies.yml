@@ -12,6 +12,7 @@
     state: iconALT
   - type: ItemToggle
     onUse: false
+    activated: true
     verbToggleOn: plushie-voicebox-activate
     verbToggleOff: plushie-voicebox-deactivate
   - type: ComponentToggler
@@ -20,7 +21,8 @@
         dataset: PlushiesKosame
   - type: Vocalizer
     minVocalizeInterval: 15
-    maxVocalizeInterval: 45
+    maxVocalizeInterval: 30
+    hideChat: true
   - type: LanguageSpeaker
   - type: LanguageKnowledge
     speaks:
@@ -64,6 +66,18 @@
   - type: Sprite
     sprite: _SpL/Objects/Fun/Plushies/kanna_plushie.rsi
     state: icon
+  - type: ItemToggle
+    activated: true
+    onUse: false
+    verbToggleOn: plushie-voicebox-activate
+    verbToggleOff: plushie-voicebox-deactivate
+  - type: ComponentToggler
+    components:
+      - type: DatasetVocalizer
+        dataset: PlushiesKanna
+  - type: Vocalizer
+    minVocalizeInterval: 600
+    maxVocalizeInterval: 1200
 
 - type: entity
   parent: BaseVulpkaninFoxPlushie
@@ -90,6 +104,26 @@
   - type: Sprite
     sprite: _SpL/Objects/Fun/Plushies/eini_plushie.rsi
     state: icon
+  - type: ItemToggle
+    onUse: false
+    activated: true
+    verbToggleOn: plushie-voicebox-activate
+    verbToggleOff: plushie-voicebox-deactivate
+  - type: ComponentToggler
+    components:
+      - type: DatasetVocalizer
+        dataset: PlushiesEini
+  - type: Vocalizer
+    minVocalizeInterval: 120
+    maxVocalizeInterval: 240
+  - type: LanguageSpeaker
+  - type: LanguageKnowledge
+    speaks:
+      - GalacticCommon
+      - Scratch
+    understands:
+      - Scratch
+      - GalacticCommon
 
 - type: entity
   parent: BaseShadekinPlushie
@@ -114,4 +148,112 @@
     sprite: _SpL/Objects/Fun/Plushies/tumma_plushie.rsi
     state: icon
   - type: Item
-    sprite: _SpL/Objects/Fun/Plushies/tumma_pluhsie.rsi
+    sprite: _SpL/Objects/Fun/Plushies/tumma_plushie.rsi
+
+- type: entity
+  parent: BasePlushie
+  id: PlushieBlueLobster
+  name: blue lobster plushie
+  description: DUNUNUUUUN!!! DUNUNUNUNUNNNN, DUNNNNN!!!
+  components:
+    - type: Sprite
+      sprite: _Mono/Objects/Fun/blue_lobster.rsi
+      state: icon
+    - type: EmitSoundOnSpawn
+      sound:
+        path: /Audio/_SpL/Items/bluelobster.ogg
+    - type: EmitSoundOnUse
+      sound:
+        path: /Audio/_SpL/Items/bluelobster.ogg
+    - type: EmitSoundOnLand
+      sound:
+        path: /Audio/_SpL/Items/bluelobster.ogg
+    - type: EmitSoundOnActivate
+      sound:
+        path: /Audio/_SpL/Items/bluelobster.ogg
+    - type: EmitSoundOnCollide
+      sound:
+        path: /Audio/_SpL/Items/bluelobster.ogg
+    - type: EmitSoundOnTrigger
+      sound:
+        path: /Audio/_SpL/Items/bluelobster.ogg
+    - type: MeleeWeapon
+      wideAnimationRotation: 180
+      soundHit:
+        path: /Audio/_SpL/Items/bluelobster.ogg
+    - type: Edible
+      requiresSpecialDigestion: true
+      useSound:
+        path: /Audio/_SpL/Items/bluelobster.ogg
+    
+- type: entity
+  parent: BaseVulpkaninPlushie
+  id: PlushieMaximilian
+  name: maximilian plushie
+  description: Maximilian Von Weber! A tired looking Vulp that seems like he could kill you in one shot, now in tiny squishy plush form! He looks angry. He seems like he's missing his other half.
+  components:
+    - type: Sprite
+      sprite: _SpL/Objects/Fun/Plushies/maximilian_plushie.rsi
+      state: icon
+    - type: Item
+      sprite: _SpL/Objects/Fun/Plushies/maximilian_plushie.rsi
+    - type: ItemToggle
+      onUse: false
+      activated: true
+      verbToggleOn: plushie-voicebox-activate
+      verbToggleOff: plushie-voicebox-deactivate
+    - type: ComponentToggler
+      components:
+        - type: DatasetVocalizer
+          dataset: PlushiesMaximilian
+    - type: Vocalizer
+      minVocalizeInterval: 120
+      maxVocalizeInterval: 240
+      
+- type: entity
+  parent: BaseMothPlushie
+  id: PlushieAzrael
+  name: azrael plushie
+  description: Your local large-ish and goth butterfly doctor in a huggable and marketable size! They look a bit sad. Maybe give them a squeeze or find their other half to make them feel better.
+  components:
+    - type: Sprite
+      sprite: _SpL/Objects/Fun/Plushies/azrael_plushie.rsi
+      state: icon
+    - type: Item
+      sprite: _SpL/Objects/Fun/Plushies/azrael_plushie.rsi
+    - type: ItemToggle
+      onUse: false
+      activated: true
+      verbToggleOn: plushie-voicebox-activate
+      verbToggleOff: plushie-voicebox-deactivate
+    - type: ComponentToggler
+      components:
+        - type: DatasetVocalizer
+          dataset: PlushiesAzrael
+    - type: Vocalizer
+      minVocalizeInterval: 120
+      maxVocalizeInterval: 240
+      
+- type: entity
+  parent: BaseMothPlushie
+  id: PlushieChesedM
+  name: chesed plushie
+  description: "A one-eyed moth plush with the faint scent of petrichor. This plushie depicts a real doctor, composed of the sacred gender fluid."
+  components:
+    - type: Sprite
+      sprite: _SpL/Objects/Fun/Plushies/chesed_m_plushie.rsi
+      state: icon
+    - type: Item
+      sprite: _SpL/Objects/Fun/Plushies/chesed_m_plushie.rsi
+      
+- type: entity
+  parent: BaseMothPlushie
+  id: PlushieChesedF
+  name: chesed plushie
+  description: "A one-eyed moth plush with the faint scent of petrichor. This plushie depicts a real doctor, composed of the sacred gender fluid."
+  components:
+    - type: Sprite
+      sprite: _SpL/Objects/Fun/Plushies/chesed_f_plushie.rsi
+      state: icon
+    - type: Item
+      sprite: _SpL/Objects/Fun/Plushies/chesed_f_plushie.rsi

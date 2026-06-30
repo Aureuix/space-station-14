@@ -50,7 +50,7 @@ public abstract class SharedCryostorageSystem : EntitySystem
 
     private void OnCvarChanged(bool value)
     {
-        CryoSleepRejoiningEnabled = value;
+        CryoSleepRejoiningEnabled = true;
     }
 
     protected virtual void OnInsertedContainer(Entity<CryostorageComponent> ent, ref EntInsertedIntoContainerMessage args)

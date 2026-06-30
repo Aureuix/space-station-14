@@ -110,7 +110,7 @@
     - id: ClothingHeadsetMedical
     - id: ClothingMaskSterile
     - id: HandLabeler
-      prob: 0.5
+#      prob: 0.5 # SpL
 
 - type: entity
   parent: LockerChemistry
@@ -140,7 +140,13 @@
     - id: MedkitFilled
       prob: 0.3
     - id: JetInjector
-    - id: PlushieKiosha #starlight
+#    - id: PlushieKiosha #starlight # SpL- sorry, you're replaced
+    - !type:GroupSelector
+      children:
+      - id: PlushieChesedM
+        weight: 0.9
+      - id: PlushieChesedF
+        weight: 0.1
     - id: EmergencyHandheldCrewMonitor #starlight
     - id: JawsOfLifeMed #Starlight
 

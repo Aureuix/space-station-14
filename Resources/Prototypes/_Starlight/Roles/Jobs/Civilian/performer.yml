@@ -4,9 +4,9 @@
   description: job-description-performer
   playTimeTracker: JobPerformer
   requirements:
-  - !type:DepartmentTimeRequirement
-    department: Civilian
-    time: 0.5h
+#  - !type:DepartmentTimeRequirement # SpL- why?
+#    department: Civilian
+#    time: 0.5h
   startingGear: PerformerGear
   icon: "JobIconPerformer"
   supervisors: job-supervisors-service-arts

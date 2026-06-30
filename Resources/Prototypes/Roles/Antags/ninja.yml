@@ -8,14 +8,14 @@
   # Starlight start
   previewStartingGear: SpaceNinjaGear
   requirements:
-  - !type:OverallPlaytimeRequirement
-    time: 24h
-  - !type:RoleTimeRequirement
-    role: JobSecurityOfficer # It's better than nothing.
-    time: 1h
-  - !type:RoleTimeRequirement
-    role: AntagThief # Learn how to be subversive and stealthy.
-    time: 1h
+    - !type:OverallPlaytimeRequirement # SpL
+      time: 10h # SpL
+#  - !type:RoleTimeRequirement
+#    role: JobSecurityOfficer # It's better than nothing.
+#    time: 1h
+#  - !type:RoleTimeRequirement
+#    role: AntagThief # Learn how to be subversive and stealthy. # SpL- THAT IS NOT HOW THAT WORKS.
+#    time: 1h
   playTimeTracker: AntagNinja
   # Starlight end
 
