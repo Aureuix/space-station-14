@@ -3,12 +3,14 @@
   name: job-name-decimus
   description: job-description-decimus
   playTimeTracker: JobDecimus
-  requirements:
-    - !type:DepartmentTimeRequirement
-      department: Security
-      time: 72000 # 20 hrs
-    - !type:RolesRequirement
-      proto: ExtRolesReq
+  requirements: 
+    - !type:OverallPlaytimeRequirement # SpL
+      time: 10h # SpL
+#    - !type:DepartmentTimeRequirement
+#      department: Security
+#      time: 72000 # 20 hrs
+#    - !type:RolesRequirement
+#      proto: ExtRolesReq
   setPreference: false
   startingGear: DecimusGear
   icon: JobIconDecimus

@@ -147,9 +147,9 @@
     Sneeze:
       collection: MaleSneezes
     Cough:
-      collection: MaleCoughs
+      path: /Audio/_SpL/Voice/Avali/avali_cough.ogg
     Yawn:
-      collection: MaleYawn
+      path: /Audio/_SpL/Voice/Avali/avali_yawn.ogg
     Snore:
       collection: Snores
     Sigh:
@@ -159,7 +159,7 @@
     Hew:
       collection: Hew
     Gasp:
-      collection: MaleGasp
+      path: /Audio/_SpL/Voice/Avali/avali_gasp.ogg
     DefaultDeathgasp:
       collection: MaleDeathGasp
     Hisses:
@@ -197,9 +197,9 @@
     Sneeze:
       collection: FemaleSneezes
     Cough:
-      collection: FemaleCoughs
+      path: /Audio/_SpL/Voice/Avali/avali_cough.ogg
     Yawn:
-      collection: FemaleYawn
+      path: /Audio/_SpL/Voice/Avali/avali_yawn.ogg
     Snore:
       collection: Snores
     Sigh:
@@ -209,7 +209,7 @@
     Hew:
       collection: Hew
     Gasp:
-      collection: FemaleGasp
+      path: /Audio/_SpL/Voice/Avali/avali_gasp.ogg
     DefaultDeathgasp:
       collection: FemaleDeathGasp
     Hisses:

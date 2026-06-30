@@ -6,15 +6,17 @@
   description: job-description-cmo
   playTimeTracker: JobChiefMedicalOfficer
   requirements:
-    - !type:RoleTimeRequirement
-      role: JobChemist
-      time: 7h # Starlight
-    - !type:RoleTimeRequirement
-      role: JobMedicalDoctor
-      time: 7h # Starlight
-    - !type:DepartmentTimeRequirement
+    - !type:DepartmentTimeRequirement # SpL Start
       department: Medical
-      time: 20h # Starlight
+      time: 5h 
+    - !type:RoleTimeRequirement 
+      role: JobChemist
+      time: 1h
+    - !type:RoleTimeRequirement
+      role: JobSurgeon
+      time: 1h 
+    - !type:OverallPlaytimeRequirement
+      time: 10h # SpL end
   weight: 10
   startingGear: CMOGear
   icon: "JobIconChiefMedicalOfficer"

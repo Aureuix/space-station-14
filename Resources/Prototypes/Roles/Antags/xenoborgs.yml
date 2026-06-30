@@ -8,10 +8,10 @@
   requirements:
   - !type:RoleTimeRequirement
     role: JobStationAi # Starlight
-    time: 18000  # 5 hrs
+    time: 1h # SpL
   - !type:RoleTimeRequirement # Starlight
     role: JobRoboticist # Starlight
-    time: 9000 # 2.5 hrs
+    time: 1h # SpL
   guides: [ Xenoborgs ]
   playTimeTracker: AntagMothershipCore # Starlight
 
@@ -25,6 +25,6 @@
   requirements:
   - !type:RoleTimeRequirement
     role: JobBorg
-    time: 54000  # Starlight 15 hrs
+    time: 1h # SpL
   guides: [ Xenoborgs ]
   playTimeTracker: AntagXenoborg # Starlight

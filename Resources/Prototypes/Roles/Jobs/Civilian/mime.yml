@@ -3,9 +3,9 @@
   name: job-name-mime
   description: job-description-mime
   playTimeTracker: JobMime
-  requirements:
-    - !type:OverallPlaytimeRequirement
-      time: 4h
+#  requirements: # SpL- WHAT???
+#    - !type:OverallPlaytimeRequirement
+#      time: 4h
   startingGear: MimeGear
   icon: "JobIconMime"
   supervisors: job-supervisors-hop
@@ -17,7 +17,7 @@
     components:
     - type: MimePowers
       preventWriting: false #SL
-    - type: FrenchAccent
+#    - type: FrenchAccent # SpL- come on. it's not that funny
 
 - type: startingGear
   id: MimeGear

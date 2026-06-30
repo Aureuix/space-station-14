@@ -4,15 +4,17 @@
   description: job-description-rd
   playTimeTracker: JobResearchDirector
   requirements:
-  - !type:RoleTimeRequirement
-    role: JobScientist
-    time: 10h # Starlight
-  - !type:RoleTimeRequirement
-    role: JobRoboticist
-    time: 5h # Starlight
+#  - !type:RoleTimeRequirement # SpL removals
+#    role: JobScientist
+#    time: 10h # Starlight
+#  - !type:RoleTimeRequirement
+#    role: JobRoboticist
+#    time: 5h # Starlight
   - !type:DepartmentTimeRequirement
     department: Science
-    time: 20h # Starlight
+    time: 5h # SpL
+  - !type:OverallPlaytimeRequirement # SpL
+    time: 10h # SpL
 
   weight: 10
   startingGear: ResearchDirectorGear
