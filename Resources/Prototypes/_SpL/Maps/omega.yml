@@ -1,0 +1,164 @@
+- type: gameMap
+  id: SpLOmega
+  mapName: 'Omega'
+  mapPath: /Maps/_SpL/Stations/Omega.yml
+  minPlayers: 0
+  maxPlayers: 35
+  stations:
+    StarlightOmega:
+      stationProto: StandardNanotrasenStation
+      components:
+        - type: StationNameSetup
+          mapNameTemplate: '{0} Omega Station {1}'
+          nameGenerator:
+            !type:NanotrasenNameGenerator
+            prefixCreator: 'TG'
+        - type: StationEmergencyShuttle
+          emergencyShuttlePath: /Maps/Shuttles/emergency_omega.yml
+        - type: GridSpawn
+          groups:
+            trade: !type:GridSpawnGroup
+              addComponents:
+                - type: ProtectedGrid
+                - type: TradeStation
+              paths:
+                - /Maps/Shuttles/trading_outpost.yml
+            cargo_mining_shuttle: !type:GridSpawnGroup
+              paths:
+                - /Maps/_SpL/Shuttles/Salvage/Mining_Hammerhead.yml
+              nameGrid: false
+            cargo_salvage_shuttle: !type:GridSpawnGroup
+              paths:
+                - /Maps/_Starlight/Shuttles/Salvage/pioneer.yml
+              nameGrid: false
+            ruins: !type:GridSpawnGroup
+              hide: true
+              nameGrid: true
+              minCount: 4
+              maxCount: 6
+              stationGrid: false
+              paths:
+                - /Maps/Ruins/abandoned_outpost.yml
+                - /Maps/Ruins/atmos_interchange.yml
+                - /Maps/Ruins/chunked_tcomms.yml
+                - /Maps/Ruins/biodome_satellite.yml
+                - /Maps/Ruins/derelict.yml
+                - /Maps/Ruins/djstation.yml
+                - /Maps/Ruins/empty_flagship.yml
+                - /Maps/Ruins/hydro_outpost.yml
+                - /Maps/Ruins/old_ai_sat.yml
+                - /Maps/Ruins/ruined_prison_ship.yml
+                - /Maps/Ruins/syndicate_dropship.yml
+                - /Maps/Ruins/whiteship_ancient.yml
+                - /Maps/Ruins/whiteship_bluespacejumper.yml
+                - /Maps/Ruins/wrecklaimer.yml
+                - /Maps/Ruins/displaced_telescience.yml
+                - /Maps/_Starlight/Ruins/Salv_Sus.yml
+            wrecks: !type:DungeonSpawnGroup
+              minimumDistance: 150
+              maximumDistance: 300
+              stationGrid: false
+              minCount: 20
+              maxCount: 23
+              addComponents:
+                - type: Gravity
+                  enabled: true
+                  inherent: true
+                - type: IFF
+                  flags: HideLabel
+                  color: "#88b0d1"
+              protos:
+                - ChunkDebrisSmall
+                - ChunkDebrisSmall
+                - ChunkDebrisSmall
+                - ChunkDebrisSmall
+                - ChunkDebris
+                - ClusterAsteroid
+                - SpindlyAsteroid
+                - BlobAsteroid
+                - SwissCheeseAsteroid
+                - ClusterTrash
+                - SpindlyTrash
+                - BlobAsteroidTrash
+                - SwissCheeseTrash
+                - ClusterTrash
+                - SpindlyTrash
+                - BlobAsteroidTrash
+                - ClusterMeat
+                - SpindlyMeat
+                - BlobAsteroidSnow
+                - ClusterSnow
+                - SwissCheeseSnow
+                - ChunkDebrisSmall
+                - ChunkDebrisSmall
+            vgroid: !type:DungeonSpawnGroup
+              minimumDistance: 200
+              maximumDistance: 300
+              nameDataset: NamesBorer
+              stationGrid: false
+              addComponents:
+                - type: Gravity
+                  enabled: true
+                  inherent: true
+              protos:
+                - VGRoid
+        - type: StationJobs
+          availableJobs:
+            #service
+            Captain: [ 1, 1 ]
+            HeadOfPersonnel: [ 1, 1 ]
+            Bartender: [ 1, 1 ]
+            Botanist: [ 2, 2 ]
+            Chef: [ 1, 1 ]
+            Janitor: [ 1, 2 ]
+            Chaplain: [ 1, 1 ]
+            Librarian: [ 1, 1 ]
+            ServiceWorker: [ 2, 2 ]
+            #engineering
+            ChiefEngineer: [ 1, 1 ]
+            AtmosphericTechnician: [ 2, 2 ]
+            StationEngineer: [ 3, 3 ]
+            TechnicalAssistant: [ 2, 2 ]
+            #medical
+            ChiefMedicalOfficer: [ 1, 1 ]
+            Chemist: [ 2, 2 ]
+            MedicalDoctor: [ 3, 3 ]
+            Paramedic: [ 1, 1 ]
+            MedicalIntern: [ 2, 2 ]
+            Surgeon: [ 1, 1 ]
+            Psychologist: [ 1, 1 ]
+            #science
+            ResearchDirector: [ 1, 1 ]
+            Scientist: [ 4, 4 ]
+            ResearchAssistant: [ 2, 2 ]
+            Roboticist: [ 1, 1 ]
+            #security
+            HeadOfSecurity: [ 1, 1 ]
+            Warden: [ 1, 1 ]
+            SecurityOfficer: [ 4, 4 ]
+            DutyOfficer: [ 2, 2 ]
+            Detective: [ 1, 1 ]
+            SecurityCadet: [ 2, 2 ]
+            Brigmedic: [ 1, 1 ]
+            #supply
+            Quartermaster: [ 1, 1 ]
+            SalvageSpecialist: [ 5, 5 ]
+            CargoTechnician: [ 2, 2 ]
+            MailTech: [ 1, 2 ]
+            MiningSpecialist: [ 2, 3 ]
+            SalvageLead: [ 1, 1 ]
+            #civilian
+            Assistant: [ -1, -1 ]
+            Clown: [ 1, 1 ]
+            Mime: [ 1, 1 ]
+            Musician: [ 1, 1 ]
+            #silicon
+            StationAi: [ 1, 1 ]
+            Borg: [ 2, 2 ]
+            #law
+            Magistrate: [ 1, 1 ]
+            IAA: [ 2, 2 ]
+            #Representives
+            BlueShield: [ 1, 1 ]
+            NanoTrasenRepresentative: [ 1, 1 ]
+            NanotrasenCareerTrainer: [ 1, 1 ]
