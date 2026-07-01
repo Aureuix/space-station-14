@@ -105,6 +105,10 @@
     sprite: _Starlight/Mobs/Species/Avali/organs.rsi
     layers:
       - state: eyes
+  - type: OrganVisualization
+    layer: Eyes
+    prototypes:
+      Default: MobAvaliEyes
 
 - type: entity
   id: OrganAvaliBrain
