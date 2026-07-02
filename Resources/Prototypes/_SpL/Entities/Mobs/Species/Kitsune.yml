@@ -29,6 +29,9 @@
     hideLayersOnEquip:
     - Hair
     - Snout
+  - type: Body
+    prototype: Kitsune
+    requiredLegs: 2
   - type: Inventory
     speciesId: kitsune
     displacements:
