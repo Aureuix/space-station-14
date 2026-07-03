@@ -17,6 +17,28 @@
     proto: SeniorOfficer
 
 - type: loadout
+  id: HeadofSecurityParadeWearSuit
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitHoSParade
+  effects:
+    - !type:JobRequirementLoadoutEffect
+      requirement:
+        !type:RoleTimeRequirement
+        role: JobHeadOfSecurity
+        time: 180000 #50 hrs
+        
+- type: loadout
+  id: HeadofSecurityParadeWearSkirt
+  equipment:
+    jumpsuit: ClothingUniformJumpskirtHoSParade
+  effects:
+    - !type:JobRequirementLoadoutEffect
+      requirement:
+        !type:RoleTimeRequirement
+        role: JobHeadOfSecurity
+        time: 180000 #50 hrs
+
+- type: loadout
   id: ClothingNeckCloakHosVar
   equipment:
     neck: ClothingNeckCloakHosFireline

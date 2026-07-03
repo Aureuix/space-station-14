@@ -1443,6 +1443,8 @@
   - HeadofSecurityBlackSkirt
   - HeadofSecurityBlueJumpsuit
   - HeadofSecurityGreyJumpsuit
+  - HeadofSecurityParadeWearSuit # SpL
+  - HeadofSecurityParadeWearSkirt # SpL
 
 - type: loadoutGroup
   id: HeadofSecurityNeck
@@ -1487,6 +1489,8 @@
   loadouts:
   - WardenJumpsuit
   - WardenJumpskirt
+  - ClothingUniformJumpsuitFormalWarden #starlight
+  - ClothingUniformJumpskirtFormalWarden #starlight
 
 
 - type: loadoutGroup
@@ -1535,6 +1539,10 @@
   - JumpskirtBrigmedic # Starlight line swap v
   - JumpsuitCorpsman # Starlight line swap ^
   - JumpskirtCorpsman # Starlight start
+  - FormalBrigmedicJumpsuit
+  - FormalBrigmedicJumpskirt
+  - SeniorBrigmedicJumpsuit
+  - SeniorBrigmedicJumpskirt
   - CorpsmanResponse
   - CorpsmanTrauma
   - BrigmedicJumpsuitOfLife
