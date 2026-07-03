@@ -28,8 +28,10 @@
       - Classical
       - Grumbakul
       - Aielic
+      - Felyaic
       - Lagomorphian
-      - CHaet
+      - CHaet # SpL
+      - NovaCygni # SpL
 
 - type: entity
   id: BaseBorgiLanguages
@@ -63,8 +65,10 @@
       - Classical
       - Grumbakul
       - Aielic
+      - Felyaic
       - Lagomorphian
-      - CHaet
+      - CHaet # SpL
+      - NovaCygni # SpL
 
 - type: entity
   id: BaseSiliconBrainLanguages
