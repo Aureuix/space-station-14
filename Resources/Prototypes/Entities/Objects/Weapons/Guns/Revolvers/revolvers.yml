@@ -97,7 +97,7 @@
   name: inspector
   parent: [BaseWeaponRevolver, BaseSecurityContraband]
   id: WeaponRevolverInspector
-  description: A powerful hybrid-action revolver, manufactured for corporate law enforcement investigators, patterned after ancient private-eye sidearms. You feel lucky just holding it. Loads 6 rounds of .45 magnum.
+  description: A powerful hybrid-action revolver, manufactured for corporate law enforcement investigators, patterned after ancient private-eye sidearms. Cocking is HIGHLY recommended before engaging the single-action hammer-fanning mechanism. Loads 6 rounds of .45 magnum.
   components:
   - type: Sprite
     sprite: Objects/Weapons/Guns/Revolvers/inspector.rsi
@@ -151,7 +151,7 @@
   name: python
   parent: [BaseWeaponRevolver, BaseSyndicateContraband]
   id: WeaponRevolverPython
-  description: A powerful hybrid-action revolver manufactured by the Syndicate. Loud and flashy, perfect for any agent looking to make a statement. Loads 6 rounds of .45 magnum.
+  description: A powerful hybrid-action revolver manufactured by the Syndicate. Loud and flashy, perfect for any agent looking to make a statement. Cocking is HIGHLY recommended before engaging the single-action hammer-fanning mechanism. Loads 6 rounds of .45 magnum.
   components:
   - type: Sprite
     sprite: Objects/Weapons/Guns/Revolvers/python.rsi
