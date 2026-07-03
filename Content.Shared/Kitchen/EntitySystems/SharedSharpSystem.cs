@@ -9,7 +9,8 @@ using Content.Shared.Nutrition.Components;
 using Content.Shared.Nutrition.EntitySystems;
 using Content.Shared.Popups;
 using Content.Shared.Verbs;
-using Content.Shared._Starlight.Medical.Surgery.Components;
+using Content.Shared.Starlight.Medical.Surgery;
+using Content.Shared.Starlight.Medical.Surgery.Effects.Step;
 using Robust.Shared.Containers;
 using Robust.Shared.Utility;
 

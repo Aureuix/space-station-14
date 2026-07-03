@@ -45,33 +45,6 @@
 
 - type: entity
   parent: BaseAction
-  id: ActionVampireSleep
-  name: Sleep (15)
-  description: Send a victim to a temporary sleep.
-  components:
-    - type: Action
-      useDelay: 120
-      itemIconStyle: NoItem
-      priority: 25
-      icon:
-        sprite: _Starlight/Vampire/actions_vampire.rsi
-        state: sleep_icon
-    - type: TargetAction
-      range: 2
-      checkCanAccess: false
-      interactOnMiss: false
-    - type: EntityTargetAction
-      canTargetSelf: false
-      whitelist:
-        components:
-          - HumanoidAppearance
-      event: !type:VampireSleepActionEvent
-    - type: VampireAction
-      bloodToUnlock: 0
-      bloodCost: 15
-
-- type: entity
-  parent: BaseAction
   id: ActionVampireRejuvenateI
   name: Rejuvenate
   description: Removes any and all stuns, restores stamina.
@@ -274,7 +247,6 @@
       bloodToUnlock: 800
       bloodCost: 100
       requiredClass: Hemomancer
-    - type: EorgPreventAction
 
 - type: entity
   parent: BaseAction
@@ -350,7 +322,6 @@
       bloodToUnlock: 200
       bloodCost: 20
       requiredClass: Umbrae
-    - type: EorgPreventAction
 
 - type: entity
   parent: BaseAction
@@ -405,7 +376,6 @@
       bloodToUnlock: 800
       bloodCost: 50
       requiredClass: Umbrae
-    - type: EorgPreventAction
 
 - type: entity
   parent: BaseAction
@@ -507,7 +477,6 @@
       bloodToUnlock: 150
       bloodCost: 150
       requiredClass: Dantalion
-    - type: EorgPreventAction
 
 - type: entity
   parent: BaseAction
