@@ -71,7 +71,7 @@
     - MeteorSwarmScheduler # Meteor mild isn't included in almost aller because in theory the idea is to have a round last more than 10 minutes.
     - RampingStationEventScheduler
     - SpaceTrafficControlEventScheduler
-    - SpaceTrafficControlFriendlyEventScheduler
+#    - SpaceTrafficControlFriendlyEventScheduler
     - BasicRoundstartVariation
     - BasicRoundstartVariation # Starlight, ShitStation
     - BasicRoundstartVariation # Starlight, ShitStation

@@ -66,10 +66,10 @@
     price: 500
 
 - type: entity
-  name: Deckard
+  name: deckard
   parent: [BaseWeaponRevolver, BaseSecurityCommandContraband]
   id: WeaponRevolverDeckard
-  description: A beautifully machined, custom-built revolver. Used when there is no time for the Voight-Kampff test. Loads 5 rounds of .45 magnum.
+  description: A beautifully machined, custom-built revolver. Used when there is no time for the Voight-Kampff test. Loads 6 rounds of .45 magnum. # Starlight, 5 -> 6
   components:
   - type: Sprite
     sprite: Objects/Weapons/Guns/Revolvers/deckard.rsi
@@ -80,11 +80,11 @@
       map: ["enum.GunVisualLayers.MagUnshaded"]
       shader: unshaded
   - type: Gun
-    fireRate: 2
+    fireRate: 2.5 # SpL change from 2
   - type: RevolverAmmoProvider
-    capacity: 5
-    chambers: [ True, True, True, True, True ]
-    ammoSlots: [ null, null, null, null, null ]
+    capacity: 6 # Starlight start, bigger chamber
+    chambers: [ True, True, True, True, True, True ]
+    ammoSlots: [ null, null, null, null, null, null ] # Starlight end
   - type: MagazineVisuals
     magState: mag
     steps: 4
@@ -94,10 +94,10 @@
     price: 1500
 
 - type: entity
-  name: Inspector
+  name: inspector
   parent: [BaseWeaponRevolver, BaseSecurityContraband]
   id: WeaponRevolverInspector
-  description: A double-action revolver manufactured by various companies. It is readily available on the civilian market, making it a popular choice among private investigators. You feel lucky just holding it. Loads 6 rounds of .45 magnum.
+  description: A powerful hybrid-action revolver, manufactured for corporate law enforcement investigators, patterned after ancient private-eye sidearms. Cocking is HIGHLY recommended before engaging the single-action hammer-fanning mechanism. Loads 6 rounds of .45 magnum.
   components:
   - type: Sprite
     sprite: Objects/Weapons/Guns/Revolvers/inspector.rsi
@@ -109,6 +109,13 @@
     capacity: 6
     chambers: [ True, True, True, True, True, True ]
     ammoSlots: [ null, null, null, null, null, null ]
+  - type: Gun
+    fireRate: 2.25 # SpL Start
+    availableModes:
+      - SemiAuto
+      - Burst 
+    shotsPerBurst: 6 # HAMMER FAN
+    burstFireRate: 12 # SpL End
   - type: StealTarget
     stealGroup: OfficerHandgun
   - type: SentienceTarget #Starlight
@@ -116,10 +123,10 @@
     weight: 0.01 #Starlight
 
 - type: entity
-  name: Mateba
+  name: mateba
   parent: [BaseWeaponRevolver, BaseMajorContraband]
   id: WeaponRevolverMateba
-  description: A modern revolver used by Nanotrasen’s elite, near mythical ‘Death Squad’ task force. Its unique trigger action and barrel placement enable a high fire rate with minimal muzzle flip. Many have looked down this barrel, but few have lived to tell of it. Loads 6 rounds of .45 magnum.
+  description: A modern revolver used by NanoTrasen’s elite, near mythical Special Forces divisions. Its unique trigger action and barrel placement enable a high fire rate with minimal muzzle flip. Many have looked down this barrel, but few have lived to tell of it. Loads 6 rounds of .45 magnum.
   components:
   - type: Sprite
     sprite: Objects/Weapons/Guns/Revolvers/mateba.rsi
@@ -141,10 +148,10 @@
     proto: CartridgeMagnumAP
 
 - type: entity
-  name: Python
+  name: python
   parent: [BaseWeaponRevolver, BaseSyndicateContraband]
   id: WeaponRevolverPython
-  description: A powerful double-action revolver manufactured by the Syndicate. Loud and flashy, perfect for any agent looking to make a statement. Loads 6 rounds of .45 magnum.
+  description: A powerful hybrid-action revolver manufactured by the Syndicate. Loud and flashy, perfect for any agent looking to make a statement. Cocking is HIGHLY recommended before engaging the single-action hammer-fanning mechanism. Loads 6 rounds of .45 magnum.
   components:
   - type: Sprite
     sprite: Objects/Weapons/Guns/Revolvers/python.rsi
@@ -154,9 +161,12 @@
     storedOffset: 0,-2
   - type: Gun
     selectedMode: SemiAuto
-    fireRate: 2
+    fireRate: 2.25 # SpL Start
     availableModes:
     - SemiAuto
+    - Burst
+    shotsPerBurst: 6 # HAMMER FAN
+    burstFireRate: 12 # SpL End
     soundGunshot:
       path: /Audio/Weapons/Guns/Gunshots/revolver.ogg
       params:

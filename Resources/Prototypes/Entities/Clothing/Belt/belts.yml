@@ -72,6 +72,11 @@
   - type: Sprite
     sprite: Clothing/Belt/bandolier.rsi
   - type: Clothing
+    slots: # SpL start
+      - BELT
+      - NECK
+    equipSound:
+      path: /Audio/Items/belt_equip.ogg # SpL end
     sprite: Clothing/Belt/bandolier.rsi
   - type: Item
     size: Huge
@@ -79,7 +84,7 @@
     whitelist:
       tags:
         - ShellShotgun
-    capacity: 14
+    capacity: 16 # SpL- up from 14
 
 - type: entity
   parent: [ ClothingBeltStorageBase, BaseMagicalContraband ]
@@ -110,7 +115,12 @@
   - type: Sprite
     sprite: Clothing/Belt/holster.rsi
   - type: Clothing
-    sprite: Clothing/Belt/holster.rsi
+    slots: # Starlight start
+      - BELT
+      - NECK
+    equipSound:
+      path: /Audio/Items/belt_equip.ogg
+    sprite: Clothing/Belt/holster.rsi # Starlight end
   - type: Storage
     grid:
     - 0,0,3,1
@@ -124,7 +134,12 @@
   - type: Sprite
     sprite: Clothing/Belt/syndieholster.rsi
   - type: Clothing
-    sprite: Clothing/Belt/syndieholster.rsi
+    slots: # SpL start
+      - BELT
+      - NECK
+    equipSound:
+      path: /Audio/Items/belt_equip.ogg
+    sprite: Clothing/Belt/syndieholster.rsi # SpL end
   - type: Storage
     maxItemSize: Huge
     grid:

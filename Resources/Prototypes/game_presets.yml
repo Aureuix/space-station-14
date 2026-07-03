@@ -10,7 +10,7 @@
     - MeteorSwarmScheduler
     - RampingStationEventScheduler
     - SpaceTrafficControlEventScheduler
-    - SpaceTrafficControlFriendlyEventScheduler
+#    - SpaceTrafficControlFriendlyEventScheduler
     - BasicRoundstartVariation
 
 - type: gamePreset
@@ -82,7 +82,7 @@
     - MeteorSwarmScheduler
     - RampingStationEventScheduler
     - SpaceTrafficControlEventScheduler
-    - SpaceTrafficControlFriendlyEventScheduler
+#    - SpaceTrafficControlFriendlyEventScheduler
     - BasicRoundstartVariation
     - BasicRoundstartVariation # Starlight, ShitStation
     - BasicRoundstartVariation # Starlight, ShitStation
@@ -127,7 +127,7 @@
   showInVote: true # 🌟Starlight🌟
   description: greenshift-description
   rules:
-  - SpaceTrafficControlFriendlyEventScheduler
+#  - SpaceTrafficControlFriendlyEventScheduler
   - BasicRoundstartVariation
 
 - type: gamePreset

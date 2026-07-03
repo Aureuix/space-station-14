@@ -8,7 +8,8 @@
     currentLabel: reagent-name-uranium
   - type: SolutionContainerManager
     solutions:
-      beaker:
+      drink:
+        maxVol: 200
         reagents:
         - ReagentId: Uranium
           Quantity: 200
@@ -23,6 +24,7 @@
   - type: SolutionContainerManager
     solutions:
       drink:
+        maxVol: 200
         reagents:
         - ReagentId: Cornoil
           Quantity: 200
@@ -32,13 +34,13 @@
   parent: Jug
   suffix: arithrazine
   id: JugArithrazine
-  categories: [ HideSpawnMenu ]
   components:
   - type: Label
     currentLabel: reagent-name-arithrazine
   - type: SolutionContainerManager
     solutions:
-      beaker:
+      drink:
+        maxVol: 200
         reagents:
         - ReagentId: Arithrazine
           Quantity: 200
@@ -47,13 +49,13 @@
   parent: Jug
   suffix: diphenhydramine
   id: JugDiphenhydramine
-  categories: [ HideSpawnMenu ]
   components:
   - type: Label
     currentLabel: reagent-name-diphenhydramine
   - type: SolutionContainerManager
     solutions:
-      beaker:
+      drink:
+        maxVol: 200
         reagents:
         - ReagentId: Diphenhydramine
           Quantity: 200
@@ -62,13 +64,13 @@
   parent: Jug
   suffix: cryoxadone
   id: JugCryoxadone
-  categories: [ HideSpawnMenu ]
   components:
   - type: Label
     currentLabel: reagent-name-cryoxadone
   - type: SolutionContainerManager
     solutions:
-      beaker:
+      drink:
+        maxVol: 200
         reagents:
         - ReagentId: Cryoxadone
           Quantity: 200
@@ -77,13 +79,13 @@
   parent: Jug
   suffix: doxarubixadone
   id: JugDoxarubixadone
-  categories: [ HideSpawnMenu ]
   components:
   - type: Label
     currentLabel: reagent-name-doxarubixadone
   - type: SolutionContainerManager
     solutions:
-      beaker:
+      drink:
+        maxVol: 200
         reagents:
         - ReagentId: Doxarubixadone
           Quantity: 200
@@ -92,13 +94,13 @@
   parent: Jug
   suffix: aloxadone
   id: JugAloxadone
-  categories: [ HideSpawnMenu ]
   components:
   - type: Label
     currentLabel: reagent-name-aloxadone
   - type: SolutionContainerManager
     solutions:
-      beaker:
+      drink:
+        maxVol: 200
         reagents:
         - ReagentId: Aloxadone
           Quantity: 200
@@ -107,13 +109,13 @@
   parent: Jug
   suffix: sigynate
   id: JugSigynate
-  categories: [ HideSpawnMenu ]
   components:
   - type: Label
     currentLabel: reagent-name-sigynate
   - type: SolutionContainerManager
     solutions:
-      beaker:
+      drink:
+        maxVol: 200
         reagents:
         - ReagentId: Sigynate
           Quantity: 200
@@ -122,13 +124,13 @@
   parent: Jug
   suffix: leporazine
   id: JugLeporazine
-  categories: [ HideSpawnMenu ]
   components:
   - type: Label
     currentLabel: reagent-name-leporazine
   - type: SolutionContainerManager
     solutions:
-      beaker:
+      drink:
+        maxVol: 200
         reagents:
         - ReagentId: Leporazine
           Quantity: 200
@@ -137,13 +139,13 @@
   parent: Jug
   suffix: bruizine
   id: JugBruizine
-  categories: [ HideSpawnMenu ]
   components:
   - type: Label
     currentLabel: reagent-name-bruizine
   - type: SolutionContainerManager
     solutions:
-      beaker:
+      drink:
+        maxVol: 200
         reagents:
         - ReagentId: Bruizine
           Quantity: 200
@@ -152,13 +154,13 @@
   parent: Jug
   suffix: lacerinol
   id: JugLacerinol
-  categories: [ HideSpawnMenu ]
   components:
   - type: Label
     currentLabel: reagent-name-lacerinol
   - type: SolutionContainerManager
     solutions:
-      beaker:
+      drink:
+        maxVol: 200
         reagents:
         - ReagentId: Lacerinol
           Quantity: 200
@@ -167,13 +169,13 @@
   parent: Jug
   suffix: pyrazine
   id: JugPyrazine
-  categories: [ HideSpawnMenu ]
   components:
   - type: Label
     currentLabel: reagent-name-pyrazine
   - type: SolutionContainerManager
     solutions:
-      beaker:
+      drink:
+        maxVol: 200
         reagents:
         - ReagentId: Pyrazine
           Quantity: 200
@@ -182,13 +184,13 @@
   parent: Jug
   suffix: insuzine
   id: JugInsuzine
-  categories: [ HideSpawnMenu ]
   components:
   - type: Label
     currentLabel: reagent-name-insuzine
   - type: SolutionContainerManager
     solutions:
-      beaker:
+      drink:
+        maxVol: 200
         reagents:
         - ReagentId: Insuzine
           Quantity: 200
@@ -197,13 +199,13 @@
   parent: Jug
   suffix: ambuzol
   id: JugAmbuzol
-  categories: [ HideSpawnMenu ]
   components:
   - type: Label
     currentLabel: reagent-name-ambuzol
   - type: SolutionContainerManager
     solutions:
-      beaker:
+      drink:
+        maxVol: 200
         reagents:
         - ReagentId: Ambuzol
           Quantity: 200
@@ -212,13 +214,13 @@
   parent: Jug
   suffix: ambuzol plus
   id: JugAmbuzolPlus
-  categories: [ HideSpawnMenu ]
   components:
   - type: Label
     currentLabel: reagent-name-ambuzol-plus
   - type: SolutionContainerManager
     solutions:
-      beaker:
+      drink:
+        maxVol: 200
         reagents:
         - ReagentId: AmbuzolPlus
           Quantity: 200
@@ -227,13 +229,13 @@
   parent: Jug
   suffix: amoxla
   id: JugAmoxla
-  categories: [ HideSpawnMenu ]
   components:
   - type: Label
     currentLabel: reagent-name-amoxla
   - type: SolutionContainerManager
     solutions:
-      beaker:
+      drink:
+        maxVol: 200
         reagents:
         - ReagentId: Amoxla
           Quantity: 200

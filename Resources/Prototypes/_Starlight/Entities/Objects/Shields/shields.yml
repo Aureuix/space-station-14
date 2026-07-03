@@ -310,7 +310,7 @@
                   max: 10
 
 - type: entity
-  name: greenlight shield
+  name: X-03 green phase shield
   parent: [BaseItem, BaseCentcommContraband ]
   id: GreenLightShield
   categories: [ DoNotMap ]
@@ -394,8 +394,8 @@
           Heat: 0.6
       activeBlockModifier:
         coefficients:
-          Blunt: 1.2
-          Slash: 0.85
+          Blunt: 0.8
+          Slash: 0.6
           Piercing: 0.5
           Heat: 0.4
         flatReductions:

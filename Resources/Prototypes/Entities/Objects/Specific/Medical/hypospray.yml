@@ -346,7 +346,7 @@
   parent: ChemicalMedipen
   id: BurnAutoInjector
   name: burn auto-injector
-  description: A single-dose, non-refillable medipen containing dermaline and leporazine, used to quickly and easily treat non-chemical burns. Commonly used as a combat medicine.
+  description: A single-dose, non-refillable medipen containing dermaline and kelotane, used to quickly and easily treat non-chemical burns. Commonly used as a combat medicine. # SpL
   components:
   - type: Item
     inhandVisuals:
@@ -376,14 +376,14 @@
         reagents:
         - ReagentId: Dermaline
           Quantity: 10
-        - ReagentId: Leporazine
+        - ReagentId: Kelotane # SpL- why lepo?? this makes it not kill birds now
           Quantity: 10
 
 - type: entity
   parent: ChemicalMedipen
   id: RadAutoInjector
   name: rad auto-injector
-  description: A single-dose, non-refillable medipen containing arithrazine and bicaridine, used to quickly and easily treat radiation poisoning.
+  description: A single-dose, non-refillable medipen containing arithrazine and hyronalin, used to quickly and easily treat radiation poisoning.
   components:
   - type: Item
     inhandVisuals:
@@ -412,9 +412,9 @@
         maxVol: 20
         reagents:
         - ReagentId: Arithrazine
-          Quantity: 15
-        - ReagentId: Bicaridine
-          Quantity: 5
+          Quantity: 10
+        - ReagentId: Hyronalin
+          Quantity: 10
 
 - type: entity
   parent: ChemicalMedipen
