@@ -45,7 +45,7 @@
     armorPenetration: 0.35
     damage:
       types:
-        Piercing: 75
+        Piercing: 90 # SpL- it's kinda hype if this thing is strong
         Structural: 226
   - type: HitscanStaminaDamage
     staminaDamage: 35
