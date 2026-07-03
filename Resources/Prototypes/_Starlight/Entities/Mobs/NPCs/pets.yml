@@ -29,7 +29,7 @@
 
 - type: entity
   name: Kiki
-  parent: MobKoboldAdvanced
+  parent: MobKobold
   id: MobKoboldKiki
   suffix: AI
   description: A prominent representative of kobolds with unlimited access to that which she doesn't want to eat.
