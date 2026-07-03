@@ -1,5 +1,5 @@
 - type: entity
-  name: Makeshift Revolver
+  name: makeshift revolver
   parent: [BaseWeaponRevolver, BaseMinorContraband]
   id: WeaponRevolverMakeshift
   description: Little more than a hand-cannon with a high chance of blowing up in your face.
@@ -40,7 +40,7 @@
         prob: 0.80
 
 - type: entity
-  name: Improvised Revolver
+  name: improvised revolver
   parent: WeaponRevolverMakeshift
   id: WeaponRevolverImprovised
   description: A revolver that has two barrels and no cylinder. Can you really call this a revolver?
@@ -73,7 +73,7 @@
         prob: 0.80
 
 - type: entity
-  name: Forged Revolver
+  name: forged revolver
   parent: WeaponRevolverImprovised
   id: WeaponRevolverForged
   description: The best Tider engineering can offer, a revolver with the ability to hold 4 bullets! 
@@ -93,7 +93,7 @@
   name: dispatcher
   parent: [BaseWeaponRevolver, BaseSecurityContraband]
   id: WeaponRevolverDispatcher
-  description: The NT Model 7 Service Revolver, known unofficially as the 'Dispatcher.' chambered in .45 Magnum with robust stopping power for putting an end to any non-compliance. A true timeless classic carried amongst Nanotrasen's elite security staff.
+  description: The NT Model 7 Service Revolver, known unofficially as the 'Dispatcher.' chambered in .45 Magnum with robust stopping power for putting an end to any non-compliance. A true timeless classic carried amongst NanoTrasen's elite security staff.
   components:
   - type: Sprite
     sprite: _Starlight/Objects/Weapons/Guns/Revolvers/Dispatcher.rsi
