@@ -31,5 +31,5 @@ plushie-chesed-30 = Sucks, but that's okay; It is what it is.
 plushie-chesed-31 = Everything is okay!
 plushie-chesed-32 = Nothing is okay...
 plushie-chesed-33 = Suddenly, one day...
-plushie-chesed-34 = ...My body had changed.
+plushie-chesed-34 = >...My body had changed.
 plushie-chesed-35 = Sponsored by PRISM!
