@@ -1,0 +1,35 @@
+﻿- type: entity
+  parent: BoxLighttube
+  id: BoxLighttubeSodium
+  name: sodium lighttube box
+  components:
+    - type: EntityTableContainerFill
+      containers:
+        storagebase: !type:AllSelector
+          children:
+            - id: SodiumLightTube
+              amount: 12
+              
+- type: entity
+  parent: BoxLighttube
+  id: BoxLighttubeLed
+  name: led lighttube box
+  components:
+    - type: EntityTableContainerFill
+      containers:
+        storagebase: !type:AllSelector
+          children:
+            - id: LedLightTube
+              amount: 12
+              
+- type: entity
+  parent: BoxLighttube
+  id: BoxLighttubeBlacklight
+  name: blacklight box
+  components:
+    - type: EntityTableContainerFill
+      containers:
+        storagebase: !type:AllSelector
+          children:
+            - id: BlackLightTube
+              amount: 12
