@@ -787,13 +787,13 @@
 - type: entity
   parent: [ClothingOuterHardsuitBase, BaseSyndicateContraband]
   id: ClothingOuterHardsuitSyndieCommander
-  name: CyberSun elite commander exosuit # syndicate commander hardsuit
-  description: A powerful, experimental exosuit designed for a commander sent to deliver a message. # A bulked up version of the blood-red hardsuit, purpose-built for the commander of a syndicate operative squad. Has significantly improved armor for those deadly front-lines firefights.
+  name: syndicate commander hardsuit
+  description: A bulked up version of the blood-red hardsuit, purpose-built for the commander of a syndicate operative squad. Has significantly improved armor for those deadly front-lines firefights.
   components:
   - type: Sprite
-    sprite: _SpL/Clothing/OuterClothing/Hardsuits/CybersunElite.rsi # Clothing/OuterClothing/Hardsuits/syndiecommander.rsi
+    sprite: Clothing/OuterClothing/Hardsuits/syndiecommander.rsi
   - type: Clothing
-    sprite: _SpL/Clothing/OuterClothing/Hardsuits/CybersunElite.rsi # Clothing/OuterClothing/Hardsuits/syndiecommander.rsi
+    sprite: Clothing/OuterClothing/Hardsuits/syndiecommander.rsi
   - type: PressureProtection
     highPressureMultiplier: 0.05
     lowPressureMultiplier: 1000
