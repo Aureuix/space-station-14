@@ -22,17 +22,17 @@
     stock: 5
   - !type:BuyerAccessCondition
 
-#- type: listing
-#  id: VendorVialCase
-#  productEntity: VialCase
-#  cost:
-#    NTCredit: 37
-#  categories:
-#  - SLChemistry
-#  conditions:
-#  - !type:ListingLimitedStockCondition
-#    stock: 6
-#  - !type:BuyerAccessCondition
+- type: listing
+  id: VendorVialCase
+  productEntity: VialCase
+  cost:
+    NTCredit: 37
+  categories:
+  - SLChemistry
+  conditions:
+  - !type:ListingLimitedStockCondition
+    stock: 6
+  - !type:BuyerAccessCondition
 
 - type: listing
   id: VendorCleanerGrenade
