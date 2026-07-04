@@ -20,6 +20,8 @@
       components:
         - type: LightweightDrunk
           boozeStrengthMultiplier: 2
+  conflicts:
+    - AlcoholTolerance # SpL
 
 - type: trait
   id: Snoring
