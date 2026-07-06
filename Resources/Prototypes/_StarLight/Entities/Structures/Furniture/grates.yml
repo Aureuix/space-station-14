@@ -1,0 +1,13 @@
+﻿- type: entity
+  id: LatticeFalse
+  parent: GrateBase
+  name: flimsy lattice
+  description: "Not structurally viable."
+  suffix: False, Grate
+  components:
+    - type: Sprite
+      sprite: _Starlight/Structures/grates.rsi
+      state: lattice
+    - type: Icon
+      sprite: _Starlight/Structures/grates.rsi
+      state: lattice
