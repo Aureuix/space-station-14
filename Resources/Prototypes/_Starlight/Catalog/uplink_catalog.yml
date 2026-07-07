@@ -77,11 +77,11 @@
     Telecrystal: 18 # SpL - 16->18
   categories:
     - UplinkWeaponry
-  conditions:
-    - !type:StoreWhitelistCondition
-      whitelist:
-        tags:
-          - NukeOpsUplink
+#  conditions: # SpL
+#    - !type:StoreWhitelistCondition
+#      whitelist:
+#        tags:
+#          - NukeOpsUplink
 
 - type: listing
   id: UplinkMarriage
@@ -251,11 +251,11 @@
     Telecrystal: 2
   categories:
     - UplinkAmmo
-  conditions:
-    - !type:StoreWhitelistCondition
-      whitelist:
-        tags:
-          - NukeOpsUplink
+#  conditions: # SpL
+#    - !type:StoreWhitelistCondition
+#      whitelist:
+#        tags:
+#          - NukeOpsUplink
 
 - type: listing
   id: UplinkUziMagazine
@@ -670,7 +670,7 @@
 
 #Dunnow about upstream. but we L O V E our stealth traitors.
 - type: listing
-  id: UplinkgClothingThievingGloves
+  id: UplinkClothingThievingGloves
   name: uplink-clothing-chameleon-thieving-gloves-name
   description: uplink-clothing-chameleon-thieving-gloves-desc
   productEntity: ClothingHandsChameleonThief

@@ -4,5 +4,5 @@ uplink-hardsuit-cselite-desc =  A suit made by CyberSun's R&D department, who de
 uplink-m90-bundle-name = M90 Carbine Bundle
 uplink-m90-bundle-desc = The M90 carbine, a compact competitor to the SolGov Lecter, bundled with three FMJ magazines. Chambered in .20 rifle.
 
-uplink-rifle-magazine-estoc-name = Estoc DMR Bundle
-uplink-rifle-magazine-estoc-desc = For the steady-handed sharpshooter, the Estoc DMR. Chambered in .45, bundled with three magazines.
+uplink-rifle-magazine-estoc-name = DMR magazine (.45 magnum)
+uplink-rifle-magazine-estoc-desc = DMR magazines with 20 cartridges. Compatible with the Estoc.

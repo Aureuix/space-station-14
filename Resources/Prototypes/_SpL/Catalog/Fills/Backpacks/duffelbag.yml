@@ -16,7 +16,7 @@
   parent: ClothingBackpackDuffelSyndicateBundle
   id: ClothingBackpackDuffelSyndicateFilledM90
   name: M90 carbine bundle
-  description: "The M90 carbine, a powerful competitor to the SolGov Lecter, bundled with three FMJ magazines."
+  description: "The M90 carbine, a compact competitor to the SolGov Lecter, bundled with three FMJ magazines."
   components:
   - type: EntityTableContainerFill
     containers:

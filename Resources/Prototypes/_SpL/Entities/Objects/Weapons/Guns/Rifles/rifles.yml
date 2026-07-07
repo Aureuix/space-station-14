@@ -4,6 +4,10 @@
   id: WeaponRifleM90Carbine
   description: An older bullpup carbine model for close to medium range engagements. Still quite effective despite its age, but mind the spread. Chambered in .20 rifle.
   components:
+    - type: Item
+      size: Large
+      shape:
+        - 0,0,3,1
     - type: Gun
       soundGunshot:
         path: /Audio/_Starlight/Weapons/Guns/Gunshots/m90.ogg

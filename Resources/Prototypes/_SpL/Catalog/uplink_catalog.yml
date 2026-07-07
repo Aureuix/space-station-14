@@ -17,7 +17,7 @@
   name: uplink-m90-bundle-name
   description: uplink-m90-bundle-desc
   icon: { sprite: /Textures/_SpL/Objects/Weapons/Guns/Rifles/carbine.rsi, state: icon }
-  productEntity: ClothingBackpackDuffelSyndicateFilledLecter
+  productEntity: ClothingBackpackDuffelSyndicateFilledM90
   discountCategory: veryRareDiscounts
   discountDownTo:
     Telecrystal: 8
@@ -25,3 +25,18 @@
     Telecrystal: 17
   categories:
   - UplinkWeaponry
+
+- type: listing
+  id: UplinkM90Bundle
+  name: uplink-m90-bundle-name
+  description: uplink-m90-bundle-desc
+  icon: { sprite: /Textures/_SpL/Objects/Weapons/Guns/Rifles/carbine.rsi, state: icon }
+  productEntity: ClothingBackpackDuffelSyndicateFilledM90
+  discountCategory: veryRareDiscounts
+  discountDownTo:
+    Telecrystal: 8
+  cost:
+    Telecrystal: 17
+  categories:
+    - UplinkAmmo
+  
