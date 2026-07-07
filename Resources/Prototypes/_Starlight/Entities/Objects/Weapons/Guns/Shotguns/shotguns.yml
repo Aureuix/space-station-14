@@ -215,7 +215,7 @@
       firing_pin: !type:Container
 
 - type: entity
-  name: "AS-12 'Minotaur' Shotgun"
+  name: "AS-12 'minotaur' shotgun"
   parent: [BaseWeaponShotgunAny, BaseGunWieldable, BaseSyndicateContraband]
   id: WeaponShotgunMinotaur
   description: Smooth, powerful, highly illegal. The newest full auto shotgun available at the market, utilizes standard 12g drum mags. Property of Gorlex Marauders.

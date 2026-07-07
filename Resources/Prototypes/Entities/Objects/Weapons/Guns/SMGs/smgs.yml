@@ -89,7 +89,7 @@
   # starlight end
 
 - type: entity
-  name: Atreides
+  name: atreides
   parent: [BaseWeaponSubMachineGun, BaseMajorContraband]
   id: WeaponSubMachineGunAtreides
   description: A rare machine pistol hailing from the Corporate Wars. Its extremely high fire rate and compact profile make it useful in close quarters combat. Despite its age, it is in remarkably good condition. Feeds from .35 SMG magazines.
@@ -203,7 +203,7 @@
   - type: AmmoCounter
 
 - type: entity
-  name: Drozd
+  name: drozd
   parent: [BaseWeaponSubMachineGun, BaseSecurityContraband]
   id: WeaponSubMachineGunDrozd
   description: A modern SMG manufactured by NanoTrasen’s Small Arms Division. It features an exceptional rate of fire in burst mode, useful for holding defensive angles or engaging hostiles at longer ranges. Feeds from .35 SMG magazines.
