@@ -1,7 +1,7 @@
 ﻿plushie-chesed-1 = Heya
 plushie-chesed-2 = Heyo
 plushie-chesed-3 = Hey, bud.
-plushie-chesed-4 = [scoffs] Calm down.~
+plushie-chesed-4 = Scoffs. Calm down.~
 plushie-chesed-5 = Could go for a coffee...
 plushie-chesed-6 = Just keeping watch over my friends.~
 plushie-chesed-7 = 'ts a lotta poison.
