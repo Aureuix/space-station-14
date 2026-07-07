@@ -1,5 +1,5 @@
 - type: entity
-  name: Lecter
+  name: lecter
   parent: [WeaponRifleLecter, BaseSecurityContraband]
   id: WeaponRifleLecterRubber
   suffix: Non-lethal
@@ -178,7 +178,7 @@
     zeroVisible: true
 
 - type: entity
-  name: Aussec Armory M-52
+  name: aussec armory M-52
   parent: [BaseTSFContraband, WeaponRifleLecter]
   id: WeaponRifleM52
   description: One of the least popular examples of heavy assault rifles. It has impressive firepower.
@@ -218,7 +218,7 @@
             - CartridgeRifle
 
 - type: entity
-  name: Leikha
+  name: leikha
   parent: [ BaseWeaponRifle, BaseSecurityContraband ]
   id: WeaponRifleLeikha
   description: A high end military grade assault rifle. This one has been retrofitted with a scope and a burst reciever. Uses .20 rifle ammo.
@@ -338,10 +338,10 @@
 
 
 - type: entity
-  name: Pitbull
+  name: pitbull
   parent: [ BaseWeaponRifle, BaseSyndicateContraband ]
   id: WeaponRiflePitbull
-  description: A large bullpup rifle with a low fire-rate but excellent accuracy. Chambered in .45 magnum.
+  description: A large bullpup rifle with a low fire-rate but excellent accuracy, designed to excel in protracted firefights. Chambered in .30 rifle.
   components:
   - type: Sprite
     sprite: _Starlight/Objects/Weapons/Guns/Rifles/pitbull.rsi
@@ -353,35 +353,38 @@
   - type: Clothing
     sprite: Objects/Weapons/Guns/Rifles/carbine.rsi
   - type: Gun
-    fireRate: 3
-    selectedMode: SemiAuto
+    fireRate: 4.5 # SpL
+    selectedMode: FullAuto # SpL
     availableModes:
     - SemiAuto
+    - FullAuto # SpL
     soundGunshot:
       path: /Audio/Weapons/Guns/Gunshots/batrifle.ogg
   - type: ItemSlots
     slots:
       gun_magazine:
         name: Magazine
-        startingItem: MagazineMagnumRifleSP
+        startingItem: MagazineLightRifleSP # SpL - chambering change
         insertSound: /Audio/Weapons/Guns/MagIn/batrifle_magin.ogg
         ejectSound: /Audio/Weapons/Guns/MagOut/batrifle_magout.ogg
         priority: 2
         whitelist:
           tags:
-          - MagazineMagnumSubMachineGun
+          - MagazineLightRifle # SpL - chambering change
         whitelistFailPopup: gun-magazine-whitelist-fail
       gun_chamber:
         name: Chamber
-        startingItem: CartridgeMagnumSP
+        startingItem: CartridgeLightRifleSP # SpL - chambering change
         priority: 1
         whitelist:
           tags:
-            - CartridgeMagnum
+            - CartridgeLightRifle # SpL - chambering change
+  - type: ChamberMagazineAmmoProvider
+    autoEject: true
 
 
 - type: entity
-  name: Peacemaker
+  name: peacemaker
   parent: [ BaseWeaponRifle, BaseSecurityContraband ]
   id: WeaponRiflePeacemaker
   description: The best or worst thing you'll ever see, depending if it's pointed at you or not. Uses .20 rifle ammo.
@@ -429,7 +432,7 @@
           tags:
 
 - type: entity
-  name: M18-Militant
+  name: M18-militant
   parent: [BaseWeaponRifle, BaseSalvageContraband]
   id: WeaponRifleM18
   description: Aged yet dependable, this old-world assault rifle is chambered in .20 rifle ammunition. Renowned for its reliability and ease of maintenance even in the harshest environments, it remains a staple among your station’s merce- salvage forces.
@@ -491,7 +494,7 @@
       pvsIncrease: 1.4
 
 - type: entity
-  name: SPC-Lionhunter
+  name: SPC-lionhunter
   parent: [ BaseWeaponSniper, BaseGunWieldable, BaseMajorContraband ]
   id: WeaponRifleLionhunter
   description: A one of a kind bolt-action rifle fitted with an integrated scope. Chambered for a proprietary .48 round developed by parties unknown. Built to drop targets at range with authority. Each shot demands a deliberate recycle of the action.
@@ -543,7 +546,7 @@
   - type: Appearance
     
 - type: entity
-  name: Lawbringer
+  name: lawbringer
   parent: [BaseWeaponRifle, BaseSecurityContraband]
   id: WeaponRifleLawbringer
   description: A bullpup carbine of modern design commonly used by Solgov and recently commissioned by NanoTrasen for security and military applications. Feeds from .30 rifle magazines.

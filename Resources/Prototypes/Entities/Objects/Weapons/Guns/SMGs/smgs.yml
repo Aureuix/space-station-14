@@ -135,6 +135,8 @@
     minAngle: 21
     maxAngle: 32
     shotsPerBurst: 5
+    fireRate: 8.5 # SpL, 8->8.5
+    burstFireRate: 12 # SpL, 8->12
     availableModes:
     - Burst
     - FullAuto

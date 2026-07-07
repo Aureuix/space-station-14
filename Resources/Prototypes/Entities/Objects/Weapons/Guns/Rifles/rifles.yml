@@ -203,7 +203,7 @@
   name: Estoc DMR
   parent: [BaseWeaponRifle, BaseSyndicateContraband]
   id: WeaponRifleEstoc
-  description: "A designated marksman rifle firing in 3-round bursts. The Estoc was designed as the Lecter’s long-range counterpart, equipped with an extended 20-inch barrel and telescopic sight.\nFeeds from .20 rifle magazines."
+  description: "A powerful designated marksman rifle equipped with an extended 20-inch barrel, gas compensator, and telescopic sight. Feeds from extended .45 magazines."
   components:
   - type: Sprite
     sprite: Objects/Weapons/Guns/Rifles/estoc.rsi
@@ -218,37 +218,34 @@
   - type: Clothing
     sprite: Objects/Weapons/Guns/Rifles/estoc.rsi
   - type: Gun
+    fireRate: 3 # SpL
     soundGunshot:
       path: /Audio/Weapons/Guns/Gunshots/estocshot.ogg
-    minAngle: 30
-    maxAngle: 43
-    shotsPerBurst: 3
     selectedMode: Burst
     availableModes:
-    - Burst
     - SemiAuto
-    burstFireRate: 14
-  - type: GunWieldBonus
-    minAngle: -28
-    maxAngle: -25
+    - Burst
+    burstFireRate: 12
+    burstCooldown: 1 # SpL
+  - type: GunRequiresWield # SpL
   - type: ItemSlots
     slots:
       gun_magazine:
         name: Magazine
-        startingItem: MagazineRifleSP
+        startingItem: MagazineMagnumRifleSP # SpL - chambering change
         insertSound: /Audio/Weapons/Guns/MagIn/ltrifle_magin.ogg
         ejectSound: /Audio/Weapons/Guns/MagOut/ltrifle_magout.ogg
         priority: 2
         whitelist:
           tags:
-          - MagazineRifle
+          - MagazineMagnumSubMachineGun # SpL - chambering change
         whitelistFailPopup: gun-magazine-whitelist-fail
       gun_chamber:
         name: Chamber
         priority: 1
         whitelist:
           tags:
-          - CartridgeRifle
+          - CartridgeMagnum # SpL - chambering change
   - type: SpeedModifiedOnWield
     walkModifier: 0.80 #SL 75% -> 80% speed
     sprintModifier: 0.80 #SL 75% -> 80% speed
@@ -278,47 +275,47 @@
     tags:
     - ForceableFollow
 
-# SpL- take this shit out later
-- type: entity
-  name: M90 GL
-  parent: [BaseWeaponRifle, BaseSyndicateContraband]
-  id: WeaponRifleM90GrenadeLauncher
-  description: "An older bullpup carbine model, with an attached underbarrel grenade launcher.\nFeeds from .20 rifle magazines."
-  components:
-    - type: Sprite
-      sprite: Objects/Weapons/Guns/Rifles/carbine.rsi
-      layers:
-        - state: base
-          map: [ "enum.GunVisualLayers.Base" ]
-        - state: mag-0
-          map: [ "enum.GunVisualLayers.Mag" ]
-    - type: Clothing
-      sprite: Objects/Weapons/Guns/Rifles/carbine.rsi
-    - type: ItemSlots
-      slots:
-        gun_magazine:
-          name: Magazine
-          startingItem: MagazineRifleFMJ
-          insertSound: /Audio/Weapons/Guns/MagIn/batrifle_magin.ogg
-          ejectSound: /Audio/Weapons/Guns/MagOut/batrifle_magout.ogg
-          priority: 2
-          whitelist:
-            tags:
-              - MagazineRifle
-          whitelistFailPopup: gun-magazine-whitelist-fail
-        gun_chamber:
-          name: Chamber
-          priority: 1
-          whitelist:
-            tags:
-              - CartridgeRifle
-    - type: ContainerContainer
-      containers:
-        gun_magazine: !type:ContainerSlot ""
-        gun_chamber: !type:ContainerSlot ""
-        firing_pin: !type:Container # starlight
-    - type: MagazineVisuals
-      magState: mag
-      steps: 1
-      zeroVisible: true
-    - type: Appearance
+# SpL- depreciated in favour of the M90 Carbine
+#- type: entity
+#  name: M90 GL
+#  parent: [BaseWeaponRifle, BaseSyndicateContraband]
+#  id: WeaponRifleM90GrenadeLauncher
+#  description: "An older bullpup carbine model, with an attached underbarrel grenade launcher.\nFeeds from .20 rifle magazines."
+#  components:
+#    - type: Sprite
+#      sprite: Objects/Weapons/Guns/Rifles/carbine.rsi
+#      layers:
+#        - state: base
+#          map: [ "enum.GunVisualLayers.Base" ]
+#        - state: mag-0
+#          map: [ "enum.GunVisualLayers.Mag" ]
+#    - type: Clothing
+#      sprite: Objects/Weapons/Guns/Rifles/carbine.rsi
+#    - type: ItemSlots
+#      slots:
+#        gun_magazine:
+#          name: Magazine
+#          startingItem: MagazineRifleFMJ
+#          insertSound: /Audio/Weapons/Guns/MagIn/batrifle_magin.ogg
+#          ejectSound: /Audio/Weapons/Guns/MagOut/batrifle_magout.ogg
+#          priority: 2
+#          whitelist:
+#            tags:
+#              - MagazineRifle
+#          whitelistFailPopup: gun-magazine-whitelist-fail
+#        gun_chamber:
+#          name: Chamber
+#          priority: 1
+#          whitelist:
+#            tags:
+#              - CartridgeRifle
+#    - type: ContainerContainer
+#      containers:
+#        gun_magazine: !type:ContainerSlot ""
+#        gun_chamber: !type:ContainerSlot ""
+#        firing_pin: !type:Container # starlight
+#    - type: MagazineVisuals
+#      magState: mag
+#      steps: 1
+#      zeroVisible: true
+#    - type: Appearance

@@ -6,9 +6,9 @@
   productEntity: ClothingBackpackDuffelHardsuitCSEliteBundle
   discountCategory: veryRareDiscounts
   discountDownTo:
-    Telecrystal: 6
+    Telecrystal: 5
   cost:
-    Telecrystal: 12
+    Telecrystal: 10
   categories:
   - UplinkWearables
 
@@ -16,12 +16,12 @@
   id: UplinkM90Bundle
   name: uplink-m90-bundle-name
   description: uplink-m90-bundle-desc
-  icon: { sprite: /Textures/Objects/Weapons/Guns/Rifles/carbine.rsi, state: icon }
+  icon: { sprite: /Textures/_SpL/Objects/Weapons/Guns/Rifles/carbine.rsi, state: icon }
   productEntity: ClothingBackpackDuffelSyndicateFilledLecter
   discountCategory: veryRareDiscounts
   discountDownTo:
     Telecrystal: 8
   cost:
-    Telecrystal: 15
+    Telecrystal: 17
   categories:
   - UplinkWeaponry
