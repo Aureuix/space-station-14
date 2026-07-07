@@ -1,7 +1,7 @@
 ﻿- type: entity
   name: riot shotgun
-  parent: WeaponShotgunRiotRubber
-  id: WeaponShotgunRiot
+  parent: WeaponShotgunRiot
+  id: WeaponShotgunRiotRubber
   description: A sturdy shotgun with a longer magazine and a fixed tactical stock designed for non-lethal riot control.
   suffix: Non-Lethal
   components:
