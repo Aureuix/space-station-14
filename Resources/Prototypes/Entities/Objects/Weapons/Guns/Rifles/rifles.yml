@@ -218,7 +218,7 @@
   - type: Clothing
     sprite: Objects/Weapons/Guns/Rifles/estoc.rsi
   - type: Gun
-    fireRate: 3 # SpL
+    fireRate: 2 # SpL
     soundGunshot:
       path: /Audio/Weapons/Guns/Gunshots/estocshot.ogg
     selectedMode: Burst
@@ -226,7 +226,7 @@
     - SemiAuto
     - Burst
     burstFireRate: 12
-    burstCooldown: 1 # SpL
+    burstCooldown: 1.5 # SpL
   - type: GunRequiresWield # SpL
   - type: ItemSlots
     slots:
