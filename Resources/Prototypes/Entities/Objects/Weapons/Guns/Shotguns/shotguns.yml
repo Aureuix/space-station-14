@@ -79,7 +79,7 @@
       path: /Audio/Weapons/Guns/MagIn/shotgun_insert.ogg
 
 - type: entity
-  name: Bulldog
+  name: bulldog
   parent: [BaseWeaponShotgunAny, BaseGunWieldable, BaseSyndicateContraband]
   id: WeaponShotgunBulldog
   description: An automatic magazine-fed shotgun for close-quarters combat. Kicks like a mule on steroids. Takes 12 gauge shells. # Starlight: .50 -> 12 gauge
@@ -162,7 +162,7 @@
     proto: ShellShotgunBeanbag
 
 - type: entity
-  name: Sentiel
+  name: sentiel
   parent: [BaseWeaponShotgun, BaseGunWieldable, BaseSecurityContraband]
   id: WeaponShotgunEnforcer
   description: A premium semi-automatic shotgun, and the pride of all security forces. Takes 12 gauge shells. # Starlight: .50 -> 12 gauge
@@ -188,7 +188,7 @@
     proto: ShellShotgunBeanbag
 
 - type: entity
-  name: Kammerer
+  name: kammerer
   parent: [BaseWeaponShotgun, BaseGunWieldable, BaseSecurityContraband]
   id: WeaponShotgunKammerer
   description: An old yet faithful design, and a favorite among irregular forces of many worlds. Takes 12 gauge shells. # Starlight: .50 -> 12 gauge
@@ -332,7 +332,7 @@
 - type: entity
   parent: [BaseWeaponShotgun, BaseGunWieldable, BaseSyndicateContraband]
   id: WeaponShotgunHushpup
-  name: Hushpup
+  name: hushpup
   description: An obscure modification of the Enforcer, fitted with an experimental muffler. Great for those with a strict moral code. Uses .50 shotgun shells.
   components:
   - type: Sprite

@@ -1,0 +1,15 @@
+﻿{
+  "version": 1,
+  "license": "CC-BY-SA-3.0",
+  "copyright": "Edited by Conflee. TGstation",
+  "size": {
+    "x": 32,
+    "y": 32
+  },
+  "states": [
+    {
+      "name": "lattice",
+      "copyright": "tgstation commit 8abb19545828230d92ba18827feeb42a67a55d49"
+    }
+  ]
+}

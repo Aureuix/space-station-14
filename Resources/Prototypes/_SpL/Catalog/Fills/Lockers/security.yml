@@ -1,0 +1,21 @@
+﻿- type: entity
+  name: non-lethal weapons safe
+  id: GunSafeNonLethals
+  parent: GunSafeBaseSecure
+  components:
+    - type: EntityTableContainerFill
+      containers:
+        entity_storage: !type:AllSelector
+          children:
+            - id: WeaponShotgunRiotRubber
+              amount: 2
+            - id: WeaponSubMachineGunSP91RCRubber
+              amount: 2
+            - id: MagazinePistolSubMachineGunRubber
+              amount: 2
+            - id: MagazineBoxPistolRubber
+              amount: 2
+            - id: BoxBeanbag
+              amount: 2
+            - id: SpeedLoaderShotgunBeanbag
+              amount: 2

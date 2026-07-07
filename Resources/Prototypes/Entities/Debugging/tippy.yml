@@ -18,9 +18,9 @@
       visible: false
       map: [ "speaking" ]
   # footstep sounds wile waddling onto the screen. 
-  - type: FootstepModifier
-    footstepSoundCollection:
-      collection: FootstepClown
+  #- type: FootstepModifier # SpL
+  #  footstepSoundCollection: # SpL
+  #    collection: FootstepClown # SpL
   # visuals for the speech bubble.
   # only supports background image.
   - type: PaperVisuals
