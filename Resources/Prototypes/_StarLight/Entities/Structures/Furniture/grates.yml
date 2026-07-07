@@ -1,11 +1,27 @@
 ﻿- type: entity
   id: LatticeFalse
-  parent: Catwalk
+  parent: BaseStructure
   name: flimsy lattice
-  description: "Not structurally viable."
-  suffix: False, Grate
+  description: Not structurally viable.
   components:
+    - type: InteractionOutline
+    - type: Anchorable
+      flags:
+        - Anchorable
+    - type: CollideOnAnchor
+    - type: Physics
+      canCollide: false
+    - type: Fixtures
+      fixtures:
+        fix1:
+          shape:
+            !type:PhysShapeAabb
+            bounds: "-0.45,-0.45,0.45,0.45"
+          density: 15
+          mask:
+            - MachineMask
     - type: Sprite
+      drawdepth: FloorTiles
       sprite: _Starlight/Structures/grates.rsi
       state: lattice
     - type: Icon
