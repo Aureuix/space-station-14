@@ -106,7 +106,7 @@
     armorPenetration: -0.13
     damage:
       types:
-        Piercing: 35
+        Piercing: 30 # SpL- 35->30
   - type: HitscanStaminaDamage
     staminaDamage: 4
   - type: HitscanPierce
@@ -138,8 +138,8 @@
     armorPenetration: -0.35
     damage:
       types:
-        Piercing: 15
-        Blunt: 15
+        Piercing: 12 # SpL - 15->12
+        Blunt: 12 # SpL - 15->12
   - type: HitscanPierce
     chance: 0.25
     deviation: 0.05
@@ -171,7 +171,7 @@
     armorPenetration: -1.00
     damage:
       types:
-        Piercing: 45 # +30%
+        Piercing: 40 # +30% # SpL - 45->40
   - type: HitscanStaminaDamage
     staminaDamage: 10    
   - type: HitscanPierce
@@ -189,7 +189,7 @@
     armorPenetration: 0.25
     damage:
       types:
-        Piercing: 25 #- 30%
+        Piercing: 20 #- 30% # SpL - 25->20
   - type: HitscanPierce
     chance: 0.69
     deviation: 0.05
@@ -249,7 +249,7 @@
     damage:
       types:
         Blunt: 3
-        Heat: 32
+        Heat: 27 # SpL - 32->27
   - type: HitscanPierce
     chance: 0.69
     deviation: 0.05
@@ -279,8 +279,8 @@
   - type: HitscanBasicDamage
     damage:
       types:
-        Radiation: 15
-        Piercing: 20
+        Radiation: 12 # SpL - 15 -> 12
+        Piercing: 18 # SpL - 20 -> 18
   - type: HitscanPierce
     chance: 0.69
     deviation: 0.05
@@ -311,7 +311,7 @@
     armorPenetration: 0.69
     damage:
       types:
-        Piercing: 25 #- 30%
+        Piercing: 20 #- 30% # SpL - 25->20
   - type: HitscanPierce
     chance: 0.81
     deviation: 0.05
