@@ -1,5 +1,6 @@
 ﻿- type: entity
   name: non-lethal weapons safe
+  id: GunSafeNonLethals
   parent: GunSafeBaseSecure
   components:
     - type: EntityTableContainerFill
