@@ -1,6 +1,6 @@
 - type: job
   id: NanotrasenCareerTrainer
-  name: job-name-nct
+  name: NanoTrasen Career Trainer
   description: job-description-nct
   playTimeTracker: JobNanotrasenCareerTrainer
   requirements: # SpL start

@@ -86,7 +86,8 @@ ghostrole-information-derelict-scout-xenoborg-description = You are a scout xeno
 ghostrole-information-derelict-stealth-xenoborg-name = Derelict Stealth Xenoborg
 ghostrole-information-derelict-stealth-xenoborg-description = You are a stealth xenoborg the mothership left behind, After years of exposure to ion storms you find yourself near a space station.
 
-
+ghost-role-information-kiki-name = Kiki
+ghost-role-information-kiki-description = An honorable member of the kobold society in charge of botany and helping the botanists in any way she can.
 
 
 

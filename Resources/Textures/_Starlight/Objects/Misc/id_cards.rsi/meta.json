@@ -40,8 +40,20 @@
       "name": "green-inhand-right",
 	  "directions": 4
     },
-	  {
+    {
       "name": "makeshift"
+    },
+    {
+      "name": "centcom"
+    },
+    {
+      "name": "centcomgold"
+    },
+    {
+      "name": "centcomsilver"
+    },
+    {
+      "name": "nanotrasen"
     }
   ]
 }

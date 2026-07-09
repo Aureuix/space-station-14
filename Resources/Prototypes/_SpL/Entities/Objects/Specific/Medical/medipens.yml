@@ -1,0 +1,150 @@
+﻿- type: entity
+  parent: [ChemicalMedipen]
+  id: AdvancedBruteAutoinjector 
+  suffix: Do Not Map
+  name: advanced brute auto-injector
+  description: A single-dose, non-refillable medipen containing tranexamic acid, bicaridine, and poly- polypry-... plant medicine, for long term stabilization.
+  components:
+    - type: Item
+      inhandVisuals:
+        left:
+          - state: base-needle-inhand-left
+          - state: base-colorA-inhand-left
+            color: "#8820EB"
+          - state: base-colorB-inhand-left
+        right:
+          - state: base-needle-inhand-right
+          - state: base-colorA-inhand-right
+            color: "#8820EB"
+          - state: base-colorB-inhand-right
+    - type: Sprite
+      sprite: /Textures/_SpL/Objects/Specific/Medical/medipen.rsi
+      layers:
+        - state: polypen
+          map: ["enum.SolutionContainerLayers.Fill"]
+    - type: SolutionContainerVisuals
+      maxFillLevels: 1
+      changeColor: false
+      emptySpriteName: polypen_empty
+    - type: SolutionContainerManager
+      solutions:
+        pen:
+          maxVol: 30
+          reagents:
+            - ReagentId: PolypyryliumOligomers
+              Quantity: 13
+            - ReagentId: TranexamicAcid
+              Quantity: 4
+            - ReagentId: Bicaridine
+              Quantity: 13
+    - type: StaticPrice
+      price: 1000
+      
+- type: entity
+  parent: [ChemicalMedipen]
+  id: AmoxlaAutoinjector
+  name: amoxla airloss auto-injector
+  description: A single-dose, non-refillable medipen containing saline and amoxla, used to quickly and easily treat blood loss and asphyxiation in ammonia-based organisms.
+  components:
+    - type: Item
+      inhandVisuals:
+        left:
+          - state: base-needle-inhand-left
+          - state: base-colorA-inhand-left
+            color: "#62C38A"
+          - state: base-colorB-inhand-left
+        right:
+          - state: base-needle-inhand-right
+          - state: base-colorA-inhand-right
+            color: "#62C38A"
+          - state: base-colorB-inhand-right
+    - type: Sprite
+      sprite: /Textures/_SpL/Objects/Specific/Medical/medipen.rsi
+      layers:
+        - state: amoxpen
+          map: ["enum.SolutionContainerLayers.Fill"]
+    - type: SolutionContainerVisuals
+      maxFillLevels: 1
+      changeColor: false
+      emptySpriteName: amoxpen_empty
+    - type: SolutionContainerManager
+      solutions:
+        pen:
+          maxVol: 40
+          reagents:
+            - ReagentId: Saline
+              Quantity: 20
+            - ReagentId: Amoxla
+              Quantity: 20
+              
+- type: entity
+  parent: [ChemicalMedipen]
+  id: ScorizineAutoinjector
+  name: scorizine auto-injector
+  description: A single-dose, non-refillable medipen containing scorizine and dermaline, used to quickly and easily treat thermal burns in ammonia-based organisms. Commonly used as a combat medicine.
+  components:
+    - type: Item
+      inhandVisuals:
+        left:
+          - state: base-needle-inhand-left
+          - state: base-colorA-inhand-left
+            color: "#A9D7D9"
+          - state: base-colorB-inhand-left
+        right:
+          - state: base-needle-inhand-right
+          - state: base-colorA-inhand-right
+            color: "#A9D7D9"
+          - state: base-colorB-inhand-right
+    - type: Sprite
+      sprite: /Textures/_SpL/Objects/Specific/Medical/medipen.rsi
+      layers:
+        - state: scoripen
+          map: ["enum.SolutionContainerLayers.Fill"]
+    - type: SolutionContainerVisuals
+      maxFillLevels: 1
+      changeColor: false
+      emptySpriteName: scoripen_empty
+    - type: SolutionContainerManager
+      solutions:
+        pen:
+          maxVol: 40
+          reagents:
+            - ReagentId: Saline
+              Quantity: 20
+            - ReagentId: Amoxla
+              Quantity: 20
+              
+- type: entity
+  parent: [ChemicalMedipen]
+  id: SalineMicroinjector
+  name: saline microinjector
+  description: A chemical microinjector containing a small shot of saline. Good for filling up on lost blood.
+  components:
+    - type: Item
+      inhandVisuals:
+        left:
+          - state: base-needle-inhand-left
+          - state: base-colorA-inhand-left
+            color: "#2465CB"
+          - state: base-colorB-inhand-left
+        right:
+          - state: base-needle-inhand-right
+          - state: base-colorA-inhand-right
+            color: "#2465CB"
+          - state: base-colorB-inhand-right
+    - type: Sprite
+      sprite: /Textures/Objects/Specific/Medical/medipen.rsi
+      layers:
+        - state: salpen
+          map: ["enum.SolutionContainerLayers.Fill"]
+    - type: SolutionContainerVisuals
+      maxFillLevels: 1
+      changeColor: false
+      emptySpriteName: salpen_empty
+    - type: SolutionContainerManager
+      solutions:
+        pen:
+          maxVol: 15
+          reagents:
+            - ReagentId: Saline
+              Quantity: 15

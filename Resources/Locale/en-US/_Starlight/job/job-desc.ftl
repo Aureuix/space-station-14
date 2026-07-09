@@ -1,14 +1,14 @@
 job-description-blueshield = Your primary job is to protect the heads. Remember, you are not a security officer.
 job-description-boxer = Fight your way to the top! Challenge the head of personnel and get brigged when you win.
-job-description-decimus = You are a Decimus Operative. Enact Code Epsilon. Recovery of NanoTrasen Personnel may or may not be an objective, seek directives from your superiors.
+job-description-decimus = You are a Decimus Operative. Enact the elimination of all station crew. Recovery of NanoTrasen Personnel may or may not be an objective, seek directives from your superiors.
 job-description-dutyofficer = Guard Genpop, process prisoners, fight with the non-compliant. Your job is to make sure that people who were caught, stay caught, and to act as an extension of the warden.
-job-description-iaa = You are a servant of the people, defend, condemn the citizens of your station!
+job-description-iaa = You are a servant of the people, defend or condemn the citizens of your station!
 job-description-magistrate = You are the very justice of the station, your job is to try all major troublemakers.
 job-description-mailtech = Deliver letters and packages to the crew of the station to make cargo money.
 job-description-miningspec = Stay station side and enrich the station with materials using your salvage magnet and ore processors
 job-description-nanotrasen-special-forces = You are a NanoTrasen Special Forces Operative. Perform your assigned task.
 job-description-ntncblueshield = Your primary job is to protect your charged Nanotrasen-Central Command Consortium officials, this overrules anything else.
-job-description-greenshield = Your primary job is to protect your charged Central Command Consortium officials, this overrules anything else.
+job-description-greenshield = Your primary job is to protect your charged Central Command officials, this overrules anything else.
 job-description-ntrep = You are an auditor sent by Central Command to make sure that all personnel are working efficiently and in the best interest of the corporation.
 job-description-performer = Learn the basics of clowning, miming, and musicking. Perform for the crew, and become a brilliant entertainer.
 job-description-roboticist = A scientist whose purpose is to repair and create mechanoids, cyborgs, and other mechanical creations.

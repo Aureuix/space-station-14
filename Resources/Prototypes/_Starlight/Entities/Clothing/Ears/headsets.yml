@@ -10,6 +10,7 @@
         - EncryptionKeyNanoTrasen
         - EncryptionKeyLawSecurity
         - EncryptionKeyCommon
+        - EncryptionKeyCommand
     - type: Sprite
       sprite: Clothing/Ears/Headsets/servicesecurity.rsi
 

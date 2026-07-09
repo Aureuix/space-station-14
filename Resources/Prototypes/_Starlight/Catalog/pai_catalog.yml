@@ -127,6 +127,22 @@
       stock: 1
 
 - type: listing
+  id: Felyaic
+  name: language-Felyaic-name
+  description: language-Felyaic-description
+  productLanguage: Felyaic
+  icon:
+    sprite: /Textures/_Starlight/Interface/language_icon.rsi
+    state: felyaic
+  cost:
+    SiliconMemory: 5
+  categories:
+    - Languages
+  conditions:
+    - !type:ListingLimitedStockCondition
+      stock: 1
+
+- type: listing
   id: Terrum
   name: language-Terrum-name
   description: language-Terrum-description
@@ -269,3 +285,37 @@
   conditions:
     - !type:ListingLimitedStockCondition
       stock: 1
+
+# SpL Start      
+- type: listing
+  id: Chaet
+  name: language-Chaet-name
+  description: language-Chaet-description
+  productLanguage: Chaet
+  icon:
+    sprite: /Textures/_SpL/Interface/language_icon.rsi
+    state: chaet
+  cost:
+    SiliconMemory: 5
+  categories:
+    - Languages
+  conditions:
+    - !type:ListingLimitedStockCondition
+      stock: 1
+      
+- type: listing
+  id: NovaCygni
+  name: language-NovaCygni-name
+  description: language-NovaCygni-description
+  productLanguage: NovaCygni
+  icon:
+    sprite: /Textures/_SpL/Interface/language_icon.rsi
+    state: novacygni
+  cost:
+    SiliconMemory: 5
+  categories:
+    - Languages
+  conditions:
+    - !type:ListingLimitedStockCondition
+      stock: 1
+# SpL End

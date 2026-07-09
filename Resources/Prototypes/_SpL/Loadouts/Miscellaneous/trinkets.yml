@@ -10,3 +10,9 @@
     back: 
     - ItemUmbrella
   groupBy: "umbrellas"
+  
+- type: loadout
+  id: BoxLighttubeBlacklight
+  equipment:
+    mask: BoxLighttubeBlacklight
+  groupBy: "lights"

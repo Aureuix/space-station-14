@@ -28,3 +28,8 @@
     prefix: plushie-kanna-
     count: 1
     
+- type: localizedDataset
+  id: PlushiesChesed
+  values:
+    prefix: plushie-chesed-
+    count: 35

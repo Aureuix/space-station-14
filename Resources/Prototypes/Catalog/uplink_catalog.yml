@@ -223,7 +223,7 @@
   discountDownTo:
     Telecrystal: 10
   cost:
-    Telecrystal: 17
+    Telecrystal: 16 # SpL - 17->16
   categories:
   - UplinkWeaponry
 
@@ -235,9 +235,9 @@
   productEntity: ClothingBackpackDuffelSyndicateFilledRifle
   discountCategory: veryRareDiscounts
   discountDownTo:
-    Telecrystal: 9 # Starlight-edit: 11 -> 9
+    Telecrystal: 12 # SpL - 11-> 12
   cost:
-    Telecrystal: 16 # Starlight-edit: 18 -> 16
+    Telecrystal: 19 # SpL - 18->19
   categories:
   - UplinkWeaponry
 

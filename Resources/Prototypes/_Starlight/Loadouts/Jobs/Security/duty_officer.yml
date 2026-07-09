@@ -43,6 +43,68 @@
   equipment:
     jumpsuit: ClothingUniformJumpskirtSecBlue
 
+- type: loadout
+  id: DutyOfficerJumpsuitFormal
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitFormalSecoff
+
+- type: loadout
+  id: DutyOfficerJumpskirtFormal
+  equipment:
+    jumpsuit: ClothingUniformJumpskirtFormalSecoff
+
+- type: loadout
+  id: DutyOfficerSeniorJumpsuitFormal
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitFormalSeniorSecoff
+
+- type: loadout
+  id: DutyOfficerSeniorJumpskirtFormal
+  equipment:
+    jumpsuit: ClothingUniformJumpskirtFormalSeniorSecoff
+    
+- type: loadout
+  id: FormalOfficerJumpsuit
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitFormalSecoff
+
+- type: loadout
+  id: FormalOfficerJumpskirt
+  equipment:
+    jumpsuit: ClothingUniformJumpskirtFormalSecoff
+
+- type: loadout
+  id: FormalSeniorOfficerJumpsuit
+  effects:
+    - !type:GroupLoadoutEffect
+      proto: SkilledOfficer
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitFormalSeniorSecoff
+
+- type: loadout
+  id: FormalSeniorOfficerJumpskirt
+  effects:
+    - !type:GroupLoadoutEffect
+      proto: SkilledOfficer
+  equipment:
+    jumpsuit: ClothingUniformJumpskirtFormalSeniorSecoff
+
+- type: loadout
+  id: DeputyFormalJumpsuit
+  effects:
+    - !type:GroupLoadoutEffect
+      proto: SkilledOfficer
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitFormalDeputy
+
+- type: loadout
+  id: DeputyFormalJumpskirt
+  effects:
+    - !type:GroupLoadoutEffect
+      proto: SkilledOfficer
+  equipment:
+    jumpsuit: ClothingUniformJumpskirtFormalDeputy
+
 # Outer Clothing
 - type: loadout
   id: DutyOfficerArmorRiot

@@ -1,0 +1,34 @@
+﻿- type: entity
+  name: riot shotgun
+  parent: WeaponShotgunRiot
+  id: WeaponShotgunRiotRubber
+  description: A sturdy shotgun with a longer magazine and a fixed tactical stock designed for non-lethal riot control.
+  suffix: Non-Lethal
+  components:
+    - type: BallisticAmmoProvider
+      proto: ShellShotgunBeanbag
+      
+- type: entity
+  name: SP-91-RC
+  parent: WeaponSubMachineGunSP91RC
+  id: WeaponSubMachineGunSP91RCRubber
+  suffix: Non-Lethal
+  components:
+    - type: ItemSlots
+      slots:
+        gun_magazine:
+          name: Magazine
+          startingItem: MagazinePistolSubMachineGunRubber
+          insertSound: /Audio/Weapons/Guns/MagIn/smg_magin.ogg
+          ejectSound: /Audio/Weapons/Guns/MagOut/smg_magout.ogg
+          priority: 2
+          whitelist:
+            tags:
+              - MagazinePistolSubMachineGunSP
+        gun_chamber:
+          name: Chamber
+          startingItem: CartridgePistolRubber
+          priority: 1
+          whitelist:
+            tags:
+              - CartridgePistol

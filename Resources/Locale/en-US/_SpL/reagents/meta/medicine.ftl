@@ -15,3 +15,6 @@ reagent-desc-ammoniacarbonate = Smelling salts, used for keeping people awake at
 
 reagent-name-lidocaine = lidocaine
 reagent-desc-lidocaine = A general-purpose anaesthetic, used to disable the pain receptors in a patient during surgery.
+
+reagent-scori-derma = scori & derma
+reagent-saline-amox = saline & amox

@@ -820,11 +820,17 @@
   description: A bulked up version of the blood-red hardsuit's helmet, purpose-built for the commander of a syndicate operative squad. Has significantly improved armor for those deadly front-lines firefights.
   components:
   - type: Sprite
-    sprite: Clothing/Head/Hardsuits/syndiecommander.rsi
+    sprite: _SpL/Clothing/Head/Hardsuits/CybersunEliteExo.rsi # Clothing/Head/Hardsuits/syndiecommander.rsi
   - type: Clothing
-    sprite: Clothing/Head/Hardsuits/syndiecommander.rsi
+    sprite: _SpL/Clothing/Head/Hardsuits/CybersunEliteExo.rsi # Clothing/Head/Hardsuits/syndiecommander.rsi
+  # SpL start- REMOVE THIS AND UNDO AFTER ADMEME
   - type: PointLight
-    color: green
+    color: purple
+    radius: 7
+    energy: 3
+  # SpL end- RESTORE ALL BELOW AFTER ADMEME
+#  - type: PointLight
+#    color: green
   - type: PressureProtection
     highPressureMultiplier: 0.08
     lowPressureMultiplier: 1000

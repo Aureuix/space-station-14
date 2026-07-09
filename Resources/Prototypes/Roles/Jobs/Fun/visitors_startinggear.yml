@@ -123,7 +123,7 @@
 - type: startingGear
   id: VisitorHOS
   equipment:
-    jumpsuit: ClothingUniformJumpsuitHoSParadeMale
+    jumpsuit: ClothingUniformJumpsuitHoSParade
     shoes: ClothingShoesBootsCowboyBlackFilled
     gloves: ClothingHandsGlovesCombat
     head: ClothingHeadHatHoshat
@@ -1730,7 +1730,7 @@
 - type: startingGear
   id: ChallengeVictimHOS
   equipment:
-    jumpsuit: ClothingUniformJumpsuitHoSParadeMale
+    jumpsuit: ClothingUniformJumpsuitHoSParade
     shoes: ClothingShoesBootsCowboyBlackFilled
     gloves: ClothingHandsGlovesCombat
     head: ClothingHeadHatHoshat

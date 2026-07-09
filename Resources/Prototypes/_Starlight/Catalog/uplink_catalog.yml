@@ -72,16 +72,16 @@
   productEntity: ClothingBackpackDuffelSyndicateFilledBullpup
   discountCategory: veryRareDiscounts
   discountDownTo:
-    Telecrystal: 13
+    Telecrystal: 14 # SpL - 13->14
   cost:
-    Telecrystal: 17
+    Telecrystal: 18 # SpL - 16->18
   categories:
     - UplinkWeaponry
-  conditions:
-    - !type:StoreWhitelistCondition
-      whitelist:
-        tags:
-          - NukeOpsUplink
+#  conditions: # SpL
+#    - !type:StoreWhitelistCondition
+#      whitelist:
+#        tags:
+#          - NukeOpsUplink
 
 - type: listing
   id: UplinkMarriage
@@ -236,11 +236,11 @@
   categories:
     - UplinkAmmo
 
-# For the Pitbull
+# For the Pitbull # SpL actually it's for the estoc now
 - type: listing
   id: UplinkMagazineMagnumRifle
-  name: uplink-rifle-magazine-pitbull-name
-  description: uplink-rifle-magazine-pitbull-desc
+  name: uplink-rifle-magazine-estoc-name # SpL
+  description: uplink-rifle-magazine-estoc-desc # SpL
   icon:
     {
       sprite: /Textures/_Starlight/Objects/Weapons/Guns/Ammunition/Magazine/Magnum/magnum_rifle_mag.rsi,
@@ -251,11 +251,11 @@
     Telecrystal: 2
   categories:
     - UplinkAmmo
-  conditions:
-    - !type:StoreWhitelistCondition
-      whitelist:
-        tags:
-          - NukeOpsUplink
+#  conditions: # SpL
+#    - !type:StoreWhitelistCondition
+#      whitelist:
+#        tags:
+#          - NukeOpsUplink
 
 - type: listing
   id: UplinkUziMagazine
@@ -670,7 +670,7 @@
 
 #Dunnow about upstream. but we L O V E our stealth traitors.
 - type: listing
-  id: UplinkgClothingThievingGloves
+  id: UplinkClothingThievingGloves
   name: uplink-clothing-chameleon-thieving-gloves-name
   description: uplink-clothing-chameleon-thieving-gloves-desc
   productEntity: ClothingHandsChameleonThief

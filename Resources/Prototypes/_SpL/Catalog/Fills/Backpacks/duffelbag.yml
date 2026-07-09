@@ -2,7 +2,7 @@
   parent: ClothingBackpackDuffelSyndicateBundle
   id: ClothingBackpackDuffelHardsuitCSEliteBundle
   name: cybersun elite hardsuit bundle
-  description: "Contains CyberSun's competition with Gorlex."
+  description: "Contains a comfortable and technologically-enhanced hardsuit designed by CyberSun to compete with Gorlex models."
   components:
   - type: EntityTableContainerFill
     containers:
@@ -14,14 +14,14 @@
 
 - type: entity
   parent: ClothingBackpackDuffelSyndicateBundle
-  id: ClothingBackpackDuffelSyndicateFilledLecter
-  name: M90 GL bundle
-  description: "The M90, a competitor to NanoTrasen's Lecter, bundled with three magazines."
+  id: ClothingBackpackDuffelSyndicateFilledM90
+  name: M90 carbine bundle
+  description: "The M90 carbine, a compact competitor to the SolGov Lecter, bundled with three FMJ magazines."
   components:
   - type: EntityTableContainerFill
     containers:
       storagebase: !type:AllSelector
         children:
-        - id: WeaponRifleM90GrenadeLauncher
-        - id: MagazineRifleSP
+        - id: WeaponRifleM90Carbine
+        - id: MagazineRifleFMJ
           amount: 3

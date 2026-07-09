@@ -9,3 +9,5 @@
       components:
         - type: LightweightDrunk
           boozeStrengthMultiplier: 0.5
+  conflicts:
+    - LightweightDrunk

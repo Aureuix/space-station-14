@@ -1,0 +1,152 @@
+﻿- type: entity
+  parent: BaseChemistryBottleFilled
+  suffix: lidocaine
+  id: ChemistryBottleLidocaine
+  components:
+    - type: Label
+      currentLabel: reagent-name-lidocaine
+    - type: SolutionContainerManager
+      solutions:
+        drink:
+          maxVol: 30
+          reagents:
+            - ReagentId: Lidocaine
+              Quantity: 30
+
+- type: entity
+  parent: BaseChemistryBottleFilled
+  suffix: scorizine
+  id: ChemistryBottleScorizine
+  components:
+    - type: Label
+      currentLabel: reagent-name-scorizine
+    - type: SolutionContainerManager
+      solutions:
+        drink:
+          maxVol: 30
+          reagents:
+            - ReagentId: Scorizine
+              Quantity: 30
+              
+- type: entity
+  parent: BaseChemistryBottleFilled
+  suffix: voltizol
+  id: ChemistryBottleVoltizol
+  components:
+    - type: Label
+      currentLabel: reagent-name-voltizol
+    - type: SolutionContainerManager
+      solutions:
+        drink:
+          maxVol: 30
+          reagents:
+            - ReagentId: Voltizol
+              Quantity: 30
+              
+- type: entity
+  parent: BaseChemistryBottleFilled
+  suffix: chronexaline
+  id: ChemistryBottleChronexaline
+  components:
+    - type: Label
+      currentLabel: reagent-name-chronexaline
+    - type: SolutionContainerManager
+      solutions:
+        drink:
+          maxVol: 30
+          reagents:
+            - ReagentId: Chronexaline
+              Quantity: 30
+    
+- type: entity
+  parent: BaseChemistryBottleFilled
+  suffix: arcryox
+  id: ChemistryBottleArcryox
+  components:
+    - type: Label
+      currentLabel: reagent-name-arcryox
+    - type: SolutionContainerManager
+      solutions:
+        drink:
+          maxVol: 30
+          reagents:
+            - ReagentId: Arcryox
+              Quantity: 30
+
+- type: entity
+  parent: BaseChemistryBottleFilled
+  suffix: ammonium
+  id: ChemistryBottleAmmonium
+  components:
+    - type: Label
+      currentLabel: reagent-name-ammonium
+    - type: SolutionContainerManager
+      solutions:
+        drink:
+          maxVol: 30
+          reagents:
+            - ReagentId: Ammonium
+              Quantity: 30
+
+- type: entity
+  parent: BaseChemistryBottleFilled
+  suffix: adraferromycadone
+  id: ChemistryBottleAdraferromycadone
+  components:
+    - type: Label
+      currentLabel: reagent-name-adraferromycadone
+    - type: SolutionContainerManager
+      solutions:
+        drink:
+          maxVol: 30
+          reagents:
+            - ReagentId: Adraferromycadone
+              Quantity: 30
+
+# Adminspawn jugs
+
+- type: entity
+  parent: Jug
+  id: JugScoriDerma
+  suffix: scori & derma
+  components:
+    - type: Label
+      currentLabel: reagent-scori-derma
+    - type: SolutionContainerManager
+      solutions:
+        drink:
+          reagents:
+            - ReagentId: Scorizine
+              Quantity: 50
+            - ReagentId: Dermaline
+              Quantity: 150
+              
+- type: entity
+  parent: Jug
+  id: JugSalineAmox
+  suffix: saline & amox
+  components:
+    - type: Label
+      currentLabel: reagent-saline-amox
+    - type: SolutionContainerManager
+      solutions:
+        drink:
+          reagents:
+            - ReagentId: Saline
+              Quantity: 100
+            - ReagentId: Amoxla
+              Quantity: 100
+              
+- type: entity
+  parent: Jug
+  id: JugOmnizine
+  suffix: omnizine
+  components:
+    - type: Label
+      currentLabel: reagent-name-omnizine
+    - type: SolutionContainerManager
+      solutions:
+        drink:
+          reagents:
+            - ReagentId: Omnizine
+              Quantity: 200
