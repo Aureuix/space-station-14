@@ -25,9 +25,9 @@ public sealed partial class RedShirtSystem : EntitySystem{
         var deathThreshold = _mobThreshold.GetThresholdForState(ent.Owner, MobState.Dead, mobThreshComp); 
         _mobThreshold.SetMobStateThreshold(ent.Owner, deathThreshold / 2, MobState.Dead, mobThreshComp);
 
-        // if Brittle Bones exists, don't
-        if (!HasComp<BrittleBonesComponent>(ent.Owner))
-            _mobThreshold.SetMobStateThreshold(ent.Owner, deathThreshold - 1, MobState.Critical, mobThreshComp);
+        // if Brittle Bones exists, don't // nyka- removed this because it was playing havoc with hp display
+    //    if (!HasComp<BrittleBonesComponent>(ent.Owner))
+    //        _mobThreshold.SetMobStateThreshold(ent.Owner, deathThreshold - 1, MobState.Critical, mobThreshComp);
 
     }
 
