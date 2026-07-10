@@ -815,30 +815,6 @@
     # Starlight-start
     staminaModifier: 0.1
     # Starlight-end
-    # SpL Start- REMOVE THIS AFTER THE ADMEME
-  - type: ContainerContainer
-    containers:
-      cell_slot: !type:ContainerSlot
-      toggleable-clothing: !type:ContainerSlot
-  - type: PowerCellSlot
-    cellSlotId: cell_slot
-  - type: ItemSlots
-    slots:
-      cell_slot:
-        name: power-cell-slot-component-slot-name-default
-        startingItem: PowerCellSmall
-        whitelist:
-          tags:
-            - PowerCellSmall
-  - type: EnergyDomeGenerator
-    damageEnergyDraw: 32
-    domePrototype: EnergyDomeSmallRed
-  - type: PowerCellDraw
-    enabled: false
-    drawRate: 0
-  - type: UseDelay
-    delay: 10.0
-    # SpL End
   - type: ClothingSpeedModifier
     walkModifier: 0.95
     sprintModifier: 0.95
