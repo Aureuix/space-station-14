@@ -36,6 +36,7 @@
     quickEquip: false
     slots:
     - back
+    - suitStorage # SpL
   - type: Construction
     graph: WoodenBat
     node: bat
