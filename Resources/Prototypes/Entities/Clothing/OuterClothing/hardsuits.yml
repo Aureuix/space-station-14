@@ -787,13 +787,13 @@
 - type: entity
   parent: [ClothingOuterHardsuitBase, BaseSyndicateContraband]
   id: ClothingOuterHardsuitSyndieCommander
-  name: CyberSun elite commander exosuit # syndicate commander hardsuit
-  description: A powerful, experimental exosuit designed for a commander sent to deliver a message. # A bulked up version of the blood-red hardsuit, purpose-built for the commander of a syndicate operative squad. Has significantly improved armor for those deadly front-lines firefights.
+  name: syndicate commander hardsuit
+  description: AA bulked up version of the blood-red hardsuit, purpose-built for the commander of a syndicate operative squad. Has significantly improved armor for those deadly front-lines firefights.
   components:
   - type: Sprite
-    sprite: _SpL/Clothing/OuterClothing/Hardsuits/CybersunEliteExo.rsi # Clothing/OuterClothing/Hardsuits/syndiecommander.rsi
+    sprite: Clothing/OuterClothing/Hardsuits/syndiecommander.rsi
   - type: Clothing
-    sprite: _SpL/Clothing/OuterClothing/Hardsuits/CybersunEliteExo.rsi # Clothing/OuterClothing/Hardsuits/syndiecommander.rsi
+    sprite: Clothing/OuterClothing/Hardsuits/syndiecommander.rsi
   - type: PressureProtection
     highPressureMultiplier: 0.05
     lowPressureMultiplier: 1000
@@ -815,30 +815,6 @@
     # Starlight-start
     staminaModifier: 0.1
     # Starlight-end
-    # SpL Start- REMOVE THIS AFTER THE ADMEME
-  - type: ContainerContainer
-    containers:
-      cell_slot: !type:ContainerSlot
-      toggleable-clothing: !type:ContainerSlot
-  - type: PowerCellSlot
-    cellSlotId: cell_slot
-  - type: ItemSlots
-    slots:
-      cell_slot:
-        name: power-cell-slot-component-slot-name-default
-        startingItem: PowerCellSmall
-        whitelist:
-          tags:
-            - PowerCellSmall
-  - type: EnergyDomeGenerator
-    damageEnergyDraw: 32
-    domePrototype: EnergyDomeSmallRed
-  - type: PowerCellDraw
-    enabled: false
-    drawRate: 0
-  - type: UseDelay
-    delay: 10.0
-    # SpL End
   - type: ClothingSpeedModifier
     walkModifier: 0.95
     sprintModifier: 0.95

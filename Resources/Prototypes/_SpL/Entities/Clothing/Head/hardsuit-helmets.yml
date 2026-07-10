@@ -10,6 +10,8 @@
     sprite:  _SpL/Clothing/Head/Hardsuits/CybersunElite.rsi
   - type: PointLight
     color: purple
+    radius: 5
+    energy: 2
   - type: PressureProtection
     highPressureMultiplier: 0.08
     lowPressureMultiplier: 1000
