@@ -1615,9 +1615,15 @@
   - SecurityJumpskirtGrey
   - SeniorOfficerJumpsuit
   - SeniorOfficerJumpskirt
+  - DeputyFormalJumpsuit # SpL
+  - DeputyFormalJumpskirt # SpL
   - TrooperUniform
   - SecurityJumpsuitBlue
   - SecurityJumpskirtBlue # starlight start
+  - FormalOfficerJumpsuit
+  - FormalOfficerJumpskirt
+  - FormalSeniorOfficerJumpsuit
+  - FormalSeniorOfficerJumpskirt
   - SecurityTshirt # starlight end
 
 - type: loadoutGroup

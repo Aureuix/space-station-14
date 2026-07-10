@@ -1,0 +1,55 @@
+﻿- type: entity
+  parent: [BaseItem, BaseMinorContraband]
+  id: ThrowableBrick
+  name: brick
+  description: Long since made redundant by advancements in construction materials, the modern brick remains in circulation solely for the time-honoured tradition of being thrown at law enforcement.
+  components:
+    - type: Sprite
+      sprite: _SpL/Objects/Weapons/Throwables/brick.rsi
+      state: icon
+    - type: Appearance
+    - type: MeleeWeapon
+      wideAnimationRotation: -90
+      attackRate: 1
+      damage:
+        types:
+          Blunt: 8
+      soundHit:
+        collection: GenericHit
+    - type: LandAtCursor
+    - type: DamageOtherOnHit
+      damage:
+        types:
+          Blunt: 15
+          Structural: 15
+    - type: StaminaDamageOnHit
+      damage: 5
+    - type: StaminaDamageOnCollide
+      damage: 30
+      sound: /Audio/Weapons/genhit1.ogg
+      
+- type: entity
+  parent: [ThrowableBrick, BaseMinorContraband]
+  id: ThrowableBrickStunner
+  name: stun brick
+  suffix: ADMIN-ONLY
+  description: If the little pigs threw these instead of building houses, maybe there'd still be three of them.
+  components:
+    - type: MeleeWeapon
+      wideAnimationRotation: -90
+      attackRate: 1
+      damage:
+        types:
+          Blunt: 0
+      soundHit:
+        path: /Audio/Weapons/egloves.ogg
+    - type: LandAtCursor
+    - type: DamageOtherOnHit
+      damage:
+        types:
+          Blunt: 0
+          Structural: 0
+    - type: StaminaDamageOnHit
+      damage: 200
+    - type: StaminaDamageOnCollide
+      damage: 200
