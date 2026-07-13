@@ -1218,7 +1218,7 @@ namespace Content.Client.Lobby.UI
                     };
                     var jobIcon = _prototypeManager.Index(job.Icon);
                     icon.Texture = _sprite.Frame0(jobIcon.Icon);
-                    selector.Setup(items, job.LocalizedName, 210, description, icon, job.Guides); // Starlight-edit: account for longer job names to keep alignment (NTR for example)
+                    selector.Setup(items, job.LocalizedName, 200, job.LocalizedDescription, icon, job.Guides);
 
                     if (!_requirements.IsAllowed(job, Profile, out var reason))
                     {
