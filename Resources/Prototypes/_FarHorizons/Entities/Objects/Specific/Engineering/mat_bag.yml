@@ -28,6 +28,7 @@
   - type: Clothing
     sprite: _FarHorizons/Objects/Specific/Engineering/mat_bag.rsi
     slots: belt
+    quickEquip: false #SL
   - type: Item
     size: Large
   - type: Storage
