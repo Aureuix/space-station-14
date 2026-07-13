@@ -935,6 +935,7 @@
     - SignalValve
     - CanisterPort
     - FilterGas
+    - FilterGasInline
     - PipeHalf
     - PipeManifold
     - PressureRegulator
