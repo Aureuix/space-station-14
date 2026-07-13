@@ -87,7 +87,7 @@
 - type: entity
   name: Central Logistics Division rubber stamp # SpL- it's logi
   parent: RubberStampBase
-  id: RubberStampCLD
+  id: RubberStampCCD
   categories: [ DoNotMap ]
   components:
   - type: Stamp
@@ -207,7 +207,7 @@
           children:
             - id: RubberStampCentcom
             - id: RubberStampCAD
-            - id: RubberStampCLD
+            - id: RubberStampCCD
             - id: RubberStampCED
             - id: RubberStampCID
             - id: RubberStampCMD
