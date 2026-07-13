@@ -90,8 +90,8 @@
       - id: ClothingBeltMedicalFilled
       - id: ClothingBackpackDuffelSurgeryFilled # SpL
 #      - id: BottleCaseParamedicFilled
-#      - id: HealiumTankFilled
       - id: NitrousOxideTankFilled
+      - id: ZXATankFilled
       - id: MedkitFilled
       - id: Bloodpack
         amount: 2
