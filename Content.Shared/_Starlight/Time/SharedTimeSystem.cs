@@ -37,7 +37,7 @@ public abstract class SharedTimeSystem : EntitySystem
         var newDate = Date.AddDays(totalDays);
 
         // ISO 8601 (YYYY-MM-DD or YYYYMMDD) 
-        return (stationTime, newDate.ToString("yyyy-MM-dd"));
+        return (stationTime, newDate.ToString("dd-MM-yyyy")); // SpL- changed to dd-mm-yyyy due to popular request
     }
 
     
@@ -47,7 +47,7 @@ public abstract class SharedTimeSystem : EntitySystem
     public string GetDate()
     {
         // ISO 8601 (YYYY-MM-DD or YYYYMMDD)
-        return Date.ToString("yyyy-MM-dd");
+        return Date.ToString("dd-MM-yyyy"); // SpL- changed to dd-mm-yyyy due to popular request
     }
     
     /// <summary>
