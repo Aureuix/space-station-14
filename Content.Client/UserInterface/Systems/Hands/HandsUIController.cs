@@ -77,10 +77,7 @@ public sealed class HandsUIController : UIController, IOnStateEntered<GameplaySt
         if (_handsSystem.TryGetHand((entity.Owner, entity.Comp), name, out var hand))
             AddHand(name, hand.Value);
     }
-    
-    if (_handsSystem.TryGetHeldItem((entity.Owner, entity.Comp), name, out var held)) // Starlight
-    OnItemAdded(name, held.Value); // Starlight
-    
+
     private void OnRemoveHand(Entity<HandsComponent> entity, string name)
     {
         if (entity.Owner != _player.LocalEntity)
