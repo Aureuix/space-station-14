@@ -1,5 +1,5 @@
 - type: entity
-  parent: [ ClothingHeadHardsuitBase, ClothingHeadSuitWithLightBase ]
+  parent: [ ClothingHeadHardsuitBase, ClothingHeadSuitWithLightBase, ClothingHeadLightParamsAdvanced ]
   id: ClothingHeadHelmetHardsuitCSElite
   name: CyberSun Elite Helmet
   description: A sleek and armored helmet, paired with its equally stylish and menacing hardsuit counterpart.
@@ -10,8 +10,6 @@
     sprite:  _SpL/Clothing/Head/Hardsuits/CybersunElite.rsi
   - type: PointLight
     color: purple
-    radius: 5
-    energy: 2
   - type: PressureProtection
     highPressureMultiplier: 0.08
     lowPressureMultiplier: 1000
