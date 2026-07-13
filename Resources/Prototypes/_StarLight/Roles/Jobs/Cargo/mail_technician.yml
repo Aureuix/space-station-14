@@ -22,7 +22,8 @@
 - type: startingGear
   id: MailTechGear
   equipment:
-    ears: ClothingHeadsetCargo # SpL- no mailcompanion so no pocket fill
+    ears: ClothingHeadsetCargo 
+    pocket1: MailCompanion # Starlight
   storage:
     back: # literally just comment to update folder
     - Multitool #maybe not a good idea? idk makes unpacking it quick
