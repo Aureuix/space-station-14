@@ -127,7 +127,7 @@
         - Injector
         - Pill
         - HandLabeler
-        - ConditionalHealing
+        # - ConditionalHealing # SpL- reimplement when IPCs are added
     #Starlight end
   - type: Sprite
     sprite: _Starlight/Objects/Specific/Medical/firstaidkits.rsi
