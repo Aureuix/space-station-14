@@ -68,7 +68,8 @@ public sealed partial class SurgerySystem : SharedSurgerySystem
             
             incision.NextUpdate = Timing.CurTime + incision.UpdateInterval;
             
-            var patient = Transform(uid).ParentUid;
+            if (!TryComp<BodyPartComponent>(uid, out var part) || part.Body is not { } patient)
+                continue;
             
             _bloodstreamSystem.TryModifyBleedAmount(patient, 0.1f);
         }
