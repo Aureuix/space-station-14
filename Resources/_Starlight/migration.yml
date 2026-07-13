@@ -82,3 +82,6 @@ WeaponM1911: WeaponPulseM1911
 #2026-07-04 - Changed the prototype name of the HoS jumpsuits
 ClothingUniformJumpsuitHoSParadeMale: ClothingUniformJumpsuitHoSParade
 ClothingUniformJumpskirtHoSParadeMale: ClothingUniformJumpskirtHoSParade
+
+# 2026-07-14 - CCD changed to CLD
+RubberStampCCD: RubberStampCLD
