@@ -34,7 +34,6 @@
       - PosterContrabandFreeTonto
       - PosterContrabandAtmosiaDeclarationIndependence
       - PosterContrabandFunPolice
-      - PosterContrabandLustyExomorph
       - PosterContrabandSyndicateRecruitment
       - PosterContrabandClown
       - PosterContrabandSmoke
@@ -64,7 +63,8 @@
       - PosterContrabandPunchShit
       - PosterContrabandTheGriffin
       - PosterContrabandFreeDrone
-      - PosterContrabandBustyBackdoorExoBabes6
+      - PosterContrabandBustyBackdoorExoBabes6 # Starlight
+      - PosterContrabandLustyExomorph # Starlight
       - PosterContrabandRobustSoftdrinks
       - PosterContrabandShamblersJuice
       - PosterContrabandPwrGame
@@ -106,7 +106,7 @@
       - PosterContrabandWantedFreak
       - PosterContrabandWantedIan
       - PosterContrabandWantedJohnToe
-      - PosterContrabandWantedMimeSexy
+      - PosterContrabandWantedMime
       - PosterContrabandWantedPunPun
       - PosterContrabandWantedStirStir
       - PosterContrabandWantedTraitor
@@ -116,6 +116,9 @@
       - PosterContrabandWaffleCorpTwo
       - PosterContrabandARFRadio
       - PosterContrabandGEC
+      - PosterContrabandHereticalExomorph
+      - PosterContrabandBeep100
+      - PosterContraband300Hotdogs
       #endregion Starlight
     chance: 1
 
@@ -211,5 +214,14 @@
       - PosterLegitSpaceCops2
       - PosterLegitStarkistFancy
       - PosterLegitTSPDRangers
+      - PosterLegitChipIn
+      - PosterLegitAndromedaBitters
+      - PosterLegitBlasto
+      - PosterLegitMidtownPizza
+      - PosterLegitMoffuchis
+      - PosterLegitPizzaImperator
+      - PosterLegitQuirks
+      - PosterLegitSlogan
+      - PosterLegitTipperCreamSoda
       #endregion Starlight
     chance: 1
