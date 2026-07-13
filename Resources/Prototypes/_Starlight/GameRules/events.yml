@@ -140,7 +140,7 @@
       minPlayers: 20
     - type: BrighteyeRule
     - type: LoadMapRule
-      mapPath: /Maps/_Starlight/TheDark/Hideout.yml
+      mapPath: /Maps/_Starlight/TheDark/Garden.yml # SpL- hideout kinda sucks
       mapTag: TheDark
     - type: AntagLoadProfileRule
       speciesHardOverride: Shadekin
