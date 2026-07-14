@@ -6,3 +6,6 @@ uplink-m90-bundle-desc = The M90 carbine, a compact competitor to the SolGov Lec
 
 uplink-rifle-magazine-estoc-name = DMR magazine (.45 magnum)
 uplink-rifle-magazine-estoc-desc = DMR magazines with 20 cartridges. Compatible with the Estoc.
+
+uplink-free-encryption-key-name = Syndicate encryption key
+uplink-free-encryption-key-desc = A single encryption key provided for you to stay in touch with your allies. Use it wisely.

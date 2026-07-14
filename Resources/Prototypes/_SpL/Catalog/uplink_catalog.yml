@@ -25,5 +25,16 @@
     Telecrystal: 17
   categories:
   - UplinkWeaponry
+  
+- type: listing
+  id: UplinkFreeEncryptionKey
+  name: uplink-free-encryption-key-name
+  description: uplink-free-encryption-key-name
+  productEntity: EncryptionKeySyndie
+  categories:
+    - UplinkDeception
+  conditions:
+    - !type:ListingLimitedStockCondition
+      stock: 1
 
   
