@@ -98,6 +98,8 @@
         - BodyBag # From Paramedic
         - ParaKnife # From Paramedic
         - JawsOfLife #Starlight
+        - Patch # SpL
+        - Vial # SpL
       components:
         - Stunbaton
         - FlashOnTrigger
