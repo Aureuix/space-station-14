@@ -324,6 +324,7 @@
   - type: IdentityBlocker
   - type: Tag
     tags:
+    - MimeMask
     - HamsterWearable
     - WhitelistChameleon
   - type: HideLayerClothing
@@ -725,6 +726,9 @@
     sprite: Clothing/Mask/mime_security.rsi
   - type: Clothing
     sprite: Clothing/Mask/mime_security.rsi
+  - type: Construction
+    graph: ClothingMaskMimeSecurity
+    node: mask
   - type: Armor
     modifiers:
       coefficients:

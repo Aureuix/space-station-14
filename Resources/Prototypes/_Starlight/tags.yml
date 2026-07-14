@@ -67,7 +67,7 @@
 
 - type: Tag
   id: BulletUnarmedCollide
-  
+
 - type: Tag
   id: BurnedTraitBackground
 
@@ -130,6 +130,9 @@
 
 - type: Tag
   id: ClarkeTreads
+
+- type: Tag
+  id: CheapSunglasses #used in the security mime mask crafting graph
 
 - type: Tag
   id: ClownKudzu
@@ -422,6 +425,9 @@
   id: MicroManipulatorStockPart
 
 - type: Tag
+  id: MimeMask #used in the security mime mask crafting graph
+
+- type: Tag
   id: ModularBarrel
 
 - type: Tag
@@ -480,7 +486,7 @@
 
 - type: Tag
   id: RomerolDisasterSurvivorTraitBackground
-  
+
 - type: Tag
   id: ReflectiveArmorHelmet
     # Tag for reflective helmet, used for set bonus detection by ReflectiveSetBonusSystem
