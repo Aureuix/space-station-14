@@ -228,6 +228,7 @@
       - Dropper
       - Vial # SpL
       - Patch # SpL
+      - PatchPack # SpL
       components:
       - Injector
       - Pill
@@ -305,6 +306,7 @@
         - JawsOfLife #Starlight
         - Patch # SpL
         - Vial # SpL
+        - PatchPack # SpL
       components:
         - Injector
         - Pill

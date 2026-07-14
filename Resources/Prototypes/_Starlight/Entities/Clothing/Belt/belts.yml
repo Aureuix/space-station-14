@@ -99,6 +99,7 @@
         - ParaKnife # From Paramedic
         - JawsOfLife #Starlight
         - Patch # SpL
+        - PatchPack # SpL
         - Vial # SpL
       components:
         - Stunbaton
