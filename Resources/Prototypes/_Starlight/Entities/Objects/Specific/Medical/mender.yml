@@ -53,8 +53,8 @@
     - ReagentId: Bicaridine
       Quantity: 0.5
     delay: 0.5
-    damageContainers:
-      - Biological
+#    damageContainers:
+#      - Biological # SpL- needed to let kitsune use automenders
     damage:
       groups:
         Brute: -2
@@ -94,8 +94,8 @@
     reagentsToDrain:
     - ReagentId: Dermaline
       Quantity: 0.5
-    damageContainers:
-      - Biological
+#    damageContainers:
+#      - Biological # SpL- needed to let kitsune use automenders
     delay: 0.5
     damage:
       types:
