@@ -129,6 +129,18 @@
   applyMaterialDiscount: false
   materials:
     SheetPrinter: 100
+    
+# SpL Start
+- type: latheRecipe
+  id: PrintedDocumentEnemyOfCorporationDesignationRecipe
+  result: PrintedDocumentEnemyOfCorporationDesignation
+  categories:
+    - Reports
+  completetime: 2
+  applyMaterialDiscount: false
+  materials:
+    SheetPrinter: 100
+# SpL End
 
 # Statements
 

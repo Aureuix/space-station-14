@@ -14,6 +14,7 @@
   - PrintedDocumentDisposalReportRecipe
   - PrintedDocumentArrestReportRecipe
   - PrintedDocumentSalvageLeadReportRecipe
+  - PrintedDocumentEnemyOfCorporationDesignation # SpL
   # Statements
   - PrintedDocumentStatementAppointmentInterimChapterRecipe
   - PrintedDocumentEmploymentStatementRecipe
