@@ -53,9 +53,9 @@
           understands:
             - GalacticCommon
         - type: LanguageSpeaker
-          speaks:
+          spokenLanguages:
             - GalacticCommon
-          understands:
+          understoodLanguages:
             - GalacticCommon
   conflicts:
     - Foreigner

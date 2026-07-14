@@ -777,13 +777,13 @@
   - type: BatteryAmmoProvider
     proto: TaserBolt
     fireCost: 10
-    pacifismAllowedMode: true # SpL
   - type: BatteryWeaponFireModes
     fireModes:
     - proto: TaserBolt
       fireCost: 10
       magState: stun
       visualState: stun
+      pacifismAllowedMode: true # SpL
     - proto: RedLaserBeam
       fireCost: 5
       magState: kill

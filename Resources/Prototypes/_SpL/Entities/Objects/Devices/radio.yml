@@ -41,4 +41,3 @@
     spriteLayer: on
   - type: Item
     sprite: _SpL/Objects/Devices/strangeradio.rsi
-    state: icon
