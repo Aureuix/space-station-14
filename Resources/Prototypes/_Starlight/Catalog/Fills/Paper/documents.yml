@@ -128,17 +128,6 @@
   components:
     - type: Paper
       content: doc-text-printer-salvagelead-report
-      
-# SpL start
-- type: entity
-  parent: PrintedDocument
-  id: PrintedDocumentEnemyOfCorporationDesignation
-  name: Enemy of Corporation Designation
-  categories: [ HideSpawnMenu ]
-  components:
-    - type: Paper
-      content: doc-text-printer-enemy-of-corporation-designation
-# SpL end
 
 # Statements
 
