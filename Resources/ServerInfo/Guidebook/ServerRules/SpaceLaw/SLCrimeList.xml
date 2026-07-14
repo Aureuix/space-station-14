@@ -391,7 +391,7 @@
   10. [color=#4472ba]Corporate Crime[/color]. Covers Insubordination/Malfeasance, Conspiracy, Sedition, Treason, or Enemy of Corporation
   
   ## Minor Crimes
-  Those who commit a minor crime should be issued a warning for their first offense, however repeat offenses are cumulative and should result in jail time of up to 5 minutes per minor crime committed. 
+  Those who commit a minor crime should be issued a warning or a fine for their first offense, however repeat offenses are cumulative and should result in jail time of up to 5 minutes per minor crime committed. 
   <Table Columns="2">
     <ColorBox>
       <Box>
@@ -516,7 +516,7 @@
   </Table>
 
   ## Moderate Crimes
-  Those who commit a moderate crime should receive up to a 5 minute sentence per moderate crime committed.
+  Those who commit a moderate crime should receive up to a 5 minute sentence per moderate crime committed. Sentencing may be waived in favour of a fine if the subject is cooperative and this is a first offense.
   <Table Columns="2">
     <ColorBox>
       <Box>

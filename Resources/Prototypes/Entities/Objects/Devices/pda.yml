@@ -198,6 +198,17 @@
      enum.PdaVisuals.PdaType:
        !type:String
        pda-interntech
+   # Starlight BEGIN
+  - type: CartridgeLoader
+    uiKey: enum.PdaUiKey.Key
+    preinstalled:
+      - CrewManifestCartridge
+      - NotekeeperCartridge
+      - NanoTaskCartridge
+      - NewsReaderCartridge
+      - AstroNavCartridge
+      - NanoChatCartridge
+   # Starlight END
   - type: PdaBorderColor
     borderColor: "#717059"
     accentVColor: "#949137"

@@ -194,6 +194,8 @@
       prob: 0.20
     - id: OminousPill # Starlight
       prob: 0.10 # Starlight
+    - id: ThrowableBrick # SpL
+      prob: 0.025 # SpL
     # Tools
     - !type:NestedSelector
       tableId: MaintToolsTable

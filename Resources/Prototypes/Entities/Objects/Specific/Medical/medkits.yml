@@ -122,10 +122,13 @@
         - BodyBag
         - Vial
         - AutoMender
+        - Patch # SpL
+        - PatchPack # SpL
        components:
         - Injector
         - Pill
         - HandLabeler
+        # - ConditionalHealing # SpL- reimplement when IPCs are added
     #Starlight end
   - type: Sprite
     sprite: _Starlight/Objects/Specific/Medical/firstaidkits.rsi

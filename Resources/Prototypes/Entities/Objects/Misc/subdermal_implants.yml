@@ -403,7 +403,7 @@
   parent: BaseSubdermalImplant
   id: MindShieldImplant
   name: mindshield implant
-  description: This implant will ensure loyalty to Nanotrasen and prevent mind control devices.
+  description: This implant will prevent mind control devices from working on the implanted individual. # SpL- "mindshields are mind control" is stupid
   categories: [ HideSpawnMenu ]
   components:
    - type: SubdermalImplant

@@ -20,15 +20,16 @@ names-borgi-dataset-19 = Golden Rebeeper
 names-borgi-dataset-20 = D-0-G
 names-borgi-dataset-21 = Core-Gi
 
-names-corgi-dataset-1 = Ian but Smarter
-names-corgi-dataset-2 = Braindog
-names-corgi-dataset-3 = Speaks-In-Bork
-names-corgi-dataset-4 = Head of Pets
-names-corgi-dataset-5 = Hop's Best Friend
-names-corgi-dataset-6 = Super Corgi
+
+names-corgi-dataset-1 = Pudding
+names-corgi-dataset-2 = Butterscotch
+names-corgi-dataset-3 = Peanut
+names-corgi-dataset-4 = Gnocchi
+names-corgi-dataset-5 = Dumpling
+names-corgi-dataset-6 = Crouton
 names-corgi-dataset-7 = Paws
-names-corgi-dataset-8 = Bingus
-names-corgi-dataset-9 = Bongus
+names-corgi-dataset-8 = Pretzel
+names-corgi-dataset-9 = Brisket
 
 names-syndiborgi-dataset-1 = Red Rover
 names-syndiborgi-dataset-2 = Bites-The-Ankles

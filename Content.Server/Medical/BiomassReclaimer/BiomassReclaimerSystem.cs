@@ -211,7 +211,11 @@ namespace Content.Server.Medical.BiomassReclaimer
                 _solution.ResolveSolution(toProcess, stream.BloodSolutionName, ref stream.BloodSolution, out var solution))
             {
                 component.BloodReagents = solution.Clone();
-                component.BloodReagents.ScaleSolution(50 / component.BloodReagents.Volume);
+                // Starlight-start: fix Biomass divide by zero and presumed incorrect fluid scaling
+                component.BloodReagents.ScaleSolution(.25f);
+                if (component.BloodReagents.Volume > 50)
+                    component.BloodReagents.ScaleTo(50f);
+                // Starlight-end
             }
             if (TryComp<ButcherableComponent>(toProcess, out var butcherableComponent))
             {
@@ -242,23 +246,36 @@ namespace Content.Server.Medical.BiomassReclaimer
             bool isPlant = HasComp<ProduceComponent>(dragged);
             if (!isPlant && !HasComp<MobStateComponent>(dragged))
                 return false;
-
+            
             if (!Transform(reclaimer).Anchored)
+            {
+                _popup.PopupEntity(Loc.GetString("biomass-reclaimer-not-anchored"), reclaimer, PopupType.Large); // Starlight-edit: Added popups to inform the player of the refusal reason.
                 return false;
+            }
 
             if (TryComp<ApcPowerReceiverComponent>(reclaimer, out var power) && !power.Powered)
+            {
+                _popup.PopupEntity(Loc.GetString("biomass-reclaimer-not-powered"), reclaimer, PopupType.Large); // Starlight-edit: Added popups to inform the player of the refusal reason.
                 return false;
-
+            }
+            
             if (!isPlant && reclaimer.Comp.SafetyEnabled && !_mobState.IsDead(dragged))
+            {
+                _popup.PopupEntity(Loc.GetString("biomass-reclaimer-safety-on"), reclaimer, PopupType.Large); // Starlight-edit: Added popups to inform the player of the refusal reason.
                 return false;
+            }
 
             // Reject souled bodies in easy mode.
             if (_configManager.GetCVar(CCVars.BiomassEasyMode) &&
                 HasComp<HumanoidAppearanceComponent>(dragged) &&
                 _minds.TryGetMind(dragged, out _, out var mind))
             {
+
                 if (mind.UserId != null && _playerManager.TryGetSessionById(mind.UserId.Value, out _))
+                {
+                    _popup.PopupEntity(Loc.GetString("biomass-reclaimer-soulful"), reclaimer, PopupType.Large); // Starlight-edit: Added popup for player feedback
                     return false;
+                }
             }
 
             return true;

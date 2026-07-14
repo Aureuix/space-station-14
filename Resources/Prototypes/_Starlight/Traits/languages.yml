@@ -12,6 +12,7 @@
           baseTranslator: TranslatorForeigner
   conflicts:
     - Foreigner
+    - Diaspora # SpL
   requirements:
     - !type:TraitsRequirement
       traits:
@@ -31,6 +32,7 @@
           baseTranslator: TranslatorForeigner
   conflicts:
     - ForeignerLight
+    - Diaspora # SpL
   requirements:
     - !type:TraitsRequirement
       traits:

@@ -21,3 +21,8 @@
     Igniter: 1
     CigPackMedRollie: 1 # Starlight-edit
     MysteryLighterBox: 1 # Starlight-edit
+  #region Starlight
+  emaggedInventory:
+    CigPackSyndicate: 1
+    InterdyneFlippo: 1
+  #endregion Starlight
