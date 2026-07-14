@@ -16,3 +16,13 @@
     - type: RattleOnTrigger
       targetUser: true
       radioChannel: Medical
+      
+- type: entity
+  parent: MindShieldImplant
+  id: SyndicateMindShieldImplant
+  name: syndicate mindshield implant
+  description: This implant protects key figures from mind control devices.
+  categories: [ HideSpawnMenu ]
+  components:
+    - type: MindShieldImplant
+      mindShieldStatusIcon: SyndicateMindShieldIcon

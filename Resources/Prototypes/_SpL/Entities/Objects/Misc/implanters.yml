@@ -5,3 +5,34 @@
   components:
     - type: Implanter
       implant: MedicalVitalsImplant
+      
+- type: entity
+  id: SyndicateMindshieldImplanter
+  name: syndicate mindshield implanter
+  parent: MindShieldImplanter
+  components:
+    - type: Item
+      sprite: Objects/Specific/Medical/syndi_implanter.rsi
+      heldPrefix: implanter
+    - type: Sprite
+      sprite: Objects/Specific/Medical/syndi_implanter.rsi
+      state: implanter1
+      layers:
+        - state: implanter0
+          map: [ "implantFull" ]
+          visible: true
+        - state: implanter1
+          map: [ "implantOnly" ]
+    - type: GenericVisualizer
+      visuals:
+        enum.ImplanterVisuals.Full:
+          implantFull:
+            True: { visible: true }
+            False: { visible: false }
+        enum.ImplanterImplantOnlyVisuals.ImplantOnly:
+          implantOnly:
+            True: { state: broken }
+            False: { state: implanter1 }
+    - type: Implanter
+      implant: SyndicateMindShieldImplant
+      
