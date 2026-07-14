@@ -122,6 +122,8 @@
         - BodyBag
         - Vial
         - AutoMender
+        - Patch # SpL
+        - PatchPack # SpL
        components:
         - Injector
         - Pill

@@ -229,6 +229,7 @@
       - Vial # SpL
       - Patch # SpL
       - PatchPack # SpL
+      - AutoMender # SpL
       components:
       - Injector
       - Pill
@@ -307,6 +308,7 @@
         - Patch # SpL
         - Vial # SpL
         - PatchPack # SpL
+        - AutoMender # SpL
       components:
         - Injector
         - Pill
