@@ -50,6 +50,7 @@
     - id: NetworkConfigurator
     - id: Binoculars
     - id: NeuralLinkDisruptor # Starlight
+    - id: TicketPad # Starlight
 
 - type: entityTable
   id: FillLockerWardenHarduit
@@ -76,27 +77,28 @@
     children:
     - id: ClothingHandsGlovesSecurityRed #Starlight
     - id: ClothingEyesHudSecurity #Starlight
+    - id: TicketPad # Starlight
     - id: FlashlightSeclite
-      prob: 0.8
+      # prob: 0.8 SpL
     - id: WeaponDisabler
     - id: WeaponTaser
-    - id: ClothingUniformJumpsuitSecGrey
-      prob: 0.3
+    # - id: ClothingUniformJumpsuitSecGrey # SpL
+      # prob: 0.3 # SpL
     - id: ClothingHeadHelmetBasic
     - id: ClothingOuterArmorBasic
     - id: ClothingBeltSecurityFilled
     - id: Flash
-      prob: 0.5
+      # prob: 0.5 SpL
     - id: ClothingEyesGlassesSecurity
     - id: ClothingHeadsetSecurity
     - id: ClothingHandsGlovesColorBlack
     - id: ClothingShoesBootsJack
-    - id: WeaponMeleeNeedle
-      prob: 0.1
+    # - id: WeaponMeleeNeedle # SpL
+      # prob: 0.1
     - id: HoloprojectorSecurity
-      prob: 0.6
+    #  prob: 0.6 # SpL
     - id: BookSpaceLaw
-      prob: 0.5
+    #  prob: 0.5 SpL
 
 - type: entity
   id: LockerBrigmedicFilled

@@ -68,9 +68,9 @@
     - RubberStampCAD
     - MindShieldImplanter
 
-# Central Cargo Division CCD
+# Central Cargo Division CCD # SpL- it's CLD actually
 - type: startingGear
-  id: CentralCargoDivisionGear
+  id: CentralLogisticsDivisionGear # SpL
   equipment:
     jumpsuit: ClothingUniformJumpskirtCentcommCargoFormalWear
     back: ClothingBackpackSatchelCentcomm

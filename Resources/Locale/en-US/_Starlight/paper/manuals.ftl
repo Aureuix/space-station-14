@@ -49,6 +49,6 @@ book-text-supermatter-guide =
 
    ⠀[color=red]WEAR A RADIATION SUIT![/color] The supermatter has been recorded as producing upwards of 6 rads at its lowest levels. Through radiation shielding. 
 
-   ⠀Hopefully this guide is enough to get you started. Please ask your nearest NanoTrasen representative if you require further assistance. 
+   ⠀Hopefully this guide is enough to get you started. Please ask your nearest NanoTrasen Career Trainer if you require further assistance. 
 
-   ⠀[head=1][color=darkblue]Glory to Nanotrasen![/color][/head]
+   ⠀[head=1][color=darkblue]Glory to NanoTrasen![/color][/head]

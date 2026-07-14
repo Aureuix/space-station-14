@@ -474,6 +474,7 @@
       - CombatKnife
       - Truncheon
       - HandGrenade
+      - SecTicket # Starlight
       components:
       - Stunbaton
       - FlashOnTrigger
