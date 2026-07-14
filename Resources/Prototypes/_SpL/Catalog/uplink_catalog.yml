@@ -29,7 +29,7 @@
 - type: listing
   id: UplinkFreeEncryptionKey
   name: uplink-free-encryption-key-name
-  description: uplink-free-encryption-key-name
+  description: uplink-free-encryption-key-desc
   productEntity: EncryptionKeySyndie
   categories:
     - UplinkDeception
