@@ -1,0 +1,44 @@
+﻿- type: entity
+  name: strange radio
+  description: Airwaves, airwaves...
+  parent: [ RadioHandheld, BaseSyndicateContraband ]
+  id: StrangeRadio
+  components:
+  - type: RadioMicrophone
+    broadcastChannel: RedSunz
+    listenRange: 5
+  - type: RadioSpeaker
+    channels:
+      - RedSun
+  - type: TypingIndicator
+    proto: xenoborg
+  - type: ItemTogglePointLight
+  - type: ItemToggle
+    soundActivate:
+      path: /Audio/_Starlight/Effects/Radio/marauder_agent.ogg
+    soundDeactivate:
+      path: /Audio/_Starlight/Effects/Radio/marauder_commander.ogg
+  - type: ItemToggleActiveSound
+    activeSound:
+      path: /Audio/Ambience/Objects/hdd_buzz.ogg
+  - type: Sprite
+    sprite: _SpL/Objects/Devices/strangeradio.rsi
+    layers:
+    - state: icon
+    - state: icon_on
+      shader: unshaded
+      visible: false
+      map: [ "on" ]
+  - type: PointLight
+    enabled: false
+    radius: 2
+    energy: 1.5
+    falloff: 2
+    color: "#bb0000"
+    netsync: false
+  - type: Appearance
+  - type: ToggleableVisuals
+    spriteLayer: on
+  - type: Item
+    sprite: _SpL/Objects/Devices/strangeradio.rsi
+    state: icon
