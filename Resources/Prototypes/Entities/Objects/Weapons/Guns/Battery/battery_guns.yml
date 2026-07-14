@@ -953,11 +953,11 @@
   - type: BatteryAmmoProvider
     proto: BulletLaserSpreadNarrow
     fireCost: 48 #Starlight
-    magState: energy #Starlight
   - type: BatteryWeaponFireModes
     fireModes:
     - proto: BulletLaserSpreadNarrow
       fireCost: 48 #Starlight
+      magState: energy #Starlight
     - proto: BulletDisablerSmgSpread
       fireCost: 30 #Starlight
       pacifismAllowedMode: true

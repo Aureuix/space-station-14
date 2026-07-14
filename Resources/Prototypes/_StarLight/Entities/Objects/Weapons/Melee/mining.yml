@@ -35,8 +35,8 @@
       materialComposition:
         Diamond: 100
         Wood: 100
-    - type: SurgicalDrill
-      successRate: 0.2 # It'll be a LITTLE better
-      speed: 0.8
-      endSound:
-        path: "/Audio/Weapons/smash.ogg"
+#    - type: SurgicalDrill # SpL- yaml linter hates this one
+#      successRate: 0.2 # It'll be a LITTLE better
+#      speed: 0.8
+#      endSound:
+#        path: "/Audio/Weapons/smash.ogg"

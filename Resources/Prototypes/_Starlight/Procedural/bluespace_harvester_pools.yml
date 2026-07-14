@@ -145,7 +145,6 @@
     SMESAdvancedMachineCircuitboard: 0.3
     TurboItemRechargerCircuitboard: 0.25
     OreProcessorIndustrialMachineCircuitboard: 0.25
-    SMESHyperAdvancedMachineCircuitboard: 0.15
     
 - type: bluespaceHarvesterPool
   id: BluespaceHarvesterExoticHat

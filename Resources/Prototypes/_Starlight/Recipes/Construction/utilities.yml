@@ -275,7 +275,8 @@
   alternativePrototypes:
   - GasFilterInline
   - GasFilterInlineAlt1
-  - GasFilterInlineAlt2  - GasFilterInlineAlt3
+  - GasFilterInlineAlt2  
+  - GasFilterInlineAlt3
   - GasFilterInlineAlt4
 
 - type: construction
