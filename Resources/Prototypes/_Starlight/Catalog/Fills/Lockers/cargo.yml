@@ -12,6 +12,7 @@
   table: !type:AllSelector
     children:
     - id: OxygenTankFilled
+    - id: NitrogenTankFilled # SpL- nice spaceism there
     - id: ClothingShoesBootsMag
     - id: ClothingOuterHardsuitSpatioLead
     - id: ClothingMaskGasExplorer

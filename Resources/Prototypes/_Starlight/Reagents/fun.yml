@@ -1,6 +1,7 @@
 - type: reagent
   id: ConcentratedCorgiJuice
   name: reagent-name-concentratedcorgijuice
+  contrabandSeverity: Syndicate # SpL- ITS MADE WITH VESTINE
   group: Toxins
   desc: reagent-desc-corgiessence
   physicalDesc: reagent-physical-desc-fluffy

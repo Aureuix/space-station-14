@@ -1,4 +1,4 @@
-using Content.Server.GameTicking;
+/*using Content.Server.GameTicking;
 using Content.Shared._NullLink;
 using Content.Shared.Chemistry.Components;
 using Content.Shared.CombatMode.Pacification;
@@ -31,7 +31,7 @@ public sealed class PeacefulRoundEndSystem : EntitySystem
         SubscribeLocalEvent<GotRehydratedEvent>(OnRehydrateEvent);
         SubscribeLocalEvent<RoundRestartCleanupEvent>(OnRoundCleanup);
     }
-                                                                                                      
+
 
 
     private void SpreadPeace(EntityUid target)
@@ -62,4 +62,4 @@ public sealed class PeacefulRoundEndSystem : EntitySystem
         while (mechQuery.MoveNext(out var uid, out _))
             SpreadPeace(uid);
     }
-}
+}*/ // SpL- I HATE PEACE. WAR FOREVER

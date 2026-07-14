@@ -11,7 +11,7 @@ public sealed class BrighteyeSystem : EntitySystem
     [Dependency] private readonly TagSystem _tag = default!;
     private static readonly ProtoId<TagPrototype> _bowTag = "Bow";
 
-    public override void Initialize()
+/*    public override void Initialize()
     {
         base.Initialize();
 
@@ -25,5 +25,5 @@ public sealed class BrighteyeSystem : EntitySystem
             
         _popup.PopupClient(Loc.GetString("gun-disabled"), ent, ent);
         args.Cancel();
-    }
+    } SpL- Give them guns. */
 }

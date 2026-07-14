@@ -38,6 +38,7 @@
   - type: BatteryAmmoProvider
     proto: DisablerBolt
     fireCost: 50
+  - type: PacifismAllowedGun # SpL
   - type: BatteryWeaponFireModes
     fireModes:
     - proto: DisablerBolt
@@ -46,7 +47,7 @@
       magState: disable
       heldPrefix: disable4
     - proto: TaserBolt
-      fireCost: 166
+      fireCost: 100 # SpL- it needs an advantage over the dominator somehow
       visualState: stun
       magState: stun
       heldPrefix: stun4
@@ -84,6 +85,7 @@
       visualState: disable
       magState: disable
       heldPrefix: disable4
+      pacifismAllowedMode: true # SpL
     - proto: RedLaserBeam
       fireCost: 66.6
       visualState: kill
@@ -116,6 +118,7 @@
     fireModes:
     - proto: DisablerBolt
       fireCost: 150
+      pacifismAllowedMode: true # SpL
     - proto: RedLaserBeam
       fireCost: 200
       conditions:
@@ -197,23 +200,25 @@
     - proto: TaserBolt
       fireCost: 166
       magState: stun
-      conditions:
-      - !type:AlertLevelCondition
-        alertLevels:
-        - blue
-        - violet
-        - yellow
-        - red
-        - gamma
-        - psi
-        - orange
-        - delta
+    #  conditions: # SpL- are we being deadass.
+    #  - !type:AlertLevelCondition
+    #    alertLevels:
+    #    - blue
+    #    - violet
+    #    - yellow
+    #    - red
+    #    - gamma
+    #    - psi
+    #    - orange
+    #    - delta
+      pacifismAllowedMode: true # SpL
     - proto: RedLaserBeam
       fireCost: 66.6
       magState: lethal
       conditions:
       - !type:AlertLevelCondition
         alertLevels:
+        - blue # SpL
         - violet
         - yellow
         - red
@@ -263,10 +268,12 @@
       fireCost: 40
       magState: disable
       visualState: disable-unshaded
+      pacifismAllowedMode: true # SpL
     - proto: TaserBolt
       fireCost: 100
       magState: stun
       visualState: stun-unshaded
+      pacifismAllowedMode: true # SpL
     - proto: RedLaserBeam
       fireCost: 75
       magState: kill
@@ -313,6 +320,7 @@
       fireCost: 125
       magState: disable
       visualState: disable-unshaded
+      pacifismAllowedMode: true # SpL
     - proto: RedHeavyLaser # Does slightly more damage but costs more energy.
       fireCost: 222
       magState: kill
@@ -484,6 +492,7 @@
     - proto: TaserBolt
       fireCost: 100
       magState: stun
+      pacifismAllowedMode: true # SpL
     - proto: RedLaserBeam
       fireCost: 100
       magState: kill
@@ -532,6 +541,7 @@
       fireCost: 100
       magState: stun
       visualState: stun
+      pacifismAllowedMode: true # SpL
     - proto: RedLaserBeam
       fireCost: 100
       magState: kill
@@ -582,6 +592,7 @@
       fireCost: 75
       magState: disable
       visualState: disable
+      pacifismAllowedMode: true # SpL
     - proto: RedLaserBeam
       fireCost: 100
       magState: kill
@@ -616,8 +627,10 @@
     fireModes:
     - proto: DisablerBolt
       fireCost: 100
+      pacifismAllowedMode: true # SpL
     - proto: AdvancedTaserBolt
       fireCost: 100
+      pacifismAllowedMode: true # SpL
     - proto: RedLaserBeam
       fireCost: 100
   - type: MagazineVisuals
@@ -708,6 +721,7 @@
       fireCost: 100
       magState: stun
       visualState: stun
+      pacifismAllowedMode: true # SpL
     - proto: RedLaserBeam
       fireCost: 50
       magState: kill
@@ -769,6 +783,7 @@
       fireCost: 10
       magState: stun
       visualState: stun
+      pacifismAllowedMode: true # SpL
     - proto: RedLaserBeam
       fireCost: 5
       magState: kill
@@ -910,6 +925,7 @@
       fireCost: 25
       magState: disable
       visualState: disable
+      pacifismAllowedMode: true # SpL
   - type: Item
     size: Large
     shape:
@@ -1030,6 +1046,7 @@
           fireCost: 40
           magState: disable
           visualState: disable-unshaded
+          pacifismAllowedMode: true # SpL
         - proto: RedHeavyLaser # Does more damage but costs more energy. 8 shots per full charge
           fireCost: 200
           magState: kill

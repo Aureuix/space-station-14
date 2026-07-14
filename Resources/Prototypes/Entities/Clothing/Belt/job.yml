@@ -226,6 +226,10 @@
       - DiscreteHealthAnalyzer
       - SurgeryTool
       - Dropper
+      - Vial # SpL
+      - Patch # SpL
+      - PatchPack # SpL
+      - AutoMender # SpL
       components:
       - Injector
       - Pill
@@ -301,6 +305,10 @@
         - BodyBag
         - ParaKnife
         - JawsOfLife #Starlight
+        - Patch # SpL
+        - Vial # SpL
+        - PatchPack # SpL
+        - AutoMender # SpL
       components:
         - Injector
         - Pill
@@ -328,6 +336,7 @@
       - Syringe
       - CigPack
       - Dropper
+      - Vial # SpL
       components:
       - Seed
       - Smokable
