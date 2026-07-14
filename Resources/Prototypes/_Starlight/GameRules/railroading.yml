@@ -20,8 +20,8 @@
 #    - RRCardMetabolizeNicotine
 #    - RRCardMetabolizeTest
 #    - RRCardCriminal
-#    - RRCardMailOpen
-     - RRCardTerminate
+    - RRCardMailOpen
+#    - RRCardTerminate
 
 - type: entity
   parent: BaseGameRule
@@ -47,23 +47,23 @@
 # this also encourages players to engage with card system throughout the shift, not just meta-check for funny criminal/terminate
 # card and give up after that
 # weighted same as paradox clone
-- type: entity
-  parent: BaseGameRule
-  id: RailroadingTerminator
-  components:
-  - type: StationEvent
-    weight: 5
-    duration: null
-    earliestStart: 10
-    reoccurrenceDelay: 30
-    minimumPlayers: 15
-  - type: DynamicRuleCost
-    cost: 50
-  - type: RailroadRule
-    preSpawnDelay: 1
-    delay: 1
-    cards: 
-    - RRCardTerminate
+#- type: entity
+#  parent: BaseGameRule
+#  id: RailroadingTerminator
+#  components:
+#  - type: StationEvent
+#    weight: 5
+#    duration: null
+#    earliestStart: 10
+#    reoccurrenceDelay: 30
+#    minimumPlayers: 15
+#  - type: DynamicRuleCost
+#    cost: 50
+#  - type: RailroadRule
+#    preSpawnDelay: 1
+#    delay: 1
+#    cards: 
+#    - RRCardTerminate # SpL- card antags aren't fun
     
 - type: entity
   parent: BaseGameRule
@@ -80,7 +80,7 @@
     cards:
     # antagonists
     
-    - RRCardCriminal
+  #  - RRCardCriminal # SpL- card antags aren't fun
 
     # open mail
 

@@ -51,6 +51,9 @@
           Medium: { state: pinonmedium }
           Far: { state: pinonfar }
   - type: AnimationPlayer
+  - type: Clothing # SpL
+    slots: [ misc ] # SpL
+    quickEquip: false # SpL
 
 - type: entity
   name: pinpointer

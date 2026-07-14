@@ -96,7 +96,7 @@
         sprintSpeedModifier: 0.65
       - !type:ModifyStatusEffect
         effectProto: StatusEffectDrowsiness
-        time: 4
+        time: 8 # SpL 4->8
         type: Update
       - !type:HealthChange
         conditions:

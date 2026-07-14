@@ -5,3 +5,11 @@
   frequency: 2111
   color: "#fc7921"
   longRange: true
+  
+- type: radioChannel
+  id: RedSun
+  name: chat-radio-redsun
+  keycode: 'q'
+  frequency: 1217
+  color: "#500000"
+  longRange: true

@@ -586,6 +586,10 @@
         - Hypospray
         - Ointment
         - PillCanister
+        - Patch # SpL
+        - PatchPack # SpL
+        - Vial # SpL
+        - AutoMender # SpL
       components:
         - Injector
         - Pill

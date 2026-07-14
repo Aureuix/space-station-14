@@ -19,3 +19,23 @@
     - !type:AddCompsEffect
       components:
         - type: BrittleBones
+          
+- type: trait
+  id: Unstable
+  name: trait-unstable-name
+  description: trait-unstable-desc
+  category: Disabilities
+  cost: 0
+  effects:
+    - !type:OverrideCompsEffect
+      components:
+      - type: ThavenMoods
+        moodDatasets:
+          - ThavenMoodsYesAnd
+          - ThavenMoodsNoAnd
+          - ThavenMoodsWildcard
+        ionStormMoodChance: 1
+  requirements:
+    - !type:SpeciesRequirement
+      species:
+        - Thaven

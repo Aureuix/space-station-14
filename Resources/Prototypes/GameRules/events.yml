@@ -43,7 +43,7 @@
     - id: ClosetSkeleton
     - id: KingRatMigration
     - id: RevenantSpawn
-    - id: RailroadingTerminator # Starlight
+  #  - id: RailroadingTerminator # Starlight # SpL removal
     - !type:NestedSelector
       tableId: DerelictBorgEventTable
 

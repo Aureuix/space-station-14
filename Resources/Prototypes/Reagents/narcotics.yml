@@ -338,10 +338,10 @@
         conditions:
         - !type:ReagentCondition
           reagent: Nocturine
-          min: 8
+          min: 6 # SpL 8->6
         effectProto: StatusEffectForcedSleeping
-        time: 6
-        delay: 5
+        time: 8 # SpL 6->8
+        delay: 4 # SpL 5->4
 
 - type: reagent
   id: MuteToxin
