@@ -726,9 +726,6 @@
     sprite: Clothing/Mask/mime_security.rsi
   - type: Clothing
     sprite: Clothing/Mask/mime_security.rsi
-  - type: Construction
-    graph: ClothingMaskMimeSecurity
-    node: mask
   - type: Armor
     modifiers:
       coefficients:
@@ -736,6 +733,11 @@
         Slash: 0.95
         Piercing: 0.95
         Heat: 0.95
+  # Starlight-start
+  - type: Construction
+    graph: ClothingMaskMimeSecurity
+    node: mask
+  # Starlight-end
 
 - type: entity
   parent: ClothingMaskBase
