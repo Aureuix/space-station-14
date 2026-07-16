@@ -304,6 +304,18 @@
   categories:
   - UplinkAmmo
 
+# For the Hushpup
+- type: listing
+  id: UplinkHushpupAmmo
+  name: uplink-hushpup-ammo-name
+  description: uplink-hushpup-ammo-desc
+  icon: { sprite: /Textures/Objects/Weapons/Guns/Ammunition/Boxes/shotgun.rsi, state: lethal }
+  productEntity: BoxLethalshot
+  cost:
+    Telecrystal: 3
+  categories:
+    - UplinkAmmo
+
 - type: listing
   id: UplinkMagazineGrenadeBlast
   name: uplink-grenade-launcher-blast-ammo-name
