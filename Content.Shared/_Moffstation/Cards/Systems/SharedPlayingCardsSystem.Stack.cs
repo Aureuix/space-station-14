@@ -3,7 +3,6 @@ using Content.Shared._Moffstation.Cards.Components;
 using Content.Shared._Moffstation.Cards.Events;
 using Content.Shared._Moffstation.Extensions;
 using Content.Shared.Examine;
-using Content.Shared.IdentityManagement;
 using Content.Shared.Random.Helpers;
 using Content.Shared.Verbs;
 using Robust.Shared.Audio;
@@ -19,25 +18,25 @@ namespace Content.Shared._Moffstation.Cards.Systems;
 // This part handles behavior common to all PlayingCardStackComponent-derived components.
 public abstract partial class SharedPlayingCardsSystem
 {
-    private static readonly AudioParams AudioVariation = AudioParams.Default.WithVariation(0.05f);
+    private static readonly AudioParams _audioVariation = AudioParams.Default.WithVariation(0.05f); // Starlight Edit: Fix naming rule violation
 
     private static void DirtyVisuals<TStack, TArgs>(Entity<TStack> entity, ref TArgs args)
-        where TStack : PlayingCardStackComponent
-    {
+        // Starlight edit Start: Expresion body
+        where TStack : PlayingCardStackComponent =>
         entity.Comp.DirtyVisuals = true;
-    }
+        // Starlight edit End: Expression body
 
     private void OnStartup<TStack>(Entity<TStack> entity, ref ComponentStartup args)
-        where TStack : PlayingCardStackComponent
-    {
+        // Starlight edit Start: Expression body
+        where TStack : PlayingCardStackComponent =>
         entity.Comp.Container = _container.EnsureContainer<Container>(entity, entity.Comp.ContainerId);
-    }
+        // Starlight edit End: Expression body
 
     private void OnExamined<TStack>(Entity<TStack> entity, ref ExaminedEvent args)
-        where TStack : PlayingCardStackComponent
-    {
+        // Starlight edit Start: Expression body
+        where TStack : PlayingCardStackComponent =>
         args.PushText(Loc.GetString(PlayingCardStackComponent.ExamineText, ("count", entity.Comp.NumCards)));
-    }
+        // Starlight edit End: Expression body
 
     /// These verbs are available when right-clicking on an entity while holding a stack.
     private void OnGetUtilityVerbsStack<TStack>(
@@ -134,7 +133,7 @@ public abstract partial class SharedPlayingCardsSystem
         var didAnyFlip = entity.Comp switch
         {
             PlayingCardDeckComponent deck => deck.Cards.Aggregate(false,
-                (current, card) => current | FlipCardInDeck(card, faceDown)), // Starlight-edit: fix flipping cards in a deck.
+                (current, card) => current | FlipCardInDeck(card, faceDown)),
             PlayingCardHandComponent hand => hand.Cards.Aggregate(false,
                 (current, card) => current | (NetEntToCard(card) is { } cardEnt && SetFacingOrFlip(cardEnt, faceDown))),
             _ => entity.Comp.ThrowUnknownInheritor<PlayingCardStackComponent, bool>(),

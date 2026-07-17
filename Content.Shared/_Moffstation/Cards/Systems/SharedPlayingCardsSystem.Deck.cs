@@ -16,9 +16,9 @@ namespace Content.Shared._Moffstation.Cards.Systems;
 public abstract partial class SharedPlayingCardsSystem
 {
     /// The ID of the entity prototype which is used to construct cards dynamically.
-    private static readonly EntProtoId<PlayingCardDeckComponent> CardDeckEntId = "PlayingCardDeckDynamic";
+    private static readonly EntProtoId<PlayingCardDeckComponent> _cardDeckEntId = "PlayingCardDeckDynamic"; // Starlight Edit: Fix Naming rule Violation
 
-    private static readonly Range TopCardRange = ^1..;
+    private static readonly Range _topCardRange = ^1..; // Starlight Edit: Fix naming rule violation
 
     private void InitDeck()
     {
@@ -46,7 +46,7 @@ public abstract partial class SharedPlayingCardsSystem
         Entity<PlayingCardDeckComponent> entity,
         EntityUid user,
         EntityCoordinates? destinationCoords = null
-    ) => Take(entity, TopCardRange, destinationCoords ?? Transform(user).Coordinates, user)
+    ) => Take(entity, _topCardRange, destinationCoords ?? Transform(user).Coordinates, user) // Starlight Edit: Fix naming rule violation
         .Single();
 
     /// <see cref="Transfer">Transfers</see> the top card from <paramref name="source"/> to <paramref name="target"/>
@@ -54,7 +54,7 @@ public abstract partial class SharedPlayingCardsSystem
         Entity<PlayingCardDeckComponent> source,
         Entity<TTarget> target,
         EntityUid user
-    ) where TTarget : PlayingCardStackComponent => Transfer(source, target, TopCardRange, user);
+    ) where TTarget : PlayingCardStackComponent => Transfer(source, target, _topCardRange, user); // Starlight Edit: Fix naming rule violation
 
     /// Creates a new Deck from the given cards. Returns an entity which may be predicted. Spawns on
     /// <paramref name="user"/> if <paramref name="spawnAt"/> is null.
@@ -67,12 +67,11 @@ public abstract partial class SharedPlayingCardsSystem
         EntityCoordinates? spawnAt = null
     )
     {
-        var ent = PredictedCreateStack(CardDeckEntId, spawnAt ?? Transform(user).Coordinates, cards, user);
+        var ent = PredictedCreateStack(_cardDeckEntId, spawnAt ?? Transform(user).Coordinates, cards, user); // Starlight Edit: Fix naming rule violation
         ent.Comp.Prototype = deckPrototype;
         return ent;
     }
-
-
+    
     private void OnInit(Entity<PlayingCardDeckComponent> entity, ref ComponentInit args)
     {
         // Initialize the contents of the deck from the prototype.
@@ -105,8 +104,7 @@ public abstract partial class SharedPlayingCardsSystem
         TryDrawToActiveHand(entity, args.User);
         args.Handled = true;
     }
-
-
+    
     /// These interactions are invoked when left-clicking on a deck with a held item.
     private void OnInteractUsing(Entity<PlayingCardDeckComponent> targetDeck, ref InteractUsingEvent args)
     {
@@ -118,7 +116,7 @@ public abstract partial class SharedPlayingCardsSystem
             args.Used,
             targetDeck,
             // Take top card from this deck, creating a new hand with the used card.
-            usedCard => JoinIntoHandIfHeldOtherwiseDeck(usedCard, targetDeck, TopCardRange, user),
+            usedCard => JoinIntoHandIfHeldOtherwiseDeck(usedCard, targetDeck, _topCardRange, user), // Starlight Edit: Fix naming rule violation
             usedStack => TransferTopCard(targetDeck, usedStack, user)
         );
     }
@@ -206,7 +204,7 @@ public abstract partial class SharedPlayingCardsSystem
 
         foreach (var card in deck.Comp.Cards)
         {
-            FlipCardInDeck(card);
+            FlipCardInDeck(card, faceDown: null);
         }
 
         VerbAudioAndPopup(PlayingCardDeckComponent.Verbs.FlipEntire, deck, user);
@@ -229,8 +227,9 @@ public abstract partial class SharedPlayingCardsSystem
             () =>
             {
                 VerbAudioAndPopup(PlayingCardDeckComponent.Verbs.CutDeck, entity, user);
-                var newDeckContents = Take(entity, ^(entity.Comp.NumCards / 2).., Transform(entity).Coordinates, user);
-                return CreateDeckPredicted(newDeckContents, user, entity.Comp.Prototype);
+                var degenerateDeck = CreateDeckPredicted([], user, entity.Comp.Prototype);
+                Transfer(entity, degenerateDeck, ^(entity.Comp.NumCards / 2).., user);
+                return degenerateDeck;
             }
         );
     }
