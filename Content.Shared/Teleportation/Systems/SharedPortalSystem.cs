@@ -1,289 +1,337 @@
-﻿using System.Linq;
-using Content.Shared.Ghost;
-using Content.Shared.Movement.Pulling.Components;
-using Content.Shared.Movement.Pulling.Systems;
-using Content.Shared.Popups;
+﻿using System.Numerics;
+using Content.Shared.CombatMode;
+using Content.Shared.Hands;
+using Content.Shared.Hands.EntitySystems;
+using Content.Shared.Interaction;
+using Content.Shared.Movement.Events;
+using Content.Shared.Physics;
 using Content.Shared.Projectiles;
-using Content.Shared.Teleportation.Components;
-using Content.Shared.Verbs;
+using Content.Shared.Weapons.Ranged.Components;
+using Content.Shared.Weapons.Ranged.Systems;
 using Robust.Shared.Audio.Systems;
-using Robust.Shared.Map;
+using Robust.Shared.Containers;
 using Robust.Shared.Network;
-using Robust.Shared.Physics.Dynamics;
-using Robust.Shared.Physics.Events;
-using Robust.Shared.Player;
-using Robust.Shared.Random;
-using Robust.Shared.Utility;
+using Robust.Shared.Physics;
+using Robust.Shared.Physics.Components;
+using Robust.Shared.Physics.Controllers;
+using Robust.Shared.Physics.Dynamics.Joints;
+using Robust.Shared.Physics.Systems;
+using Robust.Shared.Serialization;
+using Robust.Shared.Timing;
 
-namespace Content.Shared.Teleportation.Systems;
+namespace Content.Shared.Weapons.Misc;
 
-/// <summary>
-/// This handles teleporting entities from a portal to a linked portal, or to a random nearby destination.
-/// Uses <see cref="LinkedEntitySystem"/> to get linked portals.
-/// </summary>
-/// <seealso cref="PortalComponent"/>
-public abstract class SharedPortalSystem : EntitySystem
+public abstract class SharedGrapplingGunSystem : VirtualController
 {
-    [Dependency] private readonly IRobustRandom _random = default!;
-    [Dependency] private readonly INetManager _netMan = default!;
-    [Dependency] private readonly EntityLookupSystem _lookup = default!;
+    [Dependency] protected readonly IGameTiming Timing = default!;
+    [Dependency] private readonly IEntityManager _entities = default!;
+    [Dependency] private readonly INetManager _netManager = default!;
+    [Dependency] private readonly SharedAppearanceSystem _appearance = default!;
     [Dependency] private readonly SharedAudioSystem _audio = default!;
+    [Dependency] private readonly SharedHandsSystem _hands = default!;
+    [Dependency] private readonly SharedJointSystem _joints = default!;
+    [Dependency] private readonly SharedGunSystem _gun = default!;
+    [Dependency] private readonly SharedPhysicsSystem _physics = default!;
     [Dependency] private readonly SharedTransformSystem _transform = default!;
-    [Dependency] private readonly PullingSystem _pulling = default!;
-    [Dependency] private readonly SharedPopupSystem _popup = default!;
+    [Dependency] private readonly SharedContainerSystem _container = default!;
 
-    private const string PortalFixture = "portalFixture";
-    private const string ProjectileFixture = "projectile";
+    public const string GrapplingJoint = "grappling";
 
-    private const int MaxRandomTeleportAttempts = 20;
-
-    /// <inheritdoc/>
     public override void Initialize()
     {
-        SubscribeLocalEvent<PortalComponent, GetVerbsEvent<AlternativeVerb>>(OnGetVerbs);
+        SubscribeLocalEvent<GrapplingProjectileComponent, ProjectileEmbedEvent>(OnGrappleCollide);
+        SubscribeLocalEvent<GrapplingProjectileComponent, JointRemovedEvent>(OnGrappleJointRemoved);
+        SubscribeLocalEvent<CanWeightlessMoveEvent>(OnWeightlessMove);
+        SubscribeAllEvent<RequestGrapplingReelMessage>(OnGrapplingReel);
 
-        SubscribeLocalEvent<PortalComponent, StartCollideEvent>(OnCollide);
-        SubscribeLocalEvent<PortalComponent, EndCollideEvent>(OnEndCollide);
+        // TODO: After step trigger refactor, dropping a grappling gun should manually try and activate step triggers it's suppressing.
+        SubscribeLocalEvent<GrapplingGunComponent, GunShotEvent>(OnGrapplingShot);
+        SubscribeLocalEvent<GrapplingGunComponent, ActivateInWorldEvent>(OnGunActivate);
+        SubscribeLocalEvent<GrapplingGunComponent, HandDeselectedEvent>(OnGrapplingDeselected);
+
+        UpdatesBefore.Add(typeof(SharedJointSystem)); // We want to run before joints are solved
+        base.Initialize();
     }
 
-    private void OnGetVerbs(Entity<PortalComponent> ent, ref GetVerbsEvent<AlternativeVerb> args)
+    private void OnGrappleJointRemoved(EntityUid uid, GrapplingProjectileComponent component, JointRemovedEvent args)
     {
-        // Traversal altverb for ghosts to use that bypasses normal functionality
-        if (!args.CanAccess || !HasComp<GhostComponent>(args.User))
-            return;
-
-        // Don't use the verb with unlinked or with multi-output portals
-        // (this is only intended to be useful for ghosts to see where a linked portal leads)
-        var disabled = !TryComp<LinkedEntityComponent>(ent, out var link) || link.LinkedEntities.Count != 1;
-
-        var subject = args.User;
-        args.Verbs.Add(new AlternativeVerb
-        {
-            Priority = 11,
-            Act = () =>
-            {
-                if (link == null || disabled)
-                    return;
-
-                // check prediction
-                if (_netMan.IsClient && !CanPredictTeleport((ent, link)))
-                    return;
-
-                var destination = link.LinkedEntities.First();
-
-                TeleportEntity(ent, subject, Transform(destination).Coordinates, destination, false);
-            },
-            Disabled = disabled,
-            Text = Loc.GetString("portal-component-ghost-traverse"),
-            Message = disabled
-                ? Loc.GetString("portal-component-no-linked-entities")
-                : Loc.GetString("portal-component-can-ghost-traverse"),
-            Icon = new SpriteSpecifier.Texture(new("/Textures/Interface/VerbIcons/open.svg.192dpi.png"))
-        });
+        if (_netManager.IsServer)
+            QueueDel(uid);
     }
 
-    private void OnCollide(Entity<PortalComponent> ent, ref StartCollideEvent args)
+    private void OnGrapplingShot(EntityUid uid, GrapplingGunComponent component, ref GunShotEvent args)
     {
-        if (!ShouldCollide(args.OurFixtureId, args.OtherFixtureId, args.OurFixture, args.OtherFixture))
-            return;
-
-        var subject = args.OtherEntity;
-
-        // best not.
-        if (Transform(subject).Anchored)
-            return;
-
-        // Starlight - OnAttemptPortalEvent - Start
-        var ev = new OnAttemptPortalEvent(subject);
-        RaiseLocalEvent(ent.Owner, ev);
-
-        if (ev.Cancelled)
-            return;
-        // Starlight - OnAttemptPortalEvent - End
-
-        // break pulls before portal enter so we don't break shit
-        if (TryComp<PullableComponent>(subject, out var pullable) && pullable.BeingPulled)
+        foreach (var (shotUid, _) in args.Ammo)
         {
-            _pulling.TryStopPull(subject, pullable);
+            if (!HasComp<GrapplingProjectileComponent>(shotUid))
+                continue;
+
+            //todo: this doesn't actually support multigrapple
+            // At least show the visuals.
+            component.Projectile = shotUid.Value;
+            DirtyField(uid, component, nameof(GrapplingGunComponent.Projectile));
+            var visuals = EnsureComp<JointVisualsComponent>(shotUid.Value);
+            visuals.Sprite = component.RopeSprite;
+            visuals.Target = uid;
         }
 
-        if (TryComp<PullerComponent>(subject, out var pullerComp)
-            && TryComp<PullableComponent>(pullerComp.Pulling, out var subjectPulling))
-        {
-            _pulling.TryStopPull(pullerComp.Pulling.Value, subjectPulling);
-        }
+        TryComp<AppearanceComponent>(uid, out var appearance);
+        _appearance.SetData(uid, SharedTetherGunSystem.TetherVisualsStatus.Key, false, appearance);
+        Dirty(uid, component);
+    }
 
-        // if they came from another portal, just return and wait for them to exit the portal
-        if (HasComp<PortalTimeoutComponent>(subject))
+    private void OnGrapplingDeselected(EntityUid uid, GrapplingGunComponent component, HandDeselectedEvent args)
+    {
+        SetReeling(uid, component, false, args.User);
+    }
+
+    private void OnGrapplingReel(RequestGrapplingReelMessage msg, EntitySessionEventArgs args)
+    {
+        if (args.SenderSession.AttachedEntity is not { } player)
+            return;
+
+        if (!_hands.TryGetActiveItem(player, out var activeItem) ||
+            !TryComp<GrapplingGunComponent>(activeItem, out var grappling))
         {
             return;
         }
 
-        if (TryComp<LinkedEntityComponent>(ent, out var link))
+        if (msg.Reeling &&
+            (!TryComp<CombatModeComponent>(player, out var combatMode) ||
+             !combatMode.IsInCombatMode))
         {
-            if (link.LinkedEntities.Count == 0)
-                return;
+            return;
+        }
 
-            // check prediction
-            if (_netMan.IsClient && !CanPredictTeleport((ent, link)))
-                return;
+        SetReeling(activeItem.Value, grappling, msg.Reeling, player);
+    }
 
-            // pick a target and teleport there
-            var target = _random.Pick(link.LinkedEntities);
+    private void OnWeightlessMove(ref CanWeightlessMoveEvent ev)
+    {
+        if (ev.CanMove || !TryComp<JointRelayTargetComponent>(ev.Uid, out var relayComp))
+            return;
 
-            if (HasComp<PortalComponent>(target))
+        foreach (var relay in relayComp.Relayed)
+        {
+            if (TryComp<JointComponent>(relay, out var jointRelay) && jointRelay.GetJoints.ContainsKey(GrapplingJoint))
             {
-                // if target is a portal, signal that they shouldn't be immediately teleported back
-                var timeout = EnsureComp<PortalTimeoutComponent>(subject);
-                timeout.EnteredPortal = ent;
-                Dirty(subject, timeout);
+                ev.CanMove = true;
+                return;
+            }
+        }
+    }
+
+    /// <summary>
+    /// Ungrapples the grappling hook, destroying the hook and severing the joint
+    /// </summary>
+    /// <param name="grapple">Entity for the grappling gun</param>
+    /// <param name="isBreak">Whether to play the sound for the rope breaking</param>
+    /// <param name="user">The user responsible for the ungrapple. Optional</param>
+    public void Ungrapple(Entity<GrapplingGunComponent> grapple, bool isBreak, EntityUid? user = null)
+    {
+        if (!Timing.IsFirstTimePredicted || grapple.Comp.Projectile is not { } projectile)
+            return;
+
+        if(isBreak)
+            _audio.PlayPredicted(grapple.Comp.BreakSound, grapple.Owner, user);
+
+        _appearance.SetData(grapple.Owner, SharedTetherGunSystem.TetherVisualsStatus.Key, true);
+
+        if (_netManager.IsServer)
+            QueueDel(projectile);
+
+        SetReeling(grapple.Owner, grapple.Comp, false, user);
+        grapple.Comp.Projectile = null;
+        DirtyField(grapple.Owner, grapple.Comp, nameof(GrapplingGunComponent.Projectile));
+        _gun.ChangeBasicEntityAmmoCount(grapple.Owner, 1);
+    }
+
+    private void OnGunActivate(EntityUid uid, GrapplingGunComponent component, ActivateInWorldEvent args)
+    {
+        if (!Timing.IsFirstTimePredicted || args.Handled || !args.Complex)
+            return;
+
+        _audio.PlayPredicted(component.CycleSound, uid, args.User);
+        Ungrapple((uid, component), false, args.User);
+
+        args.Handled = true;
+    }
+
+    private void SetReeling(EntityUid uid, GrapplingGunComponent component, bool value, EntityUid? user)
+    {
+        if (TryComp<JointComponent>(uid, out var jointComp) &&
+            jointComp.GetJoints.TryGetValue(GrapplingJoint, out var joint) &&
+            joint is DistanceJoint distance)
+        {
+            if (distance.MaxLength <= distance.MinLength + component.RopeFullyReeledMargin)
+                value = false;
+        }
+
+        if (component.Reeling == value)
+            return;
+
+        if (value)
+        {
+            // We null-coalesce here because playing the sound again will cause it to become eternally stuck playing
+            component.Stream ??= _audio.PlayPredicted(component.ReelSound, uid, user)?.Entity;
+        }
+        else if (!value && component.Stream.HasValue && Timing.IsFirstTimePredicted)
+        {
+            // The IsFirstTimePredicted check is important here because otherwise component.Stream will be set to null from an early cancellation if this isn't FirstTimePredicted
+            component.Stream = _audio.Stop(component.Stream);
+        }
+
+        component.Reeling = value;
+        DirtyField(uid, component, nameof(GrapplingGunComponent.Reeling));
+    }
+
+    public override void UpdateBeforeSolve(bool prediction, float frameTime)
+    {
+        base.UpdateBeforeSolve(prediction, frameTime);
+
+        var query = EntityQueryEnumerator<GrapplingGunComponent, JointComponent>();
+
+        while (query.MoveNext(out var uid, out var grappling, out var jointComp))
+        {
+            if (!jointComp.GetJoints.TryGetValue(GrapplingJoint, out var joint) ||
+                joint is not DistanceJoint distance ||
+                !_entities.TryGetComponent<JointComponent>(joint.BodyAUid, out var hookJointComp))
+            {
+                if (_netManager.IsServer) // Client might not receive the joint due to PVS culling, so lets not spam them with 23895739 mispredicted ungrapples
+                    Ungrapple((uid, grappling), true);
+
+                continue;
             }
 
-            TeleportEntity(ent, subject, Transform(target).Coordinates, target);
-            return;
-        }
+            // If the joint breaks, it gets disabled
+            if (distance.Enabled == false)
+            {
+                Ungrapple((uid, grappling), true);
+                continue;
+            }
 
-        if (_netMan.IsClient)
-            return;
+            var physicalGrapple = jointComp.Relay.HasValue ? jointComp.Relay.Value : joint.BodyBUid;
+            var physicalHook = hookJointComp.Relay.HasValue ? hookJointComp.Relay.Value : joint.BodyAUid;
 
-        // no linked entity--teleport randomly
-        if (ent.Comp.RandomTeleport)
-            TeleportRandomly(ent, subject);
-    }
+            // HACK: preventing both ends of the grappling hook from sleeping if neither are on the same grid, so that grid movement works as expected
+            if (_transform.GetGrid(physicalHook) != _transform.GetGrid(physicalGrapple))
+            {
+                _physics.WakeBody(physicalHook);
+                _physics.WakeBody(physicalGrapple);
+            }
+            // END OF HACK
 
-    private void OnEndCollide(Entity<PortalComponent> ent, ref EndCollideEvent args)
-    {
-        if (!ShouldCollide(args.OurFixtureId, args.OtherFixtureId, args.OurFixture, args.OtherFixture))
-            return;
+            var bodyAWorldPos = _transform.GetWorldPosition(physicalHook);
+            var bodyBWorldPos = _transform.GetWorldPosition(physicalGrapple);
 
-        var subject = args.OtherEntity;
+            // The solver does not handle setting the rope's length, but we still need to work with a copy of it to prevent jank.
+            var ropeLength = (bodyAWorldPos - bodyBWorldPos).Length();
 
-        // if they came from a different portal, remove the timeout
-        if (TryComp<PortalTimeoutComponent>(subject, out var timeout) && timeout.EnteredPortal != ent)
-        {
-            RemCompDeferred<PortalTimeoutComponent>(subject);
+            // Rope should just break, instantly, if the user is teleported past its max length
+            if (ropeLength >= distance.MaxLength + grappling.RopeMargin)
+            {
+                Ungrapple((uid, grappling), true);
+                continue;
+            }
+
+            if (!grappling.Reeling)
+            {
+                // Just in case.
+                if (grappling.Stream.HasValue && Timing.IsFirstTimePredicted)
+                    grappling.Stream = _audio.Stop(grappling.Stream);
+
+                continue;
+            }
+
+
+            // TODO: Contracting DistanceJoints should be in engine
+            if (distance.MaxLength >= ropeLength + grappling.RopeMargin)
+            {
+                distance.MaxLength = MathF.Max(distance.MinLength + grappling.RopeMargin, distance.MaxLength - grappling.ReelRate * frameTime);
+                distance.MaxLength = MathF.Max(ropeLength + grappling.RopeMargin, distance.MaxLength);
+                ropeLength = MathF.Min(distance.MaxLength, ropeLength);
+
+                distance.Length = ropeLength;
+            }
+
+            if (ropeLength <= distance.MinLength + grappling.RopeFullyReeledMargin)
+            {
+                SetReeling(uid, grappling, false, null);
+            }
+            else if (ropeLength >= distance.MaxLength - grappling.RopeMargin)
+            {
+                var targetDirection = (bodyAWorldPos - bodyBWorldPos).Normalized();
+
+                var grapplerUidA = _container.TryGetOuterContainer(physicalHook, Transform(physicalHook), out var containerA) ? containerA.Owner : physicalHook;
+                var grapplerBodyA = Comp<PhysicsComponent>(grapplerUidA);
+
+                var massFactorA = MathF.Min(grapplerBodyA.InvMass * grappling.ReelMassCoefficient, 1f);
+                _physics.ApplyLinearImpulse(grapplerUidA, targetDirection * grappling.ReelForce * massFactorA * frameTime * -1, body: grapplerBodyA);
+
+                var grapplerUidB = _container.TryGetOuterContainer(physicalGrapple, Transform(physicalGrapple), out var containerB) ? containerB.Owner : physicalGrapple;
+                var grapplerBodyB = Comp<PhysicsComponent>(grapplerUidB);
+
+                var massFactorB = MathF.Min(grapplerBodyB.InvMass * grappling.ReelMassCoefficient, 1f);
+                _physics.ApplyLinearImpulse(grapplerUidB, targetDirection * grappling.ReelForce * massFactorB * frameTime, body: grapplerBodyB);
+            }
+
+            Dirty(uid, jointComp);
         }
     }
 
     /// <summary>
-    /// Checks if the colliding fixtures are the ones we want.
+    /// Checks whether the entity is hooked to something via grappling gun.
     /// </summary>
-    /// <returns>
-    /// False if our fixture is not a portal fixture.
-    /// False if other fixture is not hard, but makes an exception for projectiles.
-    /// </returns>
-    private bool ShouldCollide(string ourId, string otherId, Fixture our, Fixture other)
+    /// <param name="entity">Entity to check.</param>
+    /// <returns>True if hooked, false otherwise.</returns>
+    public bool IsEntityHooked(Entity<JointRelayTargetComponent?> entity)
     {
-        return ourId == PortalFixture && (other.Hard || otherId == ProjectileFixture);
-    }
-
-    /// <summary>
-    /// Checks if the client is able to predict the teleport.
-    /// Client can't predict outside 1-to-1 portal-to-portal interactions due to randomness involved.
-    /// </summary>
-    /// <returns>
-    /// False if the linked entity count isn't 1.
-    /// False if the linked entity doesn't exist on the client / is outside PVS.
-    /// </returns>
-    private bool CanPredictTeleport(Entity<LinkedEntityComponent> portal)
-    {
-        var first = portal.Comp.LinkedEntities.First();
-        var exists = Exists(first);
-
-        if (!exists ||
-            portal.Comp.LinkedEntities.Count != 1 || // 0 and >1 use RNG
-            exists && Transform(first).MapID == MapId.Nullspace) // The linked entity is most likely outside PVS
+        if (!Resolve(entity, ref entity.Comp, false))
             return false;
 
-        return true;
+        foreach (var uid in entity.Comp.Relayed)
+        {
+            if (HasComp<GrapplingGunComponent>(uid))
+                return true;
+        }
+
+        return false;
     }
 
-    /// <summary>
-    /// Handles teleporting a subject from the portal entity to a coordinate.
-    /// Also deletes invalid portals.
-    /// </summary>
-    /// <param name="ent"> The portal being collided with. </param>
-    /// <param name="subject"> The entity getting teleported. </param>
-    /// <param name="target"> The location to teleport to. </param>
-    /// <param name="targetEntity"> The portal on the other side of the teleport. </param>
-    private void TeleportEntity(Entity<PortalComponent> ent, EntityUid subject, EntityCoordinates target, EntityUid? targetEntity = null, bool playSound = true)
+    private void OnGrappleCollide(EntityUid uid, GrapplingProjectileComponent component, ref ProjectileEmbedEvent args)
     {
-        var ourCoords = Transform(ent).Coordinates;
-        var onSameMap = _transform.GetMapId(ourCoords) == _transform.GetMapId(target);
-        var distanceInvalid = ent.Comp.MaxTeleportRadius != null
-                              && ourCoords.TryDistance(EntityManager, target, out var distance)
-                              && distance > ent.Comp.MaxTeleportRadius;
+        if (!Timing.IsFirstTimePredicted || !args.Weapon.HasValue || !_entities.TryGetComponent<GrapplingGunComponent>(args.Weapon, out var grapple))
+            return;
 
-        // Early out if this is an invalid configuration
-        if (!onSameMap && !ent.Comp.CanTeleportToOtherMaps || distanceInvalid)
+        var grapplePos = _transform.GetWorldPosition(args.Weapon.Value);
+        var hookPos = _transform.GetWorldPosition(uid);
+        if ((grapplePos - hookPos).Length() >= grapple.RopeMaxLength)
         {
-            if (_netMan.IsClient)
-                return;
-
-            _popup.PopupCoordinates(Loc.GetString("portal-component-invalid-configuration-fizzle"),
-                ourCoords, Filter.Pvs(ourCoords, entityMan: EntityManager), true);
-
-            _popup.PopupCoordinates(Loc.GetString("portal-component-invalid-configuration-fizzle"),
-                target, Filter.Pvs(target, entityMan: EntityManager), true);
-
-            QueueDel(ent);
-
-            if (targetEntity != null)
-                QueueDel(targetEntity.Value);
-
+            Ungrapple((args.Weapon.Value, grapple), true);
             return;
         }
 
-        var arrivalSound = CompOrNull<PortalComponent>(targetEntity)?.ArrivalSound ?? ent.Comp.ArrivalSound;
-        var departureSound = ent.Comp.DepartureSound;
+        var joint = _joints.CreateDistanceJoint(uid, args.Weapon.Value, id: GrapplingJoint);
+        joint.MaxLength = joint.Length + grapple.RopeMargin;
+        joint.Stiffness = grapple.RopeStiffness;
+        joint.MinLength = grapple.RopeMinLength; // Length of a tile to prevent pulling yourself into / through walls
+        joint.Breakpoint = grapple.RopeBreakPoint;
 
-        // Some special cased stuff: projectiles should stop ignoring shooter when they enter a portal, to avoid
-        // stacking 500 bullets in between 2 portals and instakilling people--you'll just hit yourself instead
-        // (as expected)
-        if (TryComp<ProjectileComponent>(subject, out var projectile))
-        {
-            projectile.IgnoreShooter = false;
-        }
+        var jointCompHook = _entities.GetComponent<JointComponent>(uid); // we use get here because if the component doesn't exist then something has fucked up bigtime
+        var jointCompGrapple = _entities.GetComponent<JointComponent>(args.Weapon.Value);
 
-        LogTeleport(ent, subject, Transform(subject).Coordinates, target);
-
-        _transform.SetCoordinates(subject, target);
-
-        if (!playSound)
-            return;
-
-        _audio.PlayPredicted(departureSound, ent, subject);
-        _audio.PlayPredicted(arrivalSound, subject, subject);
+        _joints.SetRelay(uid, args.Embedded, jointCompHook);
+        _joints.RefreshRelay(args.Weapon.Value, jointCompGrapple);
     }
 
-    /// <summary>
-    /// Finds a random coordinate within the portal's radius and teleports the subject there.
-    /// Attempts to not put the subject inside a static entity (e.g. wall).
-    /// </summary>
-    /// <param name="ent"> The portal being collided with. </param>
-    /// <param name="subject"> The entity getting teleported. </param>
-    private void TeleportRandomly(Entity<PortalComponent> ent, EntityUid subject)
+    [Serializable, NetSerializable]
+    protected sealed class RequestGrapplingReelMessage : EntityEventArgs
     {
-        var xform = Transform(ent);
-        var coords = xform.Coordinates;
-        var newCoords = coords.Offset(_random.NextVector2(ent.Comp.MaxRandomRadius));
-        for (var i = 0; i < MaxRandomTeleportAttempts; i++)
+        public bool Reeling;
+
+        public RequestGrapplingReelMessage(bool reeling)
         {
-            var randVector = _random.NextVector2(ent.Comp.MaxRandomRadius);
-            newCoords = coords.Offset(randVector);
-            if (!_lookup.AnyEntitiesIntersecting(_transform.ToMapCoordinates(newCoords), LookupFlags.Static))
-            {
-                // newCoords is not a wall
-                break;
-            }
-            // after "MaxRandomTeleportAttempts" attempts, end up in the walls
+            Reeling = reeling;
         }
-
-        TeleportEntity(ent, subject, newCoords);
-    }
-
-    protected virtual void LogTeleport(EntityUid portal, EntityUid subject, EntityCoordinates source,
-        EntityCoordinates target)
-    {
     }
 }
