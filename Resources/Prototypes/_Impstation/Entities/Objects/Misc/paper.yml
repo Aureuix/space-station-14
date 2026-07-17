@@ -39,24 +39,19 @@
     # SpL Start
     - type: Paper
       content: "[bold]Offender:[/bold] 
-                
                 [form]
                 
                 [bold]Offense:[/bold] 
-                
                 [form]
                 
                 [bold]Fine:[/bold] 
-                
                 [form]
                 
                 
                 [bold]Time:[/bold] 
-      
                 [datetime]
                 
                 [bold]Issuer:[/bold] 
-                
                 [signature]
                 ─────────────
                 
