@@ -30,7 +30,7 @@
     - type: Gun
       soundGunshot: /Audio/Weapons/utilityknifeopen.ogg
       fireRate: 1.0
-      soundEmpty: /Audio/Weapons/Guns/Empty/empty.ogg # Starlight, we don't have the Moffstation sound
+      soundEmpty: /Audio/Weapons/utilityknifeclose.ogg # Starlight, we don't have the Moffstation sound # SpL - sure but we could have a nicer sound than the loud fucking click
     - type: Item
       size: Small
       shape:
