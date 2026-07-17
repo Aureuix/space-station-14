@@ -86,7 +86,7 @@
   storage:
     back:
       - WeaponPistolGoldenMk58HighCapacity
-      - MagazinePistolHighCapacitySPGolden
+      - MagazinePistolHighCapacitySP
 
 # Jumpsuit
 - type: loadout

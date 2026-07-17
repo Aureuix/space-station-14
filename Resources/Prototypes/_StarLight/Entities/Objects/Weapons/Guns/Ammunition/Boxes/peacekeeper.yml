@@ -53,7 +53,7 @@
   description: A box of stinger grenades for the Peacekeeper, very good at dispersing crowds and getting lawsuits.
   components:
     - type: BallisticAmmoProvider
-      proto: GrenadeStingerlauncher
+      proto: GrenadeStingerLauncher
       mayTransfer: true
     - type: Sprite
       layers:
@@ -70,7 +70,7 @@
   description: A box of teargas grenades for the Peacekeeper. The label has a big "DO NOT FORGET INTERNALS" written in red.
   components:
     - type: BallisticAmmoProvider
-      proto: GrenadeGaslauncher
+      proto: GrenadeGasLauncher
       mayTransfer: true
     - type: Sprite
       layers:

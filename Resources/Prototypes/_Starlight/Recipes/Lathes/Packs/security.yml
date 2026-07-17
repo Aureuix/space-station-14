@@ -23,7 +23,7 @@
   - MagazineBoxRiflePractice
   - WeaponDisablerPractice
   - WeaponLaserCarbinePractice
-  - WeaponFlareGunSecurity
+  # - WeaponFlareGunSecurity # SpL
   - MagazineDMRPractice
 
 - type: latheRecipePack
