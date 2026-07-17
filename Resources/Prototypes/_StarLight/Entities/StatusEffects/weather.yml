@@ -1,6 +1,7 @@
 - type: entity
   parent: WeatherBase
   id: WeatherRadStorm
+  name: radstorm
   components:
     - type: WeatherStatusEffect
       sprite:
@@ -19,11 +20,12 @@
         ignoreResistances: false
         damage:
           types:
-            Radiation: 2
+            Radiation: 0.25 # SpL
 
 - type: entity
   parent: WeatherBase
   id: WeatherSolarFlare
+  name: solar flare
   components:
     - type: WeatherStatusEffect
       sprite:
@@ -40,18 +42,19 @@
       effects:
       - !type:Flash
       - !type:Flammable
-        multiplier: 3.75
+        multiplier: 1.75 # SpL
         multiplierOnExisting: 0.75
       - !type:Ignite
       - !type:HealthChange
         ignoreResistances: false
         damage:
           types:
-            Heat: 1
+            Heat: 0.25 # SpL
 
 - type: entity
   parent: WeatherBase
   id: WeatherAuroraCaelus
+  name: aurora caelus
   components:
     - type: WeatherStatusEffect
       sprite:
@@ -67,6 +70,7 @@
 - type: entity
   parent: WeatherBase
   id: WeatherSpaceWhale
+  name: space whale
   components:
     - type: ParallaxStatusEffect
       parallax: SpaceWhale
@@ -74,6 +78,7 @@
 - type: entity
   parent: WeatherBase
   id: WeatherSpaceDog
+  name: space dog
   components:
     - type: ParallaxStatusEffect
       parallax: SpaceDog

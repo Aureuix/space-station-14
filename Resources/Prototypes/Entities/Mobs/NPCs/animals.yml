@@ -217,6 +217,7 @@
     speaks:
     - Chicken
     understands:
+    - GalacticCommon
     - Chicken
   - type: MobThresholds
     thresholds:
@@ -524,6 +525,7 @@
     understands:
     - Moffic
     - Mothroach
+    - GalacticCommon
   # Starlight-end
   # Starlight-start: Body emotes (wing flap!)
   - type: BodyEmotes
@@ -707,6 +709,7 @@
     - Duck
     understands:
     - Duck
+    - GalacticCommon
   - type: MobThresholds
     thresholds:
       0: Alive
@@ -1337,6 +1340,7 @@
     speaks:
     - Ancestor
     understands:
+    - GalacticCommon
     - Ancestor
   # Starlight-end
   - type: VentCrawler # Starlight-edit: Vent Crawl
@@ -1595,6 +1599,7 @@
     understands:
     - Ancestor
     - Draconic
+    - GalacticCommon
   # Starlight-end
   - type: NameIdentifier
     group: Kobold
@@ -1792,6 +1797,7 @@
     - Mouse
     understands:
     - Mouse
+    - GalacticCommon
   # Starlight-end
   - type: VentCrawler # Starlight-edit: Vent Crawl
   - type: Body
@@ -2582,6 +2588,7 @@
     - Chittin
     understands:
     - Chittin
+    - GalacticCommon
   # Starlight-end
   - type: VentCrawler # Starlight-edit: Vent Crawl
   - type: Physics
@@ -2964,6 +2971,7 @@
     understands:
     - Fox
     - Canilunzt
+    - GalacticCommon
   # Starlight-end
   - type: Sprite
     drawdepth: Mobs
@@ -3265,6 +3273,7 @@
     understands:
     - Cat
     - Nekomimetic
+    - GalacticCommon
   # Starlight-end
   - type: Sprite
     drawdepth: Mobs
@@ -3629,6 +3638,7 @@
     - Mouse
     understands:
     - Mouse
+    - GalacticCommon
   # Starlight-end
   - type: VentCrawler # Starlight-edit: Vent Crawl
   - type: GhostRole
@@ -3790,6 +3800,7 @@
     - Pig
     understands:
     - Pig
+    - GalacticCommon
   # Starlight-end
   - type: Sprite
     drawdepth: Mobs
@@ -3866,6 +3877,7 @@
     - Sylvan
     understands:
     - Sylvan
+    - GalacticCommon
   # Starlight-end
   - type: Sprite
     drawdepth: Mobs
@@ -3955,6 +3967,7 @@
     - Sylvan
     understands:
     - Sylvan
+    - GalacticCommon
   # Starlight-end
 
 - type: entity
