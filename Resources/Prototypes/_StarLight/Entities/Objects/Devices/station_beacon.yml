@@ -52,6 +52,7 @@
 - type: entity
   parent: DefaultStationBeaconEngineering
   id: DefaultStationBeaconBreakroomEngi
+  components:
     - type: NavMapBeacon
       defaultText: station-beacon-breakroom-engineering
 
