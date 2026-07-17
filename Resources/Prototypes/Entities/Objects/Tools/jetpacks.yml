@@ -102,6 +102,7 @@
     sprite: Objects/Tanks/Jetpacks/blue.rsi
     slots:
       - Back
+      - suitStorage # SpL
 
 # Filled blue
 - type: entity
@@ -135,6 +136,7 @@
     sprite: Objects/Tanks/Jetpacks/black.rsi
     slots:
       - Back
+      - suitStorage # SpL
   - type: StaticPrice
     price: 1000
 #Starlight Start

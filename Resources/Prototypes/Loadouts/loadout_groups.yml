@@ -109,7 +109,7 @@
   - HonoredClownMask
   - MedRollies
   - DaBling
-  - CrapPlushie ##not a typo
+  - CrapPlushie # not a typo
   - LighterGatcha
   - MagicCrayon
   - HappyHonk
@@ -123,9 +123,13 @@
   - PersonalAI
   - GoldenPersonalAI # Starlight end
   - AACTablet # DeltaV
-  - ClothingKitsuneMask # SpL
-  - Umbrella # SpL
-  - BoxLighttubeBlacklight # SpL
+  - ClothingMaskMime
+  - ClothingMaskBlushingMime
+  - ClothingMaskSadMime
+  - ClothingMaskScaredMime
+  - ClothingKitsuneMask # SpL start
+  - Umbrella 
+  - BoxLighttubeBlacklight  # SpL end
 
 - type: loadoutGroup
   id: Glasses
