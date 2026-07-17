@@ -151,13 +151,11 @@
         - Biological
         - Inorganic
         - Silicon
-        - IPC
     - type: ShowHealthIcons
       damageContainers:
         - Biological
         - Inorganic
         - Silicon
-        - IPC
     - type: FlashImmunity
     - type: EyeProtection
       protectionTime: 5

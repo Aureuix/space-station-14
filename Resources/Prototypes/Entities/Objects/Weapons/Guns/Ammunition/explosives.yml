@@ -57,7 +57,7 @@
 
 - type: entity #Starlight Used for peacekeeper
   id: GrenadeBaton
-  name: Baton grenade
+  name: baton grenade
   description: Crack Skulls, break jaws.
   parent: [ BaseGrenade, BaseSecurityContraband] # Starlight edit: Major -> Security contraband
   components:
@@ -92,7 +92,7 @@
 
 - type: entity #Starlight Used for Peacekeeper and Paddy
   id: GrenadeFlash
-  name: Flash grenade
+  name: flash grenade
   description: EEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEE
   parent: [ BaseGrenade, BaseSecurityContraband] # Starlight edit: Major -> Security contraband
   components:

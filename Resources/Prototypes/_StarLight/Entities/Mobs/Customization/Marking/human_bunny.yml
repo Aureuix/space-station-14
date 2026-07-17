@@ -69,29 +69,6 @@
       state: tall_ears_cut_R_inner
 
 - type: marking
-  id: HumanLagomorphEarsAirplane
-  bodyPart: HeadTop
-  markingCategory: HeadTop
-  speciesRestriction: [Human]
-  coloring:
-    default:
-      type:
-        !type:CategoryColoring
-        category: Hair
-      fallbackTypes:
-        - !type:SkinColoring
-    layers:
-      ears_cat_inner:
-        type:
-          !type:SimpleColoring
-          color: "#FFFFFF"
-  sprites:
-    - sprite: _Starlight/Mobs/Customization/lagomorph.rsi
-      state: airplane
-    - sprite: _Starlight/Mobs/Customization/lagomorph.rsi
-      state: inner_airplane
-
-- type: marking
   id: HumanLagomorphEarsFloppy
   bodyPart: HeadTop
   markingCategory: HeadTop

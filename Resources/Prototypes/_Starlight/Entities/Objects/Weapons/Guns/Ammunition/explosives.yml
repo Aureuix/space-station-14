@@ -415,8 +415,8 @@
     muzzleFlash: null
 
 - type: entity # Starlight Grenades for the Peacekeeper
-  id: GrenadeGaslauncher
-  name: Gas grenade
+  id: GrenadeGasLauncher
+  name: gas grenade
   description: Able to choke a room or several of your friends.
   parent: [ BaseGrenade, BaseSecurityContraband]
   components:
@@ -433,8 +433,8 @@
       suffix: false
 
 - type: entity # Starlight Grenades for the sec Peacekeeper
-  id: GrenadeStingerlauncher
-  name: Stinger grenade
+  id: GrenadeStingerLauncher
+  name: stinger grenade
   description: An unruly crowd's favourite.
   parent: [ BaseGrenade, BaseSecurityContraband]
   components:

@@ -15,9 +15,9 @@
   - Ammo
   completetime: 3
   materials:
-    Steel: 450
-    Plastic: 300
-    Gold: 150
+    Steel: 150 # SpL
+    Plastic: 100 # SpL
+    Glass: 20 # SpL
 
 - type: latheRecipe
   id: GrenadeFrag

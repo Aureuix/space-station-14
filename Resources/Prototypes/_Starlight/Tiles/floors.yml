@@ -680,5 +680,5 @@
   baseTurf: Plating
   isSubfloor: false
   deconstructTools: [ Prying ]
-  itemDrop: FloorTileAstroAsteroidTile
+  itemDrop: FloorTileItemAstroAsteroidTile
   weather: false
