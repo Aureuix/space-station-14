@@ -2,7 +2,7 @@
   name: ticket
   parent: Paper
   id: FineTicket
-  description: 'A space-glue backed fining ticket. Once stuck, it will not come off without being destroyed.'
+  description: A space-glue backed fining ticket. 
   components:
     - type: Sprite
       layers:
@@ -19,23 +19,50 @@
       sound: /Audio/Weapons/pop.ogg
       embedOnThrow: True
     - type: ThrowingAngle
-      angle: 0
+      angle: 180 # SpL- this is way funnier
     - type: LandAtCursor
     - type: PaperVisuals
       backgroundImagePath: "/Textures/Interface/Paper/paper_background_default.svg.96dpi.png"
       contentImagePath: "/Textures/Interface/Paper/paper_content_lined.svg.96dpi.png"
       backgroundModulate: "#f07575"
       contentImageModulate: "#f07575"
-      backgroundPatchMargin: 16.0, 16.0, 16.0, 16.0
-      contentMargin: 16.0, 16.0, 16.0, 16.0
+      backgroundPatchMargin: 20.0, 20.0, 20.0, 20.0 # SpL
+      contentMargin: 20.0, 20.0, 20.0, 20.0 # SpL
       headerImagePath: "/Textures/_Starlight/Interface/Paper/paper_heading_fine.svg.96dpi.png"
-      headerMargin: 0.0, 12.0, 0.0, 0.0
+      headerMargin: 0.0, 12.0, 0.0, 0.0 # SpL
       maxWritableArea: 200.0, 300.0
     - type: Tag
       tags:
         - Document
         - Paper
         - SecTicket
+    # SpL Start
+    - type: Paper
+      content: "[bold]Offender:[/bold] 
+                
+                [form]
+                
+                [bold]Offense:[/bold] 
+                
+                [form]
+                
+                [bold]Fine:[/bold] 
+                
+                [form]
+                
+                
+                [bold]Time:[/bold] 
+      
+                [datetime]
+                
+                [bold]Issuer:[/bold] 
+                
+                [signature]
+                ─────────────
+                
+                [italic]Stamp/Signature[/italic]"
+                  
+    # SpL end
 
 - type: entity
   id: TicketPad
