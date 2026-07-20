@@ -10,6 +10,7 @@
       sprite: _Starlight/Clothing/Eyes/Hud/blueshield.rsi
     - type: ShowJobIcons
     - type: ShowMindShieldIcons
+    - type: SolutionScanner # SpL
     - type: ShowCriminalRecordIcons
     - type: ShowHealthBars
       damageContainers:
@@ -179,6 +180,7 @@
       sprite: _Starlight/Clothing/Eyes/Hud/centcomm.rsi
     - type: ShowJobIcons
     - type: ShowMindShieldIcons
+    - type: SolutionScanner # SpL
     - type: ShowCriminalRecordIcons
     - type: ShowHealthBars
       damageContainers:
@@ -256,7 +258,7 @@
   parent: [BaseTSFContraband, ClothingHeadset]
   id: ClothingHudTSF
   name: SolGov hud
-  description: Visor with a built-in modern OCULUS array augments the wearer's vision.
+  description: A high-tech visor with a built-in modern OCULUS array that augments the wearer's vision.
   components:
     - type: Sprite
       sprite: _Starlight/Clothing/Eyes/Hud/tsf.rsi
@@ -264,6 +266,7 @@
       sprite: _Starlight/Clothing/Eyes/Hud/tsf.rsi
     - type: ShowJobIcons
     - type: ShowMindShieldIcons
+    - type: SolutionScanner # SpL
     - type: EyeProtection
       protectionTime: 5
     - type: ContainerFill

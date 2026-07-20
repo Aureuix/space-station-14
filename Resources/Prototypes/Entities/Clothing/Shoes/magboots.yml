@@ -101,7 +101,7 @@
   - type: ClothingSlowOnDamageModifier #Starlight
     modifier: 0.5 # Starlight
   - type: ClothingSpeedModifier
-    walkModifier: 0.9
+    walkModifier: 1 # SpL
     sprintModifier: 0.9
   - type: GasTank
     outputPressure: 42.6
@@ -128,6 +128,8 @@
     sprite: Clothing/Shoes/Boots/magboots-ert.rsi
   - type: Clothing
     sprite: Clothing/Shoes/Boots/magboots-ert.rsi
+  - type: ClothingSlowOnDamageModifier # SpL
+    modifier: 0.25 # SpL
 
 - type: entity
   parent: BaseAction

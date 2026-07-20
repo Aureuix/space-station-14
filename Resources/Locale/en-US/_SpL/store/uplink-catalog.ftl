@@ -9,3 +9,12 @@ uplink-rifle-magazine-estoc-desc = DMR magazines with 20 cartridges. Compatible 
 
 uplink-free-encryption-key-name = Syndicate encryption key
 uplink-free-encryption-key-desc = A single encryption key provided for you to stay in touch with your allies. Use it wisely.
+
+uplink-appraisal-tool-gun-name = Appraisal tool pistol
+uplink-appraisal-tool-gun-desc = A compact pistol disguised as a normal appraisal tool. Sure to avert suspicion, and it even functions for normal appraising! (.35 auto)
+
+uplink-smg-briefcase-name = Briefcase SMG
+uplink-smg-briefcase-desc = A powerful submachine gun packed into an ordinary brown briefcase. The barrel had to be removed to make the disguise work, so be mindful of its spread. Extra ammo not included.
+
+uplink-syndi-automender-name = Interdyne automender
+uplink-syndi-automender-desc = Be the medical maniac of your dreams with this overclocked automender, capable of healing all damage types quickly and effectively. Omnizine refills not included.

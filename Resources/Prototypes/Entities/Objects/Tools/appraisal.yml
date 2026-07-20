@@ -18,6 +18,7 @@
     quickEquip: false
     slots:
     - Belt
+    - suitStorage
   - type: PhysicalComposition
     materialComposition:
       Steel: 250

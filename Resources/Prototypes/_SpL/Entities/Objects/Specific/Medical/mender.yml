@@ -1,0 +1,43 @@
+﻿- type: entity
+  id: AutoMenderSyndicate
+  name: interdyne automender
+  description: A reverse-engineered automender fine-tuned to maximise healing efficiency by consuming omnizine. An ongoing lawsuit over patents is still being fought by Interdyne and NanoTrasen over this design.
+  parent: [ BaseAutoMender, BaseSyndicateContraband ]
+  components:
+    - type: Sprite
+      sprite: _SpL/Objects/Specific/Medical/syndimender.rsi
+      layers:
+        - state: mender
+          map: [ "enum.SolutionContainerLayers.Base" ]
+        - state: fillIndicator6
+          map: [ "enum.SolutionContainerLayers.Fill" ]
+    - type: Item
+      sprite: _SpL/Objects/Specific/Medical/syndimender.rsi
+    - type: Healing
+      solutionDrain: true
+      reagentsToDrain:
+        - ReagentId: Omnizine
+          Quantity: 0.25
+      delay: 0.25
+      damage:
+        groups:
+          Burn: -2
+          Toxin: -2
+          Airloss: -2
+          Brute: -2
+      healingBeginSound:
+        path: "/Audio/_Starlight/Items/Medical/mender.ogg"
+      healingEndSound:
+        path: "/Audio/_Starlight/Items/Medical/mender2.ogg"
+
+- type: entity
+  suffix: Filled
+  parent: AutoMenderSyndicate
+  id: AutoMenderSyndicateFilled
+  components:
+  - type: SolutionContainerManager
+    solutions:
+      injector:
+        reagents:
+          - ReagentId: Omnizine
+            Quantity: 35

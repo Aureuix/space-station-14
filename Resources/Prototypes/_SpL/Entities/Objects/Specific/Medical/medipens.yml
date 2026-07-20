@@ -1,5 +1,5 @@
 ﻿- type: entity
-  parent: [ChemicalMedipen]
+  parent: [ ChemicalMedipen, BaseMedicalSecurityContraband ] 
   id: AdvancedBruteAutoinjector 
   suffix: Do Not Map
   name: advanced brute auto-injector
@@ -41,7 +41,7 @@
       price: 1000
       
 - type: entity
-  parent: [ChemicalMedipen]
+  parent: [ ChemicalMedipen, BaseMedicalSecurityContraband ]
   id: AmoxlaAutoinjector
   name: amoxla airloss auto-injector
   description: A single-dose, non-refillable medipen containing saline and amoxla, used to quickly and easily treat blood loss and asphyxiation in ammonia-based organisms.
@@ -78,7 +78,7 @@
               Quantity: 20
               
 - type: entity
-  parent: [ChemicalMedipen]
+  parent: [ ChemicalMedipen, BaseMedicalSecurityContraband ]
   id: ScorizineAutoinjector
   name: scorizine auto-injector
   description: A single-dose, non-refillable medipen containing scorizine and dermaline, used to quickly and easily treat thermal burns in ammonia-based organisms. Commonly used as a combat medicine.
@@ -115,7 +115,7 @@
               Quantity: 20
               
 - type: entity
-  parent: [ChemicalMedipen]
+  parent: [ ChemicalMedipen ]
   id: SalineMicroinjector
   name: saline microinjector
   description: A chemical microinjector containing a small shot of saline. Good for filling up on lost blood.

@@ -12,17 +12,17 @@ public sealed class ShuffleParticlesAnomalySystem : EntitySystem
     public override void Initialize()
     {
         SubscribeLocalEvent<ShuffleParticlesAnomalyComponent, AnomalyPulseEvent>(OnPulse);
-        SubscribeLocalEvent<ShuffleParticlesAnomalyComponent, AnomalyAffectedByParticleEvent>(OnAffectedByParticle);
+        /*SubscribeLocalEvent<ShuffleParticlesAnomalyComponent, AnomalyAffectedByParticleEvent>(OnAffectedByParticle);*/ //SpL - this is bullshit
     }
 
-    private void OnAffectedByParticle(Entity<ShuffleParticlesAnomalyComponent> ent, ref AnomalyAffectedByParticleEvent args)
+    /*private void OnAffectedByParticle(Entity<ShuffleParticlesAnomalyComponent> ent, ref AnomalyAffectedByParticleEvent args)
     {
         if (!TryComp<AnomalyComponent>(ent, out var anomalyComp))
             return;
 
         if (ent.Comp.ShuffleOnParticleHit && _random.Prob(ent.Comp.Prob))
             _anomaly.ShuffleParticlesEffect((args.Anomaly, anomalyComp));
-    }
+    }*/ // SpL- it's still bullshit
 
     private void OnPulse(Entity<ShuffleParticlesAnomalyComponent> ent, ref AnomalyPulseEvent args)
     {

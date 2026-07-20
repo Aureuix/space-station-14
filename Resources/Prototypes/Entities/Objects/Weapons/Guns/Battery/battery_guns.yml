@@ -170,6 +170,7 @@
     quickEquip: false
     slots:
     - Belt
+    - suitStorage # SpL
 
 - type: entity
   name: svalinn laser pistol
@@ -568,6 +569,7 @@
     quickEquip: false
     slots:
     - Belt
+    - suitStorage # SpL
   - type: Appearance
   - type: MagazineVisuals
     magState: mag
@@ -699,6 +701,7 @@
     quickEquip: false
     slots:
     - Belt
+    - suitStorage # SpL
   - type: Gun
     fireRate: 0.5
     soundGunshot:

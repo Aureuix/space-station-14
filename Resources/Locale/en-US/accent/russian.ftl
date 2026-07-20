@@ -53,3 +53,15 @@ accent-russian-words-replace-13 = tsar
 accent-russian-word-14 = glory to
 accent-russian-word-14-2 = long live
 accent-russian-words-replace-14 = slava
+
+#Lisp support
+accent-russian-word-15-1 = thith ith
+accent-russian-word-15-2 = it ith
+accent-russian-word-15-3 = it'th
+accent-russian-word-replace-15 = ith
+
+accent-russian-word-16 = thankth
+accent-russian-word-replace-16 = thpathibo
+
+accent-russian-words-17 = yeth
+accent-russian-words-replace-17 = da

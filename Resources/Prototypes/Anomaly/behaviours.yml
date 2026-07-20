@@ -125,14 +125,14 @@
     shuffleOnPulse: true
     prob: 1
 
-- type: anomalyBehavior
-  id: InconstancyParticle
-  earnPointModifier: 1.8
-  description: anomaly-behavior-inconstancy
-  components:
-  - type: ShuffleParticlesAnomaly
-    shuffleOnParticleHit: true
-    prob: 0.8
+#- type: anomalyBehavior
+#  id: InconstancyParticle
+#  earnPointModifier: 1.8
+#  description: anomaly-behavior-inconstancy
+#  components:
+#  - type: ShuffleParticlesAnomaly
+#    shuffleOnParticleHit: true
+#    prob: 0.8
 
 - type: anomalyBehavior
   id: Jumping
@@ -193,17 +193,17 @@
     randomStartSecretMin: 3
     randomStartSecretMax: 5
 
-- type: anomalyBehavior
-  id: InconstancyParticleUnknown
-  earnPointModifier: 1.95
-  description: anomaly-behavior-inconstancy
-  components:
-  - type: ShuffleParticlesAnomaly
-    shuffleOnParticleHit: true
-    prob: 0.5
-  - type: SecretDataAnomaly
-    randomStartSecretMin: 3
-    randomStartSecretMax: 5
+#- type: anomalyBehavior
+#  id: InconstancyParticleUnknown
+#  earnPointModifier: 1.95
+#  description: anomaly-behavior-inconstancy
+#  components:
+#  - type: ShuffleParticlesAnomaly
+#    shuffleOnParticleHit: true
+#    prob: 0.5
+#  - type: SecretDataAnomaly
+#    randomStartSecretMin: 3
+#    randomStartSecretMax: 5
 
 - type: anomalyBehavior
   id: InvisibilityJumping

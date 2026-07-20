@@ -10,10 +10,12 @@
   - type: Clothing
     sprite: _Starlight/Clothing/Shoes/Boots/magboots-security.rsi
   - type: ClothingSpeedModifier
-    walkModifier: 0.85
+    walkModifier: 1 # SpL
     sprintModifier: 0.8
   - type: Tag
     tags:
     - WhitelistChameleon
   - type: StaticPrice
     price: 350
+  - type: ClothingSlowOnDamageModifier # SpL
+    modifier: 0.5 # SpL

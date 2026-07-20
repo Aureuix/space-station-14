@@ -17,8 +17,8 @@ public sealed partial class ShuffleParticlesAnomalyComponent : Component
     /// <summary>
     /// Prob() chance to randomize particle types after APE or CHIMP projectile
     /// </summary>
-    [DataField]
-    public bool ShuffleOnParticleHit = false;
+    /*[DataField]
+    public bool ShuffleOnParticleHit = false;*/ // SpL- this sucks
 
     /// <summary>
     /// Chance to random particles

@@ -29,21 +29,21 @@
     stealGroup: Hypospray
 
 - type: entity
-  name: gorlex hypospray
+  name: syndicate mediborg hypospray # SpL
   parent: [BaseHypospray, BaseSyndicateContraband]
   description: An adaptation of the Gorlex Hypospray for cyborgs.
   id: SyndiBorgHypo
   components:
   - type: Sprite
-    sprite: Objects/Specific/Medical/syndihypo.rsi
+    sprite: Objects/Specific/Medical/hypospray.rsi # SpL
     layers:
-      - state: hypo
+      - state: borghypo_s # SpL
         map: ["enum.SolutionContainerLayers.Base"]
-      - state: hypo_fill1
+      - state: borghypo_fill1 # SpL
         map: ["enum.SolutionContainerLayers.Fill"]
         visible: false
   - type: Item
-    sprite: Objects/Specific/Medical/syndihypo.rsi
+    sprite: Objects/Specific/Medical/hypospray.rsi # SpL
   - type: SolutionContainerManager
     solutions:
       hypospray:
@@ -55,7 +55,7 @@
     exactVolume: true
   - type: SolutionContainerVisuals
     maxFillLevels: 2
-    fillBaseName: hypo_fill
+    fillBaseName: borghypo_fill
     solutionName: hypospray
   - type: UseDelay
     delay: 0.5

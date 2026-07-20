@@ -10,6 +10,7 @@
       sprite: _Starlight/Admeme/Clothing/Eyes/Hud/ntnc.rsi
     - type: ShowJobIcons
     - type: ShowMindShieldIcons
+    - type: SolutionScanner # SpL
     - type: ShowCriminalRecordIcons
     - type: ShowHealthBars
       damageContainers:

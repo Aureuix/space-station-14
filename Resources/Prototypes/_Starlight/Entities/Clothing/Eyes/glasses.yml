@@ -122,6 +122,7 @@
   - type: FlashImmunity
   - type: ShowJobIcons
   - type: ShowMindShieldIcons
+  - type: SolutionScanner # SpL
   - type: ShowCriminalRecordIcons
   - type: ShowHealthBars
     damageContainers:
@@ -157,6 +158,7 @@
         - Inorganic
         - Silicon
     - type: FlashImmunity
+    - type: SolutionScanner # SpL
     - type: EyeProtection
       protectionTime: 5
     - type: Tag
