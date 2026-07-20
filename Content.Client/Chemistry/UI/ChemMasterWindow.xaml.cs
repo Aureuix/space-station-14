@@ -25,6 +25,9 @@ namespace Content.Client.Chemistry.UI
     {
         [Dependency] private readonly IPrototypeManager _prototypeManager = default!;
         [Dependency] private readonly IEntityManager _entityManager = default!;
+        private NetEntity? _lastOutputContainer; // Starlight
+        private bool _containerLabelManuallySet; // Starlight
+        private bool _settingContainerLabelProgrammatically; // Starlight
 
         private readonly SpriteSystem _sprite;
 
@@ -95,7 +98,15 @@ namespace Content.Client.Chemistry.UI
 
             // Ensure label length is within the character limit.
             LabelLineEdit.IsValid = s => s.Length <= SharedChemMaster.LabelMaxLength;
-
+            // Starlight-start
+            ContainerLabelLineEdit.IsValid = s => s.Length <= SharedChemMaster.LabelMaxLength; // Starlight
+            ContainerLabelLineEdit.OnTextChanged += _ =>
+            {
+                if (!_settingContainerLabelProgrammatically)
+                    _containerLabelManuallySet = true;
+            };
+            // Starlight-end
+            
             Tabs.SetTabTitle(0, Loc.GetString("chem-master-window-input-tab"));
             Tabs.SetTabTitle(1, Loc.GetString("chem-master-window-output-tab"));
 
@@ -156,6 +167,22 @@ namespace Content.Client.Chemistry.UI
             if (castState.UpdateLabel)
                 LabelLine = GenerateLabel(castState);
 
+            // Starlight-start
+            var currentContainer = castState.OutputContainerInfo?.Uid;
+            if (currentContainer != _lastOutputContainer)
+            {
+                _lastOutputContainer = currentContainer;
+                _containerLabelManuallySet = false;
+                ContainerLabelLine = "";
+            }
+
+            if (castState.OutputContainerInfo is not null && !_containerLabelManuallySet)
+            {
+                var existingLabel = castState.OutputContainerInfo?.ContainerLabel;
+                ContainerLabelLine = !string.IsNullOrEmpty(existingLabel) ? existingLabel : LabelLine;
+            }
+            // Starlight-end
+            
             // Ensure the Panel Info is updated, including UI elements for Buffer Volume, Output Container and so on
             UpdatePanelInfo(castState);
             switch (castState.DrawSource)
@@ -478,7 +505,19 @@ namespace Content.Client.Chemistry.UI
             get => LabelLineEdit.Text;
             set => LabelLineEdit.Text = value;
         }
-
+        // Starlight Start
+        public string ContainerLabelLine
+        {
+            get => ContainerLabelLineEdit.Text;
+            set
+            {
+                _settingContainerLabelProgrammatically = true;
+                ContainerLabelLineEdit.Text = value;
+                _settingContainerLabelProgrammatically = false;
+            }
+        }
+        // Starlight end
+        
         private void SetBufferText(FixedPoint2? volume, string text)
         {
             BufferCurrentVolume.Text = $" {volume ?? FixedPoint2.Zero}u";

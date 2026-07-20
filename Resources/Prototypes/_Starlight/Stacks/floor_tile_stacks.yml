@@ -262,4 +262,10 @@
   id: FloorTileTechGreeb
   name: stack-tech-greeb-floor
   spawn: FloorTileItemTechGreeb
+  
+# SpL
+- type: stack
+  id: FloorTileAstroAsteroidTile
+  name: stack-astro-asteroid-tile
+  spawn: FloorTileItemAstroAsteroidTile
   maxCount: 30

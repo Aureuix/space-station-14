@@ -793,3 +793,19 @@
         - FloorAstroDirt
     - type: Stack
       stackType: FloorTileAstroDirt
+
+# SpL
+- type: entity
+  id: FloorTileItemAstroAsteroidTile
+  parent: FloorTileItemBase
+  name: astro-asteroid tile
+  components:
+    - type: Sprite
+      sprite: _Starlight/Objects/Tiles/tiles.rsi
+      state: tile_sepia
+    - type: FloorTile
+      outputs:
+        - Plating
+        - FloorAstroAsteroidTile
+    - type: Stack
+      stackType: FloorTileAstroAsteroidTile

@@ -126,3 +126,6 @@ uplink-syndie-elegant-raid-desc = Even contract, nuclear killers have the right 
 
 uplink-clothing-murder-socks-name = MURDER socks !!11!!!1
 uplink-clothing-murder-socks-desc = lets KILL people sisters!1!!! comes with noslip.
+
+uplink-hushpup-ammo-name = Buckshot box (12 gauge)
+uplink-hushpup-ammo-desc = A box of 16 buckshot shotgun shells. Compatible with the Hushpup.
