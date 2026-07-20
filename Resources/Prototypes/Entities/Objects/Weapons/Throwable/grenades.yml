@@ -1,7 +1,7 @@
 - type: entity
   name: explosive grenade
   description: Grenade that creates a small but devastating explosion.
-  parent: [VolatileGrenadeBase, GrenadeBase, BaseSyndicateContraband]
+  parent: [ VolatileGrenadeBase, GrenadeBase, BaseHighlyIllegalContraband ] # SpL
   id: ExGrenade
   components:
   - type: ExplodeOnTrigger
@@ -79,7 +79,7 @@
 - type: entity
   name: syndicate minibomb
   description: A syndicate-manufactured explosive used to stow destruction and cause chaos.
-  parent: [VolatileGrenadeBase, GrenadeBase, BaseSyndicateContraband]
+  parent: [ VolatileGrenadeBase, GrenadeBase, BaseSyndicateContraband ]
   id: SyndieMiniBomb
   components:
   - type: Sprite
@@ -267,7 +267,7 @@
 - type: entity
   name: the nuclear option
   description: Please don't throw it, think of the children.
-  parent: GrenadeBase
+  parent: [ GrenadeBase, BaseHighlyIllegalContraband ] # SpL
   id: NuclearGrenade
   components:
   - type: Sprite
@@ -348,7 +348,7 @@
 - type: entity
   name: EMP grenade
   description: A grenade designed to wreak havoc on electronic systems.
-  parent: [FragileGrenadeBase, GrenadeBase, BaseSyndicateContraband]
+  parent: [ FragileGrenadeBase, GrenadeBase, BaseHighlyIllegalContraband ] # SpL
   id: EmpGrenade
   components:
   - type: Sprite
@@ -371,7 +371,7 @@
 - type: entity
   name: holy hand grenade
   description: O Lord, bless this thy hand grenade, that with it thou mayst blow thine enemies to tiny bits, in thy mercy.
-  parent: [GrenadeBase, BaseSyndicateContraband]
+  parent: [ GrenadeBase, BaseMagicalContraband ] # SpL
   id: HolyHandGrenade
   components:
   - type: Sprite
@@ -429,7 +429,7 @@
 - type: entity
   name: syndicate trickybomb
   description: A syndicate-manufactured explosive used to make an excellent distraction.
-  parent: [GrenadeDummy, BaseSyndicateContraband]
+  parent: [ GrenadeDummy, BaseSyndicateContraband ]
   id: SyndieTrickyBomb
   components:
   - type: Sprite
