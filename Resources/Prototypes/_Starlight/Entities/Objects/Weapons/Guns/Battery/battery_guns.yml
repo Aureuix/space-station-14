@@ -28,6 +28,7 @@
     quickEquip: false
     slots:
     - Belt
+    - suitStorage # SpL
   - type: Gun
     soundGunshot:
       path: /Audio/Weapons/Guns/Gunshots/taser.ogg
