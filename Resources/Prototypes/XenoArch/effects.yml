@@ -421,7 +421,7 @@
 - type: entity
   id: XenoArtifactEffectBadFeeling
   parent: BaseXenoArtifactEffect
-  description: Broadcasts sublime message
+  description: Broadcasts subliminal message # SpL- sublime????? SUBLIME?????
   components:
   - type: XAETelepathic
     messages:
