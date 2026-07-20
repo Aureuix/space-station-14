@@ -17,7 +17,19 @@
   - type: Sprite
     sprite: _Starlight/Structures/Wallmounts/signs.rsi
     state: disposals_proper
-    
+
+# SpL
+- type: entity
+  parent: BaseSign
+  id: SignAME
+  name: ame sign
+  description: A sign indicating the AME's location.
+  components:
+    - type: Sprite
+      sprite: _Starlight/Structures/posters/ame.rsi
+      state: poster
+# SpL end
+
 - type: entity
   parent: BaseSign
   id: SignSecureAreaSmall
