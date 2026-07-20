@@ -56,8 +56,8 @@ accent-russian-words-replace-14 = slava
 
 #Lisp support
 accent-russian-word-15-1 = thith ith
-accent-russian-word-15-2 it ith
-accent-russian-word-15-3 it'th
+accent-russian-word-15-2 = it ith
+accent-russian-word-15-3 = it'th
 accent-russian-word-replace-15 = ith
 
 accent-russian-word-16 = thankth
