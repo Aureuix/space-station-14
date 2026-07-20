@@ -524,3 +524,14 @@
   conditions:
     - !type:ListingLimitedStockCondition
       stock: 2
+      
+- type: listing
+  id: NT4PlayerInstrument
+  productEntity: NT4PlayerInstrument
+  cost:
+    NTCredit: 150
+  categories:
+    - SLFashionHead
+  conditions:
+    - !type:ListingLimitedStockCondition
+      stock: 4
