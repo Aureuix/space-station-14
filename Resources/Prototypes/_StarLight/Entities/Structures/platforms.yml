@@ -2,7 +2,7 @@
   abstract: true
   id: CMPlatformBase
   name: platform
-  description: A raised surface. Wait, thats illegal!
+  description: A raised surface. Wait, that's illegal!
   components:
     - type: Transform
       anchored: true
@@ -10,13 +10,40 @@
       sprite: _Starlight/Structures/platforms.rsi
     - type: InteractionOutline
     - type: Clickable
+    - type: RCDDeconstructable
+      cost: 5
+      delay: 7
+      fx: EffectRCDDeconstruct8
+    - type: Damageable
+      damageContainer: StructuralInorganic
+      damageModifierSet: StructuralMetallic
+    - type: Destructible
+      thresholds:
+        - trigger:
+            !type:DamageTrigger
+            damage: 350
+          behaviors:
+            - !type:DoActsBehavior
+              acts: ["Destruction"]
+            - !type:PlaySoundBehavior
+              sound:
+                collection: MetalSlam
+        - trigger:
+            !type:DamageTrigger
+            damage: 175
+          behaviors:
+            - !type:PlaySoundBehavior
+              sound:
+                collection: MetalSlam
+            - !type:DoActsBehavior
+              acts: ["Destruction"]
 
 - type: entity
   parent: CMPlatformBase
   id: CMPlatform
   name: platform
   suffix: Steel
-  description: A raised surface. Wait, thats illegal!
+  description: A raised surface. Wait, that's illegal!
   placement:
     mode: SnapgridCenter
     snap:
@@ -44,7 +71,7 @@
   id: CMPlatformCorner
   name: platform
   suffix: Steel, Corner
-  description: A raised surface. Wait, thats illegal!
+  description: A raised surface. Wait, that's illegal!
   placement:
     mode: SnapgridCenter
     snap:
@@ -81,7 +108,7 @@
   id: RMCPlatformCornerSmall
   name: platform
   suffix: Steel, Corner Small
-  description: A raised surface. Wait, thats illegal!
+  description: A raised surface. Wait, that's illegal!
   placement:
     mode: SnapgridCenter
     snap:
@@ -129,7 +156,7 @@
   id: CMPlatformDark
   name: platform
   suffix: Dark
-  description: A raised surface. Wait, thats illegal!
+  description: A raised surface. Wait, that's illegal!
   placement:
     mode: SnapgridCenter
     snap:
@@ -157,7 +184,7 @@
   id: CMPlatformCornerDark
   name: platform
   suffix: Dark, Corner
-  description: A raised surface. Wait, thats illegal!
+  description: A raised surface. Wait, that's illegal!
   placement:
     mode: SnapgridCenter
     snap:
@@ -194,7 +221,7 @@
   id: RMCPlatformCornerSmallDark
   name: platform
   suffix: Dark, Corner Small
-  description: A raised surface. Wait, thats illegal!
+  description: A raised surface. Wait, that's illegal!
   placement:
     mode: SnapgridCenter
     snap:
@@ -242,7 +269,7 @@
   id: CMPlatformWood
   name: platform
   suffix: Wood
-  description: A raised surface. Wait, thats illegal!
+  description: A raised surface. Wait, that's illegal!
   placement:
     mode: SnapgridCenter
     snap:
@@ -270,7 +297,7 @@
   id: CMPlatformCornerWood
   name: platform
   suffix: Wood, Corner
-  description: A raised surface. Wait, thats illegal!
+  description: A raised surface. Wait, that's illegal!
   placement:
     mode: SnapgridCenter
     snap:
@@ -307,7 +334,7 @@
   id: RMCPlatformCornerSmallWood
   name: platform
   suffix: Wood, Corner Small
-  description: A raised surface. Wait, thats illegal!
+  description: A raised surface. Wait, that's illegal!
   placement:
     mode: SnapgridCenter
     snap:
