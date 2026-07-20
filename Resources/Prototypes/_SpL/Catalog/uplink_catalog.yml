@@ -79,3 +79,25 @@
         - Reporter
         - HeadOfPersonnel
         - Captain
+
+- type: listing
+  id: UplinkSyndiAutomender
+  name: uplink-syndi-automender-name
+  description: uplink-syndi-automender-desc
+  icon: { sprite: /Textures/_SpL/Objects/Specific/Medical/syndimender.rsi, state: mender }
+  productEntity: AutoMenderSyndicateFilled
+  discountCategory: rareDiscounts
+  discountDownTo:
+    Telecrystal: 4
+  cost:
+    Telecrystal: 7
+  categories:
+    - UplinkJob
+  conditions:
+    - !type:BuyerJobCondition
+      whitelist:
+        - MedicalDoctor
+        - Paramedic
+        - Surgeon
+        - Chemist
+        - ChiefMedicalOfficer

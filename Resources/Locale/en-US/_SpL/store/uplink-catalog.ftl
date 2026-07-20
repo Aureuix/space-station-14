@@ -15,3 +15,6 @@ uplink-appraisal-tool-gun-desc = A compact pistol disguised as a normal appraisa
 
 uplink-smg-briefcase-name = Briefcase SMG
 uplink-smg-briefcase-desc = A powerful submachine gun packed into an ordinary brown briefcase. The barrel had to be removed to make the disguise work, so be mindful of its spread. Extra ammo not included.
+
+uplink-syndi-automender-name = Interdyne automender
+uplink-syndi-automender-desc = Be the medical maniac of your dreams with this overclocked automender, capable of healing all damage types quickly and effectively. Omnizine refills not included.
