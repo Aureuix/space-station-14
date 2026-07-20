@@ -6,6 +6,14 @@
       stock: 1
 
 - type: listing
+  id: ClothingUniformTimelessSkirt
+  productEntity: ClothingUniformTimelessSkirt
+  cost:
+    NTCredit: 90
+  categories:
+    - SLFashionSkirt
+
+- type: listing
   id: ClothingUniformJumpskirtGothic
   productEntity: ClothingUniformJumpskirtGothic
   cost:
@@ -173,9 +181,14 @@
     NTCredit: 90
   categories:
     - SLFashionSkirt
-  conditions:
-    - !type:ListingLimitedStockCondition
-      stock: 1
+
+- type: listing
+  id: ClothingUniformTimelessSuit
+  productEntity: ClothingUniformTimelessSuit
+  cost:
+    NTCredit: 90
+  categories:
+    - SLFashionSuit
 
 - type: listing
   id: ClothingUniformJumpsuitSuitCheckered
@@ -208,7 +221,7 @@
   id: ClothingUniformJumpsuitMimeSexyWhite
   productEntity: ClothingUniformJumpsuitMimeSexyWhite
   cost:
-    NTCredit: 400
+    NTCredit: 200
   categories:
     - SLFashionSuit
 
@@ -217,7 +230,7 @@
   id: ClothingUniformJumpsuitMimeSexyBlack
   productEntity: ClothingUniformJumpsuitMimeSexyBlack
   cost:
-    NTCredit: 400
+    NTCredit: 200
   categories:
     - SLFashionSuit
 
@@ -252,12 +265,9 @@
   id: ClothingNeckCloakBoatCC
   productEntity: ClothingNeckCloakBoatCC
   cost:
-    NTCredit: 2000
+    NTCredit: 200
   categories:
     - SLFashionOther
-  conditions:
-    - !type:ListingLimitedStockCondition
-      stock: 1
 
 - type: listing
   id: ClothingUniformJumpsuitCentcomAdmiral
@@ -281,7 +291,7 @@
   id: ClothingMaskGeneralBorg
   productEntity: ClothingMaskGeneralBorg
   cost:
-    NTCredit: 400
+    NTCredit: 250
   categories:
     - SLFashionHead
 
@@ -290,7 +300,7 @@
   id: ClothingMaskCargoBorg
   productEntity: ClothingMaskCargoBorg
   cost:
-    NTCredit: 400
+    NTCredit: 250
   categories:
     - SLFashionHead
 
@@ -299,7 +309,7 @@
   id: ClothingMaskEngiBorg
   productEntity: ClothingMaskEngiBorg
   cost:
-    NTCredit: 400
+    NTCredit: 250
   categories:
     - SLFashionHead
 
@@ -308,7 +318,7 @@
   id: ClothingMaskJanitorBorg
   productEntity: ClothingMaskJanitorBorg
   cost:
-    NTCredit: 400
+    NTCredit: 250
   categories:
     - SLFashionHead
 
@@ -317,7 +327,7 @@
   id: ClothingMaskSecBorg
   productEntity: ClothingMaskSecBorg
   cost:
-    NTCredit: 400
+    NTCredit: 250
   categories:
     - SLFashionHead
 
@@ -353,7 +363,7 @@
   id: ClothingNeckHorrific
   productEntity: ClothingNeckHorrific
   cost:
-    NTCredit: 950
+    NTCredit: 95
   categories:
     - SLFashionOther
 
@@ -525,6 +535,7 @@
   categories:
     - SLFashionHead
 
+
 - type: listing
   id: ClothingBackpackBunnyGangBundle
   productEntity: ClothingBackpackBunnyGangBundle
@@ -532,10 +543,8 @@
     NTCredit: 200
   categories:
     - SLFashionOther
-  conditions:
-    - !type:ListingLimitedStockCondition
-      stock: 2
       
+
 - type: listing
   id: NT4PlayerInstrument
   productEntity: NT4PlayerInstrument
@@ -543,6 +552,3 @@
     NTCredit: 150
   categories:
     - SLFashionHead
-  conditions:
-    - !type:ListingLimitedStockCondition
-      stock: 4
