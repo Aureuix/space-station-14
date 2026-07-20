@@ -37,4 +37,45 @@
     - !type:ListingLimitedStockCondition
       stock: 1
 
-  
+- type: listing
+  id: UplinkAppraisalToolGun
+  name: uplink-appraisal-tool-gun-name
+  description: uplink-appraisal-tool-gun-desc
+  icon: { sprite: /Textures/Objects/Tools/appraisal-tool.rsi, state: icon }
+  productEntity: WeaponAppraisalToolPistol
+  discountCategory: rareDiscounts
+  discountDownTo:
+    Telecrystal: 2
+  cost:
+    Telecrystal: 4
+  categories:
+    - UplinkJob
+  conditions:
+    - !type:BuyerJobCondition
+      whitelist:
+        - CargoTechnician
+        - MailTechnician
+        - MiningSpecialist
+        - SalvageSpecialist
+        - SalvageLead
+        - Quartermaster
+
+- type: listing
+  id: UplinkSMGBriefcase
+  name: uplink-smg-briefcase-name
+  description: uplink-smg-briefcase-desc
+  icon: { sprite: /Textures/Objects/Storage/Briefcases/briefcase_brown.rsi, state: icon }
+  productEntity: WeaponSubMachineGunBriefcase
+  discountCategory: rareDiscounts
+  discountDownTo:
+    Telecrystal: 10
+  cost:
+    Telecrystal: 14
+  categories:
+    - UplinkJob
+  conditions:
+    - !type:BuyerJobCondition
+      whitelist:
+        - Reporter
+        - HeadOfPersonnel
+        - Captain
