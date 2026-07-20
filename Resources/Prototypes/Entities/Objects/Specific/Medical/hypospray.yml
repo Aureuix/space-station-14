@@ -429,7 +429,7 @@
           Quantity: 10
 
 - type: entity
-  parent: ChemicalMedipen
+  parent: [ ChemicalMedipen, BaseMedicalSecurityContraband ] # SpL
   id: PunctAutoInjector
   name: puncturase auto-injector
   description: A single-dose, non-refillable medipen containing puncturase and tranexamic acid, used to quickly and easily treat puncture wounds. Commonly used as a combat medicine.
@@ -466,7 +466,7 @@
           Quantity: 5
 
 - type: entity
-  parent: ChemicalMedipen
+  parent: [ ChemicalMedipen, BaseMedicalSecurityContraband ] # SpL
   id: PyraAutoInjector
   name: pyrazine auto-injector
   description: A single-dose, non-refillable medipen containing pyrazine and dermaline, used to quickly and easily treat thermal burns. Commonly used as a combat medicine.
@@ -503,7 +503,7 @@
           Quantity: 10
 
 - type: entity
-  parent: ChemicalMedipen
+  parent: [ ChemicalMedipen, BaseMedicalSecurityContraband ] # SpL- the dexp is lethal if misused
   id: AirlossAutoInjector
   name: airloss auto-injector
   description: A single-dose, non-refillable medipen containing saline and dexalin plus, used to quickly and easily treat blood loss and asphyxiation.
@@ -655,7 +655,7 @@
     price: 583 # 3500 for 6 as a freaky fraction
 
 - type: entity
-  parent: ChemicalMedipen # SpL- removed syndie contra status
+  parent: [ ChemicalMedipen, BaseMedicalSecurityContraband ] # SpL- removed syndie contra status in favour of a more generalised option
   id: CombatMedipen
   name: combat medipen
   description: A single-dose, non-refillable medipen containing a chemical cocktail that treats most forms of damage.
