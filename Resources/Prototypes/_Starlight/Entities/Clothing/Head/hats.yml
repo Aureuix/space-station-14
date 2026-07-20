@@ -651,9 +651,9 @@
   description: Wicky-wicky-witchy hat!
   components:
   - type: Sprite
-    sprite: _Starlight/Clothing/Head/Hats/wizard_green.rsi
+    sprite: _Starlight/Clothing/Head/Hats/witchyhat.rsi
   - type: Clothing
-    sprite: _Starlight/Clothing/Head/Hats/wizard_green.rsi
+    sprite: _Starlight/Clothing/Head/Hats/witchyhat.rsi
 
 - type: entity
   parent: ClothingHeadBase
