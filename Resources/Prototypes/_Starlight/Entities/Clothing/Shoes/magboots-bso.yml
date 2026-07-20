@@ -10,7 +10,7 @@
   - type: Clothing
     sprite: _Starlight/Clothing/Shoes/Boots/magboots-bso.rsi
   - type: ClothingSpeedModifier
-    walkModifier: 0.85
+    walkModifier: 1 # SpL
     sprintModifier: 0.8
   - type: Tag
     tags:
@@ -19,9 +19,6 @@
     price: 350
   - type: StealTarget
     stealGroup: BSOMagboots
-  - type: ClothingSpeedModifier
-    walkModifier: 1 #Got to be able to keep up with the nice walk of the officials
-    sprintModifier: 0.9
   - type: ClothingSlowOnDamageModifier # SpL
     modifier: 0.5 # SpL
 
