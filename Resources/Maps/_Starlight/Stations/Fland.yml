@@ -181699,7 +181699,6 @@ entities:
       parent: 2
     - type: ApcPowerReceiver
       powerLoad: 0
-    - type: Timer
   - uid: 27045
     components:
     - type: Transform
@@ -181708,7 +181707,6 @@ entities:
       parent: 2
     - type: ApcPowerReceiver
       powerLoad: 0
-    - type: Timer
   - uid: 27046
     components:
     - type: Transform
@@ -181717,7 +181715,6 @@ entities:
       parent: 2
     - type: ApcPowerReceiver
       powerLoad: 0
-    - type: Timer
   - uid: 27047
     components:
     - type: Transform
