@@ -1,0 +1,31 @@
+﻿- type: entity
+  parent: [BaseHypospray, BaseCentcommContraband]
+  id: CentCommHypo
+  name: SVS-101 hypospray
+  description: A sterile injector for rapid administration of drugs. Initially reverse-engineered from NanoTrasen designs during the Pod Wars, postwar licensing has permitted the continual use of hyposprays by CentComm personnel under NT-CC merger agreements.
+  components:
+    - type: Sprite
+      sprite: _SpL/Objects/Specific/Medical/centcommhypo.rsi
+      layers:
+        - state: hypo
+          map: ["enum.SolutionContainerLayers.Base"]
+        - state: hypo_fill1
+          map: ["enum.SolutionContainerLayers.Fill"]
+          visible: false
+    - type: Item
+      sprite: _SpL/Objects/Specific/Medical/centcommhypo.rsi
+    - type: SolutionContainerManager
+      solutions:
+        hypospray:
+          maxVol: 30
+    - type: UseDelay
+      delay: 0.25
+    - type: SolutionContainerVisuals
+      maxFillLevels: 4
+      fillBaseName: hypo_fill
+      solutionName: hypospray
+    - type: Clothing
+      quickEquip: false
+      slots:
+        - Belt
+        - suitStorage
