@@ -1,0 +1,29 @@
+﻿- type: latheRecipe
+  parent: BaseWeaponRecipeSidearm
+  id: WeaponLauncherPeacekeeper
+  result: WeaponLauncherPeacekeeper
+  materials:
+    Steel: 2000
+    Plastic: 500
+    
+- type: latheRecipe
+  id: GrenadeStingerLauncher
+  result: GrenadeStingerLauncher
+  categories:
+    - Ammo
+  completetime: 3
+  materials:
+    Steel: 150
+    Plastic: 100
+    Glass: 20
+    
+- type: latheRecipe
+  id: GrenadeGasLauncher
+  result: GrenadeGasLauncher
+  categories:
+    - Ammo
+  completetime: 3
+  materials:
+    Steel: 150
+    Plastic: 100
+    Glass: 20

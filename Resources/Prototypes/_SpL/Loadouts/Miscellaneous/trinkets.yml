@@ -1,4 +1,32 @@
 - type: loadout
+  id: ClothingMaskMime
+  storage:
+    mask:
+      - ClothingMaskMime
+  groupBy: "mimemasks"
+
+- type: loadout
+  id: ClothingMaskBlushingMime
+  storage:
+    mask:
+      - ClothingMaskBlushingMime
+  groupBy: "mimemasks"
+  
+- type: loadout
+  id: ClothingMaskSadMime
+  storage:
+    mask:
+      - ClothingMaskSadMime
+  groupBy: "mimemasks"
+  
+- type: loadout
+  id: ClothingMaskScaredMime
+  storage:
+    mask:
+      - ClothingMaskScaredMime
+  groupBy: "mimemasks"
+
+- type: loadout
   id: ClothingKitsuneMask
   equipment:
     mask: ClothingKitsuneMask

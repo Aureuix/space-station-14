@@ -132,6 +132,11 @@
   - TelescopicShield
   - HoloprojectorSecurity
   - WeaponDisablerSMG
+  - WeaponLauncherPeacekeeper # SpL
+  - GrenadeFlash # SpL
+  - GrenadeBaton # SpL
+  - GrenadeGasLauncher # SpL
+  - GrenadeStingerLauncher # SpL
   radioChannels:
   - Security
 
@@ -239,9 +244,9 @@
   - PowerCageMedium
   - PowerCageHigh
   - MagazineGrenadeEmpty
-  - GrenadeFlash
+#  - GrenadeFlash # SpL- moved
   - GrenadeBlast
-  - GrenadeBaton # Starlight
+#  - GrenadeBaton # Starlight SpL- moved
   - ShuttleGunFriendshipCircuitboard
   - MagazineGrenadeEmpty
   - ShuttleGunSvalinnMachineGunCircuitboard

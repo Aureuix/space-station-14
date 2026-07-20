@@ -23,7 +23,7 @@
   - MagazineBoxRiflePractice
   - WeaponDisablerPractice
   - WeaponLaserCarbinePractice
-  - WeaponFlareGunSecurity
+  # - WeaponFlareGunSecurity # SpL
   - MagazineDMRPractice
 
 - type: latheRecipePack
@@ -170,6 +170,8 @@
   - GrenadeEMP
   - GrenadeFlash
   - MagazineGrenadeEmpty
+  - GrenadeGasLauncher # SpL
+  - GrenadeStingerLauncher # SpL
 
 # Shared between secfab and emagged protolathe
 - type: latheRecipePack
@@ -260,6 +262,7 @@
   - WeaponLaserSvalinn
   - WeaponTemperatureGun
   - FiringPinLaser
+  - WeaponLauncherPeacekeeper # SpL
 
 - type: latheRecipePack
   id: StarlightSecurityMechsWeapons

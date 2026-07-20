@@ -19,3 +19,13 @@
               amount: 2
             - id: SpeedLoaderShotgunBeanbag
               amount: 2
+            - id: WeaponLauncherPeacekeeper
+              amount: 2
+            - id: BoxPeacekeeperGas
+              amount: 2
+            - id: BoxPeacekeeperStinger
+              amount: 2
+            - id: BoxPeacekeeperFlash
+              amount: 2
+            - id: BoxPeacekeeperBaton
+              amount: 2

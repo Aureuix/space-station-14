@@ -34,6 +34,8 @@ stack-metal-blue-floor = blue metal floor
 stack-metal-purple-floor = purple metal floor
 stack-metal-red-floor = red metal floor
 stack-metal-green-floor = green metal floor
+stack-astro-asteroid-tile = astro-asteroid tile
+stack-astro-dirt-floor = astro-dirt floor
 
 stack-bluespacecrystal = {$amount ->
     [1] bluespace

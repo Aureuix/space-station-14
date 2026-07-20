@@ -115,6 +115,7 @@
       - SemiAuto
       - Burst 
     shotsPerBurst: 6 # HAMMER FAN
+    burstCooldown: 2 # drawback to hammer fanning 
     burstFireRate: 12 # SpL End
   - type: StealTarget
     stealGroup: OfficerHandgun
@@ -166,6 +167,7 @@
     - SemiAuto
     - Burst
     shotsPerBurst: 6 # HAMMER FAN
+    burstCooldown: 2 # drawback to hammer fanning 
     burstFireRate: 12 # SpL End
     soundGunshot:
       path: /Audio/Weapons/Guns/Gunshots/revolver.ogg

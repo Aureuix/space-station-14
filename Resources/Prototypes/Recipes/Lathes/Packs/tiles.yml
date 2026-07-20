@@ -84,6 +84,8 @@
   - FloorTileItemWoodChessBlack
   - FloorTileItemWoodChessLight
   - FloorTileItemWoodChessRed
+  - FloorTileItemAstroDirt
+  - FloorTileItemAstroAsteroidTile # SpL
   # Starlight End
 
 - type: latheRecipePack

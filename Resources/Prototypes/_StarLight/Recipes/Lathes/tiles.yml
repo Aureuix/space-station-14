@@ -127,3 +127,14 @@
   parent: BaseSteelTileRecipe
   id: FloorTileItemSepia
   result: FloorTileItemSepia
+  
+- type: latheRecipe
+  parent: BaseWoodTileRecipe
+  id: FloorTileItemAstroDirt
+  result: FloorTileItemAstroDirt
+
+# SpL
+- type: latheRecipe
+  parent: FloorTileItemSteel
+  id: FloorTileItemAstroAsteroidTile
+  result: FloorTileItemAstroAsteroidTile
