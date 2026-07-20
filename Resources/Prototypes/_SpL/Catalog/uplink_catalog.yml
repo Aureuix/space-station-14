@@ -54,7 +54,7 @@
     - !type:BuyerJobCondition
       whitelist:
         - CargoTechnician
-        - MailTechnician
+        - MailTech
         - MiningSpecialist
         - SalvageSpecialist
         - SalvageLead
