@@ -193,17 +193,17 @@
     randomStartSecretMin: 3
     randomStartSecretMax: 5
 
-- type: anomalyBehavior
-  id: InconstancyParticleUnknown
-  earnPointModifier: 1.95
-  description: anomaly-behavior-inconstancy
-  components:
-  - type: ShuffleParticlesAnomaly
-    shuffleOnParticleHit: true
-    prob: 0.5
-  - type: SecretDataAnomaly
-    randomStartSecretMin: 3
-    randomStartSecretMax: 5
+#- type: anomalyBehavior
+#  id: InconstancyParticleUnknown
+#  earnPointModifier: 1.95
+#  description: anomaly-behavior-inconstancy
+#  components:
+#  - type: ShuffleParticlesAnomaly
+#    shuffleOnParticleHit: true
+#    prob: 0.5
+#  - type: SecretDataAnomaly
+#    randomStartSecretMin: 3
+#    randomStartSecretMax: 5
 
 - type: anomalyBehavior
   id: InvisibilityJumping
