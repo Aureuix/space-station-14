@@ -45,6 +45,8 @@ stack-rough-metal-floor = rough metal floor
 stack-rusty-metal-floor = rusty metal floor
 stack-steel-grate-floor = steel grate floor
 stack-tech-greeb-floor = tech maints greeb floor
+stack-astro-asteroid-tile = astro-asteroid tile
+stack-astro-dirt-floor = astro-dirt floor
 
 stack-bluespacecrystal = {$amount ->
     [1] bluespace

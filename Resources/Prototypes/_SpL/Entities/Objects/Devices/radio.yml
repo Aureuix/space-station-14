@@ -5,7 +5,7 @@
   id: StrangeRadio
   components:
   - type: RadioMicrophone
-    broadcastChannel: RedSunz
+    broadcastChannel: RedSun
     listenRange: 5
   - type: RadioSpeaker
     channels:
@@ -16,11 +16,17 @@
   - type: ItemToggle
     soundActivate:
       path: /Audio/_Starlight/Effects/Radio/marauder_agent.ogg
+      params:
+        volume: -2
     soundDeactivate:
       path: /Audio/_Starlight/Effects/Radio/marauder_commander.ogg
+      params:
+        volume: -2
   - type: ItemToggleActiveSound
     activeSound:
       path: /Audio/Ambience/Objects/hdd_buzz.ogg
+      params:
+        volume: -3
   - type: Sprite
     sprite: _SpL/Objects/Devices/strangeradio.rsi
     layers:

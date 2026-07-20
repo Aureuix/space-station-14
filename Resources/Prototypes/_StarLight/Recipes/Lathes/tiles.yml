@@ -187,3 +187,9 @@
   parent: BaseSteelTileRecipe
   id: FloorTileItemTechGreeb
   result: FloorTileItemTechGreeb
+  
+# SpL
+- type: latheRecipe
+  parent: FloorTileItemSteel
+  id: FloorTileItemAstroAsteroidTile
+  result: FloorTileItemAstroAsteroidTile

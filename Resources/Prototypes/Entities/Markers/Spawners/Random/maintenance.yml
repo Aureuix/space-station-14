@@ -292,6 +292,8 @@
       - id: BarberScissors
       - id: TwinPointerKit # Starlight: Added twinpointer to maints loot
       - id: JetpackImprovisedFilled #Starlight
+      - id: JailFree # Starlight
+        weight: 0.1 # SpL- look.
       - !type:GroupSelector
         children:
         - id: DrinkSpaceGlue
@@ -362,6 +364,7 @@
       - id: ClothingOuterArmorMakeshift
       - id: WeaponMeleeSwitchblade 
       - id: SpearSteel #Starlight End:
+      - id: ThrowableBrick # SpL
     # Rare Group
     - !type:GroupSelector
       weight: 5

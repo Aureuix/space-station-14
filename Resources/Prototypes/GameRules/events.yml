@@ -19,16 +19,16 @@
     - id: PowerGridCheck
     - id: RandomSentience
     - id: SlimesSpawn
-    - id: SolarFlare
+#    - id: SolarFlare # SpL- removed until bazaar is remapped. Plasma is unplayable with this enabled for now too
     - id: SnakeSpawn
     - id: SpiderClownSpawn
     - id: SpiderSpawn
     - id: VentClog
     # Starlight Start
-    #- id: PsychicScreach Spectra: Removing this shit for the 3rd time. Not retyping. Fuck github
+    #- id: PsychicScreach # SpL- Removing this shit for the 3rd time. Not retyping. Fuck github
     #- id: SecurityDrill 
     #- id: DoorRuntime 
-    - id: RadStorm 
+#    - id: RadStorm # SpL- removed until bazaar is remapped. Plasma is unplayable with this enabled for now too
     - id: AuroraCaelus 
     - id: SpaceWhale 
     - id: CommunicationBlackout 

@@ -12,7 +12,7 @@
       soundGunshot:
         path: /Audio/_Starlight/Weapons/Guns/Gunshots/m90.ogg
       fireRate: 7
-      selectedMode: Burst
+      selectedMode: FullAuto
       minAngle: 30
       maxAngle: 40
       angleIncrease: 2
@@ -22,7 +22,6 @@
       availableModes:
         - FullAuto
         - Burst
-        - SemiAuto
     - type: GunWieldBonus
       minAngle: -28
       maxAngle: -25
