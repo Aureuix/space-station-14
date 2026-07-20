@@ -79,7 +79,7 @@ WeaponRifleM90GrenadeLauncher : WeaponRifleLawbringer
 #2026-06-18 - Renaming a confusingly named M1911 pulse pistol
 WeaponM1911: WeaponPulseM1911
 
-#2026-07-04 - Changed the prototype name of the HoS jumpsuits
+#2026-07-04 - Changed the prototype name of the HoS jumpsuits- SpL
 ClothingUniformJumpsuitHoSParadeMale: ClothingUniformJumpsuitHoSParade
 ClothingUniformJumpskirtHoSParadeMale: ClothingUniformJumpskirtHoSParade
 
@@ -89,3 +89,6 @@ GyroscopeOff: Gyroscope
 
 #2026-07-11 - Removing the sec flaregun for the Peacekeeper
 WeaponFlareGunSecurity: null
+
+# 2026-07-20 - Mapping detcoat change- SpL
+ClothingOuterCoatDetective: ClothingOuterCoatDetectiveUnarmored
