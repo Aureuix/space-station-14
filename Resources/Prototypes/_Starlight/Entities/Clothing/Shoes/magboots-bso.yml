@@ -19,6 +19,11 @@
     price: 350
   - type: StealTarget
     stealGroup: BSOMagboots
+  - type: ClothingSpeedModifier
+    walkModifier: 1 #Got to be able to keep up with the nice walk of the officials
+    sprintModifier: 0.9
+  - type: ClothingSlowOnDamageModifier # SpL
+    modifier: 0.5 # SpL
 
 # Greenshield Officer
 - type: entity
