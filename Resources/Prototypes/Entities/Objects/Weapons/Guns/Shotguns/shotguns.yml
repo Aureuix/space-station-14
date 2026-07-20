@@ -98,7 +98,7 @@
   - type: GunRequiresWield
   - type: Gun
     spread: 15
-    fireRate: 2
+    fireRate: 2.25 # slight buff to give the bulldog an edge over the minotaur
     selectedMode: FullAuto
     availableModes:
     - FullAuto
@@ -169,7 +169,8 @@
   components: # intend for Enforcer to have wider choke for semi-auto function
   - type: Gun
     spread: 5
-    pump: true
+    pump: false
+    fireRate: 1 # SpL- restoration of semi-auto requires balancing to compensate
   - type: Sprite
     sprite: Objects/Weapons/Guns/Shotguns/enforcer.rsi
   - type: Clothing
@@ -181,7 +182,7 @@
 
 - type: entity
   parent: WeaponShotgunEnforcer
-  id: WeaponShotgunSentielRubber
+  id: WeaponShotgunEnforcerRubber
   suffix: Non-Lethal
   components:
   - type: BallisticAmmoProvider
