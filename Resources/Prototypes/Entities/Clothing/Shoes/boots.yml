@@ -56,6 +56,8 @@
     sprite: Clothing/Shoes/Boots/combatboots.rsi
   - type: Clothing
     sprite: Clothing/Shoes/Boots/combatboots.rsi
+  - type: ClothingSlowOnDamageModifier # SpL
+    modifier: 0.5 # SpL
 
 - type: entity
   parent: ClothingShoesMilitaryBase
@@ -88,6 +90,8 @@
     sprite: Clothing/Shoes/Boots/mercboots.rsi
   - type: Clothing
     sprite: Clothing/Shoes/Boots/mercboots.rsi
+  - type: ClothingSlowOnDamageModifier # SpL
+    modifier: 0.25 # SpL
 
 - type: entity
   parent: ClothingShoesBaseButcherable
@@ -159,6 +163,8 @@
     sprite: Clothing/Shoes/Boots/winterbootssec.rsi
   - type: Clothing
     sprite: Clothing/Shoes/Boots/winterbootssec.rsi
+  - type: ClothingSlowOnDamageModifier # SpL
+    modifier: 0.5 # SpL
 
 - type: entity
   parent: [ClothingShoesBaseWinterBoots, BaseMinorContraband] #SL Edit Syndie > Minor Contra

@@ -24,7 +24,7 @@
     gloves: ClothingHandsGlovesColorBlack
     id: CentCommOperatorPDA
     ears: ClothingHeadsetAltCentCom
-    pocket1: WeaponPistolN1984
+    pocket1: WeaponPulsePistol # SpL
     pocket2: BoxFolderCentComClipboardEmpty
   storage:
     back:
@@ -35,15 +35,16 @@
 - type: startingGear
   id: CentralDomesticDivisionGear
   equipment:
-    jumpsuit: ClothingUniformJumpskirtCentcommResearchFormalWear
+    jumpsuit: ClothingUniformJumpskirtCentcommDomesticFormalWear # SpL
     back: ClothingBackpackSatchelCentcomm
     shoes: ClothingShoesBootsLaceup
     eyes: ClothingEyesGlassesCentComm
     gloves: ClothingHandsGlovesColorBlack
     id: CentcomPDA
     ears: ClothingHeadsetAltCentCom
-    pocket1: WeaponPistolN1984
-    pocket2: BoxFolderCentComClipboardEmpty
+    pocket1: WeaponPulsePistol # SpL
+    pocket2: CentCommCommunicationTablet # SpL
+    belt: BoxFolderHoPClipboard # SpL
   storage:
     back:
     - RubberStampCRD
@@ -60,8 +61,8 @@
     gloves: ClothingHandsGlovesHop
     id: CentcomPDA
     ears: ClothingHeadsetAltCentCom
-    belt: BoxFolderHoPClipboard
-    pocket1: WeaponPistolN1984
+    belt: CentcommVibrobladeSheathFilled # SpL
+    pocket1: CentCommCommunicationTablet # SpL
     pocket2: BoxFolderCentComClipboardEmpty
   storage:
     back:
@@ -79,8 +80,9 @@
     gloves: ClothingHandsGlovesColorBlack
     id: CentcomPDA
     ears: ClothingHeadsetAltCentCom
-    pocket1: WeaponPistolN1984
-    pocket2: BoxFolderCentComClipboardEmpty
+    pocket1: WeaponPulsePistol # SpL
+    pocket2: GoldenAppraisalTool # SpL
+    belt: BoxFolderQmClipboard # SpL
   storage:
     back:
     - RubberStampCCD
@@ -99,8 +101,9 @@
     id: CentcomPDA
     ears: ClothingHeadsetAltCentCom
     belt: ClothingBeltChiefEngineerFilled
-    pocket1: WeaponPistolN1984
+    pocket1: WeaponPulsePistol # SpL
     pocket2: BoxFolderCentComClipboardEmpty
+    neck: ClothingNeckCloakCEDMantle # SpL
   storage:
     back:
     - RubberStampCED
@@ -117,8 +120,9 @@
     eyes: ClothingEyesGlassesCentComm
     id: CentcomPDA
     ears: ClothingHeadsetAltCentCom
-    pocket1: WeaponPistolN1984
+    pocket1: WeaponPulsePistol # SpL
     pocket2: BoxFolderCentComClipboardEmpty
+    belt: CentcommVibrobladeSheathFilled # SpL
   storage:
     back:
     - RubberStampCID
@@ -135,8 +139,10 @@
     gloves: ClothingHandsGlovesNitrile
     id: CentcomPDA
     ears: ClothingHeadsetAltCentCom
-    pocket1: WeaponPistolN1984
+    pocket1: WeaponPulsePistol # SpL
     pocket2: BoxFolderCentComClipboardEmpty
+    neck: ClothingNeckCloakCMDMantle # SpL
+    belt: CentCommHypo # SpL
   storage:
     back:
     - RubberStampCMD
@@ -154,8 +160,10 @@
     gloves: ClothingHandsGlovesColorPurple
     id: CentcomPDA
     ears: ClothingHeadsetAltCentCom
-    pocket1: WeaponPistolN1984
+    pocket1: WeaponPulsePistol # SpL
     pocket2: BoxFolderCentComClipboardEmpty
+    neck: ClothingNeckCloakCRDMantle # SpL
+    belt: WeaponPistolCHIMP # SpL
   storage:
     back:
     - RubberStampCRD
@@ -167,15 +175,17 @@
   equipment:
     jumpsuit: ClothingUniformJumpskirtCentcommSecurityFormalWear
     back: ClothingBackpackSatchelCentcomm
-    shoes: ClothingShoesBootsCombatFilled
+    shoes: ClothingShoesBootsJackFilled # SpL
     eyes: ClothingEyesGlassesCentComm
     gloves: ClothingHandsGlovesCombat
-    outerClothing: ClothingOuterArmorCentcommCarapace
+    outerClothing: ClothingOuterVestWebEliteCentcomm # SpL
     id: CentcomPDA
     ears: ClothingHeadsetAltCentCom
     belt: CentcommVibrobladeSheathFilled
     pocket1: WeaponPistolN1984
     pocket2: BoxFolderCentComClipboardEmpty
+    neck: ClothingNeckCloakCCponcho # SpL
+    suitstorage: WeaponPulseCarbine # SpL
   storage:
     back:
     - RubberStampCSD
@@ -187,7 +197,7 @@
   equipment:
     jumpsuit: ClothingUniformJumpskirtCentcommSpecialOpsFormalWear
     back: ClothingBackpackSatchelCentcomm
-    shoes: ClothingShoesBootsCombatFilled
+    shoes: ClothingShoesBootsJackFilled # SpL
     eyes: ClothingEyesGlassesCentComm
     gloves: ClothingHandsGlovesCombat
     outerClothing: ClothingOuterArmorCentcommCarapace
@@ -196,6 +206,7 @@
     belt: CentcommVibrobladeSheathFilled
     pocket1: WeaponPistolN1984
     pocket2: BoxFolderCentComClipboardEmpty
+    suitstorage: WeaponDecloner # SpL
   storage:
     back:
     - RubberStampCSOD

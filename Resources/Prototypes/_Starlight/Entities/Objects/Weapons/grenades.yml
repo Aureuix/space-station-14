@@ -37,7 +37,7 @@
         Quantity: 20
 
 - type: entity
-  parent: SmokeGrenade
+  parent: [ SmokeGrenade, BaseSecurityContraband ] # SpL
   id: ToxicGasGrenade
   name: acidic gas grenade
   description: A painful crowd control gas grenade full of Sulfuric Acid. Turn on your internals before using it.

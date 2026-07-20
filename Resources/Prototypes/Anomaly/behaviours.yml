@@ -125,14 +125,14 @@
     shuffleOnPulse: true
     prob: 1
 
-- type: anomalyBehavior
-  id: InconstancyParticle
-  earnPointModifier: 1.8
-  description: anomaly-behavior-inconstancy
-  components:
-  - type: ShuffleParticlesAnomaly
-    shuffleOnParticleHit: true
-    prob: 0.8
+#- type: anomalyBehavior
+#  id: InconstancyParticle
+#  earnPointModifier: 1.8
+#  description: anomaly-behavior-inconstancy
+#  components:
+#  - type: ShuffleParticlesAnomaly
+#    shuffleOnParticleHit: true
+#    prob: 0.8
 
 - type: anomalyBehavior
   id: Jumping

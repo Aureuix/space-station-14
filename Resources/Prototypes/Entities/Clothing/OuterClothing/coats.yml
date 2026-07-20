@@ -13,7 +13,7 @@
   parent: [ ClothingOuterArmorBase, ClothingOuterStorageBase, AllowSuitStorageClothing, BaseSecurityContraband ]
   id: ClothingOuterCoatDetective
   name: detective's armored trenchcoat
-  description: An 18th-century multi-purpose trenchcoat. Someone who wears this means serious business.
+  description: An 18th-century multi-purpose trenchcoat with armored inserts. Someone who wears this means serious business.
   components:
   - type: Sprite
     sprite: Clothing/OuterClothing/Coats/detective.rsi
@@ -27,6 +27,27 @@
         - id: FlippoEngravedLighter
   - type: ExplosionResistance
     damageCoefficient: 1 #its a coat. it doesnt do shit
+    
+# SpL- for mapping
+- type: entity
+  parent: [ ClothingOuterStorageBase, AllowSuitStorageClothing ]
+  id: ClothingOuterCoatDetectiveUnarmored
+  name: detective's trenchcoat
+  description: An 18th-century multi-purpose trenchcoat. Someone who wears this means business.
+  components:
+    - type: Sprite
+      sprite: Clothing/OuterClothing/Coats/detective.rsi
+    - type: Clothing
+      sprite: Clothing/OuterClothing/Coats/detective.rsi
+    - type: EntityTableContainerFill
+      containers:
+        storagebase: !type:AllSelector
+          children:
+            - id: SmokingPipeFilledTobacco
+            - id: FlippoEngravedLighter
+    - type: ExplosionResistance
+      damageCoefficient: 1 #its a coat. it doesnt do shit
+# SpL end
 
 - type: entity
   parent: [ClothingOuterCoatDetectiveLoadout]

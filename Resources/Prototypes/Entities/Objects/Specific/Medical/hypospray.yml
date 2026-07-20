@@ -52,12 +52,17 @@
     maxFillLevels: 6
     fillBaseName: hypo_fill
     solutionName: hypospray
+  - type: Clothing # SpL Start
+    quickEquip: false
+    slots:
+      - Belt
+      - suitStorage # SpL end
 
 - type: entity
   parent: [BaseHypospray, BaseSyndicateContraband]
   id: SyndiHypo
   name: gorlex hypospray
-  description: A sterile injector for rapid administration of drugs. Reverse-engineered from Nanotrasen designs, Cybersun produces these in limited quantities for Gorlex Marauders' corpsmen.
+  description: A sterile injector for rapid administration of drugs. Reverse-engineered from NanoTrasen designs, Interdyne produces these in limited quantities for Gorlex Marauders' corpsmen.
   components:
   - type: Sprite
     sprite: Objects/Specific/Medical/syndihypo.rsi
@@ -69,6 +74,8 @@
         visible: false
   - type: Item
     sprite: Objects/Specific/Medical/syndihypo.rsi
+  - type: UseDelay # SpL
+    delay: 0.25 # SpL
   - type: SolutionContainerManager
     solutions:
       hypospray:
@@ -77,6 +84,11 @@
     maxFillLevels: 4
     fillBaseName: hypo_fill
     solutionName: hypospray
+  - type: Clothing # SpL Start
+    quickEquip: false
+    slots:
+      - Belt
+      - suitStorage # SpL end
 
 - type: entity
   parent: BaseHypospray
@@ -417,7 +429,7 @@
           Quantity: 10
 
 - type: entity
-  parent: ChemicalMedipen
+  parent: [ ChemicalMedipen, BaseMedicalSecurityContraband ] # SpL
   id: PunctAutoInjector
   name: puncturase auto-injector
   description: A single-dose, non-refillable medipen containing puncturase and tranexamic acid, used to quickly and easily treat puncture wounds. Commonly used as a combat medicine.
@@ -454,7 +466,7 @@
           Quantity: 5
 
 - type: entity
-  parent: ChemicalMedipen
+  parent: [ ChemicalMedipen, BaseMedicalSecurityContraband ] # SpL
   id: PyraAutoInjector
   name: pyrazine auto-injector
   description: A single-dose, non-refillable medipen containing pyrazine and dermaline, used to quickly and easily treat thermal burns. Commonly used as a combat medicine.
@@ -491,7 +503,7 @@
           Quantity: 10
 
 - type: entity
-  parent: ChemicalMedipen
+  parent: [ ChemicalMedipen, BaseMedicalSecurityContraband ] # SpL- the dexp is lethal if misused
   id: AirlossAutoInjector
   name: airloss auto-injector
   description: A single-dose, non-refillable medipen containing saline and dexalin plus, used to quickly and easily treat blood loss and asphyxiation.
@@ -643,7 +655,7 @@
     price: 583 # 3500 for 6 as a freaky fraction
 
 - type: entity
-  parent: [ChemicalMedipen, BaseSyndicateContraband]
+  parent: [ ChemicalMedipen, BaseMedicalSecurityContraband ] # SpL- removed syndie contra status in favour of a more generalised option
   id: CombatMedipen
   name: combat medipen
   description: A single-dose, non-refillable medipen containing a chemical cocktail that treats most forms of damage.

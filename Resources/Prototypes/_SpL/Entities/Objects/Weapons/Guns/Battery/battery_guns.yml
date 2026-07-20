@@ -27,7 +27,7 @@
         - FullAuto
         - Burst
       shotsPerBurst: 3
-      fireRate: 5
+      fireRate: 4.5
       soundGunshot:
         path: /Audio/_SpL/Effects/coilgun.ogg
         params:
