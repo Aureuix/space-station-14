@@ -170,7 +170,7 @@
   id: ClothingUniformJumpskirtPunkSkirt
   productEntity: ClothingUniformJumpskirtPunkSkirt
   cost:
-    NTCredit: 990
+    NTCredit: 90
   categories:
     - SLFashionSkirt
   conditions:
