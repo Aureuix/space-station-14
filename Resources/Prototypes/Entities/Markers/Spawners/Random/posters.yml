@@ -114,6 +114,8 @@
       - PosterContrabandInterdyneSyndicate
       - PosterContrabandComitas
       - PosterContrabandWaffleCorpTwo
+      - PosterContrabandARFRadio
+      - PosterContrabandGEC
       #endregion Starlight
     chance: 1
 
@@ -201,5 +203,13 @@
       - PosterLegitClock
       - PosterLegitBonk
       - PosterLegitDeforestMedical
+      - PosterLegitDuty
+      - PosterLegitEarth
+      - PosterLegitLuna
+      - PosterLegitRecycle
+      - PosterLegitSerene
+      - PosterLegitSpaceCops2
+      - PosterLegitStarkistFancy
+      - PosterLegitTSPDRangers
       #endregion Starlight
     chance: 1
