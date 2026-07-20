@@ -1,9 +1,9 @@
 #Longswords
 - type: entity
   name: Vibrorapier
-  parent: [BaseSword, BaseCommandContraband]
+  parent: [BaseSword, BaseCentcommContraband]
   id: VibroRapier
-  description: An ornimental vibroblade commissioned by central command. Pierces through flesh and bone like butter, but sears the skin in the process. Meant for one handed sword combat.
+  description: An ornamental vibroblade commissioned by Central Command. Pierces through flesh and bone like butter, but sears the skin in the process. Meant for one-handed sword combat.
   components:
   - type: Sprite
     sprite: _SpL/Objects/Weapons/Melee/Vibrorapier.rsi
