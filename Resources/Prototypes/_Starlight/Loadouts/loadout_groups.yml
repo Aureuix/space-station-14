@@ -589,7 +589,7 @@
   loadouts:
     - MailTechnicianBoots
     - MailTechnicianBootsSenior
-    - RollerSkatesLoadout
+    # - RollerSkatesLoadout SpL
     - BlackShoes
     - YellowShoes
     - CargoWinterBoots
@@ -618,6 +618,15 @@
   loadouts:
     - MailTrolleyFlatpack
     - GoldenMailTrolleyFlatpack
+  
+# SpL Start
+- type: loadoutGroup
+  id: MailTechnicianSkates
+  name: loadout-group-mail-technician-skates
+  loadouts:
+    - RollerSkatesLoadout
+    - CoolerRollerSkates
+# SpL End
 
 # Salvage Lead
 - type: loadoutGroup
