@@ -58,14 +58,14 @@
             - type: ProtectedGrid
             - type: TradeStation
           paths:
-            - /Maps/Shuttles/trading_outpost.yml
+            - /Maps/_Starlight/trading_outpost.yml # Starlight Edit, new ATS
 #        mining: !type:GridSpawnGroup # 🌟Starlight begin🌟
 #          paths:
 #            - /Maps/Shuttles/mining.yml
 #          nameGrid: false # Starlight - honors entityName in mining.yml
         cargo_salvage_shuttle: !type:GridSpawnGroup
           paths:
-            - /Maps/_SpL/Shuttles/Salvage/Salvage_Tribute.yml # Spectra: replaced pioneer
+            - /Maps/_SpL/Shuttles/Salvage/Salvage_Pioneer.yml # Spectra: replaced pioneer # SpL- unreplaced pioneer. but like. it's cool this time.
           nameGrid: false # Starlight - honors entityName
         cargo_mining_shuttle: !type:GridSpawnGroup
           paths:

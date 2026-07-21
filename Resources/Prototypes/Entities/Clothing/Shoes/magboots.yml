@@ -129,7 +129,7 @@
   - type: Clothing
     sprite: Clothing/Shoes/Boots/magboots-ert.rsi
   - type: ClothingSlowOnDamageModifier # SpL
-    modifier: 0.25 # SpL
+    modifier: 0.5 # SpL
 
 - type: entity
   parent: BaseAction

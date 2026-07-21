@@ -24,14 +24,14 @@
                 - type: ProtectedGrid
                 - type: TradeStation
               paths:
-                - /Maps/Shuttles/trading_outpost.yml
+                - /Maps/_Starlight/trading_outpost.yml
             cargo_mining_shuttle: !type:GridSpawnGroup
               paths:
                 - /Maps/_SpL/Shuttles/Salvage/Mining_Cracker.yml
               nameGrid: false
             cargo_salvage_shuttle: !type:GridSpawnGroup
               paths:
-                - /Maps/_SpL/Shuttles/Salvage/Salvage_Tribute.yml
+                - /Maps/_SpL/Shuttles/Salvage/Salvage_Pioneer.yml
               nameGrid: false
             ruins: !type:GridSpawnGroup
               hide: true
