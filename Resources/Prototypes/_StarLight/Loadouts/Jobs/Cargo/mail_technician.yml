@@ -131,3 +131,11 @@
   storage:
     back:
       - GoldenMailTrolleyFlatpack
+
+# SpL Start
+# Job Trinkets
+- type: loadout
+  id: CoolerRollerSkates
+  storage:
+    back:
+      - ClothingShoesSkatesCool

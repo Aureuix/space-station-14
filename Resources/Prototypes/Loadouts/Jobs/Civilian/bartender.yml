@@ -28,6 +28,11 @@
   id: BartenderJumpskirt
   equipment:
     jumpsuit: ClothingUniformJumpskirtBartender
+    
+- type: loadout # SpL
+  id: BartenderJumpsuitFancy #SpL
+  equipment: # SpL
+    jumpsuit: ClothingUniformJumpskirtBartenderBlackAlt # SpL
 
 - type: loadout
   id: BartenderJumpsuitPurple

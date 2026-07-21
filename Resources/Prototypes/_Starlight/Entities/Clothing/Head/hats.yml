@@ -1,7 +1,7 @@
 - type: entity
   parent: [ClothingHeadBase, BaseCommandContraband]
   id: ClothingHeadHatCapNtrep
-  name: nt representive cap
+  name: nt representative cap
   description: The cap of justice over command!
   components:
     - type: Sprite
@@ -13,7 +13,7 @@
   parent: [ClothingHeadBase, BaseBlueShieldContraband]
   id: ClothingHeadHatBeretBlueShield
   name: blueshield beret
-  description: This beret completes the outfit of any true Blue Shield Officer.
+  description: This beret completes the outfit of any true Blueshield Officer.
   components:
     - type: Sprite
       sprite: _Starlight/Clothing/Head/Hats/blueshield.rsi
@@ -422,8 +422,8 @@
 - type: entity
   parent: ClothingHeadBase
   id: ClothingHeadHatNTRTophat
-  name: NT rep tophat
-  description: A fancy black tophat, handmade for the Nanotrasen rep. It looks expensive.
+  name: nt rep tophat
+  description: A fancy black tophat, handmade for the NanoTrasen Rep. It looks expensive.
   components:
     - type: Sprite
       sprite: _Starlight/Clothing/Head/Hats/ntr_tophat.rsi
@@ -442,7 +442,7 @@
 - type: entity
   parent: ClothingHeadBase
   id: ClothingHeadHatNTREliteTophat
-  name: NT rep elite tophat
+  name: nt rep elite tophat
   description: An expensive looking black tophat. the gold embossing on the front shows the Nanotrasen logo, fitting for an NT rep.
   components:
     - type: Sprite
@@ -604,7 +604,7 @@
 - type: entity
   parent: [ClothingHeadBase, BaseCommandContraband]
   id: ClothingHeadHatBeretNCTBlack
-  name: NT career trainer's beret
+  name: nt career trainer's beret
   description: A beret worn by the mentors and trainers of the Career Training Team. This one is black!
   components:
     - type: Sprite
@@ -650,7 +650,18 @@
   name: witchy hat
   description: Wicky-wicky-witchy hat!
   components:
+  - type: Sprite
+    sprite: _Starlight/Clothing/Head/Hats/witchyhat.rsi
+  - type: Clothing
+    sprite: _Starlight/Clothing/Head/Hats/witchyhat.rsi
+
+- type: entity
+  parent: ClothingHeadBase
+  id: ClothingHeadHatBunnyGang
+  name: Bunny Gang Hat
+  description: The hat of a secretive group of bunny mercenaries.
+  components:
     - type: Sprite
-      sprite: _Starlight/Clothing/Head/Hats/witchyhat.rsi
+      sprite: _Starlight/Clothing/Head/Hats/bunnygang.rsi
     - type: Clothing
-      sprite: _Starlight/Clothing/Head/Hats/witchyhat.rsi
+      sprite: _Starlight/Clothing/Head/Hats/bunnygang.rsi
