@@ -36,7 +36,7 @@
   description: A sign indicating the IAA's office.
   components:
     - type: Sprite
-      sprite: _Starlight/Structures/Wallmounts/posters/signs.rsi
+      sprite: _Starlight/Structures/Wallmounts/signs.rsi
       state: iaa
       
 - type: entity
@@ -46,7 +46,7 @@
   description: A sign indicating the magistrate's office.
   components:
     - type: Sprite
-      sprite: _Starlight/Structures/Wallmounts/posters/signs.rsi
+      sprite: _Starlight/Structures/Wallmounts/signs.rsi
       state: magistrate
       
 - type: entity
@@ -56,7 +56,7 @@
   description: A sign indicating the NTR's office.
   components:
     - type: Sprite
-      sprite: _Starlight/Structures/Wallmounts/posters/signs.rsi
+      sprite: _Starlight/Structures/Wallmounts/signs.rsi
       state: ntr
       
 - type: entity
@@ -66,7 +66,7 @@
   description: A sign indicating the presence of justice.
   components:
     - type: Sprite
-      sprite: _Starlight/Structures/Wallmounts/posters/signs.rsi
+      sprite: _Starlight/Structures/Wallmounts/signs.rsi
       state: law
 # SpL end
 
