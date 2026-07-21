@@ -15,6 +15,10 @@ loadout-group-assistant-backpack = Assistant backpack
 loadout-group-boxer-jumpsuit = Boxer jumpsuit
 loadout-group-boxer-gloves = Boxer gloves
 
+loadout-group-reporter-head = Reporter head
+
+loadout-group-musician-head = Musician head
+
 # Command
 
 loadout-group-nanotrasenrepresentative-head = NanoTrasen representative head
@@ -79,6 +83,7 @@ loadout-group-mail-technician-shoes = Mail Technician shoes
 loadout-group-mail-technician-id = Mail Technician ID
 loadout-group-mail-technician-bag = Mail Technician bag
 loadout-group-mail-technician-trolley = Mail Technician trolley
+loadout-group-mail-technician-skates = Mail Technician skates
 loadout-group-salvage-specialist-jumpsuit = Salvage Specialist jumpsuit
 loadout-group-salvage-lead-jumpsuit = Salvage Lead jumpsuit
 loadout-group-mining-specialist-jumpsuit = Mining Specialist jumpsuit

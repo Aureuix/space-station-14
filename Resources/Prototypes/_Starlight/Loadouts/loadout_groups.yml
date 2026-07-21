@@ -589,7 +589,7 @@
   loadouts:
     - MailTechnicianBoots
     - MailTechnicianBootsSenior
-    - RollerSkatesLoadout
+    # - RollerSkatesLoadout SpL
     - BlackShoes
     - YellowShoes
     - CargoWinterBoots
@@ -618,6 +618,15 @@
   loadouts:
     - MailTrolleyFlatpack
     - GoldenMailTrolleyFlatpack
+  
+# SpL Start
+- type: loadoutGroup
+  id: MailTechnicianSkates
+  name: loadout-group-mail-technician-skates
+  loadouts:
+    - RollerSkatesLoadout
+    - CoolerRollerSkates
+# SpL End
 
 # Salvage Lead
 - type: loadoutGroup
@@ -732,6 +741,16 @@
   - LizardPlushieClown
   - LizardPlushieMime
 
+# Musician
+- type: loadoutGroup
+  id: MusicianHead
+  name: loadout-group-musician-head
+  minLimit: 0
+  loadouts:
+  - MusicianHeadphonesGeneric
+  - MusicianHeadphonesReporter
+  - MusicianHeadphonesHighEnd
+
 # Boxer
 - type: loadoutGroup
   id: BoxerJumpsuit
@@ -755,6 +774,16 @@
   minLimit: 0
   loadouts:
   - LizardPlushieBoxer
+
+# Reporter
+- type: loadoutGroup
+  id: ReporterHead
+  name: loadout-group-reporter-head
+  minLimit: 0
+  loadouts:
+  - ReporterHeadphonesJob
+  - ReporterHeadphonesGeneric
+  - ReporterHeadphonesHighEnd
 
 # Zookeeper
 - type: loadoutGroup

@@ -261,6 +261,7 @@
   canCustomizeName: true
   groups:
   - GroupTankHarness
+  - MusicianHead # Starlight
   - MusicianJumpsuit
   - CommonBackpack
   - MusicianOuterClothing
@@ -682,6 +683,7 @@
   id: JobReporter
   groups:
   - GroupTankHarness
+  - ReporterHead # Starlight
   - ReporterJumpsuit
   - CommonBackpack
   - CivilianShoes # Starlight

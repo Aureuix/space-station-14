@@ -306,6 +306,7 @@
     - id: BarberScissors
     - id: SprayFlowerPin
     - id: ClothingShoesSkates
+    - id: ClothingShoesSkatesCool # Starlight
     - id: CrazyGlue
     - id: CrazyLube
     - !type:NestedSelector
