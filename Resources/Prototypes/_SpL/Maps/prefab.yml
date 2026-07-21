@@ -29,7 +29,7 @@
               nameGrid: false
             cargo_salvage_shuttle: !type:GridSpawnGroup
               paths:
-                - /Maps/_Starlight/Shuttles/Salvage/pioneer.yml
+                - /Maps/_SpL/Shuttles/Salvage/Salvage_Pioneer.yml
               nameGrid: false
             ruins: !type:GridSpawnGroup
               hide: true
