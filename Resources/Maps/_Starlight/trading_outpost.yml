@@ -13735,79 +13735,7 @@ entities:
     components:
     - type: Transform
       pos: 29.5,0.5
-      parent: 1
-- proto: RandomSolarSpawnerGlass
-  entities:
-  - uid: 733
-    components:
-    - type: Transform
-      pos: 37.5,11.5
-      parent: 1
-  - uid: 735
-    components:
-    - type: Transform
-      pos: 37.5,13.5
-      parent: 1
-  - uid: 737
-    components:
-    - type: Transform
-      pos: 37.5,16.5
-      parent: 1
-  - uid: 739
-    components:
-    - type: Transform
-      pos: 37.5,18.5
-      parent: 1
-  - uid: 741
-    components:
-    - type: Transform
-      pos: 34.5,18.5
-      parent: 1
-  - uid: 743
-    components:
-    - type: Transform
-      pos: 34.5,16.5
-      parent: 1
-  - uid: 747
-    components:
-    - type: Transform
-      pos: 34.5,11.5
-      parent: 1
-  - uid: 749
-    components:
-    - type: Transform
-      pos: 31.5,11.5
-      parent: 1
-  - uid: 752
-    components:
-    - type: Transform
-      pos: 31.5,14.5
-      parent: 1
-  - uid: 754
-    components:
-    - type: Transform
-      pos: 31.5,16.5
-      parent: 1
-  - uid: 756
-    components:
-    - type: Transform
-      pos: 31.5,18.5
-      parent: 1
-  - uid: 760
-    components:
-    - type: Transform
-      pos: 28.5,15.5
-      parent: 1
-  - uid: 761
-    components:
-    - type: Transform
-      pos: 28.5,14.5
-      parent: 1
-  - uid: 764
-    components:
-    - type: Transform
-      pos: 28.5,11.5
-      parent: 1
+      parent: 1  
 - proto: RandomSpawner
   entities:
   - uid: 2321
@@ -14842,6 +14770,76 @@ entities:
       parent: 1
 - proto: SolarPanel
   entities:
+  - uid: 733
+    components:
+      - type: Transform
+        pos: 37.5,11.5
+        parent: 1
+  - uid: 735
+    components:
+      - type: Transform
+        pos: 37.5,13.5
+        parent: 1
+  - uid: 737
+    components:
+      - type: Transform
+        pos: 37.5,16.5
+        parent: 1
+  - uid: 739
+    components:
+      - type: Transform
+        pos: 37.5,18.5
+        parent: 1
+  - uid: 741
+    components:
+      - type: Transform
+        pos: 34.5,18.5
+        parent: 1
+  - uid: 743
+    components:
+      - type: Transform
+        pos: 34.5,16.5
+        parent: 1
+  - uid: 747
+    components:
+      - type: Transform
+        pos: 34.5,11.5
+        parent: 1
+  - uid: 749
+    components:
+      - type: Transform
+        pos: 31.5,11.5
+        parent: 1
+  - uid: 752
+    components:
+      - type: Transform
+        pos: 31.5,14.5
+        parent: 1
+  - uid: 754
+    components:
+      - type: Transform
+        pos: 31.5,16.5
+        parent: 1
+  - uid: 756
+    components:
+      - type: Transform
+        pos: 31.5,18.5
+        parent: 1
+  - uid: 760
+    components:
+      - type: Transform
+        pos: 28.5,15.5
+        parent: 1
+  - uid: 761
+    components:
+      - type: Transform
+        pos: 28.5,14.5
+        parent: 1
+  - uid: 764
+    components:
+      - type: Transform
+        pos: 28.5,11.5
+        parent: 1
   - uid: 732
     components:
     - type: Transform
