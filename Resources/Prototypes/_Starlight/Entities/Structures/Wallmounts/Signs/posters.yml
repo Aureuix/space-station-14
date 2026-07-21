@@ -341,8 +341,8 @@
 - type: entity
   parent: PosterBase
   id: PosterLegitSaline
-  name: "NO SALINE!"
-  description: "An advisory from NanoTrasen's medical department reminding doctors to check their patients' species before administering airloss-related medicines. Saline can kill!"
+  name: "NO IRON!"
+  description: "An advisory from NanoTrasen's medical department reminding doctors to check their patients' species before administering airloss-related medicines. Dex+ can kill!"
   components:
   - type: Sprite
     sprite: _Starlight/Structures/Wallmounts/posters/saline.rsi

@@ -9,7 +9,7 @@
     - type: Clothing
       sprite: _Starlight/Clothing/Shoes/Boots/salvage.rsi
     - type: ClothingSlowOnDamageModifier # SpL
-      modifier: 0.25 # SpL
+      modifier: 0.75 # SpL
 
 - type: entity
   parent: ClothingShoesBaseButcherable

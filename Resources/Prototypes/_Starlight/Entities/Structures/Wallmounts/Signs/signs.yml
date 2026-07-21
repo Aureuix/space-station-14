@@ -28,6 +28,46 @@
     - type: Sprite
       sprite: _Starlight/Structures/Wallmounts/posters/ame.rsi
       state: poster
+      
+- type: entity
+  parent: BaseSign
+  id: SignIAA
+  name: iaa sign
+  description: A sign indicating the IAA's office.
+  components:
+    - type: Sprite
+      sprite: _Starlight/Structures/Wallmounts/posters/signs.rsi
+      state: iaa
+      
+- type: entity
+  parent: BaseSign
+  id: SignMagi
+  name: magistrate sign
+  description: A sign indicating the magistrate's office.
+  components:
+    - type: Sprite
+      sprite: _Starlight/Structures/Wallmounts/posters/signs.rsi
+      state: magistrate
+      
+- type: entity
+  parent: BaseSign
+  id: SignNTR
+  name: ntr sign
+  description: A sign indicating the NTR's office.
+  components:
+    - type: Sprite
+      sprite: _Starlight/Structures/Wallmounts/posters/signs.rsi
+      state: ntr
+      
+- type: entity
+  parent: BaseSign
+  id: SignLaw
+  name: law sign
+  description: A sign indicating the presence of justice.
+  components:
+    - type: Sprite
+      sprite: _Starlight/Structures/Wallmounts/posters/signs.rsi
+      state: law
 # SpL end
 
 - type: entity
