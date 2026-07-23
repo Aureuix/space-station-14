@@ -766,7 +766,7 @@
 
 - type: entity
   name: pulse rifle
-  parent: [BaseWeaponBattery, BaseGunWieldable, BaseCentcommContraband]
+  parent: [BaseWeaponBattery, BaseGunWieldable, BaseNanoTrasenContraband] # SpL
   id: WeaponPulseRifle
   description: A weapon that is almost as infamous as its users.
   components:
@@ -840,7 +840,7 @@
 
 - type: entity
   name: ANNIHILATOR
-  parent: [ WeaponPulseCarbine, BaseMajorContraband ]
+  parent: [ WeaponPulseCarbine, BaseHighlyIllegalContraband ] # SpL
   id: WeaponANNIHILATOR
   description: A weapon that is almost as infamous as its users.
   components:
@@ -985,7 +985,7 @@
 
 - type: entity
   name: pulse cannon
-  parent: [BaseWeaponBattery, BaseGunWieldable, BaseNanoTrasenContraband]
+  parent: [BaseWeaponBattery, BaseGunWieldable, BaseNanoTrasenContraband] # SpL
   id: WeaponPulseCannonNTNC
   description: A weapon meant to blow holes in people with lasers. Like Superman. I like Superman.
   components:
