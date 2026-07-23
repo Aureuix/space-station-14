@@ -1288,7 +1288,7 @@
   - type: HitscanBasicDamage
     damage:
       types:
-        Heat: 15
+        Heat: 5 # SpL- this thing is DEADLY now with the firestack potential, it really doesn't need damage
   - type: HitscanIgniteEffect
 
 - type: entity
@@ -1368,9 +1368,9 @@
   categories: [ HideSpawnMenu ]
   components:
   - type: HitscanStaminaDamage
-    staminaDamage: 15
+    staminaDamage: 15 
   - type: HitscanCyberneticDisruption
-    disableChance: 0.1
+    disableChance: 0.1 
       
 - type: entity
   id: TaserBolt
@@ -1481,7 +1481,7 @@
   - type: HitscanBasicDamage
     damage:
       types:
-        Heat: 60
+        Heat: 75 # SpL- this REALLY needed a buff
   - type: HitscanCrawlerTargetEffects
     knockdownDuration: 3
   - type: HitscanStaminaDamage

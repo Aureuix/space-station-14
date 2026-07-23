@@ -51,13 +51,13 @@
       shader: unshaded
   - type: MechAmmoProvider #Starlight - MechAmmoProvider
     proto: RedMediumLaser
-    fireCost: 19
+    fireCost: 10 # SpL- can't believe I need to balance a debug weapon
   - type: MagazineVisuals
     magState: mag
     steps: 5
     zeroVisible: true
   - type: Gun
-    fireRate: 2
+    fireRate: 4 # SpL- can't believe I need to balance a debug weapon
     selectedMode: FullAuto
     availableModes:
       - FullAuto

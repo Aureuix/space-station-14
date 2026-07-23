@@ -46,7 +46,7 @@
   - type: HitscanBasicDamage
     damage:
       types:
-        Heat: 7
+        Heat: 12 # SpL- svalinn really could use a buff it's so bad
 
 - type: entity
   parent: BasicHitscan
@@ -57,7 +57,7 @@
   - type: HitscanBasicDamage
     damage:
       types:
-        Heat: 20 # Starlight
+        Heat: 10 # SpL- damage halved because all weapons using this have doubled speed # Starlight
 
 - type: entity
   parent: BasicHitscan
@@ -68,7 +68,7 @@
   - type: HitscanBasicDamage
     damage:
       types:
-        Heat: 17
+        Heat: 12 # SpL- approximately 2/3, rounded up
 
 - type: entity
   parent: BasicHitscan
@@ -79,7 +79,7 @@
   - type: HitscanBasicDamage
     damage:
       types:
-        Heat: 28
+        Heat: 3.5 # SpL- changed all guns using this to be like a beam weapon
   - type: HitscanBasicVisuals
     muzzleFlash:
       sprite: Objects/Weapons/Guns/Projectiles/projectiles.rsi
@@ -111,8 +111,8 @@
   - type: HitscanBasicDamage
     damage:
       types:
-        Heat: 10
-        Radiation: 10
+        Heat: 5 # SpL- halved
+        Radiation: 5 # SpL- halved
   - type: HitscanBasicVisuals
     muzzleFlash:
       sprite: Objects/Weapons/Guns/Projectiles/projectiles.rsi
