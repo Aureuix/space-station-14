@@ -10,7 +10,7 @@
       organs:
         brain: OrganResomiBrain
         eyes: OrganResomiEyes
-        tongue: OrganHumanTongue
+        tongue: OrganResomiTongue # SpL
         eye_implant: null
         brain_implant: BrainImplantNexus # 🌟Starlight🌟
     torso:
