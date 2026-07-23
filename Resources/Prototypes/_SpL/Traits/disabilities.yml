@@ -39,3 +39,20 @@
     - !type:SpeciesRequirement
       species:
         - Thaven
+
+- type: trait
+  id: Dyspnoea
+  name: trait-dyspnoea-name
+  description: trait-dyspnoea-desc
+  category: Disabilities
+  cost: 0
+  effects:
+    - !type:OverrideCompsEffect
+      components:
+      - type: Respirator
+        damage:
+          types:
+            Asphyxiation: 4
+        damageRecovery:
+          types:
+            Asphyxiation: -0.5
