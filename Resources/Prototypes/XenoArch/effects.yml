@@ -451,7 +451,7 @@
 - type: entity
   id: XenoArtifactEffectGoodFeeling
   parent: BaseXenoArtifactEffect
-  description: Broadcasts sublime message
+  description: Broadcasts subliminal message # SpL- get real.
   components:
   - type: XAETelepathic
     messages:
