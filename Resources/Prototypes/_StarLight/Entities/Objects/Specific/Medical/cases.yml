@@ -121,7 +121,7 @@
   components:
     - type: Item
       sprite: _Starlight/Objects/Specific/Medical/cases.rsi
-      size: Medium
+      size: Normal
       shape:
         - 0,0,1,1
 

@@ -31,7 +31,7 @@
     jumpsuit: ClothingUniformJumpsuitGreenshield
     back: ClothingBackpackGreenshieldFilled
     shoes: ClothingShoesBootsMagGreenshield
-    outerClothing: ClothingOuterHardsuitGreenshield
+    outerClothing: ClothingOuterHardsuitERTLeader
     neck: ClothingNeckGreenshield
     id: CentCommGreenShieldPDA
     eyes: ClothingEyesGlassesCentComm

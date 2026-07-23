@@ -164,7 +164,7 @@
     belt: ClothingBeltMilitaryWebbing
     id: BlackstarDreadwalkerPDA
     ears: ClothingHeadsetAltBlackstar
-    eyes: ClothingEyesGlassesBlackstar
+    eyes: ClothingEyesHudSovietMarine
     pocket1: WeaponTaser
     pocket2: PinpointerUniversal
     suitstorage: WeaponRiflePrometheus
@@ -200,14 +200,14 @@
 - type: startingGear
   id: BlackstarLegionCommanderGear
   equipment:
-    head: ClothingHeadHatBlackstarLegionCommander
-    jumpsuit: ClothingUniformJumpsuitBlackstarLegionCommander
+    # head: null # SpL- filler
+    # jumpsuit: null # SpL- filler
     gloves: ClothingHandsSalvageMercGlovesCombat
     shoes: ClothingShoesBootsJackFilled
     back: ClothingBackpackSatchel
     belt: ClothingBeltSheathFilled
     ears: ClothingHeadsetAltBlackstar
-    eyes: ClothingEyesGlassesBlackstar
+    eyes: ClothingEyesHudSovietMarine
     id: BlackstarLegionCommanderPDA
     pocket1: PinpointerUniversal
     pocket2: WeaponTaser
@@ -222,7 +222,7 @@
 - type: startingGear
   id: BlackstarHighLegateGear
   equipment:
-    head: ClothingHeadHatBeretBlackstarHighLegate
+    # head: null # SpL- filler
     neck: CommanderWhistle
     outerClothing: ClothingOuterVestWeb
     jumpsuit: ClothingUniformJumpsuitColorBlack
@@ -231,7 +231,7 @@
     back: ClothingBackpackSatchel
     belt: ClothingBeltMilitaryWebbing
     ears: ClothingHeadsetAltBlackstar
-    eyes: ClothingEyesGlassesBlackstar
+    eyes: ClothingEyesHudSovietMarine
     id: BlackstarHighLegatePDA
     pocket1: WeaponTaser
     pocket2: PinpointerUniversal
@@ -255,7 +255,7 @@
 - type: startingGear
   id: BlackstarLegateGear
   equipment:
-    head: ClothingHeadHatBeretBlackstarLegate
+    # head: null # SpL- filler
     neck: CommanderWhistle
     outerClothing: ClothingOuterVestWeb
     jumpsuit: ClothingUniformJumpsuitColorBlack
@@ -264,7 +264,7 @@
     back: ClothingBackpackSatchel
     belt: ClothingBeltMilitaryWebbing
     ears: ClothingHeadsetAltBlackstar
-    eyes: ClothingEyesGlassesBlackstar
+    eyes: ClothingEyesHudSovietMarine
     id: BlackstarLegatePDA
     pocket1: WeaponTaser
     pocket2: PinpointerUniversal
@@ -297,7 +297,7 @@
     back: ClothingBackpackSatchel
     belt: ClothingBeltMilitaryWebbing
     ears: ClothingHeadsetAltBlackstar
-    eyes: ClothingEyesGlassesBlackstar
+    eyes: ClothingEyesHudSovietMarine
     id: BlackstarLegionnairePDA
     pocket1: WeaponTaser
     pocket2: PinpointerUniversal
@@ -328,7 +328,7 @@
     back: ClothingBackpackSatchel
     belt: ClothingBeltMilitaryWebbing
     ears: ClothingHeadsetAltBlackstar
-    eyes: ClothingEyesGlassesBlackstar
+    eyes: ClothingEyesHudSovietMarine
     id: BlackstarBlackguardPDA
     pocket1: WeaponTaser
     pocket2: Handcuffs

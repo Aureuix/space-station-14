@@ -66,8 +66,8 @@ loadout-group-magistrate-neck = Magistrate neck
 loadout-group-magistrate-shoes = Magistrate shoes
 loadout-group-iia-shoes = Lawyer shoes
 loadout-group-magistrate-outer = Magistrate outer clothing
-loadout-group-magistrate-head = Magistrate head
-loadout-group-magistrate-gloves = Magistrate gloves
+loadout-group-magistrate-headwear = Magistrate head
+loadout-group-magistrate-hands = Magistrate gloves
 
 # Civilian
 loadout-group-civilian-shoes = Shoes
