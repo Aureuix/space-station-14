@@ -12,6 +12,7 @@
   access:
   - Theatre
   - Maintenance
+  - Service # SpL
   special:
   - !type:AddComponentSpecial
     components:
