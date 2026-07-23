@@ -898,14 +898,14 @@
     layers:
       - state: grenade
   - type: Projectile
-    deleteOnCollide: false
+    deleteOnCollide: true # SpL
     damage:
       types:
-        Blunt: 1
+        Blunt: 15 # SpL
     soundHit:
       path: /Audio/Effects/gen_hit.ogg
   - type: StaminaDamageOnCollide
-    damage: 80
+    damage: 75 # SpL
 
 - type: entity
   id: BulletGrenadeBlast
