@@ -203,7 +203,6 @@
       name: ghost-role-information-ntsf-primus
       description: ghost-role-information-ntsf-primus-description
       rules: ghost-role-information-corporate-aligned-rules
-      important: true
       raffle:
         settings: short
       mindRoles:
@@ -242,7 +241,6 @@
       name: ghost-role-information-ntsf-secundus
       description: ghost-role-information-ntsf-secundus-description
       rules: ghost-role-information-corporate-aligned-rules
-      important: true
       raffle:
         settings: short
       mindRoles:
@@ -281,7 +279,6 @@
       name: ghost-role-information-ntsf-tertius
       description: ghost-role-information-ntsf-tertius-description
       rules: ghost-role-information-corporate-aligned-rules
-      important: true
       raffle:
         settings: short
       mindRoles:
@@ -321,7 +318,6 @@
       name: ghost-role-information-ntsf-quartus
       description: ghost-role-information-ntsf-quartus-description
       rules: ghost-role-information-corporate-aligned-rules
-      important: true
       raffle:
         settings: short
       mindRoles:
@@ -360,7 +356,6 @@
       name: ghost-role-information-ntsf-quintus
       description: ghost-role-information-ntsf-quintus-description
       rules: ghost-role-information-corporate-aligned-rules
-      important: true
       raffle:
         settings: short
       mindRoles:
@@ -399,7 +394,6 @@
       name: ghost-role-information-ntsf-sextus
       description: ghost-role-information-ntsf-sextus-description
       rules: ghost-role-information-corporate-aligned-rules
-      important: true
       raffle:
         settings: short
       mindRoles:
@@ -438,7 +432,6 @@
       name: ghost-role-information-ntsf-septimus
       description: ghost-role-information-ntsf-septimus-description
       rules: ghost-role-information-corporate-aligned-rules
-      important: true
       raffle:
         settings: short
       mindRoles:
@@ -476,7 +469,6 @@
       name: ghost-role-information-ntsf-octavius
       description: ghost-role-information-ntsf-octavius-description
       rules: ghost-role-information-corporate-aligned-rules
-      important: true
       raffle:
         settings: short
       mindRoles:
@@ -515,7 +507,6 @@
       name: ghost-role-information-ntsf-nonus
       description: ghost-role-information-ntsf-nonus-description
       rules: ghost-role-information-corporate-aligned-rules
-      important: true
       raffle:
         settings: short
       mindRoles:
