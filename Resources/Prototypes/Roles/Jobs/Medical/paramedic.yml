@@ -31,6 +31,7 @@
     - EmergencyRollerBedSpawnFolded
     - BodyBagLockableFolded #Starlight
     - DefibrillatorParamed #Starlight
+    - BottleCaseParamedicFilled # SpL
 
 - type: chameleonOutfit
   id: ParamedicChameleonOutfit

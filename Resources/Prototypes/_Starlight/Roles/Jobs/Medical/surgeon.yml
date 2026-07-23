@@ -27,7 +27,7 @@
     ears: ClothingHeadsetMedical
     belt: ClothingBeltMedicalFilled
   inhand:
-    - ClothingBackpackDuffelSurgeryFilled
+    - SurgicalKitMedicalFilled # SpL
 
 - type: chameleonOutfit
   id: SurgeonChameleonOutfit
