@@ -138,6 +138,8 @@
       collection: Weh
     Hew:
       collection: Hew
+    Sigh: # SpL
+      collection: MaleSigh # SpL
     Gasp:
       collection: MaleGasp
     DefaultDeathgasp:
@@ -168,6 +170,8 @@
       collection: Weh
     Hew:
       collection: Hew
+    Sigh: # SpL
+      collection: MaleSigh # SpL
     Gasp:
       collection: FemaleGasp
     DefaultDeathgasp:
@@ -200,6 +204,8 @@
       collection: Weh
     Hew:
       collection: Hew
+    Sigh: # SpL
+      collection: MaleSigh # SpL
     Gasp:
       collection: FemaleGasp
     DefaultDeathgasp:
