@@ -206,7 +206,7 @@
 
 - type: entity
   parent: BaseComputerShuttle
-  id: CompuerShuttleSalvage
+  id: ComputerShuttleSalvage
   name: salvage shuttle console
   components:
   - type: Sprite
