@@ -1016,7 +1016,7 @@
   - type: Gun
     soundGunshot:
       path: /Audio/Weapons/Guns/Gunshots/laser_cannon.ogg
-      fireRate: 2.25 # SpL- don't want this thing being overtuned from a buffed firerate
+    fireRate: 2.25 # SpL- don't want this thing being overtuned from a buffed firerate
   - type: BatteryAmmoProvider
     proto: BulletLaserMagnumSL  # Starlight - Hitscan
     fireCost: 150
