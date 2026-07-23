@@ -1553,7 +1553,7 @@
   name: magnum laser bolt
   id: BulletLaserMagnumSL
   categories: [ HideSpawnMenu ]
-  parent:  EnergyTrace
+  parent:  LaserTrace # SpL
   components:
   - type: HitscanBasicVisuals
     bullet:
@@ -1564,6 +1564,24 @@
     damage:
       types:
         Heat: 30
+
+# SpL Start
+- type: entity
+  name: magnum structural laser bolt
+  id: BulletLaserDestructionMagnumSL
+  categories: [ HideSpawnMenu ]
+  parent:  EnergyTrace 
+  components:
+    - type: HitscanBasicVisuals
+      bullet:
+        sprite:
+          sprite: Objects/Weapons/Guns/Projectiles/projectiles_tg.rsi
+          state: ice
+    - type: HitscanBasicDamage
+      damage:
+        types:
+          Structural: 50
+# SpL End
 
 - type: entity
   name: magnum window-piercing bolt
