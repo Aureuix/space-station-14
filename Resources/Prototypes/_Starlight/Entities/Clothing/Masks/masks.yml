@@ -75,7 +75,7 @@
   - type: Clothing
     sprite: _Starlight/Clothing/Mask/sovietgas.rsi
   - type: FlashImmunity
-    blocksSpecialVision: false
+    blocksSpecialVision: False
   - type: EyeProtection
   - type: Pierceable
     level: Metal
@@ -226,6 +226,8 @@
   name: greenshield gas mask
   description: The gas mask of the elite of the elite, even protects the user from the dangers of welding.
   components:
+  - type: FlashImmunity 
+    blocksSpecialVision: False
   - type: Sprite
     sprite: Clothing/Mask/ert.rsi
   - type: Clothing

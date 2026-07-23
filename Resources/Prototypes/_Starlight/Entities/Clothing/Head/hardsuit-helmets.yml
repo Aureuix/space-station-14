@@ -661,6 +661,7 @@
     lowPressureMultiplier: 1000
   - type: FireProtection
     reduction: 0.2
+  - type: ClothesNightVision
   - type: Pierceable
     level: Rock
   - type: Armor
@@ -712,6 +713,7 @@
     lowPressureMultiplier: 1000
   - type: FireProtection
     reduction: 0.2
+  - type: ClothesNightVision
   - type: Pierceable
     level: Rock
   - type: Armor
@@ -743,6 +745,7 @@
       map: [ "light" ]
   - type: HandheldLight
     addPrefix: false
+  - type: TrayScanner
   - type: ToggleableVisuals
     spriteLayer: light
     clothingVisuals:
@@ -763,6 +766,7 @@
     lowPressureMultiplier: 1000
   - type: FireProtection
     reduction: 0.2
+  - type: ClothesNightVision
   - type: Pierceable
     level: Rock
   - type: Armor
@@ -814,6 +818,7 @@
     lowPressureMultiplier: 1000
   - type: FireProtection
     reduction: 0.2
+  - type: ClothesNightVision
   - type: Pierceable
     level: Rock
   - type: Armor
@@ -863,6 +868,7 @@
   - type: PressureProtection
     highPressureMultiplier: 0.08
     lowPressureMultiplier: 1000
+  - type: ClothesNightVision
   - type: FireProtection
     reduction: 0.2
   - type: Pierceable
@@ -911,9 +917,12 @@
         shader: unshaded
   - type: PointLight
     color: "#0035ff"
+  - type: ShowNullSpace
+    showShader: False
   - type: PressureProtection
     highPressureMultiplier: 0.08
     lowPressureMultiplier: 1000
+  - type: ClothesNightVision
   - type: FireProtection
     reduction: 0.2
   - type: Pierceable
@@ -965,6 +974,7 @@
   - type: PressureProtection
     highPressureMultiplier: 0.08
     lowPressureMultiplier: 1000
+  - type: ClothesNightVision
   - type: FireProtection
     reduction: 0.2
   - type: Pierceable
@@ -1016,6 +1026,7 @@
   - type: PressureProtection
     highPressureMultiplier: 0.08
     lowPressureMultiplier: 1000
+  - type: ClothesNightVision
   - type: FireProtection
     reduction: 0.2
   - type: Pierceable
@@ -1067,6 +1078,7 @@
   - type: PressureProtection
     highPressureMultiplier: 0.08
     lowPressureMultiplier: 1000
+  - type: ClothesNightVision
   - type: FireProtection
     reduction: 0.2
   - type: Pierceable
@@ -1120,6 +1132,7 @@
     lowPressureMultiplier: 1000
   - type: FireProtection
     reduction: 0.2
+  - type: ClothesNightVision
   - type: Pierceable
     level: Rock
   - type: Armor
