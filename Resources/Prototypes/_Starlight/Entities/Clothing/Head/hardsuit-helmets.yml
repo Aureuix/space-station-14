@@ -1084,7 +1084,7 @@
 - type: entity
   parent: [ BaseNanoTrasenContraband, ClothingHeadHardsuitBase, ClothingHeadSuitWithLightBase, ClothingHeadLightParamsProfessional ]
   id: ClothingHeadHelmetHardsuitDecimus
-  name: decimus hardsuit helmet
+  name: NTSF decimus helmet
   description: A robust helmet for special operations.
   components:
   - type: BreathMask

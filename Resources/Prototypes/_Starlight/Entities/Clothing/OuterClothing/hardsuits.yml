@@ -2,7 +2,7 @@
 - type: entity
   parent: [ClothingOuterHardsuitBase, BaseBlueShieldContraband]
   id: ClothingOuterHardsuitBlueshield
-  name: blue shield hardsuit
+  name: blueshield hardsuit
   description: A high-tech hardsuit perfect for diving in front of Mr. Pre- Er, Captain.
   components:
   - type: Tag
@@ -587,8 +587,8 @@
 - type: entity
   parent: [BaseNanoTrasenContraband, ClothingOuterHardsuitBase]
   id: ClothingOuterHardsuitNTSF
-  name: nanotrasen special forces hardsuit
-  description: An advanced hardsuit favored by commandos for use in special operations.
+  name: NTSF battlesuit
+  description: An advanced battlesuit favored by commandos for use in special operations.
   components:
     - type: Sprite
       sprite: _Starlight/Clothing/OuterClothing/Hardsuits/NTSF_Hardsuit.rsi
@@ -635,7 +635,7 @@
 - type: entity
   parent: [BaseNanoTrasenContraband, ClothingOuterHardsuitBase]
   id: ClothingOuterHardsuitNTSFPrimus
-  name: NTSF primus hardsuit
+  name: NTSF primus battlesuit
   description: The famous blue striped armor of NTSF Task Force One "Primus". The best of the best NanoTrasen has to offer.
   components:
     - type: Sprite
@@ -683,7 +683,7 @@
 - type: entity
   parent: [BaseNanoTrasenContraband, ClothingOuterHardsuitBase]
   id: ClothingOuterHardsuitNTSFSecundus
-  name: NTSF secundus hardsuit
+  name: NTSF secundus battlesuit
   description: The reinforced chassis of this armor makes it extremely slow, but supremely durable. Worn by NTSF Task force "Secundus", and their steamroller approach to combat.
   components:
     - type: Sprite
@@ -731,7 +731,7 @@
 - type: entity
   parent: [BaseNanoTrasenContraband, ClothingOuterHardsuitBase]
   id: ClothingOuterHardsuitNTSFTertius
-  name: NTSF tertius hardsuit
+  name: NTSF tertius battlesuit
   description: Nailing it down won't save you. Utilized by Task Force "Tertius", infamous for being the "Repo Men" of NanoTrasen, taking what is theirs - and usually plenty more. Comes with built in blue space storage!
   components:
     - type: Sprite
@@ -792,7 +792,7 @@
 - type: entity
   parent: [BaseNanoTrasenContraband, ClothingOuterHardsuitBase]
   id: ClothingOuterHardsuitNTSFQuartus
-  name: NTSF quartus hardsuit
+  name: NTSF quartus battlesuit
   description: Only the most dangerous transports, volatile artifacts, and deadly prisoners fall under the watchful eye of NTSF Task Force Quartus.
   components:
     - type: Sprite
@@ -840,7 +840,7 @@
 - type: entity
   parent: [BaseNanoTrasenContraband, ClothingOuterHardsuitBase]
   id: ClothingOuterHardsuitNTSFQuintus
-  name: NTSF quintus hardsuit
+  name: NTSF quintus battlesuit
   description: Specially designed to combat Syndicate weaponry, there's no better gear for crushing Gorlex skulls.
   components:
     - type: Sprite
@@ -888,7 +888,7 @@
 - type: entity
   parent: [BaseNanoTrasenContraband, ClothingOuterHardsuitBase]
   id: ClothingOuterHardsuitNTSFSextus
-  name: NTSF sextus hardsuit
+  name: NTSF sextus battlesuit
   description: The uncanny markings upon the armor cause great discomfort to all who see them. Its labyrinthine gold inlays tell an esoteric story of magecraft.
   components:
     - type: Sprite
@@ -936,7 +936,7 @@
 - type: entity
   parent: [BaseNanoTrasenContraband, ClothingOuterHardsuitBase]
   id: ClothingOuterHardsuitNTSFSeptimus
-  name: NTSF septimus hardsuit
+  name: NTSF septimus battlesuit
   description: I am pest control guy. *Grabs Pulse Rifle* - and THIS is my pest control.
   components:
     - type: Sprite
@@ -984,7 +984,7 @@
 - type: entity
   parent: [BaseNanoTrasenContraband, ClothingOuterHardsuitBase]
   id: ClothingOuterHardsuitNTSFOctavius
-  name: NTSF octavius hardsuit
+  name: NTSF octavius battlesuit
   description: Start prayin', commie.
   components:
     - type: Sprite
@@ -1032,7 +1032,7 @@
 - type: entity
   parent: [BaseNanoTrasenContraband, ClothingOuterHardsuitBase, BaseToggleClothing]
   id: ClothingOuterHardsuitNTSFNonus
-  name: NTSF nonus hardsuit
+  name: NTSF nonus battlesuit
   description: May NanoTrasen have mercy, for I have none.
   components:
     - type: Sprite
@@ -1116,7 +1116,7 @@
 - type: entity
   parent: [BaseNanoTrasenContraband, ClothingOuterHardsuitBase]
   id: ClothingOuterHardsuitDecimus
-  name: NTSF decimus hardsuit
+  name: NTSF decimus battlesuit
   description: If you can read this, it's already too late.
   components:
     - type: Sprite
@@ -1165,7 +1165,7 @@
 - type: entity
   parent: [BaseTSFContraband, ClothingOuterHardsuitDecimus]
   id: ClothingOuterHardsuitTSFMARSOC
-  name: MARSOC hardsuit
+  name: MARSOC battlesuit
   description: A suit worn by marines of the Trans-Solar Federation's Marine Special Operations Command. Armored, space ready, and fireproof.
   components:
     - type: Sprite
@@ -1197,7 +1197,7 @@
 - type: entity
   parent: [BaseTSFContraband, ClothingOuterHardsuitNTSF]
   id: ClothingOuterHardsuitTSFPhantom
-  name: Phantom hardsuit
+  name: Phantom battlesuit
   description: A suit worn by marines of the Trans-Solar Federation's Marine special Operations Phantom. Armored, space ready and stealthy.
   components:
     - type: Sprite
