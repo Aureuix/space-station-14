@@ -776,7 +776,7 @@
         Caustic: 0.80
 
 - type: entity
-  parent: [ BaseNanoTrasenContraband, ClothingHeadHardsuitBase, ClothingHeadSuitWithLight, BaseClothingHeadLightParamsProfessional ]
+  parent: [ BaseNanoTrasenContraband, ClothingHeadHardsuitBase, ClothingHeadSuitWithLightBase, ClothingHeadLightParamsProfessional ]
   id: ClothingHeadHelmetHardsuitNTSFQuartus
   name: NTSF quartus helmet
   description: A robust helmet for special operations.
@@ -929,7 +929,7 @@
         Caustic: 0.80
 
 - type: entity
-  parent: [ BaseNanoTrasenContraband, ClothingHeadHardsuitBase, ClothingHeadSuitWithLight, BaseClothingHeadLightParamsProfessional ]
+  parent: [ BaseNanoTrasenContraband, ClothingHeadHardsuitBase, ClothingHeadSuitWithLightBase, ClothingHeadLightParamsProfessional ]
   id: ClothingHeadHelmetHardsuitNTSFSeptimus
   name: NTSF septimus helmet
   description: A robust helmet for special operations.
@@ -980,7 +980,7 @@
         Caustic: 0.70
 
 - type: entity
-  parent: [ BaseNanoTrasenContraband, ClothingHeadHardsuitBase, ClothingHeadSuitWithLightBase ]
+  parent: [ BaseNanoTrasenContraband, ClothingHeadHardsuitBase, ClothingHeadSuitWithLightBase, ClothingHeadLightParamsProfessional ]
   id: ClothingHeadHelmetHardsuitNTSFOctavius
   name: NTSF octavius helmet
   description: A robust helmet for special operations.
@@ -1031,7 +1031,7 @@
         Caustic: 0.80
 
 - type: entity
-  parent: [ BaseNanoTrasenContraband, ClothingHeadHardsuitBase, ClothingHeadSuitWithLightBase ]
+  parent: [ BaseNanoTrasenContraband, ClothingHeadHardsuitBase, ClothingHeadSuitWithLightBase, ClothingHeadLightParamsProfessional ]
   id: ClothingHeadHelmetHardsuitNTSFNonus
   name: NTSF nonus helmet
   description: A robust helmet for special operations.
