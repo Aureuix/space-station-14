@@ -13,7 +13,7 @@
         - map: [ "computerLayerKeyboard" ]
           state: generic_keyboard
         - map: [ "computerLayerScreen" ]
-          state: comm_sectoral
+          state: command
         - map: [ "computerLayerKeys" ]
           state: generic_keys
         - map: [ "enum.WiresVisualLayers.MaintenancePanel" ]
