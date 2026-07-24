@@ -55,10 +55,13 @@
     SyringeIpecac: 1
     ClothingEyesHudMedical: 2
     ClothingEyesEyepatchHudMedical: 2
-    ClothingEyeGlassesMedicalPrescription: 2 #Starlight
+    ClothingEyeGlassesMedicalPrescription: 2 # Starlight
     AutoMenderBruteFilled: 1
     AutoMenderBurnFilled: 1
-    SpaceMedipen: 1 #Starlight
+    SpaceMedipen: 1 # Starlight
+    BottleCaseMedical: 3 # SpL
+    PenPackMedical: 3 # SpL
+    
   contrabandInventory:
     PillCanisterRandom: 3
     PillSpaceDrugs: 3

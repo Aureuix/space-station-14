@@ -39,6 +39,9 @@
             "name": "Surgeon"
         },
         {
+            "name": "Blackstar"
+        },
+        {
             "name": "MailTech",
             "delays": [ [ 10, 0.2, 0.2, 0.2, 0.2, 0.2, 0.2, 0.2, 0.2, 0.2 ] ],
             "copyright": "Happyrobot33, fqqf"

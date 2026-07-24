@@ -53,7 +53,7 @@
   - type: Clothing
     sprite: Clothing/Mask/gassyndicate.rsi
   - type: FlashImmunity
-    blocksSpecialVision: false
+    blocksSpecialVision: False
   - type: EyeProtection
   - type: Pierceable
     level: Metal
@@ -324,6 +324,7 @@
   - type: IdentityBlocker
   - type: Tag
     tags:
+    - MimeMask #Starlight
     - HamsterWearable
     - WhitelistChameleon
   - type: HideLayerClothing
@@ -492,7 +493,6 @@
     - Hair
     - Snout
     hideOnToggle: true
-  - type: FlashImmunity
   - type: EyeProtection
   - type: Pierceable
     level: Metal
@@ -503,6 +503,8 @@
         Slash: 0.95
         Piercing: 0.95
         Heat: 0.95
+  - type: FlashImmunity # SpL
+    blocksSpecialVision: False
 
 - type: entity
   parent: ClothingMaskGasERT
@@ -528,6 +530,8 @@
         Slash: 0.80
         Piercing: 0.90
         Heat: 0.90
+  - type: FlashImmunity
+    blocksSpecialVision: False
 
 - type: entity
   parent: ClothingMaskBase
@@ -732,6 +736,11 @@
         Slash: 0.95
         Piercing: 0.95
         Heat: 0.95
+  # Starlight-start
+  - type: Construction
+    graph: ClothingMaskMimeSecurity
+    node: mask
+  # Starlight-end
 
 - type: entity
   parent: ClothingMaskBase
