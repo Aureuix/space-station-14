@@ -60,7 +60,7 @@
   recipeUnlocks:
   - WeaponLaserCarbine
   - FiringPinLaser # Starlight
-  - WeaponMechCombatFiredartLaser
+  - WeaponLaserSvalinn # SpL
   radioChannels:
   - Security
 
@@ -189,7 +189,7 @@
   cost: 10000
   recipeUnlocks:
   - WeaponLaserCannon
-  - WeaponMechCombatSolarisLaser
+  - WeaponMechCombatFiredartLaser # SpL
   - WeaponLaserImmolator
   radioChannels:
   - Security
@@ -298,7 +298,7 @@
   tier: 3
   cost: 15000
   recipeUnlocks:
-  - WeaponLaserSvalinn
+  - WeaponMechCombatSolarisLaser # SpL
   - WeaponTemperatureGun
   radioChannels:
   - Security
