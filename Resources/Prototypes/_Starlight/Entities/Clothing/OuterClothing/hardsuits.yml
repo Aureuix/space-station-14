@@ -1226,7 +1226,7 @@
   parent: [BaseNanoTrasenContraband, ClothingOuterHardsuitBase]
   id: ClothingOuterHardsuitThanatos
   name: Thanatos
-  description: An advanced hardsuit favored by commandos for use in special operations.
+  description: An advanced battlesuit favored by commandos for use in special operations.
   components:
     - type: Sprite
       sprite: Clothing/OuterClothing/Hardsuits/deathsquad.rsi
