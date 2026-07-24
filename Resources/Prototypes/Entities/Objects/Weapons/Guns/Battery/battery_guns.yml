@@ -471,13 +471,13 @@
     steps: 5
     zeroVisible: false
   - type: Battery # SpL
-    maxCharge: 2000 # SpL- doubled- 200 shots
-    startingCharge: 2000 # SpL- doubled- 200 shots
+    maxCharge: 2500 # SpL- more than doubled- 250 shots
+    startingCharge: 2500 # SpL- more than doubled- 250 shots
   - type: Appearance
   - type: Clothing
     sprite: Objects/Weapons/Guns/Battery/laser_cannon.rsi
   - type: Gun
-    fireRate: 8 # SpL making this more like a beam gun
+    fireRate: 12 # SpL making this more like a beam gun
     selectedMode: FullAuto # SpL- trust me
     availableModes:
       - FullAuto # SpL- trust me
@@ -544,6 +544,10 @@
   - type: Clothing
     sprite: Objects/Weapons/Guns/Battery/xray.rsi
   - type: Gun
+    selectedMode: FullAuto
+    availableModes:
+      - FullAuto
+      - SemiAuto
     soundGunshot:
       path: /Audio/Weapons/Guns/Gunshots/laser3.ogg
   - type: BatteryAmmoProvider

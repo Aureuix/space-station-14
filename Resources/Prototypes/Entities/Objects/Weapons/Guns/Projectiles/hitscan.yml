@@ -58,6 +58,7 @@
     damage:
       types:
         Heat: 10 # SpL- damage halved because all weapons using this have doubled speed # Starlight
+        Structural: 12 # SpL- realistically it should do SOME structural damage given what it is
 
 - type: entity
   parent: BasicHitscan
@@ -79,7 +80,8 @@
   - type: HitscanBasicDamage
     damage:
       types:
-        Heat: 3.5 # SpL- changed all guns using this to be like a beam weapon
+        Heat: 4 # SpL- changed all guns using this to be like a beam weapon
+        Structural: 16 # SpL- realistically it should do SOME structural damage given what it is
   - type: HitscanBasicVisuals
     muzzleFlash:
       sprite: Objects/Weapons/Guns/Projectiles/projectiles.rsi
@@ -113,6 +115,13 @@
       types:
         Heat: 5 # SpL- halved
         Radiation: 5 # SpL- halved
+  - type: HitscanPierce # SpL
+    chance: 1 # SpL
+    deviation: 0.00 # SpL
+    pierceLevel: Metal # SpL
+  - type: HitscanReflect # SpL
+    reflectiveType: NonEnergy # SpL
+    maxReflections: 2 # SpL
   - type: HitscanBasicVisuals
     muzzleFlash:
       sprite: Objects/Weapons/Guns/Projectiles/projectiles.rsi
