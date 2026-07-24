@@ -40,7 +40,7 @@
         name: Glasses
         insertVerbText: sheath-insert-verb
         ejectVerbText: sheath-eject-verb
-        insertSound: /Audio/_Starlight/Effects/yip.ogg
+        insertSound: _SpL/yip.ogg # weird file placemeent to try and satisfy the linter
         ejectSound: /Audio/_Starlight/Effects/whine/whine_12.ogg
         whitelist:
           tags:

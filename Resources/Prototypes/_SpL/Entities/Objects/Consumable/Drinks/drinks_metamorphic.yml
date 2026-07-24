@@ -26,6 +26,6 @@
         reagents:
         - ReagentId: ConstantSorrow
           Quantity: 30
-  - type: Icon
+  - type: Sprite
     sprite: _Spl/Objects/Consumable/Drinks/theconstantsorrow.rsi
     state: icon
