@@ -4,37 +4,12 @@
   name: sunshower plushie
   description: A life sized plushie of one of the members of CentComm's hired metaphysical security team. The tag says "44 unique informational phrases! She has removable glasses! Sword not included." Its right arm is missing and leaking stuffing...
   components:
-  - type: Item
-    size: Small
-#    sprite: _SpL/Objects/Fun/Plushies/kosame_plushie.rsi
-  - type: Sprite
-    sprite: _SpL/Objects/Fun/Plushies/kosame_plushie.rsi
-    state: iconALT
-  - type: ItemToggle
-    onUse: false
-    activated: true
-    verbToggleOn: plushie-voicebox-activate
-    verbToggleOff: plushie-voicebox-deactivate
-  - type: ComponentToggler
-    components:
-      - type: DatasetVocalizer
-        dataset: PlushiesKosame
-  - type: Vocalizer
-    minVocalizeInterval: 15
-    maxVocalizeInterval: 30
-    hideChat: true
-  - type: LanguageSpeaker
-  - type: LanguageKnowledge
-    speaks:
-    - GalacticCommon
-    - Fox
-    - CHaet
-    understands:
-    - Fox
-    - GalacticCommon
-    - CHaet
-  - type: Appearance
-
+    - type: Item
+      size: Small
+      sprite: _SpL/Objects/Fun/Plushies/kosame_plushie.rsi
+    - type: Sprite
+      sprite: _SpL/Objects/Fun/Plushies/kosame_plushie.rsi
+      state: iconALT
 
 - type: entity
   parent: BaseVulpkaninFoxPlushie
