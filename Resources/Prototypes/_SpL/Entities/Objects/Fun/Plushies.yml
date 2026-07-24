@@ -40,8 +40,8 @@
         name: Glasses
         insertVerbText: sheath-insert-verb
         ejectVerbText: sheath-eject-verb
-      #  insertSound: _SpL/yip.ogg # trying to satisfy the linter
-        ejectSound: /Audio/_Starlight/Effects/whine/whine_12.ogg
+        insertSound: "/Audio/_Starlight/Effects/yip.ogg"
+        ejectSound: "/Audio/_Starlight/Effects/whine/whine_12.ogg"
         whitelist:
           tags:
           - EyeGlasses

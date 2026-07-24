@@ -32,13 +32,13 @@
   id: DrinkConstantSorrow
   suffix: constant sorrow
   components:
-    - type: SolutionContainerManager
-      solutions:
-        drink:
-          maxVol: 30
-          reagents:
-            - ReagentId: ConstantSorrow
-              Quantity: 30
-    - type: Icon
-      sprite: Objects/Consumable/Drinks/theconstantsorrow.rsi
-      state: icon
+  - type: SolutionContainerManager
+    solutions:
+      drink:
+        maxVol: 30
+        reagents:
+          - ReagentId: ConstantSorrow
+            Quantity: 30
+  - type: Icon
+    sprite: _SpL/Objects/Consumable/Drinks/theconstantsorrow.rsi
+    state: icon
