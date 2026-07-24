@@ -106,8 +106,8 @@
 # Adminspawn jugs
 
 - type: entity
-  parent: Jug
-  id: JugBicaridine
+  parent: JugGold
+  id: GoldJugBicaridine
   suffix: bicaridine
   components:
     - type: Label
@@ -117,11 +117,11 @@
         drink:
           reagents:
             - ReagentId: Bicaridine
-              Quantity: 200
+              Quantity: 400
               
 - type: entity
-  parent: Jug
-  id: JugDermaline
+  parent: JugGold
+  id: GoldJugDermaline
   suffix: dermaline
   components:
     - type: Label
@@ -131,7 +131,7 @@
         drink:
           reagents:
             - ReagentId: Dermaline
-              Quantity: 200
+              Quantity: 400
               
 - type: entity
   parent: Jug
