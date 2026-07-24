@@ -1,17 +1,4 @@
 - type: entity
-  parent: BaseKitsunePlushie
-  id: PlushieKosame
-  name: sunshower plushie
-  description: A life sized plushie of one of the members of CentComm's hired metaphysical security team. The tag says "44 unique informational phrases! She has removable glasses! Sword not included." Its right arm is missing and leaking stuffing...
-  components:
-    - type: Item
-      size: Small
-      sprite: _SpL/Objects/Fun/Plushies/kosame_plushie.rsi
-    - type: Sprite
-      sprite: _SpL/Objects/Fun/Plushies/kosame_plushie.rsi
-      state: iconALT
-
-- type: entity
   parent: BaseVulpkaninFoxPlushie
   id: PlushieKanna
   name: kanna plushie
