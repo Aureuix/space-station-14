@@ -409,9 +409,6 @@
       prototypes: [ NanoTrasenSpecialForcesSextusGear ]
       roleLoadout: [ RoleSurvivalMilitaryDouble ]
     - type: BibleUser
-    - type: Tag
-      tags:
-        - Wizard
     - type: RandomMetadata
       nameSegments:
         - NamesMilitaryFirst
