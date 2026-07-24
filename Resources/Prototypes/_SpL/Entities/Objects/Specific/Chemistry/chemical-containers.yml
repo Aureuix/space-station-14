@@ -107,6 +107,34 @@
 
 - type: entity
   parent: Jug
+  id: JugBicaridine
+  suffix: bicaridine
+  components:
+    - type: Label
+      currentLabel: reagent-name-bicaridine
+    - type: SolutionContainerManager
+      solutions:
+        drink:
+          reagents:
+            - ReagentId: Bicaridine
+              Quantity: 200
+              
+- type: entity
+  parent: Jug
+  id: JugDermaline
+  suffix: dermaline
+  components:
+    - type: Label
+      currentLabel: reagent-name-dermaline
+    - type: SolutionContainerManager
+      solutions:
+        drink:
+          reagents:
+            - ReagentId: Dermaline
+              Quantity: 200
+              
+- type: entity
+  parent: Jug
   id: JugScoriDerma
   suffix: scori & derma
   components:
