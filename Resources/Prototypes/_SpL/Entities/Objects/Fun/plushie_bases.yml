@@ -40,7 +40,7 @@
       path: /Audio/_Starlight/Effects/yip.ogg
   - type: EmitSoundOnActivate
     sound:
-      path:/Audio/_Starlight/Effects/yip.ogg
+      path: /Audio/_Starlight/Effects/yip.ogg
   - type: EmitSoundOnCollide
     sound:
       path: /Audio/_Starlight/Effects/yip.ogg

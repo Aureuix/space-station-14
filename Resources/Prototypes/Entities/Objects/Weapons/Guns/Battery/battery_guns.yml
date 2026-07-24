@@ -19,7 +19,7 @@
     - suitStorage
   - type: AmmoCounter
   - type: Gun
-    fireRate: 2
+    fireRate: 4 # SpL
     selectedMode: SemiAuto
     availableModes:
     - SemiAuto
@@ -54,17 +54,17 @@
   - type: Clothing
     sprite: Objects/Weapons/Guns/Battery/laser_gun.rsi
   - type: Gun #Starlight - Start
-    fireRate: 2
-    selectedMode: SemiAuto
+    fireRate: 4 # SpL- doubled fire rate
+    selectedMode: FullAuto # SpL- trust me.
     availableModes:
     - SemiAuto
     - FullAuto #Just allows people to hold down left click
   - type: Battery 
-    maxCharge: 1500 # ~1:30 minutes for recharge
-    startingCharge: 1500
+    maxCharge: 1000 # SpL- reduced charge time to 1 minute # ~1:30 minutes for recharge
+    startingCharge: 1000
   - type: BatteryAmmoProvider
     proto: RedLaser
-    fireCost: 30 #Starlight - End
+    fireCost: 10 # SpL- halved fire cost #Starlight - End
   - type: StaticPrice
     price: 420
   - type: Tag
@@ -219,7 +219,7 @@
     storedOffset: 0,-5
   - type: BatteryAmmoProvider
     proto: RedMediumLaser
-    fireCost: 62.5
+    fireCost: 30 # SpL
   - type: MagazineVisuals
     magState: mag
     steps: 5
@@ -266,7 +266,7 @@
     sprite: Objects/Weapons/Guns/Battery/makeshift.rsi
   - type: BatteryAmmoProvider
     proto: RedLaser
-    fireCost: 62.5
+    fireCost: 30 # SpL
   - type: Battery
     maxCharge: 500
     startingCharge: 500
@@ -295,6 +295,7 @@
         shader: unshaded
   - type: Gun
     projectileSpeed: 10
+    fireRate: 1.5 # SpL- this is necessary
     soundGunshot:
       path: /Audio/Effects/Lightning/lightningshock.ogg
       params:
@@ -331,7 +332,7 @@
   - type: PacifismAllowedGun
   - type: BatteryAmmoProvider
     proto: RedLaserPractice
-    fireCost: 30 # Starlight
+    fireCost: 15 # SpL # Starlight
 
 # - type: entity
 #   name: pulse pistol
@@ -469,16 +470,24 @@
     magState: mag
     steps: 5
     zeroVisible: false
+  - type: Battery # SpL
+    maxCharge: 2500 # SpL- more than doubled- 250 shots
+    startingCharge: 2500 # SpL- more than doubled- 250 shots
   - type: Appearance
   - type: Clothing
     sprite: Objects/Weapons/Guns/Battery/laser_cannon.rsi
   - type: Gun
-    fireRate: 1.5
+    fireRate: 12 # SpL making this more like a beam gun
+    selectedMode: FullAuto # SpL- trust me
+    availableModes:
+      - FullAuto # SpL- trust me
     soundGunshot:
       path: /Audio/Weapons/Guns/Gunshots/laser_cannon.ogg
+      params:
+        volume: -2 # SpL- trust me on this one too
   - type: BatteryAmmoProvider
     proto: RedHeavyLaser
-    fireCost: 40 #Starlight
+    fireCost: 10 # SpL- making this more like a beam gun #Starlight
   - type: Tag
     tags:
     - TurretCompatibleWeapon
@@ -535,11 +544,15 @@
   - type: Clothing
     sprite: Objects/Weapons/Guns/Battery/xray.rsi
   - type: Gun
+    selectedMode: FullAuto
+    availableModes:
+      - FullAuto
+      - SemiAuto
     soundGunshot:
       path: /Audio/Weapons/Guns/Gunshots/laser3.ogg
   - type: BatteryAmmoProvider
     proto: XrayLaser
-    fireCost: 40 #Starlight
+    fireCost: 20 # SpL- halved #Starlight
   - type: MagazineVisuals
     magState: mag
     steps: 5
@@ -751,11 +764,12 @@
   - type: Clothing
     sprite: Objects/Weapons/Guns/Battery/antiquelasergun.rsi
   - type: Gun
+    fireRate: 3 # SpL
     soundGunshot:
       path: /Audio/Weapons/Guns/Gunshots/laser_cannon.ogg
   - type: BatteryAmmoProvider
     proto: RedMediumLaser
-    fireCost: 100
+    fireCost: 66 # 2/3rds of its norm
   - type: BatterySelfRecharger
     autoRechargeRate: 40
   - type: MagazineVisuals
@@ -810,11 +824,12 @@
   - type: Clothing
     sprite: Objects/Weapons/Guns/Battery/advancedlasergun.rsi
   - type: Gun
+    fireRate: 3 # SpL
     soundGunshot:
       path: /Audio/Weapons/Guns/Gunshots/laser_cannon.ogg
   - type: BatteryAmmoProvider
     proto: RedMediumLaser
-    fireCost: 100
+    fireCost: 66 # SpL- 2/3rds
   - type: BatterySelfRecharger
     autoRechargeRate: 30
   - type: MagazineVisuals
@@ -908,12 +923,12 @@
     - state: base
       map: ["enum.GunVisualLayers.Base"]
   - type: Gun
-    fireRate: 1
+    fireRate: 2 # SpL- doubled
     soundGunshot:
       path: /Audio/Weapons/Guns/Gunshots/laser_clown.ogg
   - type: BatteryAmmoProvider
     proto: RedMediumLaser
-    fireCost: 100
+    fireCost: 50 # SpL- halved
   - type: BatterySelfRecharger
     autoRechargeRate: 40
   - type: StaticPrice
@@ -978,7 +993,7 @@
   name: energy magnum
   parent: [BaseWeaponBatterySmall, BaseDetectiveGrandTheftContraband] # Starlight - detective grand contra
   id: WeaponEnergyMagnum
-  description: A high powered self-charging energy pistol designed for elite security personnel. It has has three firing modes allowing for either high damage, window piercing, or non-lethal disabling.
+  description: A high powered self-charging energy pistol designed for elite security personnel. It has has three firing modes allowing for either high damage, structural disassembly, or non-lethal disabling.
   components:
   - type: Sprite
     sprite: Objects/Weapons/Guns/Battery/energy_magnum.rsi
@@ -1005,6 +1020,7 @@
   - type: Gun
     soundGunshot:
       path: /Audio/Weapons/Guns/Gunshots/laser_cannon.ogg
+    fireRate: 2.25 # SpL- don't want this thing being overtuned from a buffed firerate
   - type: BatteryAmmoProvider
     proto: BulletLaserMagnumSL  # Starlight - Hitscan
     fireCost: 150
@@ -1012,7 +1028,7 @@
     fireModes:
     - proto: BulletLaserMagnumSL # Starlight - Hitscan
       fireCost: 150
-    - proto: BulletLaserWindowPiercingMagnumSL # Starlight - Hitscan
+    - proto: BulletLaserDestructionMagnumSL # Starlight - Hitscan
       fireCost: 150
     - proto: DisablerBolt # Starlight - Hitscan
       fireCost: 62.5
@@ -1089,7 +1105,7 @@
   # region starlight - fix xenoborg cannon's absurdly low fire cost.
   - type: BatteryAmmoProvider
     proto: RedHeavyLaser
-    fireCost: 100
+    fireCost: 10 # SpL- I mean it seems reasonable given what we're doing to it
   # end region starlight
   - type: BatterySelfRecharger
     autoRechargeRate: 30

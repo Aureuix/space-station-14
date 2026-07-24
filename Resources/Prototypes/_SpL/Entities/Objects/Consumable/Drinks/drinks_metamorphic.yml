@@ -16,6 +16,19 @@
 
 - type: entity
   parent: DrinkGlass
+  id: DrinkWater
+  suffix: water
+  components:
+  - type: SolutionContainerManager
+    solutions:
+      drink:
+        maxVol: 30
+        reagents:
+        - ReagentId: Water
+          Quantity: 30
+    
+- type: entity
+  parent: DrinkGlass
   id: DrinkConstantSorrow
   suffix: constant sorrow
   components:
@@ -24,8 +37,8 @@
       drink:
         maxVol: 30
         reagents:
-        - ReagentId: ConstantSorrow
-          Quantity: 30
+          - ReagentId: ConstantSorrow
+            Quantity: 30
   - type: Icon
-    sprite: _Spl/Objects/Consumable/Drinks/theconstantsorrow.rsi
+    sprite: _SpL/Objects/Consumable/Drinks/theconstantsorrow.rsi
     state: icon
