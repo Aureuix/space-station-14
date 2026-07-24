@@ -7,8 +7,8 @@
       sprite: _Starlight/Mobs/Customization/GhostThemes/jellyfish.rsi
       state: ghost_jellyfish
     color: "#ffffff"
-  requirements:
-  - !type:NullLinkPlayTimeRequirement
-    server: TRIESTEPORT.main
-    tracker: Overall
-    time: 36000 # 10h
+#  requirements:
+#  - !type:NullLinkPlayTimeRequirement
+#    server: TRIESTEPORT.main
+#    tracker: Overall
+#    time: 36000 # 10h # SpL - power to the people

@@ -13,10 +13,11 @@
     NanoTrasenRepresentative: 165
     Magistrate: 176
     NanotrasenCareerTrainer: 150
-    IAA: 76
+    IAA: 155
 
     Chemist: 90
-    Paramedic: 50
+    Psychologist: 76
+    Paramedic: 64
     MedicalDoctor: 58
     MedicalIntern: 23
     Surgeon: 90
@@ -46,10 +47,13 @@
     Clown: 30
     ServiceWorker: 23
     Performer: 23
+    Reporter: 46
     Assistant: 15
+    Boxer: 23
+    Zookeeper: 34
 
     Scientist: 65
-    Roboticist: 56
+    Roboticist: 65
     ResearchAssistant: 23
 
     SalvageLead: 75

@@ -9,6 +9,7 @@
   access:
   - Maintenance # Remove maint access for all gimmick jobs once access work is completed # SpL- removed the to-do from here- ARE YOU FUCKING INSANE???
   - Theatre
+  - Service # SpL
   special:
   - !type:GiveItemOnHolidaySpecial
     holiday: MikuDay

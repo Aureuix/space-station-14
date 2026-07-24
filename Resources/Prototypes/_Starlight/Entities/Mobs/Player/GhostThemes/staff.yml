@@ -7,9 +7,9 @@
       sprite: Mobs/Demons/abomination.rsi
       state: abomination
     color: "#ffffff"
-  requirements:
-  - !type:DiscordRolesRequirement
-    requirement: StaffRolesReq
+#  requirements:
+#  - !type:DiscordRolesRequirement
+#    requirement: StaffRolesReq # SpL - power to the people
 
 - type: ghostTheme
   id: SpaceDragonStaffTheme
@@ -21,9 +21,9 @@
       sprite: Mobs/Aliens/Carps/dragon.rsi
       state: alive
     color: "#ffffff"
-  requirements:
-  - !type:DiscordRolesRequirement
-    requirement: StaffRolesReq
+#  requirements:
+#  - !type:DiscordRolesRequirement
+#    requirement: StaffRolesReq # SpL - power to the people
 
 - type: ghostTheme
   id: BuffRatKingTheme
@@ -35,9 +35,9 @@
       sprite: _Starlight/Mobs/Customization/GhostThemes/ghosts.rsi
       state: ghost-buff-rat-king
     color: "#ffffff"
-  requirements:
-  - !type:DiscordRolesRequirement
-    requirement: TicketsAdministratorReq
+#  requirements:
+#  - !type:DiscordRolesRequirement
+#    requirement: TicketsAdministratorReq # SpL - power to the people
 
 - type: ghostTheme
   id: FoxTheme
@@ -49,9 +49,9 @@
       sprite: _Starlight/Mobs/Customization/GhostThemes/ghosts.rsi
       state: ghost-fox
     color: "#ffffff"
-  requirements:
-  - !type:DiscordRolesRequirement
-    requirement: TicketsAdministratorReq
+#  requirements:
+#  - !type:DiscordRolesRequirement
+#    requirement: TicketsAdministratorReq # SpL - power to the people
 
 - type: ghostTheme
   id: LizardPlushie
@@ -63,9 +63,9 @@
       sprite: _Starlight/Mobs/Customization/GhostThemes/ghosts.rsi
       state: ghost-lizard-plushie
     color: "#ffffff"
-  requirements:
-  - !type:DiscordRolesRequirement
-    requirement: TicketsAdministratorReq
+#  requirements:
+#  - !type:DiscordRolesRequirement
+#    requirement: TicketsAdministratorReq # SpL - power to the people
 
 - type: ghostTheme
   id: MothroachTheme
@@ -77,9 +77,9 @@
       sprite: _Starlight/Mobs/Customization/GhostThemes/ghosts.rsi
       state: ghost-mothroach
     color: "#ffffff"
-  requirements:
-  - !type:DiscordRolesRequirement
-    requirement: TicketsAdministratorReq
+#  requirements:
+#  - !type:DiscordRolesRequirement
+#    requirement: TicketsAdministratorReq # SpL - power to the people
 
 - type: ghostTheme
   id: ScurretTheme
@@ -91,6 +91,6 @@
       sprite: _Starlight/Mobs/Customization/GhostThemes/ghosts.rsi
       state: ghost-scurret
     color: "#ffffff"
-  requirements:
-  - !type:DiscordRolesRequirement
-    requirement: TicketsAdministratorReq
+#  requirements:
+#  - !type:DiscordRolesRequirement
+#    requirement: TicketsAdministratorReq # SpL - power to the people

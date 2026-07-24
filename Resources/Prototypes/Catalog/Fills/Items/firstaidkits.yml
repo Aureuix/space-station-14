@@ -111,8 +111,8 @@
         children:
         - id: MedicatedSuture
         - id: RegenerativeMesh
-        - id: SyringeEphedrine
-        - id: SyringeSaline
+        - id: EphedrineMicroinjecter # SpL
+        - id: SalineMicroinjector # SpL
         - id: BruteAutoInjector
         - id: BurnAutoInjector
 

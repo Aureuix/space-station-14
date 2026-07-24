@@ -36,6 +36,9 @@
   - type: StationAiHeld
   - type: StationAiOverlay
   - type: ShowElectrocutionHUD
+  - type: Vocal # SpL
+    sounds:
+      Unsexed: UnisexSilicon # SpL
   - type: ActionGrant
     actions:
     - ActionJumpToCore

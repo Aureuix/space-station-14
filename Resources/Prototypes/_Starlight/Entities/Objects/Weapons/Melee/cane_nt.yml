@@ -11,6 +11,8 @@
       map: [ "enum.ToggleableVisuals.Layer" ]
   - type: Stunbaton
     energyPerUse: 25
+  - type: BatterySelfRecharger # SpL
+    autoRechargeRate: 10 # SpL
   - type: ItemToggle
     predictable: false
     soundActivate:

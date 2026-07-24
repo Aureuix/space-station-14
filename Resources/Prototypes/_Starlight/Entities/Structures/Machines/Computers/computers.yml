@@ -206,7 +206,7 @@
 
 - type: entity
   parent: BaseComputerShuttle
-  id: CompuerShuttleSalvage
+  id: ComputerShuttleSalvage
   name: salvage shuttle console
   components:
   - type: Sprite
@@ -242,7 +242,7 @@
   parent: BaseComputerAiAccess
   id: MassDriverComputer
   name: mass driver computer
-  description: A computer for control mass driver.
+  description: A computer for controlling a mass driver. # SpL- this spelling was hideous
   components:
   - type: MassDriverConsole
   - type: ActivatableUI
@@ -260,7 +260,7 @@
     - map: ["computerLayerKeyboard"]
       state: generic_keyboard
     - map: ["computerLayerScreen"]
-      state: sensors
+      state: mass_driver # SpL- why was the mass driver computer not a mass driver sprite
     - map: ["computerLayerKeys"]
       state: generic_keys
     - map: [ "enum.WiresVisualLayers.MaintenancePanel" ]

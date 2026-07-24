@@ -7,9 +7,9 @@
       sprite: _Starlight/Mobs/Customization/GhostThemes/ghosts.rsi
       state: ghost-king
     color: "#ffffff"
-  requirements:
-  - !type:DiscordRolesRequirement
-    requirement: GoldEventWinnerReq
+#  requirements:
+#  - !type:DiscordRolesRequirement
+#    requirement: GoldEventWinnerReq # SpL - power to the people
 
 - type: ghostTheme
   id: CarpGames
@@ -20,6 +20,6 @@
       sprite: _Starlight/Mobs/Customization/GhostThemes/ghosts.rsi
       state: ghost-carpman
     color: "#ffffff"
-  requirements:
-  - !type:DiscordRolesRequirement
-    requirement: CarpGamesReq
+#  requirements:
+#  - !type:DiscordRolesRequirement
+#    requirement: CarpGamesReq # SpL - power to the people

@@ -104,30 +104,30 @@
   - type: Storage
     whitelist:
        tags:
-        - GlassBeaker
+    #    - GlassBeaker
         - Patch
         - Bottle
-        - Spray
+    #    - Spray
         - Brutepack
         - Bloodpack
         - Gauze
-        - Hypospray
+    #    - Hypospray
         - Ointment
-        - CigPack
-        - PillCanister
-        - Radio
-        - DiscreteHealthAnalyzer
-        - SurgeryTool
-        - Dropper
-        - BodyBag
+    #    - CigPack
+    #    - PillCanister
+    #    - Radio
+    #    - DiscreteHealthAnalyzer
+    #    - SurgeryTool
+    #    - Dropper
+    #    - BodyBag
         - Vial
         - AutoMender
         - Patch # SpL
-        - PatchPack # SpL
+    #    - PatchPack # SpL
        components:
         - Injector
         - Pill
-        - HandLabeler
+    #    - HandLabeler
         # - ConditionalHealing # SpL- reimplement when IPCs are added
     #Starlight end
   - type: Sprite

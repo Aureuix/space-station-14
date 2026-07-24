@@ -1,0 +1,13 @@
+﻿- type: entity
+  parent: [BaseComputerCircuitboard, BaseGrandTheftContraband]
+  id: AdminRecordsComputerCircuitboard
+  name: secure administrative records computer board
+  description: A computer printed circuit board for a secure administrative records computer.
+  components:
+    - type: Sprite
+      state: cpu_command
+    - type: ComputerBoard
+      prototype: ComputerAdminRecords
+    - type: Tag
+      tags:
+        - HighRiskItem
