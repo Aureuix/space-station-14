@@ -22,7 +22,7 @@
     areaInsert: true
     whitelist:
       components:
-        - FitsInDispenser
+        # - FitsInDispenser
         - Pill
         - Patch
       tags:
@@ -31,4 +31,10 @@
         - Bottle
         - Syringe
         - Dropper
+        - PillCanister # SpL
+        - PatchPack # SpL
+        - Bottle # SpL
+        - Vial # SpL
+        - GlassBeaker # SpL
+        - ChemDispensable # SpL
   - type: Dumpable
