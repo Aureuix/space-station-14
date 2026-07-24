@@ -33,23 +33,6 @@
     - Fox
     - GalacticCommon
     - CHaet
-#  - type: ItemSlots    // nuclear option for now until the damn yaml linter will cooperate
-#    slots:
-#      item:
-#        name: Glasses
-#        insertVerbText: sheath-insert-verb
-#        ejectVerbText: sheath-eject-verb
-#        insertSound: "/Audio/_Starlight/Effects/yip.ogg"
-#        ejectSound: "/Audio/_Starlight/Effects/whine/whine_12.ogg"
-#        whitelist:
-#          tags:
-#          - EyeGlasses
-#  - type: ItemMapper
-#    mapLayers:
-#      icon:
-#        whitelist:
-#          tags:
-#          - EyeGlasses
   - type: Appearance
 
 
