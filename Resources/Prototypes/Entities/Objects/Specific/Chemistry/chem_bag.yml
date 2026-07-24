@@ -25,6 +25,8 @@
         # - FitsInDispenser
         - Pill
         - Patch
+        - HandLabeler # SpL- might as well right?
+        - SolutionScanner # SpL- yes this includes shit like the bso hud. I'm sure it's fine. chemist antags eat your hearts out
       tags:
         - Document
         - PillCanister
