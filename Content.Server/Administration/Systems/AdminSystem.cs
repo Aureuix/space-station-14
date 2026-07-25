@@ -397,15 +397,20 @@ public sealed class AdminSystem : EntitySystem
 
         var entity = mind.OwnedEntity.Value;
 
-        if (TryComp(entity, out TransformComponent? transform))
-        {
-            var coordinates = _transform.GetMoverCoordinates(entity, transform);
-            var name = Identity.Entity(entity, EntityManager);
-            _popup.PopupCoordinates(Loc.GetString("admin-erase-popup", ("user", name)), coordinates, PopupType.LargeCaution);
-            var filter = Filter.Pvs(coordinates, 1, EntityManager, _playerManager);
-            var audioParams = new AudioParams().WithVolume(3);
-            _audio.PlayStatic("/Audio/Effects/pop_high.ogg", filter, coordinates, true, audioParams);
-        }
+            if (TryComp(entity, out TransformComponent? transform))
+            {
+                var coordinates = _transform.GetMoverCoordinates(entity, transform);
+                var name = Identity.Entity(entity, EntityManager);
+                _popup.PopupCoordinates(Loc.GetString("admin-erase-popup", ("user", name)), coordinates, PopupType.LargeCaution);
+                var filter = Filter.Pvs(coordinates, 1, EntityManager, _playerManager);
+                _audio.PlayStatic(
+                        "/Audio/Effects/pop_high.ogg",
+                        filter,
+                        coordinates,
+                        true,
+                        AudioParams.Default.AddVolume(3)
+                        );
+            }
 
         foreach (var item in _inventory.GetHandOrInventoryEntities(entity))
         {
