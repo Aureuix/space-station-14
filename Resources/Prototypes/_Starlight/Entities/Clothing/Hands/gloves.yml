@@ -4,19 +4,19 @@
   name: black nitrile gloves
   description: High-quality nitrile gloves. Expensive medical PPE, now in black!
   components:
-  - type: Sprite
-    sprite: _Starlight/Clothing/Hands/Gloves/blacknitrile.rsi
-  - type: Clothing
-    sprite: _Starlight/Clothing/Hands/Gloves/blacknitrile.rsi
-  - type: Fiber
-    fiberMaterial: fibers-black-nitrile
-  - type: FingerprintMask
-  - type: Armor
-    modifiers:
-      coefficients:
-        Caustic: 0.9
-  - type: ZombificationResistance
-    zombificationResistanceCoefficient: 0.9
+    - type: Sprite
+      sprite: _Starlight/Clothing/Hands/Gloves/blacknitrile.rsi
+    - type: Clothing
+      sprite: _Starlight/Clothing/Hands/Gloves/blacknitrile.rsi
+    - type: Fiber
+      fiberMaterial: fibers-black-nitrile
+    - type: FingerprintMask
+    - type: Armor
+      modifiers:
+        coefficients:
+          Caustic: 0.9
+    - type: ZombificationResistance
+      zombificationResistanceCoefficient: 0.9
 
 - type: entity
   parent: [ClothingHandsButcherable, BaseSecurityContraband]
@@ -24,13 +24,13 @@
   name: red security gloves
   description: Black gloves, but slightly red! The detective will LOVE you if you wear these.
   components:
-  - type: Sprite
-    sprite: _Starlight/Clothing/Hands/Gloves/securityglovesred.rsi
-  - type: Clothing
-    sprite: _Starlight/Clothing/Hands/Gloves/securityglovesred.rsi
-  - type: Fiber
-    fiberMaterial: fibers-red-and-black-woven
-  - type: FingerprintMask
+    - type: Sprite
+      sprite: _Starlight/Clothing/Hands/Gloves/securityglovesred.rsi
+    - type: Clothing
+      sprite: _Starlight/Clothing/Hands/Gloves/securityglovesred.rsi
+    - type: Fiber
+      fiberMaterial: fibers-red-and-black-woven
+    - type: FingerprintMask
 
 - type: entity
   parent: [ClothingHandsButcherable, BaseSecurityContraband]
@@ -38,112 +38,80 @@
   name: fingerless red security gloves
   description: Black gloves, but slightly red! The detective will HATE you if you wear these.
   components:
-  - type: Sprite
-    sprite: _Starlight/Clothing/Hands/Gloves/securityglovesfingerlessred.rsi
-  - type: Clothing
-    sprite: _Starlight/Clothing/Hands/Gloves/securityglovesfingerlessred.rsi
-  - type: Fiber
-    fiberMaterial: fibers-red-and-black-woven
+    - type: Sprite
+      sprite: _Starlight/Clothing/Hands/Gloves/securityglovesfingerlessred.rsi
+    - type: Clothing
+      sprite: _Starlight/Clothing/Hands/Gloves/securityglovesfingerlessred.rsi
+    - type: Fiber
+      fiberMaterial: fibers-red-and-black-woven
 
 - type: entity
-  parent: ClothingHandsGlovesSyntheticBase
+  parent: ClothingHandsMittensBase # That's why these exist in real life.
   id: ClothingHandsCatPaws
-  name: cat paws gloves
+  name: cat paw mittens
   description: Extra soft cat paws, especially made for the most stern assistants.
   abstract: true
   components:
-  - type: Sprite
-    sprite: _Starlight/Clothing/Hands/Gloves/paws.rsi
-  - type: Clothing
-    sprite: _Starlight/Clothing/Hands/Gloves/paws.rsi
+    - type: Sprite
+      sprite: _Starlight/Clothing/Hands/Gloves/paws.rsi
+    - type: Clothing
+      sprite: _Starlight/Clothing/Hands/Gloves/paws.rsi
 
 - type: entity
   parent: ClothingHandsCatPaws
   id: ClothingHandsCatPawsWhite
+  name: white cat paw mittens
   components:
-  - type: Sprite
-    state: white
-  - type: Clothing
-    clothingVisuals:
-      gloves:
-      - state: white-equipped-HAND
-  - type: Fiber
-    fiberColor: fibers-white
+    - type: Sprite
+      state: white
+    - type: Clothing
+      clothingVisuals:
+        gloves:
+          - state: white-equipped-HAND
+    - type: Fiber
+      fiberColor: fibers-white-fur
 
 - type: entity
   parent: ClothingHandsCatPaws
   id: ClothingHandsCatPawsBrown
+  name: brown cat paw mittens
   components:
-  - type: Sprite
-    state: brown
-  - type: Clothing
-    clothingVisuals:
-      gloves:
-      - state: brown-equipped-HAND
-  - type: Fiber
-    fiberColor: fibers-brown
+    - type: Sprite
+      state: brown
+    - type: Clothing
+      clothingVisuals:
+        gloves:
+          - state: brown-equipped-HAND
+    - type: Fiber
+      fiberColor: fibers-brown-fur
 
 - type: entity
   parent: ClothingHandsCatPaws
   id: ClothingHandsCatPawsBlack
+  name: black cat paw mittens
   components:
-  - type: Sprite
-    state: black
-  - type: Clothing
-    clothingVisuals:
-      gloves:
-      - state: black-equipped-HAND
-  - type: Fiber
-    fiberColor: fibers-black
+    - type: Sprite
+      state: black
+    - type: Clothing
+      clothingVisuals:
+        gloves:
+          - state: black-equipped-HAND
+    - type: Fiber
+      fiberColor: fibers-black-fur
 
 - type: entity
   parent: ClothingHandsCatPaws
   id: ClothingHandsCatPawsBlackWhite
+  name: black-white cat paw mittens
   components:
-  - type: Sprite
-    state: black_white
-  - type: Clothing
-    clothingVisuals:
-      gloves:
-      - state: black_white-equipped-HAND
-  - type: Fiber
-    fiberColor: fibers-grey
-
-- type: entity
-  parent: ClothingHandsCatPawsWhite
-  name: insulated cat paws
-  id: ClothingHandsCatPawsWhiteInsulated
-  components:
-  - type: Insulated
-  - type: Fiber
-    fiberMaterial: fibers-insulative
-
-- type: entity
-  parent: ClothingHandsCatPawsBrown
-  id: ClothingHandsCatPawsBrownInsulated
-  name: insulated cat paws
-  components:
-  - type: Insulated
-  - type: Fiber
-    fiberMaterial: fibers-insulative
-
-- type: entity
-  parent: ClothingHandsCatPawsBlack
-  id: ClothingHandsCatPawsBlackInsulated
-  name: insulated cat paws
-  components:
-  - type: Insulated
-  - type: Fiber
-    fiberMaterial: fibers-insulative
-
-- type: entity
-  parent: ClothingHandsCatPawsBlackWhite
-  id: ClothingHandsCatPawsBlackWhiteInsulated
-  name: insulated cat paws
-  components:
-  - type: Insulated
-  - type: Fiber
-    fiberMaterial: fibers-insulative
+    - type: Sprite
+      state: black_white
+    - type: Clothing
+      clothingVisuals:
+        gloves:
+          - state: black_white-equipped-HAND
+    - type: Fiber
+      fiberColor: fibers-grey-fur
 
 - type: entity
   parent: [ BaseEngineeringSecurityCommandSalvageMiningContraband, ClothingHandsGlovesCombat ]
@@ -165,13 +133,13 @@
   name: red regalia gloves
   description: A pair of fancy red gloves like a mafiaoso would wear.
   components:
-  - type: Sprite
-    sprite: _Starlight/Clothing/Hands/Gloves/red_regalia.rsi
-  - type: Clothing
-    sprite: _Starlight/Clothing/Hands/Gloves/red_regalia.rsi
-  - type: Fiber
-    fiberColor: fibers-red
-  - type: FingerprintMask
+    - type: Sprite
+      sprite: _Starlight/Clothing/Hands/Gloves/red_regalia.rsi
+    - type: Clothing
+      sprite: _Starlight/Clothing/Hands/Gloves/red_regalia.rsi
+    - type: Fiber
+      fiberColor: fibers-red
+    - type: FingerprintMask
 
 - type: entity
   parent: ClothingHandsGlovesSyntheticBase
@@ -179,12 +147,12 @@
   name: delicate tactical maid gloves
   description: Tactical maid gloves, every self-respecting maid should be able to discreetly eliminate her goals. Made of a thin material, far too thin to be insulated.
   components:
-  - type: Sprite
-    sprite: Clothing/Hands/Gloves/tacticalmaidgloves.rsi
-  - type: Clothing
-    sprite: Clothing/Hands/Gloves/tacticalmaidgloves.rsi
-  - type: Fiber
-    fiberColor: fibers-black
+    - type: Sprite
+      sprite: Clothing/Hands/Gloves/tacticalmaidgloves.rsi
+    - type: Clothing
+      sprite: Clothing/Hands/Gloves/tacticalmaidgloves.rsi
+    - type: Fiber
+      fiberColor: fibers-black
 
 - type: entity
   parent: ClothingHandsGlovesSyntheticBase
@@ -192,9 +160,9 @@
   name: elegant maid gloves
   description: Pristine maid gloves, like any self-respecting maid should possess.
   components:
-  - type: Sprite
-    sprite: _Starlight/Clothing/Hands/Gloves/elegantmaidgloves.rsi
-  - type: Clothing
-    sprite: _Starlight/Clothing/Hands/Gloves/elegantmaidgloves.rsi
-  - type: Fiber
-    fiberColor: fibers-white
+    - type: Sprite
+      sprite: _Starlight/Clothing/Hands/Gloves/elegantmaidgloves.rsi
+    - type: Clothing
+      sprite: _Starlight/Clothing/Hands/Gloves/elegantmaidgloves.rsi
+    - type: Fiber
+      fiberColor: fibers-white
