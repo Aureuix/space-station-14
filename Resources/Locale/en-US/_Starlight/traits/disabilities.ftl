@@ -9,6 +9,3 @@ trait-extremelightsensitivity-desc = You are extremely more sensitive to light t
 
 trait-nightblind-name = Nightblind
 trait-nightblind-desc = Unlike the rest of your species, you cannot see in the dark.
-
-trait-unclonable-name = Unclonable
-trait-unclonable-desc = Your unique DNA composition is incompatible with cloning technology. You cannot be cloned.
