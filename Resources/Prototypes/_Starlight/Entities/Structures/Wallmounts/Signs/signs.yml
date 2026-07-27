@@ -142,26 +142,6 @@
 
 - type: entity
   parent: BaseSign
-  id: SignRoboSurgery
-  name: robo surgery sign
-  description: A sign indicating the presence of borgifcation.
-  components:
-    - type: Sprite
-      sprite: _Starlight/Structures/Wallmounts/signs.rsi
-      state: robo_surgery
-
-- type: entity
-  parent: BaseSign
-  id: SignHeat
-  name: heating sign
-  description: A sign indicating the presence of heating equipment.
-  components:
-    - type: Sprite
-      sprite: _Starlight/Structures/Wallmounts/signs.rsi
-      state: heat
-
-- type: entity
-  parent: BaseSign
   id: SignBreakCargo
   name: cargo breakroom sign
   description: A sign indicating where the breakroom is.
