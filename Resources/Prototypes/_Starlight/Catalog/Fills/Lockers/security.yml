@@ -1,10 +1,8 @@
 - type: entity
-  parent: [GunSafeBaseArmorySL, BaseRestrictedContraband]
+  parent: [GunSafeBaseSecure, BaseRestrictedContraband]
   id: GunSafeEnergySniper
   name: LWAP safe
   components:
-  - type: EntityStorageVisuals
-    stateDoorClosed: lwap_gunsafe_doors
   - type: Contraband
     allowedDepartments: [ Security ]
   - type: EntityTableContainerFill
@@ -176,13 +174,11 @@
 #          amount: 2
 
 - type: entity
-  parent: [GunSafeBaseArmorySL, BaseSecurityContraband]
+  parent: [GunSafeBaseSecure, BaseSecurityContraband]
   id: GunSafeHeavyWeapons # To save remapping
-  name: DMR safe
+  name: DMR safe 
   description: Contains a set of L10 DMRs
   components:
-  - type: EntityStorageVisuals
-    stateDoorClosed: dmr_gunsafe_doors
   - type: EntityTableContainerFill
     containers:
       entity_storage: !type:AllSelector
@@ -197,14 +193,12 @@
           amount: 1
 
 - type: entity
-  parent: [GunSafeBaseArmorySL, BaseSecurityContraband]
+  parent: [GunSafe, BaseSecurityContraband]
   id: GunSafeLMG
   categories: [ DoNotMap ]
   name: heavy weapon safe
   description: For when talking it out just isn't enough.
   components:
-  - type: EntityStorageVisuals
-    stateDoorClosed: lmg_gunsafe_doors
   - type: AccessReader
     access: [["Armory"]]
   - type: EntityTableContainerFill
