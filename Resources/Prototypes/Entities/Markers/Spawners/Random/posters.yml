@@ -119,7 +119,6 @@
       - PosterPrisonEspionage
       - PosterPrisonPinup
       - PosterPrisonObscene
-      - PosterContrabandNaN
       #endregion Starlight
     chance: 1
 
