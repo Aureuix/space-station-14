@@ -1,4 +1,4 @@
-NanoTrasen- type: entity
+- type: entity
   parent: ClothingShoesBaseButcherable
   id: ClothingShoesBootsWork
   name: workboots
