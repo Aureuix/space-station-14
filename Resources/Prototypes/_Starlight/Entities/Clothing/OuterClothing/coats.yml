@@ -33,10 +33,59 @@
   - type: Item
 
 - type: entity
-  parent: [ ClothingOuterStorageFoldableBase, ClothingOuterColdBase, BaseNanoTrasenContraband, AllowSuitStorageClothingGasTanks ]
+  parent: [ ClothingOuterStorageBase, BaseNanoTrasenContraband ]
+  id: ClothingOuterCoatMagi
+  name: magistrate longcoat
+  description: New and improved, this jacket actually keeps you warm! Brought to you by the NanoTrasen Fashion Board.
+  components:
+    - type: Sprite
+      sprite: _Starlight/Clothing/OuterClothing/Coats/magi_overcoat.rsi
+    - type: Clothing
+      sprite: _Starlight/Clothing/OuterClothing/Coats/magi_overcoat.rsi
+      clothingVisuals:
+        outerClothing:
+          - state: equipped-OUTERCLOTHING
+    - type: Pierceable
+      level: Metal
+    - type: TemperatureProtection
+      heatingCoefficient: 1.1
+      coolingCoefficient: 0.35
+    - type: Armor
+      modifiers:
+        coefficients:
+          Blunt: 0.9
+          Slash: 0.9
+          Piercing: 0.8
+          Cold: 0.85
+
+- type: entity
+  parent: [ClothingOuterBase, BaseNanoTrasenContraband]
+  id: ClothingOuterRobesMagistrate
+  name: magistrate robes
+  description: This robe commands authority. Much more dense than the commoner variants.
+  components:
+    - type: Sprite
+      sprite: _Starlight/Clothing/OuterClothing/Coats/magistrate.rsi
+    - type: Clothing
+      sprite: _Starlight/Clothing/OuterClothing/Coats/magistrate.rsi
+    - type: Pierceable
+      level: Metal
+    - type: TemperatureProtection
+      heatingCoefficient: 1.1
+      coolingCoefficient: 0.35
+    - type: Armor
+      modifiers:
+        coefficients:
+          Blunt: 0.9
+          Slash: 0.9
+          Piercing: 0.8
+          Cold: 0.85
+        
+- type: entity
+  parent: [ ClothingOuterStorageFoldableBase, BaseNanoTrasenContraband, AllowSuitStorageClothingGasTanks ]
   id: ClothingOuterCoatNtrep
   name: nt representative jacket
-  description: A fancy black jacket, standart issue to NanoTrasen Representatives.
+  description: A fancy black jacket, standard issue to NanoTrasen Representatives.
   components:
   - type: Sprite
     sprite: _Starlight/Clothing/OuterClothing/Coats/ntrep.rsi
@@ -44,13 +93,16 @@
     sprite: _Starlight/Clothing/OuterClothing/Coats/ntrep.rsi
   - type: Pierceable
     level: Metal
+  - type: TemperatureProtection
+    heatingCoefficient: 1.1
+    coolingCoefficient: 0.35
   - type: Armor
     modifiers:
       coefficients:
-        Cold: 0.9
         Blunt: 0.9
         Slash: 0.9
         Piercing: 0.8
+        Cold: 0.85
 
 - type: entity
   parent: [ ClothingOuterStorageFoldableBaseOpened, ClothingOuterCoatNtrep, BaseNanoTrasenContraband ]

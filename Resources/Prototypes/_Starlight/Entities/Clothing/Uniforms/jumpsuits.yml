@@ -22,30 +22,19 @@
 - type: entity
   parent: ClothingUniformJumpsuitAtmos
   id: ClothingUniformJumpsuitAtmosSyndie
-  name: Contortionist's Jumpsuit
+  name: Contortionist's jumpsuit
   components:
     - type: VentCrawlClothing
 
 - type: entity
   parent: [ ClothingUniformBase, BaseCommandContraband ]
   id: MagistrateUniformSuit
-  name: Magistrate's Jumpsuit
+  name: magistrate's jumpsuit
   components:
     - type: Sprite
       sprite: _Starlight/Clothing/Uniforms/Jumpsuit/magistrate.rsi
     - type: Clothing
       sprite: _Starlight/Clothing/Uniforms/Jumpsuit/magistrate.rsi
-
-- type: entity
-  parent: [ ClothingUniformBase, BaseCommandContraband ]
-  id: MagistrateUniformSuitLongcoat
-  name: Magistrate's Longcoat
-  description: It's a nice long jacket attached to your uniform, but it has no real insulation so a real jacket beats it. Atleast it looks cool, though.
-  components:
-    - type: Sprite
-      sprite: _Starlight/Clothing/Uniforms/Jumpsuit/magistrate_overcoat.rsi
-    - type: Clothing
-      sprite: _Starlight/Clothing/Uniforms/Jumpsuit/magistrate_overcoat.rsi
 
 - type: entity
   parent: [ ClothingUniformBase, BaseCommandContraband ]
