@@ -105,10 +105,10 @@
   id: CentcommVibroblade
 
 - type: Tag
-  id: CombatRemote # Tag: used on the RemoteSignallerCombat
-
-- type: Tag
   id: CheapInsulatedFabric
+  
+- type: Tag
+  id: CheapSunglasses #used in the security mime mask crafting graph
 
 - type: Tag
   id: Cleanade
@@ -135,19 +135,22 @@
   id: ClarkeTreads
 
 - type: Tag
-  id: CheapSunglasses #used in the security mime mask crafting graph
-
-- type: Tag
   id: ClownKudzu
 
 - type: Tag
   id: CluwneBeastWearable
+  
+- type: Tag
+  id: CombatRemote # Tag: used on the RemoteSignallerCombat
 
 - type: Tag
   id: Compy
 
 - type: Tag
   id: Condiment
+
+- type: Tag
+  id: CrispyRiceBar
 
 - type: Tag
   id: CyberHandItem
