@@ -184,7 +184,6 @@
   components:
   - type: Sprite
     sprite: _Starlight/Mobs/Silicon/station_ai.rsi
-    drawdepth: CyberspaceObjects # Starlight
     layers:
     - state: base
     - state: ai

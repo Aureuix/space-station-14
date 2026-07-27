@@ -1,16 +1,17 @@
 using System.Numerics;
+using System.Linq; // Carpmosia-edit - AI Navmap
+using Content.Client.Pinpointer.UI; // Carpmosia-edit - AI Navmap
 using Content.Shared.Movement.Components;
 using Content.Client.Graphics;
-using Content.Shared.Pinpointer;
 using Content.Shared.Silicons.StationAi;
 using Robust.Client.Graphics;
 using Robust.Client.Player;
+using Robust.Shared.Collections; // Carpmosia-edit - AI Navmap
 using Robust.Shared.Enums;
 using Robust.Shared.Map.Components;
 using Robust.Shared.Physics;
 using Robust.Shared.Prototypes;
 using Robust.Shared.Timing;
-using Content.Client._Starlight.Silicons.StationAi;
 
 namespace Content.Client.Silicons.StationAi;
 
@@ -18,9 +19,7 @@ public sealed class StationAiOverlay : Overlay
 {
     private static readonly ProtoId<ShaderPrototype> CameraStaticShader = "CameraStatic";
     private static readonly ProtoId<ShaderPrototype> StencilMaskShader = "StencilMask";
-    // Starlight start
-    private static readonly ProtoId<ShaderPrototype> StencilDrawShader = "StencilDrawUnshaded";
-    // Starlight end
+    private static readonly ProtoId<ShaderPrototype> StencilDrawShader = "StencilDraw";
 
     [Dependency] private readonly IClyde _clyde = default!;
     [Dependency] private readonly IEntityManager _entManager = default!;
@@ -28,28 +27,36 @@ public sealed class StationAiOverlay : Overlay
     [Dependency] private readonly IPlayerManager _player = default!;
     [Dependency] private readonly IPrototypeManager _proto = default!;
 
-    public override OverlaySpace Space => OverlaySpace.WorldSpaceEntities; // Starlight
+    public override OverlaySpace Space => OverlaySpace.WorldSpace;
 
     private readonly HashSet<Vector2i> _visibleTiles = new();
-    private readonly Dictionary<Vector2i, HashSet<string>> _visibleTileTags = []; // Starlight
+    // Starlight - start
+    private readonly Dictionary<Vector2i, HashSet<string>> _visibleTileTags = new();
+    // Starlight - end
+    private readonly NavMapControl _navMap = new(); // Carpmosia-edit - AI Navmap
 
     private readonly OverlayResourceCache<CachedResources> _resources = new();
 
-    private static readonly RenderTargetFormatParameters _renderParams = new(RenderTargetColorFormat.Rgba8Srgb); // Carpmosia
-    private const float UpdateRate = 1f / 30f; // Carpmosia
+    // Carpmosia-start - AI Navmap
+    private readonly Dictionary<Color, Color> _sRgbLookUp = new();
+    private static readonly RenderTargetFormatParameters RenderTargetFormatParameters = new(RenderTargetColorFormat.Rgba8Srgb);
+
+    private static readonly List<Vector2> TileLinesToDraw = [];
+    private static readonly List<Vector2> TileRectsToDraw = [];
+
+    private const float UpdateRate = 1f / 30f;
+    // Carpmosia-end - AI Navmap
 
     private float _accumulator;
-
-    // Starlight start
-    private readonly CyberspaceNavMapRenderer _cyberspaceRenderer;
-    private EntityUid _lastGridUid = EntityUid.Invalid;
-    // Starlight end
 
     public StationAiOverlay()
     {
         IoCManager.InjectDependencies(this);
-        ZIndex = (int) Content.Shared.DrawDepth.DrawDepth.CyberspaceOverlays; // Starlight: above all normal DrawDepths (max=13), below CyberspaceObjects (100)
-        _cyberspaceRenderer = new CyberspaceNavMapRenderer(_proto); // Starlight
+        // Carpmosia-start - AI Navmap
+        //starlight change, colors are adjusted to be green tints
+        _navMap.WallColor = new(0, 131, 0);
+        _navMap.TileColor = new(0, 60, 0);
+        // Carpmosia-end - AI Navmap
     }
 
     protected override void Draw(in OverlayDrawArgs args)
@@ -62,8 +69,10 @@ public sealed class StationAiOverlay : Overlay
             res.StencilTexture?.Dispose();
 
             // Carpmosia-start - AI Navmap
-            res.StencilTexture = _clyde.CreateRenderTarget(args.Viewport.Size, _renderParams, name: "station-ai-stencil");
-            res.StaticTexture = _clyde.CreateRenderTarget(args.Viewport.Size, _renderParams, name: "station-ai-static");
+            res.StencilTexture = _clyde.CreateRenderTarget(args.Viewport.Size, RenderTargetFormatParameters, name: "station-ai-stencil");
+            res.StaticTexture = _clyde.CreateRenderTarget(args.Viewport.Size,
+                RenderTargetFormatParameters,
+                name: "station-ai-static");
             // Carpmosia-end - AI Navmap
         }
 
@@ -80,17 +89,14 @@ public sealed class StationAiOverlay : Overlay
             && _entManager.TryGetComponent(playerEnt, out RelayInputMoverComponent? relay))
             playerEnt = relay.RelayEntity;
 
+        // Starlight - start
         _entManager.TryGetComponent(playerEnt, out StationAiOverlayComponent? relayStationAiOverlay);
+        // Starlight - end
+
         _entManager.TryGetComponent(playerEnt, out TransformComponent? playerXform);
-
-        var gridUid = playerXform?.GridUid
-            ?? (stationAiOverlay is { AllowCrossGrid: true } ? _lastGridUid : EntityUid.Invalid);
-        if (gridUid != EntityUid.Invalid)
-            _lastGridUid = gridUid;
-
+        var gridUid = playerXform?.GridUid ?? EntityUid.Invalid;
         _entManager.TryGetComponent(gridUid, out MapGridComponent? grid);
         _entManager.TryGetComponent(gridUid, out BroadphaseComponent? broadphase);
-        _entManager.TryGetComponent(gridUid, out NavMapComponent? navMap);
         // Starlight-end
 
         var invMatrix = args.Viewport.GetWorldToLocalMatrix();
@@ -105,8 +111,7 @@ public sealed class StationAiOverlay : Overlay
             if (stationAiOverlay is not null) // 🌟Starlight🌟
                 color = color.WithAlpha(stationAiOverlay.Alfa); // 🌟Starlight🌟
 
-            // Starlight: rebuild cached navmap geometry on timer, grid change, or camera move
-            _cyberspaceRenderer.Update((float)_timing.FrameTime.TotalSeconds, gridUid, navMap, grid, xforms, worldBounds);
+            _navMap.AiFrameUpdate((float)_timing.FrameTime.TotalSeconds, gridUid); // Carpmosia-edit - AI Navmap
             if (_accumulator <= 0f)
             {
                 _accumulator = MathF.Max(0f, _accumulator + UpdateRate); // Carpmosia-edit - AI Navmap
@@ -154,7 +159,16 @@ public sealed class StationAiOverlay : Overlay
 
             // Once this is gucci optimise rendering.
             worldHandle.RenderInRenderTarget(res.StaticTexture!,
-                () => _cyberspaceRenderer.Draw(worldHandle, matty), // Starlight
+            () =>
+            {
+                // Carpmosia-start - AI Navmap
+                worldHandle.SetTransform(matty);
+                // var shader = _proto.Index(CameraStaticShader).Instance();
+                // worldHandle.UseShader(shader);
+                // worldHandle.DrawRect(worldBounds, Color.White);
+                DrawNavMap(worldHandle, grid);
+                // Carpmosia-end - AI Navmap
+            },
             Color.Black);
         }
         // Not on a grid
@@ -204,4 +218,71 @@ public sealed class StationAiOverlay : Overlay
             StencilTexture?.Dispose();
         }
     }
+
+    // Carpmosia-start - AI Navmap
+    protected void DrawNavMap(DrawingHandleWorld handle, MapGridComponent grid)
+    {
+        if (!_sRgbLookUp.TryGetValue(_navMap.WallColor, out var wallsRgb))
+        {
+            wallsRgb = Color.ToSrgb(_navMap.WallColor);
+            _sRgbLookUp[_navMap.WallColor] = wallsRgb;
+        }
+
+        // Draw floor tiles
+        if (_navMap.TilePolygons.Count != 0)
+        {
+            foreach (var (polygonVerts, polygonColor) in _navMap.TilePolygons)
+            {
+                handle.DrawPrimitives(DrawPrimitiveTopology.TriangleFan, polygonVerts.AsSpan()[..], polygonColor);
+            }
+        }
+
+        // Draw map lines
+        if (_navMap.TileLines.Count != 0)
+        {
+            TileLinesToDraw.Clear();
+            TileLinesToDraw.EnsureCapacity(_navMap.TileLines.Count * 2);
+
+            foreach (var (o, t) in _navMap.TileLines)
+            {
+                var origin = o with { Y = -o.Y };
+                var terminus = t with { Y = -t.Y };
+
+                TileLinesToDraw.Add(origin);
+                TileLinesToDraw.Add(terminus);
+            }
+
+            if (TileLinesToDraw.Count > 0)
+                handle.DrawPrimitives(DrawPrimitiveTopology.LineList, TileLinesToDraw, wallsRgb);
+        }
+
+        // Draw map rects
+        if (_navMap.TileRects.Count != 0)
+        {
+            TileRectsToDraw.Clear();
+            TileRectsToDraw.EnsureCapacity(_navMap.TileRects.Count * 8);
+
+            foreach (var (lt, rb) in _navMap.TileRects)
+            {
+                var leftTop = lt with { Y = -lt.Y };
+                var rightBottom = rb with { Y = -rb.Y };
+
+                var rightTop = new Vector2(rightBottom.X, leftTop.Y);
+                var leftBottom = new Vector2(leftTop.X, rightBottom.Y);
+
+                TileRectsToDraw.Add(leftTop);
+                TileRectsToDraw.Add(rightTop);
+                TileRectsToDraw.Add(rightTop);
+                TileRectsToDraw.Add(rightBottom);
+                TileRectsToDraw.Add(rightBottom);
+                TileRectsToDraw.Add(leftBottom);
+                TileRectsToDraw.Add(leftBottom);
+                TileRectsToDraw.Add(leftTop);
+            }
+
+            if (TileRectsToDraw.Count > 0)
+                handle.DrawPrimitives(DrawPrimitiveTopology.LineList, TileRectsToDraw, wallsRgb);
+        }
     }
+    // Carpmosia-end - AI Navmap
+}
