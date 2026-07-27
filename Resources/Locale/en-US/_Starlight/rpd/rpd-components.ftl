@@ -1,8 +1,9 @@
 rpd-component-piping = Piping
-rpd-component-atmosphericutility = Atmospheric Utility
+rpd-component-atmospheric-utility = Manipulation
 rpd-component-pumps = Pumps & Valves
 rpd-component-vents = Vents
 rcd-component-sensorsmonitors = Sensors & Monitors
+rpd-component-interfaces-storage = Interfaces & Storage
 rcd-rpd-mode-primary = Primary
 rcd-rpd-mode-secondary = Secondary
 rcd-rpd-mode-tertiary = Tertiary
