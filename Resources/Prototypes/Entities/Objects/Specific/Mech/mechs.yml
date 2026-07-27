@@ -137,7 +137,7 @@
       mech-battery-slot: !type:ContainerSlot
       mech-gas-tank-slot: !type:ContainerSlot
   - type: Damageable
-    damageContainer: StructuralInorganic #🌟STARLIGHT Inorganic -> StructuralInorganic
+    damageContainer: Inorganic
     damageModifierSet: LightArmor
   - type: FootstepModifier
     footstepSoundCollection:
