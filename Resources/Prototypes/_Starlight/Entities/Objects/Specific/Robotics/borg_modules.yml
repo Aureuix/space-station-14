@@ -283,14 +283,14 @@
           components:
           - Stamp
     - hand:
-        emptyLabel: borg-slot-idstamps-empty
-        emptyRepresentative: BorgModulePaperStampPlaceholder
-        whitelist:
-          components:
-            - Pda
-            - IdCard
-            - Stamp
-    - item: HandLabeler # last entry so it shows at the top of the module slots
+      emptyLabel: borg-slot-idstamps-empty
+      emptyRepresentative: BorgModulePaperStampPlaceholder
+      whitelist:
+        components:
+          - Pda
+          - IdCard
+          - Stamp
+  - item: HandLabeler # last entry so it shows at the top of the module slots
   - type: BorgModuleIcon
     icon: { sprite: _Starlight/Interface/Actions/actions_borg.rsi, state: paperwork-module }
 
