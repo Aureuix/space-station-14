@@ -7,9 +7,9 @@
       sprite: _Starlight/Mobs/Customization/GhostThemes/angel.rsi
       state: angel
     color: "#ffffff"
-  requirements:
-  - !type:DiscordRolesRequirement
-    requirement: PatronReq
+#  requirements:
+#  - !type:DiscordRolesRequirement
+#    requirement: PatronReq # SpL - power to the people
 
 - type: ghostTheme
   id: ShadowDemon
@@ -20,9 +20,9 @@
       sprite: _Starlight/Mobs/Customization/GhostThemes/shadow_demon.rsi
       state: shadow_demon
     color: "#ffffff"
-  requirements:
-  - !type:DiscordRolesRequirement
-    requirement: PatronReq
+#  requirements:
+#  - !type:DiscordRolesRequirement
+#    requirement: PatronReq # SpL - power to the people
 
 - type: ghostTheme
   id: WizdenCarp
@@ -34,6 +34,6 @@
       sprite: Mobs/Aliens/Carps/space.rsi
       state: alive
     color: "#ffffff"
-  requirements:
-  - !type:DiscordRolesRequirement
-    requirement: WizdenPatronReq
+#  requirements:
+#  - !type:DiscordRolesRequirement
+#    requirement: WizdenPatronReq # SpL - power to the people

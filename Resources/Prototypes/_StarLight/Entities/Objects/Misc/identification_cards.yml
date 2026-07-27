@@ -329,6 +329,9 @@
     jobIcon: JobIconSoviet
   - type: NanoChatCard
     listNumber: false
+  - type: Access
+    tags:
+      - Communist
 
 - type: entity
   parent: [ IDCardStandard, BaseSyndicateContraband ]

@@ -9,6 +9,26 @@
       background: Civilian
 
 - type: trait
+  id: Fringe
+  name: trait-background-fringe-name
+  description: trait-background-fringe-description
+  category: BackgroundTraits
+  cost: 0
+  effects:
+    - !type:BackgroundEffect
+      background: Fringe
+
+- type: trait
+  id: Frontier
+  name: trait-background-frontier-name
+  description: trait-background-frontier-description
+  category: BackgroundTraits
+  cost: 0
+  effects:
+    - !type:BackgroundEffect
+      background: Frontier
+    
+- type: trait
   id: FormerSoldier
   name: trait-background-former-soldier-name
   description: trait-background-former-soldier-description

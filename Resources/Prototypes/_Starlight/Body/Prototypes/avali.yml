@@ -10,7 +10,7 @@
       organs:
         brain: OrganAvaliBrain
         eyes: OrganAvaliEyes
-        tongue: OrganHumanTongue
+        tongue: OrganAvaliTongue # SpL
         eye_implant: null
         brain_implant: BrainImplantNexus
     torso:

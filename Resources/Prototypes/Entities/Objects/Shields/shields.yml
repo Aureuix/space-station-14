@@ -455,7 +455,7 @@
 
 - type: entity
   name: energy shield
-  parent: [BaseItem, BaseSyndicateContraband]
+  parent: [BaseItem, BaseHighlyIllegalContraband] # SpL
   id: EnergyShield
   description: Exotic energy shield, when folded, can even fit in your pocket.
   components:

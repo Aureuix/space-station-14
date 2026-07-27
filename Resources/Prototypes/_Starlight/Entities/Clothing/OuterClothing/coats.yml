@@ -2,7 +2,7 @@
   parent: [ ClothingOuterStorageBase, AllowSuitStorageClothing, BaseBlueShieldContraband ]
   id: ClothingOuterCoatBlueShield
   name: blueshield overcoat
-  description: A coat worn by Blueshield Officers who don't mind a little cold. Heavily reinforced, for when diplomacy won't cut it.
+  description: A coat worn by Blueshield Officers who don't mind a lighter wear. Heavily reinforced, for when diplomacy won't cut it.
   components:
   - type: Sprite
     sprite: _Starlight/Clothing/OuterClothing/Coats/blueshield_coat.rsi

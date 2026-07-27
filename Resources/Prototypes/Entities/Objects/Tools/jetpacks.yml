@@ -219,6 +219,7 @@
   components:
     - type: Item
       sprite: Objects/Tanks/Jetpacks/mini.rsi
+      size: Normal # SpL
     - type: Sprite
       sprite: Objects/Tanks/Jetpacks/mini.rsi
     - type: Clothing
@@ -259,6 +260,7 @@
   components:
   - type: Item
     sprite: _Starlight/Objects/Tanks/Jetpacks/security_mini.rsi # Starlight - mini jetpack textures
+    size: Normal # SpL
   - type: Sprite
     sprite: _Starlight/Objects/Tanks/Jetpacks/security_mini.rsi # Starlight - mini jetpack textures
   - type: Clothing
@@ -290,6 +292,7 @@
   components:
   - type: Item
     sprite: Objects/Tanks/Jetpacks/void.rsi
+    size: Normal # SpL
   - type: Sprite
     sprite: Objects/Tanks/Jetpacks/void.rsi
   - type: Clothing

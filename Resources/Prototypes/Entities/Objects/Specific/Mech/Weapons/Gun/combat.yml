@@ -35,7 +35,7 @@
     state: mecha_immolator
   - type: Gun
 # 🌟Starlight-start🌟
-    fireRate: 2
+    fireRate: 4 # SpL buff to account for the damage reduction
     selectedMode: FullAuto
     availableModes:
       - FullAuto
@@ -53,7 +53,7 @@
 - type: entity
   id: WeaponMechCombatSolarisLaser
   name: CH-LC "Solaris" laser cannon
-  description: An experimental combat mounted laser cannon that causes more damage, but also has a greater cooldown than a "Firedart".
+  description: An experimental combat mounted laser cannon that fires a high-power concentrated laser beam.
   suffix: Mech Weapon, Gun, Combat, Laser
   parent: [ BaseMechWeaponRange, CombatMechEquipment, BaseSecurityContraband ]
   components:
@@ -62,7 +62,7 @@
     state: mecha_solaris
   - type: Gun
 # 🌟Starlight-start🌟
-    fireRate: 1.5
+    fireRate: 10 # SpL- laser change
     selectedMode: FullAuto
     availableModes:
       - FullAuto
@@ -72,7 +72,7 @@
   - type: MechAmmoProvider #Starlight - MechAmmoProvider
 # 🌟Starlight-start🌟
     proto: RedHeavyLaser
-    fireCost: 28
+    fireCost: 3 # SpL- laser change
 # 🌟Starlight-start🌟
   - type: Appearance
   #- type: AmmoCounter #Starlight - Mechs can't see this anyway
@@ -97,7 +97,7 @@
     state: mecha_firedart
   - type: Gun
 # 🌟Starlight-start🌟
-    fireRate: 2
+    fireRate: 4 # SpL- doubled for halved damage
     selectedMode: FullAuto
     availableModes:
       - FullAuto
@@ -106,7 +106,7 @@
       path: /Audio/Weapons/Guns/Gunshots/laser.ogg
   - type: MechAmmoProvider #Starlight - MechAmmoProvider
     proto: RedLaser
-    fireCost: 14 # 🌟Starlight-Change
+    fireCost: 7 # SpL- doubled for halved damage # 🌟Starlight-Change
   - type: Appearance
   #- type: AmmoCounter #Starlight - Mechs can't see this anyway
   # region starlight
@@ -282,7 +282,7 @@
 - type: entity
   id: WeaponMechCombatUltraAC54
   name: ULTRA AC54 'Hotchkiss' Rotary Cannon
-  description: An advanced rotary autocannon firing FMJ rounds. Admin only.
+  description: An advanced rotary autocannon firing FMJ rounds. 
   suffix: Mech Weapon, Gun, Combat, Admin Only
   parent: [ BaseMechWeaponRange, CombatMechEquipment, BaseCentcommContraband ]
   components:
@@ -374,7 +374,7 @@
     state: mecha_xray
   - type: Gun
 # 🌟Starlight-start🌟
-    fireRate: 2
+    fireRate: 4 # SpL- doubled due to xray change
     selectedMode: FullAuto
     availableModes:
       - FullAuto
@@ -383,7 +383,7 @@
       path: /Audio/Weapons/Guns/Gunshots/laser3.ogg
   - type: MechAmmoProvider #Starlight - MechAmmoProvider
     proto: XrayLaser
-    fireCost: 48 # 🌟Starlight-Change
+    fireCost: 24 # SpL- halved due to xray change # 🌟Starlight-Change
   - type: Appearance
   #- type: AmmoCounter #Starlight - Mechs can't see this anyway
   - type: Battery

@@ -36,6 +36,9 @@
   - type: StationAiHeld
   - type: StationAiOverlay
   - type: ShowElectrocutionHUD
+  - type: Vocal # SpL
+    sounds:
+      Unsexed: UnisexSilicon # SpL
   - type: ActionGrant
     actions:
     - ActionJumpToCore
@@ -181,6 +184,7 @@
   components:
   - type: Sprite
     sprite: _Starlight/Mobs/Silicon/station_ai.rsi
+    drawdepth: CyberspaceObjects # Starlight
     layers:
     - state: base
     - state: ai

@@ -25,6 +25,8 @@
     - TapeRecorder
     - CassetteTape
     - CassetteTape
+    - Wrench
+    - NetworkConfigurator
   # Starlight End
 
 - type: chameleonOutfit

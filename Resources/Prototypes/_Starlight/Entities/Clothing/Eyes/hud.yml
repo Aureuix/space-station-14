@@ -165,6 +165,7 @@
     - type: ShowJobIcons
     - type: ShowMindShieldIcons
     - type: ShowCriminalRecordIcons
+    - type: ShowAccess
     - type: EyeProtection
       protectionTime: 5
 
@@ -180,6 +181,9 @@
       sprite: _Starlight/Clothing/Eyes/Hud/centcomm.rsi
     - type: ShowJobIcons
     - type: ShowMindShieldIcons
+    - type: ShowAccess
+      seeIdHolder: true
+      itemsOnly: false
     - type: SolutionScanner # SpL
     - type: ShowCriminalRecordIcons
     - type: ShowHealthBars

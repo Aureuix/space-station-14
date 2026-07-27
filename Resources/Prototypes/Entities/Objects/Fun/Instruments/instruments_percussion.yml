@@ -110,6 +110,8 @@
     heldPrefix: super
     size: Normal
     sprite: Objects/Fun/Instruments/h_synthesizer.rsi
+  - type: ActivatableUI # SpL
+    inHandsOnly: false # SpL
 
 - type: entity
   parent: SuperSynthesizerInstrument

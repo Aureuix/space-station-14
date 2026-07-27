@@ -108,13 +108,13 @@
     containers:
       gun_magazine: !type:ContainerSlot
   - type: Gun
-    fireRate: 5
-    shotsPerBurst: 2
-    burstCooldown: 0.6
-    selectedMode: Burst
+    fireRate: 7 # SpL
+    shotsPerBurst: 3
+    burstCooldown: 0.2 # SpL- this thing was just worse than the LR
+    selectedMode: Burst # SpL
     availableModes:
-      - SemiAuto
       - Burst
+      - FullAuto
     soundGunshot:
       path: /Audio/Weapons/Guns/Gunshots/laser.ogg
   - type: MagazineVisuals
@@ -122,7 +122,7 @@
     steps: 5
     zeroVisible: true
   - type: Appearance
-
+    
 - type: entity
   name: ARG
   parent: [BaseTSFContraband, BaseWeaponRifle]

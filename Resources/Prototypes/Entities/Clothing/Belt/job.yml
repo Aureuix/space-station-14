@@ -226,6 +226,7 @@
       - DiscreteHealthAnalyzer
       - SurgeryTool
       - Dropper
+      - BoneGel # SpL
       - Vial # SpL
       - Patch # SpL
       - PatchPack # SpL
@@ -305,6 +306,7 @@
         - BodyBag
         - ParaKnife
         - JawsOfLife #Starlight
+        - BoneGel # SpL
         - Patch # SpL
         - Vial # SpL
         - PatchPack # SpL

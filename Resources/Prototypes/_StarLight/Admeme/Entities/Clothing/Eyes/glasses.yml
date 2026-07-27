@@ -12,6 +12,7 @@
   - type: ShowJobIcons
   - type: ShowMindShieldIcons
   - type: SolutionScanner # SpL
+  - type: ShowAccess # SpL
   - type: ShowCriminalRecordIcons
   - type: ShowHealthBars
     damageContainers:

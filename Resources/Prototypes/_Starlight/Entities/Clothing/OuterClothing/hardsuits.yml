@@ -2,7 +2,7 @@
 - type: entity
   parent: [ClothingOuterHardsuitBase, BaseBlueShieldContraband]
   id: ClothingOuterHardsuitBlueshield
-  name: blue shield hardsuit
+  name: blueshield hardsuit
   description: A high-tech hardsuit perfect for diving in front of Mr. Pre- Er, Captain.
   components:
   - type: Tag
@@ -587,8 +587,8 @@
 - type: entity
   parent: [BaseNanoTrasenContraband, ClothingOuterHardsuitBase]
   id: ClothingOuterHardsuitNTSF
-  name: nanotrasen special forces hardsuit
-  description: An advanced hardsuit favored by commandos for use in special operations.
+  name: NTSF battlesuit
+  description: An advanced battlesuit favored by commandos for use in special operations.
   components:
     - type: Sprite
       sprite: _Starlight/Clothing/OuterClothing/Hardsuits/NTSF_Hardsuit.rsi
@@ -634,9 +634,490 @@
 
 - type: entity
   parent: [BaseNanoTrasenContraband, ClothingOuterHardsuitBase]
+  id: ClothingOuterHardsuitNTSFPrimus
+  name: NTSF primus battlesuit
+  description: The famous blue striped armor of NTSF Task Force One "Primus". The best of the best NanoTrasen has to offer.
+  components:
+    - type: Sprite
+      sprite: _Starlight/Clothing/OuterClothing/Hardsuits/NTSF_Hardsuit_Primus.rsi
+    - type: Clothing
+      sprite: _Starlight/Clothing/OuterClothing/Hardsuits/NTSF_Hardsuit_Primus.rsi
+    - type: PressureProtection
+      highPressureMultiplier: 0.02
+      lowPressureMultiplier: 1000
+    - type: TemperatureProtection
+      heatingCoefficient: 0.001
+      coolingCoefficient: 0.001
+    - type: ExplosionResistance
+      damageCoefficient: 0.3
+    - type: FireProtection
+      reduction: 0.8
+    - type: StaminaResistance # do not add these to other equipment or mobs, we don't want to microbalance these everywhere
+      damageCoefficient: 0.0 # 100% stamina resistance
+    - type: Pierceable
+      level: Rock
+    - type: Armor
+      modifiers:
+        coefficients:
+          Blunt: 0.35 # 65% resistance
+          Slash: 0.35
+          Piercing: 0.30 # 70% pierce resistance
+          Heat: 0.35
+          Radiation: 0.35
+          Caustic: 0.35
+      staminaModifier: 0.0
+    - type: ClothingSpeedModifier
+      walkModifier: 1.0
+      sprintModifier: 1.0
+    - type: HeldSpeedModifier
+    - type: FootstepModifier #starlight
+      footstepSoundCollection:
+        path: /Audio/Mecha/sound_mecha_powerloader_step.ogg
+        params:
+          volume: -7
+          pitch: 0.7
+          variation: 0.025
+    - type: ToggleableClothing
+      clothingPrototype: ClothingHeadHelmetHardsuitNTSFPrimus
+
+- type: entity
+  parent: [BaseNanoTrasenContraband, ClothingOuterHardsuitBase]
+  id: ClothingOuterHardsuitNTSFSecundus
+  name: NTSF secundus battlesuit
+  description: The reinforced chassis of this armor makes it extremely slow, but supremely durable. Worn by NTSF Task force "Secundus", and their steamroller approach to combat.
+  components:
+    - type: Sprite
+      sprite: _Starlight/Clothing/OuterClothing/Hardsuits/NTSF_Hardsuit_Secundus.rsi
+    - type: Clothing
+      sprite: _Starlight/Clothing/OuterClothing/Hardsuits/NTSF_Hardsuit_Secundus.rsi
+    - type: PressureProtection
+      highPressureMultiplier: 0.02
+      lowPressureMultiplier: 1000
+    - type: TemperatureProtection
+      heatingCoefficient: 0.001
+      coolingCoefficient: 0.001
+    - type: ExplosionResistance
+      damageCoefficient: 0.3
+    - type: FireProtection
+      reduction: 0.8
+    - type: StaminaResistance # do not add these to other equipment or mobs, we don't want to microbalance these everywhere
+      damageCoefficient: 0.0 # 100% stamina resistance
+    - type: Pierceable
+      level: Rock
+    - type: Armor
+      modifiers:
+        coefficients:
+          Blunt: 0.20 # 80% resistance
+          Slash: 0.20
+          Piercing: 0.20 # 80% pierce resistance
+          Heat: 0.20
+          Radiation: 0.20
+          Caustic: 0.20
+      staminaModifier: 0.0
+    - type: ClothingSpeedModifier
+      walkModifier: 0.65
+      sprintModifier: 0.65
+    - type: HeldSpeedModifier
+    - type: FootstepModifier #starlight
+      footstepSoundCollection:
+        path: /Audio/Mecha/sound_mecha_powerloader_step.ogg
+        params:
+          volume: -7
+          pitch: 0.7
+          variation: 0.025
+    - type: ToggleableClothing
+      clothingPrototype: ClothingHeadHelmetHardsuitNTSFSecundus
+
+- type: entity
+  parent: [BaseNanoTrasenContraband, ClothingOuterHardsuitBase]
+  id: ClothingOuterHardsuitNTSFTertius
+  name: NTSF tertius battlesuit
+  description: Nailing it down won't save you. Utilized by Task Force "Tertius", infamous for being the "Repo Men" of NanoTrasen, taking what is theirs - and usually plenty more. Comes with built in blue space storage!
+  components:
+    - type: Sprite
+      sprite: _Starlight/Clothing/OuterClothing/Hardsuits/NTSF_Hardsuit_Tertius.rsi
+    - type: Clothing
+      sprite: _Starlight/Clothing/OuterClothing/Hardsuits/NTSF_Hardsuit_Tertius.rsi
+    - type: PressureProtection
+      highPressureMultiplier: 0.02
+      lowPressureMultiplier: 1000
+    - type: TemperatureProtection
+      heatingCoefficient: 0.001
+      coolingCoefficient: 0.001
+    - type: ExplosionResistance
+      damageCoefficient: 0.3
+    - type: FireProtection
+      reduction: 0.8
+    - type: StaminaResistance # do not add these to other equipment or mobs, we don't want to microbalance these everywhere
+      damageCoefficient: 0.0 # 100% stamina resistance
+    - type: Pierceable
+      level: Rock
+    - type: Armor
+      modifiers:
+        coefficients:
+          Blunt: 0.35 # 65% resistance
+          Slash: 0.35
+          Piercing: 0.30 # 70% pierce resistance
+          Heat: 0.35
+          Radiation: 0.35
+          Caustic: 0.35
+      staminaModifier: 0.0
+    - type: ClothingSpeedModifier
+      walkModifier: 1.0
+      sprintModifier: 1.0
+    - type: HeldSpeedModifier
+    - type: FootstepModifier #starlight
+      footstepSoundCollection:
+        path: /Audio/Mecha/sound_mecha_powerloader_step.ogg
+        params:
+          volume: -7
+          pitch: 0.7
+          variation: 0.025
+    - type: ToggleableClothing
+      clothingPrototype: ClothingHeadHelmetHardsuitNTSFTertius
+    - type: Storage
+      grid:
+      - 0,0,18,6 # Starlight
+    - type: ContainerContainer
+      containers:
+       storagebase: !type:Container
+         ents: []
+       toggleable-clothing: !type:ContainerSlot
+       cell_slot: !type:ContainerSlot
+    - type: UserInterface
+      interfaces:
+       enum.StorageUiKey.Key:
+         type: StorageBoundUserInterface
+
+- type: entity
+  parent: [BaseNanoTrasenContraband, ClothingOuterHardsuitBase]
+  id: ClothingOuterHardsuitNTSFQuartus
+  name: NTSF quartus battlesuit
+  description: Only the most dangerous transports, volatile artifacts, and deadly prisoners fall under the watchful eye of NTSF Task Force Quartus.
+  components:
+    - type: Sprite
+      sprite: _Starlight/Clothing/OuterClothing/Hardsuits/NTSF_Hardsuit_Quartus.rsi
+    - type: Clothing
+      sprite: _Starlight/Clothing/OuterClothing/Hardsuits/NTSF_Hardsuit_Quartus.rsi
+    - type: PressureProtection
+      highPressureMultiplier: 0.02
+      lowPressureMultiplier: 1000
+    - type: TemperatureProtection
+      heatingCoefficient: 0.001
+      coolingCoefficient: 0.001
+    - type: ExplosionResistance
+      damageCoefficient: 0.3
+    - type: FireProtection
+      reduction: 1
+    - type: StaminaResistance # do not add these to other equipment or mobs, we don't want to microbalance these everywhere
+      damageCoefficient: 0.0 # 100% stamina resistance
+    - type: Pierceable
+      level: Rock
+    - type: Armor
+      modifiers:
+        coefficients:
+          Blunt: 0.35 # 65% resistance
+          Slash: 0.35
+          Piercing: 0.30 # 70% pierce resistance
+          Heat: 0.20
+          Radiation: 0.00
+          Caustic: 0.20
+      staminaModifier: 0.0
+    - type: ClothingSpeedModifier
+      walkModifier: 1.0
+      sprintModifier: 1.0
+    - type: HeldSpeedModifier
+    - type: FootstepModifier #starlight
+      footstepSoundCollection:
+        path: /Audio/Mecha/sound_mecha_powerloader_step.ogg
+        params:
+          volume: -7
+          pitch: 0.7
+          variation: 0.025
+    - type: ToggleableClothing
+      clothingPrototype: ClothingHeadHelmetHardsuitNTSFQuartus
+
+- type: entity
+  parent: [BaseNanoTrasenContraband, ClothingOuterHardsuitBase]
+  id: ClothingOuterHardsuitNTSFQuintus
+  name: NTSF quintus battlesuit
+  description: Specially designed to combat Syndicate weaponry, there's no better gear for crushing Gorlex skulls.
+  components:
+    - type: Sprite
+      sprite: _Starlight/Clothing/OuterClothing/Hardsuits/NTSF_Hardsuit_Quintus.rsi
+    - type: Clothing
+      sprite: _Starlight/Clothing/OuterClothing/Hardsuits/NTSF_Hardsuit_Quintus.rsi
+    - type: PressureProtection
+      highPressureMultiplier: 0.02
+      lowPressureMultiplier: 1000
+    - type: TemperatureProtection
+      heatingCoefficient: 0.001
+      coolingCoefficient: 0.001
+    - type: ExplosionResistance
+      damageCoefficient: 0.2
+    - type: FireProtection
+      reduction: 0.8
+    - type: StaminaResistance # do not add these to other equipment or mobs, we don't want to microbalance these everywhere
+      damageCoefficient: 0.0 # 100% stamina resistance
+    - type: Pierceable
+      level: Rock
+    - type: Armor
+      modifiers:
+        coefficients:
+          Blunt: 0.35 # 65% resistance
+          Slash: 0.35
+          Piercing: 0.20 # 80% pierce resistance
+          Heat: 0.35
+          Radiation: 0.35
+          Caustic: 0.35
+      staminaModifier: 0.0
+    - type: ClothingSpeedModifier
+      walkModifier: 1.0
+      sprintModifier: 1.0
+    - type: HeldSpeedModifier
+    - type: FootstepModifier #starlight
+      footstepSoundCollection:
+        path: /Audio/Mecha/sound_mecha_powerloader_step.ogg
+        params:
+          volume: -7
+          pitch: 0.7
+          variation: 0.025
+    - type: ToggleableClothing
+      clothingPrototype: ClothingHeadHelmetHardsuitNTSFQuintus
+
+- type: entity
+  parent: [BaseNanoTrasenContraband, ClothingOuterHardsuitBase]
+  id: ClothingOuterHardsuitNTSFSextus
+  name: NTSF sextus battlesuit
+  description: The uncanny markings upon the armor cause great discomfort to all who see them. Its labyrinthine gold inlays tell an esoteric story of magecraft.
+  components:
+    - type: Sprite
+      sprite: _Starlight/Clothing/OuterClothing/Hardsuits/NTSF_Hardsuit_Sextus.rsi
+    - type: Clothing
+      sprite: _Starlight/Clothing/OuterClothing/Hardsuits/NTSF_Hardsuit_Sextus.rsi
+    - type: PressureProtection
+      highPressureMultiplier: 0.02
+      lowPressureMultiplier: 1000
+    - type: TemperatureProtection
+      heatingCoefficient: 0.001
+      coolingCoefficient: 0.001
+    - type: ExplosionResistance
+      damageCoefficient: 0.3
+    - type: FireProtection
+      reduction: 0.8
+    - type: StaminaResistance # do not add these to other equipment or mobs, we don't want to microbalance these everywhere
+      damageCoefficient: 0.0 # 100% stamina resistance
+    - type: Pierceable
+      level: Rock
+    - type: Armor
+      modifiers:
+        coefficients:
+          Blunt: 0.35 # 65% resistance
+          Slash: 0.35
+          Piercing: 0.30 # 70% pierce resistance
+          Heat: 0.35
+          Radiation: 0.35
+          Caustic: 0.35
+      staminaModifier: 0.0
+    - type: ClothingSpeedModifier
+      walkModifier: 1.0
+      sprintModifier: 1.0
+    - type: HeldSpeedModifier
+    - type: FootstepModifier #starlight
+      footstepSoundCollection:
+        path: /Audio/Mecha/sound_mecha_powerloader_step.ogg
+        params:
+          volume: -7
+          pitch: 0.7
+          variation: 0.025
+    - type: ToggleableClothing
+      clothingPrototype: ClothingHeadHelmetHardsuitNTSFSextus
+
+- type: entity
+  parent: [BaseNanoTrasenContraband, ClothingOuterHardsuitBase]
+  id: ClothingOuterHardsuitNTSFSeptimus
+  name: NTSF septimus battlesuit
+  description: I am pest control guy. *Grabs Pulse Rifle* - and THIS is my pest control.
+  components:
+    - type: Sprite
+      sprite: _Starlight/Clothing/OuterClothing/Hardsuits/NTSF_Hardsuit_Septimus.rsi
+    - type: Clothing
+      sprite: _Starlight/Clothing/OuterClothing/Hardsuits/NTSF_Hardsuit_Septimus.rsi
+    - type: PressureProtection
+      highPressureMultiplier: 0.02
+      lowPressureMultiplier: 1000
+    - type: TemperatureProtection
+      heatingCoefficient: 0.001
+      coolingCoefficient: 0.001
+    - type: ExplosionResistance
+      damageCoefficient: 0.3
+    - type: FireProtection
+      reduction: 0.8
+    - type: StaminaResistance # do not add these to other equipment or mobs, we don't want to microbalance these everywhere
+      damageCoefficient: 0.0 # 100% stamina resistance
+    - type: Pierceable
+      level: Rock
+    - type: Armor
+      modifiers:
+        coefficients:
+          Blunt: 0.25 # 65% resistance
+          Slash: 0.25
+          Piercing: 0.30 # 70% pierce resistance
+          Heat: 0.30
+          Radiation: 0.35
+          Caustic: 0.35
+      staminaModifier: 0.0
+    - type: ClothingSpeedModifier
+      walkModifier: 1.0
+      sprintModifier: 1.0
+    - type: HeldSpeedModifier
+    - type: FootstepModifier #starlight
+      footstepSoundCollection:
+        path: /Audio/Mecha/sound_mecha_powerloader_step.ogg
+        params:
+          volume: -7
+          pitch: 0.7
+          variation: 0.025
+    - type: ToggleableClothing
+      clothingPrototype: ClothingHeadHelmetHardsuitNTSFSeptimus
+
+- type: entity
+  parent: [BaseNanoTrasenContraband, ClothingOuterHardsuitBase]
+  id: ClothingOuterHardsuitNTSFOctavius
+  name: NTSF octavius battlesuit
+  description: Start prayin', commie.
+  components:
+    - type: Sprite
+      sprite: _Starlight/Clothing/OuterClothing/Hardsuits/NTSF_Hardsuit_Octavius.rsi
+    - type: Clothing
+      sprite: _Starlight/Clothing/OuterClothing/Hardsuits/NTSF_Hardsuit_Octavius.rsi
+    - type: PressureProtection
+      highPressureMultiplier: 0.02
+      lowPressureMultiplier: 1000
+    - type: TemperatureProtection
+      heatingCoefficient: 0.001
+      coolingCoefficient: 0.001
+    - type: ExplosionResistance
+      damageCoefficient: 0.3
+    - type: FireProtection
+      reduction: 0.8
+    - type: StaminaResistance # do not add these to other equipment or mobs, we don't want to microbalance these everywhere
+      damageCoefficient: 0.0 # 100% stamina resistance
+    - type: Pierceable
+      level: Rock
+    - type: Armor
+      modifiers:
+        coefficients:
+          Blunt: 0.35 # 65% resistance
+          Slash: 0.35
+          Piercing: 0.20 # 80% pierce resistance
+          Heat: 0.35
+          Radiation: 0.35
+          Caustic: 0.35
+      staminaModifier: 0.0
+    - type: ClothingSpeedModifier
+      walkModifier: 1.0
+      sprintModifier: 1.0
+    - type: HeldSpeedModifier
+    - type: FootstepModifier #starlight
+      footstepSoundCollection:
+        path: /Audio/Mecha/sound_mecha_powerloader_step.ogg
+        params:
+          volume: -7
+          pitch: 0.7
+          variation: 0.025
+    - type: ToggleableClothing
+      clothingPrototype: ClothingHeadHelmetHardsuitNTSFOctavius
+
+- type: entity
+  parent: [BaseNanoTrasenContraband, ClothingOuterHardsuitBase, BaseToggleClothing]
+  id: ClothingOuterHardsuitNTSFNonus
+  name: NTSF nonus battlesuit
+  description: May NanoTrasen have mercy, for I have none.
+  components:
+    - type: Sprite
+      sprite: _Starlight/Clothing/OuterClothing/Hardsuits/NTSF_Hardsuit_Nonus.rsi
+    - type: Clothing
+      sprite: _Starlight/Clothing/OuterClothing/Hardsuits/NTSF_Hardsuit_Nonus.rsi
+    - type: PressureProtection
+      highPressureMultiplier: 0.02
+      lowPressureMultiplier: 1000
+    - type: TemperatureProtection
+      heatingCoefficient: 0.001
+      coolingCoefficient: 0.001
+    - type: ExplosionResistance
+      damageCoefficient: 0.3
+    - type: ToggleClothing
+      action: ActionTogglePhaseCloak
+      disableOnUnequip: true
+    - type: ComponentToggler
+      parent: true
+      components:
+        - type: Stealth
+          minVisibility: 0.07
+          maxVisibility: 0.07
+          lastVisibility: 0.07
+    - type: PowerCellDraw
+      drawRate: 14 # roughly 200 seconds on the default cell
+    - type: ToggleCellDraw
+    - type: PowerCellSlot
+      cellSlotId: cell_slot
+      fitsInCharger: false
+    - type: ContainerContainer
+      containers:
+        cell_slot: !type:ContainerSlot
+        storagebase: !type:Container
+        toggleable-clothing: !type:ContainerSlot
+    - type: ItemSlots
+      slots:
+        cell_slot:
+          name: power-cell-slot-component-slot-name-default
+          startingItem: PowerCellMicroreactor
+          disableEject: true
+          whitelist:
+            tags:
+              - PowerCell
+          blacklist:
+            tags:
+            - MechReactor
+    - type: Tag
+      tags:
+      - Hardsuit
+    - type: FireProtection
+      reduction: 0.8
+    - type: StaminaResistance # do not add these to other equipment or mobs, we don't want to microbalance these everywhere
+      damageCoefficient: 0.0 # 100% stamina resistance
+    - type: Pierceable
+      level: Rock
+    - type: Armor
+      modifiers:
+        coefficients:
+          Blunt: 0.35 # 65% resistance
+          Slash: 0.35
+          Piercing: 0.30 # 70% pierce resistance
+          Heat: 0.35
+          Radiation: 0.35
+          Caustic: 0.35
+      staminaModifier: 0.0
+    - type: ClothingSpeedModifier
+      walkModifier: 1.0
+      sprintModifier: 1.0
+    - type: HeldSpeedModifier
+    - type: FootstepModifier #starlight
+      footstepSoundCollection:
+        path: /Audio/Mecha/sound_mecha_powerloader_step.ogg
+        params:
+          volume: -30
+          pitch: 0.7
+          variation: 0.025
+    - type: ToggleableClothing
+      clothingPrototype: ClothingHeadHelmetHardsuitNTSFNonus
+
+- type: entity
+  parent: [BaseNanoTrasenContraband, ClothingOuterHardsuitBase]
   id: ClothingOuterHardsuitDecimus
-  name: decimus hardsuit
-  description: An advanced hardsuit favored by commandos for use in special operations.
+  name: NTSF decimus battlesuit
+  description: If you can read this, it's already too late.
   components:
     - type: Sprite
       sprite: _Starlight/Clothing/OuterClothing/Hardsuits/Decimus_Hardsuit.rsi
@@ -684,7 +1165,7 @@
 - type: entity
   parent: [BaseTSFContraband, ClothingOuterHardsuitDecimus]
   id: ClothingOuterHardsuitTSFMARSOC
-  name: MARSOC hardsuit
+  name: MARSOC battlesuit
   description: A suit worn by marines of the Trans-Solar Federation's Marine Special Operations Command. Armored, space ready, and fireproof.
   components:
     - type: Sprite
@@ -716,7 +1197,7 @@
 - type: entity
   parent: [BaseTSFContraband, ClothingOuterHardsuitNTSF]
   id: ClothingOuterHardsuitTSFPhantom
-  name: Phantom hardsuit
+  name: Phantom battlesuit
   description: A suit worn by marines of the Trans-Solar Federation's Marine special Operations Phantom. Armored, space ready and stealthy.
   components:
     - type: Sprite
@@ -745,7 +1226,7 @@
   parent: [BaseNanoTrasenContraband, ClothingOuterHardsuitBase]
   id: ClothingOuterHardsuitThanatos
   name: Thanatos
-  description: An advanced hardsuit favored by commandos for use in special operations.
+  description: An advanced battlesuit favored by commandos for use in special operations.
   components:
     - type: Sprite
       sprite: Clothing/OuterClothing/Hardsuits/deathsquad.rsi
@@ -785,44 +1266,3 @@
       tags:
         - CorgiWearable
         - Hardsuit
-
-# Greenshield Officer
-- type: entity
-  parent: [ BaseCentcommContraband, ClothingOuterHardsuitSyndieCommander, AllowSuitStorageClothing, ClothingOuterStorageBase ]
-  categories: [ DoNotMap ]
-  id: ClothingOuterHardsuitGreenshield
-  name: greenshield hardsuit
-  description: A protective hardsuit worn by Greenshields. It even has pockets!
-  components:
-    - type: Sprite
-      sprite: Clothing/OuterClothing/Hardsuits/ERTSuits/ertleader.rsi
-    - type: Clothing
-      sprite: Clothing/OuterClothing/Hardsuits/ERTSuits/ertleader.rsi
-    - type: ExplosionResistance
-      damageCoefficient: 0.2
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 0.4
-          Slash: 0.4
-          Piercing: 0.3
-          Heat: 0.2
-          Radiation: 0.01
-          Caustic: 0.4
-    - type: ToggleableClothing
-      clothingPrototype: ClothingHeadHelmetHardsuitGreenshield
-    - type: Tag
-      tags:
-        - Hardsuit
-        - CorgiWearable
-    - type: ClothingSpeedModifier
-      walkModifier: 1 #Got to be able to keep up with the nice walk of the officials
-      sprintModifier: 0.95
-    - type: Storage
-      grid:
-        - 0,0,2,1
-    - type: ContainerContainer
-      containers:
-        toggleable-clothing: !type:ContainerSlot
-        cell_slot: !type:ContainerSlot
-        storagebase: !type:Container

@@ -115,8 +115,21 @@
   parent: OrganHumanBrain
   name: avali brain
   suffix: Avali
-  description: "Where Avali think of evil thoughts"
+  description: "Where Avali think of evil thoughts."
   components:
   - type: Sprite
     sprite: _Starlight/Mobs/Species/Avali/organs.rsi
     state: brain
+    
+# SpL start
+- type: entity
+  id: OrganAvaliTongue
+  parent: OrganHumanTongue
+  name: avali tongue
+  suffix: Avali
+  description: "Forked to allow Avali to taste the air around them."
+  components:
+    - type: Sprite
+      sprite: _Starlight/Mobs/Species/Avali/organs.rsi
+      state: tongue
+# SpL end

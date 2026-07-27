@@ -92,3 +92,6 @@ WeaponFlareGunSecurity: null
 
 # 2026-07-20 - Mapping detcoat change- SpL
 ClothingOuterCoatDetective: ClothingOuterCoatDetectiveUnarmored
+
+# 2026-07-23 - Are we being serious- SpL
+CompuerShuttleSalvage: ComputerShuttleSalvage

@@ -1,7 +1,7 @@
 {
   "version": 1,
   "license": "CC-BY-SA-3.0",
-  "copyright": "DocMoth",
+  "copyright": "DocMoth, tongue by nykaestra",
   "size": {
     "x": 32,
     "y": 32
@@ -9,6 +9,9 @@
   "states": [
     {
       "name": "brain"
+    },
+    {
+      "name": "tongue"
     },
     {
       "name": "brain-inhand-left",

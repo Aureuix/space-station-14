@@ -1,0 +1,46 @@
+﻿- type: entity
+  parent: BaseComputerAiAccess
+  id: ComputerAdminRecords
+  # Cosmatic Drift Record System-start: Renamed from "station records computer" to "employment records computer" to better reflect its purpose.
+  name: secure administrative records computer
+  description: This can be used to check all personnel records, including sensitive high-security records. All data contained on this computer is confidential. Do not permit unauthorised access.
+  # Cosmatic Drift Record System-end
+  components:
+    - type: Sprite
+      layers:
+        - map: [ "computerLayerBody" ]
+          state: computer
+        - map: [ "computerLayerKeyboard" ]
+          state: generic_keyboard
+        - map: [ "computerLayerScreen" ]
+          state: command
+        - map: [ "computerLayerKeys" ]
+          state: generic_keys
+        - map: [ "enum.WiresVisualLayers.MaintenancePanel" ]
+          state: generic_panel_open
+    - type: GeneralStationRecordConsole
+    - type: CriminalRecordsConsole
+    - type: UserInterface
+      interfaces:
+        # Cosmatic Drift Record System-start
+        enum.CharacterRecordConsoleKey.Key:
+          type: CharacterRecordConsoleBoundUserInterface
+        # Cosmatic Drift Record System-end
+        enum.WiresUiKey.Key:
+          type: WiresBoundUserInterface
+    # Cosmatic Drift Record System-start
+    - type: CharacterRecordConsole
+      consoleType: Admin
+    # Cosmatic Drift Record System-end
+    - type: ActivatableUI
+      key: enum.CharacterRecordConsoleKey.Key # Cosmatic Drift Record System
+    - type: PointLight
+      radius: 1.5
+      energy: 4.0
+      color: "#1f8c28"
+    - type: Computer
+      board: AdminRecordsComputerCircuitboard
+    - type: ActivatableUIRequiresAccess
+    #- type: Lock
+    - type: AccessReader
+      access: [["Command"]]

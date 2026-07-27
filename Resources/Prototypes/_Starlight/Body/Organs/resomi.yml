@@ -92,3 +92,16 @@
   - type: Sprite
     sprite: _Starlight/Mobs/Species/Resomi/organs.rsi
     state: stomach
+
+# SpL start
+- type: entity
+  id: OrganResomiTongue
+  parent: OrganHumanTongue
+  name: resomi tongue
+  suffix: Resomi
+  description: "Long and thin, for sticking out at people."
+  components:
+    - type: Sprite
+      sprite: _Starlight/Mobs/Species/Resomi/organs.rsi
+      state: tongue
+# SpL end

@@ -6,7 +6,7 @@
   description: Sends your eye back to the core.
   components:
   - type: Action
-    priority: -9
+    priority: -100 # SpL- so that scream is second
     itemIconStyle: BigAction
     icon:
       sprite: Interface/Actions/actions_ai.rsi

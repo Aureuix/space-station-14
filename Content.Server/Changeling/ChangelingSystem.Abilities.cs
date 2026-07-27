@@ -32,6 +32,7 @@ using Content.Server.Changeling.Systems;
 using Content.Shared.Humanoid;
 using Content.Shared.Body.Components;
 using Content.Shared.Chemistry.Reagent;
+using Content.Shared.Flash;
 // Starlight edit end
 
 namespace Content.Server.Changeling;
@@ -40,6 +41,7 @@ public sealed partial class ChangelingSystem : EntitySystem
 {
     [Dependency] private readonly StatusEffectsSystem _statusEffect = default!;
     [Dependency] private readonly ChangelingIdentitySystem _changelingIdentitySystem = default!;
+    [Dependency] private SharedFlashSystem _flashSystem = default!;
 
     private static readonly ProtoId<ReagentPrototype> FerrochromicAcidPrototype = "FerrochromicAcid";
     private static readonly ProtoId<ReagentPrototype> PolytrinicAcidPrototype = "PolytrinicAcid";
@@ -409,8 +411,11 @@ public sealed partial class ChangelingSystem : EntitySystem
             _popup.PopupEntity(Loc.GetString("changeling-passive-disable"), uid, uid); // Starlight
             return;
         }
-
-        EnsureComp<FlashImmunityComponent>(uid);
+        // Starlight START
+        var flashImmunity = EnsureComp<FlashImmunityComponent>(uid);
+        _flashSystem.SetShowInExamine(uid, false, flashImmunity);
+        // Starlight END
+        
         _popup.PopupEntity(Loc.GetString("changeling-passive-activate"), uid, uid);
     }
     #region Starlight

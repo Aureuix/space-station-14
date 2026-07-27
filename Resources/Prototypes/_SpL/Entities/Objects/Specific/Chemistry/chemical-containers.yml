@@ -106,6 +106,34 @@
 # Adminspawn jugs
 
 - type: entity
+  parent: JugGold
+  id: GoldJugBicaridine
+  suffix: bicaridine
+  components:
+    - type: Label
+      currentLabel: reagent-name-bicaridine
+    - type: SolutionContainerManager
+      solutions:
+        drink:
+          reagents:
+            - ReagentId: Bicaridine
+              Quantity: 400
+              
+- type: entity
+  parent: JugGold
+  id: GoldJugDermaline
+  suffix: dermaline
+  components:
+    - type: Label
+      currentLabel: reagent-name-dermaline
+    - type: SolutionContainerManager
+      solutions:
+        drink:
+          reagents:
+            - ReagentId: Dermaline
+              Quantity: 400
+              
+- type: entity
   parent: Jug
   id: JugScoriDerma
   suffix: scori & derma
