@@ -368,10 +368,10 @@
   - type: Sprite
     sprite: Objects/Fun/rubber_hammer.rsi
     state: icon
-#  - type: WeaponRandom # 1 in 100,000 to "win" the "fight" # SpL- are you OUT OF YOUR FUCKING MIND???
-#    damageBonus:
-#      types:
-#        Blunt: 1000
+  - type: WeaponRandom # 1 in 100,000 to "win" the "fight"
+    damageBonus:
+      types:
+        Blunt: 1000
   - type: Item
     size: Small
     sprite: Objects/Fun/rubber_hammer.rsi
