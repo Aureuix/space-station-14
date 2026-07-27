@@ -202,7 +202,7 @@
   name: lab coat
 
 - type: entity
-  pparent: [ClothingOuterStorageFoldableBase, AllowSuitStorageClothing] # SpL
+  parent: [ClothingOuterStorageFoldableBase, AllowSuitStorageClothing] # SpL
   id: ClothingOuterCoatLabChem
   name: chemist lab coat
   description: A suit that protects against minor chemical spills. Has an orange stripe on the shoulder.
