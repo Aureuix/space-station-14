@@ -2,7 +2,7 @@
   parent:  [ClothingNeckBase, BaseCommandContraband ]
   id: ClothingNeckCloakHosFireline
   name: M-81 fireline cloak
-  description: A cloak made for the most dedicated head of securities, it comes with durable warming fabric and has a fireline-like glow to it.
+  description: A cloak made for the most dedicated Head of Securities, it comes with durable warming fabric and has a fireline-like glow to it.
   components:
   - type: Sprite
     sprite: _Starlight/Clothing/Neck/Cloaks/hos_poncho.rsi
@@ -19,7 +19,7 @@
   parent: [ClothingNeckBase, BaseCommandContraband]
   id: ClothingNeckCloakCapElite
   name: elite captain's cloak
-  description: An elite captain's cloak made from the latest composite glowing fabric, ensuring you stand out and are easier to target. Live bright, die young.
+  description: An elite Captain's cloak made from the latest composite glowing fabric, ensuring you stand out and are easier to target. Live bright, die young.
   components:
   - type: Sprite
     sprite: _Starlight/Clothing/Neck/Cloaks/cap_elite.rsi
@@ -59,7 +59,7 @@
   parent: [ ClothingNeckBase, BaseCommandContraband ]
   id: ClothingNeckCloakHopElite
   name: elite hop's cloak
-  description: An elite hop's cloak made from the latest composite glowing fabric, ensuring you stand out and are easier to target. Live bright, hop hard, and pray your team knows how to catch!
+  description: An elite HoP's cloak made from the latest composite glowing fabric, ensuring you stand out and are easier to target. Live bright, hop hard, and pray your team knows how to catch!
   components:
   - type: Sprite
     sprite: _Starlight/Clothing/Neck/Cloaks/hop_elite.rsi
@@ -76,7 +76,7 @@
   parent: [ ClothingNeckBase, BaseCommandContraband ]
   id: ClothingCloakCmoElite
   name: elite chief medical officer's cloak
-  description: An elite chief medical officer's cloak made from the latest composite glowing fabric. Not recommended for breaking cancer diagnoses to patients.
+  description: An elite Chief Medical Officer's cloak made from the latest composite glowing fabric. Not recommended for breaking cancer diagnoses to patients.
   components:
   - type: Sprite
     sprite: _Starlight/Clothing/Neck/Cloaks/cmo_elite.rsi
@@ -93,7 +93,7 @@
   parent:  [ClothingNeckBase, BaseCommandContraband ]
   id: ClothingNeckCloakHosElite
   name: elite head of security's cloak
-  description: An elite head of security's cloak crafted from the latest composite glowing fabric. Only for a true paladin.
+  description: An elite Head of Security's cloak crafted from the latest composite glowing fabric. Only for a true paladin.
   components:
   - type: Sprite
     sprite: _Starlight/Clothing/Neck/Cloaks/hos_elite.rsi
@@ -110,7 +110,7 @@
   parent: [ClothingNeckBase, BaseCommandContraband]
   id: ClothingNeckCloakHosRetro
   name: retro-head of security cloak
-  description: A retro-styled cloak for the head of security, reminiscent of days gone by.
+  description: A retro-styled cloak for the Head of Security, reminiscent of days gone by.
   components:
   - type: Sprite
     sprite: _Starlight/Clothing/Neck/Cloaks/RetroHos.rsi
@@ -123,7 +123,7 @@
   parent: [ ClothingNeckBase, BaseCommandContraband ]
   id: ClothingNeckCloakCeElite
   name: elite chief engineer's cloak
-  description: Chief engineer's cloak made from the latest composite glowing fabric, ensuring you stand out. The brightest cloak—so everyone knows where all the station's light went.
+  description: An elite Chief Engineer's cloak made from the latest composite glowing fabric, ensuring you stand out. The brightest cloak available— so everyone knows where all the station's light went.
   components:
   - type: Sprite
     sprite: _Starlight/Clothing/Neck/Cloaks/ce_elite.rsi
@@ -140,7 +140,7 @@
   parent:  [ClothingNeckBase, BaseCommandContraband ]
   id: ClothingNeckCloakRdElite
   name: elite research director's cloak
-  description: Research Director's cloak made from the latest composite glowing fabric, ensuring you stand out. Make sure to tell everyone you invented it.
+  description: An elite Research Director's cloak made from the latest composite glowing fabric, ensuring you stand out. Make sure to tell everyone you invented it.
   components:
   - type: Sprite
     sprite: _Starlight/Clothing/Neck/Cloaks/rd_elite.rsi
@@ -157,7 +157,7 @@
   parent: [ ClothingNeckBase, BaseCommandContraband ]
   id: ClothingNeckCloakQmElite
   name: elite quartermaster's cloak
-  description: Quartermaster's cloak made from the latest composite glowing fabric, of course, you doesn't want to sell it.
+  description: An elite Quartermaster's cloak made from the latest composite glowing fabric. Worth a fortune, but of course, you wouldn't ever think of selling it.
   components:
   - type: Sprite
     sprite: _Starlight/Clothing/Neck/Cloaks/qm_elite.rsi
@@ -173,8 +173,8 @@
 - type: entity
   parent: [ ClothingNeckBase, BaseBlueShieldContraband ]
   id: ClothingNeckCloakBsoElite
-  name: elite blue shield cloak
-  description: An elite Blue Shield Officer's cloak crafted from the latest composite glowing fabric. No true BSO is afraid of shining in the dark!
+  name: elite blueshield cloak
+  description: An elite Blueshield Officer's cloak crafted from the latest composite glowing fabric. No true BSO is afraid of shining in the dark!
   components:
   - type: Sprite
     sprite: _Starlight/Clothing/Neck/Cloaks/bso_elite.rsi
@@ -190,8 +190,8 @@
 - type: entity
   parent: [ ClothingNeckBase, BaseBlueShieldContraband ]
   id: ClothingNeckCloakBsoCape
-  name: blue shield formal cloak
-  description: An incredibly large coat, owned only by the most experienced Blue Shield Officers. It's said the sleeves have never been worn.
+  name: blueshield formal cloak
+  description: An incredibly large coat, owned only by the most experienced Blueshield Officers. It's said the sleeves have never been worn.
   components:
   - type: Sprite
     sprite: _Starlight/Clothing/Neck/Cloaks/bso_formal.rsi
@@ -202,7 +202,7 @@
 - type: entity
   parent: [ ClothingNeckBase, BaseBlueShieldContraband ]
   id: ClothingNeckCloakBsoPoncho
-  name: blue shield poncho
+  name: blueshield poncho
   description: This type of poncho was the signature garment of a legendary BSO with no name, or so it is said.
   components:
   - type: Sprite
