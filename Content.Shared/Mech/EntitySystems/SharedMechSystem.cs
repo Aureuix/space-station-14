@@ -32,6 +32,7 @@ using Content.Shared.Stunnable;
 using Content.Shared.Movement.Pulling.Events;
 using Content.Shared.Power.Components;
 using Content.Shared.Power.EntitySystems;
+using Content.Shared.Wires;
 using Content.Shared.Electrocution;
 using Content.Shared._Starlight.Mech;
 #endregion
@@ -87,6 +88,7 @@ public abstract partial class SharedMechSystem : EntitySystem
         SubscribeLocalEvent<MechComponent, RefreshMovementSpeedModifiersEvent>(OnRefreshMovespeed);
         SubscribeLocalEvent<MechComponent, ShotAttemptedEvent>(OnShootAttempt); // Moved from server side, broken
         SubscribeLocalEvent<MechComponent, CanRepairEvent>(OnRepairAttempt); //  Moved from server side, broken
+        SubscribeLocalEvent<MechComponent, AttemptChangePanelEvent>(OnAttemptPanelChanged);
         SubscribeLocalEvent<MechPilotComponent, KnockDownAttemptEvent>(OnKnockdownAttempt);
         SubscribeLocalEvent<MechPilotComponent, ElectrocutionAttemptEvent>(OnMechPilotElectrocutionAttempt);
         #endregion
@@ -686,6 +688,14 @@ public abstract partial class SharedMechSystem : EntitySystem
         component.EquipmentWhitelist = null;
         Dirty(uid, component);
     }
+    
+    #region Starlight
+    // Blocks any modification of the wires panel, except by the mech itself
+    private void OnAttemptPanelChanged(EntityUid uid, MechComponent component, ref AttemptChangePanelEvent args)
+    {
+        args.Cancelled = args.User != uid;
+    }
+    #endregion
     
     private void OnMechPilotElectrocutionAttempt(EntityUid uid, MechPilotComponent comp, ElectrocutionAttemptEvent args)
         => args.SiemensCoefficient *= 0f; // Fully insulate the pilot

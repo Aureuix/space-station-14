@@ -250,7 +250,19 @@ public sealed partial class MechComponent : Component
     public SoundSpecifier PowerupSound = new SoundPathSpecifier("/Audio/Mecha/powerup.ogg");
     [DataField]
     public SoundSpecifier CriticalDamageSound = new SoundPathSpecifier("/Audio/Mecha/critnano.ogg");
+    
+    [DataField]
+    public SoundSpecifier? MaintenanceOnSound = new SoundPathSpecifier("/Audio/Machines/door_lock_on.ogg")
+    {
+        Params = AudioParams.Default.WithVolume(-5f)
+    };
 
+    [DataField]
+    public SoundSpecifier? MaintenanceOffSound = new SoundPathSpecifier("/Audio/Machines/door_lock_off.ogg")
+    {
+        Params = AudioParams.Default.WithVolume(-5f),
+    };
+    
     [DataField]
     public bool FirstStart = false;
 
