@@ -50,7 +50,7 @@
       path: /Audio/_SpL/Effects/unholster.ogg
   - type: EmitSoundOnLand
     sound:
-      path: /Audio/Items/hmg_drop.ogg
+      path: /Audio/_SpL/Effects/hmg_drop.ogg
   # SpL end
 
 - type: entity

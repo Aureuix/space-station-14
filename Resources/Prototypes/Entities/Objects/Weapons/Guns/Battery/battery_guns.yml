@@ -173,9 +173,6 @@
   - type: EmitSoundOnLand
     sound:
       path: /Audio/_SpL/Effects/pistol_drop.ogg
-    params:
-      volume: -2
-      rolloffFactor: 1.3
   # SpL end
 
 - type: entity

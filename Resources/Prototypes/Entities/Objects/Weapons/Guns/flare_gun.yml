@@ -58,9 +58,6 @@
   - type: EmitSoundOnLand
     sound:
       path: /Audio/Items/screwdriver_drop.ogg
-    params:
-      volume: -2
-      rolloffFactor: 1.3
   # SpL end
 
 
