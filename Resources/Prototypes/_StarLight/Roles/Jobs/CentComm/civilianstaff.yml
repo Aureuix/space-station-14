@@ -9,7 +9,6 @@
   icon: "JobIconCCServiceWorker"
   supervisors: job-supervisors-centcom
   canBeAntag: false
-  bypassEorPacification: false
   access:
     - Service
     - Maintenance
@@ -30,7 +29,6 @@
   icon: "JobIconCCChef"
   supervisors: job-supervisors-centcom
   canBeAntag: false
-  bypassEorPacification: false
   access:
     - Service
     - Maintenance
@@ -48,7 +46,6 @@
   icon: "JobIconCCBartender"
   supervisors: job-supervisors-centcom
   canBeAntag: false
-  bypassEorPacification: false
   access:
     - Service
     - Maintenance
@@ -66,7 +63,6 @@
   icon: "JobIconCCJanitor"
   supervisors: job-supervisors-centcom
   canBeAntag: false
-  bypassEorPacification: false
   access:
     - Service
     - Maintenance
