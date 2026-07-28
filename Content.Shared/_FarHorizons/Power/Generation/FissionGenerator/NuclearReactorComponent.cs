@@ -9,6 +9,7 @@ using Robust.Shared.GameStates;
 using Robust.Shared.Prototypes;
 using Robust.Shared.Serialization;
 using Robust.Shared.Serialization.TypeSerializers.Implementations.Custom.Prototype;
+using Robust.Shared.Timing;
 using System.Numerics;
 
 namespace Content.Shared._FarHorizons.Power.Generation.FissionGenerator;
@@ -41,13 +42,7 @@ public sealed partial class NuclearReactorComponent : Component
     /// <summary>
     /// 2D grid of reactor components, or null where there are no components. Size is ReactorGridWidth x ReactorGridHeight
     /// </summary>
-    public ReactorPartComponent?[,] ComponentGrid;
-
-    /// <summary>
-    /// Dictionary of the entities all the parts in the component grid belong to
-    /// </summary>
-    [AutoNetworkedField]
-    public Dictionary<Vector2i, EntityUid> GridEntities = [];
+    public Entity<ReactorPartComponent>?[,] ComponentGrid;
 
     /// <summary>
     /// Dictionary of data that determines the reactor grid's visuals
@@ -60,6 +55,11 @@ public sealed partial class NuclearReactorComponent : Component
     /// 2D grid of lists of neutrons in each grid slot of the component grid
     /// </summary>
     public List<ReactorNeutron>[,] FluxGrid;
+
+    /// <summary>
+    /// Scratch buffer for neutron movement. Avoids List.Remove and flux snapshot allocs.
+    /// </summary>
+    public List<ReactorNeutron>[,] FluxGridScratch;
 
     /// <summary>
     /// Number of neutrons that hit the edge of the reactor grid last tick
@@ -186,12 +186,17 @@ public sealed partial class NuclearReactorComponent : Component
     public int ThermalPowerCount = 0;
     public int ThermalPowerPrecision = 128;
 
+#region Alarms
+    [ViewVariables(VVAccess.ReadWrite)]
+    public NuclearReactorAlarmStates AlarmState;
+
     [ViewVariables]
     public EntityUid? AlarmAudioHighThermal;
     [ViewVariables]
     public EntityUid? AlarmAudioHighTemp;
     [ViewVariables]
     public EntityUid? AlarmAudioHighRads;
+#endregion
 
     #region Containers
     public const string PartSlotId = "part_slot";
@@ -334,6 +339,13 @@ public sealed partial class NuclearReactorComponent : Component
     [ViewVariables(VVAccess.ReadWrite)]
     public SignalState InsertPortState = SignalState.Low;
     #endregion
+
+    /// <summary>
+    /// Stopwatch that keeps track of how long the reactor is taking to process
+    /// </summary>
+    /// <remarks>This is so the reactor will delete itself if it starts hogging too many resources</remarks>
+    [ViewVariables]
+    public readonly Stopwatch SimTime = new();
 }
 
 [Serializable, NetSerializable, DataDefinition]
@@ -341,4 +353,17 @@ public sealed partial class ReactorCapVisualData
 {
     public Color color = Color.Black;
     public string cap = "";
+}
+
+[Flags]
+public enum NuclearReactorAlarmStates : ushort
+{
+    HighThermal = 1 << 0,       // Alarm should sound
+    HighThermalAck = 1 << 1,    // Alarm should not sound even if it should
+    HighTemp = 1 << 2,
+    HighTempAck = 1 << 3,
+    HighRad = 1 << 4,
+    HighRadAck = 1 << 5,
+
+    Alarms = HighThermal | HighTemp | HighRad,
 }
