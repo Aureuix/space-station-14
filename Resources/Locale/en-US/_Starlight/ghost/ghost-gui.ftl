@@ -8,12 +8,24 @@ ghost-gui-ghost-theme-button = Ghost Themes
 ghost-gui-ghost-theme-window-title = Ghost Themes
 ghost-gui-choose-theme = Choose Theme
 
-ghost-role-terror-spider-name = Terror spider
+ghost-role-terror-spider-name = Terror Spider
 ghost-role-terror-spider-description = The task of the Terror Spider is to destroy the station and everything alive on it.
 ghost-role-terror-spider-rules = You are a [color=red][bold]Team Antagonist[/bold][/color] with all other terror spiders.
 
-ghost-role-information-ntnc-consortium-officer-name = Nanotrasen Navy Corps Marine
+ghost-role-information-ntnc-consortium-officer-name = NanoTrasen Navy Corps Marine
 ghost-role-information-ntnc-consortium-officer-description = You are charged directly from the NanoTrasen Navy Corps to protect and serve the Central Command officials at all costs, nothing else subverts that.
 
 ghost-role-information-green-shield-officer-name = Greenshield Officer
 ghost-role-information-green-shield-officer-description = You are charged directly from the highest levels of CentComm to protect CentComm VIPs and maintain the peace at Central Command outposts.
+
+ghost-role-information-cc-serviceworker-name = CentComm Service Worker
+ghost-role-information-cc-serviceworker-description = Perform menial labor on CentComm outposts.
+
+ghost-role-information-cc-chef-name = CentComm Chef
+ghost-role-information-cc-chef-description = Dish out food to weary station crews on CentComm outposts.
+
+ghost-role-information-cc-bartender-name = CentComm Bartender
+ghost-role-information-cc-bartender-description = Serve up drinks to weary station crews on CentComm outposts.
+
+ghost-role-information-cc-janitor-name = CentComm Janitor
+ghost-role-information-cc-janitor-description = Keep the floors on CentComm outposts squeaky clean.

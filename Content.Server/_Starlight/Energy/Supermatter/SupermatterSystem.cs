@@ -175,7 +175,8 @@ public sealed class SupermatterSystem : AccUpdateEntitySystem
 
     private void HandleDestruction(Entity<SupermatterComponent> supermatter)
     {
-        var damageToApply = MathHelper.Clamp((supermatter.Comp.AccBreak / 10) - Const.RegenerationPerSecond, -Const.RegenerationPerSecond, Const.MaxDamagePerSecond);
+        var regen = Const.RegenerationPerSecond * supermatter.Comp.RegenerationModifier;
+        var damageToApply = MathHelper.Clamp((supermatter.Comp.AccBreak / 10) - regen, -regen, Const.MaxDamagePerSecond);
         supermatter.Comp.AccBreak = 0;
 
         supermatter.Comp.Durability = MathHelper.Clamp(supermatter.Comp.Durability - damageToApply, 0f, 100f);
@@ -199,6 +200,7 @@ public sealed class SupermatterSystem : AccUpdateEntitySystem
     private void HandleGas(Entity<SupermatterComponent> supermatter)
     {
         var gas = _atmosphere.GetTileMixture(supermatter.Owner, true) ?? new();
+        
         DamageByPressure(supermatter, gas);
         DamageByTemperature(supermatter, gas);
 
@@ -208,18 +210,32 @@ public sealed class SupermatterSystem : AccUpdateEntitySystem
         float heatModifier = 0;
         float radiationStability = 0;
 
-        for (var i = 0; i < Const.GasProperties.Length; i++)
+        // Reset gas effect modifiers
+        supermatter.Comp.RegenerationModifier = 1f;
+        supermatter.Comp.ReactionModifier = 1f;
+        supermatter.Comp.DestabilizationModifier = 1f;
+        supermatter.Comp.GasDoesDamage = 0f;
+        var gaslength = Math.Min(Const.GasProperties.Length, gas.Moles.Length);//i guess but only issue when enums shrink?
+        for (var i = 0; i < gaslength; i++)
         {
             var prop = Const.GasProperties[i];
+            //var moles = gas.Moles[i]; // used for debugging if needed
             var percent = Math.Clamp(gas.Moles[i] / gas.TotalMoles, 0, 1);
             heatTransfer += prop.HeatTransferPerMole * gas.Moles[i];
             heatModifier += prop.HeatModifier * percent;
             radiationStability += prop.RadiationStability * percent;
+            supermatter.Comp.RegenerationModifier += prop.RegenerationModifier * percent;
+            supermatter.Comp.ReactionModifier += prop.ReactionModifier * percent;
+            supermatter.Comp.DestabilizationModifier += prop.DestabilizationModifier * percent;
+            supermatter.Comp.GasDoesDamage += prop.GasDamage * percent;
         }
+        // im not sure if this needs to be in the loop
+        supermatter.Comp.RadiationStability = MathHelper.Clamp(radiationStability, Const.MinRadiationStability, Const.MaxRadiationStability);
+        supermatter.Comp.ReactionModifier = MathHelper.Clamp(supermatter.Comp.ReactionModifier, Const.MinReactionModifier, Const.MaxReactionModifier);
+        supermatter.Comp.RegenerationModifier = MathHelper.Clamp(supermatter.Comp.RegenerationModifier, Const.MinRegenerationModifier, Const.MaxRegenerationModifier);
+        supermatter.Comp.DestabilizationModifier =  MathHelper.Clamp(supermatter.Comp.DestabilizationModifier, Const.MinDestabilizationModifier, Const.MaxDestabilizationModifier);
 
-        supermatter.Comp.RadiationStability = MathHelper.Clamp(radiationStability, 1.1, 10);
-
-        ProcessHeat(supermatter, gas, heatTransfer, heatModifier);
+        ProcessHeat(supermatter, gas, heatTransfer * supermatter.Comp.ReactionModifier.Float(), heatModifier);
         TryCompensateDamage(supermatter, gas);
     }
 
@@ -229,9 +245,11 @@ public sealed class SupermatterSystem : AccUpdateEntitySystem
         if (breakDelta == 0) return;
         supermatter.Comp.AccBreak -= breakDelta;
 
-        gas.AdjustMoles((int)Gas.Tritium, breakDelta.Float()/2);
-        
-        gas.AdjustMoles((int)Gas.Oxygen, breakDelta.Float()*4);
+        var ReactionMod = supermatter.Comp.ReactionModifier.Float();//make gases that risk higher reactifify also make more gas/also produce less for "safer" gases
+
+        gas.AdjustMoles((int)Gas.Tritium, breakDelta.Float()/2* ReactionMod);
+
+        gas.AdjustMoles((int)Gas.Oxygen, breakDelta.Float()*4* ReactionMod);
     }
 
     private static void ProcessHeat(Entity<SupermatterComponent> supermatter, GasMixture gas, float heatTransfer, float heatModifier)
@@ -266,12 +284,14 @@ public sealed class SupermatterSystem : AccUpdateEntitySystem
     private void HandleDamage(Entity<SupermatterComponent> supermatter)
     {
         EnsureComp<DamageableComponent>(supermatter.Owner, out var damageable);
-        var trueDamage = damageable.TotalDamage * Const.DamageMultiplayer;
+        var trueDamage = damageable.TotalDamage * Const.DamageMultiplier;
+        trueDamage += supermatter.Comp.GasDoesDamage;//DamageGases
         _damageable.TryChangeDamage(supermatter.Owner, damageable.Damage.Invert(), true);
-
-        supermatter.Comp.AccBreak = MathHelper.Clamp(supermatter.Comp.AccBreak + (trueDamage * Const.BreakPercent), 0, 9999);
-        supermatter.Comp.AccHeat = MathHelper.Clamp(supermatter.Comp.AccHeat + (trueDamage * Const.HeatPercent), 0, 9999);
-        supermatter.Comp.AccLighting = MathHelper.Clamp(supermatter.Comp.AccLighting + (trueDamage * Const.LightingPercent), 0, 25);
-        supermatter.Comp.AccRadiation = MathHelper.Clamp(supermatter.Comp.AccRadiation + (trueDamage * Const.RadiationPercent), 0, 50);
+        var modifiedDamage = trueDamage * supermatter.Comp.ReactionModifier;
+        // Added supermatter.Comp.ReactionModifier so nitrium and supressing gases can "calm" or agitate the SM
+        supermatter.Comp.AccBreak = MathHelper.Clamp(supermatter.Comp.AccBreak + (modifiedDamage * Const.BreakPercent * supermatter.Comp.DestabilizationModifier), 0, 9999);
+        supermatter.Comp.AccHeat = MathHelper.Clamp(supermatter.Comp.AccHeat + (modifiedDamage * Const.HeatPercent), 0, 9999);
+        supermatter.Comp.AccLighting = MathHelper.Clamp(supermatter.Comp.AccLighting + (modifiedDamage * Const.LightingPercent), 0, 25);
+        supermatter.Comp.AccRadiation = MathHelper.Clamp(supermatter.Comp.AccRadiation + (modifiedDamage * Const.RadiationPercent), 0, 50);
     }
 }

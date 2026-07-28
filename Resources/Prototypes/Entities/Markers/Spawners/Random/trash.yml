@@ -22,7 +22,6 @@
       - id: BrokenBottle
         # Starlight Start
       - id: FoodPacketRiceBarTrash
-      - id: FoodPacketCheeseBoxTrash
       - id: FoodPacketHardCandyTrash
       - id: FoodFrozenPopsicleNicotineTrashStick
       - id: FoodFrozenPopsicleOrangeTrash

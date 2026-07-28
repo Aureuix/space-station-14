@@ -69,6 +69,12 @@ WeaponRevolverSnubRevolver: null
 #2026-04-17
 WeaponPistolSP8T: WeaponPistolBlueguard
 
+#2026-05-23 # Removing unused insulated prototypes
+ClothingHandsCatPawsWhiteInsulated: null
+ClothingHandsCatPawsBrownInsulated: null
+ClothingHandsCatPawsBlackInsulated: null
+ClothingHandsCatPawsBlackWhiteInsulated: null
+
 #2026-06-09 - Removing the large warden locker
 LockerWardenLarge: LockerWarden
 LockerWardenLargeFilled: LockerWardenFilled

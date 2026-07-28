@@ -1,5 +1,5 @@
 - type: entity
-  parent: ClothingOuterStorageBase
+  parent: [ClothingOuterStorageBase, ClothingOuterColdBase] # Starlight
   id: ClothingOuterCoatBomber
   name: bomber jacket
   description: A thick, well-worn WW2 leather bomber jacket.
@@ -10,7 +10,7 @@
     sprite: Clothing/OuterClothing/Coats/bomber.rsi
 
 - type: entity
-  parent: [ ClothingOuterArmorBase, ClothingOuterStorageBase, AllowSuitStorageClothing, BaseSecurityContraband ]
+  parent: [ ClothingOuterStorageBase, AllowSuitStorageClothing, BaseSecurityContraband ]
   id: ClothingOuterCoatDetective
   name: detective's armored trenchcoat
   description: An 18th-century multi-purpose trenchcoat with armored inserts. Someone who wears this means serious business.
@@ -25,8 +25,14 @@
         children:
         - id: SmokingPipeFilledTobacco
         - id: FlippoEngravedLighter
-  - type: ExplosionResistance
-    damageCoefficient: 1 #its a coat. it doesnt do shit
+  - type: Armor # Starlight start
+    modifiers:
+      coefficients:
+        Blunt: 0.75 # Lose a little blunt to tradeoff cold
+        Slash: 0.70
+        Piercing: 0.70
+        Heat: 0.80
+        Cold: 0.85 # Starlight end, here for cold
     
 # SpL- for mapping
 - type: entity
@@ -45,8 +51,6 @@
           children:
             - id: SmokingPipeFilledTobacco
             - id: FlippoEngravedLighter
-    - type: ExplosionResistance
-      damageCoefficient: 1 #its a coat. it doesnt do shit
 # SpL end
 
 - type: entity
@@ -72,7 +76,7 @@
         - id: FlippoLighter #Not the steal objective, only difference from normal detective trenchcoat
 
 - type: entity
-  parent: ClothingOuterStorageBase
+  parent: [ClothingOuterStorageBase, ClothingOuterColdBase] # Starlight
   id: ClothingOuterCoatGentle
   name: gentle coat
   description: A gentle coat for a gentle man, or woman.
@@ -96,6 +100,7 @@
         Slash: 0.65
         Piercing: 0.6
         Heat: 0.7
+        Cold: 0.8 # Starlight
         Caustic: 0.75 # not the full 90% from ss13 because of the head
   - type: ExplosionResistance
     damageCoefficient: 0.9
@@ -114,6 +119,7 @@
         Slash: 0.65
         Piercing: 0.7
         Heat: 0.7
+        Cold: 0.8 # Starlight
         Caustic: 0.9
   - type: ExplosionResistance
     damageCoefficient: 0.9
@@ -130,7 +136,7 @@
     sprite: Clothing/OuterClothing/Coats/hos_trenchcoat.rsi
 
 - type: entity
-  parent: ClothingOuterStorageToggleableBase
+  parent: [ClothingOuterStorageBase, ClothingOuterColdBase] # Starlight
   id: ClothingOuterCoatJensen
   name: jensen coat
   description: A jensen coat.
@@ -143,7 +149,7 @@
     clothingPrototype: ClothingHeadHatHoodChaplainHood
 
 - type: entity
-  parent: ClothingOuterStorageBase
+  parent: ClothingOuterStorageToggleableBase
   id: ClothingOuterCoatTrench
   name: trench coat
   description: A comfy trench coat.
@@ -160,6 +166,7 @@
   - type: Armor
     modifiers:
       coefficients:
+        Cold: 0.9 # Starlight
         Slash: 0.95
   - type: Edible
     requiresSpecialDigestion: true
@@ -172,7 +179,7 @@
           Quantity: 20
 
 - type: entity
-  parent: ClothingOuterStorageFoldableBase
+  parent: [ClothingOuterStorageFoldableBase, AllowSuitStorageClothing] # SpL
   id: ClothingOuterCoatLab
   name: lab coat
   description: A suit that protects against minor chemical spills.
@@ -186,6 +193,7 @@
   - type: Armor
     modifiers:
       coefficients:
+        Cold: 0.9 # Starlight
         Caustic: 0.75
 
 - type: entity
@@ -194,7 +202,7 @@
   name: lab coat
 
 - type: entity
-  parent: ClothingOuterStorageFoldableBase
+  parent: [ClothingOuterStorageFoldableBase, AllowSuitStorageClothing] # SpL
   id: ClothingOuterCoatLabChem
   name: chemist lab coat
   description: A suit that protects against minor chemical spills. Has an orange stripe on the shoulder.
@@ -208,6 +216,7 @@
   - type: Armor
     modifiers:
       coefficients:
+        Cold: 0.9 # Starlight
         Caustic: 0.75
 
 - type: entity
@@ -216,7 +225,7 @@
   name: chemist lab coat
 
 - type: entity
-  parent: ClothingOuterStorageFoldableBase
+  parent: [ClothingOuterStorageFoldableBase, AllowSuitStorageClothing] # SpL
   id: ClothingOuterCoatLabViro
   name: virologist lab coat
   description: A suit that protects against bacteria and viruses. Has an green stripe on the shoulder.
@@ -230,6 +239,7 @@
   - type: Armor
     modifiers:
       coefficients:
+        Cold: 0.9 # Starlight
         Caustic: 0.75
 
 - type: entity
@@ -238,7 +248,7 @@
   name: virologist lab coat
 
 - type: entity
-  parent: ClothingOuterStorageFoldableBase
+  parent: [ClothingOuterStorageFoldableBase, AllowSuitStorageClothing] # SpL
   id: ClothingOuterCoatLabGene
   name: geneticist lab coat
   description: A suit that protects against minor chemical spills. Has an blue stripe on the shoulder.
@@ -252,6 +262,7 @@
   - type: Armor
     modifiers:
       coefficients:
+        Cold: 0.9 # Starlight
         Caustic: 0.75
 
 - type: entity
@@ -260,7 +271,7 @@
   name: geneticist lab coat
 
 - type: entity
-  parent: ClothingOuterStorageFoldableBase
+  parent: [ClothingOuterStorageFoldableBase, AllowSuitStorageClothing] # SpL
   id: ClothingOuterCoatLabCmo
   name: chief medical officer's lab coat
   description: Custom made blue lab coat for the Chief Medical Officer, offers improved protection against chemical spills and minor cuts.
@@ -276,6 +287,7 @@
       coefficients:
         Slash: 0.95
         Heat: 0.95
+        Cold: 0.85 # Starlight
         Caustic: 0.65
 
 - type: entity
@@ -284,7 +296,7 @@
   name: chief medical officer's lab coat
 
 - type: entity
-  parent: ClothingOuterStorageFoldableBase
+  parent: [ClothingOuterStorageFoldableBase, AllowSuitStorageClothing] # SpL
   id: ClothingOuterCoatRnd
   name: scientist lab coat
   description: A suit that protects against minor chemical spills. Has a purple stripe on the shoulder.
@@ -298,6 +310,7 @@
   - type: Armor
     modifiers:
       coefficients:
+        Cold: 0.9 # Starlight
         Caustic: 0.75
 
 - type: entity
@@ -306,7 +319,7 @@
   name: scientist lab coat
 
 - type: entity
-  parent: ClothingOuterStorageFoldableBase
+  parent: [ClothingOuterStorageFoldableBase, AllowSuitStorageClothing] # SpL
   id: ClothingOuterCoatRobo
   name: roboticist lab coat
   description: More like an eccentric coat than a labcoat. Helps pass off bloodstains as part of the aesthetic. Comes with red shoulder pads.
@@ -320,6 +333,7 @@
   - type: Armor
     modifiers:
       coefficients:
+        Cold: 0.9 # Starlight
         Caustic: 0.75
 
 - type: entity
@@ -328,7 +342,7 @@
   name: roboticist lab coat
 
 - type: entity
-  parent: ClothingOuterStorageFoldableBase
+  parent: [ClothingOuterStorageFoldableBase, AllowSuitStorageClothing] # SpL
   id: ClothingOuterCoatRD
   name: research director lab coat
   description: Woven with top of the line technology, this labcoat helps protect against radiation in similar way to the experimental hardsuit.
@@ -343,6 +357,7 @@
     modifiers:
       coefficients:
         Caustic: 0.75
+        Cold: 0.85 # Starlight
         Radiation: 0.9
 
 - type: entity
@@ -351,7 +366,7 @@
   name: research director lab coat
 
 - type: entity
-  parent: [ ClothingOuterStorageBase, AllowSuitStorageClothing ]
+  parent: [ ClothingOuterStorageBase, ClothingOuterColdBase, AllowSuitStorageClothing ] # Starlight
   id: ClothingOuterCoatPirate
   name: pirate garb
   description: Yarr.
@@ -373,7 +388,7 @@
     sprite: Clothing/OuterClothing/Coats/warden.rsi
 
 - type: entity
-  parent: ClothingOuterStorageBase
+  parent: [ClothingOuterStorageBase, ClothingOuterColdBase] # Starlight
   id: ClothingOuterDameDane
   name: yakuza coat
   description: Friday...
@@ -384,7 +399,7 @@
     sprite: Clothing/OuterClothing/Coats/damedanecoat.rsi
 
 - type: entity
-  parent: ClothingOuterStorageBase
+  parent: [ClothingOuterStorageBase, ClothingOuterColdBase] # Starlight
   id: ClothingOuterClownPriest
   name: robes of the honkmother
   description: Meant for a clown of the cloth.
@@ -414,7 +429,7 @@
         Piercing: 0.85
 
 - type: entity
-  parent: [ClothingOuterStorageFoldableBase, AllowSuitStorageClothing]
+  parent: [ClothingOuterStorageFoldableBase, ClothingOuterColdBase, AllowSuitStorageClothing] # Starlight
   id: ClothingOuterCoatParamedicWB
   name: paramedic windbreaker
   description: A paramedic's trusty windbreaker, for all the space wind.
@@ -430,7 +445,7 @@
   name: paramedic windbreaker
 
 - type: entity
-  parent: [ClothingOuterStorageBase, BaseMinorContraband] #SL Edit Syndie > Minor
+  parent: [ClothingOuterStorageBase, ClothingOuterColdBase, BaseMinorContraband] #SL Edit Syndie > Minor + Cold
   id: ClothingOuterCoatSyndieCap
   name: syndicate's coat
   description: The syndicate's coat is made of durable fabric, with gilded patterns.
@@ -470,6 +485,7 @@
         Slash: 0.85
         Piercing: 0.65
         Heat: 0.85
+        Cold: 0.9 # Starlight
         Caustic: 0.75
   - type: ZombificationResistance #Starlight
     zombificationResistanceCoefficient: 0.75 #Starlight
@@ -511,6 +527,7 @@
   - type: Armor
     modifiers:
       coefficients:
+        Cold: 0.9 # Starlight
         Caustic: 0.75
 
 - type: entity
