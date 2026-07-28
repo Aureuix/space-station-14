@@ -81,7 +81,6 @@
   - type: EmitSoundOnLand
     sound:
       path: /Audio/_SpL/Effects/rifle_drop.ogg
-    params:
   # SpL end
 
 - type: entity
