@@ -126,11 +126,8 @@ public abstract class SharedPortalSystem : EntitySystem
             return;
         }
 
-        if (TryComp<LinkedEntityComponent>(ent, out var link))
+        if (TryComp<LinkedEntityComponent>(ent, out var link) && link.LinkedEntities.Count != 0)
         {
-            if (link.LinkedEntities.Count == 0)
-                return;
-
             // check prediction
             if (_netMan.IsClient && !CanPredictTeleport((ent, link)))
                 return;
