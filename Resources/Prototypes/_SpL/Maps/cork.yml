@@ -1,22 +1,21 @@
 - type: gameMap
-  id: SpLBazaar
-  mapName: 'Bazaar Station'
-  mapPath: /Maps/_SpL/Stations/Bazaar.yml
+  id: SpLCork
+  mapName: 'Cork Outpost'
+  mapPath: /Maps/_Starlight/Stations/Cork.yml
   maxRandomOffset: 0
   randomRotation: false
   minPlayers: 0
-  maxPlayers: 50
+  maxPlayers: 20 # SpL Change
   stations:
-    SpLBazaar:
+    StarlightCork:
       stationProto: StandardNanotrasenStation
       components:
         - type: StationNameSetup
-          mapNameTemplate: '{0} Bazaar {1}'
+          mapNameTemplate: '{0} Cork {1}'
           nameGenerator:
             !type:NanotrasenNameGenerator
-            prefixCreator: 'CRV'
-        - type: StationCargoShuttle
-          path: /Maps/_Starlight/Shuttles/cargo_silica.yml
+            prefixCreator: 'VLP'
+        # SpL Start
         - type: GridSpawn
           groups:
             trade: !type:GridSpawnGroup
@@ -27,7 +26,7 @@
                 - /Maps/_Starlight/trading_outpost.yml
             cargo_mining_shuttle: !type:GridSpawnGroup
               paths:
-                - /Maps/_SpL/Shuttles/Salvage/Mining_Hammerhead.yml
+                - /Maps/_SpL/Shuttles/Salvage/Mining_Cracker.yml
               nameGrid: false
             cargo_salvage_shuttle: !type:GridSpawnGroup
               paths:
@@ -37,7 +36,7 @@
               hide: true
               nameGrid: true
               minCount: 2
-              maxCount: 3 
+              maxCount: 3
               stationGrid: false
               paths:
                 - /Maps/Ruins/abandoned_outpost.yml
@@ -55,13 +54,13 @@
                 - /Maps/Ruins/whiteship_bluespacejumper.yml
                 - /Maps/Ruins/wrecklaimer.yml
                 - /Maps/Ruins/displaced_telescience.yml
-                - /Maps/_Starlight/Ruins/Salv_Sus.yml 
+                - /Maps/_Starlight/Ruins/Salv_Sus.yml
             wrecks: !type:DungeonSpawnGroup
               minimumDistance: 150
               maximumDistance: 300
               stationGrid: false
-              minCount: 16 
-              maxCount: 20 
+              minCount: 16
+              maxCount: 20
               addComponents:
                 - type: Gravity
                   enabled: true
@@ -110,48 +109,47 @@
             Captain: [ 1, 1 ]
             # cargo
             Quartermaster: [ 1, 1 ]
-            SalvageSpecialist: [ 4, 4 ]
-            MiningSpecialist: [ 4, 4 ]
-            CargoTechnician: [ 4, 4 ]
-            MailTech: [ 2, 2 ]
+            SalvageSpecialist: [ 3, 3 ]
+            MiningSpecialist: [ 2, 2 ]
+            CargoTechnician: [ 3, 3 ]
+            MailTech: [ 1, 1 ]
             SalvageLead: [ 1, 1 ]
             # engineering
             ChiefEngineer: [ 1, 1 ]
-            StationEngineer: [ 4, 4 ]
-            AtmosphericTechnician: [ 3, 3 ]
+            StationEngineer: [ 2, 2 ]
+            AtmosphericTechnician: [ 2, 2 ]
             TechnicalAssistant: [ 2, 2 ]
             # medical
             ChiefMedicalOfficer: [ 1, 1 ]
-            MedicalDoctor: [ 4, 4 ]
+            MedicalDoctor: [ 3, 3 ]
             MedicalIntern: [ 2, 2 ]
             Psychologist: [ 1, 1 ]
-            Paramedic: [ 2, 2 ]
-            Chemist: [ 2, 2 ]
-            Surgeon: [ 1, 1 ]
+            Paramedic: [ 1, 1 ]
+            Chemist: [ 1, 1 ]
             # science
             ResearchDirector: [ 1, 1 ]
-            Roboticist: [ 2, 2 ]
-            Scientist: [ 4, 4 ]
+            Roboticist: [ 1, 1 ]
+            Scientist: [ 3, 3 ]
             ResearchAssistant: [ 2, 2 ]
             # security
             HeadOfSecurity: [ 1, 1 ]
             Warden: [ 1, 1 ]
-            DutyOfficer: [ 3, 3 ]
-            SecurityOfficer: [ 5, 5 ]
+            DutyOfficer: [ 1, 1 ]
+            SecurityOfficer: [ 3, 3 ]
             SecurityCadet: [ 2, 2 ]
             Detective: [ 1, 1 ]
             Brigmedic: [ 1, 1 ]
             #law
             Magistrate: [ 1, 1 ]
-            IAA: [ 1, 1 ]
+            IAA: [ 2, 2 ]
             # service
             HeadOfPersonnel: [ 1, 1 ]
-            Bartender: [ 2, 2 ]
+            Bartender: [ 1, 1 ]
             Botanist: [ 2, 2 ]
             Chaplain: [ 1, 1 ]
-            Chef: [ 2, 2 ]
+            Chef: [ 1, 1 ]
             Clown: [ 1, 1 ]
-            Janitor: [ 2, 2 ]
+            Janitor: [ 1, 1 ]
             Librarian: [ 1, 1 ]
             Mime: [ 1, 1 ]
             Musician: [ 2, 2 ]
@@ -160,7 +158,7 @@
             Assistant: [ -1, -1 ]
             # silicon
             StationAi: [ 1, 1 ]
-            Borg: [ 4, 4 ]
+            Borg: [ 2, 2 ]
             #Representives
             BlueShield: [ 1, 1 ]
             NanoTrasenRepresentative: [ 1, 1 ]
