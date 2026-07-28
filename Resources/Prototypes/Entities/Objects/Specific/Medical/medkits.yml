@@ -8,11 +8,26 @@
     sprite: _Starlight/Objects/Specific/Medical/firstaidkits.rsi
     state: firstaid
   - type: Storage
-    maxItemSize: Small
+    # maxItemSize: Small # SpL
     grid:
-    - 0,0,3,1
+    - 0,0,3,1 # SpL start
+    whitelist:
+      tags:
+        - Patch
+        - Brutepack
+        - Bloodpack
+        - Gauze
+        - Ointment
+        - Vial
+        - PillCanister
+        - AutoMender
+        - Patch
+        - PatchPack
+      components:
+        - Injector
+        - Pill # SpL end
   - type: Item
-    size: Large
+    size: Normal # SpL
     sprite: _Starlight/Objects/Specific/Medical/firstaidkits.rsi
     heldPrefix: firstaid
   - type: PhysicalComposition
@@ -114,7 +129,7 @@
     #    - Hypospray
         - Ointment
     #    - CigPack
-    #    - PillCanister
+        - PillCanister
     #    - Radio
     #    - DiscreteHealthAnalyzer
     #    - SurgeryTool
@@ -123,7 +138,7 @@
         - Vial
         - AutoMender
         - Patch # SpL
-    #    - PatchPack # SpL
+        - PatchPack # SpL
        components:
         - Injector
         - Pill

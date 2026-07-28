@@ -14803,7 +14803,7 @@ entities:
     - type: Transform
       pos: -28.5,17.5
       parent: 2
-- proto: AmoxlaAutoinjector
+- proto: AmoxlaAutoInjector
   entities:
   - uid: 830
     components:
