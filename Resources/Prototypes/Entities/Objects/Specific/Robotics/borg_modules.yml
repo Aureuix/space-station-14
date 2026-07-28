@@ -614,6 +614,7 @@
     - state: icon-mining
   - type: ItemBorgModule
     hands:
+    - item: FloodlightBorg # SpL
     - item: MiningDrill
     - item: Shovel
     - item: MineralScannerUnpowered
@@ -640,6 +641,7 @@
     - state: icon-mining-adv
   - type: ItemBorgModule
     hands:
+    - item: FloodlightBorg # SpL
     - item: MiningDrillDiamond
     - item: Shovel
     - item: AdvancedMineralScannerUnpowered
