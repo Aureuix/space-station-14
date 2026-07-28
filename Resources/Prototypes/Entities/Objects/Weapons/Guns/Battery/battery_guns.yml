@@ -1114,7 +1114,10 @@
     minAngle: 0
     maxAngle: 0
   - type: Gun
-    fireRate: 2
+    fireRate: 12 # SpL making this more like a beam gun
+    selectedMode: FullAuto # SpL- trust me
+    availableModes:
+      - FullAuto # SpL- trust me
     minAngle: 1
     maxAngle: 2
 
