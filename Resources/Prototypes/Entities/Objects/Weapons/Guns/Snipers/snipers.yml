@@ -186,12 +186,10 @@
     capacity: 5
     proto: CartridgeAntiMateriel
     soundRack:
-      path: /Audio/_SpL/Weapons/Guns/Cock/hristov_cycle.ogg
-      params:
-        variation: 0.146
+      path: /Audio/_SpL/Weapons/Guns/Cock/hristov_cycle.ogg # SpL
   - type: SpeedModifiedOnWield
-    walkModifier: 0.30 #SL 25% -> 30% speed
-    sprintModifier: 0.30 #SL 25% -> 30% speed
+    walkModifier: 0.25 #SL 25% -> 30% speed # SpL rollback
+    sprintModifier: 0.25 #SL 25% -> 30% speed # SpL rollback
   - type: CursorOffsetRequiresWield
   - type: EyeCursorOffset
     maxOffset: 4 #SL 3 -> 4
