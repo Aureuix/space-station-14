@@ -127722,7 +127722,7 @@ entities:
   - uid: 18963
     components:
     - type: MetaData
-      desc: Closes the shutters for the security reception lineup. Glory to Nanotrasen.
+      desc: Closes the shutters for the security reception lineup. Glory to NanoTrasen.
       name: lockable button (shutters)
     - type: Transform
       rot: -1.5707963267948966 rad
@@ -128575,7 +128575,7 @@ entities:
   - uid: 2818
     components:
     - type: MetaData
-      desc: A heayv-duty standard-issue Nanotrasen storage unit that can only be opened by Command staff.
+      desc: A heayv-duty standard-issue NanoTrasen storage unit that can only be opened by Command staff.
       name: secure command closet
     - type: Transform
       anchored: True

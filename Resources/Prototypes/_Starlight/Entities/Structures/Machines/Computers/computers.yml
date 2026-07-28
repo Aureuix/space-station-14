@@ -155,7 +155,6 @@
     layer: 32768
   - type: Sprite
     sprite: _Starlight/Mobs/Net/net_eye.rsi
-    drawdepth: CyberspaceObjects
     layers:
     - map: ["base"]
       state: enemy
@@ -197,7 +196,6 @@
     layer: 32768
   - type: Sprite
     sprite: _Starlight/Mobs/Net/net_eye.rsi
-    drawdepth: CyberspaceObjects
     layers:
     - map: ["base"]
       state: enemy
@@ -290,7 +288,7 @@
   parent: BaseComputerAiAccess
   id: UniversalIdConsole
   name: Universal ID card computer
-  description: A terminal for programming Nanotrasen and non-Nanotrasen ID cards with extended access levels.
+  description: A terminal for programming NanoTrasen and non-NanoTrasen ID cards with extended access levels.
   components:
   - type: IdCardConsole
     accessGroups:

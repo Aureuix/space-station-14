@@ -20,6 +20,13 @@
       - id: FoodPacketSusTrash
       - id: FoodPacketSyndiTrash
       - id: BrokenBottle
+        # Starlight Start
+      - id: FoodPacketRiceBarTrash
+      - id: FoodPacketHardCandyTrash
+      - id: FoodFrozenPopsicleNicotineTrashStick
+      - id: FoodFrozenPopsicleOrangeTrash
+      - id: FoodFrozenPopsicleJumboTrash
+      # Starlight End
     - !type:GroupSelector
       weight: 5
       children:
@@ -40,8 +47,8 @@
     - id: TrashMimanaPeel
     - id: TrashBananiumPeel
       weight: 0.5
-    - id: TrashBananaPeelExplosive
-      weight: 0.001 # 1 in 6,500
+#    - id: TrashBananaPeelExplosive # SpL- NO.
+#      weight: 0.001 # 1 in 6,500
 
 - type: entity
   parent: MarkerBase

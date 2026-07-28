@@ -15,3 +15,7 @@ JobSalvageLead = Salvage Lead
 JobSurgeon = Surgeon
 JobMagistrate = Magistrate
 JobZookeeper = Zookeeper
+JobCentCommServiceWorker = CentComm Service Worker
+JobCentCommChef = CentComm Chef
+JobCentCommBartender = CentComm Bartender
+JobCentCommJanitor = CentComm Janitor

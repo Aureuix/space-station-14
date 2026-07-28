@@ -642,7 +642,7 @@
   parent: BaseComputerAiAccess
   id: ComputerId
   name: ID card computer
-  description: Terminal for programming Nanotrasen employee ID cards to access parts of the station.
+  description: A configuration terminal for programming NanoTrasen employee ID cards with access authentication for various parts of the station.
   components:
   - type: IdCardConsole
   # Starlight-edit: Start
