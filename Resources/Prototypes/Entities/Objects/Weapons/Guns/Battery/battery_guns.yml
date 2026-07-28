@@ -30,6 +30,14 @@
     startingCharge: 1000
   - type: StaticPrice
     price: 500
+  # SpL start
+  - type: EmitSoundOnPickup
+    sound:
+      path: /Audio/Effects/box_deploy.ogg
+  - type: EmitSoundOnLand
+    sound:
+      path: /Audio/_SpL/Effects/smg_drop.ogg
+  # SpL end
 
 - type: entity
   parent: [BaseWeaponBattery, BaseGunWieldable]
@@ -120,6 +128,14 @@
   - type: ContainerContainer
     containers:
       cell_slot: !type:ContainerSlot
+  # SpL start
+  - type: EmitSoundOnPickup
+    sound:
+      path: /Audio/Effects/box_deploy.ogg
+  - type: EmitSoundOnLand
+    sound:
+      path: /Audio/_SpL/Effects/smg_drop.ogg
+  # SpL end
 
 - type: entity
   id: BaseWeaponBatterySmall
@@ -153,6 +169,14 @@
     slots:
     - Belt
     - suitStorage
+    # SpL start
+  - type: EmitSoundOnLand
+    sound:
+      path: /Audio/_SpL/Effects/pistol_drop.ogg
+    params:
+      volume: -2
+      rolloffFactor: 1.3
+  # SpL end
 
 - type: entity
   id: BaseWeaponPowerCellSmall

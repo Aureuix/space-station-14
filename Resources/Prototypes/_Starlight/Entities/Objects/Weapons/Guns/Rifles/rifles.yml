@@ -74,6 +74,15 @@
     steps: 6
     zeroVisible: true
   - type: Appearance
+  # SpL start
+  - type: EmitSoundOnPickup
+    sound:
+      path: /Audio/_SpL/Effects/unholster.ogg
+  - type: EmitSoundOnLand
+    sound:
+      path: /Audio/_SpL/Effects/rifle_drop.ogg
+    params:
+  # SpL end
 
 - type: entity
   name: IK-60 laser carbine
@@ -122,7 +131,15 @@
     steps: 5
     zeroVisible: true
   - type: Appearance
-    
+  # SpL start
+  - type: EmitSoundOnPickup
+    sound:
+      path: /Audio/_SpL/Effects/unholster.ogg
+  - type: EmitSoundOnLand
+    sound:
+      path: /Audio/_SpL/Effects/rifle_drop.ogg
+  # SpL end
+
 - type: entity
   name: ARG
   parent: [BaseTSFContraband, BaseWeaponRifle]

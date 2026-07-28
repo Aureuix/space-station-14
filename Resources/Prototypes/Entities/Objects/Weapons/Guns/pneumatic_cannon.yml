@@ -61,6 +61,14 @@
       storagebase: !type:Container
         ents: []
       gas_tank: !type:ContainerSlot
+  # SpL start
+  - type: EmitSoundOnLand
+    sound:
+      path: /Audio/_SpL/Effects/rifle_drop.ogg
+    params:
+      volume: -2
+      rolloffFactor: 1.3
+  # SpL end
 
 - type: entity
   parent: BaseStorageItem

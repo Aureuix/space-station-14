@@ -196,6 +196,14 @@
     pvsIncrease: 0.4 #SL 0.3 -> 0.4
   - type: StaticPrice
     price: 3500
+  # SpL start
+  - type: EmitSoundOnPickup
+    sound:
+      path: /Audio/_SpL/Effects/unholster.ogg
+  - type: EmitSoundOnLand
+    sound:
+      path: /Audio/_SpL/Effects/rifle_drop.ogg
+  # SpL end
 
 - type: entity
   name: musket
