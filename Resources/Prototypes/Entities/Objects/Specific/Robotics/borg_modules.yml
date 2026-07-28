@@ -616,7 +616,7 @@
     hands:
     - item: FloodlightBorg # SpL
     - item: MiningDrill
-    - item: Shovel
+    # - item: Shovel # SpL
     - item: MineralScannerUnpowered
     - item: BorgOreBag
     - item: RadioHandheldExpedition # Starlight
@@ -643,7 +643,7 @@
     hands:
     - item: FloodlightBorg # SpL
     - item: MiningDrillDiamond
-    - item: Shovel
+    # - item: Shovel # SpL
     - item: AdvancedMineralScannerUnpowered
     - item: OreBagOfHolding
     - hand: # Starlight
