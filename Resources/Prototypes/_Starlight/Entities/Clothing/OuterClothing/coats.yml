@@ -1,4 +1,14 @@
 - type: entity
+  abstract: true
+  parent: ClothingOuterBase
+  id: ClothingOuterColdBase
+  components:
+    - type: Armor
+      modifiers:
+        coefficients:
+          Cold: 0.9
+
+- type: entity
   parent: [ ClothingOuterStorageBase, AllowSuitStorageClothing, BaseBlueShieldContraband ]
   id: ClothingOuterCoatBlueShield
   name: blueshield overcoat
@@ -17,15 +27,65 @@
         Slash: 0.6
         Piercing: 0.6
         Heat: 0.7
+        Cold: 0.7 # BlueShield is expensive armor.
   - type: ExplosionResistance
     damageCoefficient: 0.80
   - type: Item
 
 - type: entity
-  parent: [ ClothingOuterStorageFoldableBase, BaseCommandContraband, AllowSuitStorageClothingGasTanks ]
+  parent: [ ClothingOuterStorageBase, BaseNanoTrasenContraband ]
+  id: ClothingOuterCoatMagi
+  name: magistrate longcoat
+  description: New and improved, this jacket actually keeps you warm! Brought to you by the NanoTrasen Fashion Board.
+  components:
+    - type: Sprite
+      sprite: _Starlight/Clothing/OuterClothing/Coats/magi_overcoat.rsi
+    - type: Clothing
+      sprite: _Starlight/Clothing/OuterClothing/Coats/magi_overcoat.rsi
+      clothingVisuals:
+        outerClothing:
+          - state: equipped-OUTERCLOTHING
+    - type: Pierceable
+      level: Metal
+    - type: TemperatureProtection
+      heatingCoefficient: 1.1
+      coolingCoefficient: 0.35
+    - type: Armor
+      modifiers:
+        coefficients:
+          Blunt: 0.9
+          Slash: 0.9
+          Piercing: 0.8
+          Cold: 0.85
+
+- type: entity
+  parent: [ClothingOuterBase, BaseNanoTrasenContraband]
+  id: ClothingOuterRobesMagistrate
+  name: magistrate robes
+  description: This robe commands authority. Much more dense than the commoner variants.
+  components:
+    - type: Sprite
+      sprite: _Starlight/Clothing/OuterClothing/Coats/magistrate.rsi
+    - type: Clothing
+      sprite: _Starlight/Clothing/OuterClothing/Coats/magistrate.rsi
+    - type: Pierceable
+      level: Metal
+    - type: TemperatureProtection
+      heatingCoefficient: 1.1
+      coolingCoefficient: 0.35
+    - type: Armor
+      modifiers:
+        coefficients:
+          Blunt: 0.9
+          Slash: 0.9
+          Piercing: 0.8
+          Cold: 0.85
+        
+- type: entity
+  parent: [ ClothingOuterStorageFoldableBase, BaseNanoTrasenContraband, AllowSuitStorageClothingGasTanks ]
   id: ClothingOuterCoatNtrep
   name: nt representative jacket
-  description: A fancy black jacket, standart issue to NanoTrasen Representatives.
+  description: A fancy black jacket, standard issue to NanoTrasen Representatives.
   components:
   - type: Sprite
     sprite: _Starlight/Clothing/OuterClothing/Coats/ntrep.rsi
@@ -33,15 +93,19 @@
     sprite: _Starlight/Clothing/OuterClothing/Coats/ntrep.rsi
   - type: Pierceable
     level: Metal
+  - type: TemperatureProtection
+    heatingCoefficient: 1.1
+    coolingCoefficient: 0.35
   - type: Armor
     modifiers:
       coefficients:
         Blunt: 0.9
         Slash: 0.9
         Piercing: 0.8
+        Cold: 0.85
 
 - type: entity
-  parent: [ ClothingOuterStorageFoldableBaseOpened, ClothingOuterCoatNtrep, BaseCommandContraband ]
+  parent: [ ClothingOuterStorageFoldableBaseOpened, ClothingOuterCoatNtrep, BaseNanoTrasenContraband ]
   id: ClothingOuterCoatNtrepOpen
   name: nt representative jacket
 
@@ -61,6 +125,7 @@
     modifiers:
       coefficients:
         Caustic: 0.75
+        Cold: 0.90
 
 - type: entity
   parent: [ ClothingOuterStorageFoldableBaseOpened, ClothingOuterCoatLabSeniorChemist ]
@@ -89,6 +154,7 @@
         Slash: 0.85
         Piercing: 0.65
         Heat: 0.85
+        Cold: 0.90
         Caustic: 0.75
   - type: ExplosionResistance
     damageCoefficient: 0.95
@@ -122,6 +188,7 @@
         Slash: 0.65
         Piercing: 0.75
         Heat: 0.85
+        Cold: 0.90
         Caustic: 0.75
   - type: ZombificationResistance
     zombificationResistanceCoefficient: 0.65
@@ -150,6 +217,7 @@
         Slash: 0.65
         Piercing: 0.75
         Heat: 0.85
+        Cold: 0.90
         Caustic: 0.75
   - type: ZombificationResistance
     zombificationResistanceCoefficient: 0.65
@@ -180,6 +248,7 @@
       coefficients:
         Slash: 0.90
         Heat: 0.85
+        Cold: 0.80
     priceMultiplier: 0
   - type: ZombificationResistance
     zombificationResistanceCoefficient: 0.50
@@ -214,6 +283,7 @@
         Slash: 0.9
         Piercing: 0.9
         Heat: 0.9
+        Cold: 0.9
         Caustic: 0.9
 
 #USSP
@@ -239,9 +309,10 @@
         Slash: 0.90
         Piercing: 0.75
         Heat: 0.80
+        Cold: 0.8
 
 - type: entity
-  parent: [ ClothingOuterStorageBase, AllowSuitStorageClothing ]
+  parent: [ ClothingOuterStorageBase, ClothingOuterColdBase, AllowSuitStorageClothing ]
   id: ClothingOuterCoatGreytiderTrenchcoat
   name: greytider trenchcoat
   description: Ah, your trusty coat. There's a few tears here and there, giving it a more timely look. Or at least, that's what you told yourself when you found out gettin' it repaired would set you back 200 spesos.
@@ -275,6 +346,7 @@
         Slash: 0.75
         Piercing: 0.95
         Heat: 0.65
+        Cold: 0.80
   - type: ExplosionResistance
     damageCoefficient: 0.85
 
@@ -301,6 +373,7 @@
         Slash: 0.80
         Piercing: 0.70
         Heat: 0.90
+        Cold: 0.90
   - type: ZombificationResistance
     zombificationResistanceCoefficient: 0.75
 
@@ -311,7 +384,7 @@
 
 # Cargo Windbreaker
 - type: entity
-  parent: [ ClothingOuterStorageFoldableBase, AllowSuitStorageClothing ]
+  parent: [ ClothingOuterStorageFoldableBase, ClothingOuterColdBase, AllowSuitStorageClothing ]
   id: ClothingOuterWindbreakerCargo
   name: cargo windbreaker
   description: A simple windbreaker with a fur collar.
@@ -330,7 +403,7 @@
 
 # Engineering Windbreaker
 - type: entity
-  parent: [ ClothingOuterStorageFoldableBase, AllowSuitStorageClothing ]
+  parent: [ ClothingOuterStorageFoldableBase, ClothingOuterColdBase, AllowSuitStorageClothing ]
   id: ClothingOuterWindbreakerEngineering
   name: engineering windbreaker
   description: A reflective windbreaker for engineers.
@@ -370,7 +443,7 @@
     zombificationResistanceCoefficient: 0.75
 
 - type: entity
-  parent: [ ClothingOuterStorageFoldableBaseOpened, ClothingOuterWindbreakerMedical ]
+  parent: [ ClothingOuterStorageFoldableBaseOpened, ClothingOuterColdBase, ClothingOuterWindbreakerMedical ]
   id: ClothingOuterWindbreakerMedicalOpened
   name: medical windbreaker
 
@@ -387,7 +460,7 @@
       sprite: _Starlight/Clothing/OuterClothing/Coats/senior_chemistry_long_lab.rsi
 
 - type: entity
-  parent: [ ClothingOuterStorageFoldableBaseOpened, ClothingOuterCoatLabSeniorChemistLong ]
+  parent: [ ClothingOuterStorageFoldableBaseOpened, ClothingOuterColdBase, ClothingOuterCoatLabSeniorChemistLong ]
   id: ClothingOuterCoatLabSeniorChemistLongOpened
   name: long senior chemist lab coat
 
@@ -404,7 +477,7 @@
       sprite: _Starlight/Clothing/OuterClothing/Coats/virology_long_lab.rsi
 
 - type: entity
-  parent: [ ClothingOuterStorageFoldableBaseOpened, ClothingOuterCoatLabVirologyLong ]
+  parent: [ ClothingOuterStorageFoldableBaseOpened, ClothingOuterColdBase, ClothingOuterCoatLabVirologyLong ]
   id: ClothingOuterCoatLabVirologyLongOpened
   name: long virologist lab coat
 
@@ -421,7 +494,7 @@
       sprite: _Starlight/Clothing/OuterClothing/Coats/black_long_lab.rsi
 
 - type: entity
-  parent: [ ClothingOuterStorageFoldableBaseOpened, ClothingOuterCoatLabBlackLong ]
+  parent: [ ClothingOuterStorageFoldableBaseOpened, ClothingOuterColdBase, ClothingOuterCoatLabBlackLong ]
   id: ClothingOuterCoatLabBlackLongOpened
   name: long black lab coat
 
@@ -438,14 +511,14 @@
       sprite: _Starlight/Clothing/OuterClothing/Coats/coroner_long_lab.rsi
 
 - type: entity
-  parent: [ ClothingOuterStorageFoldableBaseOpened, ClothingOuterCoatLabCoronerLong ]
+  parent: [ ClothingOuterStorageFoldableBaseOpened, ClothingOuterColdBase, ClothingOuterCoatLabCoronerLong ]
   id: ClothingOuterCoatLabCoronerLongOpened
   name: long coroner lab coat
 # Starlight End
 
 #Science Windbreaker
 - type: entity
-  parent: [ ClothingOuterStorageFoldableBase, AllowSuitStorageClothing ]
+  parent: [ ClothingOuterStorageFoldableBase, ClothingOuterColdBase, AllowSuitStorageClothing ]
   id: ClothingOuterWindbreakerScience
   name: science windbreaker
   description: a labcoat style windbreaker with a pocket for all of your pens.
@@ -458,12 +531,12 @@
     zombificationResistanceCoefficient: 0.75
 
 - type: entity
-  parent: [ ClothingOuterStorageFoldableBaseOpened, ClothingOuterWindbreakerScience ]
+  parent: [ ClothingOuterStorageFoldableBaseOpened, ClothingOuterColdBase, ClothingOuterWindbreakerScience ]
   id: ClothingOuterWindbreakerScienceOpened
   name: science windbreaker
 
 - type: entity
-  parent: [ ClothingOuterStorageBase, AllowSuitStorageClothing, BaseCentcommContraband ]
+  parent: [ ClothingOuterStorageBase, AllowSuitStorageClothing, ClothingOuterColdBase, BaseCentcommContraband ]
   id: ClothingOuterCoatWardenCentcomm
   name: central command armored winter coat
   description: A extremely durable, stylish winter coat made for central command Operators to survive even in the coldest of winter
@@ -486,7 +559,7 @@
   - type: Item
 
 - type: entity
-  parent: [ ClothingOuterStorageBase, AllowSuitStorageClothing, BaseCommandContraband ]
+  parent: [ ClothingOuterStorageBase, AllowSuitStorageClothing, ClothingOuterColdBase, BaseCommandContraband ]
   id: ClothingOuterCoatNCT
   name: nt career trainer's jacket
   description: A sharp black coat with beige trim around the cuffs and collar, offering a mix of professionalism and approachability.
@@ -516,7 +589,7 @@
     sprite: _Starlight/Clothing/OuterClothing/OverClothes/ratvar_robes.rsi
 
 - type: entity
-  parent: ClothingOuterStorageBase
+  parent: [ ClothingOuterStorageBase, ClothingOuterColdBase ]
   id: ClothingOuterCoatChefSenior
   name: senior chef's jacket
   description: A pristine black jacket worn by the head of the kitchen. Tasteful, with a hint of authority.
@@ -525,8 +598,9 @@
       sprite: _Starlight/Clothing/OuterClothing/Coats/chef-senior.rsi
     - type: Clothing
       sprite: _Starlight/Clothing/OuterClothing/Coats/chef-senior.rsi
+
 - type: entity
-  parent: [ ClothingOuterStorageBase, AllowSuitStorageClothing ]
+  parent: [ ClothingOuterStorageBase, ClothingOuterColdBase, AllowSuitStorageClothing ]
   id: ClothingOuterCoatPirateDark
   name: dark pirate garb
   description: Yarr, but dark.
@@ -537,7 +611,7 @@
     sprite: _Starlight/Clothing/OuterClothing/Coats/dark_pirate.rsi
 
 - type: entity
-  parent: ClothingOuterStorageBase
+  parent: [ ClothingOuterStorageBase, ClothingOuterColdBase ]
   id: ClothingOuterCoatField
   name: field jacket
   description: A thick, well-worn field jacket.
@@ -546,3 +620,14 @@
     sprite: _Starlight/Clothing/OuterClothing/Coats/field_jacket.rsi
   - type: Clothing
     sprite: _Starlight/Clothing/OuterClothing/Coats/field_jacket.rsi
+
+- type: entity
+  parent: ClothingOuterStorageBase
+  id: ClothingOuterCoatChefCentComm
+  name: centcomm chef's jacket
+  description: A distinct white and green jacket worn by the chefs at Central Command. Turns you into a walking advertisement.
+  components:
+    - type: Sprite
+      sprite: _Starlight/Clothing/OuterClothing/Coats/chef-centcomm.rsi
+    - type: Clothing
+      sprite: _Starlight/Clothing/OuterClothing/Coats/chef-centcomm.rsi

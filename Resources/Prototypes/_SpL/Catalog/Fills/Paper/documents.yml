@@ -1,0 +1,31 @@
+﻿- type: entity
+  parent: Paper
+  id: PaperSyn
+  name: syndicate paper
+  description: A single unit of bureaucracy, branded with the three-headed snake of the Syndicate.
+  components:
+    - type: Sprite
+      sprite: Objects/Misc/bureaucracy.rsi
+      layers:
+        - state: paper_syn
+        - state: paper_syn_words
+          map: ["enum.PaperVisualLayers.Writing"]
+          visible: false
+        - state: paper_stamp-generic
+          map: ["enum.PaperVisualLayers.Stamp"]
+          visible: false
+    - type: PaperVisuals
+      backgroundPatchMargin: 16.0, 16.0, 16.0, 16.0
+      contentMargin: 0.0, 0.0, 0.0, 0.0
+      headerImagePath: "/Textures/Interface/Paper/paper_heading_syndicate_logo.svg.96dpi.png"
+      headerMargin: 0.0, 0.0, 0.0, 0.0
+  
+- type: entity
+  parent: PaperSyn
+  id: PrintedDocumentSyndieComm
+  name: Syndicate Communication
+  categories: [ HideSpawnMenu ]
+  components:
+    - type: Paper
+      content: doc-text-printer-syndicate-communication
+    # TODO- get the format working

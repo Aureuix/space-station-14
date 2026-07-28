@@ -1,0 +1,24 @@
+﻿- type: entity
+  name: integrated floodlight
+  parent: FlashlightLantern
+  id: FloodlightBorg
+  components:
+    - type: ItemSlots
+      slots:
+        cell_slot:
+          name: power-cell-slot-component-slot-name-default
+          startingItem: PowerCellMicroreactor
+          disableEject: true
+          swap: false
+    - type: Sprite
+      sprite: Objects/Misc/Lights/lights.rsi
+      layers:
+        - state: floodlight
+        - state: floodlight-on
+          shader: unshaded
+          visible: false
+          map: [ "light" ]
+    - type: PointLight
+      enabled: false
+      radius: 9
+      energy: 3

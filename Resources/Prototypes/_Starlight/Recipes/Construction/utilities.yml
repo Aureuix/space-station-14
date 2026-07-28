@@ -501,11 +501,11 @@
   conditions:
     - !type:NoUnstackableInTile
   alternativePrototypes:
-    - PressureControlledValve
-    - PressureControlledValveAlt1
-    - PressureControlledValveAlt2
-    - PressureControlledValveAlt3
-    - PressureControlledValveAlt4
+  - PressureControlledValve
+  - PressureControlledValveAlt1
+  - PressureControlledValveAlt2
+  - PressureControlledValveAlt3
+  - PressureControlledValveAlt4
 
 - type: construction
   id: GasMolarMixerAlt1

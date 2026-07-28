@@ -66,8 +66,8 @@
     containers:
       storagebase: !type:AllSelector
         children:
-        - id: ClothingMaskBreathMedical
-        - id: EmergencyOxygenTankFilled
+        - id: AirlossAutoInjector # SpL
+        - id: AmoxlaAutoInjector # SpL
         - id: EmergencyMedipen
         - id: SyringeInaprovaline
         - id: PillCanisterDexalin
@@ -129,7 +129,7 @@
 
 - type: entity #Starlight start
   id: MedkitFilledParamed 
-  suffix: Filled
+  suffix: Paramedic, Filled # SpL
   parent: Medkit
   components:
   - type: EntityTableContainerFill

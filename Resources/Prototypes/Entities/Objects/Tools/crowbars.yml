@@ -41,7 +41,7 @@
     - Belt
   - type: Item
     sprite: Objects/Tools/crowbar.rsi
-    size: Normal
+    size: Small # SpL- fuck it, why not be able to put it in your pocket?
     shape:
     - 0,0,0,1
   # 🌟Starlight-start🌟

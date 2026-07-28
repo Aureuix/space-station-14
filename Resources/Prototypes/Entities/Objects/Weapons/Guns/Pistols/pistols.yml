@@ -95,6 +95,14 @@
       collection: MetalThud
   - type: AltFireMelee
   # starlight end
+  # SpL start
+  - type: EmitSoundOnPickup
+    sound:
+      path: /Audio/_SpL/Effects/holster.ogg
+  - type: EmitSoundOnLand
+    sound:
+      path: /Audio/_SpL/Effects/pistol_drop.ogg
+  # SpL end
 
 - type: entity
   name: viper

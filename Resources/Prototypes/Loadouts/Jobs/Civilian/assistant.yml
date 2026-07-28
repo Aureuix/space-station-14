@@ -112,7 +112,7 @@
 - type: loadout
   id: AssistantWintercoat
   equipment:
-    outerClothing: ClothingOuterWinterCoat
+    outerClothing: ClothingOuterWinterColorGray # Starlight, it has a hood
 
 # Feet
 - type: loadout

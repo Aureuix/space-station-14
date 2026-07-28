@@ -1,4 +1,3 @@
-
 ### UI
 
 # Current game score
@@ -12,7 +11,7 @@ blockgame-menu-gameover-info = Global: {$global}
     Local: {$local}
     Points: {$points}
 
-blockgame-menu-title = Nanotrasen Block Game
+blockgame-menu-title = NanoTrasen  Block Game
 blockgame-menu-button-new-game = New Game
 blockgame-menu-button-scoreboard = Scoreboard
 blockgame-menu-button-pause = Pause
@@ -23,4 +22,4 @@ blockgame-menu-button-back = Back
 blockgame-menu-label-next = Next
 blockgame-menu-label-hold = Hold
 blockgame-menu-text-station = Station
-blockgame-menu-text-nanotrasen = Nanotrasen
+blockgame-menu-text-nanotrasen = NanoTrasen 
