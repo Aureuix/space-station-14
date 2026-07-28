@@ -83,7 +83,7 @@
           amount: 6
 
 - type: entity
-  parent: CrateInternals
+  parent: CrateInternalsO2N2 # SpL - sprite change
   id: CrateNitrogenInternals
   name: internals crate (nitrogen)
   description: Contains two breath masks, two gas masks, and four nitrogen tanks. Intended for nitrogen-breathing species.

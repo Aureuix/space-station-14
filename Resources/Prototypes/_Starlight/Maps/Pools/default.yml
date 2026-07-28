@@ -3,7 +3,7 @@
   maps:
   - StarlightBagel
   - StarlightCog
-  - StarlightCork
+#  - StarlightCork # SpL
   - StarlightFland
   - StarlightHotel
   - StarlightLagan
@@ -36,4 +36,5 @@
   - SpLOmega
   - SpLBarratry
   - SpLPrism
+  - SpLCork
 # SpL End

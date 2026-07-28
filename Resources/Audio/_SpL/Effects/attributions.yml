@@ -1,4 +1,9 @@
 ﻿- files: ["coilgun.ogg"]
-  license: "CC-BY-3.0"
+  license: "CC-BY-4.0"
   copyright: "Sabacky"
   source: "https://freesound.org/people/Sabacky/"
+  
+- files: ["pistol_drop.ogg", "smg_drop.ogg", "rifle_drop.ogg", "hmg_drop.ogg", "unholster.ogg", "holster.ogg"]
+  license: "CC0-1.0"
+  copyright: "serøutōnin//deprivəd"
+  source: "https://freesound.org/people/ser%C3%B8ut%C5%8Dnin--depriv%C9%99d/"

@@ -42,9 +42,7 @@
           - Bottle
     - type: Item
       sprite: _Starlight/Objects/Specific/Medical/cases.rsi
-      size: Small
-      shape:
-        - 0,0,1,1
+      size: Normal
     - type: ItemCounter
       count:
         tags: [Bottle]
@@ -122,8 +120,6 @@
     - type: Item
       sprite: _Starlight/Objects/Specific/Medical/cases.rsi
       size: Normal
-      shape:
-        - 0,0,1,1
 
 - type: entity
   id: PenPackMedical
@@ -142,8 +138,6 @@
     - type: Item
       sprite: _Starlight/Objects/Specific/Medical/cases.rsi
       size: Small
-      shape:
-        - 0,0,0,1
 
 - type: entity
   id: SurgicalKitMedical

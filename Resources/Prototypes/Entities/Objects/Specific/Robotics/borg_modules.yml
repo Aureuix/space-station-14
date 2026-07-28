@@ -614,8 +614,9 @@
     - state: icon-mining
   - type: ItemBorgModule
     hands:
+    - item: FloodlightBorg # SpL
     - item: MiningDrill
-    - item: Shovel
+    # - item: Shovel # SpL
     - item: MineralScannerUnpowered
     - item: BorgOreBag
     - item: RadioHandheldExpedition # Starlight
@@ -640,8 +641,9 @@
     - state: icon-mining-adv
   - type: ItemBorgModule
     hands:
+    - item: FloodlightBorg # SpL
     - item: MiningDrillDiamond
-    - item: Shovel
+    # - item: Shovel # SpL
     - item: AdvancedMineralScannerUnpowered
     - item: OreBagOfHolding
     - hand: # Starlight
@@ -665,6 +667,7 @@
     - state: icon-grappling-gun
   - type: ItemBorgModule
     hands:
+    - item: FloodlightBorg # SpL
     - item: WeaponGrapplingGun
     - item: BorgFireExtinguisher
     - item: BorgHandheldGPSBasic
