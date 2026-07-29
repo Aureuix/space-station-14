@@ -10,13 +10,13 @@
   placementMode: AlignAtmosPipeLayers
   canBuildInImpassable: false
   conditions:
-  - !type:NoUnstackableInTile
+    - !type:NoUnstackableInTile
   alternativePrototypes:
-  - GasVentPump
-  - GasVentPumpAlt1
-  - GasVentPumpAlt2
-  - GasVentPumpAlt3
-  - GasVentPumpAlt4
+    - GasVentPump
+    - GasVentPumpAlt1
+    - GasVentPumpAlt2
+    - GasVentPumpAlt3
+    - GasVentPumpAlt4
 
 - type: construction
   id: GasVentPumpAlt2
@@ -28,13 +28,13 @@
   placementMode: AlignAtmosPipeLayers
   canBuildInImpassable: false
   conditions:
-  - !type:NoUnstackableInTile
+    - !type:NoUnstackableInTile
   alternativePrototypes:
-  - GasVentPump
-  - GasVentPumpAlt1
-  - GasVentPumpAlt2
-  - GasVentPumpAlt3
-  - GasVentPumpAlt4
+    - GasVentPump
+    - GasVentPumpAlt1
+    - GasVentPumpAlt2
+    - GasVentPumpAlt3
+    - GasVentPumpAlt4
 
 
 - type: construction
@@ -47,13 +47,13 @@
   placementMode: AlignAtmosPipeLayers
   canBuildInImpassable: false
   conditions:
-  - !type:NoUnstackableInTile
+    - !type:NoUnstackableInTile
   alternativePrototypes:
-  - GasPassiveVent
-  - GasPassiveVentAlt1
-  - GasPassiveVentAlt2
-  - GasPassiveVentAlt3
-  - GasPassiveVentAlt4
+    - GasPassiveVent
+    - GasPassiveVentAlt1
+    - GasPassiveVentAlt2
+    - GasPassiveVentAlt3
+    - GasPassiveVentAlt4
 
 - type: construction
   id: GasPassiveVentAlt2
@@ -65,13 +65,13 @@
   placementMode: AlignAtmosPipeLayers
   canBuildInImpassable: false
   conditions:
-  - !type:NoUnstackableInTile
+    - !type:NoUnstackableInTile
   alternativePrototypes:
-  - GasPassiveVent
-  - GasPassiveVentAlt1
-  - GasPassiveVentAlt2
-  - GasPassiveVentAlt3
-  - GasPassiveVentAlt4
+    - GasPassiveVent
+    - GasPassiveVentAlt1
+    - GasPassiveVentAlt2
+    - GasPassiveVentAlt3
+    - GasPassiveVentAlt4
 
 - type: construction
   id: GasVentScrubberAlt1
@@ -83,13 +83,13 @@
   placementMode: AlignAtmosPipeLayers
   canBuildInImpassable: false
   conditions:
-  - !type:NoUnstackableInTile
+    - !type:NoUnstackableInTile
   alternativePrototypes:
-  - GasVentScrubber
-  - GasVentScrubberAlt1
-  - GasVentScrubberAlt2
-  - GasVentScrubberAlt3
-  - GasVentScrubberAlt4
+    - GasVentScrubber
+    - GasVentScrubberAlt1
+    - GasVentScrubberAlt2
+    - GasVentScrubberAlt3
+    - GasVentScrubberAlt4
 
 - type: construction
   id: GasVentScrubberAlt2
@@ -101,13 +101,13 @@
   placementMode: AlignAtmosPipeLayers
   canBuildInImpassable: false
   conditions:
-  - !type:NoUnstackableInTile
+    - !type:NoUnstackableInTile
   alternativePrototypes:
-  - GasVentScrubber
-  - GasVentScrubberAlt1
-  - GasVentScrubberAlt2
-  - GasVentScrubberAlt3
-  - GasVentScrubberAlt4
+    - GasVentScrubber
+    - GasVentScrubberAlt1
+    - GasVentScrubberAlt2
+    - GasVentScrubberAlt3
+    - GasVentScrubberAlt4
 
 - type: construction
   id: GasOutletInjectorAlt1
@@ -119,13 +119,13 @@
   placementMode: AlignAtmosPipeLayers
   canBuildInImpassable: false
   conditions:
-  - !type:NoUnstackableInTile
+    - !type:NoUnstackableInTile
   alternativePrototypes:
-  - GasOutletInjector
-  - GasOutletInjectorAlt1
-  - GasOutletInjectorAlt2
-  - GasOutletInjectorAlt3
-  - GasOutletInjectorAlt4
+    - GasOutletInjector
+    - GasOutletInjectorAlt1
+    - GasOutletInjectorAlt2
+    - GasOutletInjectorAlt3
+    - GasOutletInjectorAlt4
 
 - type: construction
   id: GasOutletInjectorAlt2
@@ -137,13 +137,13 @@
   placementMode: AlignAtmosPipeLayers
   canBuildInImpassable: false
   conditions:
-  - !type:NoUnstackableInTile
+    - !type:NoUnstackableInTile
   alternativePrototypes:
-  - GasOutletInjector
-  - GasOutletInjectorAlt1
-  - GasOutletInjectorAlt2
-  - GasOutletInjectorAlt3
-  - GasOutletInjectorAlt4
+    - GasOutletInjector
+    - GasOutletInjectorAlt1
+    - GasOutletInjectorAlt2
+    - GasOutletInjectorAlt3
+    - GasOutletInjectorAlt4
 
 # region binary
 
@@ -159,11 +159,11 @@
   conditions:
     - !type:NoUnstackableInTile
   alternativePrototypes:
-  - GasPort
-  - GasPortAlt1
-  - GasPortAlt2
-  - GasPortAlt3
-  - GasPortAlt4
+    - GasPort
+    - GasPortAlt1
+    - GasPortAlt2
+    - GasPortAlt3
+    - GasPortAlt4
 
 - type: construction
   id: GasPortAlt2
@@ -177,11 +177,11 @@
   conditions:
     - !type:NoUnstackableInTile
   alternativePrototypes:
-  - GasPort
-  - GasPortAlt1
-  - GasPortAlt2
-  - GasPortAlt3
-  - GasPortAlt4
+    - GasPort
+    - GasPortAlt1
+    - GasPortAlt2
+    - GasPortAlt3
+    - GasPortAlt4
 
 - type: construction
   id: GasDualPortVentPumpAlt1
@@ -195,11 +195,11 @@
   conditions:
     - !type:NoUnstackableInTile
   alternativePrototypes:
-  - GasDualPortVentPump
-  - GasDualPortVentPumpAlt1
-  - GasDualPortVentPumpAlt2
-  - GasDualPortVentPumpAlt3
-  - GasDualPortVentPumpAlt4
+    - GasDualPortVentPump
+    - GasDualPortVentPumpAlt1
+    - GasDualPortVentPumpAlt2
+    - GasDualPortVentPumpAlt3
+    - GasDualPortVentPumpAlt4
 
 - type: construction
   id: GasDualPortVentPumpAlt2
@@ -213,11 +213,11 @@
   conditions:
     - !type:NoUnstackableInTile
   alternativePrototypes:
-  - GasDualPortVentPump
-  - GasDualPortVentPumpAlt1
-  - GasDualPortVentPumpAlt2
-  - GasDualPortVentPumpAlt3
-  - GasDualPortVentPumpAlt4
+    - GasDualPortVentPump
+    - GasDualPortVentPumpAlt1
+    - GasDualPortVentPumpAlt2
+    - GasDualPortVentPumpAlt3
+    - GasDualPortVentPumpAlt4
 
 # region trinary
 - type: construction
@@ -233,11 +233,11 @@
   conditions:
     - !type:NoUnstackableInTile
   alternativePrototypes:
-  - GasFilterInline
-  - GasFilterInlineAlt1
-  - GasFilterInlineAlt2
-  - GasFilterInlineAlt3
-  - GasFilterInlineAlt4
+    - GasFilterInline
+    - GasFilterInlineAlt1
+    - GasFilterInlineAlt2
+    - GasFilterInlineAlt3
+    - GasFilterInlineAlt4
 
 - type: construction
   id: GasFilterInlineAlt1
@@ -253,11 +253,11 @@
   conditions:
     - !type:NoUnstackableInTile
   alternativePrototypes:
-  - GasFilterInline
-  - GasFilterInlineAlt1
-  - GasFilterInlineAlt2
-  - GasFilterInlineAlt3
-  - GasFilterInlineAlt4
+    - GasFilterInline
+    - GasFilterInlineAlt1
+    - GasFilterInlineAlt2
+    - GasFilterInlineAlt3
+    - GasFilterInlineAlt4
 
 - type: construction
   id: GasFilterInlineAlt2
@@ -273,11 +273,11 @@
   conditions:
     - !type:NoUnstackableInTile
   alternativePrototypes:
-  - GasFilterInline
-  - GasFilterInlineAlt1
-  - GasFilterInlineAlt2  
-  - GasFilterInlineAlt3
-  - GasFilterInlineAlt4
+    - GasFilterInline
+    - GasFilterInlineAlt1
+    - GasFilterInlineAlt2
+    - GasFilterInlineAlt3
+    - GasFilterInlineAlt4
 
 - type: construction
   id: GasFilterInlineAlt3
@@ -332,11 +332,11 @@
   conditions:
     - !type:NoUnstackableInTile
   alternativePrototypes:
-  - GasFilter
-  - GasFilterAlt1
-  - GasFilterAlt2
-  - GasFilterAlt3
-  - GasFilterAlt4
+    - GasFilter
+    - GasFilterAlt1
+    - GasFilterAlt2
+    - GasFilterAlt3
+    - GasFilterAlt4
 
 - type: construction
   id: GasFilterAlt2
@@ -351,11 +351,11 @@
   conditions:
     - !type:NoUnstackableInTile
   alternativePrototypes:
-  - GasFilter
-  - GasFilterAlt1
-  - GasFilterAlt2
-  - GasFilterAlt3
-  - GasFilterAlt4
+    - GasFilter
+    - GasFilterAlt1
+    - GasFilterAlt2
+    - GasFilterAlt3
+    - GasFilterAlt4
 
 - type: construction
   id: GasFilterFlippedAlt1
@@ -370,11 +370,11 @@
   conditions:
     - !type:NoUnstackableInTile
   alternativePrototypes:
-  - GasFilterFlipped
-  - GasFilterFlippedAlt1
-  - GasFilterFlippedAlt2
-  - GasFilterFlippedAlt3
-  - GasFilterFlippedAlt4
+    - GasFilterFlipped
+    - GasFilterFlippedAlt1
+    - GasFilterFlippedAlt2
+    - GasFilterFlippedAlt3
+    - GasFilterFlippedAlt4
 
 - type: construction
   id: GasFilterFlippedAlt2
@@ -389,11 +389,11 @@
   conditions:
     - !type:NoUnstackableInTile
   alternativePrototypes:
-  - GasFilterFlipped
-  - GasFilterFlippedAlt1
-  - GasFilterFlippedAlt2
-  - GasFilterFlippedAlt3
-  - GasFilterFlippedAlt4
+    - GasFilterFlipped
+    - GasFilterFlippedAlt1
+    - GasFilterFlippedAlt2
+    - GasFilterFlippedAlt3
+    - GasFilterFlippedAlt4
 
 - type: construction
   id: GasMixerAlt1
@@ -408,11 +408,11 @@
   conditions:
     - !type:NoUnstackableInTile
   alternativePrototypes:
-  - GasMixer
-  - GasMixerAlt1
-  - GasMixerAlt2
-  - GasMixerAlt3
-  - GasMixerAlt4
+    - GasMixer
+    - GasMixerAlt1
+    - GasMixerAlt2
+    - GasMixerAlt3
+    - GasMixerAlt4
 
 - type: construction
   id: GasMixerAlt2
@@ -427,11 +427,11 @@
   conditions:
     - !type:NoUnstackableInTile
   alternativePrototypes:
-  - GasMixer
-  - GasMixerAlt1
-  - GasMixerAlt2
-  - GasMixerAlt3
-  - GasMixerAlt4
+    - GasMixer
+    - GasMixerAlt1
+    - GasMixerAlt2
+    - GasMixerAlt3
+    - GasMixerAlt4
 
 - type: construction
   id: GasMixerFlippedAlt1
@@ -446,11 +446,11 @@
   conditions:
     - !type:NoUnstackableInTile
   alternativePrototypes:
-  - GasMixerFlipped
-  - GasMixerFlippedAlt1
-  - GasMixerFlippedAlt2
-  - GasMixerFlippedAlt3
-  - GasMixerFlippedAlt4
+    - GasMixerFlipped
+    - GasMixerFlippedAlt1
+    - GasMixerFlippedAlt2
+    - GasMixerFlippedAlt3
+    - GasMixerFlippedAlt4
 
 - type: construction
   id: GasMixerFlippedAlt2
@@ -465,11 +465,11 @@
   conditions:
     - !type:NoUnstackableInTile
   alternativePrototypes:
-  - GasMixerFlipped
-  - GasMixerFlippedAlt1
-  - GasMixerFlippedAlt2
-  - GasMixerFlippedAlt3
-  - GasMixerFlippedAlt4
+    - GasMixerFlipped
+    - GasMixerFlippedAlt1
+    - GasMixerFlippedAlt2
+    - GasMixerFlippedAlt3
+    - GasMixerFlippedAlt4
 
 - type: construction
   id: PressureControlledValveAlt1
@@ -483,11 +483,11 @@
   conditions:
     - !type:NoUnstackableInTile
   alternativePrototypes:
-  - PressureControlledValve
-  - PressureControlledValveAlt1
-  - PressureControlledValveAlt2
-  - PressureControlledValveAlt3
-  - PressureControlledValveAlt4
+    - PressureControlledValve
+    - PressureControlledValveAlt1
+    - PressureControlledValveAlt2
+    - PressureControlledValveAlt3
+    - PressureControlledValveAlt4
 
 - type: construction
   id: PressureControlledValveAlt2

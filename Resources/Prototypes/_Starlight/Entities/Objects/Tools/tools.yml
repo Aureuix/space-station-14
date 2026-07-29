@@ -944,6 +944,10 @@
     - PipeSensor
     - SubfloorGasTank
     - Deconstruct
+    #Starlight start
+    - FirelockEdge
+    - LightPostSmall
+    #Starlight end
     - AirAlarm
     - AirSensor
   - type: LimitedCharges

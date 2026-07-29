@@ -104,6 +104,14 @@
   - type: FiringPinHolder
     supportedPins: [ Rifle ]
   # starlight end
+  # SpL start
+  - type: EmitSoundOnPickup
+    sound:
+      path: /Audio/_SpL/Effects/unholster.ogg
+  - type: EmitSoundOnLand
+    sound:
+      path: /Audio/_SpL/Effects/hmg_drop.ogg
+  # SpL end
 
 - type: entity
   name: L6 SAW

@@ -30,6 +30,14 @@
     startingCharge: 1000
   - type: StaticPrice
     price: 500
+  # SpL start
+  - type: EmitSoundOnPickup
+    sound:
+      path: /Audio/Effects/box_deploy.ogg
+  - type: EmitSoundOnLand
+    sound:
+      path: /Audio/_SpL/Effects/smg_drop.ogg
+  # SpL end
 
 - type: entity
   parent: [BaseWeaponBattery, BaseGunWieldable]
@@ -120,6 +128,14 @@
   - type: ContainerContainer
     containers:
       cell_slot: !type:ContainerSlot
+  # SpL start
+  - type: EmitSoundOnPickup
+    sound:
+      path: /Audio/Effects/box_deploy.ogg
+  - type: EmitSoundOnLand
+    sound:
+      path: /Audio/_SpL/Effects/smg_drop.ogg
+  # SpL end
 
 - type: entity
   id: BaseWeaponBatterySmall
@@ -153,6 +169,11 @@
     slots:
     - Belt
     - suitStorage
+    # SpL start
+  - type: EmitSoundOnLand
+    sound:
+      path: /Audio/_SpL/Effects/pistol_drop.ogg
+  # SpL end
 
 - type: entity
   id: BaseWeaponPowerCellSmall
@@ -1114,7 +1135,10 @@
     minAngle: 0
     maxAngle: 0
   - type: Gun
-    fireRate: 2
+    fireRate: 12 # SpL making this more like a beam gun
+    selectedMode: FullAuto # SpL- trust me
+    availableModes:
+      - FullAuto # SpL- trust me
     minAngle: 1
     maxAngle: 2
 

@@ -54,6 +54,11 @@
       - SemiAuto
     soundGunshot:
       path: /Audio/Weapons/Guns/Gunshots/flaregun.ogg
+    # SpL start
+  - type: EmitSoundOnLand
+    sound:
+      path: /Audio/Items/screwdriver_drop.ogg
+  # SpL end
 
 
 - type: entity

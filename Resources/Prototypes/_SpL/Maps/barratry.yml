@@ -15,7 +15,6 @@
             prefixCreator: '14'
         - type: StationEmergencyShuttle
           emergencyShuttlePath: /Maps/_Starlight/Shuttles/emergency_raven.yml
-# SpL Start
         - type: GridSpawn
           groups:
             trade: !type:GridSpawnGroup
@@ -103,7 +102,6 @@
                   inherent: true
               protos:
                 - VGRoid
-# SpL End
         - type: StationJobs
           availableJobs:
             #service

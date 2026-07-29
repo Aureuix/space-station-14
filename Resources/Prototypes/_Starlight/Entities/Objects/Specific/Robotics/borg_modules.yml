@@ -986,6 +986,7 @@
     - state: icon-salvage-defense
   - type: ItemBorgModule
     hands:
+    - item: FloodlightBorg # SpL
     - item: WeaponProtoKineticAccelerator
     - hand:
         emptyRepresentative: PKAUpgradeDamage

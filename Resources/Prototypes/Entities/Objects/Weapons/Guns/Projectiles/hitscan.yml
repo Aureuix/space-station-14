@@ -81,7 +81,7 @@
     damage:
       types:
         Heat: 4 # SpL- changed all guns using this to be like a beam weapon
-        Structural: 16 # SpL- realistically it should do SOME structural damage given what it is
+        Structural: 12 # SpL- realistically it should do SOME structural damage given what it is
   - type: HitscanBasicVisuals
     muzzleFlash:
       sprite: Objects/Weapons/Guns/Projectiles/projectiles.rsi

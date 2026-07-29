@@ -32,6 +32,7 @@ using Content.Shared.Stunnable;
 using Content.Shared.Movement.Pulling.Events;
 using Content.Shared.Power.Components;
 using Content.Shared.Power.EntitySystems;
+using Content.Shared.Wires;
 using Content.Shared.Electrocution;
 using Content.Shared._Starlight.Mech;
 #endregion
@@ -61,7 +62,7 @@ public abstract partial class SharedMechSystem : EntitySystem
     /// <inheritdoc/>
     public override void Initialize()
     {
-        SubscribeLocalEvent<MechComponent, MechToggleEquipmentEvent>(OnToggleEquipmentAction);
+        // SubscribeLocalEvent<MechComponent, MechToggleEquipmentEvent>(OnToggleEquipmentAction); Starlight - moved to SharedMechEquipmentSelectSystem
         SubscribeLocalEvent<MechComponent, MechToggleInternalsEvent>(OnMechToggleInternals);
         SubscribeLocalEvent<MechComponent, MechEjectPilotEvent>(OnEjectPilotEvent);
         SubscribeLocalEvent<MechComponent, UserActivateInWorldEvent>(RelayInteractionEvent);
@@ -87,6 +88,7 @@ public abstract partial class SharedMechSystem : EntitySystem
         SubscribeLocalEvent<MechComponent, RefreshMovementSpeedModifiersEvent>(OnRefreshMovespeed);
         SubscribeLocalEvent<MechComponent, ShotAttemptedEvent>(OnShootAttempt); // Moved from server side, broken
         SubscribeLocalEvent<MechComponent, CanRepairEvent>(OnRepairAttempt); //  Moved from server side, broken
+        SubscribeLocalEvent<MechComponent, AttemptChangePanelEvent>(OnAttemptPanelChanged);
         SubscribeLocalEvent<MechPilotComponent, KnockDownAttemptEvent>(OnKnockdownAttempt);
         SubscribeLocalEvent<MechPilotComponent, ElectrocutionAttemptEvent>(OnMechPilotElectrocutionAttempt);
         #endregion
@@ -290,8 +292,6 @@ public abstract partial class SharedMechSystem : EntitySystem
             _actions.AddAction(pilot, ref component.MechToggleLightActionEntity, component.MechToggleLightAction, mech);
         if (component.SirenAvailable)
             _actions.AddAction(pilot, ref component.MechToggleSirenActionEntity, component.MechToggleSirenAction, mech);
-        if (HasComp<MechThrustersComponent>(mech))
-            _actions.AddAction(pilot, ref component.MechToggleThrustersActionEntity, component.MechToggleThrustersAction, mech);
         var equipment = new List<EntityUid>(component.EquipmentContainer.ContainedEntities);
         foreach (var ent in equipment)
             if (TryComp<MechEquipmentActionComponent>(ent, out var actionComp))
@@ -686,6 +686,14 @@ public abstract partial class SharedMechSystem : EntitySystem
         component.EquipmentWhitelist = null;
         Dirty(uid, component);
     }
+    
+    #region Starlight
+    // Blocks any modification of the wires panel, except by the mech itself
+    private void OnAttemptPanelChanged(EntityUid uid, MechComponent component, ref AttemptChangePanelEvent args)
+    {
+        args.Cancelled = args.User != uid;
+    }
+    #endregion
     
     private void OnMechPilotElectrocutionAttempt(EntityUid uid, MechPilotComponent comp, ElectrocutionAttemptEvent args)
         => args.SiemensCoefficient *= 0f; // Fully insulate the pilot

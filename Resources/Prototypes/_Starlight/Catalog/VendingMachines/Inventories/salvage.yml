@@ -165,15 +165,15 @@
   conditions:
     - !type:BuyerAccessCondition
 
-#- type: listing
-#  id: VendorSalvageExpeditionEncryptionKey
-#  productEntity: EncryptionKeyExpedition
-#  cost:
-#    SalvageTicket: 100
-#  categories:
-#  - SalvageEquipment
-#  conditions:
-#  - !type:BuyerAccessCondition
+- type: listing
+  id: VendorSalvageExpeditionEncryptionKey
+  productEntity: EncryptionKeyExpedition
+  cost:
+    SalvageTicket: 100
+  categories:
+  - SalvageEquipment
+  conditions:
+  - !type:BuyerAccessCondition
 
 #weapons
 - type: listing
@@ -185,6 +185,18 @@
   - SalvageWeapons
   conditions:
   - !type:BuyerAccessCondition
+
+# SpL Start
+- type: listing
+  id: VendorSalvageWeaponRifleM18
+  productEntity: WeaponRifleM18
+  cost:
+    SalvageTicket: 500
+  categories:
+    - SalvageWeapons
+  conditions:
+    - !type:BuyerAccessCondition
+# SpL End
 
 - type: listing
   id: VendorSalvageWeaponShotgunGA12
@@ -286,6 +298,18 @@
   - SalvageConsumeables
   conditions:
   - !type:BuyerAccessCondition
+
+# SpL Start
+- type: listing
+  id: VendorSalvageMagazineRifle20
+  productEntity: MagazineRifleSP
+  cost:
+    SalvageTicket: 100
+  categories:
+    - SalvageConsumeables
+  conditions:
+    - !type:BuyerAccessCondition
+# SpL End
 
 - type: listing
   id: VendorSalvageMedkitAdvancedFilled
