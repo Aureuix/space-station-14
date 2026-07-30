@@ -18,7 +18,7 @@
     Ping:
       path: /Audio/Effects/Cargo/ping.ogg
     Laugh:
-      collection: /Audio/Voice/Silicon/syndieborg_laugh.ogg # SpL
+      path: /Audio/Machines/Arcade/sting_03.ogg # SpL
     #Cough:
     #  collection: MaleCoughs
     #Sneeze:
@@ -37,8 +37,10 @@
     #  collection: Hew
     #Gasp:
     #  collection: MaleGasp
+    DefaultDeathgasp:
+      path: /Audio/_SpL/Voice/IPC/ipc_deathgasp.ogg # SpL
     DeathgaspIPC:
-      collection: MaleDeathGasp
+      path: /Audio/_SpL/Voice/IPC/ipc_deathgasp.ogg # SpL
     #Yawn:
     #  collection: MaleYawn
 
@@ -62,7 +64,7 @@
     Ping:
       path: /Audio/Effects/Cargo/ping.ogg
     Laugh:
-      collection: /Audio/Voice/Silicon/syndieborg_laugh.ogg # SpL
+      path: /Audio/Machines/Arcade/sting_03.ogg # SpL
     #Cough:
     #  collection: FemaleCoughs
     #Sneeze:
@@ -81,7 +83,9 @@
     #  collection: Hew
     #Gasp:
     #  collection: FemaleGasp
+    DefaultDeathgasp:
+      path: /Audio/_SpL/Voice/IPC/ipc_deathgasp.ogg # SpL
     DeathgaspIPC:
-      collection: FemaleDeathGasp
+      path: /Audio/_SpL/Voice/IPC/ipc_deathgasp.ogg # SpL
     #Yawn:
     #  collection: FemaleYawn

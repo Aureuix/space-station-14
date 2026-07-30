@@ -142,7 +142,8 @@
       - DoorBumpOpener
       - AnomalyHost
       - IPC
-      - SiliconEmotesFH 
+      - SiliconEmotes
+      - SiliconEmotesFH
   - type: Stamina
     staminaAlert: "IPCStamina"
   - type: Damageable
@@ -178,13 +179,15 @@
   - type: Speech
     speechVerb: Robotic
     speechSounds: Borg
-    allowedEmotes: ['Beep', 'Ping', 'Buzz', 'Buzz-Two', 'Chime', 'Honk']
+    allowedEmotes: 
+    - Laugh
   - type: Vocal
     sounds:
       Male: MaleIPC
       Female: FemaleIPC
       Unsexed: MaleIPC
     wilhelmProbability: 0
+  - type: UnblockableSpeech
   # IPC slots
   - type: ContainerContainer
     containers:

@@ -10,7 +10,8 @@
         children:
         - id: EmergencyCoolingUnit
         - id: Flare
-        - id: PowerCellSmall
+          amount: 2
+        - id: Screwdriver # SpL
   - type: Sprite
     layers:
     - state: internals
