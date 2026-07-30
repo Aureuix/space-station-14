@@ -68,8 +68,8 @@ public abstract partial class SharedIPCSystem
 
     private void OnBatteryStartup(Entity<IPCBatteryComponent> ent, ref ComponentStartup args)
     {
-        EnsureComp<PowerCellSlotComponent>(ent);
-        EnsureComp<BatteryDrainerComponent>(ent);
+        ent.Comp.PowerCellSlot = EnsureComp<PowerCellSlotComponent>(ent);
+        ent.Comp.BatteryDrainer = EnsureComp<BatteryDrainerComponent>(ent);
         EnsureComp<PowerCellDrawComponent>(ent);
     }
 

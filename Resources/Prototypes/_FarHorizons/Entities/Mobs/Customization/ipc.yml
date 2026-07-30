@@ -68,7 +68,7 @@
   bodyPart: Eyes
   markingCategory: Eyes
   speciesRestriction: [IPC]
-  forcedColoring: true
+  forcedColoring: false # SpL- come onnnnn
   forcedGlowing: true
   coloring:
     default:
@@ -83,7 +83,7 @@
   bodyPart: Eyes
   markingCategory: Eyes
   speciesRestriction: [IPC]
-  forcedColoring: true
+  forcedColoring: false # SpL
   forcedGlowing: true
   coloring:
     default:
@@ -98,7 +98,7 @@
   bodyPart: Eyes
   markingCategory: Eyes
   speciesRestriction: [IPC]
-  forcedColoring: true
+  forcedColoring: false # SpL
   forcedGlowing: true
   coloring:
     default:
@@ -113,7 +113,7 @@
   bodyPart: Eyes
   markingCategory: Eyes
   speciesRestriction: [IPC]
-  forcedColoring: true
+  forcedColoring: false # SpL
   forcedGlowing: true
   coloring:
     default:
@@ -128,7 +128,7 @@
   bodyPart: Eyes
   markingCategory: Eyes
   speciesRestriction: [IPC]
-  forcedColoring: true
+  forcedColoring: false # SpL
   forcedGlowing: true
   coloring:
     default:
@@ -143,7 +143,7 @@
   bodyPart: Eyes
   markingCategory: Eyes
   speciesRestriction: [IPC]
-  forcedColoring: true
+  forcedColoring: false # SpL
   forcedGlowing: true
   coloring:
     default:
@@ -158,7 +158,7 @@
   bodyPart: Eyes
   markingCategory: Eyes
   speciesRestriction: [IPC]
-  forcedColoring: true
+  forcedColoring: false # SpL
   forcedGlowing: true
   coloring:
     default:
@@ -173,7 +173,7 @@
   bodyPart: Eyes
   markingCategory: Eyes
   speciesRestriction: [IPC]
-  forcedColoring: true
+  forcedColoring: false # SpL
   forcedGlowing: true
   coloring:
     default:
@@ -188,7 +188,7 @@
   bodyPart: Eyes
   markingCategory: Eyes
   speciesRestriction: [IPC]
-  forcedColoring: true
+  forcedColoring: false # SpL
   forcedGlowing: true
   coloring:
     default:
@@ -203,7 +203,7 @@
   bodyPart: Eyes
   markingCategory: Eyes
   speciesRestriction: [IPC]
-  forcedColoring: true
+  forcedColoring: false # SpL
   forcedGlowing: true
   coloring:
     default:
@@ -218,7 +218,7 @@
   bodyPart: Eyes
   markingCategory: Eyes
   speciesRestriction: [IPC]
-  forcedColoring: true
+  forcedColoring: false # SpL
   forcedGlowing: true
   coloring:
     default:
@@ -233,7 +233,7 @@
   bodyPart: Eyes
   markingCategory: Eyes
   speciesRestriction: [IPC]
-  forcedColoring: true
+  forcedColoring: false #SpL
   forcedGlowing: true
   coloring:
     default:
@@ -248,7 +248,7 @@
   bodyPart: Eyes
   markingCategory: Eyes
   speciesRestriction: [IPC]
-  forcedColoring: true
+  forcedColoring: false #SpL
   forcedGlowing: true
   coloring:
     default:
@@ -263,7 +263,7 @@
   bodyPart: Eyes
   markingCategory: Eyes
   speciesRestriction: [IPC]
-  forcedColoring: true
+  forcedColoring: false #SpL
   forcedGlowing: true
   coloring:
     default:
@@ -278,7 +278,7 @@
   bodyPart: Eyes
   markingCategory: Eyes
   speciesRestriction: [IPC]
-  forcedColoring: true
+  forcedColoring: false #SpL
   forcedGlowing: true
   coloring:
     default:
@@ -293,7 +293,7 @@
   bodyPart: Eyes
   markingCategory: Eyes
   speciesRestriction: [IPC]
-  forcedColoring: true
+  forcedColoring: false #SpL
   forcedGlowing: true
   coloring:
     default:
@@ -308,7 +308,7 @@
   bodyPart: Eyes
   markingCategory: Eyes
   speciesRestriction: [IPC]
-  forcedColoring: true
+  forcedColoring: false #SpL
   forcedGlowing: true
   coloring:
     default:
@@ -323,7 +323,7 @@
   bodyPart: Eyes
   markingCategory: Eyes
   speciesRestriction: [IPC]
-  forcedColoring: true
+  forcedColoring: false #SpL
   forcedGlowing: true
   coloring:
     default:
@@ -338,7 +338,7 @@
   bodyPart: Eyes
   markingCategory: Eyes
   speciesRestriction: [IPC]
-  forcedColoring: true
+  forcedColoring: false #SpL
   forcedGlowing: true
   coloring:
     default:
@@ -353,7 +353,7 @@
   bodyPart: Eyes
   markingCategory: Eyes
   speciesRestriction: [IPC]
-  forcedColoring: true
+  forcedColoring: false #SpL
   forcedGlowing: true
   coloring:
     default:
@@ -368,7 +368,7 @@
   bodyPart: Eyes
   markingCategory: Eyes
   speciesRestriction: [IPC]
-  forcedColoring: true
+  forcedColoring: false #SpL
   forcedGlowing: true
   coloring:
     default:
@@ -383,7 +383,7 @@
   bodyPart: Eyes
   markingCategory: Eyes
   speciesRestriction: [IPC]
-  forcedColoring: true
+  forcedColoring: false #SpL
   forcedGlowing: true
   coloring:
     default:
@@ -398,7 +398,7 @@
   bodyPart: Eyes
   markingCategory: Eyes
   speciesRestriction: [IPC]
-  forcedColoring: true
+  forcedColoring: false #SpL
   forcedGlowing: true
   coloring:
     default:
@@ -413,7 +413,7 @@
   bodyPart: Eyes
   markingCategory: Eyes
   speciesRestriction: [IPC]
-  forcedColoring: true
+  forcedColoring: false #SpL
   forcedGlowing: true
   coloring:
     default:
@@ -428,7 +428,7 @@
   bodyPart: Eyes
   markingCategory: Eyes
   speciesRestriction: [IPC]
-  forcedColoring: true
+  forcedColoring: false #SpL
   forcedGlowing: true
   coloring:
     default:
@@ -443,7 +443,7 @@
   bodyPart: Eyes
   markingCategory: Eyes
   speciesRestriction: [IPC]
-  forcedColoring: true
+  forcedColoring: false #SpL
   forcedGlowing: true
   coloring:
     default:
@@ -458,7 +458,7 @@
   bodyPart: Eyes
   markingCategory: Eyes
   speciesRestriction: [IPC]
-  forcedColoring: true
+  forcedColoring: false #SpL
   forcedGlowing: true
   coloring:
     default:
@@ -473,7 +473,7 @@
   bodyPart: Eyes
   markingCategory: Eyes
   speciesRestriction: [IPC]
-  forcedColoring: true
+  forcedColoring: false #SpL
   forcedGlowing: true
   coloring:
     default:
@@ -488,7 +488,7 @@
   bodyPart: Eyes
   markingCategory: Eyes
   speciesRestriction: [IPC]
-  forcedColoring: true
+  forcedColoring: false #SpL
   forcedGlowing: true
   coloring:
     default:
@@ -503,7 +503,7 @@
   bodyPart: Eyes
   markingCategory: Eyes
   speciesRestriction: [IPC]
-  forcedColoring: true
+  forcedColoring: false #SpL
   forcedGlowing: true
   coloring:
     default:
@@ -518,7 +518,7 @@
   bodyPart: Eyes
   markingCategory: Eyes
   speciesRestriction: [IPC]
-  forcedColoring: true
+  forcedColoring: false #SpL
   forcedGlowing: true
   coloring:
     default:
@@ -533,7 +533,7 @@
   bodyPart: Eyes
   markingCategory: Eyes
   speciesRestriction: [IPC]
-  forcedColoring: true
+  forcedColoring: false #SpL
   forcedGlowing: true
   coloring:
     default:
@@ -548,7 +548,7 @@
   bodyPart: Eyes
   markingCategory: Eyes
   speciesRestriction: [IPC]
-  forcedColoring: true
+  forcedColoring: false #SpL
   forcedGlowing: true
   coloring:
     default:
@@ -563,7 +563,7 @@
   bodyPart: Eyes
   markingCategory: Eyes
   speciesRestriction: [IPC]
-  forcedColoring: true
+  forcedColoring: false #SpL
   forcedGlowing: true
   coloring:
     default:
@@ -578,7 +578,7 @@
   bodyPart: Eyes
   markingCategory: Eyes
   speciesRestriction: [IPC]
-  forcedColoring: true
+  forcedColoring: false #SpL
   forcedGlowing: true
   coloring:
     default:
@@ -593,7 +593,7 @@
   bodyPart: Eyes
   markingCategory: Eyes
   speciesRestriction: [IPC]
-  forcedColoring: true
+  forcedColoring: false #SpL
   forcedGlowing: true
   coloring:
     default:
@@ -608,7 +608,7 @@
   bodyPart: Eyes
   markingCategory: Eyes
   speciesRestriction: [IPC]
-  forcedColoring: true
+  forcedColoring: false #SpL
   forcedGlowing: true
   coloring:
     default:
@@ -623,7 +623,7 @@
   bodyPart: Eyes
   markingCategory: Eyes
   speciesRestriction: [IPC]
-  forcedColoring: true
+  forcedColoring: false #SpL
   forcedGlowing: true
   coloring:
     default:
@@ -638,7 +638,7 @@
   bodyPart: Eyes
   markingCategory: Eyes
   speciesRestriction: [IPC]
-  forcedColoring: true
+  forcedColoring: false #SpL
   forcedGlowing: true
   coloring:
     default:

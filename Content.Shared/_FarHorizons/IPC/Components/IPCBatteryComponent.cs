@@ -34,6 +34,15 @@ public sealed partial class IPCBatteryComponent : Component
 
     [DataField]
     public ProtoId<EmotePrototype> NoPowerDeathEmote = default;
+    
+    [ViewVariables(VVAccess.ReadWrite)]
+    public ContainerSlot BatteryContainerSlot = default!;
+
+    [ViewVariables(VVAccess.ReadWrite)]
+    public BatteryDrainerComponent BatteryDrainer = default!;
+
+    [ViewVariables(VVAccess.ReadWrite)]
+    public PowerCellSlotComponent PowerCellSlot = default!;
 
     [ViewVariables(VVAccess.ReadWrite)]
     public bool TimerActive = false;
