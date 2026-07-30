@@ -27,12 +27,12 @@ def add_entry(entries):
     author = input("Enter author name: ")
     message = input("Enter description of changes: ")
 
-    valid_types = {"Add", "Fix", "Remove", "Tweak"}
+    valid_types = {"Addition", "Removal", "Tweak", "Bugfix", "Port"}
 
-    change_type = input("Enter change type (Add, Fix, Remove, or Tweak): ")
+    change_type = input("Enter change type (Addition, Removal, Tweak, Bugfix, or Port): ")
 
     while change_type not in valid_types:
-        change_type = input("Enter change type (Add, Fix, Remove, or Tweak): ")
+        change_type = input("Enter change type (Addition, Removal, Tweak, Bugfix, or Port): ")
 
     new_id = max((entry["id"] for entry in entries), default=0) + 1
     new_entry = {
