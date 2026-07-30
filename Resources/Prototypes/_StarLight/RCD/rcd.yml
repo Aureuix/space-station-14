@@ -14,7 +14,7 @@
 
 # Lighting
 - type: rcd
-  id: LightPostSmall
+  id: PoweredLightPostSmall
   category: Lighting
   sprite: /Textures/_Starlight/Interface/Radial/RCD/small_light_post.png
   mode: ConstructObject
