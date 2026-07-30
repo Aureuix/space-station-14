@@ -16,6 +16,12 @@
     - HEAD
     - EARS
     - NECK
+  - type: ContainerContainer
+    containers:
+      key_slots: !type:Container
+  - type: Headset # SpL
+  - type: EncryptionKeyHolder # SpL
+    keySlots: 1 # SpL
   - type: ToggleableVisuals
     spriteLayer: enum.ToggleableVisuals.Layer
     clothingVisuals:
