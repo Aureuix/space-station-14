@@ -36,6 +36,7 @@
     damageContainers:
     - Inorganic
     - Silicon
+    - IPC # SL
   - type: ShowAccessReaderSettings
 
 - type: entity
@@ -217,6 +218,10 @@
     - Biological
     - BiologicalMetaphysicalKitsune
     - Inorganic
+    - IPC # SL
+  - type: ShowHealthIcons # SL
+    damageContainers:
+      - IPC
   - type: ShowHungerIcons
   - type: ShowThirstIcons
   - type: ShowSyndicateIcons

@@ -15,7 +15,7 @@
     state: oilpack
   - type: Healing
     damageContainers:
-      - Biological
+      - IPC
     damage:
       types:
         Bloodloss: -0.5 #lowers bloodloss damage

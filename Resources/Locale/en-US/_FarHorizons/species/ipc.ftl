@@ -68,3 +68,5 @@ alerts-ipc-fans-efficiency-low-desc = Atmospheric conditions are below optimal, 
 
 alerts-ipc-fans-off-name = Cooling unable to activate!
 alerts-ipc-fans-off-desc = Extreme danger! Atmospheric conditions prevent activation of cooling subsystems!
+
+interact-restriction-restricted-target = This isn't the right type of healing item!

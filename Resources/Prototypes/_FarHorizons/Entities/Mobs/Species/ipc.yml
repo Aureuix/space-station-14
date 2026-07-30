@@ -78,6 +78,31 @@
       Alive: IPCHealth
       Critical: BorgCrit
       Dead: BorgDead
+    showOverlays: false
+  - type: HealthExaminable
+    examinableTypes:
+      - Blunt
+      - Slash
+      - Piercing
+      - Heat
+      - Shock
+      - Cold
+      - Caustic
+      - Radiation
+    locPrefix: silicon
+  - type: DamagedSiliconAccent
+    damageAtMaxCorruption: 100 # This should be the same value as MobThresholds - Critical.
+    enableChargeCorruption: false
+  - type: CyborgSparkEffect
+  - type: SlowOnDamage # SpL start
+    speedModifierThresholds:
+      30: 0.9
+      40: 0.8
+      50: 0.7
+      60: 0.6
+      70: 0.5
+      80: 0.4
+      90: 0.3 # SpL End
   - type: WiresPanel
   - type: DamageVisuals
     thresholds: [ 10, 20, 30, 50, 70, 100 ]
@@ -121,7 +146,7 @@
   - type: Stamina
     staminaAlert: "IPCStamina"
   - type: Damageable
-    damageContainer: Biological
+    damageContainer: IPC
     damageModifierSet: IPC
   - type: SolutionContainerManager
     solutions:
@@ -137,7 +162,7 @@
       - ReagentId: Oil
         Quantity: 300
     bleedReductionAmount: 0 # No natural wound closing whatsoever
-    bloodlossThreshold: 0.75 # Everyone else start taking bloodloss damage at 90%, but with no natural bleeding stop - IPC can last for a bit longer
+    bloodlossThreshold: 0.25 # Everyone else start taking bloodloss damage at 90%, but with no natural bleeding stop - IPC can last for a bit longer # SpL- whatever
   - type: IPCWeldClosesWounds
   - type: Icon
     sprite: _FarHorizons/Mobs/Species/IPC/parts.rsi
@@ -159,7 +184,7 @@
       Male: MaleIPC
       Female: FemaleIPC
       Unsexed: MaleIPC
-  # - type: VisionOrganRequiredForVision
+    wilhelmProbability: 0
   # IPC slots
   - type: ContainerContainer
     containers:

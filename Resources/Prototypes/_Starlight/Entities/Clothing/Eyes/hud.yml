@@ -15,9 +15,13 @@
     - type: ShowHealthBars
       damageContainers:
         - Biological
+        - BiologicalMetaphysicalKitsune # SpL
+        - IPC # SL
     - type: ShowHealthIcons
       damageContainers:
         - Biological
+        - BiologicalMetaphysicalKitsune # SpL
+        - IPC # SL
     - type: Tag
       tags:
         - HudMedical
@@ -46,7 +50,7 @@
   name: blue shield hud eyepatch
 
 - type: entity
-  parent: [ClothingEyesBase, ShowSecurityIcons, BaseSecurityContraband]
+  parent: [ClothingEyesBase, ShowSecurityIcons, ShowMedicalIcons, BaseSecurityContraband]
   id: ClothingEyesHudBrigmedic
   name: brigmedic hud
   description: Tamashi-upgraded HUDs. Yes. Brigmedic ones.
@@ -58,6 +62,9 @@
     - type: EyeProtection
       protectionTime: 5
     - type: ShowHealthBars
+      damageContainers:
+        - Biological
+        - BiologicalMetaphysicalKitsune # SpL
     - type: SolutionScanner
     - type: Construction
       graph: GlassesSecHUD
@@ -103,6 +110,9 @@
     - type: EyeProtection
       protectionTime: 5
     - type: ShowHealthBars
+      damageContainers:
+        - Biological
+        - BiologicalMetaphysicalKitsune # SpL
     - type: SolutionScanner
     - type: Construction
       graph: GlassesSecHUD
@@ -189,13 +199,17 @@
     - type: ShowHealthBars
       damageContainers:
         - Biological
+        - BiologicalMetaphysicalKitsune # SpL
         - Inorganic
         - Silicon
+        - IPC
     - type: ShowHealthIcons
       damageContainers:
         - Biological
+        - BiologicalMetaphysicalKitsune # SpL
         - Inorganic
         - Silicon
+        - IPC
     - type: Tag
       tags:
         - HudMedical

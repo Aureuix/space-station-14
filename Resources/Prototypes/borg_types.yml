@@ -59,6 +59,7 @@
     damageContainers:
     - Inorganic
     - Silicon
+    - IPC
   # Starlight end
 
   # Visual

@@ -161,6 +161,7 @@
   - EmergencyElfOxygen # Starlight
   - LoadoutSpeciesVoxNitrogen
   - EmergencyNonBreather # 🌟Starlight🌟
+  - EmergencyIPC # 🌟Starlight🌟
 
 # nitrogen or oxygen tank, depending on what your species needs
 - type: loadoutGroup
@@ -781,6 +782,7 @@
   - EmergencyElfOxygenClown # Starlight
   - LoadoutSpeciesVoxNitrogen
   - EmergencyNonBreatherClown # 🌟Starlight🌟
+  - EmergencyIPC # 🌟Starlight🌟
 
 - type: loadoutGroup
   id: ClownJobTrinkets
@@ -850,6 +852,7 @@
   - EmergencySpeciesMothMime
   - LoadoutSpeciesVoxNitrogen
   - EmergencyNonBreatherMime # 🌟Starlight🌟
+  - EmergencyIPC # 🌟Starlight🌟
 
 - type: loadoutGroup
   id: MimeJobTrinkets
@@ -1270,6 +1273,7 @@
   - EmergencyElfOxygenExtended # Starlight
   - LoadoutSpeciesVoxNitrogen
   - EmergencyNonBreatherExtended # 🌟Starlight🌟
+  - EmergencyIPC # 🌟Starlight🌟
 
 # Science
 - type: loadoutGroup
@@ -1758,6 +1762,7 @@
   - EmergencyElfOxygenSecurity # Starlight
   - LoadoutSpeciesVoxNitrogen
   - EmergencyNonbreatherSecurity # 🌟Starlight🌟
+  - EmergencyIPC # 🌟Starlight🌟
 
 # Medical
 - type: loadoutGroup
@@ -2054,6 +2059,7 @@
   - EmergencyElfOxygenMedical # Starlight
   - LoadoutSpeciesVoxNitrogen
   - EmergencyNonBreatherMedical # 🌟Starlight🌟
+  - EmergencyIPC # 🌟Starlight🌟
 
 # Wildcards
 - type: loadoutGroup
@@ -2101,6 +2107,7 @@
   - EmergencyElfOxygenSyndicate # Starlight
   - LoadoutSpeciesVoxNitrogen
   - EmergencyNonBreatherSyndicate # 🌟Starlight🌟
+  - EmergencyIPC # 🌟Starlight🌟
 
 - type: loadoutGroup
   id: SurvivalMilitaryDouble

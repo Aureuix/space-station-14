@@ -18,29 +18,29 @@
     Ping:
       path: /Audio/Effects/Cargo/ping.ogg
     Laugh:
-      collection: MaleLaugh
-    Cough:
-      collection: MaleCoughs
-    Sneeze:
-      collection: MaleSneezes
-    Snore:
-      collection: Snores
-    Sigh:
-      collection: MaleSigh
-    Crying:
-      collection: MaleCry
-    Whistle:
-      collection: Whistles
-    Weh:
-      collection: Weh
-    Hew:
-      collection: Hew
-    Gasp:
-      collection: MaleGasp
+      collection: /Audio/Voice/Silicon/syndieborg_laugh.ogg # SpL
+    #Cough:
+    #  collection: MaleCoughs
+    #Sneeze:
+    #  collection: MaleSneezes
+    #Snore:
+    #  collection: Snores
+    #Sigh:
+    #  collection: MaleSigh
+    #Crying:
+    #  collection: MaleCry
+    #Whistle:
+    #  collection: Whistles
+    #Weh:
+    #  collection: Weh
+    #Hew:
+    #  collection: Hew
+    #Gasp:
+    #  collection: MaleGasp
     DeathgaspIPC:
       collection: MaleDeathGasp
-    Yawn:
-      collection: MaleYawn
+    #Yawn:
+    #  collection: MaleYawn
 
 - type: emoteSounds
   id: FemaleIPC
@@ -62,26 +62,26 @@
     Ping:
       path: /Audio/Effects/Cargo/ping.ogg
     Laugh:
-      collection: FemaleLaugh
-    Cough:
-      collection: FemaleCoughs
-    Sneeze:
-      collection: FemaleSneezes
-    Snore:
-      collection: Snores
-    Sigh:
-      collection: FemaleSigh
-    Crying:
-      collection: FemaleCry
-    Whistle:
-      collection: Whistles
-    Weh:
-      collection: Weh
-    Hew:
-      collection: Hew
-    Gasp:
-      collection: FemaleGasp
+      collection: /Audio/Voice/Silicon/syndieborg_laugh.ogg # SpL
+    #Cough:
+    #  collection: FemaleCoughs
+    #Sneeze:
+    #  collection: FemaleSneezes
+    #Snore:
+    #  collection: Snores
+    #Sigh:
+    #  collection: FemaleSigh
+    #Crying:
+    #  collection: FemaleCry
+    #Whistle:
+    #  collection: Whistles
+    #Weh:
+    #  collection: Weh
+    #Hew:
+    #  collection: Hew
+    #Gasp:
+    #  collection: FemaleGasp
     DeathgaspIPC:
       collection: FemaleDeathGasp
-    Yawn:
-      collection: FemaleYawn
+    #Yawn:
+    #  collection: FemaleYawn
