@@ -20,7 +20,7 @@
   id: HeadScarLeft
   bodyPart: Head
   markingCategory: Head
-  # speciesRestriction: [Human, Dwarf, Reptilian, SlimePerson] #SpL- other scars are universal
+  speciesRestriction: [Dwarf, Human, Kitsune, Reptilian, Arachnid, Elf, Vulpkanin, Avali, SlimePerson, Shadekin, Thaven] # SpL
   followSkinColor: true
   sprites:
     - sprite: _Starlight/Mobs/Customization/Generic/scars.rsi
@@ -30,7 +30,7 @@
   id: HeadScarRight
   bodyPart: Head
   markingCategory: Head
-  # speciesRestriction: [Human, Dwarf, Reptilian, SlimePerson] #SpL- other scars are universal
+  speciesRestriction: [Dwarf, Human, Kitsune, Reptilian, Arachnid, Elf, Vulpkanin, Avali, SlimePerson, Shadekin, Thaven] # SpL
   followSkinColor: true
   sprites:
     - sprite: _Starlight/Mobs/Customization/Generic/scars.rsi
