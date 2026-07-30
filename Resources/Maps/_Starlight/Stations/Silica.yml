@@ -132547,15 +132547,6 @@ entities:
       parent: 2
     - type: Fixtures
       fixtures: {}
-- proto: PosterContrabandWantedMimeSexy
-  entities:
-  - uid: 19564
-    components:
-    - type: Transform
-      pos: 63.5,-9.5
-      parent: 2
-    - type: Fixtures
-      fixtures: {}
 - proto: PosterContrabandWehWatches
   entities:
   - uid: 19565
