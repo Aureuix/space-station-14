@@ -94,10 +94,10 @@
       collection: Screwdriver
 
 - type: entity
-  name: Cybersun pen
+  name: cybersun pen
   parent: [BaseAdvancedPen, BaseSyndicateContraband]
   id: CyberPen
-  description: A high-tech pen straight from Cybersun's legal department, capable of refracting hard-light at impossible angles through its diamond tip in order to write. So powerful, it's even able to rewrite officially stamped documents should the need arise.
+  description: A high-tech pen straight from CyberSun's legal department, capable of refracting hard-light at impossible angles through its diamond tip in order to write. So powerful, it's even able to rewrite officially stamped documents should the need arise.
   components:
   - type: Sprite
     state: overpriced_pen
@@ -107,10 +107,10 @@
     price: 500
 
 - type: entity
-  name: CentComm pen
+  name: centcomm pen
   parent: [BaseAdvancedPen, BaseCentcommContraband]
   id: PenCentcom
-  description: In an attempt to keep up with the "power" of the cybersun bureaucracy, NT made a replica of cyber pen, in their corporate style.
+  description: In an attempt to keep up with the "power" of the CyberSun bureaucracy, Central Command made a replica of their signature pen in their corporate style.
   components:
   - type: Sprite
     state: pen_centcom

@@ -841,7 +841,7 @@
   parent: [ ClothingHeadHardsuitBase, ClothingHeadSuitWithLightBase, ClothingHeadLightParamsIntermediate ] # Starlight
   id: ClothingHeadHelmetHardsuitCybersun
   name: cybersun juggernaut helmet
-  description: Made of compressed red matter, this helmet was designed in the Tau chromosphere facility.
+  description: Made of compressed plastitanium, this helmet was designed in the Tau chromosphere facility.
   components:
   - type: Sprite
     sprite: Clothing/Head/Hardsuits/cybersun.rsi

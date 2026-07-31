@@ -5,18 +5,27 @@
         "y": 32
     },
     "license": "CC-BY-SA-3.0",
-    "copyright": "Taken from tgstation at https://github.com/tgstation/tgstation/commit/f8f4aeda930fcd0805ca4cc76d9bc9412a5b3428",
+    "copyright": "Taken from tgstation at https://github.com/tgstation/tgstation/commit/f8f4aeda930fcd0805ca4cc76d9bc9412a5b3428, new sprite by nykaestra",
     "states": [
         {
-            "name": "telecrystal"
+            "name": "telecrystal_1"
+        },
+        {
+            "name": "telecrystal_2"
+        },
+        {
+            "name": "telecrystal_3"
+        },
+        {
+            "name": "telecrystal_old"
         },
 		{
-		  "name": "inhand-left",
-		  "directions": 4
+            "name": "inhand-left",
+            "directions": 4
 		},
 		{
-		  "name": "inhand-right",
-		  "directions": 4
+            "name": "inhand-right",
+            "directions": 4
 		}
     ]
 }

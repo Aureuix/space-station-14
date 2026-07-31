@@ -129,7 +129,7 @@ public sealed class ExecutionSystem : EntitySystem
         }
         else
         {
-            ShowExecutionInternalPopup(ExecutionComponent.ExternalSelfMeleeExecutionMessage, attacker, victim, weapon);
+            ShowExecutionInternalPopup(ExecutionComponent.InternalMeleeExecutionMessage, attacker, victim, weapon); // SpL- this bug has been rattling around for way too long
             ShowExecutionExternalPopup(ExecutionComponent.ExternalMeleeExecutionMessage, attacker, victim, weapon);
         }
 

@@ -239,6 +239,10 @@
     interactionPrototypes:
     - Pet
     - Boop
+    - Tap # SpL
+    - Pat # SpL
+    - Shake # SpL
+    - Punch # SpL
   # Starlight End
   - type: CosmicCenserTarget # Stellar - Cosmic Cult
 

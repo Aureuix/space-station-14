@@ -369,7 +369,7 @@
   parent: ClothingUniformSkirtBase
   id: ClothingUniformJumpskirtPencilCentcomOfficial
   name: centcomm "pencil" style skirt 
-  description: A strict green "pencil" skirt exudes authority and poise. The fitted blazer and straight skirt form an elegant silhouette, suitable for various occasions, from business meetings to a captain's dismissal.
+  description: A strict green "pencil" skirt that exudes authority and poise. The fitted blazer and straight skirt form an elegant silhouette suitable for various occasions, from business meetings to a captain's dismissal.
   components:
   - type: Sprite
     sprite: _Starlight/Clothing/Uniforms/Jumpskirt/pencil_centcom_official.rsi
@@ -490,7 +490,7 @@
 - type: entity
   parent: ClothingUniformSkirtBase
   id: ClothingUniformJumpskirtCentcomOfficial
-  name: CentComm officer's suitskirt
+  name: centcomm officer's suitskirt
   description: It's a suitskirt worn by CentComm's highest-tier Commanders.
   components:
     - type: Sprite
@@ -501,7 +501,7 @@
 - type: entity
   parent: ClothingUniformSkirtBase
   id: ClothingUniformJumpskirtCentcomOfficer
-  name: CentComm turtleneck skirt
+  name: centcomm turtleneck skirt
   description: A skirt version of the CentComm turtleneck, rarer and more sought after than the original.
   components:
   - type: Sprite
@@ -535,7 +535,7 @@
   parent: ClothingUniformSkirtBase
   id: ClothingUniformJumpskirtSchool
   name: school skirt
-  description: Stylish and comfortable school skirt.
+  description: A stylish and comfortable school skirt.
   components:
   - type: Sprite
     sprite: _Starlight/Clothing/Uniforms/Jumpskirt/schoolskirt.rsi
@@ -546,7 +546,7 @@
   parent: ClothingUniformBase
   id: ClothingUniformJumpskirtCapTurtleneck
   name: captain's turtleneck
-  description: True captain's turtleneck.
+  description: A turtleneck for a true captain.
   components:
   - type: Sprite
     sprite: _Starlight/Clothing/Uniforms/Jumpskirt/cap_turtleneck.rsi
@@ -556,8 +556,8 @@
 - type: entity
   parent: ClothingUniformBase
   id: ClothingUniformJumpskirtHoPTurtleneck
-  name: head of personal's turtleneck
-  description: It's Head of Personal's turtleneck.
+  name: head of personnel's turtleneck
+  description: It's a turtleneck for the Head of Personnel.
   components:
   - type: Sprite
     sprite: _Starlight/Clothing/Uniforms/Jumpskirt/hop_turtleneck.rsi
@@ -568,7 +568,7 @@
   parent: ClothingUniformBase
   id: ClothingUniformJumpskirtHoSBlack
   name: head of security's black skirt
-  description: It's Head of Security's black skirt.
+  description: It's a black skirt for the Head of Security.
   components:
   - type: Sprite
     sprite: _Starlight/Clothing/Uniforms/Jumpskirt/hos_black.rsi
@@ -579,7 +579,7 @@
   parent: ClothingUniformBase
   id: ClothingUniformJumpskirtRDClassical
   name: research director's classical skirt
-  description: It's Research Director's classical skirt.
+  description: It's a classical skirt for the Research Director.
   components:
   - type: Sprite
     sprite: _Starlight/Clothing/Uniforms/Jumpskirt/rd_classical.rsi
@@ -657,7 +657,7 @@
 - type: entity
   parent: [ ClothingUniformSkirtBase, BaseCentcommContraband ]
   id: ClothingUniformJumpskirtCentcommDomesticFormalWear
-  name: central command domestic division formal wear
+  name: central domestic division formal wear
   description: A dress for special occasions.
   components:
   - type: Sprite
@@ -668,7 +668,7 @@
 - type: entity
   parent: [ ClothingUniformSkirtBase, BaseCentcommContraband ]
   id: ClothingUniformJumpskirtCentcommAdminFormalWear
-  name: central command administrative division formal wear
+  name: central administrative division formal wear
   description: A dress for special occasions.
   components:
   - type: Sprite
@@ -679,7 +679,7 @@
 - type: entity
   parent: [ ClothingUniformSkirtBase, BaseCentcommContraband ]
   id: ClothingUniformJumpskirtCentcommCargoFormalWear
-  name: central command logistics division formal wear
+  name: central logistics division formal wear
   description: A dress for special occasions.
   components:
   - type: Sprite
@@ -690,7 +690,7 @@
 - type: entity
   parent: [ ClothingUniformSkirtBase, BaseCentcommContraband ]
   id: ClothingUniformJumpskirtEngiCentcommFormalWear
-  name: central command engineering division formal wear
+  name: central engineering division formal wear
   description: A dress for special occasions.
   components:
   - type: Sprite
@@ -701,7 +701,7 @@
 - type: entity
   parent: [ ClothingUniformSkirtBase, BaseCentcommContraband ]
   id: ClothingUniformJumpskirtCentcommIntelFormalWear
-  name: central command intelligence division formal wear
+  name: central intelligence division formal wear
   description: A dress for special occasions.
   components:
   - type: Sprite
@@ -712,7 +712,7 @@
 - type: entity
   parent: [ ClothingUniformSkirtBase, BaseCentcommContraband ]
   id: ClothingUniformJumpskirtCentcommMedFormalWear
-  name: central command medical division formal wear
+  name: central medical division formal wear
   description: A dress for special occasions.
   components:
   - type: Sprite
@@ -723,7 +723,7 @@
 - type: entity
   parent: [ ClothingUniformSkirtBase, BaseCentcommContraband ]
   id: ClothingUniformJumpskirtCentcommResearchFormalWear
-  name: central command research division formal wear
+  name: central research division formal wear
   description: A dress for special occasions.
   components:
   - type: Sprite
@@ -734,7 +734,7 @@
 - type: entity
   parent: [ ClothingUniformSkirtBase, BaseCentcommContraband ]
   id: ClothingUniformJumpskirtCentcommSecurityFormalWear
-  name: central command security division formal wear
+  name: central security division formal wear
   description: A dress for special occasions.
   components:
   - type: Sprite
@@ -745,7 +745,7 @@
 - type: entity
   parent: [ ClothingUniformSkirtBase, BaseCentcommContraband ]
   id: ClothingUniformJumpskirtCentcommSpecialOpsFormalWear
-  name: central command special operations division formal wear
+  name: central special operations division formal wear
   description: A dress for special occasions.
   components:
   - type: Sprite

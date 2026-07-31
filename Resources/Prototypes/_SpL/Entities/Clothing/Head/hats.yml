@@ -1,0 +1,17 @@
+﻿- type: entity
+  parent: [ ClothingHeadBase, BaseMinorContraband ]
+  id: ClothingHeadHatBeretSyndicate
+  name: syndicate beret
+  description: A sleek black felt beret with a sinister red emblem. Often seen worn by Syndieland helpdesk staff before its closure.
+  components:
+    - type: Sprite
+      sprite: _SpL/Clothing/Head/Hats/SyndieBeret.rsi
+    - type: Clothing
+      sprite: _SpL/Clothing/Head/Hats/SyndieBeret.rsi
+    - type: Tag
+      tags:
+        - PetWearable
+        - CorgiWearable
+        - ClothMade
+        - Recyclable
+        - WhitelistChameleon

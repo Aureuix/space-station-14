@@ -2,7 +2,7 @@ execution-verb-name = Execute
 execution-verb-message = Use your weapon to execute someone.
 
 suicide-verb-name = Suicide
-suicide-verb-message = Use your weapon to suicide.
+suicide-verb-message = Use your weapon to take your own life.
 
 # All the below localisation strings have access to the following variables
 # attacker (the person committing the execution)
@@ -24,19 +24,19 @@ execution-popup-melee-complete-external = { CAPITALIZE(THE($attacker)) } slits t
 execution-popup-gun-complete-external = { CAPITALIZE(THE($attacker)) } shoots {THE($victim)} in the head!
 
 execution-popup-gun-clumsy-internal = You miss the head of {THE($victim)} and shoot yourself in the foot instead!
-execution-popup-gun-clumsy-external = { CAPITALIZE(THE($attacker)) } misses {THE($victim)} and shoots themself in the foot instead!
+execution-popup-gun-clumsy-external = { CAPITALIZE(THE($attacker)) } misses {THE($victim)} and shoots {SUBJECT($victim)}self in the foot instead!
 
 execution-popup-gun-empty = { CAPITALIZE(THE($weapon)) } clicks.
 
 execution-popup-self-melee-initial-internal = You ready {THE($weapon)} against your own throat.
 execution-popup-self-gun-initial-internal = You put the muzzle of {THE($weapon)} in your mouth.
 
-execution-popup-self-melee-initial-external = { CAPITALIZE(THE($attacker)) } readies {POSS-ADJ($attacker)} {$weapon} against their own throat.
-execution-popup-self-gun-initial-external = { CAPITALIZE(THE($attacker)) } puts the muzzle of {POSS-ADJ($attacker)} {$weapon} in their mouth.
+execution-popup-self-melee-initial-external = { CAPITALIZE(THE($attacker)) } readies {POSS-ADJ($attacker)} {$weapon} against {POSS-ADJ($victim)} own throat.
+execution-popup-self-gun-initial-external = { CAPITALIZE(THE($attacker)) } puts the muzzle of {POSS-ADJ($attacker)} {$weapon} in {POSS-ADJ($victim)} mouth.
 
 execution-popup-self-melee-complete-internal = You slit your own throat!
 execution-popup-self-gun-complete-internal = You shoot yourself in the head!
 
-execution-popup-self-melee-complete-external = { CAPITALIZE(THE($attacker)) } slits their own throat!
-execution-popup-self-gun-complete-external = { CAPITALIZE(THE($attacker)) } shoots themself in the head!
+execution-popup-self-melee-complete-external = { CAPITALIZE(THE($attacker)) } slits {POSS-ADJ($victim)} own throat!
+execution-popup-self-gun-complete-external = { CAPITALIZE(THE($attacker)) } shoots {SUBJECT($victim)}self in the head!
 #Starlight end
