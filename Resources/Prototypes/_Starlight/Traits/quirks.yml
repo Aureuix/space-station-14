@@ -20,6 +20,11 @@
       components:
         - type: LightweightDrunk
           boozeStrengthMultiplier: 2
+  requirements:
+    - !type:SpeciesRequirement
+      species:
+        - IPC
+      inverted: true
   conflicts:
     - AlcoholTolerance # SpL
 
@@ -37,6 +42,7 @@
     - !type:SpeciesRequirement
       species:
         - Shadekin # Shadekins does not breathe... HOW DO THEY SNORE?
+        - IPC
       inverted: true
 
 - type: trait

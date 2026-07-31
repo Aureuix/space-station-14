@@ -1,5 +1,5 @@
 - type: entity
-  parent: [ClothingEyesBase, ShowSecurityIcons, BaseSecurityContraband]
+  parent: [ClothingEyesBase, ShowSecurityIcons, ShowMedicalIcons, BaseSecurityContraband]
   id: ClothingEyesGlassesBrigmedic
   name: brigmedic glasses
   description: High-quality hud that can protect against flashes. Tamashi-style!
@@ -13,6 +13,9 @@
   - type: EyeProtection
     protectionTime: 5
   - type: ShowHealthBars
+    damageContainers:
+      - Biological
+      - BiologicalMetaphysicalKitsune # SpL
   - type: Construction
     graph: GlassesSecHUD
     node: glassesSec
@@ -26,7 +29,7 @@
     coverage: EYES
 
 - type: entity
-  parent: [ClothingEyesBase, ShowSecurityIcons, BaseSecurityContraband]
+  parent: [ClothingEyesBase, ShowSecurityIcons, ShowMedicalIcons, BaseSecurityContraband]
   id: ClothingEyesGlassesCorpsman
   name: corpsman glasses
   description: Can protect against flashes much like security glasses, and track vitals!
@@ -39,6 +42,9 @@
   - type: EyeProtection
     protectionTime: 5
   - type: ShowHealthBars
+    damageContainers:
+      - Biological
+      - BiologicalMetaphysicalKitsune # SpL
   - type: Construction
     graph: GlassesSecHUD
     node: glassesSec
@@ -128,9 +134,13 @@
   - type: ShowHealthBars
     damageContainers:
     - Biological
+    - BiologicalMetaphysicalKitsune # SpL
+    - IPC
   - type: ShowHealthIcons
     damageContainers:
     - Biological
+    - BiologicalMetaphysicalKitsune # SpL
+    - IPC
   - type: Tag
     tags:
     - HudMedical
@@ -163,13 +173,17 @@
     - type: ShowHealthBars
       damageContainers:
         - Biological
+        - BiologicalMetaphysicalKitsune # SpL
         - Inorganic
         - Silicon
+        - IPC
     - type: ShowHealthIcons
       damageContainers:
         - Biological
+        - BiologicalMetaphysicalKitsune # SpL
         - Inorganic
         - Silicon
+        - IPC
     - type: FlashImmunity
     - type: SolutionScanner # SpL
     - type: EyeProtection
@@ -212,6 +226,9 @@
   - type: SolutionScanner
   - type: VisionCorrection
   - type: ShowHealthBars
+    damageContainers:
+      - Biological
+      - BiologicalMetaphysicalKitsune # SpL
   - type: Tag
     tags:
     - WhitelistChameleon

@@ -282,6 +282,17 @@ namespace Content.Client.Lobby.UI
                 UpdateCustomSpecieNameEdit(); // Starlight
             };
 
+            UpdateSubspecies();
+            // Far Horizons start
+            SubspeciesButton.OnItemSelected += args =>
+            {
+                SubspeciesButton.SelectId(args.Id);
+                SetSpecies(_subspecies[args.Id].ID);
+                UpdateHairPickers();
+                UpdateCustomSpecieNameEdit(); // Starlight
+            };
+            // Far Horizons end
+
             //starlight start
             #region Size
             UpdateSizeControls();
@@ -872,10 +883,15 @@ namespace Content.Client.Lobby.UI
 
             for (var i = 0; i < _species.Count; i++)
             {
+                // Far Horizons, hide subspecies from list
+                if (_species[i].SubspeciesOf != null)
+                    continue;
+                    
                 var name = Loc.GetString(_species[i].Name);
                 SpeciesButton.AddItem(name, i);
 
-                if (Profile?.Species.Equals(_species[i].ID) == true)
+                if (Profile?.Species.Equals(_species[i].ID) == true || 
+                    _species.Find(p => p.ID == Profile?.Species)?.SubspeciesOf == _species[i].ID) // Far Horizons
                 {
                     SpeciesButton.SelectId(i);
                 }
@@ -884,7 +900,10 @@ namespace Content.Client.Lobby.UI
             // If our species isn't available then reset it to default.
             if (Profile != null)
             {
-                if (!speciesIds.Contains(Profile.Species))
+                // Far Horizons Start
+                var parentSpecies = _species.Find(p => p.ID == Profile?.Species)?.SubspeciesOf ?? Profile.Species;
+                if (!speciesIds.Contains(parentSpecies))
+                //  Far Horizons End
                 {
                     SetSpecies(SharedHumanoidAppearanceSystem.DefaultSpecies);
                 }
@@ -1042,6 +1061,7 @@ namespace Content.Client.Lobby.UI
             AntagOverride = null; // Starlight: Antag Loadouts
 
             UpdateNameEdit();
+            UpdateSubspecies(); // Far Horizons
             UpdateCustomSpecieNameEdit(); // Starlight
             UpdateCharacterInfoEditorText(); //Starlight
             UpdateSexControls();
@@ -1059,6 +1079,7 @@ namespace Content.Client.Lobby.UI
             UpdateVoicesControls();
             UpdateSiliconVoicesControls(); // 🌟Starlight🌟
             UpdateCybernetics(); // Starlight
+            UpdateSpeciesLoadout(); // Far Horizons
 
             UpdateTraitsSelection(); // Starlight
             RefreshAntags();
@@ -1106,7 +1127,11 @@ namespace Content.Client.Lobby.UI
             // I.e., do what jobs/antags do.
 
             var guidebookController = UserInterfaceManager.GetUIController<GuidebookUIController>();
-            var species = Profile?.Species ?? SharedHumanoidAppearanceSystem.DefaultSpecies;
+            // Far Horizons start
+            var speciesId = Profile?.Species ?? SharedHumanoidAppearanceSystem.DefaultSpecies;
+            var speciesProto = _species.Find(p => p.ID == speciesId) ?? _species.First();
+            var species = speciesProto.SubspeciesOf ?? speciesProto.ID;
+            // Far Horizons end
             var page = DefaultSpeciesGuidebook;
             if (_prototypeManager.HasIndex<GuideEntryPrototype>(species))
                 page = new ProtoId<GuideEntryPrototype>(species.Id); // Gross. See above todo comment.
@@ -1599,6 +1624,7 @@ namespace Content.Client.Lobby.UI
         private void SetSpecies(string newSpecies)
         {
             Profile = Profile?.WithSpecies(newSpecies);
+            UpdateSubspecies(); // Far Horizons
             OnSkinColorOnValueChanged(); // Species may have special color prefs, make sure to update it.
             Markings.SetSpecies(newSpecies); // Repopulate the markings tab as well.
             // In case there's job restrictions for the species
@@ -1608,6 +1634,7 @@ namespace Content.Client.Lobby.UI
             UpdateSexControls(); // update sex for new species
             UpdateSpeciesGuidebookIcon();
             UpdateSizeControls(); //starlight
+            UpdateSpeciesLoadout(); // Far Horizons
             ReloadPreview();
         }
 
@@ -1799,15 +1826,14 @@ namespace Content.Client.Lobby.UI
         {
             SpeciesInfoButton.StyleClasses.Clear();
 
-            var species = Profile?.Species;
-            if (species is null)
-                return;
+            var species = Profile?.Species ?? _species.First(); // Far Horizons
 
             if (!_prototypeManager.Resolve<SpeciesPrototype>(species, out var speciesProto))
                 return;
 
             // Don't display the info button if no guide entry is found
-            if (!_prototypeManager.HasIndex<GuideEntryPrototype>(species))
+            // Far Horizons, guide book from paren species
+            if (!_prototypeManager.HasIndex<GuideEntryPrototype>(speciesProto.SubspeciesOf ?? species))
                 return;
 
             const string style = "SpeciesInfoDefault";

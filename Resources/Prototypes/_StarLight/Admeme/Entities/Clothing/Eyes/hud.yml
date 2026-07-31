@@ -19,8 +19,10 @@
     - type: ShowHealthIcons
       damageContainers:
         - Biological
+        - IPC
     - type: Tag
       tags:
         - HudMedical
+        - IPC
     - type: EyeProtection
       protectionTime: 5
