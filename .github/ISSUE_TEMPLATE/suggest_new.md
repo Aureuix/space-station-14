@@ -3,7 +3,7 @@ name: Suggest new
 about: Request the developers to add something new.
 title: "[Suggestion]"
 labels: "Under review"
-assignees: ss14-Starlight
+assignees: ss14-SpL
 
 ---
 
