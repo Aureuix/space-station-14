@@ -38,8 +38,8 @@
     sprite: Clothing/Head/Hats/beret_french.rsi
   - type: Clothing
     sprite: Clothing/Head/Hats/beret_french.rsi
-  - type: AddAccentClothing
-    accent: FrenchAccent
+  #- type: AddAccentClothing # SpL
+  #  accent: FrenchAccent # SpL
   - type: Tag
     tags:
     - PetWearable
@@ -303,7 +303,7 @@
 - type: entity
   parent: [ ClothingHeadBase, BaseCentcommContraband ]
   id: ClothingHeadHatCentcom
-  name: CentComm brand hat
+  name: centcomm brand hat
   description: Feels good being the king's boss.
   components:
   - type: Sprite
@@ -581,8 +581,8 @@
     sprite: Clothing/Head/Hats/sombrero.rsi
   - type: Clothing
     sprite: Clothing/Head/Hats/sombrero.rsi
-  - type: AddAccentClothing
-    accent: SpanishAccent
+  #- type: AddAccentClothing # SpL
+  #  accent: SpanishAccent
   - type: Tag
     tags:
     - PetWearable
@@ -1192,7 +1192,7 @@
 - type: entity
   parent: [ ClothingHeadBase, BaseCentcommContraband ]
   id: ClothingHeadHatCentcomcap
-  name: CentComm cap
+  name: centcomm cap
   description: An extravagant, stylish cap worn by CentComm officials. Shows the Captain who's in charge.
   components:
   - type: Sprite
@@ -1330,9 +1330,9 @@
       sprite: Clothing/Head/Hats/cowboyhatbrown.rsi
     - type: Clothing
       sprite: Clothing/Head/Hats/cowboyhatbrown.rsi
-    - type: AddAccentClothing
-      accent: ReplacementAccent
-      replacement: cowboy
+    #- type: AddAccentClothing # SpL
+    #  accent: ReplacementAccent # SpL
+    #  replacement: cowboy # SpL
     - type: Tag
       tags:
       - PetWearable

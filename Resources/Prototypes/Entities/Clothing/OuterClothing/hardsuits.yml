@@ -835,7 +835,7 @@
   parent: [ClothingOuterHardsuitBase, BaseSyndicateContraband]
   id: ClothingOuterHardsuitJuggernaut
   name: cybersun juggernaut suit
-  description: A suit made by the cutting edge R&D department at cybersun to be hyper resilient.
+  description: An incredibly heavy plastitanium warsuit made by the cutting edge R&D department at CyberSun to be hyper resilient.
   components:
   - type: Sprite
     sprite: Clothing/OuterClothing/Hardsuits/cybersun.rsi

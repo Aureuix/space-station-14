@@ -499,7 +499,7 @@
   parent: ClothingUniformBase
   id: ClothingUniformJumpsuitCentcomOfficerBlack
   name: special operations officer uniform
-  description: Special Operations Officer uniform, nothing like that. Although... If you have time to read this, it's too late...
+  description: A Special Operations Officer uniform, nothing like what you're thinking of. Although... 
   components:
     - type: Sprite
       sprite: _Starlight/Clothing/Uniforms/Jumpsuit/centcom_officer_black.rsi
@@ -521,7 +521,7 @@
   parent: ClothingUniformBase
   id: ClothingUniformJumpsuitCapTurtleneck
   name: captain's turtleneck
-  description: True captain's turtleneck.
+  description: A turtleneck for a true captain.
   components:
     - type: Sprite
       sprite: _Starlight/Clothing/Uniforms/Jumpsuit/cap_turtleneck.rsi
@@ -532,7 +532,7 @@
   parent: [ ClothingUniformBase, BaseCommandContraband ]
   id: ClothingUniformJumpsuitCaptainNoble
   name: captain's noble jumpsuit
-  description: A more classical and elegant style of clothing, designed to emulate the fashion of old earth nobility.
+  description: A more classical and elegant style of clothing, designed to emulate the fashion of old Earth nobility.
   components:
     - type: Sprite
       sprite: _Starlight/Clothing/Uniforms/Jumpsuit/captainnoble.rsi
@@ -542,8 +542,8 @@
 - type: entity
   parent: ClothingUniformBase
   id: ClothingUniformJumpsuitHoPTurtleneck
-  name: head of personal's turtleneck
-  description: It's Head of Personal's turtleneck.
+  name: head of personnel's turtleneck
+  description: It's a turtleneck for the Head of Personnel.
   components:
     - type: Sprite
       sprite: _Starlight/Clothing/Uniforms/Jumpsuit/hop_turtleneck.rsi
@@ -554,7 +554,7 @@
   parent: ClothingUniformBase
   id: ClothingUniformJumpsuitHoSBlack
   name: head of security's black suit
-  description: It's Head of Security's black suit.
+  description: It's a black suit for the Head of Security.
   components:
     - type: Sprite
       sprite: _Starlight/Clothing/Uniforms/Jumpsuit/hos_black.rsi
@@ -565,7 +565,7 @@
   parent: ClothingUniformBase
   id: ClothingUniformJumpsuitRDClassical
   name: research director's classical suit
-  description: It's Research Director's сlassical suit.
+  description: It's a classical suit for the Research Director.
   components:
     - type: Sprite
       sprite: _Starlight/Clothing/Uniforms/Jumpsuit/rd_classical.rsi
@@ -666,7 +666,7 @@
 - type: entity
   parent: [ ClothingUniformBase, BaseCentcommContraband ]
   id: ClothingAltUniformJumpsuitCentcomOfficial
-  name: CentComm officer's jumpsuit
+  name: centcomm officer's jumpsuit
   description: It's a jumpsuit worn by CentComm officers.
   components:
     - type: Sprite
@@ -880,7 +880,7 @@
 - type: entity
   parent: [ ClothingUniformBase, BaseCentcommContraband ]
   id: ClothingUniformJumpsuitCentCommServiceWorker
-  name: CentComm service worker's jumpsuit
+  name: centcomm service worker's jumpsuit
   description: It's a jumpsuit worn by CentComm service workers. Those boots need licking.
   components:
     - type: Sprite
@@ -891,7 +891,7 @@
 - type: entity
   parent: [ ClothingUniformBase, BaseCentcommContraband ]
   id: ClothingUniformJumpsuitCentCommBartender
-  name: CentComm bartender's jumpsuit
+  name: centcomm bartender's jumpsuit
   description: It's a jumpsuit worn by CentComm bartenders. Those drinks won't serve themselves.
   components:
     - type: Sprite

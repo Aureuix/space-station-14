@@ -192,7 +192,8 @@
 - type: entity
   parent: [ ClothingOuterWinterCoatToggleable, BaseCentcommContraband ]
   id: ClothingOuterWinterCentcom
-  name: CentComm winter coat
+  name: centcomm winter coat
+  description: An elegant, stylish winter coat made for Central Command Operators to survive even the coldest of winters.
   components:
   - type: Sprite
     sprite: Clothing/OuterClothing/WinterCoats/coat.rsi

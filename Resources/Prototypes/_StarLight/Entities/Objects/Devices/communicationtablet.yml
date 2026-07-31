@@ -65,7 +65,7 @@
           
 
 - type: entity
-  name: Captain's Management Tablet
+  name: captain's management tablet
   parent: BaseCommunicationTablet
   id: CommunicationTablet
   description: A portable announcement computer reserved for the station's head honcho.
@@ -84,10 +84,10 @@
 
 
 - type: entity
-  name: Central Command Tablet
+  name: centcomm management tablet
   parent: [BaseCentcommContraband, BaseCommunicationTablet]
   id: CentCommCommunicationTablet
-  description: The older, more narcistic brother of the Captain's Management Tablet. Comes with a fancy self recharging power cell.
+  description: The older, more narcisstic brother of the Captain's Management Tablet. Comes with a fancy self-recharging power cell.
   components:
     - type: Sprite
       layers:

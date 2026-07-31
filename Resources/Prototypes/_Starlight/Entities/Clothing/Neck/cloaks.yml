@@ -236,7 +236,7 @@
 - type: entity
   parent: [ClothingNeckBase, BaseCentcommContraband]
   id: ClothingNeckCloakCCponcho
-  name: Central Command poncho
+  name: centcomm poncho
   description: a stylish poncho for a CC offical that prefers field-work to pushing papers.
   components:
   - type: Sprite

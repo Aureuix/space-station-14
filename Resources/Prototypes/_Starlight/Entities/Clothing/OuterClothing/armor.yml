@@ -258,7 +258,7 @@
     [BaseCentcommContraband, ClothingOuterVestWeb]
   id: ClothingOuterVestWebEliteCentcomm
   name: central command web vest
-  description: A synthetic armor vest redesignated for use by the Corporate Consortium, webbing and heat resistant fibers included.
+  description: A synthetic armor vest reverse-engineered from Gorlex designs for use by Central Command, with webbing and heat resistant fibers included.
   components:
     - type: Sprite
       sprite: _Starlight/Clothing/OuterClothing/Vests/cc_webvest.rsi

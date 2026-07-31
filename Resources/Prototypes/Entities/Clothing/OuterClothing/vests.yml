@@ -4,7 +4,7 @@
 - type: entity
   parent: ClothingOuterStorageBase
   id: ClothingOuterVestHazard
-  name: hi-viz vest
+  name: hi-vis vest 
   description: A high-visibility vest used in work zones.
   components:
   - type: Sprite

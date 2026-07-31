@@ -17,8 +17,8 @@
 - type: entity
   parent: [ BaseSyndicateContraband, BaseVendingMachineRestock ]
   id: VendingMachineRestockSyndicate
-  name: Syndicate vending restock box
-  description: A box of illicit supplies that coincidentally looks a lot like a donksoft restock...
+  name: syndicate vending restock box
+  description: A box of illicit supplies that coincidentally looks a lot like a Donk on the Go restock...
   components:
   - type: VendingMachineRestock
     canRestock:
