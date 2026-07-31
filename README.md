@@ -16,7 +16,7 @@ Don't be afraid to ask for help! We have a small but dedicated team of contribut
 
 > ### <span style="color:#5577cc">Notice to Contributors</span>
 > <b> We do not accept any AI-generated code or assets</b> as of August 2026. 
-> AI-generated code or assets include any code, media, or other content created using large-language models or any other artificial neural networks, nor programs built on them.
+> AI-generated code or assets include any code, media, or other content created using large-language models or any other artificial neural networks, along with any programs or utilities built on them.
 
 ### Space Station 14 Documentation
 
