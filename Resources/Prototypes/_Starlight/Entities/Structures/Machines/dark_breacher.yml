@@ -2,7 +2,7 @@
   id: MachineDarkBreacher
   parent: [BaseMachinePowered, ConstructibleMachine]
   name: dark breacher
-  description: The portal to the dark...
+  description: An unstable artificial portal enabling access to the Dark, the ancestral plane of the Shadekin.
   components:
   - type: Machine
     board: DarkBreacherMachineCircuitboard
