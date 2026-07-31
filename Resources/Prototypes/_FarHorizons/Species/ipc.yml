@@ -33,6 +33,7 @@
     RLeg: MobIPCRLeg
     LFoot: MobIPCLFoot
     RFoot: MobIPCRFoot
+    Tail: MobHumanoidAnyMarking
 
 - type: markingPoints
   id: MobIPCMarkingLimits
@@ -53,9 +54,9 @@
     Eyes:
       points: 1
       required: true
-      defaultMarkings: [ ScreenStatic ]
+      defaultMarkings: [ ClearEye ]
     Chest:
-      points: 1
+      points: 4
       required: false
     Legs:
       points: 4
