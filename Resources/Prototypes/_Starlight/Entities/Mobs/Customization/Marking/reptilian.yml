@@ -13,7 +13,7 @@
   id: SnakeLargeTail
   bodyPart: Tail
   markingCategory: Tail
-  speciesRestriction: [Reptilian]
+  speciesRestriction: [Reptilian, IPC] #Spectra: IPC markings
   sprites:
   - sprite: _Starlight/Mobs/Customization/reptilian_snake_tail.rsi
     state: snake_large
@@ -24,7 +24,7 @@
   id: SnakeLargeTailAnimated
   bodyPart: Tail
   markingCategory: Tail
-  speciesRestriction: [Reptilian]
+  speciesRestriction: [Reptilian, IPC] #Spectra: IPC markings
   sprites:
   - sprite: _Starlight/Mobs/Customization/reptilian_snake_tail.rsi
     state: snake_large_wagging

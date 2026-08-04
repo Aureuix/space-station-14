@@ -523,7 +523,7 @@
 - type: emote
   id: LagomorphStomp
   name: chat-emote-name-stomp
-  category: Hands # SpL- why the hell is stomping vocal???
+  category: Vocal
   available: false
   icon: _Starlight/Interface/Emotes/stomp-emote.png
   whitelist:

@@ -89,6 +89,8 @@
         groups:
           Brute: -0.07
           Burn: -0.07
+    - type: Deathgasp
+      damageType: Cold # SpL
     - type: Destructible
       thresholds:
         - trigger: !type:DamageTypeTrigger

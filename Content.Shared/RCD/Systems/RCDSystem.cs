@@ -929,6 +929,12 @@ public sealed class RCDSystem : EntitySystem
 
         return component.CurrentMode;
     }
+    
+    public void SetSelectedLayer(Entity<RCDComponent> ent, AtmosPipeLayer layer)
+    {
+        ent.Comp.LastSelectedLayer = layer;
+        Dirty(ent);
+    }
     // Starlight End: RPD
 
     #endregion

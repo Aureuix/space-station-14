@@ -167,10 +167,10 @@
     modifier: 0.5 # SpL
 
 - type: entity
-  parent: [ClothingShoesBaseWinterBoots, BaseMinorContraband] #SL Edit Syndie > Minor Contra
+  parent: [ClothingShoesBaseWinterBoots, ClothingShoesMilitaryBase, BaseMinorContraband] #SL Edit Syndie > Minor Contra # SpL- gave it a hidden feature for fun
   id: ClothingShoesBootsWinterSyndicate
-  name: syndicate's winter boots
-  description: Durable heavy boots, looks like merch from "Syndieland".
+  name: syndicate winter boots
+  description: Unethically durable heavy boots. They look like merch from Syndieland.
   components:
   - type: Sprite
     sprite: Clothing/Shoes/Boots/winterbootssyndicate.rsi

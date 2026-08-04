@@ -2,7 +2,7 @@
   id: KitsuneEars
   bodyPart: HeadTop
   markingCategory: HeadTop
-  speciesRestriction: [Human, Kitsune]
+  speciesRestriction: [Human, Kitsune, IPC]
   sprites:
   - sprite: DeltaV/Mobs/Customization/ears.rsi
     state: foxears
@@ -11,7 +11,7 @@
   id: KitsuneLegLeft
   bodyPart: LLeg
   markingCategory: Legs
-  speciesRestriction: [Human, Kitsune]
+  speciesRestriction: [Human, Kitsune, IPC]
   sprites:
   - sprite: _SpL/Mobs/Species/Kitsune/parts.rsi
     state: l_leg
@@ -20,7 +20,7 @@
   id: KitsuneLegRight
   bodyPart: RLeg
   markingCategory: Legs
-  speciesRestriction: [Human, Kitsune]
+  speciesRestriction: [Human, Kitsune, IPC]
   sprites:
   - sprite: _SpL/Mobs/Species/Kitsune/parts.rsi
     state: r_leg
@@ -29,7 +29,7 @@
   id: KitsuneEarsFluffy
   bodyPart: HeadTop
   markingCategory: HeadTop
-  speciesRestriction: [Human, Kitsune]
+  speciesRestriction: [Human, Kitsune, IPC]
   sprites:
   - sprite: DeltaV/Mobs/Customization/ears.rsi
     state: kitsune_fluffy_ears
@@ -40,7 +40,7 @@
   id: KitsuneNineTailsStone
   bodyPart: Tail
   markingCategory: Tail
-  speciesRestriction: [Human, Kitsune]
+  speciesRestriction: [Human, Kitsune, IPC]
   sprites:
   - sprite: DeltaV/Mobs/Customization/tails.rsi
     state: foxninetailstone1
@@ -51,7 +51,7 @@
   id: KitsuneThreeTailsStone
   bodyPart: Tail
   markingCategory: Tail
-  speciesRestriction: [Human, Kitsune]
+  speciesRestriction: [Human, Kitsune, IPC]
   sprites:
   - sprite: DeltaV/Mobs/Customization/tails.rsi
     state: foxthreetailstone1
@@ -62,7 +62,7 @@
   id: KitsuneTwoTailsStone
   bodyPart: Tail
   markingCategory: Tail
-  speciesRestriction: [Human, Kitsune]
+  speciesRestriction: [Human, Kitsune, IPC]
   sprites:
   - sprite: DeltaV/Mobs/Customization/tails.rsi
     state: foxtwotailstone1
@@ -73,7 +73,7 @@
   id: KitsuneTwoTails
   bodyPart: Tail
   markingCategory: Tail
-  speciesRestriction: [Human, Kitsune]
+  speciesRestriction: [Human, Kitsune, IPC]
   sprites:
   - sprite: DeltaV/Mobs/Customization/tails.rsi
     state: kitsune_primary
@@ -84,7 +84,7 @@
   id: KitsuneSevenTails
   bodyPart: Tail
   markingCategory: Tail
-  speciesRestriction: [Human, Kitsune]
+  speciesRestriction: [Human, Kitsune, IPC]
   sprites:
   - sprite: _Floof/Mobs/Customization/skyrattails.rsi
     state: m_tail_sevenkitsune_BEHIND_primary
@@ -97,7 +97,7 @@
   id: VulpPointsHandL
   bodyPart: LHand
   markingCategory: Arms
-  speciesRestriction: [Human, Kitsune, Vulpkanin]
+  speciesRestriction: [Human, Kitsune, Vulpkanin, IPC]
   sprites:
   - sprite: _Floof/Mobs/Customization/Vulpkanin/Body_Markings.rsi
     state: points_handL
@@ -106,7 +106,7 @@
   id: VulpPointsHandR
   bodyPart: RHand
   markingCategory: Arms
-  speciesRestriction: [Human, Kitsune, Vulpkanin]
+  speciesRestriction: [Human, Kitsune, Vulpkanin, IPC]
   sprites:
   - sprite: _Floof/Mobs/Customization/Vulpkanin/Body_Markings.rsi
     state: points_handR
@@ -115,7 +115,7 @@
   id: VulpPointsCrestArmL
   bodyPart: LArm
   markingCategory: Arms
-  speciesRestriction: [Human, Kitsune, Vulpkanin]
+  speciesRestriction: [Human, Kitsune, Vulpkanin, IPC]
   sprites:
   - sprite: _Floof/Mobs/Customization/Vulpkanin/Body_Markings.rsi
     state: points_crest-armsL
@@ -124,7 +124,7 @@
   id: VulpPointsCrestHandR
   bodyPart: RArm
   markingCategory: Arms
-  speciesRestriction: [Human, Kitsune, Vulpkanin]
+  speciesRestriction: [Human, Kitsune, Vulpkanin, IPC]
   sprites:
   - sprite: _Floof/Mobs/Customization/Vulpkanin/Body_Markings.rsi
     state: points_crest-armsR
@@ -133,7 +133,7 @@
   id: VulpPointsCrestLegL
   bodyPart: LLeg
   markingCategory: Legs
-  speciesRestriction: [Human, Kitsune, Vulpkanin]
+  speciesRestriction: [Human, Kitsune, Vulpkanin, IPC]
   sprites:
   - sprite: _Floof/Mobs/Customization/Vulpkanin/Body_Markings.rsi
     state: points_crest-legsL
@@ -142,7 +142,7 @@
   id: VulpPointsCrestHLegR
   bodyPart: RLeg
   markingCategory: Legs
-  speciesRestriction: [Human, Kitsune, Vulpkanin]
+  speciesRestriction: [Human, Kitsune, Vulpkanin, IPC]
   sprites:
   - sprite: _Floof/Mobs/Customization/Vulpkanin/Body_Markings.rsi
     state: points_crest-legsR
@@ -151,7 +151,7 @@
   id: VulpPointssharpArmL
   bodyPart: LArm
   markingCategory: Arms
-  speciesRestriction: [Human, Kitsune, Vulpkanin]
+  speciesRestriction: [Human, Kitsune, Vulpkanin, IPC]
   sprites:
   - sprite: _Floof/Mobs/Customization/Vulpkanin/Body_Markings.rsi
     state: points_sharp-armsL
@@ -160,7 +160,7 @@
   id: VulpPointssharpHandR
   bodyPart: RArm
   markingCategory: Arms
-  speciesRestriction: [Human, Kitsune, Vulpkanin]
+  speciesRestriction: [Human, Kitsune, Vulpkanin, IPC]
   sprites:
   - sprite: _Floof/Mobs/Customization/Vulpkanin/Body_Markings.rsi
     state: points_sharp-armsR
@@ -169,7 +169,7 @@
   id: VulpPointssharpLegL
   bodyPart: LLeg
   markingCategory: Legs
-  speciesRestriction: [Human, Kitsune, Vulpkanin]
+  speciesRestriction: [Human, Kitsune, Vulpkanin, IPC]
   sprites:
   - sprite: _Floof/Mobs/Customization/Vulpkanin/Body_Markings.rsi
     state: points_sharp-legsL
@@ -178,7 +178,7 @@
   id: VulpPointssharpHLegR
   bodyPart: RLeg
   markingCategory: Legs
-  speciesRestriction: [Human, Kitsune, Vulpkanin]
+  speciesRestriction: [Human, Kitsune, Vulpkanin, IPC]
   sprites:
   - sprite: _Floof/Mobs/Customization/Vulpkanin/Body_Markings.rsi
     state: points_sharp-legsR
@@ -187,7 +187,7 @@
   id: VulpPointsfadeArmL
   bodyPart: LArm
   markingCategory: Arms
-  speciesRestriction: [Human, Kitsune, Vulpkanin]
+  speciesRestriction: [Human, Kitsune, Vulpkanin, IPC]
   sprites:
   - sprite: _Floof/Mobs/Customization/Vulpkanin/Body_Markings.rsi
     state: points_fade-armsL
@@ -196,7 +196,7 @@
   id: VulpPointsfadeHandR
   bodyPart: RArm
   markingCategory: Arms
-  speciesRestriction: [Human, Kitsune, Vulpkanin]
+  speciesRestriction: [Human, Kitsune, Vulpkanin, IPC]
   sprites:
   - sprite: _Floof/Mobs/Customization/Vulpkanin/Body_Markings.rsi
     state: points_fade-armsR
@@ -205,7 +205,7 @@
   id: VulpPointsfadeLegL
   bodyPart: LLeg
   markingCategory: Legs
-  speciesRestriction: [Human, Kitsune, Vulpkanin]
+  speciesRestriction: [Human, Kitsune, Vulpkanin, IPC]
   sprites:
   - sprite: _Floof/Mobs/Customization/Vulpkanin/Body_Markings.rsi
     state: points_fade-legsL
@@ -214,7 +214,7 @@
   id: VulpPointsfadeHLegR
   bodyPart: RLeg
   markingCategory: Legs
-  speciesRestriction: [Human, Kitsune, Vulpkanin]
+  speciesRestriction: [Human, Kitsune, Vulpkanin, IPC]
   sprites:
   - sprite: _Floof/Mobs/Customization/Vulpkanin/Body_Markings.rsi
     state: points_fade-legsR

@@ -40,7 +40,7 @@ if not changelog_without_comments:
 
 # Check for :cl: command
 if ":cl:" not in changelog_without_comments:
-    print("::error::Changelog is missing the :cl: command")
+    print("::error::Changelog is missing the :cl: command.")
     sys.exit(1)
 
 lines = changelog_without_comments.splitlines()
@@ -49,22 +49,22 @@ lines = changelog_without_comments.splitlines()
 cl_lines = [line for line in lines if line.strip().startswith(':cl:')]
 
 if not cl_lines:
-    print("::error::You must specify at least one ':cl:'")
+    print("::error::You should specify at least one contributor.")
     sys.exit(1)
 
 # --- Check for valid tags ---
-valid_tags = ["add", "remove", "tweak", "fix"]
+valid_tags = ["Addition", "Removal", "Tweak", "Bugfix", "Port"]
 
-entry_pattern = re.compile(r'^[ \t]*[^a-zA-Z0-9]?[ \t]*(add|remove|tweak|fix):', re.MULTILINE)
+entry_pattern = re.compile(r'^[ \t]*[^a-zA-Z0-9]?[ \t]*(Addition|Removal|Tweak|Bugfix|Port):', re.MULTILINE)
 entries = entry_pattern.findall(changelog_without_comments)
 
 if not entries:
-    print("::error::No changelog entries found. You must add at least one entry with a valid tag (add, remove, tweak, fix)")
+    print(f"::error::No changelog entries found. You should add at least one entry with a valid tag ({', '.join(valid_tags)}t).")
     sys.exit(1)
 
 invalid_entries = [tag for tag in entries if tag not in valid_tags]
 if invalid_entries:
-    print(f"::error::Invalid changelog tags found: {', '.join(invalid_entries)}. Valid tags are: {', '.join(valid_tags)}")
+    print(f"::error::Invalid changelog tags found: {', '.join(invalid_entries)}. Valid tags are: {', '.join(valid_tags)}.")
     sys.exit(1)
 
 # --- Check for proper formatting and dot at the end ---
@@ -74,17 +74,17 @@ no_dot_lines = []
 for idx, line in enumerate(lines, start=1):
     stripped = line.strip()
 
-    if re.match(r'^[ \t]*[^a-zA-Z0-9]?[ \t]*(add|remove|tweak|fix):', line):
-        if not re.match(r'^[ \t]*[^a-zA-Z0-9]?[ \t]*(add|remove|tweak|fix): .+', line):
+    if re.match(r'^[ \t]*[^a-zA-Z0-9]?[ \t]*(Addition|Removal|Tweak|Bugfix|Port):', line):
+        if not re.match(r'^[ \t]*[^a-zA-Z0-9]?[ \t]*(Addition|Removal|Tweak|Bugfix|Port): .+', line):
             bad_format_lines.append(idx)
-        elif not stripped.endswith('.'):
-            no_dot_lines.append(idx)
+#        elif not stripped.endswith('.'):
+#            no_dot_lines.append(idx)
 
 
 if bad_format_lines:
-    print(f"::error::Changelog entries must follow the format 'tag: description'. Bad lines: {bad_format_lines}")
+    print(f"::error::Changelog entries must follow the format 'tag: description'. Bad lines: {bad_format_lines}.")
     sys.exit(1)
 
-if no_dot_lines:
-    print(f"::error::Each changelog entry must end with a dot. Missing dots on lines: {no_dot_lines}")
-    sys.exit(1)
+#if no_dot_lines:
+#    print(f"::error::Each changelog entry must end with a dot. Missing dots on lines: {no_dot_lines}")
+#    sys.exit(1)

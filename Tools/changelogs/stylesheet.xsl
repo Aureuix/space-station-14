@@ -38,14 +38,17 @@
       li.Tweak::before {
         content: '🔧';
       }
-      li.Fix::before {
+      li.Bugfix::before {
         content: '🐛';
       }
-      li.Add::before {
+      li.Addition::before {
         content: '➕';
       }
-      li.Remove::before {
+      li.Removal::before {
         content: '➖';
+      }
+      li.Port::before {
+        content: '⤵️';
       }
     ]]>
     </style>

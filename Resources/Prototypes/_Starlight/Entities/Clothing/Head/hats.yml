@@ -463,7 +463,7 @@
   parent: [ClothingHeadBase, BaseCentcommContraband]
   id: ClothingHeadHatCCberet
   name: centcomm beret
-  description: a green beret, like any other beret but green and you can't have it.
+  description: a green beret, like any other beret except it's green and you can't have it.
   components:
     - type: Sprite
       sprite: _Starlight/Clothing/Head/Hats/CC_beret.rsi
@@ -477,8 +477,8 @@
 - type: entity
   parent: [ClothingHeadBase, BaseCentcommContraband]
   id: ClothingHeadHatCCSheriffhat
-  name: central command sheriff's hat
-  description: A sheriff's hat in the signature CC colors, one look at this might make a tider think twice from sneaking into debrief.
+  name: centcomm sheriff's hat
+  description: A sheriff's hat in the signature CentComm colors, one look at this might make a tider think twice from sneaking into debrief.
   components:
     - type: Sprite
       sprite: _Starlight/Clothing/Head/Hats/CC_Bounty_Hunter_hat.rsi

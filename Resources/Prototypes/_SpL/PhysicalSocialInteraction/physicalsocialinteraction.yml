@@ -1,0 +1,25 @@
+﻿# MUST be added to the InteractionPrototypes list of a PhysicalSocialInteractionReceiver component to be usable
+
+- type: physicalSocialInteraction
+  id: Tap
+  verbName: tap-verb
+  interactString: tap-success
+  messagePerceivedByOthers: tap-success-others
+  
+- type: physicalSocialInteraction
+  id: Pat
+  verbName: pat-verb
+  interactString: pat-success
+  messagePerceivedByOthers: pat-success-others
+  
+- type: physicalSocialInteraction
+  id: Shake
+  verbName: shake-verb
+  interactString: shake-success
+  messagePerceivedByOthers: shake-success-others
+  
+- type: physicalSocialInteraction
+  id: Punch
+  verbName: punch-verb
+  interactString: punch-success
+  messagePerceivedByOthers: punch-success-others

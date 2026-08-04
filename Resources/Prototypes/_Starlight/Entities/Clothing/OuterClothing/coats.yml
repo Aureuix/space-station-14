@@ -538,8 +538,8 @@
 - type: entity
   parent: [ ClothingOuterStorageBase, AllowSuitStorageClothing, ClothingOuterColdBase, BaseCentcommContraband ]
   id: ClothingOuterCoatWardenCentcomm
-  name: central command armored winter coat
-  description: A extremely durable, stylish winter coat made for central command Operators to survive even in the coldest of winter
+  name: centcomm armored winter coat
+  description: A extremely durable, stylish winter coat made for Central Command Operators to survive even in the coldest of winters.
   components:
   - type: Sprite
     sprite: _Starlight/Clothing/OuterClothing/Coats/Centcomm_coatWarden.rsi

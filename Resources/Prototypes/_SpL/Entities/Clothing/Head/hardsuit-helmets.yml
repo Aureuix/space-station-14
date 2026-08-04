@@ -1,8 +1,8 @@
 - type: entity
   parent: [ ClothingHeadHardsuitBase, ClothingHeadSuitWithLightBase, ClothingHeadLightParamsAdvanced ]
   id: ClothingHeadHelmetHardsuitCSElite
-  name: CyberSun Elite Helmet
-  description: A sleek and armored helmet, paired with its equally stylish and menacing hardsuit counterpart.
+  name: cybersun elite helmet
+  description: A sleek armored helmet, paired with its equally stylish and menacing hardsuit counterpart.
   components:
   - type: Sprite
     sprite:  _SpL/Clothing/Head/Hardsuits/CybersunElite.rsi

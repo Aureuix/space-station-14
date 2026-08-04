@@ -2,59 +2,47 @@
   <img alt="Space Station 14" width="600" src="Resources/Textures/Logo/logo.png" />
 </p>
 
-<div class="header" align="center">
-
-[![Discord](https://img.shields.io/discord/1272545509562777621?label=Discord&logo=discord&logoColor=white)](https://discord.gg/ssJTANEa)
-[![Steam](https://img.shields.io/badge/Steam-SS14%20-blue)](https://store.steampowered.com/app/1255460/Space_Station_14/)
-[![Client](https://img.shields.io/badge/Client-Download-blue)](https://spacestation14.io/about/nightlies/)
-[![GitHub](https://img.shields.io/github/stars/ss14Starlight/space-station-14?style=social)]([https://github.com/ss14Starlight/space-station-14])
-
-# STARLIGHT  
-<sub>Space-Station 14</sub>
-
-![GitHub commit activity](https://img.shields.io/github/commit-activity/y/ss14Starlight/space-station-14)
-![GitHub Issues](https://img.shields.io/github/issues/ss14Starlight/space-station-14)
-![GitHub Pull Requests](https://img.shields.io/github/issues-pr-closed/ss14Starlight/space-station-14)
-
-</div>
-
-STARLIGHT is an open source project aimed at creating unique mechanics and a pleasant game atmosphere in the game Space Station 14, 
-
-a game about survival on a space station where there are constant confrontations between the crew and antagonists created to prevent the crew from achieving their goals.
-
-## Space-Station 14 Documentation/Wiki
-
-Space-Station 14 has [docs site](https://docs.spacestation14.io/) documentation on SS14s content, engine, game design and more. We also have lots of resources for new contributors to the project.
-
-## Project Activity
-![Alt](https://repobeats.axiom.co/api/embed/675a7780b2c40805e5266935fe9329cd0177aba3.svg "Repobeats analytics image")
-
 ---
+
+SpectraLight (often shorthanded to SpL or Spectra) is an open source project aimed at creating a lower population HRP-inclined environment within the Space Station 14 infrastructure. We are based primarily off of the STARLIGHT fork, although content porting is welcome from any fork that permits it.
+
+SpectraLight is a fork of Space Station 14, an emergent narrative game about survival on a space station where there are constant confrontations between the crew, antagonists opposed to them, and the harsh (un)realities of deep space.
+
+
+## Contributing
+This is the primary and sole running repository for the SpectraLight private server– if you wish to add something to SpectraLight, you've come to the right place! We are happy to accept contributions from any of our players, new or returning.
+
+Don't be afraid to ask for help! We have a small but dedicated team of contributors, most of whom also started with little to no knowledge on what they were doing.
+
+> ### <span style="color:#5577cc">Notice to Contributors</span>
+> <b> We do not accept any AI-generated code or assets</b> as of August 2026. 
+> AI-generated code or assets include any code, media, or other content created using large-language models or any other artificial neural networks, along with any programs or utilities built on them.
+
+### Space Station 14 Documentation
+
+Space Station 14 has a very [robust wiki](https://docs.spacestation14.io/) detailing SS14's content, engine, game design and more. If you're brand new to contributing to SS14, or even to any sort of development at all, this is a great place to start.
+
+### Getting Started
+
+If you wish to contribute to SpectraLight but have no idea what you're doing, you can start by [following](https://docs.spacestation14.com/en/general-development/setup/howdoicode.html) [the](https://docs.spacestation14.com/en/general-development/setup/setting-up-a-development-environment.html) [instructions](https://docs.spacestation14.com/en/general-development/setup/git-for-the-ss14-developer.html) provided by Space Wizards Federation on starting out, using git, and setting up a development environment.
+
+It is <b>highly recommended</b> that you use [Jetbrains Rider](https://www.jetbrains.com/rider/) for any development due to the vast majority of game changes being done through the YAML data serialisation language, which IDEs like the Visual Studio family are severely lacking in support for.
 
 ## License
+SpectraLight is provided and maintained under the [MIT License](https://opensource.org/license/MIT), making it compatible with all other forks that share the license. Certain features created under the [AGPL 3.0 License](https://www.gnu.org/licenses/agpl-3.0.en.html) have been relicensed with permission for use in this fork.
 
+All SpectraLight non-code assets (such as artwork and sounds) are licensed under the [Creative Commons 3.0 BY-SA](https://creativecommons.org/licenses/by-sa/3.0/) license unless stated otherwise by their attribution or metadata files, [for example](https://github.com/space-wizards/space-station-14/blob/master/Resources/Textures/Objects/Tools/crowbar.rsi/meta.json). Note that some assets are licensed under [CC-BY-NC-SA 3.0](https://creativecommons.org/licenses/by-nc-sa/3.0/) and may not be used commercially.
 
-
-> [!NOTE]
-> **Relicensing in progress.** The Starlight Fork License (`LICENSE-Starlight.TXT`) was applied to Starlight contributions
-> from **2024-11-04** (commit `84205e38`) through **2026-02-28** (commit `01eff0f7`).
-> This license **remains in effect** for contributions made during that period until explicit relicensing
-> consent is received from the respective authors. Once consent is given, those contributions are relicensed under MIT.
-> All contributions outside of that range are licensed under MIT (`LICENSE.TXT`).
-> Relicensing requests are tracked in [issue #3499](https://github.com/ss14Starlight/space-station-14/issues/3499).
-
-### Click each banner for further information
-
----
+### Further Information
 
 <details>
 <summary><a href="#"><img src="https://img.shields.io/badge/licence-MIT-green?style=for-the-badge" alt="MIT license"></a></summary>
 
->Some files are licensed under [MIT license](https://opensource.org/license/MIT), these files are Space Wizards Federation code.
+>The vast majority of our files are licensed under [MIT license](https://opensource.org/license/MIT), including Space Wizards Federation and STARLIGHT code.
 </details>
 
 <details>
 <summary><a href="#"><img src="https://img.shields.io/badge/licence-CC_3.0_BY--SA-lightblue?style=for-the-badge" alt="Creative Commons 3.0 BY-SA"></a></summary>
 
->All other non-code STARLIGHT Assets, including icons and sound files, are licensed under the [Creative Commons 3.0 BY-SA](https://creativecommons.org/licenses/by-sa/3.0/) license unless otherwise noted in the folder or file.
+>All other non-code assets, including icons and sound files, are licensed under the [Creative Commons 3.0 BY-SA](https://creativecommons.org/licenses/by-sa/3.0/) license unless stated otherwise.
 </details>

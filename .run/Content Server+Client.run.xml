@@ -1,7 +1,8 @@
 ﻿<component name="ProjectRunConfigurationManager">
   <configuration default="false" name="Content Server+Client" type="CompoundRunConfigurationType">
-    <toRun name="Content.Client" type="DotNetProject" />
-    <toRun name="Content.Server" type="DotNetProject" />
+    <toRun name="Build" type="BatchConfigurationType" />
+    <toRun name="Run Client" type="BatchConfigurationType" />
+    <toRun name="Run Server" type="BatchConfigurationType" />
     <method v="2" />
   </configuration>
 </component>

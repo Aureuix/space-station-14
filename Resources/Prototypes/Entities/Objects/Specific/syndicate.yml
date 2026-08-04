@@ -1,51 +1,107 @@
+# SpL- Honestly, just assume everything's been edited at some point. This whole file has SpL prints over it
+
+# SpL start
+- type: entity
+  abstract: true
+  parent: [BaseItem, BaseSyndicateContraband]
+  id: BaseTelecrystal
+  name: telecrystal
+  description: It seems to be pulsing with suspiciously enticing energies.
+  components:
+    - type: Sprite
+      sprite: Objects/Specific/Syndicate/telecrystal.rsi
+    - type: Item
+      sprite: Objects/Specific/Syndicate/telecrystal.rsi
+      size: Tiny
+    - type: StackLayerThreshold
+      thresholds: [ 1, 15, 30 ] # SpL end
+    - type: StaticPrice
+      price: 0
+    - type: Appearance
+    - type: StackPrice
+      price: 200
+    - type: Currency
+      price:
+        Telecrystal: 1
+# SpL end
 
 - type: entity
   name: telecrystal
-  parent: [BaseItem, BaseSyndicateContraband]
+  parent: BaseTelecrystal
   id: Telecrystal
   suffix: 20 TC
-  description: It seems to be pulsing with suspiciously enticing energies.
   components:
   - type: Sprite
-    sprite: Objects/Specific/Syndicate/telecrystal.rsi
-    state: telecrystal
-  - type: Item
-    sprite: Objects/Specific/Syndicate/telecrystal.rsi
-    size: Tiny
+    state: telecrystal_3 # SpL start
+    layers:
+    - state: telecrystal_3
+      map: [ "base" ] # SpL end
   - type: Stack
     count: 20
     stackType: Telecrystal
-  - type: StaticPrice
-    price: 0
-  - type: StackPrice
-    price: 200
-  - type: Currency
-    price:
-      Telecrystal: 1
+    baseLayer: base # SpL start
+    layerStates:
+      - telecrystal_1
+      - telecrystal_2
+      - telecrystal_3
+    layerFunction: Threshold
 
 - type: entity
   parent: Telecrystal
   id: Telecrystal1
   suffix: 1 TC
   components:
+  - type: Sprite
+    state: telecrystal
   - type: Stack
     count: 1
+    stackType: Telecrystal
 
 - type: entity
   parent: Telecrystal
   id: Telecrystal5
   suffix: 5 TC
   components:
+  - type: Sprite
+    state: telecrystal
   - type: Stack
     count: 5
+    stackType: Telecrystal
 
 - type: entity
   parent: Telecrystal
   id: Telecrystal10
   suffix: 10 TC
   components:
+  - type: Sprite
+    state: telecrystal
   - type: Stack
     count: 10
+    stackType: Telecrystal
+    
+# SpL start
+- type: entity
+  parent: Telecrystal
+  id: Telecrystal40
+  suffix: 40 TC
+  components:
+    - type: Sprite
+      state: telecrystal
+    - type: Stack
+      count: 40
+      stackType: Telecrystal
+
+- type: entity
+  parent: Telecrystal
+  id: Telecrystal60
+  suffix: 60 TC
+  components:
+    - type: Sprite
+      state: telecrystal
+    - type: Stack
+      count: 60
+      stackType: Telecrystal
+# SpL end
 
 # Uplinks
 - type: entity
@@ -128,3 +184,17 @@
   - type: Store
     balance:
       Telecrystal: 99999
+
+# SpL start
+- type: entity
+  parent: BaseUplinkRadioPreset
+  id: BaseUplinkRadioDebugNukeops
+  suffix: DEBUG, NukeOps
+  components:
+    - type: Tag
+      tags:
+        - NukeOpsUplink
+    - type: Store
+      balance:
+        Telecrystal: 99999
+# SpL end

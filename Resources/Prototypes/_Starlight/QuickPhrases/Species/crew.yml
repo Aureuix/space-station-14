@@ -22,3 +22,13 @@
   id: SpeciesCycloritePhrase
   parent: BaseCrewSpeciesPhrase
   text: species-name-cyclorite
+
+- type: quickPhrase
+  id: SpeciesElfPhrase
+  parent: BaseCrewSpeciesPhrase
+  text: species-name-elf
+
+- type: quickPhrase
+  id: SpeciesIPCPhrase
+  parent: BaseCrewSpeciesPhrase
+  text: species-name-ipc

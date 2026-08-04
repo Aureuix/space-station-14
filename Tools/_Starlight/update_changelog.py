@@ -41,7 +41,7 @@ def parse_changelog(pr_body, pr_author):
 
             changes = []
             while i < len(lines) and not lines[i].strip().startswith(":cl:"):
-                change_match = re.match(r"-\s+(add|remove|tweak|fix):\s+(.+)", lines[i].strip())
+                change_match = re.match(r"-\s+(Addition|Removal|Tweak|Bugfix|Port):\s+(.+)", lines[i].strip())
                 if change_match:
                     changes.append({
                         "type": change_match.group(1).capitalize(),

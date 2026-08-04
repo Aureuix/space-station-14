@@ -447,8 +447,8 @@
 - type: entity
   parent: [ClothingOuterStorageBase, ClothingOuterColdBase, BaseMinorContraband] #SL Edit Syndie > Minor + Cold
   id: ClothingOuterCoatSyndieCap
-  name: syndicate's coat
-  description: The syndicate's coat is made of durable fabric, with gilded patterns.
+  name: syndicate formal coat
+  description: This sinister coat is made of durable fabric, with gilded patterns.
   components:
   - type: Sprite
     sprite: Clothing/OuterClothing/Coats/syndicate/coatsyndiecap.rsi
@@ -458,8 +458,8 @@
 - type: entity
   parent: [BaseSyndicateContraband, ClothingOuterCoatHoSTrench] # BaseSyndicateContraband as first parent so contraband system takes that as priority, yeah I know
   id: ClothingOuterCoatSyndieCapArmored
-  name: syndicate's armored coat
-  description: The syndicate's armored coat is made of durable fabric, with gilded patterns.
+  name: syndicate formal armored coat
+  description: This sinister coat is made of durable fabric, with gilded patterns. It has been reinforced with a resistant armour plate.
   components:
   - type: Sprite
     sprite: Clothing/OuterClothing/Coats/syndicate/coatsyndiecaparmored.rsi

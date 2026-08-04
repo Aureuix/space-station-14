@@ -9,6 +9,8 @@
     layers:
     - state: icon
       map: [ "enum.ToggleableVisuals.Layer" ]
+  - type: EncryptionKeyHolder # SpL
+    keySlots: 2 # SpL
   - type: Clothing
     equippedPrefix: off
     sprite: _Starlight/Clothing/Multiple/headphones_reporter.rsi
@@ -28,6 +30,8 @@
     layers:
     - state: icon
       map: [ "enum.ToggleableVisuals.Layer" ]
+  - type: EncryptionKeyHolder # SpL
+    keySlots: 2 # SpL
   - type: Clothing
     equippedPrefix: off
     sprite: _Starlight/Clothing/Multiple/headphones_high-end.rsi

@@ -2,7 +2,7 @@
   parent: BaseGenerator
   id: DarkGenerator
   name: Dark Generator
-  description: Somehow... this generate power... but only in the dark...
+  description: This generates power, but only in the Dark.
   suffix: 10kW
   components:
     - type: PowerSupplier

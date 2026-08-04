@@ -1,0 +1,91 @@
+- type: emoteSounds
+  id: MaleIPC
+  params:
+    variation: 0.05
+  sounds:
+    Scream:
+      collection: SiliconScreams
+    Beep:
+      path: /Audio/Machines/twobeep.ogg
+    Chime:
+      path: /Audio/Machines/chime.ogg
+    Buzz:
+      path: /Audio/Machines/buzz-sigh.ogg
+    Buzz-Two:
+      path: /Audio/Machines/buzz-two.ogg
+    Honk:
+      path: /Audio/Items/bikehorn.ogg
+    Ping:
+      path: /Audio/Effects/Cargo/ping.ogg
+    Laugh:
+      path: /Audio/Machines/Arcade/sting_03.ogg # SpL
+    #Cough:
+    #  collection: MaleCoughs
+    #Sneeze:
+    #  collection: MaleSneezes
+    #Snore:
+    #  collection: Snores
+    #Sigh:
+    #  collection: MaleSigh
+    #Crying:
+    #  collection: MaleCry
+    #Whistle:
+    #  collection: Whistles
+    #Weh:
+    #  collection: Weh
+    #Hew:
+    #  collection: Hew
+    #Gasp:
+    #  collection: MaleGasp
+    DefaultDeathgasp:
+      path: /Audio/_SpL/Voice/IPC/ipc_deathgasp.ogg # SpL
+    DeathgaspIPC:
+      path: /Audio/_SpL/Voice/IPC/ipc_deathgasp.ogg # SpL
+    #Yawn:
+    #  collection: MaleYawn
+
+- type: emoteSounds
+  id: FemaleIPC
+  params:
+    variation: 0.05
+  sounds:
+    Scream:
+      collection: SiliconScreams
+    Beep:
+      path: /Audio/Machines/twobeep.ogg
+    Chime:
+      path: /Audio/Machines/chime.ogg
+    Buzz:
+      path: /Audio/Machines/buzz-sigh.ogg
+    Buzz-Two:
+      path: /Audio/Machines/buzz-two.ogg
+    Honk:
+      path: /Audio/Items/bikehorn.ogg
+    Ping:
+      path: /Audio/Effects/Cargo/ping.ogg
+    Laugh:
+      path: /Audio/Machines/Arcade/sting_03.ogg # SpL
+    #Cough:
+    #  collection: FemaleCoughs
+    #Sneeze:
+    #  collection: FemaleSneezes
+    #Snore:
+    #  collection: Snores
+    #Sigh:
+    #  collection: FemaleSigh
+    #Crying:
+    #  collection: FemaleCry
+    #Whistle:
+    #  collection: Whistles
+    #Weh:
+    #  collection: Weh
+    #Hew:
+    #  collection: Hew
+    #Gasp:
+    #  collection: FemaleGasp
+    DefaultDeathgasp:
+      path: /Audio/_SpL/Voice/IPC/ipc_deathgasp.ogg # SpL
+    DeathgaspIPC:
+      path: /Audio/_SpL/Voice/IPC/ipc_deathgasp.ogg # SpL
+    #Yawn:
+    #  collection: FemaleYawn

@@ -1,0 +1,8 @@
+- type: marking 
+  id: ClearEye
+  bodyPart: Eyes
+  markingCategory: Eyes
+  speciesRestriction: [IPC]
+  sprites:
+  - sprite: _SpL/Mobs/Customization/ipc/blank.rsi
+    state: ipc_screen_clear
