@@ -99,7 +99,7 @@
       - allowedTags: [IPC]
         healing:
           damageContainers:
-            - Biological
+            - IPC
           delay: 2
           damage:
             types:

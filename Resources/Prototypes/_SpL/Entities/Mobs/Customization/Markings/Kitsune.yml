@@ -99,7 +99,7 @@
   markingCategory: Arms
   speciesRestriction: [Human, Kitsune, Vulpkanin, IPC]
   sprites:
-  - sprite: _Floof/Mobs/Customization/Vulpkanin, IPC]/Body_Markings.rsi
+  - sprite: _Floof/Mobs/Customization/Vulpkanin/Body_Markings.rsi
     state: points_handL
 
 - type: marking
@@ -108,7 +108,7 @@
   markingCategory: Arms
   speciesRestriction: [Human, Kitsune, Vulpkanin, IPC]
   sprites:
-  - sprite: _Floof/Mobs/Customization/Vulpkanin, IPC]/Body_Markings.rsi
+  - sprite: _Floof/Mobs/Customization/Vulpkanin/Body_Markings.rsi
     state: points_handR
 
 - type: marking
@@ -117,7 +117,7 @@
   markingCategory: Arms
   speciesRestriction: [Human, Kitsune, Vulpkanin, IPC]
   sprites:
-  - sprite: _Floof/Mobs/Customization/Vulpkanin, IPC]/Body_Markings.rsi
+  - sprite: _Floof/Mobs/Customization/Vulpkanin/Body_Markings.rsi
     state: points_crest-armsL
 
 - type: marking
@@ -126,7 +126,7 @@
   markingCategory: Arms
   speciesRestriction: [Human, Kitsune, Vulpkanin, IPC]
   sprites:
-  - sprite: _Floof/Mobs/Customization/Vulpkanin, IPC]/Body_Markings.rsi
+  - sprite: _Floof/Mobs/Customization/Vulpkanin/Body_Markings.rsi
     state: points_crest-armsR
 
 - type: marking
@@ -135,7 +135,7 @@
   markingCategory: Legs
   speciesRestriction: [Human, Kitsune, Vulpkanin, IPC]
   sprites:
-  - sprite: _Floof/Mobs/Customization/Vulpkanin, IPC]/Body_Markings.rsi
+  - sprite: _Floof/Mobs/Customization/Vulpkanin/Body_Markings.rsi
     state: points_crest-legsL
 
 - type: marking
@@ -144,7 +144,7 @@
   markingCategory: Legs
   speciesRestriction: [Human, Kitsune, Vulpkanin, IPC]
   sprites:
-  - sprite: _Floof/Mobs/Customization/Vulpkanin, IPC]/Body_Markings.rsi
+  - sprite: _Floof/Mobs/Customization/Vulpkanin/Body_Markings.rsi
     state: points_crest-legsR
 
 - type: marking
@@ -153,7 +153,7 @@
   markingCategory: Arms
   speciesRestriction: [Human, Kitsune, Vulpkanin, IPC]
   sprites:
-  - sprite: _Floof/Mobs/Customization/Vulpkanin, IPC]/Body_Markings.rsi
+  - sprite: _Floof/Mobs/Customization/Vulpkanin/Body_Markings.rsi
     state: points_sharp-armsL
 
 - type: marking
@@ -162,7 +162,7 @@
   markingCategory: Arms
   speciesRestriction: [Human, Kitsune, Vulpkanin, IPC]
   sprites:
-  - sprite: _Floof/Mobs/Customization/Vulpkanin, IPC]/Body_Markings.rsi
+  - sprite: _Floof/Mobs/Customization/Vulpkanin/Body_Markings.rsi
     state: points_sharp-armsR
 
 - type: marking
@@ -171,7 +171,7 @@
   markingCategory: Legs
   speciesRestriction: [Human, Kitsune, Vulpkanin, IPC]
   sprites:
-  - sprite: _Floof/Mobs/Customization/Vulpkanin, IPC]/Body_Markings.rsi
+  - sprite: _Floof/Mobs/Customization/Vulpkanin/Body_Markings.rsi
     state: points_sharp-legsL
 
 - type: marking
@@ -180,7 +180,7 @@
   markingCategory: Legs
   speciesRestriction: [Human, Kitsune, Vulpkanin, IPC]
   sprites:
-  - sprite: _Floof/Mobs/Customization/Vulpkanin, IPC]/Body_Markings.rsi
+  - sprite: _Floof/Mobs/Customization/Vulpkanin/Body_Markings.rsi
     state: points_sharp-legsR
 
 - type: marking
@@ -189,7 +189,7 @@
   markingCategory: Arms
   speciesRestriction: [Human, Kitsune, Vulpkanin, IPC]
   sprites:
-  - sprite: _Floof/Mobs/Customization/Vulpkanin, IPC]/Body_Markings.rsi
+  - sprite: _Floof/Mobs/Customization/Vulpkanin/Body_Markings.rsi
     state: points_fade-armsL
 
 - type: marking
@@ -198,7 +198,7 @@
   markingCategory: Arms
   speciesRestriction: [Human, Kitsune, Vulpkanin, IPC]
   sprites:
-  - sprite: _Floof/Mobs/Customization/Vulpkanin, IPC]/Body_Markings.rsi
+  - sprite: _Floof/Mobs/Customization/Vulpkanin/Body_Markings.rsi
     state: points_fade-armsR
 
 - type: marking
@@ -207,7 +207,7 @@
   markingCategory: Legs
   speciesRestriction: [Human, Kitsune, Vulpkanin, IPC]
   sprites:
-  - sprite: _Floof/Mobs/Customization/Vulpkanin, IPC]/Body_Markings.rsi
+  - sprite: _Floof/Mobs/Customization/Vulpkanin/Body_Markings.rsi
     state: points_fade-legsL
 
 - type: marking
@@ -216,5 +216,5 @@
   markingCategory: Legs
   speciesRestriction: [Human, Kitsune, Vulpkanin, IPC]
   sprites:
-  - sprite: _Floof/Mobs/Customization/Vulpkanin, IPC]/Body_Markings.rsi
+  - sprite: _Floof/Mobs/Customization/Vulpkanin/Body_Markings.rsi
     state: points_fade-legsR
