@@ -1471,3 +1471,114 @@
       state: r_foot-1
     - sprite: _FarHorizons/Mobs/Customization/ipc/zenghu/zenghu_main.rsi
       state: r_foot-2
+      
+###ZENGHU ALT###
+- type: marking
+  id: MarkingZenghuHeadAlt
+  bodyPart: Head
+  markingCategory: Head
+  speciesRestriction: [IPC]
+  sprites:
+    - sprite: _FarHorizons/Mobs/Customization/ipc/zenghu/zenghu_alt.rsi
+      state: zhpipc_head-1
+    - sprite: _FarHorizons/Mobs/Customization/ipc/zenghu/zenghu_alt.rsi
+      state: zhpipc_head-2
+
+- type: marking
+  id: MarkingZenghuChestAlt
+  bodyPart: Chest
+  markingCategory: Chest
+  speciesRestriction: [IPC]
+  sprites:
+    - sprite: _FarHorizons/Mobs/Customization/ipc/zenghu/zenghu_alt.rsi
+      state: zhpipc_chest-1
+    - sprite: _FarHorizons/Mobs/Customization/ipc/zenghu/zenghu_alt.rsi
+      state: zhpipc_chest-2
+
+- type: marking
+  id: MarkingZenghuLArmAlt
+  bodyPart: LArm
+  markingCategory: Arms
+  speciesRestriction: [IPC]
+  sprites:
+    - sprite: _FarHorizons/Mobs/Customization/ipc/zenghu/zenghu_alt.rsi
+      state: zhpipc_l_arm-1
+    - sprite: _FarHorizons/Mobs/Customization/ipc/zenghu/zenghu_alt.rsi
+      state: zhpipc_l_arm-2
+
+- type: marking
+  id: MarkingZenghuLHandAlt
+  bodyPart: LHand
+  markingCategory: Arms
+  speciesRestriction: [IPC]
+  sprites:
+    - sprite: _FarHorizons/Mobs/Customization/ipc/zenghu/zenghu_alt.rsi
+      state: zhpipc_l_hand-1
+    - sprite: _FarHorizons/Mobs/Customization/ipc/zenghu/zenghu_alt.rsi
+      state: zhpipc_l_hand-2
+
+- type: marking
+  id: MarkingZenghuLLegAlt
+  bodyPart: LLeg
+  markingCategory: Legs
+  speciesRestriction: [IPC]
+  sprites:
+    - sprite: _FarHorizons/Mobs/Customization/ipc/zenghu/zenghu_alt.rsi
+      state: zhpipc_l_leg-1
+    - sprite: _FarHorizons/Mobs/Customization/ipc/zenghu/zenghu_alt.rsi
+      state: zhpipc_l_leg-2
+
+- type: marking
+  id: MarkingZenghuLFootAlt
+  bodyPart: LFoot
+  markingCategory: Legs
+  speciesRestriction: [IPC]
+  sprites:
+    - sprite: _FarHorizons/Mobs/Customization/ipc/zenghu/zenghu_alt.rsi
+      state: zhpipc_l_foot-1
+    - sprite: _FarHorizons/Mobs/Customization/ipc/zenghu/zenghu_alt.rsi
+      state: zhpipc_l_foot-2
+
+- type: marking
+  id: MarkingZenghuRArmAlt
+  bodyPart: RArm
+  markingCategory: Arms
+  speciesRestriction: [IPC]
+  sprites:
+    - sprite: _FarHorizons/Mobs/Customization/ipc/zenghu/zenghu_alt.rsi
+      state: zhpipc_r_arm-1
+    - sprite: _FarHorizons/Mobs/Customization/ipc/zenghu/zenghu_alt.rsi
+      state: zhpipc_r_arm-2
+
+- type: marking
+  id: MarkingZenghuRHandAlt
+  bodyPart: RHand
+  markingCategory: Arms
+  speciesRestriction: [IPC]
+  sprites:
+    - sprite: _FarHorizons/Mobs/Customization/ipc/zenghu/zenghu_alt.rsi
+      state: zhpipc_r_hand-1
+    - sprite: _FarHorizons/Mobs/Customization/ipc/zenghu/zenghu_alt.rsi
+      state: zhpipc_r_hand-2
+
+- type: marking
+  id: MarkingZenghuRLegAlt
+  bodyPart: RLeg
+  markingCategory: Legs
+  speciesRestriction: [IPC]
+  sprites:
+    - sprite: _FarHorizons/Mobs/Customization/ipc/zenghu/zenghu_alt.rsi
+      state: zhpipc_r_leg-1
+    - sprite: _FarHorizons/Mobs/Customization/ipc/zenghu/zenghu_alt.rsi
+      state: zhpipc_r_leg-2
+
+- type: marking
+  id: MarkingZenghuRFootAlt
+  bodyPart: RFoot
+  markingCategory: Legs
+  speciesRestriction: [IPC]
+  sprites:
+    - sprite: _FarHorizons/Mobs/Customization/ipc/zenghu/zenghu_alt.rsi
+      state: zhpipc_r_foot-1
+    - sprite: _FarHorizons/Mobs/Customization/ipc/zenghu/zenghu_alt.rsi
+      state: zhpipc_r_foot-2
