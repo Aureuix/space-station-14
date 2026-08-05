@@ -1535,9 +1535,7 @@
   speciesRestriction: [IPC]
   sprites:
     - sprite: _FarHorizons/Mobs/Customization/ipc/zenghu/zenghu_alt.rsi
-      state: zhpipc_l_foot-1
-    - sprite: _FarHorizons/Mobs/Customization/ipc/zenghu/zenghu_alt.rsi
-      state: zhpipc_l_foot-2
+      state: zhpipc_l_foot
 
 - type: marking
   id: MarkingZenghuRArmAlt
@@ -1579,6 +1577,4 @@
   speciesRestriction: [IPC]
   sprites:
     - sprite: _FarHorizons/Mobs/Customization/ipc/zenghu/zenghu_alt.rsi
-      state: zhpipc_r_foot-1
-    - sprite: _FarHorizons/Mobs/Customization/ipc/zenghu/zenghu_alt.rsi
-      state: zhpipc_r_foot-2
+      state: zhpipc_r_foot
