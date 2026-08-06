@@ -1,0 +1,24 @@
+- type: npcFaction
+  id: UltraMachineDungeon
+  hostile:
+    - NanoTrasen
+    - NanoTrasenSilicon 
+    - Syndicate
+    - SyndicateSilicon 
+    - DungeonSyndicate
+    - DungeonSoviet
+    - Passive
+    - PetsNT
+    - Zombie
+    - Revolutionary
+    - Abyss
+    - Vampire
+    - Changeling
+    - AllHostile
+    - Wizard
+    - Xenoborg
+    - Dragon
+    - Xeno
+    - Gorilla
+    - Abductor 
+    - Pirate 

@@ -32,11 +32,13 @@
     Easy: 700
     Moderate: 900
     Challenging: 1100
+    Difficult: 5500
   cashMultiplier: 5.5
   numTargets:
     Easy: 2
     Moderate: 4
     Challenging: 6
+    Difficult: 8
   bonus: 225
   bonusCap: 4
   allowedDifficulties:
@@ -141,14 +143,16 @@
   description: salvage-mission-objective-description-shutdown
   announcement: salvage-mission-objective-announcement-shutdown
   baseReward:
-    Easy: 850
+    Easy: 850 
     Moderate: 1150
     Challenging: 1300
+    Difficult: 2000
   cashMultiplier: 5.5
   numTargets:
     Easy: 2
     Moderate: 3
     Challenging: 4
+    Difficult: 8
   bonus: 345
   bonusCap: 3
   allowedDifficulties:

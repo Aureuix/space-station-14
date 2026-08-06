@@ -75,13 +75,13 @@
   biomes:
     - Lava
 
-- type: salvageWeatherMod
-  id: AshfallHeavy
-  desc: salvage-biome-mod-weather-dummy
-  weather: WeatherAshfallHeavy
-  cost: 2
-  biomes:
-    - Lava
+#- type: salvageWeatherMod
+#  id: AshfallHeavy
+#  desc: salvage-biome-mod-weather-dummy
+#  weather: WeatherAshfallHeavy
+#  cost: 2
+#  biomes:
+#    - Lava
 
 - type: salvageWeatherMod
   id: Rain
@@ -108,13 +108,13 @@
   biomes:
     - LowDesert
 
-- type: salvageWeatherMod
-  id: SandstormHeavy
-  desc: salvage-biome-mod-weather-dummy
-  weather: WeatherSandstormHeavy
-  cost: 2
-  biomes:
-    - LowDesert
+#- type: salvageWeatherMod
+#  id: SandstormHeavy
+#  desc: salvage-biome-mod-weather-dummy
+#  weather: WeatherSandstormHeavy
+#  cost: 2
+#  biomes:
+#    - LowDesert
 
 - type: salvageWeatherMod
   id: Hail
@@ -141,11 +141,11 @@
     - Snow
     - Mountains
 
-- type: salvageWeatherMod
-  id: SnowfallHeavy
-  desc: salvage-biome-mod-weather-dummy
-  weather: WeatherSnowfallHeavy
-  cost: 2
-  biomes:
-    - Snow
-    - Mountains
+#- type: salvageWeatherMod
+#  id: SnowfallHeavy
+#  desc: salvage-biome-mod-weather-dummy
+#  weather: WeatherSnowfallHeavy
+#  cost: 2
+#  biomes:
+#    - Snow
+#    - Mountains
