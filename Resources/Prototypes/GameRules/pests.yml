@@ -54,7 +54,7 @@
     earliestStart: 15
     weight: 6
     duration: 50
-    minimumPlayers: 30 # Hopefully this is enough for the Rat King's potential Army (it was not, raised from 15 -> 30)
+    minimumPlayers: 20 # Hopefully this is enough for the Rat King's potential Army (it was not, raised from 15 -> 30) # SpL- reduced to let RKs actually see the light of day.
   - type: VentCrittersRule
     entries:
     - id: MobMouse
@@ -146,5 +146,5 @@
       prob: 0.002
     - id: MobSnailMoth
       prob: 0.002
-    - id: MobSnailInstantDeath
-      prob: 0.00001 #  ~ 1:2000 snails
+  #  - id: MobSnailInstantDeath # SpL- removed
+  #    prob: 0.00001 #  ~ 1:2000 snails

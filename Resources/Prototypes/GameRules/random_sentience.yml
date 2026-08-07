@@ -4,14 +4,14 @@
   components:
   - type: StationEvent
     globalAnnouncement: false # Starlight
-    weight: 6
+    weight: 2 # SpL- reduced weight
     duration: 1
     maxOccurrences: 1 # this event has diminishing returns on interesting-ness, so we cap it
     startAudio:
       path: /Audio/Announcements/attention.ogg
   - type: RandomSentienceRule
-    minSentiences: 2
-    maxSentiences: 5
+    minSentiences: 1 # SpL- reduced
+    maxSentiences: 2 # SpL- reduced
 
 - type: localizedDataset
   id: RandomSentienceEventData
