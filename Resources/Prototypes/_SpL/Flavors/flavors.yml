@@ -2,3 +2,13 @@
   id: constantsorrow
   flavorType: Complex
   description: flavor-complex-constant-sorrow
+
+- type: flavor
+  id: needles
+  flavorType: Complex
+  description: flavor-complex-needles
+
+- type: flavor
+  id: numb
+  flavorType: Simple
+  description: flavor-simple-numb

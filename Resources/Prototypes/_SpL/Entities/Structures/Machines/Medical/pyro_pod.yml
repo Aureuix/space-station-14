@@ -6,7 +6,7 @@
   components:
   - type: Wires
     boardName: wires-board-name-cryopod
-    layoutId: PyroPod
+    layoutId: CryoPod
   - type: ContainerTemperature
     heatDamageThreshold: 400
     coldDamageThreshold: null
