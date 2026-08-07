@@ -1,0 +1,18 @@
+- type: constructionGraph
+  id: PodBoard
+  start: cryo
+  graph:
+  - node: cryo
+    entity: CryoPodMachineCircuitboard
+    edges:
+    - to: pyro
+      steps:
+      - tool: Screwing
+        doAfter: 2
+  - node: pyro
+    entity: PyroPodMachineCircuitboard
+    edges:
+    - to: cryo
+      steps:
+      - tool: Screwing
+        doAfter: 2

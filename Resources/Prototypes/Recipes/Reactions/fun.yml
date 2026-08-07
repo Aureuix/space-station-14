@@ -93,14 +93,14 @@
     gas: Frezon
   products:
     Ice: 5
-
+#Spectra start: makes fresium recipe usable
 - type: reaction
   id: Fresium
   priority: 20
-  maxTemp: 300
+  maxTemp: 100 #We are killing chemists with hammers fuck you
   reactants:
-    Frezon:
-      amount: 3
+    Ice:
+      amount: 0.3
     Plasma:
       amount: 1
       catalyst: true
@@ -111,13 +111,13 @@
     TableSalt:
       amount: 0.08
     Water:
-      amount: 1.5
+      amount: 4
   effects:
   - !type:CreateGas
     gas: Nitrogen
   products:
     Fresium: 5
-
+#Spectra end
 - type: reaction
   id: FiberBreakdown
   source: true

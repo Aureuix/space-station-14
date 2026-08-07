@@ -86,3 +86,108 @@
       amount: 1
   products:
     Lidocaine: 4
+
+- type: reaction
+  id: Oxopyrol
+  maxTemp: 370
+  reactants:
+    Benzene: 
+      amount: 1
+    Water:
+      amount: 1
+    Chlorine: 
+      amount: 1
+    Fluorine: 
+      amount: 3
+  products:
+    Oxopyrol: 6
+
+- type: reaction
+  id: Oxoequilibrixadone
+  reactants:
+    Oxopyrol: 
+      amount: 1
+    Cryoxadone:
+      amount: 1
+  products:
+    Oxoequilibrixadone: 1
+
+- type: reaction
+  id: Oxomiplostim
+  reactants:
+    Oxopyrol: 
+      amount: 1
+    Iodine:
+      amount: 1
+    Arithrazine:
+      amount: 1
+  products:
+    Oxomiplostim: 3
+
+- type: reaction
+  id: Oxoformalizol
+  minTemp: 510
+  reactants:
+    Oxopyrol: 
+      amount: 1
+    Tricordrazine:
+      amount: 1
+    Mannitol:
+      amount: 1
+    Oil:
+      amount: 1
+  products:
+    Oxoformalizol: 4
+
+- type: reaction
+  id: OxoformalizolBOOM
+  reactants:
+    Oxopyrol: 
+      amount: 1
+    Tricordrazine:
+      amount: 1
+    Mannitol:
+      amount: 1
+    Ash:
+      amount: 1
+  effects:
+  - !type:Explosion
+    explosionType: Default # 15 damage per intensity.
+    maxIntensity: 200
+    intensityPerUnit: 5
+    intensitySlope: 5
+    maxTotalIntensity: 200
+  - !type:PopupMessage
+    messages: [ "clf3-explosion" ]
+    type: Pvs
+    visualType: LargeCaution
+  products:
+    Oxoformalizol: 1
+
+- type: reaction
+  id: Oxoliplatol
+  reactants:
+    Oxopyrol: 
+      amount: 1
+    Aluminium: # Close enough to platinum. lol.
+      amount: 2
+    Phalanximine:
+      amount: 1
+  products:
+    Oxoliplatol: 4
+
+- type: reaction
+  id: Oxoprodigol
+  reactants:
+    Oxopyrol: 
+      amount: 1
+    Holywater:
+      amount: 1
+    Blood:
+      amount: 1
+    Wine:
+      amount: 1
+    Flour:
+      amount: 1
+  products:
+    Oxoprodigol: 5

@@ -1,0 +1,12 @@
+- type: entity
+  parent: CryoPod
+  id: PyroPod
+  name: pyro pod
+  description: A modified cryo pod intended for much higher operation temperatures.
+  components:
+  - type: Wires
+    boardName: wires-board-name-cryopod
+    layoutId: PyroPod
+  - type: ContainerTemperature
+    heatDamageThreshold: 400
+    coldDamageThreshold: null

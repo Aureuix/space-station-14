@@ -233,3 +233,209 @@
         effectProto: StatusEffectDrowsiness
         time: 3
         type: Add
+
+- type: reagent
+  id: Oxopyrol
+  group: Medicine
+  name: reagent-name-oxopyrol
+  desc: reagent-desc-oxopyrol
+  physicalDesc: reagent-physical-desc-blazing
+  flavor: sbiten
+  color: "#bf3519"
+  plantMetabolism:
+  - !type:PlantAdjustToxins
+    amount: 5
+  - !type:PlantAdjustHealth
+    amount: -5
+  - !type:PlantAffectGrowth
+    probability: 0.5
+    amount: 1
+  metabolisms:
+    Medicine:
+      metabolismRate: 1
+      effects:
+      - !type:EvenHealthChange
+        conditions:
+        - !type:TemperatureCondition
+          min: 341.0
+        damage:
+          Airloss: -2
+          Brute: -2
+          Burn: -2
+          Toxin: -3
+      - !type:AdjustReagent
+        conditions:
+        - !type:MetabolizerTypeCondition
+          type: [ Cyclorite ]
+        reagent: Oxopyrol
+        amount: -0.5
+
+- type: reagent
+  id: Oxoequilibrixadone
+  group: Medicine
+  name: reagent-name-oxoequilibrixadone
+  desc: reagent-desc-oxoequilibrixadone
+  physicalDesc: reagent-physical-desc-needles
+  flavor: needles
+  color: "#283811"
+  metabolisms:
+    Medicine:
+      metabolismRate: 1
+      effects:
+      - !type:HealthChange
+        conditions:
+        - !type:TemperatureCondition
+          min: 341.0
+        damage:
+          types:
+            Blunt: -4
+            Slash: -4
+            Heat: 3
+            Cold: 2
+            Piercing: 2
+      - !type:Flammable
+        conditions:
+        - !type:TemperatureCondition
+          min: 341.0
+        multiplier: 0.4
+      - !type:Ignite
+        conditions:
+          - !type:TemperatureCondition
+            min: 341.0
+      - !type:HealthChange
+        conditions:
+        - !type:TemperatureCondition
+          max: 213.0
+        damage:
+          types:
+            Blunt: -4
+            Slash: -4
+            Heat: 2
+            Cold: 3
+            Piercing: 2
+      - !type:AdjustTemperature
+        conditions:
+        - !type:TemperatureCondition
+          max: 213.15
+        amount: -100000
+      - !type:AdjustReagent
+        conditions:
+        - !type:MetabolizerTypeCondition
+          type: [ Cyclorite ]
+        reagent: Oxoequilibrixadone
+        amount: -0.5
+
+- type: reagent
+  id: Oxoliplatol
+  group: Medicine
+  name: reagent-name-oxoliplatol
+  desc: reagent-desc-oxoliplatol
+  physicalDesc: reagent-physical-desc-numb
+  flavor: numb
+  color: "#0b7836"
+  worksOnTheDead: true
+  metabolisms:
+    Medicine:
+      effects:
+        - !type:HealthChange
+          conditions:
+          - !type:TemperatureCondition
+            min: 341.0
+          - !type:TotalDamageCondition
+            min: 180
+          damage:
+            types:
+             Cellular: -4
+        - !type:AdjustReagent
+          conditions:
+          - !type:MetabolizerTypeCondition
+            type: [ Cyclorite ]
+          reagent: Oxoliplatol
+          amount: -0.5
+
+- type: reagent
+  id: Oxomiplostim
+  group: Medicine
+  name: reagent-name-oxomiplostim
+  desc: reagent-desc-oxomiplostim
+  physicalDesc: reagent-physical-desc-frosty
+  flavor: cold
+  color: "#4a154d"
+  worksOnTheDead: true
+  metabolisms:
+    Medicine:
+      effects:
+        - !type:HealthChange
+          conditions:
+          - !type:TemperatureCondition
+            min: 341.0
+          damage:
+            types:
+             Radiation: -6
+             Cold: 4
+        - !type:AdjustReagent
+          conditions:
+          - !type:MetabolizerTypeCondition
+            type: [ Cyclorite ]
+          reagent: Oxomiplostim
+          amount: -0.5
+
+- type: reagent
+  id: Oxoformalizol
+  group: Medicine
+  name: reagent-name-oxoformalizol
+  desc: reagent-desc-oxoformalizol
+  physicalDesc: reagent-physical-desc-necrotic
+  flavor: syrupy
+  color: "#7d4242"
+  worksOnTheDead: true
+  metabolisms:
+    Medicine:
+      metabolismRate: 1
+      effects:
+        - !type:ReduceRotting
+          seconds: 20
+          conditions:
+          - !type:TemperatureCondition
+            min: 341.0
+          - !type:MobStateCondition
+            mobstate: Dead
+        - !type:AdjustReagent
+          conditions:
+          - !type:MetabolizerTypeCondition
+            type: [ Cyclorite ]
+          reagent: Oxoformalizol
+          amount: -0.5
+
+- type: reagent
+  id: Oxoprodigol
+  group: Medicine
+  name: reagent-name-oxoprodigol
+  desc: reagent-desc-oxoprodigol
+  physicalDesc: reagent-physical-desc-holy
+  flavor: holy
+  color: "#ada147" # #b87621?
+  worksOnTheDead: true
+  metabolisms:
+    Medicine:
+      metabolismRate: 1
+      effects:
+      - !type:EvenHealthChange
+        conditions:
+        - !type:TemperatureCondition
+          min: 341.0
+        damage:
+          Metaphysical: -2
+      - !type:HealthChange
+        conditions:
+        - !type:TemperatureCondition
+          min: 341.0
+        damage:
+          types:
+            Heat: 4
+      - !type:AdjustReagent
+        conditions:
+        - !type:MetabolizerTypeCondition
+          type: [ Cyclorite ]
+        reagent: Oxoprodigol
+        amount: -0.5
