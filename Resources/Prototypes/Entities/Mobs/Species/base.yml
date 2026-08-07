@@ -205,6 +205,9 @@
         type: VampireClassBui
       enum.VampireLocateUiKey.Key: # SL
         type: VampireLocateBui
+      enum.RadarConsoleUiKey.Key:
+        type: RadarConsoleBoundUserInterface
+        requireInputValidation: false
       enum.ThavenMoodsUiKey.Key: # impstation edit
         type: ThavenMoodsBoundUserInterface
         requireInputValidation: false
