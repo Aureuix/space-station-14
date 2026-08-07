@@ -10,5 +10,5 @@
 
 - type: flavor
   id: numb
-  flavorType: Simple
-  description: flavor-simple-numb
+  flavorType: Base
+  description: flavor-base-numb
