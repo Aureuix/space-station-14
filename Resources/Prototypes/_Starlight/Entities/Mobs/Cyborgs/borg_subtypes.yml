@@ -637,6 +637,7 @@
       spriteNoMindState: borg_e_r
       spriteToggleLightState: borg_l
       inventoryTemplateId: Tallborg
+
 # region Purrfus
 
 - type: entity
