@@ -135,14 +135,3 @@ marking-MarkingZenghuRLeg = 'Zenghu' Right Robotic Leg
 marking-MarkingZenghuRFoot = 'Zenghu' Right Robotic Foot
 marking-MarkingZenghuLLeg = 'Zenghu' Left Robotic Leg
 marking-MarkingZenghuLFoot = 'Zenghu' Left Robotic Foot
-
-marking-MarkingZenghuHeadAlt = 'Zenghu' Mk2 Head
-marking-MarkingZenghuChestAlt = 'Zenghu' Mk2 Robotic Chassis
-marking-MarkingZenghuRHandAlt = 'Zenghu' Mk2 Right Robotic Hand
-marking-MarkingZenghuRArmAlt = 'Zenghu' Mk2 Right Robotic Arm
-marking-MarkingZenghuLHandAlt = 'Zenghu' Mk2 Left Robotic Hand
-marking-MarkingZenghuLArmAlt = 'Zenghu' Mk2 Left Robotic Arm
-marking-MarkingZenghuRLegAlt = 'Zenghu' Mk2 Right Robotic Leg
-marking-MarkingZenghuRFootAlt = 'Zenghu' Mk2 Right Robotic Foot
-marking-MarkingZenghuLLegAlt = 'Zenghu' Mk2 Left Robotic Leg
-marking-MarkingZenghuLFootAlt = 'Zenghu' Mk2 Left Robotic Foot
