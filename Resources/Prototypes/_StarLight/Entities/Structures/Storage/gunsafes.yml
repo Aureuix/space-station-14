@@ -96,6 +96,7 @@
 - type: entity
   id: GunSafeBaseSyndicateSL
   parent: GunSafeSL
+  description: A standard-issue Syndicate storage unit. # SpL- nanotrasen. lol.
   suffix: Syndicate, Locked
   components:
     - type: AccessReader

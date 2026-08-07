@@ -181,6 +181,9 @@
     speechSounds: Borg
     allowedEmotes: 
     - Laugh
+  - type: Emoting # SpL
+  - type: BodyEmotes # SpL
+    soundsId: GeneralBodyEmotes # SpL
   - type: Vocal
     sounds:
       Male: MaleIPC

@@ -312,7 +312,7 @@
     - Hands
   blacklist:
     tags:
-    - SiliconEmotes
+    # - SiliconEmotes # SpL
     - DogEmotes # Starlight
   chatMessages: ["chat-emote-msg-clap"]
   chatTriggers:
@@ -330,7 +330,7 @@
     - Hands
   blacklist:
     tags:
-    - SiliconEmotes
+    # - SiliconEmotes # SpL
     - DogEmotes # Starlight
   chatMessages: [ "chat-emote-msg-clap-single" ]
   chatTriggers:
@@ -350,7 +350,7 @@
     - Hands
   blacklist:
     tags:
-    - SiliconEmotes
+    # - SiliconEmotes # SpL
     - DogEmotes # Starlight
   chatMessages: ["chat-emote-msg-snap"]
   chatTriggers:
@@ -403,7 +403,7 @@
     - Hands
   blacklist:
     tags:
-    - SiliconEmotes
+  # - SiliconEmotes # SpL
   chatMessages: ["chat-emote-msg-salute"]
   chatTriggers:
     - salute

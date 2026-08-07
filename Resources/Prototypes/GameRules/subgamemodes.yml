@@ -8,13 +8,13 @@
     - EscapeThiefShuttleObjective
   - type: AntagRandomObjectives
     sets:
-    - groups: ThiefBigObjectiveGroups
-      prob: 0.7
-      maxPicks: 1
-    - groups: ThiefObjectiveGroups
-      maxPicks: 10
+    #- groups: ThiefBigObjectiveGroups
+    #  prob: 0.7
+    #  maxPicks: 1
+    #- groups: ThiefObjectiveGroups
+    #  maxPicks: 10
     - groups: ThiefObjectiveGroupEscape # Starlight
-      prob: 0.33 # Starlight. It gives you a lot more freedom, but also lets you be way more intrusive,  so low chance.
+      prob: 1 # Starlight. It gives you a lot more freedom, but also lets you be way more intrusive,  so low chance. # SpL- Yeah. Good. 0.33->1
       maxPicks: 1 # Starlight
     maxDifficulty: 3 # Starlight. Ultrapop + ton of new targets means some objectives become really easy in the chaos.
   - type: AntagSelection
@@ -29,7 +29,7 @@
       multiAntagSetting: NotExclusive
       startingGear: ThiefGear
       components:
-      - type: Pacified
+      # - type: Pacified # SpL
       - type: Thieving
         stripTimeReduction: 2
         stealthy: true

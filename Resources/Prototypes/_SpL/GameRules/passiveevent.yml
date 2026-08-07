@@ -1,0 +1,24 @@
+﻿- type: entity
+  parent: BaseGameRule
+  id: Blackout
+  components:
+    - type: StationEvent
+      occursDuringRoundEnd: false
+      globalAnnouncement: false
+      weight: 10
+      startAnnouncement: station-event-blackout-start-announcement
+      startAudio:
+        path: /Audio/Announcements/attention.ogg
+      endAnnouncement: station-event-blackout-end-announcement
+      endAudio:
+        path: /Audio/Announcements/attention.ogg
+      duration: 180
+      maxDuration: 300
+      maxOccurrences: 1
+    - type: NightShiftRule
+      disableAnnouncement: station-event-blackout-disable
+      enableAnnouncement: station-event-blackout-enable
+      lightEnergyMultiplier: 0
+      permittedAlertLevels:
+        - green
+        - blue
