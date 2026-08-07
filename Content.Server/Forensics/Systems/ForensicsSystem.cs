@@ -22,6 +22,7 @@ using Robust.Shared.Random;
 using Content.Shared.Verbs;
 using Robust.Shared.Utility;
 using Content.Shared.Hands.Components;
+using Content.Server._Starlight.Scent.Components;
 
 namespace Content.Server.Forensics
 {
@@ -186,7 +187,8 @@ namespace Content.Server.Forensics
 
         private void OnUtilityVerb(Entity<CleansForensicsComponent> entity, ref GetVerbsEvent<UtilityVerb> args)
         {
-            if (!args.CanInteract || !args.CanAccess)
+            if (!args.CanInteract || !args.CanAccess
+                || HasComp<CleansScentComponent>(entity.Owner)) // Starlight - prevent scent system conflict
                 return;
 
             // These need to be set outside for the anonymous method!
