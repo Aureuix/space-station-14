@@ -1,0 +1,17 @@
+- type: entity
+  id: PyroPodMachineCircuitboard
+  parent: BaseMachineCircuitboard
+  name: pyro pod machine board
+  description: Looks like you could use a screwdriver to change the board type.
+  components:
+    - type: Sprite
+      state: medical
+    - type: MachineBoard
+      prototype: PyroPod
+      stackRequirements:
+        Glass: 5
+        Cable: 1
+    - type: Construction
+      deconstructionTarget: null
+      graph: PodBoard
+      node: pyro

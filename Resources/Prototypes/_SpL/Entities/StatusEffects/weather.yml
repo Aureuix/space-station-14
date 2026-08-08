@@ -1,0 +1,92 @@
+- type: entity
+  parent: WeatherBase
+  id: WeatherAshfallHeavyDamage
+  components:
+  - type: WeatherStatusEffect
+    sprite:
+      sprite: /Textures/Effects/weather.rsi
+      state: ashfall_heavy
+    sound:
+      path: /Audio/Effects/Weather/snowstorm.ogg
+      params:
+        loop: true
+        volume: -6
+  - type: WeatherEffects
+  - type: WeatherEntityEffect
+    effects:
+    - !type:Flash
+    - !type:Flammable
+      multiplier: 3.75
+      multiplierOnExisting: 0.75
+    - !type:Ignite
+    - !type:HealthChange
+      ignoreResistances: false
+      damage:
+        types:
+          Heat: 1
+
+- type: entity
+  parent: WeatherBase
+  id: WeatherFalloutDamage
+  components:
+  - type: WeatherStatusEffect
+    sprite:
+      sprite: /Textures/Effects/weather.rsi
+      state: fallout
+    sound:
+      path: /Audio/Effects/Weather/snowstorm_weak.ogg
+      params:
+        loop: true
+        volume: -6
+  - type: WeatherEffects
+  - type: WeatherEntityEffect
+    effects:
+    - !type:HealthChange
+      ignoreResistances: false
+      damage:
+        types:
+          Radiation: 1
+
+- type: entity
+  parent: WeatherBase
+  id: WeatherSandstormHeavyDamage
+  components:
+  - type: WeatherStatusEffect
+    sprite:
+      sprite: /Textures/Effects/weather.rsi
+      state: sandstorm_heavy
+    sound:
+      path: /Audio/Effects/Weather/snowstorm.ogg
+      params:
+        loop: true
+        volume: -6
+  - type: WeatherEffects
+  - type: WeatherEntityEffect
+    effects:
+    - !type:HealthChange
+      ignoreResistances: false
+      damage:
+        types:
+          Blunt: 0.5
+
+- type: entity
+  parent: WeatherBase
+  id: WeatherSnowfallHeavyDamage
+  components:
+  - type: WeatherStatusEffect
+    sprite:
+      sprite: /Textures/Effects/weather.rsi
+      state: snowfall_heavy
+    sound:
+      path: /Audio/Effects/Weather/snowstorm.ogg
+      params:
+        loop: true
+        volume: -6
+  - type: WeatherEffects
+  - type: WeatherEntityEffect
+    effects:
+    - !type:HealthChange
+      ignoreResistances: false
+      damage:
+        types:
+          Cold: 1

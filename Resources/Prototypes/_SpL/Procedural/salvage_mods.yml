@@ -11,7 +11,33 @@
 - type: salvageWeatherMod
   id: Fallout
   desc: salvage-biome-mod-weather-dummy
-  weather: WeatherFallout
-  cost: 1
+  weather: WeatherFalloutDamage
+  cost: 2
   biomes:
     - LowDesert
+
+- type: salvageWeatherMod
+  id: SandstormHeavy
+  desc: salvage-biome-mod-weather-dummy
+  weather: WeatherSandstormHeavyDamage
+  cost: 2
+  biomes:
+    - LowDesert
+
+- type: salvageWeatherMod
+  id: AshfallHeavy
+  desc: salvage-biome-mod-weather-dummy
+  weather: WeatherAshfallHeavyDamage
+  cost: 2
+  biomes:
+    - Lava
+
+- type: salvageWeatherMod
+  id: SnowfallHeavy
+  desc: salvage-biome-mod-weather-dummy
+  weather: WeatherSnowfallHeavyDamage
+  cost: 2
+  biomes:
+    - Snow
+    - Mountains
+

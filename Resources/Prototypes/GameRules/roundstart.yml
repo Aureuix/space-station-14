@@ -290,7 +290,7 @@
       blacklist:
         components:
         - AntagImmune
-      lateJoinAdditional: false
+      lateJoinAdditional: true # SpL
       mindRoles:
       - MindRoleTraitor
 
@@ -500,15 +500,16 @@
 
 # This rule makes the chosen players unable to get other antag rules, as a way to prevent metagaming job rolls.
 # Put this before antags assigned to station jobs, but after non-job antags (NukeOps/Wiz).
+# SpL- Due to continuity and our general position on how antags and countering them should play out, this gamerule feels unnecessary and thus has been practically removed.
 - type: entity
   id: DummyNonAntag
   parent: BaseGameRule
   components:
   - type: GameRule
-    minPlayers: 5
+    minPlayers: 50 # SpL
   - type: AntagSelection
     selectionTime: IntraPlayerSpawn # Pre-selection before jobs; assignment doesn't really matter though, we only care about the pre-selection to block other antags.
-    removeUponFailedSpawn: false
+    removeUponFailedSpawn: true # SpL
     definitions:
     - prefRoles: [ InitialInfected, Traitor, Thief, HeadRev ]
       max: 2

@@ -517,7 +517,7 @@
   id: CryoPodMachineCircuitboard
   parent: BaseMachineCircuitboard
   name: cryo pod machine board
-  description: A machine printed circuit board for a cryo pod.
+  description: Looks like you could use a screwdriver to change the board type. #Spectra: Changed desc for pyropod board conversion
   components:
     - type: Sprite
       state: medical
@@ -526,7 +526,12 @@
       stackRequirements:
         Glass: 5
         Cable: 1
-
+    #Spectra: Pyropod board switching
+    - type: Construction
+      deconstructionTarget: null
+      graph: PodBoard
+      node: cryo
+    #Spectra end
 - type: entity
   id: ChemMasterMachineCircuitboard
   parent: BaseMachineCircuitboard

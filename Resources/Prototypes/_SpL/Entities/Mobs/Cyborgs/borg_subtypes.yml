@@ -1,0 +1,105 @@
+﻿## Cargo
+#- type: entity
+#  parent: BorgCargoSubtypeBase
+#  id: BorgCargoSubtypeTallborgFMeka
+#  name: FMeka Cargo
+#  components:
+#    - type: BorgSubtypeDefinition
+#      spritePath: _Starlight/Mobs/Silicon/Chassis/tallborgs/tallborgs-cargo/fmeka_cargo.rsi
+#      spriteBodyState: borg
+#      spriteHasMindState: borg_e
+#      spriteNoMindState: borg_e_r
+#      spriteToggleLightState: borg_l
+#      inventoryTemplateId: Tallborg
+      
+#- type: entity
+#  parent: BorgCargoSubtypeBase
+#  id: BorgCargoSubtypeTallborgK4t
+#  name: K4t Cargo
+#  components:
+#    - type: BorgSubtypeDefinition
+#      spritePath: _Starlight/Mobs/Silicon/Chassis/tallborgs/tallborgs-cargo/k4t_cargo.rsi
+#      spriteBodyState: borg
+#      spriteHasMindState: borg_e
+#      spriteNoMindState: borg_e_r
+#      spriteToggleLightState: borg_l
+#      inventoryTemplateId: Tallborg
+      
+#- type: entity
+#  parent: BorgCargoSubtypeBase
+#  id: BorgCargoSubtypeTallborgK4tAlt
+#  name: K4t Cargo Alt
+#  components:
+#    - type: BorgSubtypeDefinition
+#      spritePath: _Starlight/Mobs/Silicon/Chassis/tallborgs/tallborgs-cargo/k4t_cargo_alt.rsi
+#      spriteBodyState: borg
+#      spriteHasMindState: borg_e
+#      spriteNoMindState: borg_e_r
+#      spriteToggleLightState: borg_l
+#      inventoryTemplateId: Tallborg
+      
+#- type: entity
+#  parent: BorgCargoSubtypeBase
+#  id: BorgCargoSubtypeTallborgSFMeka
+#  name: SFMeka Cargo
+#  components:
+#    - type: BorgSubtypeDefinition
+#      spritePath: _Starlight/Mobs/Silicon/Chassis/tallborgs/tallborgs-cargo/sfmeka_cargo.rsi
+#      spriteBodyState: borg
+#      spriteHasMindState: borg_e
+#      spriteNoMindState: borg_e_r
+#      spriteToggleLightState: borg_l
+#      inventoryTemplateId: Tallborg
+      
+## Engi
+#- type: entity
+#  parent: BorgEngineerSubtypeBase
+#  id: BorgEngineerSubtypeTallborgFMeka
+#  name: FMeka Engi
+#  components:
+#    - type: BorgSubtypeDefinition
+#      spritePath: _Starlight/Mobs/Silicon/Chassis/tallborgs/tallborgs-engi/fmeka_engi.rsi
+#      spriteBodyState: borg
+#      spriteHasMindState: borg_e
+#      spriteNoMindState: borg_e_r
+#      spriteToggleLightState: borg_l
+#      inventoryTemplateId: Tallborg
+
+#- type: entity
+#  parent: BorgEngineerSubtypeBase
+#  id: BorgEngineerSubtypeTallborgK4t
+#  name: K4t Engi
+#  components:
+#    - type: BorgSubtypeDefinition
+#      spritePath: _Starlight/Mobs/Silicon/Chassis/tallborgs/tallborgs-engi/k4t_engi.rsi
+#      spriteBodyState: borg
+#      spriteHasMindState: borg_e
+#      spriteNoMindState: borg_e_r
+#      spriteToggleLightState: borg_l
+#      inventoryTemplateId: Tallborg
+
+#- type: entity
+#  parent: BorgEngineerSubtypeBase
+#  id: BorgEngineerSubtypeTallborgK4tAlt
+#  name: K4t Engi Alt
+#  components:
+#    - type: BorgSubtypeDefinition
+#      spritePath: _Starlight/Mobs/Silicon/Chassis/tallborgs/tallborgs-engi/k4t_alt_engi.rsi
+#      spriteBodyState: borg
+#      spriteHasMindState: borg_e
+#      spriteNoMindState: borg_e_r
+#      spriteToggleLightState: borg_l
+#      inventoryTemplateId: Tallborg
+
+#- type: entity
+#  parent: BorgEngineerSubtypeBase
+#  id: BorgEngineerSubtypeTallborgSFMeka
+#  name: SFMeka Engi
+#  components:
+#    - type: BorgSubtypeDefinition
+#      spritePath: _Starlight/Mobs/Silicon/Chassis/tallborgs/tallborgs-engi/sfmeka_engi.rsi
+#      spriteBodyState: borg
+#      spriteHasMindState: borg_e
+#      spriteNoMindState: borg_e_r
+#      spriteToggleLightState: borg_l
+#      inventoryTemplateId: Tallborg
