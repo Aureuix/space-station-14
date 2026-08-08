@@ -99,7 +99,7 @@
 
 #Rugged duster
 - type: entity
-  parent: [ ClothingOuterStorageFoldableBase, AllowSuitStorageClothing ] # SpL
+  parent: [ ClothingOuterStorageBase, AllowSuitStorageClothing ] # SpL
   id: ClothingOuterCoatDuster
   name: rugged duster
   description: A rugged duster with a bandana scarf made for keeping off the ash and dust. Not much of that up in space though.
