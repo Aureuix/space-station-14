@@ -110,7 +110,7 @@
   name: nt representative jacket
 
 - type: entity
-  parent: ClothingOuterStorageFoldableBase
+  parent: [ ClothingOuterStorageFoldableBase, AllowSuitStorageClothing ] # SpL
   id: ClothingOuterCoatLabSeniorChemist
   name: senior chemist lab coat
   description: A suit that protects against minor chemical spills. Has orange sleeves, an orange waist trim, and two pink stripes on the shoulders.
