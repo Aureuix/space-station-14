@@ -365,6 +365,7 @@
     quickEquip: false
     slots:
     - Back
+    - suitStorage # SpL
   - type: Gun
     fireRate: 0.6
   - type: BatterySelfRecharger

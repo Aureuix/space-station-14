@@ -80,7 +80,7 @@
   - type: HitscanBasicDamage
     damage:
       types:
-        Heat: 4 # SpL- changed all guns using this to be like a beam weapon
+        Heat: 5 # SpL- changed all guns using this to be like a beam weapon
         Structural: 12 # SpL- realistically it should do SOME structural damage given what it is
   - type: HitscanBasicVisuals
     muzzleFlash:

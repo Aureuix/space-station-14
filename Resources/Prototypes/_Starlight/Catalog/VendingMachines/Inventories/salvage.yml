@@ -186,18 +186,6 @@
   conditions:
   - !type:BuyerAccessCondition
 
-# SpL Start
-- type: listing
-  id: VendorSalvageWeaponRifleM18
-  productEntity: WeaponRifleM18
-  cost:
-    SalvageTicket: 500
-  categories:
-    - SalvageWeapons
-  conditions:
-    - !type:BuyerAccessCondition
-# SpL End
-
 - type: listing
   id: VendorSalvageWeaponShotgunGA12
   productEntity: WeaponShotgunGA12

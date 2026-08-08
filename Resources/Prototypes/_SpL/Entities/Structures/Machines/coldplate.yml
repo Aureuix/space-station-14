@@ -1,0 +1,33 @@
+﻿- type: entity
+  parent: BaseHeaterMachine
+  id: ChemistryColdplate
+  name: coldplate
+  description: "An even higher-tech rival to our innovative hotplate, this complex flat-surface beaker radiator was designed with ease of use in mind. Don't question it."
+  components:
+    - type: Sprite
+      sprite: _SpL/Structures/Machines/coldplate.rsi
+      drawdepth: SmallObjects
+      snapCardinals: true
+      layers:
+        - state: icon
+        - state: on
+          map: ["enum.SolutionHeaterVisuals.IsOn"]
+          shader: unshaded
+    - type: SolutionHeater
+      heatPerSecond: -40 # really not that good compared to the hotplate
+    - type: ItemPlacer
+      whitelist:
+        components:
+          - FitsInDispenser
+    - type: PlaceableSurface
+      placeCentered: true
+      positionOffset: 0, 0.25
+    - type: Machine
+      board: ColdplateMachineCircuitboard
+    - type: Appearance
+    - type: GenericVisualizer
+      visuals:
+        enum.SolutionHeaterVisuals.IsOn:
+          enum.SolutionHeaterVisuals.IsOn:
+            True: { visible: true }
+            False: { visible: false }
