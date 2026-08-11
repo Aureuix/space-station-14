@@ -1,0 +1,9 @@
+﻿- type: cargoProduct
+  id: MedicalVitalsImplants
+  icon:
+    sprite: Objects/Specific/Medical/implanter.rsi
+    state: implanter0
+  product: CrateVitalsImplants
+  cost: 2000
+  category: cargoproduct-category-name-medical
+  group: market

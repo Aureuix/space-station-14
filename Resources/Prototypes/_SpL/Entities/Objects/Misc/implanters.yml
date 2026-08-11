@@ -36,3 +36,10 @@
     - type: Implanter
       implant: SyndicateMindShieldImplant
       
+- type: entity
+  id: PacifismImplanter
+  name: pacifism implanter
+  parent: BaseImplantOnlyImplanter
+  components:
+    - type: Implanter
+      implant: PacifismImplant

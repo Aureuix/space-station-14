@@ -2,6 +2,7 @@
   name: trash bag
   id: TrashBag
   parent: BaseStorageItem
+  description: It holds trash.
   components:
   - type: Sprite
     sprite: Objects/Specific/Janitorial/trashbag.rsi
@@ -38,9 +39,10 @@
     size: Normal
 
 - type: entity
-  name: trash bag
+  name: magnetic trash bag
   id: TrashBagBlue
   parent: TrashBag
+  description: A fancy blue trashbag with an inbuilt magnet. For trash.
   components:
   - type: Sprite
     layers:
@@ -50,6 +52,27 @@
     heldPrefix: blue
   - type: StorageFillVisualizer
     fillBaseName: blue-icon
+    # SpL Start - Add toggleable magnet pickup
+  - type: ItemToggle
+    onUse: false
+    onActivate: false
+    verbToggleOn: verb-toggle-magnet-activate
+    verbToggleOff: verb-toggle-magnet-deactivate
+    soundActivate:
+      collection: sparks
+      params:
+        variation: 0.250
+    soundDeactivate:
+      collection: sparks
+      params:
+        variation: 0.250
+  - type: AltUseToggle
+  - type: ComponentToggler
+    components:
+      - type: MagnetPickup
+        requiresEquipping: false
+        slotFlags: 0
+    # SpL End
 
 - type: entity
   name: spell of all-consuming cleanliness

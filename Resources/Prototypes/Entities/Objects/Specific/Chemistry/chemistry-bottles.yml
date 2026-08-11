@@ -273,7 +273,7 @@
   parent: BaseChemistryBottleFilled
   components:
   - type: Label
-    currentLabel: reagent--name-cognizine # SpL
+    currentLabel: reagent-name-cognizine # SpL
   - type: SolutionContainerManager
     solutions:
       drink:
