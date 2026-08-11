@@ -232,6 +232,10 @@
       - APCHighCapacity
       - APCSuperCapacity
       - APCHyperCapacity
+      - APCXenoborg # Starlight
+      - APCShadekin # Starlight
+      - APCAdvanced # Starlight
+      - APCAdvancedConstructed # Starlight
       - SubstationBasic
       - SubstationWallBasic
     noPowerDeathEmote: DeathgaspIPC
