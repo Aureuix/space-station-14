@@ -43,8 +43,11 @@
 
 # Metaphysical damage types should be used very sparingly, and likely not affect normal crew entities.
 # Revenants and other ghost-like/demonic creatures are more fitting. Healing should never be available via medicine.
+# Spectra: Metaphysical damage should affect all crew but should only be done via entities that are unholy and or noosphere related. All playable species except kitsune should take little to no holy damage
 - type: damageGroup
   id: Metaphysical
   name: damage-group-metaphysical
   damageTypes:
   - Holy
+  - Shadow #Spectra: Shadow damage, for noosphere dwellers only
+  - Mortal #Spectra: Mortal damage, for direct soul damage. Use sparingly if ever

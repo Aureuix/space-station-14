@@ -12,3 +12,8 @@
   id: numb
   flavorType: Base
   description: flavor-base-numb
+
+- type: flavor
+  id: bloodgold
+  flavorType: Complex
+  description: flavor-complex-bloodgold

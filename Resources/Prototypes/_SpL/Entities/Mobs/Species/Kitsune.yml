@@ -60,7 +60,7 @@
       Female: FemaleKitsune
       Unsexed: MaleKitsune
   - type: Damageable
-    damageContainer: BiologicalMetaphysicalKitsune
+    damageContainer: Biological
     damageModifierSet: Kitsune
   - type: MeleeWeapon
     soundHit:

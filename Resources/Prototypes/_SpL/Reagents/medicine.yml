@@ -391,10 +391,9 @@
   worksOnTheDead: true
   metabolisms:
     Medicine:
-      metabolismRate: 1
       effects:
         - !type:ReduceRotting
-          seconds: 20
+          seconds: 25
           conditions:
           - !type:TemperatureCondition
             min: 341.0
@@ -412,9 +411,9 @@
   group: Medicine
   name: reagent-name-oxoprodigol
   desc: reagent-desc-oxoprodigol
-  physicalDesc: reagent-physical-desc-holy
-  flavor: holy
-  color: "#ada147" # #b87621?
+  physicalDesc: reagent-physical-desc-auric
+  flavor: bloodgold
+  color: "#b88321" # #b87621? #ad9447 #ada147
   worksOnTheDead: true
   metabolisms:
     Medicine:

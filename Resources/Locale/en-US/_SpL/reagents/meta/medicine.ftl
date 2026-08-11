@@ -20,7 +20,7 @@ reagent-scori-derma = scori & derma
 reagent-saline-amox = saline & amox
 
 reagent-name-oxopyrol = oxopyrol
-reagent-desc-oxopyrol = Required for the proper function of pyrogenics. Heals all standard types of damage, but only works in temperatures over 341K.
+reagent-desc-oxopyrol = Required for the proper function of pyrogenics. Heals all standard types of damage, but only works in temperatures over 341K. Highly explosive when mixed improperly.
 
 reagent-name-oxoequilibrixadone = oxoequilibrixadone
 reagent-desc-oxoequilibrixadone = An enigmatic chemical formed from the reaction of oxopyrol and cryoxadone. When heated up or cooled down, forms millions of tiny needles that destructively heal physical damage.

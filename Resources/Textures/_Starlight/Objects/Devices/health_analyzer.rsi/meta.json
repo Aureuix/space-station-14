@@ -1,7 +1,7 @@
 {
   "version": 1,
   "license": "CC-BY-SA-3.0",
-  "copyright": "Made by github @AegisShieldDev. Metaphysical and Holy by nykaestra",
+  "copyright": "Made by github @AegisShieldDev. Metaphysical and Holy by nykaestra, mortal by Aureuix",
   "size": {
     "x": 15,
     "y": 15
@@ -101,6 +101,12 @@
       "name": "holy",
       "directions": 1,
       "copyright": "Made by nykaestra"
+    },
+    {
+      "name": "mortal",
+      "directions": 1,
+      "copyright": "Made by Aureuix"
     }
+
   ]
 }

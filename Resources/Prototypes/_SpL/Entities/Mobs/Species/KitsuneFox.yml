@@ -54,5 +54,5 @@
       80: Critical
       160: Dead
   - type: Damageable
-    damageContainer: BiologicalMetaphysicalKitsune
+    damageContainer: Biological
     damageModifierSet: KitsuneFox

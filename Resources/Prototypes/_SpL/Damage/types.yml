@@ -1,0 +1,12 @@
+# Metaphysical damage. Damage represents supernatural injuries that emphasize the fantasy elements in the game
+- type: damageType
+  id: Shadow
+  name: damage-type-shadow
+  armorCoefficientPrice: 1
+  armorFlatPrice: 1
+
+- type: damageType
+  id: Mortal
+  name: damage-type-mortal
+  armorCoefficientPrice: 50
+  armorFlatPrice: 500

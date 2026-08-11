@@ -127,6 +127,7 @@
 - type: reaction
   id: Oxoformalizol
   minTemp: 510
+  maxTemp: 520
   reactants:
     Oxopyrol: 
       amount: 1
@@ -141,6 +142,7 @@
 
 - type: reaction
   id: OxoformalizolBOOM
+  minTemp: 520
   reactants:
     Oxopyrol: 
       amount: 1
@@ -153,16 +155,20 @@
   effects:
   - !type:Explosion
     explosionType: Default # 15 damage per intensity.
-    maxIntensity: 200
-    intensityPerUnit: 5
-    intensitySlope: 5
-    maxTotalIntensity: 200
+    maxIntensity: 20
+    intensityPerUnit: 0.025
+    intensitySlope: 100
+    maxTotalIntensity: 20
   - !type:PopupMessage
     messages: [ "clf3-explosion" ]
     type: Pvs
     visualType: LargeCaution
   products:
     Oxoformalizol: 1
+    Ash: 1
+    ChlorineTrifluoride: 0.4
+    Mannitol: 0.3
+    Tricordrazine: 0.3
 
 - type: reaction
   id: Oxoliplatol
