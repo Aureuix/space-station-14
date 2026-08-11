@@ -168,7 +168,7 @@
   parent: BaseChemistryBottleFilled
   components:
   - type: Label
-    currentLabel: reagent-name-aloxadone
+    currentLabel: reagent-name-aloxadone # SpL
   - type: SolutionContainerManager
     solutions:
       drink:
@@ -183,7 +183,7 @@
   parent: BaseChemistryBottleFilled
   components:
   - type: Label
-    currentLabel: reagent-name-ambuzol
+    currentLabel: reagent-name-ambuzol # SpL
   - type: SolutionContainerManager
     solutions:
       drink:
@@ -198,7 +198,7 @@
   parent: BaseChemistryBottleFilled
   components:
   - type: Label
-    currentLabel: reagent-name-ambuzol-plus
+    currentLabel: reagent-name-ambuzol-plus # SpL
   - type: SolutionContainerManager
     solutions:
       drink:
@@ -228,7 +228,7 @@
   parent: BaseChemistryBottleFilled
   components:
   - type: Label
-    currentLabel: reagent-name-barozine
+    currentLabel: reagent-name-barozine # SpL
   - type: SolutionContainerManager
     solutions:
       drink:
@@ -258,7 +258,7 @@
   parent: BaseChemistryBottleFilled
   components:
   - type: Label
-    currentLabel: reagent-name-bruizine
+    currentLabel: reagent-name-bruizine # SpL
   - type: SolutionContainerManager
     solutions:
       drink:
@@ -273,7 +273,7 @@
   parent: BaseChemistryBottleFilled
   components:
   - type: Label
-    currentLabel: reagent-name-cognizine
+    currentLabel: reagent-name-cognizine # SpL
   - type: SolutionContainerManager
     solutions:
       drink:
@@ -648,7 +648,7 @@
   parent: BaseChemistryBottleFilled
   components:
   - type: Label
-    currentLabel: reagent-name-oculine
+    currentLabel: reagent-name-oculine # SpL
   - type: SolutionContainerManager
     solutions:
       drink:
@@ -678,7 +678,7 @@
   parent: BaseChemistryBottleFilled
   components:
   - type: Label
-    currentLabel: reagent-name-opporozidone
+    currentLabel: reagent-name-opporozidone # SpL
   - type: SolutionContainerManager
     solutions:
       drink:

@@ -1,0 +1,11 @@
+﻿- type: listing
+  id: VendorMiningWeaponMiningLaser
+  productEntity: WeaponMiningLaser
+  cost:
+    SalvageTicket: 500
+  categories:
+    - MiningEquipment
+  conditions:
+    - !type:ListingLimitedStockCondition
+      stock: 3
+    - !type:BuyerAccessCondition

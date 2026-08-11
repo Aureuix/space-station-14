@@ -1,0 +1,37 @@
+﻿- type: entity
+  id: DestructionBeamWeak
+  name: mining laser beam
+  parent: BasicHitscanNoBeam
+  categories: [ HideSpawnMenu ]
+  components:
+    - type: HitscanBasicDamage
+      damage:
+        types:
+          Heat: 2
+          Structural: 30
+    - type: HitscanBasicVisuals
+      muzzleFlash:
+        sprite: Objects/Weapons/Guns/Projectiles/projectiles.rsi
+        state: muzzle_u_laser
+      travelFlash:
+        sprite: Objects/Weapons/Guns/Projectiles/projectiles.rsi
+        state: u_laser
+      impactFlash:
+        sprite: Objects/Weapons/Guns/Projectiles/projectiles.rsi
+        state: impact_u_laser
+        
+- type: entity
+  name: magnum structural laser bolt
+  id: BulletLaserDestructionMagnumSL
+  categories: [ HideSpawnMenu ]
+  parent:  EnergyTrace
+  components:
+    - type: HitscanBasicVisuals
+      bullet:
+        sprite:
+          sprite: Objects/Weapons/Guns/Projectiles/projectiles_tg.rsi
+          state: ice
+    - type: HitscanBasicDamage
+      damage:
+        types:
+          Structural: 50

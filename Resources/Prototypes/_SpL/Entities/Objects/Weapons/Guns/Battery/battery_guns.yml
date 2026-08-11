@@ -1,4 +1,36 @@
 ﻿- type: entity
+  name: mining laser
+  parent: [ BaseWeaponBattery, BaseGunWieldable, BaseSalvageMiningContraband ]
+  id: WeaponMiningLaser
+  description: A heavy duty laser weapon designed to drill through solid objects with minimal friendly fire risk. 
+  components:
+    - type: Item
+      size: Huge
+      shape:
+        - 0,0,4,1
+    - type: Sprite
+      sprite: _SpL/Objects/Weapons/Guns/Battery/mininglaser.rsi
+      state: base
+    - type: Battery 
+      maxCharge: 4000
+      startingCharge: 4000
+    - type: Appearance
+    - type: Clothing
+      sprite: _SpL/Objects/Weapons/Guns/Battery/mininglaser.rsi
+    - type: Gun
+      fireRate: 6
+      selectedMode: FullAuto 
+      availableModes:
+        - FullAuto 
+      soundGunshot:
+        path: /Audio/Weapons/Guns/Gunshots/ship_svalinn.ogg
+        params:
+          volume: -4
+    - type: BatteryAmmoProvider
+      proto: DestructionBeamWeak
+      fireCost: 40
+
+- type: entity
   parent: [BaseWeaponBattery, BaseIlluminateContraband, BaseGunWieldable]
   id: WeaponIlluminateBlizzard
   name: AR12 "blizzard"
