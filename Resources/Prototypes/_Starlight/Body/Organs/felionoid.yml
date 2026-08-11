@@ -9,3 +9,10 @@
     layer: Eyes
     prototypes:
       Default: MobFelionoidEyes
+  - type: FunctionalOrgan # SpL Start
+    comps:
+      - type: NightVision
+        disabilityBlockable: true
+        effectPrototype: EffectNightVision
+      - type: FlashModifier
+        modifier: 2 # SpL End
