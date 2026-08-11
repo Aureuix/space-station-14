@@ -6,7 +6,7 @@
   graph: GasUnaryStarlight
   startNode: start
   targetNode: ventpumpAlt1
-  category: construction-category-utilities
+  category: construction-category-atmospherics
   placementMode: AlignAtmosPipeLayers
   canBuildInImpassable: false
   conditions:
@@ -24,7 +24,7 @@
   graph: GasUnaryStarlight
   startNode: start
   targetNode: ventpumpAlt2
-  category: construction-category-utilities
+  category: construction-category-atmospherics
   placementMode: AlignAtmosPipeLayers
   canBuildInImpassable: false
   conditions:
@@ -43,7 +43,7 @@
   graph: GasUnaryStarlight
   startNode: start
   targetNode: passiveventAlt1
-  category: construction-category-utilities
+  category: construction-category-atmospherics
   placementMode: AlignAtmosPipeLayers
   canBuildInImpassable: false
   conditions:
@@ -61,7 +61,7 @@
   graph: GasUnaryStarlight
   startNode: start
   targetNode: passiveventAlt2
-  category: construction-category-utilities
+  category: construction-category-atmospherics
   placementMode: AlignAtmosPipeLayers
   canBuildInImpassable: false
   conditions:
@@ -79,7 +79,7 @@
   graph: GasUnaryStarlight
   startNode: start
   targetNode: ventscrubberAlt1
-  category: construction-category-utilities
+  category: construction-category-atmospherics
   placementMode: AlignAtmosPipeLayers
   canBuildInImpassable: false
   conditions:
@@ -97,7 +97,7 @@
   graph: GasUnaryStarlight
   startNode: start
   targetNode: ventscrubberAlt2
-  category: construction-category-utilities
+  category: construction-category-atmospherics
   placementMode: AlignAtmosPipeLayers
   canBuildInImpassable: false
   conditions:
@@ -115,7 +115,7 @@
   graph: GasUnaryStarlight
   startNode: start
   targetNode: outletinjectorAlt1
-  category: construction-category-utilities
+  category: construction-category-atmospherics
   placementMode: AlignAtmosPipeLayers
   canBuildInImpassable: false
   conditions:
@@ -133,7 +133,7 @@
   graph: GasUnaryStarlight
   startNode: start
   targetNode: outletinjectorAlt2
-  category: construction-category-utilities
+  category: construction-category-atmospherics
   placementMode: AlignAtmosPipeLayers
   canBuildInImpassable: false
   conditions:
@@ -153,7 +153,7 @@
   graph: GasBinaryStarlight
   startNode: start
   targetNode: portAlt1
-  category: construction-category-utilities
+  category: construction-category-atmospherics
   placementMode: AlignAtmosPipeLayers
   canBuildInImpassable: false
   conditions:
@@ -171,7 +171,7 @@
   graph: GasBinaryStarlight
   startNode: start
   targetNode: portAlt2
-  category: construction-category-utilities
+  category: construction-category-atmospherics
   placementMode: AlignAtmosPipeLayers
   canBuildInImpassable: false
   conditions:
@@ -189,7 +189,7 @@
   graph: GasBinaryStarlight
   startNode: start
   targetNode: dualportventpumpAlt1
-  category: construction-category-utilities
+  category: construction-category-atmospherics
   placementMode: AlignAtmosPipeLayers
   canBuildInImpassable: false
   conditions:
@@ -207,7 +207,7 @@
   graph: GasBinaryStarlight
   startNode: start
   targetNode: dualportventpumpAlt2
-  category: construction-category-utilities
+  category: construction-category-atmospherics
   placementMode: AlignAtmosPipeLayers
   canBuildInImpassable: false
   conditions:
@@ -227,7 +227,7 @@
   graph: GasTrinaryStarlight
   startNode: start
   targetNode: inline_filter
-  category: construction-category-utilities
+  category: construction-category-atmospherics
   placementMode: AlignAtmosPipeLayers
   canBuildInImpassable: false
   conditions:
@@ -247,7 +247,7 @@
   graph: GasTrinaryStarlight
   startNode: start
   targetNode: inline_filterAlt1
-  category: construction-category-utilities
+  category: construction-category-atmospherics
   placementMode: AlignAtmosPipeLayers
   canBuildInImpassable: false
   conditions:
@@ -267,7 +267,7 @@
   graph: GasTrinaryStarlight
   startNode: start
   targetNode: inline_filterAlt2
-  category: construction-category-utilities
+  category: construction-category-atmospherics
   placementMode: AlignAtmosPipeLayers
   canBuildInImpassable: false
   conditions:
@@ -287,7 +287,7 @@
   graph: GasTrinaryStarlight
   startNode: start
   targetNode: inline_filterAlt3
-  category: construction-category-utilities
+  category: construction-category-atmospherics
   placementMode: AlignAtmosPipeLayers
   canBuildInImpassable: false
   conditions:
@@ -307,7 +307,7 @@
   graph: GasTrinaryStarlight
   startNode: start
   targetNode: inline_filterAlt4
-  category: construction-category-utilities
+  category: construction-category-atmospherics
   placementMode: AlignAtmosPipeLayers
   canBuildInImpassable: false
   conditions:
@@ -325,7 +325,7 @@
   graph: GasTrinaryStarlight
   startNode: start
   targetNode: filterAlt1
-  category: construction-category-utilities
+  category: construction-category-atmospherics
   placementMode: AlignAtmosPipeLayers
   canBuildInImpassable: false
   mirror: GasFilterFlippedAlt1
@@ -344,7 +344,7 @@
   graph: GasTrinaryStarlight
   startNode: start
   targetNode: filterAlt2
-  category: construction-category-utilities
+  category: construction-category-atmospherics
   placementMode: AlignAtmosPipeLayers
   canBuildInImpassable: false
   mirror: GasFilterFlippedAlt2
@@ -363,7 +363,7 @@
   graph: GasTrinaryStarlight
   startNode: start
   targetNode: filterflippedAlt1
-  category: construction-category-utilities
+  category: construction-category-atmospherics
   placementMode: AlignAtmosPipeLayers
   canBuildInImpassable: false
   mirror: GasFilterAlt1
@@ -382,7 +382,7 @@
   graph: GasTrinaryStarlight
   startNode: start
   targetNode: filterflippedAlt2
-  category: construction-category-utilities
+  category: construction-category-atmospherics
   placementMode: AlignAtmosPipeLayers
   canBuildInImpassable: false
   mirror: GasFilterAlt2
@@ -401,7 +401,7 @@
   graph: GasTrinaryStarlight
   startNode: start
   targetNode: mixerAlt1
-  category: construction-category-utilities
+  category: construction-category-atmospherics
   placementMode: AlignAtmosPipeLayers
   canBuildInImpassable: false
   mirror: GasMixerFlippedAlt1
@@ -420,7 +420,7 @@
   graph: GasTrinaryStarlight
   startNode: start
   targetNode: mixerAlt2
-  category: construction-category-utilities
+  category: construction-category-atmospherics
   placementMode: AlignAtmosPipeLayers
   canBuildInImpassable: false
   mirror: GasMixerFlippedAlt2
@@ -439,7 +439,7 @@
   graph: GasTrinaryStarlight
   startNode: start
   targetNode: mixerflippedAlt1
-  category: construction-category-utilities
+  category: construction-category-atmospherics
   placementMode: AlignAtmosPipeLayers
   canBuildInImpassable: false
   mirror: GasMixerAlt1
@@ -458,7 +458,7 @@
   graph: GasTrinaryStarlight
   startNode: start
   targetNode: mixerflippedAlt2
-  category: construction-category-utilities
+  category: construction-category-atmospherics
   placementMode: AlignAtmosPipeLayers
   canBuildInImpassable: false
   mirror: GasMixerAlt2
@@ -477,7 +477,7 @@
   graph: GasTrinaryStarlight
   startNode: start
   targetNode: pneumaticvalveAlt1
-  category: construction-category-utilities
+  category: construction-category-atmospherics
   placementMode: AlignAtmosPipeLayers
   canBuildInImpassable: false
   conditions:
@@ -495,7 +495,7 @@
   graph: GasTrinaryStarlight
   startNode: start
   targetNode: pneumaticvalveAlt2
-  category: construction-category-utilities
+  category: construction-category-atmospherics
   placementMode: AlignAtmosPipeLayers
   canBuildInImpassable: false
   conditions:
@@ -513,7 +513,7 @@
   graph: GasTrinaryStarlight
   startNode: start
   targetNode: molarmixerAlt1
-  category: construction-category-utilities
+  category: construction-category-atmospherics
   placementMode: AlignAtmosPipeLayers
   canBuildInImpassable: false
   mirror: GasMolarMixerFlippedAlt1
@@ -532,7 +532,7 @@
   graph: GasTrinaryStarlight
   startNode: start
   targetNode: molarmixerAlt2
-  category: construction-category-utilities
+  category: construction-category-atmospherics
   placementMode: AlignAtmosPipeLayers
   canBuildInImpassable: false
   mirror: GasMolarMixerFlippedAlt2
@@ -551,7 +551,7 @@
   graph: GasTrinaryStarlight
   startNode: start
   targetNode: molarmixerAlt3
-  category: construction-category-utilities
+  category: construction-category-atmospherics
   placementMode: AlignAtmosPipeLayers
   canBuildInImpassable: false
   mirror: GasMolarMixerFlippedAlt3
@@ -570,7 +570,7 @@
   graph: GasTrinaryStarlight
   startNode: start
   targetNode: molarmixerAlt4
-  category: construction-category-utilities
+  category: construction-category-atmospherics
   placementMode: AlignAtmosPipeLayers
   canBuildInImpassable: false
   mirror: GasMolarMixerFlippedAlt4
@@ -589,7 +589,7 @@
   graph: GasTrinaryStarlight
   startNode: start
   targetNode: molarmixerflippedAlt1
-  category: construction-category-utilities
+  category: construction-category-atmospherics
   placementMode: AlignAtmosPipeLayers
   canBuildInImpassable: false
   mirror: GasMolarMixerAlt1
@@ -608,7 +608,7 @@
   graph: GasTrinaryStarlight
   startNode: start
   targetNode: molarmixerflippedAlt2
-  category: construction-category-utilities
+  category: construction-category-atmospherics
   placementMode: AlignAtmosPipeLayers
   canBuildInImpassable: false
   mirror: GasMolarMixerAlt2
@@ -627,7 +627,7 @@
   graph: GasTrinary
   startNode: start
   targetNode: molarmixerflippedAlt3
-  category: construction-category-utilities
+  category: construction-category-atmospherics
   placementMode: AlignAtmosPipeLayers
   canBuildInImpassable: false
   mirror: GasMolarMixerAlt3
@@ -646,7 +646,7 @@
   graph: GasTrinary
   startNode: start
   targetNode: molarmixerflippedAlt4
-  category: construction-category-utilities
+  category: construction-category-atmospherics
   placementMode: AlignAtmosPipeLayers
   canBuildInImpassable: false
   mirror: GasMolarMixerAlt4
@@ -667,7 +667,7 @@
   graph: GasPipeSubfloorTank
   startNode: start
   targetNode: tank
-  category: construction-category-utilities
+  category: construction-category-atmospherics
   placementMode: AlignAtmosPipeLayers
   canBuildInImpassable: false
   conditions:
@@ -685,7 +685,7 @@
   graph: GasPipeSubfloorTank
   startNode: start
   targetNode: tankAlt1
-  category: construction-category-utilities
+  category: construction-category-atmospherics
   placementMode: AlignAtmosPipeLayers
   canBuildInImpassable: false
   conditions:
@@ -703,7 +703,7 @@
   graph: GasPipeSubfloorTank
   startNode: start
   targetNode: tankAlt2
-  category: construction-category-utilities
+  category: construction-category-atmospherics
   placementMode: AlignAtmosPipeLayers
   canBuildInImpassable: false
   conditions:
@@ -721,7 +721,7 @@
   graph: GasPipeSubfloorTank
   startNode: start
   targetNode: tankAlt3
-  category: construction-category-utilities
+  category: construction-category-atmospherics
   placementMode: AlignAtmosPipeLayers
   canBuildInImpassable: false
   conditions:
@@ -739,7 +739,7 @@
   graph: GasPipeSubfloorTank
   startNode: start
   targetNode: tankAlt4
-  category: construction-category-utilities
+  category: construction-category-atmospherics
   placementMode: AlignAtmosPipeLayers
   canBuildInImpassable: false
   conditions:
