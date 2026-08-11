@@ -205,7 +205,8 @@
     - /Audio/Ambience/spookyspace2.ogg
     - /Audio/Ambience/ambispace2.ogg
     - /Audio/Lobby/title2.ogg
-    - /Audio/_SpL/twinkling_lights.ogg
+    - /Audio/_SpL/twinkling_lights.ogg # SpL
+    - /Audio/_SpL/celestial_equinox.ogg # SpL
 
 - type: soundCollection
   id: AmbienceSpooky

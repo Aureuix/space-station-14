@@ -1,6 +1,6 @@
 ﻿#Long coat
 - type: entity
-  parent: ClothingOuterStorageFoldableBase
+  parent: [ ClothingOuterStorageFoldableBase, AllowSuitStorageClothing ] # SpL
   id: ClothingOuterCoatLabLong
   name: long lab coat
   description: A NanoTrasen standard labcoat for medical personnel but long.
@@ -21,7 +21,7 @@
 
 #Chemist long coat
 - type: entity
-  parent: ClothingOuterStorageFoldableBase
+  parent: [ ClothingOuterStorageFoldableBase, AllowSuitStorageClothing ] # SpL
   id: ClothingOuterCoatLabChemistLong
   name: long chemist lab coat
   description: A NanoTrasen standard labcoat for medical personnel but long with bright orange accents.
@@ -42,7 +42,7 @@
 
 #CMO long coat
 - type: entity
-  parent: ClothingOuterStorageFoldableBase
+  parent: [ ClothingOuterStorageFoldableBase, AllowSuitStorageClothing ] # SpL
   id: ClothingOuterCoatLabCmoLong
   name: long chief medical officer lab coat
   description: A NanoTrasen blue long lab coat with green accents, designed for chief medical officers.
@@ -63,7 +63,7 @@
 
 #Geneticist long coat
 - type: entity
-  parent: ClothingOuterStorageFoldableBase
+  parent: [ ClothingOuterStorageFoldableBase, AllowSuitStorageClothing ] # SpL
   id: ClothingOuterCoatLabGeneLong
   name: long geneticist lab coat
   description: A NanoTrasen standard labcoat for medical personnel but long with light blue accents.
@@ -84,7 +84,7 @@
 
 #Paramedic jacket
 - type: entity
-  parent: ClothingOuterStorageFoldableBase
+  parent: [ ClothingOuterStorageFoldableBase, AllowSuitStorageClothing ] # SpL
   id: ClothingOuterCoatParamedicJacket
   name: paramedic jacket
   description: A stylish dark blue jacket decorated with white stripes and cross. Nine out of ten paramedics recommend "Do Not Revive".
@@ -99,7 +99,7 @@
 
 #Rugged duster
 - type: entity
-  parent: ClothingOuterStorageBase
+  parent: [ ClothingOuterStorageBase, AllowSuitStorageClothing ] # SpL
   id: ClothingOuterCoatDuster
   name: rugged duster
   description: A rugged duster with a bandana scarf made for keeping off the ash and dust. Not much of that up in space though.

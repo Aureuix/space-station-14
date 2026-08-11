@@ -1,0 +1,9 @@
+﻿- type: listing
+  id: VendorSalvageWeaponRifleM18
+  productEntity: WeaponRifleM18
+  cost:
+    SalvageTicket: 500
+  categories:
+    - SalvageWeapons
+  conditions:
+    - !type:BuyerAccessCondition
