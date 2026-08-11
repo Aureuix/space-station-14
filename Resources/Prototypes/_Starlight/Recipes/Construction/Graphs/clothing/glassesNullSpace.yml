@@ -21,10 +21,10 @@
           - material: BluespaceCrystal
             amount: 10
             doAfter: 10
-          - tag: ShadekinEyes
-            name: construction-graph-tag-shadekin-eye
-            icon:
-              sprite: _Starlight/Mobs/Species/Shadekin/organs.rsi
-              state: eyes
+#          - tag: ShadekinEyes
+#            name: construction-graph-tag-shadekin-eye
+#            icon:
+#              sprite: _Starlight/Mobs/Species/Shadekin/organs.rsi
+#              state: eyes # SpL- this isn't really fun.
     - node: glasses
       entity: ClothingEyesGlassesNullSpace

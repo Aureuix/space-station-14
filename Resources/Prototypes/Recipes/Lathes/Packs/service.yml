@@ -53,6 +53,7 @@
   - ClothingBackpackWaterTank
   - MegaSprayBottle
   - Hydra # Starlight
+  - TrashBagBlue # SpL
 
 - type: latheRecipePack
   id: Instruments

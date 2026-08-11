@@ -4,6 +4,24 @@
   name: pyro pod
   description: A modified cryo pod intended for much higher operation temperatures.
   components:
+  - type: Sprite
+    sprite: _SpL/Structures/Machines/Medical/pyropod.rsi
+    drawdepth: Mobs
+    noRot: true
+    offset: 0, 0.5
+    layers:
+      - sprite: _Carpmosia/Structures/Piping/Atmospherics/pipe.rsi # Carpmosia-edit - 5 pipe layers
+        state: pipeHalf
+        offset: 0, -0.5
+        map: [ "enum.PipeVisualLayers.Pipe" ]
+      - state: pod-open
+        map: [ "enum.CryoPodVisualLayers.Base" ]
+      - state: cover-on
+        map: [ "enum.CryoPodVisualLayers.Cover" ]
+        visible: false
+      - state: pod-panel
+        map: [ "enum.WiresVisualLayers.MaintenancePanel" ]
+        visible: false
   - type: Wires
     boardName: wires-board-name-cryopod
     layoutId: CryoPod

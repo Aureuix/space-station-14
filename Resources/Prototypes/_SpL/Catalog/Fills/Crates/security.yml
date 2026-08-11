@@ -1,0 +1,11 @@
+﻿- type: entity
+  parent: CrateSecgear
+  id: CratePacifismImplant
+  name: pacifism implant crate
+  description: A crate with a single pacifism implanter.
+  components:
+    - type: EntityTableContainerFill
+      containers:
+        entity_storage:
+          id: PacifismImplanter
+          amount: 1
