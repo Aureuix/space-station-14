@@ -1,0 +1,11 @@
+﻿- type: entity
+  parent: CrateMedicalSecure
+  id: CrateVitalsImplants
+  name: vitals implants
+  description: A crate with five vitals implanters, for high-risk crewmembers.
+  components:
+    - type: EntityTableContainerFill
+      containers:
+        entity_storage:
+          id: MedicalVitalsImplanter
+          amount: 5

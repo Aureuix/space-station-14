@@ -1,0 +1,9 @@
+﻿- type: cargoProduct
+  id: SecurityPacifismImplant
+  icon:
+    sprite: Objects/Specific/Medical/implanter.rsi
+    state: implanter0
+  product: CratePacifismImplant
+  cost: 2500
+  category: cargoproduct-category-name-security
+  group: market

@@ -26,3 +26,14 @@
   components:
     - type: MindShieldImplant
       mindShieldStatusIcon: SyndicateMindShieldIcon
+      
+- type: entity
+  parent: BaseSubdermalImplant
+  id: PacifismImplant
+  name: pacifism implant
+  description: This implant prevents the user from causing harm to others.
+  categories: [ HideSpawnMenu ]
+  components:
+    - type: SubdermalImplant
+      implantComponents:
+        - type: Pacified
