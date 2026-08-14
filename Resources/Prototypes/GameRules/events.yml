@@ -547,7 +547,9 @@
   - type: VentCrittersRule
     entries:
     - id: MobGiantSpiderAngry
-      prob: 0.08 # SpL- increased probability
+      prob: 0.06 # SpL- increased probability
+    - id: MobSpiderSpace # SpL
+      prob: 0.03 # SpL
 
 - type: entity
   id: SpiderClownSpawn
