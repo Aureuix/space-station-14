@@ -1,4 +1,26 @@
 ﻿- type: entity
+  id: BedsheetWarden
+  parent: BedsheetBase
+  name: warden bedsheet
+  description: Under which wardens dream of filing DNRs and blasting tiders' heads off.
+  components:
+    - type: Sprite
+      state: sheetwarden
+    - type: Clothing
+      sprite: _SpL/Clothing/Neck/Bedsheets/illuminate.rsi
+      
+- type: entity
+  id: BedsheetDetective
+  parent: BedsheetBase
+  name: detective bedsheet
+  description: Smells faintly of tobacco and gin.
+  components:
+    - type: Sprite
+      state: sheetedet
+    - type: Clothing
+      sprite: _SpL/Clothing/Neck/Bedsheets/illuminate.rsi
+
+- type: entity
   id: BedsheetIlluminate
   parent: BedsheetBase
   name: illuminate bedsheet
