@@ -27748,7 +27748,7 @@ entities:
           showEnts: False
           occludes: True
           ent: null
-- proto: ComputerShuttleSalvage
+- proto: CompuerShuttleSalvage
   entities:
   - uid: 4403
     components:
