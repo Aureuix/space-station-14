@@ -1,7 +1,7 @@
 ﻿- type: entity
   id: BedsheetWarden
   parent: BedsheetBase
-  name: warden bedsheet
+  name: warden's bedsheet
   description: Under which wardens dream of filing DNRs and blasting tiders' heads off.
   components:
     - type: Sprite
@@ -12,7 +12,7 @@
 - type: entity
   id: BedsheetDetective
   parent: BedsheetBase
-  name: detective bedsheet
+  name: detective's bedsheet
   description: Smells faintly of tobacco and gin.
   components:
     - type: Sprite
