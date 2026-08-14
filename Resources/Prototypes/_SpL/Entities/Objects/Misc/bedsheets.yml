@@ -16,7 +16,7 @@
   description: Smells faintly of tobacco and gin.
   components:
     - type: Sprite
-      state: sheetedet
+      state: sheetdet
     - type: Clothing
       sprite: _SpL/Clothing/Neck/Bedsheets/illuminate.rsi
 
