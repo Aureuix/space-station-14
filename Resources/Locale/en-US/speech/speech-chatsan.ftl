@@ -19,9 +19,6 @@ chatsan-replacement-6 = the fuck
 chatsan-word-7 = afaik
 chatsan-replacement-7 = as far as i know
 
-chatsan-word-8 = ik
-chatsan-replacement-8 = i know
-
 chatsan-word-9 = ikr
 chatsan-replacement-9 = i know, right
 
@@ -102,9 +99,6 @@ chatsan-replacement-36 = get the fuck out
 chatsan-word-37 = wdym
 chatsan-replacement-37 = what do you mean
 
-chatsan-word-38 = mf
-chatsan-replacement-38 = motherfucker
-
 chatsan-word-39 = etc
 chatsan-word-40 = etc.
 chatsan-replacement-etcetera = etcetera
@@ -144,9 +138,6 @@ chatsan-replacement-52 = don't worry
 
 chatsan-word-53 = wru
 chatsan-replacement-53 = where are you
-
-chatsan-word-54 = fs
-chatsan-replacement-54 = for sure
 
 chatsan-word-55 = ngl
 chatsan-replacement-55 = not gonna lie

@@ -447,7 +447,7 @@
     chatsan-word-5: chatsan-replacement-5
     chatsan-word-6: chatsan-replacement-6
     chatsan-word-7: chatsan-replacement-7
-    chatsan-word-8: chatsan-replacement-8
+    # chatsan-word-8: chatsan-replacement-8
     chatsan-word-9: chatsan-replacement-9
     chatsan-word-10: chatsan-replacement-10
     chatsan-word-11: chatsan-replacement-11
@@ -477,7 +477,7 @@
     chatsan-word-35: chatsan-replacement-35
     chatsan-word-36: chatsan-replacement-36
     chatsan-word-37: chatsan-replacement-37
-    chatsan-word-38: chatsan-replacement-38
+    # chatsan-word-38: chatsan-replacement-38
     chatsan-word-39: chatsan-replacement-etcetera
     chatsan-word-40: chatsan-replacement-etcetera
     chatsan-word-41: chatsan-replacement-41
@@ -492,7 +492,7 @@
     chatsan-word-51: chatsan-replacement-51
     chatsan-word-52: chatsan-replacement-52
     chatsan-word-53: chatsan-replacement-53
-    chatsan-word-54: chatsan-replacement-54
+    # chatsan-word-54: chatsan-replacement-54
     chatsan-word-55: chatsan-replacement-55
     chatsan-word-56: chatsan-replacement-56
     chatsan-word-57: chatsan-replacement-57
@@ -665,7 +665,6 @@
     accent-russian-word-9-2: accent-russian-words-replace-9
     accent-russian-word-9-3: accent-russian-words-replace-9
     accent-russian-word-10: accent-russian-words-replace-10
-    accent-russian-word-10-2: accent-russian-words-replace-10
     accent-russian-word-11: accent-russian-words-replace-11
     accent-russian-word-11-2: accent-russian-words-replace-11
     accent-russian-word-12: accent-russian-words-replace-12

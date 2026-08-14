@@ -107,7 +107,7 @@
     - type: SolutionContainerManager
       solutions:
         pen:
-          maxVol: 40
+          maxVol: 20
           reagents:
             - ReagentId: Scorizine
               Quantity: 10

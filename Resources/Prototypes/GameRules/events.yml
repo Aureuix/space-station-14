@@ -28,7 +28,7 @@
     #- id: PsychicScreach # SpL- Removing this shit for the 3rd time. Not retyping. Fuck github
     #- id: SecurityDrill 
     #- id: DoorRuntime 
-    - id: RadStorm 
+    #- id: RadStorm 
     - id: AuroraCaelus 
     - id: SpaceWhale 
     - id: CommunicationBlackout 
@@ -36,6 +36,8 @@
     - id: SyndicateDeadDrop
     # Starlight End
     - id: Blackout # SpL
+    - id: SpaceTickSpawn # SpL
+    - id: AngryBeesSpawn # SpL
 
 - type: entityTable
   id: BasicAntagEventsTable
@@ -159,7 +161,7 @@
   components:
   - type: StationEvent
     globalAnnouncement: false # Starlight
-    weight: 7
+    weight: 5 # SpL- reduced weight
     duration: 1
     minimumPlayers: 15
   - type: BreakerFlipRule
@@ -547,7 +549,9 @@
   - type: VentCrittersRule
     entries:
     - id: MobGiantSpiderAngry
-      prob: 0.08 # SpL- increased probability
+      prob: 0.06 # SpL- increased probability
+    - id: MobSpiderSpace # SpL
+      prob: 0.03 # SpL
 
 - type: entity
   id: SpiderClownSpawn
@@ -713,7 +717,7 @@
   components:
   - type: StationEvent
     globalAnnouncement: false # Starlight
-    weight: 10 # SpL- increased. Ion storms are fun.
+    weight: 15 # SpL- increased. Ion storms are fun.
     reoccurrenceDelay: 10 # SpL- reduced. Ion storms are fun.
     duration: 1
   - type: IonStormRule

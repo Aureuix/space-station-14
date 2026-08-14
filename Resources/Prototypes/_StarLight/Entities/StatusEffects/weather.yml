@@ -20,7 +20,7 @@
         ignoreResistances: false
         damage:
           types:
-            Radiation: 0.25 # SpL
+            Radiation: 1.5 # SpL
 
 - type: entity
   parent: WeatherBase
@@ -36,20 +36,22 @@
         path: /Audio/_Starlight/Effects/Weather/blobalarm.ogg
         params:
           loop: true
-          volume: -10
+          volume: -16 # SpL
     - type: WeatherEffects
     - type: WeatherEntityEffect
       effects:
-      - !type:Flash
+      #- !type:Flash # SpL
       - !type:Flammable
-        multiplier: 1.75 # SpL
-        multiplierOnExisting: 0.75
+        multiplier: 3 # SpL
+        multiplierOnExisting: 0.5
       - !type:Ignite
       - !type:HealthChange
         ignoreResistances: false
         damage:
           types:
-            Heat: 0.25 # SpL
+            Heat: 1 # SpL
+      - !type:AdjustTemperature # SpL
+        amount: 5500 # SpL
 
 - type: entity
   parent: WeatherBase

@@ -33,8 +33,7 @@ accent-russian-word-9-2 = it is
 accent-russian-word-9-3 = it's
 accent-russian-words-replace-9 = is
 
-accent-russian-word-10 = cap
-accent-russian-word-10-2 = captain
+accent-russian-word-10 = captain
 accent-russian-words-replace-10 = komandír
 
 accent-russian-word-11 = thanks
