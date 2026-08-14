@@ -448,6 +448,7 @@ public sealed class ScentSystem : SharedScentSystem
         markerComp.ExpiresAt = _timing.CurTime + decayTime;
         markerComp.TotalDuration = decayTime;
         markerComp.WasContained = IsContained(xform);
+        markerComp.WasDead = MobState.IsDead(uid);
         Dirty(marker, markerComp);
 
         var despawn = Comp<TimedDespawnComponent>(marker);
@@ -496,6 +497,7 @@ public sealed class ScentSystem : SharedScentSystem
         marker.ExpiresAt = _timing.CurTime + decayTime;
         marker.TotalDuration = decayTime;
         marker.WasContained = IsContained(xform);
+        marker.WasDead = MobState.IsDead(uid);
         Dirty(tail, marker);
 
         if (TryComp<TimedDespawnComponent>(tail, out var despawn))
