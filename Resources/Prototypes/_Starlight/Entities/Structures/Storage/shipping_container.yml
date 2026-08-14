@@ -308,7 +308,7 @@
   parent: BaseShippingContainer
   id: ShippingContainerShamblers
   name: shipping container
-  description: Reinforced steel frames meant to transport Shamblers beverages. Its sticky and smells like grapes and sugar.
+  description: Reinforced steel frames meant to transport Shamblers beverages. It's sticky and smells like grapes and sugar.
   components:
   - type: Sprite
     sprite: _Starlight/Structures/Storage/shipping_container.rsi
@@ -318,7 +318,7 @@
   parent: BaseShippingContainer
   id: ShippingContainerStarkist
   name: shipping container
-  description: Reinforced steel frames meant to transport Starkist beverages. Its sticky and smells like citrus and sugar.
+  description: Reinforced steel frames meant to transport Starkist beverages. It's sticky and smells like citrus and sugar.
   components:
   - type: Sprite
     sprite: _Starlight/Structures/Storage/shipping_container.rsi
