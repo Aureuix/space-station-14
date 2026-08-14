@@ -478,12 +478,12 @@
   - SecurityBackpack
   - SecurityBelt
   - SecurityNonLethalWeapon #Starlight
+  - HeadofSecuritySidearm # SpL
   - HeadofSecurityOuterClothing
   - SecurityEyewear
   - SecurityShoes
   - SurvivalExtended # Starlight, since they can pick their mask now, they shouldn't get an extra security mask.
   - InsulsCombat # Starlight
-  - HeadofSecuritySidearm # SpL
   - Trinkets
   - Scarves # Starlight
   - Pins # Starlight

@@ -1,1 +1,1 @@
-﻿loadout-group-hos-sidearm = Head of Security's Sidearm
+﻿loadout-group-hos-sidearm = Head of Security Sidearm
