@@ -104,7 +104,8 @@
   - type: Barotrauma
     damage:
       types:
-        Blunt: 1 #per second, scales with pressure and other constants. FH - Slime takes increased blunt due to heat removal, which was higher than standard.
+        Blunt: 2 #per second, scales with pressure and other constants. FH - Slime takes increased blunt due to heat removal, which was higher than standard.
+        Asphyxiation: 0.5 # SpL- to match with other barotrauma. still better than most other crew due to their recovery potential
 # FH - Removal
   - type: Reactive
     groups:

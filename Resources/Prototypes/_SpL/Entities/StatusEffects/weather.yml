@@ -16,7 +16,7 @@
     effects:
     - !type:Flash
     - !type:Flammable
-      multiplier: 3.75
+      multiplier: 1 # SpL
       multiplierOnExisting: 0.75
     - !type:Ignite
     - !type:HealthChange
