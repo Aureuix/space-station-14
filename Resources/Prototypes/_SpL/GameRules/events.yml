@@ -31,5 +31,5 @@
       duration: 60
     - type: VentCrittersRule
       entries:
-        - id: MobAngrybee
+        - id: MobAngryBee
           prob: 0.1 
