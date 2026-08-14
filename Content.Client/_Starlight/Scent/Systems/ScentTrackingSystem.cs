@@ -124,7 +124,7 @@ public sealed class ScentTrackingSystem : EntitySystem
             return;
 
         var visible = !IsPerceptionBlocked(smeller) &&
-                      !(smeller.Perception == ScentPerception.Partial && ent.Comp.WasContained) &&
+                      !(smeller.Perception == ScentPerception.Partial && ent.Comp.WasContained && !ent.Comp.WasDead) &&
                       !(smeller.Perception == ScentPerception.Partial && IsOutsideOwnEnclosure(ent, enclosure)) &&
                       (smeller.TrackedScentId == null || ent.Comp.ScentId == smeller.TrackedScentId);
         _sprite.SetVisible((ent.Owner, sprite), visible);

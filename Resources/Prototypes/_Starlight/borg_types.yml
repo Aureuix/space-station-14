@@ -150,6 +150,7 @@
   defaultModules:
   - BorgModuleTool
   - BorgModulePaperwork
+  - BorgModulePaperworkPrinting
 
   radioChannels:
   - Common
