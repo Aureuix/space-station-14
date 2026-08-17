@@ -1,0 +1,1 @@
+﻿appraise-all-program-name = AppraiseAll

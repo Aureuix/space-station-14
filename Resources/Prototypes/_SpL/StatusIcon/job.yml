@@ -5,3 +5,11 @@
     sprite: /Textures/_SpL/Interface/Misc/job_icons.rsi
     state: illuminate
   jobName: job-name-illuminate
+  
+- type: jobIcon
+  parent: JobIcon
+  id: JobIconGSLTech
+  icon:
+    sprite: /Textures/_SpL/Interface/Misc/job_icons.rsi
+    state: gsltech
+  jobName: job-name-gsl-tech

@@ -1,0 +1,16 @@
+﻿- type: entity
+  parent: [ClothingEyesBase, BaseGSLOwnedContraband]
+  id: ClothingEyesGlassesGSL
+  name: GSL technical infoshades
+  description: Anti-fraud glasses with NanoTrasen employee identification elements inbuilt. Developed as a joint NT-GSL venture following a string of recent trade incidents in the sector.
+  components:
+    - type: Sprite
+      sprite: _Starlight/Admeme/Clothing/Eyes/Glasses/ntnc.rsi
+    - type: Clothing
+      sprite: _Starlight/Admeme/Clothing/Eyes/Glasses/ntnc.rsi
+    - type: FlashImmunity
+    - type: EyeProtection
+      protectionTime: 5
+    - type: ShowJobIcons
+    - type: IdentityBlocker
+      coverage: EYES

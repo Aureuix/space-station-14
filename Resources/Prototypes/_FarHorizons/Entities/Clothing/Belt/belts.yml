@@ -21,7 +21,7 @@
           #        - GeigerCounter Starlight start
           #        - Flare
           #        - CableCoil
-          #        - Powerdrill # They only get to carry simple tools, they shouldn't be using this as free toolbelt
+          - Powerdrill # They only get to carry simple tools, they shouldn't be using this as free toolbelt # SpL- why not a power drill exactly?
           #        - JawsOfLife # Starlight end
           - CigPack
           - Radio

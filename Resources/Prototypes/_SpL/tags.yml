@@ -26,3 +26,9 @@
   
 - type: Tag
   id: CartridgeFlechette
+  
+- type: Tag
+  id: Illuminate
+  
+- type: Tag
+  id: GSL

@@ -1,0 +1,31 @@
+﻿- type: entity
+  id: IntercomGSL
+  parent: [ Intercom, BaseGSLOwnedContraband ]
+  suffix: GSL
+  components:
+    - type: Sprite
+      noRot: false
+      drawdepth: SmallObjects
+      sprite: _SpL/Structures/Wallmounts/intercom.rsi
+      layers:
+        - state: base
+        - state: unshaded
+          map: [ "enum.PowerDeviceVisualLayers.Powered" ]
+          shader: unshaded
+        - state: broadcasting
+          map: [ "enum.RadioDeviceVisualLayers.Broadcasting" ]
+          shader: unshaded
+          visible: false
+        - state: speaker
+          map: [ "enum.RadioDeviceVisualLayers.Speaker" ]
+          shader: unshaded
+          visible: false
+        - state: panel
+          map: [ "enum.WiresVisualLayers.MaintenancePanel" ]
+          visible: false
+    - type: ContainerFill
+      containers:
+        board:
+          - IntercomElectronics
+        key_slots:
+          - EncryptionKeyGSL

@@ -1,0 +1,63 @@
+﻿- type: job
+  id: GSLTechnician
+  name: job-name-gsl-tech
+  description: job-description-gsl-tech
+  playTimeTracker: JobGSLTechnician
+  setPreferences: false
+  rules: job-rules-gsl-aligned
+  startingGear: GSLTechnicianCargo
+  icon: "JobIconGSLTech"
+  supervisors: job-supervisors-gsl
+  access:
+    - GSL
+
+
+- type: startingGear
+  id: GSLTechnicianCargo
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitCargoFormal
+    back: ClothingBackpackSatchelCargoSenior
+    head: ClothingHeadHatCargoFormalsoft
+    eyes: ClothingEyesGlassesGSL
+    gloves: ClothingHandsGlovesFingerless
+    shoes: ClothingShoesBootsWinterSeniorCourier
+    id: GSLTechPDA 
+    ears: ClothingHeadsetAltGSL 
+    belt: ClothingBeltCargoFilledGSL
+    pocket1: WeaponLaserSvalinn
+    pocket2: DoorRemoteCargoGSL
+  storage:
+    back:
+      - BoxSurvivalMilitaryDouble
+      - PowerCellSmall
+      - PowerCellSmall
+      - ClothingMaskBreath
+      - CigPackRed
+      - WaffleCoFlippo
+      - SpaceCash1000
+      - NTCredit100
+
+- type: startingGear
+  id: GSLTechnicianMail
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitSeniorMail
+    back: ClothingBackpackSatchelCargoSenior
+    head: ClothingHeadHatMailsoftVisorSeniorFlipped
+    eyes: ClothingEyesGlassesGSL
+    gloves: ClothingHandsGlovesFingerless
+    shoes: ClothingShoesBootsSeniorMail
+    id: GSLTechPDA 
+    ears: ClothingHeadsetAltGSL 
+    belt: ClothingBeltCargoFilledGSL
+    pocket1: WeaponLaserSvalinn
+    pocket2: DoorRemoteCargoGSL
+  storage:
+    back:
+      - BoxSurvivalMilitaryDouble
+      - PowerCellSmall
+      - PowerCellSmall
+      - ClothingMaskBreath
+      - CigPackRed
+      - WaffleCoFlippo
+      - SpaceCash1000
+      - NTCredit100
