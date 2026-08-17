@@ -2,11 +2,12 @@
   id: IntercomGSL
   parent: [ Intercom, BaseGSLOwnedContraband ]
   suffix: GSL
+  description: An intercom. For when you really need the ATS technician to know something.
   components:
     - type: Sprite
       noRot: false
       drawdepth: SmallObjects
-      sprite: _SpL/Structures/Wallmounts/intercom.rsi
+      sprite: _SpL/Structures/Wallmounts/gslintercom.rsi
       layers:
         - state: base
         - state: unshaded

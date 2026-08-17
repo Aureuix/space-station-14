@@ -13,3 +13,32 @@
   - type: Sprite
     sprite: _SpL/Misc/stamps.rsi
     state: stamp-illuminate
+    
+- type: entity
+  name: Gemini Stellar Logistics rubber stamp
+  parent: [ RubberStampBase, BaseGSLOwnedContraband ]
+  id: RubberStampGSL
+  description: "An old-fashioned stamp for stamping important documents."
+  suffix: DO NOT MAP
+  components:
+    - type: Stamp
+      stampedName: Gemini Stellar Logistics
+      stampedColor: "#000000"
+      stampState: "paper_stamp-trader"
+    - type: Sprite
+      state: stamp-trader
+      
+- type: entity
+  name: NanoTrasen rubber stamp
+  parent: [ RubberStampBase, BaseNanoTrasenContraband ]
+  id: RubberStampNT
+  description: "A stamp possessing untold bureaucratic power. Go ahead. Condemn the station."
+  suffix: DO NOT MAP
+  components:
+    - type: Stamp
+      stampedName: "NanoTrasen"
+      stampedColor: "#1a5297"
+      stampState: "paper_stamp-bso"
+    - type: Sprite
+      sprite: _Starlight/Objects/Misc/stamps.rsi
+      state: stamp-ntrep

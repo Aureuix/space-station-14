@@ -36,6 +36,8 @@
       - WaffleCoFlippo
       - SpaceCash1000
       - NTCredit100
+      - BoxFolderClipboardFilled
+      - RubberStampTrader
 
 - type: startingGear
   id: GSLTechnicianMail
@@ -61,3 +63,5 @@
       - WaffleCoFlippo
       - SpaceCash1000
       - NTCredit100
+      - BoxFolderClipboardFilled
+      - RubberStampTrader
