@@ -1,0 +1,9 @@
+﻿- type: entity
+  parent: BaseSign
+  id: SignGSL
+  name: gsl office sign
+  description: A sign indicating the GSL-restricted wing of the ATS. Trespassing is probably inadvisable.
+  components:
+    - type: Sprite
+      sprite: _SpL/Structures/Wallmounts/signs.rsi
+      state: gsl
