@@ -1,0 +1,10 @@
+﻿- type: entity
+  parent: HolopadLongRange
+  id: HolopadGSL
+  suffix: GSL Office
+  components:
+    - type: Label
+      currentLabel: holopad-ats-gsl
+    - type: AccessReader
+      access: [ [ "GSL" ] ]
+      examinationText: access-reader-examination-functionality-restricted
