@@ -1,0 +1,25 @@
+﻿# Sidearm Options
+- type: loadout
+  id: HOSSP8AR
+  dummyEntity: WeaponPistolSP8AR
+  storage:
+    back:
+      - WeaponPistolSP8AR
+      - MagazinePistol40SP
+
+- type: loadout
+  id: HOSDeckard
+  dummyEntity: WeaponRevolverDeckard
+  storage:
+    back:
+      - WeaponRevolverDeckard
+      - SpeedLoaderMagnumSP
+      - SpeedLoaderMagnumSP
+
+- type: loadout
+  id: HOSPistolM1911
+  dummyEntity: WeaponPistolM1911
+  storage:
+    back:
+      - WeaponPistolM1911
+      - MagazineMagnum

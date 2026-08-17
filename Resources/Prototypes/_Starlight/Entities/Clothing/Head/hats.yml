@@ -645,7 +645,7 @@
     sprite: _Starlight/Clothing/Head/Hats/retro_officer_cap.rsi
 
 - type: entity
-  parent: ClothingHeadHatWizard
+  parent: ClothingHeadBase # SpL- WIZARD????? 
   id: ClothingHeadHatWitchyHat
   name: witchy hat
   description: Wicky-wicky-witchy hat!

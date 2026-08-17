@@ -1,0 +1,35 @@
+﻿- type: entity
+  id: SpaceTickSpawn
+  parent: BaseStationEventShortDelay
+  components:
+    - type: StationEvent
+      globalAnnouncement: false 
+      startAnnouncement: station-event-vent-creatures-start-announcement
+      startAudio:
+        path: /Audio/_Starlight/Announcements/attention.ogg
+      earliestStart: 40 
+      minimumPlayers: 15
+      weight: 2.5 
+      duration: 60
+    - type: VentCrittersRule
+      entries:
+        - id: MobTick
+          prob: 0.08
+          
+- type: entity
+  id: AngryBeesSpawn
+  parent: BaseStationEventShortDelay
+  components:
+    - type: StationEvent
+      globalAnnouncement: false 
+      startAnnouncement: station-event-vent-creatures-start-announcement
+      startAudio:
+        path: /Audio/_Starlight/Announcements/attention.ogg
+      earliestStart: 40 
+      minimumPlayers: 15
+      weight: 2.5 
+      duration: 60
+    - type: VentCrittersRule
+      entries:
+        - id: MobAngryBee
+          prob: 0.1 

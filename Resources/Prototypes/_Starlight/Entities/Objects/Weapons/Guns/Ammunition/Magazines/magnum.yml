@@ -71,7 +71,7 @@
 
 - type: entity
   id: MagazineMagnum
-  name: pistol magazine (.45 magnum)
+  name: pistol magazine (.45 magnum SP) # SpL
   parent: BaseMagazineMagnum
   description: 7-round single stack pistol magazine. Intended to hold general-purpose kinetic ammunition.
   components:
@@ -192,7 +192,7 @@
 
 - type: entity
   id: MagazineMagnumSubMachineGun
-  name: SMG magazine (.45 magnum)
+  name: SMG magazine (.45 magnum SP) # SpL
   parent: BaseMagazineMagnumSubMachineGun
   components:
   - type: BallisticAmmoProvider

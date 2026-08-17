@@ -1,0 +1,9 @@
+﻿- type: loadoutGroup
+  id: HeadofSecuritySidearm
+  name: loadout-group-hos-sidearm
+  maxLimit: 1
+  loadouts:
+    - HOSSP8AR
+    - HOSDeckard
+    - HOSPistolM1911
+  

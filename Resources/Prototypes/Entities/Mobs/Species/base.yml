@@ -282,10 +282,11 @@
       enum.ThavenMoodsUiKey.Key: # impstation edit
         type: ThavenMoodsBoundUserInterface
         requireInputValidation: false
-  - type: Barotrauma
+  - type: Barotrauma # SpL modified
     damage:
       types:
-        Blunt: 0.9 #per second, scales with pressure and other constants.
+        Blunt: 2 # per second, scales with pressure and other constants. buffed for SpL to discourage recklessness
+        Asphyxiation: 0.5 # hypoxia and ebullism are a big deal and a breathmask isn't going to perfectly protect from that
 # FH - Removal
   - type: PassiveDamage # Slight passive regen. Assuming one damage type, comes out to about 4 damage a minute.
     allowedStates:

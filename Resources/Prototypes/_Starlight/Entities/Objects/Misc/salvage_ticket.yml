@@ -9,7 +9,7 @@
   parent: BaseItem
   id: SalvageTicket
   name: ticket
-  description: exchange your tickets for equipment!
+  description: Exchange your tickets for equipment!
   components:
   - type: Item
     shape:
@@ -49,6 +49,9 @@
   - type: Currency
     price:
       SalvageTicket: 1
+  - type: Tag # Starlight
+    tags:
+      - SalvageTicket
 
 - type: material
   id: SalvageTicket

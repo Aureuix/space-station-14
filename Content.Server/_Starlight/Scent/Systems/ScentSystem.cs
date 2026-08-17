@@ -99,7 +99,10 @@ public sealed class ScentSystem : SharedScentSystem
         if (trace != null)
             PruneExpiredTraces(trace);
 
-        if (trace == null || trace.Scents.Count == 0)
+        
+        var hasOwnScent = TryComp<ScentComponent>(args.Target, out var targetScent) && targetScent.ScentId != null;
+
+        if ((trace == null || trace.Scents.Count == 0) && !hasOwnScent)
         {
             _popup.PopupEntity(Loc.GetString("scent-sniff-no-scents", ("target", Name(args.Target))), args.Target, ent.Owner);
             args.Handled = true;
@@ -123,23 +126,27 @@ public sealed class ScentSystem : SharedScentSystem
     {
         if (args.Handled || args.Cancelled || args.Args.Target is not { } target)
             return;
-
-        if (!TryComp<ScentTraceComponent>(target, out var trace))
-            return;
-
-        PruneExpiredTraces(trace);
+        
+        TryComp<ScentTraceComponent>(target, out var trace);
+        if (trace != null)
+            PruneExpiredTraces(trace);
 
         var now = _timing.CurTime;
-        var entries = new List<ScentTraceEntry>(trace.Scents.Count);
-        foreach (var (scentId, info) in trace.Scents)
+        var entries = new List<ScentTraceEntry>(trace?.Scents.Count ?? 0);
+        if (trace != null)
         {
-            var speciesName = Loc.GetString("scent-species-non-humanoid");
-            if (info.Species != null && _prototype.TryIndex<SpeciesPrototype>(info.Species, out var species))
-                speciesName = Loc.GetString(species.Name);
+            foreach (var (scentId, info) in trace.Scents)
+            {
+                var speciesName = Loc.GetString("scent-species-non-humanoid");
+                if (info.Species != null && _prototype.TryIndex<SpeciesPrototype>(info.Species, out var species))
+                    speciesName = Loc.GetString(species.Name);
 
-            var age = (float)(now - info.LastTouched).TotalSeconds;
-            entries.Add(new ScentTraceEntry(scentId, GetFreshness(age, trace.TraceLifetime), speciesName));
+                var age = (float)(now - info.LastTouched).TotalSeconds;
+                entries.Add(new ScentTraceEntry(scentId, GetFreshness(age, trace.TraceLifetime), speciesName));
+            }
         }
+
+        var ownScentId = TryComp<ScentComponent>(target, out var targetScent) ? targetScent.ScentId : null;
 
         if (!_ui.TryOpenUi(uid, ScentSniffUiKey.Key, uid))
         {
@@ -149,7 +156,7 @@ public sealed class ScentSystem : SharedScentSystem
         }
 
         component.SniffTarget = target;
-        _ui.SetUiState(uid, ScentSniffUiKey.Key, new ScentSniffBoundUserInterfaceState(entries));
+        _ui.SetUiState(uid, ScentSniffUiKey.Key, new ScentSniffBoundUserInterfaceState(entries, ownScentId));
 
         args.Handled = true;
     }
@@ -188,10 +195,13 @@ public sealed class ScentSystem : SharedScentSystem
 
         if (!_transform.InRange(xform.Coordinates, targetXform.Coordinates, component.SniffRange))
             return;
+        
+        var isOwnScent = TryComp<ScentComponent>(target, out var targetScent) && targetScent.ScentId == args.ScentId;
+        var isTracedScent = TryComp<ScentTraceComponent>(target, out var trace) && trace.Scents.ContainsKey(args.ScentId);
 
-        if (!TryComp<ScentTraceComponent>(target, out var trace) || !trace.Scents.ContainsKey(args.ScentId))
+        if (!isOwnScent && !isTracedScent)
             return;
-
+        
         SetTrackedScent((uid, component), args.ScentId);
         _popup.PopupEntity(Loc.GetString("scent-sniff-window-tracking-popup"), uid, uid);
     }
@@ -448,6 +458,7 @@ public sealed class ScentSystem : SharedScentSystem
         markerComp.ExpiresAt = _timing.CurTime + decayTime;
         markerComp.TotalDuration = decayTime;
         markerComp.WasContained = IsContained(xform);
+        markerComp.WasDead = MobState.IsDead(uid);
         Dirty(marker, markerComp);
 
         var despawn = Comp<TimedDespawnComponent>(marker);
@@ -496,6 +507,7 @@ public sealed class ScentSystem : SharedScentSystem
         marker.ExpiresAt = _timing.CurTime + decayTime;
         marker.TotalDuration = decayTime;
         marker.WasContained = IsContained(xform);
+        marker.WasDead = MobState.IsDead(uid);
         Dirty(tail, marker);
 
         if (TryComp<TimedDespawnComponent>(tail, out var despawn))
