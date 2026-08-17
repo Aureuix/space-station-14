@@ -12,6 +12,7 @@
     - id: ClothingHeadsetAltCargo
     - id: DoorRemoteCargo
     - id: AppraiseAllCartridge # SpL
+    - id: RadioHandheldGSL # SpL
     - id: ClothingHandsKnuckleDustersQM
 #    - id: PlushieLance #starlight # SpL- sorry, replaced
     - id: RadioHandheldExpedition #starlight
