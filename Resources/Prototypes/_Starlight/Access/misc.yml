@@ -43,6 +43,7 @@
   - Wizard
   - Pirate
   - Blackstar
+  - Illuminate # SpL
 
 - type: accessGroup
   id: Syndicate
