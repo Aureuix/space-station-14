@@ -1,0 +1,8 @@
+﻿- type: entity
+  parent: AirlockAssembly
+  id: AirlockAssemblyGSL
+  suffix: GSL
+  components:
+    - type: Sprite
+      sprite: _SpL/Structures/Doors/Airlocks/Misc/gsl.rsi
+      state: "assembly"

@@ -1,0 +1,26 @@
+﻿- type: entity
+  parent: AirlockCommand # placeholder
+  id: AirlockIlluminateLocked
+  suffix: Illuminate, Locked, PLACEHOLDER
+  components:
+    - type: ContainerFill
+      containers:
+        board: [DoorElectronicsIlluminate]
+        
+- type: entity
+  parent: AirlockCommandGlass # placeholder
+  id: AirlockIlluminateGlassLocked
+  suffix: Illuminate, Locked, PLACEHOLDER
+  components:
+    - type: ContainerFill
+      containers:
+        board: [DoorElectronicsIlluminate]
+        
+- type: entity
+  parent: AirlockGSL
+  id: AirlockGSLLocked
+  suffix: GSL, Locked
+  components:
+    - type: ContainerFill
+      containers:
+        board: [DoorElectronicsGSL]

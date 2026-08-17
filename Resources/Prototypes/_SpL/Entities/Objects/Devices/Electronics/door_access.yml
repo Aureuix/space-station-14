@@ -1,0 +1,15 @@
+﻿- type: entity
+  parent: DoorElectronics
+  id: DoorElectronicsIlluminate
+  suffix: Illuminate, Locked
+  components:
+    - type: AccessReader
+      access: [["Illuminate"]]
+      
+- type: entity
+  parent: DoorElectronics
+  id: DoorElectronicsGSL
+  suffix: GSL, Locked
+  components:
+    - type: AccessReader
+      access: [["GSL"]]
