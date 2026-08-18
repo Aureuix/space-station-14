@@ -213,6 +213,24 @@
 
 # Prescription Glasses
 
+# SpL Start- I'll get merge conflicts if this is in the spl dir so it's going here for now
+- type: entity
+  parent: [ClothingEyesBase, BaseCommandContraband]
+  id: ClothingEyesGlassesCommandPrescription
+  name: prescription administrative glasses
+  description: A set of unshielded prescription glasses for Command staff.
+  components:
+    - type: Sprite
+      sprite: _SpL/Clothing/Eyes/Glasses/prescriptioncommandglasses.rsi
+    - type: Clothing
+      sprite: _SpL/Clothing/Eyes/Glasses/prescriptioncommandglasses.rsi
+    - type: VisionCorrection
+    - type: ShowAccess
+    - type: ShowJobIcons
+    - type: StealTarget
+      stealGroup: RareGlassesCollection
+# SpL End
+
 - type: entity
   parent: [ClothingEyesBase, ShowSecurityIcons, BaseSecurityContraband]
   id: ClothingEyesGlassesBrigmedicPrescription

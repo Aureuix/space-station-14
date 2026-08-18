@@ -40,7 +40,7 @@
   parent: MindShieldImplant
   id: TSFMindShieldImplant
   name: TSF mindshield implant
-  description: This implant will ensure loyalty to SolGov and prevent mind control devices.
+  description: This implant will prevent mind control devices from functioning on the user. # SpL- mind control is cringe
   categories: [ HideSpawnMenu ]
   components:
   - type: MindShieldImplant

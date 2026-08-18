@@ -15,10 +15,6 @@
       species:
         - Kitsune
       inverted: true
-    - !type:TraitsRequirement
-      traits:
-        - Iterator
-      inverted: true
 
 - type: trait
   id: NovaCygni
@@ -32,12 +28,7 @@
         - NovaCygni
       languagesUnderstood:
         - NovaCygni
-  requirements:
-    - !type:TraitsRequirement
-      traits:
-        - Iterator
-      inverted: true
-      
+
 - type: trait
   id: Diaspora
   name: trait-language-diaspora-name
@@ -60,11 +51,6 @@
   conflicts:
     - Foreigner
     - ForeignerLight
-  requirements:
-    - !type:TraitsRequirement
-      traits:
-        - Iterator
-      inverted: true
       
 #- type: trait # Commented out for now until further discussion can be had
 #  id: Codespeak

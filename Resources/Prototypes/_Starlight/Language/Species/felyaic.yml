@@ -2,7 +2,7 @@
 - type: language
   id: Felyaic # felya = cave in quenya
   speech:
-    color: "#6c00ff" # electric blue
+    color: "#9f00ff" # electric blue
     fontId: Darktongue
     obfuscationFont: true
   icon: LanguageIconFelyaic

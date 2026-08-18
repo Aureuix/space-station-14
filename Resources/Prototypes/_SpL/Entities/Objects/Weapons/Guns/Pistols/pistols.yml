@@ -1,4 +1,49 @@
 ﻿- type: entity
+  name: yangtze
+  parent: [BaseWeaponPistol, BaseSecuritySalvageContraband]
+  id: WeaponPistolMauser
+  description: Officially designated the C97 Service Pistol, the Yangtze is a modernised adaptation of a cheap but reliable old-world semi-automatic handgun sporting a proprietary rubberised grip. Feeds from .40 pistol magazines.
+  components:
+    - type: Sprite
+      sprite: _SpL/Objects/Weapons/Guns/Pistols/mauser.rsi
+      layers:
+        - state: base
+          map: ["enum.GunVisualLayers.Base"]
+        - state: mag-0
+          map: ["enum.GunVisualLayers.Mag"]
+    - type: Clothing
+      sprite: _SpL/Objects/Weapons/Guns/Pistols/mauser.rsi
+    - type: Item
+      storedOffset: 0,-2
+    - type: Gun
+      fireRate: 3 # it's not as good as the dp
+      availableModes:
+        - SemiAuto
+      soundGunshot:
+        path: /Audio/_Starlight/Weapons/Guns/Gunshots/stechkin.ogg
+    - type: ItemSlots
+      slots:
+        gun_magazine:
+          name: Magazine
+          startingItem: MagazinePistol40SP
+          insertSound: /Audio/Weapons/Guns/MagIn/pistol_magin.ogg
+          ejectSound: /Audio/Weapons/Guns/MagOut/pistol_magout.ogg
+          priority: 2
+          whitelist:
+            tags:
+              - MagazinePistolDP
+          whitelistFailPopup: gun-magazine-whitelist-fail
+        gun_chamber:
+          name: Chamber
+          startingItem: CartridgePistol40SP
+          priority: 1
+          whitelist:
+            tags:
+              - CartridgePistolDP
+    - type: StealTarget
+      stealGroup: OfficerHandgun
+
+- type: entity
   id: WeaponIlluminateFrostbite
   parent: [ BaseWeaponPistol, BaseIlluminateContraband]
   name: PD52 "frostbite"

@@ -238,6 +238,13 @@
   - type: StealTarget
     stealGroup: SalvageShuttleConsoleCircuitboard
 
+# SpL Start- this workaround is so stupid but it's apparently needed otherwise shit just fails
+- type: entity
+  parent: ComputerShuttleSalvage
+  id: CompuerShuttleSalvage
+  categories: [ HideSpawnMenu ]
+# SpL End
+
 # Mass Driver
 
 - type: entity

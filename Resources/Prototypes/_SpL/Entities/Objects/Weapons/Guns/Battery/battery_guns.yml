@@ -1,4 +1,72 @@
 ﻿- type: entity
+  name: holoflare pistol
+  parent: [BaseWeaponBatterySmall, BaseSecuritySalvageMiningContraband]
+  id: WeaponHoloflarePistol
+  description: A self-recharging ranged light projector that creates "cold" holographic flares upon surfaces.
+  components:
+    - type: Sprite
+      sprite: _NF/Objects/Weapons/Guns/Battery/holoflarepistol.rsi
+      layers:
+        - state: base
+          map: ["enum.GunVisualLayers.Base"]
+        - state: mode-cyan
+          map: [ "enum.FireModesLayers.FireMode" ]
+          shader: unshaded
+        - state: mag-unshaded-2
+          map: ["enum.GunVisualLayers.MagUnshaded"]
+          shader: unshaded
+    - type: Clothing
+      sprite: _NF/Objects/Weapons/Guns/Battery/holoflarepistol.rsi
+    - type: Gun
+      fireRate: 1 
+      soundGunshot:
+        path: /Audio/Items/Flare/flare_on.ogg
+    - type: Battery
+      maxCharge: 270
+      startingCharge: 270
+    - type: BatteryAmmoProvider
+      proto: ProjectileFlareCyan
+      fireCost: 90
+    - type: BatteryWeaponFireModes
+      fireModes:
+        - proto: ProjectileFlareCyan
+          fireCost: 90
+          magState: mag
+          visualState: mode-cyan
+        - proto: ProjectileFlareRed
+          fireCost: 90
+          magState: mag
+          visualState: mode-red
+        - proto: ProjectileFlareYellow
+          fireCost: 90
+          magState: mag
+          visualState: mode-yellow
+    - type: PacifismAllowedGun
+    - type: AmmoCounter
+    - type: BatterySelfRecharger
+      autoRechargeRate: 3
+    - type: MagazineVisuals
+      magState: mag
+      steps: 3
+      zeroVisible: true
+    - type: Appearance
+    - type: Tag
+      tags:
+        - Sidearm
+        - LaserWeapon
+    - type: StaticPrice
+      price: 200
+    - type: ContainerContainer
+      containers:
+        firing_pin: !type:Container
+    - type: ContainerFill
+      containers:
+        firing_pin:
+          - FiringPinAdvancedLaser
+    - type: FiringPinHolder
+      supportedPins: [ Laser ]
+
+- type: entity
   name: mining laser
   parent: [ BaseWeaponBattery, BaseGunWieldable, BaseSalvageMiningContraband ]
   id: WeaponMiningLaser

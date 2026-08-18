@@ -33,17 +33,17 @@
   conditions:
   - !type:BuyerAccessCondition
 
-- type: listing
-  id: VendorSalvageMechClarke
-  productEntity: MechClarke
-  cost:
-    SalvageTicket: 700
-  categories:
-  - SalvageEquipment
-  conditions:
-  - !type:ListingLimitedStockCondition
-    stock: 1
-  - !type:BuyerAccessCondition
+#- type: listing # SpL start
+#  id: VendorSalvageMechClarke
+#  productEntity: MechClarke
+#  cost:
+#    SalvageTicket: 700
+#  categories:
+#  - SalvageEquipment
+#  conditions:
+#  - !type:ListingLimitedStockCondition
+#    stock: 1
+#  - !type:BuyerAccessCondition # SpL end
 
 - type: listing
   id: VendorSalvageClothingOuterHardsuitMaxim
