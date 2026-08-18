@@ -1,6 +1,6 @@
 - type: cargoBounty
   id: BountyArtifact
-  reward: 2500
+  reward: 10000 # SpL- you can sell completed artifacts for more than this bounty's prior price. 2500->10000
   description: bounty-description-artifact
   entries:
   - name: bounty-item-artifact
@@ -13,7 +13,7 @@
   id: BountyBaseballBat
   reward: 4000
   description: bounty-description-baseball-bat
-  idPrefix: CC
+  idPrefix: TSF
   entries:
   - name: bounty-item-baseball-bat
     amount: 5
@@ -50,7 +50,7 @@
   id: BountyCarrot
   reward: 7500
   description: bounty-description-carrot
-  idPrefix: SS15-
+  idPrefix: CC # SpL
   entries:
   - name: bounty-item-carrot
     amount: 10
@@ -62,6 +62,7 @@
   id: BountyCarrotFries
   reward: 7000
   description: bounty-description-carrot-fries
+  idPrefix: NTNC # SpL
   entries:
   - name: bounty-item-carrot-fries
     amount: 3
@@ -73,7 +74,7 @@
   id: BountyCarp
   reward: 12500
   description: bounty-description-carp
-  idPrefix: CC
+  idPrefix: NTNC # SpL
   entries:
   - name: bounty-item-carp
     amount: 1
@@ -112,6 +113,7 @@
   id: BountyCrayon
   reward: 1500
   description: bounty-description-crayon
+  idPrefix: NTNC # SpL
   entries:
   - name: bounty-item-crayon
     amount: 24
@@ -123,7 +125,7 @@
   id: BountyCubanCarp
   reward: 16000
   description: bounty-description-cuban-carp
-  idPrefix: CC
+  idPrefix: CDD # SpL
   entries:
   - name: bounty-item-cuban-carp
     amount: 1
@@ -135,7 +137,7 @@
   id: BountyDonut
   reward: 6000
   description: bounty-description-donut
-  idPrefix: CC
+  idPrefix: NTNC
   entries:
   - name: bounty-item-donut
     amount: 10
@@ -181,7 +183,7 @@
   id: BountyHandcuffs
   reward: 1000
   description: bounty-description-handcuffs
-  idPrefix: CC
+  idPrefix: CSOD # SpL
   entries:
   - name: bounty-item-handcuffs
     amount: 5
@@ -193,6 +195,7 @@
   id: BountyInstrument
   reward: 1900
   description: bounty-description-instrument
+  idPrefix: CC # SpL
   entries:
   - name: bounty-item-instrument
     amount: 5
@@ -204,6 +207,7 @@
   id: BountyKnife
   reward: 2000
   description: bounty-description-knife
+  idPrefix: NTNC # SpL
   entries:
   - name: bounty-item-knife
     amount: 5
@@ -251,7 +255,7 @@
   id: BountyMonkeyCube
   reward: 2000
   description: bounty-description-monkey-cube
-  idPrefix: CC
+  idPrefix: CSOD # SpL
   entries:
   - name: bounty-item-monkey-cube
     amount: 3
@@ -263,7 +267,7 @@
   id: BountyMouse
   reward: 2400
   description: bounty-description-mouse
-  idPrefix: SS13-
+  idPrefix: CAD # SpL
   entries:
   - name: bounty-item-mouse
     amount: 5
@@ -297,6 +301,7 @@
   id: BountyPercussion
   reward: 2500
   description: bounty-description-percussion
+  idPrefix: CC # SpL
   entries:
   - name: bounty-item-percussion
     amount: 4
@@ -308,6 +313,7 @@
   id: BountyPie
   reward: 3141
   description: bounty-description-pie
+  idPrefix: CC # SpL
   entries:
   - name: bounty-item-pie
     amount: 1
@@ -322,7 +328,7 @@
   id: BountyPrisonUniform
   reward: 8000
   description: bounty-description-prison-uniform
-  idPrefix: TG
+  idPrefix: TSF # SpL
   entries:
   - name: bounty-item-prison-uniform
     amount: 4
@@ -334,6 +340,7 @@
   id: BountyRadio
   reward: 6500
   description: bounty-description-radio
+  idPrefix: TSF # SpL
   entries:
   - name: bounty-item-radio
     amount: 7
@@ -360,6 +367,7 @@
   id: BountySoap
   reward: 4000
   description: bounty-description-soap
+  idPrefix: CC # SpL
   entries:
   - name: bounty-item-soap
     amount: 3
@@ -382,6 +390,7 @@
   id: BountySpear
   reward: 8000
   description: bounty-description-spear
+  idPrefix: HL
   entries:
   - name: bounty-item-spear
     amount: 5
@@ -404,7 +413,7 @@
   id: BountyTechDisk
   reward: 25000
   description: bounty-description-tech-disk
-  idPrefix: SS13-
+  idPrefix: CRD # SpL
   entries:
   - name: bounty-item-tech-disk
     amount: 5
@@ -428,6 +437,7 @@
   id: BountyTrash
   reward: 500
   description: bounty-description-trash
+  idPrefix: CDD # SpL
   entries:
   - name: bounty-item-trash
     amount: 10
@@ -439,6 +449,7 @@
   id: BountyAnomalyCore
   reward: 10000
   description: bounty-description-anomaly-core
+  idPrefix: CC # SpL
   entries:
   - name: bounty-item-anomaly-core
     amount: 1
@@ -450,6 +461,7 @@
   id: BountyBorgModule
   reward: 3500
   description: bounty-description-borg-module
+  idPrefix: TSF # SpL
   entries:
   - name: bounty-item-borg-module
     amount: 3
@@ -472,7 +484,7 @@
   id: BountyOrgans
   reward: 2000
   description: bounty-description-organs
-  idPrefix: UNTH
+  idPrefix: TSF # SpL
   entries:
   - name: bounty-item-organs
     amount: 8
@@ -495,7 +507,7 @@
   id: BountyWarmCloth
   reward: 2000
   description: bounty-description-warm-cloth
-  idPrefix: UNTH
+  idPrefix: TSF # SpL
   entries:
   - name: bounty-item-warm-cloth
     amount: 8
@@ -512,7 +524,7 @@
   id: BountyBattery
   reward: 15000
   description: bounty-description-battery
-  idPrefix: UNTH
+  idPrefix: TSF # SpL
   entries:
   - name: bounty-item-battery
     amount: 15
@@ -524,7 +536,7 @@
   id: BountyLaserGun
   reward: 9600
   description: bounty-description-lasergun
-  idPrefix: IV
+  idPrefix: GSL # SpL
   entries:
   - name: bounty-item-lasergun
     amount: 6
@@ -539,7 +551,7 @@
   id: BountyFood
   reward: 4000
   description: bounty-description-food
-  idPrefix: UNTH
+  idPrefix: TSF # SpL
   entries:
   - name: bounty-item-food
     amount: 30
@@ -590,6 +602,7 @@
   id: BountyChili
   reward: 5555
   description: bounty-description-chili
+  idPrefix: CDD
   entries:
   - name: bounty-item-chili
     amount: 3
@@ -601,6 +614,7 @@
   id: BountyRollerskates
   reward: 900
   description: bounty-description-rollerskates
+  idPrefix: CLD # SpL
   entries:
   - name: bounty-item-rollerskates
     whitelist:
@@ -611,6 +625,7 @@
   id: BountyBedsheet
   reward: 4100
   description: bounty-description-bedsheet
+  idPrefix: CMD # SpL
   entries:
   - name: bounty-item-bedsheet
     amount: 5
@@ -622,6 +637,7 @@
   id: BountyBandana
   reward: 4000
   description: bounty-description-bandana
+  idPrefix: SYN # SpL
   entries:
   - name: bounty-item-bandana
     amount: 7
@@ -633,6 +649,7 @@
   id: BountySteak
   reward: 3200
   description: bounty-description-steak
+  idPrefix: NTNC # SpL
   entries:
   - name: bounty-item-steak
     amount: 4
@@ -644,6 +661,7 @@
   id: BountyBanana
   reward: 6009
   description: bounty-description-banana
+  idPrefix: CLWN # SpL
   entries:
   - name: bounty-item-banana
     amount: 9
@@ -655,6 +673,7 @@
   id: BountyBeer
   reward: 3100
   description: bounty-description-beer
+  idPrefix: CED # SpL
   entries:
   - name: bounty-item-beer
     amount: 6
@@ -666,6 +685,7 @@
   id: BountyHiVizVest
   reward: 3030
   description: bounty-description-hi-viz-vest
+  idPrefix: CED # SpL
   entries:
   - name: bounty-item-hi-viz-vest
     amount: 3
@@ -677,6 +697,7 @@
   id: BountyTorch
   reward: 2220
   description: bounty-description-torch
+  idPrefix: CID # SpL
   entries:
   - name: bounty-item-torch
     amount: 6
@@ -688,6 +709,7 @@
   id: BountyMedkitBox
   reward: 2300
   description: bounty-description-medkit-box
+  idPrefix: CMD # SpL
   entries:
   - name: bounty-item-medkit-box
     amount: 4
@@ -699,6 +721,7 @@
   id: BountyCardboardBox
   reward: 1500
   description: bounty-description-cardboard-box
+  idPrefix: CLD # SpL
   entries:
   - name: bounty-item-cardboard-box
     amount: 12
@@ -710,6 +733,7 @@
   id: BountyWine
   reward: 1500
   description: bounty-description-wine
+  idPrefix: CEsD # SpL
   entries:
   - name: bounty-item-wine
     amount: 2
@@ -743,6 +767,7 @@
   id: BountyFlashes
   reward: 5500
   description: bounty-description-flashes
+  idPrefix: ??? # SpL
   entries:
   - name: bounty-item-flash
     amount: 6
@@ -754,6 +779,7 @@
   id: BountyRing
   reward: 12500
   description: bounty-description-ring
+  idPrefix: ??? # SpL
   entries:
   - name: bounty-item-ring
     amount: 2
