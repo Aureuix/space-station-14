@@ -9,3 +9,14 @@
     - !type:ListingLimitedStockCondition
       stock: 3
     - !type:BuyerAccessCondition
+  
+- type: listing
+  id: VendorMiningWeaponHoloflarePistol
+  productEntity: WeaponHoloflarePistol
+  cost:
+    SalvageTicket: 500
+  categories:
+    - MiningEquipment
+  conditions:
+    - !type:BuyerAccessCondition   
+  

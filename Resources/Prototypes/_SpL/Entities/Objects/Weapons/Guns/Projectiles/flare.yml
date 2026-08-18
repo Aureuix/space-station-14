@@ -1,0 +1,71 @@
+﻿- type: entity
+  id: ProjectileFlareCyan
+  categories: [ HideSpawnMenu ]
+  name: cyan holoflare
+  components:
+  - type: Physics
+    bodyType: Dynamic
+    fixedRotation: false
+  - type: EmbeddableProjectile
+    deleteOnRemove: true
+  - type: Fixtures
+    fixtures:
+      projectile:
+        shape:
+          !type:PhysShapeAabb
+          bounds: "-0.1,-0.1,0.1,0.1"
+        mask:
+          - BulletImpassable
+  - type: Sprite
+    sprite: Objects/Weapons/Guns/Projectiles/projectiles2.rsi
+    state: buckshot-flare-cyan
+  - type: TimedDespawn
+    lifetime: 180
+  - type: AmbientSound
+    enabled: true
+    volume: -2
+    range: 3
+    sound:
+      path: /Audio/Items/Flare/flare_burn.ogg
+      params:
+        loop: true
+  - type: PointLight
+    enabled: true
+    color: "#77FFFF"
+    radius: 15.0
+    energy: 6.0
+  - type: Projectile
+    deleteOnCollide: false
+    damage:
+      types:
+        Heat: 0 # SpL :godo:
+      
+- type: entity
+  parent: ProjectileFlareCyan
+  categories: [ HideSpawnMenu ]
+  id: ProjectileFlareRed
+  name: red holoflare
+  components:
+  - type: Sprite
+    sprite: Objects/Weapons/Guns/Projectiles/projectiles2.rsi
+    state: buckshot-flare-red
+  - type: PointLight
+    enabled: true
+    color: "#CC0000"
+    radius: 24.0
+    energy: 4.0
+    
+- type: entity
+  parent: ProjectileFlareCyan
+  categories: [ HideSpawnMenu ]
+  id: ProjectileFlareYellow
+  name: yellow holoflare
+  components:
+  - type: Sprite
+    sprite: Objects/Weapons/Guns/Projectiles/projectiles2.rsi
+    state: buckshot-flare
+  - type: PointLight
+    enabled: true
+    color: "#FFCE00"
+    radius: 12.0
+    energy: 6.0
