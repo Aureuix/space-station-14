@@ -531,7 +531,7 @@
   parent: PosterBase
   id: PosterLegitEarth
   name: "Earth"
-  description: "A poster depicting the clean, Frutiger Aero Earth of the 2500s. Only the richest of the rich live there now, less than 1 billion."
+  description: "A poster depicting the clean, Frutiger Aero Earth of the 2500s. Following the discovery of FTL travel, the population has plateaued at a comfortable 16 billion."
   components:
   - type: Sprite
     sprite: _Starlight/Structures/Wallmounts/posters/earth.rsi
@@ -561,7 +561,7 @@
   parent: PosterBase
   id: PosterLegitLuna
   name: "Luna"
-  description: "Luna, the luxury city built on Earth's moon. Covered in embassies and estates used by the TSF's diplomats."
+  description: "Luna, an ecumenopolis built on Earth's moon. Covered in embassies and estates used by diplomats all over the galaxy." # SpL
   components:
   - type: Sprite
     sprite: _Starlight/Structures/Wallmounts/posters/luna.rsi
@@ -581,7 +581,7 @@
   parent: PosterBase
   id: PosterLegitSerene
   name: "Serene"
-  description: "A resort world near Skrell space."
+  description: "A resort world with great Thaven cultural significance." # SpL
   components:
   - type: Sprite
     sprite: _Starlight/Structures/Wallmounts/posters/serene.rsi

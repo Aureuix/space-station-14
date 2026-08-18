@@ -170,7 +170,7 @@
     proto: ShellShotgunBeanbag
 
 - type: entity
-  name: sentiel
+  name: sentinel
   parent: [BaseWeaponShotgun, BaseGunWieldable, BaseSecurityContraband]
   id: WeaponShotgunEnforcer
   description: A premium semi-automatic shotgun, and the pride of all security forces. Takes 12 gauge shells. # Starlight: .50 -> 12 gauge
