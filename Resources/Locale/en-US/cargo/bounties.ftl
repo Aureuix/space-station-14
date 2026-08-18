@@ -142,11 +142,10 @@ bounty-description-organs = Unathi chefs are seeking ethically supplied organs o
 bounty-description-labeler = Due to a bureaucratic error, our sorting center almost sent hundreds of crates of carrots to a local Unathi settlement. We urgently need additional labelers to restore order in the warehouse as a matter of urgency.
 bounty-description-warm-cloth = A primarily Unathi community near the core are struggling with a recent cold front, and logistical supply lines are strained. We will compensate any private sellers willing to part with warm clothes to help supplement.
 bounty-description-battery = Frontier settlements are preparing for a major solar flare, including stocking batteries for post-flare power recovery. We're sending out a general request for deliveries from private sellers to help support them.
-bounty-description-lasergun = An ongoing xenomorph seige is causing one of our logistical outposts significant trouble. We'll pay well for lasers, even practice ones- we'll be able to retune the light frequencies if it comes to that.
+bounty-description-lasergun = An ongoing xenomorph siege is causing one of our logistical outposts significant trouble. We'll pay well for lasers, even practice ones- we'll be able to retune the light frequencies if it comes to that.
 bounty-description-food =  An Avali embassy has arrived earlier than expected, and standard logistical routes wouldn't be able to cover in time. We're reaching out through unofficial channels for support- help prevent galactic embarrassment and we'll pay handsomely.
-# Starlight: Chapel -> Shrine:
 bounty-description-fruit = A nearby hydroponics station has run out of fruit seeds, and is cut off from the standard trade routes. Please send us replacements.
-bounty-description-vegetable = A nearby ydroponics station has run out of vegetable seeds, and is cut off from the standard trade routes. Please send us replacements.
+bounty-description-vegetable = A nearby hydroponics station has run out of vegetable seeds, and is cut off from the standard trade routes. Please send us replacements.
 bounty-description-chili = We are seeking one bowl of chili for Central Command chefs to experiment with. They have, unfortunately, been unable to source the ingredients themselves.
 bounty-description-rollerskates = We are seeking new standard issue for the formation of an ERT mail division. You will be compensated for any matching equipment you may have available.
 bounty-description-bedsheet = Due to a miscalculation, we are facing a shortage of replacement bedsheets for station medbays. If you have any spare available, we will compensate you for a delivery.
