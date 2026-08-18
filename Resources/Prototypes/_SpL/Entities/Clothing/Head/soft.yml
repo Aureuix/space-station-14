@@ -30,9 +30,9 @@
   description: A lightweight sun visor worn by technicians from Gemini Stellar Logistics.
   components:
     - type: Sprite
-      sprite: _Starlight/Clothing/Head/Soft/gslvisor.rsi
+      sprite: _SpL/Clothing/Head/Soft/gslvisor.rsi
     - type: Clothing
-      sprite: _Starlight/Clothing/Head/Soft/gslvisor.rsi
+      sprite: _SpL/Clothing/Head/Soft/gslvisor.rsi
     - type: Tag
       tags:
         - ClothMade

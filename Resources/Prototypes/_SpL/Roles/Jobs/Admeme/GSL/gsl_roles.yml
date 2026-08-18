@@ -26,6 +26,7 @@
     belt: ClothingBeltCargoFilledGSL
     pocket1: WeaponLaserSvalinn
     pocket2: DoorRemoteCargoGSL
+    misc: GSLBadge
   storage:
     back:
       - BoxSurvivalMilitaryDouble
@@ -53,6 +54,7 @@
     belt: ClothingBeltCargoFilledGSL
     pocket1: WeaponLaserSvalinn
     pocket2: DoorRemoteCargoGSL
+    misc: GSLBadge
   storage:
     back:
       - BoxSurvivalMilitaryDouble
