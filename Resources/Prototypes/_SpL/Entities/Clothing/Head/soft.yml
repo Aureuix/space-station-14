@@ -1,0 +1,49 @@
+﻿- type: entity
+  parent: [ClothingHeadHeadHatBaseFlippable, BaseGSLOwnedContraband]
+  id: ClothingHeadHatCargoGSLsoft
+  name: GSL cargo cap
+  description: A baseball cap colored to match the uniforms of Gemini Stellar Logistics.
+  components:
+    - type: Sprite
+      sprite: _SpL/Clothing/Head/Soft/gslsoft.rsi
+    - type: Clothing
+      sprite: _SpL/Clothing/Head/Soft/gslsoft.rsi
+    - type: Tag
+      tags:
+        - ClothMade
+        - Recyclable
+
+- type: entity
+  parent: [ClothingHeadHeadHatBaseFlipped, ClothingHeadHatCargoGSLsoft]
+  id: ClothingHeadHatCargoGSLsoftFlipped
+  name: GSL cargo cap
+  components:
+    - type: Tag
+      tags:
+        - ClothMade
+        - Recyclable
+
+- type: entity
+  parent: [ClothingHeadHeadHatBaseFlippable, BaseGSLOwnedContraband]
+  id: ClothingHeadHatGSLsoftVisor
+  name: GSL visor
+  description: A lightweight sun visor worn by technicians from Gemini Stellar Logistics.
+  components:
+    - type: Sprite
+      sprite: _SpL/Clothing/Head/Soft/gslvisor.rsi
+    - type: Clothing
+      sprite: _SpL/Clothing/Head/Soft/gslvisor.rsi
+    - type: Tag
+      tags:
+        - ClothMade
+        - Recyclable
+
+- type: entity
+  parent: [ClothingHeadHeadHatBaseFlipped, ClothingHeadHatGSLsoftVisor]
+  id: ClothingHeadHatGSLsoftVisorFlipped
+  name: GSL visor
+  components:
+    - type: Tag
+      tags:
+        - ClothMade
+        - Recyclable

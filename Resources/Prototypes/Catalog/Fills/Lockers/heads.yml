@@ -11,7 +11,8 @@
 #      prob: 0.50 # SpL- removed
     - id: ClothingHeadsetAltCargo
     - id: DoorRemoteCargo
-    - id: AstroNavCartridge
+    - id: AppraiseAllCartridge # SpL
+    - id: RadioHandheldGSL # SpL
     - id: ClothingHandsKnuckleDustersQM
 #    - id: PlushieLance #starlight # SpL- sorry, replaced
     - id: RadioHandheldExpedition #starlight

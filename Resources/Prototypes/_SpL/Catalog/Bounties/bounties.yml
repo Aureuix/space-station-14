@@ -1,0 +1,155 @@
+﻿- type: cargoBounty
+  id: BountySpaceHeaterFlatpack
+  reward: 6000
+  description: bounty-description-space-heater-flatpack
+  idPrefix: TSF
+  entries:
+    - name: bounty-item-space-heater-flatpack
+      amount: 2
+      whitelist:
+        tags:
+          - SpaceHeaterFlatpack
+
+- type: cargoBounty
+  id: BountyGauze
+  reward: 3000
+  description: bounty-description-gauze
+  idPrefix: CMD
+  entries:
+    - name: bounty-item-gauze
+      amount: 6
+      whitelist:
+        tags:
+          - Gauze
+
+- type: cargoBounty
+  id: BountyMachineGunBox
+  reward: 12000
+  description: bounty-description-machinegun-box
+  idPrefix: CSD
+  entries:
+    - name: bounty-item-machinegun-box
+      amount: 1
+      whitelist:
+        tags:
+          - LightRifleHeavy
+
+- type: cargoBounty
+  id: BountyResearchDisk
+  reward: 4000
+  description: bounty-description-research-disk
+  idPrefix: CRD
+  entries:
+    - name: bounty-item-research-disk
+      amount: 1
+      whitelist:
+        components:
+          - ResearchDisk
+
+- type: cargoBounty
+  id: BountyMedipen
+  reward: 2000
+  description: bounty-description-medipen
+  idPrefix: CMD
+  entries:
+    - name: bounty-item-medipen
+      amount: 4
+      whitelist:
+        tags:
+          - Medipen
+
+- type: cargoBounty
+  id: BountyPillCanister
+  reward: 2000
+  description: bounty-description-pill-canister
+  idPrefix: CMD
+  entries:
+    - name: bounty-item-pill-canister
+      amount: 2
+      whitelist:
+        tags:
+          - PillCanister
+
+- type: cargoBounty
+  id: BountyPatchPack
+  reward: 4000
+  description: bounty-description-patch-pack
+  idPrefix: CSD
+  entries:
+    - name: bounty-item-patch-pack
+      amount: 1
+      whitelist:
+        tags:
+          - PatchPack
+
+- type: cargoBounty
+  id: BountyAppraisalTool
+  reward: 4000
+  description: bounty-description-appraisal-tool
+  idPrefix: CLD
+  entries:
+    - name: bounty-item-appraisal-tool
+      amount: 4
+      whitelist: 
+        components:
+          - PriceGun
+
+- type: cargoBounty
+  id: BountyPaper
+  reward: 10000
+  description: bounty-description-paper
+  idPrefix: CAD
+  entries:
+    - name: bounty-item-paper
+      amount: 30
+      whitelist:
+        tags:
+          - Paper
+
+- type: cargoBounty
+  id: BountyFolder
+  reward: 4000
+  description: bounty-description-folder
+  idPrefix: CAD
+  entries:
+    - name: bounty-item-folder
+      amount: 5
+      whitelist:
+        tags:
+          - Folder
+
+- type: cargoBounty
+  id: BountyCigarette
+  reward: 8000
+  description: bounty-description-cigarette
+  idPrefix: ???
+  entries:
+    - name: bounty-item-cigarette
+      amount: 20
+      whitelist:
+        tags:
+         - Cigarette
+
+- type: cargoBounty
+  id: BountyStamp
+  reward: 2500
+  description: bounty-description-stamp
+  entries:
+    - name: bounty-item-stamp
+      amount: 2
+      whitelist:
+        components: 
+          - Stamp
+        
+- type: cargoBounty
+  id: BountyGlasses
+  reward: 2000
+  description: bounty-description-glasses
+  idPrefix: CEsD
+  entries:
+    - name: bounty-item-glasses
+      amount: 1
+      whitelist:
+        components: 
+          - VisionCorrection
+  

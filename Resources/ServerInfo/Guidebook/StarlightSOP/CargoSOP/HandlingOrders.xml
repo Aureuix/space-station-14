@@ -1,36 +1,36 @@
 <Document>
 # Handling Orders
 
-Orders are to be taken and handled as they come in. Orders out of the ordinary or not on the pre-approved list for a department are to be vetted with the Quartermaster.
+Orders are to be taken and handled as they come in. Orders out of the ordinary or not on the pre-approved list for a department are to be vetted with the [color=#ffe100]Quartermaster[/color] or acting head of department.
 
-1.  Orders [bold]not[/bold]on the pre-approved materials list should be accompanied with an acquisition slip.
+1.  Orders [bold]not[/bold]on the pre-approved materials list should be accompanied by an [color=#ffe100]acquisition slip[/color].
 
 1a Acquisition slips should match the ID of the person presenting the slip or the department head.
 
-1b Acquisition slips should have a properly filled out reason for the request. The Quartermaster may deny any requisition that does not state an adequate reason.
+1b Acquisition slips should have a properly filled out reason for the request. The [color=#ffe100]Quartermaster[/color] or acting head of department may deny any requisition that does not state an adequate reason.
 
-2. On [color=#ff0000]Code Red[/color], [color=#8d1d75]Code Violet[/color] or [color=#ec9ba4]Code Gamma[/color], item request forms or acquisition slips shall not be required for any orders for security and medical respectively.
+2. On [color=#ff0000]Code Red[/color], [color=#8d1d75]Code Violet[/color] or [color=#ec9ba4]Code Gamma[/color], item request forms or acquisition slips shall not be required for any orders for security and medical.
 
-3. Only Cargo Technicians and the Quartermaster shall handle orders. Non-cargo crew members should never touch the cargo request computer.
+3. Only Cargo Technicians and the Quartermaster should handle orders. Non-cargo crew members are [color=#ff0000]not[/color] to touch the cargo request computer. Salvage and Mining personnel may assist with order ferrying, but [color=#ffe100]are not expected to make deliveries[/color].
 
-4. Orders are not required to be delivered to their recipients. However, the mailing system or normal deliveries may occur on [color=#00a933]Code Green[/color] or [color=#2a6099]Code Blue[/color].
+4. Orders should be delivered to their recipients where possible, although this is not a requirement. The mailing system or normal deliveries may occur on [color=#00a933]Code Green[/color] or [color=#2a6099]Code Blue[/color].
 
-5. Assistants must fill out an [italic]item request form[/italic] for any request.
+5. Assistants [bold]must[/bold] fill out an [italic]item request form[/italic] for any request.
 
-6. To be valid the [italic]item request form[/italic] must must state:
+6. To be valid the [italic]item request form[/italic] must must state the following:
 - Time of the request.
 - Name and title of requestor.
 - Quantity of items and reason for request.
 - Any special statements or considerations.
 - Stamp from the requestor's head if the order is large or contains potential contraband.
 
-7. Copies of all approved invoices are to reviewed by the Quartermaster, stamped for confirmation and stored for future review should the need arise.
+9. All invoices should be [color=#ffe100]delivered to the Quartermaster[/color] or acting head of department at the earliest convenience. Delivery of invoices should not be prioritised over other duties, however.
 
-8. Upon receipt of 5 or more requests or after 15 minutes, all current invoices should be brought to the Quartermaster for approval and distribution.
+10. In order to receive their order, the [color=#ffe100]original requestor or department head[/color] must be present. Nominated receivers on behalf of either roles must be confirmed verbally over radio unless the station is in a state of emergency.
 
-9. Once an order has arrived, the cargo invoice should be copied and posted outside of cargo to inform the crew of the delivery.
+11. Once an order has been received by its recipient, the cargo invoice should be signed by the recipient and returned to the cargo department or any available cargo personnel.
 
-10. In order to receive their order, the original requestor or department head must be present.
+12. Signed copies of all invoices are to be reviewed by the Quartermaster, stamped for confirmation, and stored for future review should the need arise. Only one invoice should be stored in the case of multiple-item orders.
 
-11. Orders for basic materials (glass, steel, plastic & cloth) may be placed by cargo personnel for the cargo department if the material is below a limit of 240 between all lathes and loose resources.
+13. Orders for basic materials (glass, steel, plastic, and cloth) may be placed by cargo personnel for the cargo department if the material is [color=#ffe100]below a limit of 30[/color] of each respective material between all lathes and loose resources.
 </Document>

@@ -26,3 +26,13 @@
   
 - type: Tag
   id: CartridgeFlechette
+  
+- type: Tag
+  id: Illuminate
+  
+- type: Tag
+  id: GSL
+  
+# bounty tags
+- type: Tag
+  id: SpaceHeaterFlatpack

@@ -35,7 +35,7 @@
   id: TSF
   name: chat-radio-tsf
   keycode: 'j'
-  frequency: 1922
+  frequency: 2200 # SpL- shouldn't share soviet channel
   color: "#22a7ff"
   longRange: true
 
@@ -68,7 +68,7 @@
 - type: radioChannel
   id: Global
   name: chat-radio-global
-  keycode: 'g'
+  keycode: '?'
   frequency: 9998
   color: "#954fff"
   longRange: true

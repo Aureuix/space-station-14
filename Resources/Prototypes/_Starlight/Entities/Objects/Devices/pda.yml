@@ -451,6 +451,15 @@
   - type: Icon
     sprite: _Starlight/Objects/Devices/pda.rsi
     state: pda-mailtech
+  - type: CartridgeLoader # SpL Start
+    uiKey: enum.PdaUiKey.Key
+    preinstalled:
+      - CrewManifestCartridge
+      - NotekeeperCartridge
+      - NanoTaskCartridge
+      - NewsReaderCartridge
+      - NanoChatCartridge
+      - AppraiseAllCartridge # SpL End
 
 - type: entity
   parent: BasePDA
@@ -473,6 +482,15 @@
     - type: Icon
       sprite: _Starlight/Objects/Devices/pda.rsi
       state: pda-seniormailtech
+    - type: CartridgeLoader # SpL Start
+      uiKey: enum.PdaUiKey.Key
+      preinstalled:
+        - CrewManifestCartridge
+        - NotekeeperCartridge
+        - NanoTaskCartridge
+        - NewsReaderCartridge
+        - NanoChatCartridge
+        - AppraiseAllCartridge # SpL End
 
 - type: entity
   parent: BasePDA
@@ -544,6 +562,7 @@
       - LogProbeCartridge
       - AstroNavCartridge
       - NanoChatCartridge
+      - AppraiseAllCartridge # SpL
 
 - type: entity
   parent: BasePDA
@@ -576,6 +595,7 @@
         - LogProbeCartridge
         - AstroNavCartridge
         - NanoChatCartridge
+        - AppraiseAllCartridge # SpL
 
 - type: entity
   parent: BasePDA
@@ -606,6 +626,7 @@
       - LogProbeCartridge
       - AstroNavCartridge
       - NanoChatCartridge
+      - AppraiseAllCartridge # SpL
 
 - type: entity
   parent: ClearPDA
@@ -673,6 +694,7 @@
       - LogProbeCartridge
       - AstroNavCartridge
       - NanoChatCartridge
+      - AppraiseAllCartridge # SpL
 
 - type: entity
   parent: CentcomPDA
@@ -711,6 +733,7 @@
       - LogProbeCartridge
       - AstroNavCartridge
       - NanoChatCartridge
+      - AppraiseAllCartridge # SpL
 
 - type: entity
   parent: BasePDA
@@ -739,6 +762,7 @@
       - MedTekCartridge
       - AstroNavCartridge
       - NanoChatCartridge
+      - AppraiseAllCartridge # SpL
 
 - type: entity
   parent: [BasePDA, BaseTSFContraband]

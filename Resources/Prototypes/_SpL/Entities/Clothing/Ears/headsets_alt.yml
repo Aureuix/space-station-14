@@ -1,7 +1,26 @@
 ﻿- type: entity
+  parent: [ClothingHeadsetAlt, BaseGSLOwnedContraband]
+  id: ClothingHeadsetAltGSL
+  name: GSL technician over-ear headset
+  description: For complaining to your superiors about salvager drunk driving.
+  components:
+    - type: ContainerFill
+      containers:
+        key_slots:
+          - EncryptionKeyGSL
+    - type: Sprite
+      sprite: _SpL/Clothing/Ears/Headsets/gsl.rsi
+    - type: Clothing
+      sprite: _SpL/Clothing/Ears/Headsets/gsl.rsi
+    - type: RadioChime
+      sound:
+        path: /Audio/_Starlight/Effects/Radio/tsf.ogg
+
+- type: entity
   parent: [ClothingHeadsetAlt, BaseIlluminateContraband]
   id: ClothingHeadsetAltIlluminate
   name: Illuminate over-ear headset
+  description: Has a weird curve to the over-ear part that doesn't comfortably fit most species.
   components:
     - type: ContainerFill
       containers:

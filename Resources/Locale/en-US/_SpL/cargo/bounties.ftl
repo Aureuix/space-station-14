@@ -1,0 +1,25 @@
+﻿bounty-item-space-heater-flatpack = Space heater flatpack
+bounty-item-gauze = Gauze
+bounty-item-machinegun-box = LMG magazine box
+bounty-item-medipen = Chemical medipen
+bounty-item-pill-canister = Pill canister
+bounty-item-patch-pack = Patch pack
+bounty-item-appraisal-tool = Appraisal tool
+bounty-item-paper = Paper
+bounty-item-folder = Folder
+bounty-item-cigarette = Cigarette
+bounty-item-stamp = Stamp
+bounty-item-glasses = Prescription glasses
+
+bounty-description-space-heater-flatpack = A primarily Unathi community near the core are struggling with a recent cold front, and logistical supply lines are strained. We will compensate any private manufacturers able to produce heaters to help supplement.
+bounty-description-gauze = We are seeking any excess sterile gauze available to supplement our stockpiles in case of future emergencies. Compromising station medical capabilities to fulfil this request is highly discouraged.
+bounty-description-machinegun-box = Field testing of LMGs has run into supply and ammunition patterning issues. We will compensate your station for a magazine box shipment.
+bounty-description-medipen = We are seeking to recover any excess used and unused medipens for testing of an experimental fabricator. Please send any spares you may have.
+bounty-description-pill-canister = We are seeking spare pill canisters for distribution to ERT forces. Any spares available for shipment are highly appreciated.
+bounty-description-patch-pack = We are seeking spare patch packs for distribution to ERT forces. Any spares available for shipment are highly appreciated.
+bounty-description-appraisal-tool = We outta appraisal tools. Please help.
+bounty-description-paper = CentComm's only printer has jammed, and the paper inside is irretrievable. We are now dangerously low on documenting capabilities, and would appreciate any support possible while the issue gets resolved.
+bounty-description-folder = We are running out of folders for document storage. A shipment of any spares available on station would be appreciated.
+bounty-description-cigarette = Greetings, NanoTrasen personnel. I am curious about your customs, especially in regards to this collective habit you all refer to as smoking. I will pay for a large amount of smoking devices using your currency.
+bounty-description-stamp = The insurance executive is seeking to expand his stamp collection. You will be compensated for any contributions.
+bounty-description-glasses = One of our mantes has misplaced her glasses, and has been rendered ineffective until a replacement is made available. You will be compensated for a spare pair from your station.
