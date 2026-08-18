@@ -4,8 +4,8 @@ meta:
   engineVersion: 277.0.0
   forkId: ""
   forkVersion: ""
-  time: 08/14/2026 22:15:41
-  entityCount: 28964
+  time: 08/18/2026 11:29:07
+  entityCount: 28979
 maps:
 - 1
 grids:
@@ -14208,7 +14208,7 @@ entities:
       parent: 2
     - type: Physics
       bodyType: Dynamic
-  - uid: 28922
+  - uid: 28937
     components:
     - type: Transform
       anchored: False
@@ -14217,7 +14217,7 @@ entities:
       parent: 1
     - type: Physics
       bodyType: Dynamic
-  - uid: 28923
+  - uid: 28938
     components:
     - type: Transform
       anchored: False
@@ -14226,7 +14226,7 @@ entities:
       parent: 1
     - type: Physics
       bodyType: Dynamic
-  - uid: 28924
+  - uid: 28939
     components:
     - type: Transform
       anchored: False
@@ -14235,7 +14235,7 @@ entities:
       parent: 1
     - type: Physics
       bodyType: Dynamic
-  - uid: 28925
+  - uid: 28940
     components:
     - type: Transform
       anchored: False
@@ -14244,7 +14244,7 @@ entities:
       parent: 1
     - type: Physics
       bodyType: Dynamic
-  - uid: 28926
+  - uid: 28941
     components:
     - type: Transform
       anchored: False
@@ -14253,7 +14253,7 @@ entities:
       parent: 1
     - type: Physics
       bodyType: Dynamic
-  - uid: 28927
+  - uid: 28942
     components:
     - type: Transform
       anchored: False
@@ -14262,7 +14262,7 @@ entities:
       parent: 1
     - type: Physics
       bodyType: Dynamic
-  - uid: 28928
+  - uid: 28943
     components:
     - type: Transform
       anchored: False
@@ -14271,7 +14271,7 @@ entities:
       parent: 1
     - type: Physics
       bodyType: Dynamic
-  - uid: 28929
+  - uid: 28944
     components:
     - type: Transform
       anchored: False
@@ -14280,7 +14280,7 @@ entities:
       parent: 1
     - type: Physics
       bodyType: Dynamic
-  - uid: 28930
+  - uid: 28945
     components:
     - type: Transform
       anchored: False
@@ -14289,7 +14289,7 @@ entities:
       parent: 1
     - type: Physics
       bodyType: Dynamic
-  - uid: 28931
+  - uid: 28946
     components:
     - type: Transform
       anchored: False
@@ -14297,7 +14297,7 @@ entities:
       parent: 1
     - type: Physics
       bodyType: Dynamic
-  - uid: 28932
+  - uid: 28947
     components:
     - type: Transform
       anchored: False
@@ -14305,7 +14305,7 @@ entities:
       parent: 1
     - type: Physics
       bodyType: Dynamic
-  - uid: 28933
+  - uid: 28948
     components:
     - type: Transform
       anchored: False
@@ -14313,7 +14313,7 @@ entities:
       parent: 1
     - type: Physics
       bodyType: Dynamic
-  - uid: 28934
+  - uid: 28949
     components:
     - type: Transform
       anchored: False
@@ -14322,7 +14322,7 @@ entities:
       parent: 1
     - type: Physics
       bodyType: Dynamic
-  - uid: 28935
+  - uid: 28950
     components:
     - type: Transform
       anchored: False
@@ -14331,7 +14331,7 @@ entities:
       parent: 1
     - type: Physics
       bodyType: Dynamic
-  - uid: 28936
+  - uid: 28951
     components:
     - type: Transform
       anchored: False
@@ -14340,7 +14340,7 @@ entities:
       parent: 1
     - type: Physics
       bodyType: Dynamic
-  - uid: 28937
+  - uid: 28952
     components:
     - type: Transform
       anchored: False
@@ -14349,7 +14349,7 @@ entities:
       parent: 1
     - type: Physics
       bodyType: Dynamic
-  - uid: 28938
+  - uid: 28953
     components:
     - type: Transform
       anchored: False
@@ -14358,7 +14358,7 @@ entities:
       parent: 1
     - type: Physics
       bodyType: Dynamic
-  - uid: 28939
+  - uid: 28954
     components:
     - type: Transform
       anchored: False
@@ -14367,7 +14367,7 @@ entities:
       parent: 1
     - type: Physics
       bodyType: Dynamic
-  - uid: 28940
+  - uid: 28955
     components:
     - type: Transform
       anchored: False
@@ -14375,7 +14375,7 @@ entities:
       parent: 1
     - type: Physics
       bodyType: Dynamic
-  - uid: 28941
+  - uid: 28956
     components:
     - type: Transform
       anchored: False
@@ -14383,7 +14383,7 @@ entities:
       parent: 1
     - type: Physics
       bodyType: Dynamic
-  - uid: 28942
+  - uid: 28957
     components:
     - type: Transform
       anchored: False
@@ -14392,7 +14392,7 @@ entities:
       parent: 1
     - type: Physics
       bodyType: Dynamic
-  - uid: 28943
+  - uid: 28958
     components:
     - type: Transform
       anchored: False
@@ -14400,7 +14400,7 @@ entities:
       parent: 1
     - type: Physics
       bodyType: Dynamic
-  - uid: 28944
+  - uid: 28959
     components:
     - type: Transform
       anchored: False
@@ -14408,7 +14408,7 @@ entities:
       parent: 1
     - type: Physics
       bodyType: Dynamic
-  - uid: 28945
+  - uid: 28960
     components:
     - type: Transform
       anchored: False
@@ -14416,7 +14416,7 @@ entities:
       parent: 1
     - type: Physics
       bodyType: Dynamic
-  - uid: 28946
+  - uid: 28961
     components:
     - type: Transform
       anchored: False
@@ -14424,7 +14424,7 @@ entities:
       parent: 1
     - type: Physics
       bodyType: Dynamic
-  - uid: 28947
+  - uid: 28962
     components:
     - type: Transform
       anchored: False
@@ -14432,7 +14432,7 @@ entities:
       parent: 1
     - type: Physics
       bodyType: Dynamic
-  - uid: 28948
+  - uid: 28963
     components:
     - type: Transform
       anchored: False
@@ -14441,7 +14441,7 @@ entities:
       parent: 1
     - type: Physics
       bodyType: Dynamic
-  - uid: 28949
+  - uid: 28964
     components:
     - type: Transform
       anchored: False
@@ -14450,7 +14450,7 @@ entities:
       parent: 1
     - type: Physics
       bodyType: Dynamic
-  - uid: 28950
+  - uid: 28965
     components:
     - type: Transform
       anchored: False
@@ -14459,7 +14459,7 @@ entities:
       parent: 1
     - type: Physics
       bodyType: Dynamic
-  - uid: 28951
+  - uid: 28966
     components:
     - type: Transform
       anchored: False
@@ -14468,7 +14468,7 @@ entities:
       parent: 1
     - type: Physics
       bodyType: Dynamic
-  - uid: 28952
+  - uid: 28967
     components:
     - type: Transform
       anchored: False
@@ -14477,7 +14477,7 @@ entities:
       parent: 1
     - type: Physics
       bodyType: Dynamic
-  - uid: 28953
+  - uid: 28968
     components:
     - type: Transform
       anchored: False
@@ -14486,7 +14486,7 @@ entities:
       parent: 1
     - type: Physics
       bodyType: Dynamic
-  - uid: 28954
+  - uid: 28969
     components:
     - type: Transform
       anchored: False
@@ -14495,7 +14495,7 @@ entities:
       parent: 1
     - type: Physics
       bodyType: Dynamic
-  - uid: 28955
+  - uid: 28970
     components:
     - type: Transform
       anchored: False
@@ -14504,7 +14504,7 @@ entities:
       parent: 1
     - type: Physics
       bodyType: Dynamic
-  - uid: 28956
+  - uid: 28971
     components:
     - type: Transform
       anchored: False
@@ -14513,7 +14513,7 @@ entities:
       parent: 1
     - type: Physics
       bodyType: Dynamic
-  - uid: 28957
+  - uid: 28972
     components:
     - type: Transform
       anchored: False
@@ -14522,7 +14522,7 @@ entities:
       parent: 1
     - type: Physics
       bodyType: Dynamic
-  - uid: 28958
+  - uid: 28973
     components:
     - type: Transform
       anchored: False
@@ -14531,7 +14531,7 @@ entities:
       parent: 1
     - type: Physics
       bodyType: Dynamic
-  - uid: 28959
+  - uid: 28974
     components:
     - type: Transform
       anchored: False
@@ -14540,7 +14540,7 @@ entities:
       parent: 1
     - type: Physics
       bodyType: Dynamic
-  - uid: 28960
+  - uid: 28975
     components:
     - type: Transform
       anchored: False
@@ -14549,7 +14549,7 @@ entities:
       parent: 1
     - type: Physics
       bodyType: Dynamic
-  - uid: 28961
+  - uid: 28976
     components:
     - type: Transform
       anchored: False
@@ -14558,7 +14558,7 @@ entities:
       parent: 1
     - type: Physics
       bodyType: Dynamic
-  - uid: 28962
+  - uid: 28977
     components:
     - type: Transform
       anchored: False
@@ -14567,7 +14567,7 @@ entities:
       parent: 1
     - type: Physics
       bodyType: Dynamic
-  - uid: 28963
+  - uid: 28978
     components:
     - type: Transform
       anchored: False
@@ -14576,7 +14576,7 @@ entities:
       parent: 1
     - type: Physics
       bodyType: Dynamic
-  - uid: 28964
+  - uid: 28979
     components:
     - type: Transform
       anchored: False
@@ -73639,7 +73639,8 @@ entities:
   - uid: 11682
     components:
     - type: Transform
-      pos: 32.5,-3.5
+      rot: -1.5707963267948966 rad
+      pos: 37.5,-3.5
       parent: 2
   - uid: 11683
     components:
@@ -73668,19 +73669,13 @@ entities:
     components:
     - type: Transform
       rot: 1.5707963267948966 rad
-      pos: -48.5,-3.5
+      pos: -48.5,-2.5
       parent: 2
   - uid: 11688
     components:
     - type: Transform
       rot: 1.5707963267948966 rad
       pos: 30.5,-0.5
-      parent: 2
-  - uid: 11689
-    components:
-    - type: Transform
-      rot: -1.5707963267948966 rad
-      pos: 37.5,-0.5
       parent: 2
   - uid: 11690
     components:
@@ -73746,6 +73741,17 @@ entities:
     - type: Transform
       pos: 81.5,-5.5
       parent: 2
+  - uid: 12432
+    components:
+    - type: Transform
+      rot: 3.141592653589793 rad
+      pos: -48.5,-3.5
+      parent: 2
+  - uid: 28926
+    components:
+    - type: Transform
+      pos: -46.5,-2.5
+      parent: 2
 - proto: DisposalJunction
   entities:
   - uid: 11701
@@ -73795,12 +73801,6 @@ entities:
     - type: Transform
       rot: -1.5707963267948966 rad
       pos: -7.5,-4.5
-      parent: 2
-  - uid: 11709
-    components:
-    - type: Transform
-      rot: -1.5707963267948966 rad
-      pos: 32.5,-4.5
       parent: 2
   - uid: 11710
     components:
@@ -73929,12 +73929,6 @@ entities:
       rot: 1.5707963267948966 rad
       pos: -26.5,-4.5
       parent: 2
-  - uid: 11732
-    components:
-    - type: Transform
-      rot: 1.5707963267948966 rad
-      pos: -48.5,-4.5
-      parent: 2
   - uid: 11733
     components:
     - type: Transform
@@ -74029,13 +74023,25 @@ entities:
       rot: 1.5707963267948966 rad
       pos: -60.5,-21.5
       parent: 2
-- proto: DisposalPipe
-  entities:
   - uid: 11749
     components:
     - type: Transform
-      rot: -1.5707963267948966 rad
+      rot: 1.5707963267948966 rad
       pos: -36.5,-4.5
+      parent: 2
+- proto: DisposalPipe
+  entities:
+  - uid: 11709
+    components:
+    - type: Transform
+      rot: -1.5707963267948966 rad
+      pos: 32.5,-4.5
+      parent: 2
+  - uid: 11732
+    components:
+    - type: Transform
+      rot: -1.5707963267948966 rad
+      pos: -48.5,-4.5
       parent: 2
   - uid: 11750
     components:
@@ -77938,12 +77944,6 @@ entities:
     - type: Transform
       pos: 37.5,1.5
       parent: 2
-  - uid: 12432
-    components:
-    - type: Transform
-      rot: 1.5707963267948966 rad
-      pos: -46.5,-3.5
-      parent: 2
   - uid: 12433
     components:
     - type: Transform
@@ -78145,6 +78145,74 @@ entities:
       rot: -1.5707963267948966 rad
       pos: 58.5,13.5
       parent: 2
+  - uid: 28922
+    components:
+    - type: Transform
+      pos: -36.5,-3.5
+      parent: 2
+  - uid: 28923
+    components:
+    - type: Transform
+      pos: -36.5,-2.5
+      parent: 2
+  - uid: 28924
+    components:
+    - type: Transform
+      pos: -36.5,-1.5
+      parent: 2
+  - uid: 28925
+    components:
+    - type: Transform
+      pos: -36.5,-0.5
+      parent: 2
+  - uid: 28927
+    components:
+    - type: Transform
+      rot: -1.5707963267948966 rad
+      pos: -47.5,-2.5
+      parent: 2
+  - uid: 28929
+    components:
+    - type: Transform
+      rot: -1.5707963267948966 rad
+      pos: 32.5,-3.5
+      parent: 2
+  - uid: 28930
+    components:
+    - type: Transform
+      rot: -1.5707963267948966 rad
+      pos: 33.5,-3.5
+      parent: 2
+  - uid: 28931
+    components:
+    - type: Transform
+      rot: -1.5707963267948966 rad
+      pos: 34.5,-3.5
+      parent: 2
+  - uid: 28932
+    components:
+    - type: Transform
+      rot: -1.5707963267948966 rad
+      pos: 35.5,-3.5
+      parent: 2
+  - uid: 28933
+    components:
+    - type: Transform
+      rot: -1.5707963267948966 rad
+      pos: 36.5,-3.5
+      parent: 2
+  - uid: 28934
+    components:
+    - type: Transform
+      rot: 3.141592653589793 rad
+      pos: 37.5,-2.5
+      parent: 2
+  - uid: 28935
+    components:
+    - type: Transform
+      rot: 3.141592653589793 rad
+      pos: 37.5,-1.5
+      parent: 2
 - proto: DisposalRouterBotany
   entities:
   - uid: 12467
@@ -78152,6 +78220,12 @@ entities:
     - type: Transform
       rot: 1.5707963267948966 rad
       pos: 31.5,-3.5
+      parent: 2
+  - uid: 28928
+    components:
+    - type: Transform
+      rot: -1.5707963267948966 rad
+      pos: -46.5,-3.5
       parent: 2
 - proto: DisposalRouterFlippedCargo
   entities:
@@ -78171,6 +78245,11 @@ entities:
       parent: 2
 - proto: DisposalRouterKitchen
   entities:
+  - uid: 11689
+    components:
+    - type: Transform
+      pos: 37.5,-0.5
+      parent: 2
   - uid: 12470
     components:
     - type: Transform
@@ -131220,6 +131299,13 @@ entities:
           showEnts: False
           occludes: True
           ent: null
+- proto: LockerCoronerFilled
+  entities:
+  - uid: 28936
+    components:
+    - type: Transform
+      pos: -50.68982,-40.5
+      parent: 2
 - proto: LockerDetectiveFilled
   entities:
   - uid: 19497
