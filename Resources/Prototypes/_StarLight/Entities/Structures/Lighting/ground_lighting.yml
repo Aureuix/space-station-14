@@ -56,7 +56,6 @@
     - type: StaticPrice
       price: 75
     - type: RequireProjectileTarget
-    - type: ESSparkOnHit
 
 - type: entity
   id: PoweredFloorLightEmpty
