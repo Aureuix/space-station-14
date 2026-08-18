@@ -2,7 +2,7 @@
   id: VendorMiningWeaponMiningLaser
   productEntity: WeaponMiningLaser
   cost:
-    SalvageTicket: 500
+    SalvageTicket: 1000
   categories:
     - MiningEquipment
   conditions:
