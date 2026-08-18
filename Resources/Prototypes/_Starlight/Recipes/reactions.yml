@@ -13,6 +13,12 @@
   effects:
     - !type:SpawnEntity
       entity: FoodMothBatter
+  # Starlight-start
+  guidebookGroups:
+    - Dough
+    - Moth
+    - Cake
+  # Starlight-end
 
 - type: reaction
   minTemp: 320

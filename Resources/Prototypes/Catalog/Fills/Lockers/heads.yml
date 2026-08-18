@@ -227,19 +227,19 @@
   table: !type:AllSelector
     children:
     - id: ClothingNeckCloakCeElite
-    - id: AccessConfigurator
+#    - id: AccessConfigurator # Starlight-edit: moved to the CE toolbelt
     - id: BoxEncryptionKeyEngineering
     - id: CigarCase
 #      prob: 0.15 # SpL removal
     - id: ClothingBeltChiefEngineerFilled
-    - id: ClothingEyesGlassesMeson
+#    - id: ClothingEyesGlassesMeson # Starlight-edit: spawned with, in the EngiVend
     - id: ClothingHandsGlovesColorYellow
     - id: ClothingHeadsetAltEngineering
     - id: DoorRemoteEngineering
     - id: BoxCECircuitboards
     - id: MatBag #FH
-    - id: WeaponGrapplingGun #FH
-    - id: BoxFlare #FH
+#    - id: WeaponGrapplingGun # Starlight-edit: in the EngiVend
+#    - id: BoxFlare # Starlight-edit: in the EngiVend
     - id: AstroNavCartridge #FH
     - id: SheetSteel #FH
     - id: SheetGlass #FH
@@ -247,7 +247,7 @@
     - id: RPD # Starlight: RPD
     - id: RCDAmmo
     - id: RubberStampCE
-    - id: MetalFoamGrenade
+#    - id: MetalFoamGrenade # Starlight-edit: in the EngiVend
 #    - id: PlushieMatthew #starlight # SpL- removed
 #    - id: PrintedDocumentGreenshiftAlert #SL #SpL- removed
 #      conditions: #SL
