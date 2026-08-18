@@ -2,16 +2,30 @@
 # Quartermaster
 
 <GuideEntityEmbed Entity="ToyFigurineQuartermaster" Caption="Quartermaster"/>
+The Quartermaster is the head of the Cargo department, and is responsible for ensuring that the department is operation and that the Mining and Salvage arms remain in line.
 
 1. The Quartermaster is responsible for making sure that every batch of orders approved arrives on station within 15 minutes of approval.
 
 2. It is the Quartermaster's ultimate responsibility to make sure all forms are correct and in order. In case of dire emergencies such as imminent warhead detonation, paperwork may be filled out at a later date.
 
-3. The Quartermaster may not order security equipment without the express permission of the Head of Security or the Captain. In dire emergencies, paperwork may be filed at a later date.
+3. The Quartermaster may not order security equipment without the express permission of the Head of Security or the Captain unless neither are present. In dire emergencies, paperwork may be filed at a later date.
 
 4. The Quartermaster may authorize non-standard orders, however any misuse of materials or crimes committed involving these orders will also implicate the Quartermaster.
 
-5. The Quartermaster may not go on salvage expeditions. The Quartermaster may choose to deny a salvage expedition should it be too dangerous.
+5. The Quartermaster may not go on salvage expeditions. The Quartermaster may choose to deny a salvage expedition should it be too dangerous. The Quartermaster is responsible for ensuring non-cleared personnel do not attempt salvage expeditions.
+    
+6. If the Quartermaster has technicians available, they are expected to delegate work to the technicians where possible. The Quartermaster should not ferry orders to and from the ATS if any technicians are available to do so instead.
 
-6. The standard Command SOP applies.
+7. The standard Command SOP applies.
+    
+## Evacuation
+In the most dire of circumstances, there may be a [color=#8d281e]total risk[/color] to station structural integrity and crew livelihoods that the standard Emergency Shuttle is unable to account for. In this scenario, the Quartermaster is expected to head de facto evacuation options to the Automated Trade Station, and await further orders. Such an evacuation should follow a procedure similar to what is listed below.
+
+1. The entire Cargo department should be placed on Emergency Access. All available Cargo personnel are to be on standby to ferry personnel off-station. All available shuttles should be dedicated to this purpose where possible.
+
+2. Cargo departmental equipment such as hardsuits and EVA gear may be freely distributed for the purpose of preserving life and limb. Procedures are irrelevant, and paperwork can be filed at a later date.
+    
+3. The Quartermaster is responsible for ensuring that evacuation occurs in a timely and organised manner, and should assist in reducing panic among the station crew where possible. The Quartermaster is [color=#ff0000]not[/color] to stay behind and assist with station defense if heading an evacuation.
+    
+4. If the threat can be confirmed to irrecoverably impact the station within 30 seconds or less, [color=#ff0000]all shuttles must launch[/color] regardless of if personnel are still stranded on station. Failure to do so risks the total loss of all crew.
 </Document>
