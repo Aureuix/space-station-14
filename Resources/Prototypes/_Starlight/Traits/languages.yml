@@ -209,6 +209,7 @@
     #      traits:
     #        - Iterator
     #      inverted: true # SpL end
+  requirements:
     - !type:TraitsRequirement
       traits:
         - HighElf
