@@ -83,7 +83,9 @@ bounty-item-plates = Goliath Hide Plates
 # SpL Start
 bounty-description-artifact = NanoTrasen is in some hot water for stealing artifacts from non-spacefaring planets. Return one and we'll compensate you for it.
 bounty-description-baseball-bat = Baseball fever is going on at Nyaterra! We are seeking bespoke baseball bats so that the crowd can really dig into their new craze.
+# SpL End
 bounty-description-box-hugs = Several chief officials have sustained serious boo-boos. A box of hugs is urgently needed to aid in their recovery.
+# SpL Start
 bounty-description-brain = MMI development studies have run into a sourcing issue. Send us a brain so we can circumvent the lack of program volunteers.
 bounty-description-bread = Problems with central planning have led to employee unrest in the core sectors. We have the circuses handled, just ship us some bread to ease tensions.
 bounty-description-carrot = After failing to watch instructional videos for proper welder safety, one of our salvage divisions has been blinded. Ship them some carrots so they can restore their eyesight.
@@ -99,8 +101,8 @@ bounty-description-cuban-carp = We are seeking one shipment of Cuban Carp for Ce
 bounty-description-donk-pocket = Consumer safety recall: Warning. Donk-Pockets manufactured in the past year contain hazardous biomatter. Return units to CentComm immediately.
 # SpL Start
 bounty-description-donut = Recent combat has left a squadron of the NTNC with heavy losses and low morale. A shipment of donuts would go a long way to remedying this.
-bounty-description-figurine = The vice president's son saw an ad for action figures on the telescreen and now he won't shut up about them. Ship some to ease his complaints.
 # SpL End
+bounty-description-figurine = The vice president's son saw an ad for action figures on the telescreen and now he won't shut up about them. Ship some to ease his complaints.
 bounty-description-flesh-monster = We've recently received reports of some kind of flesh monster infestation onboard several stations. Send us a few samples of these creatures so we can investigate new botanical opportunities.
 # SpL Start
 bounty-description-flower = We are interested in erecting a memorial in commemoration of the sacrifices made by our crew, and are seeking to commission flowers to decorate it with.
@@ -124,8 +126,8 @@ bounty-description-radio = Handheld radios have become fashionable in the Solgov
 bounty-description-research-disk = We are seeking shipments of research disks for laboratory testing purposes. We will pay for any spares you may have.
 # SpL End
 bounty-description-shiv = Bzzzt... Transmission from prison planet OC-1001: we're facing an onslaught of uhm... "invaders." Yeah, invaders. Send us some shivs to fight them off with.
-bounty-description-soap = Soap has gone missing from CentComm's bathrooms and nobody knows who took it. We would appreciate a replacement shipment.
 # SpL Start
+bounty-description-soap = Soap has gone missing from CentComm's bathrooms and nobody knows who took it. We would appreciate a replacement shipment.
 bounty-description-soup = In order to quell unrest among personnel without compromising our budget, we are seeking to serve soup free of charge to low-income workers. Ship us some to help lower costs even further.
 bounty-description-spear = Helios Logistics here! We need some new props and/or self defense equipment for our mascots. Ship some, and we'll pay a fair price!
 # SpL End
@@ -140,9 +142,7 @@ bounty-description-borg-module = We are seeking shipments of cyborg modules from
 bounty-description-artifact-fragment = Scientists at a nearby station are requesting artifact fragments for microxenoarchaeology studies. Ordinary artifacts are too large for their micro research platforms. Send some of the artifact fragments your sector is rich in.
 # SpL Start
 bounty-description-organs = Unathi chefs are seeking ethically supplied organs of any kind of culinary experimentation. We have faith in NanoTrasen personnel to be able to provide to this standard. You will be fairly compensated for deliveries.
-# SpL End
 bounty-description-labeler = Due to a bureaucratic error, our sorting center almost sent hundreds of crates of carrots to a local Unathi settlement. We urgently need additional labelers to restore order in the warehouse as a matter of urgency.
-# SpL Start
 bounty-description-warm-cloth = A primarily Unathi community near the core are struggling with a recent cold front, and logistical supply lines are strained. We will compensate any private sellers willing to part with warm clothes to help supplement.
 bounty-description-battery = Frontier settlements are preparing for a major solar flare, including stocking batteries for post-flare power recovery. We're sending out a general request for deliveries from private sellers to help support them.
 bounty-description-lasergun = An ongoing xenomorph siege is causing one of our logistical outposts significant trouble. We'll pay well for lasers, even practice ones- we'll be able to retune the light frequencies if it comes to that.
