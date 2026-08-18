@@ -13,7 +13,7 @@
   id: BountyBaseballBat
   reward: 4000
   description: bounty-description-baseball-bat
-  idPrefix: TSF
+  idPrefix: TSF # SpL
   entries:
   - name: bounty-item-baseball-bat
     amount: 5
