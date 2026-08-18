@@ -3,3 +3,9 @@
   name: guide-entry-sl-deepfried-recipes
   text: "/ServerInfo/_StarLight/Guidebook/Service/DeepFriedRecipes.xml"
   filterEnabled: True
+
+- type: guideEntry
+  id: DoughRecipes # Starlight-add
+  name: guide-entry-sl-dough-recipes
+  text: "/ServerInfo/_Starlight/Guidebook/Service/DoughRecipes.xml"
+  filterEnabled: True
