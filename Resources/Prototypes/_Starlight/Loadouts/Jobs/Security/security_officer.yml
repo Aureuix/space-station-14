@@ -67,14 +67,14 @@
       - SpeedLoaderMagnumSP
 
 - type: loadout
-  id: SecurityPistolDP
+  id: SecurityPistolMauser # SpL
   effects:
     - !type:GroupLoadoutEffect
       proto: SeniorOfficer
-  dummyEntity: WeaponPistolDP
+  dummyEntity: WeaponPistolMauser # SpL
   storage:
     back:
-      - WeaponPistolDP
+      - WeaponPistolMauser # SpL
       - MagazinePistol40SP
 
 - type: loadout

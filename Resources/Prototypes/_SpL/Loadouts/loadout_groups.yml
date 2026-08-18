@@ -7,3 +7,11 @@
     - HOSDeckard
     - HOSPistolM1911
   
+- type: loadoutGroup
+  id: DetectiveSidearm
+  name: loadout-group-detective-sidearm
+  minLimit: 1
+  maxLimit: 1
+  loadouts:
+    - DetectiveInspector
+    - DetectiveStechkin
