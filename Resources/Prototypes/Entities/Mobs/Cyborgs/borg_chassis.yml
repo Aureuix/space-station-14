@@ -172,7 +172,6 @@
     - type: HealthAnalyzer
       damageContainers:
         - Biological
-        - Hybrid
     - type: ActionGrant
       actions:
         - ActionMedTek
@@ -433,7 +432,6 @@
   - type: HealthAnalyzer
     damageContainers:
       - Biological
-      - Hybrid
   - type: ActionGrant
     actions:
       - ActionMedTek
