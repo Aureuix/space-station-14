@@ -93,7 +93,6 @@
     - type: HealthAnalyzer
       damageContainers:
         - Biological
-        - Hybrid
     - type: ActionGrant
       actions:
         - ActionViewLaws

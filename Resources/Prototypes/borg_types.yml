@@ -190,7 +190,6 @@
   - type: HealthAnalyzer # Starlight BEGIN
     damageContainers:
       - Biological
-      - Hybrid
   - type: ActionGrant
     actions:
       - ActionViewLaws
