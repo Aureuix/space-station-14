@@ -390,7 +390,7 @@
   id: BountySpear
   reward: 8000
   description: bounty-description-spear
-  idPrefix: HL
+  idPrefix: HL # SpL
   entries:
   - name: bounty-item-spear
     amount: 5
