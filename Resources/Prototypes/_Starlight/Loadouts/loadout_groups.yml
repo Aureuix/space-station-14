@@ -622,6 +622,7 @@
 # SpL Start
 - type: loadoutGroup
   id: MailTechnicianSkates
+  minlimit: 0 
   name: loadout-group-mail-technician-skates
   loadouts:
     - RollerSkatesLoadout
