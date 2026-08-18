@@ -2,7 +2,7 @@
   name: yangtze
   parent: [BaseWeaponPistol, BaseSecuritySalvageContraband]
   id: WeaponPistolMauser
-  description: Officially designated the C97 Service Pistol, the yangtze is a modernised adaptation of a cheap but reliable old-world semi-automatic handgun sporting a proprietary rubberised grip. Feeds from .40 pistol magazines.
+  description: Officially designated the C97 Service Pistol, the Yangtze is a modernised adaptation of a cheap but reliable old-world semi-automatic handgun sporting a proprietary rubberised grip. Feeds from .40 pistol magazines.
   components:
     - type: Sprite
       sprite: _SpL/Objects/Weapons/Guns/Pistols/mauser.rsi
