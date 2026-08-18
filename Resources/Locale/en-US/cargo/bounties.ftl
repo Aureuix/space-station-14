@@ -80,22 +80,29 @@ bounty-item-ring = Ring
 bounty-item-remains = Hivelord Remains
 bounty-item-plates = Goliath Hide Plates
 
+# SpL Start
 bounty-description-artifact = NanoTrasen is in some hot water for stealing artifacts from non-spacefaring planets. Return one and we'll compensate you for it.
 bounty-description-baseball-bat = Baseball fever is going on at Nyaterra! We are seeking bespoke baseball bats so that the crowd can really dig into their new craze.
 bounty-description-box-hugs = Several chief officials have sustained serious boo-boos. A box of hugs is urgently needed to aid in their recovery.
 bounty-description-brain = MMI development studies have run into a sourcing issue. Send us a brain so we can circumvent the lack of program volunteers.
 bounty-description-bread = Problems with central planning have led to employee unrest in the core sectors. We have the circuses handled, just ship us some bread to ease tensions.
 bounty-description-carrot = After failing to watch instructional videos for proper welder safety, one of our salvage divisions has been blinded. Ship them some carrots so they can restore their eyesight.
+# SpL End
 bounty-description-carrot-fries = Night sight can mean life or death! A shipment of carrot fries is the order.
+# SpL Start
 bounty-description-carp = A high-ranking admiral has been on strike ever since we confiscated her "pet." She is demanding a space carp as a replacement, dead or alive.
 bounty-description-clown-costume = A recent incident at a space carp petting zoo has resulted in the destruction of its only genuine clown costume. Send us a new one to keep the kids entertained.
 bounty-description-corn = A recent wildfire on one of our core agricultural planets has massively impacted corn imports. We will pay you for assistance with the shortfall.
 bounty-description-crayon = We have run into a significant shortage of crayons following the onboarding of a new NTNC division. Please ship replacements.
 bounty-description-cuban-carp = We are seeking one shipment of Cuban Carp for Central Command chefs to experiment with. They have, unfortunately, been unable to source the ingredients themselves.
+# SpL End
 bounty-description-donk-pocket = Consumer safety recall: Warning. Donk-Pockets manufactured in the past year contain hazardous biomatter. Return units to CentComm immediately.
+# SpL Start
 bounty-description-donut = Recent combat has left a squadron of the NTNC with heavy losses and low morale. A shipment of donuts would go a long way to remedying this.
 bounty-description-figurine = The vice president's son saw an ad for action figures on the telescreen and now he won't shut up about them. Ship some to ease his complaints.
+# SpL End
 bounty-description-flesh-monster = We've recently received reports of some kind of flesh monster infestation onboard several stations. Send us a few samples of these creatures so we can investigate new botanical opportunities.
+# SpL Start
 bounty-description-flower = We are interested in erecting a memorial in commemoration of the sacrifices made by our crew, and are seeking to commission flowers to decorate it with.
 bounty-description-galaxythistle = A nearby hydroponics station's stock of galaxythistle has mutated irrecoverably, and is no longer potent. Please send us replacements with intact genetics.
 bounty-description-handcuffs = We require an extra supply of handcuffs or similar restraints for highly confidential reasons.
@@ -103,29 +110,39 @@ bounty-description-instrument = Due to an inability to ship instruments to Centr
 bounty-description-knife = Frontier patrol forces are losing large amounts of knives to attrition. Ship us replacements- we will take anything as long as they are sharp enough to cut with.
 bounty-description-lemon = A sectoral director's kid is starting up a lemonade stand. Small issue: lemons don't get shipped to their sector. Fix that for a nice reward.
 bounty-description-lime = Luxury bars have been hard-pressed for lime wedges following recent logistical incidents. Chip in to remedy this and we'll pay you for your work.
+# SpL End
 bounty-description-lung = The pro-smoking league has been fighting to keep cigarettes on our stations for millennia. Unfortunately, their lungs aren't fighting so hard anymore. Send them some new ones.
 bounty-description-monkey-cube = Due to a recent genetics accident, Central Command is in serious need of monkeys. Your mission is to ship monkey cubes.
+# SpL Start
 bounty-description-mouse = A sister station has run out of freeze-dried mice. Ship some fresh ones so our carnivores don't go on strike.
 bounty-description-pancake = Here at NanoTrasen we consider employees to be family. And you know what families love? Pancakes. Ship a baker's dozen and we'll pay you for your work.
-bounty-description-pen = We are hosting the intergalactic pen balancing competition, and certain competitors insist on using pens from your sector due to some "advantage". Ship us some.
+bounty-description-pen = We are hosting the intergalactic pen balancing competition, and certain competitors insist on using pens from your sector due to a perceived advantage. Ship us some.
 bounty-description-percussion = Due to an inability to ship percussion instruments to Central Command directly, we are seeking your assistance as a workaround solution.
 bounty-description-pie = We are out of pie tins following a logistical error, and certain members of Central Command are struggling to last until replacements arrive. We'll pay for one of any type from your crew.
 bounty-description-prison-uniform = We has been unable to source any new prisoner uniforms, so if you have any spares, we'll take them off your hands.
 bounty-description-radio = Handheld radios have become fashionable in the Solgov core sectors. Ship us some authentic ones of any type and we'll compensate you for them.
 bounty-description-research-disk = We are seeking shipments of research disks for laboratory testing purposes. We will pay for any spares you may have.
+# SpL End
 bounty-description-shiv = Bzzzt... Transmission from prison planet OC-1001: we're facing an onslaught of uhm... "invaders." Yeah, invaders. Send us some shivs to fight them off with.
 bounty-description-soap = Soap has gone missing from CentComm's bathrooms and nobody knows who took it. We would appreciate a replacement shipment.
+# SpL Start
 bounty-description-soup = In order to quell unrest among personnel without compromising our budget, we are seeking to serve soup free of charge to low-income workers. Ship us some to help lower costs even further.
 bounty-description-spear = Helios Logistics here! We need some new props and/or self defense equipment for our mascots. Ship some, and we'll pay a fair price!
+# SpL End
 bounty-description-syringe = The NT anti-drug task force is in need of some syringes in order to distribute them to low-income communities. Help some keep some peoples' jobs secure.
+# SpL Start
 bounty-description-tech-disk = We are seeking a shipment of technology disks for pattern standardisation purposes. We will pay for any spares you may have.
 bounty-description-toolbox = We are investigating a phenomenon being referred to by various employees as robustness, and our current research suggests toolboxes are connected. We will pay for any available samples.
 bounty-description-trash = We are testing trash magnetism, but our janitors were overly enthusiastic today. Send a shipment of trash for testing purposes and we will give you some compensation.
 bounty-description-anomaly-core = Experimental research involving anomalous particles has plateaued due to a shortage of anomaly cores. We will pay for any available samples.
 bounty-description-borg-module = We are seeking shipments of cyborg modules from any willing sellers to help supplement a growing silicon base in the intermediate sectors. You will be fairly compensated.
+# SpL End
 bounty-description-artifact-fragment = Scientists at a nearby station are requesting artifact fragments for microxenoarchaeology studies. Ordinary artifacts are too large for their micro research platforms. Send some of the artifact fragments your sector is rich in.
+# SpL Start
 bounty-description-organs = Unathi chefs are seeking ethically supplied organs of any kind of culinary experimentation. We have faith in NanoTrasen personnel to be able to provide to this standard. You will be fairly compensated for deliveries.
+# SpL End
 bounty-description-labeler = Due to a bureaucratic error, our sorting center almost sent hundreds of crates of carrots to a local Unathi settlement. We urgently need additional labelers to restore order in the warehouse as a matter of urgency.
+# SpL Start
 bounty-description-warm-cloth = A primarily Unathi community near the core are struggling with a recent cold front, and logistical supply lines are strained. We will compensate any private sellers willing to part with warm clothes to help supplement.
 bounty-description-battery = Frontier settlements are preparing for a major solar flare, including stocking batteries for post-flare power recovery. We're sending out a general request for deliveries from private sellers to help support them.
 bounty-description-lasergun = An ongoing xenomorph siege is causing one of our logistical outposts significant trouble. We'll pay well for lasers, even practice ones- we'll be able to retune the light frequencies if it comes to that.
@@ -137,7 +154,9 @@ bounty-description-rollerskates = We are seeking new standard issue for the form
 bounty-description-bedsheet = Due to a miscalculation, we are facing a shortage of replacement bedsheets for station medbays. If you have any spare available, we will compensate you for a delivery.
 bounty-description-bandana =  Bzzzt... Transmission from prison planet OC-1001: We're... reorganizing our command structure. Send us some bandanas so we can tell squ- I mean, departments apart.
 bounty-description-steak = A Unathi-majority cruiser on active patrol is starting to get restless due to supply shortages forcing them to rely on fruit as their sole source of food. We'd appreciate meat supplements as a morale booster.
+# SpL End
 bounty-description-banana = Hi station! Botany won't gimme any more. They said slipping the HoS out an open airlock wasn't funny! Can you believe it? Help me out! HONK.
+# SpL Start
 bounty-description-beer = We are seeking to improve the conditions for station engineers by providing steady supplies of beer over the course of a shift. Unfortunately, our stockpiles are currently low. Any amount that can be spared would be appreciated at this stage.
 bounty-description-hi-viz-vest = ERT personnel are seeking lower cost solutions to blackouts. We do not currently possess any stock of high-visibility vests, and as such would appreciate any spares you may have on station.
 bounty-description-torch = We need torches for confidential reasons. You will be paid for a shipment.
@@ -147,5 +166,8 @@ bounty-description-wine = Oxoprodigol is a complex chemical that requires fine p
 bounty-description-cotton-boll = A mothroach outbreak has resulted in the total destruction of cotton stocks on a nearby hydroponics station. Please send us replacements.
 bounty-description-microwave-machine-board = A major explosive incident at a local appliances warehouse has resulted in a massive microwave shortage. We're seeking contractors willing to help manufacture replacement electronics.
 bounty-description-oven-machine-board = A major explosive incident at a local appliances warehouse has resulted in a massive oven shortage. We're seeking contractors willing to help manufacture replacement electronics.
+# SpL End
 bounty-description-flashes = GREETINGS \[Station] WE REQUIRE 6 FLASHES DUE TO A NORMAL \[TrainingExercise] WITH SECURITY. EVERYTHING IS \[Normal].
+# SpL Start
 bounty-description-ring = Greetings, NanoTrasen personnel. I am curious about your customs, especially in regards to your jewellery. I will pay for examples using your currency.
+# SpL End
