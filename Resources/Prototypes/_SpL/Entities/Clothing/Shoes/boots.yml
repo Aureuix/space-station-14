@@ -1,0 +1,27 @@
+﻿- type: entity
+  parent: [ClothingShoesBaseButcherable, BaseGSLOwnedContraband]
+  id: ClothingShoesBootsGSLWinter
+  name: GSL winter boots
+  description: Comfortable winter boots emblazoned with the logo of Gemini Stellar Logistics.
+  components:
+    - type: Sprite
+      sprite: _SpL/Clothing/Shoes/Boots/gslwinter.rsi
+    - type: Clothing
+      sprite: _SpL/Clothing/Shoes/Boots/gslwinter.rsi
+    - type: TemperatureProtection
+      heatingCoefficient: 1.025
+      coolingCoefficient: 0.5
+
+- type: entity
+  parent: [ClothingShoesBaseButcherable, BaseGSLOwnedContraband]
+  id: ClothingShoesBootsGSLCourier
+  name: GSL courier boots
+  description: Sleek courier boots emblazoned with the logo of Gemini Stellar Logistics.
+  components:
+    - type: Sprite
+      sprite: _SpL/Clothing/Shoes/Boots/gslcourier.rsi
+    - type: Clothing
+      sprite: _SpL/Clothing/Shoes/Boots/gslcourier.rsi
+    - type: TemperatureProtection
+      heatingCoefficient: 1.025
+      coolingCoefficient: 0.5

@@ -1,0 +1,21 @@
+﻿- type: entity
+  parent: [ClothingUniformBase, BaseGSLOwnedContraband]
+  id: ClothingUniformJumpsuitGSLFormal
+  name: GSL technician formal jumpsuit
+  description: A formal suit in the faded hues of Gemini Stellar Logistics' uniforms.
+  components:
+    - type: Sprite
+      sprite: _SpL/Clothing/Uniforms/Jumpsuit/gslformal.rsi
+    - type: Clothing
+      sprite: _SpL/Clothing/Uniforms/Jumpsuit/gslformal.rsi
+      
+- type: entity
+  parent: [ClothingUniformBase, BaseGSLOwnedContraband]
+  id: ClothingUniformJumpsuitGSLCourier
+  name: GSL technician courier jumpsuit
+  description: A casual suit in the faded hues of Gemini Stellar Logistics' uniforms.
+  components:
+    - type: Sprite
+      sprite: _SpL/Clothing/Uniforms/Jumpsuit/gslcourier.rsi
+    - type: Clothing
+      sprite: _SpL/Clothing/Uniforms/Jumpsuit/gslcourier.rsi

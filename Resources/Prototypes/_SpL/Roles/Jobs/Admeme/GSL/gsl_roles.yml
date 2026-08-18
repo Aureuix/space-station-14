@@ -15,12 +15,12 @@
 - type: startingGear
   id: GSLTechnicianCargo
   equipment:
-    jumpsuit: ClothingUniformJumpsuitCargoFormal
-    back: ClothingBackpackSatchelCargoSenior
-    head: ClothingHeadHatCargoFormalsoft
+    jumpsuit: ClothingUniformJumpsuitGSLFormal
+    back: ClothingBackpackSatchelGSL
+    head: ClothingHeadHatCargoGSLsoft
     eyes: ClothingEyesGlassesGSL
     gloves: ClothingHandsGlovesFingerless
-    shoes: ClothingShoesBootsWinterSeniorCourier
+    shoes: ClothingShoesBootsGSLWinter
     id: GSLTechPDA 
     ears: ClothingHeadsetAltGSL 
     belt: ClothingBeltCargoFilledGSL
@@ -37,17 +37,17 @@
       - SpaceCash1000
       - NTCredit100
       - BoxFolderClipboardFilled
-      - RubberStampTrader
+      - RubberStampGSL
 
 - type: startingGear
   id: GSLTechnicianMail
   equipment:
-    jumpsuit: ClothingUniformJumpsuitSeniorMail
-    back: ClothingBackpackSatchelCargoSenior
-    head: ClothingHeadHatMailsoftVisorSeniorFlipped
+    jumpsuit: ClothingUniformJumpsuitGSLCourier
+    back: ClothingBackpackSatchelGSL
+    head: ClothingHeadHatGSLsoftVisorFlipped
     eyes: ClothingEyesGlassesGSL
     gloves: ClothingHandsGlovesFingerless
-    shoes: ClothingShoesBootsSeniorMail
+    shoes: ClothingShoesBootsGSLCourier
     id: GSLTechPDA 
     ears: ClothingHeadsetAltGSL 
     belt: ClothingBeltCargoFilledGSL
@@ -64,4 +64,4 @@
       - SpaceCash1000
       - NTCredit100
       - BoxFolderClipboardFilled
-      - RubberStampTrader
+      - RubberStampGSL
