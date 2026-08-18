@@ -187,6 +187,28 @@
     damageContainers:
     - Biological
 
+  - type: HealthAnalyzer # Starlight BEGIN
+    damageContainers:
+      - Biological
+      - Hybrid
+  - type: ActionGrant
+    actions:
+      - ActionViewLaws
+      - ActionMedTek
+  - type: UserInterface
+    interfaces:
+      enum.SiliconLawsUiKey.Key:
+        type: SiliconLawBoundUserInterface
+        requireInputValidation: false
+      enum.BorgUiKey.Key:
+        type: BorgBoundUserInterface
+      enum.StrippingUiKey.Key:
+        type: StrippableBoundUserInterface
+      enum.BorgSwitchableTypeUiKey.SelectBorgType:
+        type: BorgSelectTypeUserInterface
+      enum.HealthAnalyzerUiKey.Key:
+        type: HealthAnalyzerBoundUserInterface # Starlight END
+
   # Visual
   inventoryTemplateId: borgDutch
   spritePath: Mobs/Silicon/Chassis/medical.rsi

@@ -168,6 +168,19 @@
         collection: FootstepHoverBorg
         params:
           volume: -6
+    # Starlight BEGIN
+    - type: HealthAnalyzer
+      damageContainers:
+        - Biological
+        - Hybrid
+    - type: ActionGrant
+      actions:
+        - ActionMedTek
+    - type: UserInterface
+      interfaces:
+        enum.HealthAnalyzerUiKey.Key:
+          type: HealthAnalyzerBoundUserInterface
+    # Starlight END
 
 - type: entity
   id: BorgChassisSyndicateSaboteur
@@ -416,6 +429,19 @@
     - Medical
     - Science
 #Starlight End
+    # Starlight BEGIN
+  - type: HealthAnalyzer
+    damageContainers:
+      - Biological
+      - Hybrid
+  - type: ActionGrant
+    actions:
+      - ActionMedTek
+  - type: UserInterface
+    interfaces:
+      enum.HealthAnalyzerUiKey.Key:
+        type: HealthAnalyzerBoundUserInterface
+  # Starlight END
 
 - type: entity
   parent: BaseBorgChassisDerelict
