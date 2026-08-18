@@ -544,6 +544,16 @@
   categories:
     - SLFashionOther
       
+- type: listing
+  id: ClothingNeckFoxfire
+  productEntity: ClothingNeckFoxfire
+  cost:
+    NTCredit: 444
+  categories:
+    - SLFashionOther
+  #conditions: # SpL Start
+  #  - !type:ListingLimitedStockCondition
+  #    stock: 2 # SpL End
 
 - type: listing
   id: NT4PlayerInstrument
