@@ -7,7 +7,7 @@
     - name: bounty-item-space-heater-flatpack
       amount: 2
       whitelist:
-        components:
+        tags:
           - SpaceHeaterFlatpack
 
 - type: cargoBounty

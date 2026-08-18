@@ -5,7 +5,7 @@
   playTimeTracker: JobIlluminate
   startingGear: AssistantGear # placeholder
   icon: "JobIconIlluminate"
-  setPreferences: false
+  setPreference: false
   rules: job-rules-illuminate-aligned
   supervisors: job-supervisors-illuminate
   access:

@@ -17,6 +17,7 @@
       borderColor: "#e39751"
       accentVColor: "#00ffff"
     - type: Icon
+      sprite: _SpL/Objects/Devices/pda.rsi
       state: pda-gsl
     - type: CartridgeLoader
       uiKey: enum.PdaUiKey.Key

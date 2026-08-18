@@ -3,7 +3,7 @@
   name: job-name-gsl-tech
   description: job-description-gsl-tech
   playTimeTracker: JobGSLTechnician
-  setPreferences: false
+  setPreference: false
   rules: job-rules-gsl-aligned
   startingGear: GSLTechnicianCargo
   icon: "JobIconGSLTech"
