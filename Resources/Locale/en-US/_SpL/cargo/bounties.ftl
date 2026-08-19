@@ -1,6 +1,6 @@
-﻿bounty-item-space-heater-flatpack = Space heater flatpack
+﻿bounty-item-space-heater = Space heater machine board
 bounty-item-gauze = Gauze
-bounty-item-machinegun-box = LMG magazine box
+bounty-item-machinegun-box = Pan magazine
 bounty-item-medipen = Chemical medipen
 bounty-item-pill-canister = Pill canister
 bounty-item-patch-pack = Patch pack
@@ -11,9 +11,9 @@ bounty-item-cigarette = Cigarette
 bounty-item-stamp = Stamp
 bounty-item-glasses = Prescription glasses
 
-bounty-description-space-heater-flatpack = A primarily Unathi community near the core are struggling with a recent cold front, and logistical supply lines are strained. We will compensate any private manufacturers able to produce heaters to help supplement.
+bounty-description-space-heater = A primarily Unathi community near the core are struggling with a recent cold front, and logistical supply lines are strained. We will compensate any private manufacturers able to produce heaters to help supplement.
 bounty-description-gauze = We are seeking any excess sterile gauze available to supplement our stockpiles in case of future emergencies. Compromising station medical capabilities to fulfil this request is highly discouraged.
-bounty-description-machinegun-box = Field testing of LMGs has run into supply and ammunition patterning issues. We will compensate your station for a magazine box shipment.
+bounty-description-machinegun-box = Field testing of unconventional firearms has run into supply and ammunition patterning issues. We will compensate your station for a magazine shipment.
 bounty-description-medipen = We are seeking to recover any excess used and unused medipens for testing of an experimental fabricator. Please send any spares you may have.
 bounty-description-pill-canister = We are seeking spare pill canisters for distribution to ERT forces. Any spares available for shipment are highly appreciated.
 bounty-description-patch-pack = We are seeking spare patch packs for distribution to ERT forces. Any spares available for shipment are highly appreciated.
