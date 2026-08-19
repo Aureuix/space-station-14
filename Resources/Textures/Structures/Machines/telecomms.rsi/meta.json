@@ -57,6 +57,9 @@
             "name": "variant-nokey"
         },
         {
+            "name": "variant-gsl"
+        },
+        {
             "name": "telecom-open"
         }
     ]

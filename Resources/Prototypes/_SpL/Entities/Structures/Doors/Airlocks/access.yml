@@ -24,3 +24,48 @@
     - type: ContainerFill
       containers:
         board: [DoorElectronicsGSL]
+
+- type: entity
+  parent: AirlockExternalGlass
+  id: AirlockGSLExternalLocked
+  suffix: External, GSL, Locked
+  components:
+    - type: ContainerFill
+      containers:
+        board: [DoorElectronicsGSL]       
+
+- type: entity
+  parent: AirlockExternalGlass
+  id: AirlockGSLExternalCargoLocked
+  suffix: External, Cargo, GSL Remote, Locked
+  components:
+    - type: ContainerFill
+      containers:
+        board: [DoorElectronicsGSLSkeletonKeyCargo]
+
+- type: entity
+  parent: AirlockCargoGlass
+  id: AirlockGSLCargoLocked
+  suffix: Cargo, GSL Remote, Locked
+  components:
+    - type: ContainerFill
+      containers:
+        board: [DoorElectronicsGSLSkeletonKeyCargo]    
+
+- type: entity
+  parent: AirlockSalvageMiningGlass
+  id: AirlockGSLLocked
+  suffix: Salvage, Mining, GSL Remote, Locked
+  components:
+    - type: ContainerFill
+      containers:
+        board: [DoorElectronicsGSLSkeletonKeySalvMine]
+
+- type: entity
+  parent: AirlockSalvageGlass
+  id: AirlockGSLLocked
+  suffix: Salvage, GSL Remote, Locked
+  components:
+    - type: ContainerFill
+      containers:
+        board: [DoorElectronicsGSLSkeletonKeySalv]

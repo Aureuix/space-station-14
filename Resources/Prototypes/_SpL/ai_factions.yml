@@ -22,3 +22,17 @@
     - Gorilla
     - Abductor 
     - Pirate 
+
+- type: npcFaction
+  id: GeminiStellarLogistics
+  hostile:
+    - DungeonSyndicate
+    - DungeonSoviet
+    - Zombie
+    - Abyss
+    - AllHostile
+    - Dragon
+    - Xeno
+    - Gorilla
+    - Abductor
+    - UltraMachineDungeon

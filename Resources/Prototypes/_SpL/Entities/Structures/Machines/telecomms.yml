@@ -1,0 +1,12 @@
+﻿- type: entity
+  parent: TelecomServer
+  id: TelecomServerFilledGSL
+  suffix: GSL
+  components:
+    - type: ContainerFill
+      containers:
+        key_slots:
+          - EncryptionKeyGSL
+    - type: Tag
+      tags:
+        - EncryptionGSL
