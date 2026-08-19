@@ -26,6 +26,7 @@
 - type: npcFaction
   id: GeminiStellarLogistics
   hostile:
+    - SimpleHostile
     - DungeonSyndicate
     - DungeonSoviet
     - Zombie

@@ -7,6 +7,3 @@
       containers:
         key_slots:
           - EncryptionKeyGSL
-    - type: Tag
-      tags:
-        - EncryptionGSL

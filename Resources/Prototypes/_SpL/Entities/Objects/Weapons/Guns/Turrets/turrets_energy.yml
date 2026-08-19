@@ -1,5 +1,6 @@
 - type: entity
   parent: BaseWeaponEnergyTurret
+  description: An auto-turret armed with a high-power energy beam. It's programmed with an advanced detection system that allows it to avoid sentient beings... supposedly.
   id: WeaponTurretGSL
   suffix: GSL
   components:
@@ -7,13 +8,15 @@
       factions:
         - GeminiStellarLogistics
     - type: Gun
-      projectileSpeed: 40
-      fireRate: 3
+      fireRate: 2
       selectedMode: FullAuto
       availableModes:
         - FullAuto
       soundGunshot:
-        path: /Audio/Weapons/Guns/Gunshots/gun_sentry.ogg
+        path: /Audio/Weapons/Guns/Gunshots/laser3.ogg
+    - type: BatteryAmmoProvider
+      proto: SniperBolt
+      fireCost: 100
     - type: HTN
       rootTask:
         task: TurretCompound
