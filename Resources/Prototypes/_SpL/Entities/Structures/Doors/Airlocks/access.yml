@@ -54,7 +54,7 @@
 
 - type: entity
   parent: AirlockSalvageMiningGlass
-  id: AirlockGSLLocked
+  id: AirlockGSLSalvMineLocked
   suffix: Salvage, Mining, GSL Remote, Locked
   components:
     - type: ContainerFill
@@ -63,7 +63,7 @@
 
 - type: entity
   parent: AirlockSalvageGlass
-  id: AirlockGSLLocked
+  id: AirlockGSLSalvLocked
   suffix: Salvage, GSL Remote, Locked
   components:
     - type: ContainerFill
