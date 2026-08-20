@@ -88,7 +88,7 @@
 - type: entity
   parent: ClothingScarfBase
   id: ClothingNeckBunnyGang
-  name: Bunny Gang Scarf
+  name: bunny gang scarf
   description: The scarf of a secretive group of bunny mercenaries.
   components:
     - type: Sprite
@@ -100,7 +100,7 @@
 - type: entity
   parent: ClothingMiscBase # SpL- moved from neck to misc
   id: ClothingNeckFoxfire
-  name: Foxfire Charm
+  name: foxfire charm
   description: Flittering ghostly flames have started following you upon donning this around your neck.
   components:
     - type: Sprite
