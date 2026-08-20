@@ -44,6 +44,38 @@
       stealGroup: OfficerHandgun
 
 - type: entity
+  name: anaconda
+  parent: [ BaseItem, BaseSyndicateContraband ]
+  id: WeaponPistolAnaconda
+  description: A complex Waffle Corp handgun designed for use by corporate officials and operatives on extended deployments. Creates .40 FMJ ammunition on the fly from an internal fabricator, which slowly self-charges.
+  components:
+    - type: Gun
+      fireRate: 3
+      selectedMode: SemiAuto
+      availableModes:
+        - SemiAuto
+        - FullAuto
+      soundGunshot:
+        path: /Audio/Weapons/Guns/Gunshots/hpistol.ogg
+    - type: Sprite
+      sprite: _Goobstation/Objects/Weapons/Guns/Pistols/anaconda.rsi
+      state: icon
+    - type: ContainerContainer
+      containers:
+        ballistic-ammo: !type:Container
+    - type: BallisticAmmoProvider
+      whitelist:
+        tags:
+          - CartridgePistolDP
+      capacity: 8
+      proto: CartridgePistol40FMJ
+      cycleable: false 
+    - type: BallisticAmmoSelfRefiller
+      autoRefillRate: 1s
+      affectedByEmp: true
+    - type: AmmoCounter
+
+- type: entity
   id: WeaponIlluminateFrostbite
   parent: [ BaseWeaponPistol, BaseIlluminateContraband]
   name: PD52 "frostbite"
