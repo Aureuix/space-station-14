@@ -7,7 +7,6 @@ using Content.Shared.Charges.Systems;
 using Content.Shared.IdentityManagement;
 using Content.Shared.Interaction;
 using Content.Shared.Popups;
-using Content.Shared.Tag;
 using Robust.Shared.Audio.Systems;
 using Robust.Shared.Serialization;
 

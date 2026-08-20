@@ -460,6 +460,7 @@
     - id: DoorRemoteSecurity
     - id: HoloprojectorSecurity
     - id: BoxStampsHos # SpL
+    - id: Demag # SpL
     - id: BoxHoSCircuitboards
     - id: WeaponDisabler
     - id: WeaponTaser
