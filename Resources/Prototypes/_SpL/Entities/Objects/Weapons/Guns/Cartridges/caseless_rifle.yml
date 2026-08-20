@@ -1,15 +1,4 @@
 ﻿- type: entity
-  parent: BaseBullet
-  id: BulletCaselessRifle
-  categories: [ HideSpawnMenu ]
-  name: bullet (.25 caseless)
-  components:
-    - type: Projectile
-      damage:
-        types:
-          Piercing: 19
-          
-- type: entity
   parent: BaseCartridgeCaselessRifle
   id: CartridgeCaselessRifleFMJ
   name: cartridge (.25 caseless FMJ)
