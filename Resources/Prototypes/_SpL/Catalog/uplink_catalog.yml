@@ -13,6 +13,20 @@
   - UplinkWearables
 
 - type: listing
+  id: UplinkPistolAnaconda
+  name: uplink-pistol-anaconda-name
+  description: uplink-pistol-anaconda-desc
+  icon: { sprite: _Goobstation/Objects/Weapons/Guns/Pistols/anaconda.rsi, state: icon }
+  productEntity: WeaponPistolAnaconda
+  discountCategory: veryRareDiscounts
+  discountDownTo:
+    Telecrystal: 4
+  cost:
+    Telecrystal: 8
+  categories:
+    - UplinkWeaponry
+  
+- type: listing
   id: UplinkM90Bundle
   name: uplink-m90-bundle-name
   description: uplink-m90-bundle-desc
@@ -20,7 +34,7 @@
   productEntity: ClothingBackpackDuffelSyndicateFilledM90
   discountCategory: veryRareDiscounts
   discountDownTo:
-    Telecrystal: 8
+    Telecrystal: 12 
   cost:
     Telecrystal: 17
   categories:
