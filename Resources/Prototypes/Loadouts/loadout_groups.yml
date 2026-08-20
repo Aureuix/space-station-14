@@ -133,7 +133,8 @@
   - ClothingMaskScaredMime
   - ClothingKitsuneMask # SpL start
   - Umbrella 
-  - BoxLighttubeBlacklight  # SpL end
+  - BoxLighttubeBlacklight  
+  - ClothingNeckFoxfire # SpL end
 
 - type: loadoutGroup
   id: Glasses

@@ -98,7 +98,7 @@
       sprite: _Starlight/Clothing/Neck/Misc/bunnygang.rsi
 
 - type: entity
-  parent: ClothingNeckBase
+  parent: ClothingMiscBase # SpL- moved from neck to misc
   id: ClothingNeckFoxfire
   name: Foxfire Charm
   description: Flittering ghostly flames have started following you upon donning this around your neck.
