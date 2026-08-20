@@ -1,6 +1,6 @@
 ﻿- type: entity
   name: yangtze
-  parent: [BaseWeaponPistol, BaseSecuritySalvageContraband]
+  parent: [ BaseWeaponPistol, BaseSecuritySalvageContraband ]
   id: WeaponPistolMauser
   description: Officially designated the C97 Service Pistol, the Yangtze is a modernised adaptation of a cheap but reliable old-world semi-automatic handgun sporting a proprietary rubberised grip. Feeds from .40 pistol magazines.
   components:
@@ -79,7 +79,7 @@
 
 - type: entity
   id: WeaponIlluminateFrostbite
-  parent: [ BaseWeaponPistol, BaseIlluminateContraband]
+  parent: [ BaseWeaponPistol, BaseIlluminateContraband ]
   name: PD52 "frostbite"
   description: A one-handed cross between handgun and SMG, the PD52 comes with an inbuilt silencer and fires jet-propelled flechette rounds.
   components:

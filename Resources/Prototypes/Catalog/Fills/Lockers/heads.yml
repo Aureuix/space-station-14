@@ -246,6 +246,7 @@
     - id: SheetGlass #FH
     - id: RCDChiefEngineer # Starlight
     - id: RPD # Starlight: RPD
+    - id: ClothingEyesGlassesTRayMeson # SpL- a spare
     - id: RCDAmmo
     - id: RubberStampCE
 #    - id: MetalFoamGrenade # Starlight-edit: in the EngiVend

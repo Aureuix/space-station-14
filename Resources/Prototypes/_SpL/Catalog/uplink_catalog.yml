@@ -13,6 +13,20 @@
   - UplinkWearables
 
 - type: listing
+  id: UplinkBallisticGoggles
+  name: uplink-ballistic-goggles-name
+  description: uplink-ballistic-goggles-desc
+  icon: { sprite: _Mono/Clothing/Eyes/Glasses/ballistic_goggles_red.rsi, state: icon }
+  productEntity: GogglesBallisticSyndicate
+  discountCategory: veryRareDiscounts
+  discountDownTo:
+    Telecrystal: 4
+  cost:
+    Telecrystal: 6
+  categories:
+    - UplinkWearables
+
+- type: listing
   id: UplinkPistolAnaconda
   name: uplink-pistol-anaconda-name
   description: uplink-pistol-anaconda-desc
