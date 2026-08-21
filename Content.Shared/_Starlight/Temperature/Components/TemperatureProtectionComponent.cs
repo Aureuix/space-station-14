@@ -1,6 +1,4 @@
-﻿using Content.Server.Temperature.Systems;
-
-namespace Content.Shared._Starlight.Temperature.Components;
+﻿namespace Content.Shared.Temperature.Components;
 
 [RegisterComponent]
 public sealed partial class TemperatureProtectionComponent : Component

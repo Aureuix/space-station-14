@@ -1,4 +1,4 @@
-﻿using Content.Shared._Starlight.Temperature.Components;
+﻿using Content.Shared.Temperature.Components;
 using Content.Shared.Clothing.Components;
 using Content.Shared.Examine;
 using Robust.Shared.Utility;
