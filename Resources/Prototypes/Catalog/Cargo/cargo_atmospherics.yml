@@ -4,7 +4,7 @@
     sprite: _Starlight/Structures/Storage/canister-ui.rsi #SL Edit
     state: air #SL Edit
   product: AirCanister
-  cost: 600
+  cost: 400 # SpL- this is maybe the most worthless variant of them yet
   category: cargoproduct-category-name-atmospherics
   group: market
 
@@ -14,7 +14,7 @@
     sprite: _Starlight/Structures/Storage/canister-ui.rsi #SL Edit
     state: oxygen #SL Edit
   product: OxygenCanister
-  cost: 600
+  cost: 500 # SpL- be serious why is oxy more expensive
   category: cargoproduct-category-name-atmospherics
   group: market
 
@@ -64,7 +64,7 @@
     sprite: _Starlight/Structures/Storage/canister-ui.rsi #SL Edit
     state: carbon #SL Edit
   product: LiquidCarbonDioxideCanister
-  cost: 1800 # much less deadly than the plasma can (this has been tested) even though this is cold+poison
+  cost: 1500 # much less deadly than the plasma can (this has been tested) even though this is cold+poison # SpL- no reason a gasminable resource needs to be costly
   category: cargoproduct-category-name-atmospherics
   group: market
 
@@ -94,16 +94,16 @@
     sprite: _Starlight/Structures/Storage/canister-ui.rsi #SL Edit
     state: plasma #SL Edit
   product: PlasmaCanister
-  cost: 4200 # for reference, bagel's 3x1 roundstart plasma chamber contains ~16kmol for free, this is $4.2k for 2769 mol
+  cost: 2000 # for reference, bagel's 3x1 roundstart plasma chamber contains ~16kmol for free, this is $4.2k for 2769 mol # SpL- yeah but what if atmos got to have fun
   category: cargoproduct-category-name-atmospherics
   group: market
 
-#- type: cargoProduct
-#  id: AtmosphericsTritium
-#  icon:
-#    sprite: Structures/Storage/canister.rsi
-#    state: green
-#  product: TritiumCanister
-#  cost: 15500
-#  category: cargoproduct-category-name-atmospherics
-#  group: market
+- type: cargoProduct # SpL- re-enabled
+  id: AtmosphericsTritium
+  icon:
+    sprite: Structures/Storage/canister.rsi
+    state: green
+  product: TritiumCanister
+  cost: 15500
+  category: cargoproduct-category-name-atmospherics
+  group: market

@@ -220,9 +220,6 @@
   components:
   - type: Flatpack
     entity: SpaceHeaterAnchored
-  - type: Tag # SpL
-    tags:
-      - SpaceHeaterFlatpack # SpL
     
 
 - type: entity

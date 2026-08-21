@@ -1,0 +1,20 @@
+﻿- type: entity
+  parent: [BaseItem, BaseSecurityContraband]
+  id: Demag
+  name: cryptographic reverter
+  description: A reverse-engineered electromagnetic prototype designed to undo cryptographic sequencing, often referred to as a Demag. It is incapable of restoring wiped accesses or subverted silicon laws however.
+  components:
+    - type: Demag
+    - type: Sprite
+      sprite: _NF/Objects/Tools/demag.rsi
+      state: icon
+    - type: Item
+      sprite: _NF/Objects/Tools/demag.rsi
+      storedRotation: -90
+    - type: LimitedCharges
+    - type: AutoRecharge
+    - type: StaticPrice
+      price: 2500
+    - type: Tag
+      tags:
+        - SecBeltEquip

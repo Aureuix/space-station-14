@@ -24,7 +24,7 @@ public sealed partial class ShadekinSystem : EntitySystem
         SubscribeLocalEvent<BrighteyeComponent, MobStateChangedEvent>(OnMobStateChanged);
         SubscribeLocalEvent<BrighteyeComponent, NullSpaceShuntEvent>(NullSpaceShunt);
         SubscribeLocalEvent<BrighteyeComponent, EntityZombifiedEvent>((uid, _, _) => RemComp<BrighteyeComponent>(uid));
-        SubscribeLocalEvent<MindShieldComponent, ComponentStartup>(MindShieldImplanted);
+        // SubscribeLocalEvent<MindShieldComponent, ComponentStartup>(MindShieldImplanted); // SpL removal
         SubscribeLocalEvent<BrighteyeComponent, ForcedPrototypeDoSpecialEvent>(ForcedPrototypeDoSpecial);
 
         SubscribeLocalEvent<OrganShadekinCoreComponent, SurgeryOrganImplantationCompleted>(OnCoreOrganImplanted);
@@ -39,7 +39,7 @@ public sealed partial class ShadekinSystem : EntitySystem
             return;
         }
 
-        RemCompDeferred<MindShieldComponent>(uid);
+        //RemCompDeferred<MindShieldComponent>(uid); // SpL removal
 
         _alerts.ShowAlert(uid, component.BrighteyeAlert);
         _alerts.ShowAlert(uid, component.PortalAlert);
@@ -95,18 +95,18 @@ public sealed partial class ShadekinSystem : EntitySystem
 
         component.PortalNeedStation = false;
 
-        RemCompDeferred<MindShieldComponent>(uid);
+        // RemCompDeferred<MindShieldComponent>(uid); // SpL
     }
 
     // ! Gosh this is bad... But there no event to get implanted shit? or mindshield? il do this for now change if need later!
-    private void MindShieldImplanted(EntityUid uid, MindShieldComponent comp, ComponentStartup args)
+    /* private void MindShieldImplanted(EntityUid uid, MindShieldComponent comp, ComponentStartup args)
     {
         if (HasComp<BrighteyeComponent>(uid))
         {
             RemCompDeferred<MindShieldComponent>(uid);
             return;
         }
-    }
+    } */ // SpL- gee, I wonder if maybe it'd be better to let mindshielding go ahead or something. 
 
     private void OnCoreOrganImplanted(Entity<OrganShadekinCoreComponent> ent, ref SurgeryOrganImplantationCompleted args)
     {

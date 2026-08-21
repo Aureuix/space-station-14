@@ -170,14 +170,14 @@
     - type: ChamberMagazineAmmoProvider
       availablePrefixes:
         - ""
-        - redgrip
-        - red
-        - tangrip
-        - green
+        #- redgrip # SpL
+        #- red # SpL
+        #- tangrip # SpL
+        #- green # SpL
         - black
-        - tan
+        #- tan # SpL
         - grey
-        - greengrip
+        #- greengrip # SpL
     - type: StealTarget
       stealGroup: OfficerHandgun
 

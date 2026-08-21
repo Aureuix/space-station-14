@@ -12,6 +12,5 @@
           color: "#00ffff"
     - type: Access
       tags:
-        - Salvage
-        - Cargo
+        - GSLSkeletonKey
         - GSL

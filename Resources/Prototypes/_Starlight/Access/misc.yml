@@ -45,6 +45,7 @@
   - Blackstar
   - Illuminate # SpL
   - GSL # SpL
+  - GSLSkeletonKey # SpL
 
 - type: accessGroup
   id: Syndicate

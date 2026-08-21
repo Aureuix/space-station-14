@@ -1,4 +1,15 @@
-﻿marking-MarkingZenghuHeadAlt = 'Zenghu' Mk2 Head
+﻿marking-MarkingBlankTorsoM = Standard Robotic Chassis Mk1
+marking-MarkingBlankTorsoF = Standard Robotic Chassis Mk2
+marking-MarkingBlankLArm = Standard Left Robotic Arm
+marking-MarkingBlankLHand = Standard Left Robotic Hand
+marking-MarkingBlankRArm = Standard Right Robotic Arm
+marking-MarkingBlankRHand = Standard Right Robotic Hand
+marking-MarkingBlankLLeg = Standard Left Robotic Leg
+marking-MarkingBlankLFoot = Standard Left Robotic Foot
+marking-MarkingBlankRLeg = Standard Right Robotic Leg
+marking-MarkingBlankRFoot = Standard Right Robotic Foot
+
+marking-MarkingZenghuHeadAlt = 'Zenghu' Mk2 Head
 marking-MarkingZenghuChestAlt = 'Zenghu' Mk2 Robotic Chassis
 marking-MarkingZenghuRHandAlt = 'Zenghu' Mk2 Right Robotic Hand
 marking-MarkingZenghuRArmAlt = 'Zenghu' Mk2 Right Robotic Arm

@@ -247,6 +247,7 @@
     - id: RCDChiefEngineer # Starlight
     - id: RPD # Starlight: RPD
     - id: HandheldEngineeringMonitor # Starlight-edit: CE's handheld power/atmospherics monitor
+    - id: ClothingEyesGlassesTRayMeson # SpL- a spare
     - id: RCDAmmo
     - id: RubberStampCE
 #    - id: MetalFoamGrenade # Starlight-edit: in the EngiVend
@@ -460,6 +461,7 @@
     - id: DoorRemoteSecurity
     - id: HoloprojectorSecurity
     - id: BoxStampsHos # SpL
+    - id: Demag # SpL
     - id: BoxHoSCircuitboards
     - id: WeaponDisabler
     - id: WeaponTaser

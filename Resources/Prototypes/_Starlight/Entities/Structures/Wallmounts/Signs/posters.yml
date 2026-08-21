@@ -469,6 +469,7 @@
     state: waffle
 
 - type: entity
+  parent: PosterBase # SpL- this was missing
   id: PosterLegit247
   name: "24/7"
   description: "Open 24 hours a spaceday, seven days a spaceweek!"
@@ -680,7 +681,7 @@
 - type: entity
   parent: PosterBase
   id: PosterLegitMoffuchis
-  name: "Moffucis Pizza"
+  name: "Moffuchi's Pizza"
   description: "He cant taste it for himself, but Moffuchi is sure it tastes great!"
   components:
   - type: Sprite

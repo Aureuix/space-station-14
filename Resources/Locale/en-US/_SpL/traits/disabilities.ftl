@@ -1,5 +1,5 @@
 trait-redshirt-name = Polarity Syndrome
-trait-redshirt-desc = Known professionally as High Consciousness Polarity Disorder, or HCP. Removes the critical state, rendering you instantly dead to any critical injury.
+trait-redshirt-desc = Known professionally as High Consciousness Polarity Syndrome, or HCP. Removes the critical state, rendering you instantly dead to any critical injury.
 
 trait-brittlebones-name = Brittle Bones
 trait-brittlebones-desc = This is scientifically known as Osteogenesis Imperfecta, and it means sticks and stones break your bones. Makes critical injuries far more common.
