@@ -1,7 +1,7 @@
 - type: entity
   id: SupermatterCrystal
   name: supermatter
-  description: A glowing supermatter crystal, with half an ID card lying next to it, and it says "Clown pira..." on it.
+  description: A glowing supermatter crystal. Should you be standing this close to it? # SpL
   placement:
     mode: SnapgridCenter
   components:
@@ -162,7 +162,7 @@
 - type: entity
   id: CascadChunk
   parent: BaseItem
-  name: Cascad Chunk
+  name: cascad chunk
   description: A chunk of degenerate supermatter. The remains are still dangerously radioactive.
   components:
     - type: Sprite

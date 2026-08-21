@@ -22,7 +22,7 @@
         - state: tabletsol
         # Lit screen. Only shown while a screen is actually open, and the state is swapped to
         # match whichever ItemSwitch mode is active below.
-        - sprite: Objects/Specific/Engineering/handheldengineeringmonitor.rsi
+        - sprite: _Starlight/Objects/Specific/Engineering/handheldengineeringmonitor.rsi
           state: power
           shader: unshaded
           visible: false
