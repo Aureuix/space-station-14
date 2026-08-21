@@ -55,6 +55,12 @@ public sealed partial class ItemSwitchState : BoundUserInterfaceMessage
     [DataField]
     public ComponentRegistry? Components;
 
+    /// <summary>
+    /// Which UI this state points the entity's <c>ActivatableUI</c> at, if it has one.
+    /// </summary>
+    [DataField(customTypeSerializer: typeof(EnumSerializer))]
+    public Enum? ActivatableUiKey;
+    
     [DataField]
     public bool RemoveComponents = true;
     
