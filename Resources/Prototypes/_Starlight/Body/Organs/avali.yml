@@ -13,6 +13,7 @@
       - Crayon
       - Paper
       - AvianFood
+      - Birthday
   - type: SolutionContainerManager
     solutions:
       stomach:
