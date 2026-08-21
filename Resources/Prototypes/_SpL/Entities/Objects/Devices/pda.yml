@@ -14,8 +14,8 @@
           !type:String
           pda-gsl
     - type: PdaBorderColor
-      borderColor: "#e39751"
-      accentVColor: "#00ffff"
+      borderColor: "#b89e50"
+      accentVColor: "#5e77c1"
     - type: Icon
       sprite: _SpL/Objects/Devices/pda.rsi
       state: pda-gsl

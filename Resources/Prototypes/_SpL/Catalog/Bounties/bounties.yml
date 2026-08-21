@@ -1,14 +1,14 @@
 ﻿- type: cargoBounty
-  id: BountySpaceHeaterFlatpack
+  id: BountySpaceHeater
   reward: 6000
-  description: bounty-description-space-heater-flatpack
+  description: bounty-description-space-heater
   idPrefix: TSF
   entries:
-    - name: bounty-item-space-heater-flatpack
+    - name: bounty-item-space-heater
       amount: 2
       whitelist:
         tags:
-          - SpaceHeaterFlatpack
+          - SpaceHeaterBoard
 
 - type: cargoBounty
   id: BountyGauze
@@ -29,10 +29,10 @@
   idPrefix: CSD
   entries:
     - name: bounty-item-machinegun-box
-      amount: 1
+      amount: 4
       whitelist:
         tags:
-          - LightRifleHeavy
+          - MagazineLightRiflePan
 
 - type: cargoBounty
   id: BountyResearchDisk

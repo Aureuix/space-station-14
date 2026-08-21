@@ -14,6 +14,9 @@
           state: crypt_brown
         - sprite: _SpL/Objects/Devices/encryption_keys.rsi
           state: gsl_label
+    - type: Tag
+      tags:
+        - EncryptionGSL
 
 - type: entity
   parent: [ EncryptionKey, BaseIlluminateContraband ]

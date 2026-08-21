@@ -1,6 +1,6 @@
 ﻿- type: entity
   id: IntercomGSL
-  parent: [ Intercom, BaseGSLOwnedContraband ]
+  parent: [ BaseIntercomSecure, BaseGSLOwnedContraband ]
   suffix: GSL
   description: An intercom. For when you really need the ATS technician to know something.
   components:
