@@ -154,7 +154,7 @@
 - type: cargoBounty
   id: BountyHivelordRemains
   reward: 20000
-  ickets: 750 # SpL
+  tickets: 750 # SpL
   description: bounty-description-remains
   group: SalvageJobTier3
   sprite:
@@ -170,7 +170,7 @@
 - type: cargoBounty
   id: BountySalvageDiamond
   reward: 20000
-  ickets: 750 # SpL
+  tickets: 750 # SpL
   description: bounty-description-diamond
   group: SalvageJobTier3
   sprite:
