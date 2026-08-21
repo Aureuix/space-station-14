@@ -1,6 +1,12 @@
 uplink-hardsuit-cselite-name = CyberSun Elite Suit
 uplink-hardsuit-cselite-desc =  A suit made by CyberSun's R&D department, who decided to one-up the Gorlex Marauders in the world of advanced hardsuits. Comes with a built in 3 hit shield, no capacity increases.
 
+uplink-ballistic-goggles-name = Ballistic goggles
+uplink-ballistic-goggles-desc = A pair of flash-proof goggles made of ballistic glass with integrated HUD elements. Designed for stylish agents who like to go loud.
+
+uplink-pistol-anaconda-name = Anaconda
+uplink-pistol-anaconda-desc = A loud powerful handgun with an inbuilt ammo fabricator, printing full-metal jacketed ammunition on the fly for agents who like to fight the long fight (.40 FMJ).
+
 uplink-m90-bundle-name = M90 Carbine Bundle
 uplink-m90-bundle-desc = The M90 carbine, a compact competitor to the SolGov Lecter, bundled with three FMJ magazines. Chambered in .20 rifle.
 

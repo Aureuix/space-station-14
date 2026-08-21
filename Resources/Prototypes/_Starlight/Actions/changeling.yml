@@ -47,7 +47,7 @@
 - type: entity
   id: ActionEnterStasis
   name: Enter regenerative stasis
-  description: Fake your death and start regenerating. Drains all your chemicals. Consumes biomass.
+  description: Fake your death and start regenerating. Drains all your chemicals.
   categories: [ HideSpawnMenu ]
   components:
   - type: Action
@@ -61,7 +61,7 @@
   - type: InstantAction
     event: !type:EnterStasisEvent {}
   - type: ChangelingAction
-    biomassCost: 1
+    # biomassCost: 1 # SpL- ow owie
     useInLesserForm: true
 
 - type: entity

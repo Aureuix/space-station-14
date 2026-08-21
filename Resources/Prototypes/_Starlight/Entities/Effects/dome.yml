@@ -150,7 +150,7 @@
       fix1:
         shape:
           !type:PhysShapeCircle
-          radius: 3.8
+          radius: 6.2 # SpL
         density: 0
         hard: false
         mask:

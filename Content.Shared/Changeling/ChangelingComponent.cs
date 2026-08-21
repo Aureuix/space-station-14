@@ -49,10 +49,10 @@ public sealed partial class ChangelingComponent : Component
     public bool StealthEnabled = false;
 
     [DataField]
-    public float StealthDrain = 1.5f;
+    public float StealthDrain = 1f; // SpL- free agent, no reason to make it harder
 
     [DataField]
-    public float StasisDrain = 0.2f;
+    public float StasisDrain = 0f; // SpL- yeah, no
 
 
     public Dictionary<string, EntityUid?> Equipment = new();

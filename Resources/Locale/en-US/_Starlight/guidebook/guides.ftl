@@ -169,6 +169,3 @@ guide-entry-roleplay-01 = The Basics
 guide-entry-roleplay-02 = Collaborative Storytelling
 guide-entry-roleplay-03 = Losing Is Fun
 guide-entry-roleplay-04 = Acting With Mechanics
-
-# SpL Additions
-guide-entry-spl-code-epsilon = Code Epsilon

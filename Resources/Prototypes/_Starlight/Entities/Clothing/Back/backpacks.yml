@@ -84,7 +84,7 @@
 - type: entity
   parent: ClothingBackpack
   id: ClothingBackpackBunnyGang
-  name: Bunny Gang Backpack
+  name: bunny gang backpack
   description: A sword that is actually a backpack. It's impressive how they managed to fit things in there, even so, inventory management will be a trial.
   components:
     - type: Sprite
