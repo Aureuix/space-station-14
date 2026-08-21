@@ -89,83 +89,83 @@
 - type: humanoidBaseSprite
   id: MobIPCHead
   baseSprite:
-    sprite: _FarHorizons/Mobs/Species/IPC/blank.rsi/ # SpL
+    sprite: _FarHorizons/Mobs/Species/IPC/blank.rsi # SpL
     state: blank # SpL
 
 - type: humanoidBaseSprite
   id: MobIPCHeadMale
   baseSprite:
-    sprite: _FarHorizons/Mobs/Species/IPC/blank.rsi/ # SpL
+    sprite: _FarHorizons/Mobs/Species/IPC/blank.rsi # SpL
     state: blank # SpL
 
 - type: humanoidBaseSprite
   id: MobIPCHeadFemale
   baseSprite:
-    sprite: _FarHorizons/Mobs/Species/IPC/blank.rsi/ # SpL
+    sprite: _FarHorizons/Mobs/Species/IPC/blank.rsi # SpL
     state: blank # SpL
 
 - type: humanoidBaseSprite
   id: MobIPCTorso
   baseSprite:
-    sprite: _FarHorizons/Mobs/Species/IPC/blank.rsi/ # SpL
+    sprite: _FarHorizons/Mobs/Species/IPC/blank.rsi # SpL
     state: blank # SpL
 
 - type: humanoidBaseSprite
   id: MobIPCTorsoMale
   baseSprite:
-    sprite: _FarHorizons/Mobs/Species/IPC/blank.rsi/ # SpL
+    sprite: _FarHorizons/Mobs/Species/IPC/blank.rsi # SpL
     state: blank # SpL
 
 - type: humanoidBaseSprite
   id: MobIPCTorsoFemale
   baseSprite:
-    sprite: _FarHorizons/Mobs/Species/IPC/blank.rsi/ # SpL
+    sprite: _FarHorizons/Mobs/Species/IPC/blank.rsi # SpL
     state: blank # SpL
 
 - type: humanoidBaseSprite
   id: MobIPCLLeg
   baseSprite:
-    sprite: _FarHorizons/Mobs/Species/IPC/blank.rsi/ # SpL
+    sprite: _FarHorizons/Mobs/Species/IPC/blank.rsi # SpL
     state: blank # SpL
 
 - type: humanoidBaseSprite
   id: MobIPCLArm
   baseSprite:
-    sprite: _FarHorizons/Mobs/Species/IPC/blank.rsi/ # SpL
+    sprite: _FarHorizons/Mobs/Species/IPC/blank.rsi # SpL
     state: blank # SpL
 
 - type: humanoidBaseSprite
   id: MobIPCLHand
   baseSprite:
-    sprite: _FarHorizons/Mobs/Species/IPC/blank.rsi/ # SpL
+    sprite: _FarHorizons/Mobs/Species/IPC/blank.rsi # SpL
     state: blank # SpL
 
 - type: humanoidBaseSprite
   id: MobIPCLFoot
   baseSprite:
-    sprite: _FarHorizons/Mobs/Species/IPC/blank.rsi/ # SpL
+    sprite: _FarHorizons/Mobs/Species/IPC/blank.rsi # SpL
     state: blank # SpL
 
 - type: humanoidBaseSprite
   id: MobIPCRLeg
   baseSprite:
-    sprite: _FarHorizons/Mobs/Species/IPC/blank.rsi/ # SpL
+    sprite: _FarHorizons/Mobs/Species/IPC/blank.rsi # SpL
     state: blank # SpL
 
 - type: humanoidBaseSprite
   id: MobIPCRArm
   baseSprite:
-    sprite: _FarHorizons/Mobs/Species/IPC/blank.rsi/ # SpL
+    sprite: _FarHorizons/Mobs/Species/IPC/blank.rsi # SpL
     state: blank # SpL
 
 - type: humanoidBaseSprite
   id: MobIPCRHand
   baseSprite:
-    sprite: _FarHorizons/Mobs/Species/IPC/blank.rsi/ # SpL
+    sprite: _FarHorizons/Mobs/Species/IPC/blank.rsi # SpL
     state: blank # SpL
 
 - type: humanoidBaseSprite
   id: MobIPCRFoot
   baseSprite:
-    sprite: _FarHorizons/Mobs/Species/IPC/blank.rsi/ # SpL
+    sprite: _FarHorizons/Mobs/Species/IPC/blank.rsi # SpL
     state: blank # SpL
