@@ -246,6 +246,7 @@
     - id: SheetGlass #FH
     - id: RCDChiefEngineer # Starlight
     - id: RPD # Starlight: RPD
+    - id: HandheldEngineeringMonitor # Starlight-edit: CE's handheld power/atmospherics monitor
     - id: ClothingEyesGlassesTRayMeson # SpL- a spare
     - id: RCDAmmo
     - id: RubberStampCE
