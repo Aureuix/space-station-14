@@ -3,7 +3,7 @@
   files:
     - /Audio/Lobby/thunderdome.ogg
     - /Audio/Lobby/space_asshole.ogg
-    # - /Audio/Lobby/the_wizard.ogg Starlight-edit: does not fall under the definition of "suitable" music
+    - /Audio/Lobby/the_wizard.ogg # Starlight-edit: does not fall under the definition of "suitable" music # SpL- says you
     - /Audio/Lobby/endless_space.ogg
     - /Audio/Lobby/singuloose.ogg
     - /Audio/Lobby/comet_haley.ogg
