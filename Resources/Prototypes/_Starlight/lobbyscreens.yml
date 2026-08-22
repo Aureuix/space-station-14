@@ -112,11 +112,11 @@
   title: lobby-state-background-mime-title #starlight
   artist: lobby-state-background-mime-artist #starlight
 
-- type: lobbyBackground
-  id: dispace
-  background: /Textures/_Starlight/LobbyScreens/Dispace.webp
-  title: lobby-state-background-Dispace-title
-  artist: lobby-state-background-IQlvlZero-artist
+#- type: lobbyBackground
+#  id: dispace
+#  background: /Textures/_Starlight/LobbyScreens/Dispace.webp
+#  title: lobby-state-background-Dispace-title
+#  artist: lobby-state-background-IQlvlZero-artist
 
 - type: lobbyBackground
   id: clown

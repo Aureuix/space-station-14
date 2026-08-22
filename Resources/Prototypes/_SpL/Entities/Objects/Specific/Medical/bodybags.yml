@@ -1,0 +1,28 @@
+﻿- type: entity
+  id: BodyBagCC
+  parent: [ BodyBagLockable, BaseCentcommContraband ]
+  name: CentComm lockable body bag
+  components:
+    - type: Sprite
+      sprite: _SpL/Objects/Specific/Medical/lockablebodybag.rsi
+    - type: Icon
+      sprite: _SpL/Objects/Specific/Medical/lockablebodybag.rsi
+      state: bag
+    - type: AccessReader
+      access: [["CentralCommand"]]
+    - type: Destructible
+      thresholds:
+        - trigger:
+            !type:DamageTrigger
+            damage: 60
+          behaviors:
+            - !type:DoActsBehavior
+              acts: ["Destruction"]
+
+- type: entity
+  id: BodyBagCCFolded
+  parent: BodyBagCC
+  suffix: folded
+  components:
+    - type: Foldable
+      folded: true

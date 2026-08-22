@@ -1,7 +1,7 @@
 - type: entity
-  parent: [ClothingNeckBase, BaseCommandContraband]
+  parent: [ClothingNeckBase, BaseNanoTrasenContraband]
   id: ClothingNeckCapeNTSF1
-  name: nanotrasen special forces cape
+  name: NT special forces cape
   suffix: One. Do Not Map
   description: An elite cape woven from reflective threads and integrated with state of the art technology to ensure NanoTrasens finest look their best.
   components:
@@ -38,9 +38,9 @@
     delay: 10.0
 
 - type: entity
-  parent: [ClothingNeckBase, BaseCommandContraband]
+  parent: [ClothingNeckBase, BaseNanoTrasenContraband]
   id: ClothingNeckCapeNTSF2
-  name: nanotrasen special forces cape
+  name: NT special forces cape
   suffix: Two. Do Not Map
   description: An elite cape woven from reflective threads and integrated with state of the art technology to ensure NanoTrasens finest look their best.
   components:
@@ -77,9 +77,9 @@
     delay: 10.0
 
 - type: entity
-  parent: [ClothingNeckBase, BaseCommandContraband]
+  parent: [ClothingNeckBase, BaseNanoTrasenContraband]
   id: ClothingNeckCapeNTSF3
-  name: nanotrasen special forces cape
+  name: NT special forces cape
   suffix: Three. Do Not Map
   description: An elite cape woven from reflective threads and integrated with state of the art technology to ensure NanoTrasens finest look their best.
   components:
@@ -116,9 +116,9 @@
     delay: 10.0
 
 - type: entity
-  parent: [ClothingNeckBase, BaseCommandContraband]
+  parent: [ClothingNeckBase, BaseNanoTrasenContraband]
   id: ClothingNeckCapeNTSF4
-  name: nanotrasen special forces cape
+  name: NT special forces cape
   suffix: Four. Do Not Map
   description: An elite cape woven from reflective threads and integrated with state of the art technology to ensure NanoTrasens finest look their best.
   components:
@@ -155,9 +155,9 @@
     delay: 10.0
 
 - type: entity
-  parent: [ClothingNeckBase, BaseCommandContraband]
+  parent: [ClothingNeckBase, BaseNanoTrasenContraband]
   id: ClothingNeckCapeNTSF5
-  name: nanotrasen special forces cape
+  name: NT special forces cape
   suffix: Five. Do Not Map
   description: An elite cape woven from reflective threads and integrated with state of the art technology to ensure NanoTrasens finest look their best.
   components:
@@ -194,9 +194,9 @@
     delay: 10.0
 
 - type: entity
-  parent: [ClothingNeckBase, BaseCommandContraband]
+  parent: [ClothingNeckBase, BaseNanoTrasenContraband]
   id: ClothingNeckCapeNTSF6
-  name: nanotrasen special forces cape
+  name: NT special forces cape
   suffix: Six. Do Not Map
   description: An elite cape woven from reflective threads and integrated with state of the art technology to ensure NanoTrasens finest look their best.
   components:
@@ -233,9 +233,9 @@
     delay: 10.0
 
 - type: entity
-  parent: [ClothingNeckBase, BaseCommandContraband]
+  parent: [ClothingNeckBase, BaseNanoTrasenContraband]
   id: ClothingNeckCapeNTSF7
-  name: nanotrasen special forces cape
+  name: NT special forces cape
   suffix: Seven. Do Not Map
   description: An elite cape woven from reflective threads and integrated with state of the art technology to ensure NanoTrasens finest look their best.
   components:
@@ -272,9 +272,9 @@
     delay: 10.0
 
 - type: entity
-  parent: [ClothingNeckBase, BaseCommandContraband]
+  parent: [ClothingNeckBase, BaseNanoTrasenContraband]
   id: ClothingNeckCapeNTSF8
-  name: nanotrasen special forces cape
+  name: NT special forces cape
   suffix: Eight. Do Not Map
   description: An elite cape woven from reflective threads and integrated with state of the art technology to ensure NanoTrasens finest look their best.
   components:
@@ -311,9 +311,9 @@
     delay: 10.0
 
 - type: entity
-  parent: [ClothingNeckBase, BaseCommandContraband]
+  parent: [ClothingNeckBase, BaseNanoTrasenContraband]
   id: ClothingNeckCapeNTSF9
-  name: nanotrasen special forces cape
+  name: NT special forces cape
   suffix: Nine. Do Not Map
   description: An elite cape woven from reflective threads and integrated with state of the art technology to ensure NanoTrasens finest look their best.
   components:
@@ -350,9 +350,9 @@
     delay: 10.0
 
 - type: entity
-  parent: [ClothingNeckBase, BaseCommandContraband]
+  parent: [ClothingNeckBase, BaseNanoTrasenContraband]
   id: ClothingNeckCapeNTSFLead
-  name: nanotrasen special forces cape
+  name: NT special forces cape
   suffix: NT. Do Not Map
   description: An elite cape woven from reflective threads and integrated with state of the art technology to ensure NanoTrasens finest look their best.
   components:

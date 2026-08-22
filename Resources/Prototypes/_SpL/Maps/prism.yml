@@ -25,6 +25,7 @@
                 - type: TradeStation
               paths:
                 - /Maps/_SpL/trading_outpost.yml
+              nameGrid: false
             cargo_mining_shuttle: !type:GridSpawnGroup
               paths:
                 - /Maps/_SpL/Shuttles/Salvage/Mining_Hammerhead.yml

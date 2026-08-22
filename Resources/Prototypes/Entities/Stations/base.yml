@@ -59,6 +59,7 @@
             - type: TradeStation
           paths:
             - /Maps/_SpL/trading_outpost.yml # SpL- new starlight-inspired ats
+          nameGrid: false # SpL- preferably don't name the grid
 #        mining: !type:GridSpawnGroup # 🌟Starlight begin🌟
 #          paths:
 #            - /Maps/Shuttles/mining.yml
