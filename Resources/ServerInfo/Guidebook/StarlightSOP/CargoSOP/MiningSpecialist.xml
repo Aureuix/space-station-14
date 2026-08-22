@@ -2,14 +2,47 @@
 # Mining Specialist
 
 <GuideEntityEmbed Entity="ToyFigurineSalvage" Caption="Mining Specialist"/>
+Mining Specialists are skilled long-distance personnel capable of conducting mining operations in deep space. Mining Specialists are not salvagers, and do not have the same arms or equipment.
 
-1. You report directly to the Quartermaster and are considered equal with others in the department.
+1. You report directly to the [color=#ffe100]Quartermaster[/color] and are considered equal with others in the department.
+    
+2. Mining Specialists are expected to deliver at least [color=#ffe100]approximately 200 sheets of steel and glass[/color] to the station before attempting activities such as salvaging wrecks and facilities.
+    
+3. You are expected to process, organise, and deliver materials to departments independently of the rest of your department. Instructions for this process are detailed in the subheading below.
 
-2. Mining Specialists must deliver one ore bag full of ore [bold]each[/bold] before performing any other duties.
+4. Use of the mining shuttle is strictly for mining oriented expeditions and magnet debris. Miners may only ferry orders if there are no other personnel available to do so, or if ordered by the [color=#ffe100]Quartermaster[/color].
 
-3. Use of the mining shuttle GR-4P3 is strictly for mining oriented expeditions and magnet debris.
+5. Mining Specialists may [color=#ff0000]not[/color] go on combat oriented expeditions unless cleared for such by the Quartermaster, or Captain if there is none. Failure to clear an expedition is grounds for [color=#ff0000]negligence charges[/color].
 
-4. Mining Specialists may not go on combat oriented expeditions.
+6. Mining Specialists are expected to act according to the [color=#ffe100]Salvage Specialist[/color] and [color=#ffe100]Cargo Technicians[/color] subsections when away from and on the station respectively. 
+    
+7. While away from station, Mining Specialists are expected to communicate with each other and the Quartermaster frequently, either through the supply radio channel or expedition radios.
 
-5. Mining Specialists are expected to act according to the Salvage Specialist and Cargo Technician subsections when away from and on the station respectively. 
+8. The Ticket Vendors are not to be modified or moved from their positions aboard the station unless significant structural damage has been sustained and the vendors are at risk of total destruction.
+
+## Material Delivery
+Mining Specialists are expected to be autonomous and timely in their delivery of materials to the station. This subsection will detail how that looks in practice. 
+Keep in mind that the division numbers listed in this subsection are [color=#ffe100]merely guides[/color], and [color=#ffe100]real deliveries should take personal intuition and station requirements into account[/color].
+
+1. First deliveries [color=#ff0000]must[/color] be made within an hour of first embarking from station. 
+
+2. Deliveries should prioritise departments in the following order: Science, Engineering, Security, Medical. Each department should receive at least 60 sheets of basic materials, plus a reasonable amount of other applicable materials. 
+
+3. [color=#ffe100]Steel[/color] should be split approximately along the following lines, unless departments request otherwise: Science- 30%, Engineering- 30%, Security- 30%, Medical- 10%.
+
+4. [color=#ffe100]Glass[/color] should be split approximately along the following lines, unless departments request otherwise: Science- 30%, Engineering- 30%, Security- 20%, Medical- 20%.
+
+5. [color=#ffe100]Plasma[/color] should be split approximately along the following lines, unless departments request otherwise: Science- 50%, Engineering- 15%, Security- 15%, Medical, 10%.
+
+7. Approximately [color=#ffe100]1/5th of all plasma[/color] should be converted into [color=#ffe100]plasteel[/color]. It is encouraged to process more plasteel if the station has recently taken [color=#ffe100]significant structural damage[/color].
+
+8. [color=#ffe100]Plasteel[/color] should be split approximately along the following lines, unless departments request otherwise: Science- 25%, Engineering, 75%.
+    
+9. [color=#ffe100]Silver and Gold[/color] should be split approximately along the following lines, unless departments request otherwise: Science- 75%, Engineering- 5%, Security- 10%, Medical- 10%.
+    
+10. [color=#ffe100]Uranium[/color] should be split approximately along the following lines, unless departments request otherwise: Science- 50%, Engineering- 30%, Security- 15%, Medical- 5%.
+    
+11. [color=#ffe100]Bluespace Crystals[/color] should be split approximately along the following lines, unless departments request otherwise: Science- 75%, Engineering, 25%.
+
+12. [color=#ffe100]All Artifact Fragments[/color] should be used to complete any relevant Cargo department bounties, and then delivered wholesale to Science.
 </Document>

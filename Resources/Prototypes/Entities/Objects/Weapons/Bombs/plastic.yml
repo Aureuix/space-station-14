@@ -132,7 +132,7 @@
     - Trigger
   - type: Explosive
     explosionType: Cryo
-    totalIntensity: 120
+    totalIntensity: 240 # SpL- major buff to give more incentive for use
     intensitySlope: 2
     maxIntensity: 30
     canCreateVacuum: false

@@ -1,0 +1,1 @@
+﻿holopad-ats-gsl = ATS - GSL Office

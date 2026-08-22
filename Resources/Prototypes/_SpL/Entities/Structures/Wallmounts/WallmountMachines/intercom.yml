@@ -1,0 +1,32 @@
+﻿- type: entity
+  id: IntercomGSL
+  parent: [ BaseIntercomSecure, BaseGSLOwnedContraband ]
+  suffix: GSL
+  description: An intercom. For when you really need the ATS technician to know something.
+  components:
+    - type: Sprite
+      noRot: false
+      drawdepth: SmallObjects
+      sprite: _SpL/Structures/Wallmounts/gslintercom.rsi
+      layers:
+        - state: base
+        - state: unshaded
+          map: [ "enum.PowerDeviceVisualLayers.Powered" ]
+          shader: unshaded
+        - state: broadcasting
+          map: [ "enum.RadioDeviceVisualLayers.Broadcasting" ]
+          shader: unshaded
+          visible: false
+        - state: speaker
+          map: [ "enum.RadioDeviceVisualLayers.Speaker" ]
+          shader: unshaded
+          visible: false
+        - state: panel
+          map: [ "enum.WiresVisualLayers.MaintenancePanel" ]
+          visible: false
+    - type: ContainerFill
+      containers:
+        board:
+          - IntercomElectronics
+        key_slots:
+          - EncryptionKeyGSL

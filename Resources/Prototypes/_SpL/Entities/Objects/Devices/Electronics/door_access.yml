@@ -1,0 +1,39 @@
+﻿- type: entity
+  parent: DoorElectronics
+  id: DoorElectronicsIlluminate
+  suffix: Illuminate, Locked
+  components:
+    - type: AccessReader
+      access: [["Illuminate"]]
+      
+- type: entity
+  parent: DoorElectronics
+  id: DoorElectronicsGSL
+  suffix: GSL, Locked
+  components:
+    - type: AccessReader
+      access: [["GSL"]]
+      
+- type: entity
+  parent: DoorElectronics
+  id: DoorElectronicsGSLSkeletonKeyCargo
+  suffix: GSL Remote, Cargo, Locked
+  components:
+    - type: AccessReader
+      access: [["GSLSkeletonKey"], ["Cargo"]]
+      
+- type: entity
+  parent: DoorElectronics
+  id: DoorElectronicsGSLSkeletonKeySalvMine
+  suffix: GSL Remote, Salvage, Locked
+  components:
+    - type: AccessReader
+      access: [["GSLSkeletonKey"], ["Salvage"], ["Mining"]]
+      
+- type: entity
+  parent: DoorElectronics
+  id: DoorElectronicsGSLSkeletonKeySalv
+  suffix: GSL Remote, Salvage, Locked
+  components:
+    - type: AccessReader
+      access: [["GSLSkeletonKey"], ["Salvage"]]

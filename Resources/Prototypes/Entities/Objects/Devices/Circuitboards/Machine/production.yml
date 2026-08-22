@@ -466,6 +466,9 @@
     stackRequirements:
       Manipulator: 3
       Cable: 5
+  - type: Tag
+    tags: 
+    - SpaceHeaterBoard # SpL
 
 - type: entity
   id: CloningPodMachineCircuitboard

@@ -1,3 +1,17 @@
+# SpL- preventing merge conflicts, this needs to move to spl later
+- type: entity
+  id: ClothingBeltHolsterFilledStechkin
+  parent: ClothingBeltHolster
+  suffix: Filled
+  components:
+  - type: EntityTableContainerFill
+    containers:
+      storagebase: !type:AllSelector
+        children:
+          - id: WeaponPistolStechkinDetective
+          - id: MagazinePistol40SP
+# SpL End
+
 - type: entity
   id: ClothingAbductorBeltFilled
   parent: ClothingAbductorBelt

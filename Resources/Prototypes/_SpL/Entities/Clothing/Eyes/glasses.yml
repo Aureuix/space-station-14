@@ -1,0 +1,95 @@
+﻿- type: entity
+  parent: [ ClothingEyesBase, BaseGSLOwnedContraband ]
+  id: ClothingEyesGlassesGSL
+  name: GSL technical infoshades
+  description: Anti-fraud glasses with NanoTrasen employee identification elements inbuilt. Developed as a joint NT-GSL venture following a string of recent trade incidents in the sector.
+  components:
+    - type: Sprite
+      sprite: Clothing/Eyes/Glasses/commandglasses.rsi
+    - type: Clothing
+      sprite: Clothing/Eyes/Glasses/commandglasses.rsi
+    - type: EyeProtection
+      protectionTime: 8
+    - type: ShowJobIcons
+    - type: IdentityBlocker
+      coverage: EYES
+
+- type: entity
+  parent: [ ClothingEyesBase, BaseEngineeringSalvageContraband ]
+  id: ClothingEyesGlassesTRayMeson
+  name: advanced engineering goggles 
+  description: Lime-tinted eclipse-rated advanced goggles with a proprietary eye-protecting polymer, upgraded with T-Ray visual scanning and visual diagnostics.
+  components:
+    - type: Sprite
+      sprite: DeltaV/Clothing/Eyes/Glasses/traymeson.rsi
+    - type: Clothing
+      sprite: DeltaV/Clothing/Eyes/Glasses/traymeson.rsi
+    - type: EyeProtection
+    - type: TrayScanner
+      enabled: true
+    - type: FlashImmunity
+    - type: IdentityBlocker
+      coverage: EYES
+    - type: ShowHealthBars
+      damageContainers:
+        - Inorganic
+        - Silicon
+        - IPC # SL
+    - type: ShowAccessReaderSettings
+    - type: Tag
+      tags:
+        - PetWearable
+        - WhitelistChameleon
+        - Meson
+    - type: StealTarget
+      stealGroup: RareGlassesCollection
+      
+- type: entity
+  parent: ClothingEyesHudSyndicateAgent
+  id: GogglesBallisticSyndicate
+  name: syndicate ballistic goggles
+  description: High-quality smart-goggles with ballistic glass and integrated IFF-HUD elements, capable of displaying any and all relevant combat data.
+  components:
+    - type: Sprite
+      sprite: _Mono/Clothing/Eyes/Glasses/ballistic_goggles_red.rsi
+    - type: Clothing
+      sprite: _Mono/Clothing/Eyes/Glasses/ballistic_goggles_red.rsi
+    - type: FlashImmunity
+    - type: EyeProtection
+      
+- type: entity
+  parent: [ ClothingEyesBase, BaseIlluminateContraband ]
+  id: GogglesBallisticIlluminate
+  name: aerogel goggles
+  suffix: Placeholder Item
+  description: An incredibly complex visor with full HUD integration for any and all imaginable purposes.
+  components:
+    - type: Sprite
+      sprite: _Mono/Clothing/Eyes/Glasses/ballistic_goggles_orange.rsi
+    - type: Clothing
+      sprite: _Mono/Clothing/Eyes/Glasses/ballistic_goggles_orange.rsi
+    - type: ShowJobIcons
+    - type: ShowMindShieldIcons
+    - type: ShowAccessReaderSettings
+    - type: ShowAccess
+      seeIdHolder: true
+      itemsOnly: false
+    - type: ShowHealthBars
+      damageContainers:
+        - Biological
+        - Inorganic
+        - Silicon
+        - IPC
+    - type: ShowHealthIcons
+      damageContainers:
+        - Biological
+        - Inorganic
+        - Silicon
+        - IPC
+    - type: FlashImmunity
+    - type: SolutionScanner
+    - type: EyeProtection
+    - type: Tag
+      tags:
+        - HudMedical
+        - WhitelistChameleon

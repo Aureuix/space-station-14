@@ -149,7 +149,8 @@
   - type: Store
     name: vendor-engineering-dispenser
     categories:
-    - SLEnginery
+    - SLEngineering
+    - SLAtmospherics
 
 - type: entity
   parent: SLVendingMachine

@@ -44,3 +44,10 @@
   equipment:
     back: BoxLighttubeBlacklight
   groupBy: "lights"
+
+- type: loadout
+  id: ClothingNeckFoxfire
+  equipment:
+    misc: ClothingNeckFoxfire
+  groupBy: "charms" 
+  

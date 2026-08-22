@@ -1,0 +1,11 @@
+﻿- type: roleType
+  id: IlluminateAligned
+  name: role-type-illuminate-aligned-name
+  color: '#fc7921'
+  symbol: "🗡" # Should never be antag, but just in case.
+
+- type: roleType
+  id: GSLAligned
+  name: role-type-gsl-aligned-name
+  color: '#00ffff'
+  symbol: "🗡" # Should never be antag, but just in case.

@@ -220,6 +220,7 @@
   components:
   - type: Flatpack
     entity: SpaceHeaterAnchored
+    
 
 - type: entity
   parent: BaseFlatpack

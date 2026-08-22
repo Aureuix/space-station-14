@@ -75,6 +75,8 @@
   - MaidOutfitTactical
   - MaidHeadbandTactical
   - TacticalMaidGloves
+  - JanitorMaidOutfit
+  - JanitorMaidOutfitMini
   - CoderSocks
   - PawBootTrinket
   - CatEars
@@ -131,7 +133,8 @@
   - ClothingMaskScaredMime
   - ClothingKitsuneMask # SpL start
   - Umbrella 
-  - BoxLighttubeBlacklight  # SpL end
+  - BoxLighttubeBlacklight  
+  - ClothingNeckFoxfire # SpL end
 
 - type: loadoutGroup
   id: Glasses
@@ -243,6 +246,7 @@
   loadouts:
   - CaptainGlasses
   - CaptainHud
+  - PrescriptionCapGlasses # SpL
 
 - type: loadoutGroup
   id: CaptainJobTrinkets
@@ -258,6 +262,14 @@
   loadouts:
   - HoPHead
   - HopHeadFormal # Delta V
+
+- type: loadoutGroup # SpL Start
+  id: HoPEyewear
+  name: loadout-group-hop-eyewear
+  loadouts:
+    - CaptainGlasses
+    - CaptainHud
+    - PrescriptionCapGlasses # SpL End
 
 - type: loadoutGroup
   id: HoPJumpsuit
@@ -652,6 +664,8 @@
   loadouts:
   - JanitorJumpsuit
   - JanitorJumpskirt
+  - JanitorMaidOutfit
+  - JanitorMaidOutfitMini
 
 
 - type: loadoutGroup

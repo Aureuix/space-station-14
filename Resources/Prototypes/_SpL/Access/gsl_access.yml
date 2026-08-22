@@ -1,0 +1,7 @@
+﻿- type: accessLevel
+  id: GSL
+  name: id-card-access-level-gsl
+  
+- type: accessLevel
+  id: GSLSkeletonKey
+  name: id-card-access-level-gsl-skeletonkey

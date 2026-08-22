@@ -11,7 +11,8 @@
 #      prob: 0.50 # SpL- removed
     - id: ClothingHeadsetAltCargo
     - id: DoorRemoteCargo
-    - id: AstroNavCartridge
+    - id: AppraiseAllCartridge # SpL
+    - id: RadioHandheldGSL # SpL
     - id: ClothingHandsKnuckleDustersQM
 #    - id: PlushieLance #starlight # SpL- sorry, replaced
     - id: RadioHandheldExpedition #starlight
@@ -227,27 +228,29 @@
   table: !type:AllSelector
     children:
     - id: ClothingNeckCloakCeElite
-    - id: AccessConfigurator
+#    - id: AccessConfigurator # Starlight-edit: moved to the CE toolbelt
     - id: BoxEncryptionKeyEngineering
     - id: CigarCase
 #      prob: 0.15 # SpL removal
     - id: ClothingBeltChiefEngineerFilled
-    - id: ClothingEyesGlassesMeson
+#    - id: ClothingEyesGlassesMeson # Starlight-edit: spawned with, in the EngiVend
     - id: ClothingHandsGlovesColorYellow
     - id: ClothingHeadsetAltEngineering
     - id: DoorRemoteEngineering
     - id: BoxCECircuitboards
     - id: MatBag #FH
-    - id: WeaponGrapplingGun #FH
-    - id: BoxFlare #FH
+#    - id: WeaponGrapplingGun # Starlight-edit: in the EngiVend
+#    - id: BoxFlare # Starlight-edit: in the EngiVend
     - id: AstroNavCartridge #FH
     - id: SheetSteel #FH
     - id: SheetGlass #FH
     - id: RCDChiefEngineer # Starlight
     - id: RPD # Starlight: RPD
+    - id: HandheldEngineeringMonitor # Starlight-edit: CE's handheld power/atmospherics monitor
+    - id: ClothingEyesGlassesTRayMeson # SpL- a spare
     - id: RCDAmmo
     - id: RubberStampCE
-    - id: MetalFoamGrenade
+#    - id: MetalFoamGrenade # Starlight-edit: in the EngiVend
 #    - id: PlushieMatthew #starlight # SpL- removed
 #    - id: PrintedDocumentGreenshiftAlert #SL #SpL- removed
 #      conditions: #SL
@@ -458,6 +461,7 @@
     - id: DoorRemoteSecurity
     - id: HoloprojectorSecurity
     - id: BoxStampsHos # SpL
+    - id: Demag # SpL
     - id: BoxHoSCircuitboards
     - id: WeaponDisabler
     - id: WeaponTaser

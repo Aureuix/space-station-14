@@ -7,3 +7,13 @@
     - SalvageWeapons
   conditions:
     - !type:BuyerAccessCondition
+
+- type: listing
+  id: VendorSalvageWeaponHoloflarePistol
+  productEntity: WeaponHoloflarePistol
+  cost:
+    SalvageTicket: 500
+  categories:
+    - SalvageEquipment
+  conditions:
+    - !type:BuyerAccessCondition   

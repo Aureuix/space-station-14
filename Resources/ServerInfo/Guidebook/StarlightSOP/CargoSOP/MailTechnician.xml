@@ -2,16 +2,27 @@
 # Mail Technician
 
 <GuideEntityEmbed Entity="CargoMailTeleporter" Caption="Mail Technician's Mail Teleporter"/>
+    
+Mail Technicians are in charge of station mail and are expected to be quick and efficient in their work. They may also assist with other cargo duties if there is no mail to run, and may need to liaison with the Security department when threats and hazards arrive via mail.
+    
+1. Mail Technicians report directly to the [color=#ffe100]Quartermaster[/color]. In lieu of a Quartermaster, Mail Technicians are considered Cargo Technicians for the purpose of deciding upon a de facto departmental head.
 
-1. Mail Technicians report directly to the Quartermaster.
+2. Mail Technicians are responsible for [color=#ffe100]delivering mail[/color] to other crewmembers aboard the station. In lieu of mail, Mail Technicians may tend to deliveries and bounties.
 
-2. Mail Technicians are responsible for delivering mail to other crewmembers aboard the station.
+3. Mail [color=#ff0000]must not be[/color] discarded, hidden, unlawfully opened, or otherwise hindered in its delivery.
 
-3. Mail must not be discarded, hidden, or otherwise hindered in its delivery.
+4. Mail Technicians are to have one mail trolley and one mail bag. The Quartermaster may approve a mail cart for Mail Technician usage if requested also.
 
-4. Mail Technicians are to have one mail cart and one mail bag.
+5. Mail should be organized by departments before being distributed. Mail Technicians are expected to deliver mail efficiently through such organisation.
 
-5. Mail should be organized by departments before being distributed. Each Mail Technician should take a different department.
-
-6. Mail with yellow stripes indicates an urgent delivery. Urgent deliveries shall take priority over other forms of mail.
+6. Mail with yellow stripes indicates an [color=#ffe100]urgent delivery[/color]. Urgent deliveries should take priority over other forms of mail. If an urgent delivery has expired, then it no longer needs to be prioritised.
+    
+## Hazardous Mail Procedures
+Occasionally, bad faith actors will send dangerous packages to station crew. When this happens, [color=#ffe100]STAY CALM[/color]. Take the following steps to the best of your ability. [color=#ff0000]Do not attempt to defuse IEDs by yourself![/color]
+    
+1. If you are not confident or overwhelmingly afraid to act, take the mail package to the nearest external airlock and dispose of it in space. This is the [color=#ffe100]only exception case[/color] for hindering of mail delivery.
+    
+2. If you are willing to attempt to make a delivery, inform station [color=#ff0000]Security[/color] personnel so that [color=#ffe100]EOD personnel[/color] may be on standby. If [color=#ff0000]Security[/color] personnel are unable to perform EOD, spacing may be a better option.
+    
+3. Ensure that the recipient and the assigned EOD officer are both on scene in a safe location [bold]before[/bold] attempting to make the delivery. Once the mail has been opened, both the delivering Technician and the recipient should [color=#ffe100]move away from the scene[/color].
 </Document>

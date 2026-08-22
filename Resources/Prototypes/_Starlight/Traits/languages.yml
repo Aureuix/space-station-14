@@ -14,10 +14,10 @@
     - Foreigner
     - Diaspora # SpL
   requirements:
-    - !type:TraitsRequirement
-      traits:
-        - Iterator
-      inverted: true
+#    - !type:TraitsRequirement # SpL start
+#      traits:
+#        - Iterator
+#      inverted: true # SpL end
 
 - type: trait
   id: Foreigner
@@ -34,10 +34,10 @@
     - ForeignerLight
     - Diaspora # SpL
   requirements:
-    - !type:TraitsRequirement
-      traits:
-        - Iterator
-      inverted: true
+#    - !type:TraitsRequirement # SpL start
+#      traits:
+#        - Iterator
+#      inverted: true # SpL end
 
 # Galactic Languages // Should cost: 1
 
@@ -53,10 +53,10 @@
       languagesUnderstood:
         - Sign
   requirements:
-    - !type:TraitsRequirement
-      traits:
-        - Iterator
-      inverted: true
+#    - !type:TraitsRequirement # SpL start
+#      traits:
+#        - Iterator
+#      inverted: true # SpL end
 
 - type: trait
   id: Classical
@@ -70,10 +70,10 @@
       languagesUnderstood:
         - Classical
   requirements:
-    - !type:TraitsRequirement
-      traits:
-        - Iterator
-      inverted: true
+#    - !type:TraitsRequirement # SpL start
+#      traits:
+#        - Iterator
+#      inverted: true # SpL end
 
 - type: trait
   id: Darktongue
@@ -87,10 +87,10 @@
       languagesUnderstood:
         - Darktongue
   requirements:
-    - !type:TraitsRequirement
-      traits:
-        - Iterator
-      inverted: true
+    #    - !type:TraitsRequirement # SpL start
+    #      traits:
+    #        - Iterator
+    #      inverted: true # SpL end
     - !type:TraitsRequirement
       traits:
         - DarkElf
@@ -109,13 +109,13 @@
       languagesUnderstood:
         - Felyaic
   requirements:
-    - !type:TraitsRequirement
-      traits:
-        - Darktongue
-    - !type:TraitsRequirement
-      traits:
-        - Iterator
-      inverted: true
+    #- !type:TraitsRequirement # SpL start
+    #  traits:
+    #    - Darktongue
+    #- !type:TraitsRequirement
+    #  traits:
+    #    - Iterator
+    #  inverted: true # SpL end
     - !type:TraitsRequirement
       traits:
         - CaveElf
@@ -141,10 +141,10 @@
       species:
         - Felionoid
       inverted: true
-    - !type:TraitsRequirement
-      traits:
-        - Iterator
-      inverted: true
+#    - !type:TraitsRequirement # SpL start
+#      traits:
+#        - Iterator
+#      inverted: true # SpL end
 
 - type: trait
   id: Canilunzt
@@ -165,10 +165,10 @@
       species:
         - Vulpkanin
       inverted: true
-    - !type:TraitsRequirement
-      traits:
-        - Iterator
-      inverted: true
+#    - !type:TraitsRequirement # SpL start
+#      traits:
+#        - Iterator
+#      inverted: true # SpL end
 
 - type: trait
   id: Scratch
@@ -188,10 +188,10 @@
         - Avali
         - Resomi
       inverted: true
-    - !type:TraitsRequirement
-      traits:
-        - Iterator
-      inverted: true
+#    - !type:TraitsRequirement # SpL start
+#      traits:
+#        - Iterator
+#      inverted: true # SpL end
 
 - type: trait
   id: Aielic
@@ -205,11 +205,11 @@
         - Aielic
       languagesUnderstood:
         - Aielic
+    #    - !type:TraitsRequirement # SpL start
+    #      traits:
+    #        - Iterator
+    #      inverted: true # SpL end
   requirements:
-    - !type:TraitsRequirement
-      traits:
-        - Iterator
-      inverted: true
     - !type:TraitsRequirement
       traits:
         - HighElf
@@ -232,10 +232,10 @@
       species:
         - Dwarf
       inverted: true
-    - !type:TraitsRequirement
-      traits:
-        - Iterator
-      inverted: true
+#    - !type:TraitsRequirement # SpL start
+#      traits:
+#        - Iterator
+#      inverted: true # SpL end
 
 - type: trait
   id: SolCommon
@@ -254,10 +254,10 @@
       species:
         - Human
       inverted: true
-    - !type:TraitsRequirement
-      traits:
-        - Iterator
-      inverted: true
+#    - !type:TraitsRequirement # SpL start
+#      traits:
+#        - Iterator
+#      inverted: true # SpL end
 
 - type: trait
   id: VoxPidgin
@@ -276,10 +276,10 @@
       species:
         - Vox
       inverted: true
-    - !type:TraitsRequirement
-      traits:
-        - Iterator
-      inverted: true
+#    - !type:TraitsRequirement # SpL start
+#      traits:
+#        - Iterator
+#      inverted: true # SpL end
 
 - type: trait
   id: Draconic
@@ -298,10 +298,10 @@
       species:
         - Reptilian
       inverted: true
-    - !type:TraitsRequirement
-      traits:
-        - Iterator
-      inverted: true
+#    - !type:TraitsRequirement # SpL start
+#      traits:
+#        - Iterator
+#      inverted: true # SpL end
 
 - type: trait
   id: Marish
@@ -320,10 +320,10 @@
       species:
         - Shadekin
       inverted: true
-    - !type:TraitsRequirement
-      traits:
-        - Iterator
-      inverted: true
+#    - !type:TraitsRequirement # SpL start
+#      traits:
+#        - Iterator
+#      inverted: true # SpL end
 
 - type: trait
   id: Bubblish
@@ -342,10 +342,10 @@
       species:
         - SlimePerson
       inverted: true
-    - !type:TraitsRequirement
-      traits:
-        - Iterator
-      inverted: true
+#    - !type:TraitsRequirement # SpL start
+#      traits:
+#        - Iterator
+#      inverted: true # SpL end
 
 - type: trait
   id: Terrum
@@ -364,10 +364,10 @@
       species:
         - Cyclorite
       inverted: true
-    - !type:TraitsRequirement
-      traits:
-        - Iterator
-      inverted: true
+#    - !type:TraitsRequirement # SpL start
+#      traits:
+#        - Iterator
+#      inverted: true # SpL end
 
 - type: trait
   id: Sylvan
@@ -390,10 +390,10 @@
       traits:
         - WoodElf
       inverted: true
-    - !type:TraitsRequirement
-      traits:
-        - Iterator
-      inverted: true
+#    - !type:TraitsRequirement # SpL start
+#      traits:
+#        - Iterator
+#      inverted: true # SpL end
 
 - type: trait
   id: Moffic
@@ -413,10 +413,10 @@
       species:
         - Moth
       inverted: true
-    - !type:TraitsRequirement
-      traits:
-        - Iterator
-      inverted: true
+#    - !type:TraitsRequirement # SpL start
+#      traits:
+#        - Iterator
+#      inverted: true # SpL end
 
 - type: trait
   id: Thaveyan
@@ -436,10 +436,10 @@
       species:
         - Thaven
       inverted: true
-    - !type:TraitsRequirement
-      traits:
-        - Iterator
-      inverted: true
+#    - !type:TraitsRequirement # SpL start
+#      traits:
+#        - Iterator
+#      inverted: true # SpL end
 
 - type: trait
   id: Lagomorphian
@@ -458,7 +458,7 @@
       species:
         - Lagomorph
       inverted: true
-    - !type:TraitsRequirement
-      traits:
-        - Iterator
-      inverted: true
+#    - !type:TraitsRequirement # SpL start
+#      traits:
+#        - Iterator
+#      inverted: true # SpL end

@@ -1,0 +1,27 @@
+﻿- type: entity
+  parent: BasePDA
+  id: GSLTechPDA
+  name: GSL technician PDA
+  description: Smells like shipping container rust.
+  components:
+    - type: Sprite
+      sprite: _SpL/Objects/Devices/pda.rsi
+    - type: Pda
+      id: GSLTechnicianIDCard
+    - type: Appearance
+      appearanceDataInit:
+        enum.PdaVisuals.PdaType:
+          !type:String
+          pda-gsl
+    - type: PdaBorderColor
+      borderColor: "#b89e50"
+      accentVColor: "#5e77c1"
+    - type: Icon
+      sprite: _SpL/Objects/Devices/pda.rsi
+      state: pda-gsl
+    - type: CartridgeLoader
+      uiKey: enum.PdaUiKey.Key
+      preinstalled:
+        - NotekeeperCartridge
+        - AstroNavCartridge
+        - AppraiseAllCartridge

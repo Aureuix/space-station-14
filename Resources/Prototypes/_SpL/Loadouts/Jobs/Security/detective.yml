@@ -1,0 +1,11 @@
+﻿- type: loadout
+  id: DetectiveInspector
+  dummyEntity: WeaponRevolverInspector
+  equipment:
+    belt: ClothingBeltHolsterFilled
+
+- type: loadout
+  id: DetectiveStechkin
+  dummyEntity: WeaponPistolStechkinDetective
+  equipment:
+    belt: ClothingBeltHolsterFilledStechkin

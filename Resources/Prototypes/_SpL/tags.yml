@@ -26,3 +26,16 @@
   
 - type: Tag
   id: CartridgeFlechette
+  
+- type: Tag
+  id: Illuminate
+  
+- type: Tag
+  id: GSL
+  
+- type: Tag
+  id: EncryptionGSL
+  
+# bounty tags
+- type: Tag
+  id: SpaceHeaterBoard

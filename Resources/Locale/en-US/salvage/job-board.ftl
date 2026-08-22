@@ -14,9 +14,9 @@ job-board-label-text = [head=2]Salvage Job Shipment[/head]
 
     {"[bold]Target:[/bold]"} {$target}
     {"[bold]Reward:[/bold]"} ${$reward}
+    {"[bold]Tickets:[/bold]"} {$tickets}
 
-
-    {"[italic]Shipments are subject to inspection by the Donk corporation[/italic]"}
+    {"[italic]Shipments are subject to inspection by Gemini Stellar Logistics[/italic]"}
 
 salv-job-board-name-BountyTeethSpaceCarp = Space Carp
 salv-job-board-name-BountySalvageScrap = Deep-Space Debris

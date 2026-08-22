@@ -112,24 +112,24 @@
       species:
         - Shadekin
 
-- type: trait
-  id: Iterator
-  name: trait-background-iterator-name
-  description: trait-background-iterator-description
-  category: BackgroundTraits
-  cost: 0
-  effects:
-    - !type:OverrideCompsEffect
-      components:
-        - type: LanguageKnowledge
-          speaks:
-            - ScurretSign
-          understands:
-            - ScurretSign
-    - !type:SpawnItemInHandEffect
-      item: TranslatorIterator
-    - !type:BackgroundEffect
-      background: Iterator
+#- type: trait # SpL- iterator sucks
+#  id: Iterator
+#  name: trait-background-iterator-name
+#  description: trait-background-iterator-description
+#  category: BackgroundTraits
+#  cost: 0
+#  effects:
+#    - !type:OverrideCompsEffect
+#      components:
+#        - type: LanguageKnowledge
+#          speaks:
+#            - ScurretSign
+#          understands:
+#            - ScurretSign
+#    - !type:SpawnItemInHandEffect
+#      item: TranslatorIterator
+#    - !type:BackgroundEffect
+#      background: Iterator # SpL end
 
 
 - type: trait

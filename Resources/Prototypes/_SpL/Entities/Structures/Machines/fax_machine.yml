@@ -1,0 +1,14 @@
+﻿- type: entity
+  parent: FaxMachineBase
+  id: FaxMachineGSL
+  name: gsl long range fax machine
+  suffix: GSL
+  components:
+    - type: Sprite
+      layers:
+        - state: icon
+          map: [ "base" ]
+          color: "#bfeaff"
+    - type: FaxMachine
+      name: "GSL Office"
+      notifyAdmins: true

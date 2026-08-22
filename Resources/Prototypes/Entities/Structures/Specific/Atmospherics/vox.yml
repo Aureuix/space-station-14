@@ -28,6 +28,10 @@
       Helium: stationHelium
       AntiNoblium: danger
       # Funkystation End: Funky atmos - /tg/ gases
+      # SpL Start: Starlight atmos (starlight forgot to fix this themselves :godo:)
+      Ulnitranium: stationUlnitranium
+      ZXA: stationZXA
+      # SpL End: Starlight atmos
 
 - type: entity
   parent: [AirSensorVoxBase, AirSensor]

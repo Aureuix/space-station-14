@@ -2,7 +2,7 @@
 # Medical orders
 
 ## Basic materials
-### Only for printers & lathes
+### Only for printers and lathes
 <Box>
 	<GuideEntityEmbed Entity="SheetSteel"/>
 	<GuideEntityEmbed Entity="SheetGlass"/>

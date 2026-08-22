@@ -22,7 +22,7 @@
                 - type: ProtectedGrid
                 - type: TradeStation
               paths:
-                - /Maps/Shuttles/trading_outpost.yml
+                - /Maps/_SpL/trading_outpost.yml
             cargo_mining_shuttle: !type:GridSpawnGroup
               paths:
                 - /Maps/_SpL/Shuttles/Salvage/Mining_Cracker.yml
@@ -34,8 +34,8 @@
             ruins: !type:GridSpawnGroup
               hide: true
               nameGrid: true
-              minCount: 4
-              maxCount: 6
+              minCount: 6
+              maxCount: 8
               stationGrid: false
               paths:
                 - /Maps/Ruins/abandoned_outpost.yml
@@ -59,7 +59,7 @@
               maximumDistance: 300
               stationGrid: false
               minCount: 20
-              maxCount: 23
+              maxCount: 24
               addComponents:
                 - type: Gravity
                   enabled: true

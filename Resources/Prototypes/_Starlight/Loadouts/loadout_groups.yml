@@ -418,7 +418,7 @@
   - SecurityMk58
   - SecurityPistolEnforcer
   - SecurityRevolverDispatcher
-  - SecurityPistolDP
+  - SecurityPistolMauser # SpL
   - SecurityMk58Gold
 
 # Assorted Boots
@@ -622,6 +622,7 @@
 # SpL Start
 - type: loadoutGroup
   id: MailTechnicianSkates
+  minLimit: 0 
   name: loadout-group-mail-technician-skates
   loadouts:
     - RollerSkatesLoadout
@@ -708,6 +709,8 @@
   - ServiceWorkerChefJumpsuit
   - ServiceWorkerChefJumpskirt
   - MaidOutfit
+  - JanitorMaidOutfit
+  - JanitorMaidOutfitMini
 
 # Performer
 - type: loadoutGroup

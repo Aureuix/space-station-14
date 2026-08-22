@@ -28,7 +28,7 @@
   - HoPBackpack
   - HoPOuterClothing
   - HoPShoes # 🌟Starlight🌟
-  - Glasses
+  - HoPEyewear # SpL
   - Survival
   - Trinkets
   - Scarves # Starlight
@@ -546,6 +546,7 @@
   - DetectiveOuterClothing
   - SecurityGloves # Starlight
   - DetectiveShoes # 🌟Starlight🌟
+  - DetectiveSidearm # SpL
   - SurvivalSecurity
   - Trinkets
   - Scarves # Starlight

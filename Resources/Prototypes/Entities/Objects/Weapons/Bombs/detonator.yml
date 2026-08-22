@@ -2,7 +2,7 @@
   parent: [ BaseItem, BaseSecurityContraband ]
   id: EmptyDetonator
   name: detonator cap
-  description: A detonator cap. Requires a trigger and wire.
+  description: A detonator cap. Requires a trigger and wire. 
   components:
   - type: Sprite
     sprite: Objects/Weapons/Bombs/detonator.rsi
@@ -61,6 +61,7 @@
     intensitySlope: 100
     maxIntensity: 2.5
     canCreateVacuum: false
+  - type: TriggerOnSignal # SpL- this was missing
   - type: ExplodeOnTrigger
   - type: Sticky
     stickDelay: 2

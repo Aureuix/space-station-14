@@ -88,7 +88,7 @@
 - type: entity
   parent: ClothingScarfBase
   id: ClothingNeckBunnyGang
-  name: Bunny Gang Scarf
+  name: bunny gang scarf
   description: The scarf of a secretive group of bunny mercenaries.
   components:
     - type: Sprite
@@ -96,3 +96,24 @@
       state: icon
     - type: Clothing
       sprite: _Starlight/Clothing/Neck/Misc/bunnygang.rsi
+
+- type: entity
+  parent: ClothingMiscBase # SpL- moved from neck to misc
+  id: ClothingNeckFoxfire
+  name: foxfire charm
+  description: Flittering ghostly flames have started following you upon donning this around your neck.
+  components:
+    - type: Sprite
+      sprite: _Starlight/Clothing/Neck/Misc/foxfire.rsi
+    - type: Clothing
+      clothingVisuals:
+        neck:
+          - state: equipped-NECK
+            shader: unshaded
+        neck-resomi:
+          - state: equipped-NECK-resomi
+            shader: unshaded
+        neck-cyclorite:
+          - state: equipped-NECK-cyclorite
+            shader: unshaded
+        neck-rodentia:

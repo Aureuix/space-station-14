@@ -13,3 +13,10 @@
   frequency: 1217
   color: "#500000"
   longRange: true
+  
+- type: radioChannel
+  id: GSL
+  name: chat-radio-gsl
+  keycode: 'g'
+  frequency: 2001
+  color: "#00FFFF"

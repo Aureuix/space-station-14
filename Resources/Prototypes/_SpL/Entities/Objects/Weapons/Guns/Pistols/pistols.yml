@@ -1,6 +1,85 @@
 ﻿- type: entity
+  name: yangtze
+  parent: [ BaseWeaponPistol, BaseSecuritySalvageContraband ]
+  id: WeaponPistolMauser
+  description: Officially designated the C97 Service Pistol, the Yangtze is a modernised adaptation of a cheap but reliable old-world semi-automatic handgun sporting a proprietary rubberised grip. Feeds from .40 pistol magazines.
+  components:
+    - type: Sprite
+      sprite: _SpL/Objects/Weapons/Guns/Pistols/mauser.rsi
+      layers:
+        - state: base
+          map: ["enum.GunVisualLayers.Base"]
+        - state: mag-0
+          map: ["enum.GunVisualLayers.Mag"]
+    - type: Clothing
+      sprite: _SpL/Objects/Weapons/Guns/Pistols/mauser.rsi
+    - type: Item
+      storedOffset: 0,-2
+    - type: Gun
+      fireRate: 3 # it's not as good as the dp
+      availableModes:
+        - SemiAuto
+      soundGunshot:
+        path: /Audio/_Starlight/Weapons/Guns/Gunshots/stechkin.ogg
+    - type: ItemSlots
+      slots:
+        gun_magazine:
+          name: Magazine
+          startingItem: MagazinePistol40SP
+          insertSound: /Audio/Weapons/Guns/MagIn/pistol_magin.ogg
+          ejectSound: /Audio/Weapons/Guns/MagOut/pistol_magout.ogg
+          priority: 2
+          whitelist:
+            tags:
+              - MagazinePistolDP
+          whitelistFailPopup: gun-magazine-whitelist-fail
+        gun_chamber:
+          name: Chamber
+          startingItem: CartridgePistol40SP
+          priority: 1
+          whitelist:
+            tags:
+              - CartridgePistolDP
+    - type: StealTarget
+      stealGroup: OfficerHandgun
+
+- type: entity
+  name: anaconda
+  parent: [ BaseItem, BaseSyndicateContraband ]
+  id: WeaponPistolAnaconda
+  description: A complex Waffle Corp handgun designed for use by corporate officials and operatives on extended deployments. Creates caseless FMJ ammunition on the fly from an internal fabricator, which slowly self-charges.
+  components:
+    - type: Gun
+      fireRate: 3
+      selectedMode: SemiAuto
+      availableModes:
+        - SemiAuto
+      soundGunshot:
+        path: /Audio/Weapons/Guns/Gunshots/hpistol.ogg
+    - type: Sprite
+      sprite: _Goobstation/Objects/Weapons/Guns/Pistols/anaconda.rsi
+      state: icon
+    - type: ContainerContainer
+      containers:
+        ballistic-ammo: !type:Container
+    - type: BallisticAmmoProvider
+      whitelist:
+        tags:
+          - CartridgePistolDP
+      capacity: 8
+      proto: CartridgeCaselessRifleFMJ
+      unspawnedCount: 7
+      cycleable: false 
+    - type: BallisticAmmoSelfRefiller
+      autoRefillRate: 1s
+      affectedByEmp: true
+      firingPausesAutoRefill: true
+      autoRefillPauseDuration: 0.5s
+    - type: AmmoCounter
+
+- type: entity
   id: WeaponIlluminateFrostbite
-  parent: [ BaseWeaponPistol, BaseIlluminateContraband]
+  parent: [ BaseWeaponPistol, BaseIlluminateContraband ]
   name: PD52 "frostbite"
   description: A one-handed cross between handgun and SMG, the PD52 comes with an inbuilt silencer and fires jet-propelled flechette rounds.
   components:

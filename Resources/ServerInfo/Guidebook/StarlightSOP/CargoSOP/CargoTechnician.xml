@@ -2,14 +2,18 @@
 # Cargo Technician
 
 <GuideEntityEmbed Entity="ToyFigurineCargoTech" Caption="Cargo Technician"/>
+    
+Cargo Technicians form the base of the entire department, and their experience may vary between internship and seniority. Cargo technicians are not expected to perform to the same degree as a licensed Quartermaster, so long as the department remains functional.
 
-1. Cargo Technicians report directly to the Quartermaster.
+1. Cargo Technicians report directly to the [color=#ffe100]Quartermaster[/color]. If there is no Quartermaster, the most senior Cargo Technician has [color=#ffe100]de facto control[/color] of the Cargo department, and may direct the Mining and Salvage arms on priorities.
+    
+2. Cargo Technicians are expected to assist the quartermaster in the completion of station bounties and the sale of valuable goods, as well as any other ethical and reasonable means of procuring income for the station. 
 
-2. Cargo Technicians are responsible for the handling of orders and retrieval from the ATS once an order is approved. Orders must not be delayed to being on station more than 10 minutes after approval. Delays longer than this, without sufficient cause, can be considered negligence or incompetence.
+3. Cargo Technicians are responsible for the handling of orders and retrieval from the ATS once an order is approved. Orders must [color=#ff0000]not[/color] be delayed to being on station more than 10 minutes after approval. Delays longer than this, without sufficient cause, can be considered [color=#ff0000]negligence or incompetence[/color].
 
-3. Crates that are part of an order should not be opened. Instead their label should be checked for questions about their contents and the requestor.
+4. Crates that are part of an order should [color=#ff0000]not[/color] be opened. Their labels should instead be checked for questions about their contents and the requestor, and delivered. If permitted by the Quartermaster or if there is no Quartermaster, then orders may be sent out on a [color=#ffe100]"Pick-up only" basis[/color].
 
-4. Secure crates should not be opened by force. An exception is made if ordered to do so by the head of the relevant department or captain during an emergency.
+5. Secure crates should [color=#ff0000]not[/color] be opened by force, and doing so is grounds for property damage charges. An exception is made if ordered to do so by the [color=#ffe100]head of the relevant department[/color] or [color=#ffe100]Captain[/color] during an emergency.
 
-5. Issues with policy or employment should be directed to the Quartermaster or the Head of Personnel. Any mention of "Cargonia" will be met with contract termination.
+6. Issues with policy or employment should be directed to the Quartermaster or the Head of Personnel.
 </Document>

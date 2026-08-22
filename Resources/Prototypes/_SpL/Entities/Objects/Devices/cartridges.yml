@@ -1,0 +1,18 @@
+﻿- type: entity
+  parent: BasePDACartridge
+  id: AppraiseAllCartridge
+  name: AppraiseAll cartridge
+  description: A program that provides a real-time connection to the galactic market for item appraisal.
+  components:
+    - type: Sprite
+      sprite: _SpL/Objects/Devices/cartridge.rsi
+      state: cart-appr
+    - type: Icon
+      sprite: _SpL/Objects/Devices/cartridge.rsi
+      state: cart-appr
+    - type: Cartridge
+      programName: appraise-all-program-name
+      icon:
+        sprite: Objects/Tools/appraisal-tool.rsi
+        state: icon
+    - type: AppraiseAllCartridge

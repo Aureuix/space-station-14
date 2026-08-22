@@ -1,0 +1,12 @@
+- type: job
+  id: Illuminate
+  name: job-name-illuminate
+  description: job-description-illuminate
+  playTimeTracker: JobIlluminate
+  startingGear: AssistantGear # placeholder
+  icon: "JobIconIlluminate"
+  setPreference: false
+  rules: job-rules-illuminate-aligned
+  supervisors: job-supervisors-illuminate
+  access:
+    - Illuminate

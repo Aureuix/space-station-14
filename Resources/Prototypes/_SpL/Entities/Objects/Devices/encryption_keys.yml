@@ -1,4 +1,24 @@
 ﻿- type: entity
+  parent: [ EncryptionKey, BaseGSLOwnedContraband ]
+  id: EncryptionKeyGSL
+  name: GSL shortband encryption key
+  description: A shortband encryption key used by GSL personnel.
+  components:
+    - type: EncryptionKey
+      channels:
+        - GSL
+      defaultChannel: GSL
+    - type: Sprite
+      layers:
+        - sprite: _Starlight/Objects/Devices/encryption_keys.rsi
+          state: crypt_brown
+        - sprite: _SpL/Objects/Devices/encryption_keys.rsi
+          state: gsl_label
+    - type: Tag
+      tags:
+        - EncryptionGSL
+
+- type: entity
   parent: [ EncryptionKey, BaseIlluminateContraband ]
   id: EncryptionKeyIlluminate
   name: Illuminate encryption key
@@ -10,11 +30,6 @@
         - Common
         - Security
         - Command
-        - NanoTrasen
-        - CentCom
-        - Soviet
-        - TSF
-        - Merchant
       defaultChannel: Illuminate
     - type: Sprite
       layers:

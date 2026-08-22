@@ -121,7 +121,7 @@ guide-entry-sl-cargo-sop-genproc-intro = General Procedures
 guide-entry-sl-cargo-sop-cargotechnician = Cargo Technician
 guide-entry-sl-cargo-sop-mailtechnician = Mail Technician
 guide-entry-sl-cargo-sop-miningspecialist = Mining Specialist
-guide-entry-sl-cargo-sop-salvagespecialist = SalvageSpecialist
+guide-entry-sl-cargo-sop-salvagespecialist = Salvage Specialist
 guide-entry-sl-cargo-sop-quartermaster = Quartermaster
 guide-entry-sl-cargo-sop-staff-intro = Staff Procedures
 guide-entry-sl-cargo-sop-handlingorders = Handling Orders
@@ -153,6 +153,7 @@ guide-entry-abductors = Abductors
 guide-entry-terror-spiders = Terror Spiders
 
 guide-entry-sl-deepfried-recipes = Deep Fried
+guide-entry-sl-dough-recipes = Dough
 
 # Plumbing guides
 guide-entry-plumbing = Plumbing
@@ -168,6 +169,13 @@ guide-entry-roleplay-01 = The Basics
 guide-entry-roleplay-02 = Collaborative Storytelling
 guide-entry-roleplay-03 = Losing Is Fun
 guide-entry-roleplay-04 = Acting With Mechanics
+
+# Engineering
+guide-entry-gasses = Mundane Gasses
+guide-entry-gasses2 = Key Gasses
+guide-entry-gasses3 = Utility Gasses
+guide-entry-gasses4 = Advanced Gasses
+guide-entry-gasses5 = Rare Gasses
 
 # SpL Additions
 guide-entry-spl-code-epsilon = Code Epsilon

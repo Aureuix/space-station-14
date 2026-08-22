@@ -497,6 +497,7 @@
     - NanoTaskCartridge
     - NewsReaderCartridge
     - AstroNavCartridge
+    - AppraiseAllCartridge # SpL
     - NanoChatCartridge # CD
 
 - type: entity
@@ -516,6 +517,15 @@
     borderColor: "#e39751"
   - type: Icon
     state: pda-cargo
+  - type: CartridgeLoader # SpL Start
+    uiKey: enum.PdaUiKey.Key
+    preinstalled:
+      - CrewManifestCartridge
+      - NotekeeperCartridge
+      - NanoTaskCartridge
+      - NewsReaderCartridge
+      - NanoChatCartridge
+      - AppraiseAllCartridge # SpL End
 
 - type: entity
   parent: BasePDA
@@ -1001,6 +1011,7 @@
       - LogProbeCartridge
       - AstroNavCartridge
       - NanoChatCartridge # CD
+      - AppraiseAllCartridge # SpL
 
 - type: entity
   parent: CentcomPDA
@@ -1028,6 +1039,7 @@
       - MedTekCartridge
       - AstroNavCartridge
       - NanoChatCartridge # CD
+      - AppraiseAllCartridge # SpL
   - type: Tag #  Ignore Chameleon tags
     tags:
     - DoorBumpOpener
@@ -1617,6 +1629,15 @@
     accentVColor: "#DFDFDF"
   - type: Icon
     state: pda-seniorcourier
+  - type: CartridgeLoader # SpL Start
+    uiKey: enum.PdaUiKey.Key
+    preinstalled:
+      - CrewManifestCartridge
+      - NotekeeperCartridge
+      - NanoTaskCartridge
+      - NewsReaderCartridge
+      - NanoChatCartridge
+      - AppraiseAllCartridge # SpL End
 
 - type: entity
   parent: [ BaseHighlyIllegalContraband, BasePDA ]

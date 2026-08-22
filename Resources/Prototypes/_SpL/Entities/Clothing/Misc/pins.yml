@@ -1,0 +1,10 @@
+﻿- type: entity
+  parent: ClothingNeckPinBase
+  id: GSLBadge
+  name: GSL technician badge
+  description: A simple four-pointed star badge indicating that the wearer is a legitimate employee of Gemini Stellar Logistics.
+  components:
+    - type: Sprite
+      sprite: _SpL/Clothing/Neck/Misc/gslbadge.rsi
+    - type: Clothing
+      sprite: _SpL/Clothing/Neck/Misc/gslbadge.rsi

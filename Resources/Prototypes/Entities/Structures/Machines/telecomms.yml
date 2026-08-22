@@ -34,6 +34,8 @@
       map: ["variant-service"]
     - state: variant-command
       map: ["variant-command"]
+    - state: variant-gsl # SpL
+      map: [ "variant-gsl" ] # SpL
     - state: variant-multiple
       map: ["variant-multiple"]
     - state: telecom-open
@@ -83,6 +85,10 @@
         whitelist:
           tags:
           - EncryptionCommand
+      variant-gsl: # SpL
+        whitelist: # SpL
+          tags: # SpL
+            - EncryptionGSL # SpL
       variant-multiple:
         whitelist:
           components:
@@ -134,6 +140,9 @@
         variant-nokey:
           True: { shader: unshaded }
           False: { shader: shaded }
+        variant-gsl: # SpL
+          True: { shader: unshaded } # SpL
+          False: { shader: shaded } # SpL
   - type: Appearance
   - type: AmbientOnPowered
   - type: AmbientSound

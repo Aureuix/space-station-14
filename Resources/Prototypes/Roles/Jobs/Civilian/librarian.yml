@@ -3,11 +3,11 @@
   name: job-name-librarian
   description: job-description-librarian
   playTimeTracker: JobLibrarian
-  requirements:
-    - !type:TraitsRequirement
-      traits:
-        - Iterator
-      inverted: true
+  #requirements: # SpL start
+  #  - !type:TraitsRequirement
+  #    traits:
+  #      - Iterator
+  #    inverted: true # SpL end
   startingGear: LibrarianGear
   icon: "JobIconLibrarian"
   supervisors: job-supervisors-hop
