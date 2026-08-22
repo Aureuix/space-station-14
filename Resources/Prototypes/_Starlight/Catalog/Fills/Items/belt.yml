@@ -286,4 +286,4 @@
             - id: CombatMedipen
             - id: CombatMedipen
             - id: FlashlightSeclite
-            - id: BodyBagLockableFolded #SpL change- why the fuck does cc need a custom bodybag
+            - id: BodyBagCC # SpL- not starlight's one
