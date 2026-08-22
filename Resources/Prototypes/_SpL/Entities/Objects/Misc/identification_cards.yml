@@ -52,3 +52,5 @@
     - type: Access
       tags:
         - GSL
+    - type: PresetIdCard
+      job: GSLTechnician
