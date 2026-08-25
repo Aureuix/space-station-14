@@ -37,11 +37,11 @@ using Content.Shared.Radio.Components;
 using Content.Shared._Starlight.Silicons.Borgs;
 using Content.Shared.Actions.Components;
 using Content.Shared.Starlight.TextToSpeech;
-// Starlight begin
+using Content.Shared.NameModifier.EntitySystems;
+using Robust.Shared.Prototypes;
 using System.Linq;
 using Content.Shared.Tag;
 using Content.Server.Administration.Systems;
-// Starlight end
 
 namespace Content.Shared.Silicons.Borgs;
 
@@ -73,6 +73,7 @@ public abstract partial class SharedBorgSystem : EntitySystem
     [Dependency] private readonly SharedHandheldLightSystem _handheldLight = default!;
     [Dependency] private readonly SharedAccessSystem _access = default!;
     [Dependency] private readonly SharedAudioSystem _audio = default!;
+    [Dependency] private NameModifierSystem _nameModifier = default!; // Starlight
     [Dependency] private readonly TagSystem _tag = default!; // Starlight
 
     /// <inheritdoc/>
@@ -140,6 +141,32 @@ public abstract partial class SharedBorgSystem : EntitySystem
     private void OnMapInit(Entity<BorgChassisComponent> chassis, ref MapInitEvent args)
     {
         _movementSpeedModifier.RefreshMovementSpeedModifiers(chassis.Owner);
+        
+        
+        // Starlight-start: If the borg has a brain, synchronize the name of the brain with the chassis.
+        if (chassis.Comp.BrainEntity is { } brain)
+            SynchronizeBrainName(chassis, brain);
+        // Starlight-end
+    }
+
+    // Starlight: function to synchronize the name of the brain with the chassis, and the other way around.
+    private void SynchronizeBrainName(Entity<BorgChassisComponent> chassis, EntityUid brain)
+    {
+        var brainName = _nameModifier.GetBaseName(brain);
+        var chassisName = _nameModifier.GetBaseName(chassis.Owner);
+
+        if (brainName.Equals(chassisName, StringComparison.InvariantCulture))
+            return;
+
+        if (MetaData(brain).EntityPrototype is { } brainPrototype &&
+            brainName.Equals(brainPrototype.Name, StringComparison.InvariantCulture))
+        {
+            _metaData.SetEntityName(brain, chassisName);
+        }
+        else
+        {
+            _metaData.SetEntityName(chassis, brainName);
+        }
     }
 
     private void OnItemSlotInsertAttempt(Entity<BorgChassisComponent> chassis, ref ItemSlotInsertAttemptEvent args)
@@ -184,6 +211,7 @@ public abstract partial class SharedBorgSystem : EntitySystem
             return;
 
         //#region Starlight
+        SynchronizeBrainName(chassis, args.Entity);
         if (TryComp(args.Entity, out BorgBrainComponent? brain) && _mind.TryGetMind(args.Entity, out var mindId, out var mind))
         {
             //re-target the station-AI's shunt target to the chassis insteaf of the brain
