@@ -1,8 +1,8 @@
 #Longswords
 - type: entity
-  name: Vibrorapier
+  name: SCSPT-112 vibrorapier
   parent: [BaseSword, BaseCentcommContraband]
-  id: VibroRapier
+  id: CentcommVibroRapier
   description: An ornamental vibroblade commissioned by Central Command. Pierces through flesh and bone like butter, but sears the skin in the process. Meant for one-handed sword combat.
   components:
   - type: Sprite

@@ -1,8 +1,8 @@
 - type: entity
   parent: [ClothingBeltBase, ClothingSlotBase, BaseCommandContraband]
-  id: ClothingBeltVibroSheath
-  name: Vibrorapier Sheath
-  description: An ornate sheath for holding a Vibrorapier.
+  id: CentcommVibroRapierSheath
+  name: centcomm vibrorapier sheath
+  description: An ornate sheath for holding a Vibrorapier. This model was designed based on field trials of the Vibroblade and its dedicated sheath, and adapted to the unique needs of the artwork it was designed to store.
   components:
   - type: Sprite
     sprite: _SpL/Clothing/Belt/VibrorapierSheath.rsi
@@ -30,11 +30,21 @@
           - VibroRapier
   - type: Appearance
 
+- type: entity
+  parent: CentcommVibroRapierSheath
+  id: CentcommVibroRapierSheathFilled
+  name: CentComm vibroblade sheath
+  suffix: Filled
+  components:
+    - type: ContainerFill
+      containers:
+        item:
+          - Vibrorapier
 
 - type: entity
   parent: [ClothingBeltBase, ClothingSlotBase, BaseCommandContraband]
   id: ClothingBeltRegaliaSheath
-  name: Regalia Sheath
+  name: regalia sheath
   description: A decorated sheath fit for a mafioso's blade.
   components:
   - type: Sprite
