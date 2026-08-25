@@ -4,8 +4,8 @@ meta:
   engineVersion: 277.0.0
   forkId: ""
   forkVersion: ""
-  time: 08/21/2026 09:50:37
-  entityCount: 26793
+  time: 08/22/2026 22:08:28
+  entityCount: 26801
 maps:
 - 1
 grids:
@@ -13815,7 +13815,7 @@ entities:
       pos: -29.5,-12.5
       parent: 2
     - type: Door
-      secondsUntilStateChange: -197605.5
+      secondsUntilStateChange: -199061.7
       state: Opening
     - type: DeviceLinkSource
       lastSignals:
@@ -13827,7 +13827,7 @@ entities:
       pos: 30.5,-28.5
       parent: 2
     - type: Door
-      secondsUntilStateChange: -197612
+      secondsUntilStateChange: -199068.2
       state: Opening
     - type: DeviceLinkSource
       lastSignals:
@@ -13839,7 +13839,7 @@ entities:
       pos: 30.5,-24.5
       parent: 2
     - type: Door
-      secondsUntilStateChange: -197612.69
+      secondsUntilStateChange: -199068.89
       state: Opening
     - type: DeviceLinkSource
       lastSignals:
@@ -15005,7 +15005,7 @@ entities:
       pos: 36.5,0.5
       parent: 2
     - type: Door
-      secondsUntilStateChange: -289308.78
+      secondsUntilStateChange: -290765
       state: Opening
     - type: DeviceLinkSource
       lastSignals:
@@ -69048,6 +69048,12 @@ entities:
     - type: Transform
       pos: 45.454838,-6.3729386
       parent: 2
+  - uid: 26790
+    components:
+    - type: Transform
+      rot: 1.5707963267948966 rad
+      pos: -13.534432,14.603201
+      parent: 2
 - proto: ChairFoldingSpawnFolded
   entities:
   - uid: 10760
@@ -73615,9 +73621,9 @@ entities:
           showEnts: False
           occludes: True
           ent: null
-- proto: ComputerShuttleSalvage
+- proto: CompuerShuttleSalvage
   entities:
-  - uid: 26789
+  - uid: 26797
     components:
     - type: Transform
       pos: -35.5,33.5
@@ -94469,6 +94475,32 @@ entities:
       parent: 2
     - type: AtmosPipeColor
       color: '#990000FF'
+- proto: GasPipeBendAlt4
+  entities:
+  - uid: 26791
+    components:
+    - type: Transform
+      rot: 3.141592653589793 rad
+      pos: -30.5,3.5
+      parent: 2
+    - type: AtmosPipeColor
+      color: '#03FCD3FF'
+  - uid: 26792
+    components:
+    - type: Transform
+      rot: -1.5707963267948966 rad
+      pos: -27.5,3.5
+      parent: 2
+    - type: AtmosPipeColor
+      color: '#990000FF'
+  - uid: 26793
+    components:
+    - type: Transform
+      rot: 1.5707963267948966 rad
+      pos: -27.5,4.5
+      parent: 2
+    - type: AtmosPipeColor
+      color: '#990000FF'
 - proto: GasPipeFourway
   entities:
   - uid: 14184
@@ -112626,6 +112658,24 @@ entities:
       parent: 2
     - type: AtmosPipeColor
       color: '#0055CCFF'
+- proto: GasPipeStraightAlt4
+  entities:
+  - uid: 26794
+    components:
+    - type: Transform
+      rot: 1.5707963267948966 rad
+      pos: -26.5,4.5
+      parent: 2
+    - type: AtmosPipeColor
+      color: '#990000FF'
+  - uid: 26795
+    components:
+    - type: Transform
+      rot: 1.5707963267948966 rad
+      pos: -29.5,3.5
+      parent: 2
+    - type: AtmosPipeColor
+      color: '#03FCD3FF'
 - proto: GasPipeTJunction
   entities:
   - uid: 16545
@@ -115321,6 +115371,18 @@ entities:
       parent: 2
     - type: GasPressureRegulator
       threshold: 17000
+- proto: GasPressureRegulatorAlt4
+  entities:
+  - uid: 26796
+    components:
+    - type: Transform
+      rot: 1.5707963267948966 rad
+      pos: -28.5,3.5
+      parent: 2
+    - type: GasPressureRegulator
+      threshold: 300
+    - type: AtmosPipeColor
+      color: '#990000FF'
 - proto: GasThermoMachineFreezer
   entities:
   - uid: 16894
@@ -127523,25 +127585,25 @@ entities:
     - type: Transform
       pos: -21.5,37.5
       parent: 2
-  - uid: 26790
+  - uid: 26798
     components:
     - type: Transform
       anchored: False
       pos: 72.046875,14
       parent: 1
-  - uid: 26791
+  - uid: 26799
     components:
     - type: Transform
       anchored: False
       pos: 83.046875,14
       parent: 1
-  - uid: 26792
+  - uid: 26800
     components:
     - type: Transform
       anchored: False
       pos: 85.046875,14
       parent: 1
-  - uid: 26793
+  - uid: 26801
     components:
     - type: Transform
       anchored: False
@@ -153123,6 +153185,13 @@ entities:
     components:
     - type: Transform
       pos: -1.5,-33.5
+      parent: 2
+- proto: SpawnMobKoboldKiki
+  entities:
+  - uid: 26789
+    components:
+    - type: Transform
+      pos: -14.5,14.5
       parent: 2
 - proto: SpawnMobMcGriff
   entities:
