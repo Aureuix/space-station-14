@@ -177,6 +177,11 @@
           Rebooting: { state: dead }
           Dead: { state: dead }
   - type: Intellicard
+    # Starlight-start
+  - type: NameIdentifier # Added to give intellicards unique identifiers
+    group: Intellicard
+  - type: ForceQuickDraw # Don't pull the posi-brain out when the intelecard is in a pocket and hotkey used to bring it to a player hand
+  # Starlight-end
 
 - type: entity
   id: PlayerStationAiPreview
