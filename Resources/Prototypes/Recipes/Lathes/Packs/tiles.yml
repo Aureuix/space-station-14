@@ -48,6 +48,8 @@
   - FloorTileItemSteelGrate
   - FloorTileItemTechGreeb
   # Starlight End
+  - FloorTileItemPool # SpL
+  - FloorTileItemPoolDark # SpL
 
 - type: latheRecipePack
   id: FloorWhiteTilesStatic

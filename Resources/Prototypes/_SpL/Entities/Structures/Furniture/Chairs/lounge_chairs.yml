@@ -1,0 +1,113 @@
+﻿- type: entity
+  parent: ChairBase
+  name: lounge chair
+  id: LoungeChairBase
+  abstract: true
+  description: Perfect for a lay in the sun. Or at least one in the fluorescensce. 
+  components:
+    - type: Sprite
+      sprite: _DEN/Structures/Furniture/lounge_chair.rsi
+
+- type: entity
+  parent: LoungeChairBase
+  id: LoungeChairBeige
+  suffix: beige
+  components:
+    - type: Sprite
+      state: beige
+
+- type: entity
+  parent: LoungeChairBase
+  id: LoungeChairBlack
+  suffix: black
+  components:
+    - type: Sprite
+      state: black
+
+- type: entity
+  parent: LoungeChairBase
+  id: LoungeChairBlue
+  suffix: blue
+  components:
+    - type: Sprite
+      state: blue
+
+- type: entity
+  parent: LoungeChairBase
+  id: LoungeChairBrown
+  suffix: brown
+  components:
+    - type: Sprite
+      state: brown
+
+- type: entity
+  parent: LoungeChairBase
+  id: LoungeChairGray
+  suffix: gray
+  components:
+    - type: Sprite
+      state: gray
+
+- type: entity
+  parent: LoungeChairBase
+  id: LoungeChairGreen
+  suffix: green
+  components:
+    - type: Sprite
+      state: green
+
+- type: entity
+  parent: LoungeChairBase
+  id: LoungeChairOrange
+  suffix: orange
+  components:
+    - type: Sprite
+      state: orange
+
+- type: entity
+  parent: LoungeChairBase
+  id: LoungeChairPink
+  suffix: pink
+  components:
+    - type: Sprite
+      state: pink
+
+- type: entity
+  parent: LoungeChairBase
+  id: LoungeChairPurple
+  suffix: purple
+  components:
+    - type: Sprite
+      state: purple
+
+- type: entity
+  parent: LoungeChairBase
+  id: LoungeChairRed
+  suffix: red
+  components:
+    - type: Sprite
+      state: red
+
+- type: entity
+  parent: LoungeChairBase
+  id: LoungeChairTeal
+  suffix: teal
+  components:
+    - type: Sprite
+      state: teal
+
+- type: entity
+  parent: LoungeChairBase
+  id: LoungeChairWhite
+  suffix: white
+  components:
+    - type: Sprite
+      state: white
+
+- type: entity
+  parent: LoungeChairBase
+  id: LoungeChairYellow
+  suffix: yellow
+  components:
+    - type: Sprite
+      state: yellow

@@ -7,3 +7,33 @@
     - type: Sprite
       sprite: _SpL/Structures/Wallmounts/signs.rsi
       state: gsl
+      
+- type: entity
+  parent: BaseSign
+  id: SignDoujou
+  name: doujou sign
+  description: Are you ready to train?
+  components:
+    - type: Sprite
+      sprite: Nyanotrasen/Structures/Wallmounts/doujou.rsi
+      state: doujousign
+      
+- type: entity
+  parent: BaseSign
+  id: ConspiracyBoard
+  name: conspiracy board
+  description: THE TRUTH IS OUT THERE. I KNOW IT. I SEE THE PATTERNS. I SEE THE PATTERNS!!
+  components:
+    - type: Sprite
+      sprite: Nyanotrasen/Structures/Wallmounts/conspiracy_board.rsi
+      state: icon
+      
+- type: entity
+  parent: BaseSign
+  id: SignLastIdiot
+  name: last idiot sign
+  description: A sign tracking the days since the last idiot. Doesn't look like it advances very often.
+  components:
+    - type: Sprite
+      sprite: Nyanotrasen/Structures/Wallmounts/last_idiot.rsi
+      state: icon
