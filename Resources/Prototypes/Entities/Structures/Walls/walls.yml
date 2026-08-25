@@ -744,10 +744,10 @@
   components:
   - type: Sprite
     drawdepth: Walls
-    sprite: Structures/Walls/reinforced_diagonal.rsi
+    sprite: _SpL/Structures/Walls/reinforced_diagonal.rsi # SpL
     state: state0
   - type: Icon
-    sprite: Structures/Walls/reinforced_diagonal.rsi
+    sprite: _SpL/Structures/Walls/reinforced_diagonal.rsi # SpL
     state: state0
   - type: Damageable
     damageContainer: StructuralInorganic
@@ -1079,10 +1079,10 @@
   components:
   - type: Sprite
     drawdepth: Walls
-    sprite: Structures/Walls/solid_diagonal.rsi
+    sprite: _SpL/Structures/Walls/solid_diagonal.rsi # SpL
     state: state0
   - type: Icon
-    sprite: Structures/Walls/solid_diagonal.rsi
+    sprite: _SpL/Structures/Walls/solid_diagonal.rsi # SpL
     state: state0
   - type: Ricochetable
     chance: 0.4
@@ -1115,9 +1115,9 @@
   suffix: rusted
   components:
   - type: Sprite
-    sprite: Structures/Walls/solid_rust.rsi
+    sprite: _DV/Structures/Walls/solid_rust.rsi # SpL
   - type: Icon
-    sprite: Structures/Walls/solid_rust.rsi
+    sprite: _DV/Structures/Walls/solid_rust.rsi # SpL
     state: full
   - type: Construction
     graph: Girder
