@@ -39,7 +39,7 @@
     - type: ContainerFill
       containers:
         item:
-          - Vibrorapier
+          - CentcommVibroRapier
 
 - type: entity
   parent: [ClothingBeltBase, ClothingSlotBase, BaseCommandContraband]
