@@ -634,9 +634,9 @@
   - type: Ricochetable
     chance: 0.75
   - type: Sprite
-    sprite: Structures/Walls/solid.rsi
+    sprite: _DV/Structures/Walls/solid.rsi # SpL
   - type: Icon
-    sprite: Structures/Walls/solid.rsi
+    sprite: _DV/Structures/Walls/solid.rsi # SpL
     state: rgeneric
   - type: Construction
     graph: Girder
@@ -704,9 +704,9 @@
   suffix: rusted
   components:
   - type: Sprite
-    sprite: Structures/Walls/solid_rust.rsi
+    sprite: _DV/Structures/Walls/solid_rust.rsi # SpL
   - type: Icon
-    sprite: Structures/Walls/solid_rust.rsi
+    sprite: _DV/Structures/Walls/solid_rust.rsi # SpL
     state: rgeneric
   - type: Construction
     graph: Girder
@@ -1035,13 +1035,13 @@
   name: solid wall
   components:
   - type: Sprite
-    sprite: Structures/Walls/solid.rsi
+    sprite: _DV/Structures/Walls/solid.rsi # SpL
   - type: WallReplacementMarker
   - type: Construction
     graph: Girder
     node: wall
   - type: Icon
-    sprite: Structures/Walls/solid.rsi
+    sprite: _DV/Structures/Walls/solid.rsi # SpL
   - type: RCDDeconstructable
     cost: 6
     delay: 8

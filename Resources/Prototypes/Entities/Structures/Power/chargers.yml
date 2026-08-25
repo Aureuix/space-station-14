@@ -213,7 +213,7 @@
   description: A compact wall-mounted recharger. It can only recharge electronic devices and has no space for power cells.
   components:
   - type: Sprite
-    sprite: Structures/Power/wall_recharger.rsi
+    sprite: /_DV/Structures/Power/wall_recharger.rsi # SpL
     layers:
     - map: ["enum.PowerChargerVisualLayers.Base"]
       state: "empty"
