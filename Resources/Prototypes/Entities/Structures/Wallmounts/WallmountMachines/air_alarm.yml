@@ -73,7 +73,7 @@
   - type: Appearance
   - type: WiresVisuals
   - type: Sprite
-    sprite: Structures/Wallmounts/air_monitors.rsi
+    sprite: _Mono/Structures/Wallmounts/air_monitors.rsi # SpL
     layers:
     - state: alarmp
       map: ["airAlarmBase"]
@@ -125,7 +125,7 @@
   description: An air alarm. Doesn't look like it'll be alarming air any time soon.
   components:
   - type: Sprite
-    sprite: Structures/Wallmounts/air_monitors.rsi
+    sprite: _Mono/Structures/Wallmounts/air_monitors.rsi # SpL
     layers:
     - state: alarm_b1
       map: [ "enum.ConstructionVisuals.Layer" ]

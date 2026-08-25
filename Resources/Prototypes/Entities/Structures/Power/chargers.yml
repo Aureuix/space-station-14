@@ -207,20 +207,48 @@
           - IlluminateTech #SpL
 
 - type: entity
-  parent: [ BaseItemRecharger, BaseWallmount ]
+  parent: [BaseMachinePowered, BaseWallmountMetallic] # SpL- necessary because charger inheritance fucks up the rotational spriting for this one
   id: WallWeaponCapacitorRecharger
   name: wall recharger
   description: A compact wall-mounted recharger. It can only recharge electronic devices and has no space for power cells.
   components:
+  - type: ApcPowerReceiver # SpL Start
+    powerLoad: 1 
+  - type: PowerChargerVisuals
+  - type: Appearance
+  - type: Transform
+    anchored: true
+    noRot: false
+  - type: Anchorable
+    delay: 1
+  - type: Destructible
+    thresholds:
+      - trigger:
+          !type:DamageTrigger
+          damage: 80
+        behaviors:
+          - !type:DoActsBehavior
+            acts: [ "Destruction" ]
+      - trigger:
+          !type:DamageTrigger
+          damage: 40
+        behaviors:
+          - !type:EmptyAllContainersBehaviour
+          - !type:DoActsBehavior
+            acts: [ "Destruction" ]
+          - !type:PlaySoundBehavior
+            sound:
+              collection: MetalBreak # SpL End
   - type: Sprite
-    sprite: Structures/Power/wall_recharger.rsi
+    sprite: _DV/Structures/Power/wall_recharger.rsi # SpL
     layers:
-    - map: ["enum.PowerChargerVisualLayers.Base"]
-      state: "empty"
-    - map: ["enum.PowerChargerVisualLayers.Light"]
-      state: "light-off"
-      shader: "unshaded"
+      - map: [ "enum.PowerChargerVisualLayers.Base" ]
+        state: "empty"
+      - map: [ "enum.PowerChargerVisualLayers.Light" ]
+        state: "light-off"
+        shader: "unshaded"
   - type: Charger
+    slotId: charger_slot # SpL
     chargeRate: 25
   - type: ItemSlots
     slots:

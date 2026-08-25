@@ -2390,7 +2390,7 @@
     denyState: deny
     ejectDelay: 2
   - type: Sprite # Starlight start
-    sprite: _Starlight/Structures/Machines/VendingMachines/syndie_chemvend.rsi # New sprite
+    sprite: _DV/Structures/Machines/VendingMachines/syndiejuice.rsi # New sprite # SpL- yeah it sucks actually try this one for size
     layers:
       - state: "off"
         map: ["enum.VendingMachineVisualLayers.Base"]

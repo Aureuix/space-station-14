@@ -42,7 +42,7 @@
   - type: ComplexInteraction
   - type: Sprite
     drawdepth: Mobs
-    sprite: Mobs/Aliens/Xenos/burrower.rsi
+    sprite: _RMC14/Mobs/Xenos/burrower.rsi # SpL
     layers:
     - map: ["enum.DamageStateVisualLayers.Base"]
       state: running
@@ -135,7 +135,7 @@
   components:
   - type: Sprite
     drawdepth: Mobs
-    sprite: Mobs/Aliens/Xenos/runner.rsi
+    sprite: _RMC14/Mobs/Xenos/runner.rsi # SpL
     offset: 0,0.6
     layers:
     - map: ["enum.DamageStateVisualLayers.Base"]
@@ -182,7 +182,7 @@
   components:
   - type: Sprite
     drawdepth: Mobs
-    sprite: Mobs/Aliens/Xenos/spitter.rsi
+    sprite: _RMC14/Mobs/Xenos/spitter.rsi # SpL
     offset: 0,0.3
     layers:
     - map: ["enum.DamageStateVisualLayers.Base"]
