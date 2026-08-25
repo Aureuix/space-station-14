@@ -4,7 +4,7 @@
   id: FloorTileItemPool
   components:
     - type: Sprite
-      sprite: _Den/Objects/Tiles/pool.rsi
+      sprite: _DEN/Objects/Tiles/pool.rsi
       state: pool
     - type: FloorTile
       outputs:
@@ -19,7 +19,7 @@
   id: FloorTileItemPoolDark
   components:
     - type: Sprite
-      sprite: _Den/Objects/Tiles/pool.rsi
+      sprite: _DEN/Objects/Tiles/pool.rsi
       state: pool-dark
     - type: FloorTile
       outputs:

@@ -6,7 +6,7 @@
   description: Perfect for a lay in the sun. Or at least one in the fluorescensce. 
   components:
     - type: Sprite
-      sprite: _Den/Structures/Furniture/lounge_chair.rsi
+      sprite: _DEN/Structures/Furniture/lounge_chair.rsi
 
 - type: entity
   parent: LoungeChairBase
