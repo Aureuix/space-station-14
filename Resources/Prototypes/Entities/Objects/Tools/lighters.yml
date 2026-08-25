@@ -567,8 +567,8 @@
 - type: entity
   parent: [BaseBrandedLighter, FlippoLighter] #SL Edit: added flippolighter parent
   id: WaffleCoFlippo
-  name: Waffle Co. flippo
-  description: "A robust mass produced lighter. The Waffle Co. logo turns the spark wheel when pushed up, minimising risk of lighter burns for even the most inept user."
+  name: Waffle Corp flippo # SpL- ITS CORP
+  description: "A robust mass produced lighter. The Waffle Corp logo turns the spark wheel when pushed up, minimising risk of lighter burns for even the most inept user."
   components:
   - type: Sprite
     sprite: Objects/Tools/Lighters/waffleco.rsi
