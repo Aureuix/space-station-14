@@ -1,0 +1,9 @@
+- files: ["pool.png"]
+  license: "CC-BY-SA-3.0"
+  copyright: "nykaestra, based on sprites by portfiend (GitHub)"
+  source: "https://github.com/Aureuix/space-station-14/tree/SpectaLight"
+
+- files: ["pool-dark.png"]
+  license: "CC-BY-SA-3.0"
+  copyright: "nykaestra, based on sprites by portfiend (GitHub)"
+  source: "https://github.com/Aureuix/space-station-14/tree/SpectaLight"

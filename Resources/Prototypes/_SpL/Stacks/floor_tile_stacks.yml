@@ -1,0 +1,11 @@
+﻿- type: stack
+  id: FloorTilePool
+  name: stack-floor-pool-tile
+  spawn: FloorTileItemPool
+  maxCount: 30
+
+- type: stack
+  id: FloorTilePoolDark
+  name: FloorTilePoolDark
+  spawn: FloorTileItemPoolDark
+  maxCount: 30

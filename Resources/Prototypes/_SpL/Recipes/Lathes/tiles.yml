@@ -1,0 +1,9 @@
+﻿- type: latheRecipe
+  parent: BaseSteelTileRecipe
+  id: FloorTileItemPool
+  result: FloorTileItemPool
+
+- type: latheRecipe
+  parent: BaseSteelTileRecipe
+  id: FloorTileItemPoolDark
+  result: FloorTileItemPoolDark

@@ -1,0 +1,149 @@
+﻿- type: entity
+  abstract: true
+  parent: [UnanchoredChairBase, BaseItem]
+  id: BaseSwimRing
+  name: pool ring
+  description: An inflatable rubber toy for resting on top of the water. 
+  components:
+    - type: Sprite
+      sprite: _DEN/Structures/Furniture/pool_ring.rsi
+    - type: Clothing
+      sprite: _DEN/Structures/Furniture/pool_ring.rsi
+      slots:
+        - belt
+    - type: Item
+      size: Normal
+      sprite: _DEN/Structures/Furniture/pool_ring.rsi
+      
+- type: entity
+  parent: BaseSwimRing
+  id: SwimRingBlack
+  name: black pool ring
+  components:
+    - type: Sprite
+      state: black
+    - type: Clothing
+      equippedPrefix: black
+    - type: Item
+      heldPrefix: black
+
+- type: entity
+  parent: BaseSwimRing
+  id: SwimRingBlue
+  name: blue pool ring
+  components:
+    - type: Sprite
+      state: blue
+    - type: Clothing
+      equippedPrefix: blue
+    - type: Item
+      heldPrefix: blue
+
+- type: entity
+  parent: BaseSwimRing
+  id: SwimRingCyan
+  name: cyan pool ring
+  components:
+    - type: Sprite
+      state: cyan
+    - type: Clothing
+      equippedPrefix: cyan
+    - type: Item
+      heldPrefix: cyan
+
+- type: entity
+  parent: BaseSwimRing
+  id: SwimRingGreen
+  name: green pool ring
+  components:
+    - type: Sprite
+      state: green
+    - type: Clothing
+      equippedPrefix: green
+    - type: Item
+      heldPrefix: green
+
+- type: entity
+  parent: BaseSwimRing
+  id: SwimRingMagenta
+  name: magenta pool ring
+  components:
+    - type: Sprite
+      state: magenta
+    - type: Clothing
+      equippedPrefix: magenta
+    - type: Item
+      heldPrefix: magenta
+
+- type: entity
+  parent: BaseSwimRing
+  id: SwimRingPink
+  name: pink pool ring
+  components:
+    - type: Sprite
+      state: pink
+    - type: Clothing
+      equippedPrefix: pink
+    - type: Item
+      heldPrefix: pink
+
+- type: entity
+  parent: BaseSwimRing
+  id: SwimRingPurple
+  name: purple pool ring
+  components:
+    - type: Sprite
+      state: purple
+    - type: Clothing
+      equippedPrefix: purple
+    - type: Item
+      heldPrefix: purple
+
+- type: entity
+  parent: BaseSwimRing
+  id: SwimRingRainbow
+  name: rainbow pool ring
+  description: They're putting chemicals in the water!!
+  components:
+    - type: Sprite
+      state: rainbow
+    - type: Clothing
+      equippedPrefix: rainbow
+    - type: Item
+      heldPrefix: rainbow
+
+- type: entity
+  parent: BaseSwimRing
+  id: SwimRingRed
+  name: red pool ring
+  components:
+    - type: Sprite
+      state: red
+    - type: Clothing
+      equippedPrefix: red
+    - type: Item
+      heldPrefix: red
+
+- type: entity
+  parent: BaseSwimRing
+  id: SwimRingTrans
+  name: trans pool ring
+  components:
+    - type: Sprite
+      state: trans
+    - type: Clothing
+      equippedPrefix: trans
+    - type: Item
+      heldPrefix: trans
+
+- type: entity
+  parent: BaseSwimRing
+  id: SwimRingYellow
+  name: yellow pool ring
+  components:
+    - type: Sprite
+      state: yellow
+    - type: Clothing
+      equippedPrefix: yellow
+    - type: Item
+      heldPrefix: yellow
