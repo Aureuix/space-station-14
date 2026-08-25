@@ -6,6 +6,12 @@
 
 - type: stack
   id: FloorTilePoolDark
-  name: FloorTilePoolDark
+  name: stack-floor-pool-dark-tile
   spawn: FloorTileItemPoolDark
+  maxCount: 30
+  
+- type: stack
+  id: FloorCarpetTatami
+  name: stack-floor-carpet-tatami
+  spawn: FloorCarpetItemTatami
   maxCount: 30

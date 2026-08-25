@@ -1,0 +1,17 @@
+﻿- type: entity
+  parent: FloorTileItemBase
+  id: FloorCarpetItemTatami
+  name: tatami
+  description: This was once a luxury reserved solely for nobles. Now, it's... still a luxury, just for different reasons.
+  components:
+    - type: Sprite
+      sprite: _SpL/Objects/Tiles/tatami.rsi
+      state: icon
+    - type: Item
+      sprite: _SpL/Objects/Tiles/tatami.rsi
+    - type: Stack
+      stackType: FloorCarpetTatami
+    - type: SpawnAfterInteract
+      prototype: CarpetTatami
+      doAfter: 0.5
+      removeOnInteract: true

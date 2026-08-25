@@ -7,3 +7,8 @@
   parent: BaseSteelTileRecipe
   id: FloorTileItemPoolDark
   result: FloorTileItemPoolDark
+  
+- type: latheRecipe
+  parent: BaseCarpetRecipe
+  id: CarpetTatami
+  result: FloorCarpetItemTatami
