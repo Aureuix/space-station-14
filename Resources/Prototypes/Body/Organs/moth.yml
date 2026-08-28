@@ -1,7 +1,7 @@
 - type: entity
   id: OrganMothStomach
   parent: [OrganAnimalStomach, OrganHumanStomach]
-  name: moth stomach
+  name: noctiliae stomach # SpL
   description: "A stomach specialized for digesting normally inedible cloth."
   suffix: Moth
   components:
