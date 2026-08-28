@@ -1,0 +1,68 @@
+﻿- type: entity
+  parent: BaseWallmountCabinetGlass
+  id: IdCardCabinet
+  name: id card cabinet
+  description: A small wall-mounted cabinet for holding the Captain's spare ID card. The lock is purely decorational- you wouldn't want to be unable to open this when you really need it, right?
+  placement:
+    mode: SnapgridCenter
+  components:
+    - type: Destructible
+      thresholds:
+        - trigger:
+            !type:DamageTrigger
+            damage: 300
+          behaviors:
+            - !type:DoActsBehavior
+              acts: [ "Destruction" ]
+        - trigger:
+            !type:DamageTrigger
+            damage: 200
+          behaviors:
+            - !type:EmptyAllContainersBehaviour
+            - !type:DoActsBehavior
+              acts: [ "Destruction" ]
+            - !type:PlaySoundBehavior
+              sound:
+                collection: MetalGlassBreak
+    - type: Sprite
+      sprite: _DV/Structures/Wallmounts/idcard_cabinet.rsi
+      layers:
+        - state: cabinet
+        - state: card
+          map: ["enum.ItemCabinetVisuals.Layer"]
+          visible: true
+        - state: glass
+          map: ["enum.OpenableVisuals.Layer"]
+    - type: ItemSlots
+      slots:
+        ItemCabinet:
+          ejectOnInteract: true
+          whitelist:
+            tags:
+              - IDCardCap # TODO- revisit
+    - type: Lock
+
+- type: entity
+  parent: IdCardCabinet
+  id: IdCardCabinetOpen
+  suffix: Open
+  components:
+    - type: Openable
+      opened: true
+    - type: Lock
+      locked: false
+
+- type: entity
+  parent: IdCardCabinet
+  id: IdCardCabinetFilled
+  suffix: Filled
+  components:
+    - type: ContainerFill
+      containers:
+        ItemCabinet:
+          - CaptainIDCard
+
+- type: entity
+  parent: [IdCardCabinetFilled, IdCardCabinetOpen]
+  id: IdCardCabinetFilledOpen
+  suffix: Filled, Open

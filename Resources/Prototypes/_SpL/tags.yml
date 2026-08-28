@@ -36,6 +36,9 @@
 - type: Tag
   id: EncryptionGSL
   
+- type: Tag
+  id: IDCardCap
+  
 # bounty tags
 - type: Tag
   id: SpaceHeaterBoard
