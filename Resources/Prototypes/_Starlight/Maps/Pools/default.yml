@@ -20,7 +20,7 @@
   - StarlightKiloton
   - StarlightElkridge
 #  - StarlightPrism # SpL
-  - StarlightSilica
+#  - StarlightSilica # SpL
   - StarlightCluster
   - StarlightBox
   - StarlightPlasma
@@ -37,4 +37,5 @@
   - SpLBarratry
   - SpLPrism
   - SpLCork
+  - SpLSilica
 # SpL End
