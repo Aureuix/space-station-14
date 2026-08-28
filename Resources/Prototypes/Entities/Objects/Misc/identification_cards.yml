@@ -70,6 +70,7 @@
     - WhitelistChameleon
     - WhitelistChameleonIdCard
     - HighRiskItem
+    - IDCardCap # SpL
   - type: StealTarget
     stealGroup: CaptainIDCard
 

@@ -1,6 +1,6 @@
 ﻿- type: body
   id: Moth
-  name: "moth"
+  name: "noctiliae"
   root: torso
   slots:
     head:

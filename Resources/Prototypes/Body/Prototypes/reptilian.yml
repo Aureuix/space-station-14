@@ -1,5 +1,5 @@
 ﻿- type: body
-  name: "reptilian"
+  name: "unathi" # SpL
   id: Reptilian
   root: torso
   slots:

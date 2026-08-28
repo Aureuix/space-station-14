@@ -1,8 +1,8 @@
 - type: entity
   id: OrganMothEyes
   parent: OrganHumanEyes
-  name: moth eyes
-  suffix: Moth
+  name: noctiliae eyes # SpL
+  suffix: Noctiliae # SpL
   description: "Large compound eyes used to catch light."
   components:
   - type: OrganVisualization

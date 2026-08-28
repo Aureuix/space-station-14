@@ -9,7 +9,7 @@
     access: []
   - type: Sprite
     drawdepth: WallMountedItems
-    sprite: Structures/Power/apc.rsi
+    sprite: _Mono/Structures/Power/apc.rsi # SpL
     layers:
     - state: base
       color: "#795382"
@@ -53,7 +53,7 @@
       maxLoad: 90000 # significantly more than a basic APC handles
     - type: Sprite
       drawdepth: WallMountedItems
-      sprite: _Starlight/Structures/Power/apc.rsi
+      sprite: _SpL/Structures/Power/apc.rsi # SpL
       layers:
         - state: advanced-base
         - state: panel
@@ -114,7 +114,7 @@
       graph: APC
       node: apcAdvancedFrame
     - type: Sprite
-      sprite: _Starlight/Structures/Power/apc.rsi
+      sprite: _SpL/Structures/Power/apc.rsi # SpL
       state: advanced-frame
 
 # Constructed advanced APC

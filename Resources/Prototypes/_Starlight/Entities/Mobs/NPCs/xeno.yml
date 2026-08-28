@@ -128,7 +128,7 @@
     speechVerb: LargeMob
 
 - type: entity
-  name: praetorian
+  name: runner # SpL
   parent: MobXenoAdmeme
   id: MobXenoRunnerAdmeme
   suffix: Admeme
@@ -193,12 +193,12 @@
       150: Dead
   - type: SlowOnDamage
     speedModifierThresholds:
-      25: 0.7
+      100: 0.7 # SpL
   - type: HTN
     rootTask:
       task: SimpleRangedHostileCompound
   - type: RechargeBasicEntityAmmo
-    rechargeCooldown: 0.75
+    rechargeCooldown: 0.33 # SpL
   - type: BasicEntityAmmoProvider
     proto: BulletAcid
     capacity: 3
@@ -221,3 +221,154 @@
         - MobMask
         layer:
         - MobLayer
+
+# SpL Start
+- type: entity
+  name: praetorian
+  parent: MobXenoAdmeme
+  id: MobXenoPraetorianAdmeme
+  suffix: Admeme
+  components:
+    - type: Sprite
+      drawdepth: Mobs
+      sprite: _RMC14/Mobs/Xenos/praetorian.rsi
+      offset: 0,0.4
+      layers:
+        - map: ["enum.DamageStateVisualLayers.Base"]
+          state: running
+    - type: MobThresholds
+      thresholds:
+        0: Alive
+        300: Dead
+    - type: MovementSpeedModifier
+      baseSprintSpeed: 4.7
+    - type: Stamina
+      baseCritThreshold: 300
+    - type: SlowOnDamage
+      speedModifierThresholds:
+        250: 0.7
+    - type: Fixtures
+      fixtures:
+        fix1:
+          shape:
+            !type:PhysShapeCircle
+            radius: 0.45
+          density: 400
+          mask:
+            - MobMask
+          layer:
+            - MobLayer
+
+- type: entity
+  name: drone
+  parent: MobXenoAdmeme
+  id: MobXenoDroneAdmeme
+  suffix: Admeme
+  components:
+    - type: Sprite
+      drawdepth: Mobs
+      sprite: _RMC14/Mobs/Xenos/drone.rsi
+      offset: 0,0.2
+      layers:
+        - map: ["enum.DamageStateVisualLayers.Base"]
+          state: running
+    - type: MobThresholds
+      thresholds:
+        0: Alive
+        160: Dead
+    - type: SlowOnDamage
+      speedModifierThresholds:
+        120: 0.7
+    - type: MeleeWeapon
+      damage:
+        groups:
+          Brute: 12
+    - type: MovementSpeedModifier
+      baseSprintSpeed: 4.5
+    - type: Fixtures
+      fixtures:
+        fix1:
+          shape:
+            !type:PhysShapeCircle
+            radius: 0.45
+          density: 450
+          mask:
+            - MobMask
+          layer:
+            - MobLayer
+
+- type: entity
+  name: ravager
+  parent: MobXenoAdmeme
+  id: MobXenoRavagerAdmeme
+  suffix: Admeme
+  components:
+    - type: Sprite
+      drawdepth: Mobs
+      sprite: _RMC14/Mobs/Xenos/ravager.rsi
+      offset: 0,0.5
+      layers:
+        - map: ["enum.DamageStateVisualLayers.Base"]
+          state: running
+    - type: MobThresholds
+      thresholds:
+        0: Alive
+        200: Dead
+    - type: MovementSpeedModifier
+      baseSprintSpeed: 4.7
+    - type: SlowOnDamage
+      speedModifierThresholds:
+        150: 0.7
+    - type: Fixtures
+      fixtures:
+        fix1:
+          shape:
+            !type:PhysShapeCircle
+            radius: 0.45
+          density: 1350
+          mask:
+            - MobMask
+          layer:
+            - MobLayer
+
+- type: entity
+  name: queen
+  parent: MobXenoAdmeme
+  id: MobXenoQueenAdmeme
+  suffix: Admeme
+  components:
+    - type: Sprite
+      drawdepth: Mobs
+      sprite: _RMC14/Mobs/Xenos/queen.rsi
+      offset: 0,0.4
+      layers:
+        - map: ["enum.DamageStateVisualLayers.Base"]
+          state: running
+    - type: MobThresholds
+      thresholds:
+        0: Alive
+        600: Dead
+    - type: SlowOnDamage
+      speedModifierThresholds:
+        550: 0.7
+    - type: MovementSpeedModifier
+      baseSprintSpeed: 5
+    - type: MeleeWeapon
+      damage:
+        groups:
+          Brute: 25
+    - type: Fixtures
+      fixtures:
+        fix1:
+          shape:
+            !type:PhysShapeCircle
+            radius: 0.45
+          density: 15500
+          mask:
+            - MobMask
+          layer:
+            - MobLayer
+    - type: Tag
+      tags:
+        - CannotSuicide
+# SpL End

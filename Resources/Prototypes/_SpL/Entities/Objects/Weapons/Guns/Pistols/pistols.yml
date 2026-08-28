@@ -71,11 +71,46 @@
       unspawnedCount: 7
       cycleable: false 
     - type: BallisticAmmoSelfRefiller
-      autoRefillRate: 1s
+      autoRefillRate: 2s
       affectedByEmp: true
       firingPausesAutoRefill: true
-      autoRefillPauseDuration: 0.5s
+      autoRefillPauseDuration: 0.75s
     - type: AmmoCounter
+    - type: Item
+      size: Small
+      shape:
+        - 0,0,1,0
+        - 0,1,0,1
+      storedOffset: 0,-4
+    - type: Clothing
+      sprite: Objects/Weapons/Guns/Pistols/viper.rsi
+      quickEquip: false
+      slots:
+        - suitStorage
+        - Belt
+    - type: Tag
+      tags:
+        - Sidearm
+    - type: CanDualWield
+      dualWieldInaccuracyPenalty: 30
+    - type: StaticPrice
+      price: 2000
+    - type: MeleeWeapon
+      wideAnimationRotation: 0
+      damage:
+        types:
+          Blunt: 6
+      angle: 0
+      animation: WeaponArcThrust
+      soundHit:
+        collection: MetalThud
+    - type: AltFireMelee
+    - type: EmitSoundOnPickup
+      sound:
+        path: /Audio/_SpL/Effects/holster.ogg
+    - type: EmitSoundOnLand
+      sound:
+        path: /Audio/_SpL/Effects/pistol_drop.ogg
 
 - type: entity
   id: WeaponIlluminateFrostbite

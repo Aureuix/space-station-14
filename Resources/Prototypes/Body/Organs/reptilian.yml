@@ -1,8 +1,8 @@
 ﻿- type: entity
   id: OrganReptilianStomach
   parent: [OrganAnimalStomach, BaseOrganStomach]
-  name: reptilian stomach
-  suffix: Reptilian
+  name: unathi stomach # SpL
+  suffix: Unathi # SpL
   components:
   - type: Stomach
     specialDigestible:
