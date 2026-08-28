@@ -39,7 +39,7 @@
           ejectOnInteract: true
           whitelist:
             tags:
-              - IDCardCap # TODO- revisit
+              - IDCardCap
     - type: Lock
 
 - type: entity
