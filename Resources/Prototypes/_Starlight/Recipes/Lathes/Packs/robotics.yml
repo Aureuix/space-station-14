@@ -198,6 +198,7 @@
     - VendingMachineChemicalsCircuitboard
     - VendingMachineDonkCircuitboard
     - VendingMachineIceCreamCircuitboard
+    - VendingMachineGumballsCircuitboard
 
 
 # Contraband Vendor Boards (Emag only)
