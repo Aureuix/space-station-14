@@ -789,7 +789,7 @@
     autoUnlock: true # SpL- it's cool
     autoLock: true # SpL- it's cool
   - type: AccessReader
-    access: [[ "CentralCommand" ]]
+    access: [[ "NanoTrasen" ]] # SpL
   - type: Clothing
     sprite: _Starlight/Objects/Weapons/Guns/Battery/pulse.rsi
   - type: Item
@@ -1003,7 +1003,7 @@
     autoUnlock: true # SpL- it's cool
     autoLock: true # SpL- it's cool
   - type: AccessReader
-    access: [[ "CentralCommand" ]]
+    access: [[ "NanoTrasen" ]] # SpL
   - type: Clothing
     sprite: _Starlight/Objects/Weapons/Guns/Battery/ntnc_pulse.rsi
   - type: Item
