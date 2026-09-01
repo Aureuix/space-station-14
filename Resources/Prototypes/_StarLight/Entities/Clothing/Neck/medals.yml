@@ -34,9 +34,9 @@
   description: Given by Central Command to commend exemplary behavior.
   components:
     - type: Sprite
-      sprite: _Starlight/Clothing/Neck/Medals/Centcomm/ccmedal.rsi
+      sprite: _Starlight/Clothing/Neck/Medals/CentComm/ccmedal.rsi
     - type: Clothing
-      sprite: _Starlight/Clothing/Neck/Medals/Centcomm/ccmedal.rsi
+      sprite: _Starlight/Clothing/Neck/Medals/CentComm/ccmedal.rsi
     - type: Tag
       tags:
         - Medal
@@ -49,9 +49,9 @@
   description: Given by Central Command to recognize valor.
   components:
     - type: Sprite
-      sprite: _Starlight/Clothing/Neck/Medals/Centcomm/ccmedalvalor.rsi
+      sprite: _Starlight/Clothing/Neck/Medals/CentComm/ccmedalvalor.rsi
     - type: Clothing
-      sprite: _Starlight/Clothing/Neck/Medals/Centcomm/ccmedalvalor.rsi
+      sprite: _Starlight/Clothing/Neck/Medals/CentComm/ccmedalvalor.rsi
     - type: Tag
       tags:
         - Medal
@@ -64,9 +64,9 @@
   description: Humbly given by Central Command to commend excellency.
   components:
     - type: Sprite
-      sprite: _Starlight/Clothing/Neck/Medals/Centcomm/ccmedalletters.rsi
+      sprite: _Starlight/Clothing/Neck/Medals/CentComm/ccmedalletters.rsi
     - type: Clothing
-      sprite: _Starlight/Clothing/Neck/Medals/Centcomm/ccmedalletters.rsi
+      sprite: _Starlight/Clothing/Neck/Medals/CentComm/ccmedalletters.rsi
     - type: Tag
       tags:
         - Medal
