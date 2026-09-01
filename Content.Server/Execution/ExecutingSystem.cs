@@ -199,8 +199,8 @@ public sealed class ExecutionSystem : EntitySystem
             return false;
 
         // You're not allowed to execute dead people (no fun allowed)
-        if (_mobState.IsDead(victim, mobState))
-            return false;
+        /*if (_mobState.IsDead(victim, mobState))
+            return false;*/ //SpL- eh, why not
 
         // You must be able to attack people to execute
         if (!_actionBlocker.CanAttack(attacker, victim))
