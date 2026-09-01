@@ -93,6 +93,7 @@
 - type: entity
   parent: SLVendingMachine
   id: SLVendingMachineHugDispenser
+  categories: [ ShouldMapStation ]
   name: hug dispenser
   components:
   - type: Sprite
@@ -107,6 +108,7 @@
 - type: entity
   parent: SLVendingMachine
   id: SLVendingMachineFashion
+  categories: [ ShouldMapStation ]
   name: Fashion-o-Mat
   description: Happiness should be expensive.
   components:
@@ -140,6 +142,7 @@
 - type: entity
   parent: SLVendingMachine
   id: SLVendingMachineEngi
+  categories: [ ShouldMapStation ]
   name: engi dispenser
   components:
   - type: AccessReader
@@ -155,6 +158,7 @@
 - type: entity
   parent: SLVendingMachine
   id: VendingMachineClown
+  categories: [ ShouldMapStation ]
   name: HohohonkersVend
   description: Get your honk fix here! Surprise the station with HohohonkersVend — the ultimate machine for hilarious pranks. Hack it, and you'll unlock something special!
   components:
@@ -185,6 +189,7 @@
 - type: entity
   parent: SLVendingMachine
   id: SLVendingMachineSecurity
+  categories: [ ShouldMapStation ]
   name: security dispenser
   components:
   - type: AccessReader
@@ -335,11 +340,40 @@
     energy: 1.6
     color: "#aee8f5"
 
+- type: entity
+  parent: VendingMachine
+  id: VendingMachineGumballs
+  name: gumball dispenser
+  description: Full of tasty gumballs.
+  components:
+  - type: VendingMachine
+    pack: GumballInventory
+    dispenseOnHitChance: 0.25
+    dispenseOnHitThreshold: 2
+    offState: off
+    brokenState: broken
+    normalState: normal-unshaded
+    ejectState: eject-unshaded
+    denyState: deny-unshaded
+  - type: Machine
+    board: VendingMachineGumballsCircuitboard
+  - type: Sprite
+    sprite: _Starlight/Structures/Machines/VendingMachines/gumball_disp.rsi
+    layers:
+    - state: "off"
+      map: ["enum.VendingMachineVisualLayers.Base"]
+    - state: "off"
+      map: ["enum.VendingMachineVisualLayers.BaseUnshaded"]
+      shader: unshaded
+    - state: panel
+      map: ["enum.WiresVisualLayers.MaintenancePanel"]
+
 # Syndicate stuff for Serpentcrest and any other uses
 - type: entity
   parent: VendingMachineMedicalBase
   id: VendingMachineMedicalBaseSyndicate
   name: Interdyne Commercial
+  suffix: Civilian
   description: It's a medical drug dispenser by Interdyne Pharmaceutics. For the Health of Humankind.
   components:
     - type: VendingMachine
@@ -372,6 +406,7 @@
   parent: VendingMachineMedicalBaseSyndicate
   id: VendingMachineMedicalSyndicate
   name: Interdyne Enterprise
+  suffix: Departmental
   components:
     - type: VendingMachine
       pack: InterdyneEnterpriseInventory
@@ -396,6 +431,7 @@
   parent: VendingMachineWallmount
   id: VendingMachineWallMedicalCivilianSyndicate
   name: Interdyne life-aid commercial
+  suffix: Civilian, Wallmount
   description: It's a wall-mounted medical equipment dispenser by Interdyne Pharmaceutics. For the Health of Humankind.
   components:
     - type: VendingMachine
@@ -426,6 +462,7 @@
   parent: VendingMachineWallMedicalCivilianSyndicate
   id: VendingMachineWallMedicalSyndicate
   name: Interdyne life-aid enterprise
+  suffix: Departmental, Wallmount
   components:
     - type: VendingMachine
       pack: InterdyneEnterpriseWallInventory
@@ -617,21 +654,21 @@
 - type: entity
   parent: VendingMachineMedicalBase
   id: VendingMachineMedicalBaseEmpty
-  suffix: Empty
+  suffix: Empty, Civilian
   components:
     - type: EmptyVendingMachine
 
 - type: entity
   parent: VendingMachineMedical
   id: VendingMachineMedicalEmpty
-  suffix: Empty
+  suffix: Empty, Departmental
   components:
     - type: EmptyVendingMachine
 
 - type: entity
   parent: VendingMachineMedicalBaseSyndicate
   id: VendingMachineMedicalBaseSyndicateEmpty
-  suffix: Empty
+  suffix: Empty, Civilian
   components:
     - type: EmptyVendingMachine
 
@@ -960,21 +997,21 @@
 - type: entity
   parent: VendingMachineWallMedicalCivilian
   id: VendingMachineWallMedicalCivilianEmpty
-  suffix: Empty
+  suffix: Empty, Civilian, Wallmount
   components:
     - type: EmptyVendingMachine
 
 - type: entity
   parent: VendingMachineWallMedical
   id: VendingMachineWallMedicalEmpty
-  suffix: Empty
+  suffix: Empty, Departmental, Wallmount
   components:
     - type: EmptyVendingMachine
 
 - type: entity
   parent: VendingMachineWallMedicalCivilianSyndicate
   id: VendingMachineWallMedicalCivilianSyndicateEmpty
-  suffix: Empty
+  suffix: Empty, Civilian, Wallmount
   components:
     - type: EmptyVendingMachine
 
@@ -995,6 +1032,13 @@
 - type: entity
   parent: VendingMachineIceCream
   id: VendingMachineIceCreamEmpty
+  suffix: Empty
+  components:
+    - type: EmptyVendingMachine
+
+- type: entity
+  parent: VendingMachineGumballs
+  id: VendingMachineGumballsEmpty
   suffix: Empty
   components:
     - type: EmptyVendingMachine

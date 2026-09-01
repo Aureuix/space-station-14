@@ -277,6 +277,7 @@
   - security-sop-parole
   - security-sop-permitacquisition
 #  - security-sop-specialsituations # SpL change- monetary limits for hostage situations are fucking stupid
+  - security-sop-criminal-status
 
 
 - type: guideEntry
@@ -346,12 +347,16 @@
 #  priority: 11
 
 - type: guideEntry
+  id: security-sop-criminal-status
+  name: guide-entry-sl-security-sop-criminal-status
+  text: "/ServerInfo/Guidebook/StarlightSOP/SecuritySOP/CriminalStatus.xml"
+  priority: 12
+  
+- type: guideEntry
   id: legal-sop-intro
   name: guide-entry-sl-legal-sop-intro
   text: "/ServerInfo/Guidebook/StarlightSOP/LegalSOP/legal-sop-intro.xml"
   priority: 3
-
-
 
 - type: guideEntry
   id: nano-trasen-employee-sop-intro
