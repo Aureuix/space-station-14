@@ -90,7 +90,7 @@
       announcement: alert-level-theta-announcement
       selectable: false
       sound:
-        path: /Audio/Misc/delta_alt.ogg # SpL
+        path: /Audio/_SpL/Misc/theta.ogg # SpL
         params:
           volume: -2
       disableSelection: true
