@@ -1,0 +1,2 @@
+﻿announcement-tau-armory = Central Command sent a Tau Code armory to eliminate threats around station. Shuttle docked { $location }!
+announcement-tau-armory-recall = The Tau Code armory shuttle has been recalled from {$station} by Central Command.

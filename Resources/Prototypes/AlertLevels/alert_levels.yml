@@ -46,6 +46,7 @@
       color: PaleVioletRed
       emergencyLightColor: PaleVioletRed
       forceEnableEmergencyLights: true
+      dimmedLightMultiplier: 0.7 # SpL- it's kinda neat
     delta:
       announcement: alert-level-delta-announcement
       selectable: false
@@ -58,7 +59,7 @@
       emergencyLightColor: '#ffba9c' #Starlight
       forceEnableEmergencyLights: true
       shuttleTime: 180 # SpL- why would we try to make it harder to evacuate a nuke??? won't make a difference unless it's called frame 1 anyway
-      dimmedLightMultiplier: 0.2 # Starlight
+      dimmedLightMultiplier: 0.3 # SpL- still very dark on 0.2 so we're upping it slightly
     epsilon:
       announcement: alert-level-epsilon-announcement
       selectable: false
@@ -89,15 +90,15 @@
       announcement: alert-level-theta-announcement
       selectable: false
       sound:
-        path: /Audio/Misc/epsilon.ogg
+        path: /Audio/Misc/delta_alt.ogg # SpL
         params:
           volume: -2
       disableSelection: true
-      color: '#741b47'
-      emergencyLightColor: '#741b47'
+      color: '#00059f' # SpL
+      emergencyLightColor: '#00059f' # SpL
       forceEnableEmergencyLights: true
-      shuttleTime: 1200
-      dimmedLightMultiplier: 0.2
+      shuttleTime: 6666 # SpL- you're not leaving
+      dimmedLightMultiplier: 0 # SpL- this is our new epsilon, so...
     psi:
       announcement: alert-level-psi-announcement
       selectable: false
@@ -109,7 +110,7 @@
       color: "#2288ff"
       emergencyLightColor: "#2288ff"
       forceEnableEmergencyLights: true
-      shuttleTime: 600 #SpL- Why the hell was this doubled? come on starlight do better
+      shuttleTime: 600 #SpL- Why the hell was this doubled? 
     orange:
       announcement: alert-level-orange-announcement
       selectable: true
@@ -131,4 +132,15 @@
       emergencyLightColor: CadetBlue
       forceEnableEmergencyLights: true
       shuttleTime: 600
-      dimmedLightMultiplier: 0.2 # SpL- same as delta. it's hype
+      dimmedLightMultiplier: 0.3 # SpL- same as delta. it's hype
+      # start SpL
+    tau:
+      announcement: alert-level-tau-announcement
+      selectable: false
+      sound: /Audio/_SpL/Misc/tau.ogg
+      disableSelection: true
+      color: '#51db9e'
+      emergencyLightColor: '#51db9e'
+      forceEnableEmergencyLights: true
+      shuttleTime: 600 # no change. if you're asking for tau, you're sticking around
+      dimmedLightMultiplier: 0.7 

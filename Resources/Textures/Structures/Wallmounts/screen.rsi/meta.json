@@ -1,7 +1,7 @@
 {
   "version": 1,
   "license": "CC-BY-SA-3.0",
-  "copyright": "Orange by Conflee, Epsilon and Octarine by nykaestra, From tgstation: https://github.com/tgstation/tgstation/commit/9a9b428b61f388a0f6d7a20bbba05147e61023d0",
+  "copyright": "Orange by Conflee, Epsilon, Tau, Theta, and Octarine by nykaestra, From tgstation: https://github.com/tgstation/tgstation/commit/9a9b428b61f388a0f6d7a20bbba05147e61023d0",
   "size": {
     "x": 32,
     "y": 32
@@ -199,6 +199,19 @@
           0.2,
           0.2,
           0.2,
+          0.2,
+          0.2,
+          0.2,
+          0.2,
+          0.2,
+          0.2
+        ]
+      ]
+    },
+    {
+      "name": "tau",
+      "delays": [
+        [
           0.2,
           0.2,
           0.2,
