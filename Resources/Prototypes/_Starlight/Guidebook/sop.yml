@@ -32,6 +32,7 @@
     - code-gamma
     - code-delta
     - code-epsilon
+    - code-tau
     - code-yellow
     - code-orange
     - code-violet
@@ -73,25 +74,31 @@
   name: guide-entry-spl-code-epsilon
   text: "/ServerInfo/Guidebook/StarlightSOP/GeneralSOP/Alerts/code-epsilon.xml"
   priority: 6
+  
+- type: guideEntry
+  id: code-tau
+  name: guide-entry-spl-code-tau
+  text: "/ServerInfo/Guidebook/StarlightSOP/GeneralSOP/Alerts/code-tau.xml"
+  priority: 7
 # SpL End
 
 - type: guideEntry
   id: code-yellow
   name: guide-entry-sl-code-yellow
   text: "/ServerInfo/Guidebook/StarlightSOP/GeneralSOP/Alerts/code-yellow.xml"
-  priority: 7 # SpL
+  priority: 8 # SpL
 
 - type: guideEntry
   id: code-orange
   name: guide-entry-sl-code-orange
   text: "/ServerInfo/Guidebook/StarlightSOP/GeneralSOP/Alerts/code-orange.xml"
-  priority: 8 # SpL
+  priority: 9 # SpL
 
 - type: guideEntry
   id: code-violet
   name: guide-entry-sl-code-violet
   text: "/ServerInfo/Guidebook/StarlightSOP/GeneralSOP/Alerts/code-violet.xml"
-  priority: 9 # SpL
+  priority: 10 # SpL
 
 
 

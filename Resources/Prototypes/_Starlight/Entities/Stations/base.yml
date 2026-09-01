@@ -26,3 +26,9 @@
           announcementColor: "#34c3eb"
           recallAnnouncement: announcement-med-pod-recall
           recallAnnouncementColor: "#34c3eb"
+        tau: # SpL Start
+          shuttle: /Maps/_SpL/Shuttles/CC-NT/TauArmory.yml
+          announcement: announcement-tau-armory
+          announcementColor: "#17603f"
+          recallAnnouncement: announcement-tau-armory-recall
+          recallAnnouncementColor: "#17603f" # SpL End
