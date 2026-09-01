@@ -967,13 +967,6 @@ entities:
       parent: 1
     - type: Fixtures
       fixtures: {}
-- proto: SpawnMechDurand
-  entities:
-  - uid: 90
-    components:
-    - type: Transform
-      pos: 1.5,-0.5
-      parent: 1
 - proto: SpeedLoaderLightRifle
   entities:
   - uid: 133
