@@ -7,26 +7,7 @@
     - id: XenoArtifactHorrificFaunaSpawn
       weight: 4.0
 
-- type: entity
-  id: XenoArtifactEffectCreationGasExotic
-  parent: BaseXenoArtifactEffect
-  description: Expels exotic gas
-  components:
-  - type: XAERandomGas
-    PossibleGasses:
-      Zauker: 300
-      ZXA: 300
-      Ulnitranium: 300
-      ProtoNitrate: 300
-      Pluoxium: 300
-      Nitrium: 300
-      HyperNoblium: 300
-      Hydrogen: 300
-      Helium: 300
-      Healium: 300
-      Halon: 300
-      BZ: 300
-      AntiNoblium: 300
+
 
 - type: entity
   id: XenoArtifactHorrificFaunaSpawn
@@ -56,3 +37,141 @@
           weight: 2.5
         - id: MobHellspawn
           weight: 10.0
+
+
+#- type: entity
+#  id: XenoArtifactEffectCreationGasExotic
+#  parent: BaseXenoArtifactEffect
+#  description: Expels exotic gas
+#  components:
+#  - type: XAECreateGas
+#    gases:
+#      Zauker: 300
+#      ZXA: 300
+#      Ulnitranium: 300
+#      ProtoNitrate: 300
+#      Pluoxium: 300
+#      Nitrium: 300
+#      HyperNoblium: 300
+#      Hydrogen: 300
+#      Helium: 300
+#      Healium: 300
+#      Halon: 300
+#      BZ: 300
+#      AntiNoblium: 300
+
+- type: entity
+  id: XenoArtifactEffectCreationGasExoticZauker
+  parent: BaseXenoArtifactEffect
+  description: Expels exotic gas
+  components:
+  - type: XAECreateGas
+    gases:
+      Zauker: 300
+
+- type: entity
+  id: XenoArtifactEffectCreationGasExoticZXA
+  parent: BaseXenoArtifactEffect
+  description: Expels exotic gas
+  components:
+  - type: XAECreateGas
+    gases:
+      ZXA: 300
+
+- type: entity
+  id: XenoArtifactEffectCreationGasExoticUlnitranium
+  parent: BaseXenoArtifactEffect
+  description: Expels exotic gas
+  components:
+  - type: XAECreateGas
+    gases:
+      Ulnitranium: 300
+
+- type: entity
+  id: XenoArtifactEffectCreationGasExoticProtoNitrate
+  parent: BaseXenoArtifactEffect
+  description: Expels exotic gas
+  components:
+  - type: XAECreateGas
+    gases:
+      ProtoNitrate: 300
+- type: entity
+  id: XenoArtifactEffectCreationGasExoticPluoxium
+  parent: BaseXenoArtifactEffect
+  description: Expels exotic gas
+  components:
+  - type: XAECreateGas
+    gases:
+      Pluoxium: 300
+
+- type: entity
+  id: XenoArtifactEffectCreationGasExoticNitrium
+  parent: BaseXenoArtifactEffect
+  description: Expels exotic gas
+  components:
+  - type: XAECreateGas
+    gases:
+      Nitrium: 300
+
+- type: entity
+  id: XenoArtifactEffectCreationGasExoticHyperNoblium
+  parent: BaseXenoArtifactEffect
+  description: Expels exotic gas
+  components:
+  - type: XAECreateGas
+    gases:
+      HyperNoblium: 300
+
+- type: entity
+  id: XenoArtifactEffectCreationGasExoticHydrogen
+  parent: BaseXenoArtifactEffect
+  description: Expels exotic gas
+  components:
+  - type: XAECreateGas
+    gases:
+      Hydrogen: 300
+
+- type: entity
+  id: XenoArtifactEffectCreationGasExoticHelium
+  parent: BaseXenoArtifactEffect
+  description: Expels exotic gas
+  components:
+  - type: XAECreateGas
+    gases:
+      Helium: 300
+
+- type: entity
+  id: XenoArtifactEffectCreationGasExoticHealium
+  parent: BaseXenoArtifactEffect
+  description: Expels exotic gas
+  components:
+  - type: XAECreateGas
+    gases:
+      Healium: 300
+
+- type: entity
+  id: XenoArtifactEffectCreationGasExoticHalon
+  parent: BaseXenoArtifactEffect
+  description: Expels exotic gas
+  components:
+  - type: XAECreateGas
+    gases:
+      Halon: 300
+
+- type: entity
+  id: XenoArtifactEffectCreationGasExoticBZ
+  parent: BaseXenoArtifactEffect
+  description: Expels exotic gas
+  components:
+  - type: XAECreateGas
+    gases:
+      BZ: 300
+
+- type: entity
+  id: XenoArtifactEffectCreationGasExoticAntiNoblium
+  parent: BaseXenoArtifactEffect
+  description: Expels exotic gas
+  components:
+  - type: XAECreateGas
+    gases:
+      AntiNoblium: 300

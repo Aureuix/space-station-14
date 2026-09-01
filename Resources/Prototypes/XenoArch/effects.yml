@@ -131,8 +131,32 @@
       # Spectralight start
     - id: XenoArtifactHorrificFaunaSpawn
       weight: 4.0
-    - id: XenoArtifactEffectCreationGasExotic
-      weight: 10000.0
+    - id: XenoArtifactEffectCreationGasExoticZauker
+      weight: 0.3
+    - id: XenoArtifactEffectCreationGasExoticZXA
+      weight: 0.3
+    - id: XenoArtifactEffectCreationGasExoticUlnitranium
+      weight: 0.3
+    - id: XenoArtifactEffectCreationGasExoticProtoNitrate
+      weight: 0.3
+    - id: XenoArtifactEffectCreationGasExoticPluoxium
+      weight: 0.3
+    - id: XenoArtifactEffectCreationGasExoticNitrium
+      weight: 0.3
+    - id: XenoArtifactEffectCreationGasExoticHyperNoblium
+      weight: 0.3
+    - id: XenoArtifactEffectCreationGasExoticHydrogen
+      weight: 0.3
+    - id: XenoArtifactEffectCreationGasExoticHelium
+      weight: 0.3
+    - id: XenoArtifactEffectCreationGasExoticHealium
+      weight: 0.3
+    - id: XenoArtifactEffectCreationGasExoticHalon
+      weight: 0.3
+    - id: XenoArtifactEffectCreationGasExoticBZ
+      weight: 0.3
+    - id: XenoArtifactEffectCreationGasExoticAntiNoblium
+      weight: 0.3
       # Spectralight end
 
 - type: entityTable
