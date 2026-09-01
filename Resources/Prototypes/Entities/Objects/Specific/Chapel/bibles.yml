@@ -29,7 +29,7 @@
       collection: Punch
     damage:
       types:
-        Holy: 25
+        Holy: 7.5 # Damage reduced due to everyone being able to take holy now
         Blunt: 1
   - type: Prayable
     bibleUserOnly: true

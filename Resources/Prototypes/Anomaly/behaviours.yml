@@ -17,14 +17,14 @@
     Fast: 0.5
     Strenght: 0.5
     Inconstancy: 0.5
-    InconstancyParticle: 0.5
+    #InconstancyParticle: 0.5
     FullUnknown: 0.5
     Jumping: 0.3
     Invisibility: 0.5
   #Complex
     FastUnknown: 0.2
     JumpingUnknown: 0.1
-    InconstancyParticleUnknown: 0.1
+    #InconstancyParticleUnknown: 0.1
     InvisibilityJumping: 0.1
 
 

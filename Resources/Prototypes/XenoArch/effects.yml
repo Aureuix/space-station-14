@@ -1,5 +1,6 @@
 - type: entityTable
   id: XenoArtifactEffectsDefaultTable
+  #parent: XenoArtifactEffectsSpectraTable
   table: !type:GroupSelector
     children:
     # hijacks use key, prevents from using artifact, sadly
@@ -127,6 +128,12 @@
       weight: 4.0
     - id: XenoArtifactEffectCreationGasCarbonDioxide
       weight: 4.0
+      # Spectralight start
+    - id: XenoArtifactHorrificFaunaSpawn
+      weight: 4.0
+    - id: XenoArtifactEffectCreationGasExotic
+      weight: 10000.0
+      # Spectralight end
 
 - type: entityTable
   id: XenoArtifactEffectsHandheldOnlyTable
@@ -933,6 +940,11 @@
             range: 1, 3
         - id: MobMonkeySyndicateAgent #so lucky
           prob: 0.03
+        - id: MobScurret # Spectralight start
+        - id: MobCatShadow
+          amount: !type:RangeNumberSelector
+            range: 1, 2
+        - id: MobArgocyteBarrier # Spectralight end
 
 - type: entity
   id: XenoArtifactHostileFaunaSpawn
@@ -960,6 +972,10 @@
         - id: MobSpiderSpace
         - id: MobPurpleSnake
         - id: MobKangarooSpace
+        - id: MobArgocytePouncer # Spectralight start
+        - id: MobMimicHostile
+        - id: MobLaserRaptor # Spectralight end
+          prob: 0.1
 
 - type: entity
   id: XenoArtifactCashSpawn

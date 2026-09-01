@@ -1,11 +1,13 @@
 - type: damageModifierSet
   id: Avali # Not as good as thick fur like the vulps, but still rather insulating.
+  parent: BaseOrganicHoly # spectralight, adding holy to all organic damage modifiers
   coefficients:
     Cold: 0.6
     Heat: 1.4
 
 - type: damageModifierSet
   id: TerrorSpider
+  parent: BaseOrganicHoly # spectralight, adding holy to all organic damage modifiers
   coefficients:
     Blunt: 0.4
     Slash: 1.1
@@ -14,12 +16,14 @@
 
 - type: damageModifierSet
   id: Cyclorite
+  parent: BaseOrganicHoly # spectralight, adding holy to all organic damage modifiers
   coefficients:
     Blunt: 0.85 # Have you ever tried to punch a rock?
     Slash: 0.7
 
 - type: damageModifierSet
   id: Shadekin
+  parent: BaseOrganicHoly # spectralight, adding holy to all organic damage modifiers
   coefficients:
     Asphyxiation: 0
     Cold: 0.75
@@ -31,6 +35,7 @@
 
 - type: damageModifierSet
   id: Gorilla
+  parent: BaseOrganicHoly # spectralight, adding holy to all organic damage modifiers
   coefficients:
     Asphyxiation: 1.5
     Heat: 1.5
@@ -39,6 +44,7 @@
 
 - type: damageModifierSet
   id: GorillaRampaging
+  parent: BaseOrganicHoly # spectralight, adding holy to all organic damage modifiers
   coefficients:
     Blunt: 1.25
     Cellular: 0
@@ -46,6 +52,7 @@
 
 - type: damageModifierSet
   id: DragonResistances
+  parent: BaseOrganicHoly # spectralight, adding holy to all organic damage modifiers
   coefficients:
     Piercing: 0.3
     Slash: 2
@@ -54,6 +61,7 @@
 
 - type: damageModifierSet
   id: DragonCarpResistances
+  parent: BaseOrganicHoly # spectralight, adding holy to all organic damage modifiers
   coefficients:
     Piercing: 0.5
     Slash: 2
@@ -62,6 +70,7 @@
 
 - type: damageModifierSet
   id: Elf
+  parent: BaseOrganicHoly # spectralight, adding holy to all organic damage modifiers
   coefficients:
     Poison: 0.75
     Cellular: 0.9 # magic makes the flesh is less corruptible
@@ -76,6 +85,7 @@
 # we want it to be tanky, but it should be pretty easy to gib it into endoskeleton form
 - type: damageModifierSet
   id: CyberneticFlesh
+  parent: BaseOrganicHoly # spectralight, adding holy to all organic damage modifiers
   coefficients:
     Blunt: 0.5
     Slash: 0.5
@@ -91,6 +101,7 @@
 # terminator's endoskeleton damage set
 - type: damageModifierSet
   id: Cybernetic
+  parent: BaseOrganicHoly # spectralight, adding holy to all organic damage modifiers
   coefficients:
     # bonk
     Blunt: 0.7

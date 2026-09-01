@@ -1,0 +1,58 @@
+- type: entityTable
+  id: XenoArtifactEffectsSpectraTable
+  table: !type:GroupSelector
+    children:
+    - id: XenoArtifactEffectCreationGasExotic
+      weight: 10000.0
+    - id: XenoArtifactHorrificFaunaSpawn
+      weight: 4.0
+
+- type: entity
+  id: XenoArtifactEffectCreationGasExotic
+  parent: BaseXenoArtifactEffect
+  description: Expels exotic gas
+  components:
+  - type: XAERandomGas
+    PossibleGasses:
+      Zauker: 300
+      ZXA: 300
+      Ulnitranium: 300
+      ProtoNitrate: 300
+      Pluoxium: 300
+      Nitrium: 300
+      HyperNoblium: 300
+      Hydrogen: 300
+      Helium: 300
+      Healium: 300
+      Halon: 300
+      BZ: 300
+      AntiNoblium: 300
+
+- type: entity
+  id: XenoArtifactHorrificFaunaSpawn
+  parent: BaseXenoArtifactEffect
+  description: Summon horrific abomination
+  components:
+  - type: XenoArtifactNode
+    maxDurability: 4
+    maxDurabilityCanDecreaseBy:
+      min: 0
+      max: 3
+  - type: XAEApplyComponents
+    applyIfAlreadyHave: true
+    refreshOnReactivate: true
+    components:
+    - type: EntityTableSpawner
+      deleteSpawnerAfterSpawn: false
+      table: !type:GroupSelector
+        children:
+        - id: MobBehonkerElectrical
+          weight: 2.5
+        - id: MobBehonkerPyro
+          weight: 2.5
+        - id: MobBehonkerIce
+          weight: 2.5
+        - id: MobBehonkerGrav
+          weight: 2.5
+        - id: MobHellspawn
+          weight: 10.0

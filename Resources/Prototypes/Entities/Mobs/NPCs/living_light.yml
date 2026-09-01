@@ -62,7 +62,7 @@
         layer:
           - Opaque
   - type: Damageable
-    damageContainer: Inorganic
+    damageContainer: InorganicUnholy # Spectralight: Allows sci to deal with living light better
     damageModifierSet: LivingLight
   - type: PassiveDamage
     allowedStates:

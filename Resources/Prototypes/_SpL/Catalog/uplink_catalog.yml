@@ -129,3 +129,16 @@
         - Surgeon
         - Chemist
         - ChiefMedicalOfficer
+
+- type: listing
+  id: UplinkElysiumImplanter
+  name: uplink-elysium-implant-name
+  description: uplink-elysium-implant-desc
+  icon: { sprite: /Textures/Objects/Fun/pai.rsi, state: syndicate-icon-pai-off }
+  productEntity: DIDImplanter
+  discountDownTo:
+    Telecrystal: 1
+  cost:
+    Telecrystal: 2
+  categories:
+    - UplinkImplants

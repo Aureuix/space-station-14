@@ -1,0 +1,23 @@
+- type: entity
+  name: drone laser barrage
+  id: BulletLaserSpreadDrone
+  categories: [ HideSpawnMenu ]
+  parent: BulletLaser
+  components:
+  - type: ProjectileSpread
+    proto: BulletLaserDrone
+    count: 3
+    spread: 30
+
+
+- type: entity
+  name: laser bolt
+  id: BulletLaserDrone
+  parent: BulletLaser
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Projectile
+    impactEffect: BulletImpactEffectOrangeDisabler
+    damage:
+      types:
+        Heat: 15

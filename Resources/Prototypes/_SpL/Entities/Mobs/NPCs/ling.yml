@@ -1,0 +1,91 @@
+- type: entity
+  save: false
+  parent: [ BaseMob, MobCombat, StorePresetChangeling, MobDamageable]
+  categories: [ HideSpawnMenu ]
+  id: ElderLing
+  name: ???
+  description: ???
+  components:
+  - type: Sprite
+    sprite: _SpL/Mobs/Admeme/ElderLing.rsi
+    layers:
+    - state: base
+  - type: SolutionContainerManager
+#  - type: Bloodstream
+#    bloodReferenceSolution:
+#      reagents:
+#      - ReagentId: FerrochromicAcid
+#        Quantity: 75
+#    bloodlossDamage:
+#      types:
+#        Bloodloss:
+#          0.5
+#    bloodlossHealDamage:
+#      types:
+#        Bloodloss:
+#          -1
+  - type: Insulated
+  - type: CombatMode
+  - type: MeleeWeapon
+    angle: 0
+    animation: WeaponArcSuperLingBlade
+    damage:
+      types:
+        Slash: 25
+        Piercing: 10
+        Structural: 50
+  - type: Body
+    prototype: Animal
+  - type: Flammable
+    fireSpread: true
+    canResistFire: true
+    damage:
+      types:
+        Heat: 9
+
+  - type: NPCUseActionOnTarget
+    actionId: ActionMobBlink
+  - type: NoSlip
+  - type: StatusEffects # Overwriting basesimplemob to remove flash, getting flashed as dragon just feelsbad
+    allowed:
+    - SlowedDown
+    - Stutter
+    - Electrocution
+    - ForcedSleep
+    - TemporaryBlindness
+    - Pacified
+    - RadiationProtection
+    - Drowsiness
+  - type: ComplexInteraction
+
+  - type: Changeling
+  - type: ChangelingDevour
+  - type: ChangelingIdentity
+  - type: ChangelingTransform
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          # Circles, cuz rotation of rectangles looks very bad
+          !type:PhysShapeCircle
+          radius: 0.75
+        density: 300
+        mask:
+        - MobMask
+        layer:
+        - MobLayer
+
+  - type: Brighteye
+    energy: 200
+  - type: Shadekin
+    thresholds:
+      0.8: Low
+      5: Annoying
+      10: High
+      15: Extreme
+
+  - type: MobThresholds
+    thresholds:
+      0: Alive
+      600: Dead
+  - type: Hands

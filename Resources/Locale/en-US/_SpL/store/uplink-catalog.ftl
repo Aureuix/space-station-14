@@ -24,3 +24,6 @@ uplink-smg-briefcase-desc = A powerful submachine gun packed into an ordinary br
 
 uplink-syndi-automender-name = Interdyne automender
 uplink-syndi-automender-desc = Be the medical maniac of your dreams with this overclocked automender, capable of healing all damage types quickly and effectively. Omnizine refills not included.
+
+uplink-elysium-implant-name = Elysium Implanter
+uplink-elysium-implant-desc = An implant that interfaces with your brain when injected. Has access to the Syndicate radio channel and a voice mask. Not guaranteed to be helpful.

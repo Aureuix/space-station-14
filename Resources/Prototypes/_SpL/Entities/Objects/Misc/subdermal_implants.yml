@@ -37,3 +37,34 @@
     - type: SubdermalImplant
       implantComponents:
         - type: Pacified
+
+- type: entity
+  parent: [BaseAllTranslateLanguages, BaseSubdermalImplant]
+  id: DIDImplant
+  name: elysium implant
+  description: This implant gives you a new friend.
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: SubdermalImplant
+  - type: GhostTakeoverAvailable
+  - type: GhostRole
+    allowSpeech: true
+    makeSentient: true
+    prob: 1
+    name: ghost-role-information-elysium-name
+    description: ghost-role-information-elysium-description
+    rules: ghost-role-information-familiar-rules
+    mindRoles:
+    - MindRoleGhostRoleTeamAntagonist
+  - type: Examiner
+  - type: AutoImplant
+    implants:
+    - VoiceMaskImplant
+  - type: IntrinsicRadioReceiver
+  - type: IntrinsicRadioTransmitter
+    channels:
+    - Syndicate
+  - type: ActiveRadio
+    channels:
+    - Common
+    - Syndicate

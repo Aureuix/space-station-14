@@ -1,0 +1,91 @@
+- type: entity
+  save: false
+  parent: [ SimpleSpaceMobBase, FlyingMobBase ]
+  id: MobUltraDrone
+  suffix: AI
+  name: drone
+  description: Chirp! Chirp! Chirp! Chirp! BOOM!
+  components:
+  - type: NpcFactionMember
+    factions:
+    - UltraMachineDungeon
+  - type: HTN
+    rootTask:
+      task: SimpleRangedHostileCompound
+  - type: Sprite
+    drawdepth: Mobs
+    sprite: Mobs/Aliens/Lavaland/watcher.rsi
+    layers:
+    - map: [ "enum.DamageStateVisualLayers.Base" ]
+      state: base
+    - map: [ "enum.DamageStateVisualLayers.BaseUnshaded" ]
+      state: unshaded
+      shader: unshaded
+  - type: SolutionContainerManager
+  - type: Bloodstream
+    bloodReferenceSolution:
+      reagents:
+      - ReagentId: Blood
+        Quantity: 50 #we don't want the map to become pools of blood
+      - ReagentId: Oil
+        Quantity: 25
+    bloodlossDamage:
+      types:
+        Bloodloss:
+          0.5
+    bloodlossHealDamage:
+      types:
+        Bloodloss:
+          -1
+  - type: Insulated
+  - type: CombatMode
+
+  - type: MobThresholds
+    thresholds:
+      0: Alive
+      50: Dead
+
+  - type: Climbing
+  - type: NameIdentifier
+    group: GenericNumber
+  - type: AutoImplant
+    implants:
+    - TerminatorMicroBombImplant
+  - type: MovementSpeedModifier
+    baseWalkSpeed: 5
+    baseSprintSpeed: 9
+  - type: BatteryAmmoProvider
+    proto: BulletLaserSpreadDrone
+    fireCost: 50
+  - type: BatterySelfRecharger
+    autoRechargeRate: 50
+  - type: Battery
+    maxCharge: 1000
+    startingCharge: 1000
+  - type: Gun
+    fireRate: 0.5
+    useKey: false
+    selectedMode: SemiAuto
+    availableModes:
+    - SemiAuto
+
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 50
+      behaviors:
+      - !type:PlaySoundBehavior
+        sound:
+          path: /Audio/Machines/warning_buzzer.ogg
+          params:
+            volume: 5
+    - trigger:
+        !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:PlaySoundBehavior
+        sound:
+          collection: MetalBreak
+      - !type:DoActsBehavior
+        acts: [ "Destruction" ]

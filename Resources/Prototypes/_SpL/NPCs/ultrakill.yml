@@ -1,0 +1,12 @@
+- type: htnCompound
+  id: DroneHostileCompound
+  branches:
+    - tasks:
+        - !type:HTNCompoundTask
+          task: InnateRangedCombatCompound
+    - tasks:
+        - !type:HTNCompoundTask
+          task: BeforeMeleeAvoidenceTargetCompound
+    - tasks:
+        - !type:HTNCompoundTask
+          task: IdleCompound

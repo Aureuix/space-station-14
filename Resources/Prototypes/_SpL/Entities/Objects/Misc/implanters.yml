@@ -43,3 +43,11 @@
   components:
     - type: Implanter
       implant: PacifismImplant
+
+- type: entity
+  id: DIDImplanter
+  name: elysium implanter
+  parent: BaseImplantOnlyImplanterSyndi
+  components:
+  - type: Implanter
+    implant: DIDImplant

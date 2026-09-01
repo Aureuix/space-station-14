@@ -120,6 +120,7 @@
   components:
   - type: Damageable
     damageContainer: Biological
+    damageModifierSet: BaseOrganicHoly # Spectra. prevents regular things from taking excessive holy
   - type: Destructible
     thresholds:
     - trigger:

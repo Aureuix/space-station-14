@@ -1,0 +1,23 @@
+{
+  "version": 1,
+  "license": "CC-BY-SA-3.0",
+  "copyright": "taken from the game",
+  "size": {
+    "x": 32,
+    "y": 32
+  },
+  "states": [
+    {
+      "name": "jobicon",
+      "copyright": "taken from the game"
+    },
+    {
+      "name": "green",
+      "copyright": "taken from the game"
+    },
+    {
+      "name": "mantis",
+      "copyright": "Ffoxpile"
+    }
+  ]
+}

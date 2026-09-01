@@ -7,3 +7,12 @@
   - Airloss
   - Genetic
   - Metaphysical
+
+- type: damageContainer
+  id: InorganicUnholy
+  supportedGroups:
+    - Brute
+  supportedTypes:
+    - Heat
+    - Shock
+    - Holy

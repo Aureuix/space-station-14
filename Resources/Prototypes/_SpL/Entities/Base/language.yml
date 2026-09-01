@@ -1,0 +1,54 @@
+- type: entity
+  id: BaseAllTranslateLanguages
+  abstract: true
+  components:
+    - type: LanguageSpeaker
+    - type: LanguageKnowledge
+      speaks:
+      - GalacticCommon
+      - SolCommon
+      - Machine
+      - Canilunzt
+      - Bubblish
+      - Draconic
+      - Marish
+      - Moffic
+      - Nekomimetic
+      - Sylvan
+      - Terrum
+      - VoxPidgin
+      - Scratch
+      - Thaveyan
+      - Darktongue
+      - Classical
+      - Grumbakul
+      - Aielic
+      - Felyaic
+      - Lagomorphian
+      - CHaet
+      - NovaCygni
+      understands:
+      - GalacticCommon
+      - SolCommon
+      - Machine
+      - Canilunzt
+      - Sign
+      - Bubblish
+      - Chittin
+      - Draconic
+      - Marish
+      - Moffic
+      - Nekomimetic
+      - Sylvan
+      - Terrum
+      - VoxPidgin
+      - Scratch
+      - Thaveyan
+      - Darktongue
+      - Classical
+      - Grumbakul
+      - Aielic
+      - Felyaic
+      - Lagomorphian
+      - CHaet
+      - NovaCygni

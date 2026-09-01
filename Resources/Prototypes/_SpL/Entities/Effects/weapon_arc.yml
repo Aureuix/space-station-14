@@ -1,0 +1,10 @@
+- type: entity
+  id: WeaponArcSuperLingBlade
+  parent: WeaponArcStatic
+  categories: [ HideSpawnMenu ]
+  components:
+    - type: WeaponArcVisuals
+    - type: Sprite
+      layers:
+      - sprite: _SpL/Mobs/Admeme/ElderLing.rsi
+        state: claw
