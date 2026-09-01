@@ -1,0 +1,65 @@
+﻿- type: entity
+  parent: BaseMachinePowered
+  name: holographic display
+  description: Nobody knows what it does, but nobody can deny that it's awesome.
+  id: HologramShuttle
+  components:
+    - type: Fixtures
+      fixtures:
+        fix1:
+          shape:
+            !type:PhysShapeAabb
+            bounds: "-0.45,-0.45,0.45,-0.35"
+          density: 60
+          mask:
+            - MachineMask
+          layer:
+            - MidImpassable
+            - LowImpassable
+    - type: Sprite
+      noRot: true
+      sprite: _DV/Structures/Decoration/shuttle_manipulator.rsi
+      layers:
+      - state: base
+      - state: holograph
+        shader: unshaded
+        map: ["enum.PowerDeviceVisualLayers.Powered"]
+        drawdepth: Mobs
+    - type: PointLight
+      radius: 4
+      energy: 3
+      color: "#0CC9FF"
+    - type: Damageable
+      damageContainer: StructuralInorganic
+      damageModifierSet: Glass
+    - type: Destructible
+      thresholds:
+        - trigger:
+            !type:DamageTrigger
+            damage: 200
+          behaviors:
+            - !type:PlaySoundBehavior
+              sound:
+                collection: GlassBreak
+            - !type:DoActsBehavior
+              acts: [ "Destruction" ]
+    - type: AmbientOnPowered
+    - type: LitOnPowered
+    - type: PowerSwitch
+    - type: Transform
+      anchored: true
+      noRot: true
+    - type: Appearance
+    - type: GenericVisualizer
+      visuals:
+        enum.PowerDeviceVisuals.Powered:
+          enum.PowerDeviceVisualLayers.Powered:
+            True: { visible: true }
+            False: { visible: false }
+    - type: ApcPowerReceiver
+      powerLoad: 200
+    - type: AmbientSound
+      volume: -5
+      range: 5
+      sound:
+        path: /Audio/Ambience/Objects/gravity_gen_hum.ogg

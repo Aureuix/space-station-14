@@ -1,0 +1,122 @@
+﻿- type: entity
+  parent: BaseStructure
+  name: fountain
+  description: Cool!
+  id: Fountain
+  components:
+    - type: Fixtures
+      fixtures:
+        fix1:
+          shape:
+            !type:PhysShapeCircle
+            radius: "1.5"
+          density: 60
+          mask:
+            - MachineMask
+          layer:
+            - MidImpassable
+            - LowImpassable
+    - type: Sprite
+      noRot: true
+      sprite: _DV/Structures/Decoration/fountains.rsi
+      offset: 0,-0.1
+      layers:
+        - state: large-round-base
+        - state: large-round-base-water
+        - state: large-round-top
+        - state: large-round-flows
+        - state: large-round-top-water
+    - type: Clickable
+    - type: SolutionContainerManager
+      solutions:
+        pool:
+          maxVol: 9999999
+          reagents:
+            - ReagentId: Water
+              Quantity: 9999999
+    - type: SolutionRegeneration
+      solution: pool
+      generated:
+        reagents:
+          - ReagentId: Water
+            Quantity: 100
+    - type: DrainableSolution
+      solution: pool
+    - type: Appearance
+    - type: AmbientSound
+      volume: -2
+      range: 10
+      sound:
+        path: /Audio/Ambience/Objects/flowing_water_open.ogg
+        
+- type: entity
+  parent: BaseStructure
+  name: frozen fountain
+  description: Very Cool!
+  id: FountainIcy
+  components:
+    - type: Fixtures
+      fixtures:
+        fix1:
+          shape:
+            !type:PhysShapeCircle
+            radius: "1.5"
+          density: 60
+          mask:
+            - MachineMask
+          layer:
+            - MidImpassable
+            - LowImpassable
+    - type: Sprite
+      noRot: true
+      sprite: _DV/Structures/Decoration/icyfountains.rsi
+      offset: 0,-0.1
+      layers:
+        - state: large-round-base
+        - state: large-round-base-icy
+        - state: large-round-top
+        - state: large-round-top-icy
+    - type: Appearance
+      
+- type: entity
+  parent: BaseStructure
+  name: lava fountain
+  description: Refilling your water from this is highly inadvisable.
+  id: FountainLava
+  components:
+    - type: Fixtures
+      fixtures:
+        fix1:
+          shape:
+            !type:PhysShapeCircle
+            radius: "1.5"
+          density: 60
+          mask:
+            - MachineMask
+          layer:
+            - MidImpassable
+            - LowImpassable
+    - type: Sprite
+      noRot: true
+      sprite: _DV/Structures/Decoration/lavafountains.rsi
+      offset: 0,-0.1
+      layers:
+        - state: large-round-base
+        - state: large-round-base-lava
+        - state: large-round-top
+        - state: large-round-flows
+        - state: large-round-top-lava
+    - type: Appearance
+    - type: PointLight
+      radius: 5
+      energy: 3
+      color: "#FFC90C"
+    - type: AmbientSound
+      volume: -2
+      range: 10
+      sound:
+        path: /Audio/Ambience/Objects/fireplace.ogg
+    - type: AlwaysHot
+    - type: IgnitionSource
+      temperature: 2000
+      ignited: true

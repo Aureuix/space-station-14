@@ -18,7 +18,7 @@ public sealed partial class ExecutionComponent : Component
     /// <summary>
     /// How long the gun execution duration lasts.
     /// </summary>
-    public static float GunDoAfterDuration = 6f;
+    public static float GunDoAfterDuration = 5f;
 
     /// <summary>
     /// Arbitrarily chosen number to multiply damage by, used to deal reasonable amounts of damage to a victim of an execution.

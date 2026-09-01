@@ -111,6 +111,13 @@
   - type: BatterySelfRecharger
     autoRechargeRate: 36 # 10 seconds to recharge
     autoRechargePauseTime: 30
+  - type: Sprite # SpL Start
+    layers:
+      - map: [ "enum.PowerCellVisualLayers.Base" ]
+        state: nuclear
+      - map: [ "enum.PowerCellVisualLayers.Unshaded" ]
+        state: o2
+        shader: unshaded # SpL End
 
 - type: entity
   name: medium-capacity power cell
