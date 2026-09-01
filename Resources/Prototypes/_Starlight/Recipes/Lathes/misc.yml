@@ -591,10 +591,3 @@
   materials:
     Steel: 250
     Plastic: 250
-
-- type: latheRecipe
-  id: EmptyOilPack
-  result: EmptyOilPack1
-  completetime: 1
-  materials:
-    Plastic: 50

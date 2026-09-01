@@ -1221,6 +1221,23 @@
         Cable: 4
 
 - type: entity
+  id: NullspaceAnchorMachineCircuitboard
+  parent: BaseMachineCircuitboard
+  name: nullspace anchor circuitboard
+  description: A machine printed circuit board for a nullspace anchor
+  components:
+    - type: Sprite
+      state: science
+    - type: MachineBoard
+      prototype: NullspaceAnchor
+      stackRequirements:
+        Steel: 5
+        Manipulator: 1
+        CableHV: 10
+        BluespaceCrystal: 1
+        Glass: 2
+
+- type: entity
   id: DarkBreacherMachineCircuitboard
   parent: BaseMachineCircuitboard
   name: dark breacher circuitboard
