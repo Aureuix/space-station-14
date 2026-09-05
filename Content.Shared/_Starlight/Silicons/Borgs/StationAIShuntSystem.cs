@@ -42,6 +42,7 @@ public sealed class StationAIShuntSystem : EntitySystem
 
         SubscribeLocalEvent<StationAIShuntThroughComponent, GetVerbsEvent<AlternativeVerb>>(GetAltVerbs);
         SubscribeLocalEvent<StationAIShuntThroughComponent, FindShuntTargetEvent>(OnFindShuntTarget);
+        InitializeReconnect();
     }
 
     #region Actions
@@ -50,7 +51,7 @@ public sealed class StationAIShuntSystem : EntitySystem
         if (ev.Handled)
             return;
         var target = ev.Target;
-        if (_vision.IsOutsideCameraViewCached(target))
+        if (!ev.IgnoreCameraView && _vision.IsOutsideCameraViewCached(target))
             return;
 
         // If target has ShuntThrough component, search for a valid target in containers
@@ -98,6 +99,8 @@ public sealed class StationAIShuntSystem : EntitySystem
         _mindSystem.TransferTo(mindId, target);
         shunt.ReturnAction = _actionSystem.AddAction(target, shuntable.UnshuntAction.Id);
         shuntable.Inhabited = target;
+        shuntable.LastShunt = target;
+        Dirty(uid, shuntable);
 
         if (TryComp<SiliconLawProviderComponent>(uid, out var coreLaws))
         {
@@ -308,6 +311,7 @@ public sealed class StationAIShuntSystem : EntitySystem
 
 public sealed partial class AIShuntActionEvent : EntityTargetActionEvent
 {
+    public bool IgnoreCameraView;
 }
 
 public sealed partial class AIUnShuntActionEvent : InstantActionEvent
