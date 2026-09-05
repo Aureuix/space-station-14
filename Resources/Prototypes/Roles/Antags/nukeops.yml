@@ -150,6 +150,7 @@
     - HandheldHealthAnalyzer
     - CombatMedipen
     - GearAcidifierImplanter # Starlight edit
+    - SyndicateBluespaceBeaker # Starlight
 
 - type: chameleonOutfit
   id: NukeopsMedicOutfit
