@@ -24,7 +24,7 @@ public sealed class StoreTests
 - type: entity
   name: InventoryPdaDummy
   id: InventoryPdaDummy
-  parent: [BasePDA, StorePresetUplink]
+  parent: BasePDA
   components:
   - type: Clothing
     QuickEquip: false
@@ -78,13 +78,10 @@ public sealed class StoreTests
             mindSystem.TransferTo(mind, human, mind: mind);
 
             FixedPoint2 originalBalance = 20;
-            uplinkSystem.AddUplink(human, originalBalance, out var notes, pda, null, true);
+            uplinkSystem.AddUplink(human, originalBalance, null, true);
 
-            var remote = entManager.GetComponent<RemoteStoreComponent>(pda);
-            var storeEnt = remote.Store;
-            Assert.That(storeEnt.HasValue);
-            var storeComponent = entManager.GetComponent<StoreComponent>(storeEnt.Value);
-            var discountComponent = entManager.GetComponent<StoreDiscountComponent>(storeEnt.Value);
+            var storeComponent = entManager.GetComponent<StoreComponent>(pda);
+            var discountComponent = entManager.GetComponent<StoreDiscountComponent>(pda);
             Assert.That(
                 discountComponent.Discounts,
                 Has.Exactly(6).Items,
@@ -130,7 +127,7 @@ public sealed class StoreTests
                     Assert.That(plainDiscountedCost.Value, Is.LessThan(prototypeCost.Value), "Expected discounted cost to be lower then prototype cost.");
 
 
-                    var buyMsg = new StoreBuyListingMessage(discountedListingItem.ID, null){Actor = human};
+                    var buyMsg = new StoreBuyListingMessage(discountedListingItem.ID){Actor = human};
                     server.EntMan.EventBus.RaiseLocalEvent(pda, buyMsg);
 
                     var newBalance = storeComponent.Balance[UplinkSystem.TelecrystalCurrencyPrototype];
