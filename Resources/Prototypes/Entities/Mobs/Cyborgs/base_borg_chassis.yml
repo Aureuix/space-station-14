@@ -6,7 +6,6 @@
   save: false
   abstract: true
   components:
-  - type: TextToSpeech
   - type: Reactive
     groups:
       Acidic: [Touch]
@@ -289,7 +288,6 @@
   abstract: true
   id: BaseBorgTransponder
   components:
-  - type: TextToSpeech
   - type: BorgTransponder
   - type: DeviceNetwork
     deviceNetId: Wireless
@@ -342,7 +340,6 @@
   parent: [BaseBorgChassis, BaseBorgTransponder]
   abstract: true
   components:
-  - type: TextToSpeech
   - type: RandomMetadata
     nameSegments:
     - NamesBorg
@@ -357,6 +354,7 @@
   - type: AccessReader
     access: [["Command"], ["Robotics"]] # Starlight
   - type: ShowJobIcons
+  - type: ShowCrewIcons
   - type: InteractionPopup
     interactSuccessSound:
       path: /Audio/Ambience/Objects/periodic_beep.ogg
@@ -366,7 +364,6 @@
   parent: BaseBorgChassisNotIonStormable
   abstract: true
   components:
-  - type: TextToSpeech
   - type: NpcFactionMember
     factions:
     - SyndicateSilicon # starlight
@@ -419,6 +416,7 @@
   - type: IonStormTarget
     chance: 1
   - type: ShowJobIcons
+  - type: ShowCrewIcons
 
 - type: entity
   id: BaseBorgChassisSyndicateDerelict #For assault borg and maybe others in time
@@ -461,6 +459,7 @@
 #  - type: BypassLock
 #    bypassDelay: 15 # We don't want people to easily be able to remove syndieborg brains.
 # end region starlight
+  - type: ShowCrewIcons
 
 - type: entity
   parent: BaseBorgChassisNotIonStormable
@@ -574,6 +573,7 @@
   - type: AccessReader
     access: [["Xenoborg"]]
   - type: ShowJobIcons # not sure if it is needed
+  - type: ShowCrewIcons
   - type: InteractionPopup
     interactSuccessSound:
       path: /Audio/Ambience/Objects/periodic_beep.ogg

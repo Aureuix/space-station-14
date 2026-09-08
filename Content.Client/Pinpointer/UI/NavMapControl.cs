@@ -82,7 +82,7 @@ public partial class NavMapControl : MapGridControl
     // Components
     private NavMapComponent? _navMap;
     private MapGridComponent? _grid;
-    private TransformComponent? _xform;
+    protected TransformComponent? Xform;
     private PhysicsComponent? _physics;
     private FixturesComponent? _fixtures;
 
@@ -179,7 +179,7 @@ public partial class NavMapControl : MapGridControl
     {
         EntManager.TryGetComponent(MapUid, out _navMap);
         EntManager.TryGetComponent(MapUid, out _grid);
-        EntManager.TryGetComponent(MapUid, out _xform);
+        EntManager.TryGetComponent(MapUid, out Xform);
         EntManager.TryGetComponent(MapUid, out _physics);
         EntManager.TryGetComponent(MapUid, out _fixtures);
 
@@ -194,14 +194,25 @@ public partial class NavMapControl : MapGridControl
         _recenter.Disabled = false;
     }
 
+    public void ClearTrackedData()
+    {
+        TrackedCoordinates.Clear();
+        TrackedEntities.Clear();
+    }
+
     protected override void KeyBindUp(GUIBoundKeyEventArgs args)
     {
         base.KeyBindUp(args);
 
         if (args.Function == EngineKeyFunctions.UIClick)
         {
-            if (_xform == null || _physics == null) // Starlight
+            if (Xform == null || _physics == null) // Starlight
+                return;
+            
+            if (TrackedEntitySelectedAction == null)
+                return;
 
+            if (Xform == null || _physics == null || TrackedEntities.Count == 0)
                 return;
 
             // If the cursor has moved a significant distance, exit
@@ -214,13 +225,13 @@ public partial class NavMapControl : MapGridControl
 
             // Convert to a world position
             var unscaledPosition = (localPosition - MidPointVector) / MinimapScale;
-            var worldPosition = Vector2.Transform(new Vector2(unscaledPosition.X, -unscaledPosition.Y) + offset, _transformSystem.GetWorldMatrix(_xform));
-
+            var worldPosition = Vector2.Transform(new Vector2(unscaledPosition.X, -unscaledPosition.Y) + offset, _transformSystem.GetWorldMatrix(Xform));
+            
             // Starlight-start
             EntityCoordinates? clickCoords = null;
             if (MapClickedAction != null)
             {
-                var mapCoordinates = new MapCoordinates(worldPosition, _xform.MapID);
+                var mapCoordinates = new MapCoordinates(worldPosition, Xform.MapID);
                 var coordinates = _transformSystem.ToCoordinates(mapCoordinates);
 
                 if (_transformSystem.IsValid(coordinates))
@@ -228,42 +239,33 @@ public partial class NavMapControl : MapGridControl
             }
             // Starlight-end
 
-            var invokedSelection = false;
+            // Find closest tracked entity in range
+            var closestEntity = NetEntity.Invalid;
+            var closestDistance = float.PositiveInfinity;
 
-            if (TrackedEntitySelectedAction != null && TrackedEntities.Count != 0)
+            foreach ((var currentEntity, var blip) in TrackedEntities)
             {
-                // Find closest tracked entity in range
-                var closestEntity = NetEntity.Invalid;
-                var closestDistance = float.PositiveInfinity;
+                if (!blip.Selectable)
+                    continue;
 
-                foreach ((var currentEntity, var blip) in TrackedEntities)
-                {
-                    if (!blip.Selectable)
-                        continue;
+                var currentDistance = (_transformSystem.ToMapCoordinates(blip.Coordinates).Position - worldPosition).Length();
 
-                    var currentDistance = (_transformSystem.ToMapCoordinates(blip.Coordinates).Position - worldPosition).Length();
+                if (closestDistance < currentDistance || currentDistance * MinimapScale > MaxSelectableDistance)
+                    continue;
 
-                    if (closestDistance < currentDistance || currentDistance * MinimapScale > MaxSelectableDistance)
-                        continue;
-
-                    closestEntity = currentEntity;
-                    closestDistance = currentDistance;
-                }
-
-                if (closestEntity.IsValid() && closestDistance <= MaxSelectableDistance)
-                {
-                    TrackedEntitySelectedAction?.Invoke(closestEntity);
-                    invokedSelection = true;
-                }
+                closestEntity = currentEntity;
+                closestDistance = currentDistance;
             }
 
+            if (closestDistance > MaxSelectableDistance || !closestEntity.IsValid())
+                return;
+            
             // Starlight-start
             if (clickCoords != null)
                 MapClickedAction?.Invoke(clickCoords.Value);
             // Starlight-end
-
-            if (!invokedSelection && clickCoords == null)
-                return;
+            
+            TrackedEntitySelectedAction.Invoke(closestEntity);
         }
 
         else if (args.Function == EngineKeyFunctions.UIRightClick)
@@ -296,11 +298,11 @@ public partial class NavMapControl : MapGridControl
         // Get the components necessary for drawing the navmap
         EntManager.TryGetComponent(MapUid, out _navMap);
         EntManager.TryGetComponent(MapUid, out _grid);
-        EntManager.TryGetComponent(MapUid, out _xform);
+        EntManager.TryGetComponent(MapUid, out Xform);
         EntManager.TryGetComponent(MapUid, out _physics);
         EntManager.TryGetComponent(MapUid, out _fixtures);
 
-        if (_navMap == null || _grid == null || _xform == null)
+        if (_navMap == null || _grid == null || Xform == null)
             return;
 
         // Map re-centering
@@ -419,7 +421,7 @@ public partial class NavMapControl : MapGridControl
 
                 if (mapPos.MapId != MapId.Nullspace)
                 {
-                    var position = Vector2.Transform(mapPos.Position, _transformSystem.GetInvWorldMatrix(_xform)) - offset;
+                    var position = Vector2.Transform(mapPos.Position, _transformSystem.GetInvWorldMatrix(Xform)) - offset;
                     position = ScalePosition(new Vector2(position.X, -position.Y));
 
                     handle.DrawCircle(position, float.Sqrt(MinimapScale) * 2f, value.Color);
@@ -440,7 +442,7 @@ public partial class NavMapControl : MapGridControl
 
             if (mapPos.MapId != MapId.Nullspace)
             {
-                var position = Vector2.Transform(mapPos.Position, _transformSystem.GetInvWorldMatrix(_xform)) - offset;
+                var position = Vector2.Transform(mapPos.Position, _transformSystem.GetInvWorldMatrix(Xform)) - offset;
                 position = ScalePosition(new Vector2(position.X, -position.Y));
 
                 var scalingCoefficient = MinmapScaleModifier * float.Sqrt(MinimapScale);
@@ -504,7 +506,7 @@ public partial class NavMapControl : MapGridControl
         }
     }
     // Carpmosia-end - AI Navmap
-
+    
     protected virtual void UpdateNavMap()
     {
         // Clear stale values

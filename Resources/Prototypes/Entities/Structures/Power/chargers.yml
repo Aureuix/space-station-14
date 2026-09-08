@@ -112,6 +112,9 @@
           tags:
           - PotatoBattery
           - MechReactor #Starlight
+  - type: Item
+    size: Ginormous
+  - type: MultiHandedItem
 
 - type: entity
   parent: [ BaseItemRecharger, ConstructibleMachine ]
@@ -178,6 +181,9 @@
           - PotatoBattery
           - MechReactor #Starlight
           - IlluminateTech #SpL
+  - type: Item
+    size: Ginormous
+  - type: MultiHandedItem
 
 - type: entity
   parent: BaseItemRecharger
@@ -205,6 +211,9 @@
           - PotatoBattery
           - MechReactor #Starlight
           - IlluminateTech #SpL
+  - type: Item
+    size: Ginormous
+  - type: MultiHandedItem
 
 - type: entity
   parent: [BaseMachinePowered, BaseWallmountMetallic] # SpL- necessary because charger inheritance fucks up the rotational spriting for this one
