@@ -326,5 +326,5 @@
   id: MobNightVision
   abstract: true
   components:
-  - type: NightVision
+  - type: WizdenNightVision # SpL- needed the differentiation
     lightingColor: '#FFFFFF15' # Basically makes it impossible for things to be "Pitch black" but can still be dark.
