@@ -73,4 +73,6 @@
     solution: battery
   - type: MobilityAid
   - type: Prying
-    speedModifier: 0.25
+    useSoundOnDoafter: /Audio/_Starlight/Machines/airlock_pry.ogg
+    playSoundOnDoafter: true
+    speedModifier: 0.5
