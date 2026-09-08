@@ -6,7 +6,6 @@
   - MobDamageable
   - MobPolymorphable
   - StripableInventoryBase
-  - BaseSpeciesAppearance
   id: BaseSpeciesMob
   save: false
   components:
@@ -37,7 +36,6 @@
   - type: RotationVisuals
     defaultRotation: 90
     horizontalRotation: 90
-  - type: HumanoidProfile
   - type: TypingIndicator
   - type: SlowOnDamage
     speedModifierThresholds:

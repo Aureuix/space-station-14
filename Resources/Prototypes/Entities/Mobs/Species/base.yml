@@ -341,6 +341,7 @@
         Asphyxiation: -1.0
   - type: FireVisuals
     alternateState: Standing
+  - type: JobStatus # SpL- workaround since we don't currently have nubody and thus can't use speciesbase as our baseline for mobs yet
   - type: StunVisuals
   - type: HumanoidEMP # Far Horizons - HumanoidEMP is needed to receive EMP effects, it may carry its own innate effects, but doesn't have to
     effectCooldown: 2
