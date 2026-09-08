@@ -191,7 +191,7 @@
   heatCapacity: 10000
 
 - type: tile
-  parent: BaseStationTile
+  parent: FloorSteel
   id: FloorSteelSlatsContinuous
   name: tiles-steel-floor-slats-continuous
   sprite: /Textures/Tiles/steel_slats_continuous.png
@@ -205,7 +205,7 @@
   allowRotationMirror: true
 
 - type: tile
-  parent: BaseStationTile
+  parent: FloorSteel
   id: FloorSteelVerticalSlatsBordered
   name: tiles-steel-floor-vertical-slats-bordered
   sprite: /Textures/Tiles/steel_vertical_slats_bordered.png
@@ -218,7 +218,7 @@
   itemDrop: FloorTileItemSteelVerticalSlatsBordered
 
 - type: tile
-  parent: BaseStationTile
+  parent: FloorSteel
   id: FloorSteelHorizontalSlatsBordered
   name: tiles-steel-floor-horizontal-slats-bordered
   sprite: /Textures/Tiles/steel_horizontal_slats_bordered.png
@@ -329,7 +329,7 @@
   heatCapacity: 10000
 
 - type: tile
-  parent: BaseStationTile
+  parent: FloorSteel
   id: FloorWhiteSlatsContinuous
   name: tiles-white-floor-slats-continuous
   sprite: /Textures/Tiles/white_slats_continuous.png
@@ -343,7 +343,7 @@
   allowRotationMirror: true
 
 - type: tile
-  parent: BaseStationTile
+  parent: FloorSteel
   id: FloorWhiteVerticalSlatsBordered
   name: tiles-white-floor-vertical-slats-bordered
   sprite: /Textures/Tiles/white_vertical_slats_bordered.png
@@ -356,7 +356,7 @@
   itemDrop: FloorTileItemWhiteVerticalSlatsBordered
 
 - type: tile
-  parent: BaseStationTile
+  parent: FloorSteel
   id: FloorWhiteHorizontalSlatsBordered
   name: tiles-white-floor-horizontal-slats-bordered
   sprite: /Textures/Tiles/white_horizontal_slats_bordered.png
@@ -543,7 +543,7 @@
   heatCapacity: 10000
 
 - type: tile
-  parent: BaseStationTile
+  parent: FloorSteel
   id: FloorDarkSlatsContinuous
   name: tiles-dark-floor-slats-continuous
   sprite: /Textures/Tiles/dark_slats_continuous.png
@@ -557,7 +557,7 @@
   allowRotationMirror: true
 
 - type: tile
-  parent: BaseStationTile
+  parent: FloorSteel
   id: FloorDarkVerticalSlatsBordered
   name: tiles-dark-floor-vertical-slats-bordered
   sprite: /Textures/Tiles/dark_vertical_slats_bordered.png
@@ -570,7 +570,7 @@
   itemDrop: FloorTileItemDarkVerticalSlatsBordered
 
 - type: tile
-  parent: BaseStationTile
+  parent: FloorSteel
   id: FloorDarkHorizontalSlatsBordered
   name: tiles-dark-floor-horizontal-slats-bordered
   sprite: /Textures/Tiles/dark_horizontal_slats_bordered.png
