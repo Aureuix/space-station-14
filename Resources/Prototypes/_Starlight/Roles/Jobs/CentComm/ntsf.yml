@@ -106,7 +106,7 @@
     id: NTSFPDA
     pocket1: AccessOveriderUnlimited
     pocket2: EnergyShield
-    belt: WeaponEnergyMagnumSeven
+    belt: WeaponEnergyMagnumGun
     neck: ClothingNeckCapeNTSF2
     suitstorage: WeaponPulseRifle
   storage:
@@ -229,7 +229,7 @@
       - SmokeGrenade
       - WhiteholeGrenade
     belt:
-      - WeaponEnergyMagnum
+      - WeaponEnergyMagnumGun
       - LightRifleHeavyMagazineFMJ
       - LightRifleHeavyMagazineFMJ
       - LightRifleHeavyMagazineUranium

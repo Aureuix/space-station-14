@@ -100,7 +100,6 @@
     StationAi: "NanoTrasen"
     Borg: "NanoTrasen"
 
-    AssistantManager: "Central Domestic Division"
     Chaplain: "Central Domestic Division"
     Chef: "Central Domestic Division"
     Janitor: "Central Domestic Division"
@@ -121,12 +120,11 @@
     Roboticist: "Central Research Division"
     ResearchAssistant: "Central Research Division"
 
-    SalvageLead: "Interstellar Trade Guild"
-    SalvageMedic: "Interstellar Trade Guild"
-    SalvageSpecialist: "Interstellar Trade Guild"
-    MiningSpecialist: "Central Cargo Division"
-    CargoTechnician: "Central Cargo Division"
-    MailTech: "Central Cargo Division"
+    SalvageLead: "Central Logistics Division"
+    SalvageSpecialist: "Central Logistics Divisio"
+    MiningSpecialist: "Central Logistics Divisio"
+    CargoTechnician: "Central Logistics Divisio"
+    MailTech: "Central Logistics Divisio"
 
     Visitor: "private account"
 
