@@ -1,39 +1,40 @@
-using System.Text.RegularExpressions;
 using System.Text;
 using Content.Server.Speech.Components;
-using Content.Shared.Speech.EntitySystems;
+using Content.Server.Speech;
+using Content.Shared._Starlight.Speech;
+using Content.Shared.Speech;
 
-namespace Content.Server.Speech.EntitySystems;
+namespace Content.Server._Starlight.Speech.EntitySystems;
 
-public sealed class SpanishAccentSystem : RelayAccentSystem<SpanishAccentComponent>
+public sealed class SpanishAccentSystem : EntitySystem
 {
-    // for words in all lowercase (multiple "s" are allowed)
-    private static readonly Regex RegexLower = new(@"(?<!\w)(s+h*[bcdfgjklmnpqrtvwxz])");
-    // For Capitalized Words (Station -> Estation; Capital "S" Is Replaced Directly, Multiple "S" Are Allowed)
-    private static readonly Regex RegexCaps = new(@"(?<!\w)S(s*h*[bcdfgjklmnpqrtvwxz])");
-    // FOR WORDS IN ALL UPPERCASE (ONLY ONE "S" IS ALLOWED, ASSUMING IT'S NOT AN ACRONYM)
-    private static readonly Regex RegexUpper = new(@"(?<!\w)(SH*[BCDFGJKLMNPQRTVWXZ])");
+    public override void Initialize() 
+        => SubscribeLocalEvent<SpanishAccentComponent, AccentGetEvent>(OnAccent);
 
-    public override string Accentuate(string message, Entity<SpanishAccentComponent>? ent = null)
+    public SpeechMessage Accentuate(SpeechMessage message)
     {
-        // Insert E before every S that is followed by a consonant that makes a distinct sound
-        // (H is excluded because [sh] is a single sound)
-        message = InsertS(message);
-        // If a sentence ends with ?, insert a reverse ? at the beginning of the sentence
-        message = ReplacePunctuation(message);
+        // Insert E before every S
+        message.Text = InsertS(message.Text);
+
+        // If a sentence ends with ?, insert a reverse ? at the beginning
+        message.Text = ReplacePunctuation(message.Text);
+
         return message;
     }
 
-    private string InsertS(string message)
+    private static string InsertS(string message)
     {
-        // Replace every new Word that starts with s/S and a consonant
-        message = RegexLower.Replace(message, "e$1");
-        message = RegexCaps.Replace(message, "Es$1");
-        message = RegexUpper.Replace(message, "E$1");
-        return message;
+        var msg = message.Replace(" s", " es").Replace(" S", " Es");
+
+        if (msg.StartsWith('s'))
+            return msg[1..].Insert(0, "es");
+        else if (msg.StartsWith('S'))
+            return msg[1..].Insert(0, "Es");
+
+        return msg;
     }
 
-    private string ReplacePunctuation(string message)
+    private static string ReplacePunctuation(string message)
     {
         var sentences = AccentSystem.SentenceRegex.Split(message);
         var msg = new StringBuilder();
@@ -55,7 +56,9 @@ public sealed class SpanishAccentSystem : RelayAccentSystem<SpanishAccentCompone
             else
                 msg.Append(s.Insert(s.Length - s.TrimStart().Length, toInsert.ToString()));
         }
-
         return msg.ToString();
     }
+
+    private void OnAccent(EntityUid uid, SpanishAccentComponent component, AccentGetEvent args) 
+        => args.Message = Accentuate(args.Message);
 }
