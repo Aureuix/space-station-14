@@ -18,7 +18,7 @@ using Robust.Shared.Utility;
 
 namespace Content.Shared._Starlight.Silicons.Borgs;
 
-public sealed class StationAIShuntSystem : EntitySystem
+public sealed partial class StationAIShuntSystem : EntitySystem //SpL- missing partial 
 {
 
     [Dependency] private readonly SharedMindSystem _mindSystem = default!;
