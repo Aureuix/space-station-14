@@ -39,6 +39,7 @@ public partial class NavMapControl : MapGridControl
 
     // Actions
     public event Action<NetEntity?>? TrackedEntitySelectedAction;
+    public event Action<EntityCoordinates>? MapClickedAction; // Starlight
     public event Action<DrawingHandleScreen>? PostWallDrawingAction;
 
     // Tracked data
@@ -205,6 +206,9 @@ public partial class NavMapControl : MapGridControl
 
         if (args.Function == EngineKeyFunctions.UIClick)
         {
+            if (Xform == null || _physics == null) // Starlight
+                return;
+            
             if (TrackedEntitySelectedAction == null)
                 return;
 
@@ -222,6 +226,18 @@ public partial class NavMapControl : MapGridControl
             // Convert to a world position
             var unscaledPosition = (localPosition - MidPointVector) / MinimapScale;
             var worldPosition = Vector2.Transform(new Vector2(unscaledPosition.X, -unscaledPosition.Y) + offset, _transformSystem.GetWorldMatrix(Xform));
+            
+            // Starlight-start
+            EntityCoordinates? clickCoords = null;
+            if (MapClickedAction != null)
+            {
+                var mapCoordinates = new MapCoordinates(worldPosition, Xform.MapID);
+                var coordinates = _transformSystem.ToCoordinates(mapCoordinates);
+
+                if (_transformSystem.IsValid(coordinates))
+                    clickCoords = coordinates;
+            }
+            // Starlight-end
 
             // Find closest tracked entity in range
             var closestEntity = NetEntity.Invalid;
@@ -243,7 +259,12 @@ public partial class NavMapControl : MapGridControl
 
             if (closestDistance > MaxSelectableDistance || !closestEntity.IsValid())
                 return;
-
+            
+            // Starlight-start
+            if (clickCoords != null)
+                MapClickedAction?.Invoke(clickCoords.Value);
+            // Starlight-end
+            
             TrackedEntitySelectedAction.Invoke(closestEntity);
         }
 
@@ -465,6 +486,27 @@ public partial class NavMapControl : MapGridControl
         }
     }
 
+    // Carpmosia-start - AI Navmap
+    public void AiFrameUpdate(float seconds, EntityUid? newMapUid)
+    {
+        if (MapUid != newMapUid)
+        {
+            MapUid = newMapUid;
+            ForceNavMapUpdate();
+        }
+        else
+        {
+            // Update the timer
+            _updateTimer += seconds;
+            if (_updateTimer >= UpdateTime)
+            {
+                _updateTimer -= UpdateTime;
+                UpdateNavMap();
+            }
+        }
+    }
+    // Carpmosia-end - AI Navmap
+    
     protected virtual void UpdateNavMap()
     {
         // Clear stale values
