@@ -6,9 +6,9 @@ namespace Content.Client.Overlays;
 
 /// <summary>
 /// Shows/hides the <see cref="NightVisionOverlay"/> based on whether the observed
-/// entity has a <see cref="NightVisionComponent"/> equipped.
+/// entity has a <see cref="WizdenNightVisionComponent"/> equipped.
 /// </summary>
-public sealed partial class NightVisionOverlaySystem : EquipmentHudSystem<NightVisionComponent>
+public sealed partial class NightVisionOverlaySystem : EquipmentHudSystem<WizdenNightVisionComponent>
 {
     [Dependency] private IOverlayManager _overlayMan = default!;
 
@@ -20,15 +20,15 @@ public sealed partial class NightVisionOverlaySystem : EquipmentHudSystem<NightV
 
         _overlay = new NightVisionOverlay();
 
-        SubscribeLocalEvent<NightVisionComponent, AfterAutoHandleStateEvent>(OnHandleState);
+        SubscribeLocalEvent<WizdenNightVisionComponent, AfterAutoHandleStateEvent>(OnHandleState);
     }
 
-    protected override void UpdateInternal(RefreshEquipmentHudEvent<NightVisionComponent> component)
+    protected override void UpdateInternal(RefreshEquipmentHudEvent<WizdenNightVisionComponent> component)
     {
         base.UpdateInternal(component);
 
         // Find the component with the lowest noise.
-        NightVisionComponent? nvision = null;
+        WizdenNightVisionComponent? nvision = null;
         var bestNoise = float.MaxValue;
         foreach (var comp in component.Components)
         {
@@ -63,7 +63,7 @@ public sealed partial class NightVisionOverlaySystem : EquipmentHudSystem<NightV
         _overlayMan.RemoveOverlay(_overlay);
     }
 
-    private void OnHandleState(Entity<NightVisionComponent> ent, ref AfterAutoHandleStateEvent args)
+    private void OnHandleState(Entity<WizdenNightVisionComponent> ent, ref AfterAutoHandleStateEvent args)
     {
         RefreshOverlay();
     }

@@ -6,7 +6,7 @@ namespace Content.Shared.Overlays;
 /// Enables the night-vision fullscreen overlay for the entity it is attached to.
 /// </summary>
 [RegisterComponent, NetworkedComponent, AutoGenerateComponentState(true)]
-public sealed partial class NightVisionComponent : Component
+public sealed partial class WizdenNightVisionComponent : Component
 {
     /// <summary>
     /// Whether the overlay should be visible.
