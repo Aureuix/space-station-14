@@ -229,7 +229,7 @@
       - SmokeGrenade
       - WhiteholeGrenade
     belt:
-      - WeaponEnergyMagnum
+      - WeaponEnergyMagnumGun
       - LightRifleHeavyMagazineFMJ
       - LightRifleHeavyMagazineFMJ
       - LightRifleHeavyMagazineUranium

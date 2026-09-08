@@ -2386,8 +2386,8 @@
     showPrices: false # Starlight-edit: Vending Machines Prices
     offState: off
     brokenState: broken
-    normalState: normal
-    denyState: deny
+    normalState: normal-unshaded # SpL
+    denyState: deny-unshaded # SpL
     ejectDelay: 2
   - type: Sprite # Starlight start
     sprite: _DV/Structures/Machines/VendingMachines/syndiejuice.rsi # New sprite # SpL- yeah it sucks actually try this one for size

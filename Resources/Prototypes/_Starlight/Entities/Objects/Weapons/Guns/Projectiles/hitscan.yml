@@ -49,6 +49,8 @@
         Structural: 226
   - type: HitscanStaminaDamage
     staminaDamage: 35
+  - type: HitscanBasicRaycast # SpL
+    collisionMask: BulletImpassable # SpL
   - type: HitscanPierce
     chance: 0.95
     pierceLevel: Rock

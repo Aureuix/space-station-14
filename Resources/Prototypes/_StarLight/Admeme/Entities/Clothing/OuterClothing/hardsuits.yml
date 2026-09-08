@@ -2,7 +2,7 @@
 - type: entity
   parent: [BaseNanoTrasenContraband, ClothingOuterHardsuitSyndieElite] #sl Change
   id: ClothingOuterHardsuitNTNCConsortium
-  name: NanoYrasen navy marine hardsuit
+  name: NanoTrasen navy marine hardsuit
   description: A protective hardsuit worn by NanoTrasen Navy Marines.
   components:
     - type: Sprite

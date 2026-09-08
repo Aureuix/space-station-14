@@ -362,6 +362,21 @@
         maxVol: 1000
 
 - type: entity
+  parent: [BluespaceBeaker, BaseSyndicateContraband]
+  id: SyndicateBluespaceBeaker
+  name: redspace beaker # Starlight
+  description: An illegal reagent container that violates the laws of physics.
+  components:
+  - type: Spillable
+    solution: beaker
+  - type: Sprite
+    sprite: Objects/Specific/Chemistry/beaker_syndicate_bluespace.rsi
+    layers:
+      - state: beakersyndicatebluespace
+  - type: SolutionContainerVisuals
+    maxFillLevels: 0
+
+- type: entity
   name: dropper
   parent: BaseItem
   description: Used to transfer small amounts of chemical solution between containers.

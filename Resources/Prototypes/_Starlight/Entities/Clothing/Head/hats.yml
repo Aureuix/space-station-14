@@ -665,3 +665,20 @@
       sprite: _Starlight/Clothing/Head/Hats/bunnygang.rsi
     - type: Clothing
       sprite: _Starlight/Clothing/Head/Hats/bunnygang.rsi
+
+- type: entity
+  parent: [ClothingHeadBase, BaseCommandContraband]
+  id: ClothingHeadHatBeretCaptain
+  name: captain's beret
+  description: A tight fitting beret that leaves you questioning if the headache is really from the crew.
+  components:
+    - type: Sprite
+      sprite: _Starlight/Clothing/Head/Hats/beret_captain.rsi
+    - type: Clothing
+      sprite: _Starlight/Clothing/Head/Hats/beret_captain.rsi
+    - type: Tag
+      tags:
+        - PetWearable
+        - CorgiWearable
+        - ClothMade
+        - WhitelistChameleon
