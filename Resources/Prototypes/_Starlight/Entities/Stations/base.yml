@@ -29,6 +29,6 @@
         tau: # SpL Start
           shuttle: /Maps/_SpL/Shuttles/CC-NT/TauArmory.yml
           announcement: announcement-tau-armory
-          announcementColor: "#17603f"
+          announcementColor: "#51db9e"
           recallAnnouncement: announcement-tau-armory-recall
-          recallAnnouncementColor: "#17603f" # SpL End
+          recallAnnouncementColor: "#51db9e" # SpL End
