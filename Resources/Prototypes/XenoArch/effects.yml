@@ -1,6 +1,5 @@
 - type: entityTable
   id: XenoArtifactEffectsDefaultTable
-  #parent: XenoArtifactEffectsSpectraTable
   table: !type:GroupSelector
     children:
     # hijacks use key, prevents from using artifact, sadly
