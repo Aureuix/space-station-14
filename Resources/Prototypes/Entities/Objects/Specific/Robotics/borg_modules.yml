@@ -823,7 +823,7 @@
     - state: icon-light-replacer
   - type: ItemBorgModule
     hands:
-    - item: LightReplacerFilled
+    - item: LightReplacer
     - item: BorgTrashBag
     - item: Plunger
     - item: SoapNT

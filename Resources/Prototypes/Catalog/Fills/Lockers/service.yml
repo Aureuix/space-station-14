@@ -81,7 +81,7 @@
     children:
     - id: WetFloorSign
       amount: 3
-    - id: LightReplacerFilled
+    - id: LightReplacer
     - id: BoxLightMixed
     - id: Holoprojector
     # Starlight start
