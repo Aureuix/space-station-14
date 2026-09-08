@@ -147,6 +147,31 @@
       state: icon
     - type: Item
       sprite: _SpL/Objects/Fun/Plushies/tumma_plushie.rsi
+    - type: Extractable
+      juiceSolution:
+        reagents:
+        - ReagentId: TearGas # Added to create constant sorrow when juiced with the ilas plushie 1/2
+          Quantity: 15
+    - type: ItemToggle
+      onUse: false
+      activated: true
+      verbToggleOn: plushie-voicebox-activate
+      verbToggleOff: plushie-voicebox-deactivate
+    - type: ComponentToggler
+      components:
+        - type: DatasetVocalizer
+          dataset: PlushiesTumma
+    - type: Vocalizer
+      minVocalizeInterval: 180
+      maxVocalizeInterval: 240
+    - type: LanguageSpeaker
+    - type: LanguageKnowledge
+      speaks:
+        - GalacticCommon
+        - Draconic
+      understands:
+        - GalacticCommon
+        - Draconic
 
 - type: entity
   parent: BasePlushie
@@ -279,3 +304,40 @@
     - type: Vocalizer
       minVocalizeInterval: 120
       maxVocalizeInterval: 240
+
+- type: entity
+  parent: PlushieLizard
+  id: PlushieIlas
+  name: ilas plushie
+  description: Smells of berries and whiskey. Usually spotted in botany or dying in maintenance. Spear traded seperately.
+  components:
+    - type: Sprite
+      sprite: _SpL/Objects/Fun/Plushies/ilas_plushie.rsi
+      state: icon
+    - type: Item
+      sprite: _SpL/Objects/Fun/Plushies/ilas_plushie.rsi
+    - type: Extractable
+      juiceSolution:
+        reagents:
+        - ReagentId: Whiskey # Added to create constant sorrow when juiced with the tumma plushie 2/2
+          Quantity: 15
+    - type: ItemToggle
+      onUse: false
+      activated: true
+      verbToggleOn: plushie-voicebox-activate
+      verbToggleOff: plushie-voicebox-deactivate
+    - type: ComponentToggler
+      components:
+        - type: DatasetVocalizer
+          dataset: PlushiesIlas
+    - type: Vocalizer
+      minVocalizeInterval: 180
+      maxVocalizeInterval: 240
+    - type: LanguageSpeaker
+    - type: LanguageKnowledge
+      speaks:
+        - GalacticCommon
+        - Draconic
+      understands:
+        - GalacticCommon
+        - Draconic

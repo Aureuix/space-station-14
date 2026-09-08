@@ -141,6 +141,7 @@
     - id: ClothingHeadBandBotany
     - id: ChemistryBottleRobustHarvest
     - id: PlushieTumma # SpectaLight
+    - id: PlushieIlas # Spectalight
       prob: 0.3
     - id: ClothingBeltPlant
     - id: PlantBag ##Some maps don't have nutrivend
