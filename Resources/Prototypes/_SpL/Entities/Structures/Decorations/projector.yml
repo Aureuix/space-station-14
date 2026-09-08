@@ -19,12 +19,12 @@
     - type: Sprite
       noRot: true
       sprite: _DV/Structures/Decoration/shuttle_manipulator.rsi
+      drawdepth: Mobs
       layers:
       - state: base
       - state: holograph
         shader: unshaded
         map: ["enum.PowerDeviceVisualLayers.Powered"]
-        drawdepth: Mobs
     - type: PointLight
       radius: 4
       energy: 3
