@@ -54,7 +54,7 @@
   id: OrganIPCEars
   parent: [BaseIPCOrganUnGibbable, BaseOrganEars]
   name: robotic ears
-  description: "Process audio at the same quality of station-side cyborgs"
+  description: "Processes audio at the same quality of station-side cyborgs"
   components:
   - type: Sprite
     state: ears
@@ -63,7 +63,7 @@
   id: OrganIPCHeart
   parent: [BaseIPCOrganUnGibbable, BaseOrganHeart]
   name: micro pump
-  description: "Circulates coolant in a sickingly familiar way."
+  description: "Circulates coolant in a sickeningly familiar way."
   components:
   - type: Sprite
     state: heart-on

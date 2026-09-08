@@ -342,7 +342,7 @@
   parent: [BaseWeaponShotgun, BaseGunWieldable, BaseSyndicateContraband]
   id: WeaponShotgunHushpup
   name: hushpup
-  description: An obscure modification of the Enforcer, fitted with an experimental muffler. Great for those with a strict moral code. Uses .50 shotgun shells.
+  description: An obscure modification of the Kammerer, fitted with an experimental muffler. Great for those with a strict moral code. Uses 12 gauge shotgun shells.
   components:
   - type: Sprite
     sprite: Objects/Weapons/Guns/Shotguns/hushpup.rsi
