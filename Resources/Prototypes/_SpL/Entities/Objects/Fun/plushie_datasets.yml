@@ -33,3 +33,15 @@
   values:
     prefix: plushie-chesed-
     count: 35
+
+- type: localizedDataset
+  id: PlushiesIlas
+  values:
+    prefix: plushie-ilas-
+    count: 12
+
+- type: localizedDataset
+  id: PlushiesTumma
+  values:
+    prefix: plushie-tumma-
+    count: 12
