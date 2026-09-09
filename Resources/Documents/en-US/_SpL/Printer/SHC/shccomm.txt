@@ -19,7 +19,7 @@
 [form]
 
 [bold]Death to NanoTrasen.[/bold]
-- [signature][/mono]
+– [signature][/mono]
                                                 [color=#550000][bold][italic]END OF FAX[/color]
 [color=#110000]▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬[/color]
 

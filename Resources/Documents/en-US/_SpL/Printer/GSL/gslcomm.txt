@@ -10,7 +10,7 @@
  [form]
    
  Regards,
- - [signature]
+ – [signature]
 
  [/mono]                                            [color=#aaaaaa][bold][italic]END OF FAX[/color][/bold][/italic]
 ══──══──══──══──══──══──══──══──══──══──══
