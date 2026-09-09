@@ -1,7 +1,5 @@
 using Content.Shared._CD.CartridgeLoader.Cartridges;
-using Content.Shared.Alert;
 using Robust.Shared.GameStates;
-using Robust.Shared.Prototypes;
 using Robust.Shared.Serialization.TypeSerializers.Implementations.Custom;
 
 namespace Content.Shared._CD.NanoChat;
@@ -69,13 +67,4 @@ public sealed partial class NanoChatCardComponent : Component
     /// </summary>
     [DataField]
     public bool ListNumber = true;
-
-    #region Starligt
-
-    /// <summary>
-    /// The alert prototype for unread messages notifications
-    /// </summary>
-    [DataField] public ProtoId<AlertPrototype> Alert = "NanoChatAlert";
-
-    #endregion
 }
