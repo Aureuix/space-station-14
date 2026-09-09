@@ -215,6 +215,9 @@
             - id: RubberStampCDD
             - id: RubberStampCSOD
             - id: RubberStampCSD
+            - id: RubberStampCEsD # SpL
+            - id: RubberStampERF # SpL
+            - id: RubberStampCBURN # SpL
     - type: Sprite
       sprite: _Starlight/Objects/Storage/boxes.rsi
       layers:

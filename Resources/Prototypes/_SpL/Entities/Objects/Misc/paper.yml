@@ -1,0 +1,88 @@
+﻿- type: entity
+  name: gsl paper
+  parent: Paper
+  id: PaperGSL
+  description: A single unit of bureaucracy, branded with the logo of Gemini Stellar Logistics.
+  components:
+    - type: Sprite
+      sprite: Objects/Misc/bureaucracy.rsi
+      layers:
+        - state: paper_gsl
+        - state: paper_gsl_words
+          map: ["enum.PaperVisualLayers.Writing"]
+          visible: false
+        - state: paper_stamp-generic
+          map: ["enum.PaperVisualLayers.Stamp"]
+          visible: false
+    - type: PaperVisuals
+      backgroundPatchMargin: 16.0, 16.0, 16.0, 16.0
+      contentMargin: 0.0, 0.0, 0.0, 0.0
+      headerImagePath: "/Textures/_SpL/Interface/Paper/paper_heading_gsl_logo.svg.96dpi.png"
+      headerMargin: 0.0, 0.0, 0.0, 0.0
+      
+- type: entity
+  name: cc paper
+  parent: Paper
+  id: PaperCC
+  description: A single unit of bureaucracy, branded with the logo of Central Command.
+  components:
+    - type: Sprite
+      sprite: Objects/Misc/bureaucracy.rsi
+      layers:
+        - state: paper_cc
+        - state: paper_cc_words
+          map: ["enum.PaperVisualLayers.Writing"]
+          visible: false
+        - state: paper_stamp-generic
+          map: ["enum.PaperVisualLayers.Stamp"]
+          visible: false
+    - type: PaperVisuals
+      backgroundPatchMargin: 16.0, 16.0, 16.0, 16.0
+      contentMargin: 0.0, 0.0, 0.0, 0.0
+      headerImagePath: "/Textures/_Starlight/Logo/CClogo.png"
+      headerMargin: 0.0, 0.0, 0.0, 0.0
+
+- type: entity
+  parent: Paper
+  id: PaperSyn
+  name: syndicate paper
+  description: A single unit of bureaucracy, branded with the sinister S of the Syndicate.
+  components:
+    - type: Sprite
+      sprite: Objects/Misc/bureaucracy.rsi
+      layers:
+        - state: paper_syn
+        - state: paper_syn_words
+          map: ["enum.PaperVisualLayers.Writing"]
+          visible: false
+        - state: paper_stamp-generic
+          map: ["enum.PaperVisualLayers.Stamp"]
+          visible: false
+    - type: PaperVisuals
+      backgroundPatchMargin: 16.0, 16.0, 16.0, 16.0
+      contentMargin: 0.0, 0.0, 0.0, 0.0
+      headerImagePath: "/Textures/_Starlight/Logo/Syndie_Logo.png"
+      headerMargin: 0.0, 0.0, 0.0, 0.0
+      
+- type: entity
+  name: blood-red paper
+  parent: Paper
+  id: PaperBloodred
+  description: A single unit of bureaucracy, branded with the three-headed snake of the Syndicate.
+  components:
+    - type: Sprite
+      sprite: Objects/Misc/bureaucracy.rsi
+      layers:
+        - state: paper_shc
+        - state: paper_shc_words
+          map: ["enum.PaperVisualLayers.Writing"]
+          visible: false
+        - state: paper_stamp-generic
+          map: ["enum.PaperVisualLayers.Stamp"]
+          visible: false
+    - type: PaperVisuals
+      backgroundPatchMargin: 16.0, 16.0, 16.0, 16.0
+      backgroundImagePath: "/Textures/Interface/Paper/paper_background_blood_red.svg.96dpi.png"
+      contentMargin: 0.0, 0.0, 0.0, 0.0
+      headerImagePath: "/Textures/Interface/Paper/paper_heading_syndicate_logo.svg.96dpi.png"
+      headerMargin: 0.0, 0.0, 0.0, 0.0

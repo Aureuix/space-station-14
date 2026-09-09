@@ -1,0 +1,47 @@
+﻿               [center][color=#495a9d][italic][head=3]  OFFICIAL GSL OFFICE DOCUMENT[/head][/italic][/color][/center]
+                 [bold]FORMAL COMPLAINT FROM TECHNICIAN[/bold]
+══──══──══──══──══──══──══──══──══──══──══
+ [bold]Date and Time:[/bold] [datetime]
+ [bold]Document Compiler:[/bold] [signature]
+══──══──══──══──══──══──══──══──══──══──══
+                                                [bold][italic][color=#aaaaaa]START FAX[/color][/bold][/italic]
+[mono] Greetings, [form].
+ 
+ This is a formal complaint regarding the conduct of station personnel aboard the Automated Trade Station. 
+ 
+ 
+ The following violations have occured aboard the ATS:
+ 
+ [/mono][check][mono] I, the technician, have been physically assaulted by your personnel.
+ 
+ [/mono][check][mono] I, the technician, have been verbally abused or threatened by your personnel.
+ 
+ [/mono][check][mono] Your personnel have made repeated attempts to trespass into restricted areas.
+ 
+ [/mono][check][mono] Your personnel are responsible for undue damages to the Automated Trade Station.
+ 
+ [/mono][check][mono] Your personnel have behaved in ways which have endangered myself or the ATS.
+ 
+ [/mono][check][mono] Other: [form]
+ 
+ 
+ Details of the violation(s) are as follows:
+ [form]
+ 
+ The violation(s) took place within the following approximate time period:
+ [form]
+  
+ Failure to act in favour of resolving a reasonable complaint will be taken as grounds for legal action against offending personnel and their superiors where applicable.
+ 
+ Regards,
+ - [signature]
+
+ [/mono]                                            [color=#aaaaaa][bold][italic]END OF FAX[/color][/bold][/italic]
+══──══──══──══──══──══──══──══──══──══──══
+  ⠀                      [italic]Place for Stamps and/or Signatures[/italic]
+  
+  
+  
+  
+  
+  

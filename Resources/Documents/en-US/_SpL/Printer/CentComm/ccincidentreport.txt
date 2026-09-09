@@ -1,0 +1,59 @@
+﻿[head=1][color=#1b67a5]───────────────────[/color][/head]
+[color=#134975]█▄░░█ ▀▀█▀▀[/color] [head=3][color=#1b67a5] INCIDENT DEBRIEF[/color][/head]
+[color=#134975]█▀█▄█ ░░█░░[/color][bolditalic][color=#1b67a5] For Internal Distribution Only[/color][/bolditalic]
+[color=#134975]█░░▀█ ░░█░░[/color] [color=#aaaaaa][italic]Filed under: Post-Evacuation Review[/italic][/color]
+[head=1][color=#1b67a5]───────────────────[/color][/head]
+
+[bold]STATION:[/bold] [form] 
+[bold]DATE OF INCIDENT:[/bold] [form] 
+[bold]FILED BY:[/bold] [datetime]
+[bold]EVACUATION STATUS:[/bold] [check] Not Evacuated   [check] Scheduled   [check] Executed – Emergency Order  
+[bold]THREAT CLASSIFICATION:[/bold] [form]  
+
+[head=1]────────────────────[/head]  
+[bold][color=#1f75bb]SECTION I – SUMMARY OF EVENTS[/color][/bold]  
+
+[italic](Provide a clear and concise description of what occurred. Include timeline of escalation, containment efforts, and relevant context.)[/italic]  
+[form]
+
+[head=1]────────────────────[/head]  
+[bold][color=#1f75bb]SECTION II – CASUALTY REPORT[/color][/bold]  
+
+[bullet] [bold]Engineering Department:[/bold] [form]
+[bullet] [bold]Medical Department:[/bold] [form] 
+[bullet] [bold]Security Forces:[/bold] [form]
+[bullet] [bold]Command Staff:[/bold] [form]
+[bullet] [bold]Total Crew Survival Estimate:[/bold] [form]  
+[bullet] [bold]Confirmed Hostile Eliminations (if applicable):[/bold] [form]  
+
+[head=1]────────────────────[/head]  
+[bold][color=#1f75bb]SECTION III – PROTOCOL VIOLATIONS (If Any)[/color][/bold]  
+
+[italic](List any noted SOP breaches, unusual conduct, or unauthorized actions.)[/italic]  
+[form] 
+
+[head=1]────────────────────[/head]  
+[bold][color=#1f75bb]SECTION IV – RECOMMENDATIONS[/color][/bold]  
+
+[italic](Include any suggestions for future protocol adjustments, staff accountability, or equipment improvements.)[/italic]  
+[form]
+
+[head=1]────────────────────[/head]  
+[bold][color=#1f75bb]SECTION V – FINAL REMARKS[/color][/bold]  
+
+[italic](Any closing statements, warnings, or declarations regarding the incident and its outcome.)[/italic]  
+[form] 
+
+[head=1]────────────────────[/head]  
+Submitted by: [bold][signature][/bold]  
+Position: [form] 
+Location: [form]
+
+[head=1][color=#1b67a5]────────────────────[/color][/head]
+  ⠀                      [italic]Place for Stamps and/or Signatures[/italic]
+  
+  
+  
+  
+  
+  

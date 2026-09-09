@@ -1,0 +1,23 @@
+﻿               [center][color=#495a9d][italic][head=3]  OFFICIAL GSL OFFICE DOCUMENT[/head][/italic][/color][/center]
+          [bold]INCOMING COMMUNICATION FROM TECHNICIAN[/bold]
+══──══──══──══──══──══──══──══──══──══──══
+ [bold]Date and Time:[/bold] [datetime]
+ [bold]Document Compiler:[/bold] [signature]
+══──══──══──══──══──══──══──══──══──══──══
+                                                [bold][italic][color=#aaaaaa]START FAX[/color][/bold][/italic]
+[mono] Greetings, [form].
+ 
+ [form]
+   
+ Regards,
+ - [signature]
+
+ [/mono]                                            [color=#aaaaaa][bold][italic]END OF FAX[/color][/bold][/italic]
+══──══──══──══──══──══──══──══──══──══──══
+  ⠀                      [italic]Place for Stamps and/or Signatures[/italic]
+  
+  
+  
+  
+  
+  

@@ -9,6 +9,7 @@ job-rules-illuminate-aligned = You are {role-type-illuminate-aligned-name}.
                               
 role-type-gsl-aligned-name = Gemini Stellar Logistics Aligned
 role-type-gsl-aligned-color = #00ffff
-job-rules-gsl-aligned = You are {role-type-tsf-aligned-name}.
-                              You are to serve the interests of Gemini Stellar Logistics.
+job-rules-gsl-aligned = You are {role-type-gsl-aligned-name}.
+                              Keep the ATS intact without interfering too much with the crew.
+                              Permit the crew to help with this at your own discretion.
                               Remember, you do NOT serve the crew.

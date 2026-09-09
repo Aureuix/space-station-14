@@ -7,3 +7,173 @@
   applyMaterialDiscount: false
   materials:
     SheetPrinter: 100
+
+- type: latheRecipe
+  id: PrintedDocumentSHCCommRecipe
+  result: PrintedDocumentSHCComm
+  categories:
+    - Communications
+  completetime: 2
+  applyMaterialDiscount: false
+  materials:
+    SheetPrinter: 1
+    
+- type: latheRecipe
+  id: PrintedDocumentCCIncidentReportRecipe
+  result: PrintedDocumentCCIncidentReport
+  categories:
+    - Communications
+  completetime: 2
+  applyMaterialDiscount: false
+  materials:
+    SheetPrinter: 1
+    
+- type: latheRecipe
+  id: PrintedDocumentCCCommRecipe
+  result: PrintedDocumentCCComm
+  categories:
+    - Communications
+  completetime: 2
+  applyMaterialDiscount: false
+  materials:
+    SheetPrinter: 1
+    
+- type: latheRecipe
+  id: PrintedDocumentCADCommRecipe
+  result: PrintedDocumentCADComm
+  categories:
+    - Communications
+  completetime: 2
+  applyMaterialDiscount: false
+  materials:
+    SheetPrinter: 1
+    
+- type: latheRecipe
+  id: PrintedDocumentCDDCommRecipe
+  result: PrintedDocumentCDDComm
+  categories:
+    - Communications
+  completetime: 2
+  applyMaterialDiscount: false
+  materials:
+    SheetPrinter: 1
+    
+- type: latheRecipe
+  id: PrintedDocumentCEDCommRecipe
+  result: PrintedDocumentCEDComm
+  categories:
+    - Communications
+  completetime: 2
+  applyMaterialDiscount: false
+  materials:
+    SheetPrinter: 1
+
+- type: latheRecipe
+  id: PrintedDocumentCEsDCommRecipe
+  result: PrintedDocumentCEsDComm
+  categories:
+    - Communications
+  completetime: 2
+  applyMaterialDiscount: false
+  materials:
+    SheetPrinter: 1
+    
+- type: latheRecipe
+  id: PrintedDocumentCIDCommRecipe
+  result: PrintedDocumentCIDComm
+  categories:
+    - Communications
+  completetime: 2
+  applyMaterialDiscount: false
+  materials:
+    SheetPrinter: 1
+    
+- type: latheRecipe
+  id: PrintedDocumentCLDCommRecipe
+  result: PrintedDocumentCLDComm
+  categories:
+    - Communications
+  completetime: 2
+  applyMaterialDiscount: false
+  materials:
+    SheetPrinter: 1
+    
+- type: latheRecipe
+  id: PrintedDocumentCMDCommRecipe
+  result: PrintedDocumentCMDComm
+  categories:
+    - Communications
+  completetime: 2
+  applyMaterialDiscount: false
+  materials:
+    SheetPrinter: 1
+    
+- type: latheRecipe
+  id: PrintedDocumentCRDCommRecipe
+  result: PrintedDocumentCRDComm
+  categories:
+    - Communications
+  completetime: 2
+  applyMaterialDiscount: false
+  materials:
+    SheetPrinter: 1
+    
+- type: latheRecipe
+  id: PrintedDocumentCSDCommRecipe
+  result: PrintedDocumentCSDComm
+  categories:
+    - Communications
+  completetime: 2
+  applyMaterialDiscount: false
+  materials:
+    SheetPrinter: 1
+    
+- type: latheRecipe
+  id: PrintedDocumentCSODCommRecipe
+  result: PrintedDocumentCSODComm
+  categories:
+    - Communications
+  completetime: 2
+  applyMaterialDiscount: false
+  materials:
+    SheetPrinter: 1
+
+- type: latheRecipe
+  id: PrintedDocumentGSLCommRecipe
+  result: PrintedDocumentGSLComm
+  categories:
+    - Communications
+  completetime: 2
+  applyMaterialDiscount: false
+  materials:
+    SheetPrinter: 100
+    
+- type: latheRecipe
+  id: PrintedDocumentGSLReportRecipe
+  result: PrintedDocumentGSLReport
+  categories:
+    - Communications
+  completetime: 2
+  applyMaterialDiscount: false
+  materials:
+    SheetPrinter: 100
+    
+- type: latheRecipe
+  id: PrintedDocumentGSLWarningRecipe
+  result: PrintedDocumentGSLWarning
+  categories:
+    - Communications
+  completetime: 2
+  applyMaterialDiscount: false
+  materials:
+    SheetPrinter: 100
+    
+- type: latheRecipe
+  id: PrintedDocumentGSLComplaintRecipe
+  result: PrintedDocumentGSLComplaint
+  categories:
+    - Communications
+  completetime: 2
+  applyMaterialDiscount: false
+  materials:
+    SheetPrinter: 100
