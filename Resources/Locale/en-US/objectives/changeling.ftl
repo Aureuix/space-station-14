@@ -1,5 +1,5 @@
-objective-condition-absorb-title = Absorb {$count} humanoids.
-objective-condition-absorb-description = I must absorb {$count} humanoids. It is necessary for my survival and further evolution.
+objective-condition-absorb-title = Absorb {$count} lifeforms.
+objective-condition-absorb-description = I must absorb {$count} lifeforms. It is necessary for my survival and further evolution.
 
 objective-condition-stealdna-title = Extract {$count} compatible genomes.
 objective-condition-stealdna-description = I must extract {$count} unique genomes.

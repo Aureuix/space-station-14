@@ -346,11 +346,12 @@
 # Changeling
 
 - type: entity
-  parent: BaseMindRoleAntag
+  parent: MindRoleGhostRoleFreeAgent # SpL
   id: MindRoleChangeling
   name: Changeling Role
   components:
   - type: MindRole
     antagPrototype: Changeling
+    roleType: FreeAgent # SpL
     subtype: role-subtype-changeling # Starlight
   - type: SLChangelingRole
