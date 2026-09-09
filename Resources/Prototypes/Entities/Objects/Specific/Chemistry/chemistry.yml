@@ -375,6 +375,10 @@
       - state: beakersyndicatebluespace
   - type: SolutionContainerVisuals
     maxFillLevels: 0
+  - type: SolutionContainerManager
+    solutions:
+      beaker:
+        maxVol: 600 # SpL
 
 - type: entity
   name: dropper

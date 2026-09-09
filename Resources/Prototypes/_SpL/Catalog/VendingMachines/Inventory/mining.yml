@@ -11,6 +11,16 @@
     - !type:BuyerAccessCondition
   
 - type: listing
+  id: VendorMiningSeismicCharge
+  productEntity: SeismicCharge
+  cost:
+    SalvageTicket: 300
+  categories:
+    - MiningEquipment
+  conditions:
+    - !type:BuyerAccessCondition
+
+- type: listing
   id: VendorMiningWeaponHoloflarePistol
   productEntity: WeaponHoloflarePistol
   cost:
