@@ -1013,6 +1013,7 @@
   categories: [ HideSpawnMenu ]
   components:
   - type: HitscanBasicDamage
+    armorPenetration: 0.6
     damage:
       types:
         Piercing: 40
@@ -1048,6 +1049,7 @@
   categories: [ HideSpawnMenu ]
   components:
   - type: HitscanBasicDamage
+    armorPenetration: -0.13
     damage:
       types:
         Piercing: 5
