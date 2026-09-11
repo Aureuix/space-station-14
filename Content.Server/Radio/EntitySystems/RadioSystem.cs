@@ -169,7 +169,7 @@ public sealed class RadioSystem : EntitySystem
 
         // most radios are relayed to chat, so lets parse the chat message beforehand
 
-        var msg = new ChatMessage(ChatChannel.Radio, content, wrappedMessage, NetEntity.Invalid, null); // Starlight
+        var msg = new ChatMessage(ChatChannel.Radio, content, wrappedMessage, NetEntity.Invalid, null) { Chime = chime, }; // Starlight
 
         var obfuscated = _language.ObfuscateSpeech(content, language);
         var obfuscatedWrapped = WrapRadioMessage(messageSource, channel, name, obfuscated, language, true);
@@ -286,7 +286,7 @@ public sealed class RadioSystem : EntitySystem
 
         var wrappedMessage = WrapCustomRadioMessage(messageSource, channel, name, content, language, false);
 
-        var msg = new ChatMessage(ChatChannel.Radio, content, wrappedMessage, NetEntity.Invalid, null);
+        var msg = new ChatMessage(ChatChannel.Radio, content, wrappedMessage, NetEntity.Invalid, null) { Chime = chime, };
 
         var obfuscated = _language.ObfuscateSpeech(content, language);
         var obfuscatedWrapped = WrapCustomRadioMessage(messageSource, channel, name, obfuscated, language, true);
