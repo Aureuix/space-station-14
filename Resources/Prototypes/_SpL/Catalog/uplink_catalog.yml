@@ -131,6 +131,28 @@
         - ChiefMedicalOfficer
 
 - type: listing
+  id: UplinkBeakerRedspace
+  name: uplink-beaker-redspace-name
+  description: uplink-beaker-redspace-desc
+  icon: { sprite: /Textures/Objects/Specific/Chemistry/beaker_syndicate_bluespace.rsi, state: beakersyndicatebluespace }
+  productEntity: SyndicateBluespaceBeaker
+  discountCategory: rareDiscounts
+  discountDownTo:
+    Telecrystal: 3
+  cost:
+    Telecrystal: 5
+  categories:
+    - UplinkJob
+  conditions:
+    - !type:BuyerJobCondition
+      whitelist:
+        - MedicalDoctor
+        - Paramedic
+        - Surgeon
+        - Chemist
+        - ChiefMedicalOfficer
+
+- type: listing
   id: UplinkElysiumImplanter
   name: uplink-elysium-implant-name
   description: uplink-elysium-implant-desc

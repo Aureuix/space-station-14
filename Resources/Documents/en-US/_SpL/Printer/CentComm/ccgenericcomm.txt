@@ -1,0 +1,27 @@
+﻿          [center][color=#1f75bb][italic][head=3]OFFICIAL CENTCOMM DOCUMENTATION[/head][/italic][/color][/center]
+▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬
+  ▪  ▪  ▪  ▪  ▪  ▪  ▪  ▪  ▪  ▪  ▪  ▪  ▪  ▪  ▪  ▪  ▪  ▪  ▪  ▪  ▪  ▪  ▪  ▪  ▪  ▪  ▪  ▪  ▪  ▪  ▪  ▪ 
+[color=#009100]   █▀▀ █▀▀[/color] [head=3]  [color=#009100]SPECTRALIGHT CENTRAL COMMAND [/color][/head]
+[color=#009100]   █░░ █░░[/color][bolditalic]   [color=#009100]Contract supervision & oversight, est. 2451[/color][/bolditalic]
+[color=#009100]   ▀▀▀ ▀▀▀[/color]   [color=#6D6D6D][italic]OFFICIAL CENTRAL COMMAND OFFICE DOCUMENT[/italic][/color]
+  ▪  ▪  ▪  ▪  ▪  ▪  ▪  ▪  ▪  ▪  ▪  ▪  ▪  ▪  ▪  ▪  ▪  ▪  ▪  ▪  ▪  ▪  ▪  ▪  ▪  ▪  ▪  ▪  ▪  ▪  ▪  ▪ 
+▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬
+[mono]▌ICD−SVS01F - ▌ENC[form] - ▌UID: [form]
+▌DOT: [datetime][/mono]
+
+[bold]INCOMING TRANSMISSION FROM CENTRAL COMMAND[/bold]
+══════════════════════════════════════════
+[mono]Greetings, [form].
+
+[form]
+[/mono]
+[bolditalic]– [signature][/bolditalic]
+
+[italic][color=#6D6D6D]Failure to acknowledge an official communication document from Central Command may lead to revocation of authority, associated disciplinary action, or immediate termination of your contract.[/color][/italic][/color]
+══════════════════════════════════════════
+                                                 [color=black][italic]Stamps[/italic][/color]
+
+
+
+
+

@@ -7,10 +7,10 @@
   name: alerts-gps-name
   description: alerts-gps-desc
 
-- type: alert
-  id: NanoChatAlert
-  icons:
-    - sprite: /Textures/_Starlight/Interface/Alerts/nanochat.rsi
-      state: icon
-  name: alerts-nanochat-name
-  description: alerts-nanochat-desc
+#- type: alert
+#  id: NanoChatAlert
+#  icons:
+#    - sprite: /Textures/_Starlight/Interface/Alerts/nanochat.rsi
+#      state: icon
+#  name: alerts-nanochat-name
+#  description: alerts-nanochat-desc

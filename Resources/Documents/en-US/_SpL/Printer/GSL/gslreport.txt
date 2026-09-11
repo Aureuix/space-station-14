@@ -1,0 +1,41 @@
+﻿               [center][color=#495a9d][italic][head=3]  OFFICIAL GSL OFFICE DOCUMENT[/head][/italic][/color][/center]
+             [bold]DAMAGE REPAIR REPORT FROM TECHNICIAN[/bold]
+══──══──══──══──══──══──══──══──══──══──══
+ [bold]Date and Time:[/bold] [datetime]
+ [bold]Document Compiler:[/bold] [signature]
+══──══──══──══──══──══──══──══──══──══──══
+                                                [bold][italic][color=#aaaaaa]START FAX[/color][/bold][/italic]
+[mono] Greetings, [form].
+ 
+ This report is being sent to confirm that major damages to the Automated Trade Station have been repaired, and station crews are cleared to return to operations aboard without risk.
+ 
+ The following damages have been identified and repaired:
+ [form]
+ 
+ Any remaining damages or risks that crews should be wary of are as follows:
+ [form]
+
+ The current hazard level aboard the Trade Station is:
+ 
+ [/mono][check][mono] Total- Crew are not to board the ATS whatsoever until further notice.
+ 
+ [/mono][check][mono] Extreme- Crew are not to board the ATS without significant protection.
+ 
+ [/mono][check][mono] Major- There is major damage to the ATS which may interfere with crew operations.
+ 
+ [/mono][check][mono] Minor- There is localised damage or threats, but crew are largely clear to maintain standard operations.
+ 
+ [/mono][check][mono] None- All systems are nominal and structural integrity aboard the ATS is sound.
+   
+ Regards,
+ – [signature]
+
+ [/mono]                                            [color=#aaaaaa][bold][italic]END OF FAX[/color][/bold][/italic]
+══──══──══──══──══──══──══──══──══──══──══
+  ⠀                      [italic]Place for Stamps and/or Signatures[/italic]
+  
+  
+  
+  
+  
+  

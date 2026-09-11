@@ -1,0 +1,24 @@
+﻿[italic][color=#E5E5E5]This document contains classified information. DO NOT DISTRIBUTE.[/italic][/color]
+                                          [head=3][color=#2E0404]SECURE FAX
+                    DESTROY AFTER READING[/head][/color]
+[color=#AFAFAF]▌ICD[form] - ENC[form] - DOC[form][/color] 
+[color=#550000]╔════════════════════════════════════════╗[/color]
+[color=#4D4D4D]═ [bold]SUBJECT:[/bold] [color=black][form][/color]
+[color=#4D4D4D]═ [bold]SENDER:[/bold] [color=black][signature][/color]
+[color=#4D4D4D]═ [bold]RECIPIENT:[/bold] [color=black][form][/color]
+[color=#4D4D4D]═ [bold]DOT:[/bold] [color=black][datetime][/color]
+[color=#550000]╚════════════════════════════════════════╝[/color]
+[color=#4D4D4D]▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬[/color][bold][italic]
+                                                 [color=#aaaaaa]START FAX[/color][/bold][/italic]
+[mono][form]
+
+[bold]Death to NanoTrasen.[/bold]
+– [signature][/mono]
+
+                                                [color=#aaaaaa][bold][italic]END OF FAX[/color][/bold][/italic]
+[color=#4D4D4D]▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬[/color]
+
+
+
+
+

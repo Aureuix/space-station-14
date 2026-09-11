@@ -29,6 +29,72 @@
       state: stamp-trader
       
 - type: entity
+  name: Syndicate High Command rubber stamp
+  parent: [ RubberStampBase, BaseSyndicateContraband ]
+  id: RubberStampSHC
+  description: "An evil stamp for stamping evil documents."
+  suffix: DO NOT MAP
+  components:
+    - type: Stamp
+      stampedName: Syndicate High Command
+      stampedColor: "#000000"
+      stampState: "paper_stamp-syndicate"
+    - type: Sprite
+      state: stamp-greytide
+      
+- type: entity
+  name: Central Epistemics Division rubber stamp
+  parent: [ RubberStampBase, BaseCentcommContraband ]
+  id: RubberStampCEsD
+  suffix: DO NOT MAP
+  components:
+    - type: Stamp
+      stampedName: Central Epistemics Division
+      stampedColor: "#c157be"
+      stampState: "paper_stamp-magistrate"
+    - type: Sprite
+      state: stamp-wizard
+      
+- type: entity
+  name: ERT leader rubber stamp
+  parent: [ RubberStampBase, BaseCentcommContraband ]
+  id: RubberStampERTLeader
+  suffix: DO NOT MAP
+  components:
+    - type: Stamp
+      stampedName: ERT Leader
+      stampedColor: "#44b500"
+      stampState: "paper_stamp-centcom"
+    - type: Sprite
+      state: stamp-centcom
+
+- type: entity
+  name: Emergency Response Force rubber stamp
+  parent: [ RubberStampBase, BaseCentcommContraband ]
+  id: RubberStampERF
+  suffix: DO NOT MAP
+  components:
+    - type: Stamp
+      stampedName: Emergency Response Force
+      stampedColor: "#273d58"
+      stampState: "paper_stamp-lawyer"
+    - type: Sprite
+      state: stamp-lawyer
+
+- type: entity
+  name: CBURN corps rubber stamp
+  parent: [ RubberStampBase, BaseCentcommContraband ]
+  id: RubberStampCBURN
+  suffix: DO NOT MAP
+  components:
+    - type: Stamp
+      stampedName: CBURN Corps
+      stampedColor: "#414141"
+      stampState: "paper_stamp-greytide"
+    - type: Sprite
+      state: stamp-chaplain
+      
+- type: entity
   name: NanoTrasen rubber stamp
   parent: [ RubberStampBase, BaseNanoTrasenContraband ]
   id: RubberStampNT

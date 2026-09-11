@@ -1,31 +1,177 @@
-﻿- type: entity
-  parent: Paper
-  id: PaperSyn
-  name: syndicate paper
-  description: A single unit of bureaucracy, branded with the three-headed snake of the Syndicate.
-  components:
-    - type: Sprite
-      sprite: Objects/Misc/bureaucracy.rsi
-      layers:
-        - state: paper_syn
-        - state: paper_syn_words
-          map: ["enum.PaperVisualLayers.Writing"]
-          visible: false
-        - state: paper_stamp-generic
-          map: ["enum.PaperVisualLayers.Stamp"]
-          visible: false
-    - type: PaperVisuals
-      backgroundPatchMargin: 16.0, 16.0, 16.0, 16.0
-      contentMargin: 0.0, 0.0, 0.0, 0.0
-      headerImagePath: "/Textures/Interface/Paper/paper_heading_syndicate_logo.svg.96dpi.png"
-      headerMargin: 0.0, 0.0, 0.0, 0.0
-  
+﻿# Syndicate outgoing
 - type: entity
   parent: PaperSyn
   id: PrintedDocumentSyndieComm
   name: Syndicate Communication
   categories: [ HideSpawnMenu ]
   components:
-    - type: Paper
-      content: doc-text-printer-syndicate-communication
-    # TODO- get the format working
+    - type: TextFilePaperContent
+      fileName: syndiecomm.txt
+
+# Syndicate incoming
+- type: entity
+  parent: PaperBloodred
+  id: PrintedDocumentSHCComm
+  name: SHC Communication
+  categories: [ HideSpawnMenu ]
+  components:
+    - type: TextFilePaperContent
+      fileName: shccomm.txt
+
+#CentComm incoming
+- type: entity
+  parent: PaperCC
+  id: PrintedDocumentCCIncidentReport
+  name: CC-NT Incident Report
+  description: A sensitive sheet of paper that really should not be both filled out and given to crew at the same time.
+  categories: [ HideSpawnMenu ]
+  components:
+    - type: TextFilePaperContent
+      fileName: ccincidentreport.txt
+      
+- type: entity
+  parent: PaperCC
+  id: PrintedDocumentCCComm
+  name: Incoming CentComm Communication
+  description: A unit of bureaucracy, processed by elite bureaucrats. Ignoring this is probably a terrible idea.
+  categories: [ HideSpawnMenu ]
+  components:
+    - type: TextFilePaperContent
+      fileName: ccgenericcomm.txt
+      
+- type: entity
+  parent: PaperCC
+  id: PrintedDocumentCADComm
+  name: Central Administrative Division Communication
+  description: A unit of bureaucracy, processed by elite bureaucrats. Ignoring this is probably a terrible idea.
+  categories: [ HideSpawnMenu ]
+  components:
+    - type: TextFilePaperContent
+      fileName: cadcomm.txt
+      
+- type: entity
+  parent: PaperCC
+  id: PrintedDocumentCDDComm
+  name: Central Domestic Division Communication
+  description: A unit of bureaucracy, processed by elite bureaucrats. Ignoring this is probably a terrible idea.
+  categories: [ HideSpawnMenu ]
+  components:
+    - type: TextFilePaperContent
+      fileName: cddcomm.txt
+      
+- type: entity
+  parent: PaperCC
+  id: PrintedDocumentCEDComm
+  name: Central Engineering Division Communication
+  description: A unit of bureaucracy, processed by elite bureaucrats. Ignoring this is probably a terrible idea.
+  categories: [ HideSpawnMenu ]
+  components:
+    - type: TextFilePaperContent
+      fileName: cedcomm.txt
+      
+- type: entity
+  parent: PaperCC
+  id: PrintedDocumentCEsDComm
+  name: Central Epistemics Division Communication
+  description: A unit of bureaucracy, processed by elite bureaucrats. Ignoring this is probably a terrible idea.
+  categories: [ HideSpawnMenu ]
+  components:
+    - type: TextFilePaperContent
+      fileName: cesdcomm.txt
+      
+- type: entity
+  parent: PaperCC
+  id: PrintedDocumentCIDComm
+  name: Central Intelligence Division Communication
+  description: A unit of bureaucracy, processed by elite bureaucrats. Ignoring this is probably a terrible idea.
+  categories: [ HideSpawnMenu ]
+  components:
+    - type: TextFilePaperContent
+      fileName: cidcomm.txt
+      
+- type: entity
+  parent: PaperCC
+  id: PrintedDocumentCLDComm
+  name: Central Logistics Division Communication
+  description: A unit of bureaucracy, processed by elite bureaucrats. Ignoring this is probably a terrible idea.
+  categories: [ HideSpawnMenu ]
+  components:
+    - type: TextFilePaperContent
+      fileName: cldcomm.txt
+      
+- type: entity
+  parent: PaperCC
+  id: PrintedDocumentCMDComm
+  name: Central Medical Division Communication
+  description: A unit of bureaucracy, processed by elite bureaucrats. Ignoring this is probably a terrible idea.
+  categories: [ HideSpawnMenu ]
+  components:
+    - type: TextFilePaperContent
+      fileName: cmdcomm.txt
+      
+- type: entity
+  parent: PaperCC
+  id: PrintedDocumentCRDComm
+  name: Central Research Division Communication
+  description: A unit of bureaucracy, processed by elite bureaucrats. Ignoring this is probably a terrible idea.
+  categories: [ HideSpawnMenu ]
+  components:
+    - type: TextFilePaperContent
+      fileName: crdcomm.txt
+      
+- type: entity
+  parent: PaperCC
+  id: PrintedDocumentCSDComm
+  name: Central Security Division Communication
+  description: A unit of bureaucracy, processed by elite bureaucrats. Ignoring this is probably a terrible idea.
+  categories: [ HideSpawnMenu ]
+  components:
+    - type: TextFilePaperContent
+      fileName: csdcomm.txt
+      
+- type: entity
+  parent: PaperCC
+  id: PrintedDocumentCSODComm
+  name: Central Special Operations Division Communication
+  description: A unit of bureaucracy, processed by elite bureaucrats. Ignoring this is probably a terrible idea.
+  categories: [ HideSpawnMenu ]
+  components:
+    - type: TextFilePaperContent
+      fileName: csodcomm.txt
+  
+# GSL
+- type: entity
+  parent: PaperGSL
+  id: PrintedDocumentGSLComm
+  name: GSL Technician Communication
+  categories: [ HideSpawnMenu ]
+  components:
+    - type: TextFilePaperContent
+      fileName: gslcomm.txt
+
+- type: entity
+  parent: PaperGSL
+  id: PrintedDocumentGSLReport
+  name: GSL Damage Repair Report
+  categories: [ HideSpawnMenu ]
+  components:
+    - type: TextFilePaperContent
+      fileName: gslreport.txt
+      
+- type: entity
+  parent: PaperGSL
+  id: PrintedDocumentGSLWarning
+  name: GSL Major Damage Warning
+  categories: [ HideSpawnMenu ]
+  components:
+    - type: TextFilePaperContent
+      fileName: gslwarning.txt
+
+- type: entity
+  parent: PaperGSL
+  id: PrintedDocumentGSLComplaint
+  name: GSL Formal Complaint
+  categories: [ HideSpawnMenu ]
+  components:
+    - type: TextFilePaperContent
+      fileName: gslcomplaint.txt

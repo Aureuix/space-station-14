@@ -11,7 +11,7 @@
 
 - type: entity
   id: BriefcaseSyndieSniperBundleFilled
-  parent: BriefcaseSyndie
+  parent: BriefcaseSyndicateRedspace # SpL
   suffix: Syndicate, Sniper Bundle
   components:
   - type: Item
@@ -29,7 +29,9 @@
         - id: ClothingNeckTieRed
         - id: ClothingHandsGlovesLatex
         - id: ClothingUniformJumpsuitLawyerBlack
+        - id: ClothingEyesGlassesCheapSunglasses # SpL
         - id: BarberScissors
+        - id: SpaceCash1000 # SpL
 
 - type: entity
   id: BriefcaseSyndieLobbyingBundleFilled

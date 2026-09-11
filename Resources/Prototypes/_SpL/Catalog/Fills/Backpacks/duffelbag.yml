@@ -13,7 +13,7 @@
           tableId: SyndicateHardsuitExtrasEntityTable
 
 - type: entity
-  parent: ClothingBackpackDuffelSyndicateBundle
+  parent: BriefcaseWeapon
   id: ClothingBackpackDuffelSyndicateFilledM90
   name: M90 carbine bundle
   description: "The M90 carbine, a compact competitor to the SolGov Lecter, bundled with three FMJ magazines."

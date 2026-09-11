@@ -121,10 +121,10 @@
     ResearchAssistant: "Central Research Division"
 
     SalvageLead: "Central Logistics Division"
-    SalvageSpecialist: "Central Logistics Divisio"
-    MiningSpecialist: "Central Logistics Divisio"
-    CargoTechnician: "Central Logistics Divisio"
-    MailTech: "Central Logistics Divisio"
+    SalvageSpecialist: "Central Logistics Division"
+    MiningSpecialist: "Central Logistics Division"
+    CargoTechnician: "Central Logistics Division"
+    MailTech: "Central Logistics Division"
 
     Visitor: "private account"
 

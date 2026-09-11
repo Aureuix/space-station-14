@@ -1,0 +1,38 @@
+﻿- type: entity
+  id: GSLPrinterDocMachineCircuitboard
+  parent: BaseMachineCircuitboard
+  name: GSL document printer machine board
+  description: A machine printed circuit board for a document printer. This one holds proprietary non-NT corporate document data.
+  components:
+    - type: MachineBoard
+      prototype: PrinterDocGSL
+      stackRequirements:
+        Steel: 3
+        Manipulator: 1
+        Glass: 1
+        
+- type: entity
+  id: CCPrinterDocMachineCircuitboard
+  parent: BaseMachineCircuitboard
+  name: CC document printer machine board
+  description: A machine printed circuit board for a document printer. This one holds highly sensitive CC document data.
+  components:
+    - type: MachineBoard
+      prototype: PrinterDocGSL
+      stackRequirements:
+        Steel: 3
+        Manipulator: 1
+        Glass: 1
+        
+- type: entity
+  id: SHCPrinterDocMachineCircuitboard
+  parent: BaseMachineCircuitboard
+  name: SHC document printer machine board
+  description: A machine printed circuit board for a document printer. This one is evil.
+  components:
+    - type: MachineBoard
+      prototype: PrinterDocSHC
+      stackRequirements:
+        Steel: 3
+        Manipulator: 1
+        Glass: 1

@@ -2,3 +2,32 @@
   id: SpLDocsEmag
   recipes:
   - PrintedDocumentSyndieCommRecipe
+
+- type: latheRecipePack
+  id: GSLDocs
+  recipes:
+    - PrintedDocumentGSLCommRecipe
+    - PrintedDocumentGSLComplaintRecipe
+    - PrintedDocumentGSLReportRecipe
+    - PrintedDocumentGSLWarningRecipe
+
+- type: latheRecipePack
+  id: CCDocs
+  recipes:
+    - PrintedDocumentCCIncidentReportRecipe
+    - PrintedDocumentCCCommRecipe
+    - PrintedDocumentCADCommRecipe
+    - PrintedDocumentCDDCommRecipe
+    - PrintedDocumentCEDCommRecipe
+    - PrintedDocumentCEsDCommRecipe
+    - PrintedDocumentCIDCommRecipe
+    - PrintedDocumentCLDCommRecipe
+    - PrintedDocumentCMDCommRecipe
+    - PrintedDocumentCRDCommRecipe
+    - PrintedDocumentCSDCommRecipe
+    - PrintedDocumentCSODCommRecipe
+
+- type: latheRecipePack
+  id: SHCDocs
+  recipes:
+    - PrintedDocumentSHCCommRecipe # placeholder

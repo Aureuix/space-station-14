@@ -1,1 +1,0 @@
-﻿doc-text-printer-syndicate-communication = [form]
