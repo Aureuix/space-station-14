@@ -1,6 +1,9 @@
 uplink-hardsuit-cselite-name = CyberSun Elite Suit
 uplink-hardsuit-cselite-desc =  A suit made by CyberSun's R&D department, who decided to one-up the Gorlex Marauders in the world of advanced hardsuits. Comes with a built in 3 hit shield, no capacity increases.
 
+uplink-satchel-syndicate-name = Syndicate satchel
+uplink-satchel-syndicate-desc = A lightweight explosion-proof satchel for holding various traitor goods.
+
 uplink-ballistic-goggles-name = Ballistic goggles
 uplink-ballistic-goggles-desc = A pair of flash-proof goggles made of ballistic glass with integrated HUD elements. Designed for stylish agents who like to go loud.
 
