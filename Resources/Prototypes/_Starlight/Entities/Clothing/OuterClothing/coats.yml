@@ -332,8 +332,8 @@
 - type: entity
   parent: [ ClothingOuterStorageFoldableBase, AllowSuitStorageClothing, BaseSecurityContraband ]
   id: ClothingOuterSecurityBomber
-  name: security bomber
-  description: A regular bomber, but with armored inserts.
+  name: security armored bomber
+  description: A stylish red bomber with armored inserts.
   components:
   - type: Sprite
     sprite: _Starlight/Clothing/OuterClothing/Coats/security_bomber.rsi
@@ -342,9 +342,9 @@
   - type: Armor
     modifiers:
       coefficients:
-        Blunt: 0.85
-        Slash: 0.75
-        Piercing: 0.95
+        Blunt: 0.70
+        Slash: 0.80
+        Piercing: 0.75
         Heat: 0.65
         Cold: 0.80
   - type: ExplosionResistance
@@ -359,7 +359,7 @@
 - type: entity
   parent: [ ClothingOuterStorageFoldableBase, AllowSuitStorageClothing, BaseSecurityContraband ]
   id: ClothingOuterWindbreakerSecurity
-  name: security windbreaker
+  name: security armored windbreaker
   description: A stylish red windbreaker with additional inserted plate padding for security usage.
   components:
   - type: Sprite
