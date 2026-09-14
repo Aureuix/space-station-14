@@ -401,10 +401,10 @@
   categories:
   - UplinkExplosives
   conditions:
-  #- !type:StoreWhitelistCondition
-  #  whitelist:
-  #    tags:
-  #    - NukeOpsUplink # SpL- nukies never buy this shit anyways
+  - !type:StoreWhitelistCondition
+    whitelist:
+      tags:
+      - NukeOpsUplink # SpL- nukies never buy this shit anyways
 
 - type: listing
   id: UplinkC4Bundle
