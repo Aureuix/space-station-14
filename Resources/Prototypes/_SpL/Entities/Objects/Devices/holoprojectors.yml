@@ -1,0 +1,14 @@
+﻿- type: entity
+  parent: RadiationBlockingProjector
+  id: RadiationBlockingProjectorMicroreactor
+  name: radiation barrier projector
+  description: Stop the deadly radiation from a delamination or meltdown, at least for a little while.
+  components:
+    - type: ItemSlots
+      slots:
+        cell_slot:
+          name: power-cell-slot-component-slot-name-default
+          startingItem: PowerCellMicroreactor
+          blacklist:
+            tags:
+              - MechReactor

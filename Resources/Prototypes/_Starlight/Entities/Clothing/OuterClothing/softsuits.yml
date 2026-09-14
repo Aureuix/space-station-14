@@ -14,13 +14,21 @@
     equipDelay: 3 #starlight
     unequipDelay: 3 #starlight
   - type: ExplosionResistance
-    damageCoefficient: 0.5
+    damageCoefficient: 0.2 # SpL
+  - type: FireProtection
+    reduction: 0.8 # SpL
+  - type: FootstepModifier # SpL
+    footstepSoundCollection: # SpL
+      collection: FootstepHeavy # SpL
+      params: # SpL
+        volume: -6 # SpL
+        variation: 0.09 # SpL
   - type: Armor
     modifiers:
       coefficients:
-        Blunt: 0.5
+        Blunt: 0.3 # SpL
         Slash: 0.3
-        Piercing: 0.5
+        Piercing: 0.3 # SpL
         Heat: 0.1
         Cold: 0.1
         Shock: 0.1

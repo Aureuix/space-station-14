@@ -87,7 +87,7 @@
   name: IK-60 laser carbine
   parent: [BaseItem, BaseGunWieldable, BaseSecurityContraband]
   id: WeaponIK60
-  description: A short, compact rifle-like carbine that relies more on battery-powered ammunition rather than a built-in battery. Used by the NanoTrasen Space Force in combat operations.
+  description: A short, compact rifle-like carbine that relies more on battery-powered ammunition rather than a built-in battery. Used by the NanoTrasen Space Force in combat operations, and by CBURN formations during cleanup.
   components:
   - type: Sprite
     sprite: _Starlight/Objects/Weapons/Guns/Rifles/laser_carbine.rsi
@@ -103,7 +103,7 @@
     slots:
       gun_magazine:
         name: Magazine
-        startingItem: MagazineBatteryLr30
+        startingItem: MagazineBatteryLr30Extended # SpL
         insertSound: /Audio/Weapons/Guns/MagIn/batrifle_magin.ogg
         ejectSound: /Audio/Weapons/Guns/MagOut/batrifle_magout.ogg
         priority: 2

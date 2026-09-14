@@ -1161,7 +1161,7 @@
         Radiation: 0.9
         Heat: 0.9
   - type: ZombificationResistance
-    zombificationResistanceCoefficient: 0.75
+    zombificationResistanceCoefficient: 0.25
 
 #Deathsquad Hardsuit
 - type: entity

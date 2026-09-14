@@ -529,7 +529,7 @@
 - type: entity
   id: RandomHumanoidSpawnerCBURNUnit
   name: CBURN Agent
-  suffix: ERTRole
+  suffix: ERTRole, Support
   components:
     - type: Sprite
       sprite: Markers/jobs.rsi
@@ -542,8 +542,8 @@
   parent: EventHumanoidCentcomm
   components:
     - type: Loadout
-      prototypes: [CBURNGear]
-      roleLoadout: [ RoleSurvivalEVA ]
+      prototypes: [CBURNGearCleanup] # SpL
+      roleLoadout: [ RoleSurvivalMilitaryDouble ] # SpL
     - type: GhostRole
       name: ghost-role-information-cburn-agent-name
       description: ghost-role-information-cburn-agent-description
@@ -556,6 +556,37 @@
       - NamesMilitaryFirst
       - NamesMilitaryLast
       nameFormat: name-format-ert
+      
+- type: entity # SpL Start
+  id: RandomHumanoidSpawnerCBURNUnitLiquidator
+  name: CBURN Liquidator
+  suffix: ERTRole, DS
+  components:
+    - type: Sprite
+      sprite: Markers/jobs.rsi
+      state: cburn
+    - type: RandomHumanoidSpawner
+      settings: CBURNAgentLiquidator
+
+- type: randomHumanoidSettings
+  id: CBURNAgentLiquidator
+  parent: EventHumanoidCentcomm
+  components:
+    - type: Loadout
+      prototypes: [CBURNGearLiquidator]
+      roleLoadout: [ RoleSurvivalMilitaryDouble ]
+    - type: GhostRole
+      name: ghost-role-information-cburn-agent-name
+      description: ghost-role-information-cburn-agent-description
+      rules: ghost-role-information-corporate-aligned-rules
+      raffle:
+        settings: short
+      job: CBURN
+    - type: RandomMetadata
+      nameSegments:
+        - NamesMilitaryFirst
+        - NamesMilitaryLast
+      nameFormat: name-format-ert # SpL End
 
 ## Central Command
 

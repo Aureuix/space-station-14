@@ -13,7 +13,7 @@
   #  role: JobSecurityOfficer
   #  time: 10h # Starlight. You're a highly specialized cleaning squad. You need to know how to do combat. # SpL- timers are bad
   setPreference: false
-  startingGear: CBURNGear
+  startingGear: CBURNGearLiquidator # SpL
   icon: "JobIconCBURN"
   supervisors: job-supervisors-centcom
   canBeAntag: false
@@ -26,35 +26,41 @@
     implants: [ MindShieldImplant, DeathRattleImplantCentcomm ]
 
 - type: startingGear
-  id: CBURNGear
+  id: CBURNGearLiquidator # SpL
   equipment:
-    jumpsuit: ClothingUniformJumpsuitColorBrown
-    back: ClothingBackpackDuffelCBURN
-    mask: ClothingMaskGasERT
+    jumpsuit: ClothingUniformCBURNFatigues # SpL
+    back: ClothingBackpackDuffelCBURNCleanup # SpL
+    mask: ClothingMaskGasCBURN # SpL
     eyes: ClothingEyesGlassesCentComm
     ears: ClothingHeadsetCentCom #Starlight
     gloves: ClothingHandsGlovesCombat
     outerClothing: ClothingOuterSoftsuitCBURN #Starlight
     shoes: ClothingShoesBootsCombatFilled
     id: CBURNPDA
-    pocket1: RadioHandheld
-    pocket2: WeaponLaserGun
-    belt: ClothingBeltBandolier
+    pocket1: WeaponPulsePistol # SpL
+    pocket2: ToolDebug # SpL
+    belt: ClothingBeltMilitaryWebbingERTFilledCBURN # SpL
+    suitStorage: WeaponShotgunCombatIncendiary # SpL
+    neck: ClothingBeltBandolier # SpL
     head: ClothingHeadSoftsuitCBURN # Starlight
-  storage:
-    back:
-#    - WeaponShotgunDoubleBarreled Starlight: Replaced with starlight weaponry
-#    - BoxShotgunIncendiary
-    # Starlight-start: Starlight incendiary weaponry
-    - WeaponIK60
-    - MagazineBatteryLr30
-    - MagazineBatteryLr30
-    - MagazineBatteryLr30
-    - MagazineBatteryLr30
-    # Starlight-end
-    - GrenadeFlashBang
-    - PillAmbuzolPlus
-    - PillAmbuzol
+    
+- type: startingGear # SpL Start
+  id: CBURNGearCleanup
+  equipment:
+    jumpsuit: ClothingUniformCBURNFatigues 
+    back: ClothingBackpackDuffelCBURNSupport
+    mask: ClothingMaskGasCBURN 
+    eyes: ClothingEyesGlassesCentComm
+    ears: ClothingHeadsetCentCom 
+    gloves: ClothingHandsGlovesCombat
+    outerClothing: ClothingOuterHardsuitCBURN 
+    shoes: ClothingShoesBootsCombatFilled
+    id: CBURNPDA
+    pocket1: WeaponPulsePistol 
+    pocket2: RadiationBlockingProjectorMicroreactor
+    belt: ClothingBeltMilitaryWebbingERTFilledCBURN 
+    suitStorage: WeaponShotgunCombatIncendiary
+    neck: ClothingBeltBandolier # SpL End
 
 - type: chameleonOutfit
   id: CBURNChameleonOutfit

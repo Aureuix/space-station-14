@@ -1,0 +1,45 @@
+﻿- type: entity
+  id: BottleCaseCBURNFilled
+  parent: BottleCaseMedical
+  suffix: CBURN, Filled
+  components:
+    - type: EntityTableContainerFill
+      containers:
+        storagebase: !type:AllSelector
+          children:
+            - id: ChemistryBottleOmnizine
+              amount: 2
+            - id: ChemistryBottleSaline
+              amount: 2
+            - id: ChemistryBottleDiphenhydramine
+            - id: ChemistryBottleCharcoal
+            - id: ChemistryBottleHaloperidol
+            - id: ChemistryBottleEthylredoxrazine
+              
+- type: entity
+  parent: PillCanister
+  id: PillCanisterAmbuzol
+  suffix: Ambuzol
+  components:
+    - type: Label
+      currentLabel: reagent-name-ambuzol
+    - type: EntityTableContainerFill
+      containers:
+        storagebase: !type:AllSelector
+          children:
+            - id: PillAmbuzol
+              amount: 10
+
+- type: entity
+  parent: PillCanister
+  id: PillCanisterAmbuzolPlus
+  suffix: Ambuzol+
+  components:
+    - type: Label
+      currentLabel: reagent-name-ambuzol-plus
+    - type: EntityTableContainerFill
+      containers:
+        storagebase: !type:AllSelector
+          children:
+            - id: PillAmbuzolPlus
+              amount: 10
