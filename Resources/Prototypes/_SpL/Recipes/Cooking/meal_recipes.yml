@@ -1,0 +1,12 @@
+﻿- type: microwaveMealRecipe
+  id: RecipeEggsbenedict
+  name: eggs benedict recipe
+  result: FoodMealEggsbenedict
+  time: 10
+  group: Savory
+  reagents:
+    Egg: 12
+  solids:
+    FoodBreadBun: 1
+    FoodMeatBacon: 1
+    FoodPlateSmall: 1
