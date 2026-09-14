@@ -1,0 +1,28 @@
+﻿- type: entity
+  parent: [ ClothingOuterStorageFoldableBase, AllowSuitStorageClothing, BaseBlueShieldContraband ]
+  id: ClothingWindbreakerBlueShield
+  name: blueshield windbreaker
+  description: A stylish bright windbreaker worn by Blueshield Officers who prefer to keep it more informal. Heavily reinforced, for when diplomacy won't cut it.
+  components:
+    - type: Sprite
+      sprite: _SpL/Clothing/OuterClothing/Coats/BlueshieldWindbreaker.rsi
+    - type: Clothing
+      sprite: _SpL/Clothing/OuterClothing/Coats/BlueshieldWindbreaker.rsi
+    - type: Pierceable
+      level: Metal
+    - type: Armor
+      modifiers:
+        coefficients:
+          Blunt: 0.6
+          Slash: 0.6
+          Piercing: 0.6
+          Heat: 0.7
+          Cold: 0.7 
+    - type: ExplosionResistance
+      damageCoefficient: 0.80
+    - type: Item
+      
+- type: entity
+  parent: [ ClothingOuterStorageFoldableBaseOpened, ClothingWindbreakerBlueShield ]
+  id: ClothingOuterWindbreakerSecurityOpened
+  name: blueshield windbreaker

@@ -17,6 +17,7 @@
           Slash: 0.6
           Piercing: 0.6
           Heat: 0.7
+          Cold: 0.7 # SpL- full parity between bso armours
     - type: ExplosionResistance
       damageCoefficient: 0.80
     - type: Item
