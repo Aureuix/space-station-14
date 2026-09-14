@@ -249,6 +249,7 @@
   - NanoTrasenRepresentativeTophat
   - NanoTrasenRepresentativeEliteTophat
   - NanoTrasenRepresentativeCap
+  - NanoTrasenRepresentativeBeret
 
 - type: loadoutGroup
   id: NanoTrasenRepresentativeNeck
@@ -301,6 +302,7 @@
   minLimit: 0
   loadouts:
   - MagistrateHeadPwig
+  - MagistrateHeadBeret
 
 - type: loadoutGroup
   id: MagistrateEyewear
