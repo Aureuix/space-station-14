@@ -30,6 +30,7 @@
   parent: [BaseMajorContraband, ClothingOuterArmorBasic]
   id: ClothingOuterArmorAbductor
   name: agent vest
+  description: Not a Type 1 armored vest. Don't confuse it for one.
   components:
     - type: Sprite
       sprite: _Starlight/Clothing/OuterClothing/Armor/abductor.rsi
