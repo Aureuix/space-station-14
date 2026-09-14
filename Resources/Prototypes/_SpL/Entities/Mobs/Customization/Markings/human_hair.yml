@@ -1,0 +1,7 @@
+﻿- type: marking
+  id: HumanHairChesed
+  bodyPart: Hair
+  markingCategory: Hair
+  sprites:
+    - sprite: _Starlight/Mobs/Customization/human_hair.rsi
+      state: chesed
