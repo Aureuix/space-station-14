@@ -74,8 +74,8 @@
         - type: DatasetVocalizer
           dataset: PlushiesKanna
     - type: Vocalizer
-      minVocalizeInterval: 600
-      maxVocalizeInterval: 1200
+      minVocalizeInterval: 120
+      maxVocalizeInterval: 400
 
 - type: entity
   parent: BaseVulpkaninFoxPlushie
@@ -89,7 +89,19 @@
     - type: Sprite
       sprite: _SpL/Objects/Fun/Plushies/vogel_plushie.rsi
       state: icon
-
+    - type: ItemToggle
+      activated: true
+      onUse: false
+      verbToggleOn: plushie-voicebox-activate
+      verbToggleOff: plushie-voicebox-deactivate
+    - type: ComponentToggler
+      components:
+        - type: DatasetVocalizer
+          dataset: PlushiesVogel
+    - type: Vocalizer
+      minVocalizeInterval: 200
+      maxVocalizeInterval: 400
+      
 - type: entity
   parent: BaseAvaliPlushie
   id: PlushieEini

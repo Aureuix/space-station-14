@@ -1,1 +1,15 @@
 ﻿plushie-kanna-1 = Squanks.
+plushie-kanna-2 = Well, cowboy, I done fucked up.
+plushie-kanna-3 = Howdy, Sauceboss!
+plushie-kanna-4 = STOP STEALING MY SHOES.
+plushie-kanna-5 = It's the sour hour.
+plushie-kanna-6 = Ignore the holofan again and I'm putting you in the Coane Zoane.
+plushie-kanna-7 = There are delicious meats and cheeses in desperate need of liberation...
+plushie-kanna-8 = Yeep.
+plushie-kanna-9 = No, I'm not making you a drink with URANIUM in it.
+plushie-kanna-10 = Oh rad, am I getting kidnapped again?
+plushie-kanna-11 = What do you mean it isn't normal to eat lemons whole?
+plushie-kanna-12 = . I miss my fiancees...
+plushie-kanna-13 = Unrestricted access to chemicals is my paintbrush, and the chemlab is my canvas.
+plushie-kanna-14 = Oh, you lemonhead...
+plushie-kanna-15 = Fuck my stupid yipyap life...
