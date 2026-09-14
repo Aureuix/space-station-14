@@ -304,4 +304,7 @@
   - type: Tag
     tags:
     - Trash
+  - type: Clothing
+    slots:
+      - MASK
   - type: SpaceGarbage
