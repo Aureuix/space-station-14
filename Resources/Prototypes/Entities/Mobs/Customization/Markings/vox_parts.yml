@@ -183,6 +183,7 @@
   id: VoxTail
   bodyPart: Tail
   markingCategory: Tail
+  waggingId: VoxTailAnimated
   speciesRestriction: [Vox]
   forcedColoring: true
   sprites:
@@ -192,6 +193,8 @@
 - type: marking
   id: VoxTailAnimated
   bodyPart: Tail
+  markingCategory: Tail
+  staticId: VoxTail
   groupWhitelist: []
   forcedColoring: true
   sprites:
@@ -202,6 +205,7 @@
   id: VoxTailShort
   bodyPart: Tail
   markingCategory: Tail
+  waggingId: VoxTailShortAnimated
   speciesRestriction: [Vox]
   forcedColoring: true
   sprites:
@@ -211,6 +215,8 @@
 - type: marking
   id: VoxTailShortAnimated
   bodyPart: Tail
+  markingCategory: Tail
+  staticId: VoxTailShort
   groupWhitelist: []
   forcedColoring: true
   sprites:
@@ -220,6 +226,7 @@
 - type: marking
   id: VoxTailBig
   bodyPart: Tail
+  waggingId: VoxTailBigAnimated
   markingCategory: Tail
   speciesRestriction: [Vox]
   forcedColoring: true
@@ -230,6 +237,8 @@
 - type: marking
   id: VoxTailBigAnimated
   bodyPart: Tail
+  markingCategory: Tail
+  staticId: VoxTailBig
   groupWhitelist: []
   forcedColoring: true
   sprites:
@@ -240,6 +249,7 @@
   id: VoxTailSpikes
   bodyPart: Tail
   markingCategory: Tail
+  waggingId: VoxTailSpikesAnimated
   speciesRestriction: [Vox]
   forcedColoring: true
   sprites:
@@ -249,6 +259,8 @@
 - type: marking
   id: VoxTailSpikesAnimated
   bodyPart: Tail
+  markingCategory: Tail
+  staticId: VoxTailSpikes
   groupWhitelist: []
   forcedColoring: true
   sprites:
@@ -259,6 +271,7 @@
   id: VoxTailDocked
   bodyPart: Tail
   markingCategory: Tail
+  waggingId: VoxTailDockedAnimated
   speciesRestriction: [Vox]
   forcedColoring: true
   sprites:
@@ -268,6 +281,8 @@
 - type: marking
   id: VoxTailDockedAnimated
   bodyPart: Tail
+  markingCategory: Tail
+  staticId: VoxTailDocked
   groupWhitelist: []
   forcedColoring: true
   sprites:
@@ -279,6 +294,7 @@
   id: VoxTailSplit
   bodyPart: Tail
   markingCategory: Tail
+  waggingId: VoxTailSplitAnimated
   speciesRestriction: [Vox]
   forcedColoring: true
   sprites:
@@ -288,6 +304,8 @@
 - type: marking
   id: VoxTailSplitAnimated
   bodyPart: Tail
+  markingCategory: Tail
+  staticId: VoxTailSplit
   groupWhitelist: []
   forcedColoring: true
   sprites:

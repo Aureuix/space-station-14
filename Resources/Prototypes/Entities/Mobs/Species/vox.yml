@@ -15,6 +15,7 @@
   - type: Absorbable
   - type: Hunger
   - type: Thirst
+  - type: Wagging # SpL
   - type: Icon
     sprite: Mobs/Species/Vox/parts.rsi
     state: vox_m

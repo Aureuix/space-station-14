@@ -19,6 +19,7 @@
     quickEquip: false
     slots:
     - back
+    - suitstorage
   - type: Charger
     slotId: charger_slot
     portable: true
