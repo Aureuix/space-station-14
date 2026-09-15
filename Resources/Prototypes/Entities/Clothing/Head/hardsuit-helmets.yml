@@ -1144,6 +1144,22 @@
       - state: equipped-head-reptilian
       - state: equipped-head-unshaded-reptilian
         shader: unshaded
+      head-vulpkanin: # SpL Start
+        - state: equipped-head-vulpkanin
+        - state: equipped-head-unshaded-vulpkanin
+          shader: unshaded
+      head-dog:
+        - state: equipped-head-dog
+        - state: equipped-head-unshaded-dog
+          shader: unshaded
+      head-avali:
+        - state: equipped-head-avali
+        - state: equipped-head-unshaded-avali
+          shader: unshaded
+      head-resomi:
+        - state: equipped-head-resomi
+        - state: equipped-head-unshaded-resomi
+          shader: unshaded # SpL End
   - type: PointLight
     color: orange
   - type: PressureProtection
