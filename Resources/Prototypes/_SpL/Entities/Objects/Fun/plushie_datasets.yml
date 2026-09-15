@@ -51,6 +51,8 @@
   values:
     prefix: plushie-vogel-
     count: 16
+
+- type: localizedDataset  
   id: PlushiesParadigm
   values:
     prefix: plushie-paradigm-
