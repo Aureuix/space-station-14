@@ -23,6 +23,7 @@
         map: [ "enum.WiresVisualLayers.MaintenancePanel" ]
         visible: false
   - type: InteractionOutline
+  - type: AntiRottingContainer # SpL
   - type: Transform
     noRot: true
   - type: Fixtures
