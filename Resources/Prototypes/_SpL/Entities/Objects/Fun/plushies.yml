@@ -64,6 +64,11 @@
     - type: Sprite
       sprite: _SpL/Objects/Fun/Plushies/kanna_plushie.rsi
       state: icon
+    - type: Extractable
+      juiceSolution:
+        reagents:
+        - ReagentId: JuiceLemon
+          Quantity: 10
     - type: ItemToggle
       activated: true
       onUse: false
@@ -89,6 +94,11 @@
     - type: Sprite
       sprite: _SpL/Objects/Fun/Plushies/vogel_plushie.rsi
       state: icon
+    - type: Extractable
+      juiceSolution:
+        reagents:
+        - ReagentId: Stimulants
+          Quantity: 5
     - type: ItemToggle
       activated: true
       onUse: false
