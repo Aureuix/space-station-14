@@ -397,6 +397,7 @@
     - id: RDDiploma
     - id: XenobiologyConsoleCameraTagger
     - id: MedicalVitalsImplanter # SpL
+    - id: PlushieOomu # SpL
       amount: 2 # SpL
     #- id: PaperIonstormBorgs
     #  prob: 0.10 #1/10 rounds will have this paper that can be signed repeatedly for no discernable effect!
