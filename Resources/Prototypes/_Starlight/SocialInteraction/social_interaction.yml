@@ -4,7 +4,7 @@
   verbName: pet-verb
   interactString: petting-success
   messagePerceivedByOthers: petting-success-others
-  emoteMessage: petting-emote
+  # emoteMessage: petting-emote # SpL- removed due to spam tendencys
   interactSound: /Audio/Effects/thudswoosh.ogg
 
 - type: socialInteraction
@@ -12,8 +12,8 @@
   verbName: boop-verb
   interactString: booping-success
   messagePerceivedByOthers: booping-success
-  emoteMessage: booping-emote
-  interactSound: /Audio/_Starlight/Effects/yip.ogg
+  # emoteMessage: booping-emote # SpL- removed due to spam tendency
+  interactSound: /Audio/Effects/pop.ogg # SpL
 
 - type: socialInteraction
   id: Wave
@@ -22,8 +22,8 @@
   messagePerceivedByOthers: waving-success-others
   emoteMessage: waving-emote
   emoteMessageSelf: waving-emote-self
-  interactSound: /Audio/_Starlight/Effects/CloudEmotes/pop.ogg
-  soundPerceivedByOthers: false
+  # interactSound: /Audio/_Starlight/Effects/CloudEmotes/pop.ogg # SpL
+  # soundPerceivedByOthers: false
   allowSelfTarget: true
   isPhysical: false
 
@@ -34,7 +34,7 @@
   messagePerceivedByOthers: looking-success-others
   emoteMessage: looking-emote
   emoteMessageSelf: looking-emote-self
-  interactSound: /Audio/Effects/pop_high.ogg
-  soundPerceivedByOthers: false
+  # interactSound: /Audio/Effects/pop_high.ogg # SpL
+  # soundPerceivedByOthers: false
   allowSelfTarget: true
   isPhysical: false
