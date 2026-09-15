@@ -1,7 +1,7 @@
 {
   "version": 1,
   "license": "CC-BY-SA-3.0",
-  "copyright": "Made by EmoGarbage404. Vox states by Flareguy for SS14. Modified by PubliclyExecutedPig for Starlight",
+  "copyright": "Made by EmoGarbage404. Vox states by Flareguy for SS14. Modified by PubliclyExecutedPig for Starlight, avali, reptilian, resomi, and vulpkanin sprites by nykaestra",
   "size": {
     "x": 32,
     "y": 32
@@ -33,6 +33,38 @@
     },
     {
       "name": "equipped-head-unshaded-vox",
+      "directions": 4
+    },
+    {
+      "name": "equipped-head-reptilian",
+      "directions": 4
+    },
+    {
+      "name": "equipped-head-unshaded-reptilian",
+      "directions": 4
+    },
+    {
+      "name": "equipped-head-resomi",
+      "directions": 4
+    },
+    {
+      "name": "equipped-head-unshaded-resomi",
+      "directions": 4
+    },
+    {
+      "name": "equipped-head-avali",
+      "directions": 4
+    },
+    {
+      "name": "equipped-head-unshaded-avali",
+      "directions": 4
+    },
+    {
+      "name": "equipped-head-vulpkanin",
+      "directions": 4
+    },
+    {
+      "name": "equipped-head-unshaded-vulpkanin",
       "directions": 4
     }
   ]
