@@ -1130,7 +1130,7 @@
 - type: entity
   parent: [BaseBorgModuleCentcomm,BaseProviderBorgModule,BaseCentcommContraband]
   id: CentcommLaserModule
-  name: CentComm cyborg laser module.
+  name: CentComm cyborg laser module
   description: Module with a standard issue HAW laser.
   components:
     - type: Sprite
@@ -1146,7 +1146,7 @@
 - type: entity
   parent: [ BaseBorgModuleCentcomm, BaseProviderBorgModule, BaseCentcommContraband ]
   id: CentcommAccessBreakerModule
-  name: CentComm Breacher Module
+  name: CentComm breacher module
   description: Module with an ERT-modified Access Configurator designed to quickly allow access into an area.
   components:
     - type: Sprite
