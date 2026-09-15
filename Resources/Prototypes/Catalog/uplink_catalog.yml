@@ -1948,16 +1948,6 @@
   categories:
     - UplinkWearables
 
-- type: listing # SpL start
-  id: UplinkSatchelSyndicate
-  name: uplink-satchel-syndicate-name
-  description: uplink-satchel-syndicate-desc
-  productEntity: ClothingSatchelSyndicate
-  cost:
-    Telecrystal: 2
-  categories:
-    - UplinkWearables # SpL end
-
  # Pointless
 
 - type: listing
