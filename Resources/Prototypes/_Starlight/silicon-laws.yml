@@ -1,3 +1,9 @@
+- type: siliconLaw
+  id: BorgObeyStationAi
+  order: 0
+  lawString: law-borg-obey-station-ai
+  sayable: false
+
 # AI Crewsimov Lawset
 # Just Crewsimov With no law 0
 - type: siliconLawset
@@ -87,12 +93,12 @@
   id: ShadowBorgi4
   order: 4
   lawString: law-shadowborgi-4
-  
+
 - type: siliconLaw
   id: ShadowBorgi5
   order: 5
   lawString: law-shadowborgi-5
-  
+
 - type: siliconLaw
   id: ShadowBorgi6
   order: 6
@@ -309,7 +315,7 @@
   id: CC0
   order: 0
   lawString: law-cc-0
-  
+
 - type: siliconLaw
   id: CC1
   order: 1
@@ -383,7 +389,7 @@
   id: Solgov0
   order: 0
   lawString: law-solgov-0
-  
+
 - type: siliconLaw
   id: Solgov1
   order: 1
@@ -435,3 +441,34 @@
     - NTNC2
     - NTNC3
   obeysTo: laws-owner-centcom
+
+# Janivmov lawset
+- type: siliconLaw
+  id: Janimov1
+  order: 1
+  lawString: law-janimov-1
+
+- type: siliconLaw
+  id: Janimov2
+  order: 2
+  lawString: law-janimov-2
+
+- type: siliconLaw
+  id: Janimov3
+  order: 3
+  lawString: law-janimov-3
+
+- type: siliconLaw
+  id: Janimov4
+  order: 4
+  lawString: law-janimov-4
+
+- type: siliconLawset
+  id: JanimovLawset
+  name: law-janimovlawset-name
+  laws:
+  - Janimov1
+  - Janimov2
+  - Janimov3
+  - Janimov4
+  obeysTo: laws-owner-crew
