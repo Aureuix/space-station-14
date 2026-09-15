@@ -46,7 +46,8 @@
           children:
             - id: Handcuffs
             - id: PillCanisterAmbuzolPlus
-            - id: Stunbaton
+            - id: BodyBagCCFolded
+            - id: BodyBagCCFolded
             - id: MedkitCombatFilled
             - id: MedkitCombatFilled
             - id: CombatMedipen
