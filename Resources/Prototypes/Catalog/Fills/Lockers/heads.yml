@@ -258,6 +258,7 @@
 #        presets: #SL
 #        - Greenshift #SL
 #        - Sandbox #SL
+    - id: PlushieParadigm # SpL
 
 # Hardsuit table, used for suit storage as well
 - type: entityTable
@@ -332,6 +333,7 @@
     - id: MedicalVitalsImplanter # SpL
       amount: 3 # SpL
     - id: PlushieAzrael # SpL
+    - id: PlushieDirt # SpL
       
 
 # Hardsuit table, used for suit storage as well

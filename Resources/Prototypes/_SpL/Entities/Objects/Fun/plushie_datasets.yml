@@ -45,3 +45,9 @@
   values:
     prefix: plushie-tumma-
     count: 12
+
+- type: localizedDataset
+  id: PlushiesParadigm
+  values:
+    prefix: plushie-paradigm-
+    count: 6

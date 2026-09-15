@@ -359,3 +359,133 @@
         reagents:
           - ReagentId: Lexorin 
             Quantity: 1
+  parent: BaseShadekinPlushie
+  id: PlushieParadigm
+  name: paradigm plushie
+  description: A plushie of a dear little Kin. It's soothing and very soft!!
+  components:
+    - type: Item
+      size: Small
+      sprite: _SpL/Objects/Fun/Plushies/paradigm_plushie.rsi
+    - type: Sprite
+      sprite: _SpL/Objects/Fun/Plushies/paradigm_plushie.rsi
+      state: icon
+    - type: EmitSoundOnUse
+      sound:
+        path: /Audio/_Starlight/Voice/Shadekin/wurble.ogg
+    - type: EmitSoundOnLand
+      sound:
+        path: /Audio/_Starlight/Voice/Shadekin/wurble.ogg
+    - type: EmitSoundOnActivate
+      sound:
+        path: /Audio/_Starlight/Voice/Shadekin/wurble.ogg
+    - type: EmitSoundOnTrigger
+      sound:
+        path: /Audio/_Starlight/Voice/Shadekin/wurble.ogg
+    - type: UseDelay
+      delay: 1
+    - type: MeleeWeapon
+      wideAnimationRotation: 180
+      soundHit:
+        path: /Audio/_Starlight/Voice/Shadekin/mar.ogg
+      damage:
+        types:
+          Blunt: 0
+      hidden: true    
+    - type: Edible
+      requiresSpecialDigestion: true
+      useSound: /Audio/_Starlight/Voice/Felionoid/cat_mew3.ogg
+      delay: 2
+    - type: Extractable
+      juiceSolution: # To create a Silencer when juiced with a Dirt plushie!
+        reagents:
+        - ReagentId: Cream
+          Quantity: 10
+        - ReagentId: Sugar
+          Quantity: 10
+    - type: ItemToggle
+      onUse: false
+      activated: true
+      verbToggleOn: plushie-voicebox-activate
+      verbToggleOff: plushie-voicebox-deactivate
+    - type: ComponentToggler
+      components:
+        - type: DatasetVocalizer
+          dataset: PlushiesParadigm
+    - type: Vocalizer
+      minVocalizeInterval: 180
+      maxVocalizeInterval: 240
+    - type: SpamEmitSound
+      sound:
+        path: /Audio/_Starlight/Voice/Shadekin/mar.ogg
+      minInterval: 180
+      maxInterval: 240
+    - type: LanguageSpeaker
+    - type: LanguageKnowledge
+      speaks:
+        - GalacticCommon
+        - Marish
+        - Moffic
+      understands:
+        - GalacticCommon
+        - Marish
+        - Moffic
+
+- type: entity
+  parent: BaseShadekinPlushie
+  id: PlushieDirt
+  name: dirt plushie
+  description: A plushie of The Wurbler. It's tiny and very soft~
+  components:
+    - type: Item
+      size: Small
+      sprite: _SpL/Objects/Fun/Plushies/dirt_plushie.rsi
+    - type: Sprite
+      sprite: _SpL/Objects/Fun/Plushies/dirt_plushie.rsi
+      state: icon
+    - type: EmitSoundOnUse
+      sound:
+        path: /Audio/_Starlight/Voice/Shadekin/wurble.ogg
+    - type: EmitSoundOnLand
+      sound:
+        path: /Audio/_Starlight/Voice/Shadekin/wurble.ogg
+    - type: EmitSoundOnActivate
+      sound:
+        path: /Audio/_Starlight/Voice/Shadekin/wurble.ogg
+    - type: EmitSoundOnTrigger
+      sound:
+        path: /Audio/_Starlight/Voice/Shadekin/wurble.ogg
+    - type: UseDelay
+      delay: 0
+    - type: MeleeWeapon
+      wideAnimationRotation: 180
+      soundHit:
+        path: /Audio/_Starlight/Voice/Shadekin/mar.ogg
+      damage:
+        types:
+          Blunt: 0
+      hidden: true  
+    - type: Edible
+      requiresSpecialDigestion: true
+      useSound: /Audio/_Starlight/Voice/Felionoid/cat_mew3.ogg
+      delay: 2
+    - type: Extractable
+      juiceSolution: # To create a Silencer when juiced with a Paradigm plushie!
+        reagents:
+        - ReagentId: Nothing
+          Quantity: 10
+    - type: SpamEmitSound
+      sound:
+        path: /Audio/_Starlight/Voice/Shadekin/wurble.ogg
+      minInterval: 180
+      maxInterval: 240
+    - type: LanguageSpeaker
+    - type: LanguageKnowledge
+      speaks:
+        - GalacticCommon
+        - Marish
+        - Sign
+      understands:
+        - GalacticCommon
+        - Marish
+        - Sign
