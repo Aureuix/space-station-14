@@ -45,6 +45,10 @@
         - state: equipped-head-resomi
         - state: equipped-head-unshaded-resomi
           shader: unshaded # SpL End
+    equipSound: /Audio/Mecha/mechmove03.ogg
+    unequipSound: /Audio/Mecha/mechmove03.ogg
+    equipDelay: 3
+    unequipDelay: 3
   - type: PointLight # SpL Start
     color: orange
   - type: PressureProtection
@@ -62,10 +66,6 @@
         Piercing: 0.9
         Radiation: 0.9
         Heat: 0.9 # SpL End
-    equipSound: /Audio/Mecha/mechmove03.ogg
-    unequipSound: /Audio/Mecha/mechmove03.ogg
-    equipDelay: 3
-    unequipDelay: 3
   - type: ZombificationResistance
     zombificationResistanceCoefficient: 0.9 # SpL
 
