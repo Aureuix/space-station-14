@@ -359,6 +359,8 @@
         reagents:
           - ReagentId: Lexorin 
             Quantity: 1
+            
+- type: entity
   parent: BaseShadekinPlushie
   id: PlushieParadigm
   name: paradigm plushie
