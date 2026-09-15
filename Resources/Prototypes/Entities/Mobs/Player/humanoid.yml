@@ -543,7 +543,7 @@
   components:
     - type: Loadout
       prototypes: [CBURNGearCleanup] # SpL
-      roleLoadout: [ RoleSurvivalMilitaryDouble ] # SpL
+      roleLoadout: [ RoleSurvivalExtended ] # SpL
     - type: GhostRole
       name: ghost-role-information-cburn-agent-name
       description: ghost-role-information-cburn-agent-description
@@ -574,7 +574,7 @@
   components:
     - type: Loadout
       prototypes: [CBURNGearLiquidator]
-      roleLoadout: [ RoleSurvivalMilitaryDouble ]
+      roleLoadout: [ RoleSurvivalExtended ]
     - type: GhostRole
       name: ghost-role-information-cburn-agent-name
       description: ghost-role-information-cburn-agent-description

@@ -40,26 +40,26 @@
     pocket1: WeaponPulsePistol # SpL
     pocket2: ToolDebug # SpL
     belt: ClothingBeltMilitaryWebbingERTFilledCBURN # SpL
-    suitStorage: WeaponShotgunCombatIncendiary # SpL
+    suitstorage: WeaponShotgunCombatIncendiary # SpL
     neck: ClothingBeltBandolier # SpL
     head: ClothingHeadSoftsuitCBURN # Starlight
     
 - type: startingGear # SpL Start
   id: CBURNGearCleanup
   equipment:
-    jumpsuit: ClothingUniformCBURNFatigues 
+    jumpsuit: ClothingUniformCBURNFatigues
     back: ClothingBackpackDuffelCBURNSupport
-    mask: ClothingMaskGasCBURN 
+    mask: ClothingMaskGasCBURN
     eyes: ClothingEyesGlassesCentComm
-    ears: ClothingHeadsetCentCom 
+    ears: ClothingHeadsetCentCom
     gloves: ClothingHandsGlovesCombat
-    outerClothing: ClothingOuterHardsuitCBURN 
+    outerClothing: ClothingOuterHardsuitCBURN
     shoes: ClothingShoesBootsCombatFilled
     id: CBURNPDA
-    pocket1: WeaponPulsePistol 
+    pocket1: WeaponPulsePistol
     pocket2: RadiationBlockingProjectorMicroreactor
-    belt: ClothingBeltMilitaryWebbingERTFilledCBURN 
-    suitStorage: WeaponShotgunCombatIncendiary
+    belt: ClothingBeltMilitaryWebbingERTFilledCBURN
+    suitstorage: WeaponShotgunCombatIncendiary
     neck: ClothingBeltBandolier # SpL End
 
 - type: chameleonOutfit
