@@ -62,4 +62,4 @@
     announcement: station-event-incoming-wreck-large-announcement
     announcementSound: /Audio/Announcements/attention.ogg
     chunkConfig: Large
-    velocity: 50
+    velocity: 50
