@@ -1,0 +1,20 @@
+﻿- type: entity
+  parent: [ ClothingBackpackDuffel, BaseCentcommContraband ]
+  id: ClothingBackpackDuffelCBURN
+  name: CBURN duffel bag
+  description: An explosion-reinforced duffel bag containing a variety of biological containment equipment. Hopefully.
+  components:
+    - type: Sprite
+      sprite: _SpL/Clothing/Back/Duffels/cburn.rsi
+    - type: Clothing
+      sprite: _SpL/Clothing/Back/Duffels/cburn.rsi
+    - type: ClothingSpeedModifier
+      walkModifier: 1
+      sprintModifier: 1
+    - type: HeldSpeedModifier
+    - type: ExplosionResistance
+      damageCoefficient: 0.1
+    - type: Storage
+      maxItemSize: Huge
+      grid:
+        - 0,0,7,5 

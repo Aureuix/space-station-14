@@ -25,3 +25,56 @@
         - id: WeaponRifleM90Carbine
         - id: MagazineRifleFMJ
           amount: 3
+            
+- type: entity
+  parent: ClothingBackpackDuffelCBURN
+  id: ClothingBackpackDuffelCBURNCleanup
+  suffix: Filled, Cleanup
+  components:
+  - type: EntityTableContainerFill
+    containers:
+      storagebase: !type:AllSelector
+        children:
+        - id: BoxShotgunIncendiary
+          amount: 3
+        - id: SpeedLoaderShotgunIncendiary
+          amount: 2
+        - id: WeaponLaserImmolator
+        - id: GrenadeIncendiary
+          amount: 2
+        - id: GrenadeShrapnel
+          amount: 2
+        - id: C4
+          amount: 2
+        - id: DefibrillatorCompact
+        - id: AdvancedJetInjector
+        - id: ChemistryBottleOmnizine
+          amount: 2
+        - id: ChemistryBottleSaline
+          amount: 2
+        - id: ChemistryBottleEphedrine
+          amount: 2
+          
+- type: entity
+  parent: ClothingBackpackDuffelCBURN
+  id: ClothingBackpackDuffelCBURNSupport
+  suffix: Filled, Support
+  components:
+  - type: EntityTableContainerFill
+    containers:
+      storagebase: !type:AllSelector
+        children:
+          - id: BoxShotgunIncendiary
+            amount: 2
+          - id: SpeedLoaderShotgunIncendiary
+            amount: 2
+          - id: DefibrillatorCompact
+          - id: WeaponIK60
+          - id: MagazineBatteryLr30Extended
+            amount: 3
+          - id: BottleCaseCBURNFilled
+          - id: AdvancedJetInjector
+          - id: PowerDrill
+          - id: JawsOfLife
+          - id: WelderExperimental
+          - id: RCDExperimental

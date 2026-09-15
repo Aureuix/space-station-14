@@ -33,3 +33,26 @@
             - id: FlashlightLantern
             - id: RadioHandheldGSL
             - id: WeaponMeleeBoxcutter
+              
+- type: entity
+  id: ClothingBeltMilitaryWebbingERTFilledCBURN
+  parent: ClothingBeltMilitaryWebbingERT
+  name: CBURN chest rig
+  suffix: Filled, CBURN
+  components:
+    - type: EntityTableContainerFill
+      containers:
+        storagebase: !type:AllSelector
+          children:
+            - id: Handcuffs
+            - id: PillCanisterAmbuzolPlus
+            - id: BodyBagCCFolded
+            - id: BodyBagCCFolded
+            - id: MedkitCombatFilled
+            - id: MedkitCombatFilled
+            - id: CombatMedipen
+            - id: AdvancedBruteAutoinjector
+            - id: AccessOveriderRecharging
+            - id: PillCanisterAmbuzol
+            - id: CombatMedipen
+            - id: AdvancedBruteAutoinjector
