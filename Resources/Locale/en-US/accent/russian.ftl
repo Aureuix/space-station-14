@@ -64,3 +64,9 @@ accent-russian-word-replace-16 = thpathibo
 
 accent-russian-words-17 = yeth
 accent-russian-words-replace-17 = da
+
+accent-russian-words-18 = cheers
+accent-russian-words-replace-18 = slava
+
+accent-russian-words-19 = cheerth
+accent-russian-words-replace-19 = thlava

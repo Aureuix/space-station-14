@@ -4,26 +4,56 @@
   <Box>
     <GuideEntityEmbed Entity="MobFelionoid" Caption=""/>
   </Box>
+
+    [color=#ffa500]Warning! This species is not recommended for new players due to major gameplay changes![/color]
   
-  A smaller feline species that is light on their feet.
+  A small feline species that is light on their feet, Felionoids originate from the humid tropical jungle planet of Nyaterra, the closest planet to their sun.
+    
+    They are renowned across most of Trans-Solar Federation space for their speed and their seemingly boundless energy in equal parts.
+    
+    ## Dietary Requirements
+    Felionoids are able to [color=green]digest raw meat[/color] without any issues, and a rich diet of meat products is necessary to maintain good health.
+    
+    The tradeoff to this is that Felionoids are [color=red]extremely allergic[/color] to compounds such as theobromine and allicin. Onion, caffeine, and cocoa products are [color=red]toxic to them[/color].
+
+    ## The Chase
+    The concept of "The Chase" is a quasi-religious principle that forms the most common shared belief among Felionoids.
+    The core belief of The Chase is an unshakable belief that the universe is a grand open puzzle, leaving hints and being filled with secrets waiting to be solved. 
+    Furthermore, following The Chase means following your whims. Everything that piques your interest must be followed, and everything that sparks your fancy should be pursued.
+    
+    This tendency leads many Felionoids to be very energetic and easily distracted, jumping from topic to topic and focus to focus as easily as walking from one point to another.
+    
+    ## Glomping
+    Felionoids are known to greet friends by flinging themselves and tackling the other to the ground. This behaviour is typically referred to as 'glomping'.
+    
+    While glomping is a traditional custom, it is not often appreciated by individuals from other species. Especially if they are carrying fragile items.
+    
+    ## Age and Names
+    Felionoids live [color=yellow]about the same length as humans[/color], and typically live to approximately 120 years of age if fortunate. 
+    Felionoids become eligible for work at the age of [color=yellow]18[/color] standard galactic years.
+    
+    Felionoids commonly choose their own names upon coming of age. 
+    Most Felionoid names derive from human ones due to convenience, but it isn't uncommon for Felionoids to name themselves after traits, puns, or simply compounds of ideas or words that sound nice.
   
   ## Racial Features
-  Their unarmed claw attacks deal [color=red]3[/color] points of Slash damage with a hit rate that is [color=yellow]2[/color] times faster than humans.
+    The unique biology of Felionoids gives them a unique set of traits which lend to their iconic nature as energetic speedsters.
+    - Their unarmed claw attacks deal [color=red]3[/color] points of Slash damage with a hit rate that is [color=yellow]2[/color] times faster than humans.
+    - They have powerful eyes that grant them [color=yellow]Night Vision[/color], although this also makes them more vulnerable to [color=yellow]bright flashes[/color].
+    - Additionally, Felionoids can run [color=lightgreen]approximately 25%[/color] faster than humans, thanks to their powerful leg muscles.
 
-  Additionally, Felionoids can run [color=lightgreen]25%[/color] faster than humans [color=yellow]when not wearing shoes[/color]. They run [color=lightgreen]5%[/color] faster when wearing shoes.
-
-  Felionoids are also more vulnerable to damage:
-  - They fall into a critical state at [color=red]85[/color] points of damage.
-  - They die at [color=red]170[/color] points of damage.
+  However, Felionoids are significantly more vulnerable to damage than most of their coworkers due to their brittle structure and small size:
+  - They fall into a critical state at [color=red]70[/color] points of damage.
+  - They die at [color=red]140[/color] points of damage.
 
   ## Weapon Knockback
   Felionoids will find that large caliber weapons will push them around. They receive [color=yellow]Stun Damage[/color] for every shot fired from a large caliber weapon.
   
   In general, the weapons that will give you knockback are [color=yellow]Rifles, Sniper Rifles, Shotguns, LMGs, HMGs, and Grenade Launchers.[/color]
-
-  Look out especially on Rocket launchers, as since they are recoilless, you will actually get [color=red]pulled forward with the rocket[/color] for a short distance.
+    Look out especially on Rocket Launchers, as since they are recoilless, you will actually get [color=red]pulled forward with the rocket[/color] for a short distance.
+    
+    Mitigating weapon knockback is a game of balancing your stature and equipment with your firepower.
   - The safest weapons to use that will give you no knockback are [color=green]Pistols and SMGs[/color].
-  - No slips can help mitigate some of the knockback from firing weapons, but not all of it!
-  - Also keep in mind that any stamina resistance you have DOES work to reduce the stamina damage from these weapons.
+  - Non-slip footwear and magboots can help mitigate some of the knockback from firing weapons, but not all of it.
+  - Keep in mind that any stamina resistance you have DOES work to reduce the stamina damage from these weapons.
 
 </Document>

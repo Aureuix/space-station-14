@@ -365,6 +365,7 @@
   loadouts:
   - BlueShieldVest
   - BlueShieldCoat
+  - BlueShieldWindbreaker # SpL
 
 - type: loadoutGroup
   id: BlueShieldBelt

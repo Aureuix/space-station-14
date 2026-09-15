@@ -1475,6 +1475,7 @@
     normalBodyTemperature: 310.15
     thermalRegulationTemperatureThreshold: 2
     # Starlight-end
+  - type: JobStatus # SpL- weird workaround that's apparently needed?
 
 - type: entity
   name: monkey

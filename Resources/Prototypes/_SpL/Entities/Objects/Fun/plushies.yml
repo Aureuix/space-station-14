@@ -365,6 +365,24 @@
         - Draconic
 
 - type: entity
+  parent: PlushieArachind
+  id: PlushieOomu
+  name: oomu plushie
+  description: A plushie depicting everyone's favourite research director. Keeping charcoal on-hand is highly advised while handling.
+  components:
+    - type: Item
+      size: Small
+      sprite: _SpL/Objects/Fun/Plushies/oomu_plushie.rsi
+    - type: Sprite
+      sprite: _SpL/Objects/Fun/Plushies/oomu_plushie.rsi
+      state: icon
+    - type: Extractable
+      juiceSolution:
+        reagents:
+          - ReagentId: Lexorin 
+            Quantity: 1
+            
+- type: entity
   parent: BaseShadekinPlushie
   id: PlushieParadigm
   name: paradigm plushie

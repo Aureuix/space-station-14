@@ -34,12 +34,12 @@
   - type: MobThresholds
     thresholds:
       0: Alive
-      85: Critical
-      170: Dead
+      70: Critical # SpL 85->170
+      140: Dead # SpL 170-> 140
   - type: SlowOnDamage
     speedModifierThresholds:
-      51: 0.7 # 60%
-      68: 0.5 # 80%
+      45: 0.7 # 60% # SpL 51->45
+      60: 0.5 # 80% # SpL 68->60
   - type: Butcherable
     butcheringType: Spike
     spawned:
