@@ -1,0 +1,16 @@
+﻿plushie-vogel-1 = TURN YOUR COORDINATES OFF.
+plushie-vogel-2 = Why isn't that damn FTL disk working...
+plushie-vogel-3 = All that for a piece of plastic...
+plushie-vogel-4 = Those damn marauders.
+plushie-vogel-5 = If you forget to close your uplink, whatever happens next is your fault.
+plushie-vogel-6 = No, I'm not giving you extra telecrystals just for you to buy lighters.
+plushie-vogel-7 = One day.
+plushie-vogel-8 = That's not a nukie, that's a pile of blood.
+plushie-vogel-9 = And now, the weather.
+plushie-vogel-10 = Who keeps parking these damn shuttles with their IFF off!?
+plushie-vogel-11 = Tch.
+plushie-vogel-12 = Subtlety is the name of the game, no?
+plushie-vogel-13 = Death to NanoTrasen.
+plushie-vogel-14 = Glory to the Syndicate.
+plushie-vogel-15 = . Whiskey, Echo, Whiskey.
+plushie-vogel-16 = . Poor Echo...
