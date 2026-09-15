@@ -51,3 +51,7 @@
   values:
     prefix: plushie-vogel-
     count: 16
+  id: PlushiesParadigm
+  values:
+    prefix: plushie-paradigm-
+    count: 6
