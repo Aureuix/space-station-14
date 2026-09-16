@@ -23,6 +23,4 @@
   speciesRestriction: [Moth, IPC] #Spectra: IPC markings
   sprites:
     - sprite: _Starlight/Mobs/Customization/Moth/moth_wings.rsi
-      state: dswirl_wings_fluff
-    - sprite: _Starlight/Mobs/Customization/Moth/moth_wings.rsi
       state: dswirl_wings
