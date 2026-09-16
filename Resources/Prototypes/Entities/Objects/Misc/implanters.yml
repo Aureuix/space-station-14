@@ -51,6 +51,8 @@
     - SELFStorageImplant #Starlight
     - MindControlImplant #Starlight
     - MedicalVitalsImplant # SpL
+    - PacifismImplant # SpL
+    - DIDImplant # SpL
     deimplantFailureDamage:
       types:
         Cellular: 50
