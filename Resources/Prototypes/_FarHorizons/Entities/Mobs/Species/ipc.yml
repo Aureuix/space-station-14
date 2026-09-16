@@ -1,5 +1,5 @@
 - type: entity
-  parent: [MobBloodstream, MobFlammable, BaseMobSpecies]
+  parent: [MobBloodstream, MobFlammable, BaseMobSpecies, BaseSpeciesPickupableLarge] # SpL- adds IPCs to the pickupable list
   id: BaseMobIPC
   name: Urist McRobot
   abstract: true
