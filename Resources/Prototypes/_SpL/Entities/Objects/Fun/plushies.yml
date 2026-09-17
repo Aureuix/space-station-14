@@ -538,3 +538,15 @@
         - GalacticCommon
         - Marish
         - Sign
+
+- type: entity
+  parent: BaseFelionoidPlushie
+  id: PlushieFurlow
+  name: furlow plushie
+  description: The situations guy.
+  components:
+    - type: Sprite
+      sprite: _SpL/Objects/Fun/Plushies/furlow_plushie.rsi
+      state: icon
+    - type: Item
+      sprite: _SpL/Objects/Fun/Plushies/furlow_plushie.rsi
