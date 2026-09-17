@@ -211,7 +211,7 @@
   name: C-61m 'Estoc' DMR
   parent: [BaseWeaponRifle, BaseSyndicateContraband]
   id: WeaponRifleEstoc
-  description: "A powerful designated marksman rifle equipped with an extended 20-inch barrel, gas compensator, and telescopic sight. Feeds from extended .45 magazines."
+  description: A powerful designated marksman rifle equipped with an extended 20-inch barrel, gas compensator, and telescopic sight. Feeds from extended .45 magazines.
   components:
   - type: Sprite
     sprite: Objects/Weapons/Guns/Rifles/estoc.rsi

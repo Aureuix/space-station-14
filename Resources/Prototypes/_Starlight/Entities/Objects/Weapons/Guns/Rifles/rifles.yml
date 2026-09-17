@@ -565,7 +565,7 @@
   name: SA-521 'Lawbringer' battle rifle # SpL
   parent: [BaseWeaponRifle, BaseSecurityContraband]
   id: WeaponRifleLawbringer
-  description: The highest calibre longarm produced by Scarborough Arms, the Lawbringer is bullpup carbine of modern design commonly used by Solgov and recently commissioned by NanoTrasen for security and military applications. Feeds from .30 rifle magazines. # SpL
+  description: The highest calibre longarm produced by Scarborough Arms, the Lawbringer is bullpup rifle of modern design commonly used by Solgov and recently commissioned by NanoTrasen for security and military applications. Feeds from .30 rifle magazines. # SpL
   components:
     - type: Sprite
       sprite: _Starlight/Objects/Weapons/Guns/Rifles/lawbringer.rsi

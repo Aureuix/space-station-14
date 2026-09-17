@@ -1,8 +1,8 @@
 - type: entity
-  name: Sybil 'One-Two' hybrid taser # SpL
+  name: Sibyl 'One-Two' hybrid taser # SpL
   parent: [ BaseWeaponBatterySmall, BaseSecurityContraband ]
   id: WeaponAdvancedTaser
-  description: A low-capacity, energy-based stun gun used by security teams to subdue targets at range. Designed by Sybil Systems for ease of use by law enforcement officers. # SpL
+  description: A low-capacity, energy-based stun gun used by security teams to subdue targets at range. Designed by Sibyl Systems for ease of use by law enforcement officers. # SpL
   components:
   - type: CanDualWield
     dualWieldInaccuracyPenalty: 25
@@ -97,7 +97,7 @@
       heldPrefix: kill4
 
 - type: entity
-  name: Mis-09C miniature energy gun # SpL
+  name: MiS-09C miniature energy gun # SpL
   parent: [ BaseWeaponBatterySmall, BaseSecurityContraband ]
   id: WeaponMiniEnergyGun
   description: An energy gun capable of switching between lethal and debilitating lasers, the MiS-09 is an outdated Microstar model licensed to NanoTrasen as part of a general supply contract. The C model has been massively compacted, for ease of carry at the cost of capacity. # SpL
@@ -174,7 +174,7 @@
   name: Sibyl 'Dominator' hybrid disabler # SpL
   parent: [ BaseWeaponBatterySmall, BaseSecurityContraband ]
   id: WeaponDominator
-  description: A high-tech weapon created by the law enforcement organization Sibyl System, designed specifically to fight crime.
+  description: A high-tech weapon created by the law enforcement organization Sibyl Systems, designed specifically to fight crime.
   components:
   - type: CanDualWield
     dualWieldInaccuracyPenalty: 20
@@ -303,7 +303,7 @@
     stealGroup: BSOWeapon
 
 - type: entity
-  name: NT-Spec MT-7 Magnum
+  name: NT-Spec MT-7 pulse magnum # SpL
   parent: [ BaseWeaponBatterySmall, BaseSecurityContraband ]
   id: WeaponEnergyMagnumGun
   description: This is an expensive, modern recreation of the Mateba revolver, with several unique fire modes and a slow self recharging battery. However, it has a slower recharge then most battery related weapons.

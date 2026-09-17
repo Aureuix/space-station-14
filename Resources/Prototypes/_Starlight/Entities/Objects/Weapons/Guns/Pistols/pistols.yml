@@ -1,5 +1,5 @@
 - type: entity
-  name: TKB-034K Makarov pistol # SpL
+  name: TKB-034K 'Makarov' pistol # SpL
   parent: [BaseWeaponPistol, BaseSovietContraband]
   id: WeaponPistolMakarov
   description: An outdated but incredibly cheap pistol, ideal for use at close quarters due to its tendency to not shoot straight. Uses .35 auto ammo. # SpL
@@ -318,7 +318,7 @@
 # SpL End
 
 - type: entity
-  name: Ots-40K 'Stechkin' APS # SpL
+  name: OTs-40K 'Stechkin' APS # SpL
   parent: [WeaponPistolMk58, BaseSovietContraband]
   id: WeaponPistolAPS
   description: A high quality firearm issued to SNKVD elites and high ranking officials. It's half pistol, half closing argument. Uses .40 ammo.
