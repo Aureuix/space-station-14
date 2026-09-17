@@ -1,5 +1,5 @@
 ﻿- type: entity
-  name: riot shotgun
+  name: SA-590 riot shotgun
   parent: WeaponShotgunRiot
   id: WeaponShotgunRiotRubber
   description: A sturdy shotgun with a longer magazine and a fixed tactical stock designed for non-lethal riot control.
@@ -9,7 +9,7 @@
       proto: ShellShotgunBeanbag
       
 - type: entity
-  name: SP-91-RC
+  name: SA SP-91-RC submachine gun
   parent: WeaponSubMachineGunSP91RC
   id: WeaponSubMachineGunSP91RCRubber
   suffix: Non-Lethal

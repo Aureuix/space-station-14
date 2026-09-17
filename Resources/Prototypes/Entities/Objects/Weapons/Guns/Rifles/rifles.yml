@@ -88,7 +88,7 @@
   
 
 - type: entity
-  name: AKMS
+  name: AKMS assault rifle # SpL
   parent: [ BaseWeaponRifle, BaseSovietContraband ]
   id: WeaponRifleAk
   description: A somewhat battered combat rifle of a design originating from old Earth. Favored by criminals, militias, and terrorists due to its famed reliability and easy-to-manufacture design. Feeds from .30 rifle magazines.
@@ -137,7 +137,7 @@
   - type: Appearance
 
 - type: entity
-  name: Lecter
+  name: SA-G48 'Lecter' assault rifle # SpL
   parent: [ BaseWeaponRifle, BaseSecurityContraband ]
   id: WeaponRifleLecter
   description: A popular gas-operated combat rifle used heavily by NanoTrasen and SolGov. Operating in semi or fully automatic, its accuracy, stopping power, and reliability make it excel in all manner of environments. Feeds from .20 rifle magazines.
@@ -186,8 +186,8 @@
 - type: entity
   parent: WeaponRifleLecter
   id: WeaponRifleLecterXL8
-  name: XL8
-  description: The Experimental Lecter 8, an unreasonably expensive military grade assault rifle with integrated optic. Uses .20 rifle ammo.
+  name: NT-XL8 assault rifle # SpL
+  description: A premium prototype model built on the Lecter platform, the Experimental Lecter 8 is an unreasonably expensive military grade assault rifle with integrated optic. Uses .20 rifle ammo.
   components:
   - type: Sprite
     sprite: Objects/Weapons/Guns/Rifles/XL8.rsi
@@ -208,7 +208,7 @@
     - FullAuto
 
 - type: entity
-  name: Estoc DMR
+  name: C-61m 'Estoc' DMR
   parent: [BaseWeaponRifle, BaseSyndicateContraband]
   id: WeaponRifleEstoc
   description: "A powerful designated marksman rifle equipped with an extended 20-inch barrel, gas compensator, and telescopic sight. Feeds from extended .45 magazines."

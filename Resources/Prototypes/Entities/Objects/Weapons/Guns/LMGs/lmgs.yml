@@ -114,10 +114,10 @@
   # SpL end
 
 - type: entity
-  name: L6 SAW
+  name: C-L6 SAW # SpL
   id: WeaponLightMachineGunL6
   parent: [BaseWeaponLightMachineGun, BaseSyndicateContraband]
-  description: Developed by Waffle Corp, the L6 Squad Automatic Weapon is a deadly light machine gun often used by the Gorlex Marauders. Although bulky and cumbersome, its heavy barrel and high ammo capacity make it perfect for suppressing combatants with a hail of bullets. Feeds from .30 ammo belts.
+  description: Developed by Waffle Corporation, the L6 Squad Automatic Weapon is a deadly light machine gun often used by the Gorlex Marauders. Although bulky and cumbersome, its heavy barrel and high ammo capacity make it perfect for suppressing combatants with a hail of bullets. Feeds from .30 ammo belts.
   components:
   - type: Sprite
     sprite: _Starlight/Objects/Weapons/Guns/LMGs/l6.rsi # Starlight-edit
@@ -172,7 +172,7 @@
   # Starlight-end
 
 - type: entity
-  name: L6C ROW
+  name: C-L6c NROW # SpL
   id: WeaponLightMachineGunL6C
   parent: [BaseItem, BaseSyndicateContraband] # starlight
   description: An L6 SAW, modified for use by cyborgs. # starlight, our L6 takes ammo

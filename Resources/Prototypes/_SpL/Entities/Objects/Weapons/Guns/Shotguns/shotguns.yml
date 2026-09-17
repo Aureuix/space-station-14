@@ -1,5 +1,5 @@
 ﻿- type: entity
-  name: Combat Shotgun
+  name: Aussec Armory SPAS-24 combat shotgun
   parent: WeaponShotgunCombat
   id: WeaponShotgunCombatIncendiary
   suffix: Incendiary

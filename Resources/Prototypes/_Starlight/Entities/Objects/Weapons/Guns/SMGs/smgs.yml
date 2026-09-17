@@ -1,6 +1,6 @@
 # Rubber
 - type: entity
-  name: Drozd
+  name: SA-665 'Drozd' submachine gun # SpL
   parent: [WeaponSubMachineGunDrozd, BaseSecurityContraband]
   id: WeaponSubMachineGunDrozdRubber
   suffix: Non-Lethal
@@ -25,10 +25,10 @@
               - CartridgePistol
             
 - type: entity
-  name: SP-91-RC
+  name: SA SP-91-RC submachine gun # SpL
   parent: [BaseWeaponSubMachineGun, BaseSecurityContraband]
   id: WeaponSubMachineGunSP91RC
-  description: Compact submachine gun designed for riot control.
+  description: A compact submachine gun designed for riot control.
   components:
   - type: Sprite
     sprite: _Starlight/Objects/Weapons/Guns/SMGs/sp91rc.rsi
@@ -59,10 +59,10 @@
     autoEject: true
     
 - type: entity
-  name: Type U3 Uzi
+  name: AO-M321 Type U3 Uzi # SpL
   parent: [BaseWeaponSubMachineGun, BaseMajorContraband]
   id: WeaponSubMachineGunUzi
-  description: Lightweight submachine gun with a 32-round magazine that has single or 4 round firing modes.
+  description: A lightweight submachine gun with a 32-round magazine that has single or 4 round firing modes.
   components:
   - type: Item
     size: Normal
@@ -118,7 +118,7 @@
 
 #PPSH
 - type: entity
-  name: PPSH 59 SMG
+  name: PPSh-59K submachine gun # SpL
   parent: [BaseWeaponSubMachineGun, BaseSovietContraband]
   id: WeaponSubMachineGunPPSH
   description: Beloved by USSP veterans and feared by friendly fire protocols everywhere. Uses .35 ammo.
@@ -342,7 +342,7 @@
 
 
 - type: entity
-  name: WT550r
+  name: NT-WT550r submachine gun
   parent: [WeaponSubMachineGunWt550, BaseGrandTheftContraband] # Starlight, grand theft
   id: WeaponSubMachineGunWt550r
   description: A special red-colored limited edition of the WT550, the WT550r.  Designed by NanoTrasen's Small Arms Division as a compact submachine gun fully controllable with one hand. It contains an exotic internal recoil buffer and feeds from special top-mounted .35 magazines.

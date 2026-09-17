@@ -194,10 +194,10 @@
     - suitStorage # SpL
 
 - type: entity
-  name: svalinn laser pistol
+  name: MiS-07 'Svalinn' laser pistol # SpL
   parent: [BaseWeaponPowerCellSmall, BaseSecurityContraband]
   id: WeaponLaserSvalinn
-  description: A cheap and widely used laser pistol.
+  description: A cheap and widely used laser pistol produced by Microstar. While the corporation typically supplies high-end energy weapons, a small selection of civilian-grade weapon models remain in manufacturing, of which the Svalinn is the most ubiquitous. # SpL
   components:
   - type: Sprite
     sprite: Objects/Weapons/Guns/Battery/svalinn.rsi
@@ -223,10 +223,10 @@
     - LaserWeapon
 
 - type: entity
-  name: retro laser blaster
-  parent: [BaseWeaponBatterySmall, BaseMajorContraband]
+  name: MiS-02 'Retro' laser blaster # SpL
+  parent: [BaseWeaponBatterySmall, BaseSecuritySalvageContraband] # SpL- who cares. it sucks. let salvies have their fun
   id: WeaponLaserGun
-  description: A weapon using light amplified by the stimulated emission of radiation.
+  description: A long-outdated weapon that uses light amplified by the stimulated emission of radiation. The retro is one of Microstar's first commercial models, although it quickly fell out of favour following new advancements in laser technology. # SpL
   components:
   - type: Sprite
     sprite: Objects/Weapons/Guns/Battery/laser_retro.rsi
@@ -297,7 +297,7 @@
     - LaserWeapon
 
 - type: entity
-  name: tesla gun
+  name: NT-X04 tesla gun # SpL
   parent: [BaseWeaponBattery, BaseMajorContraband]
   id: WeaponTeslaGun
   description: The power of the primordial element of lightning in your hands.
@@ -331,13 +331,13 @@
   - type: Appearance
 
 - type: entity
-  name: laser carbine
+  name: NT-LR15 laser carbine # SpL
   parent: [BaseLaserRifle, BaseGunWieldable, BaseSecurityContraband]
   id: WeaponLaserCarbine
-  description: Favoured by NanoTrasen Security for being cheap and easy to use.
+  description: An internally-powered laser rifle almost synonymous with NanoTrasen's weapons manufacturing, the laser carbine is favoured by all manner of corporate enforcers for being cheap and easy to use. # SpL
 
 - type: entity
-  name: practice laser carbine
+  name: NT-LR15P practice laser carbine # SpL
   parent: [BaseLaserRifle, BaseGunWieldable]
   id: WeaponLaserCarbinePractice
   description: This modified laser carbine fires nearly harmless beams in the 40-watt range, for target practice.
@@ -470,10 +470,10 @@
 #     startingCharge: 40000
 
 - type: entity
-  name: laser cannon
+  name: NT-HL11 laser cannon
   parent: [BaseWeaponBattery, BaseGunWieldable, BaseSecurityContraband]
   id: WeaponLaserCannon
-  description: A heavy duty, high powered laser weapon.
+  description: A heavy duty, high powered laser weapon. Initially built on crew-served continuous-beam weapon tests, advancements in technology have shrunken the design down enough to be comfortably handled by one user at the cost of some stuttering. # SpL
   components:
   - type: Item
     size: Huge
@@ -545,10 +545,10 @@
       startingCharge: 10000
 
 - type: entity
-  name: x-ray cannon
+  name: NT-X02 x-ray cannon # SpL
   parent: [BaseWeaponBattery, BaseGunWieldable, BaseSecurityContraband]
   id: WeaponXrayCannon
-  description: An experimental weapon that uses concentrated x-ray energy against its target.
+  description: An experimental weapon that uses concentrated x-ray energy against its target. This is almost definitely some sort of war crime. # SpL
   components:
   - type: Item
     size: Huge
@@ -769,7 +769,7 @@
     fireCost: 200
 
 - type: entity
-  name: antique laser pistol
+  name: NT antique laser pistol # SpL
   parent: [BaseWeaponBatterySmall, BaseGrandTheftContraband]
   id: WeaponAntiqueLaser
   description: This is an antique laser pistol. All craftsmanship is of the highest quality. It is decorated with a mahogany grip and chrome filigree. The object menaces with spikes of energy. On the item is an image of a captain and a clown. The clown is dead. The captain is striking a heroic pose.
@@ -825,7 +825,7 @@
   # starlight end
 
 - type: entity
-  name: advanced laser pistol
+  name: NT-X09 advanced laser pistol # SpL
   parent: [BaseWeaponBatterySmall, BaseSecurityContraband]
   id: WeaponAdvancedLaser
   description: An experimental high-energy laser pistol with a self-charging nuclear battery.
@@ -960,7 +960,7 @@
     - LaserWeapon
 
 - type: entity
-  name: energy shotgun
+  name: NT-XHPW energy shotgun # SpL
   parent: [BaseWeaponBattery, BaseGunWieldable, BaseWardenGrandTheftContraband] # Starlight - warden grand contra
   id: WeaponEnergyShotgun
   description: A one-of-a-kind prototype energy weapon that uses various shotgun configurations. It offers the possibility of both lethal and non-lethal shots, making it a versatile weapon.
@@ -1011,7 +1011,7 @@
     startingCharge: 480
 
 - type: entity
-  name: energy magnum
+  name: NT-HPW energy magnum # SpL
   parent: [BaseWeaponBatterySmall, BaseDetectiveGrandTheftContraband] # Starlight - detective grand contra
   id: WeaponEnergyMagnum
   description: A high powered self-charging energy pistol designed for elite security personnel. It has has three firing modes allowing for either high damage, structural disassembly, or non-lethal disabling.
@@ -1080,7 +1080,7 @@
   # starlight end
 
 - type: entity
-  name: temperature gun
+  name: NT-X06 temperature gun # SpL
   parent: [BaseWeaponBattery, BaseGunWieldable, BaseSecurityContraband]
   id: WeaponTemperatureGun
   description: An advanced gun that shoots body-temperature-changing beams. This probably constitutes as some kind of war crime.
@@ -1127,11 +1127,13 @@
   parent: [WeaponAdvancedLaser, BaseXenoborgContraband]
   id: WeaponLaserGunXenoborg
   name: xenoborg laser gun
+  description: This is definitely not NT standard issue. # SpL
 
 - type: entity
   parent: [WeaponLaserCannon, BaseXenoborgContraband]
   id: WeaponLaserCannonXenoborg
   name: xenoborg laser cannon
+  description: This is definitely not NT standard issue. # SpL
   components:
   # region starlight - fix xenoborg cannon's absurdly low fire cost.
   - type: BatteryAmmoProvider

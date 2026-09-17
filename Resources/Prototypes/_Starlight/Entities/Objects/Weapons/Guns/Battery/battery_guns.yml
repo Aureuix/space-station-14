@@ -1,8 +1,8 @@
 - type: entity
-  name: hybrid taser
+  name: Sybil 'One-Two' hybrid taser # SpL
   parent: [ BaseWeaponBatterySmall, BaseSecurityContraband ]
   id: WeaponAdvancedTaser
-  description: A low-capacity, energy-based stun gun used by security teams to subdue targets at range.
+  description: A low-capacity, energy-based stun gun used by security teams to subdue targets at range. Designed by Sybil Systems for ease of use by law enforcement officers. # SpL
   components:
   - type: CanDualWield
     dualWieldInaccuracyPenalty: 25
@@ -55,10 +55,10 @@
       heldPrefix: stun4
 
 - type: entity
-  name: energy gun
+  name: MiS-09 energy gun # SpL
   parent: [ BaseWeaponBatterySmall, BaseSecurityContraband ]
   id: WeaponEnergyGun
-  description: An energy gun capable of switching between lethal and debilitating lasers.
+  description: An energy gun capable of switching between lethal and debilitating lasers, the MiS-09 is an outdated Microstar model licensed to NanoTrasen as part of a general supply contract. # SpL
   components:
   - type: Sprite
     sprite: _Starlight/Objects/Weapons/Guns/Battery/energy_gun.rsi
@@ -97,10 +97,10 @@
       heldPrefix: kill4
 
 - type: entity
-  name: miniature energy gun
+  name: Mis-09C miniature energy gun # SpL
   parent: [ BaseWeaponBatterySmall, BaseSecurityContraband ]
   id: WeaponMiniEnergyGun
-  description: An energy gun capable of switching between lethal and debilitating lasers.
+  description: An energy gun capable of switching between lethal and debilitating lasers, the MiS-09 is an outdated Microstar model licensed to NanoTrasen as part of a general supply contract. The C model has been massively compacted, for ease of carry at the cost of capacity. # SpL
   components:
   - type: StationGridMemory
   - type: Sprite
@@ -171,7 +171,7 @@
     spriteLayer: light
 
 - type: entity
-  name: dominator
+  name: Sibyl 'Dominator' hybrid disabler # SpL
   parent: [ BaseWeaponBatterySmall, BaseSecurityContraband ]
   id: WeaponDominator
   description: A high-tech weapon created by the law enforcement organization Sibyl System, designed specifically to fight crime.
@@ -238,10 +238,10 @@
         - delta
 
 - type: entity
-  name: X-01 multiphase energy gun
+  name: NT-X01 multiphase energy gun # SpL
   parent: [ BaseWeaponBatterySmall, BaseBlueShieldContraband, BaseGrandTheftContraband ]
   id: WeaponMultiphaseGun
-  description: This is an expensive, modern version of the antique laser pistol, with several unique fire modes.
+  description: This is an expensive, modern version of the antique laser pistol, with several unique fire modes. Unlike most of NanoTrasen's experimental energy arsenal, the X01 is of the highest quality and issued only to the corporation's finest. # SpL
   components:
   - type: Appearance
   - type: Sprite
@@ -303,10 +303,10 @@
     stealGroup: BSOWeapon
 
 - type: entity
-  name: MT-7 Magnum
+  name: NT-Spec MT-7 Magnum
   parent: [ BaseWeaponBatterySmall, BaseSecurityContraband ]
   id: WeaponEnergyMagnumGun
-  description: This is an expensive, modern recreation of the Mateba revolver, with several unique fire modes. And a slow self recharging battery. However, it has a slower recharge then most battery related weapons.
+  description: This is an expensive, modern recreation of the Mateba revolver, with several unique fire modes and a slow self recharging battery. However, it has a slower recharge then most battery related weapons.
   components:
   - type: Gun
     fireRate: 1.6
@@ -359,7 +359,8 @@
 - type: entity
   parent: [ BaseWeaponBattery, BaseGunWieldable, BaseCentcommContraband ]
   id: WeaponIonRifle
-  name: ion rifle
+  name: MiS-21ECM ion rifle # SpL
+  description: An expensive and exotic high-power rifle designed to disrupt cybernetics, silicons, and electronic systems at a long range without harming organics. # SpL
   components:
   - type: Sprite
     sprite: _Starlight/Objects/Weapons/Guns/Battery/ion_rifle.rsi
@@ -399,7 +400,8 @@
 - type: entity
   parent: [BaseWeaponBattery, BaseSecurityContraband ]
   id: WeaponIonCarbine
-  name: ion carbine
+  name: MiS-24ECM ion carbine # SpL
+  description: An expensive and exotic high-power rifle designed to disrupt cybernetics, silicons, and electronic systems at a long range without harming organics. The carbine model has been de-scoped and shortened for ease of carry. # SpL
   components:
   - type: Sprite
     sprite: _Starlight/Objects/Weapons/Guns/Battery/ion_carbine.rsi
@@ -429,10 +431,10 @@
   - type: EmpImmune
 
 - type: entity
-  name: immolator laser gun
+  name: VtzT-DEW1 'Immolator' laser rifle # SpL
   parent: [BaseWeaponBattery, BaseGunWieldable, BaseSecuritySalvageContraband]
   id: WeaponLaserImmolator
-  description: An irregular, unstable firearm. It remains warm to the touch long after it has finished firing.
+  description: An irregular, unstable firearm that remains warm to the touch long after it has finished firing, the Immolator model was Vitezstvi's first and only foray into the field of energy weapons following legal threats over the weapon's purported inhumanity. # SpL
   components:
   - type: Sprite
     sprite: _Starlight/Objects/Weapons/Guns/Battery/immolator.rsi
@@ -481,10 +483,10 @@
   - type: Appearance
 
 - type: entity
-  name: m1911 pulse pistol
+  name: NT-MiS-M1911 pulse pistol # SpL
   parent: [BaseWeaponBatterySmall, BaseSecurityContraband ]
   id: WeaponPulseM1911
-  description: A compact pulse core in a classic NanoTrasen officer pistol design. It's not the size of the gun, it's the size of the hole it puts in people.
+  description: A compact pulse core from Microstar, housed in a classic NanoTrasen officer pistol design. It's not the size of the gun, it's the size of the hole it puts in people. # SpL
   components:
   - type: Appearance
   - type: Sprite
@@ -528,10 +530,10 @@
         path: /Audio/Weapons/Guns/Gunshots/laser3.ogg
 
 - type: entity
-  name: pulse pistol
+  name: MiS-74C pulse pistol # SpL
   parent: [BaseWeaponBatterySmall, BaseSecurityContraband ]
   id: WeaponPulsePistol
-  description: An extremely compact version of the pulse carabine.
+  description: An extremely compact version of the pulse carbine, manufactured by Microstar exclusively for use by NT-CC officials. # SpL
   components:
   - type: Appearance
   - type: Sprite
@@ -587,10 +589,10 @@
     startingCharge: 2600
 
 - type: entity
-  name: PDW-9 taser pistol
+  name: NT-PDW9 taser pistol # SpL
   parent: [ BaseWeaponBatterySmall, BaseSecurityContraband ]
   id: WeaponPDW9
-  description: A compact pulse core in a classic NanoTrasen officer pistol design. It's not the size of the gun, it's the size of the hole it puts in people.
+  description: A taser pistol with a retrofit replacing its electrical core with a conventional firearm laser array. Its inherited name now serves as something of a misnomer. # SpL
   components:
   - type: Appearance
   - type: Sprite
@@ -635,6 +637,7 @@
   parent: [ BaseWeaponBatterySmall, BaseMajorContraband ]
   id: WeaponAlien
   name: alien pistol
+  description: You have no idea what you're looking at. # SpL
   components:
   - type: RestrictByUserTag
     doestContain: []
@@ -674,7 +677,8 @@
 - type: entity
   parent: [ BaseWeaponBattery, BaseGunWieldable, BaseCentcommContraband ]
   id: WeaponEnergySniper
-  name: LWAP
+  name: MiS-61 LWAP energy sniper # SpL
+  description: A high-powered energy sniper with a unique proprietary focusing array allowing rapid long-range delivery of extremely high power laser bolts. For use when negotiations have stalled, and you need a hostage taker dead at all costs. # SpL
   components:
   - type: Sprite
     sprite: _Starlight/Objects/Weapons/Guns/Battery/energy_sniper.rsi
@@ -709,10 +713,10 @@
     pvsIncrease: 0.3
 
 - type: entity
-  name: pulse carbine
+  name: MiS-74 pulse carbine # SpL
   parent: [BaseWeaponBattery, BaseGunWieldable, BaseCentcommContraband]
   id: WeaponPulseCarbine
-  description: A high tech energy carbine favoured by the NT-ERT operatives.
+  description: A high tech energy carbine, manufactured by Microstar for use by Central Command's Emergency Response Force. # SpL
   components:
   - type: Appearance
   - type: Sprite
@@ -776,10 +780,10 @@
     startingCharge: 3300
 
 - type: entity
-  name: pulse rifle
+  name: MiS-76 pulse rifle
   parent: [BaseWeaponBattery, BaseGunWieldable, BaseNanoTrasenContraband] # SpL
   id: WeaponPulseRifle
-  description: A weapon that is almost as infamous as its users.
+  description: An extremely rare high-tech energy rifle fitted with Microstar's most advanced pulse core, the pulse rifle is a weapon that is almost as infamous as its users. # SpL
   components:
   - type: Appearance
   - type: Sprite
@@ -853,7 +857,7 @@
   name: ANNIHILATOR
   parent: [ WeaponPulseCarbine, BaseHighlyIllegalContraband ] # SpL
   id: WeaponANNIHILATOR
-  description: A weapon that is almost as infamous as its users.
+  description: If you're seeing this, fate has decided your path for you. Go forth and claim what is yours. # SpL
   components:
   - type: Appearance
   - type: Gun
@@ -920,10 +924,10 @@
     - type: Appearance
 
 - type: entity
-  name: proto-5x energy gun
+  name: NT-XHPW Proto-5X energy gun
   parent: [BaseWeaponBattery, BaseGrandTheftContraband]
   id: WeaponEnergySMG
-  description: A one-of-a-kind prototype energy sub-machine gun. It offers high energy firepower and a powerful self recharge.
+  description: A unique prototype energy submachine gun manufactured in limited numbers for NanoTrasen's most trusted contractors. It offers high energy firepower and a powerful self recharge. # SpL
   components:
   - type: CanDualWield
   - type: Appearance
@@ -995,10 +999,10 @@
     supportedPins: [ AdvancedLaser ]
 
 - type: entity
-  name: pulse cannon
+  name: MiS-75H pulse cannon # SpL
   parent: [BaseWeaponBattery, BaseGunWieldable, BaseNanoTrasenContraband] # SpL
   id: WeaponPulseCannonNTNC
-  description: A weapon meant to blow holes in people with lasers. Like Superman. I like Superman.
+  description: An incredibly high-power weapon manufactured by Microstar, pushing the upper limits of directed-energy technology to blow holes through people and structures. Like Superman. I like Superman. # SpL
   components:
   - type: Appearance
   - type: Sprite
@@ -1053,7 +1057,7 @@
 
 # NTNC
 - type: entity
-  name: cyborg pulse carbine
+  name: MiS-74S pulse ROW # SpL
   parent: [ BaseCentcommContraband, WeaponAdvancedLaser ]
   id: CentcommCyborgLaser
   description: A pulse carbine modified for use by cyborgs.
@@ -1113,7 +1117,7 @@
           
 #Green Shield Officer
 - type: entity
-  name: MT-7G Magnum
+  name: MT-7G Magnum # TODO- kill you entirely.
   parent: [ BaseWeaponBatterySmall, BaseCentcommContraband, BaseGrandTheftContraband ]
   categories: [ DoNotMap ]
   id: WeaponEnergyMagnumGunGreenshield
