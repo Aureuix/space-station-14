@@ -361,7 +361,7 @@
     whitelist:
       tags:
         - CartridgeMagnum
-    capacity: 10
+    capacity: 15 # SpL 10->15
   - type: Tag
     tags:
       - MagazineL10DMR
