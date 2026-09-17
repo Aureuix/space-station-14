@@ -169,7 +169,7 @@ public abstract partial class SharedChatSystem
     /// <returns>True if the chat message should be displayed (because the emote was explicitly cancelled), false if it should not be.</returns>
     protected bool TryEmoteChatInput(EntityUid source, string textInput)
     {
-        var actionTrimmedLower = TrimPunctuation(textInput.ToLower());
+        var actionTrimmedLower = TrimPunctuation(textInput.ToLower().Split(' ')[0]);
         if (!_wordEmoteDict.TryGetValue(actionTrimmedLower, out var emote))
             return true;
 
