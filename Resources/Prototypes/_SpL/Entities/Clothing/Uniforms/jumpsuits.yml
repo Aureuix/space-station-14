@@ -1,4 +1,15 @@
 ﻿- type: entity
+  parent: [ClothingUniformBase, BaseCentcommContraband]
+  id: ClothingUniformCBURNFatigues
+  name: CBURN operational fatigues
+  description: Standard issue CBURN fatigues, issued for use during cleanup and deployment.
+  components:
+    - type: Sprite
+      sprite: _SpL/Clothing/Uniforms/Jumpsuit/cburn.rsi
+    - type: Clothing
+      sprite: _SpL/Clothing/Uniforms/Jumpsuit/cburn.rsi
+
+- type: entity
   parent: [UnsensoredClothingUniformBase, BaseGSLOwnedContraband]
   id: ClothingUniformJumpsuitGSLFormal
   name: GSL technician formal jumpsuit

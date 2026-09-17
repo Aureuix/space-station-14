@@ -26,7 +26,7 @@
   id: PlushiesKanna
   values:
     prefix: plushie-kanna-
-    count: 1
+    count: 16
     
 - type: localizedDataset
   id: PlushiesChesed
@@ -47,6 +47,12 @@
     count: 12
 
 - type: localizedDataset
+  id: PlushiesVogel
+  values:
+    prefix: plushie-vogel-
+    count: 16
+
+- type: localizedDataset  
   id: PlushiesParadigm
   values:
     prefix: plushie-paradigm-

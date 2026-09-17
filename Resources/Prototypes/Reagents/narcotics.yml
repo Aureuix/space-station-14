@@ -174,10 +174,10 @@
         conditions:
         - !type:ReagentCondition
           reagent: Stimulants
-          min: 50
+          min: 45 # SpL- 50->45
         damage:
           types:
-            Poison: 1
+            Poison: 3 # SpL- 1->3
       # Interactions
       - !type:ModifyStatusEffect
         conditions:
@@ -340,7 +340,7 @@
           reagent: Nocturine
           min: 6 # SpL 8->6
         effectProto: StatusEffectForcedSleeping
-        time: 8 # SpL 6->8
+        time: 9 # SpL 6->9
         delay: 4 # SpL 5->4
 
 - type: reagent

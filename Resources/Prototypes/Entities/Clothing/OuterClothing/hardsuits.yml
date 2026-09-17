@@ -1240,7 +1240,7 @@
   parent: [ BaseCentcommContraband, ClothingOuterHardsuitBase ]
   id: ClothingOuterHardsuitCBURN
   name: CBURN exosuit
-  suffix: DO NOT USE # Starlight
+  # suffix: DO NOT USE # Starlight # SpL- removed
   description: A lightweight yet strong exosuit used for special cleanup operations.
   components:
   - type: Sprite
@@ -1255,13 +1255,15 @@
     coolingCoefficient: 0.001
   - type: ExplosionResistance
     damageCoefficient: 0.7
+  - type: FireProtection
+    reduction: 0.8 # SpL
   - type: Pierceable
     level: Metal
   - type: Armor
     modifiers:
       coefficients:
-        Blunt: 0.7
-        Slash: 0.7
+        Blunt: 0.6 # SpL
+        Slash: 0.6 # SpL
         Piercing: 0.6
         Heat: 0.1
         Cold: 0.1
@@ -1277,6 +1279,8 @@
   - type: HeldSpeedModifier
   - type: ToggleableClothing
     clothingPrototype: ClothingHeadHelmetCBURN
+  - type: ZombificationResistance
+    zombificationResistanceCoefficient: 0.75
 
 #MISC. HARDSUITS
 #Clown Hardsuit

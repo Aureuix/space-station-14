@@ -415,6 +415,9 @@
   name: eggs benedict
   description: There is only one egg on this, how rude.
   components:
+  - type: Edible
+    trash:
+      - FoodPlateSmall
   - type: FlavorProfile
     flavors:
       - egg
@@ -425,10 +428,12 @@
   - type: SolutionContainerManager
     solutions:
       food:
-        maxVol: 15
+        maxVol: 25
         reagents:
         - ReagentId: Nutriment
-          Quantity: 6
+          Quantity: 8
+        - ReagentId: Protein
+          Quantity: 10
         - ReagentId: Vitamin
           Quantity: 4
   - type: Tag
