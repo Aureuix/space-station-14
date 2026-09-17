@@ -35,7 +35,7 @@
     ears: ClothingHeadsetCentCom #Starlight
     gloves: ClothingHandsGlovesCombat
     outerClothing: ClothingOuterSoftsuitCBURN #Starlight
-    shoes: ClothingShoesBootsCombatFilled
+    shoes: ClothingShoesBootsMagERTFilled # SpL
     id: CBURNPDA
     pocket1: WeaponPulsePistol # SpL
     pocket2: ToolDebug # SpL
@@ -54,10 +54,10 @@
     ears: ClothingHeadsetCentCom
     gloves: ClothingHandsGlovesCombat
     outerClothing: ClothingOuterHardsuitCBURN
-    shoes: ClothingShoesBootsCombatFilled
+    shoes: ClothingShoesBootsMagERTFilled
     id: CBURNPDA
     pocket1: WeaponPulsePistol
-    pocket2: RadiationBlockingProjectorMicroreactor
+    pocket2: HolofanProjectorMicroreactor
     belt: ClothingBeltMilitaryWebbingERTFilledCBURN
     suitstorage: WeaponShotgunCombatIncendiary
     neck: ClothingBeltBandolier # SpL End

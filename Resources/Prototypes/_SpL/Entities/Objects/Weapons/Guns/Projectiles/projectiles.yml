@@ -21,3 +21,16 @@
     damage:
       types:
         Heat: 15
+        
+- type: entity
+  name: space cleaner
+  id: BulletCleanerShot
+  parent: BulletWaterShot
+  components:
+  - type: SolutionContainerManager
+    solutions:
+      vapor:
+        maxVol: 50
+        reagents:
+          - ReagentId: SpaceCleaner
+            Quantity: 50

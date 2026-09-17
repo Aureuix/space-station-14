@@ -115,7 +115,7 @@
   equipment:
     jumpsuit: ClothingUniformJumpskirtCentcommIntelFormalWear
     back: ClothingBackpackSatchelCentcomm
-    shoes: ClothingShoesBootsLaceup
+    shoes: ClothingShoesBootsJackFilledVibro # SpL
     gloves: ClothingHandsGlovesColorBlack
     eyes: ClothingEyesGlassesCentComm
     id: CentcomPDA
@@ -175,7 +175,7 @@
   equipment:
     jumpsuit: ClothingUniformJumpskirtCentcommSecurityFormalWear
     back: ClothingBackpackSatchelCentcomm
-    shoes: ClothingShoesBootsJackFilled # SpL
+    shoes: ClothingShoesBootsJackFilledVibro # SpL
     eyes: ClothingEyesGlassesCentComm
     gloves: ClothingHandsGlovesCombat
     outerClothing: ClothingOuterVestWebEliteCentcomm # SpL
@@ -197,7 +197,7 @@
   equipment:
     jumpsuit: ClothingUniformJumpskirtCentcommSpecialOpsFormalWear
     back: ClothingBackpackSatchelCentcomm
-    shoes: ClothingShoesBootsJackFilled # SpL
+    shoes: ClothingShoesBootsJackFilledVibro # SpL
     eyes: ClothingEyesGlassesCentComm
     gloves: ClothingHandsGlovesCombat
     outerClothing: ClothingOuterArmorCentcommCarapace
@@ -206,7 +206,7 @@
     belt: CentcommVibrobladeSheathFilled
     pocket1: WeaponPistolN1984
     pocket2: BoxFolderCentComClipboardEmpty
-    suitstorage: WeaponDecloner # SpL
+    suitstorage: WeaponPulseCarbine # SpL
   storage:
     back:
     - RubberStampCSOD

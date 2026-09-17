@@ -44,7 +44,7 @@
       containers:
         storagebase: !type:AllSelector
           children:
-            - id: Handcuffs
+            - id: AccessOveriderRecharging
             - id: PillCanisterAmbuzolPlus
             - id: BodyBagCCFolded
             - id: BodyBagCCFolded
@@ -52,7 +52,7 @@
             - id: MedkitCombatFilled
             - id: CombatMedipen
             - id: AdvancedBruteAutoinjector
-            - id: AccessOveriderRecharging
-            - id: PillCanisterAmbuzol
+            - id: RadiationBlockingProjectorMicroreactor
+            - id: Zipties
             - id: CombatMedipen
             - id: AdvancedBruteAutoinjector

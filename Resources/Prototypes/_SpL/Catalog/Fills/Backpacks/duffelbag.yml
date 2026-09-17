@@ -71,10 +71,10 @@
           - id: DefibrillatorCompact
           - id: WeaponIK60
           - id: MagazineBatteryLr30Extended
-            amount: 3
-          - id: BottleCaseCBURNFilled
+            amount: 2
           - id: AdvancedJetInjector
-          - id: PowerDrill
+          - id: BottleCaseCBURNFilled
+          - id: BluespaceCleanerNozzle
           - id: JawsOfLife
           - id: WelderExperimental
           - id: RCDExperimental
