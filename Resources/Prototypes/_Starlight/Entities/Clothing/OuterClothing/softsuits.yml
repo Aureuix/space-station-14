@@ -41,6 +41,7 @@
     walkModifier: 0.75
     sprintModifier: 0.75
   - type: HeldSpeedModifier
+  - type: HardsuitChemicalImmunity # SpL
   - type: Tag
     tags:
     - SuitEVA
