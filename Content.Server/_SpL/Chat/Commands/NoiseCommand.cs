@@ -16,14 +16,11 @@ namespace Content.Server.Chat.Commands
         [Dependency] private readonly ChatSystem _chatSystem = default!;
         [Dependency] private readonly IPrototypeManager _prototypeManager = default!;
         [Dependency] private readonly IEntityManager _entities = default!;
-        [Dependency] private readonly ILogManager _logManager = default!;
-        private ISawmill _sawmill = default!;
         public override string Command => "noise";
 
         public override void Execute(IConsoleShell shell, string argStr, string[] args)
         {
             _prototypeManager.EnumeratePrototypes<EmotePrototype>();
-            _sawmill = _logManager.GetSawmill("noises");
             if (shell.Player is not { } player)
             {
                 shell.WriteError(Loc.GetString($"shell-cannot-run-command-from-server"));
