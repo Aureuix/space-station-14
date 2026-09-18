@@ -99,6 +99,37 @@
       fireCost: 40
 
 - type: entity
+  parent: [ BaseWeaponPowerCellSmall, BaseMedicalSecurityContraband ]
+  id: WeaponMedigun
+  name: NT-X05 tissue repair blaster
+  description: Shoot people with lasers that fix them! Side effects may include nausea, vomiting, malign deformities, bone marrow damage, and ultragigacancer.
+  components:
+    - type: Sprite
+      sprite: _Starlight/Objects/Weapons/Guns/Battery/decloner.rsi
+      layers:
+        - state: base
+          map: ["enum.GunVisualLayers.Base"]
+        - state: normal
+          shader: unshaded
+        - state: mag-unshaded-4
+          map: ["enum.GunVisualLayers.MagUnshaded"]
+          shader: unshaded
+    - type: BatteryAmmoProvider
+      proto: HealingBeam
+      fireCost: 10 
+    - type: Gun
+      fireRate: 10
+      selectedMode: FullAuto 
+      availableModes:
+        - FullAuto 
+    - type: MagazineVisuals
+      magState: mag
+      steps: 5
+      zeroVisible: true
+    - type: Appearance
+    - type: PacifismAllowedGun
+
+- type: entity
   parent: [BaseWeaponBattery, BaseIlluminateContraband, BaseGunWieldable]
   id: WeaponIlluminateBlizzard
   name: AR12 "blizzard"

@@ -30,7 +30,7 @@ public sealed class HitscanBasicDamageSystem : EntitySystem
                 ignoreResistances: ent.Comp.IgnoreResistances,
                 origin: args.Data.Gun,
                 armorPenetration: ent.Comp.ArmorPenetration,
-                canHeal: false
+                canHeal: ent.Comp.CanHeal // SpL- allows certain items to heal via the comp
             );
         // Starlight end
 
