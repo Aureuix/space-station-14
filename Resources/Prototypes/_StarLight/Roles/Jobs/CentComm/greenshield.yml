@@ -42,6 +42,7 @@
     suitstorage: WeaponSubMachineGunWt550
     pocket1: WeaponEnergyMagnumGunGreenshield
     pocket2: GreenLightShield
+    misc: PinpointerUniversal # SpL
 
 - type: startingGear
   id: GSOGear
@@ -61,3 +62,4 @@
     suitstorage: WeaponSubMachineGunWt550
     pocket1: WeaponEnergyMagnumGunGreenshield
     pocket2: GreenLightShield
+    misc: PinpointerUniversal # SpL

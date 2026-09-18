@@ -1,0 +1,36 @@
+﻿- type: entity
+  parent: [ BaseCentcommContraband, VolatileGrenadeBase, GrenadeBase ]
+  id: PlasmaGrenade
+  name: CBURN plasmafire grenade
+  description: A special solid state chemical grenade with a superheated reaction compound and a gas storage, used for instantly creating a plasma fire in a large area. Treat like eggs and handle with care.
+  components:
+    - type: Sprite
+      sprite: Objects/Weapons/Grenades/airboom.rsi
+      state: icon
+    - type: EmitSoundOnTrigger
+      keysIn:
+        - timer
+      sound: /Audio/Items/smoke_grenade_smoke.ogg
+    - type: TimerTriggerVisuals
+      primingSound:
+        path: /Audio/Items/smoke_grenade_prime.ogg
+    - type: TimerTrigger
+      delay: 3
+    - type: ReleaseGasOnTrigger
+      keysIn:
+        - timer
+      removeFraction: 0.25
+      air:
+        volume: 2000
+        moles: 
+          Oxygen: 6000
+          Plasma: 800 
+        temperature: 1400
+    - type: StaticPrice
+      price: 350
+    - type: GenericVisualizer
+      visuals:
+        enum.ReleaseGasOnTriggerVisuals.Key:
+          enabled:
+            True: { state: active }
+            False: { state: spent }

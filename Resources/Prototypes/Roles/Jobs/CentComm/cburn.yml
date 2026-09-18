@@ -43,6 +43,7 @@
     suitstorage: WeaponShotgunCombatIncendiary # SpL
     neck: ClothingBeltBandolier # SpL
     head: ClothingHeadSoftsuitCBURN # Starlight
+    misc: PinpointerUniversal # SpL
     
 - type: startingGear # SpL Start
   id: CBURNGearCleanup
@@ -60,7 +61,8 @@
     pocket2: HolofanProjectorMicroreactor
     belt: ClothingBeltMilitaryWebbingERTFilledCBURN
     suitstorage: WeaponShotgunCombatIncendiary
-    neck: ClothingBeltBandolier # SpL End
+    neck: ClothingBeltBandolier
+    misc: PinpointerUniversal # SpL End
 
 - type: chameleonOutfit
   id: CBURNChameleonOutfit

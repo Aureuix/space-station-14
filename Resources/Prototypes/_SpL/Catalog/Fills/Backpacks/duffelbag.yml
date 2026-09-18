@@ -36,17 +36,20 @@
       storagebase: !type:AllSelector
         children:
         - id: BoxShotgunIncendiary
-          amount: 3
+          amount: 2
         - id: SpeedLoaderShotgunIncendiary
           amount: 2
-        - id: WeaponLaserImmolator
+        - id: PlasmaGrenade
+          amount: 2
+        - id: WeaponIK60
+        - id: MagazineBatteryLr30Extended
+          amount: 2
         - id: GrenadeIncendiary
           amount: 2
         - id: GrenadeShrapnel
           amount: 2
         - id: C4
           amount: 2
-        - id: DefibrillatorCompact
         - id: AdvancedJetInjector
         - id: ChemistryBottleOmnizine
           amount: 2
@@ -67,14 +70,14 @@
           - id: BoxShotgunIncendiary
             amount: 2
           - id: SpeedLoaderShotgunIncendiary
-            amount: 2
+          - id: PlasmaGrenade
           - id: DefibrillatorCompact
           - id: WeaponIK60
           - id: MagazineBatteryLr30Extended
             amount: 2
-          - id: AdvancedJetInjector
-          - id: BottleCaseCBURNFilled
           - id: BluespaceCleanerNozzle
+          - id: BottleCaseCBURNFilled
+          - id: AdvancedJetInjector
           - id: JawsOfLife
           - id: WelderExperimental
           - id: RCDExperimental
