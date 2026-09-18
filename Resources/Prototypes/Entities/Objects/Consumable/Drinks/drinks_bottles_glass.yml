@@ -485,6 +485,7 @@
   - type: Tag
     tags:
     - Beer
+    - DrinkBottle # SpL - lol
 
 - type: entity
   parent: [DrinkVisualsAllFilled, DrinkBottleGlassSmallBaseFull]

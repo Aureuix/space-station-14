@@ -1,0 +1,7 @@
+﻿- type: construction
+  id: Molotov
+  graph: MolotovGraph
+  startNode: start
+  targetNode: molotov
+  category: construction-category-weapons
+  objectType: Item

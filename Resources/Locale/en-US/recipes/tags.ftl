@@ -46,6 +46,7 @@ construction-graph-tag-brown-flatcap = a brown flatcap
 construction-graph-tag-cuffs = cuffs
 construction-graph-tag-payload = payload
 construction-graph-tag-empty-can = an empty can
+construction-graph-tag-empty-bottle = an empty bottle
 construction-graph-tag-igniter = an igniter
 construction-graph-tag-modular-receiver = modular receiver
 construction-graph-tag-power-cell-small = power cell small
