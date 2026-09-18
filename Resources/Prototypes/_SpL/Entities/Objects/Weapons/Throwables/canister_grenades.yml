@@ -5,7 +5,7 @@
   description: A special solid state chemical grenade with a superheated reaction compound and a gas storage, used for instantly creating a plasma fire in a large area. Treat like eggs and handle with care.
   components:
     - type: Sprite
-      sprite: Objects/Weapons/Grenades/airboom.rsi
+      sprite: _SpL/Objects/Weapons/Throwables/plasmafiregrenade.rsi
       state: icon
     - type: EmitSoundOnTrigger
       keysIn:
@@ -30,7 +30,11 @@
       price: 350
     - type: GenericVisualizer
       visuals:
+        enum.Trigger.TriggerVisuals.VisualState:
+          enum.ConstructionVisuals.Layer:
+            Primed: { state: primed }
+            Unprimed: { state: icon }
         enum.ReleaseGasOnTriggerVisuals.Key:
           enabled:
-            True: { state: active }
+            True: { state: primed }
             False: { state: spent }

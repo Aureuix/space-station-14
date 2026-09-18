@@ -26,6 +26,11 @@
         path: /Audio/Weapons/Guns/Gunshots/water_spray.ogg
         params:
           volume: -4
+      soundEmpty:
+        path: /Audio/Effects/Fluids/watersplash.ogg 
+        params:
+          volume: -3
+          rolloffFactor: 1.3
     - type: BatteryAmmoProvider
       proto: BulletCleanerShot
       fireCost: 1
