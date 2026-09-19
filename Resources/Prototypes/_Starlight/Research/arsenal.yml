@@ -184,6 +184,20 @@
 
  # Tier 4 
   
+#- type: technology # SpL- death to john toe
+#  id: DecloneTechnology
+#  name: research-technology-declone-technology
+#  icon:
+#    sprite: _Starlight/Objects/Weapons/Guns/Battery/decloner.rsi
+#    state: icon
+#  discipline: Arsenal
+#  tier: 4
+#  cost: 30000
+#  recipeUnlocks:
+#    - WeaponDecloner
+#  radioChannels:
+#    - Security
+
 - type: technology
   id: ScanGateTechnology
   name: research-technology-scan-gate
