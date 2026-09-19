@@ -48,10 +48,10 @@
   # SpL end
 
 - type: entity
-  name: china lake
+  name: C-01gl 'China Lake' # SpL
   parent: [BaseWeaponLauncher, BaseGunWieldable, BaseSyndicateContraband]
   id: WeaponLauncherChinaLake
-  description: A pump-action grenade launcher commonly used by the infamous Nuclear Operatives. PLOOP!
+  description: A pump-action grenade launcher manufactured by Waffle Corporation and commonly used by the infamous Nuclear Operatives. Virtually unmodified from the pre-FTL design, thse modern China Lake is a testament to the longevity of the original.
   components:
   - type: Sprite
     sprite: Objects/Weapons/Guns/Launchers/china_lake.rsi
@@ -91,7 +91,7 @@
 - type: entity
   parent: [ BaseWeaponLauncher, BaseGunWieldable, BaseJanitorContraband ] # Starlight: major -> jani contra
   id: WeaponLauncherHydra
-  name: hydra
+  name: NT-XCLN1 'Hydra' launcher # SpL
   description: PLOOP... FSSSSSS...
   components:
   - type: Sprite
@@ -133,7 +133,8 @@
 - type: entity # Starlight edit: Ballistics.
   parent: [WeaponLauncherHydra]
   id: WeaponLauncherHydraLethal
-  name: modified hydra # SL edit: give it a proper name
+  name: NT-XCLN1-MOD 'Hydra' launcher # SL edit: give it a proper name
+  description: A modification of the civilian-grade Hydra cleanade launcher which provides full compatibility with most available projectile grenades.
   suffix: Security # starlight: differentiate
   components:
   - type: RevolverAmmoProvider
@@ -146,10 +147,10 @@
     severity: Major
 
 - type: entity
-  name: RPG-7
-  parent: [ BaseWeaponLauncher, BaseMajorContraband]
+  name: Kardashev-RPG-7 rocket launcher # SpL
+  parent: [ BaseWeaponLauncher, BaseSovietContraband] # SpL- converted to soviet due to. well. it's a soviet AT launcher
   id: WeaponLauncherRocket
-  description: A modified ancient rocket-propelled grenade launcher.
+  description: An ancient rocket-propelled grenade launcher, modernised by Kardashev Arms Plant.
   components:
   - type: KnockbackByUserTag # Starlight
     doestContain:
@@ -189,10 +190,10 @@
   - type: Appearance
 
 - type: entity
-  name: multiple rocket launcher
-  parent: [BaseWeaponLauncher]
+  name: Kardashev-RPG-7 Type 23 MRL # SpL
+  parent: [BaseWeaponLauncher, BaseSovietContraband] # SpL- only makes sense
   id: WeaponLauncherMultipleRocket
-  description: A modified ancient rocket-propelled grenade launcher.
+  description: A multiple-barrelled shoulder-mounted rocket launcher designed to deliver extremely effective suppressive fire to a large combat area. Yes, this thing provides suppressive fire with rockets. # SpL
   components:
   - type: KnockbackByUserTag # Starlight
     doestContain:
@@ -206,7 +207,7 @@
         knockback: 5 # half of what resomi take
         staminaMultiplier: 8
   - type: Sprite
-    sprite: Objects/Weapons/Guns/Launchers/rocket.rsi
+    sprite: Objects/Weapons/Guns/Launchers/rocket.rsi # TODO- make a new sprite for this thing
     layers:
       - state: base
         map: ["enum.GunVisualLayers.Base"]

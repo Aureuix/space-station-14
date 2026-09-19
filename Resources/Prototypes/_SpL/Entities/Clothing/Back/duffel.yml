@@ -2,7 +2,7 @@
   parent: [ ClothingBackpackDuffel, BaseCentcommContraband ]
   id: ClothingBackpackDuffelCBURN
   name: CBURN duffel bag
-  description: An explosion-reinforced duffel bag containing a variety of biological containment equipment. Hopefully.
+  description: An explosion-reinforced duffel bag containing a variety of disaster mitigation and hazardous containment equipment. Hopefully.
   components:
     - type: Sprite
       sprite: _SpL/Clothing/Back/Duffels/cburn.rsi

@@ -32,7 +32,7 @@
         Heat: 0.1
         Cold: 0.1
         Shock: 0.1
-        Radiation: 0.1
+        Radiation: 0.11 # SpL
         Caustic: 0.1
     staminaModifier: 0.2
   - type: ZombificationResistance
@@ -41,6 +41,7 @@
     walkModifier: 0.75
     sprintModifier: 0.75
   - type: HeldSpeedModifier
+  - type: HardsuitChemicalImmunity # SpL
   - type: Tag
     tags:
     - SuitEVA

@@ -1,0 +1,33 @@
+﻿- type: constructionGraph
+  id: MolotovGraph
+  start: start
+  graph:
+  - node: start
+    edges:
+    - to: empty
+      steps:
+        - tag: DrinkBottle
+          name: construction-graph-tag-empty-bottle
+          icon:
+            sprite: Objects/Consumable/Drinks/beer.rsi
+            state: icon_open
+        - material: CrushedPhosphorus
+          amount: 1
+          doAfter: 1
+
+  - node: empty
+    entity: GrenadeMolotovEmpty
+    edges:
+    - to: molotov
+      conditions:
+        - !type:MinSolution
+          solution: drink
+          reagent:
+            ReagentId: WeldingFuel
+          quantity: 30
+      steps:
+        - material: Cloth
+          amount: 1
+          doAfter: 2
+  - node: molotov
+    entity: GrenadeMolotov

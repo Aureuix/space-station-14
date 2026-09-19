@@ -45,7 +45,7 @@
   equipment:
     jumpsuit: ClothingUniformJumpsuitERTLeader
     back: ClothingBackpackERTLeader
-    shoes: ClothingShoesBootsMagERT
+    shoes: ClothingShoesBootsMagERTFilled # SpL
     mask: ClothingMaskGasERT
     eyes: ClothingEyesGlassesCentComm
     neck: Whistle
@@ -661,6 +661,7 @@
     - Plunger
     - Screwdriver
     - AdvMopItem # End of first line
+    - BluespaceCleanerNozzle # SpL
     - GrenadeCleanade
     - GrenadeCleanade
     - GrenadeCleanade

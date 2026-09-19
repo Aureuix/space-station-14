@@ -44,3 +44,35 @@
     #- type: Lock
     - type: AccessReader
       access: [["Command"]]
+      
+- type: entity
+  parent: ComputerComms
+  id: ERTComputerComms
+  name: emergency response team communications computer
+  description: A computer used to make world wide announcements via keyboard. The middle cousin of the regular communications computer.
+  components:
+    - type: Sprite
+      layers:
+        - map: [ "computerLayerBody" ]
+          state: computer
+        - map: [ "computerLayerKeyboard" ]
+          state: generic_keyboard
+        - map: [ "computerLayerScreen" ]
+          state: comm_logs
+        - map: [ "computerLayerKeys" ]
+          state: generic_keys
+        - map: [ "enum.WiresVisualLayers.MaintenancePanel" ]
+          state: generic_panel_open
+    - type: AccessReader
+      access: [[ "CentralCommand" ]]
+    - type: CommunicationsConsole
+      title: comms-console-announcement-title-ert
+      color: "#1d8bad"
+      canShuttle: false
+      global: true
+    - type: Computer
+      board: ERTComputerCommsCircuitboard
+    - type: PointLight
+      radius: 2.5 #SL
+      energy: 1.5 #SL
+      color: "#00FF00"

@@ -11,3 +11,14 @@
     - type: Tag
       tags:
         - HighRiskItem
+
+- type: entity
+  parent: [ BaseComputerCircuitboard, BaseCentcommContraband ]
+  id: ERTComputerCommsCircuitboard
+  name: emergency response team communications computer board
+  description: A computer printed circuit board for an emergency response team communications console.
+  components:
+    - type: Sprite
+      state: cpu_centcomm
+    - type: ComputerBoard
+      prototype: CentcommComputerComms

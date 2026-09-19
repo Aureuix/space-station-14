@@ -285,6 +285,7 @@
   - type: GibOnTrigger
     targetUser: true
     deleteItems: true
+    gibOrgans: false # SpL
   - type: Explosive
     explosionType: MicroBomb
     totalIntensity: 120
@@ -327,6 +328,7 @@
     - type: GibOnTrigger
       targetUser: true
       deleteItems: true
+      gibOrgans: false # SpL
       keysIn:
       - timer
     - type: Explosive
@@ -357,6 +359,7 @@
   - type: GibOnTrigger
     targetUser: true
     deleteItems: true
+    gibOrgans: false # SpL
   - type: SpawnOnTrigger
     proto: Acidifier
     predicted: true

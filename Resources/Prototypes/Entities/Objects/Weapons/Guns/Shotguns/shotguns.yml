@@ -87,7 +87,7 @@
       path: /Audio/Weapons/Guns/MagIn/shotgun_insert.ogg
 
 - type: entity
-  name: bulldog
+  name: C-PCJ 'Bulldog' automatic shotgun # SpL
   parent: [BaseWeaponShotgunAny, BaseGunWieldable, BaseSyndicateContraband]
   id: WeaponShotgunBulldog
   description: An automatic magazine-fed shotgun for close-quarters combat. Kicks like a mule on steroids. Takes 12 gauge shells. # Starlight: .50 -> 12 gauge
@@ -137,7 +137,7 @@
     price: 5000
 
 - type: entity
-  name: double-barreled shotgun
+  name: double-barrelled shotgun
   parent: [BaseWeaponShotgun, BaseGunWieldable, BaseSecurityBartenderZookeeperContraband] # Starlight-edit - SecurityBartender -> SecurityBartenderZookeeper
   id: WeaponShotgunDoubleBarreled
   description: An immortal classic. Takes 12 gauge shells. # Starlight: .50 -> 12 gauge
@@ -160,7 +160,7 @@
     deconstructionTarget: null
 
 - type: entity
-  name: double-barreled shotgun
+  name: double-barrelled shotgun
   parent: WeaponShotgunDoubleBarreled
   id: WeaponShotgunDoubleBarreledRubber
   description: An immortal classic. Takes 12 gauge shells. # Starlight: .50 -> 12 gauge
@@ -170,7 +170,7 @@
     proto: ShellShotgunBeanbag
 
 - type: entity
-  name: sentinel
+  name: SA-4S95 'Sentinel' semi-automatic shotgun # SpL
   parent: [BaseWeaponShotgun, BaseGunWieldable, BaseSecurityContraband]
   id: WeaponShotgunEnforcer
   description: A premium semi-automatic shotgun, and the pride of all security forces. Takes 12 gauge shells. # Starlight: .50 -> 12 gauge
@@ -197,7 +197,7 @@
     proto: ShellShotgunBeanbag
 
 - type: entity
-  name: kammerer
+  name: SA-443 'Kammerer' pump-action shotgun # SpL
   parent: [BaseWeaponShotgun, BaseGunWieldable, BaseSecurityContraband]
   id: WeaponShotgunKammerer
   description: An old yet faithful design, and a favorite among irregular forces of many worlds. Takes 12 gauge shells. # Starlight: .50 -> 12 gauge
@@ -341,8 +341,8 @@
 - type: entity
   parent: [BaseWeaponShotgun, BaseGunWieldable, BaseSyndicateContraband]
   id: WeaponShotgunHushpup
-  name: hushpup
-  description: An obscure modification of the Kammerer, fitted with an experimental muffler. Great for those with a strict moral code. Uses 12 gauge shotgun shells.
+  name: 11-89S 'Hushpup' # SpL
+  description: An obscure modification of a civilian-grade hunting shotgun, fitted with an experimental muffler. Great for those with a strict moral code. Uses 12 gauge shotgun shells.
   components:
   - type: Sprite
     sprite: Objects/Weapons/Guns/Shotguns/hushpup.rsi

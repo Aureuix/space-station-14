@@ -27,3 +27,15 @@
     Steel: 150
     Plastic: 100
     Glass: 20
+    
+- type: latheRecipe
+  parent: BaseWeaponRecipeLong
+  id: WeaponMedigun
+  result: WeaponMedigun
+  materials:
+    Steel: 1000
+    Glass: 1000
+    Plasma: 500
+    Uranium: 500
+    Silver: 500
+    Gold: 500

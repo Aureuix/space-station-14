@@ -1,0 +1,36 @@
+﻿- type: entity
+  name: bluespace cleaner spray nozzle
+  parent: [ BaseWeaponBattery, BaseCentcommContraband ]
+  id: BluespaceCleanerNozzle
+  description: A green-painted spray nozzle which feeds from an attached bluespace chemical storage filled to the brim with space cleaner.
+  components:
+    - type: Item
+      sprite: _SpL/Objects/Weapons/Guns/Misc/nozzle.rsi
+      size: Normal
+    - type: Sprite
+      sprite: _SpL/Objects/Weapons/Guns/Misc/nozzle.rsi
+      state: icon
+    - type: AmmoCounter
+    - type: Battery
+      maxCharge: 6
+      startingCharge: 6
+    - type: BatterySelfRecharger
+      autoRechargeRate: 1
+    - type: Appearance
+    - type: Gun
+      fireRate: 4
+      selectedMode: FullAuto
+      availableModes:
+        - FullAuto
+      soundGunshot:
+        path: /Audio/Weapons/Guns/Gunshots/water_spray.ogg
+        params:
+          volume: -4
+      soundEmpty:
+        path: /Audio/Effects/Fluids/watersplash.ogg 
+        params:
+          volume: -3
+          rolloffFactor: 1.3
+    - type: BatteryAmmoProvider
+      proto: BulletCleanerShot
+      fireCost: 1

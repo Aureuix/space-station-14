@@ -28,4 +28,13 @@ public sealed partial class HitscanBasicDamageComponent : Component
     [DataField]
     public float ArmorPenetration = 0f;
     // Starlight end
+
+    // SpL start
+    /// <summary>
+    /// Can this projectile heal targets it hits?
+    /// </summary>
+    [DataField] 
+    public bool CanHeal = false;
+    // SpL end
+    
 }

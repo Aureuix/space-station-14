@@ -84,25 +84,16 @@
     - id: LightReplacer
     - id: BoxLightMixed
     - id: Holoprojector
-    # Starlight start
-    - !type:GroupSelector
-      children:
-      - id: ClothingShoesGaloshes
-        weight: 0.1
-      - id: ClothingShoesGaloshnt
-        weight: 0.9
-    # Starlight end
-    - !type:AllSelector
-      rolls: 2
-      children:
-      - id: MopItem
-      - id: BoxMousetrap
-      - id: TrashBag
-      - id: SoapNT
-      - id: FlashlightLantern
-      - id: Plunger
-      - id: WireBrush
-      - id: MoproachBox #Starlight
+    - id: PlushieFurlow # SpL
+    - id: ClothingShoesGaloshes
+    - id: MopItem
+    - id: BoxMousetrap
+    - id: TrashBag
+    - id: SoapNT
+    - id: FlashlightLantern
+    - id: Plunger
+    - id: WireBrush
+    - id: MoproachBox #Starlight
 
 - type: entity
   id: ClosetLegalFilled

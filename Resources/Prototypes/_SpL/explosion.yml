@@ -1,0 +1,13 @@
+﻿- type: explosion
+  id: Molotov
+  damagePerIntensity:
+    types:
+      Heat: 2
+      Blunt: 0.5
+      Piercing: 0.5
+  lightColor: Orange
+  smallSoundIterationThreshold: 150 # SpL- you never want the loud version
+  texturePath: /Textures/Effects/fire.rsi
+  fireStates: 3
+  fireStacks: 4
+  temperature: 2000

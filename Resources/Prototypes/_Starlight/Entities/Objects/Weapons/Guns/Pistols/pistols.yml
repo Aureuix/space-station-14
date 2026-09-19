@@ -1,8 +1,8 @@
 - type: entity
-  name: makarov
+  name: TKB-034K 'Makarov' pistol # SpL
   parent: [BaseWeaponPistol, BaseSovietContraband]
   id: WeaponPistolMakarov
-  description: A cheap and cumbersome pistol, with a dot on the rear sight indicating the direction in which it tends to misfire, as this model does not shoot straight. Uses .35 auto ammo.
+  description: An outdated but incredibly cheap pistol, ideal for use at close quarters due to its tendency to not shoot straight. Uses .35 auto ammo. # SpL
   components:
     - type: Sprite
       sprite: _Starlight/Objects/Weapons/Guns/Pistols/makarov.rsi
@@ -71,7 +71,7 @@
               - CartridgePistol
 
 - type: entity
-  name: N1984
+  name: NT-N1984 heavy pistol # SpL
   parent: [WeaponPistolN1984, BaseSecurityContraband]
   id: WeaponPistolN1984Nonlethal
   suffix: Non-lethal
@@ -96,7 +96,7 @@
               - CartridgeMagnum
 
 - type: entity
-  name: mk 58
+  name: NT-Mk58 'Universal' pistol # SpL
   parent: WeaponPistolMk58
   id: WeaponPistolMk58HighCapacity
   suffix: 16 rounds
@@ -117,7 +117,7 @@
           whitelistFailPopup: gun-magazine-whitelist-fail
           
 - type: entity
-  name: golden mk 58
+  name: NT-Mk58gd 'Universal' pistol # SpL
   parent: [WeaponPistolMk58, BaseSecurityContraband]
   id: WeaponPistolGoldenMk58
   description: An expensive and rare golden variant of the Mk58, only given out to the elite. Doesn't actually have any functional differences, though. Feeds from .35 pistol magazines.
@@ -128,7 +128,7 @@
       sprite: _Starlight/Objects/Weapons/Guns/Pistols/golden_mk58.rsi
 
 - type: entity
-  name: golden mk 58
+  name: NT-Mk58gd 'Universal' pistol # SpL
   parent: WeaponPistolGoldenMk58
   id: WeaponPistolGoldenMk58HighCapacity
   suffix: 16 rounds
@@ -148,7 +148,7 @@
           whitelistFailPopup: gun-magazine-whitelist-fail
         
 - type: entity
-  name: enforcer
+  name: SA-Mk18 'Enforcer' pistol # SpL
   parent: [BaseWeaponPistol, BaseSecurityContraband]
   id: WeaponPistolEnforcer
   description: A versatile pistol of modern design.
@@ -182,7 +182,7 @@
       stealGroup: OfficerHandgun
 
 - type: entity
-  name: Due Process
+  name: NT-Mk63 'Due Process' service pistol # SpL
   parent: [BaseWeaponPistol, BaseSecurityContraband]
   id: WeaponPistolDP
   description: A pistol that packs a punch for brig defense, just as NanoTrasen intended.
@@ -220,7 +220,8 @@
       stealGroup: OfficerHandgun
 
 - type: entity
-  name: service pistol "Blueguard"
+  name: NT-Mk74 'Blueguard' service pistol # SpL
+  description: A modern, ergonomic and compact service pistol with enough stopping power to make any would-be assassins think twice. Issued only to NanoTrasen's finest. # SpL
   parent: [WeaponPistolDP, BaseBlueShieldContraband, BaseGrandTheftContraband]
   id: WeaponPistolBlueguard
   components:
@@ -234,8 +235,9 @@
       stealGroup: BSOWeapon
       
 - type: entity
-  name: sp-8ar
+  name: NT-SP-8AR service pistol # SpL
   parent: [WeaponPistolDP, BaseSecurityContraband]
+  description: An accuracy-focused service pistol with a mounted compensator, licensed from Aussec Armory for NanoTrasen's most trusted contractors. Ear protection is advised with prolonged use. # SpL
   id: WeaponPistolSP8AR
   components:
     - type: Gun
@@ -248,10 +250,10 @@
         - ""
 
 - type: entity
-  name: stechkin pistol
+  name: OTs-39K 'Stechkin' pistol # SpL
   parent: [BaseSecurityContraband, WeaponPistolMk58]
   id: WeaponPistolStechkin
-  description: A small, easily concealable .40 handgun. Has a threaded barrel for suppressors. Uses .40 ammo.
+  description: A small, easily concealable .40 handgun with a threaded barrel for suppressors, based on an ancient snub-nosed revolver design following the same principles. Uses .40 ammo. # SpL
   components:
     - type: Sprite
       sprite: _Starlight/Objects/Weapons/Guns/Pistols/stechkin.rsi
@@ -282,8 +284,9 @@
 
 # SpL Start
 - type: entity
-  name: stechkin pistol
+  name: NT-Mk39 'Stechkin' pistol # SpL
   parent: WeaponPistolStechkin
+  description: A small, easily concealable .40 handgun with a threaded barrel for suppressors. This variant has been modified for use by NanoTrasen contracted personnel, in large part thanks to the lack of legal patents on Kalashnikov Concern's weaponry. Uses .40 ammo.
   id: WeaponPistolStechkinDetective
   suffix: Loadout, SP
   components:
@@ -315,7 +318,7 @@
 # SpL End
 
 - type: entity
-  name: Stechkin APS
+  name: OTs-40K 'Stechkin' APS # SpL
   parent: [WeaponPistolMk58, BaseSovietContraband]
   id: WeaponPistolAPS
   description: A high quality firearm issued to SNKVD elites and high ranking officials. It's half pistol, half closing argument. Uses .40 ammo.
@@ -355,10 +358,10 @@
               - CartridgePistolDP
 
 - type: entity
-  name: Jungle Hawk
+  name: DMI-50 'Jungle Hawk' heavy pistol # SpL
   parent: [BaseSyndicateContraband, WeaponPistolN1984]
   id: WeaponPistolDeagle
-  description: A high-caliber handgun designed for putting down large game.
+  description: A high-caliber handgun designed for putting down large game. Legends are that it once went under a different name, which has since been lost to time. # SpL
   components:
     - type: Sprite
       sprite: _Starlight/Objects/Weapons/Guns/Pistols/deagle.rsi
@@ -374,10 +377,10 @@
         path: /Audio/_Starlight/Weapons/Guns/Gunshots/deagle.ogg
 
 - type: entity
-  name: m1911 kinetic pistol
+  name: NT-M1911 kinetic pistol # SpL
   parent: [WeaponPistolN1984, BaseSecurityContraband]
   id: WeaponPistolM1911
-  description: A classic .45 handgun with a small magazine capacity.
+  description: A classic .45 handgun with a small magazine capacity, modernised by NanoTrasen's Small Arms Division. # SpL
   components:
     - type: Sprite
       sprite: _Starlight/Objects/Weapons/Guns/Pistols/m1911.rsi
@@ -569,7 +572,7 @@
               - CartridgePistolImprovised
 
 - type: entity
-  name: TSF-Model17
+  name: SA TSF-Model 17 # SpL
   parent: [BaseTSFContraband, BaseWeaponPistol]
   id: WeaponPistolTSFModel17
   description: A standard-issue sidearm of the Trans Solar Federation, the Model 17 serves TSF peacekeepers across the galaxy. Built with proven reliability and chambered in .35 auto, this pistol remains a trusted tool of law enforcement. Feeds from .35 pistol magazines.
@@ -595,6 +598,7 @@
       stealGroup: OfficerHandgun
 
 - type: entity
+  name: SA TSF-Model 17C ROW # SpL
   parent: WeaponPistolTSFModel17
   id: WeaponPistolTSFBorg
   description: A cyborg-mounted weapon system based on the Model 17 pistol. Creates ammunition on the fly from an internal fabricator, which slowly self-charges.
