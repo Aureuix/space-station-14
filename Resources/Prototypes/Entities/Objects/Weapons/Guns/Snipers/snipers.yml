@@ -81,7 +81,7 @@
   # starlight end
 
 - type: entity
-  name: kardashev-mosin
+  name: Kardashev-Mosin bolt rifle # SpL
   parent: [BaseWeaponSniper, BaseGunWieldable, BaseMajorContraband]
   id: WeaponSniperMosin
   description: A weapon of the masses, a true relic. The Kardashev-Mosin has served in nearly every armed conflict since its creation over 630 years ago. The bolt-action design of the rifle remains virtually identical to its original design, whether used for hunting, sniping, or endless trench warfare. Uses .45 ACP ammo. # Spectralight: Magnum -> ACP
@@ -157,7 +157,7 @@
     price: 500
 
 - type: entity
-  name: hristov
+  name: DMI-SR85 'Hristov' AMR
   parent: [BaseWeaponSniper, BaseGunWieldable, BaseSyndicateContraband]
   id: WeaponSniperHristov
   description: For when you absolutely, positively need to make someone regret their life choices from a safe distance. Uses 14.5x114mm ammo. # Spectralight: .60 -> 14.5x114mm
@@ -192,8 +192,8 @@
     sprintModifier: 0.25 #SL 25% -> 30% speed # SpL rollback
   - type: CursorOffsetRequiresWield
   - type: EyeCursorOffset
-    maxOffset: 4 #SL 3 -> 4
-    pvsIncrease: 0.4 #SL 0.3 -> 0.4
+    maxOffset: 5 #SpL 3 -> 5
+    pvsIncrease: 0.5 #SpL 0.3 -> 0.5
   - type: StaticPrice
     price: 3500
   # SpL start

@@ -1,8 +1,8 @@
 #EVA Helmet
 - type: entity
-  parent: ClothingHeadEVAHelmetBase
+  parent: [ClothingHeadEVAHelmetBase, ClothingHeadSuitWithLightBase, ClothingHeadLightParamsAdvanced ] # SpL
   id: ClothingHeadSoftsuitCBURN
-  name: CBURN helmet
+  name: CBURN insulated EVA helmet
   description: A pressure resistant and fireproof hood worn by special cleanup units.
   components:
   - type: Sprite
@@ -18,17 +18,56 @@
   - type: Clothing
     clothingVisuals:
       head:
-      - state: equipped-head
-      - state: equipped-head-unshaded
-        shader: unshaded
+        - state: equipped-head
+        - state: equipped-head-unshaded
+          shader: unshaded
       head-vox:
-      - state: equipped-head-vox
-      - state: equipped-head-unshaded-vox
-        shader: unshaded
+        - state: equipped-head-vox
+        - state: equipped-head-unshaded-vox
+          shader: unshaded
+      head-reptilian:
+        - state: equipped-head-reptilian
+        - state: equipped-head-unshaded-reptilian
+          shader: unshaded
+      head-vulpkanin: # SpL Start
+        - state: equipped-head-vulpkanin
+        - state: equipped-head-unshaded-vulpkanin
+          shader: unshaded
+      head-dog:
+        - state: equipped-head-dog
+        - state: equipped-head-unshaded-dog
+          shader: unshaded
+      head-avali:
+        - state: equipped-head-avali
+        - state: equipped-head-unshaded-avali
+          shader: unshaded
+      head-resomi:
+        - state: equipped-head-resomi
+        - state: equipped-head-unshaded-resomi
+          shader: unshaded # SpL End
     equipSound: /Audio/Mecha/mechmove03.ogg
     unequipSound: /Audio/Mecha/mechmove03.ogg
     equipDelay: 3
     unequipDelay: 3
+  - type: PointLight # SpL Start
+    color: orange
+  - type: PressureProtection
+    highPressureMultiplier: 0.08
+    lowPressureMultiplier: 1000
+  - type: TemperatureProtection
+    heatingCoefficient: 0.005
+    coolingCoefficient: 0.005
+  - type: ItemTogglePointLight
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.9
+        Slash: 0.9
+        Piercing: 0.9
+        Radiation: 0.9
+        Heat: 0.9 # SpL End
+  - type: ZombificationResistance
+    zombificationResistanceCoefficient: 0.9 # SpL
 
 - type: entity
   parent: [BaseTSFContraband, ClothingHeadEVAHelmetBase, ClothingHeadHelmetArmoredBase]

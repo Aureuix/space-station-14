@@ -1,5 +1,5 @@
 ﻿- type: entity
-  name: M90 carbine
+  name: C-M90 carbine
   parent: [BaseWeaponRifle, BaseSyndicateContraband]
   id: WeaponRifleM90Carbine
   description: An older bullpup carbine model for close to medium range engagements. Still quite effective despite its age, but mind the spread. Chambered in 5.56x45mm. # Spectralight: .20 -> 5.56x45mm

@@ -78,6 +78,7 @@ guide-entry-sl-security-sop-parole = Parole
 guide-entry-sl-security-sop-permitacquisition = Permit Acquisiton
 guide-entry-sl-security-sop-specialsituations = Special Situations
 guide-entry-sl-security-sop-criminal-status = Criminal Status
+guide-entry-sl-security-ammo-types = Ammo Types
 
 guide-entry-rules-changeling-clause = Changeling Clause
 

@@ -30,9 +30,9 @@
         - id: Dropper
         # It would be cool to have special "syndicate" chemical analysis goggles
         - id: ClothingEyesGlassesChemical
-        - id: SyringeStimulants
+        # - id: SyringeStimulants # SpL- removed for more vestine
         - id: VestineChemistryVial
-          amount: 2
+          amount: 3 # SpL 2->3
         - id: ChemistryEmptyVial
 
 - type: entity

@@ -17,6 +17,7 @@
           Slash: 0.6
           Piercing: 0.6
           Heat: 0.7
+          Cold: 0.7 # SpL- full parity between bso armours
     - type: ExplosionResistance
       damageCoefficient: 0.80
     - type: Item
@@ -30,6 +31,7 @@
   parent: [BaseMajorContraband, ClothingOuterArmorBasic]
   id: ClothingOuterArmorAbductor
   name: agent vest
+  description: Not a Type 1 armored vest. Don't confuse it for one.
   components:
     - type: Sprite
       sprite: _Starlight/Clothing/OuterClothing/Armor/abductor.rsi

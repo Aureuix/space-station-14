@@ -1,0 +1,32 @@
+﻿# MUST be added to the InteractionPrototypes list of a SocialInteractionReceiver component to be usable
+- type: socialInteraction
+  id: Tap
+  verbName: tap-verb
+  interactString: tap-success
+  messagePerceivedByOthers: tap-success-others
+  # emoteMessage: tapping-emote
+  interactSound: /Audio/Effects/pop_high.ogg
+  
+- type: socialInteraction
+  id: Pat
+  verbName: pat-verb
+  interactString: pat-success
+  messagePerceivedByOthers: pat-success-others
+  # emoteMessage: patting-emote
+  interactSound: /Audio/Effects/thudswoosh.ogg
+  
+- type: socialInteraction
+  id: Shake
+  verbName: shake-verb
+  interactString: shake-success
+  messagePerceivedByOthers: shake-success-others
+  # emoteMessage: shaking-emote
+  interactSound: /Audio/Effects/thudswoosh.ogg
+  
+- type: socialInteraction
+  id: Punch
+  verbName: punch-verb
+  interactString: punch-success
+  messagePerceivedByOthers: punch-success-others
+  # emoteMessage: punching-emote
+  interactSound: /Audio/Effects/weak_hit1.ogg

@@ -1,5 +1,5 @@
 - type: entity
-  parent: [MobBloodstream, MobFlammable, BaseMobSpecies]
+  parent: [MobBloodstream, MobFlammable, BaseMobSpecies, BaseSpeciesPickupableLarge] # SpL- adds IPCs to the pickupable list
   id: BaseMobIPC
   name: Urist McRobot
   abstract: true
@@ -438,6 +438,7 @@
         modeAlert: IPCFansSpeedExtreme
   - type: Flammable
     firestackFade: -0.8 # Not much to burn + they take way too much damage even from a bit
+  - type: JobStatus # SpL- weird workaround that's apparently needed?
 
 - type: entity
   parent: BaseSpeciesDummy

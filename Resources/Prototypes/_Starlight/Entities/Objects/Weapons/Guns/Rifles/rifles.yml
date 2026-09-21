@@ -1,5 +1,5 @@
 - type: entity
-  name: lecter
+  name: SA-G48 'Lecter' assault rifle # SpL
   parent: [WeaponRifleLecter, BaseSecurityContraband]
   id: WeaponRifleLecterRubber
   suffix: Non-lethal
@@ -24,10 +24,10 @@
             - CartridgeRifle
 
 - type: entity
-  name: lr-30
+  name: NT-HPW LR-30 laser carbine # SpL
   parent: [BaseItem, BaseGunWieldable, BaseSecuritySalvageContraband]
   id: WeaponLr30
-  description: Energy carbine with lethal mode.
+  description: A rifle-like energy carbine that relies more on chemical-laser ammunition rather than a built-in battery. The LR-30 is a larger, older market model of the NanoTrasen Asset Protection Division's proprietary IK-60. # SpL
   components:
   - type: Sprite
     sprite: _Starlight/Objects/Weapons/Guns/Rifles/lr30.rsi
@@ -84,10 +84,10 @@
   # SpL end
 
 - type: entity
-  name: IK-60 laser carbine
+  name: NT-HPW IK-60 laser carbine # SpL
   parent: [BaseItem, BaseGunWieldable, BaseSecurityContraband]
   id: WeaponIK60
-  description: A short, compact rifle-like carbine that relies more on battery-powered ammunition rather than a built-in battery. Used by the NanoTrasen Space Force in combat operations.
+  description: A short, compact rifle-like carbine that relies more on battery-powered ammunition rather than a built-in battery. Used by the NanoTrasen Asset Protection Division in EVA combat operations, and by CBURN formations during cleanup. # SpL
   components:
   - type: Sprite
     sprite: _Starlight/Objects/Weapons/Guns/Rifles/laser_carbine.rsi
@@ -103,7 +103,7 @@
     slots:
       gun_magazine:
         name: Magazine
-        startingItem: MagazineBatteryLr30
+        startingItem: MagazineBatteryLr30Extended # SpL
         insertSound: /Audio/Weapons/Guns/MagIn/batrifle_magin.ogg
         ejectSound: /Audio/Weapons/Guns/MagOut/batrifle_magout.ogg
         priority: 2
@@ -140,10 +140,10 @@
   # SpL end
 
 - type: entity
-  name: ARG
+  name: Aussec Armory ARG assault rifle # SpL
   parent: [BaseTSFContraband, BaseWeaponRifle]
   id: WeaponRifleARG
-  description: An old galactic standard assault rifle, used by various paramilitary groups and former SVS militias ever since. Uses 7.62x51mm ammo. # Spectralight: .30 -> 7.62x51mm
+  description: An old galactic standard assault rifle, used by both TSF forces and paramilitary groups alike. Uses 7.62x51mm rifle ammo. # SpL
   components:
   - type: Sprite
     sprite: _Starlight/Objects/Weapons/Guns/Rifles/arg.rsi
@@ -194,10 +194,10 @@
     zeroVisible: true
 
 - type: entity
-  name: aussec armory M-52
+  name: Aussec Armory M-52 battle rifle # SpL
   parent: [BaseTSFContraband, WeaponRifleLecter]
   id: WeaponRifleM52
-  description: One of the least popular examples of heavy assault rifles. It has impressive firepower.
+  description: One of the last surviving fully-chambered rifle models, nevertheless still widely used by TSF forces. It has impressive firepower. # SpL
   components:
   - type: Sprite
     sprite: _Starlight/Objects/Weapons/Guns/Rifles/m-52.rsi
@@ -234,10 +234,14 @@
             - CartridgeRifle
 
 - type: entity
-  name: leikha
+  name: SA-G48M 'Leikha' assault rifle # SpL
   parent: [ BaseWeaponRifle, BaseSecurityContraband ]
   id: WeaponRifleLeikha
+<<<<<<< HEAD
   description: A high end military grade assault rifle. This one has been retrofitted with a scope and a burst reciever. Uses 5.56x45mm ammo. # Spectralight: .20 -> 5.56x45mm
+=======
+  description: A high end military grade assault rifle built on the Lecter platform. This one has been retrofitted with a scope and a burst receiver. Uses .20 rifle ammo. # SpL
+>>>>>>> SpectaLight
   components:
   - type: Sprite
     sprite: _Starlight/Objects/Weapons/Guns/Rifles/m16a4.rsi
@@ -251,7 +255,7 @@
   - type: Gun
     burstFireRate: 12
     shotsPerBurst: 3
-    burstCooldown: 0.55
+    burstCooldown: 0.5 # SpL 5.5->5
     selectedMode: Burst
     availableModes:
     - Burst
@@ -293,10 +297,14 @@
     pvsIncrease: 0.15
 
 - type: entity
-  name: L10 DMR
+  name: SA-G48CS 'Watchdog' DMR # SpL
   parent: [ BaseWeaponRifle, BaseSecurityContraband ]
   id: WeaponRifleL10
+<<<<<<< HEAD
   description: "A scoped marksman rifle for medium range engagements, built on the Lecter platform.\nChambered in .45 ACP." # Spectralight: Magnum -> ACP
+=======
+  description: A scoped marksman rifle for medium range engagements, built on the Lecter platform. Chambered in .45 magnum. # SpL
+>>>>>>> SpectaLight
   components:
   - type: Sprite
     sprite: _Starlight/Objects/Weapons/Guns/Rifles/L10.rsi
@@ -308,7 +316,7 @@
   - type: Clothing
     sprite: _Starlight/Objects/Weapons/Guns/Rifles/L10.rsi
   - type: Gun
-    fireRate: 2
+    fireRate: 2.5 # SpL 2->2.5
     selectedMode: SemiAuto
     availableModes:
     - SemiAuto
@@ -349,15 +357,19 @@
   - type: Appearance
   - type: CursorOffsetRequiresWield
   - type: EyeCursorOffset
-    maxOffset: 3
-    pvsIncrease: 0.3
+    maxOffset: 4 # SpL 3 -> 4
+    pvsIncrease: 0.4 # SpL 0.3->0.4
 
 
 - type: entity
-  name: pitbull
+  name: C-91br 'Pitbull' battle rifle # SpL
   parent: [ BaseWeaponRifle, BaseSyndicateContraband ]
   id: WeaponRiflePitbull
+<<<<<<< HEAD
   description: A large bullpup rifle with a low fire-rate but excellent accuracy, designed to excel in protracted firefights. Chambered in 7.62x51mm. # Spectralight: .30 -> 7.62x51mm
+=======
+  description: A large bullpup rifle with a low fire-rate but excellent accuracy, designed to excel in protracted firefights. Chambered in .30 rifle. # SpL
+>>>>>>> SpectaLight
   components:
   - type: Sprite
     sprite: _Starlight/Objects/Weapons/Guns/Rifles/pitbull.rsi
@@ -400,10 +412,14 @@
 
 
 - type: entity
-  name: peacemaker
+  name: NT-Mk60 'Peacemaker' assault rifle # SpL
   parent: [ BaseWeaponRifle, BaseSecurityContraband ]
   id: WeaponRiflePeacemaker
+<<<<<<< HEAD
   description: The best or worst thing you'll ever see, depending if it's pointed at you or not. Uses 5.56x45mm ammo. # Spectralight: .20 -> 5.56x45mm
+=======
+  description: A homegrown NanoTrasen rifle design, the Peacemaker is likely to be either the best or worst thing you'll ever see, depending if it's pointed at you or not. Uses .20 rifle ammo. # SpL
+>>>>>>> SpectaLight
   components:
   - type: Sprite
     sprite: _Starlight/Objects/Weapons/Guns/Rifles/ert.rsi
@@ -448,10 +464,14 @@
           tags:
 
 - type: entity
-  name: M18-militant
+  name: AO-M18 'Militant' assault rifle # SpL
   parent: [BaseWeaponRifle, BaseSalvageContraband]
   id: WeaponRifleM18
+<<<<<<< HEAD
   description: Aged yet dependable, this old-world assault rifle is chambered in 5.56x45mm ammunition. Renowned for its reliability and ease of maintenance even in the harshest environments, it remains a staple among your station’s merce- salvage forces. # Spectralight: .20 -> 5.56x45mm
+=======
+  description: Aged yet dependable, this old-world assault rifle is chambered in .20 rifle ammunition. Renowned for its reliability and ease of maintenance even in the harshest environments, it remains a staple NanoTrasen's merce- salvage forces. # SpL
+>>>>>>> SpectaLight
   components:
     - type: Sprite
       sprite: _Starlight/Objects/Weapons/Guns/Rifles/m16.rsi
@@ -510,7 +530,7 @@
       pvsIncrease: 1.4
 
 - type: entity
-  name: SPC-lionhunter
+  name: SPC-21 'Lionhunter' sniper rifle # SpL
   parent: [ BaseWeaponSniper, BaseGunWieldable, BaseMajorContraband ]
   id: WeaponRifleLionhunter
   description: A one of a kind bolt-action rifle fitted with an integrated scope. Chambered for a proprietary .48 round developed by parties unknown. Built to drop targets at range with authority. Each shot demands a deliberate recycle of the action.
@@ -560,12 +580,16 @@
         ents: []
       firing_pin: !type:Container
   - type: Appearance
-    
+
 - type: entity
-  name: lawbringer
+  name: SA-521 'Lawbringer' battle rifle # SpL
   parent: [BaseWeaponRifle, BaseSecurityContraband]
   id: WeaponRifleLawbringer
+<<<<<<< HEAD
   description: A bullpup carbine of modern design commonly used by Solgov and recently commissioned by NanoTrasen for security and military applications. Feeds from 7.62x51mm magazines. # Spectralight: .30 -> 7.62x51mm
+=======
+  description: The highest calibre longarm produced by Scarborough Arms, the Lawbringer is bullpup rifle of modern design commonly used by Solgov and recently commissioned by NanoTrasen for security and military applications. Feeds from .30 rifle magazines. # SpL
+>>>>>>> SpectaLight
   components:
     - type: Sprite
       sprite: _Starlight/Objects/Weapons/Guns/Rifles/lawbringer.rsi
@@ -606,4 +630,4 @@
       steps: 1
       zeroVisible: true
     - type: Appearance
-      
+

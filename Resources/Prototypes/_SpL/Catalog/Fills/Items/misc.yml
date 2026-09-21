@@ -1,0 +1,19 @@
+﻿- type: entity
+  id: ClothingShoesBootsMagERTFilled
+  suffix: Filled, Vibrocutter
+  parent: ClothingShoesBootsMagERT
+  components:
+    - type: ContainerFill
+      containers:
+        item:
+          - CentcommVibrocutter
+
+- type: entity
+  id: ClothingShoesBootsJackFilledVibro
+  parent: ClothingShoesBootsJack
+  suffix: Filled, Vibrocutter
+  components:
+    - type: ContainerFill
+      containers:
+        item:
+          - CentcommVibrocutter

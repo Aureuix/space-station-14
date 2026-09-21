@@ -105,10 +105,10 @@
   # SpL end
 
 - type: entity
-  name: viper
+  name: C-75a 'Viper' automatic pistol # SpL
   parent: [BaseWeaponPistol, BaseSyndicateContraband]
   id: WeaponPistolViper
-  description: A common handgun illegally modified by the Syndicate. The Viper sports a selector switch between semi-auto, "rock and roll", and "spray and pray". The standard sidearm for any soldier who fights under the three serpents. Feeds from .35 pistol magazines. #Starlight
+  description: A market-variety handgun modified by Waffle Corporation, the Viper sports a selector switch between semi-auto, "rock and roll", and "spray and pray". The standard sidearm for any soldier who fights under the three serpents. Feeds from .35 pistol magazines. #Starlight
   components:
   - type: Sprite
     sprite: Objects/Weapons/Guns/Pistols/viper.rsi
@@ -149,7 +149,7 @@
     price: 1000
 
 - type: entity
-  name: echis
+  name: C-75ac 'Echis' ROW # SpL
   parent: [ BaseItem, BaseSyndicateContraband ]
   id: WeaponPistolEchis
   description: A cyborg-mounted weapon system based on the Viper pistol. Creates ammunition on the fly from an internal fabricator, which slowly self-charges.
@@ -185,10 +185,10 @@
   - type: AmmoCounter
 
 - type: entity
-  name: cobra
+  name: CS-11 'Cobra' subsonic pistol # SpL
   parent: [ BaseWeaponPistol, BaseSyndicateContraband ]
   id: WeaponPistolCobra
-  description: Integrally suppressed semi-automatic pistol used by the Syndicate, firing caseless subsonic rounds. Favored by any agent who likes to keep things quiet and leave no evidence behind. Feeds from .25 pistol magazines.
+  description: An integrally suppressed semi-automatic pistol used by the Syndicate, firing caseless subsonic rounds. Favored by any agent who likes to keep things quiet and leave no evidence behind. Feeds from .25 pistol magazines.
   components:
   - type: Sprite
     sprite: Objects/Weapons/Guns/Pistols/cobra.rsi
@@ -236,7 +236,7 @@
     price: 1500
 
 - type: entity
-  name: mk 58
+  name: NT-Mk58 'Universal' pistol # SpL
   parent: [BaseWeaponPistol, BaseSecuritySalvageContraband]
   id: WeaponPistolMk58
   description: Designed by NanoTrasen’s Small Arms Division, the Mk58 is a conventional semi-automatic pistol with a simple recoil-operated action and excellent reliability. Feeds from .35 pistol magazines.
@@ -262,7 +262,7 @@
     stealGroup: OfficerHandgun
 
 - type: entity
-  name: N1984
+  name: NT-N1984 heavy pistol # SpL
   parent: [BaseWeaponPistol, BaseSecurityContraband]
   id: WeaponPistolN1984
   description: An exceptionally powerful ‘hand cannon’ designed as part of NanoTrasen's BFG initiative. Chambered in .45 ACP, it is generally considered too unwieldy for standard use but has become something of a status symbol among NanoTrasen officials. Feeds from .45 pistol magazines. # Spectralight: Magnum -> ACP

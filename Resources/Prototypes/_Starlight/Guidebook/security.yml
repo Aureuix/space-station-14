@@ -1,0 +1,5 @@
+
+- type: guideEntry
+  id: AmmoTypes
+  name: guide-entry-sl-security-ammo-types
+  text: "/ServerInfo/_Starlight/Guidebook/Security/AmmoTypes.xml"

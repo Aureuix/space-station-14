@@ -372,6 +372,7 @@
       - id: WeaponMeleeSwitchblade 
       - id: SpearSteel #Starlight End:
       - id: ThrowableBrick # SpL
+      - id: GrenadeMolotov # SpL- if this turns out to be a bad idea it'll be undone
     # Rare Group
     - !type:GroupSelector
       weight: 5
@@ -380,7 +381,7 @@
       - id: Matchbox
       - id: ClothingEyesBlindfold
       - id: ClothingMaskMuzzle
-      - id: ClothingMaskGasSecurity
+      # - id: ClothingMaskGasSecurity # SpL- removed
       - id: ShardGlass
         weight: 2
       - id: Syringe
@@ -391,7 +392,7 @@
         - id: Brutepack1
         - id: Ointment1
         - id: Gauze1
-      - id: Bola
+      # - id: Bola # SpL- removed
       - id: SurvivalKnife
       - id: ScalpelShiv
       - id: Shiv

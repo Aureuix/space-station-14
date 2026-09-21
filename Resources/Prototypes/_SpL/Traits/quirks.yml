@@ -11,3 +11,14 @@
           boozeStrengthMultiplier: 0.5
   conflicts:
     - LightweightDrunk
+
+- type: trait
+  id: InnocentTrait
+  name: trait-innocent-name
+  description: trait-innocent-desc
+  category: Quirks
+  cost: 0
+  effects:
+    - !type:AddCompsEffect
+      components:
+        - type: NoObjectiveTarget

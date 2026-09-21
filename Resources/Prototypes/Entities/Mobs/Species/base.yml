@@ -237,11 +237,13 @@
     - AnomalyHost
   - type: ActiveInputMover # Starlight
   # Starlight Start: Social Interactions
-  - type: PhysicalSocialInteractionGiver
-  - type: PhysicalSocialInteractionReceiver
+  - type: SocialInteractionGiver # SpL
+  - type: SocialInteractionReceiver # SpL
     interactionPrototypes:
     - Pet
     - Boop
+    - Wave # SpL
+    - Look # SpL
     - Tap # SpL
     - Pat # SpL
     - Shake # SpL

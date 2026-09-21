@@ -39,17 +39,17 @@
     Plasma: 1000
     Silver: 1000
 
-- type: latheRecipe
-  parent: BaseWeaponRecipeLong
-  id: WeaponDecloner
-  result: WeaponDecloner
-  materials:
-    Steel: 2500
-    Glass: 2500
-    Plasma: 2500
-    Silver: 2500
-    Gold: 1000
-    Diamond: 1000
+#- type: latheRecipe # SpL- death to the decloner
+#  parent: BaseWeaponRecipeLong
+#  id: WeaponDecloner
+#  result: WeaponDecloner
+#  materials:
+#    Steel: 2500
+#    Glass: 2500
+#    Plasma: 2500
+#    Silver: 2500
+#    Gold: 1000
+#    Diamond: 1000 # SpL- death to the decloner
 
 #Cybernetics
 - type: latheRecipe

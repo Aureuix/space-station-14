@@ -365,6 +365,49 @@
         - Draconic
 
 - type: entity
+  parent: PlushieArachind
+  id: PlushieOomu
+  name: oomu plushie
+  description: A plushie depicting everyone's favourite Research Director, complete with a removable hardsuit and light. Keeping charcoal on-hand is highly advised while handling.
+  components:
+    - type: Item
+      size: Small
+      sprite: _SpL/Objects/Fun/Plushies/oomu_plushie.rsi
+    - type: Sprite
+      sprite: _SpL/Objects/Fun/Plushies/oomu_plushie.rsi
+      layers:
+        - state: icon
+        - state: icon_suited
+          visible: false
+          map: [ "suited" ]
+    - type: ItemTogglePointLight
+    - type: ItemToggle
+      soundActivate:
+        path: /Audio/Mecha/mechmove03.ogg
+        params:
+          volume: -4
+      soundDeactivate:
+        path: /Audio/Mecha/mechmove03.ogg
+        params:
+          volume: -4
+    - type: Appearance
+    - type: PointLight
+      enabled: false
+      radius: 2
+      energy: 2
+      color: white
+      mask: /Textures/Effects/LightMasks/cone.png
+      autoRot: true
+      netsync: false
+    - type: ToggleableVisuals
+      spriteLayer: suited
+    - type: Extractable
+      juiceSolution:
+        reagents:
+          - ReagentId: Lexorin 
+            Quantity: 1
+            
+- type: entity
   parent: BaseShadekinPlushie
   id: PlushieParadigm
   name: paradigm plushie
@@ -495,3 +538,15 @@
         - GalacticCommon
         - Marish
         - Sign
+
+- type: entity
+  parent: BaseFelionoidPlushie
+  id: PlushieFurlow
+  name: furlow plushie
+  description: The situations guy.
+  components:
+    - type: Sprite
+      sprite: _SpL/Objects/Fun/Plushies/furlow_plushie.rsi
+      state: icon
+    - type: Item
+      sprite: _SpL/Objects/Fun/Plushies/furlow_plushie.rsi

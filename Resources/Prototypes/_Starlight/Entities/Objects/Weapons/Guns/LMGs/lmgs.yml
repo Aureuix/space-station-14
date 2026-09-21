@@ -1,5 +1,5 @@
 - type: entity
-  name: M492 Smart LMG
+  name: NT-M492 Smart LMG # SpL
   id: WeaponLightMachineGunM492
   parent: [BaseWeaponLightMachineGun, BaseSecurityContraband]
   description: A high tech non-traditional LMG built specifically for combating the big threats among us. Uses 7.62x51mm ammo.
@@ -61,7 +61,7 @@
     supportedPins: [ SmartLMG ]
 
 - type: entity
-  name: DP-28 LMG
+  name: DP-28K 'Soyuz' LMG # SpL
   id: WeaponLightMachineGunDP28
   parent: [BaseWeaponLightMachineGun, BaseSovietContraband]
   description: From RA-TA-TA-TA with love. Uses 7.62x51mm ammo.

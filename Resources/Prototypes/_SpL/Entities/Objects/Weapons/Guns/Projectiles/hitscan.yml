@@ -21,6 +21,37 @@
         state: impact_u_laser
         
 - type: entity
+  id: HealingBeam
+  name: healing beam
+  parent: BasicHitscanNoBeam
+  categories: [ HideSpawnMenu ]
+  components:
+    - type: HitscanBasicDamage
+      damage:
+        types:
+          Blunt: -0.4
+          Piercing: -0.4
+          Slash: -0.4
+          Heat: -0.4
+          Cold: -0.4
+          Shock: -0.4
+          Caustic: -0.4
+          Cellular: 0.1
+      ignoreResistances: true
+      armorPenetration: 1
+      canHeal: true
+    - type: HitscanBasicVisuals
+      muzzleFlash:
+        sprite: Objects/Weapons/Guns/Projectiles/projectiles.rsi
+        state: muzzle_green
+      travelFlash:
+        sprite: Objects/Weapons/Guns/Projectiles/projectiles.rsi
+        state: beam_green
+      impactFlash:
+        sprite: Objects/Weapons/Guns/Projectiles/projectiles.rsi
+        state: impact_green
+
+- type: entity
   name: magnum structural laser bolt
   id: BulletLaserDestructionMagnumSL
   categories: [ HideSpawnMenu ]
