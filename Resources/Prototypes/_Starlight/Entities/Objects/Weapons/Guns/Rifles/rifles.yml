@@ -143,7 +143,7 @@
   name: ARG
   parent: [BaseTSFContraband, BaseWeaponRifle]
   id: WeaponRifleARG
-  description: An old galactic standard assault rifle, used by various paramilitary groups and former SVS militias ever since. Uses .30 rifle ammo.
+  description: An old galactic standard assault rifle, used by various paramilitary groups and former SVS militias ever since. Uses 7.62x51mm ammo. # Spectralight: .30 -> 7.62x51mm
   components:
   - type: Sprite
     sprite: _Starlight/Objects/Weapons/Guns/Rifles/arg.rsi
@@ -237,7 +237,7 @@
   name: leikha
   parent: [ BaseWeaponRifle, BaseSecurityContraband ]
   id: WeaponRifleLeikha
-  description: A high end military grade assault rifle. This one has been retrofitted with a scope and a burst reciever. Uses .20 rifle ammo.
+  description: A high end military grade assault rifle. This one has been retrofitted with a scope and a burst reciever. Uses 5.56x45mm ammo. # Spectralight: .20 -> 5.56x45mm
   components:
   - type: Sprite
     sprite: _Starlight/Objects/Weapons/Guns/Rifles/m16a4.rsi
@@ -296,7 +296,7 @@
   name: L10 DMR
   parent: [ BaseWeaponRifle, BaseSecurityContraband ]
   id: WeaponRifleL10
-  description: "A scoped marksman rifle for medium range engagements, built on the Lecter platform.\nChambered in .45 magnum."
+  description: "A scoped marksman rifle for medium range engagements, built on the Lecter platform.\nChambered in .45 ACP." # Spectralight: Magnum -> ACP
   components:
   - type: Sprite
     sprite: _Starlight/Objects/Weapons/Guns/Rifles/L10.rsi
@@ -357,7 +357,7 @@
   name: pitbull
   parent: [ BaseWeaponRifle, BaseSyndicateContraband ]
   id: WeaponRiflePitbull
-  description: A large bullpup rifle with a low fire-rate but excellent accuracy, designed to excel in protracted firefights. Chambered in .30 rifle.
+  description: A large bullpup rifle with a low fire-rate but excellent accuracy, designed to excel in protracted firefights. Chambered in 7.62x51mm. # Spectralight: .30 -> 7.62x51mm
   components:
   - type: Sprite
     sprite: _Starlight/Objects/Weapons/Guns/Rifles/pitbull.rsi
@@ -403,7 +403,7 @@
   name: peacemaker
   parent: [ BaseWeaponRifle, BaseSecurityContraband ]
   id: WeaponRiflePeacemaker
-  description: The best or worst thing you'll ever see, depending if it's pointed at you or not. Uses .20 rifle ammo.
+  description: The best or worst thing you'll ever see, depending if it's pointed at you or not. Uses 5.56x45mm ammo. # Spectralight: .20 -> 5.56x45mm
   components:
   - type: Sprite
     sprite: _Starlight/Objects/Weapons/Guns/Rifles/ert.rsi
@@ -451,7 +451,7 @@
   name: M18-militant
   parent: [BaseWeaponRifle, BaseSalvageContraband]
   id: WeaponRifleM18
-  description: Aged yet dependable, this old-world assault rifle is chambered in .20 rifle ammunition. Renowned for its reliability and ease of maintenance even in the harshest environments, it remains a staple among your station’s merce- salvage forces.
+  description: Aged yet dependable, this old-world assault rifle is chambered in 5.56x45mm ammunition. Renowned for its reliability and ease of maintenance even in the harshest environments, it remains a staple among your station’s merce- salvage forces. # Spectralight: .20 -> 5.56x45mm
   components:
     - type: Sprite
       sprite: _Starlight/Objects/Weapons/Guns/Rifles/m16.rsi
@@ -565,7 +565,7 @@
   name: lawbringer
   parent: [BaseWeaponRifle, BaseSecurityContraband]
   id: WeaponRifleLawbringer
-  description: A bullpup carbine of modern design commonly used by Solgov and recently commissioned by NanoTrasen for security and military applications. Feeds from .30 rifle magazines.
+  description: A bullpup carbine of modern design commonly used by Solgov and recently commissioned by NanoTrasen for security and military applications. Feeds from 7.62x51mm magazines. # Spectralight: .30 -> 7.62x51mm
   components:
     - type: Sprite
       sprite: _Starlight/Objects/Weapons/Guns/Rifles/lawbringer.rsi

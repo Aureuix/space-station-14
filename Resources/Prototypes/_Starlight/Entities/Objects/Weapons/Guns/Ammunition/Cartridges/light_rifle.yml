@@ -1,6 +1,6 @@
 - type: entity
   id: CartridgeLightRifleRubber
-  name: cartridge (.30 rifle rubber)
+  name: 7.62x51mm cartridge (rubber) # Spectralight: .30 -> 7.62x51mm
   parent: BaseCartridgeLightRifleSP
   components:
   - type: CartridgeAmmo
@@ -15,7 +15,7 @@
 
 - type: entity
   id: CartridgeLightRifleImprovised
-  name: improvised cartridge (.30 rifle)
+  name: improvised cartridge (7.62x51mm) # Spectralight: .30 -> 7.62x51mm
   description: A handmade rifle bullet, uses phosphorus as a propellent instead of gunpowder which makes it much less effective. 
   parent: [BaseCartridgeLightRifleSP, BaseMinorContraband]
   components:

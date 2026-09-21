@@ -11,24 +11,24 @@ uplink-minotaur-name = Minotaur bundle
 uplink-minotaur-desc = Lean and mean: Contains a smooth, powerful, and highly illegal shotgun, alongside 5 buckshot drums.
 
 uplink-deagle-name = Desert Eagle
-uplink-deagle-desc = A robust magnum handgun. Hold on a second, weren't these discontinued centuries ago? It'll probably still work (.45 magnum).
+uplink-deagle-desc = A robust magnum handgun. Hold on a second, weren't these discontinued centuries ago? It'll probably still work.
 
 uplink-stechkin-name = Stechkin pistol
 uplink-stechkin-desc = A small, easily concealable 10mm handgun. Has a threaded barrel for suppressors.
 
 uplink-stechkin-bundle-name = Solid Operative Bundle
-uplink-stechkin-bundle-desc = A mysterious cardboard box containing a slew of equipment for only the most solid of operatives (.40 FMJ).
+uplink-stechkin-bundle-desc = A mysterious cardboard box containing a slew of equipment for only the most solid of operatives.
 
-uplink-pistol-high-capacity-magazine-name = Extended Pistol Magazine (.35 auto)
+uplink-pistol-high-capacity-magazine-name = Extended Pistol Magazine (9mm)
 uplink-pistol-high-capacity-magazine-desc = Pistol magazine with 16 cartridges. Compatible with the Viper.
 
-uplink-pistol-hp-magazine-name = Pistol Magazine (.35 auto HP)
+uplink-pistol-hp-magazine-name = Pistol Magazine (9mm HP)
 uplink-pistol-hp-magazine-desc = Pistol magazine with 10 cartridges. Compatible with the Viper.
 
-uplink-pistol-fmj-magazine-name = Pistol Magazine (.35 auto FMJ)
+uplink-pistol-fmj-magazine-name = Pistol Magazine (9mm FMJ)
 uplink-pistol-fmj-magazine-desc = Pistol magazine with 10 cartridges. Compatible with the Viper.
 
-uplink-pistol-magnum-magazine-name = Pistol Magazine (.45 magnum)
+uplink-pistol-magnum-magazine-name = Pistol Magazine (.45 ACP)
 uplink-pistol-magnum-magazine-desc = Pistol magazine with 10 cartridges. Compatible with the Desert Eagle.
 
 uplink-magillitis-serum-implanter-name = Magillitis Serum Implanter
@@ -38,9 +38,9 @@ uplink-gear-acidifier-implant-name = Gear Acidifier Implant
 uplink-gear-acidifier-implant-desc = Melts your equipment on use or death, leaving your body intact. Does not destroy restraints.
 
 uplink-pitbull-bundle-name = Pitbull Bundle
-uplink-pitbull-bundle-desc = A large bullpup rifle with a low fire-rate but excellent accuracy and ammo efficiency, plus three magazines. Chambered in .30 rifle.
+uplink-pitbull-bundle-desc = A large bullpup rifle with a low fire-rate but excellent accuracy and ammo efficiency, plus three magazines. Chambered in 7.62x51mm.
 
-uplink-rifle-magazine-pitbull-name = DMR magazine (.45 magnum)
+uplink-rifle-magazine-pitbull-name = DMR magazine (.45 ACP)
 uplink-rifle-magazine-pitbull-desc = DMR magazines with 20 cartrides. Compatible with the Estoc.
 
 uplink-nightvision-eyes = Night Vision Cyber Eyes
@@ -62,9 +62,9 @@ uplink-syndie-implant-name = Syndicate Agent Implant
 uplink-syndie-implant-desc = A cybernetic eye implant. Enables an agent to see information about the station crew, humanoids and Syndicate allies without any glasses. (Warning: You will need a surgical assistant for the procedure.)
 
 uplink-uzi-bundle-name = Type U3 Uzi Bundle
-uplink-uzi-bundle-desc = Contains the Type U3 Uzi, with two additional magazines. Chambered in .35 auto.
+uplink-uzi-bundle-desc = Contains the Type U3 Uzi, with two additional magazines. Chambered in 9mm.
 
-uplink-uzi-magazine-name = Uzi Magazine (.35 auto)
+uplink-uzi-magazine-name = Uzi Magazine (9mm)
 uplink-uzi-magazine-desc = A submachine gun magazine with 32 cartridges. Compatible with the Type U3 Uzi.
 
 uplink-breaching-magazine-name = Shotgun Magazine (12 gauge breaching)
@@ -104,7 +104,7 @@ uplink-hydra-name = Hydra
 uplink-hydra-desc = A modified Hydra capable of taking both cleanades and standard grenades. Excellent for when you need to clean up the security department. Comes pre-filled with special Syndicate cleanades.
 
 uplink-pizza-bomb-name = Nefarious Pizza bomb
-uplink-pizza-bomb-desc = Originally developed by covertly by DONK Co to disuade the heretics who prefer their pizza not in pocket form. This pizza box is wired, and explodes within moments of being opened. 
+uplink-pizza-bomb-desc = Originally developed by covertly by DONK Co to disuade the heretics who prefer their pizza not in pocket form. This pizza box is wired, and explodes within moments of being opened.
 
 uplink-shuttle-board-name = Syndicate Shuttle Console Board
 uplink-shuttle-board-desc = A computer printed circuit board for a Syndicate shuttle console.

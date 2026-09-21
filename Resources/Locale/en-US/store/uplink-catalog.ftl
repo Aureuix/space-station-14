@@ -1,19 +1,19 @@
 # Weapons
 
 uplink-pistol-viper-name = Viper
-uplink-pistol-viper-desc = A small, easily concealable, but somewhat underpowered gun. Retrofitted with a fully automatic receiver. Uses pistol magazines (.35 auto).
+uplink-pistol-viper-desc = A small, easily concealable, but somewhat underpowered gun. Retrofitted with a fully automatic receiver. Uses pistol magazines (9mm).
 
 uplink-estoc-bundle-name = Estoc DMR bundle
-uplink-estoc-bundle-desc = A designated marksman rifle, fitted with a mid-range optic for longer-range combat. Bundled with two rifle magazines. Chambered in .45 magnum.
+uplink-estoc-bundle-desc = A designated marksman rifle, fitted with a mid-range optic for longer-range combat. Bundled with two rifle magazines. Chambered in .45 ACP.
 
 uplink-revolver-python-name = Python
-uplink-revolver-python-desc = A brutally simple, effective, and loud Syndicate revolver. Comes loaded with armor-piercing rounds (.45 magnum).
+uplink-revolver-python-desc = A brutally simple, effective, and loud Syndicate revolver. Comes loaded with .45 ACP armor-piercing rounds.
 
 uplink-pistol-cobra-name = Cobra
-uplink-pistol-cobra-desc = A rugged, robust operator handgun with inbuilt silencer. Uses pistol magazines (.25 caseless).
+uplink-pistol-cobra-desc = A rugged, robust operator handgun with inbuilt silencer. Uses 5.7mm magazines.
 
 uplink-rifle-mosin-name = Kardashev-Mosin
-uplink-rifle-mosin-desc = A bolt action service rifle that has seen centuries of warfare. Not modern by any standard, hand loaded, and handles horrifically, but it is cheap. Chambered in .45 magnum.
+uplink-rifle-mosin-desc = A bolt action service rifle that has seen centuries of warfare. Not modern by any standard, hand loaded, and handles horrifically, but it is cheap. Chambered in .45 ACP.
 
 uplink-esword-name = Energy Sword
 uplink-esword-desc = A very dangerous energy sword that can reflect shots. Can be stored in pockets when turned off. Makes a lot of noise when used or turned on.
@@ -92,31 +92,31 @@ uplink-shrapnel-grenade-name = Shrapnel Grenade
 uplink-shrapnel-grenade-desc = Launches a spray of sharp fragments dealing great damage against unarmored targets.
 
 # Ammo
-uplink-pistol-magazine-name = Pistol Magazine (.35 auto)
+uplink-pistol-magazine-name = 9mm pistol magazine
 uplink-pistol-magazine-desc = Pistol magazine with 15 cartridges. Compatible with the Viper.
 
-uplink-pistol-magazine-c20r-name = SMG magazine (.35 auto)
+uplink-pistol-magazine-c20r-name = 9mm SMG magazine
 uplink-pistol-magazine-c20r-desc = SMG magazine with 30 cartridges. Compatible with the C-20r.
 
-uplink-magazine-bulldog-pellet-name = Drum magazine (12 gauge pellet)
+uplink-magazine-bulldog-pellet-name = 12 gauge buckshot drum magazine
 uplink-magazine-bulldog-pellet-desc = Shotgun magazine with 8 shells filled with buckshot. Compatible with the Bulldog.
 
-uplink-magazine-bulldog-slug-name = Drum magazine (12 gauge slug)
+uplink-magazine-bulldog-slug-name = 12 gauge slug drum magazine
 uplink-magazine-bulldog-slug-desc = Shotgun magazine with 8 shells filled with slugs. Compatible with the Bulldog.
 
-uplink-estoc-ammo-name = Rifle magazine (.20 rifle)
+uplink-estoc-ammo-name = 5.56x45mm rifle magazine
 uplink-estoc-ammo-desc = A rifle magazine with 25 cartridges. Compatible with the M90 carbine.
 
-uplink-pistol-magazine-caseless-name = Pistol Magazine (.25 caseless)
+uplink-pistol-magazine-caseless-name = 5.7mm magazine
 uplink-pistol-magazine-caseless-desc = Pistol magazine with 10 cartridges. Compatible with the Cobra.
 
-uplink-speedloader-magnum-name = Speedloader (.45 magnum AP)
+uplink-speedloader-ACP-name = Armor-piercing .45 ACP speedloader
 uplink-speedloader-magnu-desc = Revolver speedloader with 6 armor-piercing cartridges, capable of ignoring armor entirely. Compatible with the Python.
 
-uplink-mosin-ammo-name = Ammunition box (.30 rifle)
-uplink-mosin-ammo-desc = A box of 60 cartridges, compatible with the Pitbull.
+uplink-mosin-ammo-name = 7.62x51mm ammunition box
+uplink-mosin-ammo-desc = A box of 60 cartridges, compatible with the Pitbull or L6 SAW.
 
-uplink-sniper-ammo-name = Ammunition box (.60 antimateriel)
+uplink-sniper-ammo-name = 14.5x114mm ammunition box
 uplink-sniper-ammo-desc = A box of 10 cartridges for the Hristov sniper rifle.
 
 uplink-grenade-launcher-frag-ammo-name = Frag grenade cartidge (China-Lake)
@@ -322,7 +322,7 @@ uplink-holy-hand-grenade-name = Holy Hand Grenade
 uplink-holy-hand-grenade-desc = O Lord, bless this thy hand grenade, that with it thou mayst blow thine enemies to tiny bits, in thy mercy.
 
 uplink-revolver-cap-gun-fake-name = Fake Cap Gun
-uplink-revolver-cap-gun-fake-desc = Fool your enemy! It can use both cap and magnum bullets. Comes loaded with magnum bullets.
+uplink-revolver-cap-gun-fake-desc = Fool your enemy! It can use both cap and ACP bullets. Comes loaded with ACP bullets.
 
 uplink-banana-peel-explosive-name = Explosive Banana Peel
 uplink-banana-peel-explosive-desc = They will burst into laughter when they slip on it!

@@ -2,7 +2,7 @@
   name: makarov
   parent: [BaseWeaponPistol, BaseSovietContraband]
   id: WeaponPistolMakarov
-  description: A cheap and cumbersome pistol, with a dot on the rear sight indicating the direction in which it tends to misfire, as this model does not shoot straight. Uses .35 auto ammo.
+  description: A cheap and cumbersome pistol, with a dot on the rear sight indicating the direction in which it tends to misfire, as this model does not shoot straight. Uses 9mm ammo. # Spectralight: .35 -> 9mm
   components:
     - type: Sprite
       sprite: _Starlight/Objects/Weapons/Guns/Pistols/makarov.rsi
@@ -572,7 +572,7 @@
   name: TSF-Model17
   parent: [BaseTSFContraband, BaseWeaponPistol]
   id: WeaponPistolTSFModel17
-  description: A standard-issue sidearm of the Trans Solar Federation, the Model 17 serves TSF peacekeepers across the galaxy. Built with proven reliability and chambered in .35 auto, this pistol remains a trusted tool of law enforcement. Feeds from .35 pistol magazines.
+  description: A standard-issue sidearm of the Trans Solar Federation, the Model 17 serves TSF peacekeepers across the galaxy. Built with proven reliability and chambered in 9mm, this pistol remains a trusted tool of law enforcement. Feeds from .35 pistol magazines. # Spectralight: .35 -> 9mm
   components:
     - type: Sprite
       sprite: _Starlight/Objects/Weapons/Guns/Pistols/tsf_model17.rsi

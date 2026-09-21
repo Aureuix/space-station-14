@@ -1,6 +1,6 @@
 - type: entity
   id: CartridgeCaselessRifleRubber
-  name: cartridge (.25 caseless rubber)
+  name: 5.7mm cartridge (rubber)
   parent: BaseCartridgeCaselessRifle
   components:
   - type: CartridgeAmmo

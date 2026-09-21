@@ -2,7 +2,7 @@
   categories: [ HideSpawnMenu ]
   parent: BaseBullet
   id: BulletAntiMateriel
-  name: bullet (.60 anti-materiel)
+  name: 14.5x114mm bullet # Spectralight: .60 -> 14.5x114mm
   components:
   - type: Projectile
     damage:
