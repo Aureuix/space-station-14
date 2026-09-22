@@ -6,4 +6,4 @@
   suffix: Command
   components:
   - type: AccessReader
-    access: [["Command"]]
+    access: [["Command"], ["NTPersonnel"]]

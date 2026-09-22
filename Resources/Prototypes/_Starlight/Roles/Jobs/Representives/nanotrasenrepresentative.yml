@@ -49,6 +49,7 @@
     - Brigmedic
     - Surgery
     - Paramedic
+    - NTPersonnel
   special:
     - !type:AddImplantSpecial
       implants: [MindShieldImplant]
