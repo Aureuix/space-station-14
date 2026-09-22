@@ -8,7 +8,8 @@ using Robust.Shared.GameStates;
 
 namespace Content.Shared._SpL.Traits;
 
-public sealed partial class BrittleBonesSystem : EntitySystem {
+public sealed partial class BrittleBonesSystem : EntitySystem
+{
     [Dependency] private readonly MobThresholdSystem _mobThreshold = default!;
 
     public override void Initialize(){
@@ -24,10 +25,10 @@ public sealed partial class BrittleBonesSystem : EntitySystem {
         // halves the death threshold
         if (!HasComp<RedshirtComponent>(ent.Owner)){
             var critThreshold = _mobThreshold.GetThresholdForState(ent.Owner, MobState.Critical, mobThreshComp); 
-            _mobThreshold.SetMobStateThreshold(ent.Owner, critThreshold / 2, MobState.Critical, mobThreshComp);
+            _mobThreshold.SetMobStateThreshold(ent.Owner, critThreshold / 3, MobState.Critical, mobThreshComp);
         } else {
             var deathThreshold = _mobThreshold.GetThresholdForState(ent.Owner, MobState.Dead, mobThreshComp); 
-            _mobThreshold.SetMobStateThreshold(ent.Owner, deathThreshold / 2, MobState.Critical, mobThreshComp);
+            _mobThreshold.SetMobStateThreshold(ent.Owner, deathThreshold / 3, MobState.Critical, mobThreshComp);
         }
     }
 
@@ -38,9 +39,9 @@ public sealed partial class BrittleBonesSystem : EntitySystem {
 
         var critThreshold = _mobThreshold.GetThresholdForState(ent.Owner, MobState.Critical, mobThreshComp);
         if (!HasComp<RedshirtComponent>(ent.Owner)){
-            _mobThreshold.SetMobStateThreshold(ent.Owner, critThreshold * 2, MobState.Critical, mobThreshComp);
+            _mobThreshold.SetMobStateThreshold(ent.Owner, critThreshold * 3, MobState.Critical, mobThreshComp);
         } else {
-            _mobThreshold.SetMobStateThreshold(ent.Owner, critThreshold * 2 - 1, MobState.Critical, mobThreshComp);
+            _mobThreshold.SetMobStateThreshold(ent.Owner, critThreshold * 3 - 1, MobState.Critical, mobThreshComp);
         }
     }
 }

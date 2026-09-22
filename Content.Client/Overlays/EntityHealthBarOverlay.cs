@@ -134,7 +134,7 @@ public sealed class EntityHealthBarOverlay : Overlay
             if (dmg.HealthBarThreshold != null && dmg.TotalDamage < dmg.HealthBarThreshold)
                 return null;
 
-            if (!_mobThresholdSystem.TryGetThresholdForState(uid, MobState.Critical, out var threshold, thresholds) &&
+            if (!_mobThresholdSystem.TryGetThresholdForState(uid, MobState.SoftCritical, out var threshold, thresholds) && // SpL- crit -> softcrit, to allow the ui to adapt
                 !_mobThresholdSystem.TryGetThresholdForState(uid, MobState.Dead, out threshold, thresholds))
                 return (1, false);
 
@@ -142,13 +142,15 @@ public sealed class EntityHealthBarOverlay : Overlay
             return (ratio, false);
         }
 
-        if (_mobStateSystem.IsCritical(uid, component))
+        if (_mobStateSystem.IsCritical(uid, component) || _mobStateSystem.IsSoftCritical(uid, component)) // Starlight edit: soft crit
         {
             if (!_mobThresholdSystem.TryGetThresholdForState(uid, MobState.Critical, out var critThreshold, thresholds) ||
                 !_mobThresholdSystem.TryGetThresholdForState(uid, MobState.Dead, out var deadThreshold, thresholds))
             {
                 return (1, true);
             }
+            if (_mobThresholdSystem.TryGetThresholdForState(uid, MobState.SoftCritical, out var softCritThreshold, thresholds)) // Starlight edit: soft crit
+                critThreshold = softCritThreshold; // Starlight edit: soft crit
 
             var ratio = 1 - ((dmg.TotalDamage - critThreshold) / (deadThreshold - critThreshold)).Value.Float();
 

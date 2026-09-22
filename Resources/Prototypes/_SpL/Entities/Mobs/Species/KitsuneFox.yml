@@ -44,14 +44,24 @@
   - type: Deathgasp
   - type: MobStateActions
     actions:
+      SoftCritical:
+        - ActionCritSuccumb
+        - ActionCritFakeDeath
+        - ActionCritLastWords
       Critical:
       - ActionCritSuccumb
       - ActionCritFakeDeath
       - ActionCritLastWords
   - type: MobThresholds
+    stateAlertDict:
+      Alive: "HumanHealth"
+      SoftCritical: "HumanCrit"
+      Critical: "HumanCrit"
+      Dead: "HumanDead"
     thresholds:
       0: Alive
-      80: Critical
+      80: SoftCritical
+      120: Critical
       160: Dead
   - type: Damageable
     damageContainer: Biological

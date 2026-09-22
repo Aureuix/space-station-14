@@ -165,12 +165,22 @@
   - type: StunVisuals
   - type: MobState
   - type: MobThresholds
+    stateAlertDict: # SpL Start
+      Alive: "HumanHealth"
+      SoftCritical: "HumanCrit"
+      Critical: "HumanCrit"
+      Dead: "HumanDead" # SpL End
     thresholds:
       0: Alive
-      100: Critical
+      100: SoftCritical # SpL
+      150: Critical # SpL
       200: Dead
   - type: MobStateActions
     actions:
+      SoftCritical: # SpL
+      - ActionCritSuccumb # SpL
+      - ActionCritFakeDeath # SpL
+      - ActionCritLastWords # SpL
       Critical:
       - ActionCritSuccumb
       - ActionCritFakeDeath
