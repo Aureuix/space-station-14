@@ -1,0 +1,78 @@
+﻿- type: entity
+  name: sawn-off rifle
+  parent: [BaseWeaponSniper, BaseMajorContraband]
+  id: WeaponSniperMosinSawn
+  description: Why would you do something like this to a Mosin?? Uses .45 ACP ammo.
+  components:
+    - type: KnockbackByUserTag 
+      doestContain:
+        Resomi:
+          knockback: 1
+        Avali:
+          knockback: 0.5 
+        Felionoid:
+          knockback: 0.5 
+    - type: BallisticAmmoProvider
+      capacity: 10 
+      proto: CartridgeMagnumSP
+      whitelist:
+        tags:
+          - CartridgeMagnum
+      soundRack:
+        path: /Audio/_Starlight/Weapons/Guns/Cock/cycle_bolt.ogg
+        params:
+          variation: 0.146
+    - type: Gun
+      soundGunshot:
+        path: /Audio/_Starlight/Weapons/Guns/Gunshots/mosin.ogg
+        params:
+          variation: 0.246
+      pump: true
+      fireRate: 1
+      minAngle: 10 # turns out, the barrel is pretty important for rifles
+      maxAngle: 30
+      angleIncrease: 5
+      angleDecay: 3
+    - type: Sprite
+      sprite: _SpL/Objects/Weapons/Guns/Snipers/mosinsawn.rsi
+      state: base
+    - type: Clothing
+      sprite: _SpL/Objects/Weapons/Guns/Snipers/mosinsawn.rsi
+      quickEquip: false
+      slots:
+        - Back
+        - suitStorage
+    - type: Item
+      size: Normal
+      sprite: _SpL/Objects/Weapons/Guns/Snipers/mosinsawn.rsi
+    - type: MeleeWeapon
+      wideAnimationRotation: -135
+      damage:
+        types:
+          Piercing: 8 # not as much jab force because it's been shortened
+      angle: 0
+      animation: WeaponArcThrust
+      soundHit:
+        path: /Audio/Weapons/bladeslice.ogg
+    - type: AltFireMelee
+      attackType: Heavy
+    - type: Sharp
+      butcherDelayModifier: 2
+    - type: StaticPrice
+      price: 500
+    - type: Construction
+      graph: SniperMosinSawn
+      node: mosinsawn
+      deconstructionTarget: null
+      
+- type: entity
+  parent: WeaponSniperMosinSawn
+  id: WeaponSniperMosinSawnEmpty
+  suffix: Empty
+  components:
+    - type: BallisticAmmoProvider
+      proto: null
+    - type: Construction
+      graph: SniperMosinSawn
+      node: mosinsawn
+      deconstructionTarget: null

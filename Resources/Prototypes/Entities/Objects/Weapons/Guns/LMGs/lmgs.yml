@@ -40,8 +40,8 @@
   - type: Sprite
   - type: Item
     size: Huge
-    shape:
-    - 0,0,4,3
+    # shape:
+    # - 0,0,3,3 # SpL - 4, 3 to 3, 3
   - type: Clothing
     sprite: Objects/Weapons/Guns/LMGs/l6.rsi
     quickEquip: false

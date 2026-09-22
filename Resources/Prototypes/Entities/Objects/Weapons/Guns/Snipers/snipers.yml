@@ -155,6 +155,10 @@
   - type: GunRequiresWield
   - type: StaticPrice
     price: 500
+  - type: Construction # SpL Start
+    graph: SniperMosinSawn
+    node: start
+    deconstructionTarget: null # SpL End
 
 - type: entity
   name: DMI-SR85 'Hristov' AMR
