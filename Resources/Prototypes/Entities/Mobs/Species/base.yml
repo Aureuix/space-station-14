@@ -251,6 +251,27 @@
   # Starlight End
   - type: CosmicCenserTarget # Stellar - Cosmic Cult
   - type: Scent # Starlight - smell system
+  - type: MobThresholds # SpL Start
+    stateAlertDict:
+      Alive: "HumanHealth"
+      SoftCritical: "HumanCrit"
+      Critical: "HumanCrit"
+      Dead: "HumanDead"
+    thresholds:
+      0: Alive
+      100: SoftCritical 
+      150: Critical
+      200: Dead
+  - type: MobStateActions
+    actions:
+      SoftCritical:
+        - ActionCritSuccumb
+        - ActionCritFakeDeath
+        - ActionCritLastWords
+      Critical:
+        - ActionCritSuccumb
+        - ActionCritFakeDeath
+        - ActionCritLastWords # SpL End
 
 - type: entity
   save: false
