@@ -36,3 +36,6 @@ uplink-elysium-implant-desc = An implant that interfaces with your brain when in
 
 uplink-grenade-impact-name = Impact Grenade
 uplink-grenade-impact-desc = Impatient or bad at counting? This grenade is for you! Once armed, it creates a respectable explosion instantly upon striking a hard surface.
+
+uplink-pistol-40-magazine-name = Pistol magazine (.40)
+uplink-pistol-40-magazine-desc = Pistol magazine with 10 cartridges. Compatible with the Stechkin.
