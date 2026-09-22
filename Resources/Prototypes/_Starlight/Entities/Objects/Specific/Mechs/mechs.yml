@@ -39,7 +39,7 @@
       baseWalkSpeed: 2 #All mechs walk at the same speed
       baseSprintSpeed: 2.5
     - type: Damageable
-      damageModifierSet: DarkGygaxArmor
+      damageModifierSet: DurandArmor # SpL- yeah this is probably super strong but come on it's a faction mech
     - type: MechThrusters
     - type: PointLight
       lightMask: ConeSingle
