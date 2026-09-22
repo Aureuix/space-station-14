@@ -26,6 +26,7 @@
   - GenpopEnter
   - GenpopLeave
   - Command
+  - NTPersonnel
   special:
   - !type:AddImplantSpecial
     implants: [ MindShieldImplant ]

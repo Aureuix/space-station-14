@@ -7,6 +7,9 @@ using Content.Shared.Mobs.Components;
 using Content.Shared.Standing;
 using Robust.Shared.Timing;
 
+using Content.Shared.Movement.Systems; // SpL
+using Content.Shared.Stunnable; // SpL
+
 namespace Content.Shared.Mobs.Systems;
 
 [Virtual]
@@ -29,6 +32,10 @@ public partial class MobStateSystem : EntitySystem
         _mobStateQuery = GetEntityQuery<MobStateComponent>();
         base.Initialize();
         SubscribeEvents();
+        // SpL Start
+        SubscribeLocalEvent<MobStateComponent, RefreshMovementSpeedModifiersEvent>(OnRefreshMovementSpeed);
+        SubscribeLocalEvent<MobStateComponent, StandUpAttemptEvent>(StandUpAttemptEvent);
+        // SpL End
     }
 
     #region Public API

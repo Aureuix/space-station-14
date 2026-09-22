@@ -34,6 +34,7 @@
   - Maintenance
   - GenpopEnter
   - GenpopLeave
+  - NTPersonnel
   special:
   - !type:AddImplantSpecial
     implants: [ MindShieldImplant ]

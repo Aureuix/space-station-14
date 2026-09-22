@@ -3,7 +3,7 @@
   name: Prometheus battle rifle
   parent: [WeaponRifleLecter, BaseMajorContraband]
   id: WeaponRiflePrometheus
-  description: "A heavily modified Lecter battle rifle issued to Blackstar Dreadwalker operatives. A 3-round burst mechanism has been machined into the action, making it lethal at any range. Feeds from .20 rifle magazines."
+  description: "A heavily modified Lecter battle rifle issued to Blackstar Dreadwalker operatives. A 3-round burst mechanism has been machined into the action, making it lethal at any range. Feeds from 5.56x45mm magazines." # Spectralight: .20 -> 5.56x45mm
   components:
   - type: Sprite
     sprite: _Starlight/Admeme/Scarlet/Prometheus.rsi

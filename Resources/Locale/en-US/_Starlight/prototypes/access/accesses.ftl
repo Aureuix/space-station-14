@@ -1,4 +1,5 @@
 # NT
+id-card-access-level-ntpersonnel = NT Personnel
 id-card-access-level-magistrate = Magistrate
 id-card-access-level-ntrep = NanoTrasen Representative
 id-card-access-level-blueshield = BlueShield

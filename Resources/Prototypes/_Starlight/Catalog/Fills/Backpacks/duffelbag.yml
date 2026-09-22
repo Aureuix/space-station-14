@@ -15,12 +15,12 @@
         - id: ScalpelAbductor
         - id: BoneGelAbductor
         - id: BoneSetterAbductor
-      
+
 - type: entity
   parent: BriefcaseWeapon # SpL
   id: ClothingBackpackDuffelSyndicateFilledMinotaurShotgun
   name: Minotaur bundle
-  description: "Lean and mean: Contains a smooth, powerful, and highly illegal shotgun, alongside 5 buckshot drums."
+  description: "Lean and mean: Contains a smooth, powerful, and highly illegal shotgun, alongside five buckshot drums."
   components:
   - type: EntityTableContainerFill
     containers:
@@ -29,12 +29,12 @@
         - id: WeaponShotgunMinotaur
         - id: MagazineShotgun
           amount: 5
-      
+
 - type: entity
   parent: BriefcaseWeaponSmall # SpL
   id: ClothingBackpackDuffelSyndicateFilledDeagle
   name: Desert Eagle bundle
-  description: "Contains a high power desert eagle handgun and 3 magnum magazines."
+  description: "Contains a high power desert eagle handgun and three magazines."
   components:
   - type: EntityTableContainerFill
     containers:
@@ -58,12 +58,12 @@
         - id: LeftArmCyberMantisBlade
         - id: RightHandCyber
         - id: LeftHandCyber
-    
+
 - type: entity
   parent: BriefcaseWeapon # SpL
   id: ClothingBackpackDuffelSyndicateFilledBullpup
   name: pitbull bundle
-  description: "Contains the powerful pitbull rifle and 3 additional .30 SP magazines."
+  description: "Contains the powerful pitbull rifle and three additional 7.62x51mm magazines." # SpL: .30 -> 7.62x51m11
   components:
   - type: EntityTableContainerFill
     containers:
@@ -77,7 +77,7 @@
   parent: BriefcaseWeaponSmall # SpL
   id: ClothingBackpackDuffelSyndicateFilledUzi
   name: type u3 uzi bundle
-  description: "Contains a sleek, dangerous uzi, and 2 additional .35 uzi magazines."
+  description: "Contains a sleek, dangerous uzi, and two additional 9mm magazines." # SPL: .30 -> 9mm
   components:
   - type: EntityTableContainerFill
     containers:
@@ -86,7 +86,7 @@
         - id: WeaponSubMachineGunUzi
         - id: MagazinePistolSubMachineGunUzi
           amount: 2
-      
+
 - type: entity
   parent: ClothingBackpackDuffelSyndicateBundle
   id: ClothingBackpackDuffelSyndicateFilledInfiltration
@@ -108,7 +108,7 @@
   parent: ClothingBackpackDuffelSyndicateBundle
   id: ClothingBackpackDuffelSyndicateX4tBundle
   name: syndicate X-4 bundle
-  description: "Contains a lot of X-4 charges."
+  description: "Contains eight X4 charges." # SpL: Specify.
   components:
   - type: EntityTableContainerFill
     containers:

@@ -65,3 +65,7 @@
     - !type:SpeechWireAction
     - !type:AiInteractWireAction
     - !type:LogWireAction
+
+- type: wireLayout
+  parent: HighSec
+  id: AirlockNT

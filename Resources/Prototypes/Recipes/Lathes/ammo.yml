@@ -460,7 +460,7 @@
 #    Steel: 80
 #    Plastic: 80
 
-# .60 anti-materiel
+# 14.5x114mm # Spectralight: .60 -> 14.5x114mm
 - type: latheRecipe
   parent: BaseAmmoBoxRecipe
   id: MagazineBoxAntiMateriel

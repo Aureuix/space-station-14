@@ -387,7 +387,7 @@ public abstract class SharedSuitSensorSystem : EntitySystem
 
         // Get mob total damage crit threshold
         int? totalDamageThreshold = null;
-        if (_mobThresholdSystem.TryGetThresholdForState(sensor.User.Value, MobState.Critical, out var critThreshold))
+        if (_mobThresholdSystem.TryGetThresholdForState(sensor.User.Value, MobState.SoftCritical, out var critThreshold)) // SpL- conversion to softcrit
             totalDamageThreshold = critThreshold.Value.Int();
 
         // finally, form suit sensor status

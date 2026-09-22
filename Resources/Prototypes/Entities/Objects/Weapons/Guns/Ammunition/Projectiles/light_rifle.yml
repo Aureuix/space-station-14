@@ -2,7 +2,7 @@
   parent: BaseBullet
   id: BulletLightRifle
   categories: [ HideSpawnMenu ]
-  name: bullet (.30 rifle)
+  name: bullet (7.62x51mm) # Spectralight: .30 -> 7.62x51mm
   components:
   - type: Projectile
     damage:
@@ -13,7 +13,7 @@
   parent: BaseBulletPractice
   id: BulletLightRiflePractice
   categories: [ HideSpawnMenu ]
-  name: bullet (.30 rifle practice)
+  name: 7.62x51mm bullet (practice) # Spectralight: .30 -> 7.62x51mm
   components:
   - type: Projectile
     damage:
@@ -24,7 +24,7 @@
   parent: BaseBulletIncendiary
   id: BulletLightRifleIncendiary
   categories: [ HideSpawnMenu ]
-  name: bullet (.30 rifle incendiary)
+  name: 7.62x51mm bullet (incendiary) # Spectralight: .30 -> 7.62x51mm
   components:
   - type: Projectile
     damage:
@@ -36,7 +36,7 @@
   parent: BaseBulletUranium
   id: BulletLightRifleUranium
   categories: [ HideSpawnMenu ]
-  name: bullet (.30 rifle uranium)
+  name: 7.62x51mm bullet (uranium) # Spectralight: .30 -> 7.62x51mm
   components:
   - type: Projectile
     damage:

@@ -129,9 +129,15 @@
       speechSounds: MaleAvali
       allowedEmotes: ['Chirp', 'Hisses', 'Purr', 'Growl', 'Trill', 'Scree', 'Call', 'Squawk']
     - type: MobThresholds
+      stateAlertDict: # SpL Start
+        Alive: "HumanHealth"
+        SoftCritical: "HumanCrit"
+        Critical: "HumanCrit"
+        Dead: "HumanDead" # SpL End
       thresholds:
         0: Alive
-        90: Critical
+        90: SoftCritical # SpL
+        135: Critical # SpL
         180: Dead
     - type: Fixtures
       fixtures:

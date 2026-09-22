@@ -1,7 +1,7 @@
 - type: entity
   parent: BaseMagazineBoxRifle
   id: MagazineBoxRifleBigRubber
-  name: ammunition box (.20 rifle rubber)
+  name: 5.56x45mm ammunition box (rubber) # Spectralight: .20 -> 5.56x45mm
   components:
   - type: BallisticAmmoProvider
     capacity: 200
@@ -22,7 +22,7 @@
 - type: entity
   parent: BaseMagazineBoxRifle
   id: MagazineBoxRifleRubber
-  name: ammunition box (.20 rifle rubber)
+  name: 5.56x45mm ammunition box (rubber) # Spectralight: .20 -> 5.56x45mm
   components:
   - type: BallisticAmmoProvider
     proto: CartridgeRifleRubber
