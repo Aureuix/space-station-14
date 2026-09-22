@@ -20,7 +20,7 @@
     
 - type: latheRecipe
   id: PrintedDocumentSyndieReportRecipe
-  result: PrintedDocumentSyndieReportPrintedDocumentSyndieRequest
+  result: PrintedDocumentSyndieReport
   categories:
     - Communications
   completetime: 2
