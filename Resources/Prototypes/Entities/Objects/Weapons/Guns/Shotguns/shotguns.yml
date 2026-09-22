@@ -90,7 +90,7 @@
   name: C-PCJ 'Bulldog' automatic shotgun # SpL
   parent: [BaseWeaponShotgunAny, BaseGunWieldable, BaseSyndicateContraband]
   id: WeaponShotgunBulldog
-  description: An automatic magazine-fed shotgun for close-quarters combat. Kicks like a mule on steroids. Accepts 12 gauge shells. # Starlight: .50 -> 12 gauge
+  description: An automatic magazine-fed shotgun for close-quarters combat. Kicks like a mule on steroids. Feeds from standard 12 gauge drum mags. # Starlight: .50 -> 12 gauge
   components:
   - type: Sprite
     sprite: Objects/Weapons/Guns/Shotguns/bulldog.rsi

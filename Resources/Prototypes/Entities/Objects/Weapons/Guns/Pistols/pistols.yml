@@ -108,7 +108,7 @@
   name: C-75a 'Viper' automatic pistol # SpL
   parent: [BaseWeaponPistol, BaseSyndicateContraband]
   id: WeaponPistolViper
-  description: A market-variety handgun modified by Waffle Corporation, the Viper sports a selector switch between semi-auto, "rock and roll", and "spray and pray". The standard sidearm for any soldier who fights under the three serpents. Feeds from 9mm pistol magazines. #SpL
+  description: A market-variety handgun modified by Waffle Corp., the Viper sports a selector switch between semi-auto, "rock and roll", and "spray and pray". The standard sidearm for any soldier who fights under the three serpents. Feeds from 9mm pistol magazines. #SpL
   components:
   - type: Sprite
     sprite: Objects/Weapons/Guns/Pistols/viper.rsi

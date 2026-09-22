@@ -51,7 +51,7 @@
   name: C-01gl 'China Lake' # SpL
   parent: [BaseWeaponLauncher, BaseGunWieldable, BaseSyndicateContraband]
   id: WeaponLauncherChinaLake
-  description: A pump-action grenade launcher manufactured by Waffle Corporation and commonly used by the infamous Nuclear Operatives. Virtually unmodified from the pre-FTL design, the modern China Lake is a testament to the longevity of the original. Accepts all cartridged grenades. # SpL
+  description: A pump-action grenade launcher manufactured by Waffle Corp. and commonly used by the infamous Nuclear Operatives. Virtually unmodified from the pre-FTL design, the modern China Lake is a testament to the longevity of the original. Accepts all cartridged grenades. # SpL
   components:
   - type: Sprite
     sprite: Objects/Weapons/Guns/Launchers/china_lake.rsi
