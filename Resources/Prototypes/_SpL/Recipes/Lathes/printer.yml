@@ -7,6 +7,36 @@
   applyMaterialDiscount: false
   materials:
     SheetPrinter: 100
+    
+- type: latheRecipe
+  id: PrintedDocumentSyndieRenameRecipe
+  result: PrintedDocumentSyndieRename
+  categories:
+    - Communications
+  completetime: 2
+  applyMaterialDiscount: false
+  materials:
+    SheetPrinter: 100
+    
+- type: latheRecipe
+  id: PrintedDocumentSyndieReportRecipe
+  result: PrintedDocumentSyndieReportPrintedDocumentSyndieRequest
+  categories:
+    - Communications
+  completetime: 2
+  applyMaterialDiscount: false
+  materials:
+    SheetPrinter: 100
+    
+- type: latheRecipe
+  id: PrintedDocumentSyndieRequestRecipe
+  result: PrintedDocumentSyndieRequest
+  categories:
+    - Communications
+  completetime: 2
+  applyMaterialDiscount: false
+  materials:
+    SheetPrinter: 100
 
 - type: latheRecipe
   id: PrintedDocumentSHCCommRecipe
