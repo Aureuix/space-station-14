@@ -72,10 +72,12 @@
   - type: MobThresholds
     thresholds:
       0: Alive
-      100: Critical
+      100: SoftCritical # SpL
+      150: Critical # SpL
       200: Dead
     stateAlertDict:
       Alive: IPCHealth
+      SoftCritical: BorgCrit # SpL
       Critical: BorgCrit
       Dead: BorgDead
     showOverlays: false
@@ -91,7 +93,7 @@
       - Radiation
     locPrefix: silicon
   - type: DamagedSiliconAccent
-    damageAtMaxCorruption: 100 # This should be the same value as MobThresholds - Critical.
+    damageAtMaxCorruption: 150 # This should be the same value as MobThresholds - Critical. # SpL- IPCs become incomprehensible very quickly. This should help that a little
     enableChargeCorruption: false
   - type: CyborgSparkEffect
   - type: SlowOnDamage # SpL start

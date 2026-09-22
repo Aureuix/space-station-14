@@ -8,7 +8,8 @@ using Robust.Shared.GameStates;
 
 namespace Content.Shared._SpL.Traits;
 
-public sealed partial class RedShirtSystem : EntitySystem{
+public sealed partial class RedShirtSystem : EntitySystem
+{
     [Dependency] private readonly MobThresholdSystem _mobThreshold = default!;
 
     public override void Initialize(){
@@ -43,5 +44,6 @@ public sealed partial class RedShirtSystem : EntitySystem{
         // crit threshold is like universally half of death and if your species doesn't do that,,, why?
         if (!HasComp<BrittleBonesComponent>(ent.Owner)) 
             _mobThreshold.SetMobStateThreshold(ent.Owner, deathThreshold, MobState.Critical, mobThreshComp);
+            _mobThreshold.SetMobStateThreshold(ent.Owner, deathThreshold, MobState.SoftCritical, mobThreshComp);
     }
 }
