@@ -2,7 +2,7 @@
   name: TKB-034K 'Makarov' pistol # SpL
   parent: [BaseWeaponPistol, BaseSovietContraband]
   id: WeaponPistolMakarov
-  description: An outdated but incredibly cheap pistol, ideal for use at close quarters due to its tendency to not shoot straight. Uses .35 auto ammo. # SpL
+  description: An outdated but incredibly cheap pistol, ideal for use at close quarters due to its tendency to not shoot straight. Uses 9mm ammo. # SpL
   components:
     - type: Sprite
       sprite: _Starlight/Objects/Weapons/Guns/Pistols/makarov.rsi
@@ -115,7 +115,7 @@
               - MagazinePistol
               - MagazinePistolHighCapacitySP
           whitelistFailPopup: gun-magazine-whitelist-fail
-          
+
 - type: entity
   name: NT-Mk58gd 'Universal' pistol # SpL
   parent: [WeaponPistolMk58, BaseSecurityContraband]
@@ -146,7 +146,7 @@
               - MagazinePistol
               - MagazinePistolHighCapacitySP
           whitelistFailPopup: gun-magazine-whitelist-fail
-        
+
 - type: entity
   name: SA-Mk18 'Enforcer' pistol # SpL
   parent: [BaseWeaponPistol, BaseSecurityContraband]
@@ -233,7 +233,7 @@
     - type: ChamberMagazineAmmoProvider
     - type: StealTarget
       stealGroup: BSOWeapon
-      
+
 - type: entity
   name: NT-SP-8AR service pistol # SpL
   parent: [WeaponPistolDP, BaseSecurityContraband]
@@ -575,7 +575,7 @@
   name: SA TSF-Model 17 # SpL
   parent: [BaseTSFContraband, BaseWeaponPistol]
   id: WeaponPistolTSFModel17
-  description: A standard-issue sidearm of the Trans Solar Federation, the Model 17 serves TSF peacekeepers across the galaxy. Built with proven reliability and chambered in .35 auto, this pistol remains a trusted tool of law enforcement. Feeds from .35 pistol magazines.
+  description: A standard-issue sidearm of the Trans Solar Federation, the Model 17 serves TSF peacekeepers across the galaxy. Built with proven reliability and chambered in 9mm, this pistol remains a trusted tool of law enforcement. Feeds from .35 pistol magazines. # Spectralight: .35 -> 9mm
   components:
     - type: Sprite
       sprite: _Starlight/Objects/Weapons/Guns/Pistols/tsf_model17.rsi

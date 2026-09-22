@@ -1,6 +1,6 @@
 - type: entity
   id: SpeedLoaderMagnumRubber
-  name: "speed loader (.45 magnum rubber)"
+  name: ".45 ACP speed loader (rubber)" # Spectralight: Magnum -> ACP
   parent: [ BaseSpeedLoaderMagnum, BaseSecurityContraband ]
   components:
   - type: BallisticAmmoProvider
@@ -18,7 +18,7 @@
 
 - type: entity
   id: SpeedLoaderMagnumImprovised
-  name: "speed loader (.45 magnum)"
+  name: ".45 ACP speed loader" # Spectralight: Magnum -> ACP
   parent: [BaseItem, BaseMinorContraband]
   components:
   - type: Tag
@@ -57,7 +57,7 @@
 
 - type: entity
   id: SpeedLoaderMagnumLeverImprovised
-  name: "speed loader (.30 /.45 magnum)"
+  name: "7.62x51mm / .45 ACP speed loader" # Spectralight: Magnum -> ACP
   parent: [BaseSpeedLoaderShotgun, BaseMinorContraband]
   components:
   - type: BallisticAmmoProvider

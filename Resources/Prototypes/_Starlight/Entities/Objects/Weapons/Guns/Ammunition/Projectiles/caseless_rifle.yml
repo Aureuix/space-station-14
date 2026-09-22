@@ -1,6 +1,6 @@
 - type: entity
   id: BulletCaselessRifleRubber
-  name: bullet (.25 caseless rubber)
+  name: 5.7mm bullet (rubber)
   parent: BaseBulletRubber
   categories: [ HideSpawnMenu ]
   components:

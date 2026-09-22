@@ -2,7 +2,7 @@
   abstract: true
   parent: [ BaseCartridge, BaseSecuritySalvageContraband ] # Starlight-edit - Security -> SecuritySalvage
   id: BaseCartridgeMagnum
-  name: cartridge (.45 magnum) 
+  name: .45 ACP cartridge  # Spectralight: Magnum -> ACP
   components:
   - type: Tag
     tags:
@@ -20,7 +20,7 @@
 - type: entity
   parent: BaseCartridgeMagnum
   id: CartridgeMagnumSP
-  name: cartridge (.45 magnum SP)
+  name: .45 ACP cartridge (SP) # Spectralight: Magnum -> ACP
   description: Heavy magnum cartridge mostly used by revolvers. Standard kinetic ammunition is common and useful in most situations.
   components:
   - type: CartridgeAmmo
@@ -35,7 +35,7 @@
 
 - type: entity
   id: CartridgeMagnumHP
-  name: cartridge (.45 magnum HP)
+  name: .45 ACP cartridge (HP) # Spectralight: Magnum -> ACP
   parent: BaseCartridgeMagnum
   description: Heavy magnum cartridge mostly used by revolvers. Chalk ammunition is generally non-harmful, used for practice.
   components:
@@ -51,7 +51,7 @@
 
 - type: entity
   id: CartridgeMagnumFMJ
-  name: cartridge (.45 magnum FMJ)
+  name: .45 ACP cartridge (FMJ) # Spectralight: Magnum -> ACP
   parent: BaseCartridgeMagnum
   description: Heavy magnum cartridge mostly used by revolvers. Incendiary ammunition contains a self-igniting compound that sets the target ablaze.
   components:
@@ -68,7 +68,7 @@
 - type: entity
   parent: BaseCartridgeMagnum
   id: CartridgeMagnumPractice
-  name: cartridge (.45 magnum practice)
+  name: .45 ACP cartridge (practice) # Spectralight: Magnum -> ACP
   description: Heavy magnum cartridge mostly used by revolvers. Practice ammunition fires a chalk projectile that stings a little, but otherwise causes no lasting damage.
   components:
   - type: CartridgeAmmo
@@ -84,7 +84,7 @@
 - type: entity
   parent: BaseCartridgeMagnum
   id: CartridgeMagnumIncendiary
-  name: cartridge (.45 magnum incendiary)
+  name: .45 ACP cartridge (incendiary) # Spectralight: Magnum -> ACP
   description: Heavy magnum cartridge mostly used by revolvers. Incendiary ammunition contains a self-igniting compound that sets targets ablaze.
   components:
   - type: CartridgeAmmo
@@ -100,7 +100,7 @@
 - type: entity
   parent: BaseCartridgeMagnum
   id: CartridgeMagnumAP
-  name: cartridge (.45 magnum armor-piercing)
+  name: .45 ACP cartridge (armor piercing) # Spectralight: Magnum -> ACP
   description: Heavy magnum cartridge mostly used by revolvers. Armor-piercing ammunition is renowned for its ability to cut straight through body armor.
   components:
   - type: CartridgeAmmo
@@ -116,7 +116,7 @@
 - type: entity
   parent: BaseCartridgeMagnum
   id: CartridgeMagnumUranium
-  name: cartridge (.45 magnum uranium)
+  name: .45 ACP cartridge (uranium) # Spectralight: Magnum -> ACP
   description: Heavy magnum cartridge mostly used by revolvers. Uranium ammunition replaces the lead core of the bullet with fissile material, irradiating targets from the inside.
   components:
   - type: CartridgeAmmo

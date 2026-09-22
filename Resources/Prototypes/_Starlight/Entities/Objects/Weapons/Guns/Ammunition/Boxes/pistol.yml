@@ -1,7 +1,7 @@
 - type: entity
   parent: BaseMagazineBoxPistol
   id: MagazineBoxPistolRubber
-  name: ammunition box (.35 auto rubber)
+  name: ammunition box (9mm rubber) # Spectralight: .35 -> 9mm
   components:
   - type: BallisticAmmoProvider
     proto: CartridgePistolRubber

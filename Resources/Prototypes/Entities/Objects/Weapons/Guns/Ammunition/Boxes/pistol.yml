@@ -2,7 +2,7 @@
   abstract: true
   parent: BaseItem
   id: BaseMagazineBoxPistol
-  name: ammunition box (.35 auto)
+  name: ammunition box (9mm) # Spectralight: .35 -> 9mm
   components:
   - type: BallisticAmmoProvider
     mayTransfer: true
@@ -28,7 +28,7 @@
 - type: entity
   parent: BaseMagazineBoxPistol
   id: MagazineBoxPistolSP
-  name: ammunition box (.35 auto SP)
+  name: ammunition box (9mm SP) # Spectralight: .35 -> 9mm
   components:
   - type: BallisticAmmoProvider
     proto: CartridgePistolSP
@@ -43,7 +43,7 @@
 - type: entity
   parent: BaseMagazineBoxPistol
   id: MagazineBoxPistolHP
-  name: ammunition box (.35 auto HP)
+  name: ammunition box (9mm HP) # Spectralight: .35 -> 9mm
   components:
   - type: BallisticAmmoProvider
     proto: CartridgePistolHP
@@ -57,7 +57,7 @@
 - type: entity
   parent: BaseMagazineBoxPistol
   id: MagazineBoxPistolFMJ
-  name: ammunition box (.35 auto FMJ)
+  name: ammunition box (9mm FMJ) # Spectralight: .35 -> 9mm
   components:
   - type: BallisticAmmoProvider
     proto: CartridgePistolFMJ
@@ -72,7 +72,7 @@
 - type: entity
   parent: BaseMagazineBoxPistol
   id: MagazineBoxPistolAP
-  name: ammunition box (.35 auto AP)
+  name: ammunition box (9mm AP) # Spectralight: .35 -> 9mm
   components:
   - type: BallisticAmmoProvider
     proto: CartridgePistolAP
@@ -87,8 +87,8 @@
 - type: entity
   parent: BaseMagazineBoxPistol
   id: MagazineBoxPistolPractice
-  name: ammunition box (.35 auto practice)
-  description: A cardboard box of .35 auto rounds. Intended to hold harmless practice ammunition.
+  name: ammunition box (9mm practice) # Spectralight: .35 -> 9mm
+  description: A cardboard box of 9mm rounds. Intended to hold harmless practice ammunition. # Spectralight: .35 -> 9mm
   components:
   - type: BallisticAmmoProvider
     proto: CartridgePistolPractice
@@ -103,8 +103,8 @@
 - type: entity
   parent: BaseMagazineBoxPistol
   id: MagazineBoxPistolIncendiary
-  name: ammunition box (.35 auto incendiary)
-  description: A cardboard box of .35 auto rounds. Intended to hold self-igniting incendiary ammunition.
+  name: ammunition box (9mm incendiary) # Spectralight: .35 -> 9mm
+  description: A cardboard box of 9mm rounds. Intended to hold self-igniting incendiary ammunition. # Spectralight: .35 -> 9mm
   components:
   - type: BallisticAmmoProvider
     proto: CartridgePistolIncendiary
@@ -119,8 +119,8 @@
 - type: entity
   parent: BaseMagazineBoxPistol
   id: MagazineBoxPistolUranium
-  name: ammunition box (.35 auto uranium)
-  description: A cardboard box of .35 auto rounds. Intended to hold exotic uranium-core ammunition.
+  name: ammunition box (9mm uranium) # Spectralight: .35 -> 9mm
+  description: A cardboard box of 9mm rounds. Intended to hold exotic uranium-core ammunition. # Spectralight: .35 -> 9mm
   components:
   - type: BallisticAmmoProvider
     proto: CartridgePistolUranium

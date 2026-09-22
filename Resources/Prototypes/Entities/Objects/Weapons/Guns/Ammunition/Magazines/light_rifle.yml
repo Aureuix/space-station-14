@@ -3,7 +3,7 @@
   abstract: true
   parent: [ BaseItem, BaseSecurityContraband ]
   id: BaseMagazineLightRifle
-  name: "magazine (.30 rifle)"
+  name: "7.62x51mm magazine" # Spectralight: .30 -> 7.62x51mm
   components:
   - type: Tag
     tags:
@@ -37,8 +37,8 @@
 - type: entity
   parent: BaseMagazineLightRifle
   id: MagazineLightRifleBoxSP
-  name: "L6 SAW magazine box (.30 rifle SP)"
-  description: Box containing a 100-round belt of linked .30 rifle rounds, used by light machine guns such as the L6. Intended to hold general-purpose kinetic ammunition.
+  name: "7.62x51mm box magazine (SP)" # Spectralight: .30 -> 7.62x51mm
+  description: Box containing a 100-round belt of linked 7.62x51mm rounds, used by light machine guns such as the L6. Intended to hold general-purpose kinetic ammunition. # Spectralight: .30 -> 7.62x51mm
   components:
   - type: Tag
     tags:
@@ -58,7 +58,7 @@
 - type: entity
   parent: BaseMagazineLightRifle
   id: MagazineLightRifleSP
-  name: "magazine (.30 rifle SP)"
+  name: "7.62x51mm magazine (SP)" # Spectralight: .30 -> 7.62x51mm
   description: Curved 30-round double stack magazine for combat rifles. Intended to hold general-purpose kinetic ammunition.
   components:
   - type: BallisticAmmoProvider
@@ -73,7 +73,7 @@
 
 - type: entity
   id: MagazineLightRifleHP
-  name: "magazine (.30 rifle HP)"
+  name: "7.62x51mm magazine (hollow-point)" # Spectralight: .30 -> 7.62x51mm
   parent: BaseMagazineLightRifle
   description: Curved 30-round double stack magazine for combat rifles. Intended to hold general-purpose kinetic ammunition.
   components:
@@ -95,7 +95,7 @@
 - type: entity
   parent: MagazineLightRifleSP
   id: MagazineLightRifleEmpty
-  name: "magazine (.30 rifle any)"
+  name: "7.62x51mm magazine" # Spectralight: .30 -> 7.62x51mm
   suffix: empty
   description: Curved 30-round double stack magazine for combat rifles.
   components:
@@ -116,7 +116,7 @@
 
 - type: entity
   id: MagazineLightRifleFMJ
-  name: "magazine (.30 rifle FMJ)"
+  name: "7.62x51mm magazine (FMJ)" # Spectralight: .30 -> 7.62x51mm
   parent: BaseMagazineLightRifle
   components:
   - type: BallisticAmmoProvider
@@ -130,7 +130,7 @@
 
 - type: entity
   id: MagazineLightRifleAP
-  name: "magazine (.30 rifle AP)"
+  name: "7.62x51mm magazine (armor piercing)" # Spectralight: .30 -> 7.62x51mm
   parent: BaseMagazineLightRifle
   components:
   - type: BallisticAmmoProvider
@@ -151,7 +151,7 @@
 - type: entity
   parent: BaseMagazineLightRifle
   id: MagazineLightRiflePractice
-  name: "magazine (.30 rifle practice)"
+  name: "7.62x51mm magazine (practice)" # Spectralight: .30 -> 7.62x51mm
   description: Curved 30-round double stack magazine for combat rifles. Intended to hold harmless practice ammunition.
   components:
   - type: BallisticAmmoProvider
@@ -178,7 +178,7 @@
 - type: entity
   parent: BaseMagazineLightRifle
   id: MagazineLightRifleUranium
-  name: "magazine (.30 rifle uranium)"
+  name: "7.62x51mm magazine (uranium)" # Spectralight: .30 -> 7.62x51mm
   description: Curved 30-round double stack magazine for combat rifles. Intended to hold exotic uranium-core ammunition.
   components:
   - type: BallisticAmmoProvider
@@ -205,7 +205,7 @@
 - type: entity
   parent: BaseMagazineLightRifle
   id: MagazineLightRifleIncendiary
-  name: "magazine (.30 rifle incendiary)"
+  name: "7.62x51mm magazine (incendiary)" # Spectralight: .30 -> 7.62x51mm
   description: Curved 30-round double stack magazine for combat rifles. Intended to hold self-igniting incendiary ammunition.
   components:
   - type: BallisticAmmoProvider
@@ -219,7 +219,7 @@
 
 - type: entity
   id: MagazineLightRifleMaxim
-  name: "pan magazine (.30 rifle)"
+  name: "7.62x51mm pan magazine" # Spectralight: .30 -> 7.62x51mm
   parent: BaseMagazineLightRifle
   components:
   - type: Tag
@@ -231,9 +231,10 @@
   - type: Sprite
     sprite: Objects/Weapons/Guns/Ammunition/Magazine/LightRifle/maxim.rsi
 
+# I cast PK GUN
 - type: entity
   id: MagazineLightRiflePkBox
-  name: "PK munitions box (.30 rifle)"
+  name: "PK munitions box (7.62x51mm)" # Spectralight: .30 -> 7.62x51mm
   parent: BaseMagazineLightRifle
   components:
   - type: Tag
