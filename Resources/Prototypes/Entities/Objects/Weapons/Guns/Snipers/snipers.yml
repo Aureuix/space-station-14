@@ -164,7 +164,7 @@
   name: DMI-SR85 'Hristov' AMR
   parent: [BaseWeaponSniper, BaseGunWieldable, BaseSyndicateContraband]
   id: WeaponSniperHristov
-  description: For when you absolutely, positively need to make someone regret their life choices from a safe distance. Uses 14.5x114mm ammo. # Spectralight: .60 -> 14.5x114mm
+  description: For when you absolutely, positively need to make someone regret their life choices from a safe distance. Uses 14.5x114mm ammo... somehow. # Spectralight: .60 -> 14.5x114mm
   components:
   - type: Item
     size: Huge

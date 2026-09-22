@@ -28,7 +28,7 @@
   name: SA SP-91-RC submachine gun # SpL
   parent: [BaseWeaponSubMachineGun, BaseSecurityContraband]
   id: WeaponSubMachineGunSP91RC
-  description: A compact submachine gun designed for riot control.
+  description: A compact submachine gun designed for riot control. Uses 9mm ammo. # SpL
   components:
   - type: Sprite
     sprite: _Starlight/Objects/Weapons/Guns/SMGs/sp91rc.rsi
@@ -62,7 +62,7 @@
   name: AO-M321 Type U3 Uzi # SpL
   parent: [BaseWeaponSubMachineGun, BaseMajorContraband]
   id: WeaponSubMachineGunUzi
-  description: A lightweight submachine gun with a 32-round magazine that has single or 4 round firing modes.
+  description: A lightweight submachine gun with a 32-round magazine that has single or 4 round firing modes. Uses 9mm ammo. # SpL
   components:
   - type: Item
     size: Normal
@@ -121,7 +121,7 @@
   name: PPSh-59K submachine gun # SpL
   parent: [BaseWeaponSubMachineGun, BaseSovietContraband]
   id: WeaponSubMachineGunPPSH
-  description: Beloved by USSP veterans and feared by friendly fire protocols everywhere. Uses .35 ammo.
+  description: Beloved by USSP veterans and feared by friendly fire protocols everywhere. Uses 9mm ammo. # SpL
   components:
   - type: Sprite
     sprite: _Starlight/Objects/Weapons/Guns/SMGs/PPSh59.rsi
@@ -345,7 +345,7 @@
   name: NT-WT550r submachine gun # SpL
   parent: [WeaponSubMachineGunWt550, BaseGrandTheftContraband] # Starlight, grand theft
   id: WeaponSubMachineGunWt550r
-  description: A special red-colored limited edition of the WT550, the WT550r.  Designed by NanoTrasen's Small Arms Division as a compact submachine gun fully controllable with one hand. It contains an exotic internal recoil buffer and feeds from special top-mounted .35 magazines.
+  description: A special red-colored limited edition of the WT550, the WT550r. Designed by NanoTrasen's Small Arms Division as a compact submachine gun fully controllable with one hand. It contains an exotic internal recoil buffer and feeds from special top-mounted 9mm magazines. # SpL
   components:
   - type: Sprite
     sprite: _Starlight/Objects/Weapons/Guns/SMGs/wt550r.rsi

@@ -218,7 +218,7 @@
   name: GxAS-12 'Minotaur' automatic shotgun # SpL
   parent: [BaseWeaponShotgunAny, BaseGunWieldable, BaseSyndicateContraband]
   id: WeaponShotgunMinotaur
-  description: Smooth, powerful, highly illegal. The newest full auto shotgun available at the market, utilising standard 12g drum mags. Manufactured and distributed by the Gorlex Marauders.
+  description: Smooth, powerful, highly illegal. The newest full auto shotgun available at the market, utilising standard 12 gauge drum mags. Manufactured and distributed by the Gorlex Marauders. # SpL
   components:
   - type: Sprite
     sprite: _Starlight/Objects/Weapons/Guns/Shotguns/minotaur.rsi

@@ -187,7 +187,7 @@
   parent: WeaponRifleLecter
   id: WeaponRifleLecterXL8
   name: NT-XL8 assault rifle # SpL
-  description: A premium prototype model built on the Lecter platform, the Experimental Lecter 8 is an unreasonably expensive military grade assault rifle with integrated optic. Uses 5.56x45mm rifle ammo.
+  description: A premium prototype model built on the Lecter platform, the Experimental Lecter 8 is an unreasonably expensive military grade assault rifle with integrated optic. Uses 5.56x45mm rifle ammo. # SpL
   components:
   - type: Sprite
     sprite: Objects/Weapons/Guns/Rifles/XL8.rsi
@@ -211,7 +211,7 @@
   name: C-61m 'Estoc' DMR
   parent: [BaseWeaponRifle, BaseSyndicateContraband]
   id: WeaponRifleEstoc
-  description: A powerful designated marksman rifle equipped with an extended 20-inch barrel, gas compensator, and telescopic sight. Feeds from extended .45 magazines.
+  description: A powerful designated marksman rifle equipped with an extended 20-inch barrel, gas compensator, and telescopic sight. Feeds from extended .45 ACP magazines. # SpL
   components:
   - type: Sprite
     sprite: Objects/Weapons/Guns/Rifles/estoc.rsi
