@@ -29,6 +29,7 @@
     retrosalvagemining: AirlockRetroSalvageMining
     mail: AirlockMail
     brigmedic: AirlockBrigmed
+    nanotrasen: AirlockNT
     # Starlight End
     plastitanium: PlastitaniumAirlock # Blimpuf
 
@@ -62,4 +63,5 @@
     retrosalvagemining: AirlockRetroSalvageMiningGlass
     mail: AirlockMailGlass
     brigmedic: AirlockBrigmedGlass
+    nanotrasen: AirlockNTGlass
     # Starlight End
