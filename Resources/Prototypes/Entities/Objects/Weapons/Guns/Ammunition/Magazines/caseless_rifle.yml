@@ -35,7 +35,7 @@
   parent: BaseMagazinePistolCaselessRifle
   id: MagazinePistolCaselessRifle
   name: "5.7mm magazine"
-  description: 10-round magazine for the Cobra pistol. Intended to hold general-purpose kinetic ammunition.
+  description: A 10-round magazine for the CS-11 Cobra. Intended to hold general-purpose kinetic ammunition.
   components:
   - type: Item
     inhandVisuals:
@@ -49,7 +49,7 @@
   parent: BaseMagazinePistolCaselessRifle
   id: MagazinePistolCaselessRiflePractice
   name: "5.7mm magazine (practice)"
-  description: 10-round magazine for the Cobra pistol. Intended to hold harmless practice ammunition.
+  description: A 10-round magazine for the CS-11 'Cobra' . Intended to hold harmless practice ammunition.
   components:
   - type: BallisticAmmoProvider
     proto: CartridgeCaselessRiflePractice

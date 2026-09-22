@@ -1,7 +1,8 @@
 - type: entity
   parent: [ BaseItem, BaseMinorContraband ] # Starlight - Security->Minor
   id: SpeedLoaderLightRifle
-  name: ".45 ACP speed loader .45 ACP" # Starlight # Spectralight: Magnum -> ACP
+  name: ".45 ACP speed loader" # Starlight # Spectralight: Magnum -> ACP
+  description: An old fashioned stripper clip speedloader design. It has largely fallen out of favour, but sometimes still finds use with older model rifles. # SpL
   components:
   - type: SpeedLoader
   - type: BallisticAmmoProvider

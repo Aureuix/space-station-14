@@ -3,6 +3,7 @@
   parent: [ BaseCartridge, BaseSecurityContraband ]
   id: BaseCartridgeRifle
   name: cartridge (5.56x45mm) # Spectralight: .20 -> 5.56x45mm
+  description: A modern intermediate cartridge used commonly by assault rifles.
   components:
   - type: Tag
     tags:
@@ -21,7 +22,6 @@
   parent: BaseCartridgeRifle
   id: CartridgeRifleSP
   name: 5.56x45mm cartridge (SP) # Spectralight: .20 -> 5.56x45mm
-  description: A modern intermediate cartridge for combat rifles. Standard kinetic ammunition is common and useful in most situations.
   components:
   - type: CartridgeAmmo
     proto: BulletRifleTraceSP
@@ -37,7 +37,6 @@
   id: CartridgeRifleHP
   name: 5.56x45mm cartridge (HP) # Spectralight: .20 -> 5.56x45mm
   parent: BaseCartridgeRifle
-  description: A modern intermediate cartridge for combat rifles. Standard kinetic ammunition is common and useful in most situations.
   components:
   - type: CartridgeAmmo
     proto: BulletRifleTraceHP
@@ -83,7 +82,6 @@
   parent: BaseCartridgeRifle
   id: CartridgeRiflePractice
   name: 5.56x45mm cartridge (practice) # Spectralight: .20 -> 5.56x45mm
-  description: A modern intermediate cartridge for combat rifles. Practice ammunition fires a chalk projectile that stings a little, but otherwise causes no lasting damage.
   components:
   - type: CartridgeAmmo
     proto: BulletRifleTracePractice
@@ -99,7 +97,6 @@
   parent: BaseCartridgeRifle
   id: CartridgeRifleIncendiary
   name: 5.56x45mm cartridge (incendiary) # Spectralight: .20 -> 5.56x45mm
-  description: A modern intermediate cartridge for combat rifles. Incendiary ammunition contains a self-igniting compound that sets targets ablaze.
   components:
   - type: CartridgeAmmo
     proto: BulletRifleTraceIncendiary
@@ -115,7 +112,6 @@
   parent: BaseCartridgeRifle
   id: CartridgeRifleUranium
   name: 5.56x45mm cartridge (uranium) # Spectralight: .20 -> 5.56x45mm
-  description: A modern intermediate cartridge for combat rifles. Uranium ammunition replaces the lead core of the bullet with fissile material, irradiating targets from the inside.
   components:
   - type: CartridgeAmmo
     proto: BulletRifleTraceUranium

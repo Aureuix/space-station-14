@@ -17,6 +17,7 @@
   id: CartridgePistol40SP
   name: cartridge (.40 SP)
   parent: BaseCartridgePistol
+  description: A higher-caliber pistol cartridge than the standard 9mm, designed for use with officer service pistols. # SpL
   components:
   - type: CartridgeAmmo
     proto: BulletPistolTrace40SP

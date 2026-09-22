@@ -3,6 +3,7 @@
   parent: [ BaseItem, BaseSecurityContraband ]
   id: BaseMagazineBoxAntiMateriel
   name: 14.5x114mm ammunition box # Spectralight: .60 -> 14.5x114mm
+  description: A cardboard box containing ten powerful AMR cartridges, for punching holes in windows, walls, vehicles, armour, people, and just about anything else. # SpL
   components:
   - type: BallisticAmmoProvider
     mayTransfer: true
@@ -29,7 +30,6 @@
   parent: BaseMagazineBoxAntiMateriel
   id: MagazineBoxAntiMateriel
   name: 14.5x114mm ammunition box # Spectralight: .60 -> 14.5x114mm
-  description: A cardboard box of 14.5x114mm rounds. # Spectralight: .60 -> 14.5x114mm
   components:
   - type: BallisticAmmoProvider
     proto: CartridgeAntiMateriel

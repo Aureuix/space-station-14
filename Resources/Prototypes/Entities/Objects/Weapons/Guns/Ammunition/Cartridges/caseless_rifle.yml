@@ -2,6 +2,7 @@
   abstract: true
   parent: [ BaseCartridge, BaseSecurityContraband ]
   id: BaseCartridgeCaselessRifle
+  description: A small caliber utilizing caseless technology, omitting conventional brass casing in favor of hardened propellant.
   name: 5.7mm cartridge
   components:
   - type: Tag
@@ -24,7 +25,6 @@
   parent: BaseCartridgeCaselessRifle
   id: CartridgeCaselessRifle
   name: 5.7mm cartridge
-  description: A small caliber utilizing caseless technology, omitting conventional brass casing in favor of hardened propellant. Standard kinetic ammunition is common and useful in most situations.
   components:
   - type: CartridgeAmmo
     proto: BulletCaselessRifleTrace
@@ -33,7 +33,6 @@
   parent: BaseCartridgeCaselessRifle
   id: CartridgeCaselessRiflePractice
   name: 5.7mm cartridge (practice)
-  description: A small caliber utilizing caseless technology, omitting conventional brass casing in favor of hardened propellant. Practice ammunition fires a chalk projectile that stings a little, but otherwise causes no lasting damage.
   components:
   - type: CartridgeAmmo
     proto: BulletCaselessRiflePracticeTrace

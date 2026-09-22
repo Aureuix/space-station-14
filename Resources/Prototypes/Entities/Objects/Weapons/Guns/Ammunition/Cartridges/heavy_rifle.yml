@@ -2,6 +2,7 @@
   abstract: true
   parent: [ BaseCartridge, BaseSecurityContraband ]
   id: BaseCartridgeHeavyRifle
+  description: A specialized round designed for use with HMGs and other mounted anti-infantry guns. # SpL
   name: cartridge (.10 rifle)
   components:
   - type: Tag

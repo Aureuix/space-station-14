@@ -1,6 +1,7 @@
 - type: entity
   id: BaseCartridgeBattery
   name: cartridge (laser)
+  description: A chemical laser cartridge. Used by certain energy weapons in lieu of internal batteries. # SpL
   parent: [ BaseCartridge, BaseRestrictedContraband ]
   abstract: true
   components:

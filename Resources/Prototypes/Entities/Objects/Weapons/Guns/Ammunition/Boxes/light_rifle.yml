@@ -2,7 +2,8 @@
   abstract: true
   parent: BaseItem
   id: BaseMagazineBoxLightRifle
-  name: ammunition box (7.62x51mm) # Spectralight: .30 -> 7.62x51mm
+  name: 7.62x51mm ammunition box # Spectralight: .30 -> 7.62x51mm
+  description: A cardboard box containing 60 high-power rifle rounds.
   components:
   - type: BallisticAmmoProvider
     mayTransfer: true
@@ -113,7 +114,6 @@
   parent: BaseMagazineBoxLightRifle
   id: MagazineBoxLightRiflePractice
   name: 7.62x51mm ammunition box (practice) # Spectralight: .30 -> 7.62x51mm
-  description: A cardboard box of 7.62x51mm rounds. Intended to hold harmless practice ammunition. # Spectralight: .30 -> 7.62x51mm
   components:
   - type: BallisticAmmoProvider
     proto: CartridgeLightRiflePractice
@@ -129,7 +129,6 @@
   parent: BaseMagazineBoxLightRifle
   id: MagazineBoxLightRifleIncendiary
   name: 7.62x51mm ammunition box (incendiary) # Spectralight: .30 -> 7.62x51mm
-  description: A cardboard box of 7.62x51mm rounds. Intended to hold self-igniting incendiary ammunition. # Spectralight: .30 -> 7.62x51mm
   components:
   - type: BallisticAmmoProvider
     proto: CartridgeLightRifleIncendiary
@@ -145,7 +144,6 @@
   parent: BaseMagazineBoxLightRifle
   id: MagazineBoxLightRifleUranium
   name: 7.62x51mm ammunition box (uranium) # Spectralight: .30 -> 7.62x51mm
-  description: A cardboard box of 7.62x51mm rounds. Intended to hold exotic uranium-core ammunition. # Spectralight: .30 -> 7.62x51mm
   components:
   - type: BallisticAmmoProvider
     proto: CartridgeLightRifleUranium

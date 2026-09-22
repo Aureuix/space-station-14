@@ -3,6 +3,7 @@
   parent: [ BaseItem, BaseSecurityContraband ]
   id: BaseSpeedLoaderMagnum
   name: ".45 ACP speed loader" # Spectralight: Magnum -> ACP
+  description: A six-shot speedloader for .45 ACP rounds. Designed for ease of use with virtually all revolvers that exist. # SpL
   components:
   - type: Tag
     tags:
@@ -38,7 +39,6 @@
   id: SpeedLoaderMagnumEmpty
   name: ".45 ACP speed loader (any)" # Spectralight: Magnum -> ACP
   suffix: empty
-  description: Designed to quickly load up to six rounds of .45 ACP into an empty revolver. # Spectralight: Magnum -> ACP
   components:
   - type: BallisticAmmoProvider
     proto: null
@@ -128,7 +128,6 @@
   parent: BaseSpeedLoaderMagnum
   id: SpeedLoaderMagnumPractice
   name: ".45 ACP speed loader (practice)" # Spectralight: Magnum -> ACP
-  description: Designed to quickly load up to six rounds of .45 ACP into an empty revolver. Intended to hold harmless practice ammunition. # Spectralight: Magnum -> ACP
   components:
   - type: BallisticAmmoProvider
     proto: CartridgeMagnumPractice
@@ -159,7 +158,6 @@
   parent: BaseSpeedLoaderMagnum
   id: SpeedLoaderMagnumAP
   name: ".45 ACP speed loader (AP)" # Spectralight: Magnum -> ACP
-  description: Designed to quickly load up to six rounds of .45 ACP into an empty revolver. Intended to hold specialized armor piercing ammunition. # Spectralight: Magnum -> ACP
   components:
   - type: BallisticAmmoProvider
     proto: CartridgeMagnumAP
@@ -179,7 +177,6 @@
   parent: BaseSpeedLoaderMagnum
   id: SpeedLoaderMagnumUranium
   name: ".45 ACP speed loader (uranium)" # Spectralight: Magnum -> ACP
-  description: Designed to quickly load up to six rounds of .45 ACP into an empty revolver. Intended to hold exotic uranium-core ammunition. # Spectralight: Magnum -> ACP
   components:
   - type: BallisticAmmoProvider
     proto: CartridgeMagnumUranium

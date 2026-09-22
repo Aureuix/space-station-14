@@ -1,6 +1,7 @@
 - type: entity
   id: BaseMagazinePistol
   name: 9mm magazine # Spectralight: .35 -> 9mm
+  description: A standard, universal magazine compatible with most pistols, intended to hold general-purpose kinetic ammunition. # SpL
   parent: [ BaseItem, BaseSecurityContraband ]
   abstract: true
   components:
@@ -39,6 +40,7 @@
 - type: entity
   id: BaseMagazinePistolHighCapacity
   name: 9mm double-stack magazine # Spectralight: .35 -> 9mm
+  description: A standard, universal magazine compatible with most pistols, intended to hold general-purpose kinetic ammunition. This one has an extended capacity. # SpL
   parent: [BaseItem, BaseSecuritySalvageContraband]
   abstract: true
   components:
@@ -77,6 +79,7 @@
 - type: entity
   id: BaseMagazinePistolSubMachineGun  # Yeah it's weird but it's pistol caliber
   name: 9mm SMG magazine # Spectralight: .35 -> 9mm
+  description: A robust magazine compatible with most market SMGs. Intended to hold general-purpose kinetic ammunition. # SpL
   parent: [ BaseItem, BaseSecurityContraband ]
   abstract: true
   components:
@@ -116,7 +119,7 @@
   id: MagazinePistolSubMachineGunTopMounted
   name: 9mm toploader magazine (SP) # Spectralight: .35 -> 9mm
   parent: [ BaseItem, BaseSecurityContraband ]
-  description: Unconventional 30-round top feeding magazine for the WT550 SMG. Intended to hold general-purpose kinetic ammunition. This one is loaded with SP.
+  description: An unconventional 30-round top feeding magazine for the WT550 SMG. Intended to hold general-purpose kinetic ammunition. # SpL
   components:
   - type: Tag
     tags:
@@ -148,16 +151,16 @@
   id: MagazinePistolSubMachineGunTopMountedFMJ
   name: 9mm toploader magazine (FMJ) # Spectralight: .35 -> 9mm
   parent: [ MagazinePistolSubMachineGunTopMounted ]
-  description: Unconventional 30-round top feeding magazine for the WT550 SMG. Intended to hold general-purpose kinetic ammunition. This one is loaded with FMJ.
+  description: An unconventional 30-round top feeding magazine for the WT550 SMG. Intended to hold general-purpose kinetic ammunition. # SpL
   components:
     - type: BallisticAmmoProvider
       proto: CartridgePistolFMJ # Starlight
 
 - type: entity
   id: MagazinePistolSubMachineGunTopMountedHP
-  name: 9mm toploader magazine (hollow-point) # Spectralight: .35 -> 9mm
+  name: 9mm toploader magazine (HP) # Spectralight: .35 -> 9mm
   parent: [ MagazinePistolSubMachineGunTopMounted ]
-  description: Unconventional 30-round top feeding magazine for the WT550 SMG. Intended to hold general-purpose kinetic ammunition. This one is loaded with hollow-point ammunition.
+  description: An unconventional 30-round top feeding magazine for the WT550 SMG. Intended to hold general-purpose kinetic ammunition. # SpL
   components:
     - type: BallisticAmmoProvider
       proto: CartridgePistolHP # Starlight
@@ -166,7 +169,7 @@
   id: MagazinePistolSubMachineGunTopMountedEmpty
   name: 9mm toploader magazine # Spectralight: .35 -> 9mm
   parent: MagazinePistolSubMachineGunTopMounted
-  description: Unconventional 30-round top feeding magazine for the WT550 SMG.
+  description: An unconventional 30-round top feeding magazine for the WT550 SMG. # SpL
   components:
   - type: BallisticAmmoProvider
     proto: null
@@ -221,7 +224,7 @@
 
 - type: entity
   id: MagazinePistolHP
-  name: 9mm magazine (hollow-point) # Spectralight: .35 -> 9mm
+  name: 9mm magazine (HP) # Spectralight: .35 -> 9mm
   parent: BaseMagazinePistol
   components:
   - type: BallisticAmmoProvider
@@ -269,7 +272,7 @@
 
 - type: entity
   id: MagazinePistolAP
-  name: 9mm magazine (armor piercing) # Spectralight: .35 -> 9mm
+  name: 9mm magazine (AP) # Spectralight: .35 -> 9mm
   parent: BaseMagazinePistol
   components:
   - type: BallisticAmmoProvider
@@ -481,7 +484,7 @@
 
 - type: entity
   id: MagazinePistolHighCapacityHP
-  name: 9mm double-stack magazine (hollow-point) # Spectralight: .35 -> 9mm
+  name: 9mm double-stack magazine (HP) # Spectralight: .35 -> 9mm
   parent: BaseMagazinePistolHighCapacity
   components:
   - type: BallisticAmmoProvider
@@ -529,7 +532,7 @@
 
 - type: entity
   id: MagazinePistolHighCapacityAP
-  name: 9mm double-stack magazine (armor piercing) # Spectralight: .35 -> 9mm
+  name: 9mm double-stack magazine (AP) # Spectralight: .35 -> 9mm
   parent: BaseMagazinePistolHighCapacity
   components:
   - type: BallisticAmmoProvider
@@ -704,7 +707,7 @@
 
 - type: entity
   id: MagazinePistolSubMachineGunHP
-  name: 9mm SMG magazine (hollow-point) # Spectralight: .35 -> 9mm
+  name: 9mm SMG magazine (HP) # Spectralight: .35 -> 9mm
   parent: BaseMagazinePistolSubMachineGun
   description: 30-round double-stack magazine for submachine guns.
   components:
@@ -765,7 +768,7 @@
 
 - type: entity
   id: MagazinePistolSubMachineGunAP
-  name: 9mm SMG magazine (armor piercing) # Spectralight: .35 -> 9mm
+  name: 9mm SMG magazine (AP) # Spectralight: .35 -> 9mm
   parent: BaseMagazinePistolSubMachineGun
   components:
   - type: BallisticAmmoProvider
@@ -896,7 +899,7 @@
 
 - type: entity
   id: MagazinePistolSubMachineGunUzi
-  name: Uzi magazine (9mm) # Spectralight: .35 -> 9mm
+  name: 9mm Uzi magazine # Spectralight: .35 -> 9mm
   parent: BaseMagazinePistolSubMachineGun
   components:
   - type: BallisticAmmoProvider
@@ -925,7 +928,7 @@
 
 - type: entity
   id: MagazinePistolSubMachineGunImprovised
-  name: improvised SMG magazine (9mm) # Spectralight: .35 -> 9mm
+  name: 9mm improvised SMG magazine # Spectralight: .35 -> 9mm
   parent: [ BaseMagazinePistolSubMachineGun, BaseMinorContraband ]
   components:
   - type: BallisticAmmoProvider
@@ -954,7 +957,7 @@
 
 - type: entity
   id: MagazinePistolSubMachineGunPPSH
-  name: PPSH magazine
+  name: 9mm PPsh magazine
   parent: BaseMagazinePistolSubMachineGun
   components:
   - type: BallisticAmmoProvider
@@ -982,7 +985,7 @@
 
 - type: entity
   id: MagazinePistol40Base
-  name: "Pistol Magazine (.40)"
+  name: ".40 Pistol Magazine"
   parent: BaseMagazinePistol
   components:
   - type: BallisticAmmoProvider
@@ -1019,7 +1022,7 @@
 
 - type: entity
   id: MagazinePistol40Empty
-  name: "Pistol Magazine (.40 any)"
+  name: ".40 Pistol Magazine (any)"
   suffix: empty
   parent: MagazinePistol40Base
   components:
@@ -1038,7 +1041,7 @@
 
 - type: entity
   id: MagazinePistol40SP
-  name: "Pistol Magazine (.40 SP)"
+  name: ".40 Pistol Magazine (SP)"
   parent: MagazinePistol40Base
   components:
   - type: BallisticAmmoProvider
@@ -1062,7 +1065,7 @@
 
 - type: entity
   id: MagazinePistol40HP
-  name: "Pistol Magazine (.40 HP)"
+  name: ".40 Pistol Magazine (HP)"
   parent: MagazinePistol40Base
   components:
   - type: BallisticAmmoProvider
@@ -1086,7 +1089,7 @@
 
 - type: entity
   id: MagazinePistol40FMJ
-  name: "Pistol Magazine (.40 FMJ)"
+  name: ".40 Pistol Magazine (FMJ)"
   parent: MagazinePistol40Base
   components:
   - type: BallisticAmmoProvider
@@ -1110,7 +1113,7 @@
 
 - type: entity
   id: MagazinePistol40AP
-  name: "Pistol Magazine (.40 AP)"
+  name: ".40 Pistol Magazine (AP)"
   parent: MagazinePistol40Base
   components:
   - type: BallisticAmmoProvider

@@ -2,6 +2,7 @@
   abstract: true
   parent: BaseItem
   id: BaseMagazineBoxRifle
+  description: A cardboard box containing 50 intermediate rifle cartridges.
   components:
   - type: BallisticAmmoProvider
     mayTransfer: true
@@ -28,6 +29,7 @@
   parent: BaseMagazineBoxRifle
   id: MagazineBoxRifleBig
   name: 5.56x45mm ammunition box (SP) # Spectralight: .20 -> 5.56x45mm
+  description: A robust metal box containing 200 intermediate rifle cartridges. For the romantic gunman. # SpL
   components:
   - type: BallisticAmmoProvider
     capacity: 200
@@ -48,7 +50,6 @@
   parent: BaseMagazineBoxRifle
   id: MagazineBoxRifleSP
   name: 5.56x45mm ammunition box (SP) # Spectralight: .20 -> 5.56x45mm
-  description: A cardboard box of 5.56x45mm rounds. Intended to hold general-purpose kinetic ammunition. # Spectralight: .20 -> 5.56x45mm
   components:
   - type: BallisticAmmoProvider
     proto: CartridgeRifleSP
@@ -108,7 +109,6 @@
   parent: BaseMagazineBoxRifle
   id: MagazineBoxRiflePractice
   name: 5.56x45mm ammunition box (practice) # Spectralight: .20 -> 5.56x45mm
-  description: A cardboard box of 5.56x45mm rounds. Intended to hold harmless practice ammunition. # Spectralight: .20 -> 5.56x45mm
   components:
   - type: BallisticAmmoProvider
     proto: CartridgeRiflePractice
@@ -124,7 +124,6 @@
   id: MagazineBoxRifleIncendiary
   parent: BaseMagazineBoxRifle
   name: 5.56x45mm ammunition box (incendiary) # Spectralight: .20 -> 5.56x45mm
-  description: A cardboard box of 5.56x45mm rounds. Intended to hold self-igniting incendiary ammunition. # Spectralight: .20 -> 5.56x45mm
   components:
   - type: BallisticAmmoProvider
     proto: CartridgeRifleIncendiary
@@ -140,7 +139,6 @@
   id: MagazineBoxRifleUranium
   parent: BaseMagazineBoxRifle
   name: 5.56x45mm ammunition box (uranium) # Spectralight: .20 -> 5.56x45mm
-  description: A cardboard box of 5.56x45mm rounds. Intended to hold exotic uranium-core ammunition. # Spectralight: .20 -> 5.56x45mm
   components:
   - type: BallisticAmmoProvider
     proto: CartridgeRifleUranium

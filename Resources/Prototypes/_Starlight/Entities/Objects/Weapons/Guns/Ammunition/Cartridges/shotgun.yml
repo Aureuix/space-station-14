@@ -41,6 +41,7 @@
 - type: entity
   id: BaseShellShotgunToz
   name: 20 gauge shell
+  description: A 20 gauge shell. Weaker than its more well known counterpart. # SpL
   parent: BaseCartridge
   abstract: true
   components:

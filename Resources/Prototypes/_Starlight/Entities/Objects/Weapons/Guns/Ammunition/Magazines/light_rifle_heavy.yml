@@ -1,6 +1,7 @@
 - type: entity
   id: LightRifleHeavyBase
   name: "7.62x51mm box magazine" # Spectralight: .30 -> 7.62x51mm
+  description: A robust LMG box magazine loaded with 7.62x51mm rounds. # SpL
   parent: BaseMagazineBoxLightRifle
   components:
   - type: Tag
@@ -64,7 +65,7 @@
 
 - type: entity
   id: LightRifleHeavyMagazineHP
-  name: "7.62x51mm box magazine (hollow-point)" # Spectralight: .30 -> 7.62x51mm
+  name: "7.62x51mm box magazine (HP)" # Spectralight: .30 -> 7.62x51mm
   parent: LightRifleHeavyBase
   components:
   - type: BallisticAmmoProvider
@@ -144,7 +145,7 @@
 
 - type: entity
   id: LightRifleHeavyMagazineAP
-  name: "7.62x51mm box magazine (armor piercing)" # Spectralight: .30 -> 7.62x51mm
+  name: "7.62x51mm box magazine (AP)" # Spectralight: .30 -> 7.62x51mm
   parent: LightRifleHeavyBase
   components:
   - type: BallisticAmmoProvider

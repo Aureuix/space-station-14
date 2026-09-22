@@ -24,8 +24,8 @@
 - type: entity
   parent: [ BaseItem, BaseMajorContraband ]
   id: SpeedLoader48Rifle
-  name: "speed loader (.48 rifle)"
-  description: A stripper clip pre-loaded with .48 rifle rounds. Feeds directly into the Lionhunter's internal magazine. Proprietary and hard to come by.
+  name: ".48 rifle speed loader"
+  description: A stripper clip pre-loaded with .48 rifle rounds. Proprietary and hard to come by. # SpL
   components:
   - type: Tag
     tags:

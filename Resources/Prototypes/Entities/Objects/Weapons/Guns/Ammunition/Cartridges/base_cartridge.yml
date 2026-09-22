@@ -2,6 +2,7 @@
   abstract: true
   parent: BaseItem
   id: BaseCartridge
+  description: A firearm cartridge. It probably won't work without a compatible firearm. # SpL
   components:
   - type: Sprite
     drawdepth: Items
