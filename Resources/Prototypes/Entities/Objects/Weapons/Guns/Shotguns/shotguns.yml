@@ -90,7 +90,7 @@
   name: C-PCJ 'Bulldog' automatic shotgun # SpL
   parent: [BaseWeaponShotgunAny, BaseGunWieldable, BaseSyndicateContraband]
   id: WeaponShotgunBulldog
-  description: An automatic magazine-fed shotgun for close-quarters combat. Kicks like a mule on steroids. Takes 12 gauge shells. # Starlight: .50 -> 12 gauge
+  description: An automatic magazine-fed shotgun for close-quarters combat. Kicks like a mule on steroids. Accepts 12 gauge shells. # Starlight: .50 -> 12 gauge
   components:
   - type: Sprite
     sprite: Objects/Weapons/Guns/Shotguns/bulldog.rsi
@@ -140,7 +140,7 @@
   name: double-barrelled shotgun
   parent: [BaseWeaponShotgun, BaseGunWieldable, BaseSecurityBartenderZookeeperContraband] # Starlight-edit - SecurityBartender -> SecurityBartenderZookeeper
   id: WeaponShotgunDoubleBarreled
-  description: An immortal classic. Takes 12 gauge shells. # Starlight: .50 -> 12 gauge
+  description: An immortal classic. Accepts 12 gauge shells. # Starlight: .50 -> 12 gauge
   components:
   - type: Sprite
     sprite: Objects/Weapons/Guns/Shotguns/db_shotgun.rsi
@@ -163,7 +163,7 @@
   name: double-barrelled shotgun
   parent: WeaponShotgunDoubleBarreled
   id: WeaponShotgunDoubleBarreledRubber
-  description: An immortal classic. Takes 12 gauge shells. # Starlight: .50 -> 12 gauge
+  description: An immortal classic. Accepts 12 gauge shells. # Starlight: .50 -> 12 gauge
   suffix: Non-Lethal
   components:
   - type: BallisticAmmoProvider
@@ -173,7 +173,7 @@
   name: SA-4S95 'Sentinel' semi-automatic shotgun # SpL
   parent: [BaseWeaponShotgun, BaseGunWieldable, BaseSecurityContraband]
   id: WeaponShotgunEnforcer
-  description: A premium semi-automatic shotgun, and the pride of all security forces. Takes 12 gauge shells. # Starlight: .50 -> 12 gauge
+  description: A premium semi-automatic shotgun, and the pride of all security forces. Accepts 12 gauge shells. # Starlight: .50 -> 12 gauge
   components: # intend for Enforcer to have wider choke for semi-auto function
   - type: Gun
     spread: 5
@@ -200,7 +200,7 @@
   name: SA-443 'Kammerer' pump-action shotgun # SpL
   parent: [BaseWeaponShotgun, BaseGunWieldable, BaseSecurityContraband]
   id: WeaponShotgunKammerer
-  description: An old yet faithful design, and a favorite among irregular forces of many worlds. Takes 12 gauge shells. # Starlight: .50 -> 12 gauge
+  description: An old yet faithful design, and a favorite among irregular forces of many worlds. Accepts 12 gauge shells. # Starlight: .50 -> 12 gauge
   components: # intend for Kammerer to have tighter choke for slower fire rate and/or manual cycling
   - type: Item
     sprite: Objects/Weapons/Guns/Shotguns/pump_inhands_64x.rsi
@@ -221,7 +221,7 @@
   name: sawn-off shotgun
   parent: [ BaseWeaponShotgun, BaseSecurityBartenderZookeeperContraband ] # Starlight-edit - SecurityBartender -> SecurityBartenderZookeeper
   id: WeaponShotgunSawn
-  description: Groovy! Takes 12 gauge shells. # Starlight: .50 -> 12 gauge
+  description: Groovy! Accepts 12 gauge shells. # Starlight: .50 -> 12 gauge
   components: # needs to be super inaccurate because you don't need to wield it
   - type: Sprite
     sprite: Objects/Weapons/Guns/Shotguns/sawn.rsi
@@ -248,7 +248,7 @@
   name: sawn-off shotgun
   parent: WeaponShotgunSawn
   id: WeaponShotgunSawnEmpty
-  description: Groovy! Takes 12 gauge shells. # Starlight: .50 -> 12 gauge
+  description: Groovy! Accepts 12 gauge shells. # Starlight: .50 -> 12 gauge
   suffix: Empty
   components:
   - type: BallisticAmmoProvider
@@ -262,7 +262,7 @@
   name: handmade pistol
   parent: [BaseWeaponShotgun, BaseMinorContraband]
   id: WeaponShotgunHandmade
-  description: Looks unreliable. Takes 12 gauge shells. # Starlight: .50 -> 12 gauge
+  description: Looks unreliable. Accepts 12 gauge shells. # Starlight: .50 -> 12 gauge
   components:
   - type: Item
     size: Small
@@ -342,7 +342,7 @@
   parent: [BaseWeaponShotgun, BaseGunWieldable, BaseSyndicateContraband]
   id: WeaponShotgunHushpup
   name: 11-89S 'Hushpup' # SpL
-  description: An obscure modification of a civilian-grade hunting shotgun, fitted with an experimental muffler. Great for those with a strict moral code. Uses 12 gauge shotgun shells.
+  description: An obscure modification of a civilian-grade hunting shotgun, fitted with an experimental muffler. Great for those with a strict moral code. Accepts 12 gauge shells. # SpL
   components:
   - type: Sprite
     sprite: Objects/Weapons/Guns/Shotguns/hushpup.rsi

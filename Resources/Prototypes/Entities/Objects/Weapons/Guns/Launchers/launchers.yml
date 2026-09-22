@@ -51,7 +51,7 @@
   name: C-01gl 'China Lake' # SpL
   parent: [BaseWeaponLauncher, BaseGunWieldable, BaseSyndicateContraband]
   id: WeaponLauncherChinaLake
-  description: A pump-action grenade launcher manufactured by Waffle Corporation and commonly used by the infamous Nuclear Operatives. Virtually unmodified from the pre-FTL design, the modern China Lake is a testament to the longevity of the original. # SpL
+  description: A pump-action grenade launcher manufactured by Waffle Corporation and commonly used by the infamous Nuclear Operatives. Virtually unmodified from the pre-FTL design, the modern China Lake is a testament to the longevity of the original. Accepts all cartridged grenades. # SpL
   components:
   - type: Sprite
     sprite: Objects/Weapons/Guns/Launchers/china_lake.rsi
@@ -150,7 +150,7 @@
   name: Kardashev-RPG-7 rocket launcher # SpL
   parent: [ BaseWeaponLauncher, BaseSovietContraband] # SpL- converted to soviet due to. well. it's a soviet AT launcher
   id: WeaponLauncherRocket
-  description: An ancient rocket-propelled grenade launcher, modernised by Kardashev Arms Plant.
+  description: An ancient rocket-propelled grenade launcher, modernised by Kardashev Arms Plant. Accepts PG-7VL rocket grenades. # SpL
   components:
   - type: KnockbackByUserTag # Starlight
     doestContain:
@@ -193,7 +193,7 @@
   name: Kardashev-RPG-7 Type 23 MRL # SpL
   parent: [BaseWeaponLauncher, BaseSovietContraband] # SpL- only makes sense
   id: WeaponLauncherMultipleRocket
-  description: A multiple-barrelled shoulder-mounted rocket launcher designed to deliver extremely effective suppressive fire to a large combat area. Yes, this thing provides suppressive fire with rockets. # SpL
+  description: A multiple-barrelled shoulder-mounted rocket launcher designed to deliver extremely effective suppressive fire to a large combat area. Yes, this thing provides suppressive fire with rockets. Accepts PG-7VL rocket grenades. # SpL
   components:
   - type: KnockbackByUserTag # Starlight
     doestContain:

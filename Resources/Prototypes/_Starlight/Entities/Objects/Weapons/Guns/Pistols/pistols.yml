@@ -2,7 +2,7 @@
   name: TKB-034K 'Makarov' pistol # SpL
   parent: [BaseWeaponPistol, BaseSovietContraband]
   id: WeaponPistolMakarov
-  description: An outdated but incredibly cheap pistol, ideal for use at close quarters due to its tendency to not shoot straight. Uses 9mm ammo. # SpL
+  description: An outdated but incredibly cheap pistol, ideal for use at close quarters due to its tendency to not shoot straight. Feeds from 9mm pistol magazines. # SpL
   components:
     - type: Sprite
       sprite: _Starlight/Objects/Weapons/Guns/Pistols/makarov.rsi
@@ -151,7 +151,7 @@
   name: SA-Mk18 'Enforcer' pistol # SpL
   parent: [BaseWeaponPistol, BaseSecurityContraband]
   id: WeaponPistolEnforcer
-  description: A versatile pistol of modern design, the Enforcer was designed as an all-purpose personal defense weapon with users ranging from civilians and law enforcement to soldiers in active duty. # SpL
+  description: A versatile pistol of modern design, the Enforcer was designed as an all-purpose personal defense weapon with users ranging from civilians and law enforcement to soldiers in active duty. Feeds from 9mm pistol magazines. # SpL
   components:
     - type: Sprite
       sprite: _Starlight/Objects/Weapons/Guns/Pistols/enforcer.rsi
@@ -185,7 +185,7 @@
   name: NT-Mk63 'Due Process' service pistol # SpL
   parent: [BaseWeaponPistol, BaseSecurityContraband]
   id: WeaponPistolDP
-  description: Designed specifically to bolster morale among private security forces, the Due Process is a small pistol that packs a punch for brig defense, just as NanoTrasen intended. Uses .40 ammo. # SpL
+  description: Designed specifically to bolster morale among private security forces, the Due Process is a small pistol that packs a punch for brig defense, just as NanoTrasen intended. Feeds from .40 pistol magazines. # SpL
   components:
     - type: Sprite
       sprite: _Starlight/Objects/Weapons/Guns/Pistols/dp.rsi
@@ -221,7 +221,7 @@
 
 - type: entity
   name: NT-Mk74 'Blueguard' service pistol # SpL
-  description: A modern, ergonomic and compact service pistol with enough stopping power to make any would-be assassins think twice. Issued only to NanoTrasen's finest. Uses .40 ammo. # SpL
+  description: A modern, ergonomic and compact service pistol with enough stopping power to make any would-be assassins think twice. Issued only to NanoTrasen's finest. Feeds from .40 pistol magazines. # SpL
   parent: [WeaponPistolDP, BaseBlueShieldContraband, BaseGrandTheftContraband]
   id: WeaponPistolBlueguard
   components:
@@ -237,7 +237,7 @@
 - type: entity
   name: NT-SP-8AR service pistol # SpL
   parent: [WeaponPistolDP, BaseSecurityContraband]
-  description: An accuracy-focused service pistol with a mounted compensator, licensed from Aussec Armory for NanoTrasen's most trusted contractors. Ear protection is advised with prolonged use. Uses .40 ammo. # SpL
+  description: An accuracy-focused service pistol with a mounted compensator, licensed from Aussec Armory for NanoTrasen's most trusted contractors. Ear protection is advised with prolonged use. Feeds from .40 pistol magazines. # SpL
   id: WeaponPistolSP8AR
   components:
     - type: Gun
@@ -253,7 +253,7 @@
   name: OTs-39K 'Stechkin' pistol # SpL
   parent: [BaseSecurityContraband, WeaponPistolMk58]
   id: WeaponPistolStechkin
-  description: A small, easily concealable handgun with a threaded barrel for suppressors, based on an ancient snub-nosed revolver design following the same principles. Uses .40 ammo. # SpL
+  description: A small, easily concealable handgun with a threaded barrel for suppressors, based on an ancient snub-nosed revolver design following the same principles. Feeds from .40 pistol magazines. # SpL
   components:
     - type: Sprite
       sprite: _Starlight/Objects/Weapons/Guns/Pistols/stechkin.rsi
@@ -286,7 +286,7 @@
 - type: entity
   name: NT-Mk39 'Stechkin' pistol # SpL
   parent: WeaponPistolStechkin
-  description: A small, easily concealable handgun with a threaded barrel for suppressors. This variant has been modified for use by NanoTrasen contracted personnel, in large part thanks to the lack of legal patents on Kalashnikov Concern's weaponry. Uses .40 ammo. # SpL
+  description: A small, easily concealable handgun with a threaded barrel for suppressors. This variant has been modified for use by NanoTrasen contracted personnel, in large part thanks to the lack of legal patents on Kalashnikov Concern's weaponry. Feeds from .40 pistol magazines. # SpL
   id: WeaponPistolStechkinDetective
   suffix: Loadout, SP
   components:
@@ -321,7 +321,7 @@
   name: OTs-40K 'Stechkin' APS # SpL
   parent: [WeaponPistolMk58, BaseSovietContraband]
   id: WeaponPistolAPS
-  description: A high quality firearm issued to SNKVD elites and high ranking officials. It's half pistol, half closing argument. Uses .40 ammo. # SpL
+  description: A high quality firearm issued to SNKVD elites and high ranking officials. It's half pistol, half closing argument. Feeds from .40 pistol magazines. # SpL
   components:
     - type: Sprite
       sprite: _Starlight/Objects/Weapons/Guns/Pistols/aps.rsi
@@ -361,7 +361,7 @@
   name: DMI-50 'Jungle Hawk' heavy pistol # SpL
   parent: [BaseSyndicateContraband, WeaponPistolN1984]
   id: WeaponPistolDeagle
-  description: A high-caliber handgun designed for putting down large game. Legends are that it once went under a different name, which has since been lost to time. Uses .45 ACP ammo. # SpL
+  description: A high-caliber handgun designed for putting down large game. Legends are that it once went under a different name, which has since been lost to time. Feeds from .45 ACP pistol magazines. # SpL
   components:
     - type: Sprite
       sprite: _Starlight/Objects/Weapons/Guns/Pistols/deagle.rsi
@@ -380,7 +380,7 @@
   name: NT-M1911 kinetic pistol # SpL
   parent: [WeaponPistolN1984, BaseSecurityContraband]
   id: WeaponPistolM1911
-  description: A classic heavy handgun with a small magazine capacity, modernised by NanoTrasen's Small Arms Division. Uses .45 ACP ammo. # SpL
+  description: A classic heavy handgun with a small magazine capacity, modernised by NanoTrasen's Small Arms Division. Feeds from .45 ACP pistol magazines. # SpL
   components:
     - type: Sprite
       sprite: _Starlight/Objects/Weapons/Guns/Pistols/m1911.rsi

@@ -1,8 +1,8 @@
 ﻿- type: entity
-  name: sawn-off rifle
+  name: Kardashev-Obrez sawn-off rifle
   parent: [BaseWeaponSniper, BaseMajorContraband]
   id: WeaponSniperMosinSawn
-  description: Why would you do something like this to a Mosin?? Uses .45 ACP ammo.
+  description: Why would you do something like this to a Mosin?? Accepts .45 ACP ammo.
   components:
     - type: KnockbackByUserTag 
       doestContain:

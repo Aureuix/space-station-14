@@ -28,7 +28,7 @@
   name: SA SP-91-RC submachine gun # SpL
   parent: [BaseWeaponSubMachineGun, BaseSecurityContraband]
   id: WeaponSubMachineGunSP91RC
-  description: A compact submachine gun designed for riot control. Uses 9mm ammo. # SpL
+  description: A compact submachine gun designed for riot control. Feeds from 9mm SMG magazines. # SpL
   components:
   - type: Sprite
     sprite: _Starlight/Objects/Weapons/Guns/SMGs/sp91rc.rsi
@@ -62,7 +62,7 @@
   name: AO-M321 Type U3 Uzi # SpL
   parent: [BaseWeaponSubMachineGun, BaseMajorContraband]
   id: WeaponSubMachineGunUzi
-  description: A lightweight submachine gun with a 32-round magazine that has single or 4 round firing modes. Uses 9mm ammo. # SpL
+  description: A lightweight submachine gun with a 32-round magazine that has single or 4 round firing modes. Uses unique compact 9mm magazines. # SpL
   components:
   - type: Item
     size: Normal
@@ -121,7 +121,7 @@
   name: PPSh-59K submachine gun # SpL
   parent: [BaseWeaponSubMachineGun, BaseSovietContraband]
   id: WeaponSubMachineGunPPSH
-  description: Beloved by USSP veterans and feared by friendly fire protocols everywhere. Uses 9mm ammo. # SpL
+  description: Beloved by USSP veterans and feared by friendly fire protocols everywhere. Feeds from unique curved 9mm magazines. # SpL
   components:
   - type: Sprite
     sprite: _Starlight/Objects/Weapons/Guns/SMGs/PPSh59.rsi

@@ -84,7 +84,7 @@
   name: Kardashev-Mosin bolt rifle # SpL
   parent: [BaseWeaponSniper, BaseGunWieldable, BaseMajorContraband]
   id: WeaponSniperMosin
-  description: A weapon of the masses, a true relic. The Kardashev-Mosin has served in nearly every armed conflict since its creation over 630 years ago. The bolt-action design of the rifle remains virtually identical to its original design, whether used for hunting, sniping, or endless trench warfare. Uses .45 ACP ammo. # Spectralight: Magnum -> ACP
+  description: A weapon of the masses, a true relic. The Kardashev-Mosin has served in nearly every armed conflict since its creation over 630 years ago. The bolt-action design of the rifle remains virtually identical to its original design, whether used for hunting, sniping, or endless trench warfare. Accepts .45 ACP ammo. # Spectralight: Magnum -> ACP
   components:
   - type: KnockbackByUserTag # Starlight
     doestContain:
@@ -164,7 +164,7 @@
   name: DMI-SR85 'Hristov' AMR
   parent: [BaseWeaponSniper, BaseGunWieldable, BaseSyndicateContraband]
   id: WeaponSniperHristov
-  description: For when you absolutely, positively need to make someone regret their life choices from a safe distance. Uses 14.5x114mm ammo... somehow. # Spectralight: .60 -> 14.5x114mm
+  description: For when you absolutely, positively need to make someone regret their life choices from a safe distance. Accepts 14.5x114mm ammo. # Spectralight: .60 -> 14.5x114mm
   components:
   - type: Item
     size: Huge
@@ -213,7 +213,7 @@
   name: musket
   parent: [ BaseWeaponSniper, BaseGunWieldable, BaseMajorContraband ]
   id: Musket
-  description: This should've been in a museum long before you were born. Uses 14.5x114mm ammo. # Spectralight: .60 -> 14.5x114mm
+  description: This should've been in a museum long before you were born. Accepts 14.5x114mm ammo... somehow. # Spectralight: .60 -> 14.5x114mm
   components:
   - type: Sharp
   - type: Item
@@ -252,7 +252,7 @@
   name: flintlock pistol
   parent: [BaseWeaponSniper, BaseMajorContraband]
   id: WeaponPistolFlintlock
-  description: A pirate's companion. Yarrr! Uses .45 ACP ammo. # Spectralight: Magnum -> ACP
+  description: A pirate's companion. Yarrr! Accepts .45 ACP ammo. # Spectralight: Magnum -> ACP
   components:
   - type: Gun
     minAngle: 0
