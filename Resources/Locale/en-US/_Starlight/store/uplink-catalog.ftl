@@ -13,8 +13,8 @@ uplink-minotaur-desc = Lean and mean: Contains a smooth, powerful, and highly il
 uplink-deagle-name = Desert Eagle
 uplink-deagle-desc = A robust magnum handgun. Hold on a second, weren't these discontinued centuries ago? It'll probably still work.
 
-uplink-stechkin-name = Stechkin pistol
-uplink-stechkin-desc = A small, easily concealable 10mm handgun. Has a threaded barrel for suppressors.
+uplink-stechkin-name = Stechkin bundle
+uplink-stechkin-desc = A small, easily concealable 10mm handgun, bundled with two magazines and a lucky bullet.
 
 uplink-stechkin-bundle-name = Solid Operative Bundle
 uplink-stechkin-bundle-desc = A mysterious cardboard box containing a slew of equipment for only the most solid of operatives.

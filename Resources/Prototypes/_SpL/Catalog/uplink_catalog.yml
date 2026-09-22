@@ -140,9 +140,10 @@
   icon: { sprite: /Textures/_Starlight/Objects/Weapons/Guns/Ammunition/Magazine/Pistol/40.rsi, state: base }
   productEntity: MagazinePistol40FMJ
   cost:
-    Telecrystal: 1
+    Telecrystal: 2
   categories:
     - UplinkAmmo
+
 - type: listing
   id: UplinkSyndiAutomender
   name: uplink-syndi-automender-name
