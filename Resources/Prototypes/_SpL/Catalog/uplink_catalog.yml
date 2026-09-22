@@ -162,6 +162,20 @@
         - Surgeon
         - Chemist
         - ChiefMedicalOfficer
+      
+- type: listing
+  id: UplinkGrenadeImpact
+  name: uplink-grenade-impact-name
+  description: uplink-grenade-impact-desc
+  icon: { sprite: /Textures/Objects/Specific/Chemistry/large_grenade.rsi, state: ass }
+  productEntity: GrenadeImpact
+  discountCategory: veryRareDiscounts
+  discountDownTo:
+    Telecrystal: 3
+  cost:
+    Telecrystal: 5
+  categories:
+    - UplinkExplosives
 
 - type: listing
   id: UplinkElysiumImplanter

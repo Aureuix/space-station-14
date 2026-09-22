@@ -33,3 +33,6 @@ uplink-beaker-redspace-desc = Ever find yourself wishing you could hold a ton of
 
 uplink-elysium-implant-name = Elysium Implanter
 uplink-elysium-implant-desc = An implant that interfaces with your brain when injected. Has access to the Syndicate radio channel and a voice mask. Not guaranteed to be helpful.
+
+uplink-grenade-impact-name = Impact Grenade
+uplink-grenade-impact-desc = Impatient or bad at counting? This grenade is for you! Once armed, it creates a respectable explosion instantly upon striking a hard surface.
