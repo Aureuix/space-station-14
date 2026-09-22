@@ -54,6 +54,7 @@
     - Paramedic
     - Mining
     - SalvageLead
+    - NTPersonnel
   special:
     - !type:AddImplantSpecial
       implants: [MindShieldImplant]

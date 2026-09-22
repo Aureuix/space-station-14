@@ -278531,7 +278531,7 @@ entities:
   - uid: 27382
     components:
     - type: MetaData
-      desc: The sidearm of any self respecting officer.     Comes in .45 magnum, the lord's caliber. This one has the phrase 'Flamin' Hot Cheetos' engraved on the slide, whatever that means...
+      desc: The sidearm of any self respecting officer.     Comes in .45 ACP, the lord's caliber. This one has the phrase 'Flamin' Hot Cheetos' engraved on the slide, whatever that means...
     - type: Transform
       parent: 27378
     - type: Physics

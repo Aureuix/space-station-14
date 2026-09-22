@@ -44,9 +44,15 @@
         layer:
         - MobLayer
   - type: MobThresholds
+    stateAlertDict: # SpL Start
+      Alive: "HumanHealth"
+      SoftCritical: "HumanCrit"
+      Critical: "HumanCrit"
+      Dead: "HumanDead" # SpL End
     thresholds:
       0: Alive
-      150: Critical # 50 extra health than base species to crit
+      150: SoftCritical # 50 extra health than base species to crit # SpL
+      225: Critical # SpL
       300: Dead # 100 extra damage required to kill
   - type: Damageable
     damageContainer: Biological

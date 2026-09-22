@@ -105,7 +105,7 @@ public sealed partial class HealthAnalyzerControl : BoxContainer
 
         StatusLabel.Text =
             _entityManager.TryGetComponent<MobStateComponent>(target.Value, out var mobStateComponent)
-                ? HealthAnalyzerFormatting.GetStatusText(mobStateComponent.CurrentState) //Starkight-edit: shared formattng
+                ? HealthAnalyzerFormatting.GetStatusText(mobStateComponent.CurrentState) //Starlight-edit: shared formattng
                 : Loc.GetString("health-analyzer-window-entity-unknown-text");
 
         // Total Damage

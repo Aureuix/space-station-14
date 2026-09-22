@@ -49,7 +49,7 @@
     soundInsert:
       path: /Audio/Weapons/Guns/MagIn/revolver_magin.ogg
     # starlight start
-  - type: CanDualWield 
+  - type: CanDualWield
     dualWieldInaccuracyPenalty: 27
   - type: MeleeWeapon
     wideAnimationRotation: 0
@@ -77,7 +77,7 @@
   name: NT 'Deckard' revolver # SpL
   parent: [BaseWeaponRevolver, BaseSecurityCommandContraband]
   id: WeaponRevolverDeckard
-  description: A beautifully machined, custom-built revolver. Used when there is no time for the Voight-Kampff test. Loads 6 rounds of .45 magnum. # Starlight, 5 -> 6
+  description: A beautifully machined, custom-built revolver. Used when there is no time for the Voight-Kampff test. Loads 6 rounds of .45 ACP. # Starlight, 5 -> 6 # Spectralight: Magnum -> ACP
   components:
   - type: Sprite
     sprite: Objects/Weapons/Guns/Revolvers/deckard.rsi
@@ -105,7 +105,7 @@
   name: AO-SAAM 'Inspector' revolver # SpL
   parent: [BaseWeaponRevolver, BaseSecurityContraband]
   id: WeaponRevolverInspector
-  description: A powerful hybrid-action revolver, manufactured for corporate law enforcement investigators, patterned after ancient private-eye sidearms. Cocking is HIGHLY recommended before engaging the single-action hammer-fanning mechanism. Loads 6 rounds of .45 magnum.
+  description: A powerful hybrid-action revolver, manufactured for corporate law enforcement investigators, patterned after ancient private-eye sidearms. Cocking is HIGHLY recommended before engaging the single-action hammer-fanning mechanism. Loads 6 rounds of .45 ACP. # Spectralight: Magnum -> ACP
   components:
   - type: Sprite
     sprite: Objects/Weapons/Guns/Revolvers/inspector.rsi
@@ -121,9 +121,9 @@
     fireRate: 2.25 # SpL Start
     availableModes:
       - SemiAuto
-      - Burst 
+      - Burst
     shotsPerBurst: 6 # HAMMER FAN
-    burstCooldown: 2 # drawback to hammer fanning 
+    burstCooldown: 2 # drawback to hammer fanning
     burstFireRate: 12 # SpL End
   - type: StealTarget
     stealGroup: OfficerHandgun
@@ -135,7 +135,7 @@
   name: NT-Spec 'Mateba' revolver # SpL
   parent: [BaseWeaponRevolver, BaseNanoTrasenContraband] # SpL
   id: WeaponRevolverMateba
-  description: A modern revolver used by NanoTrasen’s elite, near mythical Special Forces divisions. Its unique trigger action and barrel placement enable a high fire rate with minimal muzzle flip. Many have looked down this barrel, but few have lived to tell of it. Loads 6 rounds of .45 magnum.
+  description: A modern revolver used by NanoTrasen’s elite, near mythical Special Forces divisions. Its unique trigger action and barrel placement enable a high fire rate with minimal muzzle flip. Many have looked down this barrel, but few have lived to tell of it. Loads 6 rounds of .45 ACP. # Spectralight: Magnum -> ACP
   components:
   - type: Sprite
     sprite: Objects/Weapons/Guns/Revolvers/mateba.rsi
@@ -151,7 +151,7 @@
 - type: entity
   parent: WeaponRevolverMateba
   id: WeaponRevolverMatebaAP # For deathsquad
-  suffix: armor-piercing
+  suffix: armor piercing
   components:
   - type: RevolverAmmoProvider
     proto: CartridgeMagnumAP
@@ -160,7 +160,7 @@
   name: C-2285 'Python' revolver # SpL
   parent: [BaseWeaponRevolver, BaseSyndicateContraband]
   id: WeaponRevolverPython
-  description: A powerful hybrid-action revolver manufactured by Waffle Corporation. Loud and flashy, perfect for any agent looking to make a statement. Cocking is HIGHLY recommended before engaging the single-action hammer-fanning mechanism. Loads 6 rounds of .45 magnum.
+  description: A powerful hybrid-action revolver manufactured by Waffle Corporation. Loud and flashy, perfect for any agent looking to make a statement. Cocking is HIGHLY recommended before engaging the single-action hammer-fanning mechanism. Loads 6 rounds of .45 ACP. # Spectralight: Magnum -> ACP
   components:
   - type: Sprite
     sprite: Objects/Weapons/Guns/Revolvers/python.rsi
@@ -175,7 +175,7 @@
     - SemiAuto
     - Burst
     shotsPerBurst: 6 # HAMMER FAN
-    burstCooldown: 2 # drawback to hammer fanning 
+    burstCooldown: 2 # drawback to hammer fanning
     burstFireRate: 12 # SpL End
     soundGunshot:
       path: /Audio/Weapons/Guns/Gunshots/revolver.ogg
@@ -187,7 +187,7 @@
 - type: entity
   parent: WeaponRevolverPython
   id: WeaponRevolverPythonAP # For the uplink.
-  suffix: armor-piercing
+  suffix: armor piercing
   components:
   - type: RevolverAmmoProvider
     proto: CartridgeMagnumAP
@@ -197,7 +197,7 @@
   name: pirate revolver
   parent: [BaseWeaponRevolver, BaseMajorContraband]
   id: WeaponRevolverPirate
-  description: A crude single-action revolver handmade by a space pirate. Old and covered in rust, it somehow still works. Loads 5 rounds of .45 magnum.
+  description: A crude single-action revolver handmade by a space pirate. Old and covered in rust, it somehow still works. Loads 5 rounds of .45 ACP. # Spectralight: Magnum -> ACP
   components:
   - type: Sprite
     sprite: Objects/Weapons/Guns/Revolvers/pirate_revolver.rsi

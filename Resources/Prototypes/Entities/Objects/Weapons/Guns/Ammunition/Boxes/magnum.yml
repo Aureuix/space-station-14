@@ -27,7 +27,7 @@
 - type: entity
   parent: BaseMagazineBoxMagnum
   id: MagazineBoxMagnumSP
-  name: ammunition box (.45 magnum SP)
+  name: .45 ACP ammunition box (SP) # Spectralight: Magnum -> ACP
   components:
   - type: BallisticAmmoProvider
     proto: CartridgeMagnumSP
@@ -42,7 +42,7 @@
 - type: entity
   parent: BaseMagazineBoxMagnum
   id: MagazineBoxMagnumHP
-  name: ammunition box (.45 magnum HP)
+  name: .45 ACP ammunition box (HP) # Spectralight: Magnum -> ACP
   components:
   - type: BallisticAmmoProvider
     proto: CartridgeMagnumHP
@@ -56,7 +56,7 @@
 - type: entity
   parent: BaseMagazineBoxMagnum
   id: MagazineBoxMagnumFMJ
-  name: ammunition box (.45 magnum FMJ)
+  name: .45 ACP ammunition box (FMJ) # Spectralight: Magnum -> ACP
   components:
   - type: BallisticAmmoProvider
     proto: CartridgeMagnumFMJ
@@ -71,8 +71,8 @@
 - type: entity
   parent: BaseMagazineBoxMagnum
   id: MagazineBoxMagnumPractice
-  name: ammunition box (.45 magnum practice)
-  description: A cardboard box of .45 magnum rounds. Intended to hold harmless practice ammunition.
+  name: .45 ACP ammunition box (practice) # Spectralight: Magnum -> ACP
+  description: A cardboard box of .45 ACP rounds. Intended to hold harmless practice ammunition. # Spectralight: Magnum -> ACP
   components:
   - type: BallisticAmmoProvider
     proto: CartridgeMagnumPractice
@@ -87,8 +87,8 @@
 - type: entity
   id: MagazineBoxMagnumIncendiary
   parent: BaseMagazineBoxMagnum
-  name: ammunition box (.45 magnum incendiary)
-  description: A cardboard box of .45 magnum rounds. Intended to hold self-igniting incendiary ammunition.
+  name: .45 ACP ammunition box (incendiary) # Spectralight: Magnum -> ACP
+  description: A cardboard box of .45 ACP rounds. Intended to hold self-igniting incendiary ammunition. # Spectralight: Magnum -> ACP
   components:
   - type: BallisticAmmoProvider
     proto: CartridgeMagnumIncendiary
@@ -103,8 +103,8 @@
 - type: entity
   id: MagazineBoxMagnumUranium
   parent: BaseMagazineBoxMagnum
-  name: ammunition box (.45 magnum uranium)
-  description: A cardboard box of .45 magnum rounds. Intended to hold exotic uranium-core ammunition.
+  name: .45 ACP ammunition box (uranium) # Spectralight: Magnum -> ACP
+  description: A cardboard box of .45 ACP rounds. Intended to hold exotic uranium-core ammunition. # Spectralight: Magnum -> ACP
   components:
   - type: BallisticAmmoProvider
     proto: CartridgeMagnumUranium
@@ -119,8 +119,8 @@
 - type: entity
   id: MagazineBoxMagnumAP
   parent: BaseMagazineBoxMagnum
-  name: ammunition box (.45 magnum AP)
-  description: A cardboard box of .45 magnum rounds. Intended to hold specialized armor-piercing ammunition.
+  name: .45 ACP ammunition box (AP) # Spectralight: Magnum -> ACP
+  description: A cardboard box of .45 ACP rounds. Intended to hold specialized armor piercing ammunition. # Spectralight: Magnum -> ACP
   components:
   - type: BallisticAmmoProvider
     proto: CartridgeMagnumAP
