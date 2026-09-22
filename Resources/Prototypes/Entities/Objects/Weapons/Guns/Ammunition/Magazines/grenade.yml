@@ -1,6 +1,7 @@
 - type: entity
   id: BaseMagazineGrenade
   name: grenade cartridge
+  description: A cartridged impact grenade, intended for use with launchers or artillery systems. # SpL
   parent: BaseItem # Starlight edit: Security -> No contra
   abstract: true
   components:
@@ -49,7 +50,7 @@
 - type: entity
   id: MagazineGrenadeFrag
   name: frag grenade cartridge
-  parent: [ BaseMagazineGrenade, BaseSyndicateContraband ] # Starlight edit: Security -> Syndicate contraband TODO decide on if these should eventually be sec contra?
+  parent: [ BaseMagazineGrenade, BaseHighlyIllegalContraband ] # Starlight edit: Security -> Syndicate contraband. decide on if these should eventually be sec contra? # SpL - nah they're just illegal
   components:
   - type: BallisticAmmoProvider
     proto: GrenadeFrag

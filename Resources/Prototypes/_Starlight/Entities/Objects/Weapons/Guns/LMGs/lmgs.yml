@@ -2,7 +2,7 @@
   name: NT-M492 Smart LMG # SpL
   id: WeaponLightMachineGunM492
   parent: [BaseWeaponLightMachineGun, BaseSecurityContraband]
-  description: A high tech non-traditional LMG built specifically for combating the big threats among us. Uses 7.62x51mm ammo.
+  description: A high tech non-traditional LMG built specifically for combating the big threats among us. Feeds from 7.62x51mm smartgun box magazines. # SpL
   components:
   - type: Sprite
     sprite: _Starlight/Objects/Weapons/Guns/LMGs/M492.rsi
@@ -64,7 +64,7 @@
   name: DP-28K 'Soyuz' LMG # SpL
   id: WeaponLightMachineGunDP28
   parent: [BaseWeaponLightMachineGun, BaseSovietContraband]
-  description: From RA-TA-TA-TA with love. Uses 7.62x51mm ammo.
+  description: From RA-TA-TA-TA with love. Feeds from unique 7.62x51mm pan magazines. # SpL
   components:
   - type: Sprite
     sprite: _Starlight/Objects/Weapons/Guns/LMGs/DP28.rsi

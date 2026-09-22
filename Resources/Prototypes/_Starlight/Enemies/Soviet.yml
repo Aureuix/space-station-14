@@ -1,6 +1,6 @@
 - type: entity
   name: comrade
-  parent: BaseMobHuman
+  parent: BaseMobHumanNPC # SpL
   id: MobSovietComrade
   categories: [ Spawner ]
   components:

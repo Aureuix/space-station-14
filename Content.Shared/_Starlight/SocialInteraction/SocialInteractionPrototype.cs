@@ -19,7 +19,7 @@ public sealed partial class SocialInteractionPrototype : IPrototype
     /// </summary>
     [DataField("interactDelay")]
     [ViewVariables(VVAccess.ReadWrite)]
-    public TimeSpan InteractDelay = TimeSpan.FromSeconds(1.0);
+    public TimeSpan InteractDelay = TimeSpan.FromSeconds(0.1);
 
     /// <summary>
     /// String will be used to fetch the localized message to be played if the interaction succeeds.

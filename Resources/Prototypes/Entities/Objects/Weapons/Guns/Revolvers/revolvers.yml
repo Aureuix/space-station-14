@@ -160,7 +160,7 @@
   name: C-2285 'Python' revolver # SpL
   parent: [BaseWeaponRevolver, BaseSyndicateContraband]
   id: WeaponRevolverPython
-  description: A powerful hybrid-action revolver manufactured by Waffle Corporation. Loud and flashy, perfect for any agent looking to make a statement. Cocking is HIGHLY recommended before engaging the single-action hammer-fanning mechanism. Loads 6 rounds of .45 ACP. # Spectralight: Magnum -> ACP
+  description: A powerful hybrid-action revolver manufactured by Waffle Corp., perfect for any agent looking to make a statement. Cocking is HIGHLY recommended before engaging the single-action hammer-fanning mechanism. Loads 6 rounds of .45 ACP. # Spectralight: Magnum -> ACP
   components:
   - type: Sprite
     sprite: Objects/Weapons/Guns/Revolvers/python.rsi

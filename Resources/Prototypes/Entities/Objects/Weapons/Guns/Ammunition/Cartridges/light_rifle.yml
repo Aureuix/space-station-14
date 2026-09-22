@@ -3,6 +3,7 @@
   parent: [ BaseCartridge, BaseSecurityContraband ]
   id: BaseCartridgeLightRifleSP
   name: 7.62x51mm cartridge (SP) # Spectralight: .30 -> 7.62x51mm
+  description: A high-power rifle round commonly used in both intermediate and a fully-chambered configurations. # SpL
   components:
   - type: Tag
     tags:
@@ -81,7 +82,6 @@
   parent: BaseCartridgeLightRifleSP
   id: CartridgeLightRiflePractice
   name: 7.62x51mm cartridge (practice) # Spectralight: .30 -> 7.62x51mm
-  description: A classic intermediate cartridge used by many combat rifles and LMGs. Practice ammunition fires a chalk projectile that stings a little, but otherwise causes no lasting damage.
   components:
   - type: CartridgeAmmo
     proto: BulletLightRifleTracePractice
@@ -97,7 +97,6 @@
   parent: BaseCartridgeLightRifleSP
   id: CartridgeLightRifleIncendiary
   name: 7.62x51mm cartridge (incendiary) # Spectralight: .30 -> 7.62x51mm
-  description: A classic intermediate cartridge used by many combat rifles and LMGs. Incendiary ammunition contains a self-igniting compound that sets targets ablaze.
   components:
   - type: CartridgeAmmo
     proto: BulletLightRifleTraceIncendiary
@@ -113,7 +112,6 @@
   parent: BaseCartridgeLightRifleSP
   id: CartridgeLightRifleUranium
   name: 7.62x51mm cartridge (uranium) # Spectralight: .30 -> 7.62x51mm
-  description: A classic intermediate cartridge used by many combat rifles and LMGs. Uranium ammunition replaces the lead core of the bullet with fissile material, irradiating targets from the inside.
   components:
   - type: CartridgeAmmo
     proto: BulletLightRifleTraceUranium

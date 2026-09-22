@@ -52,6 +52,20 @@
     - UplinkWeaponry
   
 - type: listing
+  id: UplinkPistolStechkinBundleSmall
+  name: uplink-stechkin-name
+  description: uplink-stechkin-desc
+  icon: { sprite: _Starlight/Objects/Weapons/Guns/Pistols/stechkin.rsi, state: icon }
+  productEntity: ClothingBackpackStechkinBundle
+  discountCategory: veryRareDiscounts
+  discountDownTo:
+    Telecrystal: 4
+  cost:
+    Telecrystal: 6
+  categories:
+    - UplinkWeaponry
+
+- type: listing
   id: UplinkM90Bundle
   name: uplink-m90-bundle-name
   description: uplink-m90-bundle-desc
@@ -120,6 +134,17 @@
         - Captain
 
 - type: listing
+  id: UplinkPistol40MagazineFMJ
+  name: uplink-pistol-40-magazine-name
+  description: uplink-pistol-40-magazine-desc
+  icon: { sprite: /Textures/_Starlight/Objects/Weapons/Guns/Ammunition/Magazine/Pistol/40.rsi, state: base }
+  productEntity: MagazinePistol40FMJ
+  cost:
+    Telecrystal: 2
+  categories:
+    - UplinkAmmo
+
+- type: listing
   id: UplinkSyndiAutomender
   name: uplink-syndi-automender-name
   description: uplink-syndi-automender-desc
@@ -162,6 +187,20 @@
         - Surgeon
         - Chemist
         - ChiefMedicalOfficer
+      
+- type: listing
+  id: UplinkGrenadeImpact
+  name: uplink-grenade-impact-name
+  description: uplink-grenade-impact-desc
+  icon: { sprite: /Textures/Objects/Specific/Chemistry/large_grenade.rsi, state: ass }
+  productEntity: GrenadeImpact
+  discountCategory: veryRareDiscounts
+  discountDownTo:
+    Telecrystal: 3
+  cost:
+    Telecrystal: 5
+  categories:
+    - UplinkExplosives
 
 - type: listing
   id: UplinkElysiumImplanter

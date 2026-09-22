@@ -1,10 +1,10 @@
 uplink-hardsuit-cselite-name = CyberSun Elite Suit
 uplink-hardsuit-cselite-desc =  A suit made by CyberSun's R&D department, who decided to one-up the Gorlex Marauders in the world of advanced hardsuits. Comes with a built in 3 hit shield, no capacity increases.
 
-uplink-satchel-syndicate-name = Syndicate satchel
+uplink-satchel-syndicate-name = Syndicate Satchel
 uplink-satchel-syndicate-desc = A lightweight explosion-proof satchel for holding various traitor goods.
 
-uplink-ballistic-goggles-name = Ballistic goggles
+uplink-ballistic-goggles-name = Ballistic Goggles
 uplink-ballistic-goggles-desc = A pair of flash-proof goggles made of ballistic glass with integrated HUD elements. Designed for stylish agents who like to go loud.
 
 uplink-pistol-anaconda-name = Anaconda
@@ -13,23 +13,29 @@ uplink-pistol-anaconda-desc = A loud powerful handgun with an inbuilt ammo fabri
 uplink-m90-bundle-name = M90 Carbine Bundle
 uplink-m90-bundle-desc = The M90 carbine, a compact competitor to the SolGov Lecter, bundled with three FMJ magazines. Chambered in 5.56x45mm.
 
-uplink-rifle-magazine-estoc-name = DMR magazine (.45 ACP)
+uplink-rifle-magazine-estoc-name = DMR Magazine (.45 ACP)
 uplink-rifle-magazine-estoc-desc = DMR magazines with twenty cartridges. Compatible with the Estoc.
 
-uplink-free-encryption-key-name = Syndicate encryption key
+uplink-free-encryption-key-name = Syndicate Encryption Key
 uplink-free-encryption-key-desc = A single encryption key provided for you to stay in touch with your allies. Use it wisely.
 
-uplink-appraisal-tool-gun-name = Appraisal tool pistol
+uplink-appraisal-tool-gun-name = Appraisal Tool Pistol
 uplink-appraisal-tool-gun-desc = A compact pistol disguised as a normal appraisal tool. Sure to avert suspicion, and it even functions for normal appraising! (9mm)
 
 uplink-smg-briefcase-name = Briefcase SMG
 uplink-smg-briefcase-desc = A powerful submachine gun packed into an ordinary brown briefcase. The barrel had to be removed to make the disguise work, so be mindful of its spread. Chambered in 9mm, extra ammo not included.
 
-uplink-syndi-automender-name = Interdyne automender
+uplink-syndi-automender-name = Interdyne Automender
 uplink-syndi-automender-desc = Be the medical maniac of your dreams with this overclocked automender, capable of healing all damage types quickly and effectively. Omnizine refills not included.
 
-uplink-beaker-redspace-name = Redspace beaker
+uplink-beaker-redspace-name = Redspace Beaker
 uplink-beaker-redspace-desc = Ever find yourself wishing you could hold a ton of reagents? Well now you can. WARNING: Product is highly visible. Keep out of view when not in use.
 
 uplink-elysium-implant-name = Elysium Implanter
 uplink-elysium-implant-desc = An implant that interfaces with your brain when injected. Has access to the Syndicate radio channel and a voice mask. Not guaranteed to be helpful.
+
+uplink-grenade-impact-name = Impact Grenade
+uplink-grenade-impact-desc = Impatient or bad at counting? This grenade is for you! Once armed, it creates a respectable explosion instantly upon striking a hard surface.
+
+uplink-pistol-40-magazine-name = Pistol Magazine (.40)
+uplink-pistol-40-magazine-desc = A pistol magazine with 10 cartridges. Compatible with the Stechkin.

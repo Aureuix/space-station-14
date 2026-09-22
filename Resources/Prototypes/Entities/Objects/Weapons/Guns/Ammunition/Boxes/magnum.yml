@@ -2,6 +2,7 @@
   abstract: true
   parent: BaseItem
   id: BaseMagazineBoxMagnum
+  description: A cardboard box of .45 ACP rounds, commonly used by revolvers and heavy pistols. # SpL
   components:
   - type: BallisticAmmoProvider
     mayTransfer: true
@@ -72,7 +73,6 @@
   parent: BaseMagazineBoxMagnum
   id: MagazineBoxMagnumPractice
   name: .45 ACP ammunition box (practice) # Spectralight: Magnum -> ACP
-  description: A cardboard box of .45 ACP rounds. Intended to hold harmless practice ammunition. # Spectralight: Magnum -> ACP
   components:
   - type: BallisticAmmoProvider
     proto: CartridgeMagnumPractice
@@ -88,7 +88,6 @@
   id: MagazineBoxMagnumIncendiary
   parent: BaseMagazineBoxMagnum
   name: .45 ACP ammunition box (incendiary) # Spectralight: Magnum -> ACP
-  description: A cardboard box of .45 ACP rounds. Intended to hold self-igniting incendiary ammunition. # Spectralight: Magnum -> ACP
   components:
   - type: BallisticAmmoProvider
     proto: CartridgeMagnumIncendiary
@@ -104,7 +103,6 @@
   id: MagazineBoxMagnumUranium
   parent: BaseMagazineBoxMagnum
   name: .45 ACP ammunition box (uranium) # Spectralight: Magnum -> ACP
-  description: A cardboard box of .45 ACP rounds. Intended to hold exotic uranium-core ammunition. # Spectralight: Magnum -> ACP
   components:
   - type: BallisticAmmoProvider
     proto: CartridgeMagnumUranium
@@ -120,7 +118,6 @@
   id: MagazineBoxMagnumAP
   parent: BaseMagazineBoxMagnum
   name: .45 ACP ammunition box (AP) # Spectralight: Magnum -> ACP
-  description: A cardboard box of .45 ACP rounds. Intended to hold specialized armor piercing ammunition. # Spectralight: Magnum -> ACP
   components:
   - type: BallisticAmmoProvider
     proto: CartridgeMagnumAP

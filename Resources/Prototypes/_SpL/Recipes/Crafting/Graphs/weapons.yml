@@ -1,0 +1,12 @@
+﻿- type: constructionGraph
+  id: SniperMosinSawn
+  start: start
+  graph:
+    - node: start
+      edges:
+        - to: mosinsawn
+          steps:
+            - tool: Sawing
+              doAfter: 2
+    - node: mosinsawn
+      entity: WeaponSniperMosinSawnEmpty

@@ -59,7 +59,7 @@
 
 - type: entity
   id: MagazineRifleHP
-  name: "5.56x45mm magazine (hollow-point)" # Spectralight: .20 -> 5.56x45mm
+  name: "5.56x45mm magazine (HP)" # Spectralight: .20 -> 5.56x45mm
   parent: BaseMagazineRifle
   components:
   - type: BallisticAmmoProvider
@@ -107,7 +107,7 @@
 
 - type: entity
   id: MagazineRifleAP
-  name: "5.56x45mm magazine (armor piercing)" # Spectralight: .20 -> 5.56x45mm
+  name: "5.56x45mm magazine (AP)" # Spectralight: .20 -> 5.56x45mm
   parent: BaseMagazineRifle
   components:
   - type: BallisticAmmoProvider
@@ -251,6 +251,7 @@
 - type: entity
   id: BaseMagazineRifleM52
   parent: BaseMagazineRifle
+  description: A sturdy and proprietary magazine designed to be compatible with Aussec Armory rifles. # SpL
   abstract: true
   components:
   - type: BallisticAmmoProvider
@@ -291,7 +292,7 @@
 
 - type: entity
   id: MagazineRifleM52HP
-  name: "5.56x45mm magazine (hollow-point)" # Spectralight: .20 -> 5.56x45mm
+  name: "5.56x45mm magazine (HP)" # Spectralight: .20 -> 5.56x45mm
   parent: BaseMagazineRifleM52
   components:
   - type: BallisticAmmoProvider
@@ -339,7 +340,7 @@
 
 - type: entity
   id: MagazineRifleM52AP
-  name: "5.56x45mm magazine (armor piercing)" # Spectralight: .20 -> 5.56x45mm
+  name: "5.56x45mm magazine (AP)" # Spectralight: .20 -> 5.56x45mm
   parent: BaseMagazineRifleM52
   components:
   - type: BallisticAmmoProvider

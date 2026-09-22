@@ -93,7 +93,7 @@
   name: NT-Mk7 'Dispatcher' service pistol # SpL
   parent: [BaseWeaponRevolver, BaseSecurityContraband]
   id: WeaponRevolverDispatcher
-  description: The NanoTrasen Mark 7 Service Revolver, known unofficially as the 'Dispatcher.' chambered in .45 Magnum with robust stopping power for putting an end to any non-compliance. A true timeless classic carried amongst NanoTrasen's elite security staff.
+  description: Known unofficially as the 'Dispatcher'. Sporting robust stopping power for putting an end to any non-compliance, the NanoTraseen Mark 7 Service Revolver is a true timeless classic carried amongst NanoTrasen's elite security staff. Loads 6 rounds of .45 ACP. # SpL
   components:
   - type: Sprite
     sprite: _Starlight/Objects/Weapons/Guns/Revolvers/Dispatcher.rsi

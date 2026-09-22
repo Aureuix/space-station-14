@@ -7,6 +7,33 @@
   components:
     - type: TextFilePaperContent
       fileName: syndiecomm.txt
+      
+- type: entity
+  parent: PaperSyn
+  id: PrintedDocumentSyndieRename
+  name: Syndicate Alias Request
+  categories: [ HideSpawnMenu ]
+  components:
+    - type: TextFilePaperContent
+      fileName: syndienamepaper.txt
+      
+- type: entity
+  parent: PaperSyn
+  id: PrintedDocumentSyndieReport
+  name: Syndicate Objective Report
+  categories: [ HideSpawnMenu ]
+  components:
+    - type: TextFilePaperContent
+      fileName: syndiereport.txt
+
+- type: entity
+  parent: PaperSyn
+  id: PrintedDocumentSyndieRequest
+  name: Syndicate Support Request
+  categories: [ HideSpawnMenu ]
+  components:
+    - type: TextFilePaperContent
+      fileName: syndierequest.txt
 
 # Syndicate incoming
 - type: entity

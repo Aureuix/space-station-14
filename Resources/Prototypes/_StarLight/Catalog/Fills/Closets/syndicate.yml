@@ -1,6 +1,6 @@
 - type: entity # Starlight
   id: BigBoxSyndicateBundle
-  parent: BigBox
+  parent: StealthBox # SpL
   suffix: Syndicate, Filled
   components:
   - type: EntityStorage

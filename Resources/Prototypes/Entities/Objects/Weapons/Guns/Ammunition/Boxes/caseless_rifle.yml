@@ -3,6 +3,7 @@
   parent: BaseItem
   id: BaseMagazineBoxCaselessRifle
   name: 5.7mm ammunition box
+  description: A cardboard box of subsonic 5.7mm rounds. This caliber is caseless, relying instead on an internal propellant configuration. # SpL
   components:
   - type: BallisticAmmoProvider
     mayTransfer: true
@@ -29,7 +30,6 @@
   parent: BaseMagazineBoxCaselessRifle
   id: MagazineBoxCaselessRifle
   name: 5.7mm ammunition box
-  description: A cardboard box of 5.7mm rounds. Intended to hold general-purpose kinetic ammunition.
   components:
   - type: BallisticAmmoProvider
     proto: CartridgeCaselessRifle
@@ -44,7 +44,6 @@
   parent: BaseMagazineBoxCaselessRifle
   id: MagazineBoxCaselessRiflePractice
   name: 5.7mm ammunition box (practice)
-  description: A cardboard box of 5.7mm rounds. Intended to hold harmless practice ammunition.
   components:
   - type: BallisticAmmoProvider
     proto: CartridgeCaselessRiflePractice

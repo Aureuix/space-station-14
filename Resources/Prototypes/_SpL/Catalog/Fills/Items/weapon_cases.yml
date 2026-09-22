@@ -1,0 +1,14 @@
+﻿- type: entity
+  parent: BriefcaseWeaponSmall
+  id: ClothingBackpackStechkinBundle
+  name: stechkin bundle
+  description: Contains a small and easily concealable handgun, with some spare ammunition and a lucky bullet. 
+  components:
+  - type: EntityTableContainerFill
+    containers:
+      storagebase: !type:AllSelector
+        children:
+          - id: WeaponPistolStechkin
+          - id: MagazinePistol40FMJ
+          - id: MagazinePistol40FMJ
+          - id: CartridgePistol40AP

@@ -1,7 +1,7 @@
 - type: entity
   parent: BaseItem
   id: BaseMagazineBoxImprovised
-  name: improvised ammunition box (5.56x45mm)
+  name: 5.56x45mm improvised ammunition box
   description: This looks suspiciously like a 5.56x45mm magazine box with a crude bullet drawing ontop. Mixing ammo is not advised. # Spectralight: .20 -> 5.56x45mm
   components:
   - type: BallisticAmmoProvider
@@ -45,7 +45,8 @@
 - type: entity
   parent: BaseMagazineBoxImprovised
   id: MagazineBoxImprovisedPistol
-  name: improvised ammunition box (9mm improvised) # Spectralight: .35 -> 9mm
+  name: 9mm improvised ammunition box # Spectralight: .35 -> 9mm
+  description: This looks suspiciously like a 9mm magazine box with a crude bullet drawing ontop. Mixing ammo is not advised. # Spectralight: .35 -> 9mm
   components:
   - type: BallisticAmmoProvider
     proto: CartridgePistolImprovised
@@ -63,6 +64,7 @@
   parent: BaseMagazineBoxImprovised
   id: MagazineBoxImprovisedRifle
   name: improvised 7.62x51mm ammunition box (improvised) # Spectralight: .30 -> 7.62x51mm
+  description: This looks suspiciously like a 7.82x51mm magazine box with a crude bullet drawing ontop. Mixing ammo is not advised.
   components:
   - type: BallisticAmmoProvider
     proto: CartridgeLightRifleImprovised
@@ -80,6 +82,7 @@
   parent: BaseMagazineBoxImprovised
   id: MagazineBoxImprovisedMagnum
   name: improvised .45 ACP ammunition box (improvised) # Spectralight: Magnum -> ACP
+  description: This looks suspiciously like a .45 ACP magazine box with a crude bullet drawing ontop. Mixing ammo is not advised.
   components:
   - type: BallisticAmmoProvider
     proto: CartridgeMagnumImprovised
@@ -97,6 +100,7 @@
   parent: BaseMagazineBoxImprovised
   id: MagazineBoxImprovisedShotgun
   name: 12 gauge improvised buckshot box
+  description: This looks suspiciously like a 12 gauge magazine box with a crude bullet drawing ontop. Mixing ammo is not advised.
   components:
   - type: BallisticAmmoProvider
     proto: ShellShotgunImprovised

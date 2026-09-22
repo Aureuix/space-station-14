@@ -1,6 +1,6 @@
 - type: entity
   id: BulletPistolRubber
-  name: bullet (9mm rubber) # Spectralight: .35 -> 9mm
+  name: 9mm bullet (rubber) # Spectralight: .35 -> 9mm
   parent: BaseBulletRubber
   categories: [ HideSpawnMenu ]
   components:

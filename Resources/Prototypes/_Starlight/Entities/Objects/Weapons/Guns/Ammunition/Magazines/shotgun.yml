@@ -2,7 +2,7 @@
 
 - type: entity
   id: BaseMagazineShotgunToz
-  name: magazine (20 gauge shells)
+  name: 20 gauge magazine
   description: "Piotr, what am I supposed to do with this? The magazine won't come out of the gun!"
   parent: [ BaseItem, BaseSecurityContraband ]
   abstract: true
