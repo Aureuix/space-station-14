@@ -527,6 +527,7 @@
   loadouts:
   - JackBoots
   - CombatBoots
+  - Heels # SpL
   - HighHeelBootsFilled
 
 # Cargo
@@ -621,11 +622,11 @@
   loadouts:
     - MailTrolleyFlatpack
     - GoldenMailTrolleyFlatpack
-  
+
 # SpL Start
 - type: loadoutGroup
   id: MailTechnicianSkates
-  minLimit: 0 
+  minLimit: 0
   name: loadout-group-mail-technician-skates
   loadouts:
     - RollerSkatesLoadout
@@ -1061,4 +1062,3 @@
   - SecGloves
   - SecGlovesFingerless
   - SecMittens
-  

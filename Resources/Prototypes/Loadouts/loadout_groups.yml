@@ -132,8 +132,8 @@
   - ClothingMaskSadMime
   - ClothingMaskScaredMime
   - ClothingKitsuneMask # SpL start
-  - Umbrella 
-  - BoxLighttubeBlacklight  
+  - Umbrella
+  - BoxLighttubeBlacklight
   - ClothingNeckFoxfire # SpL end
 
 - type: loadoutGroup
@@ -1692,6 +1692,7 @@
   loadouts:
   - JackBoots
   - SecurityWinterBoots
+  - Heels # SpL
   - HighHeelBootsFilled # Starlight
 
 - type: loadoutGroup
