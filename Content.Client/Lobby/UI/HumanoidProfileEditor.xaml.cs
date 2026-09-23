@@ -1600,7 +1600,6 @@ namespace Content.Client.Lobby.UI
                 var weight = speciesPrototype.StandardWeight + speciesPrototype.StandardDensity * (Profile.Appearance.Width * Profile.Appearance.Height * Profile.Appearance.Height - 1);
                 HeightDescribeLabel.Text = Loc.GetString("humanoid-profile-editor-height-label", ("height", Math.Round(height)));
                 WidthDescribeLabel.Text = Loc.GetString("humanoid-profile-editor-width-label", ("weight", Math.Round(weight, 1)));
-                _recordsTab?.UpdateComputedMetrics(Profile); // Chromatic Drift Records: Update the records tab with new computed metrics
             }
         }
 
@@ -2086,4 +2085,3 @@ namespace Content.Client.Lobby.UI
         }
     }
 }
-

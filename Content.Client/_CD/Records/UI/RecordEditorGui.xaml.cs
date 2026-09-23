@@ -14,22 +14,34 @@ namespace Content.Client._CD.Records.UI;
 [GenerateTypedNameReferences]
 public sealed partial class RecordEditorGui : Control
 {
-    [Dependency] private readonly IPrototypeManager _prototype = default!; // Starlight
-
     /// <summary>
     /// Delegate that tells the editor to save records when the save button is pressed
     /// </summary>
     private readonly Action<PlayerProvidedCharacterRecords> _updateProfileRecords;
     private PlayerProvidedCharacterRecords _records = default!;
-    private HumanoidCharacterProfile? _profile;
 
     public RecordEditorGui(Action<PlayerProvidedCharacterRecords> updateProfileRecords)
     {
-        IoCManager.InjectDependencies(this);
         RobustXamlLoader.Load(this);
         _updateProfileRecords = updateProfileRecords;
 
         #region General
+
+        HeightEdit.OnTextChanged += args =>
+        {
+            if (!int.TryParse(args.Text, out var newHeight))
+                return;
+            UpdateImperialHeight(newHeight);
+            UpdateRecords(_records.WithHeight(newHeight));
+        };
+
+        WeightEdit.OnTextChanged += args =>
+        {
+            if (!int.TryParse(args.Text, out var newWeight))
+                return;
+            UpdateImperialWeight(newWeight);
+            UpdateRecords(_records.WithWeight(newWeight));
+        };
 
         ContactNameEdit.OnTextChanged += args =>
         {
@@ -107,23 +119,13 @@ public sealed partial class RecordEditorGui : Control
 
     public void Update(HumanoidCharacterProfile? profile)
     {
-        _profile = profile;
-        //this line is evil. basically.
-        // check if we have set records. if we do use those
-        // check if we have a HumanoidCharacter profile. if we do get it's species and use that
-        // and if we dont just spitball a random guess.
-        _records = profile?.CDCharacterRecords ?? (_profile != null ? PlayerProvidedCharacterRecords.DefaultRecords(_prototype.Index(_profile.Species)) : PlayerProvidedCharacterRecords.DefaultRecords());
-
-        // Sync calculated height/weight immediately so the tab mirrors the sizing sliders.
-        var metricsPersisted = TryPersistComputedMetrics();
-
+        // Pull the saved records off the profile when the lobby refreshes the tab.
+        _records = profile?.CDCharacterRecords ?? PlayerProvidedCharacterRecords.DefaultRecords();
         EmploymentEntrySelector.UpdateContents(_records.EmploymentEntries);
         MedicalEntrySelector.UpdateContents(_records.MedicalEntries);
         SecurityEntrySelector.UpdateContents(_records.SecurityEntries);
         AdminEntrySelector.UpdateContents(_records.AdminEntries);
-
-        if (!metricsPersisted)
-            UpdateWidgets();
+        UpdateWidgets();
     }
 
     public void UpdateComputedMetrics(HumanoidCharacterProfile? profile)
