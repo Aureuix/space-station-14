@@ -12,9 +12,9 @@
   femaleFirstNames: names_felionoid
   naming: First
   customName: true
-  minHeight: 0.8
+  # minHeight: 0.8 # SpL
   defaultHeight: 0.8
-  maxHeight: 0.9
+  # maxHeight: 0.9 # SpL
   standardSize: 170
   standardWeight: 48
   standardDensity: 45

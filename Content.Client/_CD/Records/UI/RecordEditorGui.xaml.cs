@@ -128,34 +128,6 @@ public sealed partial class RecordEditorGui : Control
         UpdateWidgets();
     }
 
-    public void UpdateComputedMetrics(HumanoidCharacterProfile? profile)
-    {
-        _profile = profile;
-        if (!TryPersistComputedMetrics())
-            UpdateWidgets();
-    }
-
-    private bool TryPersistComputedMetrics()
-    {
-        if (_profile == null)
-            return false;
-
-        var currentHeight = _records.Height;
-        var currentWeight = _records.Weight;
-        var updated = CharacterRecordSizeHelper.WithCalculatedMetrics(_records, _profile, _prototype);
-
-        if (updated.Height == currentHeight && updated.Weight == currentWeight)
-        {
-            // Nothing changed; keep existing instance so we do not churn allocations.
-            _records = updated;
-            return false;
-        }
-
-        // Push newly derived metrics back to the character profile.
-        UpdateRecords(updated);
-        return true;
-    }
-
     private void UpdateRecords(PlayerProvidedCharacterRecords records)
     {
         records.EnsureValid();

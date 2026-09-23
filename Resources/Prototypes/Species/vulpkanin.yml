@@ -12,9 +12,9 @@
   femaleFirstNames: names_vulpkanin_female
   lastNames: names_vulpkanin_last
   # starlight start
-  minHeight: 0.9
+  # minHeight: 0.9 # SpL
   defaultHeight: 1
-  maxHeight: 1.2
+  # maxHeight: 1.2 # SpL
   standardSize: 170
   standardWeight: 75
   standardDensity: 110
