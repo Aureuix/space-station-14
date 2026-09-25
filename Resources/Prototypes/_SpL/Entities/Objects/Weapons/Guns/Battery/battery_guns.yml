@@ -67,10 +67,10 @@
       supportedPins: [ Laser ]
 
 - type: entity
-  name: mining laser
-  parent: [ BaseWeaponBattery, BaseGunWieldable, BaseSalvageMiningContraband ]
+  name: VI-233 Mining Laser
+  parent: [ BaseWeaponBattery, BaseGunWieldable, BaseSecuritySalvageMiningContraband ]
   id: WeaponMiningLaser
-  description: A heavy duty laser weapon designed to drill through solid objects with minimal friendly fire risk. 
+  description: A heavy duty laser weapon designed to drill through solid objects with minimal friendly fire risk, the mining laser represents a major step up in civilian-oriented handheld mining equipment.
   components:
     - type: Item
       size: Huge
