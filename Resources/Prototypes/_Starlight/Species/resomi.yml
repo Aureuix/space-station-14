@@ -17,9 +17,9 @@
   oldAge: 257
   maxAge: 430
   customName: true # Starlight
-  minHeight: 0.8 # SpL
+  # minHeight: 0.8 # SpL
   defaultHeight: 0.91 # SpL
-  maxHeight: 1 # SpL
+  # maxHeight: 1 # SpL
   standardSize: 150
   standardWeight: 31 # SpL
   standardDensity: 11 # SpL
