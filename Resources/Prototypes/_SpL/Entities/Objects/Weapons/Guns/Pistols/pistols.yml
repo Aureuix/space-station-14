@@ -47,7 +47,7 @@
   name: C-LWC 'Anaconda' RCP
   parent: [ BaseItem, BaseSyndicateContraband ]
   id: WeaponPistolAnaconda
-  description: A complex Waffle Corp handgun designed for use by corporate officials and operatives on extended deployments. Creates caseless FMJ ammunition on the fly from an internal fabricator, which slowly self-charges.
+  description: A complex Waffle Corp. handgun designed for use by corporate officials and operatives on extended deployments. Creates caseless 5.7mm FMJ ammunition on the fly from an internal fabricator, which slowly self-charges.
   components:
     - type: Gun
       fireRate: 3
@@ -62,19 +62,17 @@
     - type: ContainerContainer
       containers:
         ballistic-ammo: !type:Container
-    - type: BallisticAmmoProvider
-      whitelist:
-        tags:
-          - CartridgePistolDP
-      capacity: 8
+    - type: BasicEntityAmmoProvider
       proto: CartridgeCaselessRifleFMJ
-      unspawnedCount: 7
-      cycleable: false 
-    - type: BallisticAmmoSelfRefiller
-      autoRefillRate: 2s
-      affectedByEmp: true
-      firingPausesAutoRefill: true
-      autoRefillPauseDuration: 0.75s
+      capacity: 8
+      count: 8
+    - type: RechargeBasicEntityAmmo
+      rechargeCooldown: 1.4
+      rechargeSound:
+        path: /Audio/Weapons/Guns/Bolt/lmg_bolt_closed.ogg
+        params:
+          pitch: 1.8
+          variation: 0.08
     - type: AmmoCounter
     - type: Item
       size: Small
@@ -116,7 +114,7 @@
   id: WeaponIlluminateFrostbite
   parent: [ BaseWeaponPistol, BaseIlluminateContraband ]
   name: PD52 "frostbite"
-  description: A one-handed cross between handgun and SMG, the PD52 comes with an inbuilt silencer and fires jet-propelled flechette rounds.
+  description: A one-handed cross between handgun and SMG, the PD52 comes with an inbuilt silencer and fires jet-propelled flechette rounds. Feeds from a unique fletchette magazine.
   components:
     - type: Sprite
       sprite: /Textures/_SpL/Objects/Weapons/Guns/Pistols/frostbite.rsi

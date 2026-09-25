@@ -2,7 +2,8 @@
   abstract: true
   parent: [ BaseCartridge, BaseSecurityContraband ]
   id: BaseCartridgePistol
-  name: cartridge (.35 auto)
+  name: cartridge (9mm) # Spectralight: .35 -> 9mm
+  description: An incredibly versatile cartridge used by all manner of firearms, and arguably the most popular caliber available. # SpL
   components:
   - type: Tag
     tags:
@@ -20,8 +21,7 @@
 - type: entity
   parent: BaseCartridgePistol
   id: CartridgePistolSP
-  name: cartridge (.35 auto SP)
-  description: Arguably the most popular caliber on the market, used by all manner of pistols and submachine guns. Standard kinetic ammunition is common and useful in most situations.
+  name: cartridge (9mm SP) # Spectralight: .35 -> 9mm
   components:
   - type: CartridgeAmmo
     proto: BulletPistolTraceSP
@@ -35,7 +35,7 @@
 
 - type: entity
   id: CartridgePistolHP
-  name: cartridge (.35 auto HP)
+  name: cartridge (9mm HP) # Spectralight: .35 -> 9mm
   parent: BaseCartridgePistol
   components:
   - type: CartridgeAmmo
@@ -50,7 +50,7 @@
         
 - type: entity
   id: CartridgePistolFMJ
-  name: cartridge (.35 auto FMJ)
+  name: cartridge (9mm FMJ) # Spectralight: .35 -> 9mm
   parent: BaseCartridgePistol
   components:
   - type: CartridgeAmmo
@@ -65,7 +65,7 @@
         
 - type: entity
   id: CartridgePistolAP
-  name: cartridge (.35 auto AP)
+  name: cartridge (9mm AP) # Spectralight: .35 -> 9mm
   parent: BaseCartridgePistol
   components:
   - type: CartridgeAmmo
@@ -81,8 +81,7 @@
 - type: entity
   parent: BaseCartridgePistol
   id: CartridgePistolPractice
-  name: cartridge (.35 auto practice)
-  description: Arguably the most popular caliber on the market, used by all manner of pistols and submachine guns. Practice ammunition fires a chalk projectile that stings a little, but otherwise causes no lasting damage.
+  name: cartridge (9mm practice) # Spectralight: .35 -> 9mm
   components:
   - type: CartridgeAmmo
     proto: BulletPistolTracePractice
@@ -97,8 +96,7 @@
 - type: entity
   parent: BaseCartridgePistol
   id: CartridgePistolIncendiary
-  name: cartridge (.35 auto incendiary)
-  description: Arguably the most popular caliber on the market, used by all manner of pistols and submachine guns. Incendiary ammunition contains a self-igniting compound that sets targets ablaze.
+  name: cartridge (9mm incendiary) # Spectralight: .35 -> 9mm
   components:
   - type: CartridgeAmmo
     proto: BulletPistolTraceIncendiary
@@ -112,8 +110,7 @@
 
 - type: entity
   id: CartridgePistolUranium
-  name: cartridge (.35 auto uranium)
-  description: Arguably the most popular caliber on the market, used by all manner of pistols and submachine guns. Uranium ammunition replaces the lead core of the bullet with fissile material, irradiating targets from the inside.
+  name: cartridge (9mm uranium) # Spectralight: .35 -> 9mm
   parent: BaseCartridgePistol
   components:
   - type: CartridgeAmmo
@@ -129,7 +126,7 @@
 - type: entity
   parent: BaseCartridgePistol
   id: CartridgePistolSpent
-  name: cartridge (.35 auto)
+  name: cartridge (9mm) # Spectralight: .35 -> 9mm
   suffix: spent
   components:
   - type: Sprite

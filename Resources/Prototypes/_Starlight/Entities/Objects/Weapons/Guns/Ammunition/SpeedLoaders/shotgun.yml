@@ -2,6 +2,7 @@
   id: BaseSpeedLoaderShotgun
   name: 12 gauge speedloader
   parent: [ BaseItem ]
+  description: A compact speedloader designed to hold shotgun shells. # SpL
   abstract: true
   components:
   - type: Tag

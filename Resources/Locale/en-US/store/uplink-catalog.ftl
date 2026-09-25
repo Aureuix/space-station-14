@@ -1,19 +1,19 @@
 # Weapons
 
 uplink-pistol-viper-name = Viper
-uplink-pistol-viper-desc = A small, easily concealable, but somewhat underpowered gun. Retrofitted with a fully automatic receiver. Uses pistol magazines (.35 auto).
+uplink-pistol-viper-desc = A small, easily concealable, but somewhat underpowered gun. Retrofitted with a fully automatic receiver. Uses pistol magazines (9mm).
 
 uplink-estoc-bundle-name = Estoc DMR bundle
-uplink-estoc-bundle-desc = A designated marksman rifle, fitted with a mid-range optic for longer-range combat. Bundled with two rifle magazines. Chambered in .45 magnum.
+uplink-estoc-bundle-desc = A designated marksman rifle, fitted with a mid-range optic for longer-range combat. Bundled with two rifle magazines. Chambered in .45 ACP.
 
 uplink-revolver-python-name = Python
-uplink-revolver-python-desc = A brutally simple, effective, and loud Syndicate revolver. Comes loaded with armor-piercing rounds (.45 magnum).
+uplink-revolver-python-desc = A brutally simple, effective, and loud Syndicate revolver. Comes loaded with .45 ACP armor-piercing rounds.
 
 uplink-pistol-cobra-name = Cobra
-uplink-pistol-cobra-desc = A rugged, robust operator handgun with inbuilt silencer. Uses pistol magazines (.25 caseless).
+uplink-pistol-cobra-desc = A rugged, robust operator handgun with inbuilt silencer. Uses 5.7mm magazines.
 
 uplink-rifle-mosin-name = Kardashev-Mosin
-uplink-rifle-mosin-desc = A bolt action service rifle that has seen centuries of warfare. Not modern by any standard, hand loaded, and handles horrifically, but it is cheap. Chambered in .45 magnum.
+uplink-rifle-mosin-desc = A bolt action service rifle that has seen centuries of warfare. Not modern by any standard, hand loaded, and handles horrifically, but it is cheap. Chambered in .45 ACP.
 
 uplink-esword-name = Energy Sword
 uplink-esword-desc = A very dangerous energy sword that can reflect shots. Can be stored in pockets when turned off. Makes a lot of noise when used or turned on.
@@ -92,31 +92,31 @@ uplink-shrapnel-grenade-name = Shrapnel Grenade
 uplink-shrapnel-grenade-desc = Launches a spray of sharp fragments dealing great damage against unarmored targets.
 
 # Ammo
-uplink-pistol-magazine-name = Pistol Magazine (.35 auto)
+uplink-pistol-magazine-name = 9mm pistol magazine
 uplink-pistol-magazine-desc = Pistol magazine with 15 cartridges. Compatible with the Viper.
 
-uplink-pistol-magazine-c20r-name = SMG magazine (.35 auto)
+uplink-pistol-magazine-c20r-name = 9mm SMG magazine
 uplink-pistol-magazine-c20r-desc = SMG magazine with 30 cartridges. Compatible with the C-20r.
 
-uplink-magazine-bulldog-pellet-name = Drum magazine (12 gauge pellet)
+uplink-magazine-bulldog-pellet-name = 12 gauge buckshot drum magazine
 uplink-magazine-bulldog-pellet-desc = Shotgun magazine with 8 shells filled with buckshot. Compatible with the Bulldog.
 
-uplink-magazine-bulldog-slug-name = Drum magazine (12 gauge slug)
+uplink-magazine-bulldog-slug-name = 12 gauge slug drum magazine
 uplink-magazine-bulldog-slug-desc = Shotgun magazine with 8 shells filled with slugs. Compatible with the Bulldog.
 
-uplink-estoc-ammo-name = Rifle magazine (.20 rifle)
+uplink-estoc-ammo-name = 5.56x45mm rifle magazine
 uplink-estoc-ammo-desc = A rifle magazine with 25 cartridges. Compatible with the M90 carbine.
 
-uplink-pistol-magazine-caseless-name = Pistol Magazine (.25 caseless)
+uplink-pistol-magazine-caseless-name = 5.7mm magazine
 uplink-pistol-magazine-caseless-desc = Pistol magazine with 10 cartridges. Compatible with the Cobra.
 
-uplink-speedloader-magnum-name = Speedloader (.45 magnum AP)
+uplink-speedloader-ACP-name = Armor-piercing .45 ACP speedloader
 uplink-speedloader-magnu-desc = Revolver speedloader with 6 armor-piercing cartridges, capable of ignoring armor entirely. Compatible with the Python.
 
-uplink-mosin-ammo-name = Ammunition box (.30 rifle)
-uplink-mosin-ammo-desc = A box of 60 cartridges, compatible with the Pitbull.
+uplink-mosin-ammo-name = 7.62x51mm ammunition box
+uplink-mosin-ammo-desc = A box of 60 cartridges, compatible with the Pitbull or L6 SAW.
 
-uplink-sniper-ammo-name = Ammunition box (.60 antimateriel)
+uplink-sniper-ammo-name = 14.5x114mm ammunition box
 uplink-sniper-ammo-desc = A box of 10 cartridges for the Hristov sniper rifle.
 
 uplink-grenade-launcher-frag-ammo-name = Frag grenade cartidge (China-Lake)
@@ -254,7 +254,7 @@ uplink-decoy-kit-name = Decoy Kit
 uplink-decoy-kit-desc = State-of-the-art distraction technology straight from Waffle Corp RND. Comes with five realistic balloons, four decoy grenades, and some snap poppers!
 
 uplink-chemistry-kit-name = Chemical Synthesis Kit
-uplink-chemistry-kit-desc = A starter kit for the aspiring chemist. Includes two vials of vestine for all your criminal needs!
+uplink-chemistry-kit-desc = A starter kit for the aspiring chemist. Includes three vials of vestine for all your criminal needs!
 
 uplink-knives-kit-name = Throwing Knives Kit
 uplink-knives-kit-desc = A set of 8 Syndicate branded throwing knives, perfect for embedding into the body of your victims. Capable of ignoring armor entirely when thrown.
@@ -266,19 +266,19 @@ uplink-ammo-bundle-name = Ammo Bundle
 uplink-ammo-bundle-desc = Reloading! Contains 4 magazines for the C-20r, 4 drums for the Bulldog, 3 magazines for the Estoc DMR, and 2 ammo boxes for the L6 SAW.
 
 uplink-sniper-bundle-name = Sniper Bundle
-uplink-sniper-bundle-desc = An inconspicuous briefcase that contains a Hristov, 10 spare bullets and a convenient disguise.
+uplink-sniper-bundle-desc = An inconspicuous briefcase that contains a Hristov, 10 spare bullets, and a convenient disguise.
 
 uplink-c20r-bundle-name = C-20r Bundle
-uplink-c20r-bundle-desc = Old faithful: The classic C-20r Submachine Gun, bundled with three magazines.
+uplink-c20r-bundle-desc = Old faithful: The classic C-20r submachine gun, bundled with three magazines.
 
 uplink-buldog-bundle-name = Bulldog Bundle
-uplink-buldog-bundle-desc = Lean and mean: Contains the popular Bulldog Shotgun, a 12 gauge slug drum, and four 12 gauge buckshot drums.
+uplink-buldog-bundle-desc = Lean and mean: Contains the popular Bulldog shotgun, a 12 gauge slug drum, and four 12 gauge buckshot drums.
 
 uplink-grenade-launcher-bundle-name = China-Lake Bundle
 uplink-grenade-launcher-bundle-desc = An old China-Lake grenade launcher bundled with 11 rounds of varying destructive capability.
 
 uplink-l6-saw-bundle-name = L6 Saw Bundle
-uplink-l6-saw-bundle-desc = More dakka: The iconic L6 light machine gun, bundled with 2 box magazines.
+uplink-l6-saw-bundle-desc = More dakka: The iconic L6 squad assault weapon, bundled with 2 box magazines.
 
 uplink-zombie-bundle-name = Syndicate Zombie Bundle
 uplink-zombie-bundle-desc = An all-in-one kit for unleashing the undead upon a station. Interdyne's greatest and most depraved achievement to date.
@@ -322,7 +322,7 @@ uplink-holy-hand-grenade-name = Holy Hand Grenade
 uplink-holy-hand-grenade-desc = O Lord, bless this thy hand grenade, that with it thou mayst blow thine enemies to tiny bits, in thy mercy.
 
 uplink-revolver-cap-gun-fake-name = Fake Cap Gun
-uplink-revolver-cap-gun-fake-desc = Fool your enemy! It can use both cap and magnum bullets. Comes loaded with magnum bullets.
+uplink-revolver-cap-gun-fake-desc = Fool your enemy! It can use both cap and .45 ACP bullets. Comes loaded with .45 ACP bullets.
 
 uplink-banana-peel-explosive-name = Explosive Banana Peel
 uplink-banana-peel-explosive-desc = They will burst into laughter when they slip on it!
@@ -340,7 +340,7 @@ uplink-disposable-turret-name = Disposable Ballistic Turret
 uplink-disposable-turret-desc = Looks and functions like a normal electrical toolbox. Upon hitting the toolbox it will transform into a ballistic turret, theoretically shooting at anyone except members of the Syndicate. Can be turned back into a toolbox using a screwdriver and repaired using a wrench.
 
 uplink-cluster-banana-peel-name = Cluster Banana
-uplink-cluster-banana-peel-desc = Splits into 6 explosive banana peels after being thrown, the peels detonate automatically after 20 seconds if nobody slips on them.
+uplink-cluster-banana-peel-desc = Splits into 6 explosive banana peels after being thrown. The peels detonate automatically after 20 seconds if nobody slips on them.
 
 uplink-cane-blade-name = Cane Blade
 uplink-cane-blade-desc = A cane that has a hidden blade that can be unsheathed.
@@ -353,7 +353,7 @@ uplink-chameleon-bundle-name = Chameleon Kit Crate
 uplink-chameleon-bundle-desc = A crate containing a backpack full of items that contain chameleon technology allowing you to disguise as pretty much anything on the station, and more!
 
 uplink-clothing-no-slips-shoes-name = No-slip Shoes
-uplink-clothing-no-slips-shoes-desc = Chameleon shoes that protect you from slips.
+uplink-clothing-no-slips-shoes-desc = Chameleon shoes with high-quality soles that protect you from any and all slips.
 
 uplink-clothing-chameleon-thieving-gloves-name = Chameleon Thieving Gloves
 uplink-clothing-chameleon-thieving-gloves-desc = Discreetly steal from pockets and improve your thieving technique with these fancy new gloves. They can change appearance to match any pair of gloves!
@@ -374,13 +374,13 @@ uplink-hardsuit-carp-name = Carp Hardsuit
 uplink-hardsuit-carp-desc = Looks like an ordinary carp suit, except fully spaceproof and tricks space carp into thinking you are one of them.
 
 uplink-hardsuit-syndie-name = Syndicate Hardsuit
-uplink-hardsuit-syndie-desc = The Syndicate's iconic armored blood red hardsuit, capable of space walks and bullet resistant.
+uplink-hardsuit-syndie-desc = The Syndicate's iconic armored blood red hardsuit. EVA capable and bullet resistant.
 
 uplink-syndie-raid-name = Syndicate Raid Suit
 uplink-syndie-raid-desc = A very durable and reasonably flexible suit of blood-red armor, reinforced against all common forms of damage but not capable of space walks. Comes with a sick helmet.
 
 uplink-hardsuit-infiltration-name = Syndicate Infiltration Hardsuit
-uplink-hardsuit-infiltration-desc = The Syndicate's Special Operations' hardsuit of choice, this hardsuit, as well as durability, has been built with chameleon technology integrated.
+uplink-hardsuit-infiltration-desc = MI13's hardsuit of choice, this hardsuit has been built with chameleon technology integrated as well as durable armor.
 
 uplink-hardsuit-syndieelite-name = Syndicate Elite Hardsuit
 uplink-hardsuit-syndieelite-desc = An elite version of the blood-red hardsuit, with improved mobility and fireproofing. Property of Gorlex Marauders.
@@ -389,7 +389,7 @@ uplink-clothing-outer-hardsuit-juggernaut-name = CyberSun Juggernaut Suit
 uplink-clothing-outer-hardsuit-juggernaut-desc = Hyper resilient armor made of materials tested in the Tau chromosphere facility. The only thing that's going to be slowing you down is this suit... and tasers.
 
 uplink-energy-dome-name = Personal Energy Dome
-uplink-energy-dome-desc = A personal shield generator that protects the wearer from lasers and bullets but prevents from using ranged weapons himself. Comes with a small power cell.
+uplink-energy-dome-desc = A personal shield generator that protects the wearer from lasers and bullets but prevents them from using ranged weapons themself. Comes with a small power cell.
 
 # Misc
 uplink-cyberpen-name = CyberSun Pen
@@ -438,7 +438,7 @@ uplink-syndicate-sponge-box-name = Syndicate Sponge Box
 uplink-syndicate-sponge-box-desc = A box containing 6 Syndicate sponges disguised as monkey cubes. These cubes turn into a variety of angry wildlife after coming into contact with water.
 
 uplink-slipocalypse-clustersoap-name = Slipocalypse Clustersoap
-uplink-slipocalypse-clustersoap-desc = Scatters arounds small pieces of Syndicate-brand soap after being thrown. These pieces of soap evaporate after 60 seconds.
+uplink-slipocalypse-clustersoap-desc = Scatters around small pieces of ultra-slippery Syndicate-brand soap after being thrown. These pieces of soap evaporate after 60 seconds.
 
 uplink-mobcat-microbomb-name = SyndiCat Teleporter
 uplink-mobcat-microbomb-desc = Call in a handy cat equipped with a microbomb implant. Explodes when seriously injured. Can bite painfully.
@@ -472,10 +472,10 @@ uplink-carp-suit-bundle-name = Carp Suit Duffel Bag
 uplink-carp-suit-bundle-desc = Contains a carp suit and some friends to play with.
 
 uplink-operative-suit-name = Operative Jumpsuit
-uplink-operative-suit-desc = A suit given to our nuclear operatives with fine fabric to make sure you stand out, no other benefits aside from looking cool.
+uplink-operative-suit-desc = A suit given to our operatives with fine fabric to make sure you stand out, no other benefits aside from looking cool.
 
 uplink-operative-skirt-name = Operative Jumpskirt
-uplink-operative-skirt-desc = A skirt given to our nuclear operatives with fine fabric to make sure you stand out, no other benefits aside from looking cool.
+uplink-operative-skirt-desc = A skirt given to our operatives with fine fabric to make sure you stand out, no other benefits aside from looking cool.
 
 uplink-balloon-name = Syndie Balloon
 uplink-balloon-desc = Handed out to the bravest souls who survived the "atomic twister" ride at Syndieland.
@@ -511,7 +511,7 @@ uplink-business-card-name = Syndicate Business Card
 uplink-business-card-desc = A business card that you can give to someone to demonstrate your involvement in the Syndicate or leave at the crime scene in order to make fun of the detective. You can buy no more than three of them.
 
 uplink-fake-mindshield-name = Fake Mindshield
-uplink-fake-mindshield-desc = A togglable implant capable of mimicking the same transmissions a real Mindshield puts out when on, tricking capable Heads-up displays into thinking you have a Mindshield (NanoTrasen brand implanter not provided.)
+uplink-fake-mindshield-desc = A togglable implant capable of mimicking the same transmissions a real Mindshield puts out when on, tricking capable Heads-up displays into thinking you have a Mindshield (NanoTrasen brand implanter not provided).
 
 uplink-contraband-lighter-name = Contraband Lighter box
 uplink-contraband-lighter-desc = A mystery box guaranteed to contain a Syndicate branded lighter. No fuel required
@@ -526,4 +526,4 @@ uplink-briefcase-gun-name = Briefcase Gun
 uplink-briefcase-gun-desc = An indistinct briefcase with a highly compact C-20K mounted inside it. Careful not the grip the handle too tight!
 
 uplink-energycrossbow-name = Mini Energy Crossbow
-uplink-energycrossbow-desc = The go-to sidearm of any operative who prefers their victims not to be moving. Fires regenerating toxic arrows that floors victims in an instant.
+uplink-energycrossbow-desc = The go-to sidearm of any operative who prefers their victims not to be moving. Fires regenerating toxic arrows that floor victims in an instant.

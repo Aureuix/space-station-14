@@ -390,13 +390,13 @@
 
 # Greenshield Officer
 - type: entity
-  parent: [ ClothingNeckBase ]
+  parent: [ ClothingNeckBase, BaseCentcommContraband ] # SpL
   categories: [ DoNotMap ]
   id: ClothingNeckGreenshield
-  name: greenshield mantle
-  description: Extraordinary decorative drape over the shoulders.
+  name: greenshield cloak # SpL
+  description: A green, gold trimmed cloak reminiscent of blueshield formal wear. # SpL
   components:
     - type: Sprite
-      sprite: _Starlight/Clothing/Neck/Mantles/ERTmantle.rsi
+      sprite: _SpL/Clothing/Neck/Cloaks/greenshield.rsi # SpL
     - type: Clothing
-      sprite: _Starlight/Clothing/Neck/Mantles/ERTmantle.rsi
+      sprite: _SpL/Clothing/Neck/Cloaks/greenshield.rsi # SpL

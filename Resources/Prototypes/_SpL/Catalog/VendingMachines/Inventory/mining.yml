@@ -7,14 +7,14 @@
     - MiningEquipment
   conditions:
     - !type:ListingLimitedStockCondition
-      stock: 3
+      stock: 1
     - !type:BuyerAccessCondition
   
 - type: listing
   id: VendorMiningSeismicCharge
   productEntity: SeismicCharge
   cost:
-    SalvageTicket: 300
+    SalvageTicket: 200
   categories:
     - MiningEquipment
   conditions:

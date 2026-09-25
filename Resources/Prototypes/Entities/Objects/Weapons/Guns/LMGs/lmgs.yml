@@ -40,8 +40,8 @@
   - type: Sprite
   - type: Item
     size: Huge
-    shape:
-    - 0,0,4,3
+    # shape:
+    # - 0,0,3,3 # SpL - 4, 3 to 3, 3
   - type: Clothing
     sprite: Objects/Weapons/Guns/LMGs/l6.rsi
     quickEquip: false
@@ -117,7 +117,7 @@
   name: C-L6 SAW # SpL
   id: WeaponLightMachineGunL6
   parent: [BaseWeaponLightMachineGun, BaseSyndicateContraband]
-  description: Developed by Waffle Corporation, the L6 Squad Automatic Weapon is a deadly light machine gun often used by the Gorlex Marauders. Although bulky and cumbersome, its heavy barrel and high ammo capacity make it perfect for suppressing combatants with a hail of bullets. Feeds from .30 ammo belts.
+  description: Developed by Waffle Corp, the L6 Squad Automatic Weapon is a deadly light machine gun often used by the Gorlex Marauders. Although bulky and cumbersome, its heavy barrel and high ammo capacity make it perfect for suppressing combatants with a hail of bullets. Feeds from 7.62x51mm box magazines. # SpL: .30 -> 7.62x51mm
   components:
   - type: Sprite
     sprite: _Starlight/Objects/Weapons/Guns/LMGs/l6.rsi # Starlight-edit

@@ -39,6 +39,7 @@
   - type: Tag
     tags:
     - WhitelistChameleon
+    - SecBeltEquip
   - type: HideLayerClothing
     slots:
     - Hair
@@ -63,6 +64,23 @@
     sprite: _Starlight/Clothing/Mask/gasroboticist.rsi
   - type: Clothing
     sprite: _Starlight/Clothing/Mask/gasroboticist.rsi
+
+- type: entity
+  parent: [ClothingMaskPullableBase]
+  id: ClothingMaskGasHalf
+  name: half mask
+  description: A half mask that covers the mouth and nose, but not the eyes.
+  components:
+  - type: Sprite
+    sprite: _Starlight/Clothing/Mask/gashalf.rsi
+  - type: Clothing
+    sprite: _Starlight/Clothing/Mask/gashalf.rsi
+  - type: BreathMask
+  - type: IngestionBlocker
+  - type: HideLayerClothing
+    layers:
+      Snout: Mask
+    hideOnToggle: true
 
 - type: entity
   parent: [ClothingMaskGas, BaseSovietContraband]
@@ -217,21 +235,6 @@
   - type: Clothing
     sprite: _Starlight/Clothing/Mask/sec.rsi
 # Fashion-O-Mat-End
-
-# Greenshield Officer
-- type: entity
-  parent: ClothingMaskGasERT
-  id: ClothingMaskGasGSO
-  categories: [ DoNotMap ]
-  name: greenshield gas mask
-  description: The gas mask of the elite of the elite, even protects the user from the dangers of welding.
-  components:
-  - type: FlashImmunity 
-    blocksSpecialVision: False
-  - type: Sprite
-    sprite: Clothing/Mask/ert.rsi
-  - type: Clothing
-    sprite: Clothing/Mask/ert.rsi
 
 # New Mime Masks
 - type: entity

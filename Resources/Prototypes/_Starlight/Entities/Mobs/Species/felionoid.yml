@@ -32,9 +32,15 @@
     species: Felionoid
   - type: OwOAccent
   - type: MobThresholds
+    stateAlertDict: # SpL Start
+      Alive: "HumanHealth"
+      SoftCritical: "HumanCrit"
+      Critical: "HumanCrit"
+      Dead: "HumanDead" # SpL End
     thresholds:
       0: Alive
-      70: Critical # SpL 85->170
+      70: SoftCritical # SpL 85->70
+      105: Critical # SpL- softcrit
       140: Dead # SpL 170-> 140
   - type: SlowOnDamage
     speedModifierThresholds:

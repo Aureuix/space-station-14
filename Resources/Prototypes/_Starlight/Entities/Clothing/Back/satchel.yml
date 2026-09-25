@@ -69,6 +69,8 @@
   components:
   - type: Sprite
     sprite: _Starlight/Clothing/Back/Satchels/Centcomm.rsi
+  - type: ExplosionResistance # SpL
+    damageCoefficient: 0.1 # SpL
 
 - type: entity
   parent: [ClothingBackpackSatchel, BaseMinorContraband]

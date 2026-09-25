@@ -50,6 +50,7 @@
     - Mail
     - Medical
     - IAA
+    - NTPersonnel
   special:
     - !type:AddImplantSpecial
       implants: [MindShieldImplant]

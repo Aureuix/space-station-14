@@ -1,34 +1,34 @@
 uplink-contortionist-jumpsuit-name = Contortionist's Jumpsuit
 uplink-contortionist-jumpsuit-desc = It looks like an atmos jumpsuit, but it really is. This jumpsuit allows the agent to slip through the vents.
 
-uplink-marriage-axe-name = Marriage axe
+uplink-marriage-axe-name = Marriage Axe
 uplink-marriage-axe-desc = A charming subtle instrument of chaos—perfect for when diplomacy fails. Screams like a banshee, cuts like a demon, and turns people into regrettable memories. Handle with enthusiasm.
 
-uplink-mini-energy-crossbow-name = mini energy crossbow
-uplink-mini-energy-crossbow-desc = Fires low-damage kinetic bolts at a short range.
+uplink-mini-energy-crossbow-name = Mini Energy Crossbow
+uplink-mini-energy-crossbow-desc = The go-to sidearm of any operative who prefers their victims not to be moving. Fires regenerating toxic arrows that floor victims in an instant.
 
-uplink-minotaur-name = Minotaur bundle
-uplink-minotaur-desc = Lean and mean: Contains a smooth, powerful, and highly illegal shotgun, alongside 5 buckshot drums.
+uplink-minotaur-name = Minotaur Bundle
+uplink-minotaur-desc = Lean and mean: Contains a smooth, powerful, and highly illegal automatic shotgun, alongside 5 buckshot drums.
 
 uplink-deagle-name = Desert Eagle
-uplink-deagle-desc = A robust magnum handgun. Hold on a second, weren't these discontinued centuries ago? It'll probably still work (.45 magnum).
+uplink-deagle-desc = A robust magnum handgun. Hold on a second, weren't these discontinued centuries ago? It'll probably still work.
 
-uplink-stechkin-name = Stechkin pistol
-uplink-stechkin-desc = A small, easily concealable 10mm handgun. Has a threaded barrel for suppressors.
+uplink-stechkin-name = Stechkin Bundle
+uplink-stechkin-desc = A small, easily concealable 10mm handgun, bundled with two magazines and a lucky bullet.
 
 uplink-stechkin-bundle-name = Solid Operative Bundle
-uplink-stechkin-bundle-desc = A mysterious cardboard box containing a slew of equipment for only the most solid of operatives (.40 FMJ).
+uplink-stechkin-bundle-desc = A mysterious cardboard box containing a slew of equipment for only the most solid of operatives.
 
-uplink-pistol-high-capacity-magazine-name = Extended Pistol Magazine (.35 auto)
+uplink-pistol-high-capacity-magazine-name = Extended Pistol Magazine (9mm)
 uplink-pistol-high-capacity-magazine-desc = Pistol magazine with 16 cartridges. Compatible with the Viper.
 
-uplink-pistol-hp-magazine-name = Pistol Magazine (.35 auto HP)
+uplink-pistol-hp-magazine-name = Pistol Magazine (9mm HP)
 uplink-pistol-hp-magazine-desc = Pistol magazine with 10 cartridges. Compatible with the Viper.
 
-uplink-pistol-fmj-magazine-name = Pistol Magazine (.35 auto FMJ)
+uplink-pistol-fmj-magazine-name = Pistol Magazine (9mm FMJ)
 uplink-pistol-fmj-magazine-desc = Pistol magazine with 10 cartridges. Compatible with the Viper.
 
-uplink-pistol-magnum-magazine-name = Pistol Magazine (.45 magnum)
+uplink-pistol-magnum-magazine-name = Pistol Magazine (.45 ACP)
 uplink-pistol-magnum-magazine-desc = Pistol magazine with 10 cartridges. Compatible with the Desert Eagle.
 
 uplink-magillitis-serum-implanter-name = Magillitis Serum Implanter
@@ -38,9 +38,9 @@ uplink-gear-acidifier-implant-name = Gear Acidifier Implant
 uplink-gear-acidifier-implant-desc = Melts your equipment on use or death, leaving your body intact. Does not destroy restraints.
 
 uplink-pitbull-bundle-name = Pitbull Bundle
-uplink-pitbull-bundle-desc = A large bullpup rifle with a low fire-rate but excellent accuracy and ammo efficiency, plus three magazines. Chambered in .30 rifle.
+uplink-pitbull-bundle-desc = A large bullpup rifle with a low fire-rate but excellent accuracy and ammo efficiency, plus three magazines. Chambered in 7.62x51mm.
 
-uplink-rifle-magazine-pitbull-name = DMR magazine (.45 magnum)
+uplink-rifle-magazine-pitbull-name = DMR Magazine (.45 ACP)
 uplink-rifle-magazine-pitbull-desc = DMR magazines with 20 cartrides. Compatible with the Estoc.
 
 uplink-nightvision-eyes = Night Vision Cyber Eyes
@@ -62,16 +62,16 @@ uplink-syndie-implant-name = Syndicate Agent Implant
 uplink-syndie-implant-desc = A cybernetic eye implant. Enables an agent to see information about the station crew, humanoids and Syndicate allies without any glasses. (Warning: You will need a surgical assistant for the procedure.)
 
 uplink-uzi-bundle-name = Type U3 Uzi Bundle
-uplink-uzi-bundle-desc = Contains the Type U3 Uzi, with two additional magazines. Chambered in .35 auto.
+uplink-uzi-bundle-desc = Contains the Type U3 Uzi, with two additional magazines. Chambered in 9mm.
 
-uplink-uzi-magazine-name = Uzi Magazine (.35 auto)
+uplink-uzi-magazine-name = Uzi Magazine (9mm)
 uplink-uzi-magazine-desc = A submachine gun magazine with 32 cartridges. Compatible with the Type U3 Uzi.
 
 uplink-breaching-magazine-name = Shotgun Magazine (12 gauge breaching)
 uplink-breaching-magazine-desc = A magazine loaded with breaching shells, for breaking down airlocks, windows and walls. Less effective on people.
 
 uplink-syndicate-borgi-name = Syndicate Borgi
-uplink-syndicate-borgi-desc = A basic Syndicate borgi
+uplink-syndicate-borgi-desc = A basic Syndicate borgi.
 
 uplink-syndicate-borgi-kitted-name = Kitted Syndicate Borgi
 uplink-syndicate-borgi-kitted-desc = A Syndicate borgi, outfitted with an L6 module, operative module and E-sword module.
@@ -83,13 +83,13 @@ uplink-reinforcement-radio-medical-cyborg-name = Syndicate Medical Cyborg Telepo
 uplink-reinforcement-radio-medical-cyborg-desc = A medical borg, with Syndicate variants of items where applicable. Comes with basic weapons.
 
 uplink-reinforcement-radio-saboteur-cyborg-name = Syndicate Saboteur Cyborg Teleporter
-uplink-reinforcement-radio-saboteur-cyborg-desc = A saboteur cyborg, complete with Syndicate advanced tools, standard hacking equipment and basic weapons
+uplink-reinforcement-radio-saboteur-cyborg-desc = A saboteur cyborg, complete with Syndicate advanced tools, standard hacking equipment and basic weapons.
 
 uplink-reinforcement-radio-stealth-cyborg-name = Syndicate Stealth Cyborg Teleporter
 uplink-reinforcement-radio-stealth-cyborg-desc = A stealth cyborg. Whilst it is incapable of fighting, it has the ability to disguise, go invisible and move through vents. Comes with standard hacking tools.
 
 uplink-syndimov-law-name = Syndimov Law Circuit
-uplink-syndimov-law-desc = A modified version of crewismov that defines Syndicate agents as crew.
+uplink-syndimov-law-desc = A modified version of Crewismov that defines only Syndicate agents as crew.
 
 uplink-ecronizer-name = Ecronizer
 uplink-ecronizer-desc = A small device that can be used to bypass most scanning devices, making you and your items invisible to them.
@@ -104,7 +104,7 @@ uplink-hydra-name = Hydra
 uplink-hydra-desc = A modified Hydra capable of taking both cleanades and standard grenades. Excellent for when you need to clean up the security department. Comes pre-filled with special Syndicate cleanades.
 
 uplink-pizza-bomb-name = Nefarious Pizza bomb
-uplink-pizza-bomb-desc = Originally developed by covertly by DONK Co to disuade the heretics who prefer their pizza not in pocket form. This pizza box is wired, and explodes within moments of being opened. 
+uplink-pizza-bomb-desc = Originally developed by covertly by DONK Co to dissuade the heretics who prefer their pizza not in pocket form. This pizza box is wired, and explodes within moments of being opened.
 
 uplink-shuttle-board-name = Syndicate Shuttle Console Board
 uplink-shuttle-board-desc = A computer printed circuit board for a Syndicate shuttle console.
@@ -119,7 +119,7 @@ uplink-breaching-hammer-name = Breaching Hammer
 uplink-breaching-hammer-desc = A heavy-duty powered breaching tool. Functions like jaws of life for prying open doors and airlocks, while also serving as a devastating melee weapon. Can deal massive structural damage to walls and reinforced barriers, making it perfect for forced entry operations.
 
 uplink-explosive-collar-name = Explosive Collar
-uplink-explosive-collar-desc = The legally distinct reverse beartrap from a certin movie franchise.
+uplink-explosive-collar-desc = The legally distinct reverse beartrap from a certain movie franchise.
 
 uplink-syndie-elegant-raid-name = Syndicate Elegant Raid Suit
 uplink-syndie-elegant-raid-desc = Even contracted, nuclear killers have the right to remain fabulous.

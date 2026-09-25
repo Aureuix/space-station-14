@@ -165,6 +165,10 @@
   - type: StunVisuals
   - type: MobState
   - type: MobThresholds
+    stateAlertDict:
+      Alive: "HumanHealth"
+      Critical: "HumanCrit"
+      Dead: "HumanDead"
     thresholds:
       0: Alive
       100: Critical

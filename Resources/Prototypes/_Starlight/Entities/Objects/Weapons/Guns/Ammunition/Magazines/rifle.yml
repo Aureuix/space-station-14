@@ -1,7 +1,7 @@
 # Empty mags
 - type: entity
   id: BaseMagazineRifle
-  name: "magazine (.20 rifle)"
+  name: "magazine (5.56x45mm)" # Spectralight: .20 -> 5.56x45mm
   parent: [ BaseItem, BaseSecurityContraband ]
   abstract: true
   components:
@@ -35,7 +35,7 @@
 # Magazines
 - type: entity
   id: MagazineRifleSP
-  name: "magazine (.20 rifle SP)"
+  name: "5.56x45mm magazine (SP)" # Spectralight: .20 -> 5.56x45mm
   parent: BaseMagazineRifle
   components:
   - type: BallisticAmmoProvider
@@ -59,7 +59,7 @@
 
 - type: entity
   id: MagazineRifleHP
-  name: "magazine (.20 rifle HP)"
+  name: "5.56x45mm magazine (HP)" # Spectralight: .20 -> 5.56x45mm
   parent: BaseMagazineRifle
   components:
   - type: BallisticAmmoProvider
@@ -83,7 +83,7 @@
 
 - type: entity
   id: MagazineRifleFMJ
-  name: "magazine (.20 rifle FMJ)"
+  name: "5.56x45mm magazine (FMJ)" # Spectralight: .20 -> 5.56x45mm
   parent: BaseMagazineRifle
   components:
   - type: BallisticAmmoProvider
@@ -107,7 +107,7 @@
 
 - type: entity
   id: MagazineRifleAP
-  name: "magazine (.20 rifle AP)"
+  name: "5.56x45mm magazine (AP)" # Spectralight: .20 -> 5.56x45mm
   parent: BaseMagazineRifle
   components:
   - type: BallisticAmmoProvider
@@ -131,7 +131,7 @@
 
 - type: entity
   id: MagazineRifleEmpty
-  name: "magazine (.20 rifle any)"
+  name: "5.56x45mm magazine" # Spectralight: .20 -> 5.56x45mm
   suffix: empty
   parent: MagazineRifleSP
   components:
@@ -152,7 +152,7 @@
 
 - type: entity
   id: MagazineRifleIncendiary
-  name: "magazine (.20 rifle incendiary)"
+  name: "5.56x45mm magazine (incendiary)" # Spectralight: .20 -> 5.56x45mm
   parent: MagazineRifleSP
   components:
   - type: BallisticAmmoProvider
@@ -176,7 +176,7 @@
         
 - type: entity
   id: MagazineRiflePractice
-  name: "magazine (.20 rifle practice)"
+  name: "5.56x45mm magazine (practice)" # Spectralight: .20 -> 5.56x45mm
   parent: BaseMagazineRifle
   components:
   - type: BallisticAmmoProvider
@@ -200,7 +200,7 @@
 
 - type: entity
   id: MagazineRifleUranium
-  name: "magazine (.20 rifle uranium)"
+  name: "5.56x45mm magazine (uranium)" # Spectralight: .20 -> 5.56x45mm
   parent: BaseMagazineRifle
   components:
   - type: BallisticAmmoProvider
@@ -224,7 +224,7 @@
 
 - type: entity
   id: MagazineRifleRubber
-  name: "magazine (.20 rifle rubber)"
+  name: "5.56x45mm magazine (rubber)" # Spectralight: .20 -> 5.56x45mm
   parent: BaseMagazineRifle
   components:
   - type: BallisticAmmoProvider
@@ -251,6 +251,7 @@
 - type: entity
   id: BaseMagazineRifleM52
   parent: BaseMagazineRifle
+  description: A sturdy and proprietary magazine designed to be compatible with Aussec Armory rifles. # SpL
   abstract: true
   components:
   - type: BallisticAmmoProvider
@@ -267,7 +268,7 @@
     
 - type: entity
   id: MagazineRifleM52SP
-  name: "magazine (.20 rifle SP)"
+  name: "5.56x45mm magazine (SP)" # Spectralight: .20 -> 5.56x45mm
   parent: BaseMagazineRifleM52
   components:
   - type: BallisticAmmoProvider
@@ -291,7 +292,7 @@
 
 - type: entity
   id: MagazineRifleM52HP
-  name: "magazine (.20 rifle HP)"
+  name: "5.56x45mm magazine (HP)" # Spectralight: .20 -> 5.56x45mm
   parent: BaseMagazineRifleM52
   components:
   - type: BallisticAmmoProvider
@@ -315,7 +316,7 @@
 
 - type: entity
   id: MagazineRifleM52FMJ
-  name: "magazine (.20 rifle FMJ)"
+  name: "5.56x45mm magazine (FMJ)" # Spectralight: .20 -> 5.56x45mm
   parent: BaseMagazineRifleM52
   components:
   - type: BallisticAmmoProvider
@@ -339,7 +340,7 @@
 
 - type: entity
   id: MagazineRifleM52AP
-  name: "magazine (.20 rifle AP)"
+  name: "5.56x45mm magazine (AP)" # Spectralight: .20 -> 5.56x45mm
   parent: BaseMagazineRifleM52
   components:
   - type: BallisticAmmoProvider
@@ -363,7 +364,7 @@
 
 - type: entity
   id: MagazineRifleM52Empty
-  name: "magazine (.20 rifle any)"
+  name: "5.56x45mm magazine" # Spectralight: .20 -> 5.56x45mm
   suffix: empty
   parent: BaseMagazineRifleM52
   components:
@@ -382,7 +383,7 @@
 
 - type: entity
   id: MagazineRifleM52Incendiary
-  name: "magazine (.20 rifle incendiary)"
+  name: "5.56x45mm magazine (incendiary)" # Spectralight: .20 -> 5.56x45mm
   parent: BaseMagazineRifleM52
   components:
   - type: BallisticAmmoProvider
@@ -404,7 +405,7 @@
 
 - type: entity
   id: MagazineRifleM52Practice
-  name: "magazine (.20 rifle practice)"
+  name: "5.56x45mm magazine (practice)" # Spectralight: .20 -> 5.56x45mm
   parent: BaseMagazineRifleM52
   components:
   - type: BallisticAmmoProvider
@@ -428,7 +429,7 @@
 
 - type: entity
   id: MagazineRifleM52Uranium
-  name: "magazine (.20 rifle uranium)"
+  name: "5.56x45mm magazine (uranium)" # Spectralight: .20 -> 5.56x45mm
   parent: BaseMagazineRifleM52
   components:
   - type: BallisticAmmoProvider

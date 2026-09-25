@@ -2,6 +2,7 @@
 - type: entity
   id: BaseMagazineBattery
   name: "magazine (laser)"
+  description: A magazine containing chemical-activated laser rounds, compatible with most ammo-fed energy weapons. # SpL
   parent: [ BaseItem ]
   abstract: true
   components:
@@ -50,6 +51,7 @@
 - type: entity # SpL Start
   id: MagazineBatteryLr30Extended
   name: "magazine (extended laser)"
+  description: A magazine containing chemical-activated laser rounds, compatible with most ammo-fed energy weapons. This one holds considerably more shots than a standard laser magazine. # SpL
   parent: BaseMagazineBattery
   components:
     - type: BallisticAmmoProvider

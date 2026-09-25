@@ -8,3 +8,4 @@
     revertOnDeath: true
     allowRepeatedMorphs: true
     transferDamage: true
+    revertConfirmationPopup: false

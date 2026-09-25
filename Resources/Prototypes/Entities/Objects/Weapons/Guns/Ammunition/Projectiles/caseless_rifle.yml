@@ -2,7 +2,7 @@
   parent: BaseBullet
   id: BulletCaselessRifle
   categories: [ HideSpawnMenu ]
-  name: bullet (.25 caseless)
+  name: 5.7mm bullet
   components:
   - type: Projectile
     damage:
@@ -13,7 +13,7 @@
   parent: BaseBulletPractice
   id: BulletCaselessRiflePractice
   categories: [ HideSpawnMenu ]
-  name: bullet (.25 caseless practice)
+  name: 5.7mm bullet (practice)
   components:
   - type: Projectile
     damage:

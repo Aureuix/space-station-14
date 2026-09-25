@@ -499,7 +499,7 @@
   parent: ClothingUniformBase
   id: ClothingUniformJumpsuitCentcomOfficerBlack
   name: special operations officer uniform
-  description: A Special Operations Officer uniform, nothing like what you're thinking of. Although... 
+  description: A uniform worn by Central Special Operations Division personnel and greenshield officers. # SpL
   components:
     - type: Sprite
       sprite: _Starlight/Clothing/Uniforms/Jumpsuit/centcom_officer_black.rsi
@@ -510,7 +510,7 @@
   parent: ClothingUniformBase
   id: ClothingUniformJumpsuitCentcomAdmiral
   name: admiral's uniform
-  description: A uniform worn by those with the rank Admiral in the NanoTrasen Navy.
+  description: A uniform worn by those with the rank Admiral in the NanoTrasen Naval Corps. # SpL
   components:
     - type: Sprite
       sprite: _Starlight/Clothing/Uniforms/Jumpsuit/centcom_admiral.rsi
@@ -832,19 +832,6 @@
       sprite: _Starlight/Clothing/Uniforms/Jumpsuit/RetroSec.rsi
     - type: Clothing
       sprite: _Starlight/Clothing/Uniforms/Jumpsuit/RetroSec.rsi
-
-# Greenshield Officer
-- type: entity
-  parent: [ BaseCentcommContraband, ClothingUniformBase ]
-  categories: [ DoNotMap ]
-  id: ClothingUniformJumpsuitGreenshield
-  name: greenshield uniform
-  description: A special suit made for the best of the elites under CentComm.
-  components:
-    - type: Sprite
-      sprite: Clothing/Uniforms/Jumpsuit/ert_leader.rsi
-    - type: Clothing
-      sprite: Clothing/Uniforms/Jumpsuit/ert_leader.rsi
       
 - type: entity
   parent: ClothingUniformBase

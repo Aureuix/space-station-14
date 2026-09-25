@@ -2,7 +2,8 @@
   abstract: true
   parent: [ BaseCartridge, BaseSecurityContraband ]
   id: BaseCartridgeLightRifleSP
-  name: cartridge (.30 rifle SP)
+  name: 7.62x51mm cartridge (SP) # Spectralight: .30 -> 7.62x51mm
+  description: A high-power rifle round commonly used in both intermediate and a fully-chambered configurations. # SpL
   components:
   - type: Tag
     tags:
@@ -20,7 +21,7 @@
 - type: entity
   parent: BaseCartridgeLightRifleSP
   id: CartridgeLightRifleSP
-  name: cartridge (.30 rifle SP)
+  name: 7.62x51mm cartridge (SP) # Spectralight: .30 -> 7.62x51mm
   components:
   - type: CartridgeAmmo
     proto: BulletLightRifleTraceSP
@@ -34,7 +35,7 @@
 
 - type: entity
   id: CartridgeLightRifleHP
-  name: cartridge (.30 rifle HP)
+  name: 7.62x51mm cartridge (HP) # Spectralight: .30 -> 7.62x51mm
   parent: BaseCartridgeLightRifleSP
   components:
   - type: CartridgeAmmo
@@ -49,7 +50,7 @@
 
 - type: entity
   id: CartridgeLightRifleFMJ
-  name: cartridge (.30 rifle FMJ)
+  name: 7.62x51mm cartridge (FMJ) # Spectralight: .30 -> 7.62x51mm
   parent: BaseCartridgeLightRifleSP
   components:
   - type: CartridgeAmmo
@@ -64,7 +65,7 @@
 
 - type: entity
   id: CartridgeLightRifleAP
-  name: cartridge (.30 rifle AP)
+  name: 7.62x51mm cartridge (AP) # Spectralight: .30 -> 7.62x51mm
   parent: BaseCartridgeLightRifleSP
   components:
   - type: CartridgeAmmo
@@ -80,8 +81,7 @@
 - type: entity
   parent: BaseCartridgeLightRifleSP
   id: CartridgeLightRiflePractice
-  name: cartridge (.30 rifle practice)
-  description: A classic intermediate cartridge used by many combat rifles and LMGs. Practice ammunition fires a chalk projectile that stings a little, but otherwise causes no lasting damage.
+  name: 7.62x51mm cartridge (practice) # Spectralight: .30 -> 7.62x51mm
   components:
   - type: CartridgeAmmo
     proto: BulletLightRifleTracePractice
@@ -96,8 +96,7 @@
 - type: entity
   parent: BaseCartridgeLightRifleSP
   id: CartridgeLightRifleIncendiary
-  name: cartridge (.30 rifle incendiary)
-  description: A classic intermediate cartridge used by many combat rifles and LMGs. Incendiary ammunition contains a self-igniting compound that sets targets ablaze.
+  name: 7.62x51mm cartridge (incendiary) # Spectralight: .30 -> 7.62x51mm
   components:
   - type: CartridgeAmmo
     proto: BulletLightRifleTraceIncendiary
@@ -112,8 +111,7 @@
 - type: entity
   parent: BaseCartridgeLightRifleSP
   id: CartridgeLightRifleUranium
-  name: cartridge (.30 rifle uranium)
-  description: A classic intermediate cartridge used by many combat rifles and LMGs. Uranium ammunition replaces the lead core of the bullet with fissile material, irradiating targets from the inside.
+  name: 7.62x51mm cartridge (uranium) # Spectralight: .30 -> 7.62x51mm
   components:
   - type: CartridgeAmmo
     proto: BulletLightRifleTraceUranium

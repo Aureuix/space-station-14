@@ -12,9 +12,24 @@
     factions:
     - NanoTrasen
 
-- type: entity
+- type: entity # SpL Start
   name: salvager
   parent: BaseMobHuman
+  id: BaseMobHumanNPC # there. now they don't wiggle!
+  components:
+    - type: MobThresholds
+      stateAlertDict:
+        Alive: "HumanHealth"
+        Critical: "HumanCrit"
+        Dead: "HumanDead"
+      thresholds:
+        0: Alive
+        100: Critical
+        200: Dead # SpL End
+
+- type: entity
+  name: salvager
+  parent: BaseMobHumanNPC # SpL
   id: MobSalvager
   components:
     - type: NpcFactionMember
@@ -31,7 +46,7 @@
 
 - type: entity
   name: spirate
-  parent: BaseMobHuman
+  parent: BaseMobHumanNPC # SpL
   id: MobSpirate
   description: Yarr!
   components:
@@ -49,7 +64,7 @@
 
 - type: entity
   name: syndicate footsoldier
-  parent: BaseMobHuman
+  parent: BaseMobHumanNPC # SpL
   id: MobSyndicateFootsoldier
   components:
     - type: NpcFactionMember
@@ -70,7 +85,7 @@
   id: MobSyndicateFootsoldierPilot
 
 - type: entity
-  parent: BaseMobHuman
+  parent: BaseMobHumanNPC # SpL
   suffix: Dead
   save: false # mobs are currently not saveable.
   id: SalvageHumanCorpse

@@ -113,6 +113,12 @@
     solution: *sol
     examinableWhileClosed: false # If you can't see the fill levels on the sprite, we can assume it's opaque
     heldOnly: true # If it's opaque, you probably can't see through the open lid from a distance
+  - type: ShakeSpillable # SpL- lets you shake sealable drinks
+    solutionName: drink
+  - type: ReactionMixer
+    mixerType: None
+    reactionTypes:
+      - Shake # SpL end
 
 # Basic visualizer for an entity with fill levels
 - type: entity

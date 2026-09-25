@@ -2,6 +2,9 @@
   id: SpLDocsEmag
   recipes:
   - PrintedDocumentSyndieCommRecipe
+  - PrintedDocumentSyndieRenameRecipe
+  - PrintedDocumentSyndieReportRecipe
+  - PrintedDocumentSyndieRequestRecipe
 
 - type: latheRecipePack
   id: GSLDocs
@@ -30,4 +33,4 @@
 - type: latheRecipePack
   id: SHCDocs
   recipes:
-    - PrintedDocumentSHCCommRecipe # placeholder
+    - PrintedDocumentSHCCommRecipe

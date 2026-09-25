@@ -1,7 +1,7 @@
 ﻿- type: entity 
   parent: BaseItem
   abstract: true
-  id: GrenadeImpactBase
+  id: BaseImpactGrenade
   components:
     - type: Sprite
       sprite: Objects/Weapons/Grenades/grenade.rsi
@@ -56,10 +56,67 @@
           friction: 0.2
     - type: Explosive
       explosionType: Default
-      totalIntensity: 120
+      totalIntensity: 100
       intensitySlope: 3
       maxIntensity: 10
       canCreateVacuum: false
+
+- type: entity
+  parent: [ BaseImpactGrenade, BaseHighlyIllegalContraband ]
+  id: GrenadeImpact
+  name: impact grenade
+  description: Causes a powerful explosion upon striking a hard surface. Arm before throwing
+  components:
+  - type: Sprite
+    sprite: Objects/Specific/Chemistry/large_grenade.rsi
+    state: large_grenade_armed
+  - type: ItemSwitch
+    state: unarmed
+    states:
+      unarmed: !type:ItemSwitchState
+        verb: unarmed
+        sprite:
+          sprite: Objects/Specific/Chemistry/large_grenade.rsi
+          state: ass
+        # soundStateActivate: /Audio/Machines/door_lock_off.ogg # yeah is makes a noise when it spawns for some reason unless this is off. frankly quite incredible
+        components:
+        - type: Destructible
+          thresholds:
+            - trigger:
+                !type:DamageTrigger
+                damage: 100
+              behaviors:
+                - !type:ExplodeBehavior
+      armed: !type:ItemSwitchState
+        verb: armed
+        sprite:
+          sprite: Objects/Specific/Chemistry/large_grenade.rsi
+          state: armed
+        soundStateActivate: /Audio/Effects/beep_landmine.ogg
+        components:
+          - type: Destructible
+            thresholds:
+              - trigger:
+                  !type:DamageTrigger
+                  damage: 10
+                behaviors:
+                  - !type:ExplodeBehavior
+              - trigger:
+                  !type:DamageTrigger
+                  damage: 100
+                behaviors:
+                  - !type:ExplodeBehavior
+    
+- type: entity
+  parent: [ BaseImpactGrenade, BaseHighlyIllegalContraband ]
+  id: GrenadeImpactNoArm
+  suffix: Auto-armed
+  name: impact grenade
+  description: Causes a powerful explosion upon striking a hard surface.
+  components:
+    - type: Sprite
+      sprite: Objects/Specific/Chemistry/large_grenade.rsi
+      state: large_grenade_armed
 
 # Reader beware, molotov shityaml below
 - type: entity
@@ -133,6 +190,9 @@
     - type: Sprite
       sprite: _SpL/Objects/Weapons/Throwables/molotov.rsi
       state: icon
+    - type: Item
+      sprite: _SpL/Objects/Weapons/Throwables/molotov.rsi
+      size: Small
     - type: Construction
       graph: MolotovGraph
       node: molotov
@@ -163,9 +223,6 @@
             state: rag
           soundStateActivate: /Audio/Items/candle_blowing.ogg
           components:
-          - type: Item
-            sprite: Objects/Consumable/Drinks/beer.rsi
-            size: Small
           - type: Destructible
             thresholds:
               - trigger:
@@ -199,9 +256,6 @@
             state: icon
           soundStateActivate: /Audio/Items/Flare/flare_on.ogg
           components:
-          - type: Item
-            sprite: _SpL/Objects/Weapons/Throwables/molotov.rsi
-            size: Small
           - type: Destructible
             thresholds:
               - trigger: 
@@ -238,7 +292,7 @@
                   acts: [ "Destruction" ]
           - type: Explosive
             explosionType: Molotov
-            totalIntensity: 45
+            totalIntensity: 30
             intensitySlope: 3
             maxIntensity: 3
             tileBreakScale: 0

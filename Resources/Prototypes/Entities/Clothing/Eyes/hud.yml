@@ -70,6 +70,7 @@
     - HudSecurity
     - PetWearable
     - WhitelistChameleon
+    - SecBeltEquip # SpL
 
 - type: entity
   parent: [ClothingEyesBase, BaseCommandContraband]

@@ -47,11 +47,17 @@
       Thirsty: 310
       Parched: 155
       Dead: 0
-  - type: MobThresholds # SpL Change
-    thresholds: # SpL Change
-      0: Alive # SpL Change
-      90: Critical # SpL Change
-      180: Dead # SpL Change
+  - type: MobThresholds # SpL Start
+    stateAlertDict: 
+      Alive: "HumanHealth"
+      SoftCritical: "HumanCrit"
+      Critical: "HumanCrit"
+      Dead: "HumanDead" 
+    thresholds: #
+      0: Alive 
+      90: SoftCritical 
+      135: Critical 
+      180: Dead # SpL End
   - type: StaminaResistance 
     damageCoefficient: 1.5 # SpL Change- they have so much motion potential that this just grants counterplay options
   - type: Speech

@@ -57,7 +57,7 @@
   name: DMI-135 'Minigun' RMG # SpL
   id: WeaponMinigun
   parent: [ BaseWeaponHeavyMachineGun, BaseHighlyIllegalContraband ] # SpL- ain't no way you're allowed to have a minigun EVER
-  description: Vzzzzzt! Rahrahrahrah! Vrrrrr! Uses .10 rifle ammo.
+  description: Vzzzzzt! Rahrahrahrah! Vrrrrr! Accepts .10 rifle ammo. # SpL
   components:
   - type: Sprite
     sprite: Objects/Weapons/Guns/HMGs/minigun.rsi

@@ -154,7 +154,7 @@
 
 - type: entity
   id: BaseBulletAP
-  name: base bullet armor-piercing
+  name: base bullet armor piercing
   parent: BaseBullet
   categories: [ HideSpawnMenu ]
   components:

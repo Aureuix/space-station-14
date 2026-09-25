@@ -1,7 +1,7 @@
 - type: entity
   parent: BaseMagazineBoxPistol
   id: MagazineBoxPistolRubber
-  name: ammunition box (.35 auto rubber)
+  name: 9mm ammunition box (rubber) # Spectralight: .35 -> 9mm
   components:
   - type: BallisticAmmoProvider
     proto: CartridgePistolRubber
@@ -16,7 +16,8 @@
 - type: entity
   parent: BaseItem
   id: BaseMagazineBoxPistol40
-  name: ammunition box (.40)
+  name: .40 ammunition box
+  description: A cardboard box of .40 rounds. # SpL
   abstract: true
   components:
   - type: BallisticAmmoProvider
@@ -42,7 +43,7 @@
 - type: entity
   parent: BaseMagazineBoxPistol40
   id: MagazineBoxPistol40SP
-  name: ammunition box (.40 SP)
+  name: .40 ammunition box (SP)
   components:
   - type: BallisticAmmoProvider
     mayTransfer: true
@@ -58,7 +59,7 @@
 - type: entity
   parent: BaseMagazineBoxPistol40
   id: MagazineBoxPistol40HP
-  name: ammunition box (.40 HP)
+  name: .40 ammunition box (HP)
   components:
   - type: BallisticAmmoProvider
     mayTransfer: true
@@ -73,7 +74,7 @@
 - type: entity
   parent: BaseMagazineBoxPistol40
   id: MagazineBoxPistol40FMJ
-  name: ammunition box (.40 FMJ)
+  name: .40 ammunition box (FMJ)
   components:
   - type: BallisticAmmoProvider
     mayTransfer: true
@@ -89,7 +90,7 @@
 - type: entity
   parent: BaseMagazineBoxPistol40
   id: MagazineBoxPistol40AP
-  name: ammunition box (.40 AP)
+  name: .40 ammunition box (AP)
   components:
   - type: BallisticAmmoProvider
     mayTransfer: true

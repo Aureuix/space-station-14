@@ -86,7 +86,7 @@ public sealed partial class StationEventComponent : Component
     /// If false, the event won't trigger during ongoing evacuation.
     /// </summary>
     [DataField]
-    public bool OccursDuringRoundEnd = true;
+    public bool OccursDuringRoundEnd = false; // SpL- defaulted all gamerules to be false once evac arrives
     
     //Starlight begin
     /// <summary>

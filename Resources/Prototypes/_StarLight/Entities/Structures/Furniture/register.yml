@@ -2,6 +2,7 @@
   name: cash register
   id: CashRegister
   parent: [ BaseStructureDynamic, BaseBagOpenClose ]
+  categories: [ HideSpawnMenu ] # SpL- prevents devenv from crashing the fungular entertainment way
   description: A vaguely secure way to store currency. Wheres the lock...?
   components:
   - type: Anchorable

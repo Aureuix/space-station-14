@@ -1,6 +1,6 @@
 - type: entity
   id: MagazineLightRifleRubber
-  name: "magazine (.30 rifle rubber)"
+  name: "7.62x51mm magazine (rubber)" # Spectralight: .30 -> 7.62x51mm
   parent: BaseMagazineLightRifle
   components:
   - type: BallisticAmmoProvider

@@ -1,0 +1,190 @@
+﻿- type: entity
+  name: VL-119 SPKA # SpL
+  id: WeaponSPKA
+  parent: [WeaponProtoKineticAcceleratorBase, BaseSecuritySalvageMiningContraband] # SpL
+  description: Fires a barrage of low-damage kinetic bolts at a short range. Designed as a self-defense advancement of the PKA specialised for close quarters operations. # SpL
+  components:
+    - type: Sprite
+      sprite: _Starlight/Objects/Weapons/Guns/Basic/spka.rsi
+      layers:
+        - state: icon
+    - type: Item
+      sprite: _Starlight/Objects/Weapons/Guns/Basic/spka.rsi
+    - type: Clothing
+      sprite: _Starlight/Objects/Weapons/Guns/Basic/spka.rsi
+      quickEquip: false
+      slots:
+        - suitStorage
+        - Belt
+    - type: UpgradeableGun
+      whitelist:
+        tags:
+          - PKAUpgrade
+    - type: ContainerContainer
+      containers:
+        upgrades: !type:Container
+    - type: Gun
+      projectileSpeed: 20
+      fireRate: 2
+      selectedMode: FullAuto
+      angleDecay: 45
+      minAngle: 21
+      maxAngle: 32
+      availableModes:
+        - SemiAuto
+        - FullAuto
+      soundGunshot:
+        path: /Audio/Weapons/Guns/Gunshots/kinetic_accel.ogg
+        params:
+          pitch: 1.5
+          variation: 0.12
+    - type: RechargeBasicEntityAmmo
+      rechargeCooldown: 2
+      rechargeSound:
+        path: /Audio/Weapons/Guns/Bolt/lmg_bolt_closed.ogg
+        params:
+          pitch: 1.8
+          variation: 0.08
+    - type: BasicEntityAmmoProvider
+      proto: BulletKineticSub
+      capacity: 8
+      count: 8
+    - type: CanDualWield
+      dualWieldInaccuracyPenalty: 15
+    - type: GunWieldBonus
+      minAngle: -19
+      maxAngle: -16
+
+- type: entity
+  name: VI-122 Regulator # SpL
+  id: WeaponRegulator
+  parent: [WeaponProtoKineticAcceleratorBase, BaseSecurityCargoContraband] # SpL
+  description: A Vulkan Industries design combining the practicality of the appraisal tool with the utility of their renowned proto-kinetic accelerator range. # SpL
+  components:
+    - type: Sprite
+      sprite: _Starlight/Objects/Weapons/Guns/Basic/regulator.rsi
+      layers:
+        - state: icon
+    - type: Item
+      sprite: _Starlight/Objects/Weapons/Guns/Basic/regulator.rsi
+      size: Small
+      shape:
+        - 0,0,1,0 # SpL
+        - 0,1,0,1 # SpL
+      storedOffset: 0,-4 # SpL
+    - type: Clothing
+      sprite: Objects/Weapons/Guns/Pistols/viper.rsi
+      quickEquip: false
+      slots:
+        - suitStorage
+        - Belt
+    - type: UpgradeableGun
+      whitelist:
+        tags:
+          - PKAUpgrade
+    - type: ContainerContainer
+      containers:
+        upgrades: !type:Container
+    - type: Gun
+      fireRate: 1.5 # SpL
+      selectedMode: SemiAuto
+      minAngle: 1
+      maxAngle: 30
+      angleIncrease: 5
+      angleDecay: 3
+      projectileSpeed: 20
+      availableModes:
+        - SemiAuto
+      soundGunshot:
+        path: /Audio/Weapons/Guns/Gunshots/kinetic_accel.ogg
+        params:
+          pitch: 1.5
+          variation: 0.12
+    - type: RechargeBasicEntityAmmo
+      rechargeCooldown: 1.75 # SpL
+      rechargeSound:
+        path: /Audio/Weapons/Guns/MagIn/kinetic_reload.ogg # SpL
+        params:
+          pitch: 1.8
+          variation: 0.08
+    - type: BasicEntityAmmoProvider
+      proto: BulletKinetic # SpL
+      capacity: 1 # SpL
+      count: 1 # SpL
+    - type: CanDualWield
+      dualWieldInaccuracyPenalty: 15
+    - type: Tag
+      tags:
+        - AppraisalTool
+        - Sidearm
+    - type: PriceGun
+    - type: UseDelay
+      delay: 3
+
+- type: entity
+  name: VI-124 Chain Accelerator # SpL
+  id: WeaponChainAccelerator
+  parent: [WeaponProtoKineticAcceleratorBase, BaseSecuritySalvageMiningContraband] # SpL
+  description: Fires a steady stream of low-damage kinetic bolts at a medium range. Designed with a rapid feed acceleration system for heavy duty mining. # SpL 
+  components:
+    - type: Sprite
+      sprite: _Starlight/Objects/Weapons/Guns/Basic/pkmg.rsi
+      layers:
+        - state: icon
+    - type: Item
+      sprite: _Starlight/Objects/Weapons/Guns/Basic/pkmg.rsi
+      size: Huge
+      shape:
+        - 0,0,4,3
+    - type: Clothing
+      sprite: _Starlight/Objects/Weapons/Guns/Basic/pkmg.rsi
+      quickEquip: false
+      slots:
+        - suitStorage
+        - Belt
+    - type: UpgradeableGun
+      whitelist:
+        tags:
+          - PKAUpgrade
+    - type: ContainerContainer
+      containers:
+        upgrades: !type:Container
+    - type: Gun
+      projectileSpeed: 20
+      fireRate: 1.75
+      minAngle: 24
+      maxAngle: 45
+      angleIncrease: 4
+      angleDecay: 16
+      selectedMode: FullAuto
+      availableModes:
+        - SemiAuto
+        - FullAuto
+      soundGunshot:
+        path: /Audio/Weapons/Guns/Gunshots/kinetic_accel.ogg
+        params:
+          pitch: 1.9
+          variation: 0.12
+    - type: RechargeBasicEntityAmmo
+      rechargeCooldown: .9
+      rechargeSound:
+        path: /Audio/Weapons/Guns/Bolt/lmg_bolt_closed.ogg
+        params:
+          pitch: 1.8
+          variation: 0.08
+    - type: BasicEntityAmmoProvider
+      proto: BulletKineticChain
+      capacity: 12
+      count: 12
+    - type: GunWieldBonus
+      minAngle: -20
+      maxAngle: -25
+    - type: ClothingSpeedModifier
+      walkModifier: .8
+      sprintModifier: 0.8
+    - type: HeldSpeedModifier
+      walkModifier: .6
+      sprintModifier: 0.4
+    - type: GunRequiresWield
+    - type: UseDelay
+      delay: 1

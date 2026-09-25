@@ -2,7 +2,8 @@
   abstract: true
   parent: [ BaseCartridge, BaseSecurityContraband ]
   id: BaseCartridgeRifle
-  name: cartridge (.20 rifle)
+  name: cartridge (5.56x45mm) # Spectralight: .20 -> 5.56x45mm
+  description: A modern intermediate cartridge used commonly by assault rifles.
   components:
   - type: Tag
     tags:
@@ -20,8 +21,7 @@
 - type: entity
   parent: BaseCartridgeRifle
   id: CartridgeRifleSP
-  name: cartridge (.20 rifle SP)
-  description: A modern intermediate cartridge for combat rifles. Standard kinetic ammunition is common and useful in most situations.
+  name: 5.56x45mm cartridge (SP) # Spectralight: .20 -> 5.56x45mm
   components:
   - type: CartridgeAmmo
     proto: BulletRifleTraceSP
@@ -35,9 +35,8 @@
 
 - type: entity
   id: CartridgeRifleHP
-  name: cartridge (.20 rifle HP)
+  name: 5.56x45mm cartridge (HP) # Spectralight: .20 -> 5.56x45mm
   parent: BaseCartridgeRifle
-  description: A modern intermediate cartridge for combat rifles. Standard kinetic ammunition is common and useful in most situations.
   components:
   - type: CartridgeAmmo
     proto: BulletRifleTraceHP
@@ -51,7 +50,7 @@
 
 - type: entity
   id: CartridgeRifleFMJ
-  name: cartridge (.20 rifle FMJ)
+  name: 5.56x45mm cartridge (FMJ) # Spectralight: .20 -> 5.56x45mm
   parent: BaseCartridgeRifle
   components:
   - type: CartridgeAmmo
@@ -66,7 +65,7 @@
         
 - type: entity
   id: CartridgeRifleAP
-  name: cartridge (.20 rifle AP)
+  name: 5.56x45mm cartridge (AP) # Spectralight: .20 -> 5.56x45mm
   parent: BaseCartridgeRifle
   components:
   - type: CartridgeAmmo
@@ -82,8 +81,7 @@
 - type: entity
   parent: BaseCartridgeRifle
   id: CartridgeRiflePractice
-  name: cartridge (.20 rifle practice)
-  description: A modern intermediate cartridge for combat rifles. Practice ammunition fires a chalk projectile that stings a little, but otherwise causes no lasting damage.
+  name: 5.56x45mm cartridge (practice) # Spectralight: .20 -> 5.56x45mm
   components:
   - type: CartridgeAmmo
     proto: BulletRifleTracePractice
@@ -98,8 +96,7 @@
 - type: entity
   parent: BaseCartridgeRifle
   id: CartridgeRifleIncendiary
-  name: cartridge (.20 rifle incendiary)
-  description: A modern intermediate cartridge for combat rifles. Incendiary ammunition contains a self-igniting compound that sets targets ablaze.
+  name: 5.56x45mm cartridge (incendiary) # Spectralight: .20 -> 5.56x45mm
   components:
   - type: CartridgeAmmo
     proto: BulletRifleTraceIncendiary
@@ -114,8 +111,7 @@
 - type: entity
   parent: BaseCartridgeRifle
   id: CartridgeRifleUranium
-  name: cartridge (.20 rifle uranium)
-  description: A modern intermediate cartridge for combat rifles. Uranium ammunition replaces the lead core of the bullet with fissile material, irradiating targets from the inside.
+  name: 5.56x45mm cartridge (uranium) # Spectralight: .20 -> 5.56x45mm
   components:
   - type: CartridgeAmmo
     proto: BulletRifleTraceUranium

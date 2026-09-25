@@ -117,6 +117,7 @@
   - type: BypassInteractionChecks
   - type: ExplosionResistance
     damageCoefficient: 0
+  - type: MindShield # SpL
 
 - type: entity
   abstract: true

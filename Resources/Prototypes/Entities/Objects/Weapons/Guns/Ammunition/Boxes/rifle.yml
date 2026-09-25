@@ -2,6 +2,7 @@
   abstract: true
   parent: BaseItem
   id: BaseMagazineBoxRifle
+  description: A cardboard box containing 50 intermediate rifle cartridges.
   components:
   - type: BallisticAmmoProvider
     mayTransfer: true
@@ -27,7 +28,8 @@
 - type: entity
   parent: BaseMagazineBoxRifle
   id: MagazineBoxRifleBig
-  name: ammunition box (.20 rifle SP)
+  name: 5.56x45mm ammunition box (SP) # Spectralight: .20 -> 5.56x45mm
+  description: A robust metal box containing 200 intermediate rifle cartridges. For the romantic gunman. # SpL
   components:
   - type: BallisticAmmoProvider
     capacity: 200
@@ -47,8 +49,7 @@
 - type: entity
   parent: BaseMagazineBoxRifle
   id: MagazineBoxRifleSP
-  name: ammunition box (.20 rifle SP)
-  description: A cardboard box of .20 rifle rounds. Intended to hold general-purpose kinetic ammunition.
+  name: 5.56x45mm ammunition box (SP) # Spectralight: .20 -> 5.56x45mm
   components:
   - type: BallisticAmmoProvider
     proto: CartridgeRifleSP
@@ -63,7 +64,7 @@
 - type: entity
   parent: BaseMagazineBoxRifle
   id: MagazineBoxRifleHP
-  name: ammunition box (.20 rifle HP)
+  name: 5.56x45mm ammunition box (HP) # Spectralight: .20 -> 5.56x45mm
   components:
   - type: BallisticAmmoProvider
     proto: CartridgeRifleHP
@@ -77,7 +78,7 @@
 - type: entity
   parent: BaseMagazineBoxRifle
   id: MagazineBoxRifleFMJ
-  name: ammunition box (.20 rifle FMJ)
+  name: 5.56x45mm ammunition box (FMJ) # Spectralight: .20 -> 5.56x45mm
   components:
   - type: BallisticAmmoProvider
     proto: CartridgeRifleFMJ
@@ -92,7 +93,7 @@
 - type: entity
   parent: BaseMagazineBoxRifle
   id: MagazineBoxRifleAP
-  name: ammunition box (.20 rifle AP)
+  name: 5.56x45mm ammunition box (AP) # Spectralight: .20 -> 5.56x45mm
   components:
   - type: BallisticAmmoProvider
     proto: CartridgeRifleAP
@@ -107,8 +108,7 @@
 - type: entity
   parent: BaseMagazineBoxRifle
   id: MagazineBoxRiflePractice
-  name: ammunition box (.20 rifle practice)
-  description: A cardboard box of .20 rifle rounds. Intended to hold harmless practice ammunition.
+  name: 5.56x45mm ammunition box (practice) # Spectralight: .20 -> 5.56x45mm
   components:
   - type: BallisticAmmoProvider
     proto: CartridgeRiflePractice
@@ -123,8 +123,7 @@
 - type: entity
   id: MagazineBoxRifleIncendiary
   parent: BaseMagazineBoxRifle
-  name: ammunition box (.20 rifle incendiary)
-  description: A cardboard box of .20 rifle rounds. Intended to hold self-igniting incendiary ammunition.
+  name: 5.56x45mm ammunition box (incendiary) # Spectralight: .20 -> 5.56x45mm
   components:
   - type: BallisticAmmoProvider
     proto: CartridgeRifleIncendiary
@@ -139,8 +138,7 @@
 - type: entity
   id: MagazineBoxRifleUranium
   parent: BaseMagazineBoxRifle
-  name: ammunition box (.20 rifle uranium)
-  description: A cardboard box of .20 rifle rounds. Intended to hold exotic uranium-core ammunition.
+  name: 5.56x45mm ammunition box (uranium) # Spectralight: .20 -> 5.56x45mm
   components:
   - type: BallisticAmmoProvider
     proto: CartridgeRifleUranium

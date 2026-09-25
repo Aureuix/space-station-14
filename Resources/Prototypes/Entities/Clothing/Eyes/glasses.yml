@@ -192,6 +192,7 @@
     - HamsterWearable
     - PetWearable
     - WhitelistChameleon
+    - SecBeltEquip # SpL
   - type: GuideHelp
     guides:
     - Security

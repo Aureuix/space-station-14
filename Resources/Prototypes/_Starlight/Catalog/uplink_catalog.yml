@@ -139,9 +139,9 @@
   productEntity: WeaponPistolDeagle
   discountCategory: rareDiscounts
   discountDownTo:
-    Telecrystal: 4
+    Telecrystal: 3 # SpL 5->3
   cost:
-    Telecrystal: 6
+    Telecrystal: 5 # SpL 6->5
   categories:
     - UplinkWeaponry
 
@@ -149,19 +149,15 @@
   id: UplinkWeaponPistolStechkinBundle
   name: uplink-stechkin-bundle-name
   description: uplink-stechkin-bundle-desc
-  icon:
-    {
-      sprite: /Textures/_Starlight/Objects/Weapons/Guns/Pistols/stechkin.rsi,
-      state: icon,
-    }
+  icon: { sprite: /Textures/Clothing/Head/Hats/solidheadband.rsi, state: icon } # SpL
   productEntity: BigBoxSyndicateBundle
   discountCategory: rareDiscounts
   discountDownTo:
-    Telecrystal: 3
+    Telecrystal: 5 # SpL 3->5
   cost: 
-    Telecrystal: 6
+    Telecrystal: 9 # SpL 6->9
   categories:
-    - UplinkWeaponry
+    - UplinkDisruption # SpL
 
 - type: listing
   id: UplinkHomerunBat
@@ -739,7 +735,7 @@
   cost:
     Telecrystal: 4
   categories:
-    - UplinkDisruption
+    - UplinkDeception # SpL
 
 #Disruption / Distractions
 

@@ -35,7 +35,7 @@
   parent: [ BaseWeaponLauncher,  BaseSecurityContraband ]
   id: WeaponLauncherPeacekeeper
   name: NT-M24GL 'Peacekeeper' launcher # SpL
-  description: A multi-purpose single-shot grenade launcher with a break-open action. Designed to be easy to mass produce at a cheap cost. # SpL
+  description: A multi-purpose single-shot grenade launcher with a break-open action. Designed to be easy to mass produce at a cheap cost. Accepts all cartridged grenades. # SpL
   components:
     - type: Sprite
       sprite: _Starlight/Objects/Weapons/Guns/Launchers/peacekeeper.rsi

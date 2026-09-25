@@ -7,6 +7,23 @@
       containers:
         board: [DoorElectronicsNtrep]
 
+
+- type: entity
+  parent: AirlockGlass
+  id: AirlockNTGlassLocked
+  suffix: Nanotrasen, Locked
+  components:
+    - type: ContainerFill
+      containers:
+        board: [DoorElectronicsNT]
+
+- type: entity
+  parent: AirlockNTLocked
+  id: AirlockMaintNTLocked
+  components:
+    - type: Sprite
+      sprite: Structures/Doors/Airlocks/Standard/maint.rsi
+
 - type: entity
   parent: AirlockMaint
   id: AirlockMaintNtrepLocked
@@ -24,6 +41,15 @@
     - type: ContainerFill
       containers:
         board: [DoorElectronicsNtrep]
+
+- type: entity
+  parent: Airlock
+  id: AirlockNTLocked
+  suffix: Nanotrasen, Locked
+  components:
+    - type: ContainerFill
+      containers:
+        board: [DoorElectronicsNT]
 
 - type: entity
   parent: AirlockGlassShuttleSyndicate
