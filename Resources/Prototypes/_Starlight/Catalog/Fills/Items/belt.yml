@@ -279,7 +279,7 @@
           children:
             - id: Truncheon
             - id: Handcuffs
-            - id: PinpointerUniversal
+            - id: HoloprojectorSecurity # SpL
             - id: CombatMedipen
             - id: CombatMedipen
             - id: MedkitCombatFilled

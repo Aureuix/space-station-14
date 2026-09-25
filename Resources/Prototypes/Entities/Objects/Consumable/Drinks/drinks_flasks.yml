@@ -17,6 +17,12 @@
     closeable: true
     closeSound:
       collection: flaskCloseSounds
+  - type: ShakeSpillable # SpL start- lets you shake flasks
+    solutionName: drink
+  - type: ReactionMixer
+    mixerType: None
+    reactionTypes:
+      - Shake # SpL end
 
 # Flasks
 

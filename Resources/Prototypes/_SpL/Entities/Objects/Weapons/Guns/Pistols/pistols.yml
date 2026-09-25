@@ -62,19 +62,17 @@
     - type: ContainerContainer
       containers:
         ballistic-ammo: !type:Container
-    - type: BallisticAmmoProvider
-      whitelist:
-        tags:
-          - CartridgePistolDP
-      capacity: 8
+    - type: BasicEntityAmmoProvider
       proto: CartridgeCaselessRifleFMJ
-      unspawnedCount: 7
-      cycleable: false 
-    - type: BallisticAmmoSelfRefiller
-      autoRefillRate: 2s
-      affectedByEmp: true
-      firingPausesAutoRefill: true
-      autoRefillPauseDuration: 0.75s
+      capacity: 8
+      count: 8
+    - type: RechargeBasicEntityAmmo
+      rechargeCooldown: 1.4
+      rechargeSound:
+        path: /Audio/Weapons/Guns/Bolt/lmg_bolt_closed.ogg
+        params:
+          pitch: 1.8
+          variation: 0.08
     - type: AmmoCounter
     - type: Item
       size: Small

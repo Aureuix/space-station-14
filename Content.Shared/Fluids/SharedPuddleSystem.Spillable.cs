@@ -16,6 +16,8 @@ using Content.Shared.Spillable;
 using Content.Shared.Verbs;
 using Content.Shared.Weapons.Melee;
 using Content.Shared.Weapons.Melee.Events;
+// using Content.Shared._Funkystation.Fluids; // SpL- I hate reagent reworks
+using Content.Shared._Starlight.Chemistry.Components;
 using Robust.Shared.Player;
 
 namespace Content.Shared.Fluids;
@@ -23,7 +25,7 @@ namespace Content.Shared.Fluids;
 public abstract partial class SharedPuddleSystem
 {
     private static readonly FixedPoint2 MeleeHitTransferProportion = 0.25;
-    [Dependency] private readonly InjectorSystem _injectorSystem = default!;
+    [Dependency] private InjectorSystem _injectorSystem = default!;
 
     protected virtual void InitializeSpillable()
     {
@@ -31,7 +33,23 @@ public abstract partial class SharedPuddleSystem
         SubscribeLocalEvent<SpillableComponent, GetVerbsEvent<Verb>>(AddSpillVerb);
         SubscribeLocalEvent<SpillableComponent, MeleeHitEvent>(SplashOnMeleeHit, after: [typeof(OpenableSystem)]);
         SubscribeLocalEvent<SpillableComponent, AttemptPacifiedThrowEvent>(OnAttemptPacifiedThrow);
+        SubscribeLocalEvent<ShakeSpillableComponent, ShakeEvent>(OnShakeSpill); // SpL- no SubscribeLocalEvent quick method due to no RT update
     }
+
+    #region Starlight
+
+    // [SubscribeLocalEvent] // SpL- no RT update
+    private void OnShakeSpill(Entity<ShakeSpillableComponent> entity, ref ShakeEvent args)
+    {
+        if (Openable.IsClosed(entity.Owner)
+            || !_solutionContainerSystem.TryGetSolution(entity.Owner, entity.Comp.SolutionName, out var solutionEntity, out var solution)
+            || solution.Volume <= 0)
+            return;
+
+        var spilled = _solutionContainerSystem.SplitSolution(solutionEntity.Value, solution.Volume);
+        TrySplashSpillAt(entity.Owner, Transform(entity.Owner).Coordinates, spilled, out _);
+    }
+    #endregion
 
     private void OnExamined(Entity<SpillableComponent> entity, ref ExaminedEvent args)
     {

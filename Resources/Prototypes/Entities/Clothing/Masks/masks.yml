@@ -41,6 +41,9 @@
         Slash: 0.95
         Piercing: 0.95
         Heat: 0.95
+  - type: Tag # SpL
+    tags: # SpL
+      - SecBeltEquip # SpL
 
 - type: entity
   parent: [ClothingMaskGas, BaseSyndicateContraband]
@@ -143,6 +146,7 @@
     - SurgeryCompatibleArmor # Starlight-edit
     - PetWearable
     - WhitelistChameleon
+    - SecBeltEquip # SpL
   - type: PhysicalComposition
     materialComposition:
       Steel: 50

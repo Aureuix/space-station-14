@@ -88,10 +88,10 @@
 
 
 - type: entity
-  name: AKMS assault rifle # SpL
+  name: AKMS battle rifle # SpL
   parent: [ BaseWeaponRifle, BaseSovietContraband ]
   id: WeaponRifleAk
-  description: A somewhat battered combat rifle of a design originating from old Earth. Favored by criminals, militias, and terrorists due to its famed reliability and easy-to-manufacture design. Feeds from 7.62x51mm magazines. # Spectralight: .30 -> 7.62x51mm
+  description: A powerful combat rifle based heavily on an iconic design from Old Earth. Following advances in armor technology, particularly the increasing prevalence of mechanized walkers, the AKMS' initial assault chambering was abandoned in favour of firing fully powered cartridges. Feeds from 7.62x51mm magazines. # Spectralight: .30 -> 7.62x51mm
   components:
   - type: Sprite
     sprite: Objects/Weapons/Guns/Rifles/ak.rsi

@@ -10,6 +10,9 @@
     RadioHandheld: 4
     RadioHandheldExpedition: 6 #starlight
     WeaponGrapplingGun: 8
-    WeaponProtoKineticAccelerator: 10 # starlight end
+    WeaponProtoKineticAccelerator: 6 # starlight end # SpL- reduced the pka count
+    WeaponChainAccelerator: 1 # SpL start
+    WeaponSPKA: 1
+    WeaponRegulator: 4 # SpL end
   contrabandInventory:
     PlushieCarp: 1

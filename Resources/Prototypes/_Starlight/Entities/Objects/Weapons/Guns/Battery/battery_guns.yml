@@ -303,10 +303,10 @@
     stealGroup: BSOWeapon
 
 - type: entity
-  name: NT-Spec MT-7 pulse magnum # SpL
+  name: SVS-103 MT-7 pulse magnum # SpL
   parent: [ BaseWeaponBatterySmall, BaseSecurityContraband ]
   id: WeaponEnergyMagnumGun
-  description: This is an expensive, modern recreation of the Mateba revolver, with several unique fire modes and a slow self recharging battery. However, it has a slower recharge then most battery related weapons.
+  description: This is an expensive, modern recreation of the Mateba revolver, with several unique fire modes and a slow self recharging battery. However, it has a slower recharge then most battery related weapons. # SpL
   components:
   - type: Gun
     fireRate: 1.6
@@ -354,7 +354,7 @@
     startingCharge: 2000
   - type: BatterySelfRecharger
     autoRechargeRate: 100
-    autoRechargePauseTime: 44
+    autoRechargePauseTime: 20 # SpL
 
 - type: entity
   parent: [ BaseWeaponBattery, BaseGunWieldable, BaseCentcommContraband ]
@@ -1114,69 +1114,3 @@
     - type: BatterySelfRecharger
       autoRechargeRate: 100
       autoRechargePauseTime: 5
-          
-#Green Shield Officer
-- type: entity
-  name: MT-7G Magnum # TODO- kill you entirely.
-  parent: [ BaseWeaponBatterySmall, BaseCentcommContraband, BaseGrandTheftContraband ]
-  categories: [ DoNotMap ]
-  id: WeaponEnergyMagnumGunGreenshield
-  description: This is an expensive, modern recreation of the Mateba revolver with a minor overclock. CED assures a 96% reliability with regular maintenance.
-  components:
-    - type: Gun
-      fireRate: 2
-      soundGunshot:
-        path: /Audio/Weapons/Guns/Gunshots/laser_cannon.ogg
-    - type: Appearance
-    - type: Sprite
-      sprite: _Starlight/Objects/Weapons/Guns/Battery/Energy_Magnum_Seven.rsi
-      layers:
-        - state: base
-          map: ["enum.GunVisualLayers.Base"]
-        - state: disable-unshaded-3
-          map: ["enum.GunVisualLayers.MagUnshaded"]
-          shader: unshaded
-    - type: MagazineVisuals
-      magState: disable
-      steps: 4
-      zeroVisible: false
-    - type: Lock
-      mindShieldLock: true
-      autoUnlock: true
-      autoLock: true
-    - type: AccessReader
-      access: [ [ "BlueShield" ] ]
-    - type: Item
-      size: Small
-      shape:
-        - 0, 0, 1, 1
-      sprite: _Starlight/Objects/Weapons/Guns/Battery/Energy_Magnum_Seven.rsi
-      heldPrefix: empty
-    - type: BatteryAmmoProvider
-      proto: DisablerBolt
-      fireCost: 80
-    - type: BatteryWeaponFireModes
-      fireModes:
-        - proto: DisablerBolt # same as X-01
-          fireCost: 40
-          magState: disable
-          heldPrefix: disable
-        - proto: TaserBolt # same as X-01
-          fireCost: 100
-          magState: stun
-          heldPrefix: stun
-          pacifismAllowedMode: true # SpL
-        - proto: RedHeavyLaser # Does more damage but costs more energy. 8 shots per full charge
-          fireCost: 200
-          magState: energy
-          heldPrefix: energy
-        - proto: DestructionBeam # structural damage, same as X-01
-          fireCost: 100
-          magState: destroy
-          heldPrefix: destroy
-    - type: Battery
-      maxCharge: 1600
-      startingCharge: 1500
-    - type: BatterySelfRecharger
-      autoRechargeRate: 200 # much faster charging... # SpL- buffed the charge even more
-      autoRechargePauseTime: 10 # but 10 second delay between shooting and it starting to recharge
