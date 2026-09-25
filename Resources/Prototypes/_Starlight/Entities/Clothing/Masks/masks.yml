@@ -236,21 +236,6 @@
     sprite: _Starlight/Clothing/Mask/sec.rsi
 # Fashion-O-Mat-End
 
-# Greenshield Officer
-- type: entity
-  parent: ClothingMaskGasERT
-  id: ClothingMaskGasGSO
-  categories: [ DoNotMap ]
-  name: greenshield gas mask
-  description: The gas mask of the elite of the elite, even protects the user from the dangers of welding.
-  components:
-  - type: FlashImmunity 
-    blocksSpecialVision: False
-  - type: Sprite
-    sprite: Clothing/Mask/ert.rsi
-  - type: Clothing
-    sprite: Clothing/Mask/ert.rsi
-
 # New Mime Masks
 - type: entity
   parent: ClothingMaskMime

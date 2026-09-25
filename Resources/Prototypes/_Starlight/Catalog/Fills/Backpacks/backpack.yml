@@ -54,17 +54,17 @@
 # Greenshield Officer
 - type: entity
   id: ClothingBackpackGreenshieldFilled
-  parent: ClothingBackpackGreenshield
-  suffix: Filled
+  parent: ClothingBackpackSatchelCentcomm # SpL
+  suffix: Filled, Greenshield
   categories: [ DoNotMap ]
   components:
     - type: EntityTableContainerFill
       containers:
         storagebase: !type:AllSelector
           children:
-            - id: MagazinePistolSubMachineGunTopMounted
-            - id: MagazinePistolSubMachineGunTopMounted
-            - id: MagazinePistolSubMachineGunTopMounted
+            - id: MagazinePistolSubMachineGunAP # SpL
+            - id: MagazinePistolSubMachineGunAP # SpL
+            - id: MagazinePistolSubMachineGunAP # SpL
             - id: JawsOfLifeMed
             - id: DefibrillatorCompact
             - id: TearGasGrenade

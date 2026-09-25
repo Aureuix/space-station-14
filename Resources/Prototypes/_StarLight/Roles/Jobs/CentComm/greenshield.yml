@@ -28,38 +28,38 @@
 - type: startingGear
   id: GSOGearHardsuit
   equipment:
-    jumpsuit: ClothingUniformJumpsuitGreenshield
+    jumpsuit: ClothingUniformJumpsuitCentcomOfficerBlack # SpL
     back: ClothingBackpackGreenshieldFilled
-    shoes: ClothingShoesBootsMagGreenshield
+    shoes: ClothingShoesBootsMagERTFilled # SpL
     outerClothing: ClothingOuterHardsuitERTLeader
     neck: ClothingNeckGreenshield
     id: CentCommGreenShieldPDA
     eyes: ClothingEyesGlassesCentComm
     ears: ClothingHeadsetCentCom
-    mask: ClothingMaskGasGSO
+    mask: ClothingMaskGasERT # SpL
     belt: ClothingBeltGreenshieldFilled
     gloves: ClothingHandsGlovesCombat
-    suitstorage: WeaponSubMachineGunWt550
-    pocket1: WeaponEnergyMagnumGunGreenshield
+    suitstorage: WeaponSubMachineGunAtreides # SpL
+    pocket1: WeaponEnergyMagnumGun # SpL
     pocket2: GreenLightShield
     misc: PinpointerUniversal # SpL
 
 - type: startingGear
   id: GSOGear
   equipment:
-    jumpsuit: ClothingUniformJumpsuitGreenshield
+    jumpsuit: ClothingUniformJumpsuitCentcomOfficerBlack # SpL
     back: ClothingBackpackGreenshieldFilled
-    shoes: ClothingShoesBootsJackFilled
+    shoes: ClothingShoesBootsJackFilledVibro # SpL
     outerClothing: ClothingOuterVestGreenshield
     neck: ClothingNeckGreenshield
     id: CentCommGreenShieldPDA
     eyes: ClothingEyesGlassesCentComm
     ears: ClothingHeadsetCentCom
-    mask: ClothingMaskGasGSO
+    mask: ClothingMaskGasERT # SpL
     head: ClothingHeadHelmetGreenshield
     belt: ClothingBeltGreenshieldFilled
     gloves: ClothingHandsGlovesCombat
-    suitstorage: WeaponSubMachineGunWt550
-    pocket1: WeaponEnergyMagnumGunGreenshield
+    suitstorage: WeaponSubMachineGunAtreides # SpL
+    pocket1: WeaponEnergyMagnumGun # SpL
     pocket2: GreenLightShield
     misc: PinpointerUniversal # SpL
