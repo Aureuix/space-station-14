@@ -48,7 +48,7 @@
 - type: startingGear
   id: HoSGear
   equipment:
-    eyes: ClothingEyesGlassesSecurity
+    # eyes: ClothingEyesGlassesSecurity # SpL
     id: HoSPDA
     # gloves: ClothingHandsGlovesCombat # Starlight
     ears: ClothingHeadsetAltSecurity
