@@ -16,7 +16,7 @@ using Content.Shared.Spillable;
 using Content.Shared.Verbs;
 using Content.Shared.Weapons.Melee;
 using Content.Shared.Weapons.Melee.Events;
-using Content.Shared._Funkystation.Fluids;
+// using Content.Shared._Funkystation.Fluids; // SpL- I hate reagent reworks
 using Content.Shared._Starlight.Chemistry.Components;
 using Robust.Shared.Player;
 
@@ -33,11 +33,12 @@ public abstract partial class SharedPuddleSystem
         SubscribeLocalEvent<SpillableComponent, GetVerbsEvent<Verb>>(AddSpillVerb);
         SubscribeLocalEvent<SpillableComponent, MeleeHitEvent>(SplashOnMeleeHit, after: [typeof(OpenableSystem)]);
         SubscribeLocalEvent<SpillableComponent, AttemptPacifiedThrowEvent>(OnAttemptPacifiedThrow);
+        SubscribeLocalEvent<ShakeSpillableComponent, ShakeEvent>(OnShakeSpill); // SpL- no SubscribeLocalEvent quick method due to no RT update
     }
 
     #region Starlight
 
-    [SubscribeLocalEvent]
+    // [SubscribeLocalEvent] // SpL- no RT update
     private void OnShakeSpill(Entity<ShakeSpillableComponent> entity, ref ShakeEvent args)
     {
         if (Openable.IsClosed(entity.Owner)
@@ -179,14 +180,6 @@ public abstract partial class SharedPuddleSystem
                 continue;
 
             var splitSolution = _solutionContainerSystem.SplitSolution(soln.Value, totalSplit / hitCount);
-
-            // Forky - Start - Stains
-            if (splitSolution.Volume > 0)
-            {
-                var stainEv = new SpilledOnEvent(entity.Owner, splitSolution.Clone());
-                RaiseLocalEvent(hit, stainEv);
-            }
-            // Forky - End
 
             AdminLogger.Add(LogType.MeleeHit,
                 $"{ToPrettyString(args.User):actor} "
