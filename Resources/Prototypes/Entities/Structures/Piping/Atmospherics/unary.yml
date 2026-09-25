@@ -475,7 +475,7 @@
   components:
   - type: Sprite
     sprite: Structures/Piping/Atmospherics/condenser.rsi
-    snapCardinals: true
+    snapCardinals: false # SpL- plumbing ducts are 4 directional, so this causes a debug assert to fail
     granularLayersRendering: true
     layers:
     - state: off
@@ -576,8 +576,6 @@
   - type: GuideHelp
     guides:
     - GasCondensing
-  - type: Sprite
-    snapCardinals: false # plumbing ducts are 4 directional, so this causes a debug assert to fail
   - type: PlumbingConnectorAppearance
     offset: 0.09375
   - type: PlumbingOutlet

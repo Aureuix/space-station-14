@@ -146,13 +146,11 @@
     - SurgeryCompatibleArmor # Starlight-edit
     - PetWearable
     - WhitelistChameleon
+    - SecBeltEquip # SpL
   - type: PhysicalComposition
     materialComposition:
       Steel: 50
       Plastic: 50
-  - type: Tag # SpL
-    tags: # SpL
-      - SecBeltEquip # SpL
 
 - type: entity
   parent: ClothingMaskBreathMedical

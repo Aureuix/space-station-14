@@ -1,5 +1,5 @@
 ﻿- type: entity
-  parent: [ BaseKnife, BaseWeaponCrusher, BaseCommandContrabanad]
+  parent: [ BaseKnife, BaseWeaponCrusher, BaseCommandContraband ]
   id: CentcommVibrocutter
   name: SCSPT-103 vibrocutter
   description: The vibrocutter originates from an initial attempt to downsize the SCS-101 prototype vibroblade to suit the needs of concealed self defense for Vulcan Industries' high-profile personnel. Compaction came at a both a major reduction in cost and in effectiveness, although the model remains popular as a fighting and rescue knife among Central Command personnel.

@@ -69,8 +69,9 @@
       sprite: _Starlight/Objects/Weapons/Guns/Basic/regulator.rsi
       size: Small
       shape:
-        - 0,0,1,0
-        - 0,1,1,1
+        - 0,0,1,0 # SpL
+        - 0,1,0,1 # SpL
+      storedOffset: 0,-4 # SpL
     - type: Clothing
       sprite: Objects/Weapons/Guns/Pistols/viper.rsi
       quickEquip: false
@@ -85,7 +86,7 @@
       containers:
         upgrades: !type:Container
     - type: Gun
-      fireRate: 1
+      fireRate: 1.5 # SpL
       selectedMode: SemiAuto
       minAngle: 1
       maxAngle: 30
@@ -100,18 +101,18 @@
           pitch: 1.5
           variation: 0.12
     - type: RechargeBasicEntityAmmo
-      rechargeCooldown: 2
+      rechargeCooldown: 1.75 # SpL
       rechargeSound:
-        path: /Audio/Weapons/Guns/Bolt/lmg_bolt_closed.ogg
+        path: /Audio/Weapons/Guns/MagIn/kinetic_reload.ogg # SpL
         params:
           pitch: 1.8
           variation: 0.08
     - type: BasicEntityAmmoProvider
-      proto: BulletKineticSub
-      capacity: 6
-      count: 6
+      proto: BulletKinetic # SpL
+      capacity: 1 # SpL
+      count: 1 # SpL
     - type: CanDualWield
-      dualWieldInaccuracyPenalty: 68
+      dualWieldInaccuracyPenalty: 15
     - type: Tag
       tags:
         - AppraisalTool
@@ -124,7 +125,7 @@
   name: VI-124 Chain Accelerator # SpL
   id: WeaponChainAccelerator
   parent: [WeaponProtoKineticAcceleratorBase, BaseSecuritySalvageMiningContraband] # SpL
-  description: Fires a steady stream of low-damage kinetic bolts at a short range. Designed with a rapid feed acceleration system for heavy duty mining. # SpL 
+  description: Fires a steady stream of low-damage kinetic bolts at a medium range. Designed with a rapid feed acceleration system for heavy duty mining. # SpL 
   components:
     - type: Sprite
       sprite: _Starlight/Objects/Weapons/Guns/Basic/pkmg.rsi

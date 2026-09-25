@@ -17,15 +17,28 @@ public abstract partial class SharedGasCanisterHoseSystem : EntitySystem
     [Dependency] private ItemSlotsSystem _slots = default!;
     [Dependency] private SharedToolSystem _tool = default!;
     [Dependency] private SharedAppearanceSystem _appearance = default!;
+    
+    #region SpL- Initialize
+    public override void Initialize()
+    {
+        SubscribeLocalEvent<GasCanisterComponent, InteractUsingEvent>(OnCanisterInteractUsing);
+        SubscribeLocalEvent<GasCanisterHoseSlotComponent, ComponentStartup>(OnHoseSlotStartup);
+        SubscribeLocalEvent<GasCanisterHoseSlotComponent, EntInsertedIntoContainerMessage>(OnHoseInserted);
+        SubscribeLocalEvent<GasCanisterHoseSlotComponent, EntRemovedFromContainerMessage>(OnHoseRemoved);
+        SubscribeLocalEvent<SimpleToolUsageComponent, AttemptSimpleToolUseEvent>(OnHoseDetachAttempt);
+        SubscribeLocalEvent<GasCanisterHoseSlotComponent, ItemSlotEjectAttemptEvent>(OnHoseEjectAttempt);
+        SubscribeLocalEvent<SimpleToolUsageComponent, SimpleToolDoAfterEvent>(OnHoseDetach);
+    }
+    #endregion
 
-    [SubscribeLocalEvent]
+    // [SubscribeLocalEvent] // SpL- no rt update
     private void OnHoseSlotStartup(Entity<GasCanisterHoseSlotComponent> ent, ref ComponentStartup args)
     {
         _slots.AddItemSlot(ent.Owner, ent.Comp.ContainerName, ent.Comp.HoseSlot);
         UpdateHoseAppearance(ent.Owner, ent.Comp.HoseSlot.HasItem);
     }
 
-    [SubscribeLocalEvent]
+    // [SubscribeLocalEvent] // SpL- no rt update
     private void OnHoseInserted(EntityUid uid, GasCanisterHoseSlotComponent component, ref EntInsertedIntoContainerMessage args)
     {
         if (args.Container.ID != component.ContainerName)
@@ -34,7 +47,7 @@ public abstract partial class SharedGasCanisterHoseSystem : EntitySystem
         UpdateHoseAppearance(uid, true);
     }
 
-    [SubscribeLocalEvent]
+    // [SubscribeLocalEvent] // SpL- no rt update
     private void OnHoseRemoved(EntityUid uid, GasCanisterHoseSlotComponent component, ref EntRemovedFromContainerMessage args)
     {
         if (args.Container.ID != component.ContainerName)
@@ -46,7 +59,7 @@ public abstract partial class SharedGasCanisterHoseSystem : EntitySystem
     private void UpdateHoseAppearance(EntityUid uid, bool attached) =>
         _appearance.SetData(uid, GasCanisterVisuals.HoseAttached, attached);
 
-    [SubscribeLocalEvent(before: [typeof(ItemSlotsSystem)])]
+    // [SubscribeLocalEvent(before: [typeof(ItemSlotsSystem)])] // SpL- no rt update
     private void OnCanisterInteractUsing(Entity<GasCanisterComponent> canister, ref InteractUsingEvent args)
     {
         if (args.Handled
@@ -81,7 +94,7 @@ public abstract partial class SharedGasCanisterHoseSystem : EntitySystem
     {
     }
 
-    [SubscribeLocalEvent]
+    //[SubscribeLocalEvent] // SpL- no rt update
     private void OnHoseDetachAttempt(Entity<SimpleToolUsageComponent> ent, ref AttemptSimpleToolUseEvent args)
     {
         if (TryComp<GasCanisterHoseSlotComponent>(ent.Owner, out var hoseSlot)
@@ -93,7 +106,7 @@ public abstract partial class SharedGasCanisterHoseSystem : EntitySystem
         }
     }
 
-    [SubscribeLocalEvent]
+    //[SubscribeLocalEvent] // SpL- no rt update
     private void OnHoseEjectAttempt(Entity<GasCanisterHoseSlotComponent> ent, ref ItemSlotEjectAttemptEvent args)
     {
         if (args.Slot.ID != ent.Comp.ContainerName)
@@ -103,7 +116,7 @@ public abstract partial class SharedGasCanisterHoseSystem : EntitySystem
             args.Cancelled = true;
     }
 
-    [SubscribeLocalEvent]
+    // [SubscribeLocalEvent] // SpL- no rt update
     private void OnHoseDetach(Entity<SimpleToolUsageComponent> ent, ref SimpleToolDoAfterEvent args)
     {
         if (args.Cancelled)
