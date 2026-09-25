@@ -3,8 +3,9 @@ language-chat-confirmation = Message will send in {$lang}.
 language-Universal-name = Universal
 language-Universal-description = What are you?
 
-language-GalacticCommon-name = Galactic Common
-language-GalacticCommon-description = The common galactic tongue, engineered for cross-species communication. Every spacer there is knows this!
+# SpL modified
+language-GalacticCommon-name = Orion Standard
+language-GalacticCommon-description = The common galactic tongue, engineered for cross-species communication. Almost every spacer there is knows this!
 
 language-Sign-name = Galactic Sign Language
 language-Sign-description = A sign language commonly used for those who are deaf or mute. Especially popular with spacers, due to practicality in airless environments.
@@ -43,7 +44,7 @@ language-Mouse-name = Mouse
 language-Mouse-description = Squeeek!
 
 language-Mothroach-name = Mothroach
-language-Mothroach-description = chitters!
+language-Mothroach-description = Chitters!
 
 language-Scratch-name = Scratch
 language-Scratch-description = A simplified, written dialect of the Avali and Resomi. Scratch is the galactic standard language model for the Illuminate. The origins of this language come from the pre-space age nomadic tribes, whose carvings and etches into ice caves hold a striking similarity to the modern Scratch.
