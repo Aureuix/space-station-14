@@ -245,6 +245,7 @@
 - type: loadoutGroup
   id: NanoTrasenRepresentativeHead
   name: loadout-group-nanotrasenrepresentative-head
+  minLimit: 0 # SpL
   loadouts:
   - NanoTrasenRepresentativeTophat
   - NanoTrasenRepresentativeEliteTophat
