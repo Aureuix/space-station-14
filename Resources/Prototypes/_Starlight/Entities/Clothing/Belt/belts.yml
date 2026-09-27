@@ -2,7 +2,7 @@
   parent: [ ClothingBeltStorageBase, BaseMajorContraband ]
   id: ClothingAbductorBelt
   name: abductor belt
-  description: Can hold various OUR things.
+  description: Can hold various abductor things. # SpL: Abductors... aren't communist... ...at least I think???
   components:
   - type: Sprite
     sprite: _Starlight/Clothing/Belt/abductor.rsi
@@ -116,7 +116,7 @@
   - type: Appearance
 
 - type: entity
-  parent: [ClothingBeltStorageBase, ContentsExplosionResistanceBase, BaseBlueShieldContraband]
+  parent: [ClothingBeltStorageBase, ContentsExplosionResistanceBase, BaseBlueShieldContraband, BaseHolsterableStorage] # SpL: Holster your damn gun
   id: ClothingBeltBlueShieldWebbing
   name: blueshield webbing
   description: A tactical rig that can hold many items to save the lives of command.
@@ -133,7 +133,7 @@
     damageCoefficient: 0.1
 
 - type: entity
-  parent: [ClothingBeltStorageBase, ContentsExplosionResistanceBase, BaseBlueShieldContraband]
+  parent: [ClothingBeltStorageBase, ContentsExplosionResistanceBase, BaseBlueShieldContraband, BaseHolsterableStorage] # SpL: Holster your damn gun
   id: ClothingBeltBlueShieldMedicalBelt
   name: blueshield medical belt
   description: A tactical belt that can hold many items to save the lives of command.
@@ -199,10 +199,10 @@
         - BallisticAmmoProvider
         - Ammo
 
-# USSP 
+# USSP
 
 - type: entity
-  parent: [ClothingBeltStorageBase, BaseSovietContraband]
+  parent: [ClothingBeltStorageBase, BaseSovietContraband, BaseHolsterableStorage] # SpL: Holster your damn gun
   id: ClothingSovietBelt
   name: soviet belt
   description: Can hold various OUR things.
@@ -233,7 +233,7 @@
         - JawsOfLife
         - GPS
         - WeldingMask
-                
+
         #Starlight
         - ImprovisedCrowbar
         - ImprovisedScrewdriver
@@ -281,7 +281,7 @@
         whitelist:
           tags:
           - Wirecutter
-          
+
           #Starlight
           - ImprovisedWirecutter
       crowbar:
@@ -310,7 +310,7 @@
         whitelist:
           tags:
           - Wrench
-          
+
           #Starlight
           - ImprovisedWrench
       multitool:
@@ -326,7 +326,7 @@
     price: 1000
 
 - type: entity
-  parent: [ClothingBeltStorageBase, ContentsExplosionResistanceBase, BaseSovietContraband]
+  parent: [ClothingBeltStorageBase, ContentsExplosionResistanceBase, BaseSovietContraband, BaseHolsterableStorage] # SpL: Holster your damn gun
   id: ClothingBeltSovietMarineWebbing
   name: SSF marine chest rig
   description:  A set of tactical webbing worn by the iconic soviet elite marines.
@@ -354,7 +354,7 @@
         - id: MagazineLightRifleFMJ
 
 - type: entity
-  parent: [BaseTSFContraband, ClothingBeltStorageBase, ContentsExplosionResistanceBase]
+  parent: [BaseTSFContraband, ClothingBeltStorageBase, ContentsExplosionResistanceBase, BaseHolsterableStorage] # SpL: Holster your damn gun
   id: ClothingBeltTSFMarineWebbing
   name: federation combat webbing
   description: A tactical chest rig used by soldiers and marines of the Trans-Solar Federation. It's covered in pouches and attachment points.
@@ -365,9 +365,9 @@
     sprite: _Starlight/Clothing/Belt/tsf_webbing.rsi
   - type: ExplosionResistance
     damageCoefficient: 0.1
-    
+
 - type: entity
-  parent: [ BaseSalvageContraband, ClothingBeltStorageBase ]
+  parent: [ BaseSalvageContraband, ClothingBeltStorageBase, BaseHolsterableStorage ] # SpL: Holster your damn gun
   id: ClothingBeltSalvageMercWebbing
   name: scrapper webbing
   description: Ideal for storing everything from tools, ammo, and salvage.
@@ -393,7 +393,7 @@
   - type: Clothing
     sprite: _Starlight/Clothing/Belt/retro_officer_belt.rsi
   - type: Appearance
-    
+
 # Greenshield Officer
 - type: entity
   parent: [BaseCentcommContraband, ClothingBeltBlueShieldMedicalBelt]

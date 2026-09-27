@@ -1,0 +1,13 @@
+- type: entity
+  id: BaseHolsterableStorage
+  abstract: true
+  components:
+  - type: ItemSlots
+    slots:
+      sidearm:
+        name: belt-sidearm-slot
+        insertVerbText: belt-insert-sidearm
+        ejectVerbText: belt-remove-sidearm
+        whitelist:
+          tags:
+            - Sidearm
