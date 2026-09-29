@@ -481,5 +481,5 @@
           amount: 2
         - id: Spear # self defence
         - id: ClothingHeadHatHardhatYellow
-        - id: ClothingNeckMantleQM
+        # - id: ClothingNeckMantleQM # SpL- lol
         - id: ClothingHeadsetCargo
