@@ -52,7 +52,7 @@
     walkModifier: 1
     sprintModifier: 1.05 # SpL
   - type: HeldSpeedModifier
-    walkmodifier: 1 # SpL
+    walkModifier: 1 # SpL
     sprintModifier: 1.1 # SpL
   # - type: DamageOtherOnHit # SpL- moved into the throwing section at the bottom of the yaml
   #  damage:
