@@ -223,17 +223,17 @@
     modifiers:
       coefficients:
       # region starlight: maxim lowered values
-        Blunt: 0.65 
-        Slash: 0.65 
-        Piercing: 0.65 
+        Blunt: 0.6 # SpL
+        Slash: 0.6 # SpL
+        Piercing: 0.6 # SpL
         Heat: 0.6 
         Radiation: 0.3 
         Caustic: 0.8 
   - type: ClothingSpeedModifier
-    walkModifier: 0.85
-    sprintModifier: 0.85 
+    walkModifier: 0.9 # SpL
+    sprintModifier: 0.9 # SpL
   - type: ExplosionResistance
-    damageCoefficient: 0.4 
+    damageCoefficient: 0.5 # SpL
     # end region starlight
   - type: HeldSpeedModifier #Starlight addition
   - type: TemperatureProtection

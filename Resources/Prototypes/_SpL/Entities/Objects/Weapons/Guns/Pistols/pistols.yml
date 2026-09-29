@@ -69,7 +69,7 @@
     - type: RechargeBasicEntityAmmo
       rechargeCooldown: 1.4
       rechargeSound:
-        path: /Audio/Weapons/Guns/Bolt/lmg_bolt_closed.ogg
+        path: /Audio/Weapons/Guns/Cock/shotgun_close.ogg
         params:
           pitch: 1.8
           variation: 0.08

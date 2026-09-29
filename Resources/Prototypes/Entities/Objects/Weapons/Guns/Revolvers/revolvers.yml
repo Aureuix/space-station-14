@@ -105,7 +105,7 @@
   name: AO-SAAM 'Inspector' revolver # SpL
   parent: [BaseWeaponRevolver, BaseSecurityContraband]
   id: WeaponRevolverInspector
-  description: A powerful hybrid-action revolver, manufactured for corporate law enforcement investigators, patterned after ancient private-eye sidearms. Cocking is HIGHLY recommended before engaging the single-action hammer-fanning mechanism. Loads 6 rounds of .45 ACP. # Spectralight: Magnum -> ACP
+  description: A powerful double-action revolver, manufactured for corporate law enforcement investigators, patterned after ancient private-eye sidearms. Cocking is HIGHLY recommended before engaging the single-action hammer-fanning mechanism. Loads 6 rounds of .45 ACP. # Spectralight: Magnum -> ACP
   components:
   - type: Sprite
     sprite: Objects/Weapons/Guns/Revolvers/inspector.rsi
@@ -122,9 +122,9 @@
     availableModes:
       - SemiAuto
       - Burst
-    shotsPerBurst: 6 # HAMMER FAN
-    burstCooldown: 2 # drawback to hammer fanning
-    burstFireRate: 12 # SpL End
+    shotsPerBurst: 3 # HAMMER FAN
+    burstCooldown: 1.5 # drawback to hammer fanning
+    burstFireRate: 8 # SpL End
   - type: StealTarget
     stealGroup: OfficerHandgun
   - type: SentienceTarget #Starlight
@@ -160,7 +160,7 @@
   name: C-2285 'Python' revolver # SpL
   parent: [BaseWeaponRevolver, BaseSyndicateContraband]
   id: WeaponRevolverPython
-  description: A powerful hybrid-action revolver manufactured by Waffle Corp, perfect for any agent looking to make a statement. Cocking is HIGHLY recommended before engaging the single-action hammer-fanning mechanism. Loads 6 rounds of .45 ACP. # Spectralight: Magnum -> ACP
+  description: A powerful double-action revolver manufactured by Waffle Corp, perfect for any agent looking to make a statement. Cocking is HIGHLY recommended before engaging the single-action hammer-fanning mechanism. Loads 6 rounds of .45 ACP. # Spectralight: Magnum -> ACP
   components:
   - type: Sprite
     sprite: Objects/Weapons/Guns/Revolvers/python.rsi
@@ -174,9 +174,9 @@
     availableModes:
     - SemiAuto
     - Burst
-    shotsPerBurst: 6 # HAMMER FAN
-    burstCooldown: 2 # drawback to hammer fanning
-    burstFireRate: 12 # SpL End
+    shotsPerBurst: 3 # HAMMER FAN
+    burstCooldown: 1.5 # drawback to hammer fanning
+    burstFireRate: 8 # SpL End
     soundGunshot:
       path: /Audio/Weapons/Guns/Gunshots/revolver.ogg
       params:

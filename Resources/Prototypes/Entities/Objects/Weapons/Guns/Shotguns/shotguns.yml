@@ -83,6 +83,7 @@
       - ShellShotgun
     capacity: 7
     proto: ShellShotgun
+    soundRack: /Audio/Weapons/Guns/Cock/sf_rifle_cock.ogg # SpL
     soundInsert:
       path: /Audio/Weapons/Guns/MagIn/shotgun_insert.ogg
 
@@ -178,7 +179,7 @@
   - type: Gun
     spread: 5
     pump: false
-    fireRate: 1 # SpL- restoration of semi-auto requires balancing to compensate
+    fireRate: 1.25 # SpL
   - type: Sprite
     sprite: Objects/Weapons/Guns/Shotguns/enforcer.rsi
   - type: Clothing
@@ -207,7 +208,7 @@
   - type: Gun
     spread: 15
     pump: true
-    fireRate: 1
+    fireRate: 1.5 # SpL
   - type: Sprite
     sprite: Objects/Weapons/Guns/Shotguns/pump.rsi
   - type: Clothing

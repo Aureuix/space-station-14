@@ -260,7 +260,7 @@
     [BaseCentcommContraband, ClothingOuterVestWeb]
   id: ClothingOuterVestWebEliteCentcomm
   name: central command web vest
-  description: A synthetic armor vest reverse-engineered from Gorlex designs for use by Central Command, with webbing and heat resistant fibers included.
+  description: A versatile synthetic armor vest first used in the Corporate War, with webbing, ballistic plates, and heat resistant fibers included. # SpL
   components:
     - type: Sprite
       sprite: _Starlight/Clothing/OuterClothing/Vests/cc_webvest.rsi
@@ -272,17 +272,17 @@
     - type: Armor
       modifiers:
         coefficients:
-          Blunt: 0.5
-          Slash: 0.5
-          Piercing: 0.7
+          Blunt: 0.6 # SpL
+          Slash: 0.6 # SpL
+          Piercing: 0.3 # SpL
           Heat: 0.3
-          Radiation: 0.5
-          Caustic: 0.5
+          Radiation: 0.75 # SpL
+          Caustic: 0.75 # SpL
       staminaModifier: 0.35
     - type: ExplosionResistance
       damageCoefficient: 0.5
     - type: FireProtection
-      reduction: 0.85
+      reduction: 0.8 # SpL
 
 - type: entity
   parent: [BaseSalvageContraband, ClothingOuterVestWeb] #web vest so it should have some pockets for ammo
@@ -301,8 +301,10 @@
         coefficients:
           Blunt: 0.7 #slightly better overall protection but slightly worse than bulletproof armor against bullets seems sensible
           Slash: 0.7
-          Piercing: 0.6
+          Piercing: 0.5 # SpL- it could surely do to be a little better than that
           Heat: 0.9
+          Radiation: 0.75 # SpL
+          Caustic: 0.75 # SpL
       staminaModifier: 0.85
     - type: ExplosionResistance
       damageCoefficient: 0.9
