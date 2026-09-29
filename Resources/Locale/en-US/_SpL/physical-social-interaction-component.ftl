@@ -17,3 +17,6 @@ punch-verb = Punch
 punch-success = You playfully punch {THE($target)} in the arm.
 punch-success-others = { CAPITALIZE(THE($user)) } playfully punches {THE($target)}'s arm.
 punching-emote = playfully punches {THE($target)}.
+
+hug-verb = Hug
+hugging-emote = hugs {THE($target)}.

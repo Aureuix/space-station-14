@@ -30,3 +30,11 @@
   messagePerceivedByOthers: punch-success-others
   # emoteMessage: punching-emote
   interactSound: /Audio/Effects/weak_hit1.ogg
+
+- type: socialInteraction
+  id: Hug
+  verbName: hug-verb
+  interactString: hugging-success-generic
+  messagePerceivedByOthers: hugging-success-generic-others
+  # emoteMessage: hugging-success-generic
+  interactSound: /Audio/Effects/thudswoosh.ogg

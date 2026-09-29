@@ -50,6 +50,10 @@
     tags:
     - Payload
     - ClothMade
+  - type: SocialInteractionReceiver # SpL
+    interactionPrototypes:
+    - Hug
+    - Pet
 
 - type: entity
   parent: BasePlushie
