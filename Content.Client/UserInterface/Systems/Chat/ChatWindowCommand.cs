@@ -38,7 +38,7 @@ public sealed class AdminChatWindowCommand : LocalizedCommands
 }
 
 /// <summary>
-/// Command which creates a window containing a chatbox
+/// Command which exports the local chat history, for importing into a (later-to-be-revamped) chat window
 /// </summary>
 [UsedImplicitly]
 public sealed class ExportChatCommand : LocalizedCommands
