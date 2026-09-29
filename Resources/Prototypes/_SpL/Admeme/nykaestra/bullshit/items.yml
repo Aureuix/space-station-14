@@ -42,5 +42,5 @@
   description: True, true, I agree with your opinion.
   components:
     - type: Sprite
-      sprite: _Starlight/Objects/Misc/killsign.rsi
+      sprite: _SpL/Objects/Misc/killsign.rsi
       state: true
