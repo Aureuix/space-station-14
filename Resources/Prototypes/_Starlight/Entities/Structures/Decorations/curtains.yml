@@ -1,5 +1,6 @@
 ﻿- type: entity
   id: WindowBlinds
+  name: blinds # SpL
   parent: BaseCurtains
   suffix: Closed
   description: Contains less than 1% mercury.
