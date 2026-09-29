@@ -198,6 +198,7 @@
       path: /Audio/Weapons/Guns/MagIn/shotgun_insert.ogg
   - type: MeleeWeapon
     wideAnimationRotation: -135
+    range: 1.7 # SpL
     damage:
       types:
         Piercing: 15

@@ -8,6 +8,7 @@
     sprite: Objects/Weapons/Melee/baseball_bat.rsi
     state: icon
   - type: MeleeWeapon
+    range: 1.6 # SpL
     wideAnimationRotation: -135
     damage:
       types:

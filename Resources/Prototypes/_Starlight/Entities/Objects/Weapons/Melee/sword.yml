@@ -131,6 +131,7 @@
             Heat: 8
             Slash: 10
   - type: MeleeWeapon
+    range: 1.6 # SpL
     damage:
       types:
         Slash: 16
@@ -156,6 +157,7 @@
   - type: Sprite
     sprite: _Starlight/Objects/Weapons/Melee/tidebreaker.rsi
   - type: MeleeWeapon
+    range: 1.6 # SpL
     attackRate: 0.75
     damage:
       types:
@@ -186,6 +188,7 @@
     - type: Sprite
       sprite: _Starlight/Objects/Weapons/Melee/Mana_Blade.rsi
     - type: MeleeWeapon
+      range: 1.6 # SpL
       attackRate: 1
       damage:
         types:

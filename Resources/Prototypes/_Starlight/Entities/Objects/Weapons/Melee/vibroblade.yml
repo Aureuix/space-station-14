@@ -9,7 +9,7 @@
     sprite: _Starlight/Objects/Weapons/Melee/crusher_sword.rsi
   - type: MeleeWeapon
     attackRate: 1.2
-    range: 1.25
+    range: 1.6 # SpL
     damage:
       types:
         Slash: 10
@@ -17,7 +17,7 @@
     soundHit:
         path: /Audio/Weapons/bladeslice.ogg
   - type: Reflect
-    reflectProb: .2
+    reflectProb: .25 # SpL
     spread: 90
   - type: Item
     storedSprite:
@@ -46,7 +46,7 @@
     sprite: _Starlight/Objects/Weapons/Melee/cc_crusher_sword.rsi
   - type: MeleeWeapon
     attackRate: 2.0
-    range: 1.5
+    range: 1.6 # SpL
     damage:
       types:
         Slash: 15

@@ -1,6 +1,6 @@
 - type: entity
   name: ritual dagger
-  parent: BaseItem
+  parent: [BaseItem, BaseMagicalContraband]
   id: RitualDagger
   description: A strange dagger used by sinister groups for rituals and sacrifices.
   components:
@@ -24,7 +24,7 @@
 
 - type: entity
   name: eldritch blade
-  parent: BaseItem
+  parent: [BaseItem, BaseMagicalContraband]
   id: EldritchBlade
   description: A sword humming with unholy energy.
   components:
@@ -33,6 +33,7 @@
     sprite: Objects/Weapons/Melee/cult_blade.rsi
     state: icon
   - type: MeleeWeapon
+    range: 1.6 # SpL
     wideAnimationRotation: -135
     attackRate: 0.75
     damage:
@@ -48,7 +49,7 @@
 
 - type: entity
   name: unholy halberd
-  parent: BaseItem
+  parent: [BaseItem, BaseMagicalContraband]
   id: UnholyHalberd
   description: A poleaxe that seems to be linked to its wielder.
   components:
@@ -60,6 +61,7 @@
     sprite: Objects/Weapons/Melee/cult_halberd.rsi
     state: icon
   - type: MeleeWeapon
+    range: 1.7 # SpL
     wideAnimationRotation: -135
     attackRate: 0.75
     damage:

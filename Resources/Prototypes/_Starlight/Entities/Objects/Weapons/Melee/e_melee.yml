@@ -60,6 +60,7 @@
     reflectProb: 0.75 # surpise get tasered
     spread: 75
   - type: MeleeWeapon
+    range: 1.8 # SpL
     wideAnimationRotation: 180
     attackRate: 0.8
     autoAttack: true
