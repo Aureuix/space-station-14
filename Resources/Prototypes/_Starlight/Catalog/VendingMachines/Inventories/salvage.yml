@@ -96,7 +96,7 @@
   - SalvageEquipment
   conditions:
   - !type:ListingLimitedStockCondition
-    stock: 1
+    stock: 2 # SpL
   - !type:BuyerAccessCondition
 
 - type: listing
@@ -184,6 +184,8 @@
   categories:
   - SalvageWeapons
   conditions:
+  - !type:ListingLimitedStockCondition
+    stock: 1
   - !type:BuyerAccessCondition
 
 - type: listing
@@ -224,6 +226,8 @@
   categories:
   - SalvageWeapons
   conditions:
+  - !type:ListingLimitedStockCondition
+    stock: 1
   - !type:BuyerAccessCondition
 
 - type: listing
