@@ -1,5 +1,5 @@
 ﻿- type: entity
-  name: VL-119 SPKA # SpL
+  name: VI-119 SPKA # SpL
   id: WeaponSPKA
   parent: [WeaponProtoKineticAcceleratorBase, BaseSecuritySalvageMiningContraband] # SpL
   description: Fires a barrage of low-damage kinetic bolts at a short range. Designed as a self-defense advancement of the PKA specialised for close quarters operations. # SpL
@@ -28,8 +28,8 @@
       fireRate: 2
       selectedMode: FullAuto
       angleDecay: 45
-      minAngle: 21
-      maxAngle: 32
+      minAngle: 5 # SpL
+      maxAngle: 20 # SpL
       availableModes:
         - SemiAuto
         - FullAuto
@@ -58,7 +58,7 @@
 - type: entity
   name: VI-122 Regulator # SpL
   id: WeaponRegulator
-  parent: [WeaponProtoKineticAcceleratorBase, BaseSecurityCargoContraband] # SpL
+  parent: [BaseItem, BaseSecurityCargoContraband] # SpL- deparented to prevent wielding
   description: A Vulkan Industries design combining the practicality of the appraisal tool with the utility of their renowned proto-kinetic accelerator range. # SpL
   components:
     - type: Sprite
@@ -120,6 +120,17 @@
     - type: PriceGun
     - type: UseDelay
       delay: 3
+    - type: MeleeWeapon # SpL start- unparented, copying parent comps
+      wideAnimationRotation: 90
+      damage:
+        types:
+          Blunt: 8
+      angle: 0
+      animation: WeaponArcThrust
+      soundHit:
+        collection: MetalThud
+    - type: AltFireMelee
+    - type: AmmoCounter # SpL end
 
 - type: entity
   name: VI-124 Chain Accelerator # SpL
@@ -152,8 +163,8 @@
     - type: Gun
       projectileSpeed: 20
       fireRate: 1.75
-      minAngle: 24
-      maxAngle: 45
+      minAngle: 10 # SpL
+      maxAngle: 30 # SpL
       angleIncrease: 4
       angleDecay: 16
       selectedMode: FullAuto

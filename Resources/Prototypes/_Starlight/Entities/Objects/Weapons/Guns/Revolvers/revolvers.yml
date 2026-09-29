@@ -102,14 +102,14 @@
   - type: Item
     storedOffset: 0,-2
   - type: Gun
-    fireRate: 2.0
+    fireRate: 2.25 # SpL
     selectedMode: SemiAuto
     availableModes:
     - SemiAuto
-    - Burst
-    shotsPerBurst: 3
-    burstCooldown: 1.2
-    burstFireRate: 3.5
+    # - Burst # SpL- removed burst fire
+    # shotsPerBurst: 3
+    # burstCooldown: 1.2
+    # burstFireRate: 3.5
     soundGunshot:
       path: /Audio/_Starlight/Weapons/Guns/Gunshots/revolver_stronger.ogg
   - type: RevolverAmmoProvider

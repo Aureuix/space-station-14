@@ -9,6 +9,12 @@
   "states": [
     {
       "name": "gsl"
+    },
+    {
+      "name": "cap"
+    },
+    {
+      "name": "hop"
     }
   ]
 }

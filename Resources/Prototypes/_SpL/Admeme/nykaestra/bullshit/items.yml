@@ -15,7 +15,7 @@
         - timerstart
     - type: TimerTrigger
       delay: 5
-      keysIn: 
+      keysIn:
         - timerstart
     - type: ExplodeOnTrigger
       keysIn:
@@ -34,3 +34,13 @@
           volume: 8
     - type: StaticPrice
       price: 2000
+      
+- type: entity
+  parent: [BaseItem, BaseMagicalContraband]
+  name: true
+  id: ItemTrue
+  description: True, true, I agree with your opinion.
+  components:
+    - type: Sprite
+      sprite: _SpL/Objects/Misc/killsign.rsi
+      state: true

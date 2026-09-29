@@ -2,6 +2,7 @@
   parent: RadiationBlockingProjector
   id: RadiationBlockingProjectorMicroreactor
   name: radiation barrier projector
+  suffix: Microreactor
   description: Stop the deadly radiation from a delamination or meltdown, at least for a little while.
   components:
     - type: ItemSlots
@@ -17,6 +18,7 @@
   parent: HolofanProjector
   id: HolofanProjectorMicroreactor
   name: holofan projector
+  suffix: Microreactor
   description: Stop suicidal assistants from killing everyone during atmos emergencies.
   components:
     - type: ItemSlots

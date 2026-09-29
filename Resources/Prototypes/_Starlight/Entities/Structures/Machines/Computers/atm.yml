@@ -2,7 +2,7 @@
   parent: BaseComputerAiAccess
   id: ATM
   categories: [ ShouldMapStation ]
-  name: atm
+  name: automatic teller machine
   description: A regular ATM, it eats money, spits out money, and transfers money.
   placement:
     mode: SnapgridCenter

@@ -24,7 +24,7 @@ execution-popup-melee-complete-external = { CAPITALIZE(THE($attacker)) } slits t
 execution-popup-gun-complete-external = { CAPITALIZE(THE($attacker)) } shoots {THE($victim)} in the head!
 
 execution-popup-gun-clumsy-internal = You miss the head of {THE($victim)} and shoot yourself in the foot instead!
-execution-popup-gun-clumsy-external = { CAPITALIZE(THE($attacker)) } misses {THE($victim)} and shoots {SUBJECT($victim)}self in the foot instead!
+execution-popup-gun-clumsy-external = { CAPITALIZE(THE($attacker)) } misses {THE($victim)} and shoots {REFLEXIVE($victim)} in the foot instead!
 
 execution-popup-gun-empty = { CAPITALIZE(THE($weapon)) } clicks.
 
@@ -38,5 +38,5 @@ execution-popup-self-melee-complete-internal = You slit your own throat!
 execution-popup-self-gun-complete-internal = You shoot yourself in the head!
 
 execution-popup-self-melee-complete-external = { CAPITALIZE(THE($attacker)) } slits {POSS-ADJ($victim)} own throat!
-execution-popup-self-gun-complete-external = { CAPITALIZE(THE($attacker)) } shoots {SUBJECT($victim)}self in the head!
+execution-popup-self-gun-complete-external = { CAPITALIZE(THE($attacker)) } shoots {REFLEXIVE($victim)} in the head!
 #Starlight end

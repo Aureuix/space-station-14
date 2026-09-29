@@ -13,6 +13,7 @@ public sealed class KillSignCommand : ToolshedCommand
 {
     private static readonly string BaseContentPath = "Objects/Misc/killsign.rsi";
     private static readonly string SLContentPath = "_Starlight/Objects/Misc/killsign.rsi";
+    private static readonly string SpLContentPath = "_SpL/Objects/Misc/killsign.rsi";
     
     [CommandImplementation("kill")]
     public EntityUid Kill([PipedArgument] EntityUid uid)
@@ -250,7 +251,52 @@ public sealed class KillSignCommand : ToolshedCommand
     public EntityUid Admin([PipedArgument] EntityUid uid)
     {
         var comp = EnsureComp<KillSignComponent>(uid);
-        comp.Sprite = new SpriteSpecifier.Rsi(new ResPath(SLContentPath), "admin");
+        comp.Sprite = new SpriteSpecifier.Rsi(new ResPath(SpLContentPath), "admin");
+        EntityManager.Dirty(uid, comp);
+        return uid;
+    }
+    
+    [CommandImplementation("bird")]
+    public EntityUid Bird([PipedArgument] EntityUid uid)
+    {
+        var comp = EnsureComp<KillSignComponent>(uid);
+        comp.Sprite = new SpriteSpecifier.Rsi(new ResPath(SpLContentPath), "bird");
+        EntityManager.Dirty(uid, comp);
+        return uid;
+    }
+    
+    [CommandImplementation("fis")]
+    public EntityUid Fis([PipedArgument] EntityUid uid)
+    {
+        var comp = EnsureComp<KillSignComponent>(uid);
+        comp.Sprite = new SpriteSpecifier.Rsi(new ResPath(SpLContentPath), "fis");
+        EntityManager.Dirty(uid, comp);
+        return uid;
+    }
+    
+    [CommandImplementation("fops")]
+    public EntityUid Fops([PipedArgument] EntityUid uid)
+    {
+        var comp = EnsureComp<KillSignComponent>(uid);
+        comp.Sprite = new SpriteSpecifier.Rsi(new ResPath(SpLContentPath), "fops");
+        EntityManager.Dirty(uid, comp);
+        return uid;
+    }
+    
+    [CommandImplementation("larp")]
+    public EntityUid Larp([PipedArgument] EntityUid uid)
+    {
+        var comp = EnsureComp<KillSignComponent>(uid);
+        comp.Sprite = new SpriteSpecifier.Rsi(new ResPath(SpLContentPath), "larp");
+        EntityManager.Dirty(uid, comp);
+        return uid;
+    }
+    
+    [CommandImplementation("true")]
+    public EntityUid True([PipedArgument] EntityUid uid)
+    {
+        var comp = EnsureComp<KillSignComponent>(uid);
+        comp.Sprite = new SpriteSpecifier.Rsi(new ResPath(SpLContentPath), "true");
         EntityManager.Dirty(uid, comp);
         return uid;
     }
@@ -369,6 +415,26 @@ public sealed class KillSignCommand : ToolshedCommand
     [CommandImplementation("admin")]
     public IEnumerable<EntityUid> Admin([PipedArgument] IEnumerable<EntityUid> uid)
         => uid.Select(Admin);
+    
+    [CommandImplementation("bird")]
+    public IEnumerable<EntityUid> Bird([PipedArgument] IEnumerable<EntityUid> uid)
+        => uid.Select(Bird);
+    
+    [CommandImplementation("fis")]
+    public IEnumerable<EntityUid> Fis([PipedArgument] IEnumerable<EntityUid> uid)
+        => uid.Select(Fis);
+    
+    [CommandImplementation("fops")]
+    public IEnumerable<EntityUid> Fops([PipedArgument] IEnumerable<EntityUid> uid)
+        => uid.Select(Fops);
+    
+    [CommandImplementation("larp")]
+    public IEnumerable<EntityUid> Larp([PipedArgument] IEnumerable<EntityUid> uid)
+        => uid.Select(Larp);
+    
+    [CommandImplementation("true")]
+    public IEnumerable<EntityUid> True([PipedArgument] IEnumerable<EntityUid> uid)
+        => uid.Select(True);
 
     [CommandImplementation("rm")]
     public IEnumerable<EntityUid> RemoveKillSign([PipedArgument] IEnumerable<EntityUid> uid)

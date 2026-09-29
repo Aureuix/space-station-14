@@ -2,6 +2,7 @@
   id: GSLPrinterDocMachineCircuitboard
   parent: BaseMachineCircuitboard
   name: GSL document printer machine board
+  categories: [ HideSpawnMenu ]
   description: A machine printed circuit board for a document printer. This one holds proprietary non-NT corporate document data.
   components:
     - type: MachineBoard
@@ -15,6 +16,7 @@
   id: CCPrinterDocMachineCircuitboard
   parent: BaseMachineCircuitboard
   name: CC document printer machine board
+  categories: [ HideSpawnMenu ]
   description: A machine printed circuit board for a document printer. This one holds highly sensitive CC document data.
   components:
     - type: MachineBoard
@@ -28,6 +30,7 @@
   id: SHCPrinterDocMachineCircuitboard
   parent: BaseMachineCircuitboard
   name: SHC document printer machine board
+  categories: [ HideSpawnMenu ]
   description: A machine printed circuit board for a document printer. This one is evil.
   components:
     - type: MachineBoard

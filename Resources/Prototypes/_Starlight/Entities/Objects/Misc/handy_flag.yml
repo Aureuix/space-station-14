@@ -13,8 +13,8 @@
 
 - type: entity
   id: RevolutionaryHeldBanner
-  name: revolutionary banner
-  description: A towering revolutionary banner that makes you an easy target. A makarov in the other hand is recommended.
+  name: revolutionary flag # SpL
+  description: A towering revolutionary flag that makes you an easy target. An officer's pistol in the other hand is recommended. # SpL
   parent: [BaseItem, BaseSovietContraband]
   components:
   - type: Sprite
@@ -24,22 +24,22 @@
     sprite: _Starlight/Objects/Misc/rev_flag.rsi
     size: Ginormous
   - type: MeleeWeapon
+    angle: 0 # SpL
     attackRate: 0.9
-    wideAnimationRotation: -135
+    range: 1.75 # SpL
+    wideAnimationRotation: -145 # SpL
     damage:
       types:
         Blunt: 1
-    animation: WeaponArcSlash
+    animation: WeaponArcThrust # SpL
     soundHit:
-      path: /Audio/_Starlight/Effects/flag_hit.ogg
-      params:
-        variation: 0.246
+      path: /Audio/Weapons/bladeslice.ogg # SpL
     bluntStaminaDamageFactor: 2.0
   - type: Wieldable
   - type: IncreaseDamageOnWield
     damage:
       types:
-        Blunt: 14
+        Pierce: 14 # SpL- converted to pierce a la one true flag 
   - type: StaminaDamageOnHit
     damage: 12
   - type: Clothing
@@ -50,12 +50,14 @@
   - type: UseDelay
   - type: ClothingSpeedModifier
     walkModifier: 1
-    sprintModifier: 0.95
+    sprintModifier: 1.05 # SpL
   - type: HeldSpeedModifier
-  - type: DamageOtherOnHit
-    damage:
-      types:
-        Blunt: 5
+    walkModifier: 1 # SpL
+    sprintModifier: 1.1 # SpL
+  # - type: DamageOtherOnHit # SpL- moved into the throwing section at the bottom of the yaml
+  #  damage:
+  #    types:
+  #      Blunt: 5
   - type: Fixtures
     fixtures:
       fix1:
@@ -93,13 +95,13 @@
     thresholds:
       - trigger:
           !type:DamageTrigger
-          damage: 100
+          damage: 200 # SpL
         behaviors:
           - !type:DoActsBehavior
             acts: [ "Destruction" ]
       - trigger:
           !type:DamageTrigger
-          damage: 60
+          damage: 100 # SpL
         behaviors:
           - !type:DoActsBehavior
             acts: [ "Destruction" ]
@@ -116,4 +118,18 @@
                 max: 2
   - type: StaticPrice
     price: 1000
+  - type: EmbeddableProjectile # SpL Start
+    sound: /Audio/Weapons/star_hit.ogg
+    offset: -0.15,0.0
+  - type: ThrowingAngle
+    angle: 45
+  - type: LandAtCursor
+  - type: Tag
+    tags:
+      - Spear
+      - ScurretWearable
+  - type: DamageOtherOnHit
+    damage:
+      types:
+        Pierce: 16 # SpL End
 

@@ -43,6 +43,7 @@
           visible: false
     - type: MeleeWeapon
       wideAnimationRotation: -135
+      range: 1.75 # SpL
       damage:
         types:
           Piercing: 12

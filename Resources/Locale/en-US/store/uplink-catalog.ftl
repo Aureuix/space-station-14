@@ -110,8 +110,8 @@ uplink-estoc-ammo-desc = A rifle magazine with 25 cartridges. Compatible with th
 uplink-pistol-magazine-caseless-name = 5.7mm magazine
 uplink-pistol-magazine-caseless-desc = Pistol magazine with 10 cartridges. Compatible with the Cobra.
 
-uplink-speedloader-ACP-name = Armor-piercing .45 ACP speedloader
-uplink-speedloader-magnu-desc = Revolver speedloader with 6 armor-piercing cartridges, capable of ignoring armor entirely. Compatible with the Python.
+uplink-speedloader-magnum-name = Armor-piercing .45 ACP speedloader
+uplink-speedloader-magnum-desc = Revolver speedloader with 6 armor-piercing cartridges, capable of mostly bypassing armor. Compatible with the Python.
 
 uplink-mosin-ammo-name = 7.62x51mm ammunition box
 uplink-mosin-ammo-desc = A box of 60 cartridges, compatible with the Pitbull or L6 SAW.
@@ -493,7 +493,7 @@ uplink-bribe-name = Lobbying Bundle
 uplink-bribe-desc = A heartfelt gift that can help you sway someone's opinion. Real or counterfeit? Yes.
 
 uplink-hypodart-name = Hypodart
-uplink-hypodart-desc = A seemingly unremarkable dart with an enlarged reservoir for chemicals. It can store up to 7u reagents in itself, and instantly inject when it hits the target. Starts empty.
+uplink-hypodart-desc = A seemingly unremarkable dart with an enlarged reservoir for chemicals. It can store up to 10u reagents in itself, and instantly inject when it hits the target. Starts empty.
 
 uplink-barber-scissors-name = Barber Scissors
 uplink-barber-scissors-desc = A good tool to give your fellow agent a nice haircut, unless you want to give it to yourself.

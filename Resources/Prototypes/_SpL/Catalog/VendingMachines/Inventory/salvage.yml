@@ -6,6 +6,8 @@
   categories:
     - SalvageWeapons
   conditions:
+    - !type:ListingLimitedStockCondition
+      stock: 1
     - !type:BuyerAccessCondition
 
 - type: listing

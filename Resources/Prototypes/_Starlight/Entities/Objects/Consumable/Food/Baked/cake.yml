@@ -1,8 +1,8 @@
 ﻿- type: entity
   name: Dreaming cake
-  parent: FoodCakeBase
+  parent: [FoodCakeBase, BaseHighlyIllegalContraband] # SpL- highly illegal
   id: FoodResomiCake
-  description: The poor Resomi can no longer chase their dreams
+  description: The poor Resomi can no longer chase their dreams.
   components:
     - type: Sprite
       sprite: _Starlight/Objects/Consumable/Food/Custcake.rsi
@@ -93,7 +93,7 @@
 
 - type: entity
   name: A Slice of dreaming
-  parent: FoodCakeSliceBase
+  parent: [FoodCakeSliceBase, BaseHighlyIllegalContraband] # SpL- highly illegal
   id: FoodCakeResomiSlice
   description: Broken wings cant fly, neither can the Resomi this was made with.
   components:

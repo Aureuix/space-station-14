@@ -43,6 +43,7 @@
         Structural: 20
   - type: MeleeWeapon
     wideAnimationRotation: -135
+    range: 1.6 # SpL
     attackRate: 1
     damage:
       types:

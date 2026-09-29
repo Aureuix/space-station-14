@@ -7,3 +7,36 @@
     - type: BallisticAmmoProvider
       capacity: 7
       proto: ShellShotgunIncendiary
+      
+- type: entity
+  name: VtzT UTS-27 cycler shotgun # SpL
+  parent: [BaseWeaponShotgunAny, BaseGunWieldable, BaseSecuritySalvageContraband]
+  id: WeaponShotgunCycler
+  description: An advanced semi-automatic shotgun with two separate magazine tubes, allowing for an increased capacity compared to most models. Accepts 12 gauge shells. # SpL
+  components:
+    - type: Item
+      sprite: _Starlight/Objects/Weapons/Guns/Shotguns/cycler.rsi
+    - type: Gun
+      spread: 20
+      selectedMode: SemiAuto
+      availableModes:
+        # - Burst
+        - SemiAuto
+      # shotsPerBurst: 2
+      # burstCooldown: 2
+      # burstFireRate: 12
+      pump: true # pump and burst simply do not cooperate
+      fireRate: 1
+      soundGunshot: /Audio/_Starlight/Weapons/Guns/Gunshots/minotaur.ogg
+    - type: Sprite
+      sprite: _Starlight/Objects/Weapons/Guns/Shotguns/cycler.rsi
+    - type: Clothing
+      sprite: _Starlight/Objects/Weapons/Guns/Shotguns/cycler.rsi
+    - type: GunRequiresWield
+    - type: BallisticAmmoProvider
+      capacity: 14
+      proto: ShellShotgun
+      whitelist:
+        tags:
+          - ShellShotgun
+      soundRack: /Audio/Weapons/Guns/Cock/sf_rifle_cock.ogg

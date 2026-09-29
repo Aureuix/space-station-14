@@ -1076,18 +1076,18 @@
   products:
     Silencer: 3
 
-# - type: reaction
-#   id: Singulo
-#   reactants:
-#     Vodka:
-#       amount: 5
-#     Wine:
-#       amount: 5
-#     LiquidDarkMatter:
-#       amount: 1
-#   products:
-#     Singulo: 10
-# Waiting until LiquidDarkMatter added
+- type: reaction
+  id: Singulo
+  reactants:
+    Vodka:
+      amount: 5
+    Wine:
+      amount: 5
+    Nothing: # SpL
+      amount: 1
+  products:
+    Singulo: 10
+# Waiting until LiquidDarkMatter added # SpL- added a healthy substitute for now
 
 - type: reaction
   id: SnowWhite
@@ -1537,7 +1537,7 @@
       amount: 2
     Grenadine:
       amount: 1
-    ZombieBlood:
+    Ammonia: # SpL- made zombies makeable
       amount: 1
   products:
     ZombieCocktail: 4

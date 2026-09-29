@@ -10,6 +10,26 @@
       
 - type: entity
   parent: BaseSign
+  id: SignCap
+  name: captain's quarters sign
+  description: A sign indicating the captain's quarters, implemented after powerful lobbying groups complained about how hard it was to find on most stations.
+  components:
+    - type: Sprite
+      sprite: _SpL/Structures/Wallmounts/signs.rsi
+      state: cap
+      
+- type: entity
+  parent: BaseSign
+  id: SignHoP
+  name: head of personnel's office sign
+  description: A sign indicating the head of personnel's office, and by extension the HoPline. Is it a bust? Is it a stamp? Nobody knows.
+  components:
+    - type: Sprite
+      sprite: _SpL/Structures/Wallmounts/signs.rsi
+      state: hop
+      
+- type: entity
+  parent: BaseSign
   id: SignDoujou
   name: doujou sign
   description: Are you ready to train?
