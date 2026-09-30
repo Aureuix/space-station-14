@@ -3,7 +3,8 @@ using Content.Shared.Chat.Prototypes;
 using Content.Shared.Speech;
 using Robust.Shared.Audio;
 using Robust.Shared.Random;
-using Content.Shared.Chat; // Starlight-edit: Languages
+using Content.Shared.Chat;
+using System.Text; // Starlight-edit: Languages
 
 namespace Content.Shared.Chat;
 
@@ -271,18 +272,14 @@ public abstract partial class SharedChatSystem
 
     private string TrimPunctuation(string textInput)
     {
-        var trimEnd = textInput.Length;
-        while (trimEnd > 0 && char.IsPunctuation(textInput[trimEnd - 1]))
+        var sb = new StringBuilder();
+        foreach (char c in textInput)
         {
-            trimEnd--;
+            if (char.IsLetterOrDigit(c))
+            {
+                sb.Append(c);
+            }
         }
-
-        var trimStart = 0;
-        while (trimStart < trimEnd && char.IsPunctuation(textInput[trimStart]))
-        {
-            trimStart++;
-        }
-
-        return textInput[trimStart..trimEnd];
+        return sb.ToString();
     }
 }

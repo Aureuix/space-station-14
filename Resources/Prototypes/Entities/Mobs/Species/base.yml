@@ -248,6 +248,7 @@
     - Pat # SpL
     - Shake # SpL
     - Punch # SpL
+    - Hug # SpL
   # Starlight End
   - type: CosmicCenserTarget # Stellar - Cosmic Cult
   - type: Scent # Starlight - smell system
