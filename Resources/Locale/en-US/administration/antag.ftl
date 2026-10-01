@@ -1,8 +1,8 @@
-verb-categories-antag = Antag ctrl
+verb-categories-antag = Beam Menu
 admin-verb-make-traitor = Make the target into a traitor.
 admin-verb-make-initial-infected = Make the target into an Initial Infected.
 admin-verb-make-zombie = Zombifies the target immediately.
-admin-verb-make-nuclear-operative = Make target into a lone Nuclear Operative.
+admin-verb-make-nuclear-operative = Make the target into a lone Nuclear Operative.
 admin-verb-make-pirate = Make the target into a pirate. Note this doesn't configure the game rule.
 admin-verb-make-head-rev = Make the target into an SKB revolutionary agent.
 admin-verb-make-thief = Make the target into a thief.
@@ -12,6 +12,7 @@ admin-verb-make-vampire = Make the target into a vampire.
 admin-verb-make-wizard = Make the target into a Wizard.
 admin-verb-make-space-ninja = Make the target into a Space Ninja.
 admin-verb-make-changeling = Make the target into a Changeling.
+admin-verb-make-centcomm = Mindshields and deathrattles the target, converts their alignment, and applies their CentComm loadout.
 
 
 admin-verb-text-make-traitor = Make Traitor
@@ -19,12 +20,14 @@ admin-verb-text-make-initial-infected = Make Initial Infected
 admin-verb-text-make-zombie = Make Zombie
 admin-verb-text-make-nuclear-operative = Make Nuclear Operative
 admin-verb-text-make-pirate = Make Pirate
-admin-verb-text-make-head-rev = Make soviet SKB agent
+admin-verb-text-make-head-rev = Make Soviet SKB agent
 admin-verb-text-make-thief = Make Thief
 admin-verb-text-make-changeling = Make Changeling
 admin-verb-text-make-paradox-clone = Create Paradox Clone
 admin-verb-text-make-changeling-wip = Make Changeling (Upstream, WIP)
 admin-verb-text-make-wizard = Make Wizard
 admin-verb-text-make-space-ninja = Make Ninja
+admin-verb-text-make-vampire = Make Vampire
+admin-verb-text-make-centcomm = Make CentComm Operator
 
 admin-overlay-antag-classic = ANTAG

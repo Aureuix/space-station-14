@@ -11,16 +11,17 @@
   - InsulsTacticalMaid #Spectra
 
 - type: loadoutGroup
-  id: InsulsCombat
-  name: loadout-group-insuls-combat
+  id: CentCommGloves
+  name: loadout-group-gloves-centcomm
   minLimit: 0
   defaultSelected: 1
   loadouts:
+  - ClothingHandsGlovesHop
   - InsulsCombatNoLock
   - InsulsRegular
   - InsulsMercenary
   - InsulsScrapper
-  - InsulsTacticalMaid #Spectra
+  - InsulsTacticalMaid
 
 - type: loadoutGroup
   id: InsulsCaptain

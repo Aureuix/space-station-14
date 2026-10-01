@@ -1,0 +1,11 @@
+﻿- type: entity
+  parent: MindRoleGhostCentCommAligned
+  id: MindRoleGhostCentCommOp
+  name: CentComm Role
+  components:
+    - type: MindRole
+      roleType: CentCommAligned
+      antagPrototype: CentralCommandOperator
+      subtype: role-subtype-CentComm
+      exclusiveAntag: true
+    

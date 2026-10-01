@@ -15,3 +15,156 @@
   loadouts:
     - DetectiveInspector
     - DetectiveStechkin
+
+## CentComm
+- type: loadoutGroup
+  id: CentCommHead
+  name: loadout-group-head-cc
+  minLimit: 0
+  defaultSelected: 1
+  loadouts:
+    - CentCommCap
+    - CentCommHat
+    - CentCommBeret
+    - CentCommSheriffHat
+
+- type: loadoutGroup
+  id: CentCommJumpsuit
+  name: loadout-group-jumpsuit-cc
+  minLimit: 1
+  defaultSelected: 1
+  loadouts:
+    - CentCommOfficialSuitAlt
+    - CentCommSuitskirt
+    - CentCommTurtleneck
+    - CentCommPencilSkirt
+    - CentCommFormalSuit
+    - CentCommFormalSkirt
+    - CentCommFormalCAD
+    - CentCommFormalCDD
+    - CentCommFormalCLD
+    - CentCommFormalCED
+    - CentCommFormalCID
+    - CentCommFormalCMD
+    - CentCommFormalCRD
+    - CentCommFormalCSD
+    - CentCommFormalCSOD
+    - CentCommAgentJumpsuit
+    - CentCommCSODSuit
+    - CentCommCSODSkirt
+    - CentCommOfficerSuit
+    - CentCommOfficialSuit
+
+- type: loadoutGroup
+  id: CentCommOuterClothing
+  name: loadout-group-outerclothing-cc
+  minLimit: 0
+  defaultSelected: 0
+  loadouts:
+    - CentCommCarapace
+    - CentCommWebVest
+    - CentCommWinterCoat
+    - CentCommArmoredWinterCoat
+    - CentCommHardsuit
+
+- type: loadoutGroup
+  id: CentCommBelt
+  name: loadout-group-belt-cc
+  minLimit: 1
+  defaultSelected: 1
+  loadouts:
+    - CentCommVibroblade
+    - CentCommVibrorapier
+    - CentCommVibrobladeProto
+    - CentCommHypoBelt
+
+- type: loadoutGroup
+  id: CentCommGlovesAny
+  name: loadout-group-gloves-cc
+  minLimit: 0
+  defaultSelected: 1
+  loadouts:
+    - InsulsCombatNoLock
+    - GlovesPapercutProof
+    - InsulsRegular
+    - InsulsTacticalMaid
+    - LatexGloves
+    - Nitrile
+    - BlackNitrile
+  
+- type: loadoutGroup
+  id: CentCommShoes
+  name: loadout-group-shoes-cc
+  minLimit: 1
+  defaultSelected: 1
+  loadouts:
+    - CentCommJackbootsERT
+    - CentCommMagbootsERT
+    - LaceupShoes
+    - LeatherShoes
+    - Heels
+    - HighHeelBootsFilled
+    - SalvageBoots
+    - WorkBoots
+
+- type: loadoutGroup
+  id: CentCommGlasses
+  name: loadout-group-glasses-cc
+  minLimit: 1
+  defaultSelected: 1
+  loadouts:
+    - CentCommGlasses
+    - CentCommHud
+    - CentCommJamjarGlasses
+    - CentCommPrescriptionGlasses
+
+- type: loadoutGroup
+  id: CentCommNeck
+  name: loadout-group-neck-cc
+  minLimit: 0
+  defaultSelected: 1
+  loadouts:
+    - CentCommScarf
+    - CentCommCloak
+    - CentCommPoncho
+    - CentCommCloakBoat
+    - CentCommShawl
+    - CentCommShawlCMD
+    - CentCommMantleCED
+    - CentCommMantleCRD
+    - CentCommMantleCMD
+    - CentCommMantleERT
+    - CentCommCloakCSOD
+
+- type: loadoutGroup
+  id: CentCommHeadset
+  name: loadout-group-headset-cc
+  minLimit: 1
+  defaultSelected: 1
+  loadouts:
+    - CentCommHeadset
+    - CentCommHeadsetAlt
+
+- type: loadoutGroup
+  id: CentCommWeapon
+  name: loadout-group-weapon-cc
+  minLimit: 0
+  defaultSelected: 0
+  loadouts:
+    - CentCommPulseCarbine
+    - CentCommAtreides
+    - CentCommWT550
+    - CentCommLWAP
+    - CentCommIK60
+    
+- type: loadoutGroup
+  id: CentCommPDW
+  name: loadout-group-pdw-cc
+  minLimit: 1
+  defaultSelected: 1
+  loadouts:
+    - CentCommPulsePistol
+    - CentCommHeavyPistol
+    - CentCommVibrocutter
+    - CentCommHypoPocket
+    - CentCommGrimoire

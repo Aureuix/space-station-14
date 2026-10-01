@@ -1,0 +1,19 @@
+﻿- type: roleLoadout
+  id: AntagCentCommOp
+  canCustomizeName: true
+  groups:
+    - CentCommHead
+    - CentCommJumpsuit
+    - CentCommOuterClothing
+    - CentCommBelt
+    - CentCommGlovesAny
+    - CentCommShoes
+    - CentCommGlasses
+    - CentCommNeck
+    - CentCommHeadset
+    - CentCommWeapon
+    - CentCommPDW
+    - Trinkets
+    - Scarves
+    - SurvivalMilitaryDouble
+    - GroupSpeciesBreathToolSecurity

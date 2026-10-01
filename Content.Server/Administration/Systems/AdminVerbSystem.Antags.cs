@@ -40,6 +40,8 @@ public sealed partial class AdminVerbSystem
     private static readonly EntProtoId DefaultVampireRule = "Vampire"; //Starlight
     private static readonly EntProtoId DefaultBrighteyeRule = "Brighteye"; //Starlight
 	private static readonly EntProtoId DefaultSELFRule = "SiliconLiberation"; //Starlight
+    private static readonly EntProtoId DefaultCentcommRule = "CentCommSpawn"; //SpL
+    private static readonly ProtoId<StartingGearPrototype> CentCommGearID = "CentCommOpGear"; // SpL
 
     // All antag verbs have names so invokeverb works.
     private void AddAntagVerbs(GetVerbsEvent<Verb> args)
@@ -72,7 +74,7 @@ public sealed partial class AdminVerbSystem
         };
         args.Verbs.Add(traitor);
 
-        var initialInfectedName = Loc.GetString("admin-verb-text-make-initial-infected");
+        /* var initialInfectedName = Loc.GetString("admin-verb-text-make-initial-infected");
         Verb initialInfected = new()
         {
             Text = initialInfectedName,
@@ -85,9 +87,9 @@ public sealed partial class AdminVerbSystem
             Impact = LogImpact.High,
             Message = string.Join(": ", initialInfectedName, Loc.GetString("admin-verb-make-initial-infected")),
         };
-        args.Verbs.Add(initialInfected);
+        args.Verbs.Add(initialInfected); */ //SpL- death to initial infected
 
-        var zombieName = Loc.GetString("admin-verb-text-make-zombie");
+        /* var zombieName = Loc.GetString("admin-verb-text-make-zombie");
         Verb zombie = new()
         {
             Text = zombieName,
@@ -100,7 +102,7 @@ public sealed partial class AdminVerbSystem
             Impact = LogImpact.High,
             Message = string.Join(": ", zombieName, Loc.GetString("admin-verb-make-zombie")),
         };
-        args.Verbs.Add(zombie);
+        args.Verbs.Add(zombie); */ // SpL- removed zombie from the smite menu TODO- move this to smite menu
 
         var nukeOpName = Loc.GetString("admin-verb-text-make-nuclear-operative");
         Verb nukeOp = new()
@@ -117,7 +119,7 @@ public sealed partial class AdminVerbSystem
         };
         args.Verbs.Add(nukeOp);
 
-        var pirateName = Loc.GetString("admin-verb-text-make-pirate") + " (Wizden)"; // Starlight
+        /* var pirateName = Loc.GetString("admin-verb-text-make-pirate") + " (Wizden)"; // Starlight
         Verb pirate = new()
         {
             Text = pirateName,
@@ -131,7 +133,7 @@ public sealed partial class AdminVerbSystem
             Impact = LogImpact.High,
             Message = string.Join(": ", pirateName, Loc.GetString("admin-verb-make-pirate")),
         };
-        args.Verbs.Add(pirate);
+        args.Verbs.Add(pirate); */ // SpL- removess wizden pirates
 
         var headRevName = Loc.GetString("admin-verb-text-make-head-rev");
         Verb headRev = new()
@@ -163,7 +165,7 @@ public sealed partial class AdminVerbSystem
         };
         args.Verbs.Add(thief);
 
-        var changelingName = Loc.GetString("admin-verb-text-make-changeling-wip"); //SL edit, -wip as we allready have lings
+        /*var changelingName = Loc.GetString("admin-verb-text-make-changeling-wip"); //SL edit, -wip as we allready have lings
         Verb changeling = new()
         {
             Text = changelingName,
@@ -176,7 +178,7 @@ public sealed partial class AdminVerbSystem
             Impact = LogImpact.High,
             Message = string.Join(": ", changelingName, Loc.GetString("admin-verb-make-changeling-wip")), //SL edit: -wip as we have lings allready
         };
-        args.Verbs.Add(changeling);
+        args.Verbs.Add(changeling); */ // SpL- removed upstream lings to avoid accidents
 
         var paradoxCloneName = Loc.GetString("admin-verb-text-make-paradox-clone");
         Verb paradox = new()
@@ -233,9 +235,10 @@ public sealed partial class AdminVerbSystem
         if (HasComp<HumanoidAppearanceComponent>(args.Target)) // only humanoids can be cloned
             args.Verbs.Add(paradox);
 
+        var changelingName = Loc.GetString("admin-verb-text-make-changeling"); // SPL
         Verb ling = new()
         {
-            Text = Loc.GetString("admin-verb-text-make-changeling"),
+            Text = changelingName, // SpL
             Category = VerbCategory.Antag,
             Icon = new SpriteSpecifier.Rsi(new ResPath("/Textures/Changeling/changeling_abilities.rsi"), "transform"),
             Act = () =>
@@ -247,9 +250,10 @@ public sealed partial class AdminVerbSystem
         };
         args.Verbs.Add(ling);
 /// Starlight START
+        var vampireName = Loc.GetString("admin-verb-text-make-vampire"); // SpL
         Verb vampire = new()
         {
-            Text = Loc.GetString("admin-verb-text-make-vampire"),
+            Text = vampireName, // SpL
             Category = VerbCategory.Antag,
             Icon = new SpriteSpecifier.Rsi(new ResPath("/Textures/_Starlight/Vampire/actions_vampire.rsi"), "select_class"), // Starlight
             Act = () =>
@@ -323,5 +327,22 @@ public sealed partial class AdminVerbSystem
         };
         args.Verbs.Add(pirateSL);
 /// Starlight END
+        # region SpL
+        var centcommname = Loc.GetString("admin-verb-text-make-centcomm");
+            Verb centcomm = new()
+            {
+                Text = centcommname,
+                Category = VerbCategory.Antag,
+                Icon = new SpriteSpecifier.Rsi(new("/Textures/_Starlight/Interface/Misc/job_icons.rsi"), "CentComm"),
+                Act = () =>
+                {
+                    _outfit.SetOutfit(args.Target, CentCommGearID);
+                    _antag.ForceMakeAntag<CentCommRuleComponent>(targetPlayer, DefaultCentcommRule);
+                },
+                Impact = LogImpact.High,
+                Message = string.Join(": ", centcommname, Loc.GetString("admin-verb-make-centcomm")),
+            };
+            args.Verbs.Add(centcomm);
+        # endregion
     }
 }

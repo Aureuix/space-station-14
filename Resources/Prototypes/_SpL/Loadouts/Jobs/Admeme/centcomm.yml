@@ -1,0 +1,399 @@
+﻿## Hats
+- type: loadout
+  id: CentCommHat
+  equipment:
+    head: ClothingHeadHatCentcom
+
+- type: loadout
+  id: CentCommCap
+  equipment:
+    head: ClothingHeadHatCentcomcap
+
+- type: loadout
+  id: CentCommBeret
+  equipment:
+    head: ClothingHeadHatCCberet
+
+- type: loadout
+  id: CentCommSheriffHat
+  equipment:
+    head: ClothingHeadHatCCSheriffhat
+
+## Headsets
+- type: loadout
+  id: CentCommHeadset
+  dummyEntity: ClothingHeadsetCentCom
+  equipment:
+    ears: ClothingHeadsetCentCom
+  storage: # Lmfao
+    back:
+      - PowerCellMicroreactor
+      - PowerCellMicroreactor
+      - BoxStampsCCAdministrative
+      - BodyBagCCFolded
+      - DoorRemoteAll
+      - ClothingMaskGasCentcom
+      - ToolDebug
+      - MedkitAdvancedFilled
+
+- type: loadout
+  id: CentCommHeadsetAlt
+  dummyEntity: ClothingHeadsetAltCentCom
+  equipment:
+    ears: ClothingHeadsetAltCentCom
+  storage: # I love workarounds to annoying hardcoded shit
+    back:
+      - PowerCellMicroreactor
+      - PowerCellMicroreactor
+      - BoxStampsCCAdministrative
+      - BodyBagCCFolded
+      - DoorRemoteAll
+      - ClothingMaskGasCentcom
+      - ToolDebug
+      - MedkitAdvancedFilled
+
+## Jumpsuits
+- type: loadout
+  id: CentCommFormalSuit
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitCentcomFormal
+  groupBy: "ccdefault"
+    
+- type: loadout
+  id: CentCommFormalSkirt
+  equipment:
+    jumpsuit: ClothingUniformJumpskirtCentcomFormalDress
+  groupBy: "ccdefault"
+
+- type: loadout
+  id: CentCommOfficialSuitAlt
+  equipment:
+    jumpsuit: ClothingAltUniformJumpsuitCentcomOfficial
+  groupBy: "ccstandard"
+
+- type: loadout
+  id: CentCommSuitskirt
+  equipment:
+    jumpsuit: ClothingUniformJumpskirtCentcomOfficial
+  groupBy: "ccstandard"
+
+- type: loadout
+  id: CentCommTurtleneck
+  equipment:
+    jumpsuit: ClothingUniformJumpskirtCentcomOfficer
+  groupBy: "ccstandard"
+
+- type: loadout
+  id: CentCommPencilSkirt
+  equipment:
+    jumpsuit: ClothingUniformJumpskirtPencilCentcomOfficial
+  groupBy: "ccstandard"
+
+- type: loadout
+  id: CentCommCSODSuit
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitCentcomOfficerBlack
+  groupBy: "ccspecops"
+    
+- type: loadout
+  id: CentCommCSODSkirt
+  equipment:
+    jumpsuit: ClothingUniformJumpskirtPencilSpecialOperationsOfficer
+  groupBy: "ccspecops"
+
+- type: loadout
+  id: CentCommFormalCAD
+  equipment:
+    jumpsuit: ClothingUniformJumpskirtCentcommAdminFormalWear
+  groupBy: "ccformal"
+
+- type: loadout
+  id: CentCommFormalCDD
+  equipment:
+    jumpsuit: ClothingUniformJumpskirtCentcommDomesticFormalWear
+  groupBy: "ccformal"
+
+- type: loadout
+  id: CentCommFormalCLD
+  equipment:
+    jumpsuit: ClothingUniformJumpskirtCentcommCargoFormalWear
+  groupBy: "ccformal"
+
+- type: loadout
+  id: CentCommFormalCED
+  equipment:
+    jumpsuit: ClothingUniformJumpskirtEngiCentcommFormalWear
+  groupBy: "ccformal"
+
+- type: loadout
+  id: CentCommFormalCID
+  equipment:
+    jumpsuit: ClothingUniformJumpskirtCentcommIntelFormalWear
+  groupBy: "ccformal"
+
+- type: loadout
+  id: CentCommFormalCMD
+  equipment:
+    jumpsuit: ClothingUniformJumpskirtCentcommMedFormalWear
+  groupBy: "ccformal"
+
+- type: loadout
+  id: CentCommFormalCRD
+  equipment:
+    jumpsuit: ClothingUniformJumpskirtCentcommResearchFormalWear
+  groupBy: "ccformal"
+
+- type: loadout
+  id: CentCommFormalCSD
+  equipment:
+    jumpsuit: ClothingUniformJumpskirtCentcommSecurityFormalWear
+  groupBy: "ccformal"
+
+- type: loadout
+  id: CentCommFormalCSOD
+  equipment:
+    jumpsuit: ClothingUniformJumpskirtCentcommSpecialOpsFormalWear
+  groupBy: "ccformal"
+
+- type: loadout
+  id: CentCommAgentJumpsuit
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitCentcomAgent
+
+- type: loadout
+  id: CentCommOfficerSuit
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitCentcomOfficer
+  groupBy: "ccshitty"
+
+- type: loadout
+  id: CentCommOfficialSuit
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitCentcomOfficial
+  groupBy: "ccshitty"
+
+## Glasses
+- type: loadout
+  id: CentCommGlasses
+  equipment:
+    eyes: ClothingEyesGlassesCentComm
+
+- type: loadout
+  id: CentCommHud
+  equipment:
+    eyes: ClothingEyesHudCentComm
+
+- type: loadout
+  id: CentCommJamjarGlasses
+  equipment:
+    eyes: ClothingEyesGlassesJamjarCentComm
+      
+- type: loadout
+  id: CentCommPrescriptionGlasses
+  equipment:
+    eyes: ClothingEyesGlassesCentCommPrescription
+    
+## Shoes
+- type: loadout
+  id: CentCommJackbootsERT
+  equipment:
+    shoes: ClothingShoesBootsJack
+
+- type: loadout
+  id: CentCommMagbootsERT
+  equipment:
+    shoes: ClothingShoesBootsMagERTFilled
+
+## OuterClothing
+- type: loadout
+  id: CentCommCarapace
+  equipment:
+    outerClothing: ClothingOuterArmorCentcommCarapace
+
+- type: loadout 
+  id: CentCommWebVest
+  equipment:
+    outerClothing: ClothingOuterVestWebEliteCentcomm
+
+- type: loadout
+  id: CentCommWinterCoat
+  equipment:
+    outerClothing: ClothingOuterWinterCentcom
+
+- type: loadout
+  id: CentCommArmoredWinterCoat
+  equipment:
+    outerClothing: ClothingOuterCoatWardenCentcomm
+      
+- type: loadout
+  id: CentCommHardsuit # TODO- make a new civilian use cc hardsuit. maybe a modsuit?
+  equipment:
+    outerClothing: ClothingOuterHardsuitERTLeader
+
+## Gloves
+- type: loadout
+  id: GlovesPapercutProof
+  equipment:
+    neck: ClothingHandsGlovesHop
+
+## Neck
+- type: loadout
+  id: CentCommCloak
+  equipment:
+    neck: ClothingNeckCloakCentcom
+      
+- type: loadout
+  id: CentCommScarf
+  equipment:
+    neck: ClothingNeckScarfStripedCentcom
+
+- type: loadout
+  id: CentCommMantleERT
+  equipment:
+    neck: ClothingNeckMantleERTLeader
+      
+- type: loadout
+  id: CentCommPoncho
+  equipment:
+    neck: ClothingNeckCloakCCponcho
+      
+- type: loadout
+  id: CentCommCloakBoat
+  equipment:
+    neck: ClothingNeckCloakBoatCC
+      
+- type: loadout
+  id: CentCommShawl
+  equipment:
+    neck: ClothingNeckCloakCCShawl
+  groupBy: "ccneckshawl"
+      
+- type: loadout
+  id: CentCommShawlCMD
+  equipment:
+    neck: ClothingNeckCloakCMDShawl
+  groupBy: "ccneckshawl"
+      
+- type: loadout
+  id: CentCommMantleCED
+  equipment:
+    neck: ClothingNeckCloakCEDMantle
+  groupBy: "ccneckdepartmental"
+      
+- type: loadout
+  id: CentCommMantleCRD
+  equipment:
+    neck: ClothingNeckCloakCRDMantle
+  groupBy: "ccneckdepartmental"
+      
+- type: loadout
+  id: CentCommMantleCMD
+  equipment:
+    neck: ClothingNeckCloakCMDMantle
+  groupBy: "ccneckdepartmental"
+    
+- type: loadout
+  id: CentCommCloakCSOD
+  equipment:
+    neck: ClothingNeckCloakCentcomBlack # TODO- make a proper CSOD cloak
+
+## Belt
+- type: loadout
+  id: CentCommVibroblade
+  equipment:
+    belt: CentcommVibrobladeSheathFilled
+      
+- type: loadout
+  id: CentCommVibrorapier
+  equipment:
+    belt: CentcommVibroRapierSheathFilled
+
+- type: loadout
+  id: CentCommVibrobladeProto
+  equipment:
+    belt: PrototypeVibrobladeSheathFilled
+      
+- type: loadout
+  id: CentCommHypoBelt
+  dummyEntity: CentCommHypo
+  equipment:
+    belt: CentCommHypo
+  storage:
+    back: 
+      - BottleCaseCBURNFilled
+    
+## PDW
+- type: loadout
+  id: CentCommPulsePistol
+  equipment:
+    pocket1: WeaponPulsePistol
+    
+- type: loadout
+  id: CentCommHeavyPistol
+  dummyEntity: WeaponPistolN1984
+  equipment:
+    pocket1: WeaponPistolN1984
+  storage:
+    back: 
+      - MagazineMagnumAP
+    
+- type: loadout
+  id: CentCommVibrocutter
+  equipment:
+    pocket1: CentcommVibrocutter
+    
+- type: loadout
+  id: CentCommHypoPocket
+  dummyEntity: CentCommHypo
+  equipment:
+    pocket1: CentCommHypo
+  storage:
+    back:
+      - ChemistryBottlePax
+      - ChemistryBottlePolytrinicAcid
+    
+- type: loadout
+  id: CentCommGrimoire
+  equipment:
+    pocket1: WizardsGrimoireNTSF
+    
+## Weapon
+- type: loadout
+  id: CentCommPulseCarbine
+  inhand:
+    - WeaponPulseCarbine
+      
+- type: loadout
+  id: CentCommAtreides
+  dummyEntity: WeaponSubMachineGunAtreides
+  inhand:
+    - WeaponSubMachineGunAtreides
+  storage:
+    back:
+      - MagazinePistolSubMachineGunAP
+      - MagazinePistolSubMachineGunHP
+      
+- type: loadout
+  id: CentCommWT550
+  dummyEntity: WeaponSubMachineGunWt550
+  inhand:
+    - WeaponSubMachineGunWt550
+  storage:
+    back:
+      - MagazinePistolSubMachineGunTopMountedFMJ
+      - MagazinePistolSubMachineGunTopMountedHP
+
+- type: loadout
+  id: CentCommLWAP
+  inhand:
+    - WeaponEnergySniper
+    
+- type: loadout
+  id: CentCommIK60
+  dummyEntity: WeaponIK60
+  inhand:
+    - WeaponIK60
+  storage:
+    back:
+      - MagazineBatteryLr30Extended
+      - MagazineBatteryLr30Extended

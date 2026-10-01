@@ -1,5 +1,5 @@
 moff-antag-label-moffstation = [font="DefaultBold" size=16][color={$color}]{$departmentName}[/color][/font]
-moff-antag-search-placeholder = Search Antags...
+moff-antag-search-placeholder = Search roles...
 
-moff-antag-footer-hint = Read faction info for more details
-moff-antag-footer-info = Death to NanoTrasen!
+moff-antag-footer-hint = Antagonists, free agents, overseers, and more
+moff-antag-footer-info = Read faction info for more details

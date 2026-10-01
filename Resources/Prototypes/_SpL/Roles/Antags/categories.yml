@@ -1,0 +1,8 @@
+﻿- type: antagCategory
+  id: CentCommNanoTrasen
+  name: antag-category-ccnt-name
+  description: antag-category-ccnt-desc
+  priority: 8
+  accentColor: "#1d8bad"
+  antags:
+  - CentralCommandOperator

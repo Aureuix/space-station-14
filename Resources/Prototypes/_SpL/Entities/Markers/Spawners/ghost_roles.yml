@@ -1,0 +1,20 @@
+﻿- type: entity
+  parent: MarkerBase
+  categories: [ HideSpawnMenu ]
+  id: SpawnPointGhostCentcomm
+  suffix: admin
+  components:
+    - type: GhostRole
+      name: job-name-centcommop
+      description: job-description-centcommop
+      mindRoles:
+        - MindRoleGhostCentCommOp
+      raffle:
+        settings: short
+    - type: Sprite
+      sprite: Markers/jobs.rsi
+      layers:
+        - state: green
+        - sprite: _Starlight/Structures/Wallmounts/flags/ccflag.rsi
+          state: centcomm
+          

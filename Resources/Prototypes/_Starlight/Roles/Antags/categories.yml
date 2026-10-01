@@ -12,8 +12,8 @@
   - NukeopsCommander
   - NukeopsMedic
   - SELFAgent
-  - Changeling
-  - InitialInfected
+  # - Changeling
+  # - InitialInfected
 
 - type: antagCategory
   id: Outlaws
@@ -22,9 +22,12 @@
   priority: 2
   accentColor: "#753c2f"
   antags:
-  - Brighteye
+  - Changeling # SpL
+  # - Brighteye # SpL
   - SpaceNinja
   - Thief
+  - Wizard # SpL
+  - Brighteye # SpL
 
 - type: antagCategory
   id: USSP
@@ -35,15 +38,15 @@
   antags:
   - HeadRev
 
-- type: antagCategory
-  id: Wizard
-  name: antag-category-wizard-name
-  description: antag-category-wizard-desc
-  priority: 3
-  accentColor: "#6b3999"
-  antags:
-  - Wizard
-  - WizardDuelist
+#- type: antagCategory # SpL
+#  id: Wizard
+#  name: antag-category-wizard-name
+#  description: antag-category-wizard-desc
+#  priority: 3
+#  accentColor: "#6b3999"
+#  antags:
+  #- Wizard
+  # - WizardDuelist
 
 - type: antagCategory
   id: Xenoborgs
@@ -63,8 +66,9 @@
   accentColor: "#69bbbb"
   antags:
   - CosmicAntagCultist
-  - Devil
+  # - Devil # SpL
   - Vampire
+  - InitialInfected # SpL
 
 - type: antagCategory
   id: Other
