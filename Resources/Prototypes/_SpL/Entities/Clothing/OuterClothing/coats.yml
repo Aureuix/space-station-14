@@ -18,6 +18,9 @@
           Piercing: 0.6
           Heat: 0.7
           Cold: 0.7 
+    - type: TemperatureProtection
+      heatingCoefficient: 1.1
+      coolingCoefficient: 0.35
     - type: ExplosionResistance
       damageCoefficient: 0.80
     - type: Item

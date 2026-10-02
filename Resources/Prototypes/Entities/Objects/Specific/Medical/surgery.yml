@@ -581,8 +581,12 @@
   - type: BoneSaw
     startSound:
       path: /Audio/_Starlight/Medical/Surgery/bone_saw.ogg
+  - type: MeleeWeapon # SpL Start
+    damage:
+      groups:
+        Brute: 6 # SpL End
 
-# No melee for regular saw because have you ever seen someone use a band saw as a weapon? It's dumb.
+# No melee for regular saw because have you ever seen someone use a band saw as a weapon? It's dumb. # SpL- and why not? it will suck, but someone's gonna try
 
 - type: entity
   name: choppa

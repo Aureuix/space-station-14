@@ -1,5 +1,5 @@
 - type: entity
-  name: VIR-210 Proto-Kinetic Accelerator # SpL
+  name: VI-110 Proto-Kinetic Accelerator # SpL
   id: WeaponProtoKineticAccelerator
   parent: [WeaponProtoKineticAcceleratorBase, BaseSalvageMiningContraband] # SpL
   description: Fires low-damage kinetic bolts at a short range. The breakthrough accelerator design behind every new model of Vulkan Industries' most popular mining equipment line. # SpL

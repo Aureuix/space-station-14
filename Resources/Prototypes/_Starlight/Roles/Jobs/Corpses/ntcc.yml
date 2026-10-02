@@ -26,7 +26,7 @@
   equipment:
     jumpsuit: ClothingUniformJumpsuitBlueShield
     shoes: ClothingShoesBootsJackFilled
-    outerClothing: ClothingOuterArmorBlueShield
+    # outerClothing: ClothingOuterArmorBlueShield # SpL- limiting the crew's ability to get NT stuff is within our interests
     pocket1: Handcuffs
     pocket2: TrackingImplanter
 
@@ -35,7 +35,7 @@
   equipment:
     jumpsuit: ClothingUniformJumpsuitCentcomOfficial
     shoes: ClothingShoesBootsJackFilled
-    outerClothing: ClothingOuterVestWebEliteCentcomm
+    # outerClothing: ClothingOuterVestWebEliteCentcomm # SpL- removed this because it's BUSTED
     head: ClothingHeadHatCentcomcap
 
 - type: startingGear
@@ -43,7 +43,7 @@
   equipment:
     jumpsuit: ClothingUniformNTNCFatigues
     shoes: ClothingShoesBootsJackFilled
-    outerClothing: ClothingOuterVestNTNC
+    # outerClothing: ClothingOuterVestNTNC # SpL- limiting the crew's ability to get NT stuff is within our interests
 
 - type: startingGear
   id: CaptainCorpseGear
