@@ -1,8 +1,8 @@
 # USSP
 - type: entity
-  id: MechPodeba
+  id: MechPobeda
   parent: [ BaseMech, CombatMech, BaseSovietContraband ]
-  name: Podeba
+  name: Pobeda
   description: A Soviet combat mech. It is slower and older than other mechs, but makes up for it with sheer durability and strength.
   components:
     - type: Sprite
@@ -51,8 +51,8 @@
       pryPowered: true
 
 - type: entity
-  id: MechPodebaBattery
-  parent: MechPodeba
+  id: MechPobedaBattery
+  parent: MechPobeda
   suffix: Battery, Air
   components:
     - type: ContainerFill
@@ -63,8 +63,8 @@
           - MechAirTankFilled
 
 - type: entity
-  id: MechPodebaFilled
-  parent: MechPodebaBattery
+  id: MechPobedaFilled
+  parent: MechPobedaBattery
   suffix: Battery, Filled
   components:
     - type: Mech

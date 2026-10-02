@@ -13,8 +13,8 @@
 
 - type: entity
   id: HandImplantInsulated
-  name: Insulation Implant
-  description: Protects your hands from electric currents!
+  name: insulation implant
+  description: A surgically-installed hand implant that insulates against electricity.
   parent: BaseEntityHandImplant
   components:
   - type: Sprite
@@ -25,8 +25,8 @@
 
 - type: entity
   id: HandImplantForensics
-  name: Forensics Implant
-  description: Removes your fingerprints! Great for forensics, at the cost of your mail.
+  name: forensics implant
+  description: A surgically-installed hand implant that removes your fingerprints, meaning you'll leave no trace at the scene of the crime... as long as you don't mind not being able to open your mail.
   parent: BaseEntityHandImplant
   components:
   - type: Sprite
@@ -37,8 +37,8 @@
 
 - type: entity
   id: HandImplantClaws
-  name: Claws Implant
-  description: Gives you retractable claws!
+  name: claws implant
+  description: A surgically-installed hand implant that provides sharp retractable claws.
   parent: BaseEntityHandImplant
   components:
   - type: Sprite
@@ -50,8 +50,8 @@
 
 - type: entity
   id: HandImplantThrusters
-  name: Thruster Implant
-  description: Wrist-mounted micro-thrusters to help you maneuver in space.
+  name: thruster implant
+  description: A surgically-installed hand implant that allows the user to maneuver in space as if they had a jetpack, thanks to wrist-mounted micro-thrusters.
   parent: BaseEntityHandImplant
   components:
   - type: Sprite

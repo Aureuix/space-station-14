@@ -30,3 +30,6 @@ signal-port-description-gun-5 = Shuttle weapon slot 5.
 
 signal-port-name-gun-6 = Gun Slot 6
 signal-port-description-gun-6 = Shuttle weapon slot 6.
+
+signal-port-name-turret-controller-sync-sender = Sync
+signal-port-description-turret-controller-sync-sender = Shares this turret control panel's armament and authorization settings with another panel.

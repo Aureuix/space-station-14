@@ -659,7 +659,7 @@
       componentRequirements:
         PowerCell:
           amount: 4
-          defaultPrototype: PowerCellSmall
+          defaultPrototype: PowerCellSmallPrinted # SpL
 
 - type: entity
   id: SMESAdvancedMachineCircuitboard
@@ -678,7 +678,7 @@
     componentRequirements:
       PowerCell:
         amount: 4
-        defaultPrototype: PowerCellMedium
+        defaultPrototype: PowerCellMediumPrinted # SpL
 
 - type: entity
   id: CellRechargerCircuitboard
@@ -799,7 +799,7 @@
       componentRequirements:
         PowerCell:
           amount: 1
-          defaultPrototype: PowerCellSmall
+          defaultPrototype: PowerCellSmallPrinted # SpL
     - type: PhysicalComposition
       materialComposition:
         Glass: 200

@@ -178,6 +178,12 @@
   - type: Construction
     graph: WeaponEnergyTurretControlPanel
     node: finish
+  - type: DeviceLinkSource
+    ports:
+      - TurretControllerSyncSender
+  - type: DeviceLinkSink
+    ports:
+      - TurretControllerSyncReceiver
 
 - type: entity
   parent: WeaponEnergyTurretStationControlPanelBase

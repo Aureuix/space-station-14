@@ -13,8 +13,8 @@
 
 - type: entity
   id: EyeImplantWelding
-  name: Welding Implant
-  description: Protects eyes from welding flashes.
+  name: welding implant
+  description: A surgically-installed eye implant that protects your eyes from bright flashes.
   parent: BaseEntityEyeImplant
   components:
   - type: Sprite
@@ -26,8 +26,8 @@
 
 - type: entity
   id: EyeImplantDiagnostic
-  name: Diagnostic Implant
-  description: Enables you to see information about mechanisms without diagnostic glasses.
+  name: diagnostic implant
+  description: A surgically-installed eye implant that allows you to see the health of machinery such as cyborgs and IPCs.
   parent: BaseEntityEyeImplant
   components:
   - type: Sprite
@@ -43,8 +43,8 @@
 
 - type: entity
   id: EyeImplantMedical
-  name: Medical Implant
-  description: Enables you to see information about humanoids without medical glasses.
+  name: medical implant
+  description: A surgically-installed eye implant that allows you to see the health of organic beings.
   parent: BaseEntityEyeImplant
   components:
   - type: Sprite
@@ -56,8 +56,8 @@
 
 - type: entity
   id: EyeImplantChemistry
-  name: Chemistry Implant
-  description: Enables you to see information about solutions without chemical analysis goggles.
+  name: chemistry implant
+  description: A surgically-installed eye implant that allows you to see the chemical contents of a container in detail.
   parent: BaseEntityEyeImplant
   components:
   - type: Sprite
@@ -68,8 +68,8 @@
 
 - type: entity
   id: EyeImplantSecurity
-  name: Security Implant
-  description: Enables you to see information about station crew without security glasses.
+  name: security implant
+  description: A surgically-installed eye implant that allows you to see the security information of station crew, including their job, their mindshield status, and their wanted status.
   parent: BaseEntityEyeImplant
   components:
   - type: Sprite
@@ -82,8 +82,8 @@
 
 - type: entity
   id: EyeImplantSyndie
-  name: Syndie Implant
-  description: Enables you to see information about station crew, humanoids and syndie without any glasses.
+  name: syndie implant
+  description: A shady surgically-installed eye implant that allows you to see the security information and health of organic crew, as well as highlight syndicate allies.
   parent: [ BaseEntityEyeImplant, BaseSyndicateContraband ]
   components:
   - type: Sprite
