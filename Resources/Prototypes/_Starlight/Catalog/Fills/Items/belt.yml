@@ -168,15 +168,15 @@
   suffix: Filled
   components:
   - type: EntityTableContainerFill
-  containers:
-    storagebase: !type:AllSelector
-      children:
-      - id: Handcuffs
-      - id: Handcuffs
-      - id: Stunbaton
-      - id: GrenadeFlashBang
-      - id: TearGasGrenade
-      - id: MedkitCombatFilled # SpL end
+    containers:
+      storagebase: !type:AllSelector
+        children:
+        - id: Handcuffs
+        - id: Handcuffs
+        - id: Stunbaton
+        - id: GrenadeFlashBang
+        - id: TearGasGrenade
+        - id: MedkitCombatFilled # SpL end
 
 # GMN webbings
 - type: entity

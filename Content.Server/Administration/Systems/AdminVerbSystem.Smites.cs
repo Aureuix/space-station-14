@@ -335,7 +335,7 @@ public sealed partial class AdminVerbSystem
                     _zombie.ZombifyEntity(args.Target);
                 },
                 Impact = LogImpact.Extreme,
-                Message = string.Join(": ", bloodRemovalName, Loc.GetString("admin-smite-zombify-description"))
+                Message = string.Join(": ", zombifyName, Loc.GetString("admin-smite-zombify-description"))
             };
             args.Verbs.Add(zombify);
             # endregion
