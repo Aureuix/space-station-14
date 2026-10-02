@@ -1,9 +1,0 @@
-- type: !PartialOnly entity
-  id: WeaponEnergyTurretStationControlPanelBase
-  components:
-  - type: DeviceLinkSource
-    ports:
-    - TurretControllerSyncSender
-  - type: DeviceLinkSink
-    ports:
-    - TurretControllerSyncReceiver

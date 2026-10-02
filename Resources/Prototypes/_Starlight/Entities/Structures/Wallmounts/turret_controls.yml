@@ -18,6 +18,12 @@
     unlockOnClick: false
     showLockVerbs: false
     breakOnAccessBreaker: false
+  - type: DeviceLinkSource
+    ports:
+      - TurretControllerSyncSender
+  - type: DeviceLinkSink
+    ports:
+      - TurretControllerSyncReceiver
 
 - type: entity
   parent: WeaponEnergyTurretStationControlPanelBase
