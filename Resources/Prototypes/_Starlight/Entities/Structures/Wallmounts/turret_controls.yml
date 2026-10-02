@@ -6,6 +6,15 @@
   suffix: Status
   categories: [ ShouldMapStation ]
   components:
+  - type: Sprite # SpL Start
+    noRot: false
+    drawdepth: SmallObjects
+    sprite: Structures/Wallmounts/turret_controls.rsi
+    layers:
+      - state: base
+      - state: read
+        map: [ "enum.PowerDeviceVisualLayers.Powered" ]
+        shader: unshaded # SpL End
   - type: DeployableTurretController
     readOnly: true
   - type: TurretTargetSettings
@@ -18,12 +27,6 @@
     unlockOnClick: false
     showLockVerbs: false
     breakOnAccessBreaker: false
-  - type: DeviceLinkSource
-    ports:
-      - TurretControllerSyncSender
-  - type: DeviceLinkSink
-    ports:
-      - TurretControllerSyncReceiver
 
 - type: entity
   parent: WeaponEnergyTurretStationControlPanelBase
