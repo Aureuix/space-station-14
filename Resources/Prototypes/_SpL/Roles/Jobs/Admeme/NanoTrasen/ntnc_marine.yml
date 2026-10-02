@@ -14,11 +14,8 @@
 - type: startingGear
   id: NTNCGearBasic
   equipment:
-    ears: ClothingHeadsetAltNTNC
     id: NTNCBlueShieldPDA
     pocket2: ToolDebug
     back: ClothingBackpackNTNC
     misc: PinpointerUniversal
     mask: ClothingMaskGasSecurity
-    gloves: ClothingHandsGlovesCombat
-    shoes: ClothingShoesBootsJackFilled
