@@ -257,15 +257,6 @@
   loadouts: 
     - NTNCGlasses
     - NTNCHud
-  
-- type: loadoutGroup
-  id: NTNCBoots
-  name: loadout-group-boots-ntnc
-  minLimit: 1
-  defaultSelected: 1
-  maxLimit: 1
-  loadouts:
-    - NTNCBoots
 
 - type: loadoutGroup
   id: NTNCHeadset

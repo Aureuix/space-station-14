@@ -6,7 +6,7 @@
   antagonist: false
   setPreference: true
   roleLoadout: [ AntagCentCommOp ]
-  previewStartingGear: true
+  previewStartingGear: CentCommOpGear
   objective: roles-antag-centcommop-objective
   playTimeTracker: JobCentralCommandOfficial
   requirements:
