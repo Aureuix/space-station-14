@@ -40,8 +40,18 @@ public sealed partial class AdminVerbSystem
     private static readonly EntProtoId DefaultVampireRule = "Vampire"; //Starlight
     private static readonly EntProtoId DefaultBrighteyeRule = "Brighteye"; //Starlight
 	private static readonly EntProtoId DefaultSELFRule = "SiliconLiberation"; //Starlight
-    private static readonly EntProtoId DefaultCentcommRule = "CentCommSpawn"; //SpL
-    private static readonly ProtoId<StartingGearPrototype> CentCommGearID = "CentCommOpGear"; // SpL
+    #region SpL
+    // SpL- general beaming is done via this system also. it's clunky but what works works
+    // make sure you add the component and gear even if the added beam option isn't an antag
+    private static readonly EntProtoId DefaultCentcommRule = "CentCommSpawn";
+    private static readonly ProtoId<StartingGearPrototype> CentCommGearID = "CentCommOpGear";
+    private static readonly EntProtoId DefaultCBURNRule = "CBURNSpawn";
+    private static readonly ProtoId<StartingGearPrototype> CBURNGearID = "CBURNGearCleanup";
+    private static readonly EntProtoId DefaultCBURNAltRule = "CBURNAltSpawn";
+    private static readonly ProtoId<StartingGearPrototype> CBURNGearAltID = "CBURNGearLiquidator";
+    private static readonly EntProtoId DefaultNTNCRule = "NTNCSpawn";
+    private static readonly ProtoId<StartingGearPrototype> NTNCGearID = "NTNCGearBasic";
+    #endregion
 
     // All antag verbs have names so invokeverb works.
     private void AddAntagVerbs(GetVerbsEvent<Verb> args)
@@ -328,21 +338,73 @@ public sealed partial class AdminVerbSystem
         args.Verbs.Add(pirateSL);
 /// Starlight END
         # region SpL
+        // this area handles all of our beaming behaviour, of which original content is largely not related to antags
+        // beaming is a clunky but incredibly versatile tool for admins to quick-set players and themselves for admemes
+        // if you wish to add a non-scheduler antag that relies on a specific or somewhat flexible loadout, copy one of the blocks below and fill as needed
+        // you will need a ghost spawner, mind role, antag role, and role loadout data specified via YAML to make this work
         var centcommname = Loc.GetString("admin-verb-text-make-centcomm");
-            Verb centcomm = new()
+        Verb centcomm = new()
+        {
+            Text = centcommname,
+            Category = VerbCategory.Antag,
+            Icon = new SpriteSpecifier.Rsi(new("/Textures/_Starlight/Interface/Misc/job_icons.rsi"), "CentComm"),
+            Act = () =>
             {
-                Text = centcommname,
-                Category = VerbCategory.Antag,
-                Icon = new SpriteSpecifier.Rsi(new("/Textures/_Starlight/Interface/Misc/job_icons.rsi"), "CentComm"),
-                Act = () =>
-                {
-                    _outfit.SetOutfit(args.Target, CentCommGearID);
-                    _antag.ForceMakeAntag<CentCommRuleComponent>(targetPlayer, DefaultCentcommRule);
-                },
-                Impact = LogImpact.High,
-                Message = string.Join(": ", centcommname, Loc.GetString("admin-verb-make-centcomm")),
-            };
-            args.Verbs.Add(centcomm);
+                _outfit.SetOutfit(args.Target, CentCommGearID);
+                _antag.ForceMakeAntag<CentCommRuleComponent>(targetPlayer, DefaultCentcommRule);
+            },
+            Impact = LogImpact.High,
+            Message = string.Join(": ", centcommname, Loc.GetString("admin-verb-make-centcomm")),
+        };
+        args.Verbs.Add(centcomm);
+            
+        var cburnname = Loc.GetString("admin-verb-text-make-cburn");
+        Verb cburn = new()
+        {
+            Text = cburnname,
+            Category = VerbCategory.Antag,
+            Icon = new SpriteSpecifier.Rsi(new("/Textures/_Starlight/Interface/Misc/job_icons.rsi"), "CBURN"),
+            Act = () =>
+            {
+                _outfit.SetOutfit(args.Target, CBURNGearID);
+                _antag.ForceMakeAntag<CBURNRuleComponent>(targetPlayer, DefaultCBURNRule);
+            },
+            Impact = LogImpact.High,
+            Message = string.Join(": ", cburnname, Loc.GetString("admin-verb-make-cburn")),
+        };
+        args.Verbs.Add(cburn);
+        
+        var cburnaltname = Loc.GetString("admin-verb-text-make-cburn-alt");
+        Verb cburnalt = new()
+        {
+            Text = cburnaltname,
+            Category = VerbCategory.Antag,
+            Icon = new SpriteSpecifier.Rsi(new("/Textures/_Starlight/Interface/Misc/job_icons.rsi"), "ERTChaplain"),
+            Act = () =>
+            {
+                _outfit.SetOutfit(args.Target, CBURNGearAltID);
+                _antag.ForceMakeAntag<CBURNAltRuleComponent>(targetPlayer, DefaultCBURNAltRule);
+            },
+            Impact = LogImpact.High,
+            Message = string.Join(": ", cburnaltname, Loc.GetString("admin-verb-make-cburn-alt")),
+        };
+        args.Verbs.Add(cburnalt);
+        
+        var ntncname = Loc.GetString("admin-verb-text-make-ntnc-marine");
+        Verb ntnc = new()
+        {
+            Text = ntncname,
+            Category = VerbCategory.Antag,
+            Icon = new SpriteSpecifier.Rsi(new("/Textures/_Starlight/Interface/Misc/job_icons.rsi"), "NTNCBlueShield"),
+            Act = () =>
+            {
+                _outfit.SetOutfit(args.Target, NTNCGearID);
+                _antag.ForceMakeAntag<NTNCRuleComponent>(targetPlayer, DefaultNTNCRule);
+            },
+            Impact = LogImpact.High,
+            Message = string.Join(": ", ntncname, Loc.GetString("admin-verb-make-ntnc-marine")),
+        };
+        args.Verbs.Add(ntnc);
         # endregion
     }
 }

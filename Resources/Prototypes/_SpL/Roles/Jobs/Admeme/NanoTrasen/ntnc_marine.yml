@@ -1,0 +1,24 @@
+﻿- type: antag
+  id: NTNCMarine
+  name: roles-antag-name-ntnc-marine
+  antagonist: false
+  setPreference: true
+  roleLoadout: [ AntagNTNCMarine ]
+  previewStartingGear: NTNCGearBasic
+  objective: roles-antag-ntnc-marine-objective
+  playTimeTracker: JobNTNC
+  requirements:
+    - !type:OverallPlaytimeRequirement
+      time: 20h
+
+- type: startingGear
+  id: NTNCGearBasic
+  equipment:
+    ears: ClothingHeadsetAltNTNC
+    id: NTNCBlueShieldPDA
+    pocket2: ToolDebug
+    back: ClothingBackpackNTNC
+    misc: PinpointerUniversal
+    mask: ClothingMaskGasSecurity
+    gloves: ClothingHandsGlovesCombat
+    shoes: ClothingShoesBootsJackFilled

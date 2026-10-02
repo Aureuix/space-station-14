@@ -9,3 +9,33 @@
       subtype: role-subtype-CentComm
       exclusiveAntag: true
     
+- type: entity
+  parent: MindRoleGhostCentCommAligned
+  id: MindRoleGhostCBURN
+  name: CBURN Corpsman Role
+  components:
+    - type: MindRole
+      roleType: CentCommAligned
+      antagPrototype: CBURNCorpsman
+      subtype: role-subtype-CentComm
+      exclusiveAntag: true
+      
+- type: entity
+  parent: MindRoleGhostCentCommAligned
+  id: MindRoleGhostCBURNAlt
+  name: CBURN Liquidator Role
+  components:
+    - type: MindRole
+      roleType: CentCommAligned
+      antagPrototype: CBURNLiquidator
+      subtype: role-subtype-CentComm
+      exclusiveAntag: true
+      
+- type: entity
+  parent: MindRoleGhostCorporateAligned
+  id: MindRoleGhostNTNC
+  name: NTNC Marine Role
+  components:
+    - type: MindRole
+      roleType: CorporateAligned
+      antagPrototype: NTNCMarine

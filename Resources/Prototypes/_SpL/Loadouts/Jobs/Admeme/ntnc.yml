@@ -1,0 +1,171 @@
+﻿## Hats
+- type: loadout
+  id: NTNCHat
+  equipment:
+    head: ClothingHeadHatNTNC
+    
+- type: loadout
+  id: NTNCHatGrey
+  equipment:
+    head: ClothingHeadHatNTNCGrey
+    
+- type: loadout
+  id: NTNCHatEnsign
+  equipment:
+    head: ClothingHeadHatNTNCEnsign
+    
+- type: loadout
+  id: NTNCHelmet
+  equipment:
+    head: ClothingHeadHelmetNTNCConsortium
+
+## Neck
+- type: loadout
+  id: NTNCMantleSergeant
+  equipment:
+    neck: ClothingNeckMantleDecoratedMarineSergeant
+
+- type: loadout
+  id: NTNCMantleMajor
+  equipment:
+    neck: ClothingNeckMantleDecoratedMarineMajor
+
+## Jumpsuits
+- type: loadout
+  id: NTNCFatigues
+  equipment:
+    jumpsuit: ClothingUniformNTNCFatigues
+
+- type: loadout
+  id: NTNCOfficerJumpsuit
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitNTNCOfficer
+  groupBy: "ntncofficer"
+
+- type: loadout
+  id: NTNCOfficerJumpskirt
+  equipment:
+    jumpsuit: ClothingUniformJumpskirtNTNCOfficer
+  groupBy: "ntncofficer"
+  
+- type: loadout
+  id: NTNCEnsignJumpsuit
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitNTNCEnsign
+  groupBy: "ntncensign"
+
+- type: loadout
+  id: NTNCEnsignJumpskirt
+  equipment:
+    jumpsuit: ClothingUniformJumpskirtNTNCEnsign
+  groupBy: "ntncensign"
+
+## OuterClothing
+- type: loadout
+  id: NTNCVest
+  equipment:
+    outerClothing: ClothingOuterVestNTNC
+
+- type: loadout
+  id: NTNCCarapace
+  equipment:
+    outerClothing: ClothingOuterVestWebNTNCEnsign
+
+- type: loadout
+  id: NTNCHardsuit
+  equipment:
+    outerClothing: ClothingOuterHardsuitNTNCConsortium
+  groupBy: "ntnchardsuit"
+
+- type: loadout
+  id: NTNCHardsuitMedic
+  equipment:
+    outerClothing: ClothingOuterHardsuitNTNCConsortiumMedic
+  groupBy: "ntnchardsuit"
+  
+## Eyes
+- type: loadout
+  id: NTNCGlasses
+  dummyEntity: ClothingEyesGlassesNTNC
+  equipment:
+    eyes: ClothingEyesGlassesNTNC
+  storage:
+    back:
+      - JetpackVoidFilled
+
+- type: loadout
+  id: NTNCHud
+  dummyEntity: ClothingEyesHudNTNC
+  equipment:
+    eyes: ClothingEyesHudNTNC
+  storage:
+    back:
+      - JetpackVoidFilled
+    
+## Belt
+- type: loadout
+  id: NTNCBelt
+  equipment:
+    belt: ClothingBeltNTNCBeltFilled
+
+- type: loadout
+  id: NTNCRig
+  equipment:
+    belt: ClothingBeltNTNCRigFilled
+  
+## PDW
+- type: loadout
+  id: NTNCMk58
+  dummyEntity: WeaponPistolMk58HighCapacity
+  equipment:
+    pocket1: WeaponPistolMk58HighCapacity
+  storage:
+    back:
+      - MagazinePistolHighCapacityHP
+      - MagazinePistolHighCapacityAP
+    
+- type: loadout
+  id: NTNCTaserPistol
+  equipment:
+    pocket1: WeaponPDW9
+    
+- type: loadout
+  id: NTNCEnergySword
+  equipment:
+    pocket1: EnergySword # Todo- add a real nanotrasen energy weapon. cavalry sabre maybe
+
+## Weapon
+- type: loadout
+  id: NTNCPulseCannon
+  equipment:
+    suitstorage: WeaponPulseCannonNTNC
+      
+- type: loadout
+  id: NTNCXL8
+  dummyEntity: WeaponRifleLecterXL8
+  equipment:
+    suitstorage: WeaponRifleLecterXL8
+  storage:
+    back:
+      - MagazineRifleAP
+      - MagazineRifleHP
+      - MagazineRifleIncendiary
+      - MagazineRifleRubber
+    
+- type: loadout
+  id: NTNCPeacemaker
+  dummyEntity: WeaponRiflePeacemaker
+  equipment:
+    suitstorage: WeaponRiflePeacemaker
+  storage:
+    back:
+      - MagazineRifleAP
+      - MagazineRifleHP
+      - MagazineRifleIncendiary
+      - MagazineRifleRubber
+
+## Headset
+- type: loadout
+  id: NTNCHeadset
+  equipment:
+    ears: ClothingHeadsetAltNTNC

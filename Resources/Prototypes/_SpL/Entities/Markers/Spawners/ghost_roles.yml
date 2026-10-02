@@ -5,8 +5,8 @@
   suffix: admin
   components:
     - type: GhostRole
-      name: job-name-centcommop
-      description: job-description-centcommop
+      name: roles-antag-name-centcommop
+      description: roles-antag-centcommop-objective
       mindRoles:
         - MindRoleGhostCentCommOp
       raffle:
@@ -17,4 +17,36 @@
         - state: green
         - sprite: _Starlight/Structures/Wallmounts/flags/ccflag.rsi
           state: centcomm
-          
+       
+- type: entity   
+  parent: SpawnPointGhostCentcomm
+  categories: [ HideSpawnMenu ]
+  id: SpawnPointGhostCBURN
+  components:
+    - type: GhostRole
+      name: roles-antag-name-cburn
+      description: roles-antag-cburn-objective
+      mindRoles:
+        - MindRoleGhostCBURN
+
+- type: entity
+  parent: SpawnPointGhostCentcomm
+  categories: [ HideSpawnMenu ]
+  id: SpawnPointGhostCBURNAlt
+  components:
+    - type: GhostRole
+      name: roles-antag-name-cburn-liquidator
+      description: roles-antag-cburn-liquidator-objective
+      mindRoles:
+        - MindRoleGhostCBURNAlt
+
+- type: entity
+  parent: SpawnPointGhostCentcomm
+  categories: [ HideSpawnMenu ]
+  id: SpawnPointGhostNTNC
+  components:
+    - type: GhostRole
+      name: roles-antag-name-ntnc-marine
+      description: roles-antag-ntnc-marine-objective
+      mindRoles:
+        - MindRoleGhostNTNC

@@ -1,7 +1,8 @@
 - type: entity
   parent: [ClothingHeadBase, BaseNanoTrasenContraband]
   id: ClothingHeadHatNTNC
-  name: NanoTrasen navy marine hat.
+  name: NanoTrasen Naval Corps marine hat
+  description: A formal mariner cap for special occasions.
   components:
   - type: Sprite
     sprite: _Starlight/Admeme/Clothing/Head/Hats/ntnchat.rsi
@@ -11,7 +12,8 @@
 - type: entity
   parent: [ClothingHeadBase, BaseNanoTrasenContraband]
   id: ClothingHeadHatNTNCGrey
-  name: NanoTrasen navy grey marine hat.
+  name: NanoTrasen Naval Corps grey marine hat
+  description: A mariner cap for NTNC marines.
   components:
   - type: Sprite
     sprite: _Starlight/Admeme/Clothing/Head/Hats/ntncgreyhat.rsi
@@ -21,7 +23,8 @@
 - type: entity
   parent: [ClothingHeadBase, BaseNanoTrasenContraband]
   id: ClothingHeadHatNTNCEnsign
-  name: NanoTrasen navy ensign hat.
+  name: NanoTrasen Naval Corps ensign hat
+  description: A soft-spoken hat denoting an NTNC officer of Ensign rank or above.
   components:
   - type: Sprite
     sprite: _Starlight/Admeme/Clothing/Head/Hats/ntncensignhat.rsi

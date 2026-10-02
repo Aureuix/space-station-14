@@ -234,7 +234,7 @@
 - type: loadout
   id: GlovesPapercutProof
   equipment:
-    neck: ClothingHandsGlovesHop
+    gloves: ClothingHandsGlovesHop
 
 ## Neck
 - type: loadout
@@ -360,14 +360,14 @@
 ## Weapon
 - type: loadout
   id: CentCommPulseCarbine
-  inhand:
-    - WeaponPulseCarbine
+  equipment:
+    suitstorage: WeaponPulseCarbine
       
 - type: loadout
   id: CentCommAtreides
   dummyEntity: WeaponSubMachineGunAtreides
-  inhand:
-    - WeaponSubMachineGunAtreides
+  equipment:
+    suitstorage: WeaponSubMachineGunAtreides
   storage:
     back:
       - MagazinePistolSubMachineGunAP
@@ -376,8 +376,8 @@
 - type: loadout
   id: CentCommWT550
   dummyEntity: WeaponSubMachineGunWt550
-  inhand:
-    - WeaponSubMachineGunWt550
+  equipment:
+    suitstorage: WeaponSubMachineGunWt550
   storage:
     back:
       - MagazinePistolSubMachineGunTopMountedFMJ
@@ -385,14 +385,14 @@
 
 - type: loadout
   id: CentCommLWAP
-  inhand:
-    - WeaponEnergySniper
+  equipment:
+    suitstorage: WeaponEnergySniper
     
 - type: loadout
   id: CentCommIK60
   dummyEntity: WeaponIK60
-  inhand:
-    - WeaponIK60
+  equipment:
+    suitstorage: WeaponIK60
   storage:
     back:
       - MagazineBatteryLr30Extended

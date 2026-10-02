@@ -27,7 +27,92 @@
           - DeathRattleImplantCentcomm
           - MindShieldImplant
       - type: BibleUser
+      - type: NoObjectiveTarget
       mindRoles:
         - MindRoleGhostCentCommOp
       tags:
         - CantBecomeRevolutionary
+
+- type: entity
+  parent: CentCommSpawn
+  id: CBURNSpawn
+  components:
+    - type: AntagSelection
+      definitions:
+        - spawnerPrototype: SpawnPointGhostCBURN
+          prefRoles: [ CBURNCorpsman ]
+          briefing:
+            text: cburn-role-greeting
+            color: "#1d8bad"
+            sound: "/Audio/Misc/cryo_warning.ogg"
+          components:
+            - type: AutoImplant
+              implants:
+                - DeathRattleImplantCentcomm
+                - MindShieldImplant
+            - type: BibleUser
+            - type: NoObjectiveTarget
+            - type: RandomMetadata
+              nameSegments:
+                - NamesMilitaryFirst
+                - NamesMilitaryLast
+              nameFormat: name-format-ert
+          mindRoles:
+            - MindRoleGhostCBURN
+          tags:
+            - CantBecomeRevolutionary
+
+- type: entity
+  parent: CentCommSpawn
+  id: CBURNAltSpawn
+  components:
+    - type: AntagSelection
+      definitions:
+        - spawnerPrototype: SpawnPointGhostCBURNAlt
+          prefRoles: [ CBURNLiquidator ]
+          briefing:
+            text: cburn-liquidator-role-greeting
+            color: "#1d8bad"
+            sound: "/Audio/Misc/cryo_warning.ogg"
+          components:
+            - type: AutoImplant
+              implants:
+                - DeathRattleImplantCentcomm
+                - MindShieldImplant
+            - type: BibleUser
+            - type: NoObjectiveTarget
+            - type: RandomMetadata
+              nameSegments:
+                - NamesMilitaryFirstLeader
+                - NamesMilitaryLast
+              nameFormat: name-format-ert
+          mindRoles:
+            - MindRoleGhostCBURNAlt
+          tags:
+            - CantBecomeRevolutionary
+
+- type: entity
+  parent: CentCommSpawn
+  id: NTNCSpawn
+  components:
+    - type: AntagSelection
+      definitions:
+        - spawnerPrototype: SpawnPointGhostNTNC
+          prefRoles: [ NTNCMarine ]
+          roleLoadout:
+            - AntagNTNCMarine
+          briefing:
+            text: ntnc-marine-role-greeting
+            color: "#1d8bad"
+            sound: "/Audio/Misc/cryo_warning.ogg"
+          components:
+            - type: AutoImplant
+              implants:
+                - DeathRattleImplantCentcomm
+                - MindShieldImplant
+                - BluespaceImplant
+            - type: NoObjectiveTarget
+          mindRoles:
+            - MindRoleGhostNTNC
+          tags:
+            - CantBecomeRevolutionary

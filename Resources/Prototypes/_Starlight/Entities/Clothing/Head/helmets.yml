@@ -259,8 +259,8 @@
 - type: entity
   parent: ClothingHeadHelmetERTLeader
   id: ClothingHeadHelmetNTNCConsortium
-  name: nt-nc naval helmet
-  description: An in-atmosphere helmet worn by NT-NC Naval Officers.
+  name: NTNC naval helmet
+  description: An in-atmosphere helmet worn by NTNC Naval Officers.
   components:
   - type: Sprite
     sprite: _Starlight/Clothing/Head/Helmets/ntnc_helmet.rsi

@@ -1,7 +1,7 @@
 - type: entity
   parent: [ ClothingNeckBase, BaseNanoTrasenContraband ]
   id: ClothingNeckMantleDecoratedMarineSergeant
-  name: NanoTrasen navy marine sergeant's pauldron
+  name: NanoTrasen Naval Corps sergeant's pauldron
   description: Used by NanoTrasen Navy Marines to indicate rank. This one indicates the wearer is at least a Sergeant.
   components:
     - type: Sprite
@@ -13,7 +13,7 @@
 - type: entity
   parent: [ ClothingNeckBase, BaseNanoTrasenContraband ]
   id: ClothingNeckMantleDecoratedMarineMajor
-  name: NanoTrasen navy marine major's pauldron
+  name: NanoTrasen Naval Corps major's pauldron
   description: Used by NanoTrasen Navy Marines to indicate rank. This one indicates the wearer is at least a Major.
   components:
     - type: Sprite
