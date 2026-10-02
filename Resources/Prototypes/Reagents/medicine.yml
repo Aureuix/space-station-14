@@ -437,6 +437,8 @@
           # they gotta be in crit first
         - !type:MobStateCondition
           mobstate: Critical
+        - !type:MobStateCondition
+          mobstate: SoftCritical # SpL- softcrit support
         - !type:ReagentCondition
           reagent: Epinephrine
           max: 20
@@ -578,6 +580,8 @@
           # they gotta be in crit first
         - !type:MobStateCondition
           mobstate: Critical
+        - !type:MobStateCondition
+          mobstate: SoftCritical # SpL- softcrit support
         damage:
           types:
             Asphyxiation: -2
