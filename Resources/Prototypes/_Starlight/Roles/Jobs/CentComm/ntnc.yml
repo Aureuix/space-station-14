@@ -68,7 +68,7 @@
     eyes: ClothingEyesGlassesNTNC
     ears: ClothingHeadsetAltNTNC
     mask: ClothingMaskGasSecurity
-    belt: ClothingBeltNTNCRigFilledMed
+    belt: ClothingBeltNTNCRigFilled # SpL- med was a redundant tag
     gloves: ClothingHandsGlovesCombat
     suitstorage: WeaponSubMachineGunWt550
     pocket1: MindShieldImplanter

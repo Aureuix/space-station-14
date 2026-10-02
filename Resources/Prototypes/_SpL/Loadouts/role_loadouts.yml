@@ -1,0 +1,38 @@
+﻿- type: roleLoadout
+  id: AntagCentCommOp
+  canCustomizeName: true
+  groups:
+    - CentCommHead
+    - CentCommJumpsuit
+    - CentCommOuterClothing
+    - CentCommBelt
+    - CentCommGlovesAny
+    - CentCommShoes
+    - CentCommGlasses
+    - CentCommNeck
+    - CentCommHeadset
+    - CentCommWeapon
+    - CentCommPDW
+    - Trinkets
+    - Scarves
+    - SurvivalMilitaryDouble
+    - GroupSpeciesBreathToolSecurity
+
+- type: roleLoadout
+  id: AntagNTNCMarine
+  canCustomizeName: true
+  groups:
+    - NTNCHat
+    - NTNCJumpsuit
+    - NTNCOuterClothing
+    - NTNCBelt
+    - NTNCGlasses
+    - NTNCNeck
+    - NTNCWeapon
+    - NTNCPDW
+    - NTNCHeadset
+    - JackbootsFilled
+    - CombatGloves
+    - Trinkets
+    - SurvivalMilitaryDouble
+    - GroupSpeciesBreathToolSecurity

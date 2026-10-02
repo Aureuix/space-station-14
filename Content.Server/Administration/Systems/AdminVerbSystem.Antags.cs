@@ -1,7 +1,7 @@
 using Content.Server.Antag;
 using Content.Server.GameTicking;
 using Content.Server.GameTicking.Rules.Components;
-using Content.Server.Zombies;
+// using Content.Server.Zombies; // SpL
 using Content.Shared.Administration;
 using Content.Server.Clothing.Systems;
 using Content.Shared.Database;
@@ -23,12 +23,12 @@ namespace Content.Server.Administration.Systems;
 public sealed partial class AdminVerbSystem
 {
     [Dependency] private readonly AntagSelectionSystem _antag = default!;
-    [Dependency] private readonly ZombieSystem _zombie = default!;
+    // [Dependency] private readonly ZombieSystem _zombie = default!; // SpL
     [Dependency] private readonly GameTicker _gameTicker = default!;
     [Dependency] private readonly OutfitSystem _outfit = default!;
 
     private static readonly EntProtoId DefaultTraitorRule = "Traitor";
-    private static readonly EntProtoId DefaultInitialInfectedRule = "Zombie";
+    // private static readonly EntProtoId DefaultInitialInfectedRule = "Zombie"; // SpL
     private static readonly EntProtoId DefaultNukeOpRule = "LoneOpsSpawn";
     private static readonly EntProtoId DefaultRevsRule = "Revolutionary";
     private static readonly EntProtoId DefaultThiefRule = "Thief";
@@ -40,6 +40,18 @@ public sealed partial class AdminVerbSystem
     private static readonly EntProtoId DefaultVampireRule = "Vampire"; //Starlight
     private static readonly EntProtoId DefaultBrighteyeRule = "Brighteye"; //Starlight
 	private static readonly EntProtoId DefaultSELFRule = "SiliconLiberation"; //Starlight
+    #region SpL
+    // SpL- general beaming is done via this system also. it's clunky but what works works
+    // make sure you add the component and gear even if the added beam option isn't an antag
+    private static readonly EntProtoId DefaultCentcommRule = "CentCommSpawn";
+    private static readonly ProtoId<StartingGearPrototype> CentCommGearID = "CentCommOpGear";
+    private static readonly EntProtoId DefaultCBURNRule = "CBURNSpawn";
+    private static readonly ProtoId<StartingGearPrototype> CBURNGearID = "CBURNGearCleanup";
+    private static readonly EntProtoId DefaultCBURNAltRule = "CBURNAltSpawn";
+    private static readonly ProtoId<StartingGearPrototype> CBURNGearAltID = "CBURNGearLiquidator";
+    private static readonly EntProtoId DefaultNTNCRule = "NTNCSpawn";
+    private static readonly ProtoId<StartingGearPrototype> NTNCGearID = "NTNCGearBasic";
+    #endregion
 
     // All antag verbs have names so invokeverb works.
     private void AddAntagVerbs(GetVerbsEvent<Verb> args)
@@ -72,7 +84,7 @@ public sealed partial class AdminVerbSystem
         };
         args.Verbs.Add(traitor);
 
-        var initialInfectedName = Loc.GetString("admin-verb-text-make-initial-infected");
+        /* var initialInfectedName = Loc.GetString("admin-verb-text-make-initial-infected");
         Verb initialInfected = new()
         {
             Text = initialInfectedName,
@@ -85,9 +97,9 @@ public sealed partial class AdminVerbSystem
             Impact = LogImpact.High,
             Message = string.Join(": ", initialInfectedName, Loc.GetString("admin-verb-make-initial-infected")),
         };
-        args.Verbs.Add(initialInfected);
+        args.Verbs.Add(initialInfected); */ //SpL- death to initial infected
 
-        var zombieName = Loc.GetString("admin-verb-text-make-zombie");
+        /* var zombieName = Loc.GetString("admin-verb-text-make-zombie");
         Verb zombie = new()
         {
             Text = zombieName,
@@ -100,7 +112,7 @@ public sealed partial class AdminVerbSystem
             Impact = LogImpact.High,
             Message = string.Join(": ", zombieName, Loc.GetString("admin-verb-make-zombie")),
         };
-        args.Verbs.Add(zombie);
+        args.Verbs.Add(zombie); */ // SpL- removed zombie from the smite menu TODO- move this to smite menu
 
         var nukeOpName = Loc.GetString("admin-verb-text-make-nuclear-operative");
         Verb nukeOp = new()
@@ -117,7 +129,7 @@ public sealed partial class AdminVerbSystem
         };
         args.Verbs.Add(nukeOp);
 
-        var pirateName = Loc.GetString("admin-verb-text-make-pirate") + " (Wizden)"; // Starlight
+        /* var pirateName = Loc.GetString("admin-verb-text-make-pirate") + " (Wizden)"; // Starlight
         Verb pirate = new()
         {
             Text = pirateName,
@@ -131,7 +143,7 @@ public sealed partial class AdminVerbSystem
             Impact = LogImpact.High,
             Message = string.Join(": ", pirateName, Loc.GetString("admin-verb-make-pirate")),
         };
-        args.Verbs.Add(pirate);
+        args.Verbs.Add(pirate); */ // SpL- removess wizden pirates
 
         var headRevName = Loc.GetString("admin-verb-text-make-head-rev");
         Verb headRev = new()
@@ -163,7 +175,7 @@ public sealed partial class AdminVerbSystem
         };
         args.Verbs.Add(thief);
 
-        var changelingName = Loc.GetString("admin-verb-text-make-changeling-wip"); //SL edit, -wip as we allready have lings
+        /*var changelingName = Loc.GetString("admin-verb-text-make-changeling-wip"); //SL edit, -wip as we allready have lings
         Verb changeling = new()
         {
             Text = changelingName,
@@ -176,7 +188,7 @@ public sealed partial class AdminVerbSystem
             Impact = LogImpact.High,
             Message = string.Join(": ", changelingName, Loc.GetString("admin-verb-make-changeling-wip")), //SL edit: -wip as we have lings allready
         };
-        args.Verbs.Add(changeling);
+        args.Verbs.Add(changeling); */ // SpL- removed upstream lings to avoid accidents
 
         var paradoxCloneName = Loc.GetString("admin-verb-text-make-paradox-clone");
         Verb paradox = new()
@@ -233,9 +245,10 @@ public sealed partial class AdminVerbSystem
         if (HasComp<HumanoidAppearanceComponent>(args.Target)) // only humanoids can be cloned
             args.Verbs.Add(paradox);
 
+        var changelingName = Loc.GetString("admin-verb-text-make-changeling"); // SPL
         Verb ling = new()
         {
-            Text = Loc.GetString("admin-verb-text-make-changeling"),
+            Text = changelingName, // SpL
             Category = VerbCategory.Antag,
             Icon = new SpriteSpecifier.Rsi(new ResPath("/Textures/Changeling/changeling_abilities.rsi"), "transform"),
             Act = () =>
@@ -247,9 +260,10 @@ public sealed partial class AdminVerbSystem
         };
         args.Verbs.Add(ling);
 /// Starlight START
+        var vampireName = Loc.GetString("admin-verb-text-make-vampire"); // SpL
         Verb vampire = new()
         {
-            Text = Loc.GetString("admin-verb-text-make-vampire"),
+            Text = vampireName, // SpL
             Category = VerbCategory.Antag,
             Icon = new SpriteSpecifier.Rsi(new ResPath("/Textures/_Starlight/Vampire/actions_vampire.rsi"), "select_class"), // Starlight
             Act = () =>
@@ -323,5 +337,74 @@ public sealed partial class AdminVerbSystem
         };
         args.Verbs.Add(pirateSL);
 /// Starlight END
+        # region SpL
+        // this area handles all of our beaming behaviour, of which original content is largely not related to antags
+        // beaming is a clunky but incredibly versatile tool for admins to quick-set players and themselves for admemes
+        // if you wish to add a non-scheduler antag that relies on a specific or somewhat flexible loadout, copy one of the blocks below and fill as needed
+        // you will need a ghost spawner, mind role, antag role, and role loadout data specified via YAML to make this work
+        var centcommname = Loc.GetString("admin-verb-text-make-centcomm");
+        Verb centcomm = new()
+        {
+            Text = centcommname,
+            Category = VerbCategory.Antag,
+            Icon = new SpriteSpecifier.Rsi(new("/Textures/_Starlight/Interface/Misc/job_icons.rsi"), "CentComm"),
+            Act = () =>
+            {
+                _outfit.SetOutfit(args.Target, CentCommGearID);
+                _antag.ForceMakeAntag<CentCommRuleComponent>(targetPlayer, DefaultCentcommRule);
+            },
+            Impact = LogImpact.High,
+            Message = string.Join(": ", centcommname, Loc.GetString("admin-verb-make-centcomm")),
+        };
+        args.Verbs.Add(centcomm);
+            
+        var cburnname = Loc.GetString("admin-verb-text-make-cburn");
+        Verb cburn = new()
+        {
+            Text = cburnname,
+            Category = VerbCategory.Antag,
+            Icon = new SpriteSpecifier.Rsi(new("/Textures/_Starlight/Interface/Misc/job_icons.rsi"), "CBURN"),
+            Act = () =>
+            {
+                _outfit.SetOutfit(args.Target, CBURNGearID);
+                _antag.ForceMakeAntag<CBURNRuleComponent>(targetPlayer, DefaultCBURNRule);
+            },
+            Impact = LogImpact.High,
+            Message = string.Join(": ", cburnname, Loc.GetString("admin-verb-make-cburn")),
+        };
+        args.Verbs.Add(cburn);
+        
+        var cburnaltname = Loc.GetString("admin-verb-text-make-cburn-alt");
+        Verb cburnalt = new()
+        {
+            Text = cburnaltname,
+            Category = VerbCategory.Antag,
+            Icon = new SpriteSpecifier.Rsi(new("/Textures/_Starlight/Interface/Misc/job_icons.rsi"), "ERTChaplain"),
+            Act = () =>
+            {
+                _outfit.SetOutfit(args.Target, CBURNGearAltID);
+                _antag.ForceMakeAntag<CBURNAltRuleComponent>(targetPlayer, DefaultCBURNAltRule);
+            },
+            Impact = LogImpact.High,
+            Message = string.Join(": ", cburnaltname, Loc.GetString("admin-verb-make-cburn-alt")),
+        };
+        args.Verbs.Add(cburnalt);
+        
+        var ntncname = Loc.GetString("admin-verb-text-make-ntnc-marine");
+        Verb ntnc = new()
+        {
+            Text = ntncname,
+            Category = VerbCategory.Antag,
+            Icon = new SpriteSpecifier.Rsi(new("/Textures/_Starlight/Interface/Misc/job_icons.rsi"), "NTNCBlueShield"),
+            Act = () =>
+            {
+                _outfit.SetOutfit(args.Target, NTNCGearID);
+                _antag.ForceMakeAntag<NTNCRuleComponent>(targetPlayer, DefaultNTNCRule);
+            },
+            Impact = LogImpact.High,
+            Message = string.Join(": ", ntncname, Loc.GetString("admin-verb-make-ntnc-marine")),
+        };
+        args.Verbs.Add(ntnc);
+        # endregion
     }
 }

@@ -163,8 +163,20 @@
         - id: MedkitCombatFilled
     
 - type: entity
-  id: ClothingBeltNTNCRigFilledMed
-  parent: ClothingBeltNTNCRig
+  id: ClothingBeltNTNCBeltFilled # SpL- useless med proto used to be here
+  parent: ClothingBeltNTNC # SpL start- idk why all of this was just missing??
+  suffix: Filled
+  components:
+  - type: EntityTableContainerFill
+    containers:
+      storagebase: !type:AllSelector
+        children:
+        - id: Handcuffs
+        - id: Handcuffs
+        - id: Stunbaton
+        - id: GrenadeFlashBang
+        - id: TearGasGrenade
+        - id: MedkitCombatFilled # SpL end
 
 # GMN webbings
 - type: entity

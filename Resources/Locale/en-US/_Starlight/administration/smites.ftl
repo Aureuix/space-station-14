@@ -14,3 +14,6 @@ admin-smite-Felionoid-species-swap-description = It changes their species to Fel
 
 admin-smite-gnome-name = Gnomify
 admin-smite-gnome-description = Makes the target very whimsical.
+
+admin-smite-zombify-name = Zombify
+admin-smite-zombify-description = Instantly zombifies the target.

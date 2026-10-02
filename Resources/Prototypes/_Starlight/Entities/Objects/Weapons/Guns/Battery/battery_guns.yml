@@ -675,7 +675,7 @@
   - type: Appearance
 
 - type: entity
-  parent: [ BaseWeaponBattery, BaseGunWieldable, BaseCentcommContraband ]
+  parent: [ BaseWeaponBattery, BaseGunWieldable, BaseSecurityContraband ] # SpL- converted to sec conttra
   id: WeaponEnergySniper
   name: MiS-61 LWAP energy sniper # SpL
   description: A high-powered energy sniper with a unique proprietary focusing array allowing rapid long-range delivery of extremely high power laser bolts. For use when negotiations have stalled, and you need a hostage taker dead at all costs. # SpL

@@ -1,0 +1,29 @@
+﻿- type: antag
+  id: CBURNCorpsman
+  name: roles-antag-name-cburn
+  # groupName: Central Command
+  # groupColor: Color.Green
+  antagonist: false
+  setPreference: true
+  roleLoadout: 
+  previewStartingGear: CBURNGearCleanup
+  objective: roles-antag-cburn-objective
+  playTimeTracker: JobCBURN
+  requirements:
+    - !type:OverallPlaytimeRequirement
+      time: 20h
+      
+- type: antag
+  id: CBURNLiquidator
+  name: roles-antag-name-cburn-liquidator
+  # groupName: Central Command
+  # groupColor: Color.Green
+  antagonist: false
+  setPreference: true
+  roleLoadout: 
+  previewStartingGear: CBURNGearLiquidator
+  objective: roles-antag-cburn-liquidator-objective
+  playTimeTracker: JobCBURN
+  requirements:
+    - !type:OverallPlaytimeRequirement
+      time: 40h
