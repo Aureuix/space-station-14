@@ -40,7 +40,7 @@ public sealed partial class StellarAdminVerbSystem : EntitySystem
         {
             Text = cosmicCultName,
             Category = VerbCategory.Antag,
-            Icon = new SpriteSpecifier.Rsi(new("/Textures/_ST/CosmicCult/Icons/antag_icons.rsi"), "CosmicCult"),
+            Icon = new SpriteSpecifier.Rsi(new("/Textures/_SpL/Interface/Misc/job_icons.rsi"), "coscult"), // SpL change
             Act = () =>
             {
                 _antagSelection.ForceMakeAntag<CosmicCultRuleComponent>(targetPlayer, "CosmicCult");

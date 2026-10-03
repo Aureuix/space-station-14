@@ -694,6 +694,7 @@
     quickEquip: false
     slots:
     - Back
+    - suitStorage # SpL
   - type: Gun
     fireRate: 0.5
     soundGunshot:
