@@ -1,15 +1,13 @@
-﻿using System.Linq;
-using System.Text;
-using JetBrains.Annotations;
+﻿using System.Text;
 using Robust.Client.Input;
 using Robust.Shared.Console;
-using Robust.Shared.Toolshed.Commands.Values;
+using Content.Shared.Administration;
 using static Robust.Client.Input.Keyboard;
 
 namespace Content.Client.Commands
 {
 
-    [UsedImplicitly]
+    [AnyCommand]
     internal sealed partial class KeybindCommand : LocalizedCommands
     {
         [Dependency] private readonly IInputManager _inputManager = default!;
@@ -106,7 +104,7 @@ namespace Content.Client.Commands
     }
 }
 
-[UsedImplicitly]
+[AnyCommand]
 internal sealed partial class UnbindCommand : LocalizedCommands
 {
     [Dependency] private readonly IInputManager _inputManager = default!;
