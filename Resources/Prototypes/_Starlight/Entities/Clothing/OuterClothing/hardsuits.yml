@@ -197,8 +197,8 @@
       BaseSyndicateContraband,
     ]
   id: ClothingOuterHardsuitInfiltration
-  name: syndicate infiltration hardsuit
-  description: The Syndicate's Special Operations' hardsuit of choice, this hardsuit, as well as durability, has been built with stealth in mind.
+  name: MI13 infiltration tacsuit # SpL
+  description: The Syndicate's armor of choice for covert operations, this tacsuit has been built with a powerful cloaking field that draws from a replaceable internal battery. Cloaking limits have rendered it less resistant than most warsuits, however. # SpL
   components:
     - type: Sprite
       sprite: _Starlight/Clothing/OuterClothing/Hardsuits/infiltrationsyndie.rsi

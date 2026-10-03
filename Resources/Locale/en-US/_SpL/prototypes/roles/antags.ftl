@@ -2,6 +2,21 @@
 antag-category-ccnt-name = Central Command/NanoTrasen
 antag-category-ccnt-desc = A strange duopoly of power between a corporate hegemon and the declawed firm that won them their hegemony, CC-NT represents the bosses of the station's bosses, and their bosses above.
 
+antag-category-tsf-name = Trans-Solar Federation
+antag-category-tsf-desc = The Trans-Solar Federation is the legitimate government of the sector, and the highest sectoral authority. However, its forces here are thinly stretched and its jurisdiction is highly limited, weaknesses happily advantaged by the corporations that dominate this sector.
+
+antag-category-ill-name = Illuminate
+antag-category-ill-desc = The government of the Avali species, the Illuminate is a technocratic, highly insular but ultimately small state with access to highly advanced technology. 
+
+## Roles- General
+roles-antag-name-mercenary = Mercenary
+roles-antag-mercenary-objective = You are a soldier for hire. Do the bidding of the highest bidder, and help yourself to the spoils on the way.
+
+roles-antag-name-blackstar = Blackstar Dreadwalker
+roles-antag-blackstar-objective = You are an elite mercenary for the Blackstar private military corporation. Do the bidding of the highest bidder, and follow the orders of your Legate.
+
+roles-antag-pirate-name = Pirate
+roles-antag-pirate-objective = You are a space pirate. Delegate a captain amongst your crew, and plunder the station for its riches.
 
 ## Roles- CCNT
 roles-antag-name-centcommop = Central Command Operator

@@ -722,8 +722,8 @@
 - type: entity
   parent: [ ClothingHeadHardsuitBase, ClothingHeadSuitWithLightBase, ClothingHeadLightParamsIntermediate ] # Starlight
   id: ClothingHeadHelmetHardsuitSyndie
-  name: blood-red hardsuit helmet
-  description: A heavily armored helmet designed for work in special operations. Property of Gorlex Marauders.
+  name: blood-red warsuit helmet # SpL
+  description: A heavily armored helmet designed for work in special operations, with the signature baleful visoring synonymous with an elite Syndicate operative. # SpL
   components:
   - type: Sprite
     sprite: Clothing/Head/Hardsuits/syndicate.rsi
@@ -750,8 +750,8 @@
 - type: entity
   parent: [ ClothingHeadHardsuitBase, ClothingHeadSuitWithLightBase, ClothingHeadLightParamsIntermediate ] # Starlight
   id: ClothingHeadHelmetHardsuitSyndieMedic
-  name: blood-red medic hardsuit helmet
-  description: An advanced red hardsuit helmet specifically designed for field medic operations.
+  name: blood-red medic warsuit helmet # SpL
+  description: An advanced armored helmet specifically designed for the Syndicate operatives' field medical operations. # SpL
   components:
   - type: Sprite
     sprite: Clothing/Head/Hardsuits/syndiemedic.rsi
@@ -779,8 +779,8 @@
 - type: entity
   parent: [ ClothingHeadHardsuitBase, ClothingHeadSuitWithLightBase, ClothingHeadLightParamsIntermediate ] # Starlight
   id: ClothingHeadHelmetHardsuitSyndieElite
-  name: syndicate elite helmet
-  description: An elite version of the blood-red hardsuit's helmet, with improved radiation resistance and fireproofing. Property of Gorlex Marauders.
+  name: elite operative helmet # SpL
+  description: An elite version of the blood-red warsuit's helmet, with improved radiation resistance and fireproofing. # SpL
   components:
   - type: Sprite
     sprite: Clothing/Head/Hardsuits/syndieelite.rsi
@@ -812,8 +812,8 @@
 - type: entity
   parent: [ ClothingHeadHardsuitBase, ClothingHeadSuitWithLightBase, ClothingHeadLightParamsIntermediate ] # Starlight
   id: ClothingHeadHelmetHardsuitSyndieCommander
-  name: syndicate commander helmet
-  description: A bulked up version of the blood-red hardsuit's helmet, purpose-built for the commander of a syndicate operative squad. Has significantly improved armor for those deadly front-lines firefights.
+  name: operative commander helmet # SpL
+  description: A bulked up version of the blood-red hardsuit's helmet, purpose-built for the commander of a syndicate operative squad. Has significantly improved armor for those deadly front-lines firefights. # SpL
   components:
   - type: Sprite
     sprite: Clothing/Head/Hardsuits/syndiecommander.rsi
@@ -840,7 +840,7 @@
 - type: entity
   parent: [ ClothingHeadHardsuitBase, ClothingHeadSuitWithLightBase, ClothingHeadLightParamsIntermediate ] # Starlight
   id: ClothingHeadHelmetHardsuitCybersun
-  name: cybersun juggernaut helmet
+  name: CyberSun juggernaut helmet # SpL
   description: Made of compressed plastitanium, this helmet was designed in the Tau chromosphere facility.
   components:
   - type: Sprite
@@ -978,8 +978,8 @@
 - type: entity
   parent: [ BaseCentcommContraband, ClothingHeadLightParamsProfessional, ClothingHeadHelmetHardsuitSyndieCommander ] # Starlight
   id: ClothingHeadHelmetHardsuitERTLeader
-  name: ERT leader hardsuit helmet
-  description: A special hardsuit helmet worn by members of an emergency response team.
+  name: ERT leader tacsuit helmet # SpL
+  description: A special hardsuit helmet worn by members of an Emergency Response Team. # SpL
   components:
   - type: Sprite
     sprite: Clothing/Head/Hardsuits/ERThelmets/ertleader.rsi
@@ -1004,8 +1004,8 @@
 - type: entity
   parent: [ BaseCentcommContraband, ClothingHeadLightParamsProfessional, ClothingHeadHelmetHardsuitSyndie ] # Starlight
   id: ClothingHeadHelmetHardsuitERTChaplain
-  name: ERT chaplain hardsuit helmet
-  description: A special hardsuit helmet worn by members of an emergency response team.
+  name: ERT chaplain tacsuit helmet
+  description: A special hardsuit helmet worn by members of an Emergency Response Team. # SpL
   components:
   - type: Sprite
     sprite: Clothing/Head/Hardsuits/ERThelmets/ertchaplain.rsi
@@ -1023,8 +1023,8 @@
 - type: entity
   parent: [ BaseCentcommContraband, ClothingHeadLightParamsProfessional, ClothingHeadHelmetHardsuitSyndie ] # Starlight
   id: ClothingHeadHelmetHardsuitERTEngineer
-  name: ERT engineer hardsuit helmet
-  description: A special hardsuit helmet worn by members of an emergency response team.
+  name: ERT engineering tacsuit helmet # SpL
+  description: A special hardsuit helmet worn by members of an Emergency Response Team. # SpL
   components:
   - type: Sprite
     sprite: Clothing/Head/Hardsuits/ERThelmets/ertengineer.rsi
@@ -1051,8 +1051,8 @@
 - type: entity
   parent: [ BaseCentcommContraband, ClothingHeadLightParamsProfessional, ClothingHeadHelmetHardsuitSyndieElite ] # Starlight
   id: ClothingHeadHelmetHardsuitERTMedical
-  name: ERT medic hardsuit helmet
-  description: A special hardsuit helmet worn by members of an emergency response team.
+  name: ERT medical tacsuit helmet # SpL
+  description: A special hardsuit helmet worn by members of an Emergency Response Team. # SpL
   components:
   - type: Sprite
     sprite: Clothing/Head/Hardsuits/ERThelmets/ertmedical.rsi
@@ -1070,8 +1070,8 @@
 - type: entity
   parent: [ BaseCentcommContraband, ClothingHeadLightParamsProfessional, ClothingHeadHelmetHardsuitSyndie ] # Starlight
   id: ClothingHeadHelmetHardsuitERTSecurity
-  name: ERT security hardsuit helmet
-  description: A special hardsuit helmet worn by members of an emergency response team.
+  name: ERT security tacsuit helmet # SpL
+  description: A special hardsuit helmet worn by members of an Emergency Response Team. # SpL
   components:
   - type: Sprite
     sprite: Clothing/Head/Hardsuits/ERThelmets/ertsecurity.rsi
@@ -1098,8 +1098,8 @@
 - type: entity
   parent: [ BaseCentcommContraband, ClothingHeadLightParamsProfessional, ClothingHeadHelmetHardsuitSyndie ] # Starlight
   id: ClothingHeadHelmetHardsuitERTJanitor
-  name: ERT janitor hardsuit helmet
-  description: A special hardsuit helmet worn by members of an emergency response team.
+  name: ERT janitorial tacsuit helmet
+  description: A special hardsuit helmet worn by members of an Emergency Response Team. # SpL
   components:
   - type: Sprite
     sprite: Clothing/Head/Hardsuits/ERThelmets/ertjanitor.rsi

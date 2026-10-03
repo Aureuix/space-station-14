@@ -2,8 +2,8 @@
 - type: entity
   parent: [ BaseCentcommContraband, ClothingOuterEVASuitBase ]
   id: ClothingOuterSoftsuitCBURN
-  name: CBURN insulated EVA suit
-  description: A heavyweight, tough and padded EVA capable biosuit used for special cleanup operations.
+  name: SVS-57 CBURN insulated biosuit # SpL
+  description: A heavily armored, tough and padded EVA-capable biosuit used for special cleanup operations. # SpL
   components:
   - type: Sprite
     sprite: _Starlight/Clothing/OuterClothing/Hardsuits/cburn.rsi

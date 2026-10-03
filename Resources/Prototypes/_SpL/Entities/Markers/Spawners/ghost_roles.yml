@@ -43,6 +43,17 @@
 - type: entity
   parent: SpawnPointGhostCentcomm
   categories: [ HideSpawnMenu ]
+  id: SpawnPointGhostGreenshield
+  components:
+    - type: GhostRole
+      name: roles-antag-name-gso
+      description: roles-antag-gso-objective
+      mindRoles:
+        - MindRoleGhostGreenshield
+
+- type: entity
+  parent: SpawnPointGhostCentcomm
+  categories: [ HideSpawnMenu ]
   id: SpawnPointGhostNTNC
   components:
     - type: GhostRole

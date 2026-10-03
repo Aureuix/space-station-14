@@ -93,6 +93,34 @@
 
 - type: entity
   parent: CentCommSpawn
+  id: GreenshieldSpawn
+  components:
+    - type: AntagSelection
+      definitions:
+        - spawnerPrototype: SpawnPointGhostGreenshield
+          prefRoles: [ GreenshieldOfficer ]
+          briefing:
+            text: greenshield-role-greeting
+            color: "#1d8bad"
+            sound: "/Audio/Misc/cryo_warning.ogg"
+          components:
+            - type: AutoImplant
+              implants:
+                - DeathRattleImplantCentcomm
+                - MindShieldImplant
+            - type: NoObjectiveTarget
+            - type: RandomMetadata
+              nameSegments:
+                - NamesMilitaryFirst
+                - NamesMilitaryLast
+              nameFormat: name-format-ert
+          mindRoles:
+            - MindRoleGhostGreenshield
+          tags:
+            - CantBecomeRevolutionary
+
+- type: entity
+  parent: CentCommSpawn
   id: NTNCSpawn
   components:
     - type: AntagSelection

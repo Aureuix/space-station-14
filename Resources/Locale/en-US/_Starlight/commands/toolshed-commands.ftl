@@ -225,6 +225,16 @@ command-description-killsign-blind =
     Apply a killsign to the entity using the blind sprite.
 command-description-killsign-admin =
     Apply a killsign to the entity using the admin sprite.
+command-description-killsign-fops =
+    Apply a killsign to the entity using the fops sprite.
+command-description-killsign-fis =
+    Apply a killsign to the entity using the fis sprite.
+command-description-killsign-true =
+    Apply a killsign to the entity using the true sprite.
+command-description-killsign-bird =
+    Apply a killsign to the entity using the bird sprite.
+command-description-killsign-larp =
+    Apply a killsign to the entity using the larp sprite.
 command-description-killsign-rm =
     Remove a killsign from the entity
 command-description-fixinput =

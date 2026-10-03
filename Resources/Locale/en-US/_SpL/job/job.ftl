@@ -1,7 +1,4 @@
-﻿job-name-gsl-tech = GSL Technician
-job-name-illuminate = Illuminate Personnel
-
-role-type-illuminate-aligned-name = Avali Illuminate Aligned
+﻿role-type-illuminate-aligned-name = Avali Illuminate Aligned
 role-type-illuminate-aligned-color = #fc7921
 job-rules-illuminate-aligned = You are {role-type-illuminate-aligned-name}.
                               You are to serve the interests of the Avali Illuminate.

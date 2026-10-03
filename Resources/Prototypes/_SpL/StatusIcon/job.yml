@@ -13,3 +13,11 @@
     sprite: /Textures/_SpL/Interface/Misc/job_icons.rsi
     state: gsltech
   jobName: job-name-gsl-tech
+  
+- type: jobIcon
+  parent: JobIcon
+  id: JobIconCBURNAlt
+  icon:
+    sprite: /Textures/_SpL/Interface/Misc/job_icons.rsi
+    state: liquidator
+  jobName: job-name-liquidator
