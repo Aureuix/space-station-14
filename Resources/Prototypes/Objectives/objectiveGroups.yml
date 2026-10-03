@@ -2,11 +2,11 @@
 - type: weightedRandom
   id: TraitorObjectiveGroups
   weights:
-    TraitorObjectiveGroupSteal: 1
+    TraitorObjectiveGroupSteal: 0.75 # SpL
     TraitorObjectiveGroupKill: 1
     TraitorObjectiveGroupState: 1 #As in, something about your character. Alive, dead, arrested, gained an ability...
-    TraitorObjectiveGroupSocial: 0.25 #Involves helping/harming others without killing them or stealing their stuff, lowered because the chance of rolling this was enormous when its just one objective in the category
-    TraitorObjectiveGroupStory: 0.85  # Starlight
+    TraitorObjectiveGroupSocial: 0.75 #Involves helping/harming others without killing them or stealing their stuff, lowered because the chance of rolling this was enormous when its just one objective in the category # SpL- readded. it's fine
+    TraitorObjectiveGroupStory: 0.75  # Starlight # SpL
 
 - type: weightedRandom
   id: TraitorObjectiveGroupSteal
@@ -57,10 +57,10 @@
 - type: weightedRandom
   id: TraitorObjectiveGroupKill
   weights:
-    KillRandomPersonObjective: 1
-    KillRandomHeadObjective: 0.25
-    TeachRandomPersonObjective: 1 #Starlight Teach them a lesson
-    TeachRandomHeadObjective: 0.25 # Starlight Teach them a lesson
+    # KillRandomPersonObjective: 1 # SpL
+    # KillRandomHeadObjective: 0.25 # SpL
+    TeachRandomPersonObjective: 0.5 #Starlight Teach them a lesson # SpL
+    TeachRandomHeadObjective: 1.5 # Starlight Teach them a lesson # SpL- heads more likely than people
 
 - type: weightedRandom
   id: TraitorObjectiveGroupState
@@ -72,7 +72,7 @@
 - type: weightedRandom
   id: TraitorObjectiveGroupSocial
   weights:
-#    RandomTraitorAliveObjective: 1 - Removed because the objective was boring and didn't progress the round.
+    RandomTraitorAliveObjective: 1 # - Removed because the objective was boring and didn't progress the round. # SpL- readded
     RandomTraitorProgressObjective: 1
 
 #Thief groups

@@ -28,8 +28,8 @@ public sealed partial class SLChangelingRuleComponent : Component
     public readonly List<ProtoId<EntityPrototype>> Objectives = new()
     {
         "ChangelingSurviveObjective",
-        "ChangelingStealDNAObjective",
-        "EscapeIdentityObjective"
+        "ChangelingStealDNAObjective"
+        // "EscapeIdentityObjective" // SpL- no thank yo
     };
 }
 #endregion
