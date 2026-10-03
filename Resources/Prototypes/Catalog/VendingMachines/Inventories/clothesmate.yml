@@ -3,6 +3,7 @@
   id: ClothesMateInventory
   startingInventory:
     ClothingBackpack: 5
+    ClothingMaskGasHalf: 3 #SpL
     ClothingBackpackDuffel: 5
     ClothingBackpackSatchel: 3
     ClothingBackpackSatchelLeather: 2
