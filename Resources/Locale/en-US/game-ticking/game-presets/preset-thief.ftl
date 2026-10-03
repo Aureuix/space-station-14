@@ -1,5 +1,5 @@
 thief-role-greeting-human =
-    You are criminal scum, a kleptomaniac previously arrested and on parole for petty theft. You need to add more to your collection.
+    You are a kleptomaniac with one goal in mind: add anything worth stealing to your collection.
 
 thief-role-greeting-animal =
     You are a kleptomaniac animal.

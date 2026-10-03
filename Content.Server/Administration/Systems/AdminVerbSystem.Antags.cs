@@ -49,6 +49,8 @@ public sealed partial class AdminVerbSystem
     private static readonly ProtoId<StartingGearPrototype> CBURNGearID = "CBURNGearCleanup";
     private static readonly EntProtoId DefaultCBURNAltRule = "CBURNAltSpawn";
     private static readonly ProtoId<StartingGearPrototype> CBURNGearAltID = "CBURNGearLiquidator";
+    private static readonly EntProtoId DefaultGreenshieldRule = "GreenshieldSpawn";
+    private static readonly ProtoId<StartingGearPrototype> GreenshieldGearID = "GSOGear";
     private static readonly EntProtoId DefaultNTNCRule = "NTNCSpawn";
     private static readonly ProtoId<StartingGearPrototype> NTNCGearID = "NTNCGearBasic";
     #endregion
@@ -379,7 +381,7 @@ public sealed partial class AdminVerbSystem
         {
             Text = cburnaltname,
             Category = VerbCategory.Antag,
-            Icon = new SpriteSpecifier.Rsi(new("/Textures/_Starlight/Interface/Misc/job_icons.rsi"), "ERTChaplain"),
+            Icon = new SpriteSpecifier.Rsi(new("/Textures/_SpL/Interface/Misc/job_icons.rsi"), "liquidator"),
             Act = () =>
             {
                 _outfit.SetOutfit(args.Target, CBURNGearAltID);
@@ -389,6 +391,22 @@ public sealed partial class AdminVerbSystem
             Message = string.Join(": ", cburnaltname, Loc.GetString("admin-verb-make-cburn-alt")),
         };
         args.Verbs.Add(cburnalt);
+        
+        var greenshieldname = Loc.GetString("admin-verb-text-make-greenshield");
+        Verb greenshield = new()
+        {
+            Text = greenshieldname,
+            Category = VerbCategory.Antag,
+            Icon = new SpriteSpecifier.Rsi(new("/Textures/_Starlight/Interface/Misc/job_icons.rsi"), "CCGreenShield"),
+            Act = () =>
+            {
+                _outfit.SetOutfit(args.Target, GreenshieldGearID);
+                _antag.ForceMakeAntag<GreenshieldRuleComponent>(targetPlayer, DefaultGreenshieldRule);
+            },
+            Impact = LogImpact.High,
+            Message = string.Join(": ", greenshieldname, Loc.GetString("admin-verb-make-greenshield")),
+        };
+        args.Verbs.Add(greenshield);
         
         var ntncname = Loc.GetString("admin-verb-text-make-ntnc-marine");
         Verb ntnc = new()

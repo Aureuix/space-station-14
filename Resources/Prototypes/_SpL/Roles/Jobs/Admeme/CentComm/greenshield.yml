@@ -1,0 +1,12 @@
+﻿- type: antag
+  id: GreenshieldOfficer
+  name: roles-antag-name-greenshield
+  antagonist: false
+  setPreference: true
+  roleLoadout: 
+  previewStartingGear: GSOGear
+  objective: roles-antag-greenshield-objective
+  playTimeTracker: JobCCGreenShield
+  requirements:
+    - !type:OverallPlaytimeRequirement
+      time: 10h
