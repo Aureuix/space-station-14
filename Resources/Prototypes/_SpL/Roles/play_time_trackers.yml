@@ -6,3 +6,6 @@
   
 - type: playTimeTracker
   id: JobNTNC
+  
+- type: playTimeTracker
+  id: JobCBURNLiquidator

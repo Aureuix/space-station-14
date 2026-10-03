@@ -27,3 +27,18 @@
   requirements:
     - !type:OverallPlaytimeRequirement
       time: 40h
+      
+# for the id card
+- type: job
+  id: CBURNAlt
+  name: job-name-liquidator
+  description: roles-antag-cburn-liquidator-objective
+  playTimeTracker: JobCBURNLiquidator
+  setPreference: false
+  icon: "JobIconCBURNAlt"
+  supervisors: job-supervisors-centcom
+  canBeAntag: false
+  accessGroups:
+    - AllAccess
+  access:
+    - CentralCommand

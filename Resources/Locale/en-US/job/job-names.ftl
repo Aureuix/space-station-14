@@ -6,7 +6,8 @@ job-name-brigmedic = Brigmedic
 job-name-cadet = Security Cadet
 job-name-captain = Captain
 job-name-cargotech = Cargo Technician
-job-name-cburn = CentComm Quarantine Officer
+# SpL: Hazmat, no just quarantine
+job-name-cburn = CentComm Hazmat Officer
 job-name-ce = Chief Engineer
 job-name-centcommoff = CentComm Official
 job-name-chef = Chef

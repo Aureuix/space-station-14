@@ -54,3 +54,30 @@
         - GSL
     - type: PresetIdCard
       job: GSLTechnician
+      
+- type: entity
+  parent: CBURNIDcard
+  id: CBURNAltIDcard
+  name: CBURN Liquidator ID card
+  suffix: CBURN
+  components:
+    - type: Sprite
+      sprite: _Starlight/Objects/Misc/id_cards.rsi
+      layers:
+        - state: centcomsilver
+        - sprite: *id-rsi
+          state: stripe_top
+          color: "#0c7d1d" 
+        - sprite: *id-rsi
+          state: stripe_bottom
+          color: "#0a5715"
+        - sprite: _SpL/Interface/Misc/job_icons.rsi
+          offset: *icon-offset
+          state: liquidator
+    - type: Item
+      sprite: Objects/Misc/id_cards.rsi
+      heldPrefix: silver
+    - type: PresetIdCard
+      job: CBURNAlt
+    - type: NanoChatCard # CD
+      listNumber: false

@@ -36,7 +36,7 @@
     gloves: ClothingHandsGlovesCombat
     outerClothing: ClothingOuterSoftsuitCBURN #Starlight
     shoes: ClothingShoesBootsMagERTFilled # SpL
-    id: CBURNPDA
+    id: CBURNAltPDA # SpL
     pocket1: WeaponPulsePistol # SpL
     pocket2: ToolDebug # SpL
     belt: ClothingBeltMilitaryWebbingERTFilledCBURN # SpL
