@@ -456,8 +456,8 @@
 - type: entity
   parent: [ BaseSyndicateContraband, ClothingHeadHelmetBase ]
   id: ClothingHeadHelmetRaid
-  name: syndicate raid helmet
-  description: An armored helmet for use with the syndicate raid suit. Very stylish.
+  name: Syndicate raidsuit helmet # SpL
+  description: An armored helmet for use with the Syndicate raid suit. Very stylish, but not very airtight. # SpL
   components:
   - type: Sprite
     sprite: Clothing/Head/Helmets/syndie-raid.rsi

@@ -170,7 +170,8 @@
   parent: ClothingHeadHardsuitBase #[ ClothingHeadSuitWithLightBase ]
   id: ClothingHeadHelmetHardsuitInfiltration
   categories: [ HideSpawnMenu ]
-  name: syndicate infiltration hardsuit helmet
+  name: infiltration tacsuit helmet # SpL
+  description: A menacing looking helmet designed for maximum compatibility with tacsuit cloaking. Due to the prioritisation of stealth, it does not come with a light. # SpL
   components:
   - type: Sprite
     sprite: _Starlight/Clothing/Head/Hardsuits/infiltrationsyndie.rsi
