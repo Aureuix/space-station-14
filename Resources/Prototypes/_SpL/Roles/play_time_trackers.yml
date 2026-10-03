@@ -3,3 +3,6 @@
   
 - type: playTimeTracker
   id: JobIlluminate
+  
+- type: playTimeTracker
+  id: JobNTNC

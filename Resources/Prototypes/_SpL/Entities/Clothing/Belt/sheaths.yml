@@ -72,3 +72,15 @@
           tags:
           - RedRegaliaSword
   - type: Appearance
+    
+- type: entity
+  parent: ClothingBeltRegaliaSheath
+  id: ClothingBeltRegaliaSheathFilled
+  name: CentComm vibrorapier sheath
+  suffix: Filled
+  components:
+    - type: ContainerFill
+      containers:
+        item:
+          - RedRegaliaSword
+    

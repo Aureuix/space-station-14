@@ -15,3 +15,6 @@ signal-port-description-ticket-machine-nextnumber = Changes ticket number to nex
 
 signal-port-name-ticket-machine-burntickets = Burn Tickets
 signal-port-description-ticket-machine-burntickets = Burns all served tickets when triggered.
+
+signal-port-name-turret-controller-sync-receiver = Sync
+signal-port-description-turret-controller-sync-receiver = Shares armament and authorization settings with another turret control panel.

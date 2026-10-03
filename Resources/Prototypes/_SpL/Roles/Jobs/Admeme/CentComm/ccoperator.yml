@@ -1,0 +1,23 @@
+﻿- type: antag
+  id: CentralCommandOperator
+  name: roles-antag-name-centcommop
+  # groupName: Central Command
+  # groupColor: Color.Green
+  antagonist: false
+  setPreference: true
+  roleLoadout: [ AntagCentCommOp ]
+  previewStartingGear: CentCommOpGear
+  objective: roles-antag-centcommop-objective
+  playTimeTracker: JobCentralCommandOfficial
+  requirements:
+    - !type:RoleTimeRequirement
+      role: JobCentralCommandOfficial
+      time: 24h # SpL- unattainable without having the power to give yourself the hours first
+      
+- type: startingGear
+  id: CentCommOpGear
+  equipment:
+    pocket2: BoxFolderCentComClipboardEmpty
+    id: CentcomPDA
+    back: ClothingBackpackSatchelCentcomm
+    misc: PinpointerNuclear

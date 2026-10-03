@@ -20,6 +20,9 @@
     sprite: _Starlight/Clothing/OuterClothing/Coats/blueshield_coat.rsi
   - type: Pierceable
     level: Metal
+  - type: TemperatureProtection # SpL start
+    heatingCoefficient: 1.1
+    coolingCoefficient: 0.35 # SpL end
   - type: Armor
     modifiers:
       coefficients:

@@ -21,12 +21,12 @@ loadout-group-musician-head = Musician head
 
 # Command
 
-loadout-group-nanotrasenrepresentative-head = NanoTrasen representative head
-loadout-group-nanotrasenrepresentative-outerclothing = NanoTrasen representative outer clothing
-loadout-group-nanotrasenrepresentative-jumpsuit = NanoTrasen representative jumpsuit
-loadout-group-nanotrasenrepresentative-eyewear = NanoTrasen representative eyewear
-loadout-group-nanotrasenrepresentative-shoes = NanoTrasen representative shoes
-loadout-group-nanotrasenrepresentative-neck = NanoTrasen representative neck
+loadout-group-nanotrasenrepresentative-head = NanoTrasen Representative head
+loadout-group-nanotrasenrepresentative-outerclothing = NanoTrasen Representative outer clothing
+loadout-group-nanotrasenrepresentative-jumpsuit = NanoTrasen Representative jumpsuit
+loadout-group-nanotrasenrepresentative-eyewear = NanoTrasen Representative eyewear
+loadout-group-nanotrasenrepresentative-shoes = NanoTrasen Representative shoes
+loadout-group-nanotrasenrepresentative-neck = NanoTrasen Representative neck
 
 loadout-group-captain-shoes = Captain shoes
 loadout-group-hop-shoes = Head of Personnel shoes
@@ -35,9 +35,9 @@ loadout-group-blueshield-head = Blueshield head
 loadout-group-blueshield-backpack = Blueshield backpack
 loadout-group-blueshield-jumpsuit = Blueshield jumpsuit
 loadout-group-blueshield-eyewear = Blueshield eyewear
-loadout-group-blueshield-outerclothing = Blueshield Outer Clothing
-loadout-group-blueshield-belt = Blueshield Belt
-loadout-group-blueshield-neck = Blueshield Neck
+loadout-group-blueshield-outerclothing = Blueshield outer clothing
+loadout-group-blueshield-belt = Blueshield belt
+loadout-group-blueshield-neck = Blueshield neck
 loadout-group-blueshield-id = Blueshield ID
 
 # Security
@@ -46,17 +46,17 @@ loadout-group-security-mask = Security mask
 loadout-group-security-mask-elite = Elite Security mask
 
 loadout-group-brigmedic-gloves = Brigmedic gloves
-loadout-group-security-non-lethal-weapon = Security Non-Lethal Weapon
-loadout-group-security-sidearm = Security Sidearm
+loadout-group-security-non-lethal-weapon = Security non-lethal weapon
+loadout-group-security-sidearm = Security sidearm
 loadout-group-detective-shoes = Detective shoes
 loadout-group-brigmedic-id = Brigmedic ID
 loadout-group-brigmedic-beaker = Brigmedic beaker
 loadout-group-brigmedic-mask = Brigmedic mask
 
-loadout-group-dutyofficer-head = Duty officer head
-loadout-group-dutyofficer-jumpsuit = Duty officer jumpsuit
-loadout-group-dutyofficer-outerclothing = Duty officer outer clothing
-loadout-group-dutyofficer-belt = Duty officer belt
+loadout-group-dutyofficer-head = Duty Officer head
+loadout-group-dutyofficer-jumpsuit = Duty Officer jumpsuit
+loadout-group-dutyofficer-outerclothing = Duty Officer outer clothing
+loadout-group-dutyofficer-belt = Duty Officer belt
 
 
 # Law
@@ -108,9 +108,9 @@ loadout-group-chemist-shoes = Chemist shoes
 # Service
 loadout-group-janitor-neck = Janitor neck
 
-loadout-group-serviceworker-head = Service worker head
-loadout-group-serviceworker-jumpsuit = Service worker jumpsuit
-loadout-group-serviceworker-outerclothing = Service worker outer clothing
+loadout-group-serviceworker-head = Service Worker head
+loadout-group-serviceworker-jumpsuit = Service Worker jumpsuit
+loadout-group-serviceworker-outerclothing = Service Worker outer clothing
 
 loadout-group-performer-head = Performer head
 loadout-group-performer-jumpsuit = Performer jumpsuit

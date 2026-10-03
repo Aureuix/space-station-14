@@ -68,6 +68,7 @@ using Robust.Shared.Spawners;
 using Robust.Shared.Utility;
 using Timer = Robust.Shared.Timing.Timer;
 using Content.Server._Starlight.Terminator;
+using Content.Server.Zombies; // SpL
 
 namespace Content.Server.Administration.Systems;
 
@@ -106,6 +107,7 @@ public sealed partial class AdminVerbSystem
     [Dependency] private readonly GibbingSystem _gibbing = default!;
     [Dependency] private readonly TerminatorSystem _terminator = default!; // starlight
     [Dependency] private readonly NpcFactionSystem _npcFactionSmite = default!; // starlight
+    [Dependency] private readonly ZombieSystem _zombie = default!; // SpL
 
     private readonly EntProtoId _actionViewLawsProtoId = "ActionViewLaws";
     private readonly ProtoId<SiliconLawsetPrototype> _crewsimovLawset = "Crewsimov";
@@ -320,6 +322,23 @@ public sealed partial class AdminVerbSystem
                 Message = string.Join(": ", bloodRemovalName, Loc.GetString("admin-smite-remove-blood-description"))
             };
             args.Verbs.Add(bloodRemoval);
+            
+            # region SpL
+            var zombifyName = Loc.GetString("admin-smite-zombify-name").ToLowerInvariant();
+            Verb zombify = new()
+            {
+                Text = zombifyName,
+                Category = VerbCategory.Smite,
+                Icon = new SpriteSpecifier.Rsi(new("/Textures/Interface/Misc/job_icons.rsi"), "Zombie"),
+                Act = () =>
+                {
+                    _zombie.ZombifyEntity(args.Target);
+                },
+                Impact = LogImpact.Extreme,
+                Message = string.Join(": ", zombifyName, Loc.GetString("admin-smite-zombify-description"))
+            };
+            args.Verbs.Add(zombify);
+            # endregion
         }
 
         // bobby...
