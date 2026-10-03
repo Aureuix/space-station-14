@@ -180,6 +180,11 @@
     spread: 5
     pump: false
     fireRate: 1.25 # SpL
+    soundGunshot:
+      path: /Audio/_Starlight/Weapons/Guns/Gunshots/gun_shotgun_automatic.ogg # SL/SpL
+  - type: BallisticAmmoProvider
+    soundRack:
+      path: /Audio/Weapons/Guns/Cock/ltrifle_cock.ogg # SL/SpL
   - type: Sprite
     sprite: Objects/Weapons/Guns/Shotguns/enforcer.rsi
   - type: Clothing
@@ -363,5 +368,8 @@
         volume: -3
         rolloffFactor: 1.3
     fireRate: 2
+  - type: BallisticAmmoProvider
+    soundRack:
+      path: /Audio/Weapons/Guns/Cock/ltrifle_cock.ogg # SL/SpL
   - type: GunSpreadModifier
     spread: 1.2
