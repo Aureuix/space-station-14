@@ -24,9 +24,9 @@ public sealed partial class TraitsTab : BoxContainer
     private readonly Dictionary<ProtoId<TraitCategoryPrototype>, TraitCategory> _categoryUis = new();
     private readonly HashSet<ProtoId<TraitPrototype>> _selectedTraits = new();
 
-    private int _maxGlobalTraits;
-    private int _maxGlobalPoints;
-    private int _currentTraitCount;
+    // private int _maxGlobalTraits; // SpL
+    // private int _maxGlobalPoints; // SpL
+    // private int _currentTraitCount; // SpL
     private int _currentPointsSpent;
 
     private string _currentSearchText = string.Empty;
@@ -41,24 +41,24 @@ public sealed partial class TraitsTab : BoxContainer
         _prototype.PrototypesReloaded += OnProtoReload;
 
         // Subscribe to CVars
-        _cfg.OnValueChanged(StarlightCCVars.MaxTraitCount, OnMaxTraitCountChanged, true);
-        _cfg.OnValueChanged(StarlightCCVars.MaxTraitPoints, OnMaxTraitPointsChanged, true);
+        // _cfg.OnValueChanged(StarlightCCVars.MaxTraitCount, OnMaxTraitCountChanged, true); // SpL
+        // _cfg.OnValueChanged(StarlightCCVars.MaxTraitPoints, OnMaxTraitPointsChanged, true); // SpL
 
         PopulateCategories();
-        UpdateGlobalStats();
+        // UpdateGlobalStats(); // SpL
     }
 
-    private void OnMaxTraitCountChanged(int value)
-    {
-        _maxGlobalTraits = value;
-        UpdateGlobalStats();
-    }
+    // private void OnMaxTraitCountChanged(int value) // SpL
+    // {
+    //     _maxGlobalTraits = value;
+    //     UpdateGlobalStats();
+    // }
 
-    private void OnMaxTraitPointsChanged(int value)
-    {
-        _maxGlobalPoints = value;
-        UpdateGlobalStats();
-    }
+    // private void OnMaxTraitPointsChanged(int value) // SpL
+    // {
+    //     _maxGlobalPoints = value;
+    //     UpdateGlobalStats();
+    // }
 
     private void OnProtoReload(PrototypesReloadedEventArgs args)
     {
@@ -73,7 +73,7 @@ public sealed partial class TraitsTab : BoxContainer
     public void RefreshTraits()
     {
         PopulateCategories();
-        UpdateGlobalStats();
+        // UpdateGlobalStats(); // SpL
     }
 
     private void PopulateCategories()
@@ -112,28 +112,28 @@ public sealed partial class TraitsTab : BoxContainer
         if (selected)
         {
             // Check global limits
-            if (_currentTraitCount >= _maxGlobalTraits)
-            {
-                RevertTraitToggle(traitId);
-                return;
-            }
+            // if (_currentTraitCount >= _maxGlobalTraits) // SpL
+            // {
+            //     RevertTraitToggle(traitId);
+            //     return;
+            // }
 
-            if (_currentPointsSpent + trait.Cost > _maxGlobalPoints)
-            {
-                RevertTraitToggle(traitId);
-                return;
-            }
+            // if (_currentPointsSpent + trait.Cost > _maxGlobalPoints) // SpL
+            // {
+            //     RevertTraitToggle(traitId);
+            //     return;
+            // }
 
             // Check category limits
             if (_categoryUis.TryGetValue(trait.Category, out var categoryUi))
             {
                 var categoryProto = _prototype.Index(trait.Category);
-                if (categoryProto.MaxTraits.HasValue &&
-                    categoryUi.SelectedCount >= categoryProto.MaxTraits.Value)
-                {
-                    RevertTraitToggle(traitId);
-                    return;
-                }
+                // if (categoryProto.MaxTraits.HasValue && // SpL
+                //     categoryUi.SelectedCount >= categoryProto.MaxTraits.Value)
+                // {
+                //     RevertTraitToggle(traitId);
+                //     return;
+                // }
 
                 if (categoryProto.MaxPoints.HasValue &&
                     categoryUi.PointsSpent + trait.Cost > categoryProto.MaxPoints.Value)
@@ -161,17 +161,17 @@ public sealed partial class TraitsTab : BoxContainer
             }
 
             _selectedTraits.Add(traitId);
-            _currentTraitCount++;
+            // _currentTraitCount++; // SpL
             _currentPointsSpent += trait.Cost;
         }
         else
         {
             _selectedTraits.Remove(traitId);
-            _currentTraitCount--;
+            // _currentTraitCount--; // SpL
             _currentPointsSpent -= trait.Cost;
         }
 
-        UpdateGlobalStats();
+        // UpdateGlobalStats();
         UpdateCategoryStats(trait.Category);
         OnTraitsChanged?.Invoke(_selectedTraits);
     }
@@ -185,58 +185,58 @@ public sealed partial class TraitsTab : BoxContainer
         }
     }
 
-    private void UpdateGlobalStats()
-    {
-        GlobalTraitCountLabel.Text = $"{_currentTraitCount} / {_maxGlobalTraits}";
-        GlobalPointsLabel.Text = $"{_maxGlobalPoints - _currentPointsSpent} / {_maxGlobalPoints}";
-
-        // Calculate remaining points (clamped to not go below 0 in display)
-        var remainingPoints = _maxGlobalPoints - _currentPointsSpent;
-        GlobalPointsLabel.Text = $"{remainingPoints} / {_maxGlobalPoints}";
-
-        // Calculate progress bar percentage - clamp between 0 and 1
-        var percentage = _maxGlobalPoints > 0
-            ? Math.Clamp((float)remainingPoints / _maxGlobalPoints, 0f, 1f)
-            : 0f;
-
-        // Update progress bar using percentage-based sizing
-        var parent = GlobalPointsBar.Parent;
-        if (parent != null)
-        {
-            var parentWidth = parent.Width;
-            // If parent width is 0 (not laid out yet), defer until layout happens
-            if (parentWidth > 0)
-            {
-                GlobalPointsBar.SetWidth = (int)((parentWidth - 2) * percentage);
-                _awaitingLayoutUpdate = false;
-            }
-            else if (!_awaitingLayoutUpdate)
-            {
-                // Schedule update after parent layout (only once)
-                _awaitingLayoutUpdate = true;
-                parent.OnResized += OnProgressBarParentResized;
-            }
-        }
-
-        // Update progress bar color class
-        GlobalPointsBar.RemoveStyleClass("TraitsProgressBarFull");
-        GlobalPointsBar.RemoveStyleClass("TraitsProgressBarPartial");
-        GlobalPointsBar.RemoveStyleClass("TraitsProgressBarLow");
-        GlobalPointsBar.RemoveStyleClass("TraitsProgressBarEmpty");
-
-        GlobalPointsBar.AddStyleClass(percentage switch
-        {
-            >= 0.99f => "TraitsProgressBarFull",
-            >= 0.5f => "TraitsProgressBarPartial",
-            > 0f => "TraitsProgressBarLow",
-            _ => "TraitsProgressBarEmpty"
-        });
-    }
+    // private void UpdateGlobalStats() // SpL
+    // {
+    //     GlobalTraitCountLabel.Text = $"{_currentTraitCount} / {_maxGlobalTraits}";
+    //     GlobalPointsLabel.Text = $"{_maxGlobalPoints - _currentPointsSpent} / {_maxGlobalPoints}";
+    //
+    //     // Calculate remaining points (clamped to not go below 0 in display)
+    //     var remainingPoints = _maxGlobalPoints - _currentPointsSpent;
+    //     GlobalPointsLabel.Text = $"{remainingPoints} / {_maxGlobalPoints}";
+    //
+    //     // Calculate progress bar percentage - clamp between 0 and 1
+    //     var percentage = _maxGlobalPoints > 0
+    //         ? Math.Clamp((float)remainingPoints / _maxGlobalPoints, 0f, 1f)
+    //         : 0f;
+    //
+    //     // Update progress bar using percentage-based sizing
+    //     var parent = GlobalPointsBar.Parent;
+    //     if (parent != null)
+    //     {
+    //         var parentWidth = parent.Width;
+    //         // If parent width is 0 (not laid out yet), defer until layout happens
+    //         if (parentWidth > 0)
+    //         {
+    //             GlobalPointsBar.SetWidth = (int)((parentWidth - 2) * percentage);
+    //             _awaitingLayoutUpdate = false;
+    //         }
+    //         else if (!_awaitingLayoutUpdate)
+    //         {
+    //             // Schedule update after parent layout (only once)
+    //             _awaitingLayoutUpdate = true;
+    //             parent.OnResized += OnProgressBarParentResized;
+    //         }
+    //     }
+    //
+    //     // Update progress bar color class
+    //     GlobalPointsBar.RemoveStyleClass("TraitsProgressBarFull");
+    //     GlobalPointsBar.RemoveStyleClass("TraitsProgressBarPartial");
+    //     GlobalPointsBar.RemoveStyleClass("TraitsProgressBarLow");
+    //     GlobalPointsBar.RemoveStyleClass("TraitsProgressBarEmpty");
+    //
+    //     GlobalPointsBar.AddStyleClass(percentage switch
+    //     {
+    //         >= 0.99f => "TraitsProgressBarFull",
+    //         >= 0.5f => "TraitsProgressBarPartial",
+    //         > 0f => "TraitsProgressBarLow",
+    //         _ => "TraitsProgressBarEmpty"
+    //     });
+    // }
 
     private void OnProgressBarParentResized()
     {
         _awaitingLayoutUpdate = false;
-        UpdateGlobalStats();
+        // UpdateGlobalStats(); // SpL
     }
 
     private void UpdateCategoryStats(ProtoId<TraitCategoryPrototype> categoryId)
@@ -271,7 +271,7 @@ public sealed partial class TraitsTab : BoxContainer
 
     private void RecalculateStats()
     {
-        _currentTraitCount = 0;
+        // _currentTraitCount = 0; // SpL
         _currentPointsSpent = 0;
 
         // Rebuild selected traits based on what's actually selected in the UI
@@ -289,12 +289,12 @@ public sealed partial class TraitsTab : BoxContainer
                     continue;
 
                 _selectedTraits.Add(traitId);
-                _currentTraitCount++;
+                // _currentTraitCount++; // SpL
                 _currentPointsSpent += trait.Cost;
             }
         }
 
-        UpdateGlobalStats();
+        // UpdateGlobalStats(); // SpL
         foreach (var (categoryId, _) in _categoryUis)
         {
             UpdateCategoryStats(categoryId);
@@ -319,7 +319,7 @@ public sealed partial class TraitsTab : BoxContainer
         }
 
         _selectedTraits.Clear();
-        _currentTraitCount = 0;
+        // _currentTraitCount = 0; // SpL
         _currentPointsSpent = 0;
 
         // Apply new selection
@@ -329,7 +329,7 @@ public sealed partial class TraitsTab : BoxContainer
                 continue;
 
             _selectedTraits.Add(traitId);
-            _currentTraitCount++;
+            // _currentTraitCount++; // SpL
             _currentPointsSpent += trait.Cost;
 
             if (_categoryUis.TryGetValue(trait.Category, out var categoryUi))
@@ -338,7 +338,7 @@ public sealed partial class TraitsTab : BoxContainer
             }
         }
 
-        UpdateGlobalStats();
+        // UpdateGlobalStats(); // SpL
         foreach (var (categoryId, _) in _categoryUis)
         {
             UpdateCategoryStats(categoryId);
