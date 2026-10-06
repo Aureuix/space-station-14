@@ -582,5 +582,5 @@
           reagent: Methylxanthine
           amount: -12.0
         - !type:CleanBloodstream
-          excluded: Lectrazine
+          excluded: Zyrictrazine
           cleanseRate: 6
