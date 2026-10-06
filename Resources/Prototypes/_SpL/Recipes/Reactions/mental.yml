@@ -1,0 +1,62 @@
+﻿- type: reaction
+  id: Theobromine
+  minTemp: 510
+  reactants:
+    Coffee:
+      amount: 2
+  products:
+    Theobromine: 1
+
+- type: reaction
+  id: Methylxanthine
+  minTemp: 430
+  reactants:
+    Theobromine:
+      amount: 1
+    Ephedrine:
+      amount: 3
+  products:
+    Methylxanthine: 4
+    
+- type: reaction
+  id: Sertraline
+  minTemp: 370
+  reactants:
+    Psicodine:
+      amount: 1
+    Iodine:
+      amount: 2
+    Inaprovaline:
+      amount: 2
+  products:
+    Sertraline: 5
+    
+- type: reaction
+  id: Valproate
+  minTemp: 370
+  reactants:
+    Lithium:
+      amount: 2
+    Psicodine:
+      amount: 1
+    Iodine:
+      amount: 2
+    Sodium:
+      amount: 1
+  products:
+    Valproate: 6
+    
+- type: reaction
+  id: Lurasidone
+  minTemp: 370
+  reactants:
+    Pax:
+      amount: 1
+    Psicodine:
+      amount: 3
+    Nitrogen:
+      amount: 1
+    Sugar:
+      amount: 1
+  products:
+    Lurasidone: 6

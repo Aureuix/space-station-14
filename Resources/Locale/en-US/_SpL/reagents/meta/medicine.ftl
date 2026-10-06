@@ -36,3 +36,6 @@ reagent-desc-oxoformalizol = After careful (accidental) experimentation on mixin
 
 reagent-name-oxoprodigol = oxoprodigol
 reagent-desc-oxoprodigol = Immolation cures the ψυχή. Return to ζωή, return to χώμα. Works on the dead.
+
+reagent-name-zyrictrazine = zyrictrazine
+reagent-desc-zyrictrazine = A difficult to synthesize but incredibly potent blood cleanser, capable of rapidly purging chemicals and narcotic effects from the bloodstream. Use at very low doses, side effects can be extreme especially if overdosed.
