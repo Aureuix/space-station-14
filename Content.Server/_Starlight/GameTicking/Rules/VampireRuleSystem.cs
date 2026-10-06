@@ -73,11 +73,11 @@ public sealed partial class VampireRuleSystem : GameRuleSystem<VampireRuleCompon
             _mind.TryAddObjective(mindId, mind, obj);
         }
 
-        if (rule.StealObjectives.Count > 0)
+        /*if (rule.StealObjectives.Count > 0)
         {
             var obj = rng.Pick(rule.StealObjectives);
             _mind.TryAddObjective(mindId, mind, obj);
-        }
+        }*/ // SpL- no!
 
         return true;
     }
