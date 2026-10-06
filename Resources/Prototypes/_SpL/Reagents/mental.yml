@@ -455,3 +455,9 @@
           effectProto: StatusEffectDrowsiness
           time: 3
           type: Add
+        - !type:AdjustReagent
+          conditions:
+            - !type:MetabolizerTypeCondition
+              type: [ Cyclorite ]
+          reagent: Lurasidone
+          amount: -0.1
