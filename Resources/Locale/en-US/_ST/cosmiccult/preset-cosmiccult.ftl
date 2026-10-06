@@ -6,7 +6,7 @@ cosmiccult-title = Cosmic Cult
 cosmiccult-description = Cultists lurk amongst the crew.
 
 roles-antag-cosmiccult-name = Cosmic Cultist
-roles-antag-cosmiccult-description = Usher in the end of all things through subterfuge and sabotage, brainwashing those who would oppose you.
+roles-antag-cosmiccult-description = You are a member of a doomsday cult dedicated to the end of all things. Usher in the curtain call through subterfuge and sabotage, brainwashing those who would oppose you.
 
 cosmiccult-gamemode-title = The Cosmic Cult
 cosmiccult-gamemode-description = Scanners detect an anomalous increase in Λ-CDM. There is no additional data.

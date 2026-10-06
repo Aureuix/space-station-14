@@ -903,8 +903,8 @@
     reduction: 0.3
   - type: Pierceable
     level: Wood
-  - type: Armor
-    modifiers:
-      coefficients:
-        Heat: 0.85
-        Cold: 0.85
+  #- type: Armor # SpL- holy shit.
+  #  modifiers:
+  #    coefficients:
+  #      Heat: 0.85
+  #      Cold: 0.85
