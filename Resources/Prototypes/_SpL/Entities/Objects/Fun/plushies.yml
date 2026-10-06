@@ -579,3 +579,11 @@
           reagents:
             - ReagentId: Pilk
               Quantity: 30
+      - type: LanguageSpeaker
+      - type: LanguageKnowledge
+        speaks:
+          - GalacticCommon
+          - EncodedAudioLanguage
+        understands:
+          - GalacticCommon
+          - EncodedAudioLanguage

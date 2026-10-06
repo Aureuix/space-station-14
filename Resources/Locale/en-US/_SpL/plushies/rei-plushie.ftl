@@ -1,1 +1,9 @@
-plushie-rei-1 = Hello, World!
+plushie-rei-1 = Go to the medbay? Why? I have the entire thing in my belt.
+plushie-rei-2 = Pilk please!
+plushie-rei-3 = I love my awesome IPC life!
+plushie-rei-4 = I could eat a whole APC right now...
+plushie-rei-5 = Ion storms make me feel sick... Even thinking about it makes me feel ill.
+
+# Encoded Audio Language
+plushie-rei-6 = ^eal. I feel so sick...
+plushie-rei-7 = ^eal. I am real, I promise. I am real, I am real...
