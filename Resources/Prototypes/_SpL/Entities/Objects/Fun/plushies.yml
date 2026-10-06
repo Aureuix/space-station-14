@@ -560,5 +560,5 @@
       - type: Sprite
         sprite: _SpL/Objects/Fun/Plushies/furlow_plushie.rsi #TESTING ONLY
         state: icon
-      - type: icon
-        sprite: _SpL/Objects/Fun/Plushies/furlow_plushie.rsi #TESTING ONLY
+      - type: Item
+        sprite: _SpL/Objects/Fun/Plushies/furlow_plushie.rsi
