@@ -550,3 +550,15 @@
       state: icon
     - type: Item
       sprite: _SpL/Objects/Fun/Plushies/furlow_plushie.rsi
+
+- type: entity
+  parent: BaseIPCPlushie
+  id: PlushieRei
+  name: rei plushie
+  description: A plushie of an odd robot girl...
+  components:
+      - type: Sprite
+        sprite: _SpL/Objects/Fun/Plushies/furlow_plushie.rsi #TESTING ONLY
+        state: icon
+      - type: icon
+        sprite: _SpL/Objects/Fun/Plushies/furlow_plushie.rsi #TESTING ONLY
