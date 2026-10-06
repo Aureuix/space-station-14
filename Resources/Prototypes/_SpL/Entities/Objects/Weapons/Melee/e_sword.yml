@@ -1,0 +1,97 @@
+﻿- type: entity
+  name: SVS-X04 energy sabre
+  parent: [BaseMeleeWeaponEnergy, BaseCentcommContraband]
+  id: EnergySwordCC
+  description: A very loud & dangerous sabre with a beam made of pure, concentrated plasma, reverse-engineered from NanoTrasen designs. It's copycats all the way down!
+  components:
+    - type: Sprite
+      sprite: _SpL/Objects/Weapons/Melee/ESwordNT.rsi
+      layers:
+        - state: e_sword
+        - state: e_sword_blade
+          color: "#22ff88"
+          visible: false
+          shader: unshaded
+          map: [ "blade" ]
+    - type: ItemToggleMeleeWeapon
+      activatedSoundOnHit:
+        path: /Audio/Weapons/eblade1.ogg
+        params:
+          variation: 0.250
+      activatedSoundOnHitNoDamage:
+        path: /Audio/Weapons/eblade1.ogg
+        params:
+          variation: 0.250
+          volume: -10
+      activatedSoundOnSwing:
+        path: /Audio/Weapons/eblademiss.ogg
+        params:
+          variation: 0.125
+      activatedDamage:
+        types:
+          Slash: 10
+          Heat: 10
+          Structural: 15
+    - type: MeleeWeapon
+      wideAnimationRotation: -135
+      range: 1.65
+      attackRate: 1.25
+      damage:
+        types:
+          Blunt: 4.5
+    - type: Item
+      sprite: Objects/Weapons/Melee/e_sword-inhands.rsi
+    - type: StaticPrice
+      price: 2500
+    - type: EnergySword
+      colorOptions:
+        - "#22ff88" # can only be green
+
+- type: entity
+  name: NT-PMW energy sabre
+  parent: [BaseMeleeWeaponEnergy, BaseSecurityContraband]
+  id: EnergySwordNT
+  description: A very loud & dangerous sabre with a beam made of pure, concentrated plasma, reverse-engineered from the infamous blades of the Corporate War.
+  components:
+    - type: Sprite
+      sprite: _SpL/Objects/Weapons/Melee/ESwordNT.rsi
+      layers:
+        - state: e_sword
+        - state: e_sword_blade
+          color: "#2288ff"
+          visible: false
+          shader: unshaded
+          map: [ "blade" ]
+    - type: ItemToggleMeleeWeapon
+      activatedSoundOnHit:
+        path: /Audio/Weapons/eblade1.ogg
+        params:
+          variation: 0.250
+      activatedSoundOnHitNoDamage:
+        path: /Audio/Weapons/eblade1.ogg
+        params:
+          variation: 0.250
+          volume: -10
+      activatedSoundOnSwing:
+        path: /Audio/Weapons/eblademiss.ogg
+        params:
+          variation: 0.125
+      activatedDamage:
+        types:
+          Slash: 10
+          Heat: 10
+          Structural: 15
+    - type: MeleeWeapon
+      wideAnimationRotation: -135
+      range: 1.65
+      attackRate: 1.25
+      damage:
+        types:
+          Blunt: 4.5
+    - type: Item
+      sprite: Objects/Weapons/Melee/e_sword-inhands.rsi
+    - type: StaticPrice
+      price: 2500
+    - type: EnergySword
+      colorOptions:
+        - "#2288ff" # can only be blue

@@ -291,7 +291,7 @@
           children:
             - id: Truncheon
             - id: Handcuffs
-            - id: HoloprojectorSecurity # SpL
+            - id: EnergySwordCC # SpL
             - id: CombatMedipen
             - id: CombatMedipen
             - id: MedkitCombatFilled

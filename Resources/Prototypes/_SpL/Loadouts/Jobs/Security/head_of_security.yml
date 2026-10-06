@@ -23,3 +23,11 @@
     back:
       - WeaponPistolM1911
       - MagazineMagnum
+    
+    
+- type: loadout
+  id: HOSEnergySword
+  dummyEntity: EnergySwordNT
+  storage:
+    back:
+      - EnergySwordNT
