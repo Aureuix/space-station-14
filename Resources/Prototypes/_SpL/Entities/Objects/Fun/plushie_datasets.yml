@@ -57,3 +57,8 @@
   values:
     prefix: plushie-paradigm-
     count: 6
+- type: localizedDataset
+  id: PlushiesRei
+  values:
+    prefix: plushie-rei-
+    count: 1

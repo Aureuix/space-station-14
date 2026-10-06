@@ -558,7 +558,24 @@
   description: A plushie of an odd robot girl...
   components:
       - type: Sprite
-        sprite: _SpL/Objects/Fun/Plushies/furlow_plushie.rsi #TESTING ONLY
+        sprite: _SpL/Objects/Fun/Plushies/furlow_plushie.rsi #TESTING ONLY REPLACE LATER
         state: icon
       - type: Item
-        sprite: _SpL/Objects/Fun/Plushies/furlow_plushie.rsi
+        sprite: _SpL/Objects/Fun/Plushies/furlow_plushie.rsi #TESTING ONLY REPLACE LATER
+      - type: ItemToggle
+        onUse: false
+        activated: true
+        verbToggleOn: plushie-voicebox-activate
+        verbToggleOff: plushie-voicebox-deactivate
+      - type: ComponentToggler
+        components:
+          - type: DatasetVocalizer
+            dataset: PlushiesRei
+      - type: Vocalizer
+        minVocalizeInterval: 120
+        maxVocalizeInterval: 240
+      - type: Extractable
+        juiceSolution:
+          reagents:
+            - ReagentId: Pilk
+              Quantity: 30
