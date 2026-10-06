@@ -313,7 +313,7 @@
   parent: BaseGameRule
   components:
   - type: GameRule
-    minPlayers: 25
+    minPlayers: 10 # Spectra: let there be lings
   - type: AntagSelection
     agentName: changeling-round-end-agent-name
     selectionTime: IntraPlayerSpawn
@@ -428,7 +428,7 @@
   id: Wizard
   components:
   - type: GameRule
-    minPlayers: 40 # Starlight. So a Wizard can actually spawn on Beta.
+    minPlayers: 15 # Spectra: so we see them at all
   - type: AntagSelection
     agentName: wizard-round-end-name
     selectionTime: PrePlayerSpawn
