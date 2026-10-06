@@ -149,10 +149,10 @@ reagent-name-aloxadone = aloxadone
 reagent-desc-aloxadone = A cryogenics chemical. Used to treat severe burns and frostbite via regeneration of the affected tissue. Works regardless of the patient being alive or dead.
 
 reagent-name-mannitol = mannitol
-reagent-desc-mannitol = Efficiently restores brain damage.
+reagent-desc-mannitol = A common compound used to reduce cranial pressure and as a low-calorie sweetener.
 
 reagent-name-psicodine = psicodine
-reagent-desc-psicodine = Suppresses anxiety and other various forms of mental distress. Overdose causes hallucinations and minor toxin damage.
+reagent-desc-psicodine = A broad-spectrum anti-psychotic used to reduce mental distress. Overdose causes hallucinations and minor toxin damage.
 
 reagent-name-potassium-iodide = potassium iodide
 reagent-desc-potassium-iodide = Will reduce the damaging effects of radiation by 90%. Prophylactic use only.
