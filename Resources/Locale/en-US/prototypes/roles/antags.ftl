@@ -13,7 +13,7 @@ roles-antag-syndicate-agent-sleeper-name = Syndicate sleeper agent
 roles-antag-syndicate-agent-sleeper-objective = Either willingly or by mind control, the Syndicate has you as an asset. You may be activated at any point in a shift to act as an agent.
 
 roles-antag-initial-infected-name = Initial Infected
-roles-antag-initial-infected-objective = Once you turn, infect as many other crew members as possible.
+roles-antag-initial-infected-objective = It takes one hundred and thirty one years of continuous playtime to unlock this role. You will not unlock this role.
 
 roles-antag-zombie-name = Zombie
 roles-antag-zombie-objective = Turn as many lifeforms as possible into zombies.
@@ -22,7 +22,7 @@ roles-antag-nuclear-operative-commander-name = Nuclear operative commander
 roles-antag-nuclear-operative-commander-objective = You are the commander of an elite Nuclear Operative squad. Coordinate your team and enact your mission to destroy the station with absolute prejudice.
 
 roles-antag-nuclear-operative-agent-name = Nuclear operative corpsman
-roles-antag-nuclear-operative-agent-objective = You are a combat medic and chemical warfare specialist for a Nuclear Operative squad. You are their last line- keep your team alive at all costs.
+roles-antag-nuclear-operative-agent-objective = You are a combat medic and chemical warfare specialist for a Nuclear Operative squad. You are their last line– keep your team alive at all costs.
 
 roles-antag-nuclear-operative-name = Nuclear operative
 roles-antag-nuclear-operative-objective = You are an elite Nuclear Operative of the Gorlex Marauders. Your objective is simple: find the nuke disk and use it to blow up the station.
@@ -31,7 +31,7 @@ roles-antag-subverted-silicon-name = Subverted silicon
 roles-antag-subverted-silicon-objective = Follow your new laws and do bad unto the station.
 
 roles-antag-space-ninja-name = Space Ninja
-roles-antag-space-ninja-objective = Use your stealth to sabotage the station, nom on electrical wires.
+roles-antag-space-ninja-objective = You are a trained ninja from the Spider Clan, paid by an unknown benefactor to infiltrate and sabotage the station. Act with honor, nom on electrical wires.
 
 roles-antag-paradox-clone-name = Paradox Clone
 roles-antag-paradox-clone-objective = A freak space-time anomaly has teleported you into another reality! Find your counterpart and figure something out, or else one of you will die when spacetime corrects.

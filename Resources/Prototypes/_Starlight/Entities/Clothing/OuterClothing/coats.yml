@@ -562,7 +562,7 @@
   - type: Item
 
 - type: entity
-  parent: [ ClothingOuterStorageBase, AllowSuitStorageClothing, ClothingOuterColdBase, BaseCommandContraband ]
+  parent: [ ClothingOuterStorageBase, AllowSuitStorageClothing, ClothingOuterColdBase, BaseNanoTrasenContraband ] # SpL- NT contra
   id: ClothingOuterCoatNCT
   name: nt career trainer's jacket
   description: A sharp black coat with beige trim around the cuffs and collar, offering a mix of professionalism and approachability.

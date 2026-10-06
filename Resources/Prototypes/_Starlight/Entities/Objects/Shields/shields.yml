@@ -310,7 +310,7 @@
                   max: 10
 
 - type: entity
-  name: X-03 green phase shield
+  name: SVS X-03 green phase shield
   parent: [BaseItem, BaseCentcommContraband ]
   id: GreenLightShield
   categories: [ DoNotMap ]

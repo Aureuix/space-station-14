@@ -153,6 +153,9 @@
             Slash: 10
             Heat: 10
     deactivatedSecret: true
+  - type: EnergySword
+    colorOptions:
+      - "#ff2222" # SpL- can only be red
   - type: ItemToggleActiveSound
     activeSound:
       path: /Audio/Weapons/ebladehum.ogg
@@ -236,6 +239,9 @@
         visible: false
         shader: unshaded
         map: [ "blade" ]
+  - type: EnergySword
+    colorOptions:
+      - "#ff2222" # SpL- can only be red
   - type: Item
     size: Tiny
     sprite: Objects/Weapons/Melee/e_dagger.rsi
@@ -305,6 +311,9 @@
         visible: false
         shader: unshaded
         map: [ "blade" ]
+      - type: EnergySword
+        colorOptions:
+          - "#ff22ff" # SpL- can only be purple
   - type: Item
     sprite: Objects/Weapons/Melee/e_cutlass.rsi
 
@@ -364,6 +373,9 @@
         visible: false
         shader: unshaded
         map: [ "blade" ]
+  - type: EnergySword
+    colorOptions:
+      - "#ff2222" # SpL- can only be red
   - type: Item
     size: Small
     sprite: Objects/Weapons/Melee/e_sword_double-inhands.rsi
@@ -431,6 +443,10 @@
   id: CyborgEnergySword
   suffix: For Borgs
   description: A very loud & dangerous sword with a beam made of pure, concentrated plasma. Specially designed for syndicate cyborgs.
+  components:
+  - type: EnergySword
+    colorOptions:
+      - "#ff2222" # SpL- can only be red
 
 - type: entity
   parent: EnergySwordDouble

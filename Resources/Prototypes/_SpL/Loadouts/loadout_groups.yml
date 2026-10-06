@@ -6,6 +6,7 @@
     - HOSSP8AR
     - HOSDeckard
     - HOSPistolM1911
+    - HOSEnergySword
   
 - type: loadoutGroup
   id: DetectiveSidearm
@@ -198,6 +199,7 @@
     - CentCommHeavyPistol
     - CentCommVibrocutter
     - CentCommHypoPocket
+    - CentCommEnergySword
     - CentCommGrimoire
   
 ## NTNC

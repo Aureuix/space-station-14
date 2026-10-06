@@ -9,14 +9,14 @@ alerts-shadekin-rejuvenate-name = Rejuvenating
 alerts-shadekin-rejuvenate-desc = You are currently rejuvenating, you wont be able to leave the dark until you are at full energy.
 
 roles-antag-brighteye-name = Bright-eye
-roles-antag-brighteye-description = A visitor and interloper from “The Dark”. Interfering and observing from where the light does not reach.
+roles-antag-brighteye-description = You are a visitor and interloper from “The Dark”, interfering and observing from where the light does not reach.
 objective-issuer-brighteye = [color=#6c15ae]Bright-eye[/color]
 brighteye-role-greeting = 
     You are a Bright-eye!
     You are a Shadekin from The Dark, a creature of the shadows that is foreign and alien to this dimension.
-    Explore and implore your influence over where the light does not reach, breach the spaces between this one and the dark with your portal and learn of this world.
+    Explore this plane and expand your influence over where the light does not reach, learn the machinations of this world, and breach the barrier between light and dark.
 
-shadekin-portal-owner = This is your portal
+shadekin-portal-owner = This is your portal.
 shadekin-portal-stability-stable = Current state: [color=forestgreen]Stable[/color]
 shadekin-portal-stability-unstable = Current state: [color=crimson]Growing[/color]
 shadekin-portal-health-percentage = Current health: [color=red]{$percent}[/color]
@@ -28,7 +28,7 @@ shadekin-noenergy = Not enough energy to perform that action.
 shadekin-fail-generic = I cant use my energy!
 phase-fail-generic = I can't phase!
 hubportal-rejuvenate = You can't use this so soon after an emergency warp!
-shadekin-rejuvenate-compleated = You feel like you can leave the Dark again
+shadekin-rejuvenate-compleated = You feel like you can leave the Dark again.
 shadekin-shunt = Something resonates with your core and brings you to your knees.
 shadekin-too-bright = The light is too intense here!
 
@@ -46,6 +46,6 @@ shadekinTrap-trigger = A set of crystals spring out of the ground and shadowy te
 shadekinTrap-trigger-fail = The shadowy tendrils fail to catch anything and dissipate.
 
 alerts-shadekin-thedark-name = The Dark
-alerts-shadekin-thedark-desc = Your in The Dark... and without protection or being a shadekin... Its taking an effect on you.
+alerts-shadekin-thedark-desc = This place is hostile to you. Without adequate protections or adaptations, it's beginning to take a toll.
 
 dark-breacher-window-title = Dark Breacher

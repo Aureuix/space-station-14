@@ -63,7 +63,7 @@
   name: mantis blade
   parent: [BaseItem, BaseSyndicateContraband]
   id: CyberMantisBlade
-  description: A sharp blade that extended from your own arm, time to burn down a corporation.
+  description: A deadly blade that extended from your own arm, ready to tear through flesh and steel alike. Time to burn down a corporation. # SpL
   components:
   - type: Sprite
     sprite: _Starlight/Objects/Weapons/Melee/cybermantisblade.rsi
@@ -74,7 +74,7 @@
     autoAttack: false
     damage:
       types:
-        Slash: 12
+        Slash: 16 # SpL
         Structural: 20
     soundHit:
       path: /Audio/Weapons/block_metal1.ogg
@@ -82,6 +82,8 @@
       path: /Audio/Weapons/punchmiss.ogg
     soundSwing:
       path: /Audio/Weapons/punchmiss.ogg
+  - type: Reflect # SpL
+    reflectProb: 0.15 # SpL
   - type: Item
   - type: Sharp
   - type: Tag
