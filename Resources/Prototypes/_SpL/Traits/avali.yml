@@ -3,6 +3,7 @@
   name: trait-stasis-name
   description: trait-stasis-desc
   category: AvaliTraits
+  cost: 1
   effects:
     - !type:AddCompsEffect
       components:
@@ -29,6 +30,7 @@
   name: trait-nanites-name
   description: trait-nanites-desc
   category: AvaliTraits
+  cost: 1
   effects:
     - !type:OverrideCompsEffect
       components:
@@ -55,6 +57,7 @@
   name: trait-avalijump-name
   description: trait-avalijump-desc
   category: AvaliTraits
+  cost: 1
   effects:
     - !type:AddCompsEffect
       components:

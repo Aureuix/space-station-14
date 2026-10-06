@@ -1,0 +1,463 @@
+﻿- type: reagent
+  id: Methylxanthine # this is literally just the base compound of all caffeinated and methylated shit ever
+  name: reagent-name-methylxanthine
+  group: Narcotics
+  desc: reagent-desc-methylxanthine
+  physicalDesc: reagent-physical-desc-powdery
+  contrabandSeverity: Minor
+  allowedDepartments: 
+  - Medical
+  flavor: bitter
+  color: "#FFFFFF"
+  metabolisms:
+    Narcotic:
+      metabolismRate: 0.25
+      effects:
+        - !type:GenericStatusEffect
+          key: Adrenaline
+          component: IgnoreSlowOnDamage
+          time: 3
+          type: Add
+          conditions:
+            - !type:ReagentCondition
+              reagent: Methylxanthine
+              min: 20
+        - !type:Jitter
+          conditions:
+            - !type:ReagentCondition
+              reagent: Methylxanthine
+              min: 15
+        - !type:MovementSpeedModifier
+          walkSpeedModifier: 1.15
+          sprintSpeedModifier: 1.15
+          conditions:
+            - !type:ReagentCondition
+              reagent: Methylxanthine
+              min: 15
+        - !type:ModifyStatusEffect
+          effectProto: StatusEffectStunned
+          time: 1
+          type: Remove
+          conditions:
+            - !type:ReagentCondition
+              reagent: Methylxanthine
+              min: 15
+        - !type:ModifyKnockdown
+          time: 1
+          type: Remove
+          conditions:
+            - !type:ReagentCondition
+              reagent: Methylxanthine
+              min: 15
+        - !type:PopupMessage
+          type: Local
+          conditions:
+            - !type:ReagentCondition
+              reagent: Methylxanthine
+              min: 15
+          visualType: MediumCaution
+          messages:
+            - "ephedrine-effect-tight-pain"
+            - "ephedrine-effect-heart-pounds"
+          probability: 0.4
+        - !type:SatiateThirst
+          factor: -1
+          conditions:
+            - !type:ReagentCondition
+              reagent: Methylxanthine
+              min: 15
+        - !type:HealthChange
+          conditions:
+            - !type:ReagentCondition
+              reagent: Methylxanthine
+              min: 21
+          damage:
+            types:
+              Poison: 3
+    Medicine:
+      metabolismRate: 0.25
+      effects:
+        - !type:ModifyStatusEffect
+          conditions:
+            - !type:ReagentCondition
+              reagent: Methylxanthine
+              min: 5
+          effectProto: StatusEffectDrowsiness
+          time: 1
+          type: Remove
+        - !type:ModifyStatusEffect
+          conditions:
+            - !type:ReagentCondition
+              reagent: Methylxanthine
+              min: 5
+          effectProto: StatusEffectDrunk
+          time: 3.0
+          type: Remove 
+        - !type:Vomit
+          conditions:
+            - !type:ReagentCondition
+              reagent: Methylxanthine
+              min: 20
+          probability: 0.2
+        - !type:PopupMessage
+          type: Local
+          conditions:
+            - !type:ReagentCondition
+              reagent: Methylxanthine
+              max: 15
+          visualType: Medium
+          messages:
+            - "methylxanthine-effect-awake"
+            - "methylxanthine-effect-focus"
+            - "methylxanthine-effect-attentive"
+          probability: 0.2
+        - !type:AdjustReagent
+          conditions:
+            - !type:MetabolizerTypeCondition
+              type: [ Cyclorite ]
+          reagent: Methylxanthine
+          amount: -0.25
+          
+- type: reagent
+  id: Sertraline # general antidepressant
+  name: reagent-name-sertraline
+  group: Medicine
+  desc: reagent-desc-sertraline
+  physicalDesc: reagent-physical-desc-viscous
+  contrabandSeverity: Minor
+  allowedDepartments:
+    - Medical
+  flavor: sweet
+  color: "#f7AE6A"
+  metabolisms:
+    Medicine:
+      metabolismRate: 0.1
+      effects:
+        - !type:HealthChange
+          conditions:
+            - !type:ReagentCondition
+              reagent: Sertraline
+              min: 21
+          damage:
+            types:
+              Poison: 4
+        - !type:Vomit
+          conditions:
+            - !type:ReagentCondition
+              reagent: Sertraline
+              min: 14
+          probability: 0.05
+        - !type:PopupMessage
+          type: Local
+          conditions:
+            - !type:ReagentCondition
+              reagent: Sertraline
+              max: 20
+          visualType: Medium
+          messages:
+            - "sertraline-effect-breathing"
+            - "sertraline-effect-feel-better"
+            - "sertraline-effect-calmer"
+            - "sertraline-effect-alright"
+            - "psicodine-effect-anxieties-wash-away"
+          probability: 0.1
+        - !type:PopupMessage
+          type: Local
+          visualType: MediumCaution
+          messages:
+            - "sertraline-effect-nausea"
+            - "sertraline-effect-head-pain"
+          probability: 0.02
+          conditions:
+            - !type:ReagentCondition
+              reagent: Sertraline
+              max: 18
+        - !type:PopupMessage
+          type: Local
+          visualType: MediumCaution
+          messages:
+            - "sertraline-effect-nausea"
+            - "sertraline-effect-head-pain"
+          probability: 0.1
+          conditions:
+            - !type:ReagentCondition
+              reagent: Sertraline
+              min: 18
+        - !type:PopupMessage
+          type: Local
+          conditions:
+            - !type:ReagentCondition
+              reagent: Sertraline
+              min: 18
+          visualType: Large
+          messages:
+            - "laughter-effect-control-laughter"
+          probability: 0.3
+        - !type:Emote
+          emote: Laugh
+          showInGuidebook: false
+          probability: 0.2
+          conditions:
+            - !type:ReagentCondition
+              reagent: Sertraline
+              min: 18
+        - !type:MovementSpeedModifier
+          walkSpeedModifier: 0.9
+          sprintSpeedModifier: 0.9
+          conditions:
+            - !type:ReagentCondition
+              reagent: Sertraline
+              min: 14
+        - !type:ModifyStatusEffect
+          effectProto: StatusEffectSlurred
+          time: 4
+          type: Add
+          conditions:
+            - !type:ReagentCondition
+              reagent: Sertraline
+              min: 18
+        - !type:ModifyStatusEffect
+          effectProto: StatusEffectWoozy
+          time: 4
+          type: Add
+          conditions:
+            - !type:ReagentCondition
+              reagent: Sertraline
+              min: 18
+        - !type:Jitter
+          conditions:
+            - !type:ReagentCondition
+              reagent: Sertraline
+              min: 18
+        - !type:AdjustReagent
+          conditions:
+            - !type:MetabolizerTypeCondition
+              type: [ Cyclorite ]
+          reagent: Sertraline
+          amount: -0.1
+          
+- type: reagent
+  id: Valproate # general antimanic
+  name: reagent-name-valproate
+  group: Medicine
+  desc: reagent-desc-valproate
+  physicalDesc: reagent-physical-desc-soothing
+  contrabandSeverity: Minor
+  allowedDepartments:
+    - Medical
+  flavor: sweet
+  color: "#6B84BF"
+  metabolisms:
+    Medicine:
+      metabolismRate: 0.1
+      effects:
+        - !type:HealthChange
+          conditions:
+            - !type:ReagentCondition
+              reagent: Valproate
+              min: 21
+          damage:
+            types:
+              Poison: 2
+        - !type:PopupMessage
+          type: Local
+          conditions:
+            - !type:ReagentCondition
+              reagent: Valproate
+              max: 14
+          visualType: Medium
+          messages:
+            - "sertraline-effect-breathing"
+            - "valproate-effect-calmer"
+            - "sertraline-effect-calmer"
+            - "sertraline-effect-alright"
+            - "psicodine-effect-at-peace"
+          probability: 0.1
+        - !type:PopupMessage
+          type: Local
+          visualType: MediumCaution
+          messages:
+            - "sertraline-effect-nausea"
+            - "effect-sleepy"
+            - "valproate-effect-tired"
+          probability: 0.02
+          conditions:
+            - !type:ReagentCondition
+              reagent: Valproate
+              max: 14
+        - !type:PopupMessage
+          type: Local
+          visualType: MediumCaution
+          messages:
+            - "sertraline-effect-nausea"
+            - "effect-sleepy"
+            - "valproate-effect-tired"
+          probability: 0.1
+          conditions:
+            - !type:ReagentCondition
+              reagent: Valproate
+              min: 14
+        - !type:Vomit
+          conditions:
+            - !type:ReagentCondition
+              reagent: Valproate
+              min: 16
+          probability: 0.05
+        - !type:ModifyStatusEffect
+          effectProto: StatusEffectDrowsiness
+          time: 3
+          type: Add
+          conditions:
+            - !type:ReagentCondition
+              reagent: Valproate
+              min: 15
+        - !type:MovementSpeedModifier
+          walkSpeedModifier: 0.9
+          sprintSpeedModifier: 0.9
+          conditions:
+            - !type:ReagentCondition
+              reagent: Valproate
+              min: 10
+            
+- type: reagent
+  id: Lurasidone # psicodine plus
+  name: reagent-name-lurasidone
+  group: Medicine
+  desc: reagent-desc-lurasidone
+  physicalDesc: reagent-physical-desc-starry
+  contrabandSeverity: Major
+  allowedDepartments:
+    - Medical
+  flavor: sweet
+  color: "#CFA9E1"
+  metabolisms:
+    Medicine:
+      metabolismRate: 0.1
+      effects:
+        - !type:ModifyStatusEffect
+          effectProto: StatusEffectHemorrhage
+          time: 5
+          type: Update
+          conditions:
+            - !type:ReagentCondition
+              reagent: Lurasidone
+              min: 12
+        - !type:HealthChange
+          conditions:
+            - !type:ReagentCondition
+              reagent: Lurasidone
+              min: 16
+          damage:
+            types:
+              Poison: 3
+        - !type:PopupMessage
+          conditions:
+            - !type:ReagentCondition
+              reagent: Lurasidone
+              max: 16
+          type: Local
+          visualType: Medium
+          messages:
+            - "mannitol-effect-clearing"
+            - "mannitol-effect-pounding"
+            - "psicodine-effect-fearless"
+            - "psicodine-effect-anxieties-wash-away"
+            - "psicodine-effect-at-peace"
+          probability: 0.2
+        - !type:PopupMessage
+          conditions:
+            - !type:ReagentCondition
+              reagent: Lurasidone
+              min: 12
+          type: Local
+          visualType: MediumCaution
+          messages:
+            - "sertraline-effect-nausea"
+            - "effect-sleepy"
+            - "sertraline-effect-head-pain"
+            - "generic-reagent-effect-tearing-up"
+            - "histamine-effect-light-itchiness"
+          probability: 0.2
+        - !type:Jitter
+          conditions:
+            - !type:ReagentCondition
+              reagent: Lurasidone
+              min: 16
+        - !type:GenericStatusEffect
+          conditions:
+            - !type:ReagentCondition
+              reagent: Lurasidone
+              max: 12
+          key: Jitter
+          time: 5.0
+          type: Remove
+        - !type:GenericStatusEffect
+          key: Adrenaline
+          component: IgnoreSlowOnDamage
+          time: 5.0
+          type: Remove
+        - !type:ModifyStatusEffect
+          conditions:
+            - !type:ReagentCondition
+              reagent: Lurasidone
+              max: 4
+          effectProto: StatusEffectSeeingRainbow
+          time: 10.0
+          type: Remove
+        - !type:ModifyStatusEffect
+          conditions:
+            - !type:ReagentCondition
+              reagent: Lurasidone
+              min: 12
+          effectProto: StatusEffectSeeingRainbow
+          time: 30.0
+          type: Add
+        - !type:ModifyStatusEffect
+          effectProto: StatusEffectDrunk
+          time: 5.0
+          type: Remove
+        - !type:MovementSpeedModifier
+          walkSpeedModifier: 0.9
+          sprintSpeedModifier: 0.9
+          conditions:
+            - !type:ReagentCondition
+              reagent: Lurasidone
+              min: 12
+        - !type:ModifyStatusEffect
+          effectProto: StatusEffectSlurred
+          time: 10
+          type: Add
+          conditions:
+            - !type:ReagentCondition
+              reagent: Lurasidone
+              min: 12
+        - !type:ModifyStatusEffect
+          effectProto: StatusEffectWoozy
+          time: 10
+          type: Add
+          conditions:
+            - !type:ReagentCondition
+              reagent: Lurasidone
+              min: 8
+        - !type:GenericStatusEffect
+          key: Pacified
+          component: Pacified
+          time: 2
+          conditions:
+            - !type:ReagentCondition
+              reagent: Lurasidone
+              max: 4
+        - !type:ModifyStatusEffect
+          conditions:
+            - !type:ReagentCondition
+              reagent: Lurasidone
+              min: 12
+          effectProto: StatusEffectDrowsiness
+          time: 3
+          type: Add
+        - !type:AdjustReagent
+          conditions:
+            - !type:MetabolizerTypeCondition
+              type: [ Cyclorite ]
+          reagent: Lurasidone
+          amount: -0.1

@@ -11,12 +11,12 @@
                 <Label Text="{Loc 'trait-editor-title'}"
                        StyleClasses="TraitsTitleLabel"/>
                 <Control HorizontalExpand="True"/>
-                <Label Name="GlobalTraitCountLabel"
-                       StyleClasses="TraitsStatLabel"/>
+                <!--<Label Name="GlobalTraitCountLabel"
+                       StyleClasses="TraitsStatLabel"/>--> <!-- SpL: Kill -->
             </BoxContainer>
 
             <!-- Points Progress Bar -->
-            <BoxContainer Orientation="Vertical" Margin="0 4 0 0">
+            <!--<BoxContainer Orientation="Vertical" Margin="0 4 0 0">
                 <BoxContainer Orientation="Horizontal" Margin="0 0 0 4">
                     <Label Text="{Loc 'trait-editor-points-label'}"
                            StyleClasses="TraitsSubtitleLabel"/>
@@ -25,14 +25,13 @@
                            StyleClasses="TraitsStatLabel"/>
                 </BoxContainer>
 
-                <!-- Progress Bar Container -->
                 <PanelContainer StyleClasses="TraitsProgressBarBg" SetHeight="12">
                     <PanelContainer Name="GlobalPointsBar"
                                     StyleClasses="TraitsProgressBarFill"
                                     HorizontalExpand="True"
                                     HorizontalAlignment="Left"/>
                 </PanelContainer>
-            </BoxContainer>
+            </BoxContainer>--> <!-- SpL: medibot (Si-1935): Fuck you. -->
         </BoxContainer>
     </PanelContainer>
 

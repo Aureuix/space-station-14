@@ -132,7 +132,7 @@
 - type: loadout
   id: NTNCEnergySword
   equipment:
-    pocket1: EnergySword # Todo- add a real nanotrasen energy weapon. cavalry sabre maybe
+    pocket1: EnergySwordNT # Todo- add a real nanotrasen energy weapon. cavalry sabre maybe
 
 ## Weapon
 - type: loadout

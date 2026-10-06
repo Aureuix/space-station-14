@@ -329,6 +329,11 @@
     pocket1: WeaponPulsePistol
     
 - type: loadout
+  id: CentCommEnergySword
+  equipment:
+    pocket1: EnergySwordCC
+    
+- type: loadout
   id: CentCommHeavyPistol
   dummyEntity: WeaponPistolN1984
   equipment:

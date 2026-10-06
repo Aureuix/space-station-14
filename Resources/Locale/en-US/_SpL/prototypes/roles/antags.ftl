@@ -22,8 +22,8 @@ roles-antag-pirate-objective = You are a space pirate. Delegate a captain amongs
 roles-antag-name-centcommop = Central Command Operator
 roles-antag-centcommop-objective = You are the highest authority over the station in lieu of direct NanoTrasen intervention. Oversee the day-to-day operations of the station, and keep your contractors in line.
 
-roles-antag-name-gso = Greenshield Officer
-roles-antag-gso-objective = You are an elite bodyguard for some of the most powerful people in the sector. Ensure that they survive at all costs.
+roles-antag-name-greenshield = Greenshield Officer
+roles-antag-greenshield-objective = You are an elite bodyguard for some of the most powerful people in the sector. Ensure that they survive at all costs.
 
 roles-antag-name-ert-leader = ERT Leader
 roles-antag-ert-leader-objective = You are a senior member of the Emergency Response Force, and will lead an Emergency Response Team to relieve a civilian station of their woes.

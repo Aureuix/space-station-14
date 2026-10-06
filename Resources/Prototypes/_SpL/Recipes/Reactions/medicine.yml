@@ -197,3 +197,27 @@
       amount: 1
   products:
     Oxoprodigol: 5
+    
+- type: reaction
+  id: Zyrictrazine
+  requiredMixerCategories:
+    - Electrolysis
+  minTemp: 430
+  reactants:
+    Lurasidone:
+      amount: 2
+    Haloperidol:
+      amount: 2
+    Warfarin:
+      amount: 2
+    Diethylamine:
+      amount: 1
+    Sugar:
+      amount: 1
+    Charcoal:
+      amount: 2
+    Saline:
+      amount: 40
+  products:
+    Zyrictrazine: 4
+    Water: 32

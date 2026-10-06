@@ -625,7 +625,7 @@
         - map: [ "enum.WiresVisualLayers.MaintenancePanel" ]
           state: generic_panel_open
     - type: AccessReader
-      access: [[ "HeadOfSecurity", "Armory" ]]
+      access: [[ "Armory" ]] # SpL- armory access alone is enough
     - type: CommunicationsConsole
       title: comms-console-announcement-title-sec
       sound: /Audio/_Starlight/Announcements/announce2.ogg
@@ -736,7 +736,7 @@
         - map: [ "enum.WiresVisualLayers.MaintenancePanel" ]
           state: generic_panel_open
     - type: AccessReader
-      access: [[ "Magistrate", "IAA" ]]
+      access: [[ "IAA" ]] # SpL- magi has IAA access
     - type: CommunicationsConsole
       title: comms-console-announcement-title-law
       sound: /Audio/_Starlight/Announcements/announce2.ogg

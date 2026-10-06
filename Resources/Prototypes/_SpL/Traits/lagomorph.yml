@@ -3,6 +3,7 @@
   name: trait-stamsurge-name
   description: trait-stamsurge-desc
   category: LagoTraits
+  cost: 1
   effects:
     - !type:AddCompsEffect
       components:
@@ -17,6 +18,7 @@
   name: trait-zoomies-name
   description: trait-zoomies-desc
   category: LagoTraits
+  cost: 1
   effects:
     - !type:AddCompsEffect
       components:
@@ -31,6 +33,7 @@
   name: trait-lagohop-name
   description: trait-lagohop-desc
   category: LagoTraits
+  cost: 1
   effects:
     - !type:AddCompsEffect
       components:
@@ -40,16 +43,17 @@
     - !type:SpeciesRequirement
       species:
         - Lagomorph
-      
+
 - type: trait
   id: LagoEars
   name: trait-lagoears-name
   description: trait-lagoears-desc
   category: LagoTraits
+  cost: 1
   effects:
     - !type:OverrideCompsEffect
       components:
-        - type: ChatListenerRange 
+        - type: ChatListenerRange
           voiceRange: 14
           whisperClearRange: 5
           whisperMuffledRange: 10

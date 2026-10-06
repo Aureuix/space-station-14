@@ -26,7 +26,7 @@ public sealed class TraitSystem : EntitySystem
     [Dependency] private readonly SharedHandsSystem _hands = default!;
     [Dependency] private readonly EntityWhitelistSystem _whitelistSystem = default!;
 
-    private int _maxTraitCount;
+    // private int _maxTraitCount; // SpL
     private int _maxTraitPoints;
 
     public override void Initialize()
@@ -35,7 +35,7 @@ public sealed class TraitSystem : EntitySystem
 
         SubscribeLocalEvent<PlayerSpawnCompleteEvent>(OnPlayerSpawnComplete);
 
-        Subs.CVar(_config, StarlightCCVars.MaxTraitCount, value => _maxTraitCount = value, true);
+        // Subs.CVar(_config, StarlightCCVars.MaxTraitCount, value => _maxTraitCount = value, true); // SpL
         Subs.CVar(_config, StarlightCCVars.MaxTraitPoints, value => _maxTraitPoints = value, true);
     }
 
@@ -87,8 +87,8 @@ public sealed class TraitSystem : EntitySystem
     {
         var validTraits = new HashSet<ProtoId<TraitPrototype>>();
         var totalPoints = 0;
-        var traitCount = 0;
-        var categoryTraitCounts = new Dictionary<ProtoId<TraitCategoryPrototype>, int>();
+        // var traitCount = 0; // SpL
+        // var categoryTraitCounts = new Dictionary<ProtoId<TraitCategoryPrototype>, int>();
         var categoryPointTotals = new Dictionary<ProtoId<TraitCategoryPrototype>, int>();
 
         foreach (var traitId in selectedTraits)
@@ -100,11 +100,11 @@ public sealed class TraitSystem : EntitySystem
             }
 
             // Check global trait count limit
-            if (traitCount >= _maxTraitCount)
-            {
-                Log.Warning($"Trait {traitId} rejected: global trait count limit ({_maxTraitCount}) exceeded");
-                continue;
-            }
+            // if (traitCount >= _maxTraitCount) // SpL
+            // {
+            //     Log.Warning($"Trait {traitId} rejected: global trait count limit ({_maxTraitCount}) exceeded");
+            //     continue;
+            // }
 
             // Check global points limit
             if (totalPoints + trait.Cost > _maxTraitPoints)
@@ -115,7 +115,7 @@ public sealed class TraitSystem : EntitySystem
             }
 
             // Check category limits
-            if (!ValidateCategoryLimits(trait, categoryTraitCounts, categoryPointTotals))
+            if (!ValidateCategoryLimits(trait, categoryPointTotals)) // SpL: Kill trait count
             {
                 Log.Warning($"Trait {traitId} rejected: category limits exceeded");
                 continue;
@@ -156,11 +156,11 @@ public sealed class TraitSystem : EntitySystem
             // Trait is valid, add it
             validTraits.Add(traitId);
             totalPoints += trait.Cost;
-            traitCount++;
+            // traitCount++; // SpL
 
             // Update category tracking
-            categoryTraitCounts.TryGetValue(trait.Category, out var catCount);
-            categoryTraitCounts[trait.Category] = catCount + 1;
+            // categoryTraitCounts.TryGetValue(trait.Category, out var catCount); // SpL
+            // categoryTraitCounts[trait.Category] = catCount + 1;
 
             categoryPointTotals.TryGetValue(trait.Category, out var catPoints);
             categoryPointTotals[trait.Category] = catPoints + trait.Cost;
@@ -174,18 +174,18 @@ public sealed class TraitSystem : EntitySystem
     /// </summary>
     private bool ValidateCategoryLimits(
         TraitPrototype trait,
-        Dictionary<ProtoId<TraitCategoryPrototype>, int> categoryTraitCounts,
+        // Dictionary<ProtoId<TraitCategoryPrototype>, int> categoryTraitCounts, // SpL
         Dictionary<ProtoId<TraitCategoryPrototype>, int> categoryPointTotals)
     {
         if (!_prototype.TryIndex(trait.Category, out var category))
             return true; // Unknown category, allow it
 
-        categoryTraitCounts.TryGetValue(trait.Category, out var currentCount);
+        // categoryTraitCounts.TryGetValue(trait.Category, out var currentCount); // SpL
         categoryPointTotals.TryGetValue(trait.Category, out var currentPoints);
 
         // Check category trait count limit
-        if (category.MaxTraits.HasValue && currentCount >= category.MaxTraits.Value)
-            return false;
+        // if (category.MaxTraits.HasValue && currentCount >= category.MaxTraits.Value) // SpL
+        //     return false;
 
         // Check category points limit
         if (category.MaxPoints.HasValue && currentPoints + trait.Cost > category.MaxPoints.Value)

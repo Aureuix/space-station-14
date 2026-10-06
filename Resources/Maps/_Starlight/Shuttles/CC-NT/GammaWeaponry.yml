@@ -572,7 +572,7 @@ entities:
           showEnts: False
           occludes: True
           ent: null
-- proto: CyberEnergyChainsword
+- proto: EnergySwordCC
   entities:
   - uid: 41
     mapInit: true
@@ -673,7 +673,7 @@ entities:
     - type: Transform
       pos: 0.5,3.5
       parent: 1
-- proto: EnergyShieldCyber
+- proto: GreenLightShield
   entities:
   - uid: 39
     mapInit: true
