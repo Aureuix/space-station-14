@@ -65,7 +65,7 @@
         weight: 0.05
     - id: ClothingMaskSterile
     - id: JetInjector
-    - id: PlushieRei
+    - id: PlushieRei #SpL - she is definite and real
       prob: 0.5
 
 - type: entity
