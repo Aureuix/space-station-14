@@ -583,7 +583,7 @@
       - type: LanguageKnowledge
         speaks:
           - GalacticCommon
-          - EncodedAudioLanguage
+          - Machine
         understands:
           - GalacticCommon
-          - EncodedAudioLanguage
+          - Machine
