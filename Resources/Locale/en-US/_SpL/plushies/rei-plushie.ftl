@@ -1,4 +1,4 @@
-plushie-rei-1 = Go to the medbay? Why? I have the entire thing in my belt.
+plushie-rei-1 = You want to go the medbay? Why? I have the entire thing in my belt.
 plushie-rei-2 = Pilk please!
 plushie-rei-3 = I love my awesome IPC life!
 plushie-rei-4 = I could eat a whole APC right now...
