@@ -552,16 +552,16 @@
       sprite: _SpL/Objects/Fun/Plushies/furlow_plushie.rsi
 
 - type: entity
-  parent: BaseBorgPlushie
+  parent: BaseFelionoidPlushie
   id: PlushieRei
   name: rei plushie
   description: A plushie of an odd robot girl...
   components:
       - type: Sprite
-        sprite: _SpL/Objects/Fun/Plushies/furlow_plushie.rsi #TESTING ONLY REPLACE LATER
+        sprite: _SpL/Objects/Fun/Plushies/rei_plushie.rsi 
         state: icon
       - type: Item
-        sprite: _SpL/Objects/Fun/Plushies/furlow_plushie.rsi #TESTING ONLY REPLACE LATER
+        sprite: _SpL/Objects/Fun/Plushies/rei_plushie.rsi 
       - type: ItemToggle
         onUse: false
         activated: true
