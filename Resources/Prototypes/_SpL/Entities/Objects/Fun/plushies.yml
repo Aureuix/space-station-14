@@ -552,7 +552,7 @@
       sprite: _SpL/Objects/Fun/Plushies/furlow_plushie.rsi
 
 - type: entity
-  parent: BaseIPCPlushie
+  parent: BaseBorgPlushie
   id: PlushieRei
   name: rei plushie
   description: A plushie of an odd robot girl...
