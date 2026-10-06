@@ -25,3 +25,16 @@
         - NotekeeperCartridge
         - AstroNavCartridge
         - AppraiseAllCartridge
+
+- type: entity
+  parent: CBURNPDA
+  id: CBURNAltPDA
+  name: CBURN Liquidator PDA
+  description: Smells like the start of the end.
+  components:
+    - type: Pda
+      id: CBURNAltIDcard
+    - type: PdaBorderColor
+      borderColor: "#A32D26"
+      accentHColor: "#447987"
+      accentVColor: "#447987"

@@ -3,7 +3,7 @@
   name: trait-background-civilian-name
   description: trait-background-civilian-description
   category: BackgroundTraits
-  cost: 0
+  cost: 1
   effects:
     - !type:BackgroundEffect
       background: Civilian
@@ -13,7 +13,7 @@
   name: trait-background-fringe-name
   description: trait-background-fringe-description
   category: BackgroundTraits
-  cost: 0
+  cost: 1
   effects:
     - !type:BackgroundEffect
       background: Fringe
@@ -23,17 +23,17 @@
   name: trait-background-frontier-name
   description: trait-background-frontier-description
   category: BackgroundTraits
-  cost: 0
+  cost: 1
   effects:
     - !type:BackgroundEffect
       background: Frontier
-    
+
 - type: trait
   id: FormerSoldier
   name: trait-background-former-soldier-name
   description: trait-background-former-soldier-description
   category: BackgroundTraits
-  cost: 0
+  cost: 1
   effects:
     - !type:BackgroundEffect
       background: FormerSoldier
@@ -43,7 +43,7 @@
   name: trait-background-romerol-disaster-survivor-name
   description: trait-background-romerol-disaster-survivor-description
   category: BackgroundTraits
-  cost: 0
+  cost: 1
   effects:
     - !type:BackgroundEffect
       background: RomerolDisasterSurvivor
@@ -53,7 +53,7 @@
   name: trait-background-xenos-disaster-survivor-name
   description: trait-background-xenos-disaster-survivor-description
   category: BackgroundTraits
-  cost: 0
+  cost: 1
   effects:
     - !type:BackgroundEffect
       background: XenosDisasterSurvivor
@@ -63,7 +63,7 @@
   name: trait-background-deific-encounter-name
   description: trait-background-deific-encounter-description
   category: BackgroundTraits
-  cost: 0
+  cost: 1
   effects:
     - !type:BackgroundEffect
       background: DeificEncounter
@@ -73,7 +73,7 @@
   name: trait-background-magical-encounter-name
   description: trait-background-magical-encounter-description
   category: BackgroundTraits
-  cost: 0
+  cost: 1
   effects:
     - !type:BackgroundEffect
       background: MagicalEncounter
@@ -83,7 +83,7 @@
   name: trait-background-abducted-name
   description: trait-background-abducted-description
   category: BackgroundTraits
-  cost: 0
+  cost: 1
   effects:
     - !type:BackgroundEffect
       background: Abducted
@@ -93,7 +93,7 @@
   name: trait-background-petty-criminal-name
   description: trait-background-petty-criminal-description
   category: BackgroundTraits
-  cost: 0
+  cost: 1
   effects:
     - !type:BackgroundEffect
       background: PettyCriminal
@@ -103,7 +103,7 @@
   name: trait-background-burned-name
   description: trait-background-burned-description
   category: BackgroundTraits
-  cost: 0
+  cost: 1
   effects:
     - !type:BackgroundEffect
       background: Burned
@@ -117,7 +117,7 @@
 #  name: trait-background-iterator-name
 #  description: trait-background-iterator-description
 #  category: BackgroundTraits
-#  cost: 0
+#  cost: 1
 #  effects:
 #    - !type:OverrideCompsEffect
 #      components:
@@ -137,7 +137,7 @@
   name: trait-background-exterminator-name
   description: trait-background-exterminator-description
   category: BackgroundTraits
-  cost: 0
+  cost: 1
   effects:
     - !type:BackgroundEffect
       background: Hunted

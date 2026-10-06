@@ -20,7 +20,7 @@ public sealed partial class CCVars
     ///     Sets the maximum name length for a loadout name (e.g. cyborg name).
     /// </summary>
     public static readonly CVarDef<int> MaxLoadoutNameLength =
-        CVarDef.Create("ic.loadout_name_length", 32, CVar.SERVER | CVar.REPLICATED);
+        CVarDef.Create("ic.loadout_name_length", 48, CVar.SERVER | CVar.REPLICATED);
 
     /// <summary>
     ///     Allows flavor text (character descriptions).

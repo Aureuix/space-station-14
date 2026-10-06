@@ -39,8 +39,8 @@
 - type: weightedRandom
   id: VampireObjectiveGroups
   weights:
-    VampireObjectiveGroupSteal: 1
-    VampireObjectiveGroupKill: 1
+    # VampireObjectiveGroupSteal: 1 # SpL
+    # VampireObjectiveGroupKill: 1 # SpL
     VampireObjectiveGroupDrain: 1
     VampireObjectiveGroupState: 1
 
@@ -80,6 +80,6 @@
   id: VampireObjectiveGroupState
   weights:
     VampireSurviveObjective: 1
-    VampireEscapeObjective: 1
-    ReputationObjective: 0.5
-    FalseOutbreakObjective: 0.75
+    # VampireEscapeObjective: 1 # SpL
+    # ReputationObjective: 0.5 # SpL
+    # FalseOutbreakObjective: 0.75 # SpL

@@ -49,6 +49,8 @@ public sealed partial class AdminVerbSystem
     private static readonly ProtoId<StartingGearPrototype> CBURNGearID = "CBURNGearCleanup";
     private static readonly EntProtoId DefaultCBURNAltRule = "CBURNAltSpawn";
     private static readonly ProtoId<StartingGearPrototype> CBURNGearAltID = "CBURNGearLiquidator";
+    private static readonly EntProtoId DefaultGreenshieldRule = "GreenshieldSpawn";
+    private static readonly ProtoId<StartingGearPrototype> GreenshieldGearID = "GSOGear";
     private static readonly EntProtoId DefaultNTNCRule = "NTNCSpawn";
     private static readonly ProtoId<StartingGearPrototype> NTNCGearID = "NTNCGearBasic";
     #endregion
@@ -119,7 +121,7 @@ public sealed partial class AdminVerbSystem
         {
             Text = nukeOpName,
             Category = VerbCategory.Antag,
-            Icon = new SpriteSpecifier.Rsi(new("/Textures/Clothing/Head/Hardsuits/syndicate.rsi"), "icon"),
+            Icon = new SpriteSpecifier.Rsi(new("/Textures/_Starlight/Interface/Misc/job_icons.rsi"), "Operative"), // SpL change
             Act = () =>
             {
                 _antag.ForceMakeAntag<NukeopsRuleComponent>(targetPlayer, DefaultNukeOpRule);
@@ -165,7 +167,7 @@ public sealed partial class AdminVerbSystem
         {
             Text = thiefName,
             Category = VerbCategory.Antag,
-            Icon = new SpriteSpecifier.Rsi(new ResPath("/Textures/Clothing/Hands/Gloves/Color/black.rsi"), "icon"),
+            Icon = new SpriteSpecifier.Rsi(new ResPath("/Textures/_SpL/Interface/Misc/job_icons.rsi"), "thief"), // SpL change
             Act = () =>
             {
                 _antag.ForceMakeAntag<ThiefRuleComponent>(targetPlayer, DefaultThiefRule);
@@ -232,7 +234,7 @@ public sealed partial class AdminVerbSystem
         {
             Text = ninjaName,
             Category = VerbCategory.Antag,
-            Icon = new SpriteSpecifier.Rsi(new("/Textures/Objects/Weapons/Melee/energykatana.rsi"), "icon"),
+            Icon = new SpriteSpecifier.Rsi(new("/Textures/Interface/Misc/job_icons.rsi"), "Ninja"), // SpL change
             Act = () =>
             {
                 _antag.ForceMakeAntag<NinjaRoleComponent>(targetPlayer, DefaultNinjaRule);
@@ -250,7 +252,7 @@ public sealed partial class AdminVerbSystem
         {
             Text = changelingName, // SpL
             Category = VerbCategory.Antag,
-            Icon = new SpriteSpecifier.Rsi(new ResPath("/Textures/Changeling/changeling_abilities.rsi"), "transform"),
+            Icon = new SpriteSpecifier.Rsi(new ResPath("/Textures/Interface/Misc/job_icons.rsi"), "Changeling"), // SpL change
             Act = () =>
             {
                 _antag.ForceMakeAntag<SLChangelingRuleComponent>(targetPlayer, "SLChangeling");
@@ -265,7 +267,7 @@ public sealed partial class AdminVerbSystem
         {
             Text = vampireName, // SpL
             Category = VerbCategory.Antag,
-            Icon = new SpriteSpecifier.Rsi(new ResPath("/Textures/_Starlight/Vampire/actions_vampire.rsi"), "select_class"), // Starlight
+            Icon = new SpriteSpecifier.Rsi(new ResPath("/Textures/_SpL/Interface/Misc/job_icons.rsi"), "vampire"), // Starlight, SpL
             Act = () =>
             {
                 _antag.ForceMakeAntag<VampireRuleComponent>(targetPlayer, DefaultVampireRule);
@@ -280,7 +282,7 @@ public sealed partial class AdminVerbSystem
         {
             Text = selfagentName,
             Category = VerbCategory.Antag,
-            Icon = new SpriteSpecifier.Rsi(new ResPath("/Textures/_Starlight/Objects/Specific/SELF/freemag.rsi"), "icon"),
+            Icon = new SpriteSpecifier.Rsi(new ResPath("/Textures/_Starlight/Interface/Misc/job_icons.rsi"), "SyndicateEngineer"), // SpL change
             Act = () =>
             {
                 _antag.ForceMakeAntag<SELFRuleComponent>(targetPlayer, DefaultSELFRule);
@@ -296,7 +298,7 @@ public sealed partial class AdminVerbSystem
             {
                 Text = Loc.GetString("admin-verb-text-make-brighteye"),
                 Category = VerbCategory.Antag,
-                Icon = new SpriteSpecifier.Rsi(new ResPath("/Textures/_Starlight/Interface/Actions/shadekin.rsi"), "rest"),
+                Icon = new SpriteSpecifier.Rsi(new ResPath("/Textures/_SpL/Interface/Misc/job_icons.rsi"), "brighteye"), // SpL
                 Act = () =>
                 {
                     _gameTicker.StartGameRule("TheDarkMap"); // The Dark should always be spawned for any brighteye.
@@ -313,7 +315,7 @@ public sealed partial class AdminVerbSystem
         {
             Text = pirateSLName,
             Category = VerbCategory.Antag,
-            Icon = new SpriteSpecifier.Rsi(new("/Textures/Objects/Misc/id_cards.rsi"), "pirate"),
+            Icon = new SpriteSpecifier.Rsi(new("/Textures/Interface/Misc/job_icons.rsi"), "Pirate"), // SpL change
             Act = () =>
             {
                 _npcFactionSmite.RemoveFaction(args.Target, _smiteNanoTrasenFaction, false);
@@ -379,7 +381,7 @@ public sealed partial class AdminVerbSystem
         {
             Text = cburnaltname,
             Category = VerbCategory.Antag,
-            Icon = new SpriteSpecifier.Rsi(new("/Textures/_Starlight/Interface/Misc/job_icons.rsi"), "ERTChaplain"),
+            Icon = new SpriteSpecifier.Rsi(new("/Textures/_SpL/Interface/Misc/job_icons.rsi"), "liquidator"),
             Act = () =>
             {
                 _outfit.SetOutfit(args.Target, CBURNGearAltID);
@@ -389,6 +391,22 @@ public sealed partial class AdminVerbSystem
             Message = string.Join(": ", cburnaltname, Loc.GetString("admin-verb-make-cburn-alt")),
         };
         args.Verbs.Add(cburnalt);
+        
+        var greenshieldname = Loc.GetString("admin-verb-text-make-greenshield");
+        Verb greenshield = new()
+        {
+            Text = greenshieldname,
+            Category = VerbCategory.Antag,
+            Icon = new SpriteSpecifier.Rsi(new("/Textures/_Starlight/Interface/Misc/job_icons.rsi"), "CCGreenShield"),
+            Act = () =>
+            {
+                _outfit.SetOutfit(args.Target, GreenshieldGearID);
+                _antag.ForceMakeAntag<GreenshieldRuleComponent>(targetPlayer, DefaultGreenshieldRule);
+            },
+            Impact = LogImpact.High,
+            Message = string.Join(": ", greenshieldname, Loc.GetString("admin-verb-make-greenshield")),
+        };
+        args.Verbs.Add(greenshield);
         
         var ntncname = Loc.GetString("admin-verb-text-make-ntnc-marine");
         Verb ntnc = new()

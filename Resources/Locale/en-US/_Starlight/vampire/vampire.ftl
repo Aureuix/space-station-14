@@ -6,9 +6,6 @@ alerts-vampire-blood-desc = Shows how much blood you've drunk. Extend your fangs
 alerts-vampire-fed-name = Blood Fullness
 alerts-vampire-fed-desc = Your current blood fullness. Drink blood to stay fed.
 
-roles-antag-vamire-name = Vampire
-roles-antag-vampire-description = Feed on the crew. Extend your fangs and drink their blood.
-
 vampire-roundend-name = vampire
 
 vampire-drink-start = You sink your fangs into {CAPITALIZE(THE($target))}.
@@ -25,9 +22,9 @@ vampire-full-power-achieved = Your vampiric essence surges full power achieved!
 vampire-umbrae-full-power-fov = The shadows bend to your will. You can now see through walls!
 
 vampire-role-greeting = You are a vampire!
-    Your blood thirst compels you to feed on crew members. Use your abilities to turn other crew.
-    Your fangs allow you to suck blood from humans. Blood will regenerate health and give you new abilities.
-    Find something to accomplish during this shift!
+    You need fresh blood to survive. You also feel compelled to seek the blood of humanoids.
+    Your fangs allow you to suck blood from organisms. Blood will regenerate health and give you new abilities.
+    The modern world is somewhat aware of your existence, but you should aim to be careful not to draw too much attention.
 
 # Objectives
 objective-issuer-vampire = [color=crimson]Vampire[/color]

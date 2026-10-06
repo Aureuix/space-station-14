@@ -2,14 +2,16 @@
   id: BackgroundTraits
   name: trait-category-background
   priority: 0
-  maxTraits: 2
+  # maxTraits: 2 # SpL
+  maxPoints: 2 # SpL
   accentColor: "#ffffff"
 
 - type: traitCategory
   id: EthnicityTraits
   name: trait-category-ethnicity
   priority: 5
-  maxTraits: 1
+  # maxTraits: 1 # SpL
+  maxPoints: 1 # SpL
   accentColor: "#efc0a3" # pale orange
 
 - type: traitCategory
@@ -28,7 +30,7 @@
   id: SpeechTraits
   name: trait-category-speech
   priority: 30
-  maxTraits: 3
+  # maxTraits: 3 # SpL
   maxPoints: 2
   accentColor: "#38bdf8" # Light blue
 
@@ -36,6 +38,6 @@
   id: LanguageTraits
   name: trait-category-languages
   priority: 50
-  maxTraits: 4
+  # maxTraits: 4 # SpL
   maxPoints: 2
   accentColor: "#fffb00"

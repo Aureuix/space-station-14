@@ -28,8 +28,7 @@ public sealed partial class TraitCategoryPrototype : IPrototype
     /// Maximum number of traits that can be selected from this category.
     /// Null means unlimited (only global limit applies).
     /// </summary>
-    [DataField]
-    public int? MaxTraits;
+    [DataField] public int? MaxTraits; // SpL: medibot (Si-1935): Fuck you.
 
     /// <summary>
     /// Maximum trait points that can be spent in this category.
