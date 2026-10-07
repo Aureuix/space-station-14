@@ -102,11 +102,11 @@ public sealed partial class CosmicCultSystem : SharedCosmicCultSystem
     /// <summary>
     /// Creates the Cosmic Void pocket dimension map.
     /// </summary>
-    private void OnRoundStart(RoundStartingEvent ev)
-    {
-        if (_mapLoader.TryLoadMap(_mapPath, out var map, out _, new DeserializationOptions { InitializeMaps = true }))
-            _map.SetPaused(map.Value.Comp.MapId, false);
-    }
+    // private void OnRoundStart(RoundStartingEvent ev) // SpL: Don't preload this.
+    // {
+    //     if (_mapLoader.TryLoadMap(_mapPath, out var map, out _, new DeserializationOptions { InitializeMaps = true }))
+    //         _map.SetPaused(map.Value.Comp.MapId, false);
+    // }
 
     private void OnCheckEligibility(ref CosmicCultVoterEligibilityEvent args)
     {

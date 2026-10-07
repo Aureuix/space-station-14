@@ -6,6 +6,7 @@
         "x": 736,
         "y": 736
     },
+    "metaAtlas": false,
     "states": [
         {
             "name": "space_dog",

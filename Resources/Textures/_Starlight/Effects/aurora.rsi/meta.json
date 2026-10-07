@@ -6,6 +6,7 @@
         "x": 671,
         "y": 671
     },
+    "metaAtlas": false,
     "states": [
         {
             "name": "aurora",

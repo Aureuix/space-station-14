@@ -2,6 +2,8 @@
   parent: BaseGameRule
   id: CosmicCult
   components:
+  - type: LoadMapRule # SpL: Lazy-load
+    mapPath: /Maps/_ST/Other/cosmicvoid.yml
   - type: CosmicCultRule
   - type: GameRule
     minPlayers: 25
