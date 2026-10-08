@@ -3,11 +3,7 @@
   layers:
     - texture:
         !type:ImageParallaxTextureSource
-        path: "/Textures/_Starlight/Effects/aurora.rsi/aurora.png"
-      sprite: true
-      rsi:
-        sprite: /Textures/_Starlight/Effects/aurora.rsi
-        state: aurora
+        path: "/Textures/_Starlight/Parallaxes/aurora.png"
       slowness: 1
       scale: "1.6, 1.6"
       tiled: true
