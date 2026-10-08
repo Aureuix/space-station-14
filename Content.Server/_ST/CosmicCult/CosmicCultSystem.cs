@@ -64,7 +64,7 @@ public sealed partial class CosmicCultSystem : SharedCosmicCultSystem
     {
         base.Initialize();
 
-        SubscribeLocalEvent<RoundStartingEvent>(OnRoundStart);
+        // SubscribeLocalEvent<RoundStartingEvent>(OnRoundStart); // SpL
         SubscribeLocalEvent<CosmicCultVoterEligibilityEvent>(OnCheckEligibility);
 
         SubscribeLocalEvent<CosmicCultComponent, ComponentInit>(OnStartCultist);
