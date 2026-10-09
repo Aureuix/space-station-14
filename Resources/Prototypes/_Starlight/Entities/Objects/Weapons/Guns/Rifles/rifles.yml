@@ -293,10 +293,10 @@
     pvsIncrease: 0.15
 
 - type: entity
-  name: SA-G48CS 'Watchdog' DMR # SpL
+  name: SA-L10CS 'Watchdog' DMR # SpL
   parent: [ BaseWeaponRifle, BaseSecurityContraband ]
   id: WeaponRifleL10
-  description: A scoped marksman rifle for medium range engagements, built on the Lecter platform for mid to long range engagements. Uses .45 ACP ammo. # SpL
+  description: A scoped marksman rifle for mid to long range engagements, designed for accuracy at distance. Uses .45 ACP ammo. # SpL
   components:
   - type: Sprite
     sprite: _Starlight/Objects/Weapons/Guns/Rifles/L10.rsi
@@ -314,6 +314,13 @@
     - SemiAuto
     soundGunshot:
       path: /Audio/Weapons/Guns/Gunshots/ltrifle.ogg
+    minAngle: 2 # SpL start
+    maxAngle: 6
+    angleIncrease: 1.5
+    angleDecay: 6 
+  - type: GunWieldBonus
+    minAngle: -1
+    maxAngle: -5 # SpL end
   - type: GunRequiresWield
   - type: SpeedModifiedOnWield
     walkModifier: 0.9

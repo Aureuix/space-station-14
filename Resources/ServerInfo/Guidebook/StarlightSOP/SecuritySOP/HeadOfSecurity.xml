@@ -5,16 +5,25 @@
 
     The Head of Security is the commander of the station's Security forces.
     
-    1. Standard [color=#00a933]Code Green[/color] equipment is:
+    1. Standard [color=#00a933]Code Green[/color] equipment is one of the following:
+
 <Box>
-	<GuideEntityEmbed Entity="WeaponSubMachineGunWt550"/>
-	or
-	<GuideEntityEmbed Entity="WeaponEnergySMG"/>
+    <GuideEntityEmbed Entity="WeaponSubMachineGunWt550r"/>
 </Box>
+<Box>
+    <GuideEntityEmbed Entity="WeaponEnergySMG"/>
+</Box>
+<Box>
+    <GuideEntityEmbed Entity="WeaponPistolDeagleNT"/>
+</Box>
+    
+    Alongside both of the following:
 <Box>
 	<GuideEntityEmbed Entity="Stunbaton"/>
-</Box>
 
+    <GuideEntityEmbed Entity="EnergySwordNT"/>
+</Box>
+    
     2. The standard Command SOP applies with the exception of section 6, which is overridden by the listed equipment above.
     
     3. When patrolling, you must follow all Security Officer protocols and comply with permitted equipment levels.
@@ -29,7 +38,7 @@
     6. Issued permits may [color=#ff0000]not[/color] be for your own benefit, and must have justifiable reason behind them.
     You may [color=#ff0000]not[/color] issue permits for [color=#8d281e]highly illegal contraband[/color] [color=#ff0000]whatsoever[/color].
 
-    6. You may authorise the Warden with [color=#ffe100]Command comms[/color] (using the spare headset in your locker) if you believe it to be beneficial for them to have.
+    7. You may authorise the Warden with [color=#ffe100]Command comms[/color] (using the spare headset in your locker) if you believe it to be beneficial for them to have.
     You may [color=#ff0000]not[/color] authorise any interim Warden in this manner, nor any other member of the department.
     
     ## Additional Duties

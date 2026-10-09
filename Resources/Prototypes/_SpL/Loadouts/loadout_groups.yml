@@ -1,12 +1,14 @@
 ﻿- type: loadoutGroup
   id: HeadofSecuritySidearm
   name: loadout-group-hos-sidearm
+  hidden: true
+  minLimit: 1
+  defaultSelected: 1
   maxLimit: 1
   loadouts:
-    - HOSSP8AR
-    - HOSDeckard
-    - HOSPistolM1911
-    - HOSEnergySword
+    - HOSPistolDeagle
+  #  - HOSSP8AR
+  #  - HOSDeckard # SpL- people aren't gonna wanna take the other two when they can take the fucking DEAGLE.
   
 - type: loadoutGroup
   id: DetectiveSidearm
@@ -16,6 +18,7 @@
   loadouts:
     - DetectiveInspector
     - DetectiveStechkin
+    - DetectiveMauser
   
 - type: loadoutGroup
   id: JackbootsFilled

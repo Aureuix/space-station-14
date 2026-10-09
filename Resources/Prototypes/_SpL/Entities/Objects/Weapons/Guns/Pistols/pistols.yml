@@ -1,8 +1,27 @@
 ﻿- type: entity
-  name: AO-C97 'Yangtze' service pistol
-  parent: [ BaseWeaponPistol, BaseSecuritySalvageContraband ]
+  name: NT-Mk91 'Arctic Falcon' heavy pistol 
+  parent: WeaponPistolN1984
+  id: WeaponPistolDeagleNT
+  description: A high-caliber handgun designed for putting a forceful stop to any and all non-compliance. Lovingly referred to as the "deagle" by many of its supporters, whatever that means. Feeds from .45 ACP pistol magazines. 
+  components:
+    - type: Sprite
+      sprite: _SpL/Objects/Weapons/Guns/Pistols/hosdeagle.rsi
+    - type: Clothing
+      sprite: _SpL/Objects/Weapons/Guns/Pistols/hosdeagle.rsi
+    - type: Gun
+      minAngle: 1
+      maxAngle: 15
+      angleIncrease: 6
+      angleDecay: 7
+      fireRate: 5
+      soundGunshot:
+        path: /Audio/_Starlight/Weapons/Guns/Gunshots/deagle.ogg
+
+- type: entity
+  name: AO-C97 'Yangtze' pistol
+  parent: [ BaseWeaponPistol, BaseSecurityContraband ]
   id: WeaponPistolMauser
-  description: The Yangtze is a modernised adaptation of a cheap but reliable old-world semi-automatic handgun sporting a proprietary rubberised grip, provided to NanoTrasen contractors from Corporate War stockpiles. Feeds from .40 pistol magazines.
+  description: The Yangtze is a modernised adaptation of a cheap but reliable old-world semi-automatic handgun sporting a proprietary rubberised grip, provided to NanoTrasen contractors from Corporate War stockpiles. Feeds from 9mm pistol magazines.
   components:
     - type: Sprite
       sprite: _SpL/Objects/Weapons/Guns/Pistols/mauser.rsi
@@ -16,7 +35,7 @@
     - type: Item
       storedOffset: 0,-2
     - type: Gun
-      fireRate: 3 # it's not as good as the dp
+      fireRate: 6
       availableModes:
         - SemiAuto
       soundGunshot:
@@ -25,21 +44,21 @@
       slots:
         gun_magazine:
           name: Magazine
-          startingItem: MagazinePistol40SP
+          startingItem: MagazinePistolHighCapacitySP
           insertSound: /Audio/Weapons/Guns/MagIn/pistol_magin.ogg
           ejectSound: /Audio/Weapons/Guns/MagOut/pistol_magout.ogg
           priority: 2
           whitelist:
             tags:
-              - MagazinePistolDP
+              - MagazinePistol
+              - MagazinePistolHighCapacitySP
           whitelistFailPopup: gun-magazine-whitelist-fail
         gun_chamber:
           name: Chamber
-          startingItem: CartridgePistol40SP
           priority: 1
           whitelist:
             tags:
-              - CartridgePistolDP
+              - CartridgePistol
     - type: StealTarget
       stealGroup: OfficerHandgun
 
@@ -114,7 +133,7 @@
   id: WeaponIlluminateFrostbite
   parent: [ BaseWeaponPistol, BaseIlluminateContraband ]
   name: PD52 "frostbite"
-  description: A one-handed cross between handgun and SMG, the PD52 comes with an inbuilt silencer and fires jet-propelled flechette rounds. Feeds from a unique fletchette magazine.
+  description: A one-handed cross between handgun and SMG, the PD52 comes with an inbuilt silencer and fires jet-propelled flechette rounds. Feeds from a unique small-arms magazine.
   components:
     - type: Sprite
       sprite: /Textures/_SpL/Objects/Weapons/Guns/Pistols/frostbite.rsi

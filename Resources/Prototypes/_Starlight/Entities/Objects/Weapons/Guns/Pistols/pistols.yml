@@ -250,7 +250,7 @@
         - ""
 
 - type: entity
-  name: OTs-39K 'Stechkin' pistol # SpL
+  name: OTs-39K 'Stechkin' service pistol # SpL
   parent: [BaseSecurityContraband, WeaponPistolMk58]
   id: WeaponPistolStechkin
   description: A small, easily concealable handgun with a threaded barrel for suppressors, based on an ancient snub-nosed revolver design following the same principles. Feeds from .40 pistol magazines. # SpL
@@ -284,7 +284,7 @@
 
 # SpL Start
 - type: entity
-  name: NT-Mk39 'Stechkin' pistol # SpL
+  name: NT-Mk39 'Stechkin' service pistol # SpL
   parent: WeaponPistolStechkin
   description: A small, easily concealable handgun with a threaded barrel for suppressors. This variant has been modified for use by NanoTrasen contracted personnel, in large part thanks to the lack of legal patents on Kalashnikov Concern's weaponry. Feeds from .40 pistol magazines. # SpL
   id: WeaponPistolStechkinDetective
@@ -377,21 +377,19 @@
         path: /Audio/_Starlight/Weapons/Guns/Gunshots/deagle.ogg
 
 - type: entity
-  name: NT-M1911 kinetic pistol # SpL
-  parent: [WeaponPistolN1984, BaseSecurityContraband]
+  name: NT-M1911 service pistol # SpL
+  parent: [WeaponPistolDP, BaseSecurityContraband] # SpL- dp mode
   id: WeaponPistolM1911
-  description: A classic heavy handgun with a small magazine capacity, modernised by NanoTrasen's Small Arms Division. Feeds from .45 ACP pistol magazines. # SpL
+  description: A classic service handgun, modernised by NanoTrasen's Small Arms Division. Feeds from .40 pistol magazines. # SpL
   components:
     - type: Sprite
       sprite: _Starlight/Objects/Weapons/Guns/Pistols/m1911.rsi
     - type: Clothing
       sprite: _Starlight/Objects/Weapons/Guns/Pistols/m1911.rsi
-    - type: Gun
-      minAngle: 1
-      maxAngle: 20
-      angleIncrease: 8
-      angleDecay: 7
-      fireRate: 7
+    - type: Gun # SpL Start
+      fireRate: 3 # it's not as good as the dp
+      availableModes:
+        - SemiAuto # SpL end
       soundGunshot:
         path: /Audio/_Starlight/Weapons/Guns/Gunshots/colt.ogg
 

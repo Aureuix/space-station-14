@@ -963,7 +963,7 @@
     steps: 6
     zeroVisible: false
   - type: Gun
-    fireRate: 9 # SpL- double the speed double the fun
+    fireRate: 10 # SpL- double the speed double the fun + 1 because people aren't incentivised to take this thing
     selectedMode: FullAuto
     availableModes:
     - FullAuto

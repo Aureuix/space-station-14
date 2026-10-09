@@ -464,6 +464,7 @@
     - id: HoloprojectorSecurity
     - id: BoxStampsHos # SpL
     - id: Demag # SpL
+    - id: EnergySwordNT # SpL
     - id: BoxHoSCircuitboards
     - id: WeaponDisabler
     - id: WeaponTaser

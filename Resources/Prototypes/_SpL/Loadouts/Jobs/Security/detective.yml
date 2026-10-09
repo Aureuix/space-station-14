@@ -9,3 +9,9 @@
   dummyEntity: WeaponPistolStechkinDetective
   equipment:
     belt: ClothingBeltHolsterFilledStechkin
+    
+- type: loadout
+  id: DetectiveMauser
+  dummyEntity: WeaponPistolMauser
+  equipment:
+    belt: ClothingBeltHolsterFilledMauser
