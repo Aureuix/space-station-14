@@ -5,6 +5,12 @@
   id: BaseMobMoth
   abstract: true
   components:
+  - type: SocialInteractionReceiver # SL/SpL start
+    interactionOverrides: # noctiliae don't have noses
+    - id: Boop
+      interactString: booping-generic-success
+      messagePerceivedByOthers: booping-generic-success-others
+      emoteMessage: booping-generic-emote # SL/SpL end
   # Starlight-start: Languages
   - type: LanguageKnowledge
     speaks:

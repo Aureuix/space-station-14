@@ -3,6 +3,12 @@
   id: BaseMobVox
   abstract: true
   components:
+  - type: SocialInteractionReceiver # SL/SpL start
+    interactionOverrides: # voxes don't have noses
+    - id: Boop
+      interactString: booping-beak-success
+      messagePerceivedByOthers: booping-beak-success-others
+      emoteMessage: booping-beak-emote # SL/SpL end
   # Starlight-start: Languages
   - type: LanguageKnowledge
     speaks:

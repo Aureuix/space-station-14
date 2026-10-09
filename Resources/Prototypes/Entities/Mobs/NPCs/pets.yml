@@ -337,7 +337,7 @@
 
 - type: entity
   name: Bingus
-  parent: [SimpleMobBase, StripableInventoryBase]
+  parent: MobCat # Starlight
   id: MobBingus
   description: Bingus my beloved...
   components:

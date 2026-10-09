@@ -212,6 +212,12 @@
   id: MobChicken
   description: Comes before an egg, and IS a dinosaur!
   components:
+  - type: SocialInteractionReceiver # SL/SpL start
+    interactionOverrides: # birds don't have noses
+      - id: Boop
+        interactString: booping-beak-success
+        messagePerceivedByOthers: booping-beak-success-others
+        emoteMessage: booping-beak-emote # SL/SpL end
   # Starlight START
   - type: LanguageKnowledge
     speaks:
@@ -382,6 +388,12 @@
   id: MobCockroach
   description: This station is just crawling with bugs.
   components:
+  - type: SocialInteractionReceiver # SpL start
+    interactionOverrides: # roaches don't have noses
+      - id: Boop
+        interactString: booping-generic-success
+        messagePerceivedByOthers: booping-generic-success-others
+        emoteMessage: booping-generic-emote # SpL end
   - type: VentCrawler
   - type: Sprite
     drawdepth: SmallMobs
@@ -1008,6 +1020,12 @@
   id: MobCrab
   description: A folk legend goes around that his claw snaps spacemen out of existence over distasteful remarks. Be polite and tolerant for your own safety.
   components:
+  - type: SocialInteractionReceiver # SL/SpL start
+    interactionOverrides: # crabs don't have noses
+      - id: Boop
+        interactString: booping-generic-success
+        messagePerceivedByOthers: booping-generic-success-others
+        emoteMessage: booping-generic-emote # SL/SpL end
   # Starlight START
   - type: MobThresholds
     thresholds:
@@ -2317,6 +2335,12 @@
   abstract: true
   description: Infiltrates your domain, spies on you, and somehow still a cool pet.
   components:
+  - type: SocialInteractionReceiver # SL/SpL start
+    interactionOverrides: # birds don't have noses
+      - id: Boop
+        interactString: booping-beak-success
+        messagePerceivedByOthers: booping-beak-success-others
+        emoteMessage: booping-beak-emote # SL/SpL end
   - type: MovementSpeedModifier
     baseWalkSpeed : 2.5
     baseSprintSpeed : 6
@@ -2403,6 +2427,12 @@
   id: MobPenguin
   description: Their lives are constant pain due to their inner-body knees.
   components:
+  - type: SocialInteractionReceiver # SL/SpL start
+    interactionOverrides: # birds don't have noses
+      - id: Boop
+        interactString: booping-beak-success
+        messagePerceivedByOthers: booping-beak-success-others
+        emoteMessage: booping-beak-emote # SL/SpL end
   - type: Sprite
     drawdepth: Mobs
     layers:
@@ -2594,6 +2624,12 @@
   id: MobSpiderBase
   abstract: true
   components:
+  - type: SocialInteractionReceiver # SL/SpL start
+    interactionOverrides: # spiders don't have noses
+      - id: Boop
+        interactString: booping-generic-success
+        messagePerceivedByOthers: booping-generic-success-others
+        emoteMessage: booping-generic-emote # SL/SpL end
   # Starlight-start: Languages
   - type: LanguageKnowledge
     speaks:
