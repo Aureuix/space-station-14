@@ -383,7 +383,7 @@
   parent: [ BaseCentcommContraband, ClothingHeadHelmetArmoredBase ]
   id: ClothingHeadHelmetERTLeader
   name: ERT leader helmet
-  description: An in-atmosphere helmet worn by the leader of a NanoTrasen Emergency Response Team. Has blue highlights.
+  description: An in-atmosphere helmet worn by the leader of a Central Command Emergency Response Team. Has green highlights. # SpL
   components:
   - type: Sprite
     sprite: Clothing/Head/Helmets/ert_leader.rsi
@@ -398,7 +398,7 @@
   parent: ClothingHeadHelmetERTLeader
   id: ClothingHeadHelmetERTSecurity
   name: ERT security helmet
-  description: An in-atmosphere helmet worn by security members of the NanoTrasen Emergency Response Team. Has red highlights.
+  description: An in-atmosphere helmet worn by security members of a Central Command Emergency Response Team. Has red highlights. # SpL
   components:
   - type: Sprite
     sprite: Clothing/Head/Helmets/ert_security.rsi
@@ -413,7 +413,7 @@
   parent: ClothingHeadHelmetERTLeader
   id: ClothingHeadHelmetERTMedic
   name: ERT medic helmet
-  description: An in-atmosphere helmet worn by medical members of the NanoTrasen Emergency Response Team. Has white highlights.
+  description: An in-atmosphere helmet worn by medical members of a Central Command Emergency Response Team. Has white highlights. # SpL
   components:
   - type: Sprite
     sprite: Clothing/Head/Helmets/ert_medic.rsi
@@ -428,7 +428,7 @@
   parent: ClothingHeadHelmetERTLeader
   id: ClothingHeadHelmetERTEngineer
   name: ERT engineer helmet
-  description: An in-atmosphere helmet worn by engineering members of the NanoTrasen Emergency Response Team. Has orange highlights.
+  description: An in-atmosphere helmet worn by engineering members of a Central Command Emergency Response Team. Has orange highlights. # SpL
   components:
   - type: Sprite
     sprite: Clothing/Head/Helmets/ert_engineer.rsi
@@ -443,7 +443,7 @@
   parent: ClothingHeadHelmetERTLeader
   id: ClothingHeadHelmetERTJanitor
   name: ERT janitor helmet
-  description: An in-atmosphere helmet worn by janitorial members of the NanoTrasen Emergency Response Team. Has dark purple highlights.
+  description: An in-atmosphere helmet worn by janitorial members of a Central Command Emergency Response Team. Has dark purple highlights. # SpL
   components:
   - type: Sprite
     sprite: Clothing/Head/Helmets/ert_janitor.rsi
@@ -456,7 +456,7 @@
 - type: entity
   parent: [ BaseSyndicateContraband, ClothingHeadHelmetBase ]
   id: ClothingHeadHelmetRaid
-  name: Syndicate raidsuit helmet # SpL
+  name: syndicate raidsuit helmet # SpL
   description: An armored helmet for use with the Syndicate raid suit. Very stylish, but not very airtight. # SpL
   components:
   - type: Sprite

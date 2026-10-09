@@ -1169,7 +1169,7 @@
 - type: entity
   parent: [ BaseCentcommContraband, ClothingOuterHardsuitSyndieElite ]
   id: ClothingOuterHardsuitERTJanitor
-  name: ERT janitorial tacsuit
+  name: SVS-25B ERT custodial tacsuit # SpL
   description: A bomb-proof hardsuit worn by the janitors of an Emergency Response Team. # SpL
   components:
   - type: Sprite
