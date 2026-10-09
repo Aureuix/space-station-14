@@ -373,6 +373,7 @@
   - type: Item
     size: Ginormous
   - type: Clothing
+    sprite: _Starlight/Objects/Weapons/Guns/Battery/ion_rifle.rsi # SpL
     quickEquip: false
     slots:
     - Back
@@ -416,7 +417,13 @@
     shape:
     - 0, 0, 3, 1
   - type: Gun
-    fireRate: 0.8 # SpL
+    fireRate: 0.8 # SpL start
+  - type: Clothing
+    sprite: _Starlight/Objects/Weapons/Guns/Battery/ion_rifle.rsi 
+    quickEquip: false
+    slots:
+      - Back
+      - suitStorage # SpL end
   - type: BatterySelfRecharger
     autoRechargeRate: 40 #100sec+60Sec Pause
     autoRechargePauseTime: 60
@@ -452,6 +459,12 @@
   - type: Battery
     maxCharge: 1500 # ~2:30 minutes for recharge
     startingCharge: 1500
+  - type: Clothing # SpL start
+    sprite: _Starlight/Objects/Weapons/Guns/Battery/immolator.rsi 
+    quickEquip: false
+    slots:
+      - Back
+      - suitStorage # SpL end
   - type: BatteryAmmoProvider
     proto: IgnitionRedLaser
     fireCost: 15 # SpL- halved
@@ -690,11 +703,12 @@
       shader: unshaded
   - type: Item
     size: Ginormous
-  - type: Clothing
+  - type: Clothing # SpL start
+    sprite: _Starlight/Objects/Weapons/Guns/Battery/energy_sniper.rsi
     quickEquip: false
     slots:
-    - Back
-    - suitStorage # SpL
+      - Back
+      - suitStorage # SpL end
   - type: Gun
     fireRate: 0.5
     soundGunshot:
