@@ -2,7 +2,7 @@
   name: SA-590 riot shotgun # SpL
   parent: [BaseWeaponShotgun, BaseGunWieldable, BaseSecurityContraband]
   id: WeaponShotgunRiot
-  description: A sturdy shotgun with a longer magazine and a fixed tactical stock designed for non-lethal riot control. Accepts 12 gauge shells. # SpL
+  description: A sturdy pump-action shotgun with rapid shell ejection and a fixed tactical stock designed for non-lethal riot control. Accepts 12 gauge shells. # SpL
   components:
   - type: Item
     sprite: _Starlight/Objects/Weapons/Guns/Shotguns/riot_inhands_64x.rsi
@@ -16,6 +16,8 @@
   - type: GunRequiresWield
   - type: BallisticAmmoProvider
     capacity: 7
+    soundRack:
+      path: /Audio/Weapons/Guns/Cock/ltrifle_cock.ogg # SpL
   - type: Construction
     graph: ShotgunRiotSawn
     node: start
@@ -66,6 +68,8 @@
     sprite: _Starlight/Objects/Weapons/Guns/Shotguns/cshotgun_inhands_64x.rsi
   - type: Gun
     spread: 20
+    soundGunshot:
+      path: /Audio/_Starlight/Weapons/Guns/Gunshots/gun_shotgun_automatic.ogg
   - type: Sprite
     sprite: _Starlight/Objects/Weapons/Guns/Shotguns/cshotgun.rsi
   - type: Clothing
@@ -73,6 +77,8 @@
   - type: GunRequiresWield
   - type: BallisticAmmoProvider
     capacity: 7
+    soundRack:
+      path: /Audio/Weapons/Guns/Cock/ltrifle_cock.ogg # SpL
 
 #- type: entity # SpL- depreciated for our own version
 #  name: VtzT UTS-27 cycler shotgun # SpL
@@ -383,9 +389,10 @@
       - ShellShotgunToz
     capacity: 2
     proto: ShellShotgunToz
-    soundRack: /Audio/Weapons/Guns/Cock/ltrifle_cock.ogg # SpL
     soundInsert:
       path: /Audio/Weapons/Guns/MagIn/shotgun_insert.ogg
+    soundRack:
+      path: /Audio/_Starlight/Weapons/Guns/Cock/cycle_bolt.ogg
   - type: ContainerContainer
     containers:
       ballistic-ammo: !type:Container

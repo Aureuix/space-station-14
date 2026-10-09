@@ -4,6 +4,12 @@
   name: Urist McRocks
   abstract: true
   components:
+  - type: SocialInteractionReceiver
+    interactionOverrides: # cyclorites don't have noses
+    - id: Boop
+      interactString: booping-rocky-success
+      messagePerceivedByOthers: booping-rocky-success-others
+      emoteMessage: booping-rocky-emote
   - type: LanguageKnowledge
     speaks:
     - GalacticCommon

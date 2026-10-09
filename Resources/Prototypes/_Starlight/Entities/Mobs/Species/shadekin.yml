@@ -5,6 +5,12 @@
   id: BaseMobShadekin
   abstract: true
   components:
+    - type: SocialInteractionReceiver # SpL start
+      interactionOverrides: # I'd be hard pressed to argue shadekin have noses
+      - id: Boop
+        interactString: booping-generic-success
+        messagePerceivedByOthers: booping-generic-success-others
+        emoteMessage: booping-generic-emote # SpL end
     - type: LanguageKnowledge
       speaks:
         - GalacticCommon

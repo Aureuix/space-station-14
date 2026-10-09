@@ -21,3 +21,23 @@ looking-success = You look at { THE($target) }.
 looking-success-others = { CAPITALIZE(THE($user)) } looks at {THE($target)}.
 looking-emote = looks at {THE($target)}.
 looking-emote-self = looks at {REFLEXIVE($target)}.
+
+booping-snoot-success = You boop { THE($target) } on {POSS-ADJ($target)} snoot.
+booping-snoot-success-others = { CAPITALIZE(THE($user)) } boops {THE($target)} on {POSS-ADJ($target)} snoot.
+booping-snoot-emote = boops {THE($target)} on {POSS-ADJ($target)} snoot.
+
+booping-rocky-success = You boop { THE($target) } on {POSS-ADJ($target)} rocky face.
+booping-rocky-success-others = { CAPITALIZE(THE($user)) } boops {THE($target)} on {POSS-ADJ($target)} rocky face.
+booping-rocky-emote = boops {THE($target)} on {POSS-ADJ($target)} rocky face.
+
+booping-borg-success = You boop { THE($target) } on {POSS-ADJ($target)} metal face.
+booping-borg-success-others = { CAPITALIZE(THE($user)) } boops {THE($target)} on {POSS-ADJ($target)} metal face.
+booping-borg-emote = boops {THE($target)} on {POSS-ADJ($target)} metal face.
+
+booping-beak-success = You boop { THE($target) } on {POSS-ADJ($target)} beak.
+booping-beak-success-others = { CAPITALIZE(THE($user)) } boops {THE($target)} on {POSS-ADJ($target)} beak.
+booping-beak-emote = boops {THE($target)} on {POSS-ADJ($target)} beak.
+
+booping-generic-success = You boop { THE($target) } on {POSS-ADJ($target)} face.
+booping-generic-success-others = { CAPITALIZE(THE($user)) } boops {THE($target)} on {POSS-ADJ($target)} face.
+booping-generic-emote = boops {THE($target)} on {POSS-ADJ($target)} face.

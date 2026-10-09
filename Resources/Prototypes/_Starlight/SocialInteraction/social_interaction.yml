@@ -12,7 +12,7 @@
   verbName: boop-verb
   interactString: booping-success
   messagePerceivedByOthers: booping-success
-  # emoteMessage: booping-emote # SpL- removed due to spam tendency
+  emoteMessage: booping-emote
   interactSound: /Audio/Effects/pop.ogg # SpL
 
 - type: socialInteraction

@@ -4,7 +4,7 @@
   verbName: tap-verb
   interactString: tap-success
   messagePerceivedByOthers: tap-success-others
-  # emoteMessage: tapping-emote
+  emoteMessage: tapping-emote
   interactSound: /Audio/Effects/pop_high.ogg
   
 - type: socialInteraction
@@ -12,7 +12,7 @@
   verbName: pat-verb
   interactString: pat-success
   messagePerceivedByOthers: pat-success-others
-  # emoteMessage: patting-emote
+  emoteMessage: patting-emote
   interactSound: /Audio/Effects/thudswoosh.ogg
   
 - type: socialInteraction
@@ -20,7 +20,7 @@
   verbName: shake-verb
   interactString: shake-success
   messagePerceivedByOthers: shake-success-others
-  # emoteMessage: shaking-emote
+  emoteMessage: shaking-emote
   interactSound: /Audio/Effects/thudswoosh.ogg
   
 - type: socialInteraction
@@ -28,7 +28,7 @@
   verbName: punch-verb
   interactString: punch-success
   messagePerceivedByOthers: punch-success-others
-  # emoteMessage: punching-emote
+  emoteMessage: punching-emote
   interactSound: /Audio/Effects/weak_hit1.ogg
 
 - type: socialInteraction
@@ -36,5 +36,5 @@
   verbName: hug-verb
   interactString: hugging-success-generic
   messagePerceivedByOthers: hugging-success-generic-others
-  # emoteMessage: hugging-success-generic
+  emoteMessage: hugging-success-generic
   interactSound: /Audio/Effects/thudswoosh.ogg

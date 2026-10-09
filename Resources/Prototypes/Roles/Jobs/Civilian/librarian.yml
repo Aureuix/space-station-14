@@ -39,6 +39,9 @@
       - Classical
       - Darktongue
       - Lagomorphian
+      - Felyaic # SpL
+      - NovaCygni # SpL
+      - CHaet # SpL
       understands:
       - GalacticCommon
       - Scratch
@@ -60,6 +63,9 @@
       - Classical
       - Darktongue
       - Lagomorphian
+      - Felyaic # SpL
+      - NovaCygni # SpL
+      - CHaet # SpL
   # Starlight end
 
 - type: startingGear

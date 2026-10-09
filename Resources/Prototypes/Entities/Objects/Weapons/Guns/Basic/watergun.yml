@@ -3,6 +3,8 @@
   abstract: true
   parent: BaseItem
   components:
+  - type: CanDualWield # SL/SpL
+    dualWieldInaccuracyPenalty: 30
   - type: Sprite
     sprite: Objects/Weapons/Guns/Pistols/water_pistol.rsi
   - type: Clothing
