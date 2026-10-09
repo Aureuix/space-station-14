@@ -4,20 +4,6 @@
   name: cardboard box
   description: A cardboard box for storing things.
   components:
-  - type: ToolRefinable # SL/SpL Start
-    qualityNeeded: Slicing
-    verbText: refined-slice-verb-name
-    verbDefaultTooltip: refined-slice-verb-message-default
-    toolMissingQualityTooltip: refined-slice-verb-message-tool
-    popupType: Small
-    popupForUser: refined-butchered-success
-    popupForOther: refined-butchered-success-others
-    verbIcon: Interface/VerbIcons/cutlery.svg.192dpi.png
-    sound: !type:SoundPathSpecifier
-      path: /Audio/Items/Culinary/chop.ogg
-    refineResult:
-      - id: MaterialCardboard1
-        amount: 1 # SL/SpL end
   - type: Construction
     graph: BoxCardboard
     node: boxcardboard
@@ -38,20 +24,6 @@
   name: small cardboard box
   description: A small cardboard box for storing things.
   components:
-  - type: ToolRefinable # SL/SpL Start
-    qualityNeeded: Slicing
-    verbText: refined-slice-verb-name
-    verbDefaultTooltip: refined-slice-verb-message-default
-    toolMissingQualityTooltip: refined-slice-verb-message-tool
-    popupType: Small
-    popupForUser: refined-butchered-success
-    popupForOther: refined-butchered-success-others
-    verbIcon: Interface/VerbIcons/cutlery.svg.192dpi.png
-    sound: !type:SoundPathSpecifier
-      path: /Audio/Items/Culinary/chop.ogg
-    refineResult:
-      - id: MaterialCardboard1
-        amount: 1 # SL/SpL End
   - type: Construction
     graph: BoxCardboardSmall # Half the material cost of the "regular" cardboardbox
     node: boxcardboardsmall
