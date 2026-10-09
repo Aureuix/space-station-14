@@ -30,7 +30,7 @@
     wideAnimationRotation: -145 # SpL
     damage:
       types:
-        Blunt: 1
+        Piercing: 4 # SpL
     animation: WeaponArcThrust # SpL
     soundHit:
       path: /Audio/Weapons/bladeslice.ogg # SpL
@@ -39,7 +39,7 @@
   - type: IncreaseDamageOnWield
     damage:
       types:
-        Pierce: 14 # SpL- converted to pierce a la one true flag 
+        Piercing: 12 # SpL- converted to pierce a la one true flag 
   - type: StaminaDamageOnHit
     damage: 12
   - type: Clothing
@@ -72,50 +72,50 @@
         - ItemMask
         restitution: 0.3
         friction: 0.2
-  - type: Blocking
-    passiveBlockModifier:
-      coefficients:
-        Blunt: 0.2
-        Slash: 0.2
-        Piercing: 0.1 
-        Heat: 1.2 # It's a flag, it should burn. This gives it an obvious weakness/counterplay that makes sense.
-    activeBlockModifier:
-      coefficients:
-        Blunt: 0.5
-        Slash: 0.5
-        Piercing: 0.2
-        Heat: 1.2
-      flatReductions:
-        Blunt: 10
-        Slash: 10
-        Piercing: 6
-  - type: Damageable
-    damageContainer: Shield
-  - type: Destructible
-    thresholds:
-      - trigger:
-          !type:DamageTrigger
-          damage: 200 # SpL
-        behaviors:
-          - !type:DoActsBehavior
-            acts: [ "Destruction" ]
-      - trigger:
-          !type:DamageTrigger
-          damage: 100 # SpL
-        behaviors:
-          - !type:DoActsBehavior
-            acts: [ "Destruction" ]
-          - !type:PlaySoundBehavior
-            sound:
-              collection: MetalBreak
-          - !type:SpawnEntitiesBehavior
-            spawn:
-              PartRodMetal1:
-                min: 1
-                max: 1
-              MaterialCloth1:
-                min: 2
-                max: 2
+  #- type: Blocking # SpL start- removing the shield region altogether
+  #  passiveBlockModifier:
+  #    coefficients:
+  #      Blunt: 0.2
+  #      Slash: 0.2
+  #      Piercing: 0.1 
+  #      Heat: 1.2 # It's a flag, it should burn. This gives it an obvious weakness/counterplay that makes sense.
+  #  activeBlockModifier:
+  #    coefficients:
+  #      Blunt: 0.5
+  #      Slash: 0.5
+  #      Piercing: 0.2
+  #      Heat: 1.2
+  #    flatReductions:
+  #      Blunt: 10
+  #      Slash: 10
+  #      Piercing: 6
+  #- type: Damageable
+  #  damageContainer: Shield
+  #- type: Destructible
+  #  thresholds:
+  #    - trigger:
+  #        !type:DamageTrigger
+  #        damage: 200 # SpL
+  #      behaviors:
+  #        - !type:DoActsBehavior
+  #          acts: [ "Destruction" ]
+  #    - trigger:
+  #        !type:DamageTrigger
+  #        damage: 100 # SpL
+  #      behaviors:
+  #        - !type:DoActsBehavior
+  #          acts: [ "Destruction" ]
+  #        - !type:PlaySoundBehavior
+  #          sound:
+  #            collection: MetalBreak
+  #        - !type:SpawnEntitiesBehavior
+  #          spawn:
+  #            PartRodMetal1:
+  #              min: 1
+  #              max: 1
+  #            MaterialCloth1:
+  #              min: 2
+  #              max: 2 # SpL end
   - type: StaticPrice
     price: 1000
   - type: EmbeddableProjectile # SpL Start
@@ -131,5 +131,6 @@
   - type: DamageOtherOnHit
     damage:
       types:
-        Pierce: 16 # SpL End
+        Piercing: 16
+    ignoreResistances: true # SpL End
 
