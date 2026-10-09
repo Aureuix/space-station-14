@@ -11,11 +11,12 @@
           children:
             - id: ClothingOuterSuitEmergency
               amount: 1 #SL Edit
+            - id: EmergencyCoolingUnit # SL Edit
+              amount: 1
             - id: DoubleEmergencyOxygenTankFilled
               amount: 2
             - id: DoubleEmergencyNitrogenTankFilled
               amount: 2 #SL Edit
-            - id: CoolingUnit # SL Edit
             - id: ClothingMaskBreath #SL Edit
               amount: 2 #SL Edit
 
