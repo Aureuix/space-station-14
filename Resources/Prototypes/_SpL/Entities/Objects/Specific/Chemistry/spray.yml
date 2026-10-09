@@ -18,7 +18,7 @@
         drink:
           maxVol: 30
           reagents:
-            - ReagentId: TearGas
+            - ReagentId: PepperSpray
               Quantity: 30
     - type: UseDelay
     - type: SolutionItemStatus

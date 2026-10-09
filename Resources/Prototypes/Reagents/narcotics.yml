@@ -424,26 +424,6 @@
   color: "#ffffff4d"
   boilingPoint: 255.0
   meltingPoint: 36.0
-  reactiveEffects: # SpL start
-    Acidic:
-      methods: [ Touch ]
-      effects:
-        - !type:PopupMessage
-          type: Local
-          probability: 1
-          messages:
-            - generic-reagent-effect-burning-eyes
-        - !type:Emote
-          emote: Scream
-          probability: 1
-        - !type:GenericStatusEffect
-          key: TemporaryBlindness
-          component: TemporaryBlindness
-        - !type:MovementSpeedModifier
-          walkSpeedModifier: 0.65
-          sprintSpeedModifier: 0.65
-          time: 1
-        - !type:ForceSneeze # SpL end
   metabolisms:
     Narcotic:
       effects:
