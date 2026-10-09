@@ -33,8 +33,8 @@ public sealed partial class SocialInteractionOverride
     /// <summary>
     /// The social interaction prototype to override.
     /// </summary>
-    [DataField]
-    public ProtoId<SocialInteractionPrototype> Id;
+    [DataField("id")]
+    public ProtoId<SocialInteractionPrototype> ID;
 
     [DataField("interactString")]
     public LocId? InteractString;
