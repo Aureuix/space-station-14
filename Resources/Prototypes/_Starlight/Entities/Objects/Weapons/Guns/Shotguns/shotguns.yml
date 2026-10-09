@@ -2,7 +2,7 @@
   name: SA-590 riot shotgun # SpL
   parent: [BaseWeaponShotgun, BaseGunWieldable, BaseSecurityContraband]
   id: WeaponShotgunRiot
-  description: A sturdy shotgun with a longer magazine and a fixed tactical stock designed for non-lethal riot control. Accepts 12 gauge shells. # SpL
+  description: A sturdy pump-action shotgun with rapid shell ejection and a fixed tactical stock designed for non-lethal riot control. Accepts 12 gauge shells. # SpL
   components:
   - type: Item
     sprite: _Starlight/Objects/Weapons/Guns/Shotguns/riot_inhands_64x.rsi
@@ -275,9 +275,6 @@
     steps: 1
     zeroVisible: true
   - type: Appearance
-  - type: BallisticAmmoProvider
-    soundRack:
-      path: /Audio/Weapons/Guns/Cock/ltrifle_cock.ogg # SpL
 
 - type: entity
   name: forged double-barrel shotgun
@@ -392,7 +389,6 @@
       - ShellShotgunToz
     capacity: 2
     proto: ShellShotgunToz
-    soundRack: /Audio/Weapons/Guns/Cock/ltrifle_cock.ogg # SpL
     soundInsert:
       path: /Audio/Weapons/Guns/MagIn/shotgun_insert.ogg
     soundRack:

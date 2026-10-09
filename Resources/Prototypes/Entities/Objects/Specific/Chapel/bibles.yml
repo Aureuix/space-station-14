@@ -146,7 +146,7 @@
 
 - type: entity
   parent: Bible
-  name: satanic bible
+  name: satanic codex
   description: "What could possibly go wrong?"
   id: BibleSatanic
   components:
