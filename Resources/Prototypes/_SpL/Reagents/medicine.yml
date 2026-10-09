@@ -463,6 +463,13 @@
             - !type:ReagentCondition
               reagent: Zyrictrazine
               min: 2
+        - !type:Emote
+          conditions:
+            - !type:ReagentCondition
+              reagent: Zyrictrazine
+              min: 2
+          emote: Scream
+          probability: 0.7
         - !type:ModifyBleed
           amount: 0.5
         - !type:HealthChange
@@ -518,7 +525,8 @@
           conditions:
             - !type:ReagentCondition
               reagent: Zyrictrazine
-              min: 2
+              min: 1
+              max: 2
           type: Local
           visualType: MediumCaution
           messages:
@@ -528,6 +536,19 @@
             - "generic-reagent-effect-tearing-up"
             - "histamine-effect-light-itchiness"
           probability: 0.2
+        - !type:PopupMessage
+          conditions:
+            - !type:ReagentCondition
+              reagent: Zyrictrazine
+              min: 1
+              max: 2
+          type: Local
+          visualType: MediumCaution
+          messages:
+            - "generic-reagent-effect-slicing-insides"
+            - "generic-reagent-effect-burning-insides"
+            - "generic-reagent-effect-sick"
+          probability: 0.5
         - !type:GenericStatusEffect
           key: Jitter
           time: 10.0

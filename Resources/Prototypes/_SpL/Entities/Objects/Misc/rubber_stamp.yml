@@ -53,7 +53,8 @@
       stampedColor: "#c157be"
       stampState: "paper_stamp-magistrate"
     - type: Sprite
-      state: stamp-wizard
+      sprite: _Starlight/Objects/Misc/stamps.rsi
+      state: stamp-magistrate
       
 - type: entity
   name: ERT leader rubber stamp

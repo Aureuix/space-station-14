@@ -76,7 +76,7 @@
 - type: entity
   parent: ClothingBeltRegaliaSheath
   id: ClothingBeltRegaliaSheathFilled
-  name: CentComm vibrorapier sheath
+  name: regalia sheath
   suffix: Filled
   components:
     - type: ContainerFill

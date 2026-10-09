@@ -395,7 +395,7 @@
   parent: BaseItem
   name: Nuclear Debris
   description: You do not see the graphite on the floor. You're in shock. Report to medical.
-  categories: [ HideSpawnMenu ]
+  # categories: [ HideSpawnMenu ] # SpL
   components:
   - type: Sprite
     sprite: _FarHorizons/Objects/Power/FissionGenerator/nuclear_debris.rsi

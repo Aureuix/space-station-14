@@ -78,7 +78,7 @@
     #eyes: ClothingEyesHudCommand #Starlight
   storage:
     back:
-    - Flash
+    - PepperSpray # SpL
 
 - type: chameleonOutfit
   id: HeadOfPersonnelChameleonOutfit

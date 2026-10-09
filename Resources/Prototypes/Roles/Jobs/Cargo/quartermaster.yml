@@ -48,7 +48,7 @@
     pocket1: AppraisalTool
   storage:
     back:
-    - Flash
+    - PepperSpray # SpL
 
 - type: chameleonOutfit
   id: QuartermasterChameleonOutfit

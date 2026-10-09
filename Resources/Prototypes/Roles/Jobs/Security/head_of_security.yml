@@ -54,7 +54,7 @@
     ears: ClothingHeadsetAltSecurity
   storage:
     back:
-    - Flash
+    - PepperSpray # SpL
 
 - type: chameleonOutfit
   id: HeadOfSecurityChameleonOutfit

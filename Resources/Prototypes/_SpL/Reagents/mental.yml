@@ -201,6 +201,13 @@
             - !type:ReagentCondition
               reagent: Sertraline
               min: 18
+        - !type:Emote
+          conditions:
+            - !type:ReagentCondition
+              reagent: Sertraline
+              min: 18
+          emote: Scream
+          probability: 0.2
         - !type:MovementSpeedModifier
           walkSpeedModifier: 0.9
           sprintSpeedModifier: 0.9

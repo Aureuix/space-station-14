@@ -47,7 +47,7 @@
     belt: ClothingBeltMedicalFilled
   storage:
     back:
-    - Flash
+    - PepperSpray # SpL
 
 - type: chameleonOutfit
   id: ChiefMedicalOfficerChameleonOutfit

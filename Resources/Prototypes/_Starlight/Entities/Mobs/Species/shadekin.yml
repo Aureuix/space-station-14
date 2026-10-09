@@ -124,6 +124,21 @@
                   max: 1
             - !type:BurnBodyBehavior {}
     - type: JobStatus # SpL- weird workaround that's apparently needed?
+    - type: DamageVisuals # SpL start
+      thresholds: [ 10, 20, 30, 50, 70, 100 ]
+      targetLayers:
+        - "enum.HumanoidVisualLayers.Chest"
+        - "enum.HumanoidVisualLayers.Head"
+        - "enum.HumanoidVisualLayers.LArm"
+        - "enum.HumanoidVisualLayers.LLeg"
+        - "enum.HumanoidVisualLayers.RArm"
+        - "enum.HumanoidVisualLayers.RLeg"
+      damageOverlayGroups:
+        Brute:
+          sprite: Mobs/Effects/brute_damage.rsi
+          color: "#222222" # black blood
+        Burn:
+          sprite: Mobs/Effects/burn_damage.rsi # SpL end
 
     # BaseMobSpeciesOrganic // Because we dont want respirator to be used.
     - type: Barotrauma

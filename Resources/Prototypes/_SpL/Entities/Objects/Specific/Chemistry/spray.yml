@@ -1,0 +1,35 @@
+﻿- type: entity
+  name: self-defense spray
+  parent: [BaseItem, BaseCommandContraband]
+  description: A small non-refillable canister filled with three doses of burny stuff, for preventing attacks the old fashioned way.
+  id: PepperSpray
+  components:
+    - type: Tag
+      tags:
+        - Spray
+        - Trash
+    - type: Sprite
+      sprite: _SpL/Objects/Specific/Chemistry/pepperspray.rsi
+      state: icon
+    - type: Item
+      sprite: _SpL/Objects/Specific/Chemistry/pepperspray.rsi
+    - type: SolutionContainerManager
+      solutions:
+        drink:
+          maxVol: 30
+          reagents:
+            - ReagentId: PepperSpray
+              Quantity: 30
+    - type: UseDelay
+    - type: SolutionItemStatus
+      solution: drink
+    - type: ExaminableSolution
+      solution: drink
+    - type: Spray
+      solution: drink
+      transferAmount: 10
+      sprayVelocity: 2
+      spraySound:
+        path: /Audio/Effects/spray2.ogg
+    - type: TrashOnSolutionEmpty
+      solution: drink

@@ -1,0 +1,34 @@
+﻿- type: reagent
+  id: PepperSpray
+  name: reagent-name-pepper-spray
+  group: Narcotics
+  desc: reagent-desc-pepper-spray
+  physicalDesc: reagent-physical-desc-spicy
+  contrabandSeverity: Major
+  allowedDepartments:
+    - Command
+    - Security
+  flavor: spicy
+  color: "#dd00004d"
+  boilingPoint: 255.0
+  meltingPoint: 36.0
+  reactiveEffects:
+    Acidic:
+      methods: [ Touch ]
+      effects:
+        - !type:PopupMessage
+          type: Local
+          probability: 1
+          messages:
+            - generic-reagent-effect-burning-eyes
+        - !type:Emote
+          emote: Scream
+          probability: 1
+        - !type:GenericStatusEffect
+          key: TemporaryBlindness
+          component: TemporaryBlindness
+        - !type:MovementSpeedModifier
+          walkSpeedModifier: 0.65
+          sprintSpeedModifier: 0.65
+          time: 1
+        - !type:ForceSneeze

@@ -1,4 +1,28 @@
 ﻿- type: entity
+  id: ClothingBeltHolsterFilledStechkin
+  parent: ClothingBeltHolster
+  suffix: Filled
+  components:
+    - type: EntityTableContainerFill
+      containers:
+        storagebase: !type:AllSelector
+          children:
+            - id: WeaponPistolStechkinDetective
+            - id: MagazinePistol40SP
+              
+- type: entity
+  id: ClothingBeltHolsterFilledMauser
+  parent: ClothingBeltHolster
+  suffix: Filled
+  components:
+    - type: EntityTableContainerFill
+      containers:
+        storagebase: !type:AllSelector
+          children:
+            - id: WeaponPistolMauser
+            - id: MagazinePistolHighCapacitySP
+
+- type: entity
   id: ClothingBeltCargoFilled
   parent: ClothingBeltCargo
   suffix: Filled

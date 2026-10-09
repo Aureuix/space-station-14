@@ -728,6 +728,18 @@
     clothingPrototype: ClothingHeadHelmetHardsuitSyndieMedic
   - type: ZombificationResistance
     zombificationResistanceCoefficient: 0.75 # Starlight Edit
+  - type: ClothingSpeedModifier # SpL start
+    walkModifier: 0.92 
+    sprintModifier: 0.92
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.6
+        Slash: 0.6
+        Piercing: 0.5
+        Heat: 0.4
+        Radiation: 0.4
+        Caustic: 0.2 # SpL end
   - type: Tag
     tags:
     - Hardsuit
@@ -764,7 +776,7 @@
       coefficients:
         Blunt: 0.6 #SL EDIT
         Slash: 0.6 #SL EDIT
-        Piercing: 0.60 #SL EDIT
+        Piercing: 0.6 #SL EDIT
         Heat: 0.1 #SL EDIT
         Radiation: 0.01
         Caustic: 0.5
@@ -774,8 +786,8 @@
   - type: Item
     size: Huge
   - type: ClothingSpeedModifier
-    walkModifier: 0.9
-    sprintModifier: 0.9
+    walkModifier: 0.95 # SpL
+    sprintModifier: 0.95 # SpL
   - type: HeldSpeedModifier
   - type: ToggleableClothing
     clothingPrototype: ClothingHeadHelmetHardsuitSyndieElite
@@ -1169,7 +1181,7 @@
 - type: entity
   parent: [ BaseCentcommContraband, ClothingOuterHardsuitSyndieElite ]
   id: ClothingOuterHardsuitERTJanitor
-  name: ERT janitorial tacsuit
+  name: SVS-25B ERT custodial tacsuit # SpL
   description: A bomb-proof hardsuit worn by the janitors of an Emergency Response Team. # SpL
   components:
   - type: Sprite

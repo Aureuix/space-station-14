@@ -17,8 +17,8 @@
 
 - type: entity
   id: BaseMagazineMagnumSubMachineGun
-  name: .45 ACP SMG magazine # Spectralight: Magnum -> ACP
-  description: A magazine compatible with high-level DMRs and SMGs. Intended to hold general-purpose kinetic ammunition. # SpL
+  name: .45 ACP rifle magazine # Spectralight: Magnum -> ACP
+  description: A magazine compatible with high-level DMRs. # SpL
   parent: [BaseItem, BaseSecuritySalvageContraband]
   abstract: true
   components:
@@ -30,7 +30,7 @@
     whitelist:
       tags:
         - CartridgeMagnum
-    capacity: 25
+    capacity: 20
   - type: Item
     size: Small
   - type: ContainerContainer
@@ -80,7 +80,7 @@
     proto: CartridgeMagnumSP
   - type: Sprite
     layers:
-    - state: red
+    - state: sp # SpL
       map: ["enum.GunVisualLayers.Base"]
     - state: mag-1
       map: ["enum.GunVisualLayers.Mag"]
@@ -94,6 +94,80 @@
       - state: inhand-right-mag
       - state: inhand-right-stripe
         color: "#575EF5"
+
+# SpL start- why was there just not hp/fmj versions??
+- type: entity
+  id: MagazineMagnumHP
+  name: .45 ACP pistol magazine (HP) # Spectralight: Magnum -> ACP
+  parent: BaseMagazineMagnum
+  components:
+    - type: BallisticAmmoProvider
+      proto: CartridgeMagnumHP
+    - type: Sprite
+      layers:
+        - state: red
+          map: ["enum.GunVisualLayers.Base"]
+        - state: mag-1
+          map: ["enum.GunVisualLayers.Mag"]
+    - type: Item
+      inhandVisuals:
+        left:
+          - state: inhand-left-mag
+          - state: inhand-left-stripe
+            color: "#EF575E" 
+        right:
+          - state: inhand-right-mag
+          - state: inhand-right-stripe
+            color: "#EF575E"
+
+- type: entity
+  id: MagazineMagnumFMJ
+  name: .45 ACP pistol magazine (FMJ) # Spectralight: Magnum -> ACP
+  parent: BaseMagazineMagnum
+  components:
+    - type: BallisticAmmoProvider
+      proto: CartridgeMagnumFMJ
+    - type: Sprite
+      layers:
+        - state: fmj
+          map: ["enum.GunVisualLayers.Base"]
+        - state: mag-1
+          map: ["enum.GunVisualLayers.Mag"]
+    - type: Item
+      inhandVisuals:
+        left:
+          - state: inhand-left-mag
+          - state: inhand-left-stripe
+            color: "#222222"
+        right:
+          - state: inhand-right-mag
+          - state: inhand-right-stripe
+            color: "#222222"
+            
+- type: entity
+  id: MagazineMagnumIncendiary
+  name: .45 ACP pistol magazine (incendiary)
+  parent: BaseMagazineMagnum
+  components:
+    - type: BallisticAmmoProvider
+      proto: CartridgeMagnumIncendiary
+    - type: Sprite
+      layers:
+        - state: incendiary
+          map: ["enum.GunVisualLayers.Base"]
+        - state: mag-1
+          map: ["enum.GunVisualLayers.Mag"]
+    - type: Item
+      inhandVisuals:
+        left:
+          - state: inhand-left-mag
+          - state: inhand-left-stripe
+            color: "#222222"
+        right:
+          - state: inhand-right-mag
+          - state: inhand-right-stripe
+            color: "#222222"
+# SpL end
 
 - type: entity
   id: MagazineMagnumPractice
@@ -169,7 +243,7 @@
 
 - type: entity
   id: MagazineMagnumSubMachineGunEmpty
-  name: .45 ACP SMG magazine (any) # Spectralight: Magnum -> ACP
+  name: .45 ACP rifle magazine (any) # Spectralight: Magnum -> ACP
   suffix: empty
   parent: BaseMagazineMagnumSubMachineGun
   components:
@@ -190,7 +264,7 @@
 
 - type: entity
   id: MagazineMagnumSubMachineGun
-  name: .45 ACP SMG magazine (SP) # SpL # Spectralight: Magnum -> ACP
+  name: .45 ACP rifle magazine (SP) # SpL # Spectralight: Magnum -> ACP
   parent: BaseMagazineMagnumSubMachineGun
   components:
   - type: BallisticAmmoProvider
@@ -214,7 +288,7 @@
 
 - type: entity
   id: MagazineMagnumSubMachineGunPractice
-  name: .45 ACP SMG magazine (practice) # Spectralight: Magnum -> ACP
+  name: .45 ACP rifle magazine (practice) # Spectralight: Magnum -> ACP
   parent: BaseMagazineMagnumSubMachineGun
   components:
   - type: BallisticAmmoProvider
@@ -238,7 +312,7 @@
 
 - type: entity
   id: MagazineMagnumSubMachineGunUranium
-  name: .45 ACP SMG magazine (uranium) # Spectralight: Magnum -> ACP
+  name: .45 ACP rifle magazine (uranium) # Spectralight: Magnum -> ACP
   parent: BaseMagazineMagnumSubMachineGun
   components:
   - type: BallisticAmmoProvider
@@ -262,7 +336,7 @@
 
 - type: entity
   id: MagazineMagnumSubMachineGunPiercing
-  name: .45 ACP SMG magazine (AP) # Spectralight: Magnum -> ACP
+  name: .45 ACP rifle magazine (AP) # Spectralight: Magnum -> ACP
   parent: BaseMagazineMagnumSubMachineGun
   components:
   - type: BallisticAmmoProvider
@@ -310,7 +384,7 @@
 
 - type: entity
   id: MagazineMagnumSubMachineGunRubber
-  name: .45 ACP SMG magazine (rubber) # Spectralight: Magnum -> ACP
+  name: .45 ACP rifle magazine (rubber) # Spectralight: Magnum -> ACP
   parent: BaseMagazineMagnumSubMachineGun
   components:
   - type: BallisticAmmoProvider
@@ -334,13 +408,12 @@
         
 - type: entity
   id: MagazineMagnumRifleSP
-  name: .45 ACP Estoc magazine # Spectralight: Magnum -> ACP
-  description: A unique extended rifle magazine designed for use with high-end DMRs. # SpL
+  name: .45 ACP rifle magazine # Spectralight: Magnum -> ACP
   parent: BaseMagazineMagnumSubMachineGun
   components:
   - type: BallisticAmmoProvider
     proto: CartridgeMagnumSP
-    capacity: 20
+    capacity: 25
   - type: Sprite
     sprite: _Starlight/Objects/Weapons/Guns/Ammunition/Magazine/Magnum/magnum_rifle_mag.rsi
     layers:
@@ -375,7 +448,7 @@
 
 - type: entity
   id: MagazineDMRSP
-  name: .45 ACP rifle magazine (SP) # Spectralight: Magnum -> ACP
+  name: .45 ACP DMR magazine (SP) # Spectralight: Magnum -> ACP
   parent: BaseMagazineRifleDMR
   components:
   - type: BallisticAmmoProvider
@@ -399,7 +472,7 @@
 
 - type: entity
   id: MagazineDMRHP
-  name: .45 ACP rifle magazine (HP) # Spectralight: Magnum -> ACP
+  name: .45 ACP DMR magazine (HP) # Spectralight: Magnum -> ACP
   parent: BaseMagazineRifleDMR
   components:
   - type: BallisticAmmoProvider
@@ -423,7 +496,7 @@
 
 - type: entity
   id: MagazineDMRFMJ
-  name: .45 ACP rifle magazine (FMJ) # Spectralight: Magnum -> ACP
+  name: .45 ACP DMR magazine (FMJ) # Spectralight: Magnum -> ACP
   parent: BaseMagazineRifleDMR
   components:
   - type: BallisticAmmoProvider
@@ -447,7 +520,7 @@
 
 - type: entity
   id: MagazineDMRAP
-  name: .45 ACP rifle magazine (AP) # Spectralight: Magnum -> ACP
+  name: .45 ACP DMR magazine (AP) # Spectralight: Magnum -> ACP
   parent: BaseMagazineRifleDMR
   components:
   - type: BallisticAmmoProvider
@@ -471,7 +544,7 @@
 
 - type: entity
   id: MagazineDMREmpty
-  name: .45 ACP rifle magazine (any) # Spectralight: Magnum -> ACP
+  name: .45 ACP DMR magazine (any) # Spectralight: Magnum -> ACP
   suffix: empty
   parent: MagazineDMRSP
   components:
@@ -492,7 +565,7 @@
 
 - type: entity
   id: MagazineDMRIncendiary
-  name: .45 ACP rifle magazine (incendiary) # Spectralight: Magnum -> ACP
+  name: .45 ACP DMR magazine (incendiary) # Spectralight: Magnum -> ACP
   parent: MagazineDMRSP
   components:
   - type: BallisticAmmoProvider
@@ -516,7 +589,7 @@
         
 - type: entity
   id: MagazineDMRPractice
-  name: .45 ACP rifle magazine (practice) # Spectralight: Magnum -> ACP
+  name: .45 ACP DMR magazine (practice) # Spectralight: Magnum -> ACP
   parent: BaseMagazineRifleDMR
   components:
   - type: BallisticAmmoProvider
@@ -540,7 +613,7 @@
 
 - type: entity
   id: MagazineDMRUranium
-  name: .45 ACP rifle magazine (uranium) # Spectralight: Magnum -> ACP
+  name: .45 ACP DMR magazine (uranium) # Spectralight: Magnum -> ACP
   parent: BaseMagazineRifleDMR
   components:
   - type: BallisticAmmoProvider
@@ -564,7 +637,7 @@
 
 - type: entity
   id: MagazineDMRRubber
-  name: .45 ACP rifle magazine (rubber) # Spectralight: Magnum -> ACP
+  name: .45 ACP DMR magazine (rubber) # Spectralight: Magnum -> ACP
   parent: BaseMagazineRifleDMR
   components:
   - type: BallisticAmmoProvider

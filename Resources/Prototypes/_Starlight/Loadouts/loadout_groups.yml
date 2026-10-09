@@ -423,7 +423,7 @@
   - SecurityMk58
   - SecurityPistolEnforcer
   - SecurityRevolverDispatcher
-  - SecurityPistolMauser # SpL
+  - SecurityPistolM1911 # SpL
   - SecurityMk58Gold
 
 # Assorted Boots

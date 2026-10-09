@@ -17,17 +17,9 @@
       - SpeedLoaderMagnumSP
 
 - type: loadout
-  id: HOSPistolM1911
-  dummyEntity: WeaponPistolM1911
+  id: HOSPistolDeagle
+  dummyEntity: WeaponPistolDeagleNT
   storage:
     back:
-      - WeaponPistolM1911
+      - WeaponPistolDeagleNT
       - MagazineMagnum
-    
-    
-- type: loadout
-  id: HOSEnergySword
-  dummyEntity: EnergySwordNT
-  storage:
-    back:
-      - EnergySwordNT
