@@ -1,0 +1,119 @@
+﻿- type: entity
+  id: CigaretteLidocaine
+  parent: SoakedCigarette
+  name: Take The Edge Off
+  components:
+    - type: SolutionContainerManager
+      solutions:
+        smokable:
+          maxVol: 40
+          reagents:
+            - ReagentId: Nicotine
+              Quantity: 10
+            - ReagentId: Lidocaine
+              Quantity: 10
+              
+- type: entity
+  id: CigaretteHeartbreaker
+  parent: SoakedCigarette
+  name: Choking Hazard
+  components:
+    - type: SolutionContainerManager
+      solutions:
+        smokable:
+          maxVol: 40
+          reagents:
+            - ReagentId: Nicotine
+              Quantity: 10
+            - ReagentId: HeartbreakerToxin
+              Quantity: 10
+              
+- type: entity
+  id: CigaretteAmmoniaCarbonate
+  parent: SoakedCigarette
+  name: Wakeup Call
+  components:
+    - type: SolutionContainerManager
+      solutions:
+        smokable:
+          maxVol: 40
+          reagents:
+            - ReagentId: Nicotine
+              Quantity: 10
+            - ReagentId: AmmoniaCarbonate
+              Quantity: 10
+              
+- type: entity
+  id: CigaretteZyrictrazine
+  parent: SoakedCigarette
+  name: Diplomatic Immunity
+  components:
+    - type: SolutionContainerManager
+      solutions:
+        smokable:
+          maxVol: 40
+          reagents:
+            - ReagentId: Nicotine
+              Quantity: 10
+            - ReagentId: Zyrictrazine
+              Quantity: 10
+              
+- type: entity
+  id: CigaretteRazorium
+  parent: SoakedCigarette
+  name: No Pain No Gain
+  components:
+    - type: SolutionContainerManager
+      solutions:
+        smokable:
+          maxVol: 40
+          reagents:
+            - ReagentId: Nicotine
+              Quantity: 10
+            - ReagentId: Razorium
+              Quantity: 10
+              
+- type: entity
+  id: CigaretteEthanol
+  parent: SoakedCigarette
+  name: Cougar Mothers Incorporated
+  components:
+    - type: SolutionContainerManager
+      solutions:
+        smokable:
+          maxVol: 40
+          reagents:
+            - ReagentId: Nicotine
+              Quantity: 10
+            - ReagentId: Ethanol
+              Quantity: 10
+              
+- type: entity
+  id: CigaretteDesoxyephedrine
+  parent: SoakedCigarette
+  name: Crack Cocaine
+  components:
+    - type: SolutionContainerManager
+      solutions:
+        smokable:
+          maxVol: 40
+          reagents:
+            - ReagentId: Nicotine
+              Quantity: 10
+            - ReagentId: Desoxyephedrine
+              Quantity: 10
+              
+- type: entity
+  id: CigaretteNocturine
+  parent: SoakedCigarette
+  name: Dreamland Express
+  components:
+    - type: SolutionContainerManager
+      solutions:
+        smokable:
+          maxVol: 40
+          reagents:
+            - ReagentId: Nicotine
+              Quantity: 10
+            - ReagentId: Nocturine
+              Quantity: 10

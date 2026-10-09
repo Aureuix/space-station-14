@@ -261,11 +261,25 @@
       weight: 1
     - id: CigarettePhlogiston
       weight: 1
+    - id: CigaretteHeartbreaker # SpL
+      weight: 1
+    - id: CigaretteZyrictrazine # SpL
+      weight: 1
+    - id: CigaretteRazorium # SpL
+      weight: 2
+    - id: CigaretteDesoxyephedrine # SpL
+      weight: 2
+    - id: CigaretteNocturine # SpL
+      weight: 2
     - id: CigaretteWeldingFuel
+      weight: 3
+    - id: CigaretteAmmoniaCarbonate # SpL
       weight: 3
     - id: CigaretteMold
       weight: 3
     - id: CigaretteRadium
+      weight: 3
+    - id: CigaretteLidocaine # SpL
       weight: 3
     - id: CigaretteOmnizine
       weight: 4
@@ -283,6 +297,8 @@
       weight: 4
     - id: CigaretteDexalin
       weight: 4
+    - id: CigaretteEthanol # SpL
+      weight: 5
     - id: CigaretteHaloperidol
       weight: 6
     - id: CigaretteLaughter
