@@ -41,7 +41,7 @@
       - Lagomorphian
       - Felyaic # SpL
       - NovaCygni # SpL
-      - Chaet # SpL
+      - CHaet # SpL
       understands:
       - GalacticCommon
       - Scratch
@@ -65,7 +65,7 @@
       - Lagomorphian
       - Felyaic # SpL
       - NovaCygni # SpL
-      - Chaet # SpL
+      - CHaet # SpL
   # Starlight end
 
 - type: startingGear
