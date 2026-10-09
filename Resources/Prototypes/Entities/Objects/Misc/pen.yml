@@ -4,6 +4,11 @@
   id: Pen
   description: A dark ink pen.
   components:
+  - type: ReactionMixer # SL/SpL Start
+    mixMessage: "spoon-mixing-success"
+    timeToMix: 3.0
+    reactionTypes:
+      - Stir # SL/SpL End
   - type: Sprite
     sprite: Objects/Misc/pens.rsi
     state: pen
