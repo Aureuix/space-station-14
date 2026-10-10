@@ -37,7 +37,7 @@
       Steel: 100
   - type: StaticPrice
     price: 30
-  
+
 - type: entity
   name: abductor's screwdriver
   parent: [ BaseItem, BaseMajorContraband ]
@@ -76,7 +76,7 @@
       Steel: 100
   - type: StaticPrice
     price: 30
-    
+
 - type: entity
   name: abductor's wrench
   parent: [ Wrench, BaseMajorContraband ]
@@ -97,7 +97,7 @@
       - Anchoring
     useSound:
       path: /Audio/Items/ratchet.ogg
-      
+
 - type: entity
   name: abductor's multitool
   parent: [ Multitool, BaseMajorContraband ]
@@ -119,7 +119,7 @@
   components:
   - type: EmitSoundOnLand
     sound:
-      path: /Audio/Items/crowbar_drop.ogg  
+      path: /Audio/Items/crowbar_drop.ogg
   - type: Sprite
     sprite: _Starlight/Objects/Tools/makeshift_omnitool.rsi
     state: wrench
@@ -127,13 +127,13 @@
     sprite: _Starlight/Objects/Tools/makeshift_omnitool.rsi
   - type: Prying
     enabled: false
-    speedModifier: 0.25 
+    speedModifier: 0.25
   - type: ToolTileCompatible
     delay: 4
   - type: Tool
     qualities:
       - Screwing
-    speedModifier: 0.25  
+    speedModifier: 0.25
   - type: MeleeWeapon
     wideAnimationRotation: -135
     damage:
@@ -142,13 +142,13 @@
   - type: MultipleTool
     statusShowBehavior: true
     entries:
-      - behavior: Prying
+      - behavior: [ Prying ]
         sprite:
           sprite: _Starlight/Objects/Tools/makeshift_omnitool.rsi
           state: wrench
         useSound:
           path: /Audio/Items/crowbar.ogg
-      - behavior: Anchoring
+      - behavior: [ Anchoring ]
         sprite:
           sprite: _Starlight/Objects/Tools/makeshift_omnitool.rsi
           state: wrenchflipped
@@ -180,17 +180,17 @@
   - type: MultipleTool
     statusShowBehavior: true
     entries:
-      - behavior: Prying
+      - behavior: [ Prying ]
         sprite:
           sprite: _Starlight/Objects/Tools/makeshift_omnitool.rsi
           state: screwdriver
         useSound:
           path: /Audio/Items/crowbar.ogg
-      - behavior: Screwing
+      - behavior: [ Screwing ]
         sprite:
           sprite: _Starlight/Objects/Tools/makeshift_omnitool.rsi
           state: screwdriverflipped
-      - behavior: Anchoring
+      - behavior: [ Anchoring ]
         sprite:
           sprite: _Starlight/Objects/Tools/makeshift_omnitool.rsi
           state: screwdriverflipped
@@ -223,23 +223,23 @@
   - type: MultipleTool
     statusShowBehavior: true
     entries:
-      - behavior: Prying
+      - behavior: [ Prying ]
         sprite:
           sprite: _Starlight/Objects/Tools/makeshift_omnitool.rsi
           state: wirecutter
         useSound:
           path: /Audio/Items/crowbar.ogg
-      - behavior: Screwing
+      - behavior: [ Screwing ]
         sprite:
           sprite: _Starlight/Objects/Tools/makeshift_omnitool.rsi
           state: wirecutterflipped
-      - behavior: Anchoring
+      - behavior: [ Anchoring ]
         sprite:
           sprite: _Starlight/Objects/Tools/makeshift_omnitool.rsi
           state: wirecutterflipped
         useSound:
           path: /Audio/Items/ratchet.ogg
-      - behavior: Cutting
+      - behavior: [ Cutting ]
         sprite:
           sprite: _Starlight/Objects/Tools/makeshift_omnitool.rsi
           state: wirecutterside
@@ -314,7 +314,7 @@
         Slash: 2 #WHY IS WIZ SO OBSESSED WITH PIERCE
     soundHit:
       path: "/Audio/Items/wirecutter.ogg"
-    attackRate: 2 
+    attackRate: 2
   - type: Item
     sprite: _Starlight/Objects/Tools/improvised_wirecutters.rsi
     storedRotation: -90
@@ -432,7 +432,7 @@
   components:
   - type: EmitSoundOnLand
     sound:
-      path: /Audio/Items/crowbar_drop.ogg  
+      path: /Audio/Items/crowbar_drop.ogg
   - type: Sprite
     sprite: _Starlight/Objects/Tools/improvised_omnitool.rsi
     layers:
@@ -446,14 +446,14 @@
   - type: Tool
     useSound:
       collection: Welder
-    qualities: Welding
+    qualities: [ Welding ]
   - type: SolutionContainerManager
     solutions:
       Welder:
-        reagents:
-        - ReagentId: WeldingFuel
-          Quantity: 50
-        maxVol: 50
+      reagents:
+      - ReagentId: WeldingFuel
+        Quantity: 50
+      maxVol: 50
   - type: Welder
   - type: GenericVisualizer
     visuals:
@@ -632,7 +632,7 @@
         - type: Tool
           useSound:
             collection: Welder
-          qualities: Welding
+          qualities: [ Welding ]
           speedModifier: 0.75
         - type: PointLight
           enabled: false
@@ -687,7 +687,7 @@
   components:
   - type: EmitSoundOnLand
     sound:
-      path: /Audio/Items/crowbar_drop.ogg  
+      path: /Audio/Items/crowbar_drop.ogg
   - type: Sprite
     sprite: _Starlight/Objects/Tools/forged_omnitool.rsi
     layers:
@@ -701,7 +701,7 @@
   - type: Tool
     useSound:
       collection: Welder
-    qualities: Welding
+    qualities: [ Welding ]
   - type: SolutionContainerManager
     solutions:
       Welder:
@@ -878,7 +878,7 @@
         - type: Tool
           useSound:
             collection: Welder
-          qualities: Welding
+          qualities: [ Welding ]
         - type: PointLight
           enabled: false
           radius: 2.5
@@ -927,13 +927,13 @@
   name: chief engineer's experimental RCD
   description: A highly advanced Rapid Construction Device which creates compressed matter on the fly using an internal fabricator.
   components:
-    - type: LimitedCharges
-      maxCharges: 40
-    - type: AutoRecharge
-      rechargeDuration: 15
-    - type: Sprite
-      sprite: _Starlight/Objects/Tools/rcd.rsi
-  
+  - type: LimitedCharges
+    maxCharges: 40
+  - type: AutoRecharge
+    rechargeDuration: 15
+  - type: Sprite
+    sprite: _Starlight/Objects/Tools/rcd.rsi
+
 - type: entity
   id: RPD
   parent: RCD
@@ -1131,3 +1131,26 @@
   - type: ActivatableUI
     inHandsOnly: true
     key: enum.RcdUiKey.Key
+
+- type: entity
+  id: LoadoutRadioERTSec
+  parent: ToolboxThief
+  name: Bluespace Loadout Radio
+  description: Highly advanced bluespace technology packed into a radio, allowing you to call for a variety of different loadouts.
+  suffix: Security
+  components:
+  - type: Sprite
+    sprite: Objects/Devices/communication.rsi
+    layers:
+    - state: radio
+  - type: Item
+    sprite: Objects/Devices/communication.rsi
+    heldPrefix: radio
+  - type: ThiefUndeterminedBackpack
+    toolName: cc-radio-name
+    maxSelectedSets: 1
+    possibleSets:
+    - ERTLoadoutSecLaserVanguard
+    - ERTLoadoutSecLaserShotgun
+    - ERTLoadoutSecLaserSniper
+    - ERTLoadoutSecBallisticRifle
