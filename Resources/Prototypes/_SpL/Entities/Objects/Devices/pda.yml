@@ -1,4 +1,13 @@
 ﻿- type: entity
+  parent: MedicalPDA
+  id: SurgeonPDA
+  name: medical PDA
+  suffix: Surgeon
+  components:
+    - type: Pda
+      id: SurgeonIDCard
+
+- type: entity
   parent: BasePDA
   id: GSLTechPDA
   name: GSL technician PDA

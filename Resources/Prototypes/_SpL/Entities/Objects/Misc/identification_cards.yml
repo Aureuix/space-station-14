@@ -1,4 +1,23 @@
 ﻿- type: entity
+  parent: IDCardStandard
+  id: SurgeonIDCard
+  name: surgeon ID card
+  components:
+    - type: Sprite
+      sprite: Objects/Misc/id_cards.rsi
+      layers:
+        - state: default
+        - state: stripe_top
+          color: "#68aed6"
+        - state: stripe_bottom
+          color: "#325f7a"
+        - sprite: _Starlight/Interface/Misc/job_icons.rsi
+          offset: &icon-offset -0.09375, 0.0625 #3 pixels left, 2 pixels up
+          state: Surgeon
+    - type: PresetIdCard
+      job: Surgeon
+
+- type: entity
   parent: [ IDCardStandard, BaseIlluminateContraband ]
   id: IlluminateIDCard
   name: Illuminate ID card
@@ -16,7 +35,7 @@
          state: stripe_bottom
          color: "#ffffff"
        - sprite: _SpL/Interface/Misc/job_icons.rsi
-         offset: &icon-offset -0.09375, 0.0625 #3 pixels left, 2 pixels up
+         offset: *icon-offset
          state: illuminate
    - type: IdCard 
      jobIcon: JobIconIlluminate
@@ -29,7 +48,7 @@
 - type: entity
   parent: [ IDCardStandard, BaseGSLOwnedContraband ]
   id: GSLTechnicianIDCard
-  name: GSL Technician ID card
+  name: GSL technician ID card
   description: An identification card used by technicians operating under Gemini Stellar Logistics.
   components:
     - type: Sprite
