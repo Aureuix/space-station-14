@@ -114,7 +114,7 @@
   parent: ClothingOuterBaseToggleable
   id: ClothingOuterHoodieChaplain
   name: chaplain hoodie # Starlight
-  description: Black and strict Chaplai hoodie. # Starlight
+  description: A strict black chaplain hoodie. # SpL
   components:
   - type: Sprite
     sprite: Clothing/OuterClothing/Misc/chaplain_hoodie.rsi

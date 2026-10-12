@@ -54,7 +54,7 @@
   content:
   - RadioJammer
   - TraitorCodePaper
-  - Emag
+  - CameraBug # SpL- emag just was not useful
   - AccessBreaker
   - Lighter
   - CigPackSyndicate

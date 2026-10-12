@@ -4,7 +4,7 @@
   verbName: pet-verb
   interactString: petting-success
   messagePerceivedByOthers: petting-success-others
-  # emoteMessage: petting-emote # SpL- removed due to spam tendencys
+  # emoteMessage: petting-emote # SpL- removed due to spam tendency
   interactSound: /Audio/Effects/thudswoosh.ogg
 
 - type: socialInteraction

@@ -131,6 +131,12 @@
     zeroVisible: true
   - type: Appearance
   # SpL start
+  - type: Clothing
+    sprite: _Starlight/Objects/Weapons/Guns/Rifles/laser_carbine.rsi
+    quickEquip: false
+    slots:
+      - Back
+      - suitStorage
   - type: EmitSoundOnPickup
     sound:
       path: /Audio/_SpL/Effects/unholster.ogg
