@@ -8,3 +8,18 @@
       sprite: _SpL/Clothing/Neck/Misc/gslbadge.rsi
     - type: Clothing
       sprite: _SpL/Clothing/Neck/Misc/gslbadge.rsi
+      
+- type: entity
+  name: compass
+  parent: ClothingMiscBase
+  id: Compass
+  description: Even in the depths of space, it points the way forward.
+  components:
+    - type: Sprite
+      sprite: _SpL/Clothing/Neck/Misc/compass.rsi
+      layers:
+        - state: icon
+    - type: Item
+      sprite: _SpL/Clothing/Neck/Misc/compass.rsi
+      size: Small
+    - type: HandheldGPS

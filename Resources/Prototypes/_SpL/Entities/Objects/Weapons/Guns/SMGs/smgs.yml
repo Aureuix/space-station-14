@@ -1,0 +1,83 @@
+﻿- type: entity
+  name: SVS-MP9K-MOD 'Suresk' PDW
+  parent: [BaseWeaponSubMachineGun, BaseCentcommContraband]
+  id: WeaponSubMachineGunSuresk
+  description: A unique high-end modification of the Atreides SMG line, retrofitted with a vertical grip, rangefinder, suppressor, flashlight, and auto-ejector. It's been engraved with the symbol of a compass. Feeds from 9mm SMG magazines. # SpL
+  components:
+    - type: Sprite
+      sprite: _SpL/Objects/Weapons/Guns/SMGs/suresk.rsi
+      layers:
+        - state: base
+          map: ["enum.GunVisualLayers.Base"]
+        - state: light-overlay
+          shader: unshaded
+          visible: false
+          map: [ "light-overlay" ]
+        - state: mag-0
+          map: ["enum.GunVisualLayers.Mag"]
+    - type: Appearance
+    - type: Clothing
+      sprite: _SpL/Objects/Weapons/Guns/SMGs/suresk.rsi
+      quickEquip: false
+      slots:
+        - Back
+        - suitStorage
+    - type: ChamberMagazineAmmoProvider
+      boltClosed: false
+      autoEject: true
+      soundAutoEject:
+        path: /Audio/Machines/Nuke/angry_beep.ogg
+        params:
+          volume: -4
+          rolloffFactor: 1.3
+    - type: ItemTogglePointLight
+    - type: CursorOffsetRequiresWield
+    - type: EyeCursorOffset
+      maxOffset: 1.5
+      pvsIncrease: 0.15
+    - type: HandheldLight
+      addPrefix: false
+      needsCharge: false
+    - type: ToggleableVisuals
+      spriteLayer: light-overlay
+    - type: PointLight
+      enabled: false
+      mask: /Textures/_Starlight/Effects/LightMasks/cone_curve.png
+      color: "#adffdb"
+      radius: 9
+      energy: 3
+      netsync: false
+      autoRot: true
+      castShadows: false
+    - type: ContainerContainer
+      containers:
+        cell_slot: !type:ContainerSlot
+        gun_magazine: !type:ContainerSlot
+        gun_chamber: !type:ContainerSlot
+        firing_pin: !type:Container
+    - type: PowerCellSlot
+      cellSlotId: cell_slot
+      fitsInCharger: false
+    - type: ItemSlots
+      slots:
+        cell_slot:
+          name: power-cell-slot-component-slot-name-default
+          startingItem: PowerCellMicroreactor
+          disableEject: true
+          swap: false
+        gun_magazine:
+          name: Magazine
+          startingItem: MagazinePistolSubMachineGunIncendiary
+          insertSound: /Audio/Weapons/Guns/MagIn/smg_magin.ogg
+          ejectSound: /Audio/Weapons/Guns/MagOut/smg_magout.ogg
+          priority: 2
+          whitelist:
+            tags:
+              - MagazinePistolSubMachineGunSP
+          whitelistFailPopup: gun-magazine-whitelist-fail
+        gun_chamber:
+          name: Chamber
+          priority: 1
+          whitelist:
+            tags:
+              - CartridgePistol

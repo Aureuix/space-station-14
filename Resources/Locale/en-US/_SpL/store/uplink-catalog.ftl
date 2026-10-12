@@ -39,3 +39,12 @@ uplink-grenade-impact-desc = Impatient or bad at counting? This grenade is for y
 
 uplink-pistol-40-magazine-name = Pistol Magazine (.40)
 uplink-pistol-40-magazine-desc = A pistol magazine with 10 cartridges. Compatible with the Stechkin.
+
+redspace-calibration-beacon-name = Redspace Calibration Beacon
+redspace-calibration-beacon-desc = A device that enables the use of redspace pinpointing, sensors, and transport technology on a large scale. Doesn't do anything useful by itself, don't buy unless you've been ordered to.
+
+cryptanalytic-computer-name = Cryptanalysis Computer
+cryptanalytic-computer-desc = Drains immense power from the station grid to launch large-scale cryptographic attacks against NanoTrasen networks. Doesn't do anything useful by itself, don't buy unless you've been ordered to.
+
+research-appropriator-name = Research Appropriator
+research-appropriator-desc = Diverts the station's research towards our cause, to the detriment of the science team. Doesn't do anything useful by itself, don't buy unless you've been ordered to.

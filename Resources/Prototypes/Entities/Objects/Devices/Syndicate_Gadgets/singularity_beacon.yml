@@ -1,8 +1,8 @@
 - type: entity
   id: SingularityBeacon
   parent: [BaseMachinePowered, BaseSyndicateContraband]
-  name: singularity beacon
-  description: A syndicate device that attracts the singularity. If it's loose and you're seeing this, run.
+  name: redspace calibration beacon # SpL
+  description: A Syndicate device that enables redspace tracking and delivery on a pinpoint scale. Also has the secondary effect of attracting nearby gravitational singularities.
   components:
   - type: Sprite
     sprite: Objects/Devices/singularity_beacon.rsi
@@ -38,6 +38,6 @@
       - !type:DoActsBehavior
         acts: [ "Destruction" ]
   - type: ApcPowerReceiver
-    powerLoad: 5000
+    powerLoad: 8000 # SpL 5k->8k
   - type: StaticPrice
     price: 7500

@@ -514,7 +514,7 @@ uplink-fake-mindshield-name = Fake Mindshield
 uplink-fake-mindshield-desc = A togglable implant capable of mimicking the same transmissions a real Mindshield puts out when on, tricking capable Heads-up displays into thinking you have a Mindshield (NanoTrasen brand implanter not provided).
 
 uplink-contraband-lighter-name = Contraband Lighter box
-uplink-contraband-lighter-desc = A mystery box guaranteed to contain a Syndicate branded lighter. No fuel required
+uplink-contraband-lighter-desc = A mystery box guaranteed to contain a Syndicate branded lighter. No fuel required.
 
 uplink-smuggler-satchel-name = Smuggler's Satchel
 uplink-smuggler-satchel-desc = A handy, suspicious looking satchel. Just flat enough to fit underneath floor tiles.
