@@ -42,3 +42,7 @@
 # bounty tags
 - type: Tag
   id: SpaceHeaterBoard
+  
+# whitelisting tags
+- type: Tag
+  id: PepperSpray
