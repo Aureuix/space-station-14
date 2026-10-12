@@ -642,6 +642,8 @@
   loadouts:
     - SalvageLeadJumpsuit
     - SalvageLeadJumpskirt
+    - SalvageLeadFormalJumpsuit # SpL
+    - SalvageLeadFormalJumpskirt # SpL
 
 - type: loadoutGroup
   id: SalvageLeadNeck
@@ -649,6 +651,7 @@
   loadouts:
     - SalvageLeaderMantle
     - SalvageVeteranMantle
+    - SalvLeadHalfCloak # SpL
 
 - type: loadoutGroup
   id: SalvageLeadPDA
@@ -991,6 +994,7 @@
     - BrighteyeOldMantle
     - BrighteyeGoliathCloak
     - BrighteyeCloakVoid
+    - BrighteyeCloakTorn # SpL
 
 - type: loadoutGroup
   id: BrighteyeShoes
@@ -1054,6 +1058,7 @@
   minLimit: 0
   loadouts:
   - ClothingNeckWarden
+  - WardenHalfCloak # SpL
 
 - type: loadoutGroup
   id: SecurityGloves

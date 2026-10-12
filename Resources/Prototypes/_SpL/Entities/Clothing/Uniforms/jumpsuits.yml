@@ -1,4 +1,26 @@
 ﻿- type: entity
+  parent: ClothingUniformBase
+  id: ClothingUniformJumpsuitScientistFormal
+  name: formal scientist jumpsuit
+  description: A uniform for discerning scientists, best paired with a matching tie, offering a blend of professionalism and intellectual flair. Perfect for prestigious events or high-level research settings.
+  components:
+    - type: Sprite
+      sprite: _SpL/Clothing/Uniforms/Jumpsuit/scientist_formal.rsi
+    - type: Clothing
+      sprite: _SpL/Clothing/Uniforms/Jumpsuit/scientist_formal.rsi
+
+- type: entity
+  parent: [ClothingUniformBase, BaseSalvageContraband]
+  id: ClothingUniformJumpsuitSalvageLeadFormal
+  name: formal salvage lead jumpsuit
+  description: Manufactured after one salvage lead complained about their uniform a single time.
+  components:
+    - type: Sprite
+      sprite: _SpL/Clothing/Uniforms/Jumpsuit/leadformal.rsi
+    - type: Clothing
+      sprite: _SpL/Clothing/Uniforms/Jumpsuit/leadformal.rsi
+
+- type: entity
   parent: [ClothingUniformBase, BaseCentcommContraband]
   id: ClothingUniformCBURNFatigues
   name: CBURN operational fatigues

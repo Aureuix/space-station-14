@@ -25,7 +25,8 @@
     ToyFigurineNukieCommander: 1
     ClothingUniformJumpskirtTacticalMaid: 5
     ClothingHandsTacticalMaidGloves: 5
+    ClothingHeadHatTacticalMaidHeadband: 5 # SpL- moved out of emagged
   emaggedInventory:
+    ClothingNeckHalfCloakSyndicate: 1 # SpL
     ClothingOuterCoatSyndieCapArmored: 1
     ClothingOuterWinterSyndieCapArmored: 1
-    ClothingHeadHatTacticalMaidHeadband: 5

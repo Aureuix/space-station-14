@@ -1,6 +1,10 @@
-﻿# Glasses Options
-- type: loadout
+﻿- type: loadout
   id: PrescriptionCapGlasses
   dummyEntity: ClothingEyesGlassesCommandPrescription
   equipment:
     eyes: ClothingEyesGlassesCommandPrescription
+    
+- type: loadout
+  id: CapHalfCloak
+  equipment:
+    neck: ClothingNeckHalfCloakCap

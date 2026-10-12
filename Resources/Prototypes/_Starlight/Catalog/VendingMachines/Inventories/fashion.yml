@@ -562,3 +562,20 @@
     NTCredit: 150
   categories:
     - SLFashionHead
+
+
+- type: listing # SpL start
+  id: ClothingNeckHalfCloakBullfighter
+  productEntity: ClothingNeckHalfCloakBullfighter
+  cost:
+    NTCredit: 60
+  categories:
+    - SLFashionOther # SpL end
+
+- type: listing # SpL start
+  id: ClothingNeckHalfCloakCCReplica
+  productEntity: ClothingNeckHalfCloakCCReplica
+  cost:
+    NTCredit: 150
+  categories:
+    - SLFashionOther # SpL end

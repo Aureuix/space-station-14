@@ -2120,6 +2120,9 @@ entities:
     - type: Transform
       pos: -2.5,-0.5
       parent: 325
+    - type: Emagged
+      owningFaction: Syndicate
+      emagType: Interaction
 - proto: WallPlastitanium
   entities:
   - uid: 7

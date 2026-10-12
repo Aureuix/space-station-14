@@ -221,6 +221,7 @@
   - CaptainCloak
   - CaptainCloakFormal
   - CaptainMantle
+  - CapHalfCloak # SpL
   - CaptainBoatCloak #DeltaV
 
 - type: loadoutGroup
@@ -960,6 +961,8 @@
   loadouts:
   - QuartermasterCloak
   - QuartermasterMantle
+  - QMHalfCloak # SpL
+  - QMPauldron # SpL
 
 - type: loadoutGroup
   id: QuartermasterOuterClothing
@@ -1366,6 +1369,7 @@
   loadouts:
   - ScientistJumpsuit
   - ScientistJumpskirt
+  - ScientistJumpsuitFormal # SpL
   - ScientistJumpskirtFormal # afterlight
   - RoboticistJumpsuit
   - RoboticistJumpskirt
@@ -1482,6 +1486,7 @@
   - ClothingNeckCloakHosRetro #STARLIGHT
   - HeadofSecurityCloak
   - HeadofSecurityMantle
+  - HosHalfCloak # SpL
   - HeadofSecurityBoatCloak #DeltaV
   - HeadofSecurityRobe #DeltaV
 
