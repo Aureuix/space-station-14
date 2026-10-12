@@ -17,6 +17,8 @@
   components:
     - type: Sprite
       sprite: _SpL/Clothing/Neck/Mantles/cldmantle.rsi
+    - type: Clothing
+      sprite: _SpL/Clothing/Neck/Mantles/cldmantle.rsi
       
 - type: entity
   parent: [ ClothingNeckBase, BaseCentcommContraband ]
@@ -26,4 +28,5 @@
   components:
     - type: Sprite
       sprite: _SpL/Clothing/Neck/Mantles/csdmantle.rsi
-    
+    - type: Clothing
+      sprite: _SpL/Clothing/Neck/Mantles/csdmantle.rsieo
