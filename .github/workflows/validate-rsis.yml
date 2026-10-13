@@ -2,12 +2,12 @@ name: RSI Validator
 
 on:
   push:
-    branches: [ master, staging, stable, Starlight, SpectaLight ]
+    branches:
+      - SpectaLight
   merge_group:
   pull_request:
     paths:
       - '**.rsi/**'
-    branches: [ SpectaLight ]
 
 jobs:
   validate_rsis:

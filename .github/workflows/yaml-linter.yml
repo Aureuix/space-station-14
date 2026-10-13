@@ -2,10 +2,16 @@ name: YAML Linter
 
 on:
   push:
-    branches: [ master, staging, stable, Starlight, SpectaLight ]
-  merge_group:
+    branches:
+      - SpectaLight
   pull_request:
-    branches: [ SpectaLight ]
+    types:
+      - opened
+      - synchronize
+      - reopened
+      - ready_for_review
+    branches:
+      - SpectaLight
 
 jobs:
   build:
