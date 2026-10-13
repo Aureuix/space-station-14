@@ -101,13 +101,12 @@
       containers:
         storagebase: !type:AllSelector
           children:
-            - id: WeaponSubMachineGunEnergy
+            - id: WeaponEnergySMG
             - id: MedkitCombatFilled
             - id: MedkitCombatFilled
             - id: SyringeEphedrine
             - id: AntiPoisonMedipen
             - id: HoloprojectorFieldMicroreactor # SpL
-            - id: PowerCellHigh
             - id: TelescopicShield
             - id: TelescopicShield
 
@@ -125,6 +124,7 @@
             - id: BoxDetonator
             - id: CableDetStack
             - id: CableDetStack
+            - id: C4
             - id: C4
             - id: RemoteSignallerCombat
             - id: MedkitCombatFilled

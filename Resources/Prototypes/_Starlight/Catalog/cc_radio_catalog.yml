@@ -30,7 +30,7 @@
     state: icon
   content:
   - ClothingBackpackERTSecurityLaserSniperFilled
-  - WeaponSniperEnergy
+  - WeaponEnergySniper
   - CombatKnife
 
 - type: thiefBackpackSet

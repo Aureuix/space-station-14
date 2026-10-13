@@ -38,7 +38,7 @@
     shoes: ClothingShoesBootsJackFilled
     head: ClothingHeadHelmetERTLeader
     outerClothing: ClothingOuterVestWebEliteCentcomm
-    pocket2: WeaponPistolPDW9
+    pocket2: WeaponPDW9
 
 - type: startingGear
   id: ERTLeaderGearEVA
@@ -54,14 +54,14 @@
     id: ERTLeaderPDA
     ears: ClothingHeadsetAltCentCom
     belt: ClothingBeltMilitaryWebbingERT
-    pocket2: WeaponPistolPDW9
+    pocket2: WeaponPDW9
     suitstorage: WeaponDisablerSMG
   storage:
     back:
     - Binoculars
     - HoloprojectorField
     - HoloprojectorSecurity
-    - PowerCellPowerCellMicroreactor
+    - PowerCellMicroreactor
     - TelescopicShield
     - MedkitCombatFilled
     - MedkitCombatFilled
@@ -86,7 +86,7 @@
   id: ERTLeaderGearArmed
   equipment:
     suitstorage: WeaponRifleM52
-    pocket2: WeaponPistolPDW9
+    pocket2: WeaponPDW9
   storage:
     back:
     - MedkitCombatFilled
@@ -338,7 +338,7 @@
     shoes: ClothingShoesBootsJackFilled
     head: ClothingHeadHelmetERTSecurity
     outerClothing: ClothingOuterVestWebEliteCentcomm
-    pocket2: WeaponPistolPDW9
+    pocket2: WeaponPDW9
 
 - type: startingGear
   id: ERTSecurityGearEVA
@@ -354,7 +354,7 @@
     id: ERTSecurityPDA
     ears: ClothingHeadsetCentCom
     belt: ClothingBeltMilitaryWebbingERT
-    pocket2: WeaponPistolPDW9
+    pocket2: WeaponPDW9
     suitstorage: WeaponDisablerSMG
   storage:
     back:
@@ -481,7 +481,7 @@
     - EmpGrenade
     - MedkitCombatFilled
     - ToolDebug
-    - CombatMedipe
+    - CombatMedipen
 
 - type: startingGear
   parent: ERTSecurityGearEVA
@@ -509,7 +509,7 @@
     - C4
     - MedkitCombatFilled
     - HoloprojectorSecurity
-    - AdvancedMedipen
+    - CombatMedipen
 
 - type: chameleonOutfit
   id: ERTSecurityChameleonOutfit
