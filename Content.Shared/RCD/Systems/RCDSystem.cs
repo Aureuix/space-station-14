@@ -36,6 +36,7 @@ using Content.Shared._Starlight.Atmos;
 using Content.Shared._Starlight.Atmos.Components;
 using Content.Shared.Prototypes;
 using Content.Shared._Starlight.Plumbing.Components;
+using System.Reflection.Metadata.Ecma335;
 // Starlight End
 
 namespace Content.Shared.RCD.Systems;
@@ -649,6 +650,18 @@ public sealed class RCDSystem : EntitySystem
         {
             if (isWindow && HasComp<SharedCanBuildWindowOnTopComponent>(ent))
                 continue;
+
+            // SpL
+            if (prototype.Category == "Airlocks")
+            {
+                string? entP = _entityManager.GetComponent<MetaDataComponent>(ent).EntityPrototype?.ID;
+                if (prototype.Prototype is "Airlock" or "AirlockGlass" && entP is "Firelock" or "FirelockGlass")
+                    continue;
+                else if (prototype.Prototype is "Firelock" && entP is "Airlock" or "AirlockGlass")
+                    continue;
+            }
+            // SpL
+
             // Starlight Start: RPLD
             if (isPlumbingMachinePlacement && Transform(ent).Anchored && HasComp<PlumbingConnectorAppearanceComponent>(ent))
             {

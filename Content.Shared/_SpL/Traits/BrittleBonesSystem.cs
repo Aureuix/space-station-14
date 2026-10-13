@@ -24,11 +24,13 @@ public sealed partial class BrittleBonesSystem : EntitySystem
         
         // halves the death threshold
         if (!HasComp<RedshirtComponent>(ent.Owner)){
-            var critThreshold = _mobThreshold.GetThresholdForState(ent.Owner, MobState.Critical, mobThreshComp); 
-            _mobThreshold.SetMobStateThreshold(ent.Owner, critThreshold / 3, MobState.Critical, mobThreshComp);
+            var softCritThreshold = _mobThreshold.GetThresholdForState(ent.Owner, MobState.SoftCritical, mobThreshComp);
+            var critThreshold = _mobThreshold.GetThresholdForState(ent.Owner, MobState.Critical, mobThreshComp);
+            _mobThreshold.SetMobStateThreshold(ent.Owner, softCritThreshold / 2 , MobState.SoftCritical, mobThreshComp);
+            _mobThreshold.SetMobStateThreshold(ent.Owner, critThreshold / 1.5, MobState.Critical, mobThreshComp);
         } else {
             var deathThreshold = _mobThreshold.GetThresholdForState(ent.Owner, MobState.Dead, mobThreshComp); 
-            _mobThreshold.SetMobStateThreshold(ent.Owner, deathThreshold / 3, MobState.Critical, mobThreshComp);
+            _mobThreshold.SetMobStateThreshold(ent.Owner, deathThreshold / 2, MobState.Dead, mobThreshComp);
         }
     }
 
@@ -37,11 +39,18 @@ public sealed partial class BrittleBonesSystem : EntitySystem
             !TryComp(ent.Owner, out MobThresholdsComponent? mobThreshComp))
             return;
 
-        var critThreshold = _mobThreshold.GetThresholdForState(ent.Owner, MobState.Critical, mobThreshComp);
-        if (!HasComp<RedshirtComponent>(ent.Owner)){
-            _mobThreshold.SetMobStateThreshold(ent.Owner, critThreshold * 3, MobState.Critical, mobThreshComp);
-        } else {
-            _mobThreshold.SetMobStateThreshold(ent.Owner, critThreshold * 3 - 1, MobState.Critical, mobThreshComp);
+        // TODO: Revert via prototype values instead to avoid the risk of reverting to wrong values if anything else modifies the thresholds.
+        if (!HasComp<RedshirtComponent>(ent.Owner))
+        {
+            var softCritThreshold = _mobThreshold.GetThresholdForState(ent.Owner, MobState.SoftCritical, mobThreshComp);
+            var critThreshold = _mobThreshold.GetThresholdForState(ent.Owner, MobState.Critical, mobThreshComp);
+            _mobThreshold.SetMobStateThreshold(ent.Owner, softCritThreshold * 2, MobState.SoftCritical, mobThreshComp);
+            _mobThreshold.SetMobStateThreshold(ent.Owner, critThreshold * 1.5, MobState.Critical, mobThreshComp);
+        }
+        else
+        {
+            var deathThreshold = _mobThreshold.GetThresholdForState(ent.Owner, MobState.Dead, mobThreshComp);
+            _mobThreshold.SetMobStateThreshold(ent.Owner, deathThreshold * 2, MobState.Dead, mobThreshComp);
         }
     }
 }

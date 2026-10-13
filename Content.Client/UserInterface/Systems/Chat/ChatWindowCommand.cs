@@ -3,6 +3,7 @@ using Content.Shared.Chat;
 using JetBrains.Annotations;
 using Robust.Client.UserInterface;
 using Robust.Shared.Console;
+using Content.Shared.Administration;
 
 namespace Content.Client.UserInterface.Systems.Chat;
 
@@ -40,7 +41,7 @@ public sealed class AdminChatWindowCommand : LocalizedCommands
 /// <summary>
 /// Command which exports the local chat history, for importing into a (later-to-be-revamped) chat window
 /// </summary>
-[UsedImplicitly]
+[AnyCommand]
 public sealed class ExportChatCommand : LocalizedCommands
 {
     [Dependency] private readonly IUserInterfaceManager _userInterfaceManager = default!;
@@ -62,7 +63,10 @@ public sealed class ExportChatCommand : LocalizedCommands
         var file = await _dialogManager.SaveFile(new FileDialogFilters(new FileDialogFilters.Group("log")));
 
         if (file == null)
+        {
+            _currentlyExportingLogs = false;
             return;
+        }
 
         _sawmill = _logManager.GetSawmill("SpL");
 
