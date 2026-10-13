@@ -4,6 +4,7 @@ on:
   pull_request_target:
     paths:
       - '**.rsi/**.png'
+    branches: [ SpectaLight ]
 
 jobs:
   diff:
