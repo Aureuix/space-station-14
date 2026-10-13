@@ -22,6 +22,26 @@
       slots:
         - Back
         - suitStorage
+    - type: Gun
+      minAngle: 2
+      maxAngle: 24
+      fireRate: 10
+      soundGunshot:
+        path: /Audio/Weapons/Guns/Gunshots/silenced.ogg
+      soundEmpty:
+        path: /Audio/Machines/Nuke/angry_beep.ogg
+        params:
+          volume: -3
+          rolloffFactor: 1.3
+    - type: GunWieldBonus
+      minAngle: -1
+      maxAngle: -20
+    - type: MagazineVisuals
+      magState: mag
+      steps: 1
+      zeroVisible: true
+    - type: Wieldable
+      unwieldOnUse: false
     - type: ChamberMagazineAmmoProvider
       boltClosed: false
       autoEject: true

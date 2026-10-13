@@ -96,7 +96,12 @@
       - Shock
       - Cold
       - Caustic
+      - Poison # SpL
       - Radiation
+      - Cellular # SpL
+      - Holy # SpL
+      - Shadow # SpL
+      - Mortal # SpL
     locPrefix: silicon
   - type: DamagedSiliconAccent
     damageAtMaxCorruption: 150 # This should be the same value as MobThresholds - Critical. # SpL- IPCs become incomprehensible very quickly. This should help that a little

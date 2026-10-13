@@ -190,7 +190,12 @@
     - Cold
     - Caustic
     - Asphyxiation
+    - Poison # SpL
     - Radiation
+    - Cellular # SpL
+    - Holy # SpL
+    - Shadow # SpL
+    - Mortal # SpL
   - type: DamageOnHighSpeedImpact
     damage:
       types:

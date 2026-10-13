@@ -24,6 +24,9 @@
         whitelist:
           components:
           - Defibrillator
+  - type: Charger # SpL
+    slotId: ItemCabinet # SpL
+    chargeRate: 25 # SpL
   - type: Destructible
     thresholds:
     - trigger: !type:DamageTrigger
