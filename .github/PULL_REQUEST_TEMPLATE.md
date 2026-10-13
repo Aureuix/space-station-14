@@ -22,7 +22,7 @@ Ideally you should be able to check all of these, although if you can't, it's ok
 - [ ] I do not require help completing my changes, and the PR is ready to merge.
 - [ ] I have verified that my changes work to the best of my ability.
 - [ ] I can confirm that this PR does not use AI-generated content.
-- [ ] I affirm that my changes are licensed under the [MIT License](https://github.com/ss14Starlight/space-station-14/blob/Starlight/LICENSE.TXT) and grant permission for use in this repository under its conditions.
+- [ ] I affirm that my changes are licensed under the [MIT License](https://opensource.org/license/MIT) and grant permission for use in this repository under its conditions.
 
 <!-- WE DO NOT ACCEPT AGPL CODE! 
 If you are making a port of a feature from a server such as DeltaV, Frontier, Monolith, or Goob, make sure you have explicit permission first! -->
