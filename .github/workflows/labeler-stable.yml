@@ -5,7 +5,7 @@ on:
     types:
       - opened
     branches:
-      - 'Starlight'
+      - 'SpectaLight'
 
 jobs:
   add_label:
