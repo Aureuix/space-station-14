@@ -718,6 +718,11 @@
   id: ClothingUniformJumpskirtSeniorResearcher
   result: ClothingUniformJumpskirtSeniorResearcher
 
+- type: latheRecipe # SpL start
+  parent: BaseJumpsuitRecipe
+  id: ClothingUniformJumpsuitScientistFormal
+  result: ClothingUniformJumpsuitScientistFormal # SpL end
+
 - type: latheRecipe
   parent: BaseJumpsuitRecipe
   id: ClothingUniformJumpskirtScientistFormal

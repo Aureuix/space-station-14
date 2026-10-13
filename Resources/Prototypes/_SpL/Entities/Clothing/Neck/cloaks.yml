@@ -1,0 +1,106 @@
+﻿## general cloaks
+- type: entity
+  parent: [ ClothingNeckBase ]
+  id: ClothingNeckCloakTorn
+  name: torn cloak
+  description: This cloak has seen better days.
+  components:
+    - type: Sprite
+      sprite: _Starlight/Clothing/Neck/Cloaks/torn_cape.rsi
+
+## half cloaks
+- type: entity
+  parent: ClothingNeckBase
+  id: ClothingNeckHalfCloakBullfighter
+  name: matador's half cloak
+  description: Aquí, aquí! Torero!
+  components:
+    - type: Sprite
+      sprite: _SpL/Clothing/Neck/Cloaks/matador.rsi
+      
+- type: entity
+  parent: ClothingNeckBase
+  id: ClothingNeckHalfCloakCCReplica
+  name: replica central command half cloak
+  description: It's missing the logo.
+  components:
+    - type: Sprite
+      sprite: _SpL/Clothing/Neck/Cloaks/replica.rsi
+
+- type: entity
+  parent: [ ClothingNeckBase, BaseCommandContraband ]
+  id: ClothingNeckHalfCloakCap
+  name: captain's half cloak
+  description: A light unencumbering half cloak in the captain's colors, with a thin gold trim.
+  components:
+    - type: Sprite
+      sprite: _SpL/Clothing/Neck/Cloaks/cap.rsi
+
+- type: entity
+  parent: [ ClothingNeckBase, BaseCommandContraband ]
+  id: ClothingNeckHalfCloakHos
+  name: head of security's half cloak
+  description: A light unencumbering half cloak in edgy black, with a thin gold trim. The red underside is seldom seen.
+  components:
+    - type: Sprite
+      sprite: _SpL/Clothing/Neck/Cloaks/hos.rsi
+
+- type: entity
+  parent: [ ClothingNeckBase, BaseCommandContraband ]
+  id: ClothingNeckHalfCloakQM
+  name: quartermaster's half cloak
+  description: A light unencumbering half cloak in logistical brown, with a thin silver trim.
+  components:
+    - type: Sprite
+      sprite: _SpL/Clothing/Neck/Cloaks/qm.rsi
+
+- type: entity
+  parent: [ ClothingNeckBase, BaseSecurityContraband ]
+  id: ClothingNeckHalfCloakWarden
+  name: warden's half cloak
+  description: A light unencumbering half cloak in matador red, with silver embroidering. Makes you feel like aggravating the prisoners for fun.
+  components:
+    - type: Sprite
+      sprite: _SpL/Clothing/Neck/Cloaks/ward.rsi
+
+- type: entity
+  parent: [ ClothingNeckBase, BaseSalvageContraband ]
+  id: ClothingNeckHalfCloakSalvLead
+  name: salvage lead's half cloak
+  description: A light unencumbering half cloak in royal purple, with a thin gold trim. Designed to stay out of the way when fighting.
+  components:
+    - type: Sprite
+      sprite: _SpL/Clothing/Neck/Cloaks/salvlead.rsi
+      
+## centcomm shit
+- type: entity
+  parent: [ ClothingNeckBase, BaseCentcommContraband ]
+  id: ClothingNeckHalfCloakCC
+  name: central command half cloak
+  description: A light unencumbering half cloak in Central Command's colors, with a thin gold trim.
+  components:
+    - type: Sprite
+      sprite: _SpL/Clothing/Neck/Cloaks/cc.rsi
+
+- type: entity
+  parent: [ ClothingNeckBase, BaseCentcommContraband ]
+  id: ClothingNeckCloakCentcommTorn
+  name: central command torn cloak
+  description: The damage tells tales of days long gone by.
+  components:
+    - type: Sprite
+      sprite: _SpL/Clothing/Neck/Cloaks/cctorn.rsi
+
+## syndie shit
+- type: entity
+  parent: [ ClothingNeckBase, BaseSyndicateContraband ] # other clothing is minor but this is a symbol
+  id: ClothingNeckHalfCloakSyndicate
+  name: blood-trimmed half cloak
+  description: A light unencumbering half cloak in black and red. Designed to stay out of the way when fighting.
+  components:
+    - type: Sprite
+      sprite: _SpL/Clothing/Neck/Cloaks/syndicate.rsi
+    - type: PointLight
+      radius: 2
+      energy: 2
+      color: "#DE3A3A"

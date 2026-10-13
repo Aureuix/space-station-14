@@ -261,6 +261,16 @@
   id: CentCommCloakBoat
   equipment:
     neck: ClothingNeckCloakBoatCC
+    
+- type: loadout
+  id: CentCommHalfCloak
+  equipment:
+    neck: ClothingNeckHalfCloakCC
+
+- type: loadout
+  id: CentCommTornCloak
+  equipment:
+    neck: ClothingNeckCloakCentcommTorn
       
 - type: loadout
   id: CentCommShawl
@@ -279,17 +289,29 @@
   equipment:
     neck: ClothingNeckCloakCEDMantle
   groupBy: "ccneckdepartmental"
-      
+  
 - type: loadout
-  id: CentCommMantleCRD
+  id: CentCommMantleCLD
   equipment:
-    neck: ClothingNeckCloakCRDMantle
+    neck: ClothingNeckCloakCLDMantle
   groupBy: "ccneckdepartmental"
       
+- type: loadout
+  id: CentCommMantleCSD
+  equipment:
+    neck: ClothingNeckCloakCSDMantle
+  groupBy: "ccneckdepartmental"
+
 - type: loadout
   id: CentCommMantleCMD
   equipment:
     neck: ClothingNeckCloakCMDMantle
+  groupBy: "ccneckdepartmental"
+
+- type: loadout
+  id: CentCommMantleCRD
+  equipment:
+    neck: ClothingNeckCloakCRDMantle
   groupBy: "ccneckdepartmental"
     
 - type: loadout

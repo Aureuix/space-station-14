@@ -123,6 +123,7 @@
   - ClothingUniformJumpskirtScientist
   - ClothingUniformJumpsuitSeniorResearcher
   - ClothingUniformJumpskirtSeniorResearcher
+  - ClothingUniformJumpsuitScientistFormal # SpL
   - ClothingUniformJumpskirtScientistFormal # afterlight
 
 - type: latheRecipePack

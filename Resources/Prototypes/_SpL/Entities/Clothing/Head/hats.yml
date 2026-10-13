@@ -15,3 +15,14 @@
         - ClothMade
         - Recyclable
         - WhitelistChameleon
+
+- type: entity
+  parent: [ ClothingHeadBase, BaseCentcommContraband ]
+  id: ClothingHeadHatCentCommWinged
+  name: central command winged cap
+  description: An officer's cap with brim-like outcroppings. Likely belonging to someone with an unconventional fashion sense and a rank allowing for such a modification.
+  components:
+    - type: Sprite
+      sprite: _SpL/Clothing/Head/Hats/CCWingedCap.rsi
+    - type: Clothing
+      sprite: _SpL/Clothing/Head/Hats/CCWingedCap.rsi

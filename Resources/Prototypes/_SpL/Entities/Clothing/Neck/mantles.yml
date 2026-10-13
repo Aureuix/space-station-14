@@ -1,0 +1,32 @@
+﻿## alt mantles
+- type: entity
+  parent: [ ClothingNeckBase, BaseCommandContraband ]
+  id: ClothingNeckCloakQMPauldron
+  name: quartermaster's pauldron
+  description: An unobtrusive pauldron and mantle denoting a station quartermaster.
+  components:
+    - type: Sprite
+      sprite: _SpL/Clothing/Neck/Mantles/qm.rsi
+
+## centcomm shit
+- type: entity
+  parent: [ ClothingNeckBase, BaseCentcommContraband ]
+  id: ClothingNeckCloakCLDMantle
+  name: central logistics division mantle
+  description: They say the trim alone is worth a million spesos, and the remaining mantle another million.
+  components:
+    - type: Sprite
+      sprite: _SpL/Clothing/Neck/Mantles/cldmantle.rsi
+    - type: Clothing
+      sprite: _SpL/Clothing/Neck/Mantles/cldmantle.rsi
+      
+- type: entity
+  parent: [ ClothingNeckBase, BaseCentcommContraband ]
+  id: ClothingNeckCloakCSDMantle
+  name: central security division mantle
+  description: A pristine, prideful mantle for the master of all matters legal and illegal.
+  components:
+    - type: Sprite
+      sprite: _SpL/Clothing/Neck/Mantles/csdmantle.rsi
+    - type: Clothing
+      sprite: _SpL/Clothing/Neck/Mantles/csdmantle.rsi

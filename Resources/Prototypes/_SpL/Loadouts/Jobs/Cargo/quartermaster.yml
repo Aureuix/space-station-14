@@ -1,0 +1,9 @@
+﻿- type: loadout
+  id: QMHalfCloak
+  equipment:
+    neck: ClothingNeckHalfCloakQM
+    
+- type: loadout
+  id: QMPauldron
+  equipment:
+    neck: ClothingNeckCloakQMPauldron

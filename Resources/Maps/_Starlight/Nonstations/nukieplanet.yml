@@ -20003,6 +20003,9 @@ entities:
     - type: Transform
       pos: 9.5,13.5
       parent: 2
+    - type: Emagged
+      owningFaction: Syndicate
+      emagType: Interaction
 - proto: VendingMachineTankDispenserEVA
   entities:
   - uid: 3135

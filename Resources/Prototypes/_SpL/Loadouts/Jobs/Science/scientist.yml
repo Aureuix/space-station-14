@@ -1,0 +1,7 @@
+﻿- type: loadout
+  id: ScientistJumpsuitFormal
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitScientistFormal
+  effects:
+    - !type:GroupLoadoutEffect
+      proto: MasterRD

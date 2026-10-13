@@ -42,3 +42,8 @@
   id: ClothWrapGlove
   equipment:
     gloves: ClothingClothWrap
+    
+- type: loadout # SpL start
+  id: BrighteyeCloakTorn 
+  equipment:
+    neck: ClothingNeckCloakTorn # SpL end

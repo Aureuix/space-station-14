@@ -170,11 +170,15 @@
     - CentCommCloak
     - CentCommPoncho
     - CentCommCloakBoat
+    - CentCommHalfCloak
+    - CentCommTornCloak
     - CentCommShawl
     - CentCommShawlCMD
     - CentCommMantleCED
-    - CentCommMantleCRD
+    - CentCommMantleCLD
     - CentCommMantleCMD
+    - CentCommMantleCRD
+    - CentCommMantleCSD
     - CentCommMantleERT
     - CentCommCloakCSOD
 

@@ -1,4 +1,10 @@
-﻿# Sidearm Options
+﻿# Cloaks
+- type: loadout
+  id: HosHalfCloak
+  equipment:
+    neck: ClothingNeckHalfCloakHos
+
+# Sidearm Options
 - type: loadout
   id: HOSSP8AR
   dummyEntity: WeaponPistolSP8AR

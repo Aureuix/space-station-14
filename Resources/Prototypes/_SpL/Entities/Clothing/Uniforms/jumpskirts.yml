@@ -1,0 +1,10 @@
+﻿- type: entity
+  parent: [ClothingUniformSkirtBase, BaseSalvageContraband]
+  id: ClothingUniformJumpskirtSalvageLeadFormal
+  name: formal salvage lead jumpskirt
+  description: Manufactured after one salvage lead complained about their uniform a single time.
+  components:
+    - type: Sprite
+      sprite: _SpL/Clothing/Uniforms/Jumpskirt/leadformal.rsi
+    - type: Clothing
+      sprite: _SpL/Clothing/Uniforms/Jumpskirt/leadformal.rsi

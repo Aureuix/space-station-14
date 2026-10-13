@@ -1,0 +1,16 @@
+﻿# Cloaks
+- type: loadout
+  id: SalvLeadHalfCloak
+  equipment:
+    neck: ClothingNeckHalfCloakSalvLead
+    
+# Jumpsuits
+- type: loadout
+  id: SalvageLeadFormalJumpsuit
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitSalvageLeadFormal
+    
+- type: loadout
+  id: SalvageLeadFormalJumpskirt
+  equipment:
+    jumpsuit: ClothingUniformJumpskirtSalvageLeadFormal
