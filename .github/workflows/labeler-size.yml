@@ -1,7 +1,7 @@
 name: "Labels: Size"
 on:
   pull_request:
-    types: [ opened, synchronize, reopened, edited ]
+    branches: [ master, staging, stable, Starlight ]
 
 jobs:
   size-label:

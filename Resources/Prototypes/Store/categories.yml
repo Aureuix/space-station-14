@@ -88,6 +88,11 @@
   id: UplinkPointless
   name: store-category-pointless
   priority: 10
+  
+- type: storeCategory # SpL start
+  id: UplinkObjective
+  name: store-category-objective
+  priority: 199 # SpL end
 
 #nukie delivery
 

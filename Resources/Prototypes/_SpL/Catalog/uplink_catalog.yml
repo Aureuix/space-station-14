@@ -208,9 +208,61 @@
   description: uplink-elysium-implant-desc
   icon: { sprite: /Textures/Objects/Fun/pai.rsi, state: syndicate-icon-pai-off }
   productEntity: DIDImplanter
-  discountDownTo:
-    Telecrystal: 1
   cost:
-    Telecrystal: 2
+    Telecrystal: 1
   categories:
     - UplinkImplants
+
+- type: listing
+  id: RedspaceCalibrationBeacon
+  name: redspace-calibration-beacon-name
+  description: redspace-calibration-beacon-desc
+  icon: { sprite: /Textures/Objects/Devices/singularity_beacon.rsi, state: icon }
+  productEntity: SingularityBeacon
+  cost:
+    Telecrystal: 20
+  categories:
+    - UplinkObjective
+  conditions:
+    - !type:ListingLimitedStockCondition
+      stock: 1
+    - !type:StoreWhitelistCondition
+      blacklist:
+        tags:
+          - NukeOpsUplink
+      
+- type: listing
+  id: CryptanalyticComputer
+  name: cryptanalytic-computer-name
+  description: cryptanalytic-computer-desc
+  icon: { sprite: /Textures/Structures/Machines/traitordm.rsi, state: redemption }
+  productEntity: CryptoMinerSyndicate
+  cost:
+    Telecrystal: 20
+  categories:
+    - UplinkObjective
+  conditions:
+    - !type:ListingLimitedStockCondition
+      stock: 1
+    - !type:StoreWhitelistCondition
+      blacklist:
+        tags:
+          - NukeOpsUplink
+      
+- type: listing
+  id: ResearchAppropriator
+  name: research-appropriator-name
+  description: research-appropriator-desc
+  icon: { sprite: /Textures/Structures/Machines/rndpointsource.rsi, state: rndpointsource-icon }
+  productEntity: ResearchAppropriatorSyndicate
+  cost:
+    Telecrystal: 20
+  categories:
+    - UplinkObjective
+  conditions:
+    - !type:ListingLimitedStockCondition
+      stock: 1
+    - !type:StoreWhitelistCondition
+      blacklist:
+        tags:
+          - NukeOpsUplink

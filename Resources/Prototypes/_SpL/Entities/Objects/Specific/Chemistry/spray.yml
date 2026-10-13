@@ -8,6 +8,8 @@
       tags:
         - Spray
         - Trash
+        - SecBeltEquip
+        - PepperSpray
     - type: Sprite
       sprite: _SpL/Objects/Specific/Chemistry/pepperspray.rsi
       state: icon
@@ -33,3 +35,8 @@
         path: /Audio/Effects/spray2.ogg
     - type: TrashOnSolutionEmpty
       solution: drink
+    - type: Clothing
+      sprite: _SpL/Objects/Specific/Chemistry/pepperspray.rsi
+      slots: 
+        - belt
+        - suitStorage

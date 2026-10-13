@@ -1,0 +1,4 @@
+﻿- type: loadout
+  id: SurgeonPDA
+  equipment:
+    id: SurgeonPDA

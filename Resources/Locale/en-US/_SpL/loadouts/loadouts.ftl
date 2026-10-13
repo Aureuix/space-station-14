@@ -1,5 +1,6 @@
 ﻿loadout-group-hos-sidearm = Head of Security sidearm
 loadout-group-detective-sidearm = Detective sidearm
+loadout-group-surgeon-pda = If you're seeing this ping nykaestra on discord
 
 loadout-group-head-cc = CentComm headwear
 loadout-group-jumpsuit-cc = CentComm uniform

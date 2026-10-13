@@ -36,5 +36,5 @@
   verbName: hug-verb
   interactString: hugging-success-generic
   messagePerceivedByOthers: hugging-success-generic-others
-  emoteMessage: hugging-success-generic
+  # emoteMessage: hugging-success-generic | removed due to spam tendency
   interactSound: /Audio/Effects/thudswoosh.ogg

@@ -505,4 +505,8 @@
         whitelist:
           components:
           - SmokeOnTrigger
+      spray: # SpL
+        whitelist:
+          tags:
+            - PepperSpray # SpL
   - type: Appearance

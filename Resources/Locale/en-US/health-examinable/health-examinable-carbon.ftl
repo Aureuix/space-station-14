@@ -24,8 +24,8 @@ health-examinable-carbon-Piercing-75 = [color=#D3CA5B]{ CAPITALIZE(SUBJECT($targ
 health-examinable-carbon-Piercing-100 = [color=#D1C848]{ CAPITALIZE(POSS-ADJ($target)) } body is completely covered in massive, gaping holes.[/color]
 health-examinable-carbon-Piercing-200 = [color=#d6c800]{ CAPITALIZE(POSS-ADJ($target)) } body looks torn apart![/color]
 
-health-examinable-carbon-Asphyxiation-30 = [color=#7DBACE]{ CAPITALIZE(POSS-ADJ($target)) } lips are turning blue.[/color]
-health-examinable-carbon-Asphyxiation-75 = [color=#189FCC]{ CAPITALIZE(POSS-ADJ($target)) } face is turning blue.[/color]
+health-examinable-carbon-Asphyxiation-30 = [color=#7DBACE]{ CAPITALIZE(POSS-ADJ($target)) } face is turning blue.[/color]
+health-examinable-carbon-Asphyxiation-75 = [color=#189FCC]{ CAPITALIZE(POSS-ADJ($target)) } eyes are wide and unfocused.[/color]
 
 health-examinable-carbon-Heat-8 = [color=#C8917A]{ CAPITALIZE(SUBJECT($target)) } { CONJUGATE-HAVE($target) } a superficial burn.[/color]
 health-examinable-carbon-Heat-15 = [color=#D38664]{ CAPITALIZE(SUBJECT($target)) } { CONJUGATE-HAVE($target) } a few first-degree burns.[/color]
@@ -58,5 +58,26 @@ health-examinable-carbon-Caustic-75 = [color=#FF7CC0]{ CAPITALIZE(POSS-ADJ($targ
 health-examinable-carbon-Caustic-100 = [color=#FF6FBA]{ CAPITALIZE(SUBJECT($target)) } { CONJUGATE-HAVE($target) } extreme chemical burns across { POSS-ADJ($target) } body.[/color]
 health-examinable-carbon-Caustic-200 = [color=#FF5993]Most of { POSS-ADJ($target) } body is completely melted![/color]
 
-health-examinable-carbon-Radiation-50 = [color=#C6834B]{ CAPITALIZE(POSS-ADJ($target)) } skin has formed large blisters.[/color]
-health-examinable-carbon-Radiation-100 = [color=#E26804]{ CAPITALIZE(POSS-ADJ($target)) } skin is covered in lesions and is peeling off in chunks.[/color]
+health-examinable-carbon-Poison-30 = [color=#9478B6]{ CAPITALIZE(POSS-ADJ($target)) } blood vessels seem to be swelling.[/color]
+health-examinable-carbon-Poison-50 = [color=#895EBF]{ CAPITALIZE(POSS-ADJ($target)) } eyes are bloodshot.[/color]
+health-examinable-carbon-Poison-75 = [color=#7B41C5]{ CAPITALIZE(POSS-ADJ($target)) } skin is visibly darkening and swelling.[/color]
+health-examinable-carbon-Poison-100 = [color=#6D1CD4]{ CAPITALIZE(SUBJECT($target)) } { CONJUGATE-HAVE($target) } horrific discolouration across { POSS-ADJ($target) } entire body.[/color]
+health-examinable-carbon-Poison-200 = [color=#7100FE]{ CAPITALIZE(POSS-ADJ($target)) } body is completely consumed by necrosis![/color]
+
+health-examinable-carbon-Radiation-30 = [color=#CCA789]{ CAPITALIZE(POSS-ADJ($target)) } skin looks unhealthy.[/color]
+health-examinable-carbon-Radiation-50 = [color=#D0996B]{ CAPITALIZE(POSS-ADJ($target)) } skin has formed large blisters.[/color]
+health-examinable-carbon-Radiation-75 = [color=#CE8041]{ CAPITALIZE(POSS-ADJ($target)) } skin is covered in lesions and is peeling off in chunks.[/color]
+health-examinable-carbon-Radiation-100 = [color=#D87423]{ CAPITALIZE(POSS-ADJ($target)) } skin has practically eroded, revealing greusome swelling tissues.[/color]
+health-examinable-carbon-Radiation-200 = [color=#FD7300]{ CAPITALIZE(POSS-ADJ($target)) } body is falling apart![/color]
+
+health-examinable-carbon-Cellular-30 = [color=#749A79]{ CAPITALIZE(SUBJECT($target)) } looks sickly.[/color]
+health-examinable-carbon-Cellular-50 = [color=#67B670]{ CAPITALIZE(SUBJECT($target)) } looks as though { CAPITALIZE(SUBJECT($target)) } { CONJUGATE-HAVE($target) } aged twenty years.[/color]
+health-examinable-carbon-Cellular-75 = [color=#55C562]{ CAPITALIZE(SUBJECT($target)) } looks as though { CAPITALIZE(SUBJECT($target)) } { CONJUGATE-HAVE($target) } nothing beneath her skin.[/color]
+health-examinable-carbon-Cellular-100 = [color=#23DB39]{ CAPITALIZE(POSS-ADJ($target)) } body is practically disintegrating![/color]
+
+health-examinable-carbon-Holy-30 = [color=#FFFDCB]{ CAPITALIZE(SUBJECT($target)) } looks lost.[/color]
+
+health-examinable-carbon-Shadow-30 = [color=#9891BF]{ CAPITALIZE(SUBJECT($target)) } looks afraid.[/color]
+
+health-examinable-carbon-Mortal-15 = [color=#C1C1C1]{ CAPITALIZE(SUBJECT($target)) } has been touched by forces beyond comprehension.[/color]
+health-examinable-carbon-Mortal-100 = [color=#ECECEC]{ CAPITALIZE(SUBJECT($target)) } has been declared lost by greater forces.[/color]

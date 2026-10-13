@@ -40,6 +40,16 @@
   loadouts:
     - InsulsCombatNoLock
 
+- type: loadoutGroup
+  id: SurgeonPDA
+  name: loadout-group-surgeon-pda
+  hidden: true
+  minLimit: 1
+  defaultSelected: 1
+  maxLimit: 1
+  loadouts:
+    - SurgeonPDA
+
 ## CentComm
 - type: loadoutGroup
   id: CentCommHead
