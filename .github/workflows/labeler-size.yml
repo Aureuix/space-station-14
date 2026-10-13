@@ -1,5 +1,8 @@
 name: "Labels: Size"
-on: pull_request_target
+on:
+  pull_request:
+    types: [ opened, synchronize, reopened, edited ]
+
 jobs:
   size-label:
     runs-on: ubuntu-latest
