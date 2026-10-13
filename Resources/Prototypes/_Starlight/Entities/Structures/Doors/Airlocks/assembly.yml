@@ -159,18 +159,18 @@
   id: AirlockAssemblyMail
   suffix: Mail
   components:
-    - type: Sprite
-      sprite: _Starlight/Structures/Doors/Airlocks/Standard/mail.rsi
-      state: "assembly"
+  - type: Sprite
+    sprite: _Starlight/Structures/Doors/Airlocks/Standard/mail.rsi
+    state: "assembly"
 
 - type: entity
   parent: AirlockAssembly
   id: AirlockAssemblyMailGlass
   suffix: Mail, Glass
   components:
-    - type: Sprite
-      sprite: _Starlight/Structures/Doors/Airlocks/Glass/mail.rsi
-      state: "assembly"
+  - type: Sprite
+    sprite: _Starlight/Structures/Doors/Airlocks/Glass/mail.rsi
+    state: "assembly"
 
 #EVA
 - type: entity
@@ -210,6 +210,24 @@
     sprite: _Starlight/Structures/Doors/Airlocks/Glass/brigmedic.rsi
     state: "assembly"
 
+# Service
+- type: entity
+  parent: AirlockAssembly
+  id: AirlockAssemblyService
+  suffix: Service
+  components:
+  - type: Sprite
+    sprite: _Starlight/Structures/Doors/Airlocks/Standard/services.rsi
+    state: "assembly"
+
+- type: entity
+  parent: AirlockAssembly
+  id: AirlockAssemblyServiceGlass
+  suffix: Service, Glass
+  components:
+  - type: Sprite
+    sprite: _Starlight/Structures/Doors/Airlocks/Glass/services.rsi
+    state: "assembly"
 # NT
 - type: entity
   parent: AirlockAssembly

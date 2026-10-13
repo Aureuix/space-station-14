@@ -5,21 +5,21 @@
   suffix: Observer Bundle, Do Not Map
   description: You wear this on your back and put items into it.
   components:
-    - type: EntityTableContainerFill
-      containers:
-        storagebase: !type:AllSelector
-          children:
-            - id: ClothingEyesGlassesHiddenSecurity
-            - id: CameraBug
-            - id: SurveillanceCameraMonitorCircuitboard
-            - id: SheetSteel
-            - id: CableApcStack
-            - id: Screwdriver
-            - id: RemoteSignaller
-            - id: ClothingHandsGlovesColorBlack
-            - id: ClothingMaskBandBlack
-            - id: BoxFolderBlack
-            - id: Pen
+  - type: EntityTableContainerFill
+    containers:
+      storagebase: !type:AllSelector
+        children:
+        - id: ClothingEyesGlassesHiddenSecurity
+        - id: CameraBug
+        - id: SurveillanceCameraMonitorCircuitboard
+        - id: SheetSteel
+        - id: CableApcStack
+        - id: Screwdriver
+        - id: RemoteSignaller
+        - id: ClothingHandsGlovesColorBlack
+        - id: ClothingMaskBandBlack
+        - id: BoxFolderBlack
+        - id: Pen
 
 - type: entity
   parent: ClothingBackpackBunnyGang
@@ -28,13 +28,13 @@
   suffix: Filled
   description: A sword that is actually a backpack. Its impressive how they managed to fit things in there, even so, inventory management will be a trial.
   components:
-    - type: EntityTableContainerFill
-      containers:
-        storagebase: !type:AllSelector
-          children:
-            - id: ClothingHeadHatBunnyGang
-            - id: ClothingNeckBunnyGang
-            - id: ClothingOuterBunnyGang
+  - type: EntityTableContainerFill
+    containers:
+      storagebase: !type:AllSelector
+        children:
+        - id: ClothingHeadHatBunnyGang
+        - id: ClothingNeckBunnyGang
+        - id: ClothingOuterBunnyGang
 
 - type: entity
   parent: ClothingBackpackSyndicateBundle
@@ -42,14 +42,14 @@
   name: syndicate elegant raid suit bundle
   description: "Contains the Syndicate's durable raid armor suit, now more elegant."
   components:
-    - type: EntityTableContainerFill
-      containers:
-        storagebase: !type:AllSelector
-          children:
-            - id: ClothingOuterMaidArmorRaid
-            - id: ClothingHeadHelmetRaid
-            - id: ClothingHandsGlovesCombat
-            - id: ClothingUnderSocksMurder
+  - type: EntityTableContainerFill
+    containers:
+      storagebase: !type:AllSelector
+        children:
+          - id: ClothingOuterMaidArmorRaid
+          - id: ClothingHeadHelmetRaid
+          - id: ClothingHandsGlovesCombat
+          - id: ClothingUnderSocksMurder
 
 # Greenshield Officer
 - type: entity
@@ -71,3 +71,78 @@
             - id: SmokeGrenade
             - id: GrenadeFlashBang
             - id: DrinkMREFlask
+
+# Emergency Response Teams
+
+- type: entity
+  id: ClothingBackpackERTSecurityBallisticRiflemenFilled
+  parent: ClothingBackpackERTSecurity
+  suffix: Filled, Ballistics
+  categories: [ DoNotMap, HideSpawnMenu ]
+  components:
+    - type: EntityTableContainerFill
+      containers:
+        storagebase: !type:AllSelector
+          children:
+            - id: MagazineRifleFMJ
+              amount: 4
+            - id: MagazineRifleIncendiary
+            - id: HoloprojectorSecurityMicroreactor # SpL
+            - id: MedkitCombatFilled
+            - id: TelescopicShield
+
+- type: entity
+  id: ClothingBackpackERTSecurityLaserVanguardFilled
+  parent: ClothingBackpackERTSecurity
+  suffix: Filled, Lasers
+  categories: [ DoNotMap, HideSpawnMenu ]
+  components:
+    - type: EntityTableContainerFill
+      containers:
+        storagebase: !type:AllSelector
+          children:
+            - id: WeaponEnergySMG
+            - id: MedkitCombatFilled
+            - id: MedkitCombatFilled
+            - id: SyringeEphedrine
+            - id: AntiPoisonMedipen
+            - id: HoloprojectorFieldMicroreactor # SpL
+            - id: TelescopicShield
+            - id: TelescopicShield
+
+- type: entity
+  id: ClothingBackpackERTSecurityLaserBreacherFilled
+  parent: ClothingBackpackERTSecurity
+  suffix: Filled, Lasers
+  categories: [ DoNotMap, HideSpawnMenu ]
+  components:
+    - type: EntityTableContainerFill
+      containers:
+        storagebase: !type:AllSelector
+          children:
+            - id: HammerBreachingNT
+            - id: BoxDetonator
+            - id: CableDetStack
+            - id: CableDetStack
+            - id: C4
+            - id: C4
+            - id: RemoteSignallerCombat
+            - id: MedkitCombatFilled
+
+- type: entity
+  id: ClothingBackpackERTSecurityLaserSniperFilled
+  parent: ClothingBackpackERTSecurity
+  suffix: Filled, Lasers
+  categories: [ DoNotMap, HideSpawnMenu ]
+  components:
+    - type: EntityTableContainerFill
+      containers:
+        storagebase: !type:AllSelector
+          children:
+            - id: HoloprojectorFieldMicroreactor # SpL
+            - id: HoloprojectorSecurityMicroreactor # SpL
+            - id: SingularityGrenade
+            - id: WhiteholeGrenade
+            - id: SmokeGrenade
+            - id: SmokeGrenade
+            - id: MedkitCombatFilled

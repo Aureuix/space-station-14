@@ -18,6 +18,9 @@
       map: [ "icon" ]
     - state: overlay_null
       map: [ "overlay" ]
+  - type: PhysicalComposition
+    materialComposition:
+      SheetPrinter: 300
   - type: Paper
     contentSize: 12000
   - type: ActivatableUI
@@ -30,6 +33,7 @@
   - type: Tag
     tags:
     - Book
+    - Recyclable
   - type: PaperVisuals
     backgroundImagePath: "/Textures/Interface/Paper/paper_background_book.svg.96dpi.png"
     backgroundPatchMargin: 23.0, 16.0, 14.0, 15.0
@@ -56,6 +60,10 @@
   - type: Tag
     tags:
     - Book
+    - Recyclable
+  - type: PhysicalComposition
+    materialComposition:
+      SheetPrinter: 300
   - type: GuideHelp
     openOnActivation: true
     guides:
