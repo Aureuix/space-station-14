@@ -1,5 +1,8 @@
 name: "Labels: Size"
-on: pull_request_target
+on:
+  pull_request:
+    branches: [ master, staging, stable, Starlight ]
+
 jobs:
   size-label:
     runs-on: ubuntu-latest
