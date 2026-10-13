@@ -236,7 +236,7 @@
   name: cryptanalytic-computer-name
   description: cryptanalytic-computer-desc
   icon: { sprite: /Textures/Structures/Machines/traitordm.rsi, state: redemption }
-  productEntity: CryptanalyticComputer
+  productEntity: CryptoMinerSyndicate
   cost:
     Telecrystal: 20
   categories:
@@ -254,7 +254,7 @@
   name: research-appropriator-name
   description: research-appropriator-desc
   icon: { sprite: /Textures/Structures/Machines/rndpointsource.rsi, state: rndpointsource-icon }
-  productEntity: ResearchAppropriator
+  productEntity: ResearchAppropriatorSyndicate
   cost:
     Telecrystal: 20
   categories:
