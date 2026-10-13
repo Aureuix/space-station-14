@@ -12,15 +12,6 @@
 
 - type: entity
   parent: AirlockServiceLocked
-  id: AirlockLawyerLocked
-  suffix: Lawyer, Locked
-  components:
-  - type: ContainerFill
-    containers:
-      board: [ DoorElectronicsLawyer ]
-
-- type: entity
-  parent: AirlockServiceLocked
   id: AirlockTheatreLocked
   suffix: Theatre, Locked
   components:
@@ -413,12 +404,12 @@
 
 - type: entity
   parent: AirlockSecurity
-  id: AirlockSecurityLawyerLocked
-  suffix: Security/Lawyer, Locked
+  id: AirlockSecurityInternalAffairsLocked # Starlight
+  suffix: Security/Internal Affairs, Locked # Starlight
   components:
   - type: ContainerFill
     containers:
-      board: [ DoorElectronicsSecurityLawyer ]
+      board: [ DoorElectronicsSecurityInternalAffairs ] # Starlight
 
 - type: entity
   parent: AirlockSecurity
@@ -462,13 +453,15 @@
     layoutId: AirlockService
 
 - type: entity
-  parent: AirlockServiceGlassLocked
-  id: AirlockLawyerGlassLocked
-  suffix: Lawyer, Locked
+  parent: AirlockNTGlass # Starlight
+  id: AirlockInternalAffairsGlassLocked # Starlight
+  suffix: Internal Affairs, Locked # Starlight
   components:
+  - type: Wires # Starlight
+    layoutId: AirlockSecurity # Starlight
   - type: ContainerFill
     containers:
-      board: [ DoorElectronicsLawyer ]
+      board: [ DoorElectronicsInternalAffairs ] # Starlight
 
 - type: entity
   parent: AirlockServiceGlassLocked
@@ -827,12 +820,12 @@
 
 - type: entity
   parent: AirlockSecurityGlass
-  id: AirlockSecurityLawyerGlassLocked
-  suffix: Security/Lawyer, Locked
+  id: AirlockSecurityInternalAffairsGlassLocked # Starlight
+  suffix: Security/Internal Affairs, Locked # Starlight
   components:
   - type: ContainerFill
     containers:
-      board: [ DoorElectronicsSecurityLawyer ]
+      board: [ DoorElectronicsSecurityInternalAffairs ] # Starlight
 
 - type: entity
   parent: AirlockSecurityGlass
@@ -874,6 +867,7 @@
 - type: entity
   parent: AirlockMaint
   id: AirlockMaintLocked
+  name: maintenance access
   suffix: Locked
   components:
   - type: ContainerFill
@@ -884,6 +878,7 @@
   parent: AirlockXeno
   id: AirlockXenoMaintLocked
   suffix: Maintenance, Locked
+  name: maintenance access
   components:
   - type: ContainerFill
     containers:
@@ -892,6 +887,7 @@
 - type: entity
   parent: AirlockMaintGlass
   id: AirlockMaintGlassLocked
+  name: maintenance access
   suffix: Locked
   components:
   - type: ContainerFill
@@ -901,219 +897,243 @@
 - type: entity
   parent: AirlockSalvageLocked
   id: AirlockMaintSalvageLocked
+  name: maintenance access
   components:
   - type: Sprite
-    sprite: Structures/Doors/Airlocks/Standard/maint.rsi
+    sprite: _Starlight/Structures/Doors/Airlocks/Standard/cargo_maints.rsi
 
 - type: entity
   parent: AirlockCargoLocked
   id: AirlockMaintCargoLocked
+  name: maintenance access
   components:
   - type: Sprite
-    sprite: Structures/Doors/Airlocks/Standard/maint.rsi
+    sprite: _Starlight/Structures/Doors/Airlocks/Standard/cargo_maints.rsi
 
 - type: entity
   parent: AirlockCommandLocked
   id: AirlockMaintCommandLocked
+  name: maintenance access
   components:
   - type: Sprite
-    sprite: Structures/Doors/Airlocks/Standard/maint.rsi
+    sprite: _Starlight/Structures/Doors/Airlocks/Standard/command_maints.rsi
 
 - type: entity
   parent: AirlockEngineeringLocked
   id: AirlockMaintEngiLocked
+  name: maintenance access
   components:
   - type: Sprite
-    sprite: Structures/Doors/Airlocks/Standard/maint.rsi
+    sprite: _Starlight/Structures/Doors/Airlocks/Standard/engineering_maints.rsi
 
 - type: entity
   parent: AirlockAtmosphericsLocked
   id: AirlockMaintAtmoLocked
+  name: maintenance access
   components:
   - type: Sprite
-    sprite: Structures/Doors/Airlocks/Standard/maint.rsi
+    sprite: _Starlight/Structures/Doors/Airlocks/Standard/atmospherics_maints.rsi
 
 - type: entity
   parent: AirlockBarLocked
   id: AirlockMaintBarLocked
+  name: maintenance access
   components:
   - type: Sprite
-    sprite: Structures/Doors/Airlocks/Standard/maint.rsi
+    sprite: _Starlight/Structures/Doors/Airlocks/Standard/services_maints.rsi
 
 - type: entity
   parent: AirlockBarKitchenLocked
   id: AirlockMaintBarKitchenLocked
+  name: maintenance access
   components:
   - type: Sprite
-    sprite: Structures/Doors/Airlocks/Standard/maint.rsi
+    sprite: _Starlight/Structures/Doors/Airlocks/Standard/services_maints.rsi
 
 - type: entity
   parent: AirlockChapelLocked
   id: AirlockMaintChapelLocked
+  name: maintenance access
   components:
   - type: Sprite
-    sprite: Structures/Doors/Airlocks/Standard/maint.rsi
+    sprite: _Starlight/Structures/Doors/Airlocks/Standard/services_maints.rsi
 
 - type: entity
   parent: AirlockHydroponicsLocked
   id: AirlockMaintHydroLocked
+  name: maintenance access
   components:
   - type: Sprite
-    sprite: Structures/Doors/Airlocks/Standard/maint.rsi
+    sprite: _Starlight/Structures/Doors/Airlocks/Standard/services_maints.rsi
 
 - type: entity
   parent: AirlockJanitorLocked
   id: AirlockMaintJanitorLocked
+  name: maintenance access
   components:
   - type: Sprite
-    sprite: Structures/Doors/Airlocks/Standard/maint.rsi
-
-- type: entity
-  parent: AirlockLawyerLocked
-  id: AirlockMaintLawyerLocked
-  components:
-  - type: Sprite
-    sprite: Structures/Doors/Airlocks/Standard/maint.rsi
+    sprite: _Starlight/Structures/Doors/Airlocks/Standard/services_maints.rsi
 
 - type: entity
   parent: AirlockServiceLocked
   id: AirlockMaintServiceLocked
+  name: maintenance access
   components:
   - type: Sprite
-    sprite: Structures/Doors/Airlocks/Standard/maint.rsi
+    sprite: _Starlight/Structures/Doors/Airlocks/Standard/services_maints.rsi
 
 - type: entity
   parent: AirlockTheatreLocked
   id: AirlockMaintTheatreLocked
+  name: maintenance access
   components:
   - type: Sprite
-    sprite: Structures/Doors/Airlocks/Standard/maint.rsi
+    sprite: _Starlight/Structures/Doors/Airlocks/Standard/services_maints.rsi
 
 - type: entity
   parent: AirlockServiceTheatreLocked
   id: AirlockMaintServiceTheatreLocked
+  name: maintenance access
   components:
   - type: Sprite
-    sprite: Structures/Doors/Airlocks/Standard/maint.rsi
+    sprite: _Starlight/Structures/Doors/Airlocks/Standard/services_maints.rsi
 
 - type: entity
   parent: AirlockKitchenLocked
   id: AirlockMaintKitchenLocked
+  name: maintenance access
   components:
   - type: Sprite
-    sprite: Structures/Doors/Airlocks/Standard/maint.rsi
+    sprite: _Starlight/Structures/Doors/Airlocks/Standard/services_maints.rsi
 
 - type: entity
   parent: AirlockFreezerKitchenHydroLocked
   id: AirlockMaintKitchenHydroLocked
+  name: maintenance access
   components:
   - type: Sprite
-    sprite: Structures/Doors/Airlocks/Standard/maint.rsi
+    sprite: _Starlight/Structures/Doors/Airlocks/Standard/services_maints.rsi
 
 - type: entity
   parent: AirlockMedicalLocked
   id: AirlockMaintMedLocked
+  name: maintenance access
   components:
   - type: Sprite
-    sprite: Structures/Doors/Airlocks/Standard/maint.rsi
+    sprite: _Starlight/Structures/Doors/Airlocks/Standard/medical_maints.rsi
 
 - type: entity
   parent: AirlockMedicalMorgueLocked
   id: AirlockMedicalMorgueMaintLocked
+  name: maintenance access
   components:
   - type: Sprite
-    sprite: Structures/Doors/Airlocks/Standard/maint.rsi
+    sprite: _Starlight/Structures/Doors/Airlocks/Standard/medical_maints.rsi
 
 - type: entity
   parent: AirlockChemistryLocked
   id: AirlockMaintChemLocked
+  name: maintenance access
   components:
   - type: Sprite
-    sprite: Structures/Doors/Airlocks/Standard/maint.rsi
+    sprite: _Starlight/Structures/Doors/Airlocks/Standard/chemistry_maints.rsi
 
 - type: entity
   parent: AirlockScienceLocked
   id: AirlockMaintRnDLocked
+  name: maintenance access
   components:
   - type: Sprite
-    sprite: Structures/Doors/Airlocks/Standard/maint.rsi
+    sprite: _Starlight/Structures/Doors/Airlocks/Standard/science_maints.rsi
 
 - type: entity
   parent: AirlockMedicalScienceLocked
   id: AirlockMaintRnDMedLocked
+  name: maintenance access
   components:
   - type: Sprite
-    sprite: Structures/Doors/Airlocks/Standard/maint.rsi
+    sprite: _Starlight/Structures/Doors/Airlocks/Standard/science_maints.rsi
 
 - type: entity
   parent: AirlockSecurityLocked
   id: AirlockMaintSecLocked
+  name: maintenance access
   components:
   - type: Sprite
-    sprite: Structures/Doors/Airlocks/Standard/maint.rsi
+    sprite: _Starlight/Structures/Doors/Airlocks/Standard/security_maints.rsi
 
 - type: entity
   parent: AirlockDetectiveLocked
   id: AirlockMaintDetectiveLocked
+  name: maintenance access
   components:
   - type: Sprite
-    sprite: Structures/Doors/Airlocks/Standard/maint.rsi
+    sprite: _Starlight/Structures/Doors/Airlocks/Standard/security_maints.rsi
+  
 
 - type: entity
   parent: AirlockHeadOfPersonnelLocked
   id: AirlockMaintHOPLocked
+  name: maintenance access
   components:
   - type: Sprite
-    sprite: Structures/Doors/Airlocks/Standard/maint.rsi
+    sprite: _Starlight/Structures/Doors/Airlocks/Standard/command_maints.rsi
 
 - type: entity
   parent: AirlockCaptainLocked
   id: AirlockMaintCaptainLocked
+  name: maintenance access
   components:
   - type: Sprite
-    sprite: Structures/Doors/Airlocks/Standard/maint.rsi
+    sprite: _Starlight/Structures/Doors/Airlocks/Standard/command_maints.rsi
 
 - type: entity
   parent: AirlockChiefEngineerLocked
   id: AirlockMaintChiefEngineerLocked
+  name: maintenance access
   components:
   - type: Sprite
-    sprite: Structures/Doors/Airlocks/Standard/maint.rsi
+    sprite: _Starlight/Structures/Doors/Airlocks/Standard/command_maints.rsi
 
 - type: entity
   parent: AirlockChiefMedicalOfficerLocked
   id: AirlockMaintChiefMedicalOfficerLocked
+  name: maintenance access
   components:
   - type: Sprite
-    sprite: Structures/Doors/Airlocks/Standard/maint.rsi
+    sprite: _Starlight/Structures/Doors/Airlocks/Standard/command_maints.rsi
 
 - type: entity
   parent: AirlockHeadOfSecurityLocked
   id: AirlockMaintHeadOfSecurityLocked
+  name: maintenance access
   components:
   - type: Sprite
-    sprite: Structures/Doors/Airlocks/Standard/maint.rsi
+    sprite: _Starlight/Structures/Doors/Airlocks/Standard/command_maints.rsi
 
 - type: entity
   parent: AirlockResearchDirectorLocked
   id: AirlockMaintResearchDirectorLocked
+  name: maintenance access
   components:
   - type: Sprite
-    sprite: Structures/Doors/Airlocks/Standard/maint.rsi
+    sprite: _Starlight/Structures/Doors/Airlocks/Standard/command_maints.rsi
 
 - type: entity
   parent: AirlockQuartermasterLocked
   id: AirlockMaintQuartermasterLocked
+  name: maintenance access
   components:
   - type: Sprite
-    sprite: Structures/Doors/Airlocks/Standard/maint.rsi
+    sprite: _Starlight/Structures/Doors/Airlocks/Standard/command_maints.rsi
 
 - type: entity
   parent: AirlockArmoryLocked
   id: AirlockMaintArmoryLocked
+  name: maintenance access
   components:
   - type: Sprite
-    sprite: Structures/Doors/Airlocks/Standard/maint.rsi
+    sprite: _Starlight/Structures/Doors/Airlocks/Standard/security_maints.rsi
 
 - type: entity
   parent: AirlockSyndicate
@@ -1241,7 +1261,7 @@
   # Starlight start
   - type: RandomGridFill
     pathWeights:
-      "/Maps/Shuttles/escape_pod_small.yml": 40
+      "/Maps/_Starlight/Shuttles/EscapePods/escape_pod_small.yml": 40
       "/Maps/_Starlight/Shuttles/EscapePods/escape_pod_cheap.yml": 2
       "/Maps/_Starlight/Shuttles/EscapePods/escape_pod_toilet.yml": 1
       "/Maps/_Starlight/Shuttles/EscapePods/escape_pod_library.yml": 2

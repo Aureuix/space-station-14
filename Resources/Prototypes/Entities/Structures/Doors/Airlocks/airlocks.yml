@@ -223,6 +223,7 @@
   parent: AirlockGlass
   id: AirlockMaintGlass
   suffix: Maintenance
+  name: maintenance access
   components:
   - type: Sprite
     sprite: Structures/Doors/Airlocks/Glass/maint.rsi
