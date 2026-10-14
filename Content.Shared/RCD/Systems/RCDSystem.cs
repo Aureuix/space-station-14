@@ -26,8 +26,6 @@ using System.Linq;
 using Content.Shared.Atmos.EntitySystems;
 using Content.Shared.Atmos.Components;
 using Content.Shared._Starlight.Atmos.EntitySystems;
-using Content.Shared.Hands.Components;
-using System.Numerics;
 using Content.Shared.Verbs;
 using Robust.Shared.Utility;
 using Content.Shared.NodeContainer;
@@ -36,7 +34,6 @@ using Content.Shared._Starlight.Atmos;
 using Content.Shared._Starlight.Atmos.Components;
 using Content.Shared.Prototypes;
 using Content.Shared._Starlight.Plumbing.Components;
-using System.Reflection.Metadata.Ecma335;
 // Starlight End
 
 namespace Content.Shared.RCD.Systems;
