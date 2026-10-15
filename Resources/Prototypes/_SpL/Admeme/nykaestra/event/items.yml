@@ -1,0 +1,49 @@
+﻿- type: entity
+  parent: [ BaseItem, BaseSyndicateContraband ]
+  id: SyndicateReinforcementRadioUnlimited
+  name: Syndicate reinforcement radio
+  description: Having a skill issue? Turn it into a skill solution by redspacing in some goons!
+  components:
+    - type: Sprite
+      sprite: Objects/Devices/declaration_of_war.rsi
+      layers:
+        - state: declarator
+    - type: Item
+      size: Small
+    - type: UseDelay
+      delay: 5
+    - type: TriggerOnUse
+    - type: TimerTrigger
+      beepSound:
+        path: "/Audio/Effects/Grenades/SelfDestruct/SDS_Charge.ogg"
+        params:
+          volume: -3
+      initialBeepDelay: 0
+      beepInterval: 5
+      delay: 3
+      keyOut: spawn
+    - type: SpawnEntityTableOnTrigger
+      table: !type:GroupSelector
+        children:
+          - id: MobSyndieShooterEstoc
+          - id: MobSyndieShooterC20r
+          - id: MobSyndieShooterC20r
+          - id: MobSyndieShooterC20r
+          - id: MobSyndieShooterBulldog
+          - id: MobSyndieShooterPitbull
+          - id: MobSyndieShooterPitbull
+      keysIn:
+        - spawn
+      useMapCoords: true
+      
+- type: entity
+  parent: SyndicateReinforcementRadioUnlimited
+  id: SyndicateReinforcementRadio
+  name: Syndicate reinforcement radio
+  description: Having a skill issue? Turn it into a skill solution by redspacing in some goons! Single use only.
+  components:
+    - type: UseDelay
+      delay: 3
+    - type: DeleteOnTrigger
+      keysIn: 
+        - spawn

@@ -1,0 +1,276 @@
+﻿- type: entity
+  parent: BaseMobHuman
+  id: BaseMobSyndieShooter
+  abstract: true
+  name: syndicate gunner
+  components:
+    - type: Flammable
+      flammableCollisionShape: 
+        !type:PhysShapeCircle
+        radius: "0"
+    - type: MobThresholds
+      stateAlertDict:
+        Alive: "HumanHealth"
+        Dead: "HumanDead"
+      thresholds:
+        0: Alive
+        100: Dead
+    - type: StaminaResistance
+      damageCoefficient: 0.1
+    - type: Appearance
+    - type: InputMover
+    - type: MobMover
+    - type: NpcFactionMember
+      factions:
+        - Syndicate
+      addHostileFactions:
+        - NanoTrasen
+    - type: NPCImprintingOnSpawnBehaviour
+      whitelist:
+        components:
+          - HumanoidAppearance
+      spawnFriendsSearchRadius: 1
+    - type: Input
+      context: "human"
+    - type: Actions
+    - type: WizdenNightVision
+    - type: ContentEye
+      targetZoom: "1.25, 1.25"
+      maxZoom: "1.25, 1.25"
+    - type: AutoImplant
+      implants:
+        - DeathAcidifierImplant
+    - type: RandomMetadata
+      nameSegments:
+        - NamesSyndicatePrefix
+        - NamesSyndicateNormal
+      nameFormat: name-format-ert
+    - type: TriggerOnSpawn
+      keyOut: spawn
+    - type: SpawnOnTrigger
+      proto: EffectFlashRedspacePortal
+      keysIn:
+        - spawn
+
+
+- type: entity
+  parent: BaseMobSyndieShooter
+  id: MobSyndieShooterEstoc
+  suffix: ADMEME, Estoc
+  components:
+    - type: HTN
+      rootTask:
+        task: LongRangeShooterAllyCompound
+      blackboard:
+        RotateSpeed: !type:Single
+          45
+        SoundTargetInLOS: !type:SoundPathSpecifier
+          path: /Audio/_Starlight/Effects/Radio/marauder_commander.ogg
+          
+    - type: ContainerContainer
+      containers:
+        ballistic-ammo: !type:Container
+    - type: Gun
+      burstFireRate: 12
+      burstCooldown: 2
+      selectedMode: Burst
+      availableModes:
+        - Burst
+      soundGunshot:
+        path: /Audio/Weapons/Guns/Gunshots/estocshot.ogg
+    - type: BallisticAmmoProvider
+      proto: CartridgeMagnumFMJ
+      capacity: 500
+      cycleable: false
+      
+    - type: Loadout
+      prototypes:
+        - SyndicateFootsoldierGearEstoc
+     
+      
+- type: entity
+  parent: BaseMobSyndieShooter
+  id: MobSyndieShooterC20r
+  suffix: ADMEME, C20r
+  components:
+    - type: HTN
+      rootTask:
+        task: MedRangeShooterAllyCompound
+      blackboard:
+        SoundTargetInLOS: !type:SoundPathSpecifier
+          path: /Audio/_Starlight/Effects/Radio/marauder.ogg
+
+    - type: ContainerContainer
+      containers:
+        ballistic-ammo: !type:Container
+    - type: Gun
+      minAngle: 1
+      maxAngle: 24
+      shotsPerBurst: 5
+      burstFireRate: 8.5
+      burstCooldown: 1.25
+      selectedMode: Burst
+      availableModes:
+        - Burst
+      soundGunshot:
+        path: /Audio/Weapons/Guns/Gunshots/c-20r.ogg
+    - type: BallisticAmmoProvider
+      proto: CartridgePistolFMJ
+      capacity: 500
+      cycleable: false
+
+    - type: Loadout
+      prototypes:
+        - SyndicateFootsoldierGearC20r
+    - type: MouseRotator
+      angleTolerance: 2
+      rotationSpeed: 180
+      simple4DirMode: false
+    - type: NoRotateOnMove
+
+
+- type: entity
+  parent: BaseMobSyndieShooter
+  id: MobSyndieShooterBulldog
+  suffix: ADMEME, Bulldog
+  components:
+    - type: HTN
+      rootTask:
+        task: MedRangeShooterAllyCompound
+      blackboard:
+        SoundTargetInLOS: !type:SoundPathSpecifier
+          path: /Audio/_Starlight/Effects/Radio/marauder.ogg
+
+    - type: ContainerContainer
+      containers:
+        ballistic-ammo: !type:Container
+    - type: Gun
+      shotsPerBurst: 3
+      burstFireRate: 2
+      burstCooldown: 1.5
+      selectedMode: Burst
+      availableModes:
+        - Burst
+      soundGunshot:
+        path: /Audio/_Starlight/Weapons/Guns/Gunshots/gun_shotgun_automatic.ogg
+    - type: BallisticAmmoProvider
+      proto: ShellShotgun
+      capacity: 500
+      cycleable: false
+
+    - type: Loadout
+      prototypes:
+        - SyndicateFootsoldierGearBulldog
+    - type: MouseRotator
+      angleTolerance: 2
+      rotationSpeed: 180
+      simple4DirMode: false
+    - type: NoRotateOnMove
+
+
+- type: entity
+  parent: BaseMobSyndieShooter
+  id: MobSyndieShooterPitbull
+  suffix: ADMEME, Pitbull
+  components:
+    - type: HTN
+      rootTask:
+        task: LongRangeShooterAllyCompound
+      blackboard:
+        SoundTargetInLOS: !type:SoundPathSpecifier
+          path: /Audio/_Starlight/Effects/Radio/marauder_agent.ogg
+
+    - type: ContainerContainer
+      containers:
+        ballistic-ammo: !type:Container
+    - type: Gun
+      shotsPerBurst: 3
+      burstFireRate: 4
+      burstCooldown: 1
+      selectedMode: Burst
+      availableModes:
+        - Burst
+      soundGunshot:
+        path: /Audio/Weapons/Guns/Gunshots/batrifle.ogg
+    - type: BallisticAmmoProvider
+      proto: CartridgeLightRifleFMJ
+      capacity: 500
+      cycleable: false
+
+    - type: Loadout
+      prototypes:
+        - SyndicateFootsoldierGearPitbull
+      
+      
+      
+- type: startingGear
+  id: SyndicateFootsoldierGearEstoc
+  parent: SyndicateOperativeGearCivilian
+  equipment:
+    id: SyndiOperativePDA
+    jumpsuit: ClothingUniformJumpsuitOperative
+    head: ClothingHeadHelmetSwatSyndicate
+    mask: ClothingMaskGasSyndicate
+    eyes: ClothingEyesHudSyndicate
+    outerClothing: ClothingOuterVestWebElite
+    gloves: ClothingHandsGlovesCombat
+    back: ClothingBackpackSatchelSyndicate
+    shoes: ClothingShoesBootsCombatFilled
+    belt: ClothingBeltMilitaryWebbing
+  inhand:
+    - RiotShield
+    - WeaponRifleEstoc
+  
+- type: startingGear
+  id: SyndicateFootsoldierGearC20r
+  parent: SyndicateOperativeGearCivilian
+  equipment:
+    id: SyndiOperativePDA
+    jumpsuit: ClothingUniformJumpsuitOperative
+    head: ClothingHeadHelmetSwatSyndicate
+    mask: ClothingMaskGasSyndicate
+    eyes: ClothingEyesHudSyndicate
+    outerClothing: ClothingOuterVestWebElite
+    gloves: ClothingHandsGlovesCombat
+    back: ClothingBackpackSatchelSyndicate
+    shoes: ClothingShoesBootsCombatFilled
+    belt: ClothingBeltMilitaryWebbing
+  inhand:
+    - RiotShield
+    - WeaponSubMachineGunC20r
+
+- type: startingGear
+  id: SyndicateFootsoldierGearBulldog
+  parent: SyndicateOperativeGearCivilian
+  equipment:
+    id: SyndiOperativePDA
+    jumpsuit: ClothingUniformJumpsuitOperative
+    head: ClothingHeadHelmetSwatSyndicate
+    mask: ClothingMaskGasSyndicate
+    eyes: ClothingEyesHudSyndicate
+    outerClothing: ClothingOuterVestWebElite
+    gloves: ClothingHandsGlovesCombat
+    back: ClothingBackpackSatchelSyndicate
+    shoes: ClothingShoesBootsCombatFilled
+    belt: ClothingBeltMilitaryWebbing
+  inhand:
+    - RiotShield
+    - WeaponShotgunBulldog
+
+- type: startingGear
+  id: SyndicateFootsoldierGearPitbull
+  parent: SyndicateOperativeGearCivilian
+  equipment:
+    id: SyndiOperativePDA
+    jumpsuit: ClothingUniformJumpsuitOperative
+    head: ClothingHeadHelmetSwatSyndicate
+    mask: ClothingMaskGasSyndicate
+    eyes: ClothingEyesHudSyndicate
+    outerClothing: ClothingOuterVestWebElite
+    gloves: ClothingHandsGlovesCombat
+    back: ClothingBackpackSatchelSyndicate
+    shoes: ClothingShoesBootsCombatFilled
+    belt: ClothingBeltMilitaryWebbing
+  inhand:
+    - RiotShield
+    - WeaponRiflePitbull
