@@ -82,7 +82,9 @@ public sealed class ExportChatCommand : LocalizedCommands
         }
         catch (Exception exc)
         {
+            /* Commented out until this can give more useful error messages
             _sawmill.Error($"Error when exporting chat log:\n{exc.StackTrace}");
+            */
         }
         finally
         {
