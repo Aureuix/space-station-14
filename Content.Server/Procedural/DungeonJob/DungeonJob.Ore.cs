@@ -140,12 +140,10 @@ public sealed partial class DungeonJob
                         groupSize--;
                     }
                 }
-                /* SHUT THE FUCK UP
                 if (groupSize > 0)
                 {
                     _sawmill.Warning($"Found remaining group size for ore veins of {gen.Replacement ?? "null"}!");
                 }
-                */
             }
         }
     }
