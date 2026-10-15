@@ -17,18 +17,23 @@ public sealed partial class RedShirtSystem : EntitySystem
 
     private void SetMobDeathThreshold(Entity<RedshirtComponent> ent, ref ComponentStartup args)
     {
-
         if (!TryComp(ent.Owner, out MobThresholdsComponent? mobThreshComp) ||
             !TryPrototype(ent, out var proto) ||
             !proto.TryGetComponent<MobThresholdsComponent>(out var protoThreshComp))
             return;
 
+
+        // See BrittleBonesSystem's comments tbh
         if (HasComp<BrittleBonesComponent>(ent.Owner))
         {
+            _mobThreshold.SetMobStateThreshold(ent.Owner, protoThreshComp.Thresholds.First(thresh => thresh.Value == MobState.SoftCritical).Key * 0.5, MobState.SoftCritical, mobThreshComp);
+            _mobThreshold.SetMobStateThreshold(ent.Owner, protoThreshComp.Thresholds.First(thresh => thresh.Value == MobState.SoftCritical).Key * 0.5, MobState.Critical, mobThreshComp);
             _mobThreshold.SetMobStateThreshold(ent.Owner, protoThreshComp.Thresholds.First(thresh => thresh.Value == MobState.SoftCritical).Key * 0.5, MobState.Dead, mobThreshComp);
         }
         else
         {
+            _mobThreshold.SetMobStateThreshold(ent.Owner, protoThreshComp.Thresholds.First(thresh => thresh.Value == MobState.SoftCritical).Key, MobState.SoftCritical, mobThreshComp);
+            _mobThreshold.SetMobStateThreshold(ent.Owner, protoThreshComp.Thresholds.First(thresh => thresh.Value == MobState.SoftCritical).Key, MobState.Critical, mobThreshComp);
             _mobThreshold.SetMobStateThreshold(ent.Owner, protoThreshComp.Thresholds.First(thresh => thresh.Value == MobState.SoftCritical).Key, MobState.Dead, mobThreshComp);
 
         }
@@ -45,9 +50,12 @@ public sealed partial class RedShirtSystem : EntitySystem
         {
             _mobThreshold.SetMobStateThreshold(ent.Owner, protoThreshComp.Thresholds.First(thresh => thresh.Value == MobState.SoftCritical).Key * 0.5, MobState.SoftCritical, mobThreshComp);
             _mobThreshold.SetMobStateThreshold(ent.Owner, protoThreshComp.Thresholds.First(thresh => thresh.Value == MobState.Critical).Key * 0.75, MobState.Critical, mobThreshComp);
+            _mobThreshold.SetMobStateThreshold(ent.Owner, protoThreshComp.Thresholds.First(thresh => thresh.Value == MobState.Dead).Key, MobState.Dead, mobThreshComp);
         }
         else
         {
+            _mobThreshold.SetMobStateThreshold(ent.Owner, protoThreshComp.Thresholds.First(thresh => thresh.Value == MobState.SoftCritical).Key, MobState.SoftCritical, mobThreshComp);
+            _mobThreshold.SetMobStateThreshold(ent.Owner, protoThreshComp.Thresholds.First(thresh => thresh.Value == MobState.Critical).Key, MobState.Critical, mobThreshComp);
             _mobThreshold.SetMobStateThreshold(ent.Owner, protoThreshComp.Thresholds.First(thresh => thresh.Value == MobState.Dead).Key, MobState.Dead, mobThreshComp);
         }
     }
