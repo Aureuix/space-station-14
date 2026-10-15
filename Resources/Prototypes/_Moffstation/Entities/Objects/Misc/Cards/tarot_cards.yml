@@ -5,6 +5,8 @@
   description: A small carton containing a set of the Major Arcana cards from the cartomantic tarot deck.
   suffix: Tarot
   components:
+    - type: Item # SpL- dunno why it's gigantic but a double proto specification surely would do the trick
+      size: Small # SpL
     - type: Sprite
       sprite: _Moffstation/Objects/Misc/Cards/card_tarot.rsi
     - type: ContainerFill

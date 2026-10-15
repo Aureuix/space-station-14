@@ -1297,7 +1297,7 @@
 
 - type: entity
   id: DestroyBeam
-  name: destroying beam
+  name: high-energy pulse ray # SpL
   parent: BasicHitscanNoBeam
   categories: [ HideSpawnMenu ]
   components:
@@ -1318,7 +1318,7 @@
 
 - type: entity 
   id: DeleteBeam
-  name: erasing beam
+  name: amplified pulse ray # SpL
   parent: BasicHitscanNoBeam
   categories: [ HideSpawnMenu ]
   components:
@@ -1444,7 +1444,7 @@
       
 - type: entity
   id: EmpPulse
-  name: EMP impulse
+  name: electro-magnetic pulse # SpL
   parent: EnergyTrace
   components:
   - type: HitscanEmpEffect
@@ -1477,7 +1477,7 @@
       
 - type: entity
   id: SniperBolt
-  name: sniper bolt
+  name: high-power energy beam # SpL
   parent: EnergyTrace
   categories: [ HideSpawnMenu ]
   components:

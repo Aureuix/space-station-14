@@ -333,25 +333,29 @@
     heldPrefix: empty
   - type: BatteryAmmoProvider
     proto: DisablerBolt
-    fireCost: 80
+    fireCost: 50 # SpL
   - type: BatteryWeaponFireModes
     fireModes:
     - proto: DisablerBolt
-      fireCost: 125
+      fireCost: 50 # SpL
       magState: disable
       heldPrefix: disable
       pacifismAllowedMode: true # SpL
-    - proto: RedHeavyLaser # Does slightly more damage but costs more energy.
-      fireCost: 222
+    - proto: RedLaserBeam # SpL 
+      fireCost: 100 # SpL
       magState: energy
       heldPrefix: energy
-    - proto: DestroyBeam
-      fireCost: 1000
-      magState: destroy
-      heldPrefix: destroy
+    - proto: SniperBolt # SpL
+      fireCost: 400 # SpL
+      magState: stun # SpL
+      heldPrefix: stun # SpL 
+    - proto: EmpPulse # SpL
+      fireCost: 2400 # SpL
+      magState: destroy # SpL
+      heldPrefix: destroy # SpL
   - type: Battery
-    maxCharge: 2000
-    startingCharge: 2000
+    maxCharge: 2400 # SpL
+    startingCharge: 2400 # SpL
   - type: BatterySelfRecharger
     autoRechargeRate: 100
     autoRechargePauseTime: 20 # SpL
