@@ -17,6 +17,24 @@
         - WhitelistChameleon
 
 - type: entity
+  parent: ClothingHeadBase
+  id: ClothingHeadHatBeretParamedic
+  name: paramedic beret
+  description: A beret worn by first responders.
+  components:
+    - type: Sprite
+      sprite: _SpL/Clothing/Head/Hats/ParamedicBeret.rsi
+    - type: Clothing
+      sprite: _SpL/Clothing/Head/Hats/ParamedicBeret.rsi
+    - type: Tag
+      tags:
+        - PetWearable
+        - CorgiWearable
+        - ClothMade
+        - Recyclable
+        - WhitelistChameleon
+
+- type: entity
   parent: [ ClothingHeadBase, BaseCentcommContraband ]
   id: ClothingHeadHatCentCommWinged
   name: central command winged cap
