@@ -7,3 +7,23 @@
   license: "CC-BY-SA-3.0"
   copyright: "nykaestra, based on sprites by portfiend (GitHub)"
   source: "https://github.com/Aureuix/space-station-14/tree/SpectaLight"
+
+- files: ["sharp_directional_lattice_nw.png"]
+  license: "CC-BY-SA-3.0"
+  copyright: "autumnis"
+  source: "https://github.com/Aureuix/space-station-14/tree/SpectaLight"
+
+- files: ["sharp_directional_lattice_ne.png"]
+  license: "CC-BY-SA-3.0"
+  copyright: "autumnis"
+  source: "https://github.com/Aureuix/space-station-14/tree/SpectaLight"
+
+- files: ["sharp_directional_lattice_se.png"]
+  license: "CC-BY-SA-3.0"
+  copyright: "autumnis"
+  source: "https://github.com/Aureuix/space-station-14/tree/SpectaLight"
+
+- files: ["sharp_directional_lattice_sw.png"]
+  license: "CC-BY-SA-3.0"
+  copyright: "autumnis"
+  source: "https://github.com/Aureuix/space-station-14/tree/SpectaLight"

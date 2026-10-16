@@ -1,0 +1,108 @@
+﻿- type: entity
+  parent: BasePlushie
+  id: PillowComfy
+  name: comfy pillow
+  description: so... comfy...
+  components:
+    - type: Sprite
+      sprite: _SpL/Objects/Fun/Pillows/pillow_comfy.rsi
+      state: icon
+    - type: Item
+      sprite: _SpL/Objects/Fun/Pillows/pillow_comfy.rsi
+
+- type: entity
+  parent: BasePlushie
+  id: PillowCone
+  name: cone pillow
+  description: a tiders favourite.
+  components:
+    - type: Sprite
+      sprite: _SpL/Objects/Fun/Pillows/pillow_cone.rsi
+      state: icon
+    - type: Item
+      sprite: _SpL/Objects/Fun/Pillows/pillow_cone.rsi
+    
+- type: entity
+  parent: BasePlushie
+  id: PillowDonut
+  name: donut pillow
+  description: This hole was made for me!
+  components:
+    - type: Sprite
+      sprite: _SpL/Objects/Fun/Pillows/pillow_donut.rsi
+      state: icon
+    - type: Item
+      sprite: _SpL/Objects/Fun/Pillows/pillow_donut.rsi
+
+- type: entity
+  parent: BasePlushie
+  id: PillowNeck
+  name: neck pillow
+  description: Great for long trips!
+  components:
+    - type: Sprite
+      sprite: _SpL/Objects/Fun/Pillows/pillow_neck.rsi
+      state: icon
+    - type: Item
+      sprite: _SpL/Objects/Fun/Pillows/pillow_neck.rsi
+
+- type: entity
+  parent: BasePlushie
+  id: PillowNT
+  name: nanotrasen pillow
+  description: A nice spot for the BSO to rest their head.
+  components:
+    - type: Sprite
+      sprite: _SpL/Objects/Fun/Pillows/pillow_nt.rsi
+      state: icon
+    - type: Item
+      sprite: _SpL/Objects/Fun/Pillows/pillow_nt.rsi
+
+- type: entity
+  parent: BasePlushie
+  id: PillowPistachio
+  name: pistachio pillow
+  description: this feels like it was made for the alliteration.
+  components:
+    - type: Sprite
+      sprite: _SpL/Objects/Fun/Pillows/pillow_pistachio.rsi
+      state: icon
+    - type: Item
+      sprite: _SpL/Objects/Fun/Pillows/pillow_pistachio.rsi
+
+- type: entity
+  parent: BasePlushie
+  id: PillowRound
+  name: round pillow
+  description: very soft to rest upon.
+  components:
+    - type: Sprite
+      sprite: _SpL/Objects/Fun/Pillows/pillow_round.rsi
+      state: icon
+    - type: Item
+      sprite: _SpL/Objects/Fun/Pillows/pillow_round.rsi
+
+- type: entity
+  parent: BasePlushie
+  id: PillowStar
+  name: star pillow
+  description: You could fly through the skies on this.
+  components: 
+    - type: Sprite
+      sprite: _SpL/Objects/Fun/Pillows/pillow_star.rsi
+      state: icon
+    - type: Item
+      sprite: _SpL/Objects/Fun/Pillows/pillow_star.rsi
+
+- type: entity
+  parent: BasePlushie
+  id: PillowStripes
+  name: striped pillow
+  description: Send it into the slammer...
+  components: 
+    - type: Sprite
+      sprite: _SpL/Objects/Fun/Pillows/pillow_stripes.rsi
+      state: icon
+    - type: Item
+      sprite: _SpL/Objects/Fun/Pillows/pillow_stripes.rsi
+       

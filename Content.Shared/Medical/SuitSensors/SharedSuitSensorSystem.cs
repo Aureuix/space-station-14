@@ -23,6 +23,7 @@ using Robust.Shared.Map;
 using Robust.Shared.Prototypes;
 using Robust.Shared.Random;
 using Robust.Shared.Timing;
+using System.Linq;
 
 namespace Content.Shared.Medical.SuitSensors;
 
@@ -387,8 +388,12 @@ public abstract class SharedSuitSensorSystem : EntitySystem
 
         // Get mob total damage crit threshold
         int? totalDamageThreshold = null;
-        if (_mobThresholdSystem.TryGetThresholdForState(sensor.User.Value, MobState.SoftCritical, out var critThreshold)) // SpL- conversion to softcrit
-            totalDamageThreshold = critThreshold.Value.Int();
+        if (TryComp(sensor.User.Value, out MobThresholdsComponent? mobThreshComp))
+        {
+            // SpL: uses next threshold after alive instead of specific one to accommodate situations where tracked mobs may not have critical states (e.g. Redshirt)
+            if (_mobThresholdSystem.TryGetThresholdForState(sensor.User.Value, mobThreshComp.Thresholds.First(thresh => thresh.Value != MobState.Alive).Value, out var critThreshold)) 
+                totalDamageThreshold = critThreshold.Value.Int();
+        }
 
         // finally, form suit sensor status
         var status = new SuitSensorStatus(GetNetEntity(sensor.User.Value), GetNetEntity(ent.Owner), userName, userJob, userJobIcon, userJobDepartments);
