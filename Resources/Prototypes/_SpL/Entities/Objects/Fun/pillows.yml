@@ -2,7 +2,7 @@
   parent: BasePlushie
   id: PillowComfy
   name: comfy pillow
-  description: so... comfy...
+  description: So... comfy...
   components:
     - type: Sprite
       sprite: _SpL/Objects/Fun/Pillows/pillow_comfy.rsi
@@ -14,7 +14,7 @@
   parent: BasePlushie
   id: PillowCone
   name: cone pillow
-  description: a tiders favourite.
+  description: a tider's favorite.
   components:
     - type: Sprite
       sprite: _SpL/Objects/Fun/Pillows/pillow_cone.rsi
@@ -62,7 +62,7 @@
   parent: BasePlushie
   id: PillowPistachio
   name: pistachio pillow
-  description: this feels like it was made for the alliteration.
+  description: This feels like it was made for the alliteration.
   components:
     - type: Sprite
       sprite: _SpL/Objects/Fun/Pillows/pillow_pistachio.rsi
@@ -74,7 +74,7 @@
   parent: BasePlushie
   id: PillowRound
   name: round pillow
-  description: very soft to rest upon.
+  description: Very soft to rest upon.
   components:
     - type: Sprite
       sprite: _SpL/Objects/Fun/Pillows/pillow_round.rsi

@@ -1,0 +1,12 @@
+﻿- type: storeCategory
+  id: SpLCrew
+  name: Crew
+
+- type: storeCategory
+  id: Pillows
+  name: Pillows
+  
+- type: storeCategory
+  id: UplinkObjective
+  name: store-category-objective
+  priority: 199

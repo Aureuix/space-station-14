@@ -1,0 +1,221 @@
+﻿- type: listing
+  id: VendorPlushieBlueLobster
+  productEntity: PlushieBlueLobster
+  cost:
+    NTCredit: 30
+  categories:
+    - SLPlushies
+  conditions:
+    - !type:ListingLimitedStockCondition
+      stock: 1
+      
+- type: listing
+  id: VendorPlushieArgocyte
+  productEntity: PlushieArgocyte
+  cost:
+    NTCredit: 30
+  categories:
+    - SLPlushies
+  conditions:
+    - !type:ListingLimitedStockCondition
+      stock: 1
+      
+- type: listing
+  id: VendorPillowComfy
+  productEntity: PillowComfy
+  cost:
+    NTCredit: 12
+  categories:
+    - Pillows
+  
+- type: listing
+  id: VendorPillowCone
+  productEntity: PillowCone
+  cost:
+    NTCredit: 16
+  categories:
+    - Pillows
+
+- type: listing
+  id: VendorPillowDonut
+  productEntity: PillowDonut
+  cost:
+    NTCredit: 16
+  categories:
+    - Pillows
+
+- type: listing
+  id: VendorPillowNeck
+  productEntity: PillowNeck
+  cost:
+    NTCredit: 20
+  categories:
+    - Pillows
+
+- type: listing
+  id: Vendor
+  productEntity: PillowNT
+  cost:
+    NTCredit: 24
+  categories:
+    - Pillows
+  
+- type: listing
+  id: VendorPillowPistachio
+  productEntity: PillowPistachio
+  cost:
+    NTCredit: 16
+  categories:
+    - Pillows
+  
+- type: listing
+  id: VendorPillowRound
+  productEntity: PillowRound
+  cost:
+    NTCredit: 12
+  categories:
+    - Pillows
+
+- type: listing
+  id: VendorPillowStar
+  productEntity: PillowStar
+  cost:
+    NTCredit: 12
+  categories:
+    - Pillows
+
+- type: listing
+  id: VendorPillowStripes
+  productEntity: PillowStripes
+  cost:
+    NTCredit: 12
+  categories:
+    - Pillows
+
+- type: listing
+  id: VendorPlushieKosame
+  productEntity: PlushieKosame
+  cost:
+    NTCredit: 17
+  categories:
+    - SpLCrew
+
+- type: listing
+  id: VendorPlushieKanna
+  productEntity: PlushieKanna
+  cost:
+    NTCredit: 20
+  categories:
+    - SpLCrew
+  
+- type: listing
+  id: VendorPlushieVogel
+  productEntity: PlushieVogel
+  cost:
+    NTCredit: 40
+  categories:
+    - SpLCrew
+
+- type: listing
+  id: VendorPlushieEini
+  productEntity: PlushieEini
+  cost:
+    NTCredit: 12
+  categories:
+    - SpLCrew
+
+- type: listing
+  id: VendorPlushieSymmetry
+  productEntity: PlushieSymmetry
+  cost:
+    NTCredit: 40
+  categories:
+    - SpLCrew
+
+- type: listing
+  id: VendorPlushieTumma
+  productEntity: PlushieTumma
+  cost:
+    NTCredit: 19
+  categories:
+    - SpLCrew
+
+- type: listing
+  id: VendorPlushieMaximilian
+  productEntity: PlushieMaximilian
+  cost:
+    NTCredit: 20
+  categories:
+    - SpLCrew
+
+- type: listing
+  id: VendorPlushieAzrael
+  productEntity: PlushieAzrael
+  cost:
+    NTCredit: 20
+  categories:
+    - SpLCrew
+
+- type: listing
+  id: VendorPlushieChesedM
+  productEntity: PlushieChesedM
+  cost:
+    NTCredit: 10
+  categories:
+    - SpLCrew
+  
+- type: listing
+  id: VendorPlushieChesedF
+  productEntity: PlushieChesedF
+  cost:
+    NTCredit: 10
+  categories:
+    - SpLCrew
+
+- type: listing
+  id: VendorPlushieIlas
+  productEntity: PlushieIlas
+  cost:
+    NTCredit: 1
+  categories:
+    - SpLCrew
+
+- type: listing
+  id: VendorPlushieOomu
+  productEntity: PlushieOomu
+  cost:
+    NTCredit: 25
+  categories:
+    - SpLCrew
+
+- type: listing
+  id: VendorPlushieParadigm
+  productEntity: PlushieParadigm
+  cost:
+    NTCredit: 20
+  categories:
+    - SpLCrew
+
+- type: listing
+  id: VendorPlushieDirt
+  productEntity: PlushieDirt
+  cost:
+    NTCredit: 20
+  categories:
+    - SpLCrew
+
+- type: listing
+  id: VendorPlushieFurlow
+  productEntity: PlushieFurlow
+  cost:
+    NTCredit: 20
+  categories:
+    - SpLCrew
+
+- type: listing
+  id: VendorPlushieRei
+  productEntity: PlushieRei
+  cost:
+    NTCredit: 20
+  categories:
+    - SpLCrew
