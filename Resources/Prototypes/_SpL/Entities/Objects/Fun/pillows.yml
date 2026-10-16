@@ -2,7 +2,7 @@
   parent: BasePlushie
   id: PillowComfy
   name: comfy pillow
-  description: placeholder
+  description: so... comfy...
   components:
     - type: Sprite
       sprite: _SpL/Objects/Fun/Pillows/pillow_comfy.rsi
@@ -14,7 +14,7 @@
   parent: BasePlushie
   id: PillowCone
   name: cone pillow
-  description: its a warning...
+  description: a tiders favourite.
   components:
     - type: Sprite
       sprite: _SpL/Objects/Fun/Pillows/pillow_cone.rsi
@@ -26,7 +26,7 @@
   parent: BasePlushie
   id: PillowDonut
   name: donut pillow
-  description: blah blah MORE placeholders
+  description: This hole was made for me!
   components:
     - type: Sprite
       sprite: _SpL/Objects/Fun/Pillows/pillow_donut.rsi
@@ -38,7 +38,7 @@
   parent: BasePlushie
   id: PillowNeck
   name: neck pillow
-  description: a placeholder for resting your neck on
+  description: Great for long trips!
   components:
     - type: Sprite
       sprite: _SpL/Objects/Fun/Pillows/pillow_neck.rsi
@@ -50,7 +50,7 @@
   parent: BasePlushie
   id: PillowNT
   name: nanotrasen pillow
-  description: Its actually made of stone, and a place holder
+  description: A nice spot for the BSO to rest their head.
   components:
     - type: Sprite
       sprite: _SpL/Objects/Fun/Pillows/pillow_nt.rsi
@@ -62,7 +62,7 @@
   parent: BasePlushie
   id: PillowPistachio
   name: pistachio pillow
-  description: this feels like it was made for the alliteration
+  description: this feels like it was made for the alliteration.
   components:
     - type: Sprite
       sprite: _SpL/Objects/Fun/Pillows/pillow_pistachio.rsi
@@ -74,7 +74,7 @@
   parent: BasePlushie
   id: PillowRound
   name: round pillow
-  description: very soft placeholder
+  description: very soft to rest upon.
   components:
     - type: Sprite
       sprite: _SpL/Objects/Fun/Pillows/pillow_round.rsi
@@ -86,7 +86,7 @@
   parent: BasePlushie
   id: PillowStar
   name: star pillow
-  description: Flying through the skies on this bad boy...
+  description: You could fly through the skies on this.
   components: 
     - type: Sprite
       sprite: _SpL/Objects/Fun/Pillows/pillow_star.rsi
