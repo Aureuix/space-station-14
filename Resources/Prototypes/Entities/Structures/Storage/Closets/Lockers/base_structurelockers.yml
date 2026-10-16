@@ -96,11 +96,13 @@
           True: { visible: True }
           False: { visible: False }
   # Starlight-end
+  - type: EntityStorage # SpL
+    airtight: true # SpL
 
 - type: entity
   id: LockerBaseSecure
   parent: LockerBase
-  name: secure closet # Starlight-edit
+  name: locker # SpL
   components:
   - type: Damageable
     damageContainer: StructuralInorganic
