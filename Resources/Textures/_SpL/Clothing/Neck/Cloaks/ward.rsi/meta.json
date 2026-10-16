@@ -17,6 +17,9 @@
     {
       "name": "equipped-NECK-vox",
       "directions": 4
+    },{
+      "name": "equipped-NECK-kitsune",
+      "directions": 4
     },
     {
       "name": "inhand-left",
