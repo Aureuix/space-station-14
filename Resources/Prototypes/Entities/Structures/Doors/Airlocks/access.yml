@@ -945,6 +945,17 @@
   components:
   - type: Sprite
     sprite: _Starlight/Structures/Doors/Airlocks/Standard/services_maints.rsi
+    
+- type: entity
+  parent: AirlockServiceLocked
+  id: AirlockMaintLawyerLocked
+  suffix: Lawyer, Locked
+  components:
+    - type: Sprite
+      sprite: _Starlight/Structures/Doors/Airlocks/Standard/services_maints.rsi
+    - type: ContainerFill
+      containers:
+        board: [ DoorElectronicsLawyer ]
 
 - type: entity
   parent: AirlockServiceLocked

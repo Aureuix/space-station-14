@@ -103,7 +103,9 @@
     categories:
     - SLPlushies
     - SLSpecies
-    - SLCrew
+    # - SLCrew # - SpL- sorry not sorry
+    - SpLCrew # SpL
+    - Pillows # SpL
 
 - type: entity
   parent: SLVendingMachine

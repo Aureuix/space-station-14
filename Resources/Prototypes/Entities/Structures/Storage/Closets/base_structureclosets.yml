@@ -2,7 +2,7 @@
   id: ClosetBase
   parent: [ BaseStructureDynamic, BasePaperLabelableVisualized ]
   name: closet
-  description: A standard-issue NanoTrasen storage unit.
+  description: A universal storage unit. # SpL- removed nanotrasen just for prototyping issue avoidance
   abstract: true
   components:
   - type: Animateable
@@ -45,6 +45,7 @@
         layer:
         - MachineLayer
   - type: EntityStorage
+    airtight: false # SpL
   - type: ContainerContainer
     containers:
       entity_storage: !type:Container
@@ -257,6 +258,8 @@
           True: { visible: True }
           False: { visible: False }
   # Starlight End
+  - type: EntityStorage # SpL
+    airtight: true # SpL
 
 #Base suit storage unit
 #I am terribly sorry for duplicating the closet almost-wholesale, but the game malds at me if I don't so here we are.

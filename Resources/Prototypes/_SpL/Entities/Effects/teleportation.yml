@@ -1,0 +1,38 @@
+﻿- type: entity
+  parent: EffectFlashRedspace
+  id: EffectFlashRedspacePortal
+  name: 
+  categories: [ HideSpawnMenu ]
+  components:
+    - type: PointLight
+      radius: 9
+      energy: 10
+      color: "#960202"
+    - type: TimedDespawn
+      lifetime: 1.75
+    - type: EmitSoundOnSpawn
+      sound:
+        path: /Audio/_Starlight/Effects/redspace_thunderclap.ogg
+    - type: Transform
+      anchored: True
+    - type: InteractionOutline
+    - type: Clickable
+    - type: Physics
+      bodyType: Static
+    - type: Sprite
+      sprite: /Textures/Effects/portal.rsi
+      layers:
+        - state: portal-gray
+          map: [ "base" ]
+          color: "#FF4444"
+    - type: Fixtures
+      fixtures:
+        portalFixture:
+          shape:
+            !type:PhysShapeAabb
+            bounds: "-0.25,-0.48,0.25,0.48"
+          mask:
+            - FullTileMask
+          layer:
+            - WallLayer
+          hard: false

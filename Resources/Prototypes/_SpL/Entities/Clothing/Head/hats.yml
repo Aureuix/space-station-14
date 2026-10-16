@@ -5,9 +5,45 @@
   description: A sleek black felt beret with a sinister red emblem. Often seen worn by Syndieland helpdesk staff before its closure.
   components:
     - type: Sprite
-      sprite: _SpL/Clothing/Head/Hats/SyndieBeret.rsi
+      sprite: _SpL/Clothing/Head/Hats/beret_syndie.rsi
     - type: Clothing
-      sprite: _SpL/Clothing/Head/Hats/SyndieBeret.rsi
+      sprite: _SpL/Clothing/Head/Hats/beret_syndie.rsi
+    - type: Tag
+      tags:
+        - PetWearable
+        - CorgiWearable
+        - ClothMade
+        - Recyclable
+        - WhitelistChameleon
+
+- type: entity
+  parent: ClothingHeadBase
+  id: ClothingHeadHatBeretParamedic
+  name: paramedic beret
+  description: A beret worn by first responders.
+  components:
+    - type: Sprite
+      sprite: _SpL/Clothing/Head/Hats/beret_paramedic.rsi
+    - type: Clothing
+      sprite: _SpL/Clothing/Head/Hats/beret_paramedic.rsi
+    - type: Tag
+      tags:
+        - PetWearable
+        - CorgiWearable
+        - ClothMade
+        - Recyclable
+        - WhitelistChameleon
+
+- type: entity
+  parent: [ ClothingHeadBase, BaseBlueShieldContraband ]
+  id: ClothingHeadHatBSO
+  name: blueshield cap
+  description: A military cap in defender blue. Any claims of making the wearer look like a postal worker are entirely unfounded.
+  components:
+    - type: Sprite
+      sprite: _SpL/Clothing/Head/Hats/cap_bso.rsi
+    - type: Clothing
+      sprite: _SpL/Clothing/Head/Hats/cap_bso.rsi
     - type: Tag
       tags:
         - PetWearable
@@ -23,6 +59,6 @@
   description: An officer's cap with brim-like outcroppings. Likely belonging to someone with an unconventional fashion sense and a rank allowing for such a modification.
   components:
     - type: Sprite
-      sprite: _SpL/Clothing/Head/Hats/CCWingedCap.rsi
+      sprite: _SpL/Clothing/Head/Hats/wingedcap_centcomm.rsi
     - type: Clothing
-      sprite: _SpL/Clothing/Head/Hats/CCWingedCap.rsi
+      sprite: _SpL/Clothing/Head/Hats/wingedcap_centcomm.rsi

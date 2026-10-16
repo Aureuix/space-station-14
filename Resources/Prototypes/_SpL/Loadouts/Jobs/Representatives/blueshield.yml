@@ -1,0 +1,9 @@
+﻿- type: loadout
+  id: BlueShieldWindbreaker
+  equipment:
+    outerClothing: ClothingWindbreakerBlueShield
+    
+- type: loadout
+  id: BlueshieldCap
+  equipment:
+    head: ClothingHeadHatBSO

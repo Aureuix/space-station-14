@@ -87,11 +87,6 @@
   id: BlueShieldCoat
   equipment:
     outerClothing: ClothingOuterCoatBlueShield
-
-- type: loadout # SpL Start
-  id: BlueShieldWindbreaker
-  equipment:
-    outerClothing: ClothingWindbreakerBlueShield # SpL End
     
 - type: loadout
   id: BlueShieldVest
