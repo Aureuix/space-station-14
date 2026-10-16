@@ -103,3 +103,347 @@
 #      spriteNoMindState: borg_e_r
 #      spriteToggleLightState: borg_l
 #      inventoryTemplateId: Tallborg
+
+# NTNC Tallborgs
+- type: entity
+  parent: BaseBorgChassisNotIonStormable
+  id: NTNCtallborgSF
+  name: NTNC cyborg chassis
+  description: An advanced cyborg chassis used by the NanoTrasen Navy Corps on ship operations.
+  components:
+    - type: TextToSpeech
+    - type: Sprite
+      sprite: _Starlight/Mobs/Silicon/Chassis/tallborgs/tallborgs-peace/sfmeka_peace.rsi
+      layers:
+        - state: borg
+        - state: borg_e
+          map: [ "enum.BorgVisualLayers.Light" ]
+          shader: unshaded
+          visible: false
+        - state: borg_l
+          shader: unshaded
+          map: [ "light" ]
+          visible: false
+    - type: NpcFactionMember
+      factions:
+        - NanoTrasenSilicon
+    - type: Access
+      enabled: false
+      groups:
+        - AllAccess
+      tags:
+        - CentralCommand
+    - type: AccessReader
+      access: [["CentralCommand"]]
+    - type: ShowJobIcons
+    - type: InteractionPopup
+      interactSuccessSound:
+        path: /Audio/Ambience/Objects/periodic_beep.ogg
+    - type: Speech
+      speechVerb: Robotic
+      speechSounds: Xenoborg
+      allowedEmotes:
+        - Laugh
+    - type: Vocal
+      sounds:
+        Unsexed: UnisexSiliconXenoborg
+    - type: FlashImmunity
+    - type: IntrinsicRadioTransmitter
+      channels:
+        - Binary
+        - CentCom
+        - Common
+        - Command
+        - Engineering
+        - Medical
+        - Science
+        - Security
+        - Service
+        - Supply
+        - Law
+    - type: ActiveRadio
+      channels:
+        - Binary
+        - CentCom
+        - Common
+        - Command
+        - Engineering
+        - Medical
+        - Science
+        - Security
+        - Service
+        - Supply
+        - Law
+    - type: SiliconLawProvider
+      laws: NTNCLawset
+    - type: ShowHealthBars
+      damageContainers:
+        - Biological
+        - Inorganic
+        - Silicon
+    - type: ShowHealthIcons
+    - type: ShowMindShieldIcons
+    - type: ShowCriminalRecordIcons     
+    - type: BorgChassis
+      maxModules: 5
+      moduleWhitelist:
+        tags:
+          - BorgModuleGeneric
+          - BorgModuleCentcomm
+          - BorgModuleEngineering
+      hasMindState: borg_e
+      noMindState: borg_e_r
+    - type: MobThresholds 
+      thresholds:
+        0: Alive
+        150: Critical
+        300: Dead
+      stateAlertDict:
+        Alive: BorgHealth
+        Critical: BorgCrit
+        Dead: BorgDead
+      showOverlays: false
+      allowRevives: true
+    - type: Destructible
+      thresholds:
+        - trigger:
+            !type:DamageTrigger
+            damage: 125
+          behaviors:
+            - !type:PlaySoundBehavior
+              sound:
+                path: /Audio/Machines/warning_buzzer.ogg
+                params:
+                  volume: 5
+        - trigger:
+            !type:DamageTrigger
+            damage: 450
+          behaviors:
+            - !type:PlaySoundBehavior
+              sound:
+                collection: MetalBreak
+            - !type:EmptyContainersBehaviour
+              containers:
+                - borg_brain
+                - borg_module
+                - cell_slot
+            - !type:DoActsBehavior
+              acts: [ "Destruction" ]
+    - type: ContainerFill
+      containers:
+        borg_brain:
+          - PositronicBrain
+        borg_module: 
+          - CentcommModuleSpaceMovement
+          - CentcommBulwarkModule
+          - CentcommAccessBreakerModule
+          - CentcommLaserModule
+          - BorgModuleAdvancedTool
+        cell_slot:
+          - PowerCellMicroreactor
+        
+- type: entity
+  parent: NTNCtallborgSF
+  id: NTNCtallborgFM
+  name: NTNC cyborg chassis
+  description: An advanced cyborg chassis used by the NanoTrasen Navy Corps on ship operations.
+  components:
+    - type: Sprite
+      sprite: _Starlight/Mobs/Silicon/Chassis/tallborgs/tallborgs-peace/fmeka_peace.rsi
+      layers:
+        - state: borg
+        - state: borg_e
+          map: [ "enum.BorgVisualLayers.Light" ]
+          shader: unshaded
+          visible: false
+        - state: borg_l
+          shader: unshaded
+          map: [ "light" ]
+          visible: false
+          
+- type: entity
+  parent: NTNCtallborgSF
+  id: NTNCtallborgK4T
+  name: NTNC cyborg chassis
+  description: An advanced cyborg chassis used by the NanoTrasen Navy Corps on ship operations.
+  components:
+    - type: Sprite
+      sprite: _Starlight/Mobs/Silicon/Chassis/tallborgs/tallborgs-peace/k4t_peace.rsi
+      layers:
+        - state: borg
+        - state: borg_e
+          map: [ "enum.BorgVisualLayers.Light" ]
+          shader: unshaded
+          visible: false
+        - state: borg_l
+          shader: unshaded
+          map: [ "light" ]
+          visible: false
+          
+- type: entity
+  parent: NTNCtallborgSF
+  id: NTNCtallborgM
+  name: NTNC cyborg chassis
+  description: An advanced cyborg chassis used by the NanoTrasen Navy Corps on ship operations.
+  components:
+    - type: Sprite
+      sprite: _Starlight/Mobs/Silicon/Chassis/tallborgs/tallborgs-peace/meka_peace.rsi
+      layers:
+        - state: borg
+        - state: borg_e
+          map: [ "enum.BorgVisualLayers.Light" ]
+          shader: unshaded
+          visible: false
+        - state: borg_l
+          shader: unshaded
+          map: [ "light" ]
+          visible: false
+          
+- type: entity
+  parent: NTNCtallborgSF
+  id: NTNCtallborgMM
+  name: NTNC cyborg chassis
+  description: An advanced cyborg chassis used by the NanoTrasen Navy Corps on ship operations.
+  components:
+    - type: Sprite
+      sprite: _Starlight/Mobs/Silicon/Chassis/tallborgs/tallborgs-peace/mmeka_peace.rsi
+      layers:
+        - state: borg
+        - state: borg_e
+          map: [ "enum.BorgVisualLayers.Light" ]
+          shader: unshaded
+          visible: false
+        - state: borg_l
+          shader: unshaded
+          map: [ "light" ]
+          visible: false
+          
+# Syndicate Tallborgs
+# Each sprite type matched with a subtype for convenience's sake
+- type: entity
+  parent: BorgChassisSyndicateStealth
+  id: BorgChassisSyndicateStealthTall
+  name: syndicate stealth cyborg
+  description: A cyborg chassis built by the Syndicate for stealth operations. Its charming chassis should hopefully result in smoother infiltration of the crew.
+  components:
+      - type: Sprite
+        sprite: _Starlight/Mobs/Silicon/Chassis/tallborgs/tallborgs-syndie/mmeka_syndie.rsi
+        layers:
+          - state: borg
+          - state: borg_e
+            map: [ "enum.BorgVisualLayers.Light" ]
+            shader: unshaded
+            visible: false
+          - state: borg_l
+            shader: unshaded
+            map: [ "light" ]
+            visible: false
+      - type: ContainerFill
+        containers:
+          borg_brain:
+            - PositronicBrain
+          borg_module:
+            - BorgModuleTool
+            - BorgModuleSyndicateChameleonProjector
+            - BorgModuleSyndicateStealth
+            - BorgModuleOperative
+            - BorgModuleSyndicateNukeDisk
+          cell_slot:
+            - PowerCellHyper
+            
+- type: entity
+  parent: BorgChassisSyndicateAssault
+  id: BorgChassisSyndicateAssaultTall
+  name: syndicate assault cyborg
+  description: A lean, mean killing machine with access to a variety of deadly modules. This variant is cuter, for making the enemy let their guard down, obviously.
+  components:
+    - type: Sprite
+      sprite: _Starlight/Mobs/Silicon/Chassis/tallborgs/tallborgs-syndie/fmeka_syndie.rsi
+      layers:
+        - state: borg
+        - state: borg_e
+          map: [ "enum.BorgVisualLayers.Light" ]
+          shader: unshaded
+          visible: false
+        - state: borg_l
+          shader: unshaded
+          map: [ "light" ]
+          visible: false
+    - type: ContainerFill
+      containers:
+        borg_brain:
+          - PositronicBrain
+        borg_module:
+          - BorgModuleTool
+          - BorgModuleC20r
+          - BorgModuleDoubleEsword
+          - BorgModuleOperative
+          - BorgModuleSyndicateNukeDisk
+        cell_slot:
+          - PowerCellHyper
+          
+- type: entity
+  parent: BorgChassisSyndicateMedical
+  id: BorgChassisSyndicateMedicalTall
+  name: syndicate medical cyborg
+  description: A combat medical cyborg. Has limited offensive potential, but makes more than up for it with its support capabilities. This chassis variant helps comfort patients, and strike fear into the hearts of the enemy.
+  components:
+    - type: Sprite
+      sprite: _Starlight/Mobs/Silicon/Chassis/tallborgs/tallborgs-syndie/k4t_syndie.rsi
+      layers:
+        - state: borg
+        - state: borg_e
+          map: [ "enum.BorgVisualLayers.Light" ]
+          shader: unshaded
+          visible: false
+        - state: borg_l
+          shader: unshaded
+          map: [ "light" ]
+          visible: false
+    - type: ContainerFill
+      containers:
+        borg_brain:
+          - PositronicBrain
+        borg_module:
+          - BorgModuleTool
+          - BorgModuleSyndicateAdvancedChemical
+          - BorgModuleTopicals
+          - BorgModuleSyndicateRescue
+          - BorgModuleSyndicateWeapon
+          - BorgModuleSyndicateNukeDisk
+        cell_slot:
+          - PowerCellHyper
+
+- type: entity
+  parent: BorgChassisSyndicateSaboteur
+  id: BorgChassisSyndicateSaboteurTall
+  name: syndicate saboteur cyborg
+  description: A streamlined engineering cyborg, equipped with covert modules. Its chameleon projector lets it disguise itself as a NanoTrasen cyborg. Though, with a chassis like this, who would want to?
+  components:
+    - type: Sprite
+      sprite: _Starlight/Mobs/Silicon/Chassis/tallborgs/tallborgs-syndie/meka_syndie.rsi
+      layers:
+        - state: borg
+        - state: borg_e
+          map: [ "enum.BorgVisualLayers.Light" ]
+          shader: unshaded
+          visible: false
+        - state: borg_l
+          shader: unshaded
+          map: [ "light" ]
+          visible: false
+    - type: ContainerFill
+      containers: 
+        borg_brain: 
+          - PositronicBrain
+        borg_module:
+          - BorgModuleSyndicateAdvancedTool
+          - BorgModuleConstruction
+          - BorgModuleRCD
+          - BorgModuleOperative
+          - BorgModuleSyndicateWeapon
+          - BorgModuleSyndicateNukeDisk
+        cell_slot:
+          - PowerCellHyper
+        
+      
