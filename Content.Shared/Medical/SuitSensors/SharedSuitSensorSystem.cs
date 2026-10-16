@@ -390,7 +390,8 @@ public abstract class SharedSuitSensorSystem : EntitySystem
         int? totalDamageThreshold = null;
         if (TryComp(sensor.User.Value, out MobThresholdsComponent? mobThreshComp))
         {
-            if (_mobThresholdSystem.TryGetThresholdForState(sensor.User.Value, mobThreshComp.Thresholds.First(thresh => thresh.Value != MobState.Alive).Value, out var critThreshold)) // SpL- conversion to softcrit
+            // SpL: uses next threshold after alive instead of specific one to accommodate situations where tracked mobs may not have critical states (e.g. Redshirt)
+            if (_mobThresholdSystem.TryGetThresholdForState(sensor.User.Value, mobThreshComp.Thresholds.First(thresh => thresh.Value != MobState.Alive).Value, out var critThreshold)) 
                 totalDamageThreshold = critThreshold.Value.Int();
         }
 
