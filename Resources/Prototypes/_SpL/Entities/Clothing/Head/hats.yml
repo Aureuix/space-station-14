@@ -36,7 +36,7 @@
 
 - type: entity
   parent: [ ClothingHeadBase, BaseBlueShieldContraband ]
-  id: ClothingHeadHatBSOCap
+  id: ClothingHeadHatBSO
   name: blueshield cap
   description: A military cap in defender blue. Any claims of making the wearer look like a postal worker are entirely unfounded.
   components:
