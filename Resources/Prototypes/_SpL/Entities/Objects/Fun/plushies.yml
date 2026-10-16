@@ -587,3 +587,16 @@
         understands:
           - GalacticCommon
           - Machine
+
+- type: entity
+  parent: BasePlushie
+  id: PlushieArgocyte
+  name: leviathing plushie
+  description: The biggest bug in a swarm of rapidly-multiplying structure-eating parasites. Surprisingly, they're one of the lesser scourges on this galaxy. 
+  components:
+  - type: Sprite
+    sprite: _SpL/Objects/Fun/Plushies/leviathing_plushie.rsi
+    state: icon
+  - type: Item
+    sprite: _SpL/Objects/Fun/Plushies/leviathing_plushie.rsi
+  - type: MultiHandedItem

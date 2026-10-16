@@ -1,0 +1,23 @@
+﻿- type: tile
+  id: SharpLatticeDiagonalNE
+  parent: Lattice
+  sprite: /Textures/_SpL/Tiles/sharp_directional_lattice_ne.png 
+  vertices: ["1, 0", "1, 1", "0, 1"]
+
+- type: tile
+  id: SharpLatticeDiagonalSE
+  parent: Lattice
+  sprite: /Textures/_SpL/Tiles/sharp_directional_lattice_se.png 
+  vertices: ["0, 0", "1, 0", "1, 1"]
+
+- type: tile
+  id: SharpLatticeDiagonalSW
+  parent: Lattice
+  sprite: /Textures/_SpL/Tiles/sharp_directional_lattice_sw.png 
+  vertices: ["0, 0", "1, 0", "0, 1"]
+
+- type: tile
+  id: SharpLatticeDiagonalNW
+  parent: Lattice
+  sprite: /Textures/_SpL/Tiles/sharp_directional_lattice_nw.png 
+  vertices: ["0, 0", "1, 1", "0, 1"]
