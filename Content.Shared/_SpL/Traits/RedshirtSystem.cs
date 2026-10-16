@@ -1,10 +1,7 @@
-using Content.Shared._SpL.Medical.Limbs;
-using Content.Shared._SpL.Traits;
-using Content.Shared.Damage.Components;
+using System.Linq;
 using Content.Shared.Mobs;
 using Content.Shared.Mobs.Components;
 using Content.Shared.Mobs.Systems;
-using Robust.Shared.GameStates;
 
 namespace Content.Shared._SpL.Traits;
 
@@ -12,38 +9,54 @@ public sealed partial class RedShirtSystem : EntitySystem
 {
     [Dependency] private readonly MobThresholdSystem _mobThreshold = default!;
 
-    public override void Initialize(){
-        SubscribeLocalEvent<RedshirtComponent, ComponentStartup>(SetMobDeathThreshold, after: new[] {typeof(BrittleBonesSystem)});
-        SubscribeLocalEvent<RedshirtComponent, ComponentShutdown>(ResetMobstateThresholds, after: new[] {typeof(BrittleBonesSystem)});
+    public override void Initialize()
+    {
+        SubscribeLocalEvent<RedshirtComponent, ComponentStartup>(SetMobDeathThreshold, after: new[] { typeof(BrittleBonesSystem) });
+        SubscribeLocalEvent<RedshirtComponent, ComponentShutdown>(ResetMobstateThresholds, before: new[] { typeof(BrittleBonesSystem) });
     }
 
-    private void SetMobDeathThreshold(Entity<RedshirtComponent> ent, ref ComponentStartup args){
-        if (!TryComp(ent.Owner, out MobStateComponent? mobStateComp) ||
-            !TryComp(ent.Owner, out MobThresholdsComponent? mobThreshComp))
+    private void SetMobDeathThreshold(Entity<RedshirtComponent> ent, ref ComponentStartup args)
+    {
+        if (!TryComp(ent.Owner, out MobThresholdsComponent? mobThreshComp) ||
+            !TryPrototype(ent, out var proto) ||
+            !proto.TryGetComponent<MobThresholdsComponent>(out var protoThreshComp))
             return;
-        
-        // halves the death threshold
-        var deathThreshold = _mobThreshold.GetThresholdForState(ent.Owner, MobState.Dead, mobThreshComp); 
-        _mobThreshold.SetMobStateThreshold(ent.Owner, deathThreshold / 2, MobState.Dead, mobThreshComp);
 
-        // if Brittle Bones exists, don't // nyka- removed this because it was playing havoc with hp display
-    //    if (!HasComp<BrittleBonesComponent>(ent.Owner))
-    //        _mobThreshold.SetMobStateThreshold(ent.Owner, deathThreshold - 1, MobState.Critical, mobThreshComp);
 
+        // See BrittleBonesSystem's comments tbh
+        if (HasComp<BrittleBonesComponent>(ent.Owner))
+        {
+            _mobThreshold.SetMobStateThreshold(ent.Owner, protoThreshComp.Thresholds.First(thresh => thresh.Value == MobState.SoftCritical).Key * 0.5, MobState.SoftCritical, mobThreshComp);
+            _mobThreshold.SetMobStateThreshold(ent.Owner, protoThreshComp.Thresholds.First(thresh => thresh.Value == MobState.SoftCritical).Key * 0.5, MobState.Critical, mobThreshComp);
+            _mobThreshold.SetMobStateThreshold(ent.Owner, protoThreshComp.Thresholds.First(thresh => thresh.Value == MobState.SoftCritical).Key * 0.5, MobState.Dead, mobThreshComp);
+        }
+        else
+        {
+            _mobThreshold.SetMobStateThreshold(ent.Owner, protoThreshComp.Thresholds.First(thresh => thresh.Value == MobState.SoftCritical).Key, MobState.SoftCritical, mobThreshComp);
+            _mobThreshold.SetMobStateThreshold(ent.Owner, protoThreshComp.Thresholds.First(thresh => thresh.Value == MobState.SoftCritical).Key, MobState.Critical, mobThreshComp);
+            _mobThreshold.SetMobStateThreshold(ent.Owner, protoThreshComp.Thresholds.First(thresh => thresh.Value == MobState.SoftCritical).Key, MobState.Dead, mobThreshComp);
+
+        }
     }
 
-    private void ResetMobstateThresholds(Entity<RedshirtComponent> ent, ref ComponentShutdown args){
-        if (!TryComp(ent.Owner, out MobStateComponent? mobStateComp) ||
-            !TryComp(ent.Owner, out MobThresholdsComponent? mobThreshComp))
+    private void ResetMobstateThresholds(Entity<RedshirtComponent> ent, ref ComponentShutdown args)
+    {
+        if (!TryComp(ent.Owner, out MobThresholdsComponent? mobThreshComp) ||
+            !TryPrototype(ent, out var proto) ||
+            !proto.TryGetComponent<MobThresholdsComponent>(out var protoThreshComp))
             return;
-        
-        // doubles the death threshold again.
-        var deathThreshold = _mobThreshold.GetThresholdForState(ent.Owner, MobState.Dead, mobThreshComp); 
-        _mobThreshold.SetMobStateThreshold(ent.Owner, deathThreshold * 2, MobState.Dead, mobThreshComp);
 
-        // crit threshold is like universally half of death and if your species doesn't do that,,, why?
-        if (!HasComp<BrittleBonesComponent>(ent.Owner)) 
-            _mobThreshold.SetMobStateThreshold(ent.Owner, deathThreshold, MobState.Critical, mobThreshComp);
-            _mobThreshold.SetMobStateThreshold(ent.Owner, deathThreshold, MobState.SoftCritical, mobThreshComp);
+        if (HasComp<BrittleBonesComponent>(ent.Owner))
+        {
+            _mobThreshold.SetMobStateThreshold(ent.Owner, protoThreshComp.Thresholds.First(thresh => thresh.Value == MobState.SoftCritical).Key * 0.5, MobState.SoftCritical, mobThreshComp);
+            _mobThreshold.SetMobStateThreshold(ent.Owner, protoThreshComp.Thresholds.First(thresh => thresh.Value == MobState.Critical).Key * 0.75, MobState.Critical, mobThreshComp);
+            _mobThreshold.SetMobStateThreshold(ent.Owner, protoThreshComp.Thresholds.First(thresh => thresh.Value == MobState.Dead).Key, MobState.Dead, mobThreshComp);
+        }
+        else
+        {
+            _mobThreshold.SetMobStateThreshold(ent.Owner, protoThreshComp.Thresholds.First(thresh => thresh.Value == MobState.SoftCritical).Key, MobState.SoftCritical, mobThreshComp);
+            _mobThreshold.SetMobStateThreshold(ent.Owner, protoThreshComp.Thresholds.First(thresh => thresh.Value == MobState.Critical).Key, MobState.Critical, mobThreshComp);
+            _mobThreshold.SetMobStateThreshold(ent.Owner, protoThreshComp.Thresholds.First(thresh => thresh.Value == MobState.Dead).Key, MobState.Dead, mobThreshComp);
+        }
     }
 }
