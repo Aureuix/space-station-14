@@ -17,7 +17,7 @@
 - type: startingGear
   id: CentCommOpGear
   equipment:
-    pocket2: BoxFolderCentComClipboardEmpty
+    pocket2: BoxFolderCentComClipboardThreePapers
     id: CentcomPDA
     back: ClothingBackpackSatchelCentcomm
     misc: PinpointerNuclear

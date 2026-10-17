@@ -2013,6 +2013,7 @@
   minLimit: 0
   loadouts:
   - ParamedicHead
+  - BeretParamedic # SpL
 
 - type: loadoutGroup
   id: ParamedicJumpsuit

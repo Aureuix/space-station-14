@@ -430,7 +430,7 @@
   - type: Sprite
     layers:
     - map: [ "enum.PowerCellVisualLayers.Base" ]
-      state: hyper
+      state: ultra # SpL
     - map: [ "enum.PowerCellVisualLayers.Unshaded" ]
       state: o2
       shader: unshaded

@@ -6,6 +6,14 @@
   components:
   - type: Appearance
   - type: DigitalLock
+    accessGrantedSound: !type:SoundPathSpecifier # SpL start- SHUT UP
+      params:
+        volume: -8
+      path: /Audio/Machines/Nuke/confirm_beep.ogg
+    accessDeniedSound: !type:SoundPathSpecifier
+      params:
+        volume: -6
+      path: /Audio/Machines/Nuke/angry_beep.ogg # SpL end- SHUT UP
   - type: Lock
     unlockOnClick: false
     useAccess: false

@@ -1,0 +1,139 @@
+﻿- type: htnCompound
+  id: FollowCloseCompound
+  branches:
+    - tasks:
+        - !type:HTNPrimitiveTask
+          preconditions:
+            - !type:CoordinatesNotInRangePrecondition
+              targetKey: FollowTarget
+              rangeKey: MeleeRange
+          operator: !type:MoveToOperator
+            pathfindInPlanning: true
+            targetKey: FollowTarget
+            rangeKey: MeleeRange
+            removeKeyOnFinish: false
+    - tasks:
+        - !type:HTNPrimitiveTask
+          preconditions:
+            - !type:KeyExistsPrecondition
+              key: IdleTime
+            - !type:CoordinatesInRangePrecondition
+              targetKey: FollowTarget
+              rangeKey: MeleeRange
+          operator: !type:WaitOperator
+            key: IdleTime
+    - tasks:
+        - !type:HTNPrimitiveTask
+          operator: !type:PickAccessibleOperator
+            rangeKey: MeleeRange
+            targetCoordinates: FollowIdleTarget
+        - !type:HTNPrimitiveTask
+          operator: !type:MoveToOperator
+            targetKey: FollowIdleTarget
+        - !type:HTNPrimitiveTask
+          operator: !type:RandomOperator
+            targetKey: IdleTime
+            minKey: MinimumIdleTime
+            maxKey: MaximumIdleTime
+        - !type:HTNPrimitiveTask
+          preconditions:
+            - !type:KeyExistsPrecondition
+              key: IdleTime
+            - !type:CoordinatesInRangePrecondition
+              targetKey: FollowTarget
+              rangeKey: MeleeRange
+          operator: !type:WaitOperator
+            key: IdleTime
+            
+- type: htnCompound
+  id: FollowMedCompound
+  branches:
+    # Head to follow target
+    - tasks:
+        - !type:HTNPrimitiveTask
+          preconditions:
+            - !type:CoordinatesNotInRangePrecondition
+              targetKey: FollowTarget
+              rangeKey: FollowRange
+          operator: !type:MoveToOperator
+            pathfindInPlanning: true
+            targetKey: FollowTarget
+            rangeKey: FollowCloseRange
+            removeKeyOnFinish: false
+    - tasks:
+        - !type:HTNPrimitiveTask
+          preconditions:
+            - !type:KeyExistsPrecondition
+              key: IdleTime
+            - !type:CoordinatesInRangePrecondition
+              targetKey: FollowTarget
+              rangeKey: FollowRange
+          operator: !type:WaitOperator
+            key: IdleTime
+    - tasks:
+        - !type:HTNPrimitiveTask
+          operator: !type:PickAccessibleOperator
+            rangeKey: FollowCloseRange
+            targetCoordinates: FollowIdleTarget
+        - !type:HTNPrimitiveTask
+          operator: !type:MoveToOperator
+            targetKey: FollowIdleTarget
+        - !type:HTNPrimitiveTask
+          operator: !type:RandomOperator
+            targetKey: IdleTime
+            minKey: MinimumIdleTime
+            maxKey: MaximumIdleTime
+        - !type:HTNPrimitiveTask
+          preconditions:
+            - !type:KeyExistsPrecondition
+              key: IdleTime
+            - !type:CoordinatesInRangePrecondition
+              targetKey: FollowTarget
+              rangeKey: FollowRange
+          operator: !type:WaitOperator
+            key: IdleTime
+
+- type: htnCompound
+  id: LongRangeShooterAllyCompound
+  branches:
+    - tasks:
+        - !type:HTNPrimitiveTask
+          operator: !type:UtilityOperator
+            proto: NearbyGunTargets
+        - !type:HTNPrimitiveTask
+          preconditions:
+            - !type:KeyExistsPrecondition
+              key: Target
+            - !type:TargetInRangePrecondition
+              targetKey: Target
+              rangeKey: VisionRadius
+            - !type:TargetInLOSPrecondition
+              targetKey: Target
+              rangeKey: VisionRadius
+          operator: !type:GunOperator
+            targetKey: Target
+            requireLOS: true
+          services:
+            - !type:UtilityService
+              id: RangedService
+              proto: NearbyGunTargets
+              key: Target
+    - tasks:
+        - !type:HTNCompoundTask
+          task: FollowMedCompound
+    - tasks:
+        - !type:HTNCompoundTask
+          task: IdleCompound
+          
+- type: htnCompound
+  id: MedRangeShooterAllyCompound
+  branches:
+    - tasks:
+        - !type:HTNCompoundTask
+          task: GunCombatCompound
+    - tasks:
+        - !type:HTNCompoundTask
+          task: FollowCloseCompound
+    - tasks:
+        - !type:HTNCompoundTask
+          task: IdleCompound
