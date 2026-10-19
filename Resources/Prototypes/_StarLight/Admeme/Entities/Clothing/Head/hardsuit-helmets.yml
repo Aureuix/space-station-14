@@ -1,6 +1,7 @@
 - type: entity
   parent: [ BaseNanoTrasenContraband, ClothingHeadLightParamsProfessional, ClothingHeadHelmetHardsuitSyndie ]
   id: ClothingHeadHelmetHardsuitNTNCConsortium
+  categories: [ HideSpawnMenu ] # SpL
   name: NanoTrasen Naval Corps marine hardsuit helmet
   description: A protective hardsuit helmet worn by NanoTrasen Navy Marines.
   components:
@@ -25,6 +26,7 @@
 - type: entity
   parent: [ BaseNanoTrasenContraband, ClothingHeadLightParamsAdvanced, ClothingHeadHelmetHardsuitSyndie ]
   id: ClothingHeadHelmetHardsuitNTNCConsortiumMedic
+  categories: [ HideSpawnMenu ] # SpL
   name: NanoTrasen Naval Corps marine medic hardsuit helmet
   description: A protective hardsuit helmet worn by NanoTrasen Navy Marine medical personnel.
   components:

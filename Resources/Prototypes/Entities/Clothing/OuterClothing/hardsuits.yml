@@ -1145,7 +1145,7 @@
 - type: entity
   parent: [ BaseCentcommContraband, ClothingOuterHardsuitSyndie ] #sl Change
   id: ClothingOuterHardsuitERTSecurity
-  name: SVS-25M ERT security tacsuit # SpL
+  name: SVS-25S ERT security tacsuit # SpL
   description: A protective hardsuit worn by the security officers of an Emergency Response Team. # SpL
   components:
   - type: Sprite
