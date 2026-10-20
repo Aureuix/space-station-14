@@ -31,6 +31,12 @@ public sealed partial class ItemToggleComponent : Component
     /// </summary>
     [DataField]
     public bool OnUse = true;
+    
+    /// <summary> SpL change
+    /// If this is set to false then the item won't display in the context menu.
+    /// </summary>
+    [DataField]
+    public bool AddVerb = false; // SpL
 
     /// <summary>
     ///     The localized text to display in the verb to activate.

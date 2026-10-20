@@ -19,9 +19,43 @@ public sealed partial class EnergyDomeGeneratorComponent : Component
     [DataField]
     public float DamageEnergyDraw = 10f;
 
+    /// <summary> SpL change
+    /// Whether or not the dome should add an action to the hotbar
+    /// (refer to <see cref="ToggleAction"/> for modifying this action)
+    /// </summary>
+    [DataField]
+    public bool AddAction = true; // SpL
+    
+    /// <summary> SpL change
+    /// Whether or not the dome should add a verb to the context menu
+    /// </summary>
+    [DataField]
+    public bool AddVerb = true; // SpL
+    
+    /// <summary> SpL change
+    /// Whether or not the dome can be activated by clicking on the world while in hand
+    /// </summary>
+    [DataField]
+    public bool CanUse = true; // SpL
+    
+    /// <summary> SpL change
+    /// Whether or not the dome can be toggled by the use action in world
+    /// (by use key while not held)
+    /// </summary>
+    [DataField]
+    public bool CanActivateInWorld = true; // SpL
+    
+    /// <summary> SpL change
+    /// Whether or not the dome can be toggled using the "use" keys
+    /// (via in-hand interaction)
+    /// </summary>
+    [DataField]
+    public bool CanUseInteractKeys = true; // SpL
+    
     /// <summary>
     /// Whether or not the dome can be toggled via standard interactions
     /// (alt verbs, using in hand, etc)
+    /// Disabling this will disable all above activations
     /// </summary>
     [DataField]
     public bool CanInteractUse = true;

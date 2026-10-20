@@ -17,6 +17,7 @@ using Content.Shared.Toggleable;
 using Content.Shared.Verbs;
 using Robust.Shared.Audio.Systems;
 using Robust.Shared.Containers;
+using Content.Shared.Interaction.Events; // SpL
 
 namespace Content.Server.EnergyDome;
 
@@ -41,6 +42,7 @@ public sealed partial class EnergyDomeSystem : EntitySystem
 
         SubscribeLocalEvent<EnergyDomeGeneratorComponent, ActivateInWorldEvent>(OnActivatedInWorld);
         SubscribeLocalEvent<EnergyDomeGeneratorComponent, AfterInteractEvent>(OnAfterInteract);
+        SubscribeLocalEvent<EnergyDomeGeneratorComponent, UseInHandEvent>(OnUseInHand);
         SubscribeLocalEvent<EnergyDomeGeneratorComponent, SignalReceivedEvent>(OnSignalReceived);
         SubscribeLocalEvent<EnergyDomeGeneratorComponent, GetItemActionsEvent>(OnGetActions);
         SubscribeLocalEvent<EnergyDomeGeneratorComponent, ToggleActionEvent>(OnToggleAction);
@@ -89,13 +91,21 @@ public sealed partial class EnergyDomeSystem : EntitySystem
 
     private void OnAfterInteract(Entity<EnergyDomeGeneratorComponent> generator, ref AfterInteractEvent args)
     {
-        if (generator.Comp.CanInteractUse)
+        if (generator.Comp.CanInteractUse && generator.Comp.CanUse) // SpL-  support for finer logic
             AttemptToggle(generator, !generator.Comp.Enabled);
     }
+    
+    // SpL start
+    private void OnUseInHand(Entity<EnergyDomeGeneratorComponent> generator, ref UseInHandEvent args)
+    {
+        if (generator.Comp.CanInteractUse && generator.Comp.CanUseInteractKeys) 
+            AttemptToggle(generator, !generator.Comp.Enabled);
+    }
+    // SpL end
 
     private void OnActivatedInWorld(Entity<EnergyDomeGeneratorComponent> generator, ref ActivateInWorldEvent args)
     {
-        if (generator.Comp.CanInteractUse)
+        if (generator.Comp.CanInteractUse && generator.Comp.CanActivateInWorld) // SpL- support for finer logic
             AttemptToggle(generator, !generator.Comp.Enabled);
     }
 
@@ -110,7 +120,7 @@ public sealed partial class EnergyDomeSystem : EntitySystem
 
     private void AddToggleDomeVerb(Entity<EnergyDomeGeneratorComponent> generator, ref GetVerbsEvent<ActivationVerb> args)
     {
-        if (!args.CanAccess || !args.CanInteract || !generator.Comp.CanInteractUse)
+        if (!args.CanAccess || !args.CanInteract || !generator.Comp.CanInteractUse || !generator.Comp.AddVerb) // SpL- support for finer logic
             return;
 
         var @event = args;
@@ -124,7 +134,7 @@ public sealed partial class EnergyDomeSystem : EntitySystem
     }
     private void OnGetActions(Entity<EnergyDomeGeneratorComponent> generator, ref GetItemActionsEvent args)
     {
-        if (generator.Comp.CanInteractUse)
+        if (generator.Comp.CanInteractUse && generator.Comp.AddAction) // SpL- support for finer logic
             args.AddAction(ref generator.Comp.ToggleActionEntity, generator.Comp.ToggleAction);
     }
 
