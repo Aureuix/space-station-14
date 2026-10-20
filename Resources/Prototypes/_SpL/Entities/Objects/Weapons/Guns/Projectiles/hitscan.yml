@@ -50,6 +50,25 @@
       impactFlash:
         sprite: Objects/Weapons/Guns/Projectiles/projectiles.rsi
         state: impact_green
+        
+- type: entity
+  id: HealingBeamStrong
+  parent: HealingBeam
+  categories: [ HideSpawnMenu ]
+  components:
+    - type: HitscanBasicDamage
+      damage:
+        types:
+          Blunt: -4
+          Piercing: -4
+          Slash: -4
+          Heat: -4
+          Cold: -4
+          Shock: -4
+          Caustic: -4
+      ignoreResistances: true
+      armorPenetration: 1
+      canHeal: true
 
 - type: entity
   name: magnum structural laser bolt

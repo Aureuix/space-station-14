@@ -1045,7 +1045,7 @@
     parent: true
     components:
       - type: PressureImmunity
-      - type: TemperatureImmunity
+      - type: TemperatureImmunity # SpL
 
 - type: entity
   parent: CentcomPDA

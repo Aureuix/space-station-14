@@ -1,9 +1,12 @@
-﻿- type: entity
+﻿## Syndicate
+- type: entity
   parent: BaseMobHuman
   id: BaseMobSyndieShooter
   abstract: true
-  name: syndicate gunner
+  name: syndicate soldier
   components:
+    - type: MindExaminable
+      state: None
     - type: Flammable
       flammableCollisionShape: 
         !type:PhysShapeCircle
@@ -33,6 +36,7 @@
     - type: Input
       context: "human"
     - type: Actions
+    - type: NoSlip
     - type: WizdenNightVision
     - type: ContentEye
       targetZoom: "1.25, 1.25"
@@ -40,10 +44,11 @@
     - type: AutoImplant
       implants:
         - DeathAcidifierImplant
+        # - DeathRattleImplant - likely unforseen consequences if we're testing them and there's traitors
     - type: RandomMetadata
       nameSegments:
         - NamesSyndicatePrefix
-        - NamesSyndicateNormal
+        - NamesSyndicateElite
       nameFormat: name-format-ert
     - type: TriggerOnSpawn
       keyOut: spawn
@@ -55,17 +60,69 @@
 
 - type: entity
   parent: BaseMobSyndieShooter
+  id: MobSyndieShooterLeader
+  suffix: ADMEME, L6
+  components:
+    - type: HTN
+      rootTask:
+        task: SquadLeaderCompound
+      blackboard:
+        maxRange: !type:Single
+          48
+        RotateSpeed: !type:Single
+          45
+        SoundTargetInLOS: !type:SoundPathSpecifier
+          path: /Audio/_Starlight/Effects/Radio/marauder_commander.ogg
+
+    - type: ContainerContainer
+      containers:
+        ballistic-ammo: !type:Container
+    - type: Gun
+      minAngle: 4
+      maxAngle: 25
+      angleIncrease: 4
+      angleDecay: 16
+      shotsPerBurst: 8
+      burstFireRate: 8
+      burstCooldown: 0.75
+      selectedMode: Burst
+      availableModes:
+        - Burst
+      soundGunshot:
+        path: /Audio/Weapons/Guns/Gunshots/lmg.ogg
+    - type: BallisticAmmoProvider
+      proto: CartridgeLightRifleSP
+      capacity: 1000
+      cycleable: false
+
+    - type: Loadout
+      prototypes:
+        - NPCSyndicateSquadGearLeader
+    - type: RandomMetadata
+      nameSegments:
+        - NamesSyndicateCommanderPrefix
+        - NamesSyndicateElite
+      nameFormat: name-format-ert
+    - type: AutoImplant
+      implants:
+        - DeathAcidifierImplant
+        # - DeathRattleImplant
+        - SyndicateMindShieldImplant
+
+
+- type: entity
+  parent: BaseMobSyndieShooter
   id: MobSyndieShooterEstoc
   suffix: ADMEME, Estoc
   components:
     - type: HTN
       rootTask:
-        task: LongRangeShooterAllyCompound
+        task: RangerShooterAllyCompound
       blackboard:
         RotateSpeed: !type:Single
           45
         SoundTargetInLOS: !type:SoundPathSpecifier
-          path: /Audio/_Starlight/Effects/Radio/marauder_commander.ogg
+          path: /Audio/_Starlight/Effects/Radio/marauder_agent.ogg
           
     - type: ContainerContainer
       containers:
@@ -85,7 +142,7 @@
       
     - type: Loadout
       prototypes:
-        - SyndicateFootsoldierGearEstoc
+        - NPCSyndicateSquadGearEstoc
      
       
 - type: entity
@@ -95,7 +152,7 @@
   components:
     - type: HTN
       rootTask:
-        task: MedRangeShooterAllyCompound
+        task: MedRangeShooterAllyCompoundAlt
       blackboard:
         SoundTargetInLOS: !type:SoundPathSpecifier
           path: /Audio/_Starlight/Effects/Radio/marauder.ogg
@@ -121,7 +178,50 @@
 
     - type: Loadout
       prototypes:
-        - SyndicateFootsoldierGearC20r
+        - NPCSyndicateSquadGearC20r
+    - type: MouseRotator
+      angleTolerance: 2
+      rotationSpeed: 180
+      simple4DirMode: false
+    - type: NoRotateOnMove
+
+
+- type: entity
+  parent: BaseMobSyndieShooter
+  id: MobSyndieShooterM90
+  suffix: ADMEME, M90
+  components:
+    - type: HTN
+      rootTask:
+        task: MedRangeShooterAllyCompoundAlt
+      blackboard:
+        SoundTargetInLOS: !type:SoundPathSpecifier
+          path: /Audio/_Starlight/Effects/Radio/marauder.ogg
+
+    - type: ContainerContainer
+      containers:
+        ballistic-ammo: !type:Container
+    - type: Gun
+      soundGunshot:
+        path: /Audio/_Starlight/Weapons/Guns/Gunshots/m90.ogg
+      selectedMode: Burst
+      minAngle: 2
+      maxAngle: 15
+      angleIncrease: 2
+      angleDecay: 5
+      shotsPerBurst: 3
+      burstCooldown: 1.25
+      burstFireRate: 14
+      availableModes:
+        - Burst
+    - type: BallisticAmmoProvider
+      proto: CartridgeRifleFMJ
+      capacity: 500
+      cycleable: false
+
+    - type: Loadout
+      prototypes:
+        - NPCSyndicateSquadGearM90
     - type: MouseRotator
       angleTolerance: 2
       rotationSpeed: 180
@@ -136,7 +236,7 @@
   components:
     - type: HTN
       rootTask:
-        task: MedRangeShooterAllyCompound
+        task: MedRangeShooterAllyCompoundAlt
       blackboard:
         SoundTargetInLOS: !type:SoundPathSpecifier
           path: /Audio/_Starlight/Effects/Radio/marauder.ogg
@@ -160,7 +260,7 @@
 
     - type: Loadout
       prototypes:
-        - SyndicateFootsoldierGearBulldog
+        - NPCSyndicateSquadGearBulldog
     - type: MouseRotator
       angleTolerance: 2
       rotationSpeed: 180
@@ -175,7 +275,7 @@
   components:
     - type: HTN
       rootTask:
-        task: LongRangeShooterAllyCompound
+        task: LongRangeShooterAllyCompoundAlt
       blackboard:
         SoundTargetInLOS: !type:SoundPathSpecifier
           path: /Audio/_Starlight/Effects/Radio/marauder_agent.ogg
@@ -184,7 +284,7 @@
       containers:
         ballistic-ammo: !type:Container
     - type: Gun
-      shotsPerBurst: 3
+      shotsPerBurst: 4
       burstFireRate: 4
       burstCooldown: 1
       selectedMode: Burst
@@ -199,12 +299,12 @@
 
     - type: Loadout
       prototypes:
-        - SyndicateFootsoldierGearPitbull
+        - NPCSyndicateSquadGearPitbull
       
       
       
 - type: startingGear
-  id: SyndicateFootsoldierGearEstoc
+  id: NPCSyndicateSquadGearEstoc
   parent: SyndicateOperativeGearCivilian
   equipment:
     id: SyndiOperativePDA
@@ -215,14 +315,13 @@
     outerClothing: ClothingOuterVestWebElite
     gloves: ClothingHandsGlovesCombat
     back: ClothingBackpackSatchelSyndicate
-    shoes: ClothingShoesBootsCombatFilled
-    belt: ClothingBeltMilitaryWebbing
+    shoes: ClothingShoesBootsCombat
   inhand:
     - RiotShield
     - WeaponRifleEstoc
   
 - type: startingGear
-  id: SyndicateFootsoldierGearC20r
+  id: NPCSyndicateSquadGearC20r
   parent: SyndicateOperativeGearCivilian
   equipment:
     id: SyndiOperativePDA
@@ -233,14 +332,13 @@
     outerClothing: ClothingOuterVestWebElite
     gloves: ClothingHandsGlovesCombat
     back: ClothingBackpackSatchelSyndicate
-    shoes: ClothingShoesBootsCombatFilled
-    belt: ClothingBeltMilitaryWebbing
+    shoes: ClothingShoesBootsCombat
   inhand:
     - RiotShield
     - WeaponSubMachineGunC20r
 
 - type: startingGear
-  id: SyndicateFootsoldierGearBulldog
+  id: NPCSyndicateSquadGearBulldog
   parent: SyndicateOperativeGearCivilian
   equipment:
     id: SyndiOperativePDA
@@ -248,17 +346,16 @@
     head: ClothingHeadHelmetSwatSyndicate
     mask: ClothingMaskGasSyndicate
     eyes: ClothingEyesHudSyndicate
-    outerClothing: ClothingOuterVestWebElite
+    outerClothing: ClothingOuterVestWeb
     gloves: ClothingHandsGlovesCombat
     back: ClothingBackpackSatchelSyndicate
-    shoes: ClothingShoesBootsCombatFilled
-    belt: ClothingBeltMilitaryWebbing
+    shoes: ClothingShoesBootsCombat
   inhand:
-    - RiotShield
+    - RiotBulletShield
     - WeaponShotgunBulldog
 
 - type: startingGear
-  id: SyndicateFootsoldierGearPitbull
+  id: NPCSyndicateSquadGearPitbull
   parent: SyndicateOperativeGearCivilian
   equipment:
     id: SyndiOperativePDA
@@ -269,8 +366,814 @@
     outerClothing: ClothingOuterVestWebElite
     gloves: ClothingHandsGlovesCombat
     back: ClothingBackpackSatchelSyndicate
-    shoes: ClothingShoesBootsCombatFilled
-    belt: ClothingBeltMilitaryWebbing
+    shoes: ClothingShoesBootsCombat
   inhand:
     - RiotShield
     - WeaponRiflePitbull
+
+- type: startingGear
+  id: NPCSyndicateSquadGearM90
+  parent: SyndicateOperativeGearCivilian
+  equipment:
+    id: SyndiOperativePDA
+    jumpsuit: ClothingUniformJumpsuitOperative
+    head: ClothingHeadHelmetSwatSyndicate
+    mask: ClothingMaskGasSyndicate
+    eyes: ClothingEyesHudSyndicate
+    outerClothing: ClothingOuterVestWeb
+    gloves: ClothingHandsGlovesCombat
+    back: ClothingBackpackSatchelSyndicate
+    shoes: ClothingShoesBootsCombat
+  inhand:
+    - RiotBulletShield
+    - WeaponRifleM90Carbine
+
+- type: startingGear
+  id: NPCSyndicateSquadGearLeader
+  parent: SyndicateOperativeGearCivilian
+  equipment:
+    id: SyndiCommanderPDA
+    jumpsuit: ClothingUniformJumpsuitOperative
+    head: ClothingHeadHelmetSyndicateAssault
+    neck: ClothingNeckHalfCloakSyndicate
+    mask: ClothingMaskGasSyndicate
+    eyes: ClothingEyesHudSyndicate
+    outerClothing: ClothingOuterVestWeb
+    gloves: ClothingHandsGlovesCombat
+    back: ClothingBackpackSatchelSyndicate
+    shoes: ClothingShoesBootsCombat
+  inhand:
+    - RiotLaserShield
+    - WeaponLightMachineGunL6
+
+## Central
+- type: entity
+  parent: BaseMobSpeciesOrganic
+  id: BaseMobERTShooter
+  abstract: true
+  name: Emergency Responder
+  components:
+    - type: MindExaminable
+      state: None
+    - type: Flammable
+      flammableCollisionShape:
+        !type:PhysShapeCircle
+        radius: "0"
+    - type: MobThresholds
+      stateAlertDict:
+        Alive: "HumanHealth"
+        Critical: "HumanCrit"
+        Dead: "HumanDead"
+      thresholds:
+        0: Alive
+        100: Critical
+        200: Dead
+    - type: StaminaResistance
+      damageCoefficient: 0.1
+    - type: Appearance
+    - type: InputMover
+    - type: MobMover
+    - type: NoSlip
+    - type: NpcFactionMember
+      factions:
+        - NanoTrasen
+      addFriendlyFactions:
+        - NanoTrasen
+      addHostileFactions:
+        - SyndicateSilicon
+        - DungeonSyndicate
+        - DungeonSoviet
+        - Syndicate
+        - Pirate
+        - SimpleHostile
+        - Zombie
+        - Abyss
+        - AllHostile
+        - Dragon
+        - Xeno
+        - Gorilla
+        - Abductor
+        - UltraMachineDungeon
+        - Xenoborg
+        - Revolutionary
+    - type: NPCImprintingOnSpawnBehaviour
+      whitelist:
+        components:
+          - HumanoidAppearance
+      spawnFriendsSearchRadius: 1
+    - type: Input
+      context: "human"
+    - type: Actions
+    - type: WizdenNightVision
+    - type: ContentEye
+      targetZoom: "1.25, 1.25"
+      maxZoom: "1.25, 1.25"
+    - type: AutoImplant
+      implants:
+        - MindShieldImplant
+        - DeathRattleImplantCentcomm
+    - type: RandomMetadata
+      nameSegments:
+        - NamesMilitaryFirst
+        - NamesMilitaryLast
+      nameFormat: name-format-ert
+    - type: TriggerOnSpawn
+      keyOut: spawn
+    - type: SpawnOnTrigger
+      proto: EffectFlashBluespacePortalQuiet
+      keysIn:
+        - spawn
+    # - type: RandomHumanoidAppearance
+      
+- type: entity
+  parent: BaseMobERTShooter
+  id: MobERTShooterPeacemaker
+  suffix: ADMEME, Peacemaker
+  components:
+    - type: HTN
+      rootTask:
+        task: LongRangeShooterAllyCompound
+      blackboard:
+        SoundTargetInLOS: !type:SoundPathSpecifier
+          path: /Audio/_Starlight/Effects/Radio/hos.ogg
+
+    - type: ContainerContainer
+      containers:
+        ballistic-ammo: !type:Container
+    - type: Gun
+      shotsPerBurst: 3
+      burstFireRate: 14
+      burstCooldown: 1.25
+      selectedMode: Burst
+      availableModes:
+        - Burst
+      soundGunshot:
+        path: /Audio/_Starlight/Weapons/Guns/Gunshots/m90.ogg
+    - type: BallisticAmmoProvider
+      proto: CartridgeRifleSP
+      capacity: 500
+      cycleable: false
+      
+    - type: Loadout
+      prototypes:
+        - NPCERTSquadGearPeacemaker
+
+
+- type: entity
+  parent: BaseMobERTShooter
+  id: MobERTShooterWT550
+  suffix: ADMEME, WT550
+  components:
+    - type: HTN
+      rootTask:
+        task: LongRangeShooterAllyCompound
+      blackboard:
+        SoundTargetInLOS: !type:SoundPathSpecifier
+          path: /Audio/_Starlight/Effects/Radio/tsf.ogg
+
+    - type: ContainerContainer
+      containers:
+        ballistic-ammo: !type:Container
+    - type: Gun
+      shotsPerBurst: 5
+      burstCooldown: 0.5
+      burstFireRate: 7
+      selectedMode: Burst
+      availableModes:
+        - Burst
+      soundGunshot:
+        path: /Audio/Weapons/Guns/Gunshots/smg.ogg
+    - type: BallisticAmmoProvider
+      proto: CartridgePistolSP
+      capacity: 500
+      cycleable: false
+
+    - type: Loadout
+      prototypes:
+        - NPCERTSquadGearWT550
+
+
+- type: entity
+  parent: BaseMobERTShooter
+  id: MobERTShooterIK60
+  suffix: ADMEME, IK60
+  components:
+    - type: HTN
+      rootTask:
+        task: LongRangeShooterAllyCompound
+      blackboard:
+        SoundTargetInLOS: !type:SoundPathSpecifier
+          path: /Audio/_Starlight/Effects/Radio/bso.ogg
+
+    - type: ContainerContainer
+      containers:
+        ballistic-ammo: !type:Container
+    - type: Gun
+      fireRate: 7
+      shotsPerBurst: 3
+      burstCooldown: 0.4
+      selectedMode: Burst
+      availableModes:
+        - Burst
+      soundGunshot:
+        path: /Audio/Weapons/Guns/Gunshots/laser.ogg
+    - type: BallisticAmmoProvider
+      proto: CartridgeBattery
+      capacity: 500
+      cycleable: false
+
+    - type: Loadout
+      prototypes:
+        - NPCERTSquadGearIK60
+
+
+- type: entity
+  parent: BaseMobERTShooter
+  id: MobERTShooterLWAP
+  suffix: ADMEME, LWAP
+  components:
+    - type: HTN
+      rootTask:
+        task: RangerShooterAllyCompound
+      blackboard:
+        SoundTargetInLOS: !type:SoundPathSpecifier
+          path: /Audio/_Starlight/Effects/Radio/warden.ogg
+
+    - type: Gun
+      fireRate: 0.5
+      selectedMode: SemiAuto
+      availableModes:
+        - SemiAuto
+      soundGunshot:
+        path: /Audio/Weapons/Guns/Gunshots/laser3.ogg
+    - type: RechargeBasicEntityAmmo
+      rechargeCooldown: 0.4
+    - type: BasicEntityAmmoProvider
+      proto: SniperBolt
+      capacity: 1
+      count: 1
+
+    - type: Loadout
+      prototypes:
+        - NPCERTSquadGearLWAP
+
+
+- type: entity
+  parent: BaseMobERTShooter
+  id: MobERTShooterMedic
+  suffix: ADMEME, Combat Medic
+  components:
+    - type: HTN
+      rootTask:
+        task: AllyHealerArmedCompound
+      blackboard:
+        SoundTargetInLOS: !type:SoundPathSpecifier
+          path: /Audio/_Starlight/Effects/Radio/tsf.ogg
+
+    - type: Medibot
+      treatments:
+        Alive:
+          reagent: Omnizine
+          quantity: 10
+          minDamage: 30
+          maxDamage: 195
+        SoftCritical:
+          reagent: Omnizine
+          quantity: 10
+        Critical:
+          reagent: Omnizine
+          quantity: 10
+
+    - type: ContainerContainer
+      containers:
+        ballistic-ammo: !type:Container
+    - type: Gun
+      shotsPerBurst: 3
+      burstFireRate: 5
+      burstCooldown: 1.5
+      selectedMode: Burst
+      availableModes:
+        - Burst
+      soundGunshot:
+        path: /Audio/Weapons/Guns/Gunshots/mk58.ogg
+    - type: BallisticAmmoProvider
+      proto: CartridgePistolSP
+      capacity: 500
+      cycleable: false
+
+    - type: Loadout
+      prototypes:
+        - NPCERTSquadGearMedicArmed
+      
+      
+- type: entity
+  parent: BaseMobERTShooter
+  id: MobERTShooterLeader
+  suffix: ADMEME, Pulse Carbine
+  components:
+    - type: HTN
+      rootTask:
+        task: SquadLeaderCompound
+      blackboard:
+        maxRange: !type:Single
+          48
+        SoundTargetInLOS: !type:SoundPathSpecifier
+          path: /Audio/_Starlight/Effects/Radio/captain.ogg
+
+    - type: Gun
+      fireRate: 1
+      selectedMode: SemiAuto
+      availableModes:
+        - SemiAuto
+      soundGunshot:
+        path: /Audio/Weapons/Guns/Gunshots/laser3.ogg
+    - type: RechargeBasicEntityAmmo
+      rechargeCooldown: 0.5
+    - type: BasicEntityAmmoProvider
+      proto: DestroyBeam
+      capacity: 1
+      count: 1
+
+    - type: Loadout
+      prototypes:
+        - NPCERTSquadGearLeader
+    - type: RandomMetadata
+      nameSegments:
+        - NamesMilitaryFirstLeader
+        - NamesMilitaryLast
+      nameFormat: name-format-ert
+
+- type: startingGear
+  id: NPCERTSquadGearPeacemaker
+  equipment:
+    head: ClothingHeadHelmetERTSecurity
+    jumpsuit: ClothingUniformJumpsuitERTSecurity
+    back: ClothingBackpackERTSecurity
+    shoes: ClothingShoesBootsMagERT
+    mask: ClothingMaskGasERT
+    eyes: ClothingEyesGlassesCentComm
+    gloves: ClothingHandsGlovesCombat
+    outerClothing: ClothingOuterHardsuitERTSecurity
+    id: ERTSecurityPDA
+    belt: ClothingBeltMilitaryWebbingERT
+  inhand:
+    - RiotShield
+    - WeaponRiflePeacemaker
+
+- type: startingGear
+  id: NPCERTSquadGearWT550
+  equipment:
+    head: ClothingHeadHelmetERTSecurity
+    jumpsuit: ClothingUniformJumpsuitERTSecurity
+    back: ClothingBackpackERTSecurity
+    shoes: ClothingShoesBootsMagERT
+    mask: ClothingMaskGasERT
+    eyes: ClothingEyesGlassesCentComm
+    gloves: ClothingHandsGlovesCombat
+    outerClothing: ClothingOuterHardsuitERTSecurity
+    id: ERTSecurityPDA
+    belt: ClothingBeltMilitaryWebbingERT
+  inhand:
+    - RiotBulletShield
+    - WeaponSubMachineGunWt550
+
+- type: startingGear
+  id: NPCERTSquadGearIK60
+  equipment:
+    head: ClothingHeadHelmetERTSecurity
+    jumpsuit: ClothingUniformJumpsuitERTSecurity
+    back: ClothingBackpackERTSecurity
+    shoes: ClothingShoesBootsMagERT
+    mask: ClothingMaskGasERT
+    eyes: ClothingEyesGlassesCentComm
+    gloves: ClothingHandsGlovesCombat
+    outerClothing: ClothingOuterHardsuitERTSecurity
+    id: ERTSecurityPDA
+    belt: ClothingBeltMilitaryWebbingERT
+  inhand:
+    - RiotBulletShield
+    - WeaponIK60
+
+- type: startingGear
+  id: NPCERTSquadGearLWAP
+  equipment:
+    head: ClothingHeadHelmetERTSecurity
+    jumpsuit: ClothingUniformJumpsuitERTSecurity
+    back: ClothingBackpackERTSecurity
+    shoes: ClothingShoesBootsMagERT
+    mask: ClothingMaskGasERT
+    eyes: ClothingEyesGlassesCentComm
+    gloves: ClothingHandsGlovesCombat
+    outerClothing: ClothingOuterHardsuitERTSecurity
+    id: ERTSecurityPDA
+    belt: ClothingBeltMilitaryWebbingERT
+  inhand:
+    - RiotShield
+    - WeaponEnergySniper
+  
+- type: startingGear
+  id: NPCERTSquadGearLeader
+  equipment:
+    head: ClothingHeadHelmetERTLeader
+    jumpsuit: ClothingUniformJumpsuitERTLeader
+    back: ClothingBackpackERTLeader
+    shoes: ClothingShoesBootsMagERT
+    mask: ClothingMaskGasERT
+    eyes: ClothingEyesGlassesCentComm
+    gloves: ClothingHandsGlovesCombat
+    outerClothing: ClothingOuterHardsuitERTLeader
+    id: ERTLeaderPDA
+    belt: ClothingBeltMilitaryWebbingERT
+  inhand:
+    - RiotBulletShield
+    - WeaponPulseCarbine
+
+- type: startingGear
+  id: NPCERTSquadGearMedicArmed
+  equipment:
+    head: ClothingHeadHelmetERTMedic
+    jumpsuit: ClothingUniformJumpsuitERTMedic
+    back: ClothingBackpackERTMedical
+    shoes: ClothingShoesBootsMagERT
+    mask: ClothingMaskGasERT
+    eyes: ClothingEyesGlassesCentComm
+    gloves: ClothingHandsGlovesCombat
+    outerClothing: ClothingOuterHardsuitERTMedical
+    id: ERTMedicPDA
+    belt: ClothingBeltMilitaryWebbingERT
+  inhand:
+    - HyposprayNPC
+    - WeaponPistolMk58
+
+
+# Admeme guards
+- type: entity
+  parent: BaseMobERTShooter
+  id: MobNPCERTGuard
+  name: Emergency Security Officer
+  suffix: ADMEME, Stationary
+  components:
+    - type: HTN
+      rootTask:
+        task: GuardShooterCompound
+      blackboard:
+        SoundTargetInLOS: !type:SoundPathSpecifier
+          path: /Audio/_Starlight/Effects/Radio/tsf.ogg
+
+    - type: ContainerContainer
+      containers:
+        ballistic-ammo: !type:Container
+    - type: Gun
+      fireRate: 7
+      shotsPerBurst: 3
+      burstCooldown: 0.4
+      selectedMode: Burst
+      availableModes:
+        - Burst
+      soundGunshot:
+        path: /Audio/Weapons/Guns/Gunshots/laser.ogg
+    - type: BallisticAmmoProvider
+      proto: CartridgeBattery
+      capacity: 500
+      cycleable: false
+
+    - type: Loadout
+      prototypes:
+        - NPCERTSquadGearIK60
+
+   
+- type: entity
+  parent: BaseMobERTShooter
+  id: MobNPCERTPatrolPeacemaker
+  name: Emergency Patroller
+  suffix: ADMEME
+  components:
+    - type: HTN
+      rootTask:
+        task: LongRangeShooterAllyCompoundAlt
+      blackboard:
+        SoundTargetInLOS: !type:SoundPathSpecifier
+          path: /Audio/_Starlight/Effects/Radio/tsf.ogg
+
+    - type: ContainerContainer
+      containers:
+        ballistic-ammo: !type:Container
+    - type: Gun
+      shotsPerBurst: 3
+      burstFireRate: 14
+      burstCooldown: 1.25
+      selectedMode: Burst
+      availableModes:
+        - Burst
+      soundGunshot:
+        path: /Audio/_Starlight/Weapons/Guns/Gunshots/m90.ogg
+    - type: BallisticAmmoProvider
+      proto: CartridgeRifleSP
+      capacity: 500
+      cycleable: false
+
+    - type: Loadout
+      prototypes:
+        - NPCERTSquadGearPeacemaker
+
+
+- type: entity
+  parent: BaseMobERTShooter
+  id: MobNPCERTPatrolWT550
+  name: Emergency Patroller
+  suffix: ADMEME
+  components:
+    - type: HTN
+      rootTask:
+        task: LongRangeShooterAllyCompoundAlt
+      blackboard:
+        SoundTargetInLOS: !type:SoundPathSpecifier
+          path: /Audio/_Starlight/Effects/Radio/tsf.ogg
+
+    - type: ContainerContainer
+      containers:
+        ballistic-ammo: !type:Container
+    - type: Gun
+      shotsPerBurst: 5
+      burstCooldown: 0.5
+      burstFireRate: 7
+      selectedMode: Burst
+      availableModes:
+        - Burst
+      soundGunshot:
+        path: /Audio/Weapons/Guns/Gunshots/smg.ogg
+    - type: BallisticAmmoProvider
+      proto: CartridgePistolSP
+      capacity: 500
+      cycleable: false
+
+    - type: Loadout
+      prototypes:
+        - NPCERTSquadGearWT550
+
+
+- type: entity
+  parent: BaseMobERTShooter
+  id: MobNPCERTPatrolLeader
+  name: Emergency Patrol Lead
+  suffix: ADMEME
+  components:
+    - type: MovementSpeedModifier
+      sprintSpeedModifier: 0.5
+    - type: HTN
+      rootTask:
+        task: SquadLeaderCompound
+      blackboard:
+        maxRange: !type:Single
+          48
+        SoundTargetInLOS: !type:SoundPathSpecifier
+          path: /Audio/_Starlight/Effects/Radio/captain.ogg
+
+    - type: Gun
+      fireRate: 1
+      selectedMode: SemiAuto
+      availableModes:
+        - SemiAuto
+      soundGunshot:
+        path: /Audio/Weapons/Guns/Gunshots/laser3.ogg
+    - type: RechargeBasicEntityAmmo
+      rechargeCooldown: 0.5
+    - type: BasicEntityAmmoProvider
+      proto: DestroyBeam
+      capacity: 1
+      count: 1
+
+    - type: Loadout
+      prototypes:
+        - NPCERTSquadGearLeader
+    - type: RandomMetadata
+      nameSegments:
+        - NamesMilitaryFirstLeader
+        - NamesMilitaryLast
+      nameFormat: name-format-ert
+
+
+- type: entity
+  parent: BaseMobERTShooter
+  id: MobNPCERTMedic
+  name: Emergency Medic
+  suffix: ADMEME, NoCombat
+  components:
+    - type: HTN
+      rootTask:
+        task: FreeRangeHealerCompound
+      blackboard:
+        maxRange: !type:Single
+          48
+
+    - type: Medibot
+      treatments:
+        Alive:
+          reagent: Omnizine
+          quantity: 10
+          minDamage: 10
+          maxDamage: 195
+        SoftCritical:
+          reagent: Omnizine
+          quantity: 10
+        Critical:
+          reagent: Omnizine
+          quantity: 10
+
+    - type: Loadout
+      prototypes:
+        - NPCERTSquadGearMedic
+
+
+- type: startingGear
+  id: NPCERTSquadGearMedic
+  equipment:
+    head: ClothingHeadHelmetERTMedic
+    jumpsuit: ClothingUniformJumpsuitERTMedic
+    back: ClothingBackpackERTMedical
+    shoes: ClothingShoesBootsCombat
+    mask: ClothingMaskGasSecurity
+    eyes: ClothingEyesGlassesCentComm
+    gloves: ClothingHandsGlovesNitrile
+    outerClothing: ClothingOuterHardsuitERTMedical
+    id: ERTMedicPDA
+  inhand:
+    - HyposprayNPC
+
+
+- type: entity
+  parent: BaseMobERTShooter
+  id: MobNPCCBURN
+  name: CBURN Cleaner
+  suffix: ADMEME, NoCombat
+  components:
+    - type: HTN
+      rootTask:
+        task: FreeRangeHealerCompound
+      blackboard:
+        maxRange: !type:Single
+          48
+        
+    - type: Medibot
+      treatments:
+        Alive:
+          reagent: Omnizine
+          quantity: 10
+          minDamage: 30
+          maxDamage: 195
+        SoftCritical:
+          reagent: Omnizine
+          quantity: 10
+        Critical:
+          reagent: Omnizine
+          quantity: 10
+
+    - type: Loadout
+      prototypes:
+        - NPCERTSquadGearCBURN
+        
+
+- type: entity
+  parent: BaseMobERTShooter
+  id: MobNPCCBURNAlt
+  name: CBURN Heavy Cleaner
+  suffix: ADMEME, NoCombat
+  components:
+    - type: HTN
+      rootTask:
+        task: FreeRangeHealerCompound
+      blackboard:
+        maxRange: !type:Single
+          48
+        
+    - type: Medibot
+      treatments:
+        Alive:
+          reagent: Omnizine
+          quantity: 10
+          minDamage: 50
+          maxDamage: 195
+        SoftCritical:
+          reagent: Omnizine
+          quantity: 10
+        Critical:
+          reagent: Omnizine
+          quantity: 10
+
+    - type: Loadout
+      prototypes:
+        - NPCERTSquadGearCBURNAlt
+    - type: RandomMetadata
+      nameSegments:
+        - NamesMilitaryFirstLeader
+        - NamesMilitaryLast
+      nameFormat: name-format-ert
+
+
+- type: startingGear
+  id: NPCERTSquadGearCBURN
+  equipment:
+    jumpsuit: ClothingUniformCBURNFatigues
+    back: ClothingBackpackDuffelCBURN
+    mask: ClothingMaskGasCBURN
+    eyes: ClothingEyesGlassesCentComm
+    gloves: ClothingHandsGlovesCombat
+    outerClothing: ClothingOuterHardsuitCBURN
+    shoes: ClothingShoesBootsMagERT
+    id: CBURNPDA
+    belt: ClothingBeltMilitaryWebbingERT
+    suitstorage: WeaponShotgunCombatIncendiary
+    neck: ClothingBeltBandolier
+    head: ClothingHeadHelmetCBURN
+  inhand:
+    - HyposprayNPC
+
+
+- type: startingGear
+  id: NPCERTSquadGearCBURNAlt
+  equipment:
+    jumpsuit: ClothingUniformCBURNFatigues
+    back: ClothingBackpackDuffelCBURN
+    mask: ClothingMaskGasCBURN
+    eyes: ClothingEyesGlassesCentComm
+    gloves: ClothingHandsGlovesCombat
+    outerClothing: ClothingOuterSoftsuitCBURN
+    shoes: ClothingShoesBootsMagERT
+    id: CBURNAltPDA
+    belt: ClothingBeltMilitaryWebbingERT
+    suitstorage: WeaponShotgunCombatIncendiary
+    neck: ClothingBeltBandolier
+    head: ClothingHeadSoftsuitCBURN
+    
+    
+# Cool Showcasing   
+- type: entity
+  parent: BaseMobERTShooter
+  id: MobNPCSVSFPatroller
+  name: SVSF Officer
+  suffix: ADMEME ONLY
+  components:
+    - type: HTN
+      rootTask:
+        task: RangerShooterAllyCompoundAlt
+      blackboard:
+        SoundTargetInLOS: !type:SoundPathSpecifier
+          path: /Audio/_Starlight/Effects/Radio/deathsquad.ogg
+
+    - type: Gun
+      burstFireRate: 10
+      shotsPerBurst: 4
+      selectedMode: Burst
+      burstCooldown: 0.25
+      availableModes:
+        - Burst
+      soundGunshot:
+        path: /Audio/Weapons/Guns/Gunshots/laser3.ogg
+    - type: RechargeBasicEntityAmmo
+      rechargeCooldown: 0.01
+    - type: BasicEntityAmmoProvider
+      proto: BulletPistolTraceAP
+      capacity: 30
+      count: 30
+
+    - type: Loadout
+      prototypes:
+        - NPCSVSFGearAdmeme
+
+
+- type: startingGear
+  id: NPCSVSFGearAdmeme
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitCentcomOfficerBlack
+    back: ClothingBackpackSatchelHolding
+    shoes: ClothingShoesBootsMagERTFilled
+    outerClothing: ClothingOuterHardsuitSVSElite
+    id: CentCommOperatorPDA
+    eyes: ClothingEyesGlassesCentComm
+    ears: ClothingHeadsetCentCom
+    mask: ClothingMaskGasERT
+    head: ClothingHeadHelmetHardsuitSVSElite
+    belt: PrototypeVibrobladeSheathFilled
+    gloves: ClothingHandsGlovesCombat
+    suitstorage: WeaponSubMachineGunAtreides
+    pocket1: WeaponEnergyMagnumGun
+    pocket2: CentCommHypo
+    misc: PinpointerUniversal
+
+
+# Quick spawners
+- type: entity
+  id: CentCommPatrolSpawner
+  name: Central Command patrol spawner
+  suffix: ADMEME
+  description: Spawns an ERT patrol squad.
+  components:
+    - type: TriggerOnSpawn
+    - type: SpawnEntityTableOnTrigger
+      table: !type:AllSelector
+        children:
+          - id: MobNPCERTPatrolLeader
+          - id: MobNPCERTPatrolPeacemaker
+          - id: MobNPCERTPatrolWT550
+    - type: DeleteOnTrigger
+      

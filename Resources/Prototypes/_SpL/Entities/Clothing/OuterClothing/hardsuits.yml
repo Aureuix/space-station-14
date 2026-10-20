@@ -20,7 +20,7 @@
     damageCoefficient: 0.2
   - type: FireProtection
     reduction: 0.8
-  - type: StaminaResistance # do not add these to other equipment or mobs, we don't want to microbalance these everywhere
+  - type: StaminaResistance
     damageCoefficient: 0.75
   - type: Pierceable
     level: Metal
@@ -33,6 +33,7 @@
         Heat: 0.25
         Radiation: 0.01
         Caustic: 0.4
+    staminaModifier: 0.3
   - type: ClothingSpeedModifier
     walkModifier: 0.95
     sprintModifier: 0.95
@@ -68,3 +69,103 @@
     - WhitelistChameleon
   - type: StaticPrice
     price: 5000
+    
+# Elite ERT suit
+- type: entity
+  parent: [ ClothingOuterHardsuitBase, BaseCentcommContraband ]
+  id: ClothingOuterHardsuitSVSElite
+  name: SVS-27C combat tacsuit
+  suffix: ADMEME
+  description: A highly protective combat suit worn by members of a Central Command Special Operations fireteam. Once a mainstay of the organisation, these corporate-war era suits have become rarer in recent decades, now being deployed solely for existential threats. # SpL
+  components:
+    - type: Sprite
+      sprite: DeltaV/Clothing/OuterClothing/Hardsuits/ERTSuits/eliteert.rsi
+    - type: Clothing
+      sprite: DeltaV/Clothing/OuterClothing/Hardsuits/ERTSuits/eliteert.rsi
+    - type: PressureProtection
+      highPressureMultiplier: 0.02
+      lowPressureMultiplier: 1000
+    - type: TemperatureProtection
+      heatingCoefficient: 0.001
+      coolingCoefficient: 0.001
+    - type: ExplosionResistance
+      damageCoefficient: 0.2
+    - type: FireProtection
+      reduction: 0.8
+    - type: StaminaResistance
+      damageCoefficient: 0.8
+    - type: Pierceable
+      level: Rock
+    - type: ZombificationResistance
+      zombificationResistanceCoefficient: 0.8
+    - type: Armor
+      modifiers:
+        coefficients:
+          Blunt: 0.4
+          Slash: 0.4
+          Piercing: 0.35
+          Heat: 0.35
+          Radiation: 0.5
+          Caustic: 0.4
+      staminaModifier: 0.2
+    - type: FootstepModifier
+      footstepSoundCollection:
+        collection: FootstepHeavy
+        params:
+          volume: -6
+          variation: 0.09
+    - type: Item
+      size: Huge
+    - type: ClothingSpeedModifier
+      walkModifier: 1
+      sprintModifier: 0.9
+    - type: HeldSpeedModifier
+    - type: ToggleableClothing
+      clothingPrototype: ClothingHeadHelmetHardsuitSVSElite
+    - type: Tag
+      tags:
+        - Hardsuit
+      
+      
+- type: entity
+  parent: ClothingOuterHardsuitSVSElite
+  id: ClothingOuterHardsuitSVSEliteLeader
+  name: SVS-27FL fireteam leader tacsuit
+  description: A highly protective combat suit worn by the leader of a Central Command Special Operations fireteam. This one is fitted with a powerful shield generator, although its unique design limits its long-term usage. # SpL
+  components:
+    - type: Sprite
+      sprite: DeltaV/Clothing/OuterClothing/Hardsuits/ERTSuits/eliteertleader.rsi
+    - type: Clothing
+      sprite: DeltaV/Clothing/OuterClothing/Hardsuits/ERTSuits/eliteertleader.rsi
+    - type: Armor
+      modifiers:
+        coefficients:
+          Blunt: 0.35
+          Slash: 0.35
+          Piercing: 0.30
+          Heat: 0.35
+          Radiation: 0.35
+          Caustic: 0.35
+    - type: ToggleableClothing
+      clothingPrototype: ClothingHeadHelmetHardsuitSVSEliteLeader
+    - type: ContainerContainer
+      containers:
+        cell_slot: !type:ContainerSlot
+        toggleable-clothing: !type:ContainerSlot
+    - type: PowerCellSlot
+      cellSlotId: cell_slot
+    - type: ItemSlots
+      slots:
+        cell_slot:
+          name: power-cell-slot-component-slot-name-default
+          startingItem: PowerCellSmallNuclear
+          disableEject: true
+          swap: false
+    - type: EnergyDomeGenerator
+      damageEnergyDraw: 1
+      domePrototype: EnergyDomeMediumBlue
+    - type: PowerCellDraw
+      enabled: false
+      drawRate: 16
+    - type: UseDelay
+      delay: 10.0

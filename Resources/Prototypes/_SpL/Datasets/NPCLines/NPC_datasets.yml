@@ -1,0 +1,17 @@
+﻿- type: localizedDataset
+  id: ShooterEngage
+  values:
+    prefix: shooter-target-spotted-
+    count: 3
+    
+- type: localizedDataset
+  id: ShooterDown
+  values:
+    prefix: shooter-target-down-
+    count: 3
+
+- type: localizedDataset
+  id: AllyHealerActive
+  values:
+    prefix: ally-healer-active-
+    count: 3

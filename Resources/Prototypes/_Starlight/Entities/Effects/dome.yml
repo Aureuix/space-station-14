@@ -207,3 +207,37 @@
     radius: 5
     power: 10
     color: "#64b9de"
+    
+# SpL- decorative dome to show when cc airtightness is active
+- type: entity
+  id: EnergyDomeCentCommAirtight
+  categories: [ HideSpawnMenu ]
+  components:
+    - type: Physics
+      bodyType: Static
+    - type: AmbientSound
+      volume: 35
+      range: 5
+      sound:
+        path: /Audio/Machines/energyshield_ambient.ogg
+    - type: EnergyDome
+    - type: Stealth
+      minVisibility: 0.5
+      maxVisibility: 0.5
+      lastVisibility: 0.5
+      shimmerFrequency: 0.75
+    - type: Sprite
+      sprite: Effects/EnergyDome/energydome_small.rsi
+      drawdepth: Effects
+      noRot: true
+      layers:
+        - state: small
+          color: "#19f516"
+    - type: PointLight
+      enabled: true
+      radius: 5
+      power: 2
+      color: "#19f516"
+    - type: Tag
+      tags:
+        - HideContextMenu

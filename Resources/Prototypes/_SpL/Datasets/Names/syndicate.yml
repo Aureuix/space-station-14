@@ -1,0 +1,5 @@
+﻿- type: localizedDataset
+  id: NamesSyndicateCommanderPrefix
+  values:
+    prefix: names-syndicate-commander-prefix-dataset-
+    count: 1
