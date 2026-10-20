@@ -1,4 +1,46 @@
 ﻿- type: entity
+  parent: [ClothingHeadsetAlt, BaseSyndicateContraband]
+  id: ClothingHeadsetAltSyndicate
+  name: blood-red over-ear listening headset
+  suffix: ADMEME
+  description: An updated, modular syndicate intercom that fits over the head, pre-loaded with a stolen masterkey.
+  components:
+    - type: Headset
+    - type: EncryptionKeyHolder
+      keySlots: 5
+    - type: ContainerFill
+      containers:
+        key_slots:
+          - EncryptionKeySyndie
+          - EncryptionKeyStationMaster
+    - type: Sprite
+      sprite: Clothing/Ears/Headsets/syndicate.rsi
+    - type: Clothing
+      sprite: Clothing/Ears/Headsets/syndicate.rsi
+    - type: RadioChime
+      sound:
+        path: /Audio/_SpL/Effects/Radio/syndicate.ogg
+        
+- type: entity
+  parent: [ClothingHeadsetAlt, BaseCentcommContraband]
+  id: ClothingHeadsetAltERTLeader
+  name: emergency response over-ear headset
+  description: An updated, modular headset worn by emergency response team leaders.
+  components:
+    - type: ContainerFill
+      containers:
+        key_slots:
+          - EncryptionKeyCentCom
+          - EncryptionKeyStationMaster
+    - type: Sprite
+      sprite: Clothing/Ears/Headsets/centcom.rsi
+    - type: Clothing
+      sprite: Clothing/Ears/Headsets/centcom.rsi
+    - type: RadioChime
+      sound:
+        path: /Audio/_Starlight/Effects/Radio/ertalt.ogg
+
+- type: entity
   parent: [ClothingHeadsetAlt, BaseGSLOwnedContraband]
   id: ClothingHeadsetAltGSL
   name: GSL technician over-ear headset
@@ -14,7 +56,7 @@
       sprite: _SpL/Clothing/Ears/Headsets/gsl.rsi
     - type: RadioChime
       sound:
-        path: /Audio/_Starlight/Effects/Radio/tsf.ogg
+        path: /Audio/_SpL/Effects/Radio/gsl.ogg
 
 - type: entity
   parent: [ClothingHeadsetAlt, BaseIlluminateContraband]
@@ -32,4 +74,4 @@
       sprite: _SpL/Clothing/Ears/Headsets/illuminate.rsi
     - type: RadioChime
       sound:
-        path: /Audio/_Starlight/Effects/Radio/tsf.ogg
+        path: /Audio/_SpL/Effects/Radio/illuminate.ogg ClothingHeadsetAltERTLeader

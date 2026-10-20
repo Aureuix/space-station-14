@@ -168,6 +168,9 @@
       sprite: Clothing/Ears/Headsets/freelance.rsi
     - type: Clothing
       sprite: Clothing/Ears/Headsets/freelance.rsi
+    - type: RadioChime
+      sound:
+        path: /Audio/_SpL/Effects/Radio/freelance.ogg # SpL
 
 - type: entity
   parent: [ClothingHeadsetAlt, BaseMagicalContraband]

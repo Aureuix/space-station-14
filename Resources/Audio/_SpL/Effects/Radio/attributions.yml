@@ -1,0 +1,84 @@
+﻿- files: ["hop.ogg"]
+  license: "CC-BY-4.0"
+  copyright: "Kijadzel"
+  source: "https://freesound.org/people/Kijadzel"
+  
+- files: ["medical.ogg"]
+  license: "CC-BY-4.0"
+  copyright: "Damiana79"
+  source: "https://freesound.org/people/Damiana79"
+  
+- files: ["cargo.ogg, detective.ogg"]
+  license: "CC-BY-4.0"
+  copyright: "JovianSounds"
+  source: "https://freesound.org/people/JovianSounds" 
+    
+- files: ["salvlead.ogg"]
+  license: "CC-BY-4.0"
+  copyright: "morganpurkis"
+  source: "https://freesound.org/people/morganpurkis"
+  
+- files: ["nanotrasen.ogg"]
+  license: "CC-BY-4.0"
+  copyright: "Provan9"
+  source: "https://freesound.org/people/Provan9"
+
+- files: [ "mining.ogg" ]
+  license: "CC-BY-4.0"
+  copyright: "belgorad"
+  source: "https://freesound.org/people/belgorad"
+    
+- files: [ "engineer.ogg" ]
+  license: "CC-BY-4.0"
+  copyright: "MiscPractice"
+  source: "https://freesound.org/people/MiscPractice"
+  
+- files: [ "science.ogg" ]
+  license: "CC-BY-4.0"
+  copyright: "Mossy4"
+  source: "https://freesound.org/people/Mossy4"
+  
+- files: [ "robotics.ogg" ]
+  license: "CC-BY-4.0"
+  copyright: "NoiseCollector"
+  source: "https://freesound.org/people/NoiseCollector"
+  
+- files: [ "freelance.ogg" ]
+  license: "CC-BY-4.0"
+  copyright: "IneQuation"
+  source: "https://freesound.org/people/IneQuation"
+
+- files: [ "service.ogg, assistant.ogg" ]
+  license: "CC-BY-4.0"
+  copyright: "T.I.B"
+  source: "https://freesound.org/people/T.I.B"
+  
+- files: [ "ert.ogg" ]
+  license: "CC-BY-4.0"
+  copyright: "SEF7"
+  source: "https://freesound.org/people/SEF7"
+  
+- files: [ "ertalt.ogg" ]
+  license: "CC-BY-4.0"
+  copyright: "3questionmarks"
+  source: "hhttps://freesound.org/people/3questionmarks"
+  
+- files: [ "gsl.ogg" ]
+  license: "CC-BY-4.0"
+  copyright: "Fenrir21"
+  source: "https://freesound.org/people/Fenrir21"
+  
+- files: [ "illuminate.ogg" ]
+  license: "CC-BY-4.0"
+  copyright: "CT1ETE"
+  source: "https://freesound.org/people/CT1ETE"
+  
+- files: [ "syndicate.ogg" ]
+  license: "CC-BY-4.0"
+  copyright: "uair01"
+  source: "https://freesound.org/people/uair01"
+  
+- files: [ "amogus.ogg" ]
+  license: "CC BY-NC-ND" # I think? complies with all stipulations as per https://www.innersloth.com/fan-creation-policy/, https://www.innersloth.com/terms-of-use-for-the-games/, and fair use terms
+  copyright: "Innersloth"
+  source: "https://www.innersloth.com"

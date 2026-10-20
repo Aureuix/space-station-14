@@ -16,4 +16,4 @@
     sprite: _Starlight/Admeme/Clothing/Ears/Headsets/ntnc.rsi
   - type: RadioChime
     sound:
-      path: /Audio/_Starlight/Effects/Radio/cc.ogg
+      path: /Audio/_Starlight/Effects/Radio/bso.ogg # SpL

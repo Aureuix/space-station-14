@@ -32,7 +32,7 @@
     back: ClothingBackpackDuffelCBURNCleanup # SpL
     mask: ClothingMaskGasCBURN # SpL
     eyes: ClothingEyesGlassesCentComm
-    ears: ClothingHeadsetCentCom #Starlight
+    ears: ClothingHeadsetAltERTLeader #SpL
     gloves: ClothingHandsGlovesCombat
     outerClothing: ClothingOuterSoftsuitCBURN #Starlight
     shoes: ClothingShoesBootsMagERTFilled # SpL
