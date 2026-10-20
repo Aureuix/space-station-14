@@ -34,11 +34,11 @@
         - PAI
     penSlot:
       startingItem: Pen
-      priority: -1
       whitelist:
         tags:
         - Write
     idSlot:
+      priority: -1 # SpL- moved ID instead of pen to low prio
       name: access-id-card-component-default
       ejectSound: /Audio/Machines/id_swipe.ogg
       insertSound: /Audio/Machines/id_insert.ogg
@@ -50,8 +50,8 @@
     size: Small
   - type: ContainerContainer
     containers:
-      PDA-id: !type:ContainerSlot {}
       PDA-pen: !type:ContainerSlot {}
+      PDA-id: !type:ContainerSlot {}
       PDA-pai: !type:ContainerSlot {}
       Cartridge-Slot: !type:ContainerSlot {}
       program-container: !type:Container
