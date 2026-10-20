@@ -45,7 +45,7 @@
 [form] 
 
 [head=1]────────────────────[/head]  
-Submitted by: [bold][signature][/bold]  
+Submitted by: [bold][form][/bold]  
 Position: [form] 
 Location: [form]
 
