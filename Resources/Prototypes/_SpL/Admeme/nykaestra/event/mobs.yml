@@ -315,7 +315,7 @@
     outerClothing: ClothingOuterVestWebElite
     gloves: ClothingHandsGlovesCombat
     back: ClothingBackpackSatchelSyndicate
-    shoes: ClothingShoesBootsCombat
+    shoes: ClothingShoesBootsCombatLeadFilled
   inhand:
     - RiotShield
     - WeaponRifleEstoc
@@ -366,7 +366,7 @@
     outerClothing: ClothingOuterVestWebElite
     gloves: ClothingHandsGlovesCombat
     back: ClothingBackpackSatchelSyndicate
-    shoes: ClothingShoesBootsCombat
+    shoes: ClothingShoesBootsCombatConcreteFilled
   inhand:
     - RiotShield
     - WeaponRiflePitbull
@@ -401,7 +401,7 @@
     outerClothing: ClothingOuterVestWeb
     gloves: ClothingHandsGlovesCombat
     back: ClothingBackpackSatchelSyndicate
-    shoes: ClothingShoesBootsCombat
+    shoes: ClothingShoesBootsCombatConcreteFilled
   inhand:
     - RiotLaserShield
     - WeaponLightMachineGunL6
@@ -709,7 +709,7 @@
     head: ClothingHeadHelmetERTSecurity
     jumpsuit: ClothingUniformJumpsuitERTSecurity
     back: ClothingBackpackERTSecurity
-    shoes: ClothingShoesBootsMagERT
+    shoes: ClothingShoesBootsCombatConcreteFilled
     mask: ClothingMaskGasERT
     eyes: ClothingEyesGlassesCentComm
     gloves: ClothingHandsGlovesCombat
@@ -726,7 +726,7 @@
     head: ClothingHeadHelmetERTSecurity
     jumpsuit: ClothingUniformJumpsuitERTSecurity
     back: ClothingBackpackERTSecurity
-    shoes: ClothingShoesBootsMagERT
+    shoes: ClothingShoesBootsCombatConcreteFilled
     mask: ClothingMaskGasERT
     eyes: ClothingEyesGlassesCentComm
     gloves: ClothingHandsGlovesCombat
@@ -743,7 +743,7 @@
     head: ClothingHeadHelmetERTSecurity
     jumpsuit: ClothingUniformJumpsuitERTSecurity
     back: ClothingBackpackERTSecurity
-    shoes: ClothingShoesBootsMagERT
+    shoes: ClothingShoesBootsCombatConcreteFilled
     mask: ClothingMaskGasERT
     eyes: ClothingEyesGlassesCentComm
     gloves: ClothingHandsGlovesCombat
@@ -760,7 +760,7 @@
     head: ClothingHeadHelmetERTSecurity
     jumpsuit: ClothingUniformJumpsuitERTSecurity
     back: ClothingBackpackERTSecurity
-    shoes: ClothingShoesBootsMagERT
+    shoes: ClothingShoesBootsCombatConcreteFilled
     mask: ClothingMaskGasERT
     eyes: ClothingEyesGlassesCentComm
     gloves: ClothingHandsGlovesCombat
@@ -777,7 +777,7 @@
     head: ClothingHeadHelmetERTLeader
     jumpsuit: ClothingUniformJumpsuitERTLeader
     back: ClothingBackpackERTLeader
-    shoes: ClothingShoesBootsMagERT
+    shoes: ClothingShoesBootsCombatLeadFilled
     mask: ClothingMaskGasERT
     eyes: ClothingEyesGlassesCentComm
     gloves: ClothingHandsGlovesCombat
@@ -1079,7 +1079,7 @@
     eyes: ClothingEyesGlassesCentComm
     gloves: ClothingHandsGlovesCombat
     outerClothing: ClothingOuterHardsuitCBURN
-    shoes: ClothingShoesBootsMagERT
+    shoes: ClothingShoesBootsCombatLeadFilled
     id: CBURNPDA
     belt: ClothingBeltMilitaryWebbingERT
     suitstorage: WeaponShotgunCombatIncendiary
@@ -1098,7 +1098,7 @@
     eyes: ClothingEyesGlassesCentComm
     gloves: ClothingHandsGlovesCombat
     outerClothing: ClothingOuterSoftsuitCBURN
-    shoes: ClothingShoesBootsMagERT
+    shoes: ClothingShoesBootsCombatLeadFilled
     id: CBURNAltPDA
     belt: ClothingBeltMilitaryWebbingERT
     suitstorage: WeaponShotgunCombatIncendiary
@@ -1146,7 +1146,7 @@
   equipment:
     jumpsuit: ClothingUniformJumpsuitCentcomOfficerBlack
     back: ClothingBackpackSatchelHolding
-    shoes: ClothingShoesBootsMagERTFilled
+    shoes: ClothingShoesBootsCombatLeadFilled
     outerClothing: ClothingOuterHardsuitSVSElite
     id: CentCommOperatorPDA
     eyes: ClothingEyesGlassesCentComm

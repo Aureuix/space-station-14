@@ -186,3 +186,21 @@
     - type: UseDelay
       delay: 1
     - type: Appearance
+      
+- type: entity
+  parent: ClothingShoesBootsCombat
+  id: ClothingShoesBootsCombatLeadFilled
+  categories: [ HideSpawnMenu ]
+  components:
+    - type: ClothingSpeedModifier
+      walkModifier: 1
+      sprintModifier: 0.6
+  
+- type: entity
+  parent: ClothingShoesBootsCombat
+  id: ClothingShoesBootsCombatConcreteFilled
+  categories: [ HideSpawnMenu ]
+  components:
+    - type: ClothingSpeedModifier
+      walkModifier: 1
+      sprintModifier: 0.8
