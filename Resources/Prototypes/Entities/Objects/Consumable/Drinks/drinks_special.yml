@@ -208,6 +208,8 @@
     solution: drink
   - type: FitsInDispenser
     solution: drink
+  - type: TriggerOnSpawn # SpL- godo
+  - type: DeleteOnTrigger # SpL- godo
 
 - type: entity
   parent: DrinkShakeBase
