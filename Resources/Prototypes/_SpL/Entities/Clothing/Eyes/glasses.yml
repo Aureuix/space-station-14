@@ -24,12 +24,27 @@
       sprite: DeltaV/Clothing/Eyes/Glasses/traymeson.rsi
     - type: Clothing
       sprite: DeltaV/Clothing/Eyes/Glasses/traymeson.rsi
+      quickEquip: true
     - type: EyeProtection
-    - type: TrayScanner
-      enabled: true
     - type: FlashImmunity
     - type: IdentityBlocker
       coverage: EYES
+    - type: ItemToggle
+      soundActivate: 
+        path: /Audio/Machines/machine_switch.ogg
+        params:
+          volume: -3
+      soundDeactivate: 
+        path: /Audio/Machines/button.ogg
+        params:
+          volume: -3
+      verbToggleOn: item-toggle-enable-tray
+      verbToggleOff: item-toggle-disable-tray
+      onUse: false
+    - type: ComponentToggler
+      components:
+        - type: TrayScanner
+          enabled: true
     - type: ShowHealthBars
       damageContainers:
         - Inorganic
