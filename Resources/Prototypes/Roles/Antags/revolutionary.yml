@@ -7,13 +7,13 @@
   guides: [ Revolutionaries ]
   requirements:
   - !type:OverallPlaytimeRequirement
-    time: 20h # Starlight start # SpL reduction
+    time: 24h # SpL- learn culture before antagging
 #  - !type:RoleTimeRequirement
 #    role: JobSecurityOfficer # Less important than some of the other antags to know
 #    time: 1h
-  - !type:DepartmentTimeRequirement
-    department: Command
-    time: 1h # Have to be a leader. You're essentially making your own chain of command in this role. # SpL- reduced
+  # - !type:DepartmentTimeRequirement
+  #  department: Command
+  #  time: 1h # Have to be a leader. You're essentially making your own chain of command in this role. # SpL- removed
   playTimeTracker: AntagHeadRev # Starlight end
 
 - type: antag

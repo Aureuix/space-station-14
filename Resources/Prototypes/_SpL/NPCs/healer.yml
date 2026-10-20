@@ -1,0 +1,190 @@
+﻿- type: htnCompound
+  id: FreeRangeHealerCompound
+  branches:
+    - tasks:
+        - !type:HTNCompoundTask
+          task: RecoveryCompound
+    - tasks:
+        - !type:HTNPrimitiveTask
+          operator: !type:UtilityOperator
+            proto: AllyHealerInjectable
+            returnType: EnumerableDescending
+        - !type:HTNPrimitiveTask
+          operator: !type:PickNearbyInjectableOperator
+            targetKey: Target
+            targetMoveKey: TargetCoordinates
+        - !type:HTNCompoundTask
+          task: AllyHealerGetInRange
+        - !type:HTNCompoundTask
+          task: AllyHealerInject
+    - tasks:
+        - !type:HTNCompoundTask
+          task: PassiveMovementCompound
+
+- type: htnCompound
+  id: AllyHealerCompound
+  branches:
+    - tasks:
+        - !type:HTNCompoundTask
+          task: RecoveryCompound
+    - tasks:
+        - !type:HTNPrimitiveTask
+          operator: !type:UtilityOperator
+            proto: AllyHealerInjectable
+            returnType: EnumerableDescending
+        - !type:HTNPrimitiveTask
+          operator: !type:PickNearbyInjectableOperator
+            targetKey: Target
+            targetMoveKey: TargetCoordinates
+        - !type:HTNCompoundTask
+          task: AllyHealerGetInRange
+        - !type:HTNCompoundTask
+          task: AllyHealerInject
+    - tasks:
+        - !type:HTNCompoundTask
+          task: FollowCloseCompound
+    - tasks:
+        - !type:HTNCompoundTask
+          task: IdleCompound
+  
+- type: htnCompound
+  id: AllyHealerArmedCompound
+  branches:
+    - tasks:
+        - !type:HTNCompoundTask
+          task: RecoveryCompound
+    - tasks:
+        - !type:HTNPrimitiveTask
+          operator: !type:UtilityOperator
+            proto: AllyHealerInjectable
+            returnType: EnumerableDescending
+        - !type:HTNPrimitiveTask
+          #  preconditions:
+          #    - !type:KeyNotExistsPrecondition
+          #      key: Cooldown
+          operator: !type:PickNearbyInjectableOperator
+            targetKey: Target
+            targetMoveKey: TargetCoordinates
+        - !type:HTNCompoundTask
+          task: AllyHealerGetInRange
+        - !type:HTNCompoundTask
+          task: AllyHealerInject
+        #- !type:HTNPrimitiveTask
+        #  operator: !type:SetFloatOperator
+        #    targetKey: Cooldown
+        #    amount: 5
+        #- !type:HTNPrimitiveTask
+        #  operator: !type:WaitOperator
+        #    key: Cooldown
+        #  preconditions:
+        #    - !type:KeyExistsPrecondition
+        #      key: Cooldown
+    - tasks:
+        - !type:HTNPrimitiveTask
+          operator: !type:UtilityOperator
+            proto: NearbyGunTargets
+        - !type:HTNPrimitiveTask
+          preconditions:
+            - !type:KeyExistsPrecondition
+              key: Target
+            - !type:TargetInRangePrecondition
+              targetKey: Target
+              rangeKey: VisionRadius
+            - !type:TargetInLOSPrecondition
+              targetKey: Target
+              rangeKey: VisionRadius
+          operator: !type:GunOperator
+            targetKey: Target
+            requireLOS: true
+          services:
+            - !type:UtilityService
+              id: RangedService
+              proto: NearbyGunTargets
+              key: Target
+        - !type:HTNPrimitiveTask
+          preconditions:
+            - !type:KeyExistsPrecondition
+              key: Target
+            - !type:TargetInRangePrecondition
+              targetKey: Target
+              rangeKey: VisionRadius
+            - !type:TargetInLOSPrecondition
+              targetKey: Target
+              rangeKey: VisionRadius
+          operator: !type:SpeakOperator
+            speech: !type:LocalizedSetSpeakOperatorSpeech
+              lineSet: ShooterDown
+            hidden: true
+            cooldownID: shooter-target-spotted
+            cooldown: 3
+          services:
+            - !type:UtilityService
+              id: RangedService
+              proto: NearbyGunTargets
+              key: Target
+    - tasks:
+        - !type:HTNCompoundTask
+          task: FollowCloseCompound
+    - tasks:
+        - !type:HTNCompoundTask
+          task: IdleCompound
+          
+- type: utilityQuery
+  id: AllyHealerInjectable
+  query:
+    - !type:NearbyFriendliesQuery
+    - !type:HostileFilter
+    - !type:ComponentQuery
+      components:
+        - type: InjectableSolution
+        - type: Damageable
+        - type: MobState
+    - !type:ComponentFilter
+      components:
+        - type: DamagedSiliconAccent
+      retainWithComp: false
+  considerations:
+    - !type:TargetHealthCon
+      curve: !type:PresetCurve
+        preset: TargetHealth
+    - !type:TargetIsCritCon
+      curve: !type:QuadraticCurve
+        slope: 1
+        exponent: 1
+        yOffset: 0.1
+        xOffset: 0
+    - !type:TargetDistanceCon
+      curve: !type:PresetCurve
+        preset: TargetDistance
+
+- type: htnCompound
+  id: AllyHealerGetInRange
+  branches:
+    - preconditions:
+        - !type:TargetInRangePrecondition
+          invert: true
+          targetKey: Target
+          rangeKey: InteractRange
+      tasks:
+        - !type:HTNPrimitiveTask
+          operator: !type:MoveToOperator
+            pathfindInPlanning: false
+    - tasks:
+        - !type:HTNPrimitiveTask
+          operator: !type:NoOperator
+
+- type: htnCompound
+  id: AllyHealerInject
+  branches:
+    - tasks:
+        - !type:HTNPrimitiveTask
+          operator: !type:SpeakOperator
+            speech: !type:LocalizedSetSpeakOperatorSpeech
+              lineSet: AllyHealerActive
+            hidden: true
+            cooldownID: ally-healer-active
+            cooldown: 10
+        - !type:HTNPrimitiveTask
+          operator: !type:InteractWithOperator
+            expectDoAfter: true
+            targetKey: Target

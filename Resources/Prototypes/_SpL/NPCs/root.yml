@@ -1,4 +1,28 @@
 ﻿- type: htnCompound
+  id: RecoveryCompound
+  branches:
+    - preconditions:
+        - !type:BuckledPrecondition
+          isBuckled: true
+      tasks:
+        - !type:HTNPrimitiveTask
+          operator: !type:UnbuckleOperator
+            shutdownState: TaskFinished
+    - preconditions:
+        - !type:PulledPrecondition
+          isPulled: true
+      tasks:
+        - !type:HTNPrimitiveTask
+          operator: !type:UnPullOperator
+            shutdownState: TaskFinished
+    - preconditions:
+        - !type:InContainerPrecondition
+          isInContainer: true
+      tasks:
+        - !type:HTNCompoundTask
+          task: EscapeCompound
+
+- type: htnCompound
   id: FollowCloseCompound
   branches:
     - tasks:
@@ -48,7 +72,6 @@
 - type: htnCompound
   id: FollowMedCompound
   branches:
-    # Head to follow target
     - tasks:
         - !type:HTNPrimitiveTask
           preconditions:
@@ -92,11 +115,55 @@
               rangeKey: FollowRange
           operator: !type:WaitOperator
             key: IdleTime
-
+            
 - type: htnCompound
-  id: LongRangeShooterAllyCompound
+  id: ShooterTargetIdentifyCompound
   branches:
     - tasks:
+        - !type:HTNPrimitiveTask
+          operator: !type:UtilityOperator
+            proto: NearbyGunTargets
+            key: Target
+        - !type:HTNPrimitiveTask
+          operator: !type:SpeakOperator
+            speech: !type:LocalizedSetSpeakOperatorSpeech
+              lineSet: ShooterEngage
+            hidden: true
+            cooldownID: shooter-target-spotted-alt
+            cooldown: 3
+
+- type: htnCompound
+  id: ShooterTargetNeutralizedCompound
+  branches:
+    - tasks:
+        - !type:HTNPrimitiveTask
+          preconditions:
+            - !type:KeyExistsPrecondition
+              key: Target
+            - !type:TargetInRangePrecondition
+              targetKey: Target
+              rangeKey: VisionRadius
+            - !type:TargetInLOSPrecondition
+              targetKey: Target
+              rangeKey: VisionRadius
+          operator: !type:SpeakOperator
+            speech: !type:LocalizedSetSpeakOperatorSpeech
+              lineSet: ShooterDown
+            hidden: true
+            cooldownID: shooter-target-spotted
+            cooldown: 3
+          services:
+            - !type:UtilityService
+              id: RangedService
+              proto: NearbyGunTargets
+              key: Target
+              
+- type: htnCompound
+  id: StationaryShooterCompound
+  branches:
+    - tasks:
+        - !type:HTNCompoundTask
+          task: ShooterTargetIdentifyCompound
         - !type:HTNPrimitiveTask
           operator: !type:UtilityOperator
             proto: NearbyGunTargets
@@ -118,22 +185,59 @@
               id: RangedService
               proto: NearbyGunTargets
               key: Target
-    - tasks:
-        - !type:HTNCompoundTask
-          task: FollowMedCompound
-    - tasks:
-        - !type:HTNCompoundTask
-          task: IdleCompound
-          
+              
 - type: htnCompound
-  id: MedRangeShooterAllyCompound
+  id: MeleeAttackCritTargetCompound
   branches:
     - tasks:
-        - !type:HTNCompoundTask
-          task: GunCombatCompound
+      - !type:HTNPrimitiveTask
+        operator: !type:UtilityOperator
+          proto: NearbyGunTargetsNoMercy
+        preconditions:
+          - !type:KeyExistsPrecondition
+            key: Target
     - tasks:
-        - !type:HTNCompoundTask
-          task: FollowCloseCompound
-    - tasks:
-        - !type:HTNCompoundTask
-          task: IdleCompound
+        - !type:HTNPrimitiveTask
+          operator: !type:JumpOperator
+            shutdownState: PlanFinished
+            removeKeyOnFinish: false
+            targetKey: TargetCoordinates
+        - !type:HTNPrimitiveTask
+          operator: !type:MoveToOperator
+            shutdownState: PlanFinished
+            pathfindInPlanning: true
+            removeKeyOnFinish: false
+            brakeMaxVelocity: null
+            targetKey: TargetCoordinates
+            pathfindKey: TargetPathfind
+            rangeKey: MeleeRange
+        - !type:HTNPrimitiveTask
+          operator: !type:MeleeOperator
+            targetKey: Target
+          preconditions:
+            - !type:KeyExistsPrecondition
+              key: Target
+            - !type:TargetInRangePrecondition
+              targetKey: Target
+              rangeKey: MeleeRange
+          services:
+            - !type:UtilityService
+              id: MeleeService
+              proto: NearbyGunTargetsNoMercy
+              key: Target
+              
+- type: htnCompound
+  id: PassiveMovementCompound
+  branches:
+    - preconditions:
+        - !type:BuckledPrecondition
+          isBuckled: false
+        - !type:PulledPrecondition
+          isPulled: false
+      tasks:
+        - !type:HTNPrimitiveTask
+          operator: !type:PickAccessibleOperator
+            rangeKey: VisionRadius
+        - !type:HTNPrimitiveTask
+          operator: !type:MoveToOperator
+            pathfindInPlanning: false

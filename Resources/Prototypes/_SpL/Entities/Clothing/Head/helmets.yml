@@ -11,6 +11,10 @@
       clothingVisuals:
         head:
           - state: off-equipped-HELMET
+    - type: Item
+      sprite: _SpL/Clothing/Head/Helmets/syndie_assault.rsi
+      # storedOffset: -1,1
+      storedRotation: 0
     - type: ItemSlots
       slots:
         cell_slot:

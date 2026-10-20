@@ -15,7 +15,7 @@
 
 [form]
 [/mono]
-[bolditalic]– [signature][/bolditalic]
+[bolditalic]– [form][/bolditalic]
 
 [italic][color=#6D6D6D]Failure to acknowledge an official communication document from Central Command may lead to revocation of authority, associated disciplinary action, or immediate termination of your contract.[/color][/italic][/color]
 ══════════════════════════════════════════

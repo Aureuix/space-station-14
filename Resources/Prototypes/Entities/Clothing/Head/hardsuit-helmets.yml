@@ -9,6 +9,7 @@
 - type: entity
   parent: [ ClothingHeadHardsuitBase, ClothingHeadSuitWithLightBase, ClothingHeadLightParamsIntermediate ] # Starlight
   id: ClothingHeadHelmetHardsuitAtmos
+  categories: [ HideSpawnMenu ] # SpL
   name: atmos hardsuit helmet
   description: A special hardsuit helmet designed for working in low-pressure, high thermal environments.
   components:
@@ -101,6 +102,7 @@
 - type: entity
   parent: [ ClothingHeadHardsuitBase, ClothingHeadSuitWithLightBase, ClothingHeadLightParamsIntermediate ] # Starlight
   id: ClothingHeadHelmetHardsuitEngineering
+  categories: [ HideSpawnMenu ] # SpL
   name: engineering hardsuit helmet
   description: An engineering hardsuit helmet designed for working in low-pressure, high radioactive environments.
   components:
@@ -188,6 +190,7 @@
 - type: entity
   parent: [ ClothingHeadHardsuitBase, ClothingHeadSuitWithLightBase, ClothingHeadLightParamsAdvanced ] # Starlight
   id: ClothingHeadHelmetHardsuitSpatio
+  categories: [ HideSpawnMenu ] # SpL
   name: spationaut hardsuit helmet
   description: A sturdy helmet designed for complex industrial operations in space.
   components:
@@ -273,6 +276,7 @@
 - type: entity
   parent: [ ClothingHeadHardsuitBase, ClothingHeadSuitWithLightBase, ClothingHeadLightParamsAdvanced ] # Starlight
   id: ClothingHeadHelmetHardsuitSalvage
+  categories: [ HideSpawnMenu ] # SpL
   name: salvage hardsuit helmet
   description: A special helmet designed for work in a hazardous, low pressure environment. Has reinforced plating for wildlife encounters and dual floodlights.
   components:
@@ -354,6 +358,7 @@
 - type: entity
   parent: [ ClothingHeadHardsuitBase, ClothingHeadSuitWithLightBase, ClothingHeadLightParamsAdvanced ] # Starlight
   id: ClothingHeadHelmetHardsuitGoliath
+  categories: [ HideSpawnMenu ] # SpL
   name: goliath hardsuit helmet
   description: A sturdy hardsuit helmet, infused with a goliath's hide and an eerie, unblinking eye cut from its mass.
   components:
@@ -439,6 +444,7 @@
 - type: entity
   parent: [ ClothingHeadHardsuitBase, ClothingHeadSuitWithLightBase, ClothingHeadLightParamsAdvanced ] # Starlight
   id: ClothingHeadHelmetHardsuitSecurity
+  categories: [ HideSpawnMenu ] # SpL
   name: security hardsuit helmet
   description: Armored hardsuit helmet for security needs.
   components:
@@ -467,6 +473,7 @@
 - type: entity
   parent: [ ClothingHeadHardsuitBase, ClothingHeadSuitWithLightBase, ClothingHeadLightParamsAdvanced ] # Starlight
   id: ClothingHeadHelmetHardsuitBrigmedic
+  categories: [ HideSpawnMenu ] # SpL
   name: brigmedic hardsuit helmet
   description: The lightweight helmet of the brigmedic hardsuit. Protects against viruses, and clowns.
   components:
@@ -499,6 +506,7 @@
 - type: entity
   parent: [ ClothingHeadHardsuitBase, ClothingHeadSuitWithLightBase, ClothingHeadLightParamsAdvanced ] # Starlight
   id: ClothingHeadHelmetHardsuitWarden
+  categories: [ HideSpawnMenu ] # SpL
   name: warden's hardsuit helmet
   description: A modified riot helmet. Oddly comfortable.
   components:
@@ -523,6 +531,7 @@
 - type: entity
   parent: [ ClothingHeadHardsuitBase, ClothingHeadSuitWithLightBase, ClothingHeadLightParamsAdvanced ] # Starlight
   id: ClothingHeadHelmetHardsuitCap
+  categories: [ HideSpawnMenu ] # SpL
   name: captain's hardsuit helmet
   description: Special hardsuit helmet, made for the captain of the station.
   components:
@@ -544,6 +553,7 @@
 - type: entity
   parent: [ ClothingHeadHardsuitBase, ClothingHeadSuitWithLightBase, ClothingHeadLightParamsProfessional ] # Starlight
   id: ClothingHeadHelmetHardsuitEngineeringWhite
+  categories: [ HideSpawnMenu ] # SpL
   name: chief engineer's hardsuit helmet
   description: Special hardsuit helmet, made for the chief engineer of the station.
   components:
@@ -633,6 +643,7 @@
 - type: entity
   parent: [ ClothingHeadHardsuitBase, ClothingHeadSuitWithLightBase, ClothingHeadLightParamsIntermediate ] # Starlight
   id: ClothingHeadHelmetHardsuitMedical
+  categories: [ HideSpawnMenu ] # SpL
   name: chief medical officer's hardsuit helmet
   description: Lightweight medical hardsuit helmet that doesn't restrict your head movements.
   components:
@@ -654,6 +665,7 @@
 - type: entity
   parent: [ ClothingHeadHardsuitBase, ClothingHeadSuitWithLightBase, ClothingHeadLightParamsIntermediate ] # Starlight
   id: ClothingHeadHelmetHardsuitRd
+  categories: [ HideSpawnMenu ] # SpL
   name: experimental research hardsuit helmet
   description: Lightweight hardsuit helmet that doesn't restrict your head movements.
   components:
@@ -675,6 +687,7 @@
 - type: entity
   parent: [ ClothingHeadHardsuitBase, ClothingHeadSuitWithLightBase, ClothingHeadLightParamsAdvanced ] # Starlight
   id: ClothingHeadHelmetHardsuitSecurityRed
+  categories: [ HideSpawnMenu ] # SpL
   name: head of security's hardsuit helmet
   description: Security hardsuit helmet with the latest top secret NT-HUD software. Belongs to the HoS.
   components:
@@ -701,7 +714,7 @@
   id: ClothingHeadHelmetHardsuitLuxury #DO NOT MAP - https://github.com/space-wizards/space-station-14/pull/19738#issuecomment-1703486738
   name: luxury mining hardsuit helmet
   description: A refurbished mining hardsuit helmet, fitted with satin cushioning and an extra (non-functioning) antenna, because you're that extra.
-  categories: [ DoNotMap ]
+  categories: [ DoNotMap, HideSpawnMenu ]
   components:
   - type: Sprite
     sprite: Clothing/Head/Hardsuits/luxury.rsi
@@ -722,6 +735,7 @@
 - type: entity
   parent: [ ClothingHeadHardsuitBase, ClothingHeadSuitWithLightBase, ClothingHeadLightParamsIntermediate ] # Starlight
   id: ClothingHeadHelmetHardsuitSyndie
+  categories: [ HideSpawnMenu ] # SpL
   name: blood-red warsuit helmet # SpL
   description: A heavily armored helmet designed for work in special operations, with the signature baleful visoring synonymous with an elite Syndicate operative. # SpL
   components:
@@ -750,6 +764,7 @@
 - type: entity
   parent: [ ClothingHeadHardsuitBase, ClothingHeadSuitWithLightBase, ClothingHeadLightParamsIntermediate ] # Starlight
   id: ClothingHeadHelmetHardsuitSyndieMedic
+  categories: [ HideSpawnMenu ] # SpL
   name: blood-red medic warsuit helmet # SpL
   description: An advanced armored helmet specifically designed for the Syndicate operatives' field medical operations. # SpL
   components:
@@ -779,6 +794,7 @@
 - type: entity
   parent: [ ClothingHeadHardsuitBase, ClothingHeadSuitWithLightBase, ClothingHeadLightParamsIntermediate ] # Starlight
   id: ClothingHeadHelmetHardsuitSyndieElite
+  categories: [ HideSpawnMenu ] # SpL
   name: elite operative helmet # SpL
   description: An elite version of the blood-red warsuit's helmet, with improved radiation resistance and fireproofing. # SpL
   components:
@@ -812,6 +828,7 @@
 - type: entity
   parent: [ ClothingHeadHardsuitBase, ClothingHeadSuitWithLightBase, ClothingHeadLightParamsIntermediate ] # Starlight
   id: ClothingHeadHelmetHardsuitSyndieCommander
+  categories: [ HideSpawnMenu ] # SpL
   name: operative commander helmet # SpL
   description: A bulked up version of the blood-red hardsuit's helmet, purpose-built for the commander of a syndicate operative squad. Has significantly improved armor for those deadly front-lines firefights. # SpL
   components:
@@ -840,6 +857,7 @@
 - type: entity
   parent: [ ClothingHeadHardsuitBase, ClothingHeadSuitWithLightBase, ClothingHeadLightParamsIntermediate ] # Starlight
   id: ClothingHeadHelmetHardsuitCybersun
+  categories: [ HideSpawnMenu ] # SpL
   name: CyberSun juggernaut helmet # SpL
   description: Made of compressed plastitanium, this helmet was designed in the Tau chromosphere facility.
   components:
@@ -868,6 +886,7 @@
 - type: entity
   parent: [ ClothingHeadHardsuitBase, ClothingHeadSuitWithLightBase, ClothingHeadLightParamsIntermediate ] # Starlight
   id: ClothingHeadHelmetHardsuitWizard
+  categories: [ HideSpawnMenu ] # SpL
   name: wizard hardsuit helmet
   description: A bizarre gem-encrusted helmet that radiates magical energies.
   components:
@@ -896,6 +915,7 @@
 - type: entity
   parent: ClothingHeadHardsuitBase
   id: ClothingHeadHelmetHardsuitLing
+  categories: [ HideSpawnMenu ] # SpL
   name: organic space helmet
   description: A spaceworthy biomass of pressure and temperature resistant tissue.
   components:
@@ -911,6 +931,7 @@
 - type: entity
   parent: ClothingHeadHardsuitBase
   id: ClothingHeadHelmetHardsuitPirateEVA
+  categories: [ HideSpawnMenu ] # SpL
   name: deep space EVA helmet
   suffix: Pirate
   description: A deep space EVA helmet, very heavy but provides good protection.
@@ -927,6 +948,7 @@
 - type: entity
   parent: [ ClothingHeadHardsuitBase, ClothingHeadSuitWithLightBase, ClothingHeadLightParamsAdvanced ] # Starlight
   id: ClothingHeadHelmetHardsuitPirateCap
+  categories: [ HideSpawnMenu ] # SpL
   name: pirate captain's hardsuit helmet
   suffix: Pirate
   description: A special hardsuit helmet, made for the captain of a pirate ship.
@@ -978,6 +1000,7 @@
 - type: entity
   parent: [ BaseCentcommContraband, ClothingHeadLightParamsProfessional, ClothingHeadHelmetHardsuitSyndieCommander ] # Starlight
   id: ClothingHeadHelmetHardsuitERTLeader
+  categories: [ HideSpawnMenu ] # SpL
   name: ERT leader tacsuit helmet # SpL
   description: A special hardsuit helmet worn by members of an Emergency Response Team. # SpL
   components:
@@ -1004,6 +1027,7 @@
 - type: entity
   parent: [ BaseCentcommContraband, ClothingHeadLightParamsProfessional, ClothingHeadHelmetHardsuitSyndie ] # Starlight
   id: ClothingHeadHelmetHardsuitERTChaplain
+  categories: [ HideSpawnMenu ] # SpL
   name: ERT chaplain tacsuit helmet
   description: A special hardsuit helmet worn by members of an Emergency Response Team. # SpL
   components:
@@ -1023,6 +1047,7 @@
 - type: entity
   parent: [ BaseCentcommContraband, ClothingHeadLightParamsProfessional, ClothingHeadHelmetHardsuitSyndie ] # Starlight
   id: ClothingHeadHelmetHardsuitERTEngineer
+  categories: [ HideSpawnMenu ] # SpL
   name: ERT engineering tacsuit helmet # SpL
   description: A special hardsuit helmet worn by members of an Emergency Response Team. # SpL
   components:
@@ -1051,6 +1076,7 @@
 - type: entity
   parent: [ BaseCentcommContraband, ClothingHeadLightParamsProfessional, ClothingHeadHelmetHardsuitSyndieElite ] # Starlight
   id: ClothingHeadHelmetHardsuitERTMedical
+  categories: [ HideSpawnMenu ] # SpL
   name: ERT medical tacsuit helmet # SpL
   description: A special hardsuit helmet worn by members of an Emergency Response Team. # SpL
   components:
@@ -1070,6 +1096,7 @@
 - type: entity
   parent: [ BaseCentcommContraband, ClothingHeadLightParamsProfessional, ClothingHeadHelmetHardsuitSyndie ] # Starlight
   id: ClothingHeadHelmetHardsuitERTSecurity
+  categories: [ HideSpawnMenu ] # SpL
   name: ERT security tacsuit helmet # SpL
   description: A special hardsuit helmet worn by members of an Emergency Response Team. # SpL
   components:
@@ -1098,6 +1125,7 @@
 - type: entity
   parent: [ BaseCentcommContraband, ClothingHeadLightParamsProfessional, ClothingHeadHelmetHardsuitSyndie ] # Starlight
   id: ClothingHeadHelmetHardsuitERTJanitor
+  categories: [ HideSpawnMenu ] # SpL
   name: ERT janitorial tacsuit helmet
   description: A special hardsuit helmet worn by members of an Emergency Response Team. # SpL
   components:
@@ -1117,6 +1145,7 @@
 - type: entity
   parent: [ BaseCentcommContraband, ClothingHeadHardsuitBase, ClothingHeadSuitWithLightBase, ClothingHeadLightParamsAdvanced ] # Starlight
   id: ClothingHeadHelmetCBURN
+  categories: [ HideSpawnMenu ] # SpL
   name: CBURN exosuit helmet
   description: A pressure resistant and fireproof hood worn by special cleanup units.
   components:
@@ -1183,6 +1212,7 @@
 - type: entity
   parent: [ BaseCentcommContraband, ClothingHeadHardsuitBase ]
   id: ClothingHeadHelmetHardsuitDeathsquad
+  categories: [ HideSpawnMenu ] # SpL
   name: deathsquad hardsuit helmet
   description: A robust helmet for special operations.
   components:
@@ -1218,6 +1248,7 @@
 - type: entity
   parent: ClothingHeadHelmetHardsuitSecurity
   id: ClothingHeadHelmetHardsuitClown
+  categories: [ HideSpawnMenu ] # SpL
   name: clown hardsuit helmet
   description: A clown hardsuit helmet.
   components:
@@ -1233,6 +1264,7 @@
 - type: entity
   parent: ClothingHeadHelmetHardsuitSecurity
   id: ClothingHeadHelmetHardsuitMime
+  categories: [ HideSpawnMenu ] # SpL
   name: mime hardsuit helmet
   description: A mime hardsuit helmet.
   components:
@@ -1246,6 +1278,7 @@
 - type: entity
   parent: ClothingHeadHardsuitBase
   id: ClothingHeadHelmetHardsuitSanta
+  categories: [ HideSpawnMenu ] # SpL
   name: Santa's hardsuit helmet
   description: A festive-looking hardsuit helmet that provides the jolly gift-giver protection from low-pressure environments.
   components:
@@ -1262,6 +1295,7 @@
 - type: entity
   parent: ClothingHeadHardsuitBase
   id: ChangelingClothingHeadHelmetHardsuit
+  categories: [ HideSpawnMenu ] # SpL
   name: organic space helmet
   description: A spaceworthy biomass of pressure and temperature resistant tissue.
   suffix: Unremoveable

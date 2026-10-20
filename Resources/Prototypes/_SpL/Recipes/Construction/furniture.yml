@@ -22,15 +22,15 @@
   conditions:
     - !type:TileNotBlocked
       
-- type: construction
-  id: ChairPillow
-  graph: AvaliChair
-  startNode: start
-  targetNode: chairPillow
-  category: construction-category-furniture
-  objectType: Structure
-  placementMode: SnapgridCenter
-  canBuildInImpassable: false
-  conditions:
-    - !type:TileNotBlocked
+#- type: construction
+#  id: ChairPillow
+#  graph: AvaliChair
+#  startNode: start
+#  targetNode: chairPillow
+#  category: construction-category-furniture
+#  objectType: Structure
+#  placementMode: SnapgridCenter
+#  canBuildInImpassable: false
+#  conditions:
+#    - !type:TileNotBlocked
       

@@ -17,6 +17,10 @@
     noRot: false
   - type: Clickable
   - type: InteractionOutline
+  - type: TelecomExempt # SpL start
+  - type: RadioMicrophone
+    broadcastChannel: Common
+    listenRange: 2 # SpL end
   - type: Physics
     bodyType: Dynamic
   - type: Fixtures

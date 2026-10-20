@@ -8,7 +8,7 @@
   #roleLoadout: [ SELFAgentGear ] #TODO commenting out for now, I may add like, a hat or protest signs for SELF later locked in loadouts behind playtime
   requirements:
   - !type:OverallPlaytimeRequirement
-    time: 10h # SpL reduction
+    time: 12h # SpL- learn culture before antagging
 #  - !type:RoleTimeRequirement
 #    role: JobBorg
 #    time: 6h

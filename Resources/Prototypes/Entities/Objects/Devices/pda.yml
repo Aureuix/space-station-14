@@ -34,11 +34,11 @@
         - PAI
     penSlot:
       startingItem: Pen
-      priority: -1
       whitelist:
         tags:
         - Write
     idSlot:
+      priority: -1 # SpL- moved ID instead of pen to low prio
       name: access-id-card-component-default
       ejectSound: /Audio/Machines/id_swipe.ogg
       insertSound: /Audio/Machines/id_insert.ogg
@@ -50,8 +50,8 @@
     size: Small
   - type: ContainerContainer
     containers:
-      PDA-id: !type:ContainerSlot {}
       PDA-pen: !type:ContainerSlot {}
+      PDA-id: !type:ContainerSlot {}
       PDA-pai: !type:ContainerSlot {}
       Cartridge-Slot: !type:ContainerSlot {}
       program-container: !type:Container
@@ -980,7 +980,7 @@
   parent: BaseSecurityPDA
   id: CentcomPDA
   name: CentComm PDA
-  description: Light green sign of walking bureaucracy.
+  description: Light green sign of walking bureaucracy. Has a built in energy dome that holds air in but doesn't protect the wearer from attacks. # SpL
   components:
   - type: Pda
     id: CentcomIDCard
@@ -1012,6 +1012,40 @@
       - AstroNavCartridge
       - NanoChatCartridge # CD
       - AppraiseAllCartridge # SpL
+  - type: ContainerContainer # SpL start
+    containers:
+      PDA-id: !type:ContainerSlot { }
+      PDA-pen: !type:ContainerSlot { }
+      PDA-pai: !type:ContainerSlot { }
+      Cartridge-Slot: !type:ContainerSlot { }
+      program-container: !type:Container
+      cell_slot: !type:ContainerSlot
+  - type: PowerCellSlot
+    cellSlotId: cell_slot
+  - type: ItemSlots
+    slots:
+      cell_slot:
+        name: power-cell-slot-component-slot-name-default
+        startingItem: PowerCellMicroreactor
+        disableEject: true
+        swap: false
+  - type: ItemToggle
+    addVerb: false
+    onUse: false
+  - type: EnergyDomeGenerator
+    # canActivateInWorld: false
+    damageEnergyDraw: 0
+    domePrototype: EnergyDomeCentCommAirtight
+    addAction: false
+    addVerb: false
+    canUse: false
+    canUseInteractKeys: false
+    turnOffSound: /Audio/Machines/energyshield_down.ogg
+  - type: ComponentToggler 
+    parent: true
+    components:
+      - type: PressureImmunity
+      - type: TemperatureImmunity # SpL
 
 - type: entity
   parent: CentcomPDA

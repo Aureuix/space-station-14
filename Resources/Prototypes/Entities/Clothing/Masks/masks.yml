@@ -508,13 +508,15 @@
         Piercing: 0.95
         Heat: 0.95
   - type: FlashImmunity # SpL
-    blocksSpecialVision: False
+    blocksSpecialVision: False # SpL
+  - type: IdentityBlocker # SpL
+    coverage: MOUTH # SpL
 
 - type: entity
   parent: ClothingMaskGasERT
   id: ClothingMaskGasDeathSquad
   name: ntsf gas mask #starlight
-  description: A unique gas mask for the NT's most elite squad.
+  description: A unique gas mask for the NT's most elite squads.
   components:
   - type: Sprite
     sprite: Clothing/Mask/squadron.rsi

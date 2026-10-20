@@ -234,6 +234,8 @@
       curve: !type:BoolCurve
     - !type:TargetIsCritCon
       curve: !type:InverseBoolCurve
+    - !type:TargetIsSoftCritCon # SpL
+      curve: !type:InverseBoolCurve # SpL
     - !type:TargetIsStunnedCon
       curve: !type:InverseBoolCurve
     - !type:TurretTargetingCon

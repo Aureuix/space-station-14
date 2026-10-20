@@ -1,8 +1,9 @@
 ﻿- type: soundCollection
   id: NukeLoneOpMusic
   files:
-    - /Audio/StationEvents/running_out.ogg
+    # - /Audio/StationEvents/running_out.ogg # SpL
     # - /Audio/_Starlight/StationEvents/One_Against_All.ogg # SpL
     - /Audio/_Starlight/StationEvents/moodswings.ogg # SpL
     - /Audio/_SpL/StationEvents/shatter_the_hourglass.ogg # SpL
     - /Audio/_SpL/StationEvents/minutes_to_midnight.ogg # SpL
+    - /Audio/_SpL/StationEvents/third_strike_alt.ogg # SpL

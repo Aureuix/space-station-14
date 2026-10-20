@@ -99,6 +99,7 @@
 - type: entity
   parent: [ ClothingHeadHardsuitBase, ClothingHeadSuitWithLightBase, ClothingHeadLightParamsIntermediate ]
   id: ClothingHeadHelmetBattlesuitClown
+  categories: [ HideSpawnMenu ] # SpL
   name: clown battlesuit helmet
   description: Armored battlesuit helmet for silly needs.
   components:
@@ -123,6 +124,7 @@
 - type: entity
   parent: ClothingHeadHardsuitBase
   id: ClothingHeadHelmetHardsuitMercenary
+  categories: [ HideSpawnMenu ] # SpL
   name: mercenary hardsuit helmet
   components:
     - type: Sprite
@@ -144,6 +146,7 @@
 - type: entity
   parent: ClothingHeadHardsuitBase
   id: ClothingHeadHelmetHardsuitSpaceHazard
+  categories: [ HideSpawnMenu ] # SpL
   name: space hazard helmet
   description: Keeps the cold sulfuric embrace of space out.
   components:
@@ -199,6 +202,7 @@
 - type: entity
   parent: [ ClothingHeadHardsuitBase, BaseSovietContraband, ClothingHeadSuitWithLightBase, ClothingHeadLightParamsIntermediate]
   id: ClothingHeadHelmetHardsuitSovietMarine
+  categories: [ HideSpawnMenu ] # SpL
   name: SSF marine hardsuit helmet
   description: From the soviet dieselpunk world.
   components:
@@ -272,6 +276,7 @@
 - type: entity
   parent: [ ClothingHeadHelmetHardsuitSecurity, ClothingHeadSuitWithLightBase, ClothingHeadLightParamsAdvanced ]
   id: ClothingHeadHelmetHardsuitSecurityExperimental
+  categories: [ HideSpawnMenu ] # SpL
   name: experimental security hardsuit helmet
   description: Heavily armored hardsuit helmet for security needs, now with lights!
   components:
@@ -297,6 +302,7 @@
 - type: entity
   parent: [ ClothingHeadHardsuitBase, ClothingHeadSuitWithLightBase, ClothingHeadLightParamsAdvanced ]
   id: ClothingHeadHelmetHardsuitSpatioLead
+  categories: [ HideSpawnMenu ] # SpL
   name: spationaut lead hardsuit helmet
   description: A sturdy decorated helmet designed for complex industrial operations in space.
   components:
@@ -378,6 +384,7 @@
 - type: entity
   parent: [ ClothingHeadHardsuitBase, ClothingHeadSuitWithLightBase, ClothingHeadLightParamsFloodlight ]
   id: ClothingHeadHelmetHardsuitAdvancedMining
+  categories: [ HideSpawnMenu ] # SpL
   name: advanced mining hardsuit helmet
   description: A specially designed helmet for mining operations.
   components:
@@ -460,6 +467,7 @@
 - type: entity
   parent: [ ClothingHeadHardsuitBase, ClothingHeadSuitWithLightBase, ClothingHeadLightParamsProfessional ]
   id: ClothingHeadHelmetHardsuitMining
+  categories: [ HideSpawnMenu ] # SpL
   name: mining hardsuit helmet
   description: A special helmet designed for work in a hazardous, low pressure environments encountered during space mining. Has dual floodlights.
   components:
@@ -534,6 +542,7 @@
 - type: entity
   parent: ClothingHeadHelmetHardsuitAtmos
   id: ClothingHeadHelmetHardsuitAtmosGolden
+  categories: [ HideSpawnMenu ] # SpL
   name: golden atmos hardsuit helmet
   description: A golden hardsuit that protects against hazardous, low pressure environments. Has thermal shielding. Use of expensive alloys have made it lighter than its non-golden counterpart.
   components:
@@ -574,6 +583,7 @@
 - type: entity
   parent: [ BaseNanoTrasenContraband, ClothingHeadHardsuitBase, ClothingHeadSuitWithLightBase, ClothingHeadLightParamsProfessional ]
   id: ClothingHeadHelmetHardsuitNTSF
+  categories: [ HideSpawnMenu ] # SpL
   name: nanotrasen special forces hardsuit helmet
   description: A robust helmet for special operations.
   components:
@@ -626,6 +636,7 @@
 - type: entity
   parent: [ BaseNanoTrasenContraband, ClothingHeadHardsuitBase, ClothingHeadSuitWithLightBase, ClothingHeadLightParamsProfessional ]
   id: ClothingHeadHelmetHardsuitNTSFPrimus
+  categories: [ HideSpawnMenu ] # SpL
   name: NTSF primus helmet
   description: A robust helmet for special operations.
   components:
@@ -678,6 +689,7 @@
 - type: entity
   parent: [ BaseNanoTrasenContraband, ClothingHeadHardsuitBase, ClothingHeadSuitWithLightBase, ClothingHeadLightParamsProfessional ]
   id: ClothingHeadHelmetHardsuitNTSFSecundus
+  categories: [ HideSpawnMenu ] # SpL
   name: NTSF secundus helmet
   description: A robust helmet for special operations.
   components:
@@ -730,6 +742,7 @@
 - type: entity
   parent: [ BaseNanoTrasenContraband, ClothingHeadHardsuitBase, ClothingHeadSuitWithLightBase, ClothingHeadLightParamsProfessional ]
   id: ClothingHeadHelmetHardsuitNTSFTertius
+  categories: [ HideSpawnMenu ] # SpL
   name: NTSF tertius helmet
   description: A robust helmet for special operations.
   components:
@@ -783,6 +796,7 @@
 - type: entity
   parent: [ BaseNanoTrasenContraband, ClothingHeadHardsuitBase, ClothingHeadSuitWithLightBase, ClothingHeadLightParamsProfessional ]
   id: ClothingHeadHelmetHardsuitNTSFQuartus
+  categories: [ HideSpawnMenu ] # SpL
   name: NTSF quartus helmet
   description: A robust helmet for special operations.
   components:
@@ -835,6 +849,7 @@
 - type: entity
   parent: [ BaseNanoTrasenContraband, ClothingHeadHardsuitBase, ClothingHeadSuitWithLightBase, ClothingHeadLightParamsProfessional ]
   id: ClothingHeadHelmetHardsuitNTSFQuintus
+  categories: [ HideSpawnMenu ] # SpL
   name: NTSF quintus helmet
   description: A robust helmet for special operations.
   components:
@@ -887,6 +902,7 @@
 - type: entity
   parent: [ BaseNanoTrasenContraband, ClothingHeadHardsuitBase, ClothingHeadSuitWithLightBase, ClothingHeadLightParamsProfessional ]
   id: ClothingHeadHelmetHardsuitNTSFSextus
+  categories: [ HideSpawnMenu ] # SpL
   name: NTSF sextus helmet
   description: A robust helmet for special operations.
   components:
@@ -941,6 +957,7 @@
 - type: entity
   parent: [ BaseNanoTrasenContraband, ClothingHeadHardsuitBase, ClothingHeadSuitWithLightBase, ClothingHeadLightParamsProfessional ]
   id: ClothingHeadHelmetHardsuitNTSFSeptimus
+  categories: [ HideSpawnMenu ] # SpL
   name: NTSF septimus helmet
   description: A robust helmet for special operations.
   components:
@@ -993,6 +1010,7 @@
 - type: entity
   parent: [ BaseNanoTrasenContraband, ClothingHeadHardsuitBase, ClothingHeadSuitWithLightBase, ClothingHeadLightParamsProfessional ]
   id: ClothingHeadHelmetHardsuitNTSFOctavius
+  categories: [ HideSpawnMenu ] # SpL
   name: NTSF octavius helmet
   description: A robust helmet for special operations.
   components:
@@ -1045,6 +1063,7 @@
 - type: entity
   parent: [ BaseNanoTrasenContraband, ClothingHeadHardsuitBase, ClothingHeadSuitWithLightBase, ClothingHeadLightParamsProfessional ]
   id: ClothingHeadHelmetHardsuitNTSFNonus
+  categories: [ HideSpawnMenu ] # SpL
   name: NTSF nonus helmet
   description: A robust helmet for special operations.
   components:
@@ -1097,6 +1116,7 @@
 - type: entity
   parent: [ BaseNanoTrasenContraband, ClothingHeadHardsuitBase, ClothingHeadSuitWithLightBase, ClothingHeadLightParamsProfessional ]
   id: ClothingHeadHelmetHardsuitDecimus
+  categories: [ HideSpawnMenu ] # SpL
   name: NTSF decimus helmet
   description: A robust helmet for special operations.
   components:
@@ -1150,6 +1170,7 @@
 - type: entity
   parent: [BaseTSFContraband, ClothingHeadHardsuitBase]
   id: ClothingHeadHelmetHardsuitTSFMARSOC
+  categories: [ HideSpawnMenu ] # SpL
   name: MARSOC helmet
   description: A helmet worn by marines of the Trans-Solar Federation's Marine Special Operations Command. Armored, space ready, and fireproof.
   components:
@@ -1189,6 +1210,7 @@
 - type: entity
   parent: [BaseTSFContraband, ClothingHeadHardsuitBase]
   id: ClothingHeadHelmetHardsuitTSFPhantom
+  categories: [ HideSpawnMenu ] # SpL
   name: Phantom helmet
   description: A helmet worn by marines of the Trans-Solar Federation's Marine special Operations Phantom. Armored, space ready and stealthy.
   components:
@@ -1229,6 +1251,7 @@
 - type: entity
   parent: [ BaseNanoTrasenContraband, ClothingHeadHardsuitBase ]
   id: ClothingHeadHelmetHardsuitThanatos
+  categories: [ HideSpawnMenu ] # SpL
   name: Thanatos helmet
   description: A robust helmet for special operations.
   components:

@@ -6,12 +6,14 @@
   objective: roles-antag-mothership-core-objective
   roleLoadout: [ AntagMothership ] # Starlight
   requirements:
-  - !type:RoleTimeRequirement
-    role: JobStationAi # Starlight
-    time: 1h # SpL
-  - !type:RoleTimeRequirement # Starlight
-    role: JobRoboticist # Starlight
-    time: 1h # SpL
+  #- !type:RoleTimeRequirement
+  #  role: JobStationAi # Starlight
+  #  time: 1h # SpL
+  #- !type:RoleTimeRequirement # Starlight
+  #  role: JobRoboticist # Starlight
+  #  time: 1h # SpL
+  - !type:OverallPlaytimeRequirement
+    time: 12h # SpL- converted roletimes to general playtime
   guides: [ Xenoborgs ]
   playTimeTracker: AntagMothershipCore # Starlight
 

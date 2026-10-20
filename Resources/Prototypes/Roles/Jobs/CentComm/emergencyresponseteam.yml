@@ -52,7 +52,7 @@
     gloves: ClothingHandsGlovesCombat
     outerClothing: ClothingOuterHardsuitERTLeader
     id: ERTLeaderPDA
-    ears: ClothingHeadsetAltCentCom
+    ears: ClothingHeadsetAltERTLeader # SpL
     belt: ClothingBeltMilitaryWebbingERT
     pocket2: WeaponPDW9
     suitstorage: WeaponDisablerSMG

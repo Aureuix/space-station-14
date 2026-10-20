@@ -7,9 +7,9 @@
   # Starlight start
   requirements:
   - !type:OverallPlaytimeRequirement
-    time: 5h # SpL- reduced
-  - !type:RoleTimeRequirement
-    role: JobBorg
-    time: 1h # SpL- reduced
+    time: 6h # SpL- reduced
+  #- !type:RoleTimeRequirement
+  #  role: JobBorg
+  #  time: 1h # SpL- reduced
   playTimeTracker: AntagSubvertedSilicon
   # Starlight end

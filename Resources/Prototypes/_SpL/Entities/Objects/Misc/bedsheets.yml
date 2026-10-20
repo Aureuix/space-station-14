@@ -7,7 +7,7 @@
     - type: Sprite
       state: sheetwarden
     - type: Clothing
-      sprite: _SpL/Clothing/Neck/Bedsheets/illuminate.rsi
+      sprite: _SpL/Clothing/Neck/Bedsheets/warden.rsi
       
 - type: entity
   id: BedsheetDetective
@@ -18,7 +18,7 @@
     - type: Sprite
       state: sheetdet
     - type: Clothing
-      sprite: _SpL/Clothing/Neck/Bedsheets/illuminate.rsi
+      sprite: _SpL/Clothing/Neck/Bedsheets/detective.rsi
 
 - type: entity
   id: BedsheetIlluminate

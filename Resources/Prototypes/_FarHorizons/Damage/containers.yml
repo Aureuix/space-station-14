@@ -6,3 +6,5 @@
   supportedTypes:
     - Bloodloss
     - Radiation
+    - Shadow # SpL
+    - Mortal # SpL

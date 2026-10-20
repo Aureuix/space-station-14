@@ -9,7 +9,7 @@
   previewStartingGear: SpaceNinjaGear
   requirements:
     - !type:OverallPlaytimeRequirement # SpL
-      time: 10h # SpL
+      time: 24h # SpL- learn culture before antagging
 #  - !type:RoleTimeRequirement
 #    role: JobSecurityOfficer # It's better than nothing.
 #    time: 1h

@@ -31,8 +31,29 @@ public abstract class SharedTemperatureSystem : EntitySystem
         SubscribeLocalEvent<TemperatureSpeedComponent, RefreshMovementSpeedModifiersEvent>(OnRefreshMovementSpeedModifiers);
 
         TemperatureQuery = GetEntityQuery<TemperatureComponent>();
+        
+        SubscribeLocalEvent<TemperatureImmunityComponent, ComponentInit>(OnTemperatureImmuneInit); // SpL
+        SubscribeLocalEvent<TemperatureImmunityComponent, ComponentRemove>(OnTemperatureImmuneRemove); // SpL
     }
 
+    # region SpL 
+    private void OnTemperatureImmuneInit(EntityUid uid, TemperatureImmunityComponent temperatureImmunity, ComponentInit args)
+    {
+        if (TryComp<TemperatureComponent>(uid, out var temperature))
+        {
+            temperature.AtmosTemperatureTransferEfficiency = 0f;
+        }
+    }
+
+    private void OnTemperatureImmuneRemove(EntityUid uid, TemperatureImmunityComponent temperatureImmunity, ComponentRemove args)
+    {
+        if (TryComp<TemperatureComponent>(uid, out var temperature))
+        {
+            temperature.AtmosTemperatureTransferEfficiency = 0.1f;
+        }
+    }
+    # endregion
+    
     private void OnTemperatureChanged(Entity<TemperatureSpeedComponent> ent, ref OnTemperatureChangeEvent args)
     {
         foreach (var (threshold, modifier) in ent.Comp.Thresholds)

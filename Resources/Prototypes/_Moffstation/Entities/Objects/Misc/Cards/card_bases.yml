@@ -44,12 +44,15 @@
       playing-card-stack-container: !type:Container
 
 - type: entity
-  parent: [ BoxCardboard, BaseBagOpenClose ]
+  parent: BaseBagOpenClose # SpL- removed cardboard box parent
   id: BasePlayingCardDeckBox
   abstract: true
   name: box of playing cards
   description: A small carton meant to contain a collection of little pieces of cardstock. Thrilling.
   components:
+  - type: PhysicalComposition # SpL- to make up for lost cardboard box value
+    materialComposition:
+      Cardboard: 20 # SpL end
   - type: Sprite
     sprite: _Moffstation/Objects/Misc/Cards/card_black.rsi
     state: empty

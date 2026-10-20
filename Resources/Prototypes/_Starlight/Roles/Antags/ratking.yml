@@ -4,5 +4,8 @@
   antagonist: true
   setPreference: false
   objective: never-shown
+  requirements:
+    - !type:OverallPlaytimeRequirement
+      time: 12h # SpL- learn culture before antagging
   playTimeTracker: AntagRatKing
 

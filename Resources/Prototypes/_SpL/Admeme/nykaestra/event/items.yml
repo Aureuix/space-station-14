@@ -2,6 +2,7 @@
   parent: [ BaseItem, BaseSyndicateContraband ]
   id: SyndicateReinforcementRadioUnlimited
   name: Syndicate reinforcement radio
+  suffix: ADMEME, unlimited
   description: Having a skill issue? Turn it into a skill solution by redspacing in some goons!
   components:
     - type: Sprite
@@ -20,12 +21,14 @@
           volume: -3
       initialBeepDelay: 0
       beepInterval: 5
-      delay: 3
+      delay: 4
       keyOut: spawn
     - type: SpawnEntityTableOnTrigger
       table: !type:GroupSelector
         children:
           - id: MobSyndieShooterEstoc
+          - id: MobSyndieShooterM90
+          - id: MobSyndieShooterM90
           - id: MobSyndieShooterC20r
           - id: MobSyndieShooterC20r
           - id: MobSyndieShooterC20r
@@ -38,12 +41,166 @@
       
 - type: entity
   parent: SyndicateReinforcementRadioUnlimited
+  id: SyndicateReinforcementRadioSquad
+  name: Syndicate squad reinforcement radio
+  suffix: ADMEME, squad
+  description: Having a skill issue? Turn it into a skill solution by redspacing in some goons! Single use only, calls in a full squad.
+  components:
+    - type: SpawnEntityTableOnTrigger
+      table: !type:AllSelector
+        children:
+          - id: MobSyndieShooterLeader
+          - id: MobSyndieShooterEstoc
+          - id: MobSyndieShooterM90
+          - id: MobSyndieShooterC20r
+          - id: MobSyndieShooterC20r
+          - id: MobSyndieShooterBulldog
+          - id: MobSyndieShooterPitbull
+          - id: MobSyndieShooterPitbull
+    - type: UseDelay
+      delay: 4.2
+    - type: DeleteOnTrigger
+      keysIn:
+        - spawn
+
+- type: entity
+  parent: SyndicateReinforcementRadioUnlimited
   id: SyndicateReinforcementRadio
   name: Syndicate reinforcement radio
+  suffix: ADMEME
   description: Having a skill issue? Turn it into a skill solution by redspacing in some goons! Single use only.
   components:
     - type: UseDelay
-      delay: 3
+      delay: 4.2
     - type: DeleteOnTrigger
       keysIn: 
         - spawn
+      
+- type: entity
+  parent: [ BaseItem, BaseCentcommContraband ]
+  id: ERTReinforcementRadio
+  name: bluespace reinforcement radio
+  suffix: ADMEME, squad
+  description: Having a skill issue? Turn it into a skill solution by bluespacing in a squad!
+  components:
+    - type: Sprite
+      sprite: Objects/Devices/communication.rsi
+      layers:
+        - state: radio
+    - type: Item
+      size: Small
+    - type: UseDelay
+      delay: 4.2
+    - type: TriggerOnUse
+    - type: TimerTrigger
+      beepSound:
+        path: "/Audio/Effects/Grenades/SelfDestruct/SDS_Charge.ogg"
+        params:
+          volume: -3
+      initialBeepDelay: 0
+      beepInterval: 5
+      delay: 4
+      keyOut: spawn
+    - type: SpawnEntityTableOnTrigger
+      table: !type:AllSelector
+        children:
+          - id: MobERTShooterLeader
+          - id: MobERTShooterLWAP
+          - id: MobERTShooterWT550
+          - id: MobERTShooterPeacemaker
+          - id: MobERTShooterMedic
+          - id: MobERTShooterMedic
+          - id: MobERTShooterIK60
+          - id: MobERTShooterIK60
+      useMapCoords: true
+      keysIn:
+        - spawn
+    - type: DeleteOnTrigger
+      keysIn:
+        - spawn
+
+- type: entity
+  parent: [ BaseItem, BaseCentcommContraband ]
+  id: CentCommSVSFSpawnRadio
+  name: Central Command elite squad spawner
+  suffix: ADMEME ONLY
+  description: Spawns a CSOD team when used, designating the user as the leader.
+  components:
+    - type: Sprite
+      sprite: Objects/Devices/communication.rsi
+      layers:
+        - state: radio
+    - type: Item
+      size: Small
+    - type: TriggerOnUse
+    - type: SpawnEntityTableOnTrigger
+      table: !type:AllSelector
+        children:
+          - id: MobNPCSVSFPatroller
+          - id: MobNPCSVSFPatroller
+          - id: MobNPCSVSFPatroller
+      useMapCoords: true
+    - type: DeleteOnTrigger
+
+- type: entity
+  parent: BaseItem
+  name: hypospray
+  id: HyposprayNPC
+  categories: [ HideSpawnMenu ]
+  components:
+    - type: Sprite
+      sprite: Objects/Specific/Medical/hypospray.rsi
+      layers:
+        - state: hypo
+          map: [ "enum.SolutionContainerLayers.Base" ]
+        - state: hypo_fill1
+          map: [ "enum.SolutionContainerLayers.Fill" ]
+          visible: false
+    - type: Item
+      sprite: Objects/Specific/Medical/hypospray.rsi
+    - type: Injector
+      solutionName: hypospray
+      currentTransferAmount: 2
+      ignoreClosed: false
+      activeModeProtoId: HyposprayDynamicMode
+      allowedModes:
+        - HyposprayDynamicMode
+    - type: Unremoveable
+    #- type: Injector
+    #  solutionName: hypospray
+    #  currentTransferAmount: 5
+    #  activeModeProtoId: TacticalJetInjectorDynamicMode
+    #  allowedModes:
+    #    - TacticalJetInjectorInjectMode
+    - type: SolutionContainerManager
+      solutions:
+        hypospray:
+          maxVol: 10000
+          reagents:
+            - ReagentId: Omnizine
+              Quantity: 5000
+            - ReagentId: Saline
+              Quantity: 1500
+            - ReagentId: PolypyryliumOligomers
+              Quantity: 3500
+    - type: UseDelay
+      delay: 1
+    - type: Appearance
+      
+- type: entity
+  parent: ClothingShoesBootsCombat
+  id: ClothingShoesBootsCombatLeadFilled
+  categories: [ HideSpawnMenu ]
+  components:
+    - type: ClothingSpeedModifier
+      walkModifier: 1
+      sprintModifier: 0.6
+  
+- type: entity
+  parent: ClothingShoesBootsCombat
+  id: ClothingShoesBootsCombatConcreteFilled
+  categories: [ HideSpawnMenu ]
+  components:
+    - type: ClothingSpeedModifier
+      walkModifier: 1
+      sprintModifier: 0.8

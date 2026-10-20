@@ -1,8 +1,8 @@
 ﻿- type: entity
   parent: EffectFlashRedspace
   id: EffectFlashRedspacePortal
-  name: 
-  categories: [ HideSpawnMenu ]
+  name: redspace portal flash
+  suffix: Timed
   components:
     - type: PointLight
       radius: 9
@@ -36,3 +36,47 @@
           layer:
             - WallLayer
           hard: false
+          
+- type: entity
+  parent: EffectFlashBluespace
+  id: EffectFlashBluespacePortal
+  name: bluespace portal flash
+  suffix: Timed
+  components:
+    - type: TimedDespawn
+      lifetime: 1
+    - type: Transform
+      anchored: True
+    - type: InteractionOutline
+    - type: Clickable
+    - type: Physics
+      bodyType: Static
+    - type: Sprite
+      sprite: /Textures/Effects/portal.rsi
+      layers:
+        - state: portal-blue
+          map: [ "base" ]
+    - type: Fixtures
+      fixtures:
+        portalFixture:
+          shape:
+            !type:PhysShapeAabb
+            bounds: "-0.25,-0.48,0.25,0.48"
+          mask:
+            - FullTileMask
+          layer:
+            - WallLayer
+          hard: false
+          
+- type: entity
+  parent: EffectFlashBluespacePortal
+  id: EffectFlashBluespacePortalQuiet
+  name: bluespace portal flash
+  categories: [HideSpawnMenu]
+  suffix: Timed
+  components:
+    - type: EmitSoundOnSpawn
+      sound:
+        path: /Audio/Effects/Lightning/lightningbolt.ogg
+        params:
+          volume: -7

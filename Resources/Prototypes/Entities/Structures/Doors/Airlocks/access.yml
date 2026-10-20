@@ -45,6 +45,15 @@
   - type: ContainerFill
     containers:
       board: [ DoorElectronicsJanitor ]
+      
+- type: entity
+  parent: AirlockServiceLocked
+  id: AirlockLawyerLocked
+  suffix: Lawyer, Locked
+  components:
+    - type: ContainerFill
+      containers:
+        board: [ DoorElectronicsLawyer ]
 
 - type: entity
   parent: AirlockServiceLocked
@@ -562,6 +571,15 @@
   - type: ContainerFill
     containers:
       board: [ DoorElectronicsJanitor ]
+      
+- type: entity
+  parent: AirlockServiceGlassLocked
+  id: AirlockLawyerGlassLocked
+  suffix: Lawyer, Locked
+  components:
+    - type: ContainerFill
+      containers:
+        board: [ DoorElectronicsLawyer ]
 
 - type: entity
   parent: AirlockHydroponicsGlass

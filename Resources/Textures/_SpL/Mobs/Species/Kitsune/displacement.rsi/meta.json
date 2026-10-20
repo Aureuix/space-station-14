@@ -15,6 +15,10 @@
       "directions": 4
     },
     {
+      "name": "neck",
+      "directions": 4
+    },
+    {
       "name": "outerClothing",
       "directions": 4
     },

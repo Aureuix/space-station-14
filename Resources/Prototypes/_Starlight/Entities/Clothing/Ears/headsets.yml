@@ -13,6 +13,9 @@
         - EncryptionKeyCommand
     - type: Sprite
       sprite: Clothing/Ears/Headsets/servicesecurity.rsi
+    - type: RadioChime
+      sound:
+        path: /Audio/_SpL/Effects/Radio/nanotrasen.ogg # SpL
 
 - type: entity
   parent: [ ClothingHeadset, BaseNanoTrasenContraband ]
@@ -29,6 +32,9 @@
         - EncryptionKeyCommon
     - type: Sprite
       sprite: _Starlight/Clothing/Ears/Headsets/magi.rsi
+    - type: RadioChime
+      sound:
+        path: /Audio/_SpL/Effects/Radio/nanotrasen.ogg # SpL
 
 - type: entity
   parent: [ ClothingHeadset, BaseMajorContraband ]
@@ -77,7 +83,7 @@
       sprite: Clothing/Ears/Headsets/security.rsi
     - type: RadioChime
       sound:
-        path: /Audio/_Starlight/Effects/Radio/secoff.ogg
+        path: /Audio/_SpL/Effects/Radio/detective.ogg # SpL
 
 - type: entity
   parent: [ ClothingHeadsetAlt, BaseSovietContraband ]
@@ -102,7 +108,7 @@
   parent: ClothingHeadsetCargo
   id: ClothingHeadsetSalvageLead
   name: salvage lead's headset
-  description: Headset used by the salvage lead.
+  description: A dusty headset used by the salvage lead.
   components:
   - type: ContainerFill
     containers:
@@ -113,6 +119,9 @@
     sprite: Clothing/Ears/Headsets/mining.rsi
   - type: Clothing
     sprite: Clothing/Ears/Headsets/mining.rsi
+  - type: RadioChime
+    sound:
+      path: /Audio/_SpL/Effects/Radio/salvlead.ogg # SpL
 
 - type: entity
   parent: [BaseTSFContraband, ClothingHeadset]
@@ -151,4 +160,4 @@
     sprite: Clothing/Ears/Headsets/command.rsi
   - type: RadioChime
     sound:
-      path: /Audio/_Starlight/Effects/Radio/marauder.ogg
+      path: /Audio/_SpL/Effects/Radio/nanotrasen.ogg # SpL

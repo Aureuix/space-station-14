@@ -7,7 +7,7 @@
   guides: [ Thieves ]
   requirements:
   - !type:OverallPlaytimeRequirement
-    time: 5h # Starlight. Low stakes, low involvement.
+    time: 12h # SpL- learn culture before antagging
   playTimeTracker: AntagThief # Starlight
 
 - type: startingGear

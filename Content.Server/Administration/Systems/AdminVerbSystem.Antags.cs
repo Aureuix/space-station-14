@@ -18,6 +18,7 @@ using Content.Server._Starlight.GameTicking.Rules.Components;
 using Content.Shared._Starlight.Shadekin;
 using Content.Server.Speech.Components; // Starlight
 using Robust.Shared.Audio; // Starlight
+using Content.Server.Antag.Components; // SpL
 
 namespace Content.Server.Administration.Systems;
 
@@ -355,6 +356,7 @@ public sealed partial class AdminVerbSystem
             {
                 _outfit.SetOutfit(args.Target, CentCommGearID);
                 _antag.ForceMakeAntag<CentCommRuleComponent>(targetPlayer, DefaultCentcommRule);
+                EnsureComp<AntagImmuneComponent>(args.Target);
             },
             Impact = LogImpact.High,
             Message = string.Join(": ", centcommname, Loc.GetString("admin-verb-make-centcomm")),
@@ -371,6 +373,7 @@ public sealed partial class AdminVerbSystem
             {
                 _outfit.SetOutfit(args.Target, CBURNGearID);
                 _antag.ForceMakeAntag<CBURNRuleComponent>(targetPlayer, DefaultCBURNRule);
+                EnsureComp<AntagImmuneComponent>(args.Target);
             },
             Impact = LogImpact.High,
             Message = string.Join(": ", cburnname, Loc.GetString("admin-verb-make-cburn")),
@@ -387,6 +390,7 @@ public sealed partial class AdminVerbSystem
             {
                 _outfit.SetOutfit(args.Target, CBURNGearAltID);
                 _antag.ForceMakeAntag<CBURNAltRuleComponent>(targetPlayer, DefaultCBURNAltRule);
+                EnsureComp<AntagImmuneComponent>(args.Target);
             },
             Impact = LogImpact.High,
             Message = string.Join(": ", cburnaltname, Loc.GetString("admin-verb-make-cburn-alt")),
@@ -403,6 +407,7 @@ public sealed partial class AdminVerbSystem
             {
                 _outfit.SetOutfit(args.Target, GreenshieldGearID);
                 _antag.ForceMakeAntag<GreenshieldRuleComponent>(targetPlayer, DefaultGreenshieldRule);
+                EnsureComp<AntagImmuneComponent>(args.Target);
             },
             Impact = LogImpact.High,
             Message = string.Join(": ", greenshieldname, Loc.GetString("admin-verb-make-greenshield")),
@@ -419,6 +424,7 @@ public sealed partial class AdminVerbSystem
             {
                 _outfit.SetOutfit(args.Target, NTNCGearID);
                 _antag.ForceMakeAntag<NTNCRuleComponent>(targetPlayer, DefaultNTNCRule);
+                EnsureComp<AntagImmuneComponent>(args.Target);
             },
             Impact = LogImpact.High,
             Message = string.Join(": ", ntncname, Loc.GetString("admin-verb-make-ntnc-marine")),

@@ -6,7 +6,7 @@
   objective: roles-antag-cosmiccult-description
   requirements:
   - !type:OverallPlaytimeRequirement
-    time: 86400 # 24h i really just want people to read the guidebook please please please
+    time: 24h # SpL- learn culture before antagging
   guides: [ CosmicCult ]
 
 - type: antag
@@ -14,3 +14,6 @@
   name: ghost-role-information-colossus-name
   antagonist: true
   objective: ghost-role-colossus-objective
+  requirements:
+  - !type:OverallPlaytimeRequirement
+    time: 12h # SpL- learn culture before antagging

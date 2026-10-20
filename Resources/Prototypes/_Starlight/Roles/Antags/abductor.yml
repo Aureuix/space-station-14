@@ -4,12 +4,12 @@
   antagonist: true
   objective: roles-antag-abductor-objective
   requirements:
-  - !type:RoleTimeRequirement
-    role: JobSecurityOfficer
-    time: 1h # SpL
-  - !type:RoleTimeRequirement
-    role: JobSurgeon
-    time: 1h # SpL
+  #- !type:RoleTimeRequirement
+  #  role: JobSecurityOfficer
+  #  time: 1h # SpL
+  #- !type:RoleTimeRequirement
+  #  role: JobSurgeon
+  #  time: 1h # SpL
   - !type:OverallPlaytimeRequirement # SpL
-    time: 10h # SpL
+    time: 24h # SpL- learn culture before antagging
   playTimeTracker: AntagLoneAbductor

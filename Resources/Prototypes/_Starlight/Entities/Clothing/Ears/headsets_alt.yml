@@ -53,7 +53,7 @@
       sprite: Clothing/Ears/Headsets/command.rsi
     - type: RadioChime
       sound:
-        path: /Audio/_Starlight/Effects/Radio/cc.ogg
+        path: /Audio/_SpL/Effects/Radio/nanotrasen.ogg # SpL
 
 - type: entity
   parent: [ClothingHeadsetAlt, BaseNanoTrasenContraband]
@@ -71,7 +71,7 @@
       sprite: Clothing/Ears/Headsets/command.rsi
     - type: RadioChime
       sound:
-        path: /Audio/_Starlight/Effects/Radio/captain.ogg
+        path: /Audio/_SpL/Effects/Radio/nanotrasen.ogg # SpL
     - type: StealTarget # Starlight
       stealGroup: ClothingHeadsetAltCommand # Starlight
 
@@ -93,7 +93,7 @@
       sprite: Clothing/Ears/Headsets/command.rsi
     - type: RadioChime
       sound:
-        path: /Audio/_Starlight/Effects/Radio/captain.ogg
+        path: /Audio/_SpL/Effects/Radio/nanotrasen.ogg # SpL
 
 - type: entity
   parent: ClothingHeadsetAlt
@@ -108,6 +108,9 @@
     sprite: _Starlight/Clothing/Ears/Headsets/abductor.rsi
   - type: Clothing
     sprite: _Starlight/Clothing/Ears/Headsets/abductor.rsi
+  - type: RadioChime
+    sound:
+      path: /Audio/_SpL/Effects/Radio/amogus.ogg # SpL
     
 - type: entity
   parent: [ClothingHeadsetAlt, BaseCommandContraband]
@@ -124,6 +127,9 @@
     sprite: Clothing/Ears/Headsets/command.rsi
   - type: Clothing
     sprite: Clothing/Ears/Headsets/command.rsi
+  - type: RadioChime
+    sound:
+      path: /Audio/_SpL/Effects/Radio/hop.ogg # SpL
 
 - type: entity
   parent: [ClothingHeadsetAlt, BaseBlueShieldContraband]
@@ -238,6 +244,9 @@
       sprite: _Starlight/Clothing/Ears/Headsets/global.rsi
     - type: Clothing
       sprite: _Starlight/Clothing/Ears/Headsets/global.rsi
+    - type: RadioChime
+      sound:
+        path: /Audio/_SpL/Effects/Radio/amogus.ogg # SpL
 
 - type: entity
   parent: ClothingHeadsetAlt
@@ -255,6 +264,9 @@
       sprite: _Starlight/Clothing/Ears/Headsets/admeme.rsi
     - type: Clothing
       sprite: _Starlight/Clothing/Ears/Headsets/admeme.rsi
+    - type: RadioChime
+      sound:
+        path: /Audio/_SpL/Effects/Radio/amogus.ogg # SpL
 
 - type: entity
   parent: ClothingHeadsetAlt
@@ -271,6 +283,9 @@
       sprite: _Starlight/Clothing/Ears/Headsets/merchant.rsi
     - type: Clothing
       sprite: _Starlight/Clothing/Ears/Headsets/merchant.rsi
+    - type: RadioChime
+      sound:
+        path: /Audio/_SpL/Effects/Radio/freelance.ogg # SpL
 
 - type: entity
   parent: ClothingHeadsetAlt
@@ -287,6 +302,9 @@
       sprite: _Starlight/Clothing/Ears/Headsets/merchant.rsi
     - type: Clothing
       sprite: _Starlight/Clothing/Ears/Headsets/merchant.rsi
+    - type: RadioChime
+      sound:
+        path: /Audio/_SpL/Effects/Radio/freelance.ogg # SpL
 
   # literally just the same thing but has headset comp and uses the purple one because yes
 - type: entity
@@ -300,3 +318,6 @@
       sprite: _Starlight/Clothing/Ears/Headsets/admeme.rsi
     - type: Clothing
       sprite: _Starlight/Clothing/Ears/Headsets/admeme.rsi
+    - type: RadioChime
+      sound:
+        path: /Audio/_SpL/Effects/Radio/amogus.ogg # SpL

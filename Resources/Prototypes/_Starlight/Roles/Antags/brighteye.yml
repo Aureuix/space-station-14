@@ -8,7 +8,7 @@
   roleLoadout: [ AntagBrighteye ]
   requirements:
   - !type:OverallPlaytimeRequirement # SpL
-    time: 10h # SpL
+    time: 12h # SpL- not officially an antag
   - !type:SpeciesRequirement
     species:
     - Shadekin

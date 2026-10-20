@@ -68,6 +68,8 @@
         Heat: 0.9 # SpL End
   - type: ZombificationResistance
     zombificationResistanceCoefficient: 0.9 # SpL
+  - type: IdentityBlocker # SpL
+    coverage: MOUTH # SpL
 
 - type: entity
   parent: [BaseTSFContraband, ClothingHeadEVAHelmetBase, ClothingHeadHelmetArmoredBase]

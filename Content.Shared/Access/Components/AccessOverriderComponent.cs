@@ -11,7 +11,7 @@ namespace Content.Shared.Access.Components;
 [Access(typeof(SharedAccessOverriderSystem))]
 public sealed partial class AccessOverriderComponent : Component
 {
-    public static string PrivilegedIdCardSlotId = "AccessOverrider-privilegedId";
+    public static string PrivilegedIdCardSlotId = "access-overrider-window-privileged-id"; // SpL- this didn't originally lead anywhere
 
     /// <summary>
     /// If the Access Overrider UI will show info about the privileged ID

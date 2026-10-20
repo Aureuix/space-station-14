@@ -8,7 +8,7 @@
   guides: [ Changelings ]
   requirements:
   - !type:OverallPlaytimeRequirement
-    time: 10h # SpL
+    time: 12h # SpL- not officially an antag
   - !type:SpeciesRequirement
     species:
     - IPC
