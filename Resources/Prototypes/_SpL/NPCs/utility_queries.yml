@@ -1,25 +1,15 @@
 ﻿- type: utilityQuery
-  id: NearbyGunTargetsEvil
+  id: NearbyGunTargetsNoMercy
   query:
     - !type:NearbyHostilesQuery
   considerations:
-    - !type:TargetIsAliveCon
-      curve: !type:BoolCurve
-    - !type:TargetIsCritCon
-      curve: !type:BoolCurve
-    - !type:TargetIsStunnedCon
-      curve: !type:BoolCurve
     - !type:TargetIsDeadCon
       curve: !type:InverseBoolCurve
-    - !type:TurretTargetingCon
+    - !type:TargetHealthCon
+      curve: !type:PresetCurve
+        preset: TargetHealth
+    - !type:TargetInLOSCon
       curve: !type:BoolCurve
     - !type:TargetDistanceCon
       curve: !type:PresetCurve
         preset: TargetDistance
-    - !type:TargetHealthCon
-      curve: !type:PresetCurve
-        preset: TargetHealth
-    - !type:TargetAccessibleCon
-      curve: !type:BoolCurve
-    - !type:TargetInLOSOrCurrentCon
-      curve: !type:BoolCurve

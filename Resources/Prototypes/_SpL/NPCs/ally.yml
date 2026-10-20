@@ -1,0 +1,211 @@
+﻿- type: htnCompound
+  id: GuardShooterCompound # doesn't move at all, basically a glorified turret. # TODO- permit movement and allow a designated return spot
+  branches:
+    - tasks:
+        - !type:HTNCompoundTask
+          task: RecoveryCompound
+    - tasks:
+        - !type:HTNCompoundTask
+          task: StationaryShooterCompound
+    - tasks:
+        - !type:HTNCompoundTask
+          task: RecoveryCompound
+    - tasks:
+        - !type:HTNCompoundTask
+          task: IdleSpinCompound
+
+- type: htnCompound
+  id: RangerShooterAllyCompound # doesn't move between shots
+  branches:
+    - tasks:
+        - !type:HTNCompoundTask
+          task: RecoveryCompound
+    - tasks:
+        - !type:HTNCompoundTask
+          task: StationaryShooterCompound
+    - tasks:
+        - !type:HTNCompoundTask
+          task: RecoveryCompound
+    - tasks:
+        - !type:HTNCompoundTask
+          task: FollowMedCompound
+    - tasks:
+        - !type:HTNCompoundTask
+          task: IdleCompound
+          
+- type: htnCompound
+  id: RangerShooterAllyCompoundAlt # doesn't move between shots, stays close, doesn't idle
+  branches:
+    - tasks:
+        - !type:HTNCompoundTask
+          task: RecoveryCompound
+    - tasks:
+        - !type:HTNCompoundTask
+          task: StationaryShooterCompound
+    - tasks:
+        - !type:HTNCompoundTask
+          task: RecoveryCompound
+    - tasks:
+        - !type:HTNCompoundTask
+          task: FollowCloseCompound
+
+- type: htnCompound
+  id: LongRangeShooterAllyCompound # will reposition after kills
+  branches:
+    - tasks:
+        - !type:HTNCompoundTask
+          task: RecoveryCompound
+    - tasks:
+        - !type:HTNCompoundTask
+          task: StationaryShooterCompound
+        - !type:HTNPrimitiveTask
+          operator: !type:JukeOperator
+            jukeType: Away
+    - tasks:
+        - !type:HTNCompoundTask
+          task: RecoveryCompound
+    - tasks:
+        - !type:HTNCompoundTask
+          task: FollowCloseCompound
+    - tasks:
+        - !type:HTNCompoundTask
+          task: IdleCompound
+          
+- type: htnCompound
+  id: LongRangeShooterAllyCompoundAlt # will reposition and will (try to) execute crit targets
+  branches:
+    - tasks:
+        - !type:HTNCompoundTask
+          task: RecoveryCompound
+    - tasks:
+        - !type:HTNPrimitiveTask # unique HTN for execution-capable targeting
+          operator: !type:UtilityOperator
+            proto: NearbyGunTargetsNoMercy
+        - !type:HTNPrimitiveTask
+          preconditions:
+            - !type:KeyExistsPrecondition
+              key: Target
+            - !type:TargetInRangePrecondition
+              targetKey: Target
+              rangeKey: VisionRadius
+            - !type:TargetInLOSPrecondition
+              targetKey: Target
+              rangeKey: VisionRadius
+          operator: !type:GunOperator
+            targetKey: Target
+            requireLOS: true
+            targetState: Critical
+          services:
+            - !type:UtilityService
+              id: RangedService
+              proto: NearbyGunTargetsNoMercy
+              key: Target
+        - !type:HTNPrimitiveTask
+          operator: !type:JukeOperator
+            jukeType: Away
+        - !type:HTNCompoundTask
+          task: ShooterTargetNeutralizedCompound
+    - tasks:
+        - !type:HTNCompoundTask
+          task: FollowMedCompound
+    - tasks:
+        - !type:HTNCompoundTask
+          task: IdleCompound
+          
+- type: htnCompound
+  id: SquadLeaderCompound # will reposition and will (try to) execute crit targets, wanders more, and doesn't have follow logic
+  branches:
+    - tasks:
+        - !type:HTNCompoundTask
+          task: RecoveryCompound
+    - tasks:
+        - !type:HTNPrimitiveTask # unique HTN for execution-capable targeting
+          operator: !type:UtilityOperator
+            proto: NearbyGunTargetsNoMercy
+        - !type:HTNPrimitiveTask
+          preconditions:
+            - !type:KeyExistsPrecondition
+              key: Target
+            - !type:TargetInRangePrecondition
+              targetKey: Target
+              rangeKey: VisionRadius
+            - !type:TargetInLOSPrecondition
+              targetKey: Target
+              rangeKey: VisionRadius
+          operator: !type:GunOperator
+            targetKey: Target
+            requireLOS: true
+            targetState: Critical
+          services:
+            - !type:UtilityService
+              id: RangedService
+              proto: NearbyGunTargetsNoMercy
+              key: Target
+        - !type:HTNPrimitiveTask
+          operator: !type:JukeOperator
+            jukeType: Away
+        - !type:HTNCompoundTask
+          task: ShooterTargetNeutralizedCompound
+    - tasks:
+        - !type:HTNCompoundTask
+          task: PassiveMovementCompound
+
+- type: htnCompound
+  id: MedRangeShooterAllyCompound # standard ranged AI with follow capability
+  branches:
+    - tasks:
+        - !type:HTNCompoundTask
+          task: RecoveryCompound
+    - tasks:
+        - !type:HTNCompoundTask
+          task: ShooterTargetIdentifyCompound
+        - !type:HTNCompoundTask
+          task: GunCombatCompound
+    - tasks:
+        - !type:HTNCompoundTask
+          task: FollowCloseCompound
+    - tasks:
+        - !type:HTNCompoundTask
+          task: IdleCompound
+          
+- type: htnCompound
+  id: MedRangeShooterAllyCompoundAlt # will (try to) execute crit targets
+  branches:
+    - tasks:
+        - !type:HTNCompoundTask
+          task: RecoveryCompound
+    - tasks:
+        - !type:HTNCompoundTask
+          task: ShooterTargetIdentifyCompound
+        - !type:HTNCompoundTask
+          task: GunCombatCompound
+    - tasks:
+        - !type:HTNCompoundTask
+          task: MeleeAttackCritTargetCompound
+    - tasks:
+        - !type:HTNCompoundTask
+          task: FollowCloseCompound
+    - tasks:
+        - !type:HTNCompoundTask
+          task: IdleCompound
+
+- type: htnCompound
+  id: MeleeAllyCompound # standard melee AI with follow capability
+  branches:
+    - tasks:
+        - !type:HTNCompoundTask
+          task: RecoveryCompound
+    - tasks:
+        - !type:HTNCompoundTask
+          task: ShooterTargetIdentifyCompound
+        - !type:HTNCompoundTask
+          task: RangedCombatCompound
+    - tasks:
+        - !type:HTNCompoundTask
+          task: MeleeCombatCompound
+    - tasks:
+        - !type:HTNCompoundTask
+          task: FollowCloseCompound
+    - tasks:
+        - !type:HTNCompoundTask
+          task: IdleCompound
