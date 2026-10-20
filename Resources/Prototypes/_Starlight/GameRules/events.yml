@@ -88,7 +88,7 @@
       - id: KingRatMigration
       - id: NinjaSpawn
       - id: ParadoxCloneSpawn
-      - id: RevenantSpawn
+      # - id: RevenantSpawn # SpL- death to revenants
       - id: SleeperAgents
       #    - id: ZombieOutbreak
       - id: LoneOpsSpawn

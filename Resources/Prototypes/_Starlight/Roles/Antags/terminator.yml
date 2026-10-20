@@ -6,5 +6,5 @@
   objective: roles-antag-terminator-objective
   requirements:
     - !type:OverallPlaytimeRequirement # SpL
-      time: 10h # SpL
+      time: 24h # SpL- learn culture before antagging
   playTimeTracker: AntagTerminator

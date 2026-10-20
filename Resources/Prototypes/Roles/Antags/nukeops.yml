@@ -6,7 +6,7 @@
   objective: roles-antag-nuclear-operative-objective
   requirements:
     - !type:OverallPlaytimeRequirement # SpL
-      time: 20h # SpL
+      time: 24h # SpL
 #  - !type:RoleTimeRequirement
 #    role: JobSecurityOfficer # Bare minimum 1 hour non cadet. Teaches you how to use normal guns.
 #    time: 1h

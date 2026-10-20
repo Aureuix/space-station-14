@@ -6,7 +6,7 @@
   objective: roles-antag-ssf-objective
   requirements:
   - !type:OverallPlaytimeRequirement # SpL
-    time: 10h # SpL
+    time: 24h # SpL- learn culture before antagging
 #  - !type:DepartmentTimeRequirement
 #    department: Security
 #    time: 36000 # 10h

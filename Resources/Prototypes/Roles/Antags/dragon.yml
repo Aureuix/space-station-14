@@ -6,7 +6,7 @@
   # Starlight start
   requirements:
     - !type:OverallPlaytimeRequirement # SpL
-      time: 10h # SpL
+      time: 12h # SpL- learn culture before antagging
 #  - !type:RoleTimeRequirement
 #    role: JobSalvageSpecialist
 #    time: 3h
