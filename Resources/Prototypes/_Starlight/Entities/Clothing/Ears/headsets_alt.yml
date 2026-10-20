@@ -53,7 +53,7 @@
       sprite: Clothing/Ears/Headsets/command.rsi
     - type: RadioChime
       sound:
-        path: /Audio/_Starlight/Effects/Radio/nanotrasen.ogg # SpL
+        path: /Audio/_SpL/Effects/Radio/nanotrasen.ogg # SpL
 
 - type: entity
   parent: [ClothingHeadsetAlt, BaseNanoTrasenContraband]

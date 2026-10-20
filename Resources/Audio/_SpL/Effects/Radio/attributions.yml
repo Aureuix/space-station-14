@@ -79,6 +79,6 @@
   source: "https://freesound.org/people/uair01"
   
 - files: [ "amogus.ogg" ]
-  license: "CC-BY-NC-ND" # I think? complies with all stipulations as per https://www.innersloth.com/fan-creation-policy/, https://www.innersloth.com/terms-of-use-for-the-games/, and fair use terms
+  license: "CC-BY-4.0" # I think? complies with all stipulations as per https://www.innersloth.com/fan-creation-policy/, https://www.innersloth.com/terms-of-use-for-the-games/, and fair use terms
   copyright: "Innersloth"
   source: "https://www.innersloth.com"
