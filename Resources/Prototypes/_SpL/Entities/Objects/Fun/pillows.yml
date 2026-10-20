@@ -1,5 +1,22 @@
 ﻿- type: entity
   parent: BasePlushie
+  abstract: true
+  id: BasePillow
+  name: pillow
+  description: A pillow!
+  components:
+    - type: Strap
+      position: Down
+      rotation: -75
+      buckleOffset: "0,0.05"
+    - type: Sprite
+      sprite: _SpL/Objects/Fun/Pillows/pillow_comfy.rsi
+      state: icon
+    - type: Item
+      sprite: _SpL/Objects/Fun/Pillows/pillow_comfy.rsi
+
+- type: entity
+  parent: BasePillow
   id: PillowComfy
   name: comfy pillow
   description: So... comfy...
@@ -11,10 +28,10 @@
       sprite: _SpL/Objects/Fun/Pillows/pillow_comfy.rsi
 
 - type: entity
-  parent: BasePlushie
+  parent: BasePillow
   id: PillowCone
   name: cone pillow
-  description: a tider's favorite.
+  description: A tider's favorite.
   components:
     - type: Sprite
       sprite: _SpL/Objects/Fun/Pillows/pillow_cone.rsi
@@ -23,7 +40,7 @@
       sprite: _SpL/Objects/Fun/Pillows/pillow_cone.rsi
     
 - type: entity
-  parent: BasePlushie
+  parent: BasePillow
   id: PillowDonut
   name: donut pillow
   description: This hole was made for me!
@@ -35,7 +52,7 @@
       sprite: _SpL/Objects/Fun/Pillows/pillow_donut.rsi
 
 - type: entity
-  parent: BasePlushie
+  parent: BasePillow
   id: PillowNeck
   name: neck pillow
   description: Great for long trips!
@@ -45,9 +62,13 @@
       state: icon
     - type: Item
       sprite: _SpL/Objects/Fun/Pillows/pillow_neck.rsi
+    - type: Clothing
+      sprite: _SpL/Objects/Fun/Pillows/pillow_neck.rsi
+      slots:
+        - neck
 
 - type: entity
-  parent: BasePlushie
+  parent: BasePillow
   id: PillowNT
   name: nanotrasen pillow
   description: A nice spot for the BSO to rest their head.
@@ -59,7 +80,7 @@
       sprite: _SpL/Objects/Fun/Pillows/pillow_nt.rsi
 
 - type: entity
-  parent: BasePlushie
+  parent: BasePillow
   id: PillowPistachio
   name: pistachio pillow
   description: This feels like it was made for the alliteration.
@@ -71,7 +92,7 @@
       sprite: _SpL/Objects/Fun/Pillows/pillow_pistachio.rsi
 
 - type: entity
-  parent: BasePlushie
+  parent: BasePillow
   id: PillowRound
   name: round pillow
   description: Very soft to rest upon.
@@ -83,7 +104,7 @@
       sprite: _SpL/Objects/Fun/Pillows/pillow_round.rsi
 
 - type: entity
-  parent: BasePlushie
+  parent: BasePillow
   id: PillowStar
   name: star pillow
   description: You could fly through the skies on this.
@@ -95,7 +116,7 @@
       sprite: _SpL/Objects/Fun/Pillows/pillow_star.rsi
 
 - type: entity
-  parent: BasePlushie
+  parent: BasePillow
   id: PillowStripes
   name: striped pillow
   description: Send it into the slammer...

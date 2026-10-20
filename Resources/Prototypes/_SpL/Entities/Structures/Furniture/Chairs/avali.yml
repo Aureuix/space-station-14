@@ -51,15 +51,15 @@
       graph: AvaliChair
       node: chairBeanbag
       
-- type: entity
-  name: orange pillow seat
-  description: An comfy looking pillow for sitting or perching upon.
-  id: ChairPillow
-  parent: ChairBeanbag
-  components:
-    - type: Sprite
-      sprite: _SpL/Structures/Furniture/Chairs/pillow_chair.rsi
-      state: orange
-    - type: Construction
-      graph: AvaliChair
-      node: chairPillow
+#- type: entity
+#  name: orange pillow seat
+#  description: An comfy looking pillow for sitting or perching upon.
+#  id: ChairPillow
+#  parent: ChairBeanbag
+#  components:
+#    - type: Sprite
+#      sprite: _SpL/Structures/Furniture/Chairs/pillow_chair.rsi
+#      state: orange
+#    - type: Construction
+#      graph: AvaliChair
+#      node: chairPillow

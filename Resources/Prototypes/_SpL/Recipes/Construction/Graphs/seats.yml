@@ -46,15 +46,15 @@
             - tool: Slicing
               doAfter: 2
               
-    - node: chairPillow
-      entity: ChairPillow
-      edges:
-        - to: start
-          completed:
-            - !type:GivePrototype
-              prototype: MaterialCloth1
-              amount: 1
-            - !type:DeleteEntity { }
-          steps:
-            - tool: Slicing
-              doAfter: 1
+  #  - node: chairPillow
+  #    entity: ChairPillow
+  #    edges:
+  #      - to: start
+  #        completed:
+  #          - !type:GivePrototype
+  #            prototype: MaterialCloth1
+  #            amount: 1
+  #          - !type:DeleteEntity { }
+  #        steps:
+  #          - tool: Slicing
+  #            doAfter: 1
