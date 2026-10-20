@@ -287,7 +287,7 @@
         color: "#393CB9" # SpL
         
 - type: entity # SpL Start
-  id: MagazineMagnumSubMachineGun
+  id: MagazineMagnumSubMachineGunHP
   name: .45 ACP rifle magazine (HP) # SpL # Spectralight: Magnum -> ACP
   parent: BaseMagazineMagnumSubMachineGun
   components:
@@ -311,7 +311,7 @@
             color: "#AF1714"
             
 - type: entity
-  id: MagazineMagnumSubMachineGun
+  id: MagazineMagnumSubMachineGunFMJ
   name: .45 ACP rifle magazine (FMJ) # SpL # Spectralight: Magnum -> ACP
   parent: BaseMagazineMagnumSubMachineGun
   components:
@@ -335,7 +335,7 @@
             color: "#1E1B1B"
             
 - type: entity
-  id: MagazineMagnumSubMachineGun
+  id: MagazineMagnumSubMachineGunIncendiary
   name: .45 ACP rifle magazine (incendiary) # SpL # Spectralight: Magnum -> ACP
   parent: BaseMagazineMagnumSubMachineGun
   components:

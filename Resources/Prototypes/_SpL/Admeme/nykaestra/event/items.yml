@@ -112,12 +112,12 @@
           - id: MobERTShooterMedic
           - id: MobERTShooterIK60
           - id: MobERTShooterIK60
+      useMapCoords: true
       keysIn:
         - spawn
     - type: DeleteOnTrigger
       keysIn:
         - spawn
-      useMapCoords: true
 
 - type: entity
   parent: [ BaseItem, BaseCentcommContraband ]

@@ -61,7 +61,7 @@
 - files: [ "ertalt.ogg" ]
   license: "CC-BY-4.0"
   copyright: "3questionmarks"
-  source: "hhttps://freesound.org/people/3questionmarks"
+  source: "https://freesound.org/people/3questionmarks"
   
 - files: [ "gsl.ogg" ]
   license: "CC-BY-4.0"
@@ -79,6 +79,6 @@
   source: "https://freesound.org/people/uair01"
   
 - files: [ "amogus.ogg" ]
-  license: "CC BY-NC-ND" # I think? complies with all stipulations as per https://www.innersloth.com/fan-creation-policy/, https://www.innersloth.com/terms-of-use-for-the-games/, and fair use terms
+  license: "CC-BY-NC-ND" # I think? complies with all stipulations as per https://www.innersloth.com/fan-creation-policy/, https://www.innersloth.com/terms-of-use-for-the-games/, and fair use terms
   copyright: "Innersloth"
   source: "https://www.innersloth.com"

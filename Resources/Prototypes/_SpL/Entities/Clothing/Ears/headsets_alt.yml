@@ -1,6 +1,6 @@
 ﻿- type: entity
   parent: [ClothingHeadsetAlt, BaseSyndicateContraband]
-  id: ClothingHeadsetAltSyndicate
+  id: ClothingHeadsetAltSyndicateListener
   name: blood-red over-ear listening headset
   suffix: ADMEME
   description: An updated, modular syndicate intercom that fits over the head, pre-loaded with a stolen masterkey.
