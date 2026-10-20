@@ -35,7 +35,7 @@
     neck: ClothingNeckGreenshield
     id: CentCommGreenShieldPDA
     eyes: ClothingEyesGlassesCentComm
-    ears: ClothingHeadsetCentCom
+    ears: ClothingHeadsetAltERTLeader # SpL
     mask: ClothingMaskGasERT # SpL
     belt: ClothingBeltGreenshieldFilled
     gloves: ClothingHandsGlovesCombat
@@ -54,7 +54,7 @@
     neck: ClothingNeckGreenshield
     id: CentCommGreenShieldPDA
     eyes: ClothingEyesGlassesCentComm
-    ears: ClothingHeadsetCentCom
+    ears: ClothingHeadsetAltERTLeader # SpL
     mask: ClothingMaskGasERT # SpL
     head: ClothingHeadHelmetGreenshield
     belt: ClothingBeltGreenshieldFilled

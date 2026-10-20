@@ -574,7 +574,7 @@
       
 - type: entity
   parent: AirlockServiceGlassLocked
-  id: AirlockLawyerLocked
+  id: AirlockLawyerGlassLocked
   suffix: Lawyer, Locked
   components:
     - type: ContainerFill
