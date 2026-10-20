@@ -314,9 +314,9 @@ public sealed class NPCUtilitySystem : EntitySystem
                 if (!TryComp(targetUid, out DamageableComponent? damage))
                     return 0f;
                 if (con.TargetState != MobState.Invalid && _thresholdSystem.TryGetPercentageForState(targetUid, con.TargetState, damage.TotalDamage, out var percentage))
-                    return Math.Clamp((float)(1 - percentage), 0f, 1f);
+                    return Math.Clamp((float)(1 - percentage * 0.25), 0f, 1f); // SpL- quartered the logic check for target damage- it's not used anywhere besides merciless AIs right now anyways
                 if (_thresholdSystem.TryGetIncapPercentage(targetUid, damage.TotalDamage, out var incapPercentage))
-                    return Math.Clamp((float)(1 - incapPercentage), 0f, 1f);
+                    return Math.Clamp((float)(1 - incapPercentage * 0.25), 0f, 1f); // SpL- quartered the logic check for target states- it's not used anywhere besides merciless AIs right now anyways
                 return 0f;
             }
             case TargetInLOSCon:
@@ -347,6 +347,10 @@ public sealed class NPCUtilitySystem : EntitySystem
             {
                 return _mobState.IsAlive(targetUid) ? 1f : 0f;
             }
+            case TargetIsSoftCritCon: // SpL start
+                {
+                    return _mobState.IsSoftCritical(targetUid) ? 1f : 0f;
+                } // SpL end
             case TargetIsCritCon:
             {
                 return _mobState.IsCritical(targetUid) ? 1f : 0f;
@@ -501,6 +505,14 @@ public sealed class NPCUtilitySystem : EntitySystem
                 }
                 break;
             }
+            case NearbyFriendliesQuery: // SpL start
+            {
+                foreach (var ent in _npcFaction.GetNearbyFriendlies(owner, vision))
+                {
+                    _entityList.Add(ent);
+                }
+                break;
+            } // SpL end
             default:
                 throw new NotImplementedException();
         }
@@ -521,6 +533,9 @@ public sealed class NPCUtilitySystem : EntitySystem
 
     private void Filter(NPCBlackboard blackboard, HashSet<EntityUid> entities, UtilityQueryFilter filter)
     {
+        var owner = blackboard.GetValue<EntityUid>(NPCBlackboard.Owner); // SpL
+        var vision = blackboard.GetValueOrDefault<float>(blackboard.GetVisionRadiusKey(EntityManager), EntityManager); // SpL
+        
         switch (filter)
         {
             case ComponentFilter compFilter:
@@ -547,6 +562,23 @@ public sealed class NPCUtilitySystem : EntitySystem
 
                 break;
             }
+            case HostileFilter compFilter: // SpL start
+            {
+                _entityList.Clear();
+
+                foreach (var ent in _npcFaction.GetNearbyHostiles(owner, vision))
+                {
+                    _entityList.Add(ent);
+                    break;
+                }
+                
+                foreach (var ent in _entityList)
+                {
+                    entities.Remove(ent);
+                }
+
+                break;
+            } // SpL end
             case RemoveAnchoredFilter:
             {
                 _entityList.Clear();
