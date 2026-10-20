@@ -45,6 +45,11 @@
           32:
             sprite: _SpL/Mobs/Species/Kitsune/displacement.rsi
             state: outerClothing
+      neck:
+        sizeMaps:
+          32:
+            sprite: _SpL/Mobs/Species/Kitsune/displacement.rsi
+            state: neck
       shoes: # DM only for colored shoes!
         sizeMaps:
           32:
@@ -106,6 +111,11 @@
           32:
             sprite: _SpL/Mobs/Species/Kitsune/displacement.rsi
             state: jumpsuit
+      neck:
+        sizeMaps:
+          32:
+            sprite: _SpL/Mobs/Species/Kitsune/displacement.rsi
+            state: neck
       outerClothing:
         sizeMaps:
           32:
