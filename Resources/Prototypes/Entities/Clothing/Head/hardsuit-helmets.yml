@@ -446,7 +446,7 @@
   id: ClothingHeadHelmetHardsuitSecurity
   categories: [ HideSpawnMenu ] # SpL
   name: security hardsuit helmet
-  description: Armored hardsuit helmet for security needs.
+  description: An armored hardsuit helmet for general security needs.
   components:
   - type: Sprite
     sprite: _Starlight/Clothing/Head/Hardsuits/security.rsi #Starlight
@@ -733,16 +733,16 @@
 #ANTAG HARDSUITS
 #Blood-red Hardsuit
 - type: entity
-  parent: [ ClothingHeadHardsuitBase, ClothingHeadSuitWithLightBase, ClothingHeadLightParamsIntermediate ] # Starlight
+  parent: [ ClothingHeadHardsuitBase, ClothingHeadSuitWithLightBase, ClothingHeadLightParamsAdvanced ] # SpL
   id: ClothingHeadHelmetHardsuitSyndie
   categories: [ HideSpawnMenu ] # SpL
   name: blood-red warsuit helmet # SpL
   description: A heavily armored helmet designed for work in special operations, with the signature baleful visoring synonymous with an elite Syndicate operative. # SpL
   components:
   - type: Sprite
-    sprite: Clothing/Head/Hardsuits/syndicate.rsi
+    sprite: _Goobstation/Clothing/Head/Hardsuits/syndicate.rsi # SpL
   - type: Clothing
-    sprite: Clothing/Head/Hardsuits/syndicate.rsi
+    sprite: _Goobstation/Clothing/Head/Hardsuits/syndicate.rsi # SpL
   - type: PointLight
     color: "#50ff50" # Starlight: Full color component, more white to identify colors easier
   - type: PressureProtection
@@ -762,16 +762,16 @@
 
 #Blood-red Medic Hardsuit
 - type: entity
-  parent: [ ClothingHeadHardsuitBase, ClothingHeadSuitWithLightBase, ClothingHeadLightParamsIntermediate ] # Starlight
+  parent: [ ClothingHeadHardsuitBase, ClothingHeadSuitWithLightBase, ClothingHeadLightParamsAdvanced ] # SpL
   id: ClothingHeadHelmetHardsuitSyndieMedic
   categories: [ HideSpawnMenu ] # SpL
   name: blood-red medic warsuit helmet # SpL
   description: An advanced armored helmet specifically designed for the Syndicate operatives' field medical operations. # SpL
   components:
   - type: Sprite
-    sprite: Clothing/Head/Hardsuits/syndiemedic.rsi
+    sprite: _Goobstation/Clothing/Head/Hardsuits/syndiemedic.rsi # SpL
   - type: Clothing
-    sprite: Clothing/Head/Hardsuits/syndiemedic.rsi
+    sprite: _Goobstation/Clothing/Head/Hardsuits/syndiemedic.rsi # SpL
   - type: PointLight
     color: "#50ffb6" # Starlight: Full color component, more white to identify colors easier
   - type: PressureProtection
@@ -792,16 +792,16 @@
 
 #Syndicate Elite Hardsuit
 - type: entity
-  parent: [ ClothingHeadHardsuitBase, ClothingHeadSuitWithLightBase, ClothingHeadLightParamsIntermediate ] # Starlight
+  parent: [ ClothingHeadHardsuitBase, ClothingHeadSuitWithLightBase, ClothingHeadLightParamsAdvanced ] # SpL
   id: ClothingHeadHelmetHardsuitSyndieElite
   categories: [ HideSpawnMenu ] # SpL
   name: elite operative helmet # SpL
   description: An elite version of the blood-red warsuit's helmet, with improved radiation resistance and fireproofing. # SpL
   components:
-  - type: Sprite
-    sprite: Clothing/Head/Hardsuits/syndieelite.rsi
+  - type: Sprite # SpL start
+    sprite: _Goobstation/Clothing/Head/Hardsuits/syndieelitealt.rsi # SpL
   - type: Clothing
-    sprite: Clothing/Head/Hardsuits/syndieelite.rsi
+    sprite: _Goobstation/Clothing/Head/Hardsuits/syndieelitealt.rsi # SpL
   - type: PointLight
     color: "#ff5050" # Starlight: Full color component, more white to identify colors easier
   - type: PressureProtection
@@ -826,16 +826,16 @@
 
 #Syndicate Commander Hardsuit
 - type: entity
-  parent: [ ClothingHeadHardsuitBase, ClothingHeadSuitWithLightBase, ClothingHeadLightParamsIntermediate ] # Starlight
+  parent: [ ClothingHeadHardsuitBase, ClothingHeadSuitWithLightBase, ClothingHeadLightParamsAdvanced ] # SpL
   id: ClothingHeadHelmetHardsuitSyndieCommander
   categories: [ HideSpawnMenu ] # SpL
-  name: operative commander helmet # SpL
+  name: blood-red commander helmet # SpL
   description: A bulked up version of the blood-red hardsuit's helmet, purpose-built for the commander of a syndicate operative squad. Has significantly improved armor for those deadly front-lines firefights. # SpL
   components:
   - type: Sprite
-    sprite: Clothing/Head/Hardsuits/syndiecommander.rsi
+    sprite: _Goobstation/Clothing/Head/Hardsuits/syndiecommander.rsi # SpL
   - type: Clothing
-    sprite: Clothing/Head/Hardsuits/syndiecommander.rsi
+    sprite: _Goobstation/Clothing/Head/Hardsuits/syndiecommander.rsi # SpL
   - type: PointLight
     color: "#50ff50" # Starlight: Full color component, more white to identify colors easier
   - type: PressureProtection
@@ -855,7 +855,7 @@
 
 #Cybersun Juggernaut Hardsuit
 - type: entity
-  parent: [ ClothingHeadHardsuitBase, ClothingHeadSuitWithLightBase, ClothingHeadLightParamsIntermediate ] # Starlight
+  parent: [ ClothingHeadHardsuitBase, ClothingHeadSuitWithLightBase, ClothingHeadLightParamsAdvanced ] # SpL
   id: ClothingHeadHelmetHardsuitCybersun
   categories: [ HideSpawnMenu ] # SpL
   name: CyberSun juggernaut helmet # SpL

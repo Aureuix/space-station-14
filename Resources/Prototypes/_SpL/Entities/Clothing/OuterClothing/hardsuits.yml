@@ -70,7 +70,58 @@
   - type: StaticPrice
     price: 5000
     
-# Elite ERT suit
+- type: entity
+  parent: ClothingOuterHardsuitSecurity
+  id: ClothingOuterHardsuitDetective
+  name: detective hardsuit
+  description: A standard issue security suit with armour plating cut down in favour of a stylish trenchcoat and hat.
+  components:
+    - type: Sprite
+      sprite: _Goobstation/Clothing/OuterClothing/Hardsuits/detective.rsi
+    - type: Clothing
+      sprite: _Goobstation/Clothing/OuterClothing/Hardsuits/detective.rsi
+    - type: Armor
+      modifiers:
+        coefficients:
+          Blunt: 0.7
+          Slash: 0.7
+          Piercing: 0.6
+          Heat: 0.7
+          Caustic: 0.7
+      staminaModifier: 0.7
+    - type: ClothingSpeedModifier
+      walkModifier: 0.8
+      sprintModifier: 0.8
+    - type: ToggleableClothing
+      clothingPrototype: ClothingHeadHelmetHardsuitDetective
+    - type: StealTarget 
+      stealGroup: BrigmedicHardsuit
+      
+- type: entity
+  parent: [ ClothingOuterHardsuitBase, BaseGSLOwnedContraband ]
+  id: ClothingOuterHardsuitGSLSpatio
+  name: VI-037M spationaut hardsuit
+  description: A lightweight hardsuit designed for industrial EVA in zero gravity. This is a premium model issued to GSL employees as part of a general contract with Vulkan Industriess.
+  components:
+    - type: Sprite
+      sprite: _Goobstation/Clothing/OuterClothing/Hardsuits/spatio.rsi
+    - type: Clothing
+      sprite: _Goobstation/Clothing/OuterClothing/Hardsuits/spatio.rsi
+    - type: Armor
+      modifiers:
+        coefficients:
+          Blunt: 0.9
+          Slash: 0.9
+          Piercing: 0.9
+          Radiation: 0.3
+          Caustic: 0.8
+    - type: ClothingSpeedModifier
+      walkModifier: 0.9
+      sprintModifier: 0.9
+    - type: ToggleableClothing
+      clothingPrototype: ClothingHeadHelmetHardsuitGSLSpatio
+
+# Elite ERT suits
 - type: entity
   parent: [ ClothingOuterHardsuitBase, BaseCentcommContraband ]
   id: ClothingOuterHardsuitSVSElite
@@ -125,7 +176,6 @@
     - type: Tag
       tags:
         - Hardsuit
-      
       
 - type: entity
   parent: ClothingOuterHardsuitSVSElite
