@@ -6,6 +6,13 @@
     severity: GSL
     
 - type: entity
+  id: BaseUnknownContraband
+  abstract: true
+  components:
+    - type: Contraband
+      severity: Unknown
+    
+- type: entity
   id: BaseGSLOwnedContraband
   parent: BaseRestrictedContraband
   abstract: true

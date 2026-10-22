@@ -124,6 +124,29 @@
         - CorgiWearable
         - WhitelistChameleon
 
+- type: entity
+  parent: [ BaseUnknownContraband, ClothingHeadLightParamsIntermediate, ClothingHeadSuitWithLightBase ]
+  id: ClothingOuterHardsuitVoxRaider
+  categories: [ HideSpawnMenu ]
+  name: ARK infiltration helmet
+  description: A shadowy helmet with a baleful look.
+  components:
+    - type: Sprite
+      sprite: _Goobstation/Clothing/Head/Hardsuits/vox-raiders-stealth-head.rsi
+    - type: Clothing
+      sprite: _Goobstation/Clothing/Head/Hardsuits/vox-raiders-stealth-head.rsi
+    - type: PointLight
+      color: purple
+    - type: Pierceable
+      level: Rock
+    - type: Armor
+      modifiers:
+        coefficients:
+          Blunt: 0.9
+          Slash: 0.9
+          Piercing: 0.9
+          Heat: 0.9
+
 # Elite ERT suits
 - type: entity
   parent: [ BaseCentcommContraband, ClothingHeadLightParamsProfessional, ClothingHeadHelmetHardsuitSyndieCommander ]
