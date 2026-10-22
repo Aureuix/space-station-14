@@ -9,3 +9,7 @@
 - type: contrabandSeverity
   id: Illuminate
   examineText: contraband-examine-text-illuminate
+  
+- type: contrabandSeverity
+  id: Unknown
+  examineText: contraband-examine-text-unknown
