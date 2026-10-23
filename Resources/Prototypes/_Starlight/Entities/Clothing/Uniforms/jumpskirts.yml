@@ -380,7 +380,7 @@
   parent: ClothingUniformSkirtBase
   id: ClothingUniformJumpskirtPencilSpecialOperationsOfficer
   name: SOC officer "pencil" skirt 
-  description: A formal black Special Operations Corps officer's "pencil" skirt embodies authority and sophistication. The tailored blazer and straight skirt create a refined silhouette, suitable for various occasions, from strategic meetings to... well, less conventional operations.
+  description: A formal black Special Operations Corps officer's "pencil" skirt which embodies authority and sophistication. The tailored blazer and straight skirt create a refined silhouette, suitable for various occasions, from strategic meetings to... well, less conventional operations.
   components:
   - type: Sprite
     sprite: _Starlight/Clothing/Uniforms/Jumpskirt/pencil_special_operations_officer.rsi
