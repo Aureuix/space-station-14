@@ -29,7 +29,7 @@
 - type: loadout
   id: ArcticCoatCaptain
   equipment:
-    outerClothing: ClothingOuterCoatCaptainArctic
+    outerClothing: ClothingOuterWinterCaptainArctic
 
 # Glasses
 - type: loadout
@@ -43,3 +43,18 @@
   id: CapHalfCloak
   equipment:
     neck: ClothingNeckHalfCloakCap
+    
+- type: loadout
+  id: CapAgedCloak
+  equipment:
+    neck: ClothingNeckCloakCapAged
+    
+- type: loadout
+  id: CapAgedMantle
+  equipment:
+    neck: ClothingNeckCloakCaptainMantleAged
+    
+- type: loadout
+  id: CapVeteranCloak
+  equipment:
+    neck: ClothingNeckCloakCaptainAura

@@ -31,7 +31,7 @@
     - WhitelistChameleon
 
 - type: entity
-  parent: ClothingOuterBioGeneral
+  parent: [ClothingOuterBioGeneral, BaseCommandContraband] # SpL
   id: ClothingOuterBioCmo
   name: bio suit
   suffix: CMO

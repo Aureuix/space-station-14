@@ -12,3 +12,23 @@
   id: FurcoatRD
   equipment:
     outerClothing: ClothingOuterCoatRDFur
+    
+- type: loadout
+  id: CoatRD
+  equipment:
+    outerClothing: ClothingOuterCoatResearchDirector
+    
+- type: loadout
+  id: RDFormalCloak
+  equipment:
+    neck: ClothingNeckCloakRDFormal
+    
+- type: loadout
+  id: RDAgedCloak
+  equipment:
+    neck: ClothingNeckCloakRDAged
+    
+- type: loadout
+  id: RDAgedMantle
+  equipment:
+    neck: ClothingNeckCloakRDMantleAged

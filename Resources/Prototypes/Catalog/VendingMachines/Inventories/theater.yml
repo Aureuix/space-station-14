@@ -19,7 +19,11 @@
     ClothingHeadHatPwig: 2
     ClothingOuterRobesJudge: 2
     ClothingOuterPoncho: 2
+    ClothingOuterCoatDetectiveUnarmored: 1 # SpL
+    ClothingOuterCoatDetectiveUnarmoredGrey: 1 # SpL
     ClothingOuterCoatDuster: 2 # DeltaV
+    ClothingOuterCoatGreatWestern: 2 # SpL
+    ClothingOuterCoatMatrix: 2 # SpL
     ClothingHeadHatSantahat: 2
     ClothingOuterSanta: 2
     ClothingHeadHatSkub: 2

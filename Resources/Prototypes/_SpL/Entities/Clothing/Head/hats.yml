@@ -55,7 +55,7 @@
 - type: entity
   parent: [ ClothingHeadBase, BaseCentcommContraband ]
   id: ClothingHeadHatCentCommWinged
-  name: central command winged cap
+  name: CentComm winged cap
   description: An officer's cap with brim-like outcroppings. Likely belonging to someone with an unconventional fashion sense and a rank allowing for such a modification.
   components:
     - type: Sprite
@@ -294,7 +294,7 @@
 - type: entity
   parent: [ ClothingHeadBase, BaseCommandContraband ]
   id: ClothingHeadHatCavalierCap
-  name: cavalier captain hat
+  name: captain cavalier hat
   description: For a dashing commander.
   components:
     - type: Sprite
@@ -312,7 +312,7 @@
 - type: entity
   parent: [ ClothingHeadBase, BaseCommandContraband ]
   id: ClothingHeadHatCavalierHoS
-  name: cavalier head of security hat
+  name: head of security cavalier hat
   description: For a dashing commander at arms.
   components:
     - type: Sprite
@@ -330,7 +330,7 @@
 - type: entity
   parent: [ ClothingHeadBase, BaseCentcommContraband ]
   id: ClothingHeadHatCavalierCentComm
-  name: cavalier centcomm hat
+  name: CentComm cavalier hat
   description: For a dashing commander's commander.
   components:
     - type: Sprite
@@ -345,7 +345,7 @@
 - type: entity
   parent: [ ClothingHeadBase, BaseCentcommContraband ]
   id: ClothingHeadHatDirectorCapCentComm
-  name: centcomm director's cap
+  name: CentComm director's cap
   suffix: DO NOT USE
   description: A no-nonsense military cap for the sectoral director of operations.
   components:

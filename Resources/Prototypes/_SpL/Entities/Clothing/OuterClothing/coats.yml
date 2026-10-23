@@ -32,33 +32,6 @@
   
 # Goob coats
 - type: entity
-  parent: [ ClothingOuterColdBase, AllowSuitStorageClothing, BaseBlueShieldContraband ]
-  id: ClothingWinterCoatBlueShield
-  name: blueshield winter greatcoat
-  description: A stylish bright windbreaker worn by Blueshield Officers escorting personnel in subzero conditions. Heavily reinforced, for when diplomacy won't cut it.
-  components:
-    - type: Sprite
-      sprite: _Goobstation/Clothing/OuterClothing/Coats/bso_winter_coat.rsi
-    - type: Clothing
-      sprite: _Goobstation/Clothing/OuterClothing/Coats/bso_winter_coat.rsi
-    - type: Pierceable
-      level: Metal
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 0.6
-          Slash: 0.6
-          Piercing: 0.6
-          Heat: 0.7
-          Cold: 0.7
-    - type: TemperatureProtection
-      heatingCoefficient: 1.1
-      coolingCoefficient: 0.35
-    - type: ExplosionResistance
-      damageCoefficient: 0.80
-    - type: Item
-
-- type: entity
   parent: [ClothingOuterStorageBase, ClothingOuterColdBase, BaseCommandContraband]
   id: ClothingOuterCoatCaptainTrench
   name: captain's formal armored trenchcoat
@@ -76,29 +49,6 @@
           Piercing: 0.6
           Heat: 0.8
           Cold: 0.8
-          
-- type: entity
-  parent: [ClothingOuterStorageBase, BaseCommandContraband]
-  id: ClothingOuterCoatCaptainArctic
-  name: captain's frigid greatcoat
-  description: A large, incredibly insulated winter coat, reinforced with a layer of armor. This would be incredibly out of place on most space stations.
-  components:
-    - type: Sprite
-      sprite: _Goobstation/Clothing/OuterClothing/Coats/cap_armored_winter_coat.rsi
-    - type: Clothing
-      sprite: _Goobstation/Clothing/OuterClothing/Coats/cap_armored_winter_coat.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 0.7
-          Slash: 0.7
-          Piercing: 0.7
-          Heat: 0.6
-          Cold: 0.5
-          Caustic: 0.5
-    - type: TemperatureProtection
-      heatingCoefficient: 1.2
-      coolingCoefficient: 0.2
 
 - type: entity
   parent: ClothingOuterStorageBase
@@ -311,10 +261,134 @@
 - type: entity
   parent: [ClothingOuterStorageBase, ClothingOuterColdBase]
   id: ClothingOuterCoatLongNanoTrasen
-  name: nanotrasen longcoat
+  name: NanoTrasen longcoat
   description: Official NanoTrasen merchandise for showing off your corporate support.
   components:
     - type: Sprite
       sprite: _Floof/Clothing/OuterClothing/Coats/nanotrasen.rsi
     - type: Clothing
       sprite: _Floof/Clothing/OuterClothing/Coats/nanotrasen.rsi
+      
+# DV stuff
+- type: entity
+  parent: [ClothingOuterStorageBase, ClothingOuterColdBase, BaseEnemyCorporationContraband]
+  id: ClothingOuterCoatCyberSunLab
+  name: CyberSun labcoat
+  description: As the leading innovators in robotics and cyberware, CyberSun's labcoats are more tailored to the computer lab rather than the conventional lab.
+  components:
+    - type: Sprite
+      sprite: DeltaV/Clothing/OuterClothing/Coats/cybersun_lab.rsi
+    - type: Clothing
+      sprite: DeltaV/Clothing/OuterClothing/Coats/cybersun_lab.rsi
+      
+- type: entity
+  parent: [ClothingOuterStorageBase, ClothingOuterColdBase, BaseEnemyCorporationContraband]
+  id: ClothingOuterCoatCyberSunOvercoat
+  name: CyberSun overcoat
+  description: A dark, somewhat intimidating looking coat worn by CyberSun representatives and overseers.
+  components:
+    - type: Sprite
+      sprite: DeltaV/Clothing/OuterClothing/Coats/cybersunovercoat.rsi
+    - type: Clothing
+      sprite: DeltaV/Clothing/OuterClothing/Coats/cybersunovercoat.rsi
+      
+- type: entity
+  parent: [ClothingOuterStorageBase, ClothingOuterColdBase, BaseEnemyCorporationContraband]
+  id: ClothingOuterCoatCyberSunWindbreaker
+  name: CyberSun windbreaker
+  description: A stylish windbreaker typically seen sported by CyberSun's ground testing teams and logistical personnel.
+  components:
+    - type: Sprite
+      sprite: DeltaV/Clothing/OuterClothing/Coats/cybersunwindbreaker.rsi
+    - type: Clothing
+      sprite: DeltaV/Clothing/OuterClothing/Coats/cybersunwindbreaker.rsi
+      
+- type: entity
+  parent: [ClothingOuterBioGeneral, ClothingOuterColdBase, BaseEnemyCorporationContraband]
+  id: ClothingOuterCoatayneChemsuit
+  name: Interdyne chemical suit
+  description: A heavy-duty chemical suit designed to resist spills, prevent contamination in both directions, and scare opposition.
+  components:
+    - type: Sprite
+      sprite: DeltaV/Clothing/OuterClothing/Coats/interdynechemsuit.rsi
+    - type: Clothing
+      sprite: DeltaV/Clothing/OuterClothing/Coats/interdynechemsuit.rsi
+    - type: Armor
+      modifiers:
+        coefficients:
+          Heat: 0.9
+          Cold: 0.9
+          Caustic: 0.5
+      
+- type: entity
+  parent: [ClothingOuterStorageBase, ClothingOuterColdBase, BaseMinorContraband]
+  id: ClothingOuterCoatSyndicateJacket
+  name: Syndicate leather jacket
+  description: It's like a biker jacket but way cooler and way more morally depraved.
+  components:
+    - type: Sprite
+      sprite: DeltaV/Clothing/OuterClothing/Coats/leatherjacket.rsi
+    - type: Clothing
+      sprite: DeltaV/Clothing/OuterClothing/Coats/leatherjacket.rsi
+      
+- type: entity
+  parent: ClothingOuterStorageBase
+  id: ClothingOuterCoatScience
+  name: scientific coat
+  description: You can tell it's scientific because the highlights are in the color of progress.
+  components:
+    - type: Sprite
+      sprite: DeltaV/Clothing/OuterClothing/Coats/epicoat.rsi
+    - type: Clothing
+      sprite: DeltaV/Clothing/OuterClothing/Coats/epicoat.rsi
+      
+- type: entity
+  parent: [ ClothingOuterStorageBase, BaseCommandContraband ]
+  id: ClothingOuterCoatResearchDirector
+  name: research director's coat
+  description: This coat is at least twice as advanced as contemporaries, as indicated by its more than doubled progress colour amount.
+  components:
+    - type: Sprite
+      sprite: DeltaV/Clothing/OuterClothing/Coats/epicoat.rsi
+    - type: Clothing
+      sprite: DeltaV/Clothing/OuterClothing/Coats/epicoat.rsi
+      
+- type: entity
+  parent: [ClothingOuterStorageBase, ClothingOuterColdBase]
+  id: ClothingOuterCoatGreatWestern
+  name: aged greatcoat
+  description: There's two kinds of people in this world, partner.
+  components:
+    - type: Sprite
+      sprite: DeltaV/Clothing/OuterClothing/Coats/greatcoat.rsi
+    - type: Clothing
+      sprite: DeltaV/Clothing/OuterClothing/Coats/greatcoat.rsi
+      
+- type: entity
+  parent: [ClothingOuterStorageBase, ClothingOuterColdBase]
+  id: ClothingOuterCoatMatrix
+  name: dark overcoat
+  description: I can only show you the door. You have to walk through it.
+  components:
+    - type: Sprite
+      sprite: DeltaV/Clothing/OuterClothing/Coats/greatcoat.rsi
+    - type: Clothing
+      sprite: DeltaV/Clothing/OuterClothing/Coats/greatcoat.rsi
+      
+- type: entity
+  parent: [ ClothingOuterStorageBase, ClothingOuterColdBase, BaseCommandContraband ]
+  id: ClothingOuterCoatHoPTrenchArmored
+  name: armored head of personnel's trenchcoat
+  description: I'm under attack!! Someone help me!! Help!! Help!!
+  components:
+    - type: Sprite
+      sprite: DeltaV/Clothing/OuterClothing/Coats/hop.rsi
+    - type: Clothing
+      sprite: DeltaV/Clothing/OuterClothing/Coats/hop.rsi
+    - type: Armor
+      modifiers:
+        coefficients:
+          Blunt: 0.7
+          Slash: 0.7
+          Piercing: 0.7
+          Heat: 0.7

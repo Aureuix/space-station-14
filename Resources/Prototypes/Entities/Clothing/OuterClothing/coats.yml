@@ -16,9 +16,9 @@
   description: An 18th-century multi-purpose trenchcoat with armored inserts. Someone who wears this means serious business.
   components:
   - type: Sprite
-    sprite: Clothing/OuterClothing/Coats/detective.rsi
+    sprite: DeltaV/Clothing/OuterClothing/Coats/detectivearmouredcoat.rsi # SpL
   - type: Clothing
-    sprite: Clothing/OuterClothing/Coats/detective.rsi
+    sprite: DeltaV/Clothing/OuterClothing/Coats/detectivearmouredcoat.rsi # SpL
   - type: EntityTableContainerFill
     containers:
       storagebase: !type:AllSelector
@@ -60,9 +60,28 @@
   description: Ah, your trusty coat. There's a few tears here and there, giving it a more timely look. Or at least, that's what you told yourself when you found out gettin' it repaired would set you back 200 spesos.
   components:
   - type: Sprite
-    sprite: Clothing/OuterClothing/Coats/detective_grey.rsi
+    sprite: DeltaV/Clothing/OuterClothing/Coats/detectivearmouredcoatgrey.rsi # SpL
   - type: Clothing
-    sprite: Clothing/OuterClothing/Coats/detective_grey.rsi
+    sprite: DeltaV/Clothing/OuterClothing/Coats/detectivearmouredcoatgrey.rsi # SpL
+    
+# SpL- for mapping
+- type: entity
+  parent: [ ClothingOuterStorageBase, AllowSuitStorageClothing ]
+  id: ClothingOuterCoatDetectiveUnarmoredGrey
+  name: detective's trenchcoat
+  description: Ah, your trusty coat. There's a few tears here and there, giving it a more timely look. Or at least, that's what you told yourself when you found out gettin' it repaired would set you back 200 spesos.
+  components:
+    - type: Sprite
+      sprite: Clothing/OuterClothing/Coats/detective_grey.rsi
+    - type: Clothing
+      sprite: Clothing/OuterClothing/Coats/detective_grey.rsi
+    - type: EntityTableContainerFill
+      containers:
+        storagebase: !type:AllSelector
+          children:
+            - id: SmokingPipeFilledTobacco
+            - id: FlippoEngravedLighter
+# SpL end
 
 - type: entity
   parent: ClothingOuterCoatDetective

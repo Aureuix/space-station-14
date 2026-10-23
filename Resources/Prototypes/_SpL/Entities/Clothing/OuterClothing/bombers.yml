@@ -1,0 +1,127 @@
+﻿- type: entity
+  parent: [ClothingOuterStorageFoldableBase, ClothingOuterColdBase]
+  id: ClothingOuterBomberMusician
+  name: musician bomber
+  description: Don't ask for my autograph.
+  components:
+    - type: Sprite
+      sprite: DeltaV/Clothing/OuterClothing/Bombers/checkered.rsi
+    - type: Clothing
+      sprite: DeltaV/Clothing/OuterClothing/Bombers/checkered.rsi
+      
+- type: entity
+  parent: [ ClothingOuterStorageFoldableBaseOpened, ClothingOuterBomberMusician ]
+  id: ClothingOuterBomberMusicianOpened
+  name: musician bomber
+      
+- type: entity
+  parent: [ClothingOuterStorageFoldableBase, ClothingOuterColdBase, BaseEnemyCorporationContraband]
+  id: ClothingOuterBomberCyberSun
+  name: CyberSun bomber
+  description: A stylish bomber in standard CyberSun colors.
+  components:
+    - type: Sprite
+      sprite: DeltaV/Clothing/OuterClothing/Bombers/cybersun.rsi
+    - type: Clothing
+      sprite: DeltaV/Clothing/OuterClothing/Bombers/cybersun.rsi
+      
+- type: entity
+  parent: [ ClothingOuterStorageFoldableBaseOpened, ClothingOuterBomberCyberSun ]
+  id: ClothingOuterBomberCyberSunOpened
+  name: CyberSun bomber
+  
+- type: entity
+  parent: [ClothingOuterStorageFoldableBase, ClothingOuterColdBase]
+  id: ClothingOuterBomberEngi
+  name: engineering bomber
+  description: It's got a singulo on the back.
+  components:
+    - type: Sprite
+      sprite: DeltaV/Clothing/OuterClothing/Bombers/engi.rsi
+    - type: Clothing
+      sprite: DeltaV/Clothing/OuterClothing/Bombers/engi.rsi
+
+- type: entity
+  parent: [ ClothingOuterStorageFoldableBaseOpened, ClothingOuterBomberEngi ]
+  id: ClothingOuterBomberEngiOpened
+  name: engineering bomber
+  
+- type: entity
+  parent: [ClothingOuterStorageFoldableBase, ClothingOuterColdBase]
+  id: ClothingOuterBomberScience
+  name: scientific bomber
+  description: Scientifically proven to be both cool and warm at the same time.
+  components:
+    - type: Sprite
+      sprite: DeltaV/Clothing/OuterClothing/Bombers/epi.rsi
+    - type: Clothing
+      sprite: DeltaV/Clothing/OuterClothing/Bombers/epi.rsi
+
+- type: entity
+  parent: [ ClothingOuterStorageFoldableBaseOpened, ClothingOuterBomberScience ]
+  id: ClothingOuterBomberScienceOpened
+  name: scientific bomber
+  
+- type: entity
+  parent: [ClothingOuterStorageFoldableBase, ClothingOuterColdBase, BaseCommandContraband]
+  id: ClothingOuterBomberQM
+  name: quartermaster bomber
+  description: The reflective stripe on the back speaks for itself.
+  components:
+    - type: Sprite
+      sprite: DeltaV/Clothing/OuterClothing/Bombers/logi.rsi
+    - type: Clothing
+      sprite: DeltaV/Clothing/OuterClothing/Bombers/logi.rsi
+
+- type: entity
+  parent: [ ClothingOuterStorageFoldableBaseOpened, ClothingOuterBomberQM ]
+  id: ClothingOuterBomberQMOpened
+  name: quartermaster bomber
+  
+- type: entity
+  parent: [ClothingOuterStorageFoldableBase, ClothingOuterColdBase]
+  id: ClothingOuterBomberMedical
+  name: medical bomber
+  description: Typically "medical" shouldn't be next to anything with "bomb" in it, but we can make exceptions here and there.
+  components:
+    - type: Sprite
+      sprite: DeltaV/Clothing/OuterClothing/Bombers/med.rsi
+    - type: Clothing
+      sprite: DeltaV/Clothing/OuterClothing/Bombers/med.rsi
+
+- type: entity
+  parent: [ ClothingOuterStorageFoldableBaseOpened, ClothingOuterBomberMedical ]
+  id: ClothingOuterBomberMedicalOpened
+  name: medical bomber
+  
+- type: entity
+  parent: [ClothingOuterStorageFoldableBase, ClothingOuterColdBase]
+  id: ClothingOuterBomberHydro
+  name: hydroponics bomber
+  description: Nothing like a warm jacket and some good music to get in the planting mood.
+  components:
+    - type: Sprite
+      sprite: DeltaV/Clothing/OuterClothing/Bombers/service.rsi
+    - type: Clothing
+      sprite: DeltaV/Clothing/OuterClothing/Bombers/service.rsi
+
+- type: entity
+  parent: [ ClothingOuterStorageFoldableBaseOpened, ClothingOuterBomberHydro ]
+  id: ClothingOuterBomberHydroOpened
+  name: hydroponics bomber
+  
+- type: entity
+  parent: [ClothingOuterStorageFoldableBase, ClothingOuterColdBase, BaseMinorContraband]
+  id: ClothingOuterBomberSyndie
+  name: syndicate bomber
+  description: Lets the world know that you're the cool kind of S for sinister.
+  components:
+    - type: Sprite
+      sprite: DeltaV/Clothing/OuterClothing/Bombers/service.rsi
+    - type: Clothing
+      sprite: DeltaV/Clothing/OuterClothing/Bombers/service.rsi
+
+- type: entity
+  parent: [ ClothingOuterStorageFoldableBaseOpened, ClothingOuterBomberSyndie ]
+  id: ClothingOuterBomberSyndieOpened
+  name: syndicate bomber

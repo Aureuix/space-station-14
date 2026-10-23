@@ -6,6 +6,8 @@
     ClothingHeadHatBeretSyndicate: 5 # SpL
     ClothingMaskNeckGaiter: 5
     ClothingOuterWinterSyndie: 5
+    ClothingOuterCoatSyndicateJacket: 3 # SpL
+    ClothingOuterBomberSyndie: 3 # SpL
     ClothingHeadHatSyndieMAA: 3
     ClothingOuterWinterSyndieCap: 3
     ClothingOuterCoatSyndieCap: 3
@@ -15,6 +17,7 @@
     ClothingUniformJumpskirtOperative: 5
     ClothingNeckScarfStripedSyndieGreen: 2
     ClothingNeckScarfStripedSyndieRed: 2
+    ClothingNeckCloakSyndicateMantle: 1 # SpL
     ClothingShoesBootsWinterSyndicate: 2
     ClothingBackpackSyndicate: 4 #SL edit
     ClothingBackpackSatchelSyndicate: 4 #SL edit

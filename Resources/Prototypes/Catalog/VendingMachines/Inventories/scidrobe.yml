@@ -13,10 +13,11 @@
     ClothingHeadsetScience: 3
     ClothingMaskGas: 3
     ClothingOuterWinterSci: 2
+    ClothingOuterBomberScience: 2 # SpL
     ClothingOuterWindbreakerScience: 2 #Starlight
     ClothingNeckScarfStripedPurple: 3
     ClothingShoesBootsWinterSci: 2
-    SlimeExtractBag: 5 # Starlight
+    # SlimeExtractBag: 5 # Starlight # SpL removal
   contrabandInventory:
     ToyFigurineResearchDirector: 1
     ClothingUniformJumpsuitCyberSunResearch: 1 # SpL

@@ -31,9 +31,19 @@
 
 # Outer
 - type: loadout
-  id: FormalCoatWarden
+  id: WardenCoatFormal
   equipment:
     outerClothing: ClothingOuterCoatWardenFormal
+    
+- type: loadout
+  id: WardenWinterCoatFormal
+  equipment:
+    outerClothing: ClothingOuterWinterWardenFormal
+    
+- type: loadout
+  id: WardenGreatcoat
+  equipment:
+    outerClothing: ClothingOuterWinterWardenGreatcoat
 
 # Neck
 - type: loadout

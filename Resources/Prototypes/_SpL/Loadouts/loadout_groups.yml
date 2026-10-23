@@ -176,6 +176,7 @@
   loadouts:
     - CentCommScarf
     - CentCommCloak
+    - CentCommMantle
     - CentCommPoncho
     - CentCommCloakBoat
     - CentCommHalfCloak
@@ -183,6 +184,7 @@
     - CentCommShawl
     - CentCommShawlCMD
     - CentCommMantleCED
+    - CentCommMantleCEsD
     - CentCommMantleCLD
     - CentCommMantleCMD
     - CentCommMantleCRD

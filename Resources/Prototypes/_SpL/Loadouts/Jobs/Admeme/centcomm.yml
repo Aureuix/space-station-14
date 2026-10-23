@@ -286,6 +286,11 @@
   id: CentCommCloak
   equipment:
     neck: ClothingNeckCloakCentcom
+    
+- type: loadout
+  id: CentCommMantle
+  equipment:
+    neck: ClothingNeckCloakCentCommMantle
       
 - type: loadout
   id: CentCommScarf
@@ -357,6 +362,12 @@
   id: CentCommMantleCRD
   equipment:
     neck: ClothingNeckCloakCRDMantle
+  groupBy: "ccneckdepartmental"
+  
+- type: loadout
+  id: CentCommMantleCEsD
+  equipment:
+    neck: ClothingNeckCloakCEsDMantle
   groupBy: "ccneckdepartmental"
     
 - type: loadout

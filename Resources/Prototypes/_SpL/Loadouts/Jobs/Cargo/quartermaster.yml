@@ -20,6 +20,11 @@
   id: LongcoatQM
   equipment:
     outerClothing: ClothingOuterCoatLongQM
+    
+- type: loadout
+  id: QuartermasterBomber
+  equipment:
+    outerClothing: ClothingOuterBomberQM
 
 # Neck
 - type: loadout
@@ -31,3 +36,13 @@
   id: QMPauldron
   equipment:
     neck: ClothingNeckCloakQMPauldron
+    
+- type: loadout
+  id: QMFormalCloak
+  equipment:
+    neck: ClothingNeckCloakQMFormal
+    
+- type: loadout
+  id: QMAgedMantle
+  equipment:
+    neck: ClothingNeckCloakQMMantleAged

@@ -15,8 +15,24 @@
     - SLFashionOther
 
 - type: listing
+  id: ClothingOuterWinterSans
+  productEntity: ClothingOuterWinterSans
+  cost:
+    NTCredit: 66
+  categories:
+    - SLFashionOther
+
+- type: listing
   id: ClothingOuterCoatLongNanoTrasen
   productEntity: ClothingOuterCoatLongNanoTrasen
+  cost:
+    NTCredit: 40
+  categories:
+    - SLFashionOther
+
+- type: listing
+  id: ClothingOuterWinterNanoTrasen
+  productEntity: ClothingOuterWinterNanoTrasen
   cost:
     NTCredit: 40
   categories:
@@ -27,6 +43,22 @@
   productEntity: ClothingNeckHalfCloakBullfighter
   cost:
     NTCredit: 60
+  categories:
+    - SLFashionOther
+
+- type: listing
+  id: ClothingNeckCloakLarper
+  productEntity: ClothingNeckCloakLarper
+  cost:
+    NTCredit: 100
+  categories:
+    - SLFashionOther
+
+- type: listing
+  id: ClothingNeckCloakWitch
+  productEntity: ClothingNeckCloakWitch
+  cost:
+    NTCredit: 100
   categories:
     - SLFashionOther
 

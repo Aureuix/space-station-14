@@ -226,6 +226,9 @@
   - CaptainMantle
   - CapHalfCloak # SpL
   - CaptainBoatCloak #DeltaV
+  - CapAgedCloak # SpL
+  - CapAgedMantle # SpL
+  - CapVeteranCloak # SpL
 
 - type: loadoutGroup
   id: CaptainBackpack
@@ -302,6 +305,9 @@
   - HoPCloak
   - HoPMantle
   - HopCloakFormal # DeltaV
+  - HoPFormalMantle # SpL
+  - HoPAgedCloak # SpL
+  - HoPAgedMantle # SpL
 
 - type: loadoutGroup
   id: HoPBackpack
@@ -740,6 +746,7 @@
   loadouts:
   - BotanistApron
   - BotanistWintercoat
+  - BotanistBomber # SpL
 
 - type: loadoutGroup
   id: BotanistJobTrinkets
@@ -863,6 +870,8 @@
   minLimit: 0
   loadouts:
   - MimeWintercoat
+  - MimeFur # SpL
+  - MimeLong # SpL
 
 - type: loadoutGroup
   id: MimeBelt
@@ -906,6 +915,7 @@
   minLimit: 0
   loadouts:
   - MusicianWintercoat
+  - MusicianBomber # SpL
 
 - type: loadoutGroup
   id: Instruments
@@ -982,6 +992,8 @@
   - QuartermasterMantle
   - QMHalfCloak # SpL
   - QMPauldron # SpL
+  - QMFormalCloak # SpL
+  - QMAgedMantle # SpL
 
 - type: loadoutGroup
   id: QuartermasterOuterClothing
@@ -990,6 +1002,7 @@
   loadouts:
   - QuartermasterWintercoat
   - LongcoatQM # SpL
+  - QuartermasterBomber # SpL
 
 - type: loadoutGroup
   id: QuartermasterShoes
@@ -1151,6 +1164,10 @@
   loadouts:
   - ChiefEngineerCloak
   - ChiefEngineerMantle
+  - CEFormalCloak # SpL
+  - CEFormalMantle # SpL
+  - CEAgedCloak # SpL
+  - CEAgedMantle # SpL
 
 - type: loadoutGroup
   id: ChiefEngineerOuterClothing
@@ -1230,6 +1247,7 @@
   loadouts:
   - StationEngineerOuterVest
   - StationEngineerWintercoat
+  - EngineeringBomber # SpL
   - WindbreakerEngineering #Starlight
 
 - type: loadoutGroup
@@ -1347,8 +1365,12 @@
   loadouts:
   - ResearchDirectorLabCoat
   - ResearchDirectorWintercoat
+  - CoatRD # SpL
   - LongcoatRD # SpL
   - FurcoatRD # SpL
+  - RDFormalCloak # SpL
+  - RDAgedCloak # SpL
+  - RDAgedMantle # SpL
 
 - type: loadoutGroup
   id: ResearchDirectorShoes
@@ -1418,11 +1440,13 @@
   - RegularLabCoat
   - RegularLabCoatLong # DeltaV
   - ScienceLabCoat
+  - ScienceCoat # SpL
   - ScienceWintercoat
+  - ScienceBomber # SpL
+  - WindbreakerScience #Starlight
   - RoboticistLabCoat
   - RoboticistWintercoat
   - SeniorResearcherLabCoat
-  - WindbreakerScience #Starlight
 
 - type: loadoutGroup
   id: ScientistShoes
@@ -1483,8 +1507,8 @@
   - HeadofSecurityHead
   - HeadofSecurityBeret
   - HeadofSecuritySheriff #Starlight
-  - HosBeretAlt # SpL
-  - HosCavalier # SpL
+  - HoSBeretAlt # SpL
+  - HoSCavalier # SpL
 
 - type: loadoutGroup
   id: HeadofSecurityJumpsuit
@@ -1512,9 +1536,12 @@
   - ClothingNeckCloakHosRetro #STARLIGHT
   - HeadofSecurityCloak
   - HeadofSecurityMantle
-  - HosHalfCloak # SpL
+  - HoSHalfCloak # SpL
   - HeadofSecurityBoatCloak #DeltaV
   - HeadofSecurityRobe #DeltaV
+  - HoSPoncho # SpL
+  - HoSAgedCloak # SpL
+  - HoSVeteranMantle # SpL
 
 - type: loadoutGroup
   id: HeadofSecurityOuterClothing
@@ -1524,7 +1551,8 @@
   loadouts:
   - HeadofSecurityCoat
   - HeadofSecurityWinterCoat
-  - WebVestHos # SpL
+  - HeadOfSecurityWebVest # SpL
+  - HeadOfSecurityWinterFormal # SpL
 
 - type: loadoutGroup
   id: HeadofSecurityJobTrinkets
@@ -1566,7 +1594,9 @@
   loadouts:
   - WardenCoat
   - WardenArmoredWinterCoat
-  - FormalCoatWarden # SpL
+  - WardenCoatFormal # SpL
+  - WardenWinterCoatFormal # SpL
+  - WardenGreatcoat # SpL
 
 - type: loadoutGroup
   id: WardenJobTrinkets
@@ -1637,7 +1667,7 @@
   - BrigmedicLabCoat # Starlight
   - CorpsmanCoat #Starlight
   - CorpsmanLabCoat # Starlight
-  - SecurityOfficerWintercoat
+  - CorpsmanWinter # SpL
 
 - type: loadoutGroup
   id: BrigmedicEyewear
@@ -1787,6 +1817,7 @@
   - DetectiveCoat
   - DetectiveCoatGrey
   - LongcoatDetective # SpL
+  - DetectiveWinter # SpL
 
 - type: loadoutGroup
   id: DetectiveJobTrinkets
@@ -1867,6 +1898,8 @@
   - ChiefMedicalOfficerMantle
   - ChiefMedicalOfficerShawl # DeltaV
   - ChiefMedicalOfficerOverShoulder # DeltaV
+  - CMOAgedCloak # SpL
+  - CMOAgedMantle # SpL
 
 - type: loadoutGroup
   id: ChiefMedicalOfficerShoes
@@ -1939,8 +1972,9 @@
   minLimit: 0
   loadouts:
   - RegularLabCoat
-  - MedicalDoctorWintercoat
   - SeniorPhysicianLabCoat
+  - MedicalDoctorWintercoat
+  - MedicalBomber # SpL
   - WindbreakerMedical #Starlight
   - RegularLabCoatLong # DeltaV
   - CoronerLabCoatLong # Starlight

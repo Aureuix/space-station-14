@@ -1,25 +1,45 @@
 ﻿# Hats
 - type: loadout
-  id: HosBeretAlt
+  id: HoSBeretAlt
   equipment:
     head: ClothingHeadHatBeretHoSExpi
 
 - type: loadout
-  id: HosCavalier
+  id: HoSCavalier
   equipment:
     head: ClothingHeadHatCavalierHoS
 
 # Outer    
 - type: loadout
-  id: WebVestHos
+  id: HeadOfSecurityWebVest
   equipment:
     outerClothing: ClothingOuterArmorWebVestHoS
+    
+- type: loadout
+  id: HeadOfSecurityWinterFormal
+  equipment:
+    outerClothing: ClothingOuterWinterHoSFormal
   
 # Neck
 - type: loadout
-  id: HosHalfCloak
+  id: HoSHalfCloak
   equipment:
     neck: ClothingNeckHalfCloakHos
+    
+- type: loadout
+  id: HoSPoncho
+  equipment:
+    neck: ClothingNeckCloakHoSMantlePoncho
+    
+- type: loadout
+  id: HoSVeteranMantle
+  equipment:
+    neck: ClothingNeckCloakHoSMantleAura
+    
+- type: loadout
+  id: HoSAgedCloak
+  equipment:
+    neck: ClothingNeckCloakHoSAged
 
 # Sidearm Options
 - type: loadout

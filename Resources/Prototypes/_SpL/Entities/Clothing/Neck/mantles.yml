@@ -7,6 +7,11 @@
   components:
     - type: Sprite
       sprite: _SpL/Clothing/Neck/Mantles/qm.rsi
+    - type: Tag
+      tags:
+        - ClothMade
+        - Recyclable
+        - WhitelistChameleon
 
 ## centcomm shit
 - type: entity
@@ -30,3 +35,180 @@
       sprite: _SpL/Clothing/Neck/Mantles/csdmantle.rsi
     - type: Clothing
       sprite: _SpL/Clothing/Neck/Mantles/csdmantle.rsi
+      
+# goob
+- type: entity
+  parent: [ClothingNeckBase, BaseMinorContraband]
+  id: ClothingNeckCloakSyndicateMantle
+  name: Syndicate mantle
+  description: The blood-red trim speaks for itself.
+  components:
+    - type: Sprite
+      sprite: _Goobstation/Clothing/Neck/Cloaks/sanabi.rsi
+
+- type: entity
+  parent: [ClothingNeckBase, BaseBlueShieldContraband]
+  id: ClothingNeckCloakBlueshieldMantle
+  name: blueshield mantle
+  description: A proud, heavy cross between mantle, shawl, and poncho. Whatever it is, its wearer means business.
+  components:
+    - type: Sprite
+      sprite: _Goobstation/Clothing/Neck/Mantles/bsomantle.rsi
+    - type: Tag
+      tags:
+        - ClothMade
+        - Recyclable
+        - WhitelistChameleon
+      
+- type: entity
+  parent: [ClothingNeckBase, BaseCommandContraband]
+  id: ClothingNeckCloakCaptainMantleAged
+  name: aged captain's mantle
+  description: A well-worn cloak in faded blue. Despite its age, the gold trim shines brighter than ever.
+  components:
+    - type: Sprite
+      sprite: _Goobstation/Clothing/Neck/Mantles/capmantle.rsi
+    - type: Tag
+      tags:
+        - ClothMade
+        - Recyclable
+        - WhitelistChameleon
+
+- type: entity
+  parent: [ClothingNeckBase, BaseCommandContraband]
+  id: ClothingNeckCloakCMOMantleAged
+  name: aged chief medical officer's mantle
+  description: A well-worn mantle in faded teal. Despite its age, the green cross remains polished and unwavering.
+  components:
+    - type: Sprite
+      sprite: _Goobstation/Clothing/Neck/Mantles/cmomantle.rsi
+    - type: Tag
+      tags:
+        - ClothMade
+        - Recyclable
+        - WhitelistChameleon
+
+- type: entity
+  parent: [ClothingNeckBase, BaseCommandContraband]
+  id: ClothingNeckCloakHoPMantleFormal
+  name: head of personnel's formal mantle
+  description: A stylish blue mantle practically encrusted in gold. Let's see them try to ignore you now.
+  components:
+    - type: Sprite
+      sprite: _Goobstation/Clothing/Neck/Mantles/hopmantle.rsi
+    - type: Tag
+      tags:
+        - ClothMade
+        - Recyclable
+        - WhitelistChameleon
+
+- type: entity
+  parent: [ClothingNeckBase, BaseCommandContraband]
+  id: ClothingNeckCloakHoPMantleAged
+  name: aged head of personnel's mantle
+  description: A well-worn cloak in faded blue. Despite its age, the golden buttons still glisten in the light.
+  components:
+    - type: Sprite
+      sprite: DeltaV/Clothing/Neck/Mantles/hopmantle.rsi
+    - type: Tag
+      tags:
+        - ClothMade
+        - Recyclable
+        - WhitelistChameleon
+
+- type: entity
+  parent: [ClothingNeckBase, BaseCommandContraband]
+  id: ClothingNeckCloakHoSMantlePoncho
+  name: head of security's poncho
+  description: A proud red and blue poncho fitting for a proud officer. Nobody is faster than the law.
+  components:
+    - type: Sprite
+      sprite: _Goobstation/Clothing/Neck/Mantles/hosmantle.rsi
+    - type: Tag
+      tags:
+        - ClothMade
+        - Recyclable
+        - WhitelistChameleon
+
+- type: entity
+  parent: [ClothingNeckBase, BaseCommandContraband]
+  id: ClothingNeckCloakHoSMantleAura
+  name: veteran head of security's mantle
+  description: You will know us not by our names but by that of those we protected.
+  components:
+    - type: Sprite
+      sprite: _Goobstation/Clothing/Neck/Mantles/veteran_security.rsi
+
+- type: entity
+  parent: [ClothingNeckBase, BaseCommandContraband]
+  id: ClothingNeckCloakCEMantleAged
+  name: aged chief engineer's mantle
+  description: A well-worn mantle in faded orange. Despite its age, the technoweave continues to glow defiantly.
+  components:
+    - type: Sprite
+      sprite: _Goobstation/Clothing/Neck/Mantles/orangecemantle.rsi
+    - type: Tag
+      tags:
+        - ClothMade
+        - Recyclable
+        - WhitelistChameleon
+
+- type: entity
+  parent: [ClothingNeckBase, BaseCommandContraband]
+  id: ClothingNeckCloakCEMantleFormal
+  name: chief engineer's formal mantle
+  description: A stylish white mantle with plentiful gold trim. Excess guarantees exceptionalism.
+  components:
+    - type: Sprite
+      sprite: _Goobstation/Clothing/Neck/Mantles/whitecemantle.rsi
+    - type: Tag
+      tags:
+        - ClothMade
+        - Recyclable
+        - WhitelistChameleon
+
+- type: entity
+  parent: [ClothingNeckBase, BaseCommandContraband]
+  id: ClothingNeckCloakQMMantleAged
+  name: aged quartermaster's mantle
+  description: A well-worn mantle in faded brown. Despite its age, it retains a brilliant lustrous polish.
+  components:
+    - type: Sprite
+      sprite: _Goobstation/Clothing/Neck/Mantles/qmmantle.rsi
+    - type: Tag
+      tags:
+        - ClothMade
+        - Recyclable
+        - WhitelistChameleon
+
+- type: entity
+  parent: [ClothingNeckBase, BaseCommandContraband]
+  id: ClothingNeckCloakRDMantleAged
+  name: aged research director's mantle
+  description: A well-worn mantle in faded purple. Despite its age, it retains a spotless white trim.
+  components:
+    - type: Sprite
+      sprite: _Goobstation/Clothing/Neck/Mantles/rdmantle.rsi
+    - type: Tag
+      tags:
+        - ClothMade
+        - Recyclable
+        - WhitelistChameleon
+
+- type: entity
+  parent: [ClothingNeckBase, BaseCentcommContraband]
+  id: ClothingNeckCloakCentCommMantle
+  name: central commander's mantle
+  description: A pompous and elite green mantle with a nice gold trim, tailored specifically to the Central Commander. It's so heavy, the gold trim might be real.
+  components:
+    - type: Sprite
+      sprite: DeltaV/Clothing/Neck/Cloaks/centcommantle.rsi
+
+- type: entity
+  parent: [ClothingNeckBase, BaseCentcommContraband]
+  id: ClothingNeckCloakCEsDMantle
+  name: central epistemics division mantle
+  description: A decorated shawl-like mantle for the first line of defense against the greatest unknown.
+  components:
+    - type: Sprite
+      sprite: _Goobstation/Clothing/Neck/Cloaks/cchighcommand.rsi

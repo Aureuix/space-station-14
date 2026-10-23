@@ -2,3 +2,13 @@
   id: LongcoatCMO
   equipment:
     outerClothing: ClothingOuterCoatLongCMO
+    
+- type: loadout
+  id: CMOAgedCloak
+  equipment:
+    neck: ClothingNeckCloakCMOAged
+    
+- type: loadout
+  id: CMOAgedMantle
+  equipment:
+    neck: ClothingNeckCloakCMOMantleAged

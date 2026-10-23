@@ -1,4 +1,9 @@
 ﻿- type: loadout
+  id: CorpsmanWinter
+  equipment:
+    outerClothing: ClothingOuterWinterCorpsman
+
+- type: loadout
   id: VisorBrigmedic
   equipment:
     eyes: VisorBrigmedic

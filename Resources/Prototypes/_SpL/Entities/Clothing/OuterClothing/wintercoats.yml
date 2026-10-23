@@ -1,0 +1,171 @@
+﻿# Goob stuff
+- type: entity
+  parent: [ ClothingOuterColdBase, AllowSuitStorageClothing, ClothingOuterStorageBase, BaseBlueShieldContraband ]
+  id: ClothingOuterWinterBlueShield
+  name: blueshield winter greatcoat
+  description: A stylish bright windbreaker worn by Blueshield Officers escorting personnel in subzero conditions. Heavily reinforced, for when diplomacy won't cut it.
+  components:
+    - type: Sprite
+      sprite: _Goobstation/Clothing/OuterClothing/Coats/bso_winter_coat.rsi
+    - type: Clothing
+      sprite: _Goobstation/Clothing/OuterClothing/Coats/bso_winter_coat.rsi
+    - type: Pierceable
+      level: Metal
+    - type: Armor
+      modifiers:
+        coefficients:
+          Blunt: 0.6
+          Slash: 0.6
+          Piercing: 0.6
+          Heat: 0.7
+          Cold: 0.7
+    - type: TemperatureProtection
+      heatingCoefficient: 1.1
+      coolingCoefficient: 0.35
+    - type: ExplosionResistance
+      damageCoefficient: 0.80
+    - type: Item
+
+- type: entity
+  parent: [ClothingOuterStorageBase, ClothingOuterColdBase, BaseCommandContraband]
+  id: ClothingOuterWinterCaptainArctic
+  name: captain's frigid greatcoat
+  description: A large, incredibly insulated winter coat, reinforced with a layer of armor. This would be incredibly out of place on most space stations.
+  components:
+    - type: Sprite
+      sprite: _Goobstation/Clothing/OuterClothing/Coats/cap_armored_winter_coat.rsi
+    - type: Clothing
+      sprite: _Goobstation/Clothing/OuterClothing/Coats/cap_armored_winter_coat.rsi
+    - type: Armor
+      modifiers:
+        coefficients:
+          Blunt: 0.7
+          Slash: 0.7
+          Piercing: 0.7
+          Heat: 0.6
+          Cold: 0.5
+          Caustic: 0.5
+    - type: TemperatureProtection
+      heatingCoefficient: 1.2
+      coolingCoefficient: 0.2
+      
+# DV stuff
+- type: entity
+  parent: [ClothingOuterStorageBase, ClothingOuterColdBase, ClothingOuterArmorWarden, BaseSecurityContraband]
+  id: ClothingOuterWinterWardenFormal
+  name: warden's armored formal winter coat
+  description: A heavily armored winter coat with white trim, for a proper winter warden.
+  components:
+    - type: Sprite
+      sprite: DeltaV/Clothing/OuterClothing/WinterCoats/armourercoat.rsi
+    - type: Clothing
+      sprite: DeltaV/Clothing/OuterClothing/WinterCoats/armourercoat.rsi
+      
+- type: entity
+  parent: [ClothingOuterStorageFoldableBase, ClothingOuterStorageBase, ClothingOuterColdBase, ClothingOuterArmorWarden, BaseSecurityContraband] # five. hundred. parents
+  id: ClothingOuterWinterWardenGreatcoat
+  name: warden's armored greatcoat
+  description: A thick black coat reinforced with an alloy similar to that seen in the jackets of your contemporaries.
+  components:
+    - type: Sprite
+      sprite: DeltaV/Clothing/OuterClothing/WinterCoats/armourergreatcoat.rsi
+    - type: Clothing
+      sprite: DeltaV/Clothing/OuterClothing/WinterCoats/armourergreatcoat.rsi
+      
+- type: entity
+  parent: [ ClothingOuterStorageFoldableBaseOpened, ClothingOuterCoatWardenWinterFormal ]
+  id: ClothingOuterWinterWardenGreatcoatOpened
+  name: warden's armored greatcoat
+
+- type: entity
+  parent: [ClothingOuterStorageBase, ClothingOuterColdBase, BaseCommandContraband, ClothingOuterArmorHoS]
+  id: ClothingOuterWinterHoSFormal
+  name: HoS's armored formal winter coat
+  description: A heavily armored winter coat with a gold trim. You're the icebreaker.
+  components:
+    - type: Sprite
+      sprite: DeltaV/Clothing/OuterClothing/WinterCoats/hoscoat.rsi
+    - type: Clothing
+      sprite: DeltaV/Clothing/OuterClothing/WinterCoats/hoscoat.rsi
+
+- type: entity
+  parent: [ClothingOuterStorageBase, ClothingOuterColdBase, BaseSecurityContraband]
+  id: ClothingOuterWinterCorpsman
+  name: corpsman's armored winter coat
+  description: A warm winter coat with an armored plate. This is maybe not the best item for someone of your profession to be wearing.
+  components:
+    - type: Sprite
+      sprite: DeltaV/Clothing/OuterClothing/WinterCoats/corpsmancoat.rsi
+    - type: Clothing
+      sprite: DeltaV/Clothing/OuterClothing/WinterCoats/corpsmancoat.rsi
+    - type: Armor
+      modifiers:
+        coefficients:
+          Blunt: 0.8
+          Slash: 0.7
+          Piercing: 0.8
+          Heat: 0.7
+          Cold: 0.5
+
+- type: entity
+  parent: [ClothingOuterStorageBase, ClothingOuterColdBase, BaseSecurityContraband]
+  id: ClothingOuterWinterDetective
+  name: detective's armored winter coat
+  description: A warm winter coat with an armored plate. For when you want to look a little more modern.
+  components:
+    - type: Sprite
+      sprite: DeltaV/Clothing/OuterClothing/WinterCoats/detcoat.rsi
+    - type: Clothing
+      sprite: DeltaV/Clothing/OuterClothing/WinterCoats/detcoat.rsi
+    - type: Armor
+      modifiers:
+        coefficients:
+          Blunt: 0.8
+          Slash: 0.7
+          Piercing: 0.8
+          Heat: 0.7
+          Cold: 0.5
+  
+- type: entity
+  parent: [ClothingOuterStorageBase, ClothingOuterColdBase]
+  id: ClothingOuterWinterNanoTrasen
+  name: NanoTrasen jacket 
+  description: Official NanoTrasen merchandise for showing off your corporate support.
+  components:
+    - type: Sprite
+      sprite: DeltaV/Clothing/OuterClothing/WinterCoats/corpo_jacket.rsi
+    - type: Clothing
+      sprite: DeltaV/Clothing/OuterClothing/WinterCoats/corpo_jacket.rsi
+      
+- type: entity
+  parent: [ClothingOuterStorageBase, ClothingOuterColdBase]
+  id: ClothingOuterWinterSans
+  name: denim jacket 
+  description: Maybe it's the way you're dressed.
+  components:
+    - type: Sprite
+      sprite: DeltaV/Clothing/OuterClothing/WinterCoats/denim_jacket.rsi
+    - type: Clothing
+      sprite: DeltaV/Clothing/OuterClothing/WinterCoats/denim_jacket.rsi
+      
+- type: entity
+  parent: [ClothingOuterStorageBase, ClothingOuterColdBase]
+  id: ClothingOuterWinterMimeFur
+  name: mime winter fur coat 
+  description: And the audience is left speechless.
+  components:
+    - type: Sprite
+      sprite: DeltaV/Clothing/OuterClothing/WinterCoats/mimefurcoat.rsi
+    - type: Clothing
+      sprite: DeltaV/Clothing/OuterClothing/WinterCoats/mimefurcoat.rsi
+      
+- type: entity
+  parent: [ClothingOuterStorageBase, ClothingOuterColdBase]
+  id: ClothingOuterWinterMimeLong
+  name: mime winter longcoat
+  description: No words can describe how stunning this coat is.
+  components:
+    - type: Sprite
+      sprite: DeltaV/Clothing/OuterClothing/WinterCoats/mimefurcoat.rsi
+    - type: Clothing
+      sprite: DeltaV/Clothing/OuterClothing/WinterCoats/mimefurcoat.rsi

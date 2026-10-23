@@ -29,3 +29,19 @@
   id: TrenchcoatHop
   equipment:
     outerClothing: ClothingOuterCoatHoPTrench
+    
+# Neck
+- type: loadout
+  id: HoPAgedCloak
+  equipment:
+    neck: ClothingNeckCloakHoPAged
+    
+- type: loadout
+  id: HoPAgedMantle
+  equipment:
+    neck: ClothingNeckCloakHoPMantleAged
+    
+- type: loadout
+  id: HoPFormalMantle
+  equipment:
+    neck: ClothingNeckCloakHoPMantleFormal

@@ -7,6 +7,11 @@
   components:
     - type: Sprite
       sprite: _Starlight/Clothing/Neck/Cloaks/torn_cape.rsi
+    - type: Tag
+      tags:
+        - ClothMade
+        - Recyclable
+        - WhitelistChameleon
 
 ## half cloaks
 - type: entity
@@ -17,6 +22,11 @@
   components:
     - type: Sprite
       sprite: _SpL/Clothing/Neck/Cloaks/matador.rsi
+    - type: Tag
+      tags:
+        - ClothMade
+        - Recyclable
+        - WhitelistChameleon
       
 - type: entity
   parent: ClothingNeckBase
@@ -26,6 +36,11 @@
   components:
     - type: Sprite
       sprite: _SpL/Clothing/Neck/Cloaks/replica.rsi
+    - type: Tag
+      tags:
+        - ClothMade
+        - Recyclable
+        - WhitelistChameleon
 
 - type: entity
   parent: [ ClothingNeckBase, BaseCommandContraband ]
@@ -35,6 +50,11 @@
   components:
     - type: Sprite
       sprite: _SpL/Clothing/Neck/Cloaks/cap.rsi
+    - type: Tag
+      tags:
+        - ClothMade
+        - Recyclable
+        - WhitelistChameleon
 
 - type: entity
   parent: [ ClothingNeckBase, BaseCommandContraband ]
@@ -44,6 +64,11 @@
   components:
     - type: Sprite
       sprite: _SpL/Clothing/Neck/Cloaks/hos.rsi
+    - type: Tag
+      tags:
+        - ClothMade
+        - Recyclable
+        - WhitelistChameleon
 
 - type: entity
   parent: [ ClothingNeckBase, BaseCommandContraband ]
@@ -53,6 +78,11 @@
   components:
     - type: Sprite
       sprite: _SpL/Clothing/Neck/Cloaks/qm.rsi
+    - type: Tag
+      tags:
+        - ClothMade
+        - Recyclable
+        - WhitelistChameleon
 
 - type: entity
   parent: [ ClothingNeckBase, BaseSecurityContraband ]
@@ -62,6 +92,11 @@
   components:
     - type: Sprite
       sprite: _SpL/Clothing/Neck/Cloaks/ward.rsi
+    - type: Tag
+      tags:
+        - ClothMade
+        - Recyclable
+        - WhitelistChameleon
 
 - type: entity
   parent: [ ClothingNeckBase, BaseSalvageContraband ]
@@ -71,6 +106,11 @@
   components:
     - type: Sprite
       sprite: _SpL/Clothing/Neck/Cloaks/salvlead.rsi
+    - type: Tag
+      tags:
+        - ClothMade
+        - Recyclable
+        - WhitelistChameleon
       
 ## centcomm shit
 - type: entity
@@ -104,3 +144,199 @@
       radius: 2
       energy: 2
       color: "#DE3A3A"
+
+# Goob and DV stuff
+- type: entity
+  parent: ClothingNeckBase
+  id: ClothingNeckCloakLarper
+  name: larper cape
+  description: A kickass cape that you really shouldn't wear.
+  components:
+    - type: Sprite
+      sprite: _Goobstation/Clothing/Neck/Cloaks/helldiver.rsi
+    - type: Tag
+      tags:
+        - ClothMade
+        - Recyclable
+        - WhitelistChameleon
+        - CorgiWearable
+
+- type: entity
+  parent: ClothingNeckBase
+  id: ClothingNeckCloakWitch
+  name: witch cloak
+  description: Makes you feel like the time is right.
+  components:
+    - type: Sprite
+      sprite: DeltaV/Clothing/Neck/Cloaks/witchcloak.rsi
+    - type: Tag
+      tags:
+        - ClothMade
+        - Recyclable
+        - WhitelistChameleon
+        - CorgiWearable
+
+- type: entity
+  parent: [ClothingNeckBase, BaseCommandContraband]
+  id: ClothingNeckCloakCapAged
+  name: aged captain's cloak
+  description: A well-worn cloak in faded blue. Despite its age, the gold trim shines brighter than ever.
+  components:
+    - type: Sprite
+      sprite: _Goobstation/Clothing/Neck/Cloaks/hop.rsi
+    - type: StealTarget
+      stealGroup: HeadCloak
+    - type: Tag
+      tags:
+        - ClothMade
+        - Recyclable
+        - WhitelistChameleon
+
+- type: entity
+  parent: [ClothingNeckBase, BaseCommandContraband]
+  id: ClothingNeckCloakCaptainAura
+  name: veteran captain's cloak
+  description: Nothing more needs be said. Glory to NanoTrasen.
+  components:
+    - type: Sprite
+      sprite: _Goobstation/Clothing/Neck/Cloaks/Veterancap.rsi
+    - type: StealTarget
+      stealGroup: HeadCloak
+
+- type: entity
+  parent: [ClothingNeckBase, BaseCommandContraband]
+  id: ClothingNeckCloakCMOAged
+  name: aged chief medical officer's cloak
+  description: A well-worn cloak in faded teal. Despite its age, the green cross remains polished and unwavering.
+  components:
+    - type: Sprite
+      sprite: _Goobstation/Clothing/Neck/Cloaks/cmo.rsi
+    - type: StealTarget
+      stealGroup: HeadCloak
+    - type: Tag
+      tags:
+        - ClothMade
+        - Recyclable
+        - WhitelistChameleon
+
+- type: entity
+  parent: [ClothingNeckBase, BaseCommandContraband]
+  id: ClothingNeckCloakCEAged
+  name: aged chief engineer's cloak
+  description: A well-worn cloak in faded green. Despite its age, the technoweave continues to glow defiantly.
+  components:
+    - type: Sprite
+      sprite: _Goobstation/Clothing/Neck/Cloaks/greence.rsi
+    - type: StealTarget
+      stealGroup: HeadCloak
+    - type: Tag
+      tags:
+        - ClothMade
+        - Recyclable
+        - WhitelistChameleon
+
+- type: entity
+  parent: [ClothingNeckBase, BaseCommandContraband]
+  id: ClothingNeckCloakCEFormal
+  name: chief engineer's formal cloak
+  description: A stylish white cloak with plentiful gold trim. Excess guarantees exceptionalism.
+  components:
+    - type: Sprite
+      sprite: _Goobstation/Clothing/Neck/Cloaks/whitece.rsi
+    - type: StealTarget
+      stealGroup: HeadCloak
+    - type: Tag
+      tags:
+        - ClothMade
+        - Recyclable
+        - WhitelistChameleon
+
+- type: entity
+  parent: [ClothingNeckBase, BaseCommandContraband]
+  id: ClothingNeckCloakHoPAged
+  name: aged head of personnel's cloak
+  description: A well-worn cloak in faded blue. Despite its age, the golden buttons still glisten in the light.
+  components:
+    - type: Sprite
+      sprite: DeltaV/Clothing/Neck/Cloaks/hop.rsi
+    - type: StealTarget
+      stealGroup: HeadCloak
+    - type: Tag
+      tags:
+        - ClothMade
+        - Recyclable
+        - WhitelistChameleon
+
+- type: entity
+  parent: [ClothingNeckBase, BaseCommandContraband]
+  id: ClothingNeckCloakQMFormal
+  name: quartermaster's formal cloak
+  description: A stylish brown cloak which trades out the hi-vis for real golden trim. This thing is worth a fortune.
+  components:
+    - type: Sprite
+      sprite: _Goobstation/Clothing/Neck/Cloaks/qm.rsi
+    - type: StealTarget
+      stealGroup: HeadCloak
+    - type: Tag
+      tags:
+        - ClothMade
+        - Recyclable
+        - WhitelistChameleon
+      
+- type: entity
+  parent: [ClothingNeckBase, BaseCommandContraband]
+  id: ClothingNeckCloakRDAged
+  name: aged research director's cloak 
+  description: A well-worn cloak in faded purple. Despite its age, it retains a spotless white trim.
+  components:
+    - type: Sprite
+      sprite: DeltaV/Clothing/Neck/Cloaks/mystacloak.rsi
+    - type: StealTarget
+      stealGroup: HeadCloak
+    - type: Tag
+      tags:
+        - ClothMade
+        - Recyclable
+        - WhitelistChameleon
+
+- type: entity
+  parent: [ClothingNeckBase, BaseCommandContraband]
+  id: ClothingNeckCloakRDFormal
+  name: research director's formal cloak
+  description: A stylish purple cloak which inverts the colors of the standard RD cloak. That's a lot of progress.
+  components:
+    - type: Sprite
+      sprite: _Goobstation/Clothing/Neck/Cloaks/rd.rsi
+    - type: StealTarget
+      stealGroup: HeadCloak
+    - type: Tag
+      tags:
+        - ClothMade
+        - Recyclable
+        - WhitelistChameleon
+
+- type: entity
+  parent: [ClothingNeckBase, BaseCommandContraband]
+  id: ClothingNeckCloakHoSAged
+  name: aged head of security's cloak
+  description: A well-worn cloak in faded black. Despite its age, it remains pristine and uncreased.
+  components:
+    - type: Sprite
+      sprite: _Goobstation/Clothing/Neck/Cloaks/hos.rsi
+    - type: StealTarget
+      stealGroup: HeadCloak
+    - type: Tag
+      tags:
+        - ClothMade
+        - Recyclable
+        - WhitelistChameleon
+
+- type: entity
+  parent: [ClothingNeckBase, BaseCentcommContraband]
+  id: ClothingNeckCloakDirectorCentComm
+  name: CentComm director's greatmantle
+  suffix: DO NOT USE
+  description: Glory to Central Command.
+  components:
+    - type: Sprite
+      sprite: _Goobstation/Clothing/Neck/Cloaks/cchighcommand.rsi

@@ -12,3 +12,6 @@
     ClothingBackpackVirology: 2
     ClothingBackpackSatchelVirology: 2
     ClothingBackpackDuffelVirology: 2
+  contrabandInventory: # SpL
+    ClothingOuterCoatInterdyneChemsuit: 1 # SpL
+    ClothingHeadHatHoodInterdyneChemsuit: 1 # SpL

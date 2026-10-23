@@ -17,6 +17,11 @@
   id: MedicalOffsetSkirt
   equipment:
     jumpsuit: ClothingUniformJumpskirtMedicalOffset
+    
+- type: loadout
+  id: MedicalBomber
+  equipment:
+    outerClothing: ClothingOuterBomberMedical
 
 - type: loadout
   id: MedicalBeretAlt

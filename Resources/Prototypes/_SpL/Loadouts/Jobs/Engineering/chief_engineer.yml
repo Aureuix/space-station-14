@@ -2,3 +2,23 @@
   id: LongcoatCE
   equipment:
     outerClothing: ClothingOuterCoatLongCE
+    
+- type: loadout
+  id: CEAgedCloak
+  equipment:
+    neck: ClothingNeckCloakCEAged
+    
+- type: loadout
+  id: CEFormalCloak
+  equipment:
+    neck: ClothingNeckCloakCEFormal
+    
+- type: loadout
+  id: CeAgedMantle
+  equipment:
+    neck: ClothingNeckCloakCEMantleAged
+    
+- type: loadout
+  id: CEFormalMantle
+  equipment:
+    neck: ClothingNeckCloakCEMantleFormal

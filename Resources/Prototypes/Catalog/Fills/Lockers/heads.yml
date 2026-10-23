@@ -178,6 +178,7 @@
   table: !type:AllSelector
     children:
     - id: ClothingNeckCloakHopElite
+    - id: ClothingOuterCoatHoPTrenchArmored # SpL
     - id: AccessConfigurator
     - id: BoxEncryptionKeyAssistant
     - id: BoxEncryptionKeyService
@@ -307,15 +308,15 @@
     - id: ClothingCloakCmoElite
     - id: BoxEncryptionKeyMedical
     - id: ClothingBackpackDuffelSurgeryFilled
-    - id: ClothingEyesHudMedical
+    # - id: ClothingEyesHudMedical # SpL removal
     - id: ClothingHandsGlovesNitrile
     - id: ClothingHeadsetAltMedical
-    - id: ClothingMaskSterile
+    # - id: ClothingMaskSterile # SpL removal
     - id: DoorRemoteMedical
     - id: HandheldCrewMonitor
     - id: Hypospray
     - id: BoxCMOCircuitboards
-    - id: MedkitFilled
+    - id: MedkitCombatFilled # SpL
     - id: RubberStampCMO
     - id: MedTekCartridge
     - id: AutoMenderBurnFilled #Starlight
@@ -330,6 +331,8 @@
 #        - Greenshift #SL
 #        - Sandbox #SL
     - id: JawsOfLifeMed #Starlight
+    - id: ClothingOuterBioCmo # SpL
+    - id: ClothingHeadHatHoodBioCmo # SpL
     - id: MedicalVitalsImplanter # SpL
       amount: 3 # SpL
     - id: PlushieAzrael # SpL
@@ -397,7 +400,7 @@
 #        - Sandbox #SL
     #region Starlight
     - id: RDDiploma
-    - id: XenobiologyConsoleCameraTagger
+    # - id: XenobiologyConsoleCameraTagger # SpL removal
     - id: MedicalVitalsImplanter # SpL
     - id: PlushieOomu # SpL
     #- id: PaperIonstormBorgs

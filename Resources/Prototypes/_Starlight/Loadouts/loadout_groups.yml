@@ -403,6 +403,7 @@
   - BlueShieldFormalCloak
   - BlueShieldEliteCloak
   - BlueShieldPoncho
+  - BlueshieldMantle # SpL
 
 - type: loadoutGroup
   id: BlueShieldEyewear

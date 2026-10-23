@@ -9,6 +9,11 @@
   id: LongcoatDetective
   equipment:
     outerClothing: ClothingOuterCoatLongDetective
+    
+- type: loadout
+  id: DetectiveWinter
+  equipment:
+    outerClothing: ClothingOuterWinterDetective
 
 # Sidearm options
 - type: loadout
