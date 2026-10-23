@@ -730,8 +730,8 @@
   - type: Armor
     modifiers:
       coefficients:
-        Blunt: 0.85
-        Slash: 0.75
+        Blunt: 0.95 # SpL
+        Slash: 0.95 # SpL
         Cold: 0.85 # Starlight
         Piercing: 0.95
         Heat: 0.65

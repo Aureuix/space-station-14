@@ -1,9 +1,24 @@
 ﻿- type: loadout
+  id: VisorBlueshield
+  equipment:
+    eyes: VisorBlueshield
+
+- type: loadout
   id: BlueShieldWindbreaker
   equipment:
     outerClothing: ClothingWindbreakerBlueShield
     
 - type: loadout
+  id: BlueShieldWinterCoat
+  equipment:
+    outerClothing: ClothingWinterCoatBlueShield
+
+- type: loadout
   id: BlueshieldCap
   equipment:
-    head: ClothingHeadHatBSO
+    head: ClothingHeadHatBlueshield
+    
+- type: loadout
+  id: BlueshieldUshanka
+  equipment:
+    head: ClothingHeadHatBlueshieldUshanka

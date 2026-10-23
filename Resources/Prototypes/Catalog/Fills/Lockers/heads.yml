@@ -457,6 +457,7 @@
     - id: ClothingEyesGlassesSecurity
     - id: ClothingEyesHudSecurity # Starlight
     - id: ClothingHeadsetAltSecurity
+    - id: ClothingOuterArmorHoSExperimental # SpL
     - id: ClothingOuterCoatHoSTrench
     - id: ClothingShoesBootsJack
     - id: FlashlightSeclite
@@ -466,12 +467,12 @@
     - id: Demag # SpL
     - id: EnergySwordNT # SpL
     - id: BoxHoSCircuitboards
-    - id: WeaponDisabler
-    - id: WeaponTaser
+    # - id: WeaponDisabler # SpL removed
+    # - id: WeaponTaser # SpL removed
     - id: WantedListCartridge
     - id: DrinkHosFlask
     - id: SecurityShuttleConsoleCircuitboard # Starlight start
-    - id: ClothingOuterWinterHoS
+    # - id: ClothingOuterWinterHoS # SpL removal
     - id: ClothingHandsGlovesCombat
     - id: SecureBriefings
 #    - id: PrintedDocumentGreenshiftAlert # SpL- removed

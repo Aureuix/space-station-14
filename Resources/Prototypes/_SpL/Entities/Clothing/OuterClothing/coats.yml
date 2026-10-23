@@ -29,3 +29,314 @@
   parent: [ ClothingOuterStorageFoldableBaseOpened, ClothingWindbreakerBlueShield ]
   id: ClothingOuterWindbreakerBlueShieldOpened
   name: blueshield windbreaker
+  
+# Goob coats
+- type: entity
+  parent: [ ClothingOuterColdBase, AllowSuitStorageClothing, BaseBlueShieldContraband ]
+  id: ClothingWinterCoatBlueShield
+  name: blueshield winter greatcoat
+  description: A stylish bright windbreaker worn by Blueshield Officers escorting personnel in subzero conditions. Heavily reinforced, for when diplomacy won't cut it.
+  components:
+    - type: Sprite
+      sprite: _Goobstation/Clothing/OuterClothing/Coats/bso_winter_coat.rsi
+    - type: Clothing
+      sprite: _Goobstation/Clothing/OuterClothing/Coats/bso_winter_coat.rsi
+    - type: Pierceable
+      level: Metal
+    - type: Armor
+      modifiers:
+        coefficients:
+          Blunt: 0.6
+          Slash: 0.6
+          Piercing: 0.6
+          Heat: 0.7
+          Cold: 0.7
+    - type: TemperatureProtection
+      heatingCoefficient: 1.1
+      coolingCoefficient: 0.35
+    - type: ExplosionResistance
+      damageCoefficient: 0.80
+    - type: Item
+
+- type: entity
+  parent: [ClothingOuterStorageBase, ClothingOuterColdBase, BaseCommandContraband]
+  id: ClothingOuterCoatCaptainTrench
+  name: captain's formal armored trenchcoat
+  description: A large, comfortably weighted fabric trenchcoat, reinforced with a layer of armor for leadership in style.
+  components:
+    - type: Sprite
+      sprite: _Goobstation/Clothing/OuterClothing/Coats/captain_jacket.rsi
+    - type: Clothing
+      sprite: _Goobstation/Clothing/OuterClothing/Coats/captain_jacket.rsi
+    - type: Armor
+      modifiers:
+        coefficients:
+          Blunt: 0.6
+          Slash: 0.6
+          Piercing: 0.6
+          Heat: 0.8
+          Cold: 0.8
+          
+- type: entity
+  parent: [ClothingOuterStorageBase, BaseCommandContraband]
+  id: ClothingOuterCoatCaptainArctic
+  name: captain's frigid greatcoat
+  description: A large, incredibly insulated winter coat, reinforced with a layer of armor. This would be incredibly out of place on most space stations.
+  components:
+    - type: Sprite
+      sprite: _Goobstation/Clothing/OuterClothing/Coats/cap_armored_winter_coat.rsi
+    - type: Clothing
+      sprite: _Goobstation/Clothing/OuterClothing/Coats/cap_armored_winter_coat.rsi
+    - type: Armor
+      modifiers:
+        coefficients:
+          Blunt: 0.7
+          Slash: 0.7
+          Piercing: 0.7
+          Heat: 0.6
+          Cold: 0.5
+          Caustic: 0.5
+    - type: TemperatureProtection
+      heatingCoefficient: 1.2
+      coolingCoefficient: 0.2
+
+- type: entity
+  parent: ClothingOuterStorageBase
+  id: ClothingOuterCoatCentCommBomber
+  name: centcomm bomber jacket
+  description: A rather informal looking green bomber jacket. The zip seems to be broken.
+  components:
+    - type: Sprite
+      sprite: _Goobstation/Clothing/OuterClothing/Coats/centcom_ike.rsi
+    - type: Clothing
+      sprite: _Goobstation/Clothing/OuterClothing/Coats/centcom_ike.rsi
+
+- type: entity
+  parent: ClothingOuterStorageBase
+  id: ClothingOuterCoatCentCommGaudy
+  name: decadent centcomm robe
+  description: This is practically a bathrobe. 
+  components:
+    - type: Sprite
+      sprite: _Goobstation/Clothing/OuterClothing/Coats/centcommjacket.rsi
+    - type: Clothing
+      sprite: _Goobstation/Clothing/OuterClothing/Coats/centcommjacket.rsi
+      
+- type: entity
+  parent: [ClothingOuterStorageBase, ClothingOuterColdBase, BaseCommandContraband]
+  id: ClothingOuterCoatHoPTrench
+  name: head of personnel's trenchcoat
+  description: A large, comfortably weighted fabric trenchcoat in the head of personnel's signature colors.
+  components:
+    - type: Sprite
+      sprite: _Goobstation/Clothing/OuterClothing/Coats/hoplongcoat.rsi
+    - type: Clothing
+      sprite: _Goobstation/Clothing/OuterClothing/Coats/hoplongcoat.rsi
+      
+- type: entity
+  parent: [ClothingOuterStorageFoldableBase, ClothingOuterStorageBase, ClothingOuterColdBase, BaseCommandContraband]
+  id: ClothingOuterCoatRDFur
+  name: research director's fur coat
+  description: A large, fanciful fur coat in the purple and white hues of progress.
+  components:
+    - type: Sprite
+      sprite: _Goobstation/Clothing/OuterClothing/Coats/rdaltcoat.rsi
+    - type: Clothing
+      sprite: _Goobstation/Clothing/OuterClothing/Coats/rdaltcoat.rsi
+      
+- type: entity
+  parent: [ ClothingOuterStorageFoldableBaseOpened, ClothingOuterCoatRDFur ]
+  id: ClothingOuterCoatRDFurOpened
+  name: research director's fur coat
+  
+- type: entity
+  parent: [ClothingOuterStorageBase, ClothingOuterColdBase, ClothingOuterArmorWarden, BaseSecurityContraband]
+  id: ClothingOuterCoatWardenFormal
+  name: warden's armored formal trenchcoat
+  description: A prestigious red trenchcoat reinforced with a layer of armor. Perfect for parading, and for spilling hot coffee on.
+  components:
+    - type: Sprite
+      sprite: _Goobstation/Clothing/OuterClothing/Coats/wardenred.rsi
+    - type: Clothing
+      sprite: _Goobstation/Clothing/OuterClothing/Coats/wardenred.rsi
+
+# Floof coats
+- type: entity
+  parent: [ClothingOuterStorageBase, ClothingOuterColdBase] 
+  id: ClothingOuterCoatLongArashi
+  name: surgical longcoat
+  description: A sterilised longcoat in surgical colors.
+  components:
+    - type: Sprite
+      sprite: _Floof/Clothing/OuterClothing/Coats/arashi-laboratories.rsi
+    - type: Clothing
+      sprite: _Floof/Clothing/OuterClothing/Coats/arashi-laboratories.rsi
+      
+- type: entity
+  parent: [ClothingOuterStorageBase, ClothingOuterColdBase]
+  id: ClothingOuterCoatLongBlack
+  name: black longcoat
+  description: A comfortable black longcoat with gold buttons and no rank markings. Pairs well with a cowboy hat.
+  components:
+    - type: Sprite
+      sprite: _Floof/Clothing/OuterClothing/Coats/black.rsi
+    - type: Clothing
+      sprite: _Floof/Clothing/OuterClothing/Coats/black.rsi
+      
+- type: entity
+  parent: [ClothingOuterStorageBase, ClothingOuterColdBase]
+  id: ClothingOuterCoatLongBrown
+  name: brown longcoat
+  description: A comfortable black longcoat with no rank markings. Makes you look like a private inspector.
+  components:
+    - type: Sprite
+      sprite: _Floof/Clothing/OuterClothing/Coats/brown.rsi
+    - type: Clothing
+      sprite: _Floof/Clothing/OuterClothing/Coats/brown.rsi
+      
+- type: entity
+  parent: [ClothingOuterStorageBase, ClothingOuterColdBase, BaseCommandContraband]
+  id: ClothingOuterCoatLongCap
+  name: captain's longcoat
+  description: A comfortable longcoat with armored plate inserts in the captain's colors.
+  components:
+    - type: Sprite
+      sprite: _Floof/Clothing/OuterClothing/Coats/captain.rsi
+    - type: Clothing
+      sprite: _Floof/Clothing/OuterClothing/Coats/captain.rsi
+    - type: Armor
+      modifiers:
+        coefficients:
+          Blunt: 0.7
+          Slash: 0.7
+          Piercing: 0.7
+          Heat: 0.8
+          Cold: 0.8
+      
+- type: entity
+  parent: [ClothingOuterStorageBase, ClothingOuterColdBase, BaseCentcommContraband]
+  id: ClothingOuterCoatLongCentComm
+  name: centcomm armored longcoat
+  description: A comfortable longcoat with armored plate inserts in Central Command green.
+  components:
+    - type: Sprite
+      sprite: _Floof/Clothing/OuterClothing/Coats/centcomm.rsi
+    - type: Clothing
+      sprite: _Floof/Clothing/OuterClothing/Coats/centcomm.rsi
+    - type: Armor
+      modifiers:
+        coefficients:
+          Blunt: 0.6
+          Slash: 0.6
+          Piercing: 0.6
+          Heat: 0.6
+          Cold: 0.7
+      
+- type: entity
+  parent: [ClothingOuterStorageBase, ClothingOuterColdBase, BaseCommandContraband]
+  id: ClothingOuterCoatLongCE
+  name: chief engineer's longcoat
+  description: A comfortable longcoat with a tech-punk theme.
+  components:
+    - type: Sprite
+      sprite: _Floof/Clothing/OuterClothing/Coats/chief-engineer.rsi
+    - type: Clothing
+      sprite: _Floof/Clothing/OuterClothing/Coats/chief-engineer.rsi
+      
+- type: entity
+  parent: [ClothingOuterStorageBase, ClothingOuterColdBase, BaseCommandContraband]
+  id: ClothingOuterCoatLongCMO
+  name: chief medical officer's longcoat
+  description: A comfortable sterilised longcoat in blue.
+  components:
+    - type: Sprite
+      sprite: _Floof/Clothing/OuterClothing/Coats/chief-medical-officer.rsi
+    - type: Clothing
+      sprite: _Floof/Clothing/OuterClothing/Coats/chief-medical-officer.rsi
+    - type: ZombificationResistance
+      zombificationResistanceCoefficient: 0.75
+      
+- type: entity
+  parent: [ClothingOuterStorageBase, ClothingOuterColdBase, BaseSecurityContraband]
+  id: ClothingOuterCoatLongCorpsman
+  name: corpsman's armored longcoat
+  description: A comfortable longcoat with armored plate inserts in trauma red.
+  components:
+    - type: Sprite
+      sprite: _Floof/Clothing/OuterClothing/Coats/corpsman.rsi
+    - type: Clothing
+      sprite: _Floof/Clothing/OuterClothing/Coats/corpsman.rsi
+    - type: Armor
+      modifiers:
+        coefficients:
+          Blunt: 0.8
+          Slash: 0.8
+          Piercing: 0.7
+          Heat: 0.8
+          Cold: 0.8
+          Caustic: 0.75
+    - type: ZombificationResistance
+      zombificationResistanceCoefficient: 0.75
+      
+- type: entity
+  parent: [ClothingOuterStorageBase, ClothingOuterColdBase, BaseSecurityContraband]
+  id: ClothingOuterCoatLongDetective
+  name: detective's armored longcoat
+  description: A comfortable brown longcoat with armored plate inserts and security red armbands.
+  components:
+    - type: Sprite
+      sprite: _Floof/Clothing/OuterClothing/Coats/detective.rsi
+    - type: Clothing
+      sprite: _Floof/Clothing/OuterClothing/Coats/detective.rsi
+    - type: Armor
+      modifiers:
+        coefficients:
+          Blunt: 0.8
+          Slash: 0.8
+          Piercing: 0.7
+          Heat: 0.8
+          Cold: 0.8
+      
+- type: entity
+  parent: [ClothingOuterStorageBase, ClothingOuterColdBase, BaseCommandContraband]
+  id: ClothingOuterCoatLongHoP
+  name: head of personnel's longcoat
+  description: A comfortable longcoat in bureaucratic red and blue.
+  components:
+    - type: Sprite
+      sprite: _Floof/Clothing/OuterClothing/Coats/head-of-personnel.rsi
+    - type: Clothing
+      sprite: _Floof/Clothing/OuterClothing/Coats/head-of-personnel.rsi
+          
+- type: entity
+  parent: [ClothingOuterStorageBase, ClothingOuterColdBase, BaseCommandContraband]
+  id: ClothingOuterCoatLongQM
+  name: quartermaster's longcoat
+  description: A comfortable brown longcoat with a hi-vis stripe.
+  components:
+    - type: Sprite
+      sprite: _Floof/Clothing/OuterClothing/Coats/logistics-officer.rsi
+    - type: Clothing
+      sprite: _Floof/Clothing/OuterClothing/Coats/logistics-officer.rsi
+      
+- type: entity
+  parent: [ClothingOuterStorageBase, ClothingOuterColdBase, BaseCommandContraband]
+  id: ClothingOuterCoatLongRD
+  name: research director's longcoat
+  description: A lab-colored longcoat with a purple trim.
+  components:
+    - type: Sprite
+      sprite: _Floof/Clothing/OuterClothing/Coats/mystagogue.rsi
+    - type: Clothing
+      sprite: _Floof/Clothing/OuterClothing/Coats/mystagogue.rsi
+      
+- type: entity
+  parent: [ClothingOuterStorageBase, ClothingOuterColdBase]
+  id: ClothingOuterCoatLongNanoTrasen
+  name: nanotrasen longcoat
+  description: Official NanoTrasen merchandise for showing off your corporate support.
+  components:
+    - type: Sprite
+      sprite: _Floof/Clothing/OuterClothing/Coats/nanotrasen.rsi
+    - type: Clothing
+      sprite: _Floof/Clothing/OuterClothing/Coats/nanotrasen.rsi

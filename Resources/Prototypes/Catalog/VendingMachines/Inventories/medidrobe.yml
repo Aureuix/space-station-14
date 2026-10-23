@@ -8,6 +8,7 @@
     ClothingBeltMedicalEMT: 2 # Starlight
     # Optional Clothing
     ClothingHeadHatBeretMedic: 2
+    ClothingHeadHatBeretMedicalAlt: 2 # SpL
     ClothingHeadNurseHat: 2
     ClothingHeadHatParamedicsoft: 1
     ClothingHeadHatSurgcapGreen: 2

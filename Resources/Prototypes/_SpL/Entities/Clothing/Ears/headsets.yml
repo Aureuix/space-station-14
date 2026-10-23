@@ -1,0 +1,18 @@
+﻿- type: entity
+  parent: [ ClothingHeadset, BaseCentcommContraband ]
+  id: ClothingHeadsetCentCommOfficial
+  name: centcomm headset 
+  description: A headset used by the operators of Central Command.
+  components:
+    - type: ContainerFill
+      containers:
+        key_slots:
+          - EncryptionKeyCentCom
+          - EncryptionKeyStationMaster
+    - type: Sprite
+      sprite: Clothing/Ears/Headsets/centcom.rsi
+    - type: Clothing
+      sprite: Clothing/Ears/Headsets/centcom.rsi
+    - type: RadioChime
+      sound:
+        path: /Audio/_Starlight/Effects/Radio/cc.ogg

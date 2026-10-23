@@ -1,0 +1,9 @@
+﻿- type: loadout
+  id: MimeTassledBeretBlack
+  equipment:
+    head: ClothingHeadHatBeretTassledBlack  
+
+- type: loadout
+  id: MimeTassledBeretWhite
+  equipment:
+    head: ClothingHeadHatBeretTassledWhite  

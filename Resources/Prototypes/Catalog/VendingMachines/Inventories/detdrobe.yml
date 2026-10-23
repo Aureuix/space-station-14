@@ -15,5 +15,6 @@
     ClothingHandsGlovesColorBlack: 2
     ClothingHandsGlovesLatex: 2
     ClothingHeadsetDetective: 2 # SL
+    ClothingHeadHatBeretDetective: 2 # SpL
   contrabandInventory:
     ToyFigurineDetective: 1

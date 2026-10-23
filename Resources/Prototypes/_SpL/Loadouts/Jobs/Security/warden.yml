@@ -1,4 +1,9 @@
 ﻿- type: loadout
+  id: FormalCoatWarden
+  equipment:
+    outerClothing: ClothingOuterCoatWardenFormal
+
+- type: loadout
   id: WardenHalfCloak
   equipment:
     neck: ClothingNeckHalfCloakWarden

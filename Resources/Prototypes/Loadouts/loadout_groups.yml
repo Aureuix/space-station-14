@@ -200,6 +200,7 @@
   - CaptainHead
   - CaptainCap
   - CapBeret # Starlight
+  - CaptainCavalier # SpL
 
 - type: loadoutGroup
   id: CaptainJumpsuit
@@ -241,6 +242,9 @@
   loadouts:
   - CaptainOuterClothing
   - CaptainWintercoat
+  - LongcoatCaptain # SpL
+  - TrenchcoatCaptain # SpL
+  - ArcticCoatCaptain # SpL
 
 - type: loadoutGroup
   id: CaptainEyewear
@@ -309,6 +313,8 @@
   minLimit: 0
   loadouts:
   - HoPWintercoat
+  - LongcoatHop # SpL
+  - TrenchcoatHop # SpL
 
 - type: loadoutGroup
   id: HoPJobTrinkets
@@ -700,6 +706,7 @@
   loadouts:
   - BotanistHead
   - BotanistBandana
+  - BotanistBeret # SpL
 
 - type: loadoutGroup
   id: BotanistJumpsuit
@@ -815,6 +822,8 @@
   - MimeHead
   - MimeFrenchBeret
   - MimeCap
+  - MimeTassledBeretBlack # SpL
+  - MimeTassledBeretWhite # SpL
 
 - type: loadoutGroup
   id: MimeMask
@@ -942,6 +951,7 @@
   loadouts:
   - QuartermasterHead
   - QuartermasterBeret
+  - QuartermasterHat # SpL
 
 - type: loadoutGroup
   id: QuartermasterJumpsuit
@@ -970,6 +980,7 @@
   minLimit: 0
   loadouts:
   - QuartermasterWintercoat
+  - LongcoatQM # SpL
 
 - type: loadoutGroup
   id: QuartermasterShoes
@@ -1138,6 +1149,7 @@
   minLimit: 0
   loadouts:
   - ChiefEngineerWintercoat
+  - LongcoatCE # SpL
 
 - type: loadoutGroup
   id: ChiefEngineerShoes
@@ -1300,6 +1312,7 @@
   loadouts:
   - ResearchDirectorBeret
   - ResearchDirectorBeretRD # Starlight
+  - RDTassledBeret # SpL
 
 - type: loadoutGroup
   id: ResearchDirectorNeck
@@ -1325,6 +1338,8 @@
   loadouts:
   - ResearchDirectorLabCoat
   - ResearchDirectorWintercoat
+  - LongcoatRD # SpL
+  - FurcoatRD # SpL
 
 - type: loadoutGroup
   id: ResearchDirectorShoes
@@ -1457,8 +1472,10 @@
   minLimit: 0
   loadouts:
   - HeadofSecurityHead
-  - HeadofSecuritySheriff #Starlight
   - HeadofSecurityBeret
+  - HeadofSecuritySheriff #Starlight
+  - HosBeretAlt # SpL
+  - HosCavalier # SpL
 
 - type: loadoutGroup
   id: HeadofSecurityJumpsuit
@@ -1498,6 +1515,7 @@
   loadouts:
   - HeadofSecurityCoat
   - HeadofSecurityWinterCoat
+  - WebVestHos # SpL
 
 - type: loadoutGroup
   id: HeadofSecurityJobTrinkets
@@ -1533,6 +1551,7 @@
   loadouts:
   - WardenCoat
   - WardenArmoredWinterCoat
+  - FormalCoatWarden # SpL
 
 - type: loadoutGroup
   id: WardenJobTrinkets
@@ -1548,6 +1567,7 @@
   loadouts:
   - SecurityGlasses
   - SecurityHud
+  - VisorSecurity # SpL
   - DetectiveNoirGlasses
   - SecurityGlassesPrescription # Starlight
 
@@ -1611,6 +1631,7 @@
   - BrigmedicGlasses
   - BrigmedicHud
   - BrigmedicEyePatchHud # Starlight
+  - VisorBrigmedic # SpL
   - BrigmeicGlassesPrescription # Starlight
   - CorpsmanGlasses # Starlight
   - CorpsmanHud # Starlight
@@ -1721,6 +1742,7 @@
   loadouts:
   - DetectiveFedora
   - DetectiveFedoraGrey
+  - DetectiveBeret # SpL
 
 - type: loadoutGroup
   id: DetectiveNeck
@@ -1748,6 +1770,7 @@
   - DetectiveArmorVest
   - DetectiveCoat
   - DetectiveCoatGrey
+  - LongcoatDetective # SpL
 
 - type: loadoutGroup
   id: DetectiveJobTrinkets
@@ -1817,6 +1840,7 @@
   - ChiefMedicalOfficerLabCoat
   - ChiefMedicalOfficerLabCoatLong # DeltaV
   - ChiefMedicalOfficerWintercoat
+  - LongcoatCMO # SpL
 
 - type: loadoutGroup
   id: ChiefMedicalOfficerNeck
@@ -1855,6 +1879,7 @@
   loadouts:
   - MedicalBeret
   - SeniorPhysicianBeret
+  - MedicalBeretAlt # SpL
   - MedicalHeadMirror
   - BlueSurgeryCap
   - GreenSurgeryCap

@@ -1,0 +1,118 @@
+﻿- type: entity
+  id: BaseToggleableVisor
+  abstract: true
+  name: visor
+  components:
+    - type: ItemToggle
+      activated: true
+      soundActivate:
+        path: /Audio/Machines/machine_switch.ogg
+        params:
+          volume: -3
+      soundDeactivate:
+        path: /Audio/Machines/button.ogg
+        params:
+          volume: -3
+      verbToggleOn: item-toggle-enable-flash-immune
+      verbToggleOff: item-toggle-disable-flash-immune
+      onUse: false
+    - type: Clothing
+      quickEquip: true
+      slots:
+        - EYES
+    - type: ComponentToggler
+      components:
+        - type: FlashImmunity
+    - type: ToggleableVisuals
+      spriteLayer: null
+      clothingVisuals:
+        eyes:
+        - state: equipped-EYES-on
+    - type: EyeProtection
+      protectionTime: 5
+    - type: Appearance
+
+- type: entity
+  parent: [ ClothingEyesHudSecurity, BaseToggleableVisor ]
+  id: VisorSecurity
+  name: security visor
+  description: Visored goggles with toggleable flash protection and an integrated augmented reality display that automatically attaches ID and security record status to visible humanoids.
+  components:
+    - type: Sprite
+      sprite: _Goobstation/Clothing/Eyes/Glasses/security.rsi
+    - type: Clothing
+      sprite: _Goobstation/Clothing/Eyes/Glasses/security.rsi
+
+- type: entity
+  parent: [ ClothingEyesHudBrigmedic, BaseToggleableVisor ]
+  id: VisorBrigmedic
+  name: brigmed visor
+  description: An upgraded security visor with toggleable flash protection which attaches vitals and solution data to humanoids and reagents respectively.
+  components:
+    - type: Sprite
+      sprite: _Goobstation/Clothing/Eyes/Glasses/brigmed.rsi
+    - type: Clothing
+      sprite: _Goobstation/Clothing/Eyes/Glasses/brigmed.rsi
+      
+- type: entity
+  parent: [ ClothingEyesHudBlueShield, BaseToggleableVisor ]
+  id: VisorBlueshield
+  name: blueshield visor
+  description: A state-of-the-art pair of visored goggles with toggleable flash protection relaying quick identification data to the wearer via an augmented reality display.
+  components:
+    - type: Sprite
+      sprite: _Goobstation/Clothing/Eyes/Glasses/blueshield.rsi
+    - type: Clothing
+      sprite: _Goobstation/Clothing/Eyes/Glasses/blueshield.rsi
+
+- type: entity
+  parent: ClothingEyesHudSyndicateAgent
+  id: GogglesBallisticSyndicate
+  name: syndicate ballistic goggles
+  description: High-quality smart-goggles with ballistic glass and integrated IFF-HUD elements, capable of displaying any and all relevant combat data.
+  components:
+    - type: Sprite
+      sprite: _Mono/Clothing/Eyes/Glasses/ballistic_goggles_red.rsi
+    - type: Clothing
+      sprite: _Mono/Clothing/Eyes/Glasses/ballistic_goggles_red.rsi
+    - type: EyeProtection
+    - type: FlashImmunity
+      blocksSpecialVision: false
+
+- type: entity
+  parent: [ ClothingEyesBase, BaseIlluminateContraband ]
+  id: GogglesBallisticIlluminate
+  name: aerogel goggles
+  suffix: Placeholder Item
+  description: An incredibly complex visor with full HUD integration for any and all imaginable purposes.
+  components:
+    - type: Sprite
+      sprite: _Mono/Clothing/Eyes/Glasses/ballistic_goggles_orange.rsi
+    - type: Clothing
+      sprite: _Mono/Clothing/Eyes/Glasses/ballistic_goggles_orange.rsi
+    - type: ShowJobIcons
+    - type: ShowMindShieldIcons
+    - type: ShowAccessReaderSettings
+    - type: EyeProtection
+    - type: FlashImmunity
+      blocksSpecialVision: false
+    - type: ShowAccess
+      seeIdHolder: true
+      itemsOnly: false
+    - type: ShowHealthBars
+      damageContainers:
+        - Biological
+        - Inorganic
+        - Silicon
+        - IPC
+    - type: ShowHealthIcons
+      damageContainers:
+        - Biological
+        - Inorganic
+        - Silicon
+        - IPC
+    - type: SolutionScanner
+    - type: Tag
+      tags:
+        - HudMedical
+        - WhitelistChameleon

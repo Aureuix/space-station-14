@@ -18,13 +18,18 @@
   id: CentCommSheriffHat
   equipment:
     head: ClothingHeadHatCCSheriffhat
+    
+- type: loadout
+  id: CentCommCavalier
+  equipment:
+    head: ClothingHeadHatCavalierCentComm
 
 ## Headsets
 - type: loadout
   id: CentCommHeadset
-  dummyEntity: ClothingHeadsetCentCom
+  dummyEntity: ClothingHeadsetCentCommOfficial
   equipment:
-    ears: ClothingHeadsetCentCom
+    ears: ClothingHeadsetCentCommOfficial
   storage: # Lmfao
     back:
       - PowerCellMicroreactor
@@ -224,11 +229,26 @@
   id: CentCommArmoredWinterCoat
   equipment:
     outerClothing: ClothingOuterCoatWardenCentcomm
-      
+    
 - type: loadout
-  id: CentCommHardsuit # TODO- make a new civilian use cc hardsuit. maybe a modsuit?
+  id: CentCommLongcoat
   equipment:
-    outerClothing: ClothingOuterHardsuitERTLeader
+    outerClothing: ClothingOuterCoatLongCentComm
+      
+#- type: loadout
+#  id: CentCommHardsuit 
+#  equipment:
+#    outerClothing: ClothingOuterHardsuitERTLeader
+
+- type: loadout
+  id: CentCommDecadentRobe
+  equipment:
+    outerClothing: ClothingOuterCoatCentCommGaudy
+    
+- type: loadout
+  id: CentCommBomber
+  equipment:
+    outerClothing: ClothingOuterCoatCentCommBomber
 
 ## Gloves
 - type: loadout

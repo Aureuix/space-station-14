@@ -1,4 +1,14 @@
 ﻿- type: loadout
+  id: QuartermasterHat
+  equipment:
+    head: ClothingHeadHatQMCourier
+
+- type: loadout
+  id: LongcoatQM
+  equipment:
+    outerClothing: ClothingOuterCoatLongQM
+
+- type: loadout
   id: QMHalfCloak
   equipment:
     neck: ClothingNeckHalfCloakQM

@@ -1,0 +1,59 @@
+﻿- type: entity
+  parent: [ClothingOuterStorageBase, ClothingOuterColdBase, BaseSecurityContraband]
+  id: ClothingOuterArmorSecurityWinter
+  name: security armored winter coat
+  description: A heavy jacket made from 'synthetic' animal furs, reinforced with plating.
+  components:
+    - type: Sprite
+      sprite: _Goobstation/Clothing/OuterClothing/Armor/secvestcoat.rsi
+    - type: Clothing
+      sprite: _Goobstation/Clothing/OuterClothing/Armor/secvestcoat.rsi
+    - type: Armor
+      modifiers:
+        coefficients:
+          Blunt: 0.85
+          Slash: 0.75
+          Piercing: 0.85
+          Heat: 0.65
+          Cold: 0.8
+          
+- type: entity
+  parent: [ClothingOuterBaseLarge, BaseCommandContraband]
+  id: ClothingOuterArmorHoSExperimental
+  name: head of security's ballistic coat
+  description: A heavy, plastitanium-reinforced trenchcoat for throwing hands or disarming bombs in when all other means of diplomacy have been exhausted.
+  components:
+    - type: Sprite
+      sprite: _Goobstation/Clothing/OuterClothing/Armor/hos_experimental_jacket.rsi
+    - type: Clothing
+      sprite: _Goobstation/Clothing/OuterClothing/Armor/hos_experimental_jacket.rsi
+      equipSound: /Audio/Mecha/mechmove03.ogg
+      unequipSound: /Audio/Mecha/mechmove03.ogg
+      equipDelay: 2
+      unequipDelay: 2
+    - type: Armor
+      modifiers:
+        coefficients:
+          Blunt: 0.5
+          Slash: 0.5
+          Piercing: 0.4
+          Heat: 0.5
+          Caustic: 0.9
+    - type: ExplosionResistance
+      damageCoefficient: 0.3
+    - type: ClothingSpeedModifier
+      walkModifier: 1.0
+      sprintModifier: 0.8
+    - type: HeldSpeedModifier
+    - type: GroupExamine
+      
+- type: entity
+  parent: [ClothingOuterStorageBase, ClothingOuterColdBase, BaseCommandContraband, ClothingOuterArmorHoS]
+  id: ClothingOuterArmorWebVestHoS
+  name: head of security's web vest
+  description: A synthetic ballistic vest with heat-resistant fibres. This one has flak insets rather than ballistics-focused ones.
+  components:
+    - type: Sprite
+      sprite: _Goobstation/Clothing/OuterClothing/Armor/web_vest_hos.rsi
+    - type: Clothing
+      sprite: _Goobstation/Clothing/OuterClothing/Armor/web_vest_hos.rsi

@@ -27,6 +27,7 @@
     ClothingHandsTacticalMaidGloves: 5
     ClothingHeadHatTacticalMaidHeadband: 5 # SpL- moved out of emagged
   emaggedInventory:
+    ClothingHeadHatBeretBloodred: 1 # SpL
     ClothingNeckHalfCloakSyndicate: 1 # SpL
     ClothingOuterCoatSyndieCapArmored: 1
     ClothingOuterWinterSyndieCapArmored: 1

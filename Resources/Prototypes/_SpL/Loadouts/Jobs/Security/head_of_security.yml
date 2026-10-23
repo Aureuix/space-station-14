@@ -1,4 +1,21 @@
-﻿# Cloaks
+﻿# Hats
+- type: loadout
+  id: HosBeretAlt
+  equipment:
+    head: ClothingHeadHatBeretHoSExpi
+
+- type: loadout
+  id: HosCavalier
+  equipment:
+    head: ClothingHeadHatCavalierHoS
+
+# Outer    
+- type: loadout
+  id: WebVestHos
+  equipment:
+    outerClothing: ClothingOuterArmorWebVestHoS
+  
+# Neck
 - type: loadout
   id: HosHalfCloak
   equipment:

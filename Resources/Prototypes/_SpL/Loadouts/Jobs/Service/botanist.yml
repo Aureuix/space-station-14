@@ -1,0 +1,4 @@
+﻿- type: loadout
+  id: BotanistBeret
+  equipment:
+    head: ClothingHeadHatBeretBotany

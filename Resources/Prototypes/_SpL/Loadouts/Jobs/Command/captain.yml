@@ -1,9 +1,33 @@
-﻿- type: loadout
+﻿# Hats
+- type: loadout
+  id: CaptainCavalier
+  equipment:
+    head: ClothingHeadHatCavalierCap
+
+# Outer
+- type: loadout
+  id: LongcoatCaptain
+  equipment:
+    outerClothing: ClothingOuterCoatLongCap
+
+- type: loadout
+  id: TrenchcoatCaptain
+  equipment:
+    outerClothing: ClothingOuterCoatCaptainTrench
+
+- type: loadout
+  id: ArcticCoatCaptain
+  equipment:
+    outerClothing: ClothingOuterCoatCaptainArctic
+
+# Glasses
+- type: loadout
   id: PrescriptionCapGlasses
   dummyEntity: ClothingEyesGlassesCommandPrescription
   equipment:
     eyes: ClothingEyesGlassesCommandPrescription
-    
+
+# Neck 
 - type: loadout
   id: CapHalfCloak
   equipment:

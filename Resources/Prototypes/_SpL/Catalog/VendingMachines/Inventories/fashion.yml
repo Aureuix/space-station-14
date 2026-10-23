@@ -1,0 +1,55 @@
+﻿- type: listing
+  id: ClothingOuterCoatLongBlack
+  productEntity: ClothingOuterCoatLongBlack
+  cost:
+    NTCredit: 20
+  categories:
+    - SLFashionOther
+  
+- type: listing
+  id: ClothingOuterCoatLongBrown
+  productEntity: ClothingOuterCoatLongBrown
+  cost:
+    NTCredit: 20
+  categories:
+    - SLFashionOther
+
+- type: listing
+  id: ClothingOuterCoatLongNanoTrasen
+  productEntity: ClothingOuterCoatLongNanoTrasen
+  cost:
+    NTCredit: 40
+  categories:
+    - SLFashionOther
+  
+- type: listing
+  id: ClothingNeckHalfCloakBullfighter
+  productEntity: ClothingNeckHalfCloakBullfighter
+  cost:
+    NTCredit: 60
+  categories:
+    - SLFashionOther
+
+- type: listing
+  id: ClothingNeckHalfCloakCCReplica
+  productEntity: ClothingNeckHalfCloakCCReplica
+  cost:
+    NTCredit: 150
+  categories:
+    - SLFashionOther
+
+- type: listing
+  id: ClothingOuterCoatCentCommBomber
+  productEntity: ClothingOuterCoatCentCommBomber
+  cost:
+    NTCredit: 150
+  categories:
+    - SLFashionOther
+
+- type: listing
+  id: ClothingOuterCoatCentCommGaudy
+  productEntity: ClothingOuterCoatCentCommGaudy
+  cost:
+    NTCredit: 200
+  categories:
+    - SLFashionOther

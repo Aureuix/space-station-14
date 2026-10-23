@@ -339,6 +339,7 @@
   - BlueShieldBeret
   - BlueShieldBountyHat
   - BlueshieldCap # SpL
+  - BlueshieldUshanka # SpL
 
 - type: loadoutGroup
   id: BlueShieldBackpack
@@ -371,6 +372,7 @@
   - BlueShieldVest
   - BlueShieldCoat
   - BlueShieldWindbreaker # SpL
+  - BlueShieldWinterCoat # SpL
 
 - type: loadoutGroup
   id: BlueShieldBelt
@@ -409,6 +411,7 @@
   - BlueShieldGlasses
   - BlueShieldHud
   - BlueShieldEyePatchHud
+  - VisorBlueshield # SpL
 
 - type: loadoutGroup
   id: SecurityNonLethalWeapon

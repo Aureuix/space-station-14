@@ -1,0 +1,14 @@
+﻿- type: loadout
+  id: RDTassledBeret
+  equipment:
+    head: ClothingHeadHatBeretRDTassled
+
+- type: loadout
+  id: LongcoatRD
+  equipment:
+    outerClothing: ClothingOuterCoatLongRD
+    
+- type: loadout
+  id: FurcoatRD
+  equipment:
+    outerClothing: ClothingOuterCoatRDFur

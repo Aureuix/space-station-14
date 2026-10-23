@@ -1,0 +1,9 @@
+﻿- type: loadout
+  id: LongcoatHop
+  equipment:
+    outerClothing: ClothingOuterCoatLongHoP
+    
+- type: loadout
+  id: TrenchcoatHop
+  equipment:
+    outerClothing: ClothingOuterCoatHoPTrench

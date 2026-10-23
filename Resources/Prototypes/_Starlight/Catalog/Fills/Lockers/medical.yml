@@ -193,6 +193,7 @@
       - id: ClothingOuterBioVirology
       - id: ClothingUniformJumpsuitVirology
       - id: ClothingUniformJumpskirtVirology
+      - id: ClothingHeadHatBeretVirology # SpL
 #      - !type:GroupSelector # SpL
 #        children:
 #          - id: ClothingBackpackVirology
