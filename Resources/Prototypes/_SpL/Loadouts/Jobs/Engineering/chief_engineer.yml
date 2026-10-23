@@ -14,7 +14,7 @@
     neck: ClothingNeckCloakCEFormal
     
 - type: loadout
-  id: CeAgedMantle
+  id: CEAgedMantle
   equipment:
     neck: ClothingNeckCloakCEMantleAged
     
