@@ -1532,10 +1532,10 @@
   name: loadout-group-head-of-security-neck
   minLimit: 0
   loadouts:
-  - ClothingNeckCloakHosVar #STARLIGHT
-  - ClothingNeckCloakHosRetro #STARLIGHT
   - HeadofSecurityCloak
   - HeadofSecurityMantle
+  - ClothingNeckCloakHosVar #STARLIGHT
+  - ClothingNeckCloakHosRetro #STARLIGHT
   - HoSHalfCloak # SpL
   - HeadofSecurityBoatCloak #DeltaV
   - HeadofSecurityRobe #DeltaV
