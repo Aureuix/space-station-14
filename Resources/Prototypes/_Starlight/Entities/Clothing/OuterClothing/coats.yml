@@ -359,7 +359,7 @@
 - type: entity
   parent: [ ClothingOuterStorageFoldableBaseOpened, ClothingOuterSecurityBomber ]
   id: ClothingOuterSecurityBomberOpened
-  name: security bomber
+  name: security armored bomber # SpL
 
 # Security Windbreaker
 - type: entity

@@ -61,9 +61,9 @@
   description: A longer variant of the classic "pencil" skirt, ideal for pairing with heels. The fitted blazer and straight skirt form an elegant silhouette suitable for various occasions, from business meetings to a captain's dismissal.
   components:
     - type: Sprite
-      sprite: _Goobstation/Clothing/Uniforms/Jumpskirt/centcom_agent.rsi
+      sprite: _Goobstation/Clothing/Uniforms/Jumpskirt/centcomm_pencilskirt.rsi
     - type: Clothing
-      sprite: _Goobstation/Clothing/Uniforms/Jumpskirt/centcom_agent.rsi
+      sprite: _Goobstation/Clothing/Uniforms/Jumpskirt/centcomm_pencilskirt.rsi
       
 # DeltaV stuff
 - type: entity
@@ -79,8 +79,8 @@
       
 - type: entity
   parent: [ClothingUniformBase, BaseCommandContraband]
-  id: ClothingUniformJumpskirtHoPCasual
-  name: casual head of personnel jumpskirt
+  id: ClothingUniformJumpsuitHoPInformal
+  name: informal head of personnel jumpskirt
   description: A standard head of personnel's uniform with a skirt and no jacket.
   components:
     - type: Sprite

@@ -211,4 +211,4 @@
   description: A decorated shawl-like mantle for the first line of defense against the greatest unknown.
   components:
     - type: Sprite
-      sprite: _Goobstation/Clothing/Neck/Cloaks/cchighcommand.rsi
+      sprite: _Goobstation/Clothing/Neck/Cloaks/centcom_poncho.rsi

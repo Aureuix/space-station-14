@@ -89,7 +89,7 @@
   groupBy: "ccofficer"
 
 - type: loadout
-  id: CentCommOfficerSkiritBlack
+  id: CentCommOfficerSkirtBlack
   equipment:
     jumpsuit: ClothingUniformJumpskirtCentCommOfficer
   groupBy: "ccofficer"
@@ -182,13 +182,13 @@
   id: CentCommAgentJumpsuit
   equipment:
     jumpsuit: ClothingUniformJumpsuitCentcomAgent
-    groupBy: "ccagent"
+  groupBy: "ccagent"
     
 - type: loadout
   id: CentCommAgentJumpskirt
   equipment:
     jumpsuit: ClothingUniformJumpskirtCentcomAgent
-    groupBy: "ccagent"
+  groupBy: "ccagent"
 
 - type: loadout
   id: CentCommOfficerSuit

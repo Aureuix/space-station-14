@@ -117,9 +117,9 @@
   description: Lets the world know that you're the cool kind of S for sinister.
   components:
     - type: Sprite
-      sprite: DeltaV/Clothing/OuterClothing/Bombers/service.rsi
+      sprite: DeltaV/Clothing/OuterClothing/Bombers/syndi.rsi
     - type: Clothing
-      sprite: DeltaV/Clothing/OuterClothing/Bombers/service.rsi
+      sprite: DeltaV/Clothing/OuterClothing/Bombers/syndi.rsi
 
 - type: entity
   parent: [ ClothingOuterStorageFoldableBaseOpened, ClothingOuterBomberSyndie ]

@@ -305,7 +305,7 @@
       
 - type: entity
   parent: [ClothingOuterBioGeneral, ClothingOuterColdBase, BaseEnemyCorporationContraband]
-  id: ClothingOuterCoatayneChemsuit
+  id: ClothingOuterCoatInterdyneChemsuit
   name: Interdyne chemical suit
   description: A heavy-duty chemical suit designed to resist spills, prevent contamination in both directions, and scare opposition.
   components:
@@ -349,9 +349,9 @@
   description: This coat is at least twice as advanced as contemporaries, as indicated by its more than doubled progress colour amount.
   components:
     - type: Sprite
-      sprite: DeltaV/Clothing/OuterClothing/Coats/epicoat.rsi
+      sprite: DeltaV/Clothing/OuterClothing/Coats/mystacoat.rsi
     - type: Clothing
-      sprite: DeltaV/Clothing/OuterClothing/Coats/epicoat.rsi
+      sprite: DeltaV/Clothing/OuterClothing/Coats/mystacoat.rsi
       
 - type: entity
   parent: [ClothingOuterStorageBase, ClothingOuterColdBase]
@@ -371,9 +371,9 @@
   description: I can only show you the door. You have to walk through it.
   components:
     - type: Sprite
-      sprite: DeltaV/Clothing/OuterClothing/Coats/greatcoat.rsi
+      sprite: DeltaV/Clothing/OuterClothing/Coats/overcoat.rsi
     - type: Clothing
-      sprite: DeltaV/Clothing/OuterClothing/Coats/greatcoat.rsi
+      sprite: DeltaV/Clothing/OuterClothing/Coats/overcoat.rsi
       
 - type: entity
   parent: [ ClothingOuterStorageBase, ClothingOuterColdBase, BaseCommandContraband ]

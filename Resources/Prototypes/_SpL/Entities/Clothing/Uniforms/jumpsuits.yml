@@ -200,8 +200,8 @@
       
 - type: entity
   parent: [ClothingUniformBase, BaseCommandContraband]
-  id: ClothingUniformJumpsuitHoPCasual
-  name: casual head of personnel jumpsuit
+  id: ClothingUniformJumpsuitHoPInformal
+  name: informal head of personnel jumpsuit
   description: A standard head of personnel's uniform with jeans and no jacket.
   components:
     - type: Sprite
