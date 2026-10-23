@@ -16,6 +16,12 @@ public sealed partial class MindExaminableComponent : Component
     /// </summary>
     [DataField, AutoNetworkedField]
     public MindState State = MindState.None;
+    
+    /// <summary> SpL addition
+    /// Hides seeing the mind status. Useful for disguised NPCs
+    /// </summary>
+    [DataField, AutoNetworkedField]
+    public bool HideExaminable = false; // SpL
 }
 
 /// <summary>

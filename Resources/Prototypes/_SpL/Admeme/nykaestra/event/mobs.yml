@@ -6,7 +6,7 @@
   name: syndicate soldier
   components:
     - type: MindExaminable
-      state: None
+      hideExaminable: true
     - type: Flammable
       flammableCollisionShape: 
         !type:PhysShapeCircle
@@ -90,6 +90,7 @@
         - Burst
       soundGunshot:
         path: /Audio/Weapons/Guns/Gunshots/lmg.ogg
+      showExamineText: false
     - type: BallisticAmmoProvider
       proto: CartridgeLightRifleSP
       capacity: 1000
@@ -135,6 +136,7 @@
         - Burst
       soundGunshot:
         path: /Audio/Weapons/Guns/Gunshots/estocshot.ogg
+      showExamineText: false
     - type: BallisticAmmoProvider
       proto: CartridgeMagnumFMJ
       capacity: 500
@@ -171,6 +173,7 @@
         - Burst
       soundGunshot:
         path: /Audio/Weapons/Guns/Gunshots/c-20r.ogg
+      showExamineText: false
     - type: BallisticAmmoProvider
       proto: CartridgePistolFMJ
       capacity: 500
@@ -214,6 +217,7 @@
       burstFireRate: 14
       availableModes:
         - Burst
+      showExamineText: false
     - type: BallisticAmmoProvider
       proto: CartridgeRifleFMJ
       capacity: 500
@@ -253,6 +257,7 @@
         - Burst
       soundGunshot:
         path: /Audio/_Starlight/Weapons/Guns/Gunshots/gun_shotgun_automatic.ogg
+      showExamineText: false
     - type: BallisticAmmoProvider
       proto: ShellShotgun
       capacity: 500
@@ -292,6 +297,7 @@
         - Burst
       soundGunshot:
         path: /Audio/Weapons/Guns/Gunshots/batrifle.ogg
+      showExamineText: false
     - type: BallisticAmmoProvider
       proto: CartridgeLightRifleFMJ
       capacity: 500
@@ -414,7 +420,7 @@
   name: Emergency Responder
   components:
     - type: MindExaminable
-      state: None
+      hideExaminable: true
     - type: Flammable
       flammableCollisionShape:
         !type:PhysShapeCircle
@@ -448,7 +454,6 @@
         - SimpleHostile
         - Zombie
         - Abyss
-        - AllHostile
         - Dragon
         - Xeno
         - Gorilla
@@ -509,6 +514,7 @@
         - Burst
       soundGunshot:
         path: /Audio/_Starlight/Weapons/Guns/Gunshots/m90.ogg
+      showExamineText: false
     - type: BallisticAmmoProvider
       proto: CartridgeRifleSP
       capacity: 500
@@ -543,6 +549,7 @@
         - Burst
       soundGunshot:
         path: /Audio/Weapons/Guns/Gunshots/smg.ogg
+      showExamineText: false
     - type: BallisticAmmoProvider
       proto: CartridgePistolSP
       capacity: 500
@@ -577,6 +584,7 @@
         - Burst
       soundGunshot:
         path: /Audio/Weapons/Guns/Gunshots/laser.ogg
+      showExamineText: false
     - type: BallisticAmmoProvider
       proto: CartridgeBattery
       capacity: 500
@@ -606,6 +614,7 @@
         - SemiAuto
       soundGunshot:
         path: /Audio/Weapons/Guns/Gunshots/laser3.ogg
+      showExamineText: false
     - type: RechargeBasicEntityAmmo
       rechargeCooldown: 0.4
     - type: BasicEntityAmmoProvider
@@ -656,6 +665,7 @@
         - Burst
       soundGunshot:
         path: /Audio/Weapons/Guns/Gunshots/mk58.ogg
+      showExamineText: false
     - type: BallisticAmmoProvider
       proto: CartridgePistolSP
       capacity: 500
@@ -687,6 +697,7 @@
         - SemiAuto
       soundGunshot:
         path: /Audio/Weapons/Guns/Gunshots/laser3.ogg
+      showExamineText: false
     - type: RechargeBasicEntityAmmo
       rechargeCooldown: 0.5
     - type: BasicEntityAmmoProvider
@@ -809,7 +820,7 @@
 # Admeme guards
 - type: entity
   parent: BaseMobERTShooter
-  id: MobNPCERTGuard
+  id: MobNPCERTGuardIK
   name: Emergency Security Officer
   suffix: ADMEME, Stationary
   components:
@@ -818,7 +829,7 @@
         task: GuardShooterCompound
       blackboard:
         SoundTargetInLOS: !type:SoundPathSpecifier
-          path: /Audio/_Starlight/Effects/Radio/tsf.ogg
+          path: /Audio/_SpL/Effects/Radio/ert.ogg
 
     - type: ContainerContainer
       containers:
@@ -832,6 +843,7 @@
         - Burst
       soundGunshot:
         path: /Audio/Weapons/Guns/Gunshots/laser.ogg
+      showExamineText: false
     - type: BallisticAmmoProvider
       proto: CartridgeBattery
       capacity: 500
@@ -841,19 +853,19 @@
       prototypes:
         - NPCERTSquadGearIK60
 
-   
+
 - type: entity
   parent: BaseMobERTShooter
-  id: MobNPCERTPatrolPeacemaker
-  name: Emergency Patroller
-  suffix: ADMEME
+  id: MobNPCERTGuardPeacemaker
+  name: Emergency Security Officer
+  suffix: ADMEME, Stationary
   components:
     - type: HTN
       rootTask:
-        task: LongRangeShooterAllyCompoundAlt
+        task: GuardShooterCompound
       blackboard:
         SoundTargetInLOS: !type:SoundPathSpecifier
-          path: /Audio/_Starlight/Effects/Radio/tsf.ogg
+          path: /Audio/_SpL/Effects/Radio/ert.ogg
 
     - type: ContainerContainer
       containers:
@@ -867,6 +879,79 @@
         - Burst
       soundGunshot:
         path: /Audio/_Starlight/Weapons/Guns/Gunshots/m90.ogg
+      showExamineText: false
+    - type: BallisticAmmoProvider
+      proto: CartridgeRifleSP
+      capacity: 500
+      cycleable: false
+
+    - type: Loadout
+      prototypes:
+        - NPCERTSquadGearPeacemaker
+
+
+- type: entity
+  parent: BaseMobERTShooter
+  id: MobNPCERTGuardWT550
+  name: Emergency Security Officer
+  suffix: ADMEME
+  components:
+    - type: HTN
+      rootTask:
+        task: GuardShooterCompound
+      blackboard:
+        SoundTargetInLOS: !type:SoundPathSpecifier
+          path: /Audio/_SpL/Effects/Radio/ert.ogg
+
+    - type: ContainerContainer
+      containers:
+        ballistic-ammo: !type:Container
+    - type: Gun
+      shotsPerBurst: 5
+      burstCooldown: 0.5
+      burstFireRate: 7
+      selectedMode: Burst
+      availableModes:
+        - Burst
+      soundGunshot:
+        path: /Audio/Weapons/Guns/Gunshots/smg.ogg
+      showExamineText: false
+    - type: BallisticAmmoProvider
+      proto: CartridgePistolSP
+      capacity: 500
+      cycleable: false
+
+    - type: Loadout
+      prototypes:
+        - NPCERTSquadGearWT550
+
+   
+- type: entity
+  parent: BaseMobERTShooter
+  id: MobNPCERTPatrolPeacemaker
+  name: Emergency Patroller
+  suffix: ADMEME
+  components:
+    - type: HTN
+      rootTask:
+        task: LongRangeShooterAllyCompound
+      blackboard:
+        SoundTargetInLOS: !type:SoundPathSpecifier
+          path: /Audio/_SpL/Effects/Radio/ert.ogg
+
+    - type: ContainerContainer
+      containers:
+        ballistic-ammo: !type:Container
+    - type: Gun
+      shotsPerBurst: 3
+      burstFireRate: 14
+      burstCooldown: 1.25
+      selectedMode: Burst
+      availableModes:
+        - Burst
+      soundGunshot:
+        path: /Audio/_Starlight/Weapons/Guns/Gunshots/m90.ogg
+      showExamineText: false
     - type: BallisticAmmoProvider
       proto: CartridgeRifleSP
       capacity: 500
@@ -885,10 +970,10 @@
   components:
     - type: HTN
       rootTask:
-        task: LongRangeShooterAllyCompoundAlt
+        task: LongRangeShooterAllyCompound
       blackboard:
         SoundTargetInLOS: !type:SoundPathSpecifier
-          path: /Audio/_Starlight/Effects/Radio/tsf.ogg
+          path: /Audio/_SpL/Effects/Radio/ert.ogg
 
     - type: ContainerContainer
       containers:
@@ -902,6 +987,7 @@
         - Burst
       soundGunshot:
         path: /Audio/Weapons/Guns/Gunshots/smg.ogg
+      showExamineText: false
     - type: BallisticAmmoProvider
       proto: CartridgePistolSP
       capacity: 500
@@ -925,7 +1011,7 @@
         maxRange: !type:Single
           48
         SoundTargetInLOS: !type:SoundPathSpecifier
-          path: /Audio/_Starlight/Effects/Radio/captain.ogg
+          path: /Audio/_SpL/Effects/Radio/ertalt.ogg
 
     - type: Gun
       fireRate: 1
@@ -934,6 +1020,7 @@
         - SemiAuto
       soundGunshot:
         path: /Audio/Weapons/Guns/Gunshots/laser3.ogg
+      showExamineText: false
     - type: RechargeBasicEntityAmmo
       rechargeCooldown: 0.5
     - type: BasicEntityAmmoProvider

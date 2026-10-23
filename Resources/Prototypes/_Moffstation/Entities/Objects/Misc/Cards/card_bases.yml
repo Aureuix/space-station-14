@@ -44,7 +44,7 @@
       playing-card-stack-container: !type:Container
 
 - type: entity
-  parent: BaseBagOpenClose # SpL- removed cardboard box parent
+  parent: [BaseBagOpenClose, BoxBaseSmall] # SpL- removed cardboard box parent
   id: BasePlayingCardDeckBox
   abstract: true
   name: box of playing cards
@@ -59,6 +59,8 @@
   - type: Appearance
   - type: Item
     size: Small
+    shape:
+      - 0,0,1,0
   - type: GenericVisualizer
     visuals:
       enum.StorageVisuals.Open:

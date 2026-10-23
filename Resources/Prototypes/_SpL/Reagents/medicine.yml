@@ -201,6 +201,10 @@
   physicalDesc: reagent-physical-desc-translucent
   flavor: tingly #duh
   color: "#f6fae8"
+  contrabandSeverity: Major
+  allowedDepartments:
+    - Medical
+    - Security
   metabolisms:
     Medicine:
       metabolismRate: 0.2

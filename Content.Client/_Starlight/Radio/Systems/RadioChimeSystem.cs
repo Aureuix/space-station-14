@@ -42,8 +42,7 @@ public sealed class RadioChimeSystem : EntitySystem
     public void PlayChime(SoundSpecifier? chimeSound)
     {
         if (chimeSound is not SoundSpecifier chime
-            || IsMuted
-            || _ttsEnabled)
+            || IsMuted) // SpL- removed check for tts
             return;
 
         _audio.PlayGlobal(_audio.ResolveSound(chime), Filter.Local(), true, AudioParams.Default.WithVolume(-10f));
