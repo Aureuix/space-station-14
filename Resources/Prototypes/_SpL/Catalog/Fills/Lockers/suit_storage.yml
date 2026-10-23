@@ -1,0 +1,25 @@
+﻿- type: entity
+  id: SuitStorageGSL
+  parent: SuitStorageBase
+  suffix: GSL
+  components:
+    - type: EntityTableContainerFill
+      containers:
+        entity_storage: !type:NestedSelector
+          tableId: FillSuitStorageGSLSpatio
+    - type: AccessReader
+      access: [["GSL"]]
+      
+- type: entityTable
+  id: FillSuitStorageGSLSpatio
+  table: !type:AllSelector
+    children:
+      - id: OxygenTankFilled
+      - id: NitrogenTankFilled
+      - id: DoubleEmergencyOxygenTankFilled
+      - id: DoubleEmergencyNitrogenTankFilled
+      - id: CoolingUnit
+      - id: ClothingShoesBootsMag
+      - id: ClothingOuterHardsuitGSLSpatio
+      - id: ClothingMaskGasExplorer
+      - id: JetpackMiniFilled

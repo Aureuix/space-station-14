@@ -47,3 +47,29 @@
       tags:
         - ClothMade
         - Recyclable
+
+# DV stuff
+- type: entity
+  parent: [ ClothingHeadHeadHatBaseFlippable, BaseCommandContraband ]
+  id: ClothingHeadHatQMCourier
+  name: quartermaster's formal courier hat
+  description: A formal looking courier cap denoting the station's quartermaster.
+  components:
+    - type: Sprite
+      sprite: DeltaV/Clothing/Head/Hats/couriersoft.rsi
+    - type: Clothing
+      sprite: DeltaV/Clothing/Head/Hats/couriersoft.rsi
+    - type: Tag
+      tags:
+        - ClothMade
+        - Recyclable
+      
+- type: entity
+  parent: [ClothingHeadHeadHatBaseFlipped, ClothingHeadHatQMCourier]
+  id: ClothingHeadHatQMCourierFlipped
+  name: quartermaster's formal courier hat
+  components:
+    - type: Tag
+      tags:
+        - ClothMade
+        - Recyclable

@@ -1,7 +1,7 @@
 {
   "version": 1,
   "license": "CC-BY-SA-3.0",
-  "copyright": "Taken from https://github.com/ParadiseSS13/Paradise/blob/c3765a3db024682f16b77a9bd52f83195b7aa052/icons/mob/clothing/modsuit/mod_clothing.dmi. Modified by einknusprigestoast",
+  "copyright": "Taken from https://github.com/ParadiseSS13/Paradise/blob/c3765a3db024682f16b77a9bd52f83195b7aa052/icons/mob/clothing/modsuit/mod_clothing.dmi. Modified by einknusprigestoast, recolored, avali, and icon by nykaestra based on sprites from ParadiseSS13",
   "size": {
     "x": 32,
     "y": 32
@@ -19,6 +19,14 @@
     },
     {
       "name": "on-equipped-HELMET",
+      "directions": 4
+    },
+    {
+      "name": "off-equipped-HELMET-avali",
+      "directions": 4
+    },
+    {
+      "name": "on-equipped-HELMET-avali",
       "directions": 4
     },
     {

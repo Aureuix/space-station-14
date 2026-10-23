@@ -1,0 +1,19 @@
+﻿- type: loadout
+  id: ChemistFormalSuit
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitChemistFormal
+
+- type: loadout
+  id: ChemistFormalSkirt
+  equipment:
+    jumpsuit: ClothingUniformJumpskirtChemistFormal
+
+- type: loadout
+  id: ChemistSeniorFormalSuit
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitSeniorChemistFormal
+      
+- type: loadout
+  id: ChemistSeniorFormalSkirt
+  equipment:
+    jumpsuit: ClothingUniformJumpskirtSeniorChemistFormal

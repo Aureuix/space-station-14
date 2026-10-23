@@ -17,10 +17,10 @@
       sprite: DeltaV/Clothing/Uniforms/Scrubs/cyan.rsi
 
 - type: entity
-  parent: ClothingUniformBase
+  parent: [ ClothingUniformBase, BaseEnemyCorporationContraband ] # SpL
   id: UniformScrubsColorCybersun
-  name: cybersun scrubs
-  description: The official uniform of Cybersun's biotechnology division
+  name: CyberSun scrubs
+  description: The official uniform of Cybersun's biotechnological division. # SpL
   components:
     - type: Sprite
       sprite: DeltaV/Clothing/Uniforms/Scrubs/cybersun.rsi

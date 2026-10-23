@@ -1,0 +1,29 @@
+﻿- type: loadout
+  id: MedicalApronSuit
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitMedicalApron
+
+- type: loadout
+  id: MedicalApronSkirt
+  equipment:
+    jumpsuit: ClothingUniformJumpskirtMedicalApron
+    
+- type: loadout
+  id: MedicalOffsetSuit
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitMedicalOffset
+
+- type: loadout
+  id: MedicalOffsetSkirt
+  equipment:
+    jumpsuit: ClothingUniformJumpskirtMedicalOffset
+    
+- type: loadout
+  id: MedicalBomber
+  equipment:
+    outerClothing: ClothingOuterBomberMedical
+
+- type: loadout
+  id: MedicalBeretAlt
+  equipment:
+    head: ClothingHeadHatBeretMedicalAlt  

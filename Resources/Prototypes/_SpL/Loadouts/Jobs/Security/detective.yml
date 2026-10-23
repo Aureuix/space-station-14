@@ -1,4 +1,22 @@
-﻿- type: loadout
+﻿# Hats
+- type: loadout
+  id: DetectiveBeret
+  equipment:
+    head: ClothingHeadHatBeretDetective
+
+# Outer
+- type: loadout
+  id: LongcoatDetective
+  equipment:
+    outerClothing: ClothingOuterCoatLongDetective
+    
+- type: loadout
+  id: DetectiveWinter
+  equipment:
+    outerClothing: ClothingOuterWinterDetective
+
+# Sidearm options
+- type: loadout
   id: DetectiveInspector
   dummyEntity: WeaponRevolverInspector
   equipment:

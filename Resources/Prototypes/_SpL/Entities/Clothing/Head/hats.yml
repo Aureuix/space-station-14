@@ -36,7 +36,7 @@
 
 - type: entity
   parent: [ ClothingHeadBase, BaseBlueShieldContraband ]
-  id: ClothingHeadHatBSO
+  id: ClothingHeadHatBlueshield
   name: blueshield cap
   description: A military cap in defender blue. Any claims of making the wearer look like a postal worker are entirely unfounded.
   components:
@@ -55,10 +55,305 @@
 - type: entity
   parent: [ ClothingHeadBase, BaseCentcommContraband ]
   id: ClothingHeadHatCentCommWinged
-  name: central command winged cap
+  name: CentComm winged cap
   description: An officer's cap with brim-like outcroppings. Likely belonging to someone with an unconventional fashion sense and a rank allowing for such a modification.
   components:
     - type: Sprite
       sprite: _SpL/Clothing/Head/Hats/wingedcap_centcomm.rsi
     - type: Clothing
       sprite: _SpL/Clothing/Head/Hats/wingedcap_centcomm.rsi
+    - type: Tag
+      tags:
+        - ClothMade
+        - Recyclable
+      
+# Goob stuff
+- type: entity
+  parent: [ ClothingHeadBase, BaseNanoTrasenContraband ]
+  id: ClothingHeadHatBeretNTNC
+  name: NanoTrasen Naval Corps beret
+  description: A faded blue beret with a small insignia denoting an NTNC officer.
+  components:
+    - type: Sprite
+      sprite: _Goobstation/Clothing/Head/Hats/navy_officer_beret.rsi
+    - type: Clothing
+      sprite: _Goobstation/Clothing/Head/Hats/navy_officer_beret.rsi
+    - type: Tag
+      tags:
+        - ClothMade
+        - Recyclable
+
+- type: entity
+  parent: [ ClothingHeadBase, BaseCommandContraband ]
+  id: ClothingHeadHatBeretHoSExpi
+  name: striped head of security beret
+  description: A beret denoting the Head of Security, with a red stripe that probably signifies experience or something like that.
+  components:
+    - type: Sprite
+      sprite: _Goobstation/Clothing/Head/Hats/hos_expi.rsi
+    - type: Clothing
+      sprite: _Goobstation/Clothing/Head/Hats/hos_expi.rsi
+    - type: Tag
+      tags:
+        - PetWearable
+        - CorgiWearable
+        - ClothMade
+        - Recyclable
+        - WhitelistChameleon
+
+- type: entity
+  parent: ClothingHeadBase
+  id: ClothingHeadHatBeretBotany
+  name: botany beret
+  description: A beret for plant lovers.
+  components:
+    - type: Sprite
+      sprite: _Goobstation/Clothing/Head/Hats/beret_botany.rsi
+    - type: Clothing
+      sprite: _Goobstation/Clothing/Head/Hats/beret_botany.rsi
+    - type: Tag
+      tags:
+        - PetWearable
+        - CorgiWearable
+        - ClothMade
+        - Recyclable
+        - WhitelistChameleon
+
+- type: entity
+  parent: [ ClothingHeadBase, BaseBlueShieldContraband ]
+  id: ClothingHeadHatBlueshieldUshanka
+  name: blueshield ushanka
+  description: A formal-looking winter ushanka for a distinguished winter soldier.
+  components:
+    - type: Sprite
+      sprite: _Goobstation/Clothing/Head/Hats/blueshield_ushanka.rsi
+      layers:
+        - state: icon
+          map: [ "unfoldedLayer" ]
+        - state: icon-up
+          map: [ "foldedLayer" ]
+          visible: false
+    - type: Clothing
+      sprite: _Goobstation/Clothing/Head/Hats/blueshield_ushanka.rsi
+    - type: Appearance
+    - type: Foldable
+      canFoldInsideContainer: true
+    - type: FoldableClothing
+      foldedEquippedPrefix: up
+      foldedHeldPrefix: up
+    - type: Tag
+      tags:
+        - PetWearable
+        - CorgiWearable
+        - ClothMade
+        - Recyclable
+        - WhitelistChameleon
+
+# DV stuff
+- type: entity
+  parent: ClothingHeadBase
+  id: ClothingHeadHatBeretAtmos
+  name: atmospherics beret
+  description: So the atmospheric technicians can look presentable the two times a shift they have to leave the department.
+  components:
+    - type: Sprite
+      sprite: DeltaV/Clothing/Head/Hats/beret_atmos.rsi
+    - type: Clothing
+      sprite: DeltaV/Clothing/Head/Hats/beret_atmos.rsi
+    - type: Tag
+      tags:
+        - PetWearable
+        - CorgiWearable
+        - ClothMade
+        - Recyclable
+        - WhitelistChameleon
+
+- type: entity
+  parent: ClothingHeadBase
+  id: ClothingHeadHatBeretDetective
+  name: detective's beret
+  description: Not quite a conventional style for a detective, but this felt beret remains a respectable shade of investigator brown.
+  components:
+    - type: Sprite
+      sprite: DeltaV/Clothing/Head/Hats/beret_det.rsi
+    - type: Clothing
+      sprite: DeltaV/Clothing/Head/Hats/beret_det.rsi
+    - type: Tag
+      tags:
+        - PetWearable
+        - CorgiWearable
+        - ClothMade
+        - Recyclable
+        - WhitelistChameleon
+
+- type: entity
+  parent: ClothingHeadBase
+  id: ClothingHeadHatBeretMedicalAlt
+  name: sky-blue medical beret
+  description: A generic beret in light blue, the all-encompassing color for medical matters.
+  components:
+    - type: Sprite
+      sprite: DeltaV/Clothing/Head/Hats/beret_medical.rsi
+    - type: Clothing
+      sprite: DeltaV/Clothing/Head/Hats/beret_medical.rsi
+    - type: Tag
+      tags:
+        - PetWearable
+        - CorgiWearable
+        - ClothMade
+        - Recyclable
+        - WhitelistChameleon
+      
+- type: entity
+  parent: ClothingHeadBase
+  id: ClothingHeadHatBeretTassledBlack
+  name: black tasseled beret
+  description: For learned scholars, or maybe old-fashioned mimes.
+  components:
+    - type: Sprite
+      sprite: DeltaV/Clothing/Head/Hats/beret_mime_tassled_black.rsi
+    - type: Clothing
+      sprite: DeltaV/Clothing/Head/Hats/beret_mime_tassled_black.rsi
+    - type: Tag
+      tags:
+        - PetWearable
+        - CorgiWearable
+        - ClothMade
+        - Recyclable
+        - WhitelistChameleon
+
+- type: entity
+  parent: ClothingHeadBase
+  id: ClothingHeadHatBeretTassledWhite
+  name: white tasseled beret
+  description: For aspiring painters, or maybe old-fashioned mimes.
+  components:
+    - type: Sprite
+      sprite: DeltaV/Clothing/Head/Hats/beret_mime_tassled_white.rsi
+    - type: Clothing
+      sprite: DeltaV/Clothing/Head/Hats/beret_mime_tassled_white.rsi
+    - type: Tag
+      tags:
+        - PetWearable
+        - CorgiWearable
+        - ClothMade
+        - Recyclable
+        - WhitelistChameleon
+
+- type: entity
+  parent: [ ClothingHeadBase, BaseSyndicateContraband ]
+  id: ClothingHeadHatBeretBloodred
+  name: blood-red beret
+  description: The Gorlex Marauders are not known for formalities, but apparently they make an exception for this stylish military beret.
+  components:
+    - type: Sprite
+      sprite: DeltaV/Clothing/Head/Hats/beret_SRT.rsi
+    - type: Clothing
+      sprite: DeltaV/Clothing/Head/Hats/beret_SRT.rsi
+    - type: Tag
+      tags:
+        - ClothMade
+        - Recyclable
+
+- type: entity
+  parent: ClothingHeadBase
+  id: ClothingHeadHatBeretRDTassled
+  name: research director's tasseled beret
+  description: A fancy felt beret with a tasseled badge, awarded as a show of distinction to dedicated researchers.
+  components:
+    - type: Sprite
+      sprite: DeltaV/Clothing/Head/Hats/mysta.rsi
+    - type: Clothing
+      sprite: DeltaV/Clothing/Head/Hats/mysta.rsi
+    - type: Tag
+      tags:
+        - PetWearable
+        - CorgiWearable
+        - ClothMade
+        - Recyclable
+        - WhitelistChameleon
+      
+- type: entity
+  parent: ClothingHeadBase
+  id: ClothingHeadHatBeretVirology
+  name: virology beret
+  description: You would think a beret would run contrary to the virological doctrine of limiting exposure. 
+  components:
+    - type: Sprite
+      sprite: DeltaV/Clothing/Head/Hats/beret_viro.rsi
+    - type: Clothing
+      sprite: DeltaV/Clothing/Head/Hats/beret_viro.rsi
+    - type: Tag
+      tags:
+        - PetWearable
+        - CorgiWearable
+        - ClothMade
+        - Recyclable
+        - WhitelistChameleon
+
+- type: entity
+  parent: [ ClothingHeadBase, BaseCommandContraband ]
+  id: ClothingHeadHatCavalierCap
+  name: captain cavalier hat
+  description: For a dashing commander.
+  components:
+    - type: Sprite
+      sprite: DeltaV/Clothing/Head/Hats/captaincavalier.rsi
+    - type: Clothing
+      sprite: DeltaV/Clothing/Head/Hats/captaincavalier.rsi
+    - type: Tag
+      tags:
+        - PetWearable
+        - CorgiWearable
+        - ClothMade
+        - Recyclable
+        - WhitelistChameleon
+
+- type: entity
+  parent: [ ClothingHeadBase, BaseCommandContraband ]
+  id: ClothingHeadHatCavalierHoS
+  name: head of security cavalier hat
+  description: For a dashing commander at arms.
+  components:
+    - type: Sprite
+      sprite: DeltaV/Clothing/Head/Hats/hoscavalier.rsi
+    - type: Clothing
+      sprite: DeltaV/Clothing/Head/Hats/hoscavalier.rsi
+    - type: Tag
+      tags:
+        - PetWearable
+        - CorgiWearable
+        - ClothMade
+        - Recyclable
+        - WhitelistChameleon
+      
+- type: entity
+  parent: [ ClothingHeadBase, BaseCentcommContraband ]
+  id: ClothingHeadHatCavalierCentComm
+  name: CentComm cavalier hat
+  description: For a dashing commander's commander.
+  components:
+    - type: Sprite
+      sprite: DeltaV/Clothing/Head/Hats/centcommcavalier.rsi
+    - type: Clothing
+      sprite: DeltaV/Clothing/Head/Hats/centcommcavalier.rsi
+    - type: Tag
+      tags:
+        - ClothMade
+        - Recyclable
+      
+- type: entity
+  parent: [ ClothingHeadBase, BaseCentcommContraband ]
+  id: ClothingHeadHatDirectorCapCentComm
+  name: CentComm director's cap
+  suffix: DO NOT USE
+  description: A no-nonsense military cap for the sectoral director of operations.
+  components:
+    - type: Sprite
+      sprite: DeltaV/Clothing/Head/Hats/dircap.rsi
+    - type: Clothing
+      sprite: DeltaV/Clothing/Head/Hats/dircap.rsi
+    - type: Tag
+      tags:
+        - ClothMade
+        - Recyclable

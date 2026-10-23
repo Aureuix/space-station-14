@@ -341,9 +341,9 @@
   groups:
   - GroupTankHarness
   - ChiefEngineerHead
+  - ChiefEngineerNeck
   - ChiefEngineerJumpsuit
   - StationEngineerBackpack
-  - ChiefEngineerNeck
   - ChiefEngineerOuterClothing
   - ChiefEngineerShoes
   - SurvivalExtended
@@ -577,12 +577,12 @@
   groups:
   - GroupTankHarness
   - ChiefMedicalOfficerHead
+  - ChiefMedicalOfficerNeck
   - MedicalMask
   - ChiefMedicalOfficerJumpsuit
   - MedicalGloves
   - MedicalBackpack
   - ChiefMedicalOfficerOuterClothing
-  - ChiefMedicalOfficerNeck
   - ChiefMedicalOfficerShoes
   - MedicalEyewear
   - SurvivalMedical

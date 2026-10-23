@@ -1,4 +1,9 @@
 ﻿- type: loadout
+  id: LongcoatSurgeon
+  equipment:
+    outerClothing: ClothingOuterCoatLongArashi
+
+- type: loadout
   id: SurgeonPDA
   equipment:
     id: SurgeonPDA

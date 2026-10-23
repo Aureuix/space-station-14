@@ -78,6 +78,6 @@
   description: A fancier looking version of the regular cloak, bound to marginally increase the crew's admiration towards you.
   components:
     - type: Sprite
-      sprite: DeltaV/Clothing/Neck/Cloaks/hop.rsi
+      sprite: _Goobstation/Clothing/Neck/Cloaks/hop.rsi # SpL- lmfao
     - type: StealTarget
       stealGroup: HeadCloak

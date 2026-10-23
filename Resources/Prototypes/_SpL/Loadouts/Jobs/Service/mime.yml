@@ -1,0 +1,19 @@
+﻿- type: loadout
+  id: MimeTassledBeretBlack
+  equipment:
+    head: ClothingHeadHatBeretTassledBlack  
+
+- type: loadout
+  id: MimeTassledBeretWhite
+  equipment:
+    head: ClothingHeadHatBeretTassledWhite  
+    
+- type: loadout
+  id: MimeFur
+  equipment:
+    outerClothing: ClothingOuterWinterMimeFur
+
+- type: loadout
+  id: MimeLong
+  equipment:
+    outerClothing: ClothingOuterWinterMimeLong

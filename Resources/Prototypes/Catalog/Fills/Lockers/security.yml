@@ -196,6 +196,7 @@
     - id: BoxEvidenceMarkers
     - id: HandLabeler
     - id: BoxTapeRecorder # Starlight
+    - id: ClothingOuterHardsuitDetective # SpL
 
 - type: entity
   id: ClosetBombFilled

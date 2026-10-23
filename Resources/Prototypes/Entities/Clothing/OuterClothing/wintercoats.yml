@@ -284,10 +284,7 @@
       right:
       - state: CMO-inhand-right
   - type: Clothing
-    sprite: Clothing/OuterClothing/WinterCoats/coat.rsi
-    clothingVisuals:
-      outerClothing:
-      - state: CMO-equipped-OUTERCLOTHING
+    sprite: DeltaV/Clothing/OuterClothing/WinterCoats/cmo.rsi # SpL
   - type: Pierceable
     level: Metal
   - type: Armor
@@ -492,20 +489,9 @@
   name: medical winter coat
   components:
   - type: Sprite
-    sprite: Clothing/OuterClothing/WinterCoats/coat.rsi
-    layers:
-    - state: MED-icon
-  - type: Item
-    inhandVisuals:
-      left:
-      - state: MED-inhand-left
-      right:
-      - state: MED-inhand-right
+    sprite: DeltaV/Clothing/OuterClothing/WinterCoats/medical.rsi # SpL
   - type: Clothing
-    sprite: Clothing/OuterClothing/WinterCoats/coat.rsi
-    clothingVisuals:
-      outerClothing:
-      - state: MED-equipped-OUTERCLOTHING
+    sprite: DeltaV/Clothing/OuterClothing/WinterCoats/medical.rsi # SpL
   - type: Pierceable
     level: Metal
   - type: Armor
@@ -730,8 +716,8 @@
   - type: Armor
     modifiers:
       coefficients:
-        Blunt: 0.85
-        Slash: 0.75
+        Blunt: 0.95 # SpL
+        Slash: 0.95 # SpL
         Cold: 0.85 # Starlight
         Piercing: 0.95
         Heat: 0.65

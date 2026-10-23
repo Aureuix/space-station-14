@@ -62,6 +62,7 @@
     - CentCommHat
     - CentCommBeret
     - CentCommSheriffHat
+    - CentCommCavalier
 
 - type: loadoutGroup
   id: CentCommJumpsuit
@@ -74,6 +75,9 @@
     - CentCommSuitskirt
     - CentCommTurtleneck
     - CentCommPencilSkirt
+    - CentCommPencilSkirtLong
+    - CentCommOfficerSuitBlack
+    - CentCommOfficerSkirtBlack
     - CentCommFormalSuit
     - CentCommFormalSkirt
     - CentCommFormalCAD
@@ -86,6 +90,7 @@
     - CentCommFormalCSD
     - CentCommFormalCSOD
     - CentCommAgentJumpsuit
+    - CentCommAgentJumpskirt
     - CentCommCSODSuit
     - CentCommCSODSkirt
     - CentCommOfficerSuit
@@ -102,7 +107,10 @@
     - CentCommWebVest
     - CentCommWinterCoat
     - CentCommArmoredWinterCoat
-    - CentCommHardsuit
+    - CentCommLongcoat
+    # - CentCommHardsuit
+    - CentCommDecadentRobe
+    - CentCommBomber
 
 - type: loadoutGroup
   id: CentCommBelt
@@ -168,6 +176,7 @@
   loadouts:
     - CentCommScarf
     - CentCommCloak
+    - CentCommMantle
     - CentCommPoncho
     - CentCommCloakBoat
     - CentCommHalfCloak
@@ -175,6 +184,7 @@
     - CentCommShawl
     - CentCommShawlCMD
     - CentCommMantleCED
+    - CentCommMantleCEsD
     - CentCommMantleCLD
     - CentCommMantleCMD
     - CentCommMantleCRD
@@ -228,6 +238,7 @@
   maxLimit: 1
   loadouts:
     - NTNCHelmet
+    - NTNCBeret
     - NTNCHat
     - NTNCHatGrey
     - NTNCHatEnsign

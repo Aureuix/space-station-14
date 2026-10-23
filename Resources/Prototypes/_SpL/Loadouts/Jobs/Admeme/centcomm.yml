@@ -18,13 +18,18 @@
   id: CentCommSheriffHat
   equipment:
     head: ClothingHeadHatCCSheriffhat
+    
+- type: loadout
+  id: CentCommCavalier
+  equipment:
+    head: ClothingHeadHatCavalierCentComm
 
 ## Headsets
 - type: loadout
   id: CentCommHeadset
-  dummyEntity: ClothingHeadsetCentCom
+  dummyEntity: ClothingHeadsetCentCommOfficial
   equipment:
-    ears: ClothingHeadsetCentCom
+    ears: ClothingHeadsetCentCommOfficial
   storage: # Lmfao
     back:
       - PowerCellMicroreactor
@@ -78,6 +83,18 @@
   groupBy: "ccstandard"
 
 - type: loadout
+  id: CentCommOfficerSuitBlack
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitCentCommOfficer
+  groupBy: "ccofficer"
+
+- type: loadout
+  id: CentCommOfficerSkirtBlack
+  equipment:
+    jumpsuit: ClothingUniformJumpskirtCentCommOfficer
+  groupBy: "ccofficer"
+
+- type: loadout
   id: CentCommTurtleneck
   equipment:
     jumpsuit: ClothingUniformJumpskirtCentcomOfficer
@@ -87,6 +104,12 @@
   id: CentCommPencilSkirt
   equipment:
     jumpsuit: ClothingUniformJumpskirtPencilCentcomOfficial
+  groupBy: "ccstandard"
+  
+- type: loadout
+  id: CentCommPencilSkirtLong
+  equipment:
+    jumpsuit: ClothingUniformJumpskirtPencilCentComOfficialAlt
   groupBy: "ccstandard"
 
 - type: loadout
@@ -159,6 +182,13 @@
   id: CentCommAgentJumpsuit
   equipment:
     jumpsuit: ClothingUniformJumpsuitCentcomAgent
+  groupBy: "ccagent"
+    
+- type: loadout
+  id: CentCommAgentJumpskirt
+  equipment:
+    jumpsuit: ClothingUniformJumpskirtCentcomAgent
+  groupBy: "ccagent"
 
 - type: loadout
   id: CentCommOfficerSuit
@@ -224,11 +254,26 @@
   id: CentCommArmoredWinterCoat
   equipment:
     outerClothing: ClothingOuterCoatWardenCentcomm
-      
+    
 - type: loadout
-  id: CentCommHardsuit # TODO- make a new civilian use cc hardsuit. maybe a modsuit?
+  id: CentCommLongcoat
   equipment:
-    outerClothing: ClothingOuterHardsuitERTLeader
+    outerClothing: ClothingOuterCoatLongCentComm
+      
+#- type: loadout
+#  id: CentCommHardsuit 
+#  equipment:
+#    outerClothing: ClothingOuterHardsuitERTLeader
+
+- type: loadout
+  id: CentCommDecadentRobe
+  equipment:
+    outerClothing: ClothingOuterCoatCentCommGaudy
+    
+- type: loadout
+  id: CentCommBomber
+  equipment:
+    outerClothing: ClothingOuterCoatCentCommBomber
 
 ## Gloves
 - type: loadout
@@ -241,6 +286,11 @@
   id: CentCommCloak
   equipment:
     neck: ClothingNeckCloakCentcom
+    
+- type: loadout
+  id: CentCommMantle
+  equipment:
+    neck: ClothingNeckCloakCentCommMantle
       
 - type: loadout
   id: CentCommScarf
@@ -312,6 +362,12 @@
   id: CentCommMantleCRD
   equipment:
     neck: ClothingNeckCloakCRDMantle
+  groupBy: "ccneckdepartmental"
+  
+- type: loadout
+  id: CentCommMantleCEsD
+  equipment:
+    neck: ClothingNeckCloakCEsDMantle
   groupBy: "ccneckdepartmental"
     
 - type: loadout

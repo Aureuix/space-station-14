@@ -1,10 +1,60 @@
-﻿- type: loadout
+﻿# Inner
+- type: loadout
+  id: CaptainAgedSuit
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitCaptainAged
+  
+- type: loadout
+  id: CaptainAgedSkirt
+  equipment:
+    jumpsuit: ClothingUniformJumpskirtCaptainAged
+
+# Hats
+- type: loadout
+  id: CaptainCavalier
+  equipment:
+    head: ClothingHeadHatCavalierCap
+
+# Outer
+- type: loadout
+  id: LongcoatCaptain
+  equipment:
+    outerClothing: ClothingOuterCoatLongCap
+
+- type: loadout
+  id: TrenchcoatCaptain
+  equipment:
+    outerClothing: ClothingOuterCoatCaptainTrench
+
+- type: loadout
+  id: ArcticCoatCaptain
+  equipment:
+    outerClothing: ClothingOuterWinterCaptainArctic
+
+# Glasses
+- type: loadout
   id: PrescriptionCapGlasses
   dummyEntity: ClothingEyesGlassesCommandPrescription
   equipment:
     eyes: ClothingEyesGlassesCommandPrescription
-    
+
+# Neck 
 - type: loadout
   id: CapHalfCloak
   equipment:
     neck: ClothingNeckHalfCloakCap
+    
+- type: loadout
+  id: CapAgedCloak
+  equipment:
+    neck: ClothingNeckCloakCapAged
+    
+- type: loadout
+  id: CapAgedMantle
+  equipment:
+    neck: ClothingNeckCloakCaptainMantleAged
+    
+- type: loadout
+  id: CapVeteranCloak
+  equipment:
+    neck: ClothingNeckCloakCaptainAura

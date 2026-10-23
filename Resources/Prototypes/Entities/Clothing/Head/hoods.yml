@@ -30,7 +30,7 @@
       HeadSide: HEAD
 
 - type: entity
-  parent: ClothingHeadHatHoodBioGeneral
+  parent: [ClothingHeadHatHoodBioGeneral, BaseCommandContraband] # SpL
   id: ClothingHeadHatHoodBioCmo
   name: bio hood
   suffix: CMO
@@ -392,9 +392,9 @@
   name: chief medical officer's winter coat hood
   components:
   - type: Sprite
-    sprite: Clothing/Head/Hoods/Coat/hoodcmo.rsi
+    sprite: DeltaV/Clothing/Head/Hoods/Coat/hoodcmo.rsi # SpL
   - type: Clothing
-    sprite: Clothing/Head/Hoods/Coat/hoodcmo.rsi
+    sprite: DeltaV/Clothing/Head/Hoods/Coat/hoodcmo.rsi # SpL
 
 - type: entity
   parent: ClothingHeadHatHoodWinterBase
@@ -458,9 +458,9 @@
   name: medic coat hood
   components:
   - type: Sprite
-    sprite: Clothing/Head/Hoods/Coat/hoodmed.rsi
+    sprite: DeltaV/Clothing/Head/Hoods/Coat/hoodmed.rsi # SpL
   - type: Clothing
-    sprite: Clothing/Head/Hoods/Coat/hoodmed.rsi
+    sprite: DeltaV/Clothing/Head/Hoods/Coat/hoodmed.rsi # SpL
 
 - type: entity
   parent: ClothingHeadHatHoodWinterBase

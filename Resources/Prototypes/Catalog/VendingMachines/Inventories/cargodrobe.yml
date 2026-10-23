@@ -31,8 +31,8 @@
     ToyFigurineCargoTech: 1
     ToyFigurineSalvage: 1
     ToyFigurineQuartermaster: 1
+    ClothingBackpackSalvage: 1 # SpL
+    ClothingBackpackSatchelSalvage: 1 # SpL 
+    ClothingBackpackDuffelSalvage: 1 # SpL
     ClothingBackpackTrunkMail: 1 # Starlight start
-  emaggedInventory:
-    ClothingBackpackSalvage: 1
-    ClothingBackpackSatchelSalvage: 1
-    ClothingBackpackDuffelSalvage: 1 # Starlight end
+    ClothingUniformJumpsuitCyberSunCasual: 1 # SpL

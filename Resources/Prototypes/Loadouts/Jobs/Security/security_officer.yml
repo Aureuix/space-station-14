@@ -152,7 +152,7 @@
 - type: loadout
   id: SecurityOfficerWintercoat
   equipment:
-    outerClothing: ClothingOuterWinterSec
+    outerClothing: ClothingOuterArmorSecurityWinter # SpL
 
 - type: loadout
   id: WindbreakerSecurity

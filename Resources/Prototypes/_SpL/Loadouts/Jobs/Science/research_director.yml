@@ -1,0 +1,34 @@
+﻿- type: loadout
+  id: RDTassledBeret
+  equipment:
+    head: ClothingHeadHatBeretRDTassled
+
+- type: loadout
+  id: LongcoatRD
+  equipment:
+    outerClothing: ClothingOuterCoatLongRD
+    
+- type: loadout
+  id: FurcoatRD
+  equipment:
+    outerClothing: ClothingOuterCoatRDFur
+    
+- type: loadout
+  id: CoatRD
+  equipment:
+    outerClothing: ClothingOuterCoatResearchDirector
+    
+- type: loadout
+  id: RDFormalCloak
+  equipment:
+    neck: ClothingNeckCloakRDFormal
+    
+- type: loadout
+  id: RDAgedCloak
+  equipment:
+    neck: ClothingNeckCloakRDAged
+    
+- type: loadout
+  id: RDAgedMantle
+  equipment:
+    neck: ClothingNeckCloakRDMantleAged

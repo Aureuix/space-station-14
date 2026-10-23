@@ -1,7 +1,7 @@
 # Base
 
 - type: entity
-  parent: FoodInjectableBase
+  parent: [FoodInjectableBase, BaseEnemyCorporationContraband] # SpL- enemy corp contra
   id: FoodDonkpocketBase
   abstract: true
   components:

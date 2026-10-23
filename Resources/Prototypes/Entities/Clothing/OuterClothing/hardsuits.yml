@@ -671,11 +671,11 @@
   description: A heavily armored EVA-capable combat hardsuit used by Syndicate operatives, the blood-red warsuit is the calling card of the infamous Gorlex Marauders, and a sight that strikes fear into the hearts of NanoTrasen personnel the galaxy over. # SpL
   components:
   - type: Sprite
-    sprite: Clothing/OuterClothing/Hardsuits/syndicate.rsi
+    sprite: _Goobstation/Clothing/OuterClothing/Hardsuits/syndicate.rsi # SpL
   - type: Item
     size: Huge
   - type: Clothing
-    sprite: Clothing/OuterClothing/Hardsuits/syndicate.rsi
+    sprite: _Goobstation/Clothing/OuterClothing/Hardsuits/syndicate.rsi # SpL
   - type: PressureProtection
     highPressureMultiplier: 0.05
     lowPressureMultiplier: 1000
@@ -721,9 +721,9 @@
   description: A heavily armored and agile advanced combat hardsuit specifically designed for field medic operations, patterned after the classic blood-red warsuit. # SpL
   components:
   - type: Sprite
-    sprite: Clothing/OuterClothing/Hardsuits/syndiemedic.rsi
+    sprite: _Goobstation/Clothing/OuterClothing/Hardsuits/syndiemedic.rsi # SpL
   - type: Clothing
-    sprite: Clothing/OuterClothing/Hardsuits/syndiemedic.rsi
+    sprite: _Goobstation/Clothing/OuterClothing/Hardsuits/syndiemedic.rsi # SpL
   - type: ToggleableClothing
     clothingPrototype: ClothingHeadHelmetHardsuitSyndieMedic
   - type: ZombificationResistance
@@ -754,9 +754,9 @@
   description: An explosive-resistant version of the blood-red warsuit, with improved radiation resistance and fireproofing at the cost of slightly worse ballistics resistance. # SpL
   components:
   - type: Sprite
-    sprite: Clothing/OuterClothing/Hardsuits/syndieelite.rsi
+    sprite: _Goobstation/Clothing/OuterClothing/Hardsuits/syndieelite.rsi # SpL
   - type: Clothing
-    sprite: Clothing/OuterClothing/Hardsuits/syndieelite.rsi
+    sprite: _Goobstation/Clothing/OuterClothing/Hardsuits/syndieelite.rsi # SpL
   - type: PressureProtection
     highPressureMultiplier: 0.02
     lowPressureMultiplier: 1000
@@ -801,13 +801,13 @@
 - type: entity
   parent: [ClothingOuterHardsuitBase, BaseSyndicateContraband]
   id: ClothingOuterHardsuitSyndieCommander
-  name: Gx-01C operative commander warsuit # SpL
+  name: Gx-01C blood-red commander warsuit # SpL
   description: A bulked up version of the blood-red warsuit, purpose-built for the commander of a Syndicate operative squad. Has significantly improved armor for those deadly front-lines firefights. # SpL
   components:
   - type: Sprite
-    sprite: Clothing/OuterClothing/Hardsuits/syndiecommander.rsi
+    sprite: _Goobstation/Clothing/OuterClothing/Hardsuits/syndiecommander.rsi # SpL
   - type: Clothing
-    sprite: Clothing/OuterClothing/Hardsuits/syndiecommander.rsi
+    sprite: _Goobstation/Clothing/OuterClothing/Hardsuits/syndiecommander.rsi # SpL
   - type: PressureProtection
     highPressureMultiplier: 0.05
     lowPressureMultiplier: 1000

@@ -29,3 +29,366 @@
   parent: [ ClothingOuterStorageFoldableBaseOpened, ClothingWindbreakerBlueShield ]
   id: ClothingOuterWindbreakerBlueShieldOpened
   name: blueshield windbreaker
+  
+# Goob coats
+- type: entity
+  parent: [ClothingOuterStorageBase, ClothingOuterColdBase, BaseCommandContraband]
+  id: ClothingOuterCoatCaptainTrench
+  name: captain's formal armored trenchcoat
+  description: A large, comfortably weighted fabric trenchcoat, reinforced with a layer of armor for leadership in style.
+  components:
+    - type: Sprite
+      sprite: _Goobstation/Clothing/OuterClothing/Coats/captain_jacket.rsi
+    - type: Clothing
+      sprite: _Goobstation/Clothing/OuterClothing/Coats/captain_jacket.rsi
+    - type: Armor
+      modifiers:
+        coefficients:
+          Blunt: 0.6
+          Slash: 0.6
+          Piercing: 0.6
+          Heat: 0.8
+          Cold: 0.8
+
+- type: entity
+  parent: ClothingOuterStorageBase
+  id: ClothingOuterCoatCentCommBomber
+  name: centcomm bomber jacket
+  description: A rather informal looking green bomber jacket. The zip seems to be broken.
+  components:
+    - type: Sprite
+      sprite: _Goobstation/Clothing/OuterClothing/Coats/centcom_ike.rsi
+    - type: Clothing
+      sprite: _Goobstation/Clothing/OuterClothing/Coats/centcom_ike.rsi
+
+- type: entity
+  parent: ClothingOuterStorageBase
+  id: ClothingOuterCoatCentCommGaudy
+  name: decadent centcomm robe
+  description: This is practically a bathrobe. 
+  components:
+    - type: Sprite
+      sprite: _Goobstation/Clothing/OuterClothing/Coats/centcommjacket.rsi
+    - type: Clothing
+      sprite: _Goobstation/Clothing/OuterClothing/Coats/centcommjacket.rsi
+      
+- type: entity
+  parent: [ClothingOuterStorageBase, ClothingOuterColdBase, BaseCommandContraband]
+  id: ClothingOuterCoatHoPTrench
+  name: head of personnel's formal trenchcoat
+  description: A large, comfortably weighted fabric trenchcoat in the head of personnel's signature colors.
+  components:
+    - type: Sprite
+      sprite: _Goobstation/Clothing/OuterClothing/Coats/hoplongcoat.rsi
+    - type: Clothing
+      sprite: _Goobstation/Clothing/OuterClothing/Coats/hoplongcoat.rsi
+      
+- type: entity
+  parent: [ClothingOuterStorageFoldableBase, ClothingOuterStorageBase, ClothingOuterColdBase, BaseCommandContraband]
+  id: ClothingOuterCoatRDFur
+  name: research director's fur coat
+  description: A large, fanciful fur coat in the purple and white hues of progress.
+  components:
+    - type: Sprite
+      sprite: _Goobstation/Clothing/OuterClothing/Coats/rdaltcoat.rsi
+    - type: Clothing
+      sprite: _Goobstation/Clothing/OuterClothing/Coats/rdaltcoat.rsi
+      
+- type: entity
+  parent: [ ClothingOuterStorageFoldableBaseOpened, ClothingOuterCoatRDFur ]
+  id: ClothingOuterCoatRDFurOpened
+  name: research director's fur coat
+  
+- type: entity
+  parent: [ClothingOuterStorageBase, ClothingOuterColdBase, ClothingOuterArmorWarden, BaseSecurityContraband]
+  id: ClothingOuterCoatWardenFormal
+  name: warden's armored formal trenchcoat
+  description: A prestigious red trenchcoat reinforced with a layer of armor. Perfect for parading, and for spilling hot coffee on.
+  components:
+    - type: Sprite
+      sprite: _Goobstation/Clothing/OuterClothing/Coats/wardenred.rsi
+    - type: Clothing
+      sprite: _Goobstation/Clothing/OuterClothing/Coats/wardenred.rsi
+
+# Floof coats
+- type: entity
+  parent: [ClothingOuterStorageBase, ClothingOuterColdBase] 
+  id: ClothingOuterCoatLongArashi
+  name: surgical longcoat
+  description: A sterilised longcoat in surgical colors.
+  components:
+    - type: Sprite
+      sprite: _Floof/Clothing/OuterClothing/Coats/arashi-laboratories.rsi
+    - type: Clothing
+      sprite: _Floof/Clothing/OuterClothing/Coats/arashi-laboratories.rsi
+      
+- type: entity
+  parent: [ClothingOuterStorageBase, ClothingOuterColdBase]
+  id: ClothingOuterCoatLongBlack
+  name: black longcoat
+  description: A comfortable black longcoat with gold buttons and no rank markings. Pairs well with a cowboy hat.
+  components:
+    - type: Sprite
+      sprite: _Floof/Clothing/OuterClothing/Coats/black.rsi
+    - type: Clothing
+      sprite: _Floof/Clothing/OuterClothing/Coats/black.rsi
+      
+- type: entity
+  parent: [ClothingOuterStorageBase, ClothingOuterColdBase]
+  id: ClothingOuterCoatLongBrown
+  name: brown longcoat
+  description: A comfortable black longcoat with no rank markings. Makes you look like a private inspector.
+  components:
+    - type: Sprite
+      sprite: _Floof/Clothing/OuterClothing/Coats/brown.rsi
+    - type: Clothing
+      sprite: _Floof/Clothing/OuterClothing/Coats/brown.rsi
+      
+- type: entity
+  parent: [ClothingOuterStorageBase, ClothingOuterColdBase, BaseCommandContraband]
+  id: ClothingOuterCoatLongCap
+  name: captain's longcoat
+  description: A comfortable longcoat with armored plate inserts in the captain's colors.
+  components:
+    - type: Sprite
+      sprite: _Floof/Clothing/OuterClothing/Coats/captain.rsi
+    - type: Clothing
+      sprite: _Floof/Clothing/OuterClothing/Coats/captain.rsi
+    - type: Armor
+      modifiers:
+        coefficients:
+          Blunt: 0.7
+          Slash: 0.7
+          Piercing: 0.7
+          Heat: 0.8
+          Cold: 0.8
+      
+- type: entity
+  parent: [ClothingOuterStorageBase, ClothingOuterColdBase, BaseCentcommContraband]
+  id: ClothingOuterCoatLongCentComm
+  name: centcomm armored longcoat
+  description: A comfortable longcoat with armored plate inserts in Central Command green.
+  components:
+    - type: Sprite
+      sprite: _Floof/Clothing/OuterClothing/Coats/centcomm.rsi
+    - type: Clothing
+      sprite: _Floof/Clothing/OuterClothing/Coats/centcomm.rsi
+    - type: Armor
+      modifiers:
+        coefficients:
+          Blunt: 0.6
+          Slash: 0.6
+          Piercing: 0.6
+          Heat: 0.6
+          Cold: 0.7
+      
+- type: entity
+  parent: [ClothingOuterStorageBase, ClothingOuterColdBase, BaseCommandContraband]
+  id: ClothingOuterCoatLongCE
+  name: chief engineer's longcoat
+  description: A comfortable longcoat with a tech-punk theme.
+  components:
+    - type: Sprite
+      sprite: _Floof/Clothing/OuterClothing/Coats/chief-engineer.rsi
+    - type: Clothing
+      sprite: _Floof/Clothing/OuterClothing/Coats/chief-engineer.rsi
+      
+- type: entity
+  parent: [ClothingOuterStorageBase, ClothingOuterColdBase, BaseCommandContraband]
+  id: ClothingOuterCoatLongCMO
+  name: chief medical officer's longcoat
+  description: A comfortable sterilised longcoat in blue.
+  components:
+    - type: Sprite
+      sprite: _Floof/Clothing/OuterClothing/Coats/chief-medical-officer.rsi
+    - type: Clothing
+      sprite: _Floof/Clothing/OuterClothing/Coats/chief-medical-officer.rsi
+    - type: ZombificationResistance
+      zombificationResistanceCoefficient: 0.75
+      
+- type: entity
+  parent: [ClothingOuterStorageBase, ClothingOuterColdBase, BaseSecurityContraband]
+  id: ClothingOuterCoatLongDetective
+  name: detective's armored longcoat
+  description: A comfortable brown longcoat with armored plate inserts and security red armbands.
+  components:
+    - type: Sprite
+      sprite: _Floof/Clothing/OuterClothing/Coats/detective.rsi
+    - type: Clothing
+      sprite: _Floof/Clothing/OuterClothing/Coats/detective.rsi
+    - type: Armor
+      modifiers:
+        coefficients:
+          Blunt: 0.8
+          Slash: 0.8
+          Piercing: 0.7
+          Heat: 0.8
+          Cold: 0.8
+      
+- type: entity
+  parent: [ClothingOuterStorageBase, ClothingOuterColdBase, BaseCommandContraband]
+  id: ClothingOuterCoatLongHoP
+  name: head of personnel's longcoat
+  description: A comfortable longcoat in bureaucratic red and blue.
+  components:
+    - type: Sprite
+      sprite: _Floof/Clothing/OuterClothing/Coats/head-of-personnel.rsi
+    - type: Clothing
+      sprite: _Floof/Clothing/OuterClothing/Coats/head-of-personnel.rsi
+          
+- type: entity
+  parent: [ClothingOuterStorageBase, ClothingOuterColdBase, BaseCommandContraband]
+  id: ClothingOuterCoatLongQM
+  name: quartermaster's longcoat
+  description: A comfortable brown longcoat with a hi-vis stripe.
+  components:
+    - type: Sprite
+      sprite: _Floof/Clothing/OuterClothing/Coats/logistics-officer.rsi
+    - type: Clothing
+      sprite: _Floof/Clothing/OuterClothing/Coats/logistics-officer.rsi
+      
+- type: entity
+  parent: [ClothingOuterStorageBase, ClothingOuterColdBase, BaseCommandContraband]
+  id: ClothingOuterCoatLongRD
+  name: research director's longcoat
+  description: A lab-colored longcoat with a purple trim.
+  components:
+    - type: Sprite
+      sprite: _Floof/Clothing/OuterClothing/Coats/mystagogue.rsi
+    - type: Clothing
+      sprite: _Floof/Clothing/OuterClothing/Coats/mystagogue.rsi
+      
+- type: entity
+  parent: [ClothingOuterStorageBase, ClothingOuterColdBase]
+  id: ClothingOuterCoatLongNanoTrasen
+  name: NanoTrasen longcoat
+  description: Official NanoTrasen merchandise for showing off your corporate support.
+  components:
+    - type: Sprite
+      sprite: _Floof/Clothing/OuterClothing/Coats/nanotrasen.rsi
+    - type: Clothing
+      sprite: _Floof/Clothing/OuterClothing/Coats/nanotrasen.rsi
+      
+# DV stuff
+- type: entity
+  parent: [ClothingOuterStorageBase, ClothingOuterColdBase, BaseEnemyCorporationContraband]
+  id: ClothingOuterCoatCyberSunLab
+  name: CyberSun labcoat
+  description: As the leading innovators in robotics and cyberware, CyberSun's labcoats are more tailored to the computer lab rather than the conventional lab.
+  components:
+    - type: Sprite
+      sprite: DeltaV/Clothing/OuterClothing/Coats/cybersun_lab.rsi
+    - type: Clothing
+      sprite: DeltaV/Clothing/OuterClothing/Coats/cybersun_lab.rsi
+      
+- type: entity
+  parent: [ClothingOuterStorageBase, ClothingOuterColdBase, BaseEnemyCorporationContraband]
+  id: ClothingOuterCoatCyberSunOvercoat
+  name: CyberSun overcoat
+  description: A dark, somewhat intimidating looking coat worn by CyberSun representatives and overseers.
+  components:
+    - type: Sprite
+      sprite: DeltaV/Clothing/OuterClothing/Coats/cybersunovercoat.rsi
+    - type: Clothing
+      sprite: DeltaV/Clothing/OuterClothing/Coats/cybersunovercoat.rsi
+      
+- type: entity
+  parent: [ClothingOuterStorageBase, ClothingOuterColdBase, BaseEnemyCorporationContraband]
+  id: ClothingOuterCoatCyberSunWindbreaker
+  name: CyberSun windbreaker
+  description: A stylish windbreaker typically seen sported by CyberSun's ground testing teams and logistical personnel.
+  components:
+    - type: Sprite
+      sprite: DeltaV/Clothing/OuterClothing/Coats/cybersunwindbreaker.rsi
+    - type: Clothing
+      sprite: DeltaV/Clothing/OuterClothing/Coats/cybersunwindbreaker.rsi
+      
+- type: entity
+  parent: [ClothingOuterBioGeneral, ClothingOuterColdBase, BaseEnemyCorporationContraband]
+  id: ClothingOuterCoatInterdyneChemsuit
+  name: Interdyne chemical suit
+  description: A heavy-duty chemical suit designed to resist spills, prevent contamination in both directions, and scare opposition.
+  components:
+    - type: Sprite
+      sprite: DeltaV/Clothing/OuterClothing/Coats/interdynechemsuit.rsi
+    - type: Clothing
+      sprite: DeltaV/Clothing/OuterClothing/Coats/interdynechemsuit.rsi
+    - type: Armor
+      modifiers:
+        coefficients:
+          Heat: 0.9
+          Cold: 0.9
+          Caustic: 0.5
+      
+- type: entity
+  parent: [ClothingOuterStorageBase, ClothingOuterColdBase, BaseMinorContraband]
+  id: ClothingOuterCoatSyndicateJacket
+  name: Syndicate leather jacket
+  description: It's like a biker jacket but way cooler and way more morally depraved.
+  components:
+    - type: Sprite
+      sprite: DeltaV/Clothing/OuterClothing/Coats/leatherjacket.rsi
+    - type: Clothing
+      sprite: DeltaV/Clothing/OuterClothing/Coats/leatherjacket.rsi
+      
+- type: entity
+  parent: ClothingOuterStorageBase
+  id: ClothingOuterCoatScience
+  name: scientific coat
+  description: You can tell it's scientific because the highlights are in the color of progress.
+  components:
+    - type: Sprite
+      sprite: DeltaV/Clothing/OuterClothing/Coats/epicoat.rsi
+    - type: Clothing
+      sprite: DeltaV/Clothing/OuterClothing/Coats/epicoat.rsi
+      
+- type: entity
+  parent: [ ClothingOuterStorageBase, BaseCommandContraband ]
+  id: ClothingOuterCoatResearchDirector
+  name: research director's coat
+  description: This coat is at least twice as advanced as contemporaries, as indicated by its more than doubled progress colour amount.
+  components:
+    - type: Sprite
+      sprite: DeltaV/Clothing/OuterClothing/Coats/mystacoat.rsi
+    - type: Clothing
+      sprite: DeltaV/Clothing/OuterClothing/Coats/mystacoat.rsi
+      
+- type: entity
+  parent: [ClothingOuterStorageBase, ClothingOuterColdBase]
+  id: ClothingOuterCoatGreatWestern
+  name: aged greatcoat
+  description: There's two kinds of people in this world, partner.
+  components:
+    - type: Sprite
+      sprite: DeltaV/Clothing/OuterClothing/Coats/greatcoat.rsi
+    - type: Clothing
+      sprite: DeltaV/Clothing/OuterClothing/Coats/greatcoat.rsi
+      
+- type: entity
+  parent: [ClothingOuterStorageBase, ClothingOuterColdBase]
+  id: ClothingOuterCoatMatrix
+  name: dark overcoat
+  description: I can only show you the door. You have to walk through it.
+  components:
+    - type: Sprite
+      sprite: DeltaV/Clothing/OuterClothing/Coats/overcoat.rsi
+    - type: Clothing
+      sprite: DeltaV/Clothing/OuterClothing/Coats/overcoat.rsi
+      
+- type: entity
+  parent: [ ClothingOuterStorageBase, ClothingOuterColdBase, BaseCommandContraband ]
+  id: ClothingOuterCoatHoPTrenchArmored
+  name: armored HoP's formal trenchcoat
+  description: I'm under attack!! Someone help me!! Help!! Help!!
+  components:
+    - type: Sprite
+      sprite: DeltaV/Clothing/OuterClothing/Coats/hop.rsi
+    - type: Clothing
+      sprite: DeltaV/Clothing/OuterClothing/Coats/hop.rsi
+    - type: Armor
+      modifiers:
+        coefficients:
+          Blunt: 0.7
+          Slash: 0.7
+          Piercing: 0.7
+          Heat: 0.7

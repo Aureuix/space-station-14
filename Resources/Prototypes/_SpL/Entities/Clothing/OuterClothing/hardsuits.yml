@@ -70,7 +70,127 @@
   - type: StaticPrice
     price: 5000
     
-# Elite ERT suit
+- type: entity
+  parent: ClothingOuterHardsuitSecurity
+  id: ClothingOuterHardsuitDetective
+  name: detective hardsuit
+  description: A standard issue security suit with armour plating cut down in favour of a stylish trenchcoat and hat.
+  components:
+    - type: Sprite
+      sprite: _Goobstation/Clothing/OuterClothing/Hardsuits/detective.rsi
+    - type: Clothing
+      sprite: _Goobstation/Clothing/OuterClothing/Hardsuits/detective.rsi
+    - type: Armor
+      modifiers:
+        coefficients:
+          Blunt: 0.7
+          Slash: 0.7
+          Piercing: 0.6
+          Heat: 0.7
+          Caustic: 0.7
+      staminaModifier: 0.7
+    - type: ClothingSpeedModifier
+      walkModifier: 0.8
+      sprintModifier: 0.8
+    - type: ToggleableClothing
+      clothingPrototype: ClothingHeadHelmetHardsuitDetective
+    - type: StealTarget 
+      stealGroup: BrigmedicHardsuit
+      
+- type: entity
+  parent: [ ClothingOuterHardsuitBase, AllowSuitStorageClothing, BaseToggleClothing, BaseUnknownContraband ]
+  id: ClothingOuterHardsuitVoxRaider
+  name: ARK infiltration suit
+  description: A strange, lightweight and ominous looking hardsuit with camoflauging capabilities. It seems fitted specifically to vox proportions.
+  components:
+    - type: Sprite
+      sprite: _Goobstation/Clothing/OuterClothing/Hardsuits/vox-raiders-stealth.rsi
+    - type: Clothing
+    - type: Item
+      size: Huge
+      sprite: _Goobstation/Clothing/OuterClothing/Hardsuits/vox-raiders-stealth.rsi
+    - type: PressureProtection
+      highPressureMultiplier: 0.525
+      lowPressureMultiplier: 10000
+    - type: ClothingSpeedModifier
+      walkModifier: 1
+      sprintModifier: 1
+    - type: Pierceable
+      level: Metal
+    - type: Armor
+      modifiers:
+        coefficients:
+          Blunt: 0.7
+          Slash: 0.7
+          Piercing: 0.6
+          Heat: 0.6
+          Radiation: 0.6
+          Caustic: 0.6
+      staminaModifier: 0.3
+    - type: ExplosionResistance
+      damageCoefficient: 0.5
+    - type: ToggleClothing
+      action: ActionTogglePhaseCloak
+      disableOnUnequip: true
+    - type: ComponentToggler
+      parent: true
+      components:
+        - type: Stealth
+          minVisibility: 0.15
+          maxVisibility: 0.15
+          lastVisibility: 0.15
+    - type: PowerCellDraw
+      drawRate: 10
+    - type: ToggleCellDraw
+    - type: PowerCellSlot
+      cellSlotId: cell_slot
+      fitsInCharger: false
+    - type: ContainerContainer
+      containers:
+        cell_slot: !type:ContainerSlot
+        toggleable-clothing: !type:ContainerSlot
+    - type: ItemSlots
+      slots:
+        cell_slot:
+          name: power-cell-slot-component-slot-name-default
+          startingItem: PowerCellAntiqueProto
+          disableEject: true
+          swap: false
+          whitelist:
+            tags:
+              - PowerCell
+    - type: ToggleableClothing
+      clothingPrototype: ClothingHeadHelmetHardsuitVoxRaider
+    - type: Tag
+      tags:
+        - Hardsuit
+        - CorgiWearable
+      
+- type: entity
+  parent: [ ClothingOuterHardsuitBase, BaseGSLOwnedContraband ]
+  id: ClothingOuterHardsuitGSLSpatio
+  name: VI-037M spationaut hardsuit
+  description: A lightweight hardsuit designed for industrial EVA in zero gravity. This is a premium model issued to GSL employees as part of a general contract with Vulkan Industriess.
+  components:
+    - type: Sprite
+      sprite: _Goobstation/Clothing/OuterClothing/Hardsuits/spatio.rsi
+    - type: Clothing
+      sprite: _Goobstation/Clothing/OuterClothing/Hardsuits/spatio.rsi
+    - type: Armor
+      modifiers:
+        coefficients:
+          Blunt: 0.9
+          Slash: 0.9
+          Piercing: 0.9
+          Radiation: 0.3
+          Caustic: 0.8
+    - type: ClothingSpeedModifier
+      walkModifier: 0.9
+      sprintModifier: 0.9
+    - type: ToggleableClothing
+      clothingPrototype: ClothingHeadHelmetHardsuitGSLSpatio
+
+# Elite ERT suits
 - type: entity
   parent: [ ClothingOuterHardsuitBase, BaseCentcommContraband ]
   id: ClothingOuterHardsuitSVSElite
@@ -125,7 +245,6 @@
     - type: Tag
       tags:
         - Hardsuit
-      
       
 - type: entity
   parent: ClothingOuterHardsuitSVSElite

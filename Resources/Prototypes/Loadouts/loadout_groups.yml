@@ -200,6 +200,7 @@
   - CaptainHead
   - CaptainCap
   - CapBeret # Starlight
+  - CaptainCavalier # SpL
 
 - type: loadoutGroup
   id: CaptainJumpsuit
@@ -212,6 +213,8 @@
   - CapTurtleneckJumpskirt
   - CapTurtleneckJumpsuit
   - CaptainJumpsuitNoble #starlight
+  - CaptainAgedSuit # SpL
+  - CaptainAgedSkirt # SpL
 
 - type: loadoutGroup
   id: CaptainNeck
@@ -219,10 +222,13 @@
   minLimit: 0
   loadouts:
   - CaptainCloak
-  - CaptainCloakFormal
   - CaptainMantle
+  - CaptainCloakFormal
   - CapHalfCloak # SpL
   - CaptainBoatCloak #DeltaV
+  - CapAgedCloak # SpL
+  - CapAgedMantle # SpL
+  - CapVeteranCloak # SpL
 
 - type: loadoutGroup
   id: CaptainBackpack
@@ -241,6 +247,9 @@
   loadouts:
   - CaptainOuterClothing
   - CaptainWintercoat
+  - LongcoatCaptain # SpL
+  - TrenchcoatCaptain # SpL
+  - ArcticCoatCaptain # SpL
 
 - type: loadoutGroup
   id: CaptainEyewear
@@ -283,6 +292,10 @@
   - HoPTurtleneckJumpskirt # afterlight
   - HopFormalSuit # DeltaV
   - HopFormalSkirt # DeltaV
+  - HoPInformalSuit # SpL
+  - HoPInformalSkirt # SpL
+  - HoPAgedSuit # SpL
+  - HoPAgedSkirt # SpL
 
 - type: loadoutGroup
   id: HoPNeck
@@ -292,6 +305,9 @@
   - HoPCloak
   - HoPMantle
   - HopCloakFormal # DeltaV
+  - HoPFormalMantle # SpL
+  - HoPAgedCloak # SpL
+  - HoPAgedMantle # SpL
 
 - type: loadoutGroup
   id: HoPBackpack
@@ -309,6 +325,8 @@
   minLimit: 0
   loadouts:
   - HoPWintercoat
+  - LongcoatHop # SpL
+  - TrenchcoatHop # SpL
 
 - type: loadoutGroup
   id: HoPJobTrinkets
@@ -503,6 +521,7 @@
   - ChefJumpskirt
   - MaidOutfit # Starlight
   - ChefJumpsuitSenior # Starlight
+  - ChefKimono # SpL
 
 
 - type: loadoutGroup
@@ -700,6 +719,7 @@
   loadouts:
   - BotanistHead
   - BotanistBandana
+  - BotanistBeret # SpL
 
 - type: loadoutGroup
   id: BotanistJumpsuit
@@ -726,6 +746,7 @@
   loadouts:
   - BotanistApron
   - BotanistWintercoat
+  - BotanistBomber # SpL
 
 - type: loadoutGroup
   id: BotanistJobTrinkets
@@ -815,6 +836,8 @@
   - MimeHead
   - MimeFrenchBeret
   - MimeCap
+  - MimeTassledBeretBlack # SpL
+  - MimeTassledBeretWhite # SpL
 
 - type: loadoutGroup
   id: MimeMask
@@ -847,6 +870,8 @@
   minLimit: 0
   loadouts:
   - MimeWintercoat
+  - MimeFur # SpL
+  - MimeLong # SpL
 
 - type: loadoutGroup
   id: MimeBelt
@@ -890,6 +915,7 @@
   minLimit: 0
   loadouts:
   - MusicianWintercoat
+  - MusicianBomber # SpL
 
 - type: loadoutGroup
   id: Instruments
@@ -942,6 +968,7 @@
   loadouts:
   - QuartermasterHead
   - QuartermasterBeret
+  - QuartermasterHat # SpL
 
 - type: loadoutGroup
   id: QuartermasterJumpsuit
@@ -953,6 +980,8 @@
   - QuartermasterTurtleneckSkirt
   - QuartermasterFormalSuit
   - QuartermasterFormalSkirt # DeltaV
+  - QMAgedSuit # SpL
+  - QMAgedSkirt # SpL
 
 - type: loadoutGroup
   id: QuartermasterNeck
@@ -963,6 +992,8 @@
   - QuartermasterMantle
   - QMHalfCloak # SpL
   - QMPauldron # SpL
+  - QMFormalCloak # SpL
+  - QMAgedMantle # SpL
 
 - type: loadoutGroup
   id: QuartermasterOuterClothing
@@ -970,6 +1001,8 @@
   minLimit: 0
   loadouts:
   - QuartermasterWintercoat
+  - LongcoatQM # SpL
+  - QuartermasterBomber # SpL
 
 - type: loadoutGroup
   id: QuartermasterShoes
@@ -1131,6 +1164,10 @@
   loadouts:
   - ChiefEngineerCloak
   - ChiefEngineerMantle
+  - CEFormalCloak # SpL
+  - CEFormalMantle # SpL
+  - CEAgedCloak # SpL
+  - CEAgedMantle # SpL
 
 - type: loadoutGroup
   id: ChiefEngineerOuterClothing
@@ -1138,6 +1175,7 @@
   minLimit: 0
   loadouts:
   - ChiefEngineerWintercoat
+  - LongcoatCE # SpL
 
 - type: loadoutGroup
   id: ChiefEngineerShoes
@@ -1209,6 +1247,7 @@
   loadouts:
   - StationEngineerOuterVest
   - StationEngineerWintercoat
+  - EngineeringBomber # SpL
   - WindbreakerEngineering #Starlight
 
 - type: loadoutGroup
@@ -1300,14 +1339,18 @@
   loadouts:
   - ResearchDirectorBeret
   - ResearchDirectorBeretRD # Starlight
+  - RDTassledBeret # SpL
 
 - type: loadoutGroup
   id: ResearchDirectorNeck
   name: loadout-group-research-director-neck
   minLimit: 0
   loadouts:
-  - ResearchDirectorMantle
   - ResearchDirectorCloak
+  - ResearchDirectorMantle
+  - RDFormalCloak # SpL
+  - RDAgedCloak # SpL
+  - RDAgedMantle # SpL
 
 - type: loadoutGroup
   id: ResearchDirectorJumpsuit
@@ -1325,6 +1368,9 @@
   loadouts:
   - ResearchDirectorLabCoat
   - ResearchDirectorWintercoat
+  - CoatRD # SpL
+  - LongcoatRD # SpL
+  - FurcoatRD # SpL
 
 - type: loadoutGroup
   id: ResearchDirectorShoes
@@ -1394,11 +1440,13 @@
   - RegularLabCoat
   - RegularLabCoatLong # DeltaV
   - ScienceLabCoat
+  - ScienceCoat # SpL
   - ScienceWintercoat
+  - ScienceBomber # SpL
+  - WindbreakerScience #Starlight
   - RoboticistLabCoat
   - RoboticistWintercoat
   - SeniorResearcherLabCoat
-  - WindbreakerScience #Starlight
 
 - type: loadoutGroup
   id: ScientistShoes
@@ -1457,8 +1505,10 @@
   minLimit: 0
   loadouts:
   - HeadofSecurityHead
-  - HeadofSecuritySheriff #Starlight
   - HeadofSecurityBeret
+  - HeadofSecuritySheriff #Starlight
+  - HoSBeretAlt # SpL
+  - HoSCavalier # SpL
 
 - type: loadoutGroup
   id: HeadofSecurityJumpsuit
@@ -1482,13 +1532,16 @@
   name: loadout-group-head-of-security-neck
   minLimit: 0
   loadouts:
-  - ClothingNeckCloakHosVar #STARLIGHT
-  - ClothingNeckCloakHosRetro #STARLIGHT
   - HeadofSecurityCloak
   - HeadofSecurityMantle
-  - HosHalfCloak # SpL
+  - ClothingNeckCloakHosVar #STARLIGHT
+  - ClothingNeckCloakHosRetro #STARLIGHT
+  - HoSHalfCloak # SpL
   - HeadofSecurityBoatCloak #DeltaV
   - HeadofSecurityRobe #DeltaV
+  - HoSPoncho # SpL
+  - HoSAgedCloak # SpL
+  - HoSVeteranMantle # SpL
 
 - type: loadoutGroup
   id: HeadofSecurityOuterClothing
@@ -1498,6 +1551,8 @@
   loadouts:
   - HeadofSecurityCoat
   - HeadofSecurityWinterCoat
+  - HeadOfSecurityWebVest # SpL
+  - HeadOfSecurityWinterFormal # SpL
 
 - type: loadoutGroup
   id: HeadofSecurityJobTrinkets
@@ -1523,6 +1578,12 @@
   - WardenJumpskirt
   - ClothingUniformJumpsuitFormalWarden #starlight
   - ClothingUniformJumpskirtFormalWarden #starlight
+  - SeniorWardenSuit # SpL
+  - SeniorWardenSkirt # SpL
+  - WardenTurtleSuit # SpL
+  - WardenTurtleSkirt # SpL
+  - WardenGreySuit # SpL
+  - WardenGreySkirt # SpL
 
 
 - type: loadoutGroup
@@ -1533,6 +1594,9 @@
   loadouts:
   - WardenCoat
   - WardenArmoredWinterCoat
+  - WardenCoatFormal # SpL
+  - WardenWinterCoatFormal # SpL
+  - WardenGreatcoat # SpL
 
 - type: loadoutGroup
   id: WardenJobTrinkets
@@ -1548,6 +1612,7 @@
   loadouts:
   - SecurityGlasses
   - SecurityHud
+  - VisorSecurity # SpL
   - DetectiveNoirGlasses
   - SecurityGlassesPrescription # Starlight
 
@@ -1602,7 +1667,7 @@
   - BrigmedicLabCoat # Starlight
   - CorpsmanCoat #Starlight
   - CorpsmanLabCoat # Starlight
-  - SecurityOfficerWintercoat
+  - CorpsmanWinter # SpL
 
 - type: loadoutGroup
   id: BrigmedicEyewear
@@ -1611,6 +1676,7 @@
   - BrigmedicGlasses
   - BrigmedicHud
   - BrigmedicEyePatchHud # Starlight
+  - VisorBrigmedic # SpL
   - BrigmeicGlassesPrescription # Starlight
   - CorpsmanGlasses # Starlight
   - CorpsmanHud # Starlight
@@ -1656,6 +1722,7 @@
   - FormalSeniorOfficerJumpsuit
   - FormalSeniorOfficerJumpskirt
   - SecurityTshirt # starlight end
+  - SecurityBlackSuit # SpL
 
 - type: loadoutGroup
   id: SecurityBackpack
@@ -1721,6 +1788,7 @@
   loadouts:
   - DetectiveFedora
   - DetectiveFedoraGrey
+  - DetectiveBeret # SpL
 
 - type: loadoutGroup
   id: DetectiveNeck
@@ -1748,6 +1816,8 @@
   - DetectiveArmorVest
   - DetectiveCoat
   - DetectiveCoatGrey
+  - LongcoatDetective # SpL
+  - DetectiveWinter # SpL
 
 - type: loadoutGroup
   id: DetectiveJobTrinkets
@@ -1817,6 +1887,7 @@
   - ChiefMedicalOfficerLabCoat
   - ChiefMedicalOfficerLabCoatLong # DeltaV
   - ChiefMedicalOfficerWintercoat
+  - LongcoatCMO # SpL
 
 - type: loadoutGroup
   id: ChiefMedicalOfficerNeck
@@ -1827,6 +1898,8 @@
   - ChiefMedicalOfficerMantle
   - ChiefMedicalOfficerShawl # DeltaV
   - ChiefMedicalOfficerOverShoulder # DeltaV
+  - CMOAgedCloak # SpL
+  - CMOAgedMantle # SpL
 
 - type: loadoutGroup
   id: ChiefMedicalOfficerShoes
@@ -1855,6 +1928,7 @@
   loadouts:
   - MedicalBeret
   - SeniorPhysicianBeret
+  - MedicalBeretAlt # SpL
   - MedicalHeadMirror
   - BlueSurgeryCap
   - GreenSurgeryCap
@@ -1874,6 +1948,10 @@
   - MedicalDoctorJumpskirt
   - SeniorPhysicianJumpsuit
   - SeniorPhysicianJumpskirt
+  - MedicalApronSuit # SpL
+  - MedicalApronSkirt # SpL
+  - MedicalOffsetSuit # SpL
+  - MedicalOffsetSkirt # SpL
   - MedicalBlueScrubs
   - MedicalGreenScrubs
   - MedicalPurpleScrubs
@@ -1894,8 +1972,9 @@
   minLimit: 0
   loadouts:
   - RegularLabCoat
-  - MedicalDoctorWintercoat
   - SeniorPhysicianLabCoat
+  - MedicalDoctorWintercoat
+  - MedicalBomber # SpL
   - WindbreakerMedical #Starlight
   - RegularLabCoatLong # DeltaV
   - CoronerLabCoatLong # Starlight
@@ -1973,6 +2052,10 @@
   - ChemistJumpskirt
   - SeniorChemistJumpsuit # Starlight start
   - SeniorChemistJumpskirt # starlight end
+  - ChemistFormalSuit # SpL
+  - ChemistFormalSkirt # SpL
+  - ChemistSeniorFormalSuit # SpL
+  - ChemistSeniorFormalSkirt # SpL
 
 - type: loadoutGroup
   id: ChemistOuterClothing
@@ -2023,6 +2106,8 @@
   - ParamedicJumpskirt
   - SeniorParamedicJumpsuit # Starlight start
   - SeniorParamedicJumpskirt # starlight end
+  - ParamedicJumperSuit # SpL
+  - ParamedicJumperSkirt # SpL
 
 - type: loadoutGroup #Starlight start
   id: ParamedicPDA
@@ -2109,6 +2194,8 @@
   loadouts:
   - PsychologistJumpsuit
   - PsychologistJumpskirt
+  - PsychologistVestSuit # SpL
+  - PsychologistVestSkirt # SpL
 
 - type: loadoutGroup
   id: PsychologistJobTrinkets

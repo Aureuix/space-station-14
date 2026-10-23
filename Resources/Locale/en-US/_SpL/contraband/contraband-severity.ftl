@@ -1,3 +1,5 @@
 ﻿contraband-examine-text-gsl = [color=cyan]This item is GSL property! Taking it off station may result in legal action![/color]
 contraband-examine-text-gsl-owned = [color=cyan]This item is GSL property! Possessing or tampering with this will likely result in legal action![/color]
+contraband-examine-text-unknown = [color=#6d3cc1]The legal status of this item is unknown.[/color]
+contraband-examine-text-enemy-corporation = [color=#ae6400]This item belongs to an enemy corporation. Whether it qualifies as contraband is dependent on the situation.[/color]
 contraband-examine-text-illuminate = [color=orange]This is Illuminate equipment! While not illegal, use by non-Illuminate personnel is VERY suspicious.[/color]

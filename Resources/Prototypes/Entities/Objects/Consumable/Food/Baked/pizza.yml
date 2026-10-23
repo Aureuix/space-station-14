@@ -245,7 +245,7 @@
 
 - type: entity
   name: donk-pocket pizza
-  parent: FoodPizzaBase
+  parent: [FoodPizzaBase, BaseEnemyCorporationContraband] # SpL- enemy corp 
   id: FoodPizzaDonkpocket
   description: Who thought this would be a good idea?
   components:

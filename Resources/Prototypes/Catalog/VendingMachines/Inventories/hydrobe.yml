@@ -12,6 +12,8 @@
     ClothingUniformJumpskirtServiceWorkerBotany: 1 # Starlight
     ClothingNeckScarfStripedGreen: 3
     ClothingHeadBandBotany: 3
+    ClothingHeadHatTrucker: 3 # SpL
+    ClothingHeadHatBeretBotany: 3 # SpL
     ClothingHeadsetService: 2
     ClothingOuterWinterHydro: 2
   contrabandInventory:

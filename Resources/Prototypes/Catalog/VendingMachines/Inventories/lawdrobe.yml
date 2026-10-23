@@ -24,6 +24,7 @@
   contrabandInventory:
     ClothingOuterRobesJudge: 1
     ClothingHeadHatPwig: 1
+    ClothingUniformJumpsuitCyberSunLawyer: 1 # SpL
     # "Legally" obtained currency
     SpaceCash100: 2
     ToyFigurineLawyer: 1

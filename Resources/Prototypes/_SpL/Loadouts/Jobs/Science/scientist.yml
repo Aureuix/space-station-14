@@ -5,3 +5,13 @@
   effects:
     - !type:GroupLoadoutEffect
       proto: MasterRD
+      
+- type: loadout
+  id: ScienceCoat
+  equipment:
+    outerClothing: ClothingOuterCoatScience
+    
+- type: loadout
+  id: ScienceBomber
+  equipment:
+    outerClothing: ClothingOuterBomberScience
