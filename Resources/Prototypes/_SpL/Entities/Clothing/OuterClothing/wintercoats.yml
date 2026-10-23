@@ -73,7 +73,7 @@
       sprite: DeltaV/Clothing/OuterClothing/WinterCoats/armourergreatcoat.rsi
       
 - type: entity
-  parent: [ ClothingOuterStorageFoldableBaseOpened, ClothingOuterCoatWardenWinterFormal ]
+  parent: [ ClothingOuterStorageFoldableBaseOpened, ClothingOuterWinterWardenGreatcoat ]
   id: ClothingOuterWinterWardenGreatcoatOpened
   name: warden's armored greatcoat
 

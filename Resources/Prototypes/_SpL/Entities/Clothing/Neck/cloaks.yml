@@ -183,7 +183,7 @@
   description: A well-worn cloak in faded blue. Despite its age, the gold trim shines brighter than ever.
   components:
     - type: Sprite
-      sprite: _Goobstation/Clothing/Neck/Cloaks/hop.rsi
+      sprite: _Goobstation/Clothing/Neck/Cloaks/cap.rsi
     - type: StealTarget
       stealGroup: HeadCloak
     - type: Tag

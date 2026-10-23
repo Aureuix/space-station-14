@@ -202,7 +202,7 @@
   description: A pompous and elite green mantle with a nice gold trim, tailored specifically to the Central Commander. It's so heavy, the gold trim might be real.
   components:
     - type: Sprite
-      sprite: DeltaV/Clothing/Neck/Cloaks/centcommantle.rsi
+      sprite: DeltaV/Clothing/Neck/Mantles/centcommantle.rsi
 
 - type: entity
   parent: [ClothingNeckBase, BaseCentcommContraband]

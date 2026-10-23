@@ -292,10 +292,10 @@
   - HoPTurtleneckJumpskirt # afterlight
   - HopFormalSuit # DeltaV
   - HopFormalSkirt # DeltaV
-  - HoPAgedSuit # SpL
-  - HoPAgedSkirt # SpL
   - HoPInformalSuit # SpL
   - HoPInformalSkirt # SpL
+  - HoPAgedSuit # SpL
+  - HoPAgedSkirt # SpL
 
 - type: loadoutGroup
   id: HoPNeck
