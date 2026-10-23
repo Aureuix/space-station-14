@@ -79,7 +79,7 @@
       
 - type: entity
   parent: [ClothingUniformBase, BaseCommandContraband]
-  id: ClothingUniformJumpsuitHoPInformal
+  id: ClothingUniformJumpskirtHoPInformal
   name: informal head of personnel jumpskirt
   description: A standard head of personnel's uniform with a skirt and no jacket.
   components:

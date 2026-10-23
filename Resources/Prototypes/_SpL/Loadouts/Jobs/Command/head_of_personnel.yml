@@ -17,7 +17,7 @@
 - type: loadout
   id: HoPInformalSkirt
   equipment:
-    jumpsuit: ClothingUniformJumpsuitHoPInformal
+    jumpsuit: ClothingUniformJumpskirtHoPInformal
 
 # Outer
 - type: loadout
