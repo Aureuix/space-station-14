@@ -63,11 +63,6 @@
             "name": "equipped-HELMET-vulpkanin",
             "copyright": "A custom item by AftrLite (Github), sprites for vulps feroxis and harpies made by HTMLSystem (AftrLite edited the harpy one too)",
             "directions": 4
-        },
-        {
-            "name": "equipped-HELMET-feroxi",
-            "copyright": "A custom item by AftrLite (Github), sprites for vulps feroxis and harpies made by HTMLSystem (AftrLite edited the harpy one too)",
-            "directions": 4
         }
     ]
 }
