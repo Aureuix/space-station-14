@@ -13,6 +13,7 @@
     - FullAuto
     soundGunshot:
       path: /Audio/Weapons/Guns/Gunshots/gun_sentry.ogg
+    showExamineText: false # SpL
 
 - type: entity
   parent: BaseWeaponBallisticTurret
@@ -44,6 +45,7 @@
     availableModes:
     - FullAuto
     soundGunshot: /Audio/Weapons/Guns/Gunshots/gun_sentry.ogg
+    showExamineText: false # SpL
   - type: BallisticAmmoProvider
     proto: CartridgePistolFMJ
     capacity: 50

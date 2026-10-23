@@ -34,6 +34,7 @@
   - type: Gun
     fireRate: 2
     selectedMode: FullAuto
+    showExamineText: false # SpL
     availableModes:
     - FullAuto
     soundGunshot: /Audio/Weapons/Guns/Gunshots/gun_sentry.ogg
@@ -105,6 +106,7 @@
     fireRate: 1
     selectedMode: FullAuto
     soundGunshot: /Audio/Weapons/Xeno/alien_spitacid.ogg
+    showExamineText: false # SpL
   - type: HTN
     rootTask:
       task: TurretCompound

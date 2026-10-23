@@ -31,6 +31,7 @@ public sealed class MindExamineSystem : EntitySystem
         SubscribeLocalEvent<MindExaminableComponent, MindRemovedMessage>((e, ref _) => RefreshMindStatus(e.AsNullable()));
         SubscribeLocalEvent<MindExaminableComponent, MobStateChangedEvent>((e, ref _) => RefreshMindStatus(e.AsNullable()));
         SubscribeLocalEvent<MindExaminableComponent, MindUserIdChangedEvent>((e, ref _) => RefreshMindStatus(e.AsNullable())); // Starlight
+        
 
         SubscribeLocalEvent<PlayerAttachedEvent>(OnPlayerAttached);
         SubscribeLocalEvent<PlayerDetachedEvent>(OnPlayerDetached);
@@ -39,6 +40,9 @@ public sealed class MindExamineSystem : EntitySystem
     private void OnExamined(Entity<MindExaminableComponent> ent, ref ExaminedEvent args)
     {
         if (!args.IsInDetailsRange)
+            return;
+        
+        if (ent.Comp.HideExaminable) // SpL start
             return;
 
         // Starlight Start

@@ -5,8 +5,6 @@
   name: box of playing cards
   suffix: black
   components:
-  - type: Item # SpL- dunno why it's gigantic but a double proto specification surely would do the trick
-    size: Small # SpL
   - type: Sprite
     sprite: _Moffstation/Objects/Misc/Cards/card_black.rsi
   - type: ContainerFill
@@ -35,8 +33,6 @@
   name: box of playing cards
   suffix: syndicate
   components:
-  - type: Item # SpL- dunno why it's gigantic but a double proto specification surely would do the trick
-    size: Small # SpL
   - type: Sprite
     sprite: _Moffstation/Objects/Misc/Cards/card_syndicate.rsi
   - type: ContainerFill
@@ -65,8 +61,6 @@
   name: box of playing cards
   suffix: nanotrasen
   components:
-  - type: Item # SpL- dunno why it's gigantic but a double proto specification surely would do the trick
-    size: Small # SpL
   - type: Sprite
     sprite: _Moffstation/Objects/Misc/Cards/card_nanotrasen.rsi
   - type: ContainerFill

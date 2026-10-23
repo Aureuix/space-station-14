@@ -52,7 +52,7 @@
       sprite: _SpL/Objects/Fun/Pillows/pillow_donut.rsi
 
 - type: entity
-  parent: BasePillow
+  parent: BasePlushie
   id: PillowNeck
   name: neck pillow
   description: Great for long trips!

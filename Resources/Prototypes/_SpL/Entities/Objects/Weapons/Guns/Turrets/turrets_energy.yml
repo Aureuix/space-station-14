@@ -14,6 +14,7 @@
         - FullAuto
       soundGunshot:
         path: /Audio/Weapons/Guns/Gunshots/laser3.ogg
+      showExamineText: false
     - type: BatteryAmmoProvider
       proto: SniperBolt
       fireCost: 100
