@@ -1,4 +1,9 @@
 ﻿- type: loadout
+  id: SecurityBlackSuit
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitSecurityBlack
+
+- type: loadout
   id: VisorSecurity
   equipment:
     eyes: VisorSecurity

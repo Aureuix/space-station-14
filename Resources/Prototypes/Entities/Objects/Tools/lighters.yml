@@ -418,7 +418,7 @@
         maxVol: 3
 
 - type: entity
-  parent: [BaseBrandedLighter, FlippoLighter] #SL Edit: added flippolighter parent
+  parent: [BaseBrandedLighter, FlippoLighter, BaseEnemyCorporationContraband] #SL Edit: added flippolighter parent # SpL enemy corpo
   id: CybersunFlippo
   name: CyberSun flippo # Starlight-edit
   description: "A Sleek black and magenta flippo lighter, bearing the logo and iconography of CyberSun Industries."
@@ -438,7 +438,7 @@
     color: magenta
 
 - type: entity
-  parent: [BaseBrandedLighter, FlippoLighter] #SL Edit: added flippolighter parent
+  parent: [BaseBrandedLighter, FlippoLighter, BaseEnemyCorporationContraband] #SL Edit: added flippolighter parent # SpL enemy corpo
   id: InterdyneFlippo
   name: Interdyne flippo # Starlight-edit
   description: "A deep blue flippo lighter, decorated with the logo of Interdyne Pharmaceuticals' 'Gene Clean' clinics. Become the master of your own cigarette."
@@ -565,7 +565,7 @@
     color: green
 
 - type: entity
-  parent: [BaseBrandedLighter, FlippoLighter] #SL Edit: added flippolighter parent
+  parent: [BaseBrandedLighter, FlippoLighter, BaseEnemyCorporationContraband] #SL Edit: added flippolighter parent # SpL enemy corp
   id: WaffleCoFlippo
   name: Waffle Corp flippo # SpL- ITS CORP
   description: "A robust mass produced lighter. The Waffle Corp logo turns the spark wheel when pushed up, minimising risk of lighter burns for even the most inept user."
@@ -585,7 +585,7 @@
     color: brown
 
 - type: entity
-  parent: [BaseBrandedLighter, FlippoLighter] #SL Edit: added flippolighter parent
+  parent: [BaseBrandedLighter, FlippoLighter, BaseEnemyCorporationContraband] #SL Edit: added flippolighter parent # SpL enemy corp
   id: HonkCoFlippo
   name: Honk Co. flippo
   description: "A slippery gag lighter produced by Honk Co. hidden inside of a real banana peel."
@@ -630,7 +630,7 @@
     color: yellow
 
 - type: entity
-  parent: [BaseBrandedLighter, FlippoLighter] #SL Edit: added flippolighter parent
+  parent: [BaseBrandedLighter, FlippoLighter, BaseEnemyCorporationContraband] #SL Edit: added flippolighter parent # SpL enemy corp
   id: DonkcoLighter
   name: Donk Co. flippo
   description: "The flippo of choice for terrible cooks. A Breaded novelty lighter made by Donk Co. Somehow edible while lit." #SL Edit: decription edit to remove 'traitor' reference

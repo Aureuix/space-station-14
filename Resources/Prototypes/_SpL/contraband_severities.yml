@@ -11,5 +11,9 @@
   examineText: contraband-examine-text-illuminate
   
 - type: contrabandSeverity
+  id: EnemyCorporation
+  examineText: contraband-examine-text-enemy-corporation
+  
+- type: contrabandSeverity
   id: Unknown
   examineText: contraband-examine-text-unknown

@@ -1,8 +1,41 @@
-﻿- type: loadout
+﻿# Inner
+- type: loadout
+  id: SeniorWardenSuit
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitSeniorWarden
+
+- type: loadout
+  id: SeniorWardenSkirt
+  equipment:
+    jumpsuit: ClothingUniformJumpskirtSeniorWarden
+      
+- type: loadout
+  id: WardenTurtleSuit
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitWardenTurtle
+
+- type: loadout
+  id: WardenTurtleSkirt
+  equipment:
+    jumpsuit: ClothingUniformJumpskirtWardenTurtle
+      
+- type: loadout
+  id: WardenGreySuit
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitWardenGrey
+      
+- type: loadout
+  id: WardenGreySkirt
+  equipment:
+    jumpsuit: ClothingUniformJumpskirtWardenGrey
+
+# Outer
+- type: loadout
   id: FormalCoatWarden
   equipment:
     outerClothing: ClothingOuterCoatWardenFormal
 
+# Neck
 - type: loadout
   id: WardenHalfCloak
   equipment:

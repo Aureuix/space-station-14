@@ -18,10 +18,10 @@
       sprite: DeltaV/Clothing/Head/Hats/surgcap_cyan.rsi
 
 - type: entity
-  parent: ClothingHeadBase
+  parent: [ ClothingHeadBase, BaseEnemyCorporationContraband ] # SpL
   id: ClothingHeadHatSurgcapCybersun
-  name: cybersun surgical cap
-  description: A cybersun themed cap surgeons wear during operations. Keeps their hair from tickling your internal organs.
+  name: CyberSun surgical cap
+  description: A CyberSun themed cap surgeons wear during operations. Keeps their hair from tickling your internal organs.
   components:
     - type: Sprite
       sprite: DeltaV/Clothing/Head/Hats/surgcap_cybersun.rsi

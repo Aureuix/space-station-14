@@ -1,4 +1,15 @@
-﻿# Hats
+﻿# Inner
+- type: loadout
+  id: CaptainAgedSuit
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitCaptainAged
+  
+- type: loadout
+  id: CaptainAgedSkirt
+  equipment:
+    jumpsuit: ClothingUniformJumpskirtCaptainAged
+
+# Hats
 - type: loadout
   id: CaptainCavalier
   equipment:

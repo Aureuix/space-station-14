@@ -213,6 +213,8 @@
   - CapTurtleneckJumpskirt
   - CapTurtleneckJumpsuit
   - CaptainJumpsuitNoble #starlight
+  - CaptainAgedSuit # SpL
+  - CaptainAgedSkirt # SpL
 
 - type: loadoutGroup
   id: CaptainNeck
@@ -287,6 +289,10 @@
   - HoPTurtleneckJumpskirt # afterlight
   - HopFormalSuit # DeltaV
   - HopFormalSkirt # DeltaV
+  - HoPAgedSuit # SpL
+  - HoPAgedSkirt # SpL
+  - HoPInformalSuit # SpL
+  - HoPInformalSkirt # SpL
 
 - type: loadoutGroup
   id: HoPNeck
@@ -509,6 +515,7 @@
   - ChefJumpskirt
   - MaidOutfit # Starlight
   - ChefJumpsuitSenior # Starlight
+  - ChefKimono # SpL
 
 
 - type: loadoutGroup
@@ -963,6 +970,8 @@
   - QuartermasterTurtleneckSkirt
   - QuartermasterFormalSuit
   - QuartermasterFormalSkirt # DeltaV
+  - QMAgedSuit # SpL
+  - QMAgedSkirt # SpL
 
 - type: loadoutGroup
   id: QuartermasterNeck
@@ -1541,6 +1550,12 @@
   - WardenJumpskirt
   - ClothingUniformJumpsuitFormalWarden #starlight
   - ClothingUniformJumpskirtFormalWarden #starlight
+  - SeniorWardenSuit # SpL
+  - SeniorWardenSkirt # SpL
+  - WardenTurtleSuit # SpL
+  - WardenTurtleSkirt # SpL
+  - WardenGreySuit # SpL
+  - WardenGreySkirt # SpL
 
 
 - type: loadoutGroup
@@ -1677,6 +1692,7 @@
   - FormalSeniorOfficerJumpsuit
   - FormalSeniorOfficerJumpskirt
   - SecurityTshirt # starlight end
+  - SecurityBlackSuit # SpL
 
 - type: loadoutGroup
   id: SecurityBackpack
@@ -1899,6 +1915,10 @@
   - MedicalDoctorJumpskirt
   - SeniorPhysicianJumpsuit
   - SeniorPhysicianJumpskirt
+  - MedicalApronSuit # SpL
+  - MedicalApronSkirt # SpL
+  - MedicalOffsetSuit # SpL
+  - MedicalOffsetSkirt # SpL
   - MedicalBlueScrubs
   - MedicalGreenScrubs
   - MedicalPurpleScrubs
@@ -1998,6 +2018,10 @@
   - ChemistJumpskirt
   - SeniorChemistJumpsuit # Starlight start
   - SeniorChemistJumpskirt # starlight end
+  - ChemistFormalSuit # SpL
+  - ChemistFormalSkirt # SpL
+  - ChemistSeniorFormalSuit # SpL
+  - ChemistSeniorFormalSkirt # SpL
 
 - type: loadoutGroup
   id: ChemistOuterClothing
@@ -2048,6 +2072,8 @@
   - ParamedicJumpskirt
   - SeniorParamedicJumpsuit # Starlight start
   - SeniorParamedicJumpskirt # starlight end
+  - ParamedicJumperSuit # SpL
+  - ParamedicJumperSkirt # SpL
 
 - type: loadoutGroup #Starlight start
   id: ParamedicPDA
@@ -2134,6 +2160,8 @@
   loadouts:
   - PsychologistJumpsuit
   - PsychologistJumpskirt
+  - PsychologistVestSuit # SpL
+  - PsychologistVestSkirt # SpL
 
 - type: loadoutGroup
   id: PsychologistJobTrinkets

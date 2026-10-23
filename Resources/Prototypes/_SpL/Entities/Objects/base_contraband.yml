@@ -11,6 +11,13 @@
   components:
     - type: Contraband
       severity: Unknown
+      
+- type: entity
+  id: BaseEnemyCorporationContraband
+  abstract: true
+  components:
+    - type: Contraband
+      severity: EnemyCorporation
     
 - type: entity
   id: BaseGSLOwnedContraband

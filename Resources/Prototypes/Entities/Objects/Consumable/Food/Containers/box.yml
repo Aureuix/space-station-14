@@ -348,7 +348,7 @@
 # Donkpocket
 
 - type: entity
-  parent: BoxCardboard
+  parent: [ BoxCardboard, BaseEnemyCorporationContraband ] # SpL- enemy corp
   id: FoodBoxDonkpocket
   name: box of donk-pockets
   description: 'Instructions: Heat in microwave. Product will cool if not eaten within seven minutes.'

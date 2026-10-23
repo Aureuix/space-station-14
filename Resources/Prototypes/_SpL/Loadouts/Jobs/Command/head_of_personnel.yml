@@ -1,4 +1,26 @@
-﻿- type: loadout
+﻿# Inner
+- type: loadout
+  id: HoPAgedSuit
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitHoPAged
+
+- type: loadout
+  id: HoPAgedSkirt
+  equipment:
+    jumpsuit: ClothingUniformJumpskirtHoPAged
+    
+- type: loadout
+  id: HoPInformalSuit
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitHoPCasual
+
+- type: loadout
+  id: HoPInformalSkirt
+  equipment:
+    jumpsuit: ClothingUniformJumpskirtHoPCasual
+
+# Outer
+- type: loadout
   id: LongcoatHop
   equipment:
     outerClothing: ClothingOuterCoatLongHoP

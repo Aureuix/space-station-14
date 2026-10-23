@@ -103,7 +103,7 @@
 - type: entity
   id: DefibrillatorSyndicate
   parent: [ DefibrillatorCompact, BaseSyndicateContraband ]
-  name: interdyne defibrillator
+  name: Interdyne defibrillator # SpL
   description: Doubles as a self-defense weapon against war-crime inclined tiders.
   components:
   - type: Sprite

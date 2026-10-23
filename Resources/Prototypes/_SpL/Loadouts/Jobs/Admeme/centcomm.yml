@@ -83,6 +83,18 @@
   groupBy: "ccstandard"
 
 - type: loadout
+  id: CentCommOfficerSuitBlack
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitCentCommOfficer
+  groupBy: "ccofficer"
+
+- type: loadout
+  id: CentCommOfficerSkiritBlack
+  equipment:
+    jumpsuit: ClothingUniformJumpskirtCentCommOfficer
+  groupBy: "ccofficer"
+
+- type: loadout
   id: CentCommTurtleneck
   equipment:
     jumpsuit: ClothingUniformJumpskirtCentcomOfficer
@@ -92,6 +104,12 @@
   id: CentCommPencilSkirt
   equipment:
     jumpsuit: ClothingUniformJumpskirtPencilCentcomOfficial
+  groupBy: "ccstandard"
+  
+- type: loadout
+  id: CentCommPencilSkirtLong
+  equipment:
+    jumpsuit: ClothingUniformJumpskirtPencilCentComOfficialAlt
   groupBy: "ccstandard"
 
 - type: loadout
@@ -164,6 +182,13 @@
   id: CentCommAgentJumpsuit
   equipment:
     jumpsuit: ClothingUniformJumpsuitCentcomAgent
+    groupBy: "ccagent"
+    
+- type: loadout
+  id: CentCommAgentJumpskirt
+  equipment:
+    jumpsuit: ClothingUniformJumpskirtCentcomAgent
+    groupBy: "ccagent"
 
 - type: loadout
   id: CentCommOfficerSuit

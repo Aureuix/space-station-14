@@ -1,0 +1,9 @@
+﻿- type: loadout
+  id: MagiFormalSuit
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitMagiFormal
+
+- type: loadout
+  id: MagiFormalSkirt
+  equipment:
+    jumpsuit: ClothingUniformJumpskirtMagiFormal

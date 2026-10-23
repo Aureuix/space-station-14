@@ -52,3 +52,346 @@
       sprite: _SpL/Clothing/Uniforms/Jumpsuit/gslcourier.rsi
     - type: Clothing
       sprite: _SpL/Clothing/Uniforms/Jumpsuit/gslcourier.rsi
+      
+# Goob stuff
+- type: entity
+  parent: [ClothingUniformBase, BaseCommandContraband]
+  id: ClothingUniformJumpsuitCaptainAged
+  name: aged captain jumpsuit
+  description: A well-worn jumpsuit in faded blue. In spite of its wear, the gold trim remains timeless as ever.
+  components:
+    - type: Sprite
+      sprite: _Goobstation/Clothing/Uniforms/Jumpsuit/captain.rsi
+    - type: Clothing
+      sprite: _Goobstation/Clothing/Uniforms/Jumpsuit/captain.rsi
+      
+- type: entity
+  parent: [ClothingUniformBase, BaseCommandContraband]
+  id: ClothingUniformJumpsuitQMAged
+  name: aged quartermaster jumpsuit
+  description: A well-worn jumpsuit in faded brown. In spite of its wear, the black insignias remain free of dust.
+  components:
+    - type: Sprite
+      sprite: _Goobstation/Clothing/Uniforms/Jumpsuit/qm.rsi
+    - type: Clothing
+      sprite: _Goobstation/Clothing/Uniforms/Jumpsuit/qm.rsi
+
+- type: entity
+  parent: [ClothingUniformBase, BaseCommandContraband]
+  id: ClothingUniformJumpsuitQMTurtleAged
+  name: aged quartermaster turtleneck
+  description: A well-worn jumpsuit in faded brown. In spite of its wear, the gold insignia remain free of dust.
+  components:
+    - type: Sprite
+      sprite: _Goobstation/Clothing/Uniforms/Jumpsuit/qmturtle.rsi
+    - type: Clothing
+      sprite: _Goobstation/Clothing/Uniforms/Jumpsuit/qmturtle.rsi
+      
+- type: entity
+  parent: [ClothingUniformBase, BaseSecurityContraband]
+  id: ClothingUniformJumpsuitSecurityBlack
+  name: black security jumpsuit
+  description: A featureless black security jumpsuit for edgy officers.
+  components:
+    - type: Sprite
+      sprite: _Goobstation/Clothing/Uniforms/Jumpsuit/security_black.rsi
+    - type: Clothing
+      sprite: _Goobstation/Clothing/Uniforms/Jumpsuit/security_black.rsi
+      
+- type: entity
+  parent: ClothingUniformBase
+  id: ClothingUniformJumpsuitKimonoAlt
+  name: black kimono
+  description: Traditional Japanese clothing.
+  components:
+    - type: Sprite
+      sprite: _Goobstation/Clothing/Uniforms/Jumpsuit/kimono.rsi
+    - type: Clothing
+      sprite: _Goobstation/Clothing/Uniforms/Jumpsuit/kimono.rsi
+      
+- type: entity
+  parent: ClothingUniformBase
+  id: ClothingUniformJumpsuitCasualCaptain
+  name: casual captain jumpsuit
+  description: A markedly informal suit for when you're off the clock.
+  components:
+    - type: Sprite
+      sprite: _Goobstation/Clothing/Uniforms/Jumpsuit/casualshirt_captain.rsi
+    - type: Clothing
+      sprite: _Goobstation/Clothing/Uniforms/Jumpsuit/casualshirt_captain.rsi
+      
+- type: entity
+  parent: ClothingUniformBase
+  id: ClothingUniformJumpsuitCasualHoP
+  name: casual head of personnel jumpsuit
+  description: A markedly informal suit for when you're off the clock.
+  components:
+    - type: Sprite
+      sprite: _Goobstation/Clothing/Uniforms/Jumpsuit/casualshirt_hop.rsi
+    - type: Clothing
+      sprite: _Goobstation/Clothing/Uniforms/Jumpsuit/casualshirt_hop.rsi
+      
+- type: entity
+  parent: ClothingUniformBase
+  id: ClothingUniformJumpsuitCasualHoS
+  name: casual head of security jumpsuit
+  description: A markedly informal suit for when you're off the clock.
+  components:
+    - type: Sprite
+      sprite: _Goobstation/Clothing/Uniforms/Jumpsuit/casualshirt_hos.rsi
+    - type: Clothing
+      sprite: _Goobstation/Clothing/Uniforms/Jumpsuit/casualshirt_hos.rsi
+      
+- type: entity
+  parent: ClothingUniformBase
+  id: ClothingUniformJumpsuitCasualCE
+  name: casual chief engineer jumpsuit
+  description: A markedly informal suit for when you're off the clock.
+  components:
+    - type: Sprite
+      sprite: _Goobstation/Clothing/Uniforms/Jumpsuit/casualshirt_ce.rsi
+    - type: Clothing
+      sprite: _Goobstation/Clothing/Uniforms/Jumpsuit/casualshirt_ce.rsi
+      
+- type: entity
+  parent: ClothingUniformBase
+  id: ClothingUniformJumpsuitCasualQM
+  name: casual quartermaster jumpsuit
+  description: A markedly informal suit for when you're off the clock.
+  components:
+    - type: Sprite
+      sprite: _Goobstation/Clothing/Uniforms/Jumpsuit/casualshirt_qm.rsi
+    - type: Clothing
+      sprite: _Goobstation/Clothing/Uniforms/Jumpsuit/casualshirt_qm.rsi
+      
+- type: entity
+  parent: ClothingUniformBase
+  id: ClothingUniformJumpsuitCasualRD
+  name: casual research director jumpsuit
+  description: A markedly informal suit for when you're off the clock.
+  components:
+    - type: Sprite
+      sprite: _Goobstation/Clothing/Uniforms/Jumpsuit/casualshirt_rd.rsi
+    - type: Clothing
+      sprite: _Goobstation/Clothing/Uniforms/Jumpsuit/casualshirt_rd.rsi
+      
+- type: entity
+  parent: ClothingUniformBase
+  id: ClothingUniformJumpsuitCasualCMO
+  name: casual chief medical officer jumpsui
+  description: A markedly informal suit for when you're off the clock.
+  components:
+    - type: Sprite
+      sprite: _Goobstation/Clothing/Uniforms/Jumpsuit/casualshirt_cmo.rsi
+    - type: Clothing
+      sprite: _Goobstation/Clothing/Uniforms/Jumpsuit/casualshirt_cmo.rsi
+      
+# DV stuff
+- type: entity
+  parent: [ClothingUniformBase, BaseCommandContraband]
+  id: ClothingUniformJumpsuitHoPAged
+  name: aged head of personnel jumpsuit
+  description: A well-worn jumpsuit in faded blue. In spite of its wear, the red highlights remain polished and pristine.
+  components:
+    - type: Sprite
+      sprite: DeltaV/Clothing/Uniforms/Jumpsuit/hop.rsi
+    - type: Clothing
+      sprite: DeltaV/Clothing/Uniforms/Jumpsuit/hop.rsi
+      
+- type: entity
+  parent: [ClothingUniformBase, BaseCommandContraband]
+  id: ClothingUniformJumpsuitHoPCasual
+  name: casual head of personnel jumpsuit
+  description: A standard head of personnel's uniform with jeans and no jacket.
+  components:
+    - type: Sprite
+      sprite: DeltaV/Clothing/Uniforms/Jumpsuit/hopmesskit.rsi
+    - type: Clothing
+      sprite: DeltaV/Clothing/Uniforms/Jumpsuit/hopmesskit.rsi
+
+- type: entity
+  parent: [ClothingUniformBase, BaseSecurityContraband]
+  id: ClothingUniformJumpsuitSeniorWarden
+  name: senior warden jumpsuit
+  description: A warden uniform with a shoulder badge to denote the wearer's seniority.
+  components:
+    - type: Sprite
+      sprite: DeltaV/Clothing/Uniforms/Jumpsuit/armourer.rsi
+    - type: Clothing
+      sprite: DeltaV/Clothing/Uniforms/Jumpsuit/armourer.rsi
+      
+- type: entity
+  parent: [ClothingUniformBase, BaseSecurityContraband]
+  id: ClothingUniformJumpsuitWardenTurtle
+  name: warden turtleneck
+  description: A simple warden's uniform in black and white.
+  components:
+    - type: Sprite
+      sprite: DeltaV/Clothing/Uniforms/Jumpsuit/armourer_alt.rsi
+    - type: Clothing
+      sprite: DeltaV/Clothing/Uniforms/Jumpsuit/armourer_alt.rsi
+      
+- type: entity
+  parent: [ClothingUniformBase, BaseSecurityContraband]
+  id: ClothingUniformJumpsuitWardenGrey
+  name: grey warden jumpsuit
+  description: A tactical relic of years past before NanoTrasen decided it was cheaper to dye the suits red instead of washing out the blood.
+  components:
+    - type: Sprite
+      sprite: DeltaV/Clothing/Uniforms/Jumpsuit/armourer_grey.rsi
+    - type: Clothing
+      sprite: DeltaV/Clothing/Uniforms/Jumpsuit/armourer_grey.rsi
+      
+- type: entity
+  parent: ClothingUniformBase
+  id: ClothingUniformJumpsuitChefKimono
+  name: chef kimono
+  description: A simple kimono for the one who prepares the most exquisite of dishes.
+  components:
+    - type: Sprite
+      sprite: DeltaV/Clothing/Uniforms/Jumpsuit/chef_kimono.rsi
+    - type: Clothing
+      sprite: DeltaV/Clothing/Uniforms/Jumpsuit/chef_kimono.rsi
+      
+- type: entity
+  parent: ClothingUniformBase
+  id: ClothingUniformJumpsuitSeniorChemistFormal
+  name: senior formal chemist jumpsuit
+  description: For the one who dares to use pyrogenics.
+  components:
+    - type: Sprite
+      sprite: DeltaV/Clothing/Uniforms/Jumpsuit/chemistry_senior.rsi
+    - type: Clothing
+      sprite: DeltaV/Clothing/Uniforms/Jumpsuit/chemistry_senior.rsi
+      
+- type: entity
+  parent: ClothingUniformBase
+  id: ClothingUniformJumpsuitChemistFormal
+  name: formal chemist jumpsuit
+  description: Are your diphenhydramine ratios correct?
+  components:
+    - type: Sprite
+      sprite: DeltaV/Clothing/Uniforms/Jumpsuit/chemshirtsuit.rsi
+    - type: Clothing
+      sprite: DeltaV/Clothing/Uniforms/Jumpsuit/chemshirtsuit.rsi
+      
+- type: entity
+  parent: ClothingUniformBase
+  id: ClothingUniformJumpsuitMedicalApron
+  name: medical apron jumpsuit
+  description: A simple sky blue jumpsuit with an apron overlaid.
+  components:
+    - type: Sprite
+      sprite: DeltaV/Clothing/Uniforms/Jumpsuit/medical_apron.rsi
+    - type: Clothing
+      sprite: DeltaV/Clothing/Uniforms/Jumpsuit/medical_apron.rsi
+      
+- type: entity
+  parent: ClothingUniformBase
+  id: ClothingUniformJumpsuitMedicalOffset
+  name: offset medical jumpsuit
+  description: A simple sky blue jumpsuit with stylish offset buttoning.
+  components:
+    - type: Sprite
+      sprite: DeltaV/Clothing/Uniforms/Jumpsuit/medical_offset.rsi
+    - type: Clothing
+      sprite: DeltaV/Clothing/Uniforms/Jumpsuit/medical_offset.rsi
+      
+- type: entity
+  parent: ClothingUniformBase
+  id: ClothingUniformJumpsuitPsychologistVest
+  name: psychologist's vest
+  description: Tell me about how this makes you feel.
+  components:
+    - type: Sprite
+      sprite: DeltaV/Clothing/Uniforms/Jumpsuit/medical_vest.rsi
+    - type: Clothing
+      sprite: DeltaV/Clothing/Uniforms/Jumpsuit/medical_vest.rsi
+      
+- type: entity
+  parent: ClothingUniformBase
+  id: ClothingUniformJumpsuitParamedicJumper
+  name: paramedic jumper
+  description: The cross on it is surely a good sign.
+  components:
+    - type: Sprite
+      sprite: DeltaV/Clothing/Uniforms/Jumpsuit/paramedic_jumper.rsi
+    - type: Clothing
+      sprite: DeltaV/Clothing/Uniforms/Jumpsuit/paramedic_jumper.rsi
+      
+- type: entity
+  parent: [ClothingUniformBase, BaseNanoTrasenContraband]
+  id: ClothingUniformJumpsuitMagiFormal
+  name: formal magistrate jumpsuit
+  description: For showing the order in the court.
+  components:
+    - type: Sprite
+      sprite: DeltaV/Clothing/Uniforms/Jumpsuit/cjformal.rsi
+    - type: Clothing
+      sprite: DeltaV/Clothing/Uniforms/Jumpsuit/cjformal.rsi
+      
+- type: entity
+  parent: [ClothingUniformBase, BaseCentcommContraband]
+  id: ClothingUniformJumpsuitCentCommOfficer
+  name: CentComm officer's jumpsuit
+  description: An ironed black uniform with gold and green highlights.
+  components:
+    - type: Sprite
+      sprite: DeltaV/Clothing/Uniforms/Jumpsuit/centcom_officer.rsi
+    - type: Clothing
+      sprite: DeltaV/Clothing/Uniforms/Jumpsuit/centcom_officer.rsi
+      
+- type: entity
+  parent: [ClothingUniformBase, BaseEnemyCorporationContraband]
+  id: ClothingUniformJumpsuitCyberSunLawyer
+  name: CyberSun legal uniform
+  description: A simple but professional attorney's suit worn by CyberSun's most dangerous assets.
+  components:
+    - type: Sprite
+      sprite: DeltaV/Clothing/Uniforms/Jumpsuit/cybersunattorney.rsi
+    - type: Clothing
+      sprite: DeltaV/Clothing/Uniforms/Jumpsuit/cybersunattorney.rsi
+      
+- type: entity
+  parent: [ClothingUniformBase, BaseEnemyCorporationContraband]
+  id: ClothingUniformJumpsuitCyberSunCasual
+  name: CyberSun casual uniform
+  description: A casual uniform worn by the bulk of CyberSun on-world employees, and some off-world too.
+  components:
+    - type: Sprite
+      sprite: DeltaV/Clothing/Uniforms/Jumpsuit/cybersuncasual.rsi
+    - type: Clothing
+      sprite: DeltaV/Clothing/Uniforms/Jumpsuit/cybersuncasual.rsi
+      
+- type: entity
+  parent: [ClothingUniformBase, BaseEnemyCorporationContraband]
+  id: ClothingUniformJumpsuitCyberSunHazard
+  name: CyberSun hazard uniform
+  description: A uniform with reflective orange highlights, worn by CyberSun engineering and loading personnel.
+  components:
+    - type: Sprite
+      sprite: DeltaV/Clothing/Uniforms/Jumpsuit/cybersunhazard.rsi
+    - type: Clothing
+      sprite: DeltaV/Clothing/Uniforms/Jumpsuit/cybersunhazard.rsi
+      
+- type: entity
+  parent: [ClothingUniformBase, BaseEnemyCorporationContraband]
+  id: ClothingUniformJumpsuitCyberSunResearch
+  name: CyberSun research uniform
+  description: An otherwise casual uniform with orange armbands worn by the bulk of CyberSun's researchers.
+  components:
+    - type: Sprite
+      sprite: DeltaV/Clothing/Uniforms/Jumpsuit/cybersunrnd.rsi
+    - type: Clothing
+      sprite: DeltaV/Clothing/Uniforms/Jumpsuit/cybersunrnd.rsi
+      
+- type: entity
+  parent: [ClothingUniformBase, BaseEnemyCorporationContraband]
+  id: ClothingUniformJumpsuitInterdyne
+  name: Interdyne uniform
+  description: A simple sterile uniform worn by all matter of Interdyne staff.
+  components:
+    - type: Sprite
+      sprite: DeltaV/Clothing/Uniforms/Jumpsuit/interdyneuniform.rsi
+    - type: Clothing
+      sprite: DeltaV/Clothing/Uniforms/Jumpsuit/interdyneuniform.rsi

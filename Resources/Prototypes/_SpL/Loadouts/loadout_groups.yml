@@ -75,6 +75,9 @@
     - CentCommSuitskirt
     - CentCommTurtleneck
     - CentCommPencilSkirt
+    - CentCommPencilSkirtLong
+    - CentCommOfficerSuitBlack
+    - CentCommOfficerSkirtBlack
     - CentCommFormalSuit
     - CentCommFormalSkirt
     - CentCommFormalCAD
@@ -87,6 +90,7 @@
     - CentCommFormalCSD
     - CentCommFormalCSOD
     - CentCommAgentJumpsuit
+    - CentCommAgentJumpskirt
     - CentCommCSODSuit
     - CentCommCSODSkirt
     - CentCommOfficerSuit

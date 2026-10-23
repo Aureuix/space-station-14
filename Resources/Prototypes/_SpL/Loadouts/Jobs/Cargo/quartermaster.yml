@@ -1,13 +1,27 @@
-﻿- type: loadout
+﻿# Inner
+- type: loadout
+  id: QMAgedSuit
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitQMAged
+
+- type: loadout
+  id: QMAgedSkirt
+  equipment:
+    jumpsuit: ClothingUniformJumpskirtQMAged
+
+# Head
+- type: loadout
   id: QuartermasterHat
   equipment:
     head: ClothingHeadHatQMCourier
 
+# Outer
 - type: loadout
   id: LongcoatQM
   equipment:
     outerClothing: ClothingOuterCoatLongQM
 
+# Neck
 - type: loadout
   id: QMHalfCloak
   equipment:

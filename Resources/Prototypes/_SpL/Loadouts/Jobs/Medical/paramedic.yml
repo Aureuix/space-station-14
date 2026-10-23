@@ -1,4 +1,14 @@
 ﻿- type: loadout
+  id: ParamedicJumperSuit
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitParamedicJumper
+
+- type: loadout
+  id: ParamedicJumperSkirt
+  equipment:
+    jumpsuit: ClothingUniformJumpskirtParamedicJumper
+
+- type: loadout
   id: BeretParamedic
   equipment:
     head: ClothingHeadHatBeretParamedic

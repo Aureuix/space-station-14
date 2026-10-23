@@ -8,3 +8,203 @@
       sprite: _SpL/Clothing/Uniforms/Jumpskirt/leadformal.rsi
     - type: Clothing
       sprite: _SpL/Clothing/Uniforms/Jumpskirt/leadformal.rsi
+      
+# Goob stuff
+- type: entity
+  parent: [ClothingUniformSkirtBase, BaseCommandContraband]
+  id: ClothingUniformJumpskirtCaptainAged
+  name: aged captain jumpskirt
+  description: A well-worn jumpskirt in faded blue. In spite of its wear, the gold trim remains timeless as ever.
+  components:
+    - type: Sprite
+      sprite: _Goobstation/Clothing/Uniforms/Jumpskirt/captain.rsi
+    - type: Clothing
+      sprite: _Goobstation/Clothing/Uniforms/Jumpskirt/captain.rsi
+      
+- type: entity
+  parent: [ClothingUniformBase, BaseCommandContraband]
+  id: ClothingUniformJumpskirtQMAged
+  name: aged quartermaster jumpskirt
+  description: A well-worn jumpskirt in faded brown. In spite of its wear, the black insignias remain free of dust.
+  components:
+    - type: Sprite
+      sprite: _Goobstation/Clothing/Uniforms/Jumpskirt/qm.rsi
+    - type: Clothing
+      sprite: _Goobstation/Clothing/Uniforms/Jumpskirt/qm.rsi
+
+- type: entity
+  parent: [ClothingUniformBase, BaseCommandContraband]
+  id: ClothingUniformJumpskirtQMTurtleAged
+  name: aged quartermaster turtleneck
+  description: A well-worn jumpskirt in faded brown. In spite of its wear, the gold insignia remain free of dust.
+  components:
+    - type: Sprite
+      sprite: _Goobstation/Clothing/Uniforms/Jumpskirt/qmturtleskirt.rsi
+    - type: Clothing
+      sprite: _Goobstation/Clothing/Uniforms/Jumpskirt/qmturtleskirt.rsi
+      
+- type: entity
+  parent: [ClothingUniformSkirtBase, BaseCentcommContraband]
+  id: ClothingUniformJumpskirtCentcomAgent
+  name: CentComm agent's jumpskirt
+  description: A skirt worn by CentComm's legal team. Smells of burnt coffee.
+  components:
+    - type: Sprite
+      sprite: _Goobstation/Clothing/Uniforms/Jumpskirt/centcom_agent.rsi
+    - type: Clothing
+      sprite: _Goobstation/Clothing/Uniforms/Jumpskirt/centcom_agent.rsi
+      
+- type: entity
+  parent: [ClothingUniformSkirtBase, BaseCentcommContraband]
+  id: ClothingUniformJumpskirtPencilCentComOfficialAlt
+  name: CentComm long pencil skirt
+  description: A longer variant of the classic "pencil" skirt, ideal for pairing with heels. The fitted blazer and straight skirt form an elegant silhouette suitable for various occasions, from business meetings to a captain's dismissal.
+  components:
+    - type: Sprite
+      sprite: _Goobstation/Clothing/Uniforms/Jumpskirt/centcom_agent.rsi
+    - type: Clothing
+      sprite: _Goobstation/Clothing/Uniforms/Jumpskirt/centcom_agent.rsi
+      
+# DeltaV stuff
+- type: entity
+  parent: [ClothingUniformSkirtBase, BaseCommandContraband]
+  id: ClothingUniformJumpskirtHoPAged
+  name: aged head of personnel jumpskirt
+  description: A well-worn jumpskirt in faded blue. In spite of its wear, the red highlights remain polished and pristine.
+  components:
+    - type: Sprite
+      sprite: DeltaV/Clothing/Uniforms/Jumpskirt/hop.rsi
+    - type: Clothing
+      sprite: DeltaV/Clothing/Uniforms/Jumpskirt/hop.rsi
+      
+- type: entity
+  parent: [ClothingUniformBase, BaseCommandContraband]
+  id: ClothingUniformJumpskirtHoPCasual
+  name: casual head of personnel jumpskirt
+  description: A standard head of personnel's uniform with a skirt and no jacket.
+  components:
+    - type: Sprite
+      sprite: DeltaV/Clothing/Uniforms/Jumpskirt/hopmesskit.rsi
+    - type: Clothing
+      sprite: DeltaV/Clothing/Uniforms/Jumpskirt/hopmesskit.rsi
+
+- type: entity
+  parent: [ClothingUniformBase, BaseSecurityContraband]
+  id: ClothingUniformJumpskirtSeniorWarden
+  name: senior warden jumpskirt
+  description: A warden uniform with a shoulder badge to denote the wearer's seniority.
+  components:
+    - type: Sprite
+      sprite: DeltaV/Clothing/Uniforms/Jumpskirt/armourer.rsi
+    - type: Clothing
+      sprite: DeltaV/Clothing/Uniforms/Jumpskirt/armourer.rsi
+
+- type: entity
+  parent: [ClothingUniformBase, BaseSecurityContraband]
+  id: ClothingUniformJumpskirtWardenTurtle
+  name: warden turtleneck
+  description: A simple warden's uniform in black and white.
+  components:
+    - type: Sprite
+      sprite: DeltaV/Clothing/Uniforms/Jumpskirt/armourer_alt.rsi
+    - type: Clothing
+      sprite: DeltaV/Clothing/Uniforms/Jumpskirt/armourer_alt.rsi
+
+- type: entity
+  parent: [ClothingUniformBase, BaseSecurityContraband]
+  id: ClothingUniformJumpskirtWardenGrey
+  name: grey warden jumpskirt
+  description: A tactical relic of years past before NanoTrasen decided it was cheaper to dye the suits red instead of washing out the blood.
+  components:
+    - type: Sprite
+      sprite: DeltaV/Clothing/Uniforms/Jumpskirt/armourer_grey.rsi
+    - type: Clothing
+      sprite: DeltaV/Clothing/Uniforms/Jumpskirt/armourer_grey.rsi
+
+- type: entity
+  parent: ClothingUniformBase
+  id: ClothingUniformJumpskirtSeniorChemistFormal
+  name: senior formal chemist jumpskirt
+  description: For the one who dares to use pyrogenics.
+  components:
+    - type: Sprite
+      sprite: DeltaV/Clothing/Uniforms/Jumpskirt/chemistry_senior.rsi
+    - type: Clothing
+      sprite: DeltaV/Clothing/Uniforms/Jumpskirt/chemistry_senior.rsi
+
+- type: entity
+  parent: ClothingUniformBase
+  id: ClothingUniformJumpskirtChemistFormal
+  name: formal chemist jumpskirt
+  description: Are your diphenhydramine ratios correct?
+  components:
+    - type: Sprite
+      sprite: DeltaV/Clothing/Uniforms/Jumpskirt/chemsuitskirt.rsi
+    - type: Clothing
+      sprite: DeltaV/Clothing/Uniforms/Jumpskirt/chemsuitskirt.rsi
+
+- type: entity
+  parent: ClothingUniformBase
+  id: ClothingUniformJumpskirtMedicalApron
+  name: medical apron jumpskirt
+  description: A simple sky blue jumpskirt with an apron overlaid.
+  components:
+    - type: Sprite
+      sprite: DeltaV/Clothing/Uniforms/Jumpskirt/medical_apron.rsi
+    - type: Clothing
+      sprite: DeltaV/Clothing/Uniforms/Jumpskirt/medical_apron.rsi
+
+- type: entity
+  parent: ClothingUniformBase
+  id: ClothingUniformJumpskirtMedicalOffset
+  name: offset medical jumpskirt
+  description: A simple sky blue jumpskirt with stylish offset buttoning.
+  components:
+    - type: Sprite
+      sprite: DeltaV/Clothing/Uniforms/Jumpskirt/medical_offset.rsi
+    - type: Clothing
+      sprite: DeltaV/Clothing/Uniforms/Jumpskirt/medical_offset.rsi
+
+- type: entity
+  parent: ClothingUniformBase
+  id: ClothingUniformJumpskirtPsychologistVest
+  name: psychologist's vest
+  description: Tell me about how this makes you feel.
+  components:
+    - type: Sprite
+      sprite: DeltaV/Clothing/Uniforms/Jumpskirt/medical_vest.rsi
+    - type: Clothing
+      sprite: DeltaV/Clothing/Uniforms/Jumpskirt/medical_vest.rsi
+
+- type: entity
+  parent: ClothingUniformBase
+  id: ClothingUniformJumpskirtParamedicJumper
+  name: paramedic jumper
+  description: The cross on it is surely a good sign.
+  components:
+    - type: Sprite
+      sprite: DeltaV/Clothing/Uniforms/Jumpskirt/paramedic_jumper.rsi
+    - type: Clothing
+      sprite: DeltaV/Clothing/Uniforms/Jumpskirt/paramedic_jumper.rsi
+
+- type: entity
+  parent: [ClothingUniformBase, BaseNanoTrasenContraband]
+  id: ClothingUniformJumpskirtMagiFormal
+  name: formal magistrate jumpskirt
+  description: For showing the order in the court.
+  components:
+    - type: Sprite
+      sprite: DeltaV/Clothing/Uniforms/Jumpskirt/cjformaldress.rsi
+    - type: Clothing
+      sprite: DeltaV/Clothing/Uniforms/Jumpskirt/cjformaldress.rsi
+
+- type: entity
+  parent: [ClothingUniformBase, BaseCentcommContraband]
+  id: ClothingUniformJumpskirtCentCommOfficer
+  name: CentComm officer's jumpskirt
+  description: An ironed black uniform with gold and green highlights.
+  components:
+    - type: Sprite
+      sprite: DeltaV/Clothing/Uniforms/Jumpskirt/centcom_officer.rsi
+    - type: Clothing
+      sprite: DeltaV/Clothing/Uniforms/Jumpskirt/centcom_officer.rsi

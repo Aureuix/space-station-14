@@ -210,8 +210,8 @@
   # Starlight-end
 
 - type: entity
-  id: CigPackSyndicate  #SL EDIT, Syndie to non-contra
-  parent: CigPackBase
+  id: CigPackSyndicate
+  parent: [ CigPackBase, BaseEnemyCorporationContraband ] #SL EDIT, Syndie to non-contra # SpL- the funny
   name: Interdyne herbals packet
   description: Medicinal cigarettes infused with medicine for when you need to do more than calm your nerves.  #SL EDIT, desc change for lore
   components:

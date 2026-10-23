@@ -258,28 +258,6 @@
       
 - type: entity
   parent: [ClothingOuterStorageBase, ClothingOuterColdBase, BaseSecurityContraband]
-  id: ClothingOuterCoatLongCorpsman
-  name: corpsman's armored longcoat
-  description: A comfortable longcoat with armored plate inserts in trauma red.
-  components:
-    - type: Sprite
-      sprite: _Floof/Clothing/OuterClothing/Coats/corpsman.rsi
-    - type: Clothing
-      sprite: _Floof/Clothing/OuterClothing/Coats/corpsman.rsi
-    - type: Armor
-      modifiers:
-        coefficients:
-          Blunt: 0.8
-          Slash: 0.8
-          Piercing: 0.7
-          Heat: 0.8
-          Cold: 0.8
-          Caustic: 0.75
-    - type: ZombificationResistance
-      zombificationResistanceCoefficient: 0.75
-      
-- type: entity
-  parent: [ClothingOuterStorageBase, ClothingOuterColdBase, BaseSecurityContraband]
   id: ClothingOuterCoatLongDetective
   name: detective's armored longcoat
   description: A comfortable brown longcoat with armored plate inserts and security red armbands.

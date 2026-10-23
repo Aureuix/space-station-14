@@ -286,6 +286,8 @@
   loadouts:
   - MagistrateJumpsuit
   - MagistrateJumpskirt
+  - MagiFormalSuit # SpL
+  - MagiFormalSkirt # SpL
 
 - type: loadoutGroup
   id: MagistrateOuterclothing
