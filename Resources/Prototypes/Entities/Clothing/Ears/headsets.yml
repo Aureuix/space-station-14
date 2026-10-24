@@ -364,6 +364,9 @@
     - type: RadioChime
       sound:
         path: /Audio/_Starlight/Effects/Radio/wizard.ogg # SpL
+    - type: Tag
+      tags:
+        - BlacklistChameleon # SpL
 
 - type: entity
   parent: [ClothingHeadset, BaseMajorContraband]
@@ -380,3 +383,6 @@
   - type: RadioChime
     sound:
       path: /Audio/_Starlight/Effects/Radio/ninja.ogg # SpL
+  - type: Tag
+    tags:
+      - BlacklistChameleon # SpL

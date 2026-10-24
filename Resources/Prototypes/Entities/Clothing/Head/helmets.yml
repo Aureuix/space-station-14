@@ -376,6 +376,9 @@
   - type: HideLayerClothing
     layers:
       Hair: HEAD
+  - type: Tag
+    tags:
+      - BlacklistChameleon # SpL
 
 #ERT HELMETS
 #ERT Leader Helmet

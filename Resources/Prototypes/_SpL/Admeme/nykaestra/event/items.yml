@@ -195,6 +195,9 @@
     - type: ClothingSpeedModifier
       walkModifier: 1
       sprintModifier: 0.6
+    - type: Tag
+      tags:
+        - BlacklistChameleon
   
 - type: entity
   parent: ClothingShoesBootsCombat
@@ -204,3 +207,6 @@
     - type: ClothingSpeedModifier
       walkModifier: 1
       sprintModifier: 0.8
+    - type: Tag
+      tags:
+        - BlacklistChameleon

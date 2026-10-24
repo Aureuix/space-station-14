@@ -12,8 +12,33 @@
     },
     {
       "name": "equipped-NECK",
-      "directions": 4
-    },
+      "directions": 4,
+      "delays": [
+        [
+          0.2,
+          0.2,
+          0.2,
+          0.2
+        ],
+        [
+          0.2,
+          0.2,
+          0.2,
+          0.2
+        ],
+        [
+          0.2,
+          0.2,
+          0.2,
+          0.2
+        ],
+        [
+          0.2,
+          0.2,
+          0.2,
+          0.2
+        ]
+      ]
     {
       "name": "equipped-NECK-auraless",
       "directions": 4

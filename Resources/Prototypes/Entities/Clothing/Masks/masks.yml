@@ -355,9 +355,6 @@
       Plastic: 25
   - type: StaticPrice
     price: 5
-  - type: Tag
-    tags:
-    - SurgeryCompatibleArmor # Starlight-edit
   - type: Armor # Starlight start
     modifiers:
       coefficients:

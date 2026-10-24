@@ -69,6 +69,7 @@
     - CorgiWearable
     - ScurretWearable
     - FootstepSound
+    - BlacklistChameleon # SpL
 
 # SpL- Blackstar Hardsuit Helmet
 - type: entity
@@ -94,6 +95,9 @@
           Slash: 0.9
           Piercing: 0.9
           Heat: 0.9
+    - type: Tag
+      tags:
+        - BlacklistChameleon # SpL
 # SpL End
 
 
@@ -124,6 +128,9 @@
   - type: HideLayerClothing
     layers:
       Hair: HEAD
+  - type: Tag
+    tags:
+      - BlacklistChameleon # SpL
 
 # =============================================
 # Blackstar Rank Clothing (PLACEHOLDER SPRITES)
@@ -216,3 +223,6 @@
   - type: HideLayerClothing
     layers:
       Hair: HEAD
+  - type: Tag
+    tags:
+      - BlacklistChameleon # SpL

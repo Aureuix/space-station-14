@@ -335,6 +335,9 @@
   - type: Construction
     graph: ClothingGlassesNullSpace
     node: glasses
+  - type: Tag
+    tags:
+      - BlacklistChameleon # SpL
 
 - type: entity
   parent: [ ClothingEyesBase, BaseSalvageContraband ]

@@ -154,7 +154,7 @@
 - type: entity
   parent: [ClothingHeadset, BaseNanoTrasenContraband]
   id: ClothingHeadsetNCT
-  name: NanoTrasen career trainer radio headset
+  name: NanoTrasen career trainer headset # SpL
   description: This is used by your well-taught corporate training team.
   components:
   - type: ContainerFill

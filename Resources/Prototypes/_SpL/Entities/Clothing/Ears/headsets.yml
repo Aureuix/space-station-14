@@ -1,7 +1,7 @@
 ﻿- type: entity
   parent: [ ClothingHeadset, BaseCentcommContraband ]
   id: ClothingHeadsetCentCommOfficial
-  name: centcomm headset 
+  name: CentComm headset 
   description: A headset used by the operators of Central Command.
   components:
     - type: ContainerFill

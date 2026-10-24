@@ -1245,7 +1245,7 @@
   - type: Tag
     tags:
     - Hardsuit
-    - WhitelistChameleon
+    - BlacklistChameleon # SpL
     - CorgiWearable
 
 #CBURN Hardsuit

@@ -6,7 +6,7 @@
   components:
     - type: Tag
       tags:
-        - WhitelistChameleon
+        - BlacklistChameleon # SpL
     - type: Sprite
       sprite: _Starlight/Clothing/Back/nullspaceteleporter.rsi
       state: icon
@@ -34,6 +34,3 @@
     - type: GuideHelp
       guides:
         - Brighteye
-    - type: Tag
-      tags:
-        - BlacklistChameleon # SpL

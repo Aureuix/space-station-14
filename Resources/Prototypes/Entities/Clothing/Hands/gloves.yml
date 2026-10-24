@@ -271,9 +271,6 @@
     - objective: MassArrestObjective
       components:
       - type: CriminalRecordsHacker
-    - type: Tag
-      tags:
-        - BlacklistChameleon # SpL
 
 - type: entity
   parent: [ ClothingHandsGlovesColorBlack, BaseEngineeringSecurityCommandContraband ] # SL edit: Engi/Sec/Command contra

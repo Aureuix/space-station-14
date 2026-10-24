@@ -57,6 +57,9 @@
     - type: RadioChime
       sound:
         path: /Audio/_SpL/Effects/Radio/nanotrasen.ogg # SpL
+    - type: Tag
+      tags:
+        - BlacklistChameleon # SpL
 
 - type: entity
   parent: [ClothingHeadsetAlt, BaseNanoTrasenContraband]
@@ -136,6 +139,9 @@
   - type: RadioChime
     sound:
       path: /Audio/_SpL/Effects/Radio/hop.ogg # SpL
+  - type: Tag
+    tags:
+      - BlacklistChameleon # SpL
 
 - type: entity
   parent: [ClothingHeadsetAlt, BaseBlueShieldContraband]
