@@ -3,5 +3,5 @@
   equipment:
     head: ClothingHeadBandBotany
     ears: ClothingHeadsetService
-    jumpsuit: ClothingUniformJumpskirtHydroponics
+    jumpsuit: ClothingUniformJumpskirtHydroponicsKobold # SpL
     id: KikiIDCard

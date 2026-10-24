@@ -9,6 +9,17 @@
     - type: Clothing
       sprite: _SpL/Clothing/Uniforms/Jumpskirt/leadformal.rsi
       
+- type: entity
+  parent: ClothingUniformJumpskirtHydroponics
+  id: ClothingUniformJumpskirtHydroponicsKobold
+  name: hydroponics kobold jumpskirt
+  description: A decent skirt, for a decent kobold.
+  components:
+    - type: SuitSensor
+      controlsLocked: false
+      randomMode: false
+      mode: SensorCords
+      
 # Goob stuff
 - type: entity
   parent: [ClothingUniformSkirtBase, BaseCommandContraband]
