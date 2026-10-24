@@ -39,6 +39,9 @@
     sprite: Clothing/Uniforms/Jumpsuit/deathsquad.rsi
   - type: Clothing
     sprite: Clothing/Uniforms/Jumpsuit/deathsquad.rsi
+  - type: Tag
+    tags:
+      - BlacklistChameleon # SpL
 
 - type: entity
   parent: ClothingUniformBase
@@ -902,6 +905,9 @@
     sprite: Clothing/Uniforms/Jumpsuit/ninja.rsi
   - type: Clothing
     sprite: Clothing/Uniforms/Jumpsuit/ninja.rsi
+  - type: Tag
+    tags:
+      - BlacklistChameleon # SpL
 
 - type: entity
   parent: [ClothingUniformBase, ClothingUniformFoldableBase]

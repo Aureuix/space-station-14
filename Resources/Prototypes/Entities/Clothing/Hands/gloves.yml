@@ -447,7 +447,7 @@
   - type: Tag
     tags:
     - Kangaroo
-    - WhitelistChameleon
+    - BlacklistChameleon # SpL
 
 - type: entity
   parent: [ClothingHandsBase, BaseSecurityContraband]

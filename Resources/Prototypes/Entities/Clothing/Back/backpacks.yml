@@ -287,6 +287,9 @@
     maxItemSize: Huge #SL
     grid: #SL
     - 0,0,8,5 #SL
+  - type: Tag
+    tags:
+      - BlacklistChameleon # SpL
 
 #Syndicate
 - type: entity

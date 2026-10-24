@@ -2027,6 +2027,8 @@
     - type: FootstepModifier
       footstepSoundCollection:
         path: /Audio/Mecha/sound_mecha_powerloader_step.ogg
+        params:
+          volume: -4 # SpL you're so loud
 
 - type: entity
   id: RightLegCyberHydraulic
@@ -2054,6 +2056,8 @@
     - type: FootstepModifier
       footstepSoundCollection:
         path: /Audio/Mecha/sound_mecha_powerloader_step.ogg
+        params:
+          volume: -4 # SpL you're so loud
 
 # Pilebunker Legs
 - type: entity
@@ -2131,7 +2135,7 @@
       footstepSoundCollection:
         path: /Audio/Mecha/sound_mecha_powerloader_step.ogg
         params:
-          volume: 0.1
+          volume: -4 # SpL you're so loud
     - type: LimbWithAction
       action: ActionOpenStorageLeftLeg
     - type: StorageOrgan
@@ -2186,7 +2190,7 @@
       footstepSoundCollection:
         path: /Audio/Mecha/sound_mecha_powerloader_step.ogg
         params:
-          volume: 0.1    
+          volume: -4 # SpL you're so loud
     - type: LimbWithAction
       action: ActionOpenStorageRightLeg
     - type: StorageOrgan

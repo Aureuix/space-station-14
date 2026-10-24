@@ -105,6 +105,9 @@
         Piercing: 0.90
         Heat: 0.90
         Radiation: 0.60
+  - type: Tag
+    tags:
+      - BlacklistChameleon # SpL
 
 - type: entity
   parent: ClothingMaskGas

@@ -30,6 +30,9 @@
       sprite: _SpL/Clothing/Uniforms/Jumpsuit/cburn.rsi
     - type: Clothing
       sprite: _SpL/Clothing/Uniforms/Jumpsuit/cburn.rsi
+    - type: Tag
+      tags:
+        - BlacklistChameleon # SpL
 
 - type: entity
   parent: [UnsensoredClothingUniformBase, BaseGSLOwnedContraband]
@@ -178,7 +181,7 @@
 - type: entity
   parent: ClothingUniformBase
   id: ClothingUniformJumpsuitCasualCMO
-  name: casual chief medical officer jumpsui
+  name: casual chief medical officer jumpsuit
   description: A markedly informal suit for when you're off the clock.
   components:
     - type: Sprite

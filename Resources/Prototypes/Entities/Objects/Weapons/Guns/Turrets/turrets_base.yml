@@ -99,6 +99,7 @@
   - type: BallisticAmmoProvider
     proto: CartridgeCaselessRifle
     capacity: 500
+    showExamineText: false # SpL
 
 - type: entity
   parent: BaseWeaponTurret
@@ -126,6 +127,7 @@
   - type: BatteryAmmoProvider
     proto: BulletEnergyTurretLaser
     fireCost: 100
+    showExamineText: false # SpL
   - type: Battery
     # Very important:
     # Disable networking to prevent the battery getting continuously dirtied every tick as it interacts with the power network.

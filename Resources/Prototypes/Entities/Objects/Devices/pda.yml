@@ -1033,7 +1033,6 @@
     addVerb: false
     onUse: false
   - type: EnergyDomeGenerator
-    # canActivateInWorld: false
     damageEnergyDraw: 0
     domePrototype: EnergyDomeCentCommAirtight
     addAction: false

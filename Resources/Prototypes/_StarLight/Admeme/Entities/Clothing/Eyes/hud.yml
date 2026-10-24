@@ -24,5 +24,6 @@
       tags:
         - HudMedical
         - IPC
+        - BlacklistChameleon # SpL
     - type: EyeProtection
       protectionTime: 5

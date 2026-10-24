@@ -46,9 +46,12 @@
       sprintModifier: 0.8
     - type: HeldSpeedModifier
     - type: GroupExamine
+    - type: Tag
+      tags:
+        - BlacklistChameleon
       
 - type: entity
-  parent: [ClothingOuterStorageBase, ClothingOuterColdBase, BaseCommandContraband, ClothingOuterArmorHoS]
+  parent: [ClothingOuterStorageBase, ClothingOuterColdBase, BaseCommandContraband]
   id: ClothingOuterArmorWebVestHoS
   name: head of security's web vest
   description: A synthetic ballistic vest with heat-resistant fibres. This one has flak insets rather than ballistics-focused ones.
@@ -57,3 +60,16 @@
       sprite: _Goobstation/Clothing/OuterClothing/Armor/web_vest_hos.rsi
     - type: Clothing
       sprite: _Goobstation/Clothing/OuterClothing/Armor/web_vest_hos.rsi
+    - type: Pierceable
+      level: Metal
+    - type: Armor
+      modifiers:
+        coefficients:
+          Blunt: 0.65
+          Slash: 0.65
+          Piercing: 0.6
+          Heat: 0.7
+          Cold: 0.8
+          Caustic: 0.75
+    - type: ExplosionResistance
+      damageCoefficient: 0.9

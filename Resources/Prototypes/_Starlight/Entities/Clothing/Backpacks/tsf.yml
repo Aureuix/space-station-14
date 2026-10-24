@@ -42,6 +42,9 @@
       containers:
         storagebase:
           id: HandLabeler
+    - type: Tag
+      tags:
+        - BlacklistChameleon # SpL
 
 - type: entity
   parent: [BaseTSFContraband, ClothingBackpackSatchel, BaseToggleClothing]

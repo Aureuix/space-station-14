@@ -281,7 +281,7 @@
   - type: Tag
     tags:
     - CorgiWearable
-    - WhitelistChameleon
+    - BlacklistChameleon # SpL
 # SL End
 
 - type: entity

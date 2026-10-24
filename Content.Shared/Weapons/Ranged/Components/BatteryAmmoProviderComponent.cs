@@ -67,4 +67,11 @@ public sealed partial class BatteryAmmoProviderComponent : AmmoProviderComponent
     /// </remarks>
     [ViewVariables, AutoNetworkedField]
     public int Capacity;
+    
+    /// <summary> SpL addition
+    /// Whether or not information about
+    /// the gun will be shown on examine.
+    /// </summary>
+    [DataField]
+    public bool ShowExamineText = true; // SpL
 }

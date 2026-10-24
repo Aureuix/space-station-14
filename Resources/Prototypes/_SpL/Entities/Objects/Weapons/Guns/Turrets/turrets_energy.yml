@@ -18,6 +18,7 @@
     - type: BatteryAmmoProvider
       proto: SniperBolt
       fireCost: 100
+      showExamineText: false
     - type: HTN
       rootTask:
         task: TurretCompound

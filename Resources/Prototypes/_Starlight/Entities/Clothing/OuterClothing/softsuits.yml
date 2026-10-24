@@ -45,6 +45,7 @@
   - type: Tag
     tags:
     - SuitEVA
+    - BlacklistChameleon # SpL
 
 - type: entity
   parent: [ClothingOuterEVASuitBase, BaseTSFContraband]
@@ -93,6 +94,7 @@
   - type: Tag
     tags:
     - SuitEVA
+    - BlacklistChameleon # SpL
 
 - type: entity
   parent: ClothingOuterArmorTSF
@@ -114,6 +116,9 @@
         Caustic: 0
   - type: ExplosionResistance
     damageCoefficient: 0.2
+  - type: Tag
+    tags:
+      - BlacklistChameleon # SpL
 
 #Wizard "Robes"
 - type: entity
@@ -144,4 +149,4 @@
     tags:
     - CorgiWearable
     - Hardsuit
-    - WhitelistChameleon
+    - BlacklistChameleon # SpL

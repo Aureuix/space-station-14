@@ -8,6 +8,9 @@
       sprite: _Starlight/Admeme/Clothing/Neck/Mantles/sergeantpauldron-ntnc.rsi
     - type: Clothing
       sprite: _Starlight/Admeme/Clothing/Neck/Mantles/sergeantpauldron-ntnc.rsi
+    - type: Tag
+      tags:
+        - BlacklistChameleon # SpL
 
 
 - type: entity
@@ -20,3 +23,6 @@
       sprite: _Starlight/Admeme/Clothing/Neck/Mantles/majorpauldron-ntnc.rsi
     - type: Clothing
       sprite: _Starlight/Admeme/Clothing/Neck/Mantles/majorpauldron-ntnc.rsi
+    - type: Tag
+      tags:
+        - BlacklistChameleon # SpL

@@ -11,7 +11,9 @@
     equippedPrefix: alt
   #Starlight begin
   - type: Tag
-    tags: [ XenomoproachWearable ]
+    tags: 
+      - XenomoproachWearable
+      - WhitelistChameleon # SpL
   #Starlight end
 
 - type: entity

@@ -290,6 +290,9 @@
     sprite: Clothing/Eyes/Glasses/ninjavisor.rsi
   - type: FlashImmunity
     blocksSpecialVision: false
+  - type: Tag
+    tags:
+      - BlacklistChameleon # SpL
 
 - type: entity
   parent: [ClothingEyesBase, ShowSecurityIcons, BaseSecurityContraband]

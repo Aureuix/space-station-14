@@ -534,7 +534,7 @@
     - CorgiWearable
     - HamsterWearable
     - ClothMade
-    - WhitelistChameleon
+    - BlacklistChameleon # SpL
 
 - type: entity
   parent: [ClothingHeadBase, BaseFoldable]
@@ -740,7 +740,7 @@
     - CorgiWearable
     - HamsterWearable
     - ClothMade
-    - WhitelistChameleon
+    - BlacklistChameleon # SpL
 
 - type: entity
   parent: ClothingHeadBase
@@ -821,7 +821,7 @@
     - ClothMade
     - Recyclable
     - HamsterWearable
-    - WhitelistChameleon
+    - BlacklistChameleon # SpL
     - CorgiWearable
 
 - type: entity

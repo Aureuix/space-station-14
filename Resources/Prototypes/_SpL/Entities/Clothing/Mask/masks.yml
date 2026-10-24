@@ -30,6 +30,9 @@
       coverage: MOUTH
     - type: ZombificationResistance
       zombificationResistanceCoefficient: 0.9
+    - type: Tag
+      tags:
+        - BlacklistChameleon # SpL
       
 - type: entity
   parent: [ ClothingMaskGas, BaseCentcommContraband ]
@@ -53,3 +56,6 @@
           Slash: 0.95
           Piercing: 0.95
           Heat: 0.95
+    - type: Tag
+      tags:
+        - BlacklistChameleon

@@ -164,7 +164,7 @@
     - type: Tag
       tags:
         - Hardsuit
-        - CorgiWearable
+        - BlacklistChameleon
       
 - type: entity
   parent: [ ClothingOuterHardsuitBase, BaseGSLOwnedContraband ]
@@ -245,6 +245,7 @@
     - type: Tag
       tags:
         - Hardsuit
+        - BlacklistChameleon
       
 - type: entity
   parent: ClothingOuterHardsuitSVSElite

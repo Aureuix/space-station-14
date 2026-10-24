@@ -18,6 +18,9 @@
       sprite: _Starlight/Clothing/Uniforms/Jumpsuit/abductor.rsi
     - type: Clothing
       sprite: _Starlight/Clothing/Uniforms/Jumpsuit/abductor.rsi
+    - type: Tag
+      tags:
+        - BlacklistChameleon # SpL
 
 - type: entity
   parent: ClothingUniformJumpsuitAtmos
@@ -25,6 +28,9 @@
   name: Contortionist's jumpsuit
   components:
     - type: VentCrawlClothing
+    - type: Tag
+      tags:
+        - BlacklistChameleon # SpL
 
 - type: entity
   parent: [ ClothingUniformBase, BaseNanoTrasenContraband] # SpL- NT contra
@@ -662,6 +668,9 @@
       sprite: _Starlight/Clothing/Uniforms/Jumpsuit/sovietuniform.rsi
     - type: Clothing
       sprite: _Starlight/Clothing/Uniforms/Jumpsuit/sovietuniform.rsi
+    - type: Tag
+      tags:
+        - BlacklistChameleon # SpL
 
 - type: entity
   parent: [ ClothingUniformBase, BaseCentcommContraband ]

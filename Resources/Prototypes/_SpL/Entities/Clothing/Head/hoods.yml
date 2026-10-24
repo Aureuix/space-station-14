@@ -4,7 +4,6 @@
   name: Interdyne chemical hood
   description: An advanced hood for chief medical officers that protects the head and face from biological contaminants.
   components:
-    - type: IdentityBlocker
     - type: Sprite
       sprite: DeltaV/Clothing/Head/Hoods/interdynechemhood.rsi
     - type: Clothing

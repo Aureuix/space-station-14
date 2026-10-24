@@ -179,6 +179,9 @@ public abstract partial class SharedGunSystem
     {
         if (!args.IsInDetailsRange)
             return;
+        
+        if (!ent.Comp.ShowExamineText) //SpL- allow hiding
+            return;
 
         // 🌟Starlight🌟 -- get next ammo in feed
         var shots = GetBallisticShots(ent.Comp);

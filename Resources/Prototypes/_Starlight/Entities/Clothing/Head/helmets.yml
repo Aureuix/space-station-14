@@ -25,7 +25,7 @@
     sprite: _Starlight/Clothing/Head/Helmets/abductor.rsi
   - type: Tag
     tags:
-    - WhitelistChameleon
+    - BlacklistChameleon # SpL
     - SecurityHelmet
     
 #Basic Helmet (Security Helmet Reskin)
@@ -269,6 +269,9 @@
   - type: HideLayerClothing
     layers:
       Hair: HEAD
+  - type: Tag
+    tags:
+      - BlacklistChameleon # SpL
 
 - type: entity
   parent: ClothingHeadBase

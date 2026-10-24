@@ -146,6 +146,9 @@
           Slash: 0.9
           Piercing: 0.9
           Heat: 0.9
+    - type: Tag
+      tags:
+        - BlacklistChameleon
 
 # Elite ERT suits
 - type: entity
@@ -170,6 +173,9 @@
           Slash: 0.9
           Piercing: 0.9
           Heat: 0.9
+    - type: Tag
+      tags:
+        - BlacklistChameleon # SpL
           
 - type: entity
   parent: ClothingHeadHelmetHardsuitSVSElite
@@ -189,3 +195,6 @@
           Slash: 0.8
           Piercing: 0.8
           Heat: 0.8
+    - type: Tag
+      tags:
+        - BlacklistChameleon # SpL

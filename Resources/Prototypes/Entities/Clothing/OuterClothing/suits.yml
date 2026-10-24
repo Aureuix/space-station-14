@@ -234,6 +234,9 @@
   - type: HideLayerClothing
     slots:
     - Tail
+  - type: Tag
+    tags:
+      - BlacklistChameleon # SpL
 
 - type: entity
   parent: ClothingOuterBase
@@ -373,5 +376,5 @@
   - type: Tag
     tags:
     - CorgiWearable
-    - WhitelistChameleon
+    - BlacklistChameleon # SpL
 # SL end

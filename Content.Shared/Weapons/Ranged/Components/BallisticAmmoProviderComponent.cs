@@ -36,6 +36,13 @@ public sealed partial class BallisticAmmoProviderComponent : Component
     // Realistically just point to the container.
     [DataField, AutoNetworkedField]
     public List<EntityUid> Entities = new();
+    
+    /// <summary> SpL addition
+    /// Whether or not information about
+    /// the gun will be shown on examine.
+    /// </summary>
+    [DataField]
+    public bool ShowExamineText = true; // SpL
 
     /// <summary>
     /// Is the magazine allowed to be manually cycled to eject a cartridge.

@@ -9,6 +9,9 @@
       sprite: _Starlight/Admeme/Clothing/OuterClothing/Vests/ntnc-ensign.rsi
     - type: Clothing
       sprite: _Starlight/Admeme/Clothing/OuterClothing/Vests/ntnc-ensign.rsi
+    - type: Tag
+      tags:
+        - BlacklistChameleon # SpL
 
 - type: entity
   parent: [ClothingOuterArmorBase, BaseNanoTrasenContraband]
@@ -33,3 +36,6 @@
       damageCoefficient: 0.80
     - type: Item
       size: Normal
+    - type: Tag
+      tags:
+        - BlacklistChameleon # SpL

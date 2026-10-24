@@ -46,6 +46,9 @@
   - type: RadioChime
     sound:
       path: /Audio/_Starlight/Effects/Radio/ninja.ogg
+  - type: Tag
+    tags:
+      - BlacklistChameleon # SpL
 
 - type: entity
   parent: [ ClothingHeadset, BaseSecurityContraband ]
@@ -103,6 +106,9 @@
   - type: RadioChime
     sound:
       path: /Audio/_Starlight/Effects/Radio/soviet.ogg
+  - type: Tag
+    tags:
+      - BlacklistChameleon # SpL
 
 - type: entity
   parent: ClothingHeadsetCargo
@@ -141,11 +147,14 @@
   - type: RadioChime
     sound:
       path: /Audio/_Starlight/Effects/Radio/tsf.ogg
+  - type: Tag
+    tags:
+      - BlacklistChameleon # SpL
 
 - type: entity
   parent: [ClothingHeadset, BaseNanoTrasenContraband]
   id: ClothingHeadsetNCT
-  name: NanoTrasen career trainer radio headset
+  name: NanoTrasen career trainer headset # SpL
   description: This is used by your well-taught corporate training team.
   components:
   - type: ContainerFill

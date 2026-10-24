@@ -49,6 +49,7 @@
   - type: BallisticAmmoProvider
     proto: CartridgePistolFMJ
     capacity: 50
+    showExamineText: false # SpL
   - type: TriggerOnEmptyGunshot
   - type: ExplodeOnTrigger
   - type: Explosive

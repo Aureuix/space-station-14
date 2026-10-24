@@ -7,6 +7,9 @@
       containers:
         item:
           - CentcommVibrocutter
+    - type: Tag
+      tags:
+        - BlacklistChameleon
 
 - type: entity
   id: ClothingShoesBootsJackFilledVibro
@@ -17,3 +20,6 @@
       containers:
         item:
           - CentcommVibrocutter
+    - type: Tag
+      tags:
+        - BlacklistChameleon

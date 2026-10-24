@@ -70,6 +70,9 @@
     zombificationResistanceCoefficient: 0.9 # SpL
   - type: IdentityBlocker # SpL
     coverage: MOUTH # SpL
+  - type: Tag
+    tags:
+      - BlacklistChameleon # SpL
 
 - type: entity
   parent: [BaseTSFContraband, ClothingHeadEVAHelmetBase, ClothingHeadHelmetArmoredBase]
@@ -86,6 +89,9 @@
     - type: ShowJobIcons
     - type: ShowMindShieldIcons
     - type: FlashImmunity
+    - type: Tag
+      tags:
+        - BlacklistChameleon # SpL
 
 - type: entity
   parent: ClothingHeadHelmetTSF
@@ -101,6 +107,9 @@
       unequipSound: /Audio/Mecha/mechmove03.ogg
       equipDelay: 3
       unequipDelay: 3
+    - type: Tag
+      tags:
+        - BlacklistChameleon # SpL
 
 - type: entity
   parent: ClothingHeadBase
@@ -167,4 +176,4 @@
   - type: Tag
     tags:
     - CorgiWearable
-    - WhitelistChameleon
+    - BlacklistChameleon # SpL

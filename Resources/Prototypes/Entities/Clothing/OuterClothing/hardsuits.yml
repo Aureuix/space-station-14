@@ -895,7 +895,7 @@
     - MonkeyWearable
     - CorgiWearable
     - Hardsuit
-    - WhitelistChameleon
+    - BlacklistChameleon # SpL
     - RequiredForLmgTag #Starlight
 
 #Wizard Hardsuit
@@ -1245,7 +1245,7 @@
   - type: Tag
     tags:
     - Hardsuit
-    - WhitelistChameleon
+    - BlacklistChameleon # SpL
     - CorgiWearable
 
 #CBURN Hardsuit
@@ -1414,3 +1414,6 @@
     sprintModifier: 0.95 # Starlight
   - type: HeldSpeedModifier
   - type: Unremoveable
+  - type: Tag
+    tags:
+      - BlacklistChameleon # SpL

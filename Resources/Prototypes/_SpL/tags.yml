@@ -16,6 +16,9 @@
   
 # nykaestra tags
 - type: Tag
+  id: BlacklistChameleon
+
+- type: Tag
   id: CartridgeCoilgun
   
 - type: Tag

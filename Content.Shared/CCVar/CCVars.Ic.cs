@@ -14,13 +14,13 @@ public sealed partial class CCVars
     ///     Sets the maximum IC name length.
     /// </summary>
     public static readonly CVarDef<int> MaxNameLength =
-        CVarDef.Create("ic.name_length", 32, CVar.SERVER | CVar.REPLICATED);
+        CVarDef.Create("ic.name_length", 48, CVar.SERVER | CVar.REPLICATED); // SpL
 
     /// <summary>
     ///     Sets the maximum name length for a loadout name (e.g. cyborg name).
     /// </summary>
     public static readonly CVarDef<int> MaxLoadoutNameLength =
-        CVarDef.Create("ic.loadout_name_length", 48, CVar.SERVER | CVar.REPLICATED);
+        CVarDef.Create("ic.loadout_name_length", 64, CVar.SERVER | CVar.REPLICATED); // SpL
 
     /// <summary>
     ///     Allows flavor text (character descriptions).
@@ -44,7 +44,7 @@ public sealed partial class CCVars
     ///     Adds a period at the end of a sentence if the sentence ends in a letter.
     /// </summary>
     public static readonly CVarDef<bool> ChatPunctuation =
-        CVarDef.Create("ic.punctuation", false, CVar.SERVER);
+        CVarDef.Create("ic.punctuation", true, CVar.SERVER); // SpL
 
     /// <summary>
     ///     Enables automatically forcing IC name rules. Uppercases the first letter of the first and last words of the name
@@ -82,7 +82,7 @@ public sealed partial class CCVars
     ///     Forces SSD characters to sleep after ICSSDSleepTime seconds
     /// </summary>
     public static readonly CVarDef<bool> ICSSDSleep =
-        CVarDef.Create("ic.ssd_sleep", true, CVar.SERVER);
+        CVarDef.Create("ic.ssd_sleep", false, CVar.SERVER); // SpL
 
     /// <summary>
     ///     Time between character getting SSD status and falling asleep

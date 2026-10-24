@@ -204,6 +204,9 @@
   description: made by mouffs for mouffs!
   components:
   - type: Unremoveable
+  - type: Tag
+    tags:
+      - BlacklistChameleon # SpL
 
 - type: entity
   parent: ClothingBackpackDuffelSyndicate
@@ -222,6 +225,9 @@
   - type: ClothingSpeedModifier
     walkModifier: 1
     sprintModifier: 1
+  - type: Tag
+    tags:
+      - BlacklistChameleon # SpL
 
 - type: entity
   parent: ClothingOuterHardsuitSyndie
@@ -245,3 +251,6 @@
   - type: ClothingSpeedModifier
     walkModifier: 1.25
     sprintModifier: 1.25
+  - type: Tag
+    tags:
+      - BlacklistChameleon # SpL

@@ -71,6 +71,9 @@
       damageCoefficient: 0.1
     - type: Sprite
       sprite: _Starlight/Clothing/Back/Backpacks/ntnc_bag.rsi
+    - type: Tag
+      tags:
+        - BlacklistChameleon # SpL
 
 - type: entity
   parent: [BaseTSFContraband, ClothingBackpackERTLeader]
@@ -80,6 +83,9 @@
   components:
     - type: Sprite
       sprite: _Starlight/Clothing/Back/Backpacks/tsf.rsi
+    - type: Tag
+      tags:
+        - BlacklistChameleon # SpL
 
 - type: entity
   parent: ClothingBackpack
