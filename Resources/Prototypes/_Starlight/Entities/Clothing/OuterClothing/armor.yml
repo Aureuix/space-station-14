@@ -86,6 +86,10 @@
               staminaModifier: 0.5
             - type: ExplosionResistance
               damageCoefficient: 0.5
+    - type: Tag
+      tags:
+        - BlacklistChameleon # SpL
+  
 
 - type: entity
   parent: [ClothingOuterArmorBase, BaseSecurityContraband]
@@ -344,6 +348,9 @@
           sprite:
             sprite: _Starlight/Clothing/OuterClothing/Armor/reactive.rsi
             state: active-icon
+    - type: Tag
+      tags:
+        - BlacklistChameleon # SpL
 
 - type: entity
   parent: ClothingOuterReactiveArmourShell
@@ -395,6 +402,9 @@
     staminaModifier: 0.85
   - type: ExplosionResistance
     damageCoefficient: 0.85
+  - type: Tag
+    tags:
+      - BlacklistChameleon # SpL
 
 - type: entity
   parent: ClothingOuterVestRetroOfficer
@@ -406,6 +416,9 @@
     sprite: _Starlight/Clothing/OuterClothing/Vests/retro_officer_hivis_vest.rsi
   - type: Clothing
     sprite: _Starlight/Clothing/OuterClothing/Vests/retro_officer_hivis_vest.rsi
+  - type: Tag
+    tags:
+      - BlacklistChameleon # SpL
 
 # Greenshield Officer
 - type: entity

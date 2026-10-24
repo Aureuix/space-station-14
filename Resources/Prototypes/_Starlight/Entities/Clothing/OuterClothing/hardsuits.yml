@@ -631,6 +631,9 @@
           variation: 0.025
     - type: ToggleableClothing
       clothingPrototype: ClothingHeadHelmetHardsuitNTSF
+    - type: Tag
+      tags:
+        - BlacklistChameleon # SpL
 
 - type: entity
   parent: [BaseNanoTrasenContraband, ClothingOuterHardsuitBase]
@@ -679,6 +682,9 @@
           variation: 0.025
     - type: ToggleableClothing
       clothingPrototype: ClothingHeadHelmetHardsuitNTSFPrimus
+    - type: Tag
+      tags:
+        - BlacklistChameleon # SpL
 
 - type: entity
   parent: [BaseNanoTrasenContraband, ClothingOuterHardsuitBase]
@@ -727,6 +733,9 @@
           variation: 0.025
     - type: ToggleableClothing
       clothingPrototype: ClothingHeadHelmetHardsuitNTSFSecundus
+    - type: Tag
+      tags:
+        - BlacklistChameleon # SpL
 
 - type: entity
   parent: [BaseNanoTrasenContraband, ClothingOuterHardsuitBase]
@@ -788,6 +797,9 @@
       interfaces:
        enum.StorageUiKey.Key:
          type: StorageBoundUserInterface
+    - type: Tag
+      tags:
+        - BlacklistChameleon # SpL
 
 - type: entity
   parent: [BaseNanoTrasenContraband, ClothingOuterHardsuitBase]
@@ -836,6 +848,9 @@
           variation: 0.025
     - type: ToggleableClothing
       clothingPrototype: ClothingHeadHelmetHardsuitNTSFQuartus
+    - type: Tag
+      tags:
+        - BlacklistChameleon # SpL
 
 - type: entity
   parent: [BaseNanoTrasenContraband, ClothingOuterHardsuitBase]
@@ -884,6 +899,9 @@
           variation: 0.025
     - type: ToggleableClothing
       clothingPrototype: ClothingHeadHelmetHardsuitNTSFQuintus
+    - type: Tag
+      tags:
+        - BlacklistChameleon # SpL
 
 - type: entity
   parent: [BaseNanoTrasenContraband, ClothingOuterHardsuitBase]
@@ -932,6 +950,9 @@
           variation: 0.025
     - type: ToggleableClothing
       clothingPrototype: ClothingHeadHelmetHardsuitNTSFSextus
+    - type: Tag
+      tags:
+        - BlacklistChameleon # SpL
 
 - type: entity
   parent: [BaseNanoTrasenContraband, ClothingOuterHardsuitBase]
@@ -980,6 +1001,9 @@
           variation: 0.025
     - type: ToggleableClothing
       clothingPrototype: ClothingHeadHelmetHardsuitNTSFSeptimus
+    - type: Tag
+      tags:
+        - BlacklistChameleon # SpL
 
 - type: entity
   parent: [BaseNanoTrasenContraband, ClothingOuterHardsuitBase]
@@ -1028,6 +1052,9 @@
           variation: 0.025
     - type: ToggleableClothing
       clothingPrototype: ClothingHeadHelmetHardsuitNTSFOctavius
+    - type: Tag
+      tags:
+        - BlacklistChameleon # SpL
 
 - type: entity
   parent: [BaseNanoTrasenContraband, ClothingOuterHardsuitBase, BaseToggleClothing]
@@ -1083,6 +1110,7 @@
     - type: Tag
       tags:
       - Hardsuit
+      - BlacklistChameleon # SpL
     - type: FireProtection
       reduction: 0.8
     - type: StaminaResistance # do not add these to other equipment or mobs, we don't want to microbalance these everywhere
@@ -1112,6 +1140,7 @@
           variation: 0.025
     - type: ToggleableClothing
       clothingPrototype: ClothingHeadHelmetHardsuitNTSFNonus
+    
 
 - type: entity
   parent: [BaseNanoTrasenContraband, ClothingOuterHardsuitBase]
@@ -1160,6 +1189,9 @@
           variation: 0.025
     - type: ToggleableClothing
       clothingPrototype: ClothingHeadHelmetHardsuitDecimus
+    - type: Tag
+      tags:
+        - BlacklistChameleon # SpL
 
 # TSF
 - type: entity
@@ -1193,6 +1225,9 @@
           variation: 0.09
     - type: ToggleableClothing
       clothingPrototype: ClothingHeadHelmetHardsuitTSFMARSOC
+    - type: Tag
+      tags:
+        - BlacklistChameleon # SpL
 
 - type: entity
   parent: [BaseTSFContraband, ClothingOuterHardsuitNTSF]
@@ -1220,6 +1255,9 @@
         collection: FootstepFloor
     - type: ToggleableClothing
       clothingPrototype: ClothingHeadHelmetHardsuitTSFPhantom
+    - type: Tag
+      tags:
+        - BlacklistChameleon # SpL
 
 #Thanatos (Starlight version of Deathsquad with enhanced stats)
 - type: entity
@@ -1266,3 +1304,4 @@
       tags:
         - CorgiWearable
         - Hardsuit
+        - BlacklistChameleon # SpL

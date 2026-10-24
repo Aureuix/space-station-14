@@ -23,3 +23,6 @@
       sprite: _SpL/Clothing/Neck/Misc/compass.rsi
       size: Small
     - type: HandheldGPS
+    - type: Tag
+      tags:
+        - BlacklistChameleon # SpL

@@ -8,6 +8,9 @@
     sprite: _Starlight/Admeme/Clothing/Uniforms/Jumpskirt/ntnc_officer.rsi
   - type: Clothing
     sprite: _Starlight/Admeme/Clothing/Uniforms/Jumpskirt/ntnc_officer.rsi
+  - type: Tag
+  tags:
+    - BlacklistChameleon # SpL
 
 - type: entity
   parent: [ ClothingUniformSkirtBase, BaseNanoTrasenContraband ]
@@ -19,3 +22,6 @@
     sprite: _Starlight/Admeme/Clothing/Uniforms/Jumpskirt/ntnc_officer.rsi
   - type: Clothing
     sprite: _Starlight/Admeme/Clothing/Uniforms/Jumpskirt/ntnc_officer.rsi
+  - type: Tag
+    tags:
+      - BlacklistChameleon # SpL

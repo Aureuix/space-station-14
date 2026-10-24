@@ -203,7 +203,7 @@
   - type: Tag
     tags:
     - CorgiWearable
-    - WhitelistChameleon
+    - BlacklistChameleon # SpL
 
 - type: entity
   parent: ClothingOuterWizardBase
@@ -218,7 +218,7 @@
   - type: Tag
     tags:
     - CorgiWearable
-    - WhitelistChameleon
+    - BlacklistChameleon # SpL
 
 - type: entity
   parent: ClothingOuterWizardBase
@@ -233,7 +233,7 @@
   - type: Tag
     tags:
     - CorgiWearable
-    - WhitelistChameleon
+    - BlacklistChameleon # SpL
 
 - type: entity
   parent: ClothingOuterBase

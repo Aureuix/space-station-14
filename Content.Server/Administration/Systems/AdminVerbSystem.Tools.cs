@@ -828,7 +828,7 @@ public sealed partial class AdminVerbSystem
             // Reaper arm verb
             Verb reaperArm = new()
             {
-                Text = "Replace the right hand with a Reaper arm.",
+                Text = "Replace the right arm with a Reaper arm.",
                 Category = VerbCategory.Tricks,
                 Icon = new SpriteSpecifier.Rsi(new("/Textures/_Starlight/Mobs/Species/Cyberlimbs/parts.rsi"), "r_silver_arm"),
                 Act = () =>
@@ -848,10 +848,208 @@ public sealed partial class AdminVerbSystem
                     }
                 },
                 Impact = LogImpact.Medium,
-                Message = "Replace the right hand with a Reaper arm.",
+                Message = "Replace the right arm with a Reaper arm.",
                 Priority = (int)TricksVerbPriorities.SetBulletAmount,
             };
             args.Verbs.Add(reaperArm);
+            
+            // SpL start
+            // Bulwark arm verb
+            Verb bulwarkArm = new()
+            {
+                Text = "Replace the left arm with a Bulwark arm.",
+                Category = VerbCategory.Tricks,
+                Icon = new SpriteSpecifier.Rsi(new("/Textures/_Starlight/Mobs/Species/Cyberlimbs/parts.rsi"), "l_bulwark_arm"),
+                Act = () =>
+                {
+                    var torso = _bodySystem.GetBodyChildrenOfType(args.Target, BodyPartType.Torso).FirstOrDefault();
+                    var leftArm = _bodySystem.GetBodyChildrenOfType(args.Target, BodyPartType.Arm).FirstOrDefault(part => part.Component.Symmetry == BodyPartSymmetry.Left);
+                    if (torso == default || leftArm == default)
+                        return;
+
+                    if (_entitySystem.TryEntity<TransformComponent, HumanoidAppearanceComponent, BodyComponent>(args.Target, out var body)
+                        && _entitySystem.TryEntity<TransformComponent, MetaDataComponent, BodyPartComponent>(leftArm.Id, out var partEnt))
+                    {
+                        _limbSystem.Amputatate(body, partEnt);
+                        var bulwark = Spawn("LeftArmCyberBulwark", body.Comp1.Coordinates);
+                        if (_entitySystem.TryEntity<BodyPartComponent>(bulwark, out var bulwarkEnt))
+                            _limbSystem.AttachLimb((body.Owner, body.Comp2), "left arm", torso, bulwarkEnt);
+                    }
+                },
+                Impact = LogImpact.Medium,
+                Message = "Replace the left arm with a Bulwark arm.",
+                Priority = (int)TricksVerbPriorities.SetBulletAmount,
+            };
+            args.Verbs.Add(bulwarkArm);
+            
+            // Investigator arm verb
+            Verb investigatorArm = new()
+            {
+                Text = "Replace the right arm with an Investigator arm.",
+                Category = VerbCategory.Tricks,
+                Icon = new SpriteSpecifier.Rsi(new("/Textures/_Starlight/Mobs/Species/Cyberlimbs/parts.rsi"), "r_investigator_arm"),
+                Act = () =>
+                {
+                    var torso = _bodySystem.GetBodyChildrenOfType(args.Target, BodyPartType.Torso).FirstOrDefault();
+                    var rightArm = _bodySystem.GetBodyChildrenOfType(args.Target, BodyPartType.Arm).FirstOrDefault(part => part.Component.Symmetry == BodyPartSymmetry.Right);
+                    if (torso == default || rightArm == default)
+                        return;
+
+                    if (_entitySystem.TryEntity<TransformComponent, HumanoidAppearanceComponent, BodyComponent>(args.Target, out var body)
+                        && _entitySystem.TryEntity<TransformComponent, MetaDataComponent, BodyPartComponent>(rightArm.Id, out var partEnt))
+                    {
+                        _limbSystem.Amputatate(body, partEnt);
+                        var investigator = Spawn("RightArmCyberInvestigator", body.Comp1.Coordinates);
+                        if (_entitySystem.TryEntity<BodyPartComponent>(investigator, out var investigatorEnt))
+                            _limbSystem.AttachLimb((body.Owner, body.Comp2), "right arm", torso, investigatorEnt);
+                    }
+                },
+                Impact = LogImpact.Medium,
+                Message = "Replace the right arm with an Investigator arm.",
+                Priority = (int)TricksVerbPriorities.SetBulletAmount,
+            };
+            args.Verbs.Add(investigatorArm);
+            
+            // Engineer arm verb
+            Verb engineerArm = new()
+            {
+                Text = "Replace the left arm with an Engineer arm.",
+                Category = VerbCategory.Tricks,
+                Icon = new SpriteSpecifier.Rsi(new("/Textures/_Starlight/Mobs/Species/Cyberlimbs/parts.rsi"), "l_engineer_arm"),
+                Act = () =>
+                {
+                    var torso = _bodySystem.GetBodyChildrenOfType(args.Target, BodyPartType.Torso).FirstOrDefault();
+                    var leftArm = _bodySystem.GetBodyChildrenOfType(args.Target, BodyPartType.Arm).FirstOrDefault(part => part.Component.Symmetry == BodyPartSymmetry.Left);
+                    if (torso == default || leftArm == default)
+                        return;
+
+                    if (_entitySystem.TryEntity<TransformComponent, HumanoidAppearanceComponent, BodyComponent>(args.Target, out var body)
+                        && _entitySystem.TryEntity<TransformComponent, MetaDataComponent, BodyPartComponent>(leftArm.Id, out var partEnt))
+                    {
+                        _limbSystem.Amputatate(body, partEnt);
+                        var engineer = Spawn("LeftArmCyberEngineer", body.Comp1.Coordinates);
+                        if (_entitySystem.TryEntity<BodyPartComponent>(engineer, out var engineerEnt))
+                            _limbSystem.AttachLimb((body.Owner, body.Comp2), "left arm", torso, engineerEnt);
+                    }
+                },
+                Impact = LogImpact.Medium,
+                Message = "Replace the left arm with an Engineer arm.",
+                Priority = (int)TricksVerbPriorities.SetBulletAmount,
+            };
+            args.Verbs.Add(engineerArm);
+            
+            // Scribe arm verb
+            Verb scribeArm = new()
+            {
+                Text = "Replace the right arm with a Scribe arm.",
+                Category = VerbCategory.Tricks,
+                Icon = new SpriteSpecifier.Rsi(new("/Textures/_Starlight/Mobs/Species/Cyberlimbs/parts.rsi"), "r_scribe_arm"),
+                Act = () =>
+                {
+                    var torso = _bodySystem.GetBodyChildrenOfType(args.Target, BodyPartType.Torso).FirstOrDefault();
+                    var rightArm = _bodySystem.GetBodyChildrenOfType(args.Target, BodyPartType.Arm).FirstOrDefault(part => part.Component.Symmetry == BodyPartSymmetry.Right);
+                    if (torso == default || rightArm == default)
+                        return;
+
+                    if (_entitySystem.TryEntity<TransformComponent, HumanoidAppearanceComponent, BodyComponent>(args.Target, out var body)
+                        && _entitySystem.TryEntity<TransformComponent, MetaDataComponent, BodyPartComponent>(rightArm.Id, out var partEnt))
+                    {
+                        _limbSystem.Amputatate(body, partEnt);
+                        var scribe = Spawn("RightArmCyberScribe", body.Comp1.Coordinates);
+                        if (_entitySystem.TryEntity<BodyPartComponent>(scribe, out var scribeEnt))
+                            _limbSystem.AttachLimb((body.Owner, body.Comp2), "right arm", torso, scribeEnt);
+                    }
+                },
+                Impact = LogImpact.Medium,
+                Message = "Replace the right arm with a Scribe arm.",
+                Priority = (int)TricksVerbPriorities.SetBulletAmount,
+            };
+            args.Verbs.Add(scribeArm);
+            
+            // Mantis blades arm verb
+            Verb mantisArm = new()
+            {
+                Text = "Replace the left arm with Mantis Blades.",
+                Category = VerbCategory.Tricks,
+                Icon = new SpriteSpecifier.Rsi(new("/Textures/_Starlight/Mobs/Species/Cyberlimbs/parts.rsi"), "l_mantis_blade_arm"),
+                Act = () =>
+                {
+                    var torso = _bodySystem.GetBodyChildrenOfType(args.Target, BodyPartType.Torso).FirstOrDefault();
+                    var leftArm = _bodySystem.GetBodyChildrenOfType(args.Target, BodyPartType.Arm).FirstOrDefault(part => part.Component.Symmetry == BodyPartSymmetry.Left);
+                    if (torso == default || leftArm == default)
+                        return;
+
+                    if (_entitySystem.TryEntity<TransformComponent, HumanoidAppearanceComponent, BodyComponent>(args.Target, out var body)
+                        && _entitySystem.TryEntity<TransformComponent, MetaDataComponent, BodyPartComponent>(leftArm.Id, out var partEnt))
+                    {
+                        _limbSystem.Amputatate(body, partEnt);
+                        var mantis = Spawn("LeftArmCyberMantisBlade", body.Comp1.Coordinates);
+                        if (_entitySystem.TryEntity<BodyPartComponent>(mantis, out var mantisEnt))
+                            _limbSystem.AttachLimb((body.Owner, body.Comp2), "left arm", torso, mantisEnt);
+                    }
+                },
+                Impact = LogImpact.Medium,
+                Message = "Replace the left arm with Mantis Blades",
+                Priority = (int)TricksVerbPriorities.SetBulletAmount,
+            };
+            args.Verbs.Add(mantisArm);
+            
+            // Left Cargo leg
+            Verb cargoLeg = new()
+            {
+                Text = "Replace the left leg with a Cargo leg.",
+                Category = VerbCategory.Tricks,
+                Icon = new SpriteSpecifier.Rsi(new("/Textures/_Starlight/Mobs/Species/Cyberlimbs/parts.rsi"), "l_leg_cargo"),
+                Act = () =>
+                {
+                    var torso = _bodySystem.GetBodyChildrenOfType(args.Target, BodyPartType.Torso).FirstOrDefault();
+                    var leftLeg = _bodySystem.GetBodyChildrenOfType(args.Target, BodyPartType.Leg).FirstOrDefault(part => part.Component.Symmetry == BodyPartSymmetry.Left);
+                    if (torso == default || leftLeg == default)
+                        return;
+
+                    if (_entitySystem.TryEntity<TransformComponent, HumanoidAppearanceComponent, BodyComponent>(args.Target, out var body)
+                        && _entitySystem.TryEntity<TransformComponent, MetaDataComponent, BodyPartComponent>(leftLeg.Id, out var partEnt))
+                    {
+                        _limbSystem.Amputatate(body, partEnt);
+                        var cargo = Spawn("LeftLegCyberCargo", body.Comp1.Coordinates);
+                        if (_entitySystem.TryEntity<BodyPartComponent>(cargo, out var cargoEnt))
+                            _limbSystem.AttachLimb((body.Owner, body.Comp2), "left leg", torso, cargoEnt);
+                    }
+                },
+                Impact = LogImpact.Medium,
+                Message = "Replace the left leg with a Cargo leg.",
+                Priority = (int)TricksVerbPriorities.SetBulletAmount,
+            };
+            args.Verbs.Add(cargoLeg);
+            
+            // Right Pilebunker leg
+            Verb pilebunkerLeg = new()
+            {
+                Text = "Replace the right leg with a Pilebunker leg.",
+                Category = VerbCategory.Tricks,
+                Icon = new SpriteSpecifier.Rsi(new("/Textures/_Starlight/Mobs/Species/Cyberlimbs/parts.rsi"), "r_leg_pilebunker"),
+                Act = () =>
+                {
+                    var torso = _bodySystem.GetBodyChildrenOfType(args.Target, BodyPartType.Torso).FirstOrDefault();
+                    var rightLeg = _bodySystem.GetBodyChildrenOfType(args.Target, BodyPartType.Leg).FirstOrDefault(part => part.Component.Symmetry == BodyPartSymmetry.Right);
+                    if (torso == default || rightLeg == default)
+                        return;
+
+                    if (_entitySystem.TryEntity<TransformComponent, HumanoidAppearanceComponent, BodyComponent>(args.Target, out var body)
+                        && _entitySystem.TryEntity<TransformComponent, MetaDataComponent, BodyPartComponent>(rightLeg.Id, out var partEnt))
+                    {
+                        _limbSystem.Amputatate(body, partEnt);
+                        var pilebunker = Spawn("RightLegCyberPilebunker", body.Comp1.Coordinates);
+                        if (_entitySystem.TryEntity<BodyPartComponent>(pilebunker, out var pilebunkerEnt))
+                            _limbSystem.AttachLimb((body.Owner, body.Comp2), "right leg", torso, pilebunkerEnt);
+                    }
+                },
+                Impact = LogImpact.Medium,
+                Message = "Replace the right leg with a Pilebunker leg.",
+                Priority = (int)TricksVerbPriorities.SetBulletAmount,
+            };
+            args.Verbs.Add(pilebunkerLeg);
+            // SpL end
             
             // Left Speg
             Verb leftSpeg = new()

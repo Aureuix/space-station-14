@@ -17,6 +17,9 @@
       dropOnKill: true
       dropOnCrit: true
       forceDrop: true
+    - type: Tag
+      tags:
+        - BlacklistChameleon # SpL
 
 - type: entity
   id: TophatThatFuckingGibsYou
@@ -32,6 +35,9 @@
       damageDelay: 2.5
       popupDelay: 2.5
       popupLocId: hat-killsyou-gib
+    - type: Tag
+      tags:
+        - BlacklistChameleon # SpL
 
 - type: entity
   id: TophatThatFuckingAshesYou
@@ -47,6 +53,9 @@
       damageDelay: 3.5
       popupDelay: 3.5
       popupLocId: hat-killsyou-ash
+    - type: Tag
+      tags:
+        - BlacklistChameleon # SpL
 
 #ghostroles
 - type: entity

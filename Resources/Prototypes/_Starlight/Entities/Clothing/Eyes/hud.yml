@@ -273,6 +273,9 @@
       modifiers:
         coefficients:
           Heat: 0.95
+    - type: Tag
+      tags:
+        - BlacklistChameleon # SpL
 
 - type: entity
   parent: [BaseTSFContraband, ClothingHeadset]
@@ -297,3 +300,6 @@
     - type: RadioChime
       sound:
         path: /Audio/_Starlight/Effects/Radio/tsf.ogg
+    - type: Tag
+      tags:
+        - BlacklistChameleon # SpL

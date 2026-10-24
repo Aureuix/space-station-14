@@ -631,6 +631,9 @@
         Heat: 0.75
         Radiation: 0.75
         Caustic: 0.80
+  - type: Tag
+    tags:
+      - BlacklistChameleon # SpL
 
 
 - type: entity
@@ -685,6 +688,9 @@
         Heat: 0.75
         Radiation: 0.75
         Caustic: 0.80
+  - type: Tag
+    tags:
+      - BlacklistChameleon # SpL
 
 - type: entity
   parent: [ BaseNanoTrasenContraband, ClothingHeadHardsuitBase, ClothingHeadSuitWithLightBase, ClothingHeadLightParamsProfessional ]
@@ -738,6 +744,9 @@
         Heat: 0.70
         Radiation: 0.70
         Caustic: 0.70
+  - type: Tag
+    tags:
+      - BlacklistChameleon # SpL
 
 - type: entity
   parent: [ BaseNanoTrasenContraband, ClothingHeadHardsuitBase, ClothingHeadSuitWithLightBase, ClothingHeadLightParamsProfessional ]
@@ -792,6 +801,9 @@
         Heat: 0.75
         Radiation: 0.75
         Caustic: 0.80
+  - type: Tag
+    tags:
+      - BlacklistChameleon # SpL
 
 - type: entity
   parent: [ BaseNanoTrasenContraband, ClothingHeadHardsuitBase, ClothingHeadSuitWithLightBase, ClothingHeadLightParamsProfessional ]
@@ -845,6 +857,9 @@
         Heat: 0.75
         Radiation: 0.75
         Caustic: 0.80
+  - type: Tag
+    tags:
+      - BlacklistChameleon # SpL
 
 - type: entity
   parent: [ BaseNanoTrasenContraband, ClothingHeadHardsuitBase, ClothingHeadSuitWithLightBase, ClothingHeadLightParamsProfessional ]
@@ -898,6 +913,9 @@
         Heat: 0.75
         Radiation: 0.75
         Caustic: 0.80
+  - type: Tag
+    tags:
+      - BlacklistChameleon # SpL
 
 - type: entity
   parent: [ BaseNanoTrasenContraband, ClothingHeadHardsuitBase, ClothingHeadSuitWithLightBase, ClothingHeadLightParamsProfessional ]
@@ -953,6 +971,9 @@
         Heat: 0.75
         Radiation: 0.75
         Caustic: 0.80
+  - type: Tag
+    tags:
+      - BlacklistChameleon # SpL
 
 - type: entity
   parent: [ BaseNanoTrasenContraband, ClothingHeadHardsuitBase, ClothingHeadSuitWithLightBase, ClothingHeadLightParamsProfessional ]
@@ -1006,6 +1027,9 @@
         Heat: 0.75
         Radiation: 0.75
         Caustic: 0.70
+  - type: Tag
+    tags:
+      - BlacklistChameleon # SpL
 
 - type: entity
   parent: [ BaseNanoTrasenContraband, ClothingHeadHardsuitBase, ClothingHeadSuitWithLightBase, ClothingHeadLightParamsProfessional ]
@@ -1059,6 +1083,9 @@
         Heat: 0.75
         Radiation: 0.75
         Caustic: 0.80
+  - type: Tag
+    tags:
+      - BlacklistChameleon # SpL
 
 - type: entity
   parent: [ BaseNanoTrasenContraband, ClothingHeadHardsuitBase, ClothingHeadSuitWithLightBase, ClothingHeadLightParamsProfessional ]
@@ -1112,6 +1139,9 @@
         Heat: 0.75
         Radiation: 0.75
         Caustic: 0.80
+  - type: Tag
+    tags:
+      - BlacklistChameleon # SpL
 
 - type: entity
   parent: [ BaseNanoTrasenContraband, ClothingHeadHardsuitBase, ClothingHeadSuitWithLightBase, ClothingHeadLightParamsProfessional ]
@@ -1165,6 +1195,9 @@
         Heat: 0.80
         Radiation: 0.80
         Caustic: 0.95
+  - type: Tag
+    tags:
+      - BlacklistChameleon # SpL
 
 # TSF
 - type: entity
@@ -1206,6 +1239,9 @@
         Piercing: 0.85
         Heat: 0.85
         Caustic: 0
+  - type: Tag
+    tags:
+      - BlacklistChameleon # SpL
 
 - type: entity
   parent: [BaseTSFContraband, ClothingHeadHardsuitBase]
@@ -1246,6 +1282,9 @@
         Piercing: 0.75
         Heat: 0.75
         Caustic: 0
+  - type: Tag
+    tags:
+      - BlacklistChameleon # SpL
 
 #Thanatos Helmet (Starlight version of Deathsquad)
 - type: entity
@@ -1278,5 +1317,5 @@
         Caustic: 0.95
   - type: Tag
     tags:
-    - WhitelistChameleon
     - CorgiWearable
+    - BlacklistChameleon # SpL

@@ -878,7 +878,7 @@
   - type: Tag
     tags:
     - CorgiWearable
-    - WhitelistChameleon
+    - BlacklistChameleon # SpL
   - type: PointLight # Starlight: Actually give jugsuit a light
     color: "#ff5050" # Starlight
 
@@ -1207,6 +1207,9 @@
         Heat: 0.9
   - type: ZombificationResistance
     zombificationResistanceCoefficient: 0.25
+  - type: Tag
+    tags:
+      - BlacklistChameleon # SpL
 
 #Deathsquad Hardsuit
 - type: entity
@@ -1240,7 +1243,7 @@
 #Starlight
   - type: Tag
     tags:
-    - WhitelistChameleon
+    - BlacklistChameleon # SpL
     - CorgiWearable
 
 #MISC. HARDSUITS
@@ -1316,3 +1319,6 @@
         Slash: 0.9
         Piercing: 0.95
         Heat: 0.85 # Starlight end
+  - type: Tag
+    tags:
+      - BlacklistChameleon # SpL

@@ -364,6 +364,13 @@
         Caustic: 0.95 # I kind of just put this here so that it would show the infection resistance...
   - type: ZombificationResistance
     zombificationResistanceCoefficient: 0.9 # Starlight end
+  - type: Tag # SpL
+    tags:
+      - SurgeryCompatibleArmor # SpL
+      - PetWearable # SpL
+      - WhitelistChameleon # SpL
+      - SecBeltEquip # SpL
+  
 
 - type: entity
   parent: ClothingMaskBase
@@ -538,6 +545,9 @@
         Heat: 0.90
   - type: FlashImmunity
     blocksSpecialVision: False
+  - type: Tag
+    tags:
+      - BlacklistChameleon # SpL
 
 - type: entity
   parent: ClothingMaskBase
@@ -779,6 +789,9 @@
   - type: EyeProtection
   - type: BreathMask
   - type: IdentityBlocker
+  - type: Tag
+    tags:
+      - BlacklistChameleon # SpL
 
 - type: entity
   parent: ClothingMaskGas

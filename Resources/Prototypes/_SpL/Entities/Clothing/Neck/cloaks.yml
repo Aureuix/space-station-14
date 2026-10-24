@@ -159,7 +159,6 @@
         - ClothMade
         - Recyclable
         - WhitelistChameleon
-        - CorgiWearable
 
 - type: entity
   parent: ClothingNeckBase
@@ -173,8 +172,6 @@
       tags:
         - ClothMade
         - Recyclable
-        - WhitelistChameleon
-        - CorgiWearable
 
 - type: entity
   parent: [ClothingNeckBase, BaseCommandContraband]
@@ -340,3 +337,6 @@
   components:
     - type: Sprite
       sprite: _Goobstation/Clothing/Neck/Cloaks/cchighcommand.rsi
+    - type: Tag
+      tags:
+        - BlacklistChameleon # SpL

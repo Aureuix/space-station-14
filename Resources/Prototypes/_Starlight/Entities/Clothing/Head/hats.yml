@@ -578,6 +578,9 @@
       sprite: _Starlight/Clothing/Head/Hats/beret_tsf.rsi
     - type: Clothing
       sprite: _Starlight/Clothing/Head/Hats/beret_tsf.rsi
+    - type: Tag
+      tags:
+        - BlacklistChameleon # SpL
 
 - type: entity
   parent: [BaseTSFContraband, ClothingHeadBase]
@@ -589,6 +592,9 @@
       sprite: _Starlight/Clothing/Head/Hats/beret_tsfelite.rsi
     - type: Clothing
       sprite: _Starlight/Clothing/Head/Hats/beret_tsfelite.rsi
+    - type: Tag
+      tags:
+        - BlacklistChameleon # SpL
 
 - type: entity
   parent: ClothingHeadBase

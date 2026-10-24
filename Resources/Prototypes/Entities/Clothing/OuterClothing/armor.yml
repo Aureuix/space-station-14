@@ -558,6 +558,9 @@
   - type: GroupExamine
   - type: ProtectedFromStepTriggers
     slots: WITHOUT_POCKET
+  - type: Tag
+    tags:
+      - BlacklistChameleon # SpL
 
 - type: entity
   parent: ClothingOuterArmorBase
@@ -610,3 +613,6 @@
     damageCoefficient: 0.5
   - type: GroupExamine
   - type: Unremoveable
+  - type: Tag
+    tags:
+      - BlacklistChameleon # SpL

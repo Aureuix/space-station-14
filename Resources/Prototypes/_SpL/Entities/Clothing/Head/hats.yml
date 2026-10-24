@@ -355,5 +355,4 @@
       sprite: DeltaV/Clothing/Head/Hats/dircap.rsi
     - type: Tag
       tags:
-        - ClothMade
-        - Recyclable
+        - BlacklistChameleon # SpL

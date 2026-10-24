@@ -51,7 +51,7 @@
       
 # DV stuff
 - type: entity
-  parent: [ClothingOuterStorageBase, ClothingOuterColdBase, ClothingOuterArmorWarden, BaseSecurityContraband]
+  parent: [ClothingOuterStorageBase, ClothingOuterColdBase, BaseSecurityContraband]
   id: ClothingOuterWinterWardenFormal
   name: warden's armored formal winter coat
   description: A heavily armored winter coat with white trim, for a proper winter warden.
@@ -60,9 +60,22 @@
       sprite: DeltaV/Clothing/OuterClothing/WinterCoats/armourercoat.rsi
     - type: Clothing
       sprite: DeltaV/Clothing/OuterClothing/WinterCoats/armourercoat.rsi
+    - type: Pierceable
+      level: Metal
+    - type: Armor
+      modifiers:
+        coefficients:
+          Blunt: 0.65
+          Slash: 0.65
+          Piercing: 0.7
+          Heat: 0.7
+          Cold: 0.8
+          Caustic: 0.9
+    - type: ExplosionResistance
+      damageCoefficient: 0.9
       
 - type: entity
-  parent: [ClothingOuterStorageFoldableBase, ClothingOuterStorageBase, ClothingOuterColdBase, ClothingOuterArmorWarden, BaseSecurityContraband] # five. hundred. parents
+  parent: [ClothingOuterStorageFoldableBase, ClothingOuterStorageBase, ClothingOuterColdBase, BaseSecurityContraband] # five. hundred. parents
   id: ClothingOuterWinterWardenGreatcoat
   name: warden's armored greatcoat
   description: A thick black coat reinforced with an alloy similar to that seen in the jackets of your contemporaries.
@@ -71,6 +84,19 @@
       sprite: DeltaV/Clothing/OuterClothing/WinterCoats/armourergreatcoat.rsi
     - type: Clothing
       sprite: DeltaV/Clothing/OuterClothing/WinterCoats/armourergreatcoat.rsi
+    - type: Pierceable
+      level: Metal
+    - type: Armor
+      modifiers:
+        coefficients:
+          Blunt: 0.65
+          Slash: 0.65
+          Piercing: 0.7
+          Heat: 0.7
+          Cold: 0.8
+          Caustic: 0.9
+    - type: ExplosionResistance
+      damageCoefficient: 0.9
       
 - type: entity
   parent: [ ClothingOuterStorageFoldableBaseOpened, ClothingOuterWinterWardenGreatcoat ]
@@ -166,6 +192,6 @@
   description: No words can describe how stunning this coat is.
   components:
     - type: Sprite
-      sprite: DeltaV/Clothing/OuterClothing/WinterCoats/mimefurcoat.rsi
+      sprite: DeltaV/Clothing/OuterClothing/WinterCoats/mimelongcoat.rsi
     - type: Clothing
-      sprite: DeltaV/Clothing/OuterClothing/WinterCoats/mimefurcoat.rsi
+      sprite: DeltaV/Clothing/OuterClothing/WinterCoats/mimelongcoat.rsi

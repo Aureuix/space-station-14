@@ -36,6 +36,9 @@
     useCharge: 0
   - type: UseDelay
     delay: 10.0
+  - type: Tag
+    tags:
+      - BlacklistChameleon # SpL
 
 - type: entity
   parent: [ClothingNeckBase, BaseNanoTrasenContraband]
@@ -75,6 +78,9 @@
     useCharge: 0
   - type: UseDelay
     delay: 10.0
+  - type: Tag
+    tags:
+      - BlacklistChameleon # SpL
 
 - type: entity
   parent: [ClothingNeckBase, BaseNanoTrasenContraband]
@@ -114,6 +120,9 @@
     useCharge: 0
   - type: UseDelay
     delay: 10.0
+  - type: Tag
+    tags:
+      - BlacklistChameleon # SpL
 
 - type: entity
   parent: [ClothingNeckBase, BaseNanoTrasenContraband]
@@ -153,6 +162,9 @@
     useCharge: 0
   - type: UseDelay
     delay: 10.0
+  - type: Tag
+    tags:
+      - BlacklistChameleon # SpL
 
 - type: entity
   parent: [ClothingNeckBase, BaseNanoTrasenContraband]
@@ -192,6 +204,9 @@
     useCharge: 0
   - type: UseDelay
     delay: 10.0
+  - type: Tag
+    tags:
+      - BlacklistChameleon # SpL
 
 - type: entity
   parent: [ClothingNeckBase, BaseNanoTrasenContraband]
@@ -231,6 +246,9 @@
     useCharge: 0
   - type: UseDelay
     delay: 10.0
+  - type: Tag
+    tags:
+      - BlacklistChameleon # SpL
 
 - type: entity
   parent: [ClothingNeckBase, BaseNanoTrasenContraband]
@@ -270,6 +288,9 @@
     useCharge: 0
   - type: UseDelay
     delay: 10.0
+  - type: Tag
+    tags:
+      - BlacklistChameleon # SpL
 
 - type: entity
   parent: [ClothingNeckBase, BaseNanoTrasenContraband]
@@ -309,6 +330,9 @@
     useCharge: 0
   - type: UseDelay
     delay: 10.0
+  - type: Tag
+    tags:
+      - BlacklistChameleon # SpL
 
 - type: entity
   parent: [ClothingNeckBase, BaseNanoTrasenContraband]
@@ -348,6 +372,9 @@
     useCharge: 0
   - type: UseDelay
     delay: 10.0
+  - type: Tag
+    tags:
+      - BlacklistChameleon # SpL
 
 - type: entity
   parent: [ClothingNeckBase, BaseNanoTrasenContraband]
@@ -387,6 +414,9 @@
     useCharge: 0
   - type: UseDelay
     delay: 10.0
+  - type: Tag
+    tags:
+      - BlacklistChameleon # SpL
 
 # Greenshield Officer
 - type: entity

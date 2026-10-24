@@ -34,3 +34,6 @@
     - type: GuideHelp
       guides:
         - Brighteye
+    - type: Tag
+      tags:
+        - BlacklistChameleon # SpL

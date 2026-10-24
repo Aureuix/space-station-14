@@ -9,3 +9,6 @@
     sprite: _Starlight/Clothing/Head/Helmets/soviet_eva_helm.rsi
   - type: Clothing
     sprite: _Starlight/Clothing/Head/Helmets/soviet_eva_helm.rsi
+  - type: Tag
+    tags:
+      - BlacklistChameleon # SpL

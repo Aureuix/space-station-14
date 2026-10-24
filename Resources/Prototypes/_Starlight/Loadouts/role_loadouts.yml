@@ -90,13 +90,13 @@
   id: JobBlueShield
   groups:
   - BlueShieldHead
+  - BlueShieldNeck
   - BlueShieldJumpsuit
   - BlueShieldBackpack
   - BlueShieldOuterclothing
   - BlueShieldBelt
   - InsulsCombat
   - BlueShieldShoes
-  - BlueShieldNeck
   - BlueShieldEyewear
   - BlueShieldPDA
   - Trinkets

@@ -11,6 +11,10 @@
       sprite: _Starlight/Admeme/Clothing/OuterClothing/Hardsuits/ntnc_hardsuit.rsi
     - type: ToggleableClothing
       clothingPrototype: ClothingHeadHelmetHardsuitNTNCConsortium
+    - type: Tag
+      tags:
+        - Hardsuit # SpL
+        - BlacklistChameleon # SpL
 
 - type: entity
   parent: [BaseNanoTrasenContraband, ClothingOuterHardsuitSyndieMedic] #sl Change
@@ -27,4 +31,4 @@
     - type: Tag
       tags:
         - Hardsuit
-        - WhitelistChameleon
+        - BlacklistChameleon # SpL

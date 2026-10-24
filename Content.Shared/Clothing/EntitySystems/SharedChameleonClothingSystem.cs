@@ -46,6 +46,7 @@ public abstract class SharedChameleonClothingSystem : EntitySystem
     public readonly Dictionary<SlotFlags, List<string>> ValidVariants = new();
 
     private static readonly ProtoId<TagPrototype> WhitelistChameleonTag = "WhitelistChameleon";
+    private static readonly ProtoId<TagPrototype> BlacklistChameleonTag = "BlacklistChameleon"; // SpL
 
     public override void Initialize()
     {
@@ -171,11 +172,11 @@ public abstract class SharedChameleonClothingSystem : EntitySystem
     public bool IsValidTarget(EntityPrototype proto, SlotFlags chameleonSlot = SlotFlags.NONE, string? requiredTag = null)
     {
         // check if entity is valid
-        if (proto.Abstract || proto.HideSpawnMenu)
+        if (proto.Abstract) // SpL- removed hidespawnmenu issues
             return false;
 
         // check if it is marked as valid chameleon target
-        if (!proto.TryGetComponent(out TagComponent? tag, Factory) || !_tag.HasTag(tag, WhitelistChameleonTag))
+        if (!proto.TryGetComponent(out TagComponent? tag, Factory) || !_tag.HasTag(tag, WhitelistChameleonTag || _tag.HasTag(tag, BlacklistChameleonTag)) // SpL- blacklisting
             return false;
 
         if (requiredTag != null && !_tag.HasTag(tag, requiredTag))
