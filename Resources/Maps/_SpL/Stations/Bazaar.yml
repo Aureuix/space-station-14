@@ -65037,18 +65037,6 @@ entities:
       rot: 1.5707963267948966 rad
       pos: 38.5,4.5
       parent: 2
-- proto: ChairPillow
-  entities:
-  - uid: 10537
-    components:
-    - type: Transform
-      pos: 6.5,29.5
-      parent: 2
-  - uid: 10538
-    components:
-    - type: Transform
-      pos: 10.5,29.5
-      parent: 2
 - proto: ChairPilotSeat
   entities:
   - uid: 10539

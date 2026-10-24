@@ -28,11 +28,17 @@ public abstract partial class SharedGunSystem
 
     private void OnBatteryExamine(Entity<BatteryAmmoProviderComponent> ent, ref ExaminedEvent args)
     {
+        if (!ent.Comp.ShowExamineText) // SpL- allow hiding
+            return;
+        
         args.PushMarkup(Loc.GetString("gun-battery-examine", ("color", AmmoExamineColor), ("count", ent.Comp.Shots)));
     }
 
     private void OnBatteryDamageExamine(Entity<BatteryAmmoProviderComponent> ent, ref DamageExamineEvent args)
     {
+        if (!ent.Comp.ShowExamineText) // SpL- allow hiding
+            return;
+        
         var proto = ProtoManager.Index<EntityPrototype>(ent.Comp.Prototype);
         DamageSpecifier? damageSpec = null;
         var damageType = string.Empty;
