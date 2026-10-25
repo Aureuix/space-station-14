@@ -1,4 +1,25 @@
-﻿## general cloaks
+﻿## aura base
+- type: entity
+  abstract: true
+  id: BaseAuraCloak
+  components:
+    - type: Appearance
+    - type: Foldable
+      canFoldInsideContainer: true
+      unfoldVerbText: fold-unaura-verb
+      foldVerbText: fold-aura-verb
+    - type: FoldableClothing
+      foldedEquippedPrefix: aura
+      foldedHeldPrefix: aura
+    - type: Sprite
+      layers:
+        - state: icon
+          map: [ "unfoldedLayer" ]
+        - state: icon-aura
+          map: [ "foldedLayer" ]
+          visible: false
+  
+## general cloaks
 - type: entity
   parent: [ ClothingNeckBase ]
   id: ClothingNeckCloakTorn
@@ -190,7 +211,7 @@
         - WhitelistChameleon
 
 - type: entity
-  parent: [ClothingNeckBase, BaseCommandContraband]
+  parent: [ClothingNeckBase, BaseCommandContraband, BaseAuraCloak]
   id: ClothingNeckCloakCaptainAura
   name: veteran captain's cloak
   description: Nothing more needs be said. Glory to NanoTrasen.
