@@ -1235,7 +1235,6 @@
       proto: BulletPistolTraceAP
       capacity: 30
       count: 30
-      showExamineText: false
 
     - type: Loadout
       prototypes:
