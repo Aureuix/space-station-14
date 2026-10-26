@@ -16,7 +16,6 @@
     drawdepth: SmallObjects
     sprite: _Starlight/Structures/Furniture/register.rsi
     state: register
-    offset: 0, 0.2
   - type: Appearance
   - type: UserInterface
     interfaces:
