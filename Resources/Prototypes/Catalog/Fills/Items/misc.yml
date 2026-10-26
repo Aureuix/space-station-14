@@ -4,6 +4,7 @@
   parent:
   - ClothingShoesBootsCombat
   - ClothingShoesBootsSecFilled
+  components:
   - type: Tag
     tags:
       - BlacklistChameleon # SpL
@@ -13,63 +14,70 @@
   parent:
   - ClothingShoesBootsJack
   - ClothingShoesBootsSecFilled
-  - type: Tag
-    tags:
-      - BlacklistChameleon # SpL
+  components:
+    - type: Tag
+      tags:
+        - BlacklistChameleon # SpL
 
 - type: entity
   id: ClothingShoesBootsWinterSecFilled
   parent:
   - ClothingShoesBootsWinterSec
   - ClothingShoesBootsSecFilled
-  - type: Tag
-    tags:
-      - BlacklistChameleon # SpL
+  components:
+    - type: Tag
+      tags:
+        - BlacklistChameleon # SpL
 
 - type: entity
   id: ClothingShoesBootsCowboyBlackFilled
   parent:
   - ClothingShoesBootsCowboyBlack
   - ClothingShoesBootsSecFilled
-  - type: Tag
-    tags:
-      - BlacklistChameleon # SpL
+  components:
+    - type: Tag
+      tags:
+        - BlacklistChameleon # SpL
 
 - type: entity
   id: ClothingShoesBootsCowboyBrownFilled
   parent:
   - ClothingShoesBootsCowboyBrown
   - ClothingShoesBootsSecFilled
-  - type: Tag
-    tags:
-      - BlacklistChameleon # SpL
+  components:
+    - type: Tag
+      tags:
+        - BlacklistChameleon # SpL
 
 - type: entity
   id: ClothingShoesBootsCowboyWhiteFilled
   parent:
   - ClothingShoesBootsCowboyWhite
   - ClothingShoesBootsSecFilled
-  - type: Tag
-    tags:
-      - BlacklistChameleon # SpL
+  components:
+    - type: Tag
+      tags:
+        - BlacklistChameleon # SpL
 
 - type: entity
   id: ClothingShoesBootsCowboyFancyFilled
   parent:
   - ClothingShoesBootsCowboyFancy
   - ClothingShoesBootsSecFilled
-  - type: Tag
-    tags:
-      - BlacklistChameleon # SpL
+  components:
+    - type: Tag
+      tags:
+        - BlacklistChameleon # SpL
 
 - type: entity
   id: ClothingShoesHighheelBootsFilled
   parent:
   - ClothingShoesHighheelBoots
   - ClothingShoesBootsSecFilled
-  - type: Tag
-    tags:
-      - BlacklistChameleon # SpL
+  components:
+    - type: Tag
+      tags:
+        - BlacklistChameleon # SpL
 
 - type: entity
   parent: ClothingShoesBootsMerc
