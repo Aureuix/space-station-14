@@ -2,9 +2,10 @@
   id: ShadekinMaleScreams
   files:
   - /Audio/_Starlight/Voice/Shadekin/scream_m1.ogg
+#  - /Audio/_Starlight/Voice/Shadekin/scream_m2.ogg # SpL Change
 
 - type: soundCollection
   id: ShadekinFemaleScreams
   files:
-  - /Audio/_Starlight/Voice/Shadekin/scream_m1.ogg
   - /Audio/_Starlight/Voice/Shadekin/scream_f1.ogg
+#  - /Audio/_Starlight/Voice/Shadekin/scream_f2.ogg # SpL Change
