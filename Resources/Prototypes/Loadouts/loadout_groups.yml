@@ -258,6 +258,8 @@
   - CaptainGlasses
   - CaptainHud
   - PrescriptionCapGlasses # SpL
+  - JamjarCapGlasses # SpL
+  - CaptainVisor
 
 - type: loadoutGroup
   id: CaptainJobTrinkets
