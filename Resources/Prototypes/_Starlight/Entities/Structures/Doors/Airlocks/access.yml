@@ -23,7 +23,7 @@
   name: maintenance access
   components:
   - type: Sprite
-    sprite: _Starlight/Structures/Doors/Airlocks/Standard/brigmedic_maints.rsi
+    sprite: _SpL/Structures/Doors/Airlocks/Standard/brigmedic_maints.rsi
 
 - type: entity
   parent: AirlockBrigmedPara
@@ -49,7 +49,7 @@
   name: maintenance access
   components:
   - type: Sprite
-    sprite: _Starlight/Structures/Doors/Airlocks/Standard/brigmedic_maints.rsi
+    sprite: _SpL/Structures/Doors/Airlocks/Standard/brigmedic_maints.rsi
 
 # Courtroom
 - type: entity # SpL start- no real courtroom system, just defaults back to seclaw
@@ -58,7 +58,7 @@
   name: maintenance access
   components:
   - type: Sprite
-    sprite: _Starlight/Structures/Doors/Airlocks/Standard/security_maints.rsi
+    sprite: _SpL/Structures/Doors/Airlocks/Standard/security_maints.rsi
     
 - type: entity 
   parent: AirlockSecurityLocked
@@ -85,7 +85,7 @@
   name: maintenance access
   components:
   - type: Sprite
-    sprite: _Starlight/Structures/Doors/Airlocks/Standard/eva_maints.rsi
+    sprite: _SpL/Structures/Doors/Airlocks/Standard/eva_maints.rsi
 
 # Mail / Cargo Shared
 - type: entity
@@ -112,7 +112,7 @@
   name: maintenance access
   components:
   - type: Sprite
-    sprite: _Starlight/Structures/Doors/Airlocks/Standard/mail_maints.rsi
+    sprite: _SpL/Structures/Doors/Airlocks/Standard/mail_maints.rsi
 
 # Mining
 - type: entity
@@ -139,7 +139,7 @@
   name: maintenance access
   components:
   - type: Sprite
-    sprite: _Starlight/Structures/Doors/Airlocks/Standard/mining_cargo_maints.rsi
+    sprite: _SpL/Structures/Doors/Airlocks/Standard/mining_cargo_maints.rsi
 
 # NT Personnel
 - type: entity
@@ -166,7 +166,7 @@
   name: maintenance access
   components:
   - type: Sprite
-    sprite: _Starlight/Structures/Doors/Airlocks/Standard/nanotrasen_maints.rsi
+    sprite: _SpL/Structures/Doors/Airlocks/Standard/nanotrasen_maints.rsi
 
 # Paramedic
 - type: entity
@@ -193,7 +193,7 @@
   name: maintenance access
   components:
   - type: Sprite
-    sprite: _Starlight/Structures/Doors/Airlocks/Standard/paramedic_maints.rsi
+    sprite: _SpL/Structures/Doors/Airlocks/Standard/paramedic_maints.rsi
 
 # Retro Mining
 - type: entity
@@ -277,7 +277,7 @@
   name: maintenance access
   components:
   - type: Sprite
-    sprite: _Starlight/Structures/Doors/Airlocks/Standard/robotics_maints.rsi
+    sprite: _SpL/Structures/Doors/Airlocks/Standard/robotics_maints.rsi
 
 # Salvage / Mining Shared
 - type: entity
@@ -304,7 +304,7 @@
   name: maintenance access
   components:
   - type: Sprite
-    sprite: _Starlight/Structures/Doors/Airlocks/Standard/cargo_maints.rsi
+    sprite: _SpL/Structures/Doors/Airlocks/Standard/cargo_maints.rsi
 
 # Surgery
 - type: entity
@@ -331,7 +331,7 @@
   name: maintenance access
   components:
   - type: Sprite
-    sprite: _Starlight/Structures/Doors/Airlocks/Standard/surgery_maints.rsi
+    sprite: _SpL/Structures/Doors/Airlocks/Standard/surgery_maints.rsi
 
 # Virology
 - type: entity
@@ -341,7 +341,7 @@
   suffix: Virology Maints
   components:
   - type: Sprite
-    sprite: _Starlight/Structures/Doors/Airlocks/Standard/virology_maints.rsi
+    sprite: _SpL/Structures/Doors/Airlocks/Standard/virology_maints.rsi
 
 ## Event / Ghost Roles / Antagonists
 
