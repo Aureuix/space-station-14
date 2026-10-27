@@ -34,13 +34,6 @@
   priority: 5
   text: "/ServerInfo/Guidebook/ServerRules/RulesSpL/CoreRules/RuleSpL5.xml"
 
-- type: guideEntry
-  id: RuleSpL6
-  name: guide-entry-spl-rules
-  ruleEntry: true
-  priority: 6
-  text: "/ServerInfo/Guidebook/ServerRules/RulesSpL/CoreRules/RuleSpL6.xml"
-
 # expectations
 - type: guideEntry
   id: RPSpL1
