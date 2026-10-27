@@ -295,8 +295,8 @@
   - type: MovementSpeedModifier
     baseWalkSpeed: 0
     baseSprintSpeed: 0
-  - type: TextToSpeech
-    voice: colorfingert
+  #- type: TextToSpeech # SpL
+  #  voice: colorfingert
   - type: Sprite
     sprite: _Starlight/Clothing/Neck/Ties/disco.rsi
   - type: Clothing

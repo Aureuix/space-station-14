@@ -8,13 +8,13 @@ public sealed partial class StarlightCCVars
     /// Making everyone a pacifist at the end of a round.
     /// </summary>
     public static readonly CVarDef<bool> PeacefulRoundEnd =
-        CVarDef.Create("game.peaceful_end", true, CVar.SERVERONLY);
+        CVarDef.Create("game.peaceful_end", false, CVar.SERVERONLY); // SpL
 
     /// <summary>
     /// Sends afk players to cryo.
     /// </summary>
     public static readonly CVarDef<bool> CryoTeleportation =
-        CVarDef.Create("game.cryo_teleportation", true, CVar.SERVERONLY);
+        CVarDef.Create("game.cryo_teleportation", false, CVar.SERVERONLY); // SpL
 
     /// <summary>
     /// A limit on the maximum manual FTL range for shuttles, even if the shuttle's components are modified.

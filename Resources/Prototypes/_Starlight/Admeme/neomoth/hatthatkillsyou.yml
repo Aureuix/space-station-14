@@ -62,7 +62,7 @@
   id: TophatThatFuckingKillsYouGhostBase
   abstract: true
   components:
-    - type: TextToSpeech
+    # - type: TextToSpeech # SpL
     - type: Speech
       speechSounds: Alto
     - type: Examiner

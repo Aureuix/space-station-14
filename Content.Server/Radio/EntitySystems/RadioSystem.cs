@@ -109,7 +109,7 @@ public sealed class RadioSystem : EntitySystem
         ProtoId<RadioChannelPrototype> channel,
         EntityUid radioSource,
         LanguagePrototype? language = null, // Starlight
-        bool suppressTTS = false, // Starlight
+        bool suppressTTS = true, // SpL
         bool escapeMarkup = true)
     {
         SendRadioMessage(messageSource, message, _prototype.Index(channel), radioSource, escapeMarkup: escapeMarkup, language: language, suppressTTS: suppressTTS); // Starlight
