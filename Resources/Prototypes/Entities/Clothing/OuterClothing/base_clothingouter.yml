@@ -120,7 +120,7 @@
     sprintModifier: 0.6
   - type: HeldSpeedModifier
   - type: Item
-    size: Ginormous
+    size: Huge # SpL
   - type: Pierceable
     level: Metal
   - type: Armor
@@ -216,4 +216,4 @@
   id: ClothingOuterBaseMedium
   components:
   - type: Item
-    size: Huge
+    size: Normal # SpL- huge???
