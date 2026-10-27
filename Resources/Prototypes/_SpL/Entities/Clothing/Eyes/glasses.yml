@@ -1,4 +1,22 @@
 ﻿- type: entity
+  parent: ClothingEyesBase
+  id: ClothingEyesGlassesDiagnostic
+  name: prescription diagnostic hud
+  description: A pair of prescription glasses capable of analyzing the integrity and status of robotics and exosuits. Made out of see-borg-ium.
+  components:
+    - type: Sprite
+      sprite: _SpL/Clothing/Eyes/Glasses/diagglasses.rsi
+    - type: Clothing
+      sprite: _SpL/Clothing/Eyes/Glasses/diagglasses.rsi
+    - type: ShowHealthBars
+      damageContainers:
+        - Inorganic
+        - Silicon
+        - IPC
+    - type: ShowAccessReaderSettings
+    - type: VisionCorrection
+
+- type: entity
   parent: [ClothingEyesBase, BaseCommandContraband]
   id: ClothingEyesGlassesCommandPrescription
   name: prescription administrative glasses

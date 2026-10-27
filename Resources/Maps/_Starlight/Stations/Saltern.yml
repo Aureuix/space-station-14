@@ -30529,7 +30529,7 @@ entities:
     - type: Transform
       pos: -11.2319765,21.702545
       parent: 2
-- proto: ClothingOuterCoatDetectiveLoadout
+- proto: ClothingOuterCoatDetectiveUnarmored
   entities:
   - uid: 4733
     components:
