@@ -1,0 +1,7 @@
+﻿In your character customisation settings you can enable antagonists (certain roles within the "other" tab). It is not guaranteed that you will be one if you have it on, as role picks are based on gamerules and may be further modified by admins. When you do roll an antag or other non-station character, you will have a set of objectives you can view by pressing C.
+
+Being an antagonist is not an excuse to go on a murder spree. Your job is to complete your objectives which on occasion will include escaping alive or dying a glorious death. How you complete your objectives is up to you so murder is valid if it would further your goals, but the final goal is to try to have fun (without it being at everyone else's expense).
+
+RDM or random deathmatch is the act of attempting to or successfully killing someone without escalation. If you are being attacked and it is likely the other person could be an antagonist but you're unsure, you can check with admins via AHelp or even directly with the attacker using LOOC (toggleable in the bottom left of your chat). RDM is heavily discouraged, and entirely forbidden if done without reason.
+
+Self-antagonism (or self-antag) is when you are NOT an antagonist and yet engage in antagonistic actions (such as lawbreaking, harassment of others, and general inconveniencing) anyways. While SpectraLight does not forbid self-antagonism, you must have a good IC justification for doing what you do. Remember: you and all your coworkers are people– you're imperfect, but not illogical.

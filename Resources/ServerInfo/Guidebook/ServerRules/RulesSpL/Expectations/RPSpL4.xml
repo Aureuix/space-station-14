@@ -1,0 +1,31 @@
+﻿<Document>
+    # Injuries Cause Memory Loss
+
+    Being incapacitated, entering a critical state, and dying should result in a loss of memories for your character.
+    This should be proportionate to the cause of the injury, as well as any surrounding context.
+    
+    ## Injury And Intrigue
+    [bold]Memory loss should result in mysteries[/bold]. 
+    Any instance of someone being incapacitated or dying is a cause for concern, and should be treated with gravitas.
+    Try to forget just enough of what happened to allow people to worry.
+    
+    If you were killed or crit by a freak accident or a hostile creature from the vents, you are not obligated to forget
+    more than you absolutely need to in order to not immediately piece together the cause of your death.
+    As a general rule of thumb, you may remember anything unrelated to your injuries but should forget most of the direct lead-up.
+    
+    An edge case exception is made for IPCs that die after running out of battery, who do not need to forget anything once rebooted.
+    
+    ## Incapacitation
+    If you were knocked into a critical state, your recollection of events and your general awareness should be hazy.
+    You are able to talk and use your radio while incapacitated or critical. [bold]You may not report an attacker this way[/bold].
+    You may however call for help, especially if you are stranded off-station or if what is endangering you is not another player.
+    
+    Being in a critical state is no joke. You should behave as though you're on death's doorstep while critical and 
+    even potentially for a short period after recovering, because you are. 
+    You should not act as though calm and rational while critical unless your intent is to bleed out in a friend's arms.
+    
+    ## Death
+    If you were killed by a player, you may note the injuries when you wake up based on the state of your body and clothes, but you may not remember who killed you. 
+    You must not recognize them without being informed IC, and should use reasonable escalation if considering revenge.
+    If you took your own life, you should not remember the act or its lead-up, and you must not repeat the act again that round.
+</Document>

@@ -1,40 +1,53 @@
 <Document>
-  # Server Rules
-The following rules are for the Starlight Space Station 14 servers. Violating these rules may result in a warning, a temporary ban, or a permanent ban. You may also be banned from specific roles/jobs/departments. Bans can be appealed in the official Starlight Discord server.
+# Server Rules
+The following rules are for SS14 SpectraLight. Rules from other servers do not apply unless explicitly written. Absence of a rule is not permission to act– use your better judgment, act in good faith, and use AHelp (accessible via F1) if unsure.
 
-Players are also expected to understand Metashield. All rules and the metashield are often more up to date on the starlight wiki.
+Failure to abide by the rules will result in warnings, which may be escalated to notes, rolebans, and possibly serverbans based on severity and any previous rulebreaks. Remember, the rules and examples given here are NOT exhaustive. (See Rule 1)
 
-If you are ever in doubt as to whether or not something is breaking the rules, feel free to contact the admins via Admin Help or ask on the Discord server.
+For in-universe laws and rules, refer to Corporate Law and SOP in the guidebook (Num0 or button 2 in the top left by default).
 
-For in-universe laws and rules check Corporate Law and SOP.
-
-Remember, the rules and examples given here are NOT exhaustive. (See Rule 1)
-
-The servers are strictly [bold]16+ only[/bold].
-
-Deathmatch and sandbox gamemodes may not have these rules apply, rules will be given if they are changed. Ghost chat is an out of character in game chat, and does not need to apply to MRP rules.
+This server is strictly [bold]16+ only[/bold].
+    
+## Glossary
+    The following abbreviations will crop up frequently within the rules.
+    
+    - SpL: A shorthand for SpectraLight, the server you are (presumably, unless you're running a fork) currently connected to.
+    - IC: In Character. Refers to everything you do as your character in the round, including all non-OOC chats and the game itself.
+    - OOC: Out Of Character. Refers to everything outside the round, including LOOC, OOC, and Ghost chats, as well as SpL-linked spaces outside the game.
+    - AHelp: The Admin Help menu, accessible via F1 by default. AHelp is a direct line to the admins and is for requests, interventions, and/or bug reports.
+    - MHelp: The Mentor Help menu, accessible via F1 by default. MHelp lets players ask game mechanics questions, and is an alternative to using OOC chats.
 
 ## Core Rules
-  These rules apply at all times, including between rounds.
+    These rules apply at all times, including between rounds and on the Discord server.
+    
+    - [textlink="1. Be Nice To People" link="RuleSpL1"]
+    - [textlink="2. No Sexual Content" link="RuleSpL2"]
+    - [textlink="3. No Hate Speech" link="RuleSpL3"]
+    - [textlink="4. Respect Admin Decisions" link="RuleSpL4"]
+    - [textlink="5. Respect Other Communities" link="RuleSpL5"]
+    - 6. Don't Touch Freddy
+    
+## Roleplay Expectations
+    These expectations should serve as guidelines and not strict rules. They apply within the context of the round, and do not apply to OOC chats (including the ghost chat). 
+    Certain server events may modify or nullify certain listed clauses, and RP expectations are greatly loosened during pre-intermission and end-of-session periods.
 
-  - [textlink="0. Be Respectful" link="RuleSL0"]
-  - [textlink="1. Respect Admin Decisions" link="RuleSL1"]
-  - [textlink="2. No Griefing, Bug Abuse, or Exploits" link="RuleSL2"]
-  - [textlink="3. Abide by Medium Roleplay (MRP) Standards" link="RuleSL3"]
-  - [textlink="4. Escalation of Force Must Make Sense" link="RuleSL4"]
-  - [textlink="5. Antagonists Must Follow MRP Logic" link="RuleSL5"]
-  - [textlink="6. Your Character Must Make Sense" link="RuleSL6"]
-  - [textlink="7. Self-Antagonism" link="RuleSL7"]
-  - [textlink="8. No Validhunting" link="RuleSL8"]
-  - [textlink="9. Interacting with SSD/AFK Players" link="RuleSL9"]
-  - [textlink="10. Erotic and Sexual Content is Forbidden" link="RuleSL10"]
-  - [textlink="11. New Life" link="RuleSL11"]
-  - [textlink="12. Silicons and Thaven Rules" link="RuleSL12"]
-  - [textlink="13. Command, Security, and Whitelist Expectations" link="RuleSL13"]
-  - [textlink="14. Continuity Guidelines" link="RuleSL14"]
+    - [textlink="Characters Should Be Consistent" link="RPSpL1"]
+    - [textlink="Conflict Should Follow Escalation" link="RPSpL2"]
+    - [textlink="Disruptivity Should Make Sense" link="RPSpL3"]
+    - [textlink="Injuries Cause Memory Loss" link="RPSpL4"]
+    - [textlink="Slang Should Be Contextual" link="RPSpL5"]
+    
+## Exception Clauses
+    These clauses apply only to characters that fall under it, and detail primarily higher expectations placed upon roles and behaviors with more weight. 
+    Like with RP expectations, they may be modified or nullified based on admin discretion, server events, and imminent round/session ends.
 
-## Supporting documents
-These documents are related to the rules in some way.
-- [textlink="Metashield" link="Metashield"]
-
+    - [textlink="Increased Leadership Expectations" link="ClauseSpL1"]
+    - [textlink="Provisions For Ambushes" link="ClauseSpL2"]
+    - [textlink="Suicide And Self-Harm" link="ClauseSpL3"]
+    - [textlink="Antagonism And Roleplay" link="ClauseSpL4"]
+    - [textlink="Laws And Moods" link="ClauseSpL5"]
+    
+## Inherited OOC Knowledge
+    There are no explicit rules forbidding you from bringing OOC knowledge (such as the existence of Xenoborgs or Nuclear Operatives) into SpL, but for the most enjoyable experience,
+    it is highly recommended you do not give your characters the awareness of such things. Organic discovery is one of the greatest joys of emergent narratives, after all!
 </Document>
