@@ -16,7 +16,6 @@
     - Trinkets
     - Scarves
     - SurvivalMilitaryDouble
-    - GroupSpeciesBreathToolSecurity
 
 - type: roleLoadout
   id: AntagNTNCMarine
@@ -35,4 +34,3 @@
     - CombatGloves
     - Trinkets
     - SurvivalMilitaryDouble
-    - GroupSpeciesBreathToolSecurity

@@ -1,0 +1,77 @@
+﻿- type: entity
+  id: NanoTrasenBusinessCard
+  name: NanoTrasen business card
+  parent: Paper 
+  description: A blue card with NanoTrasen's logo. There's something written on the back.
+  components:
+    - type: Sprite
+      sprite: Objects/Misc/bureaucracy.rsi
+      layers:
+        - state: nanotrasen_card
+        - state: nanotrasen_card
+          map: ["enum.PaperVisualLayers.Writing"]
+          visible: false
+        - state: paper_stamp-generic
+          map: ["enum.PaperVisualLayers.Stamp"]
+          visible: false
+    - type: Paper
+      content: "                     [bold][color=#ffffff]EXPANDING OUR HORIZONS[/color][/bold]"
+    - type: PaperVisuals
+      headerImagePath: "/Textures/_SpL/Interface/Paper/paper_heading_nanotrasen_logo_white.svg.96dpi.png"
+      headerMargin: 0.0, 0.0, 0.0, 12.0
+      backgroundImagePath: "/Textures/_SpL/Interface/Paper/paper_background_nt_blue.svg.96dpi.png"
+      backgroundPatchMargin: 16.0, 16.0, 16.0, 16.0
+      contentMargin: 4.0, 4.0, 4.0, 8.0
+      maxWritableArea: 400.0, 256.0
+      
+- type: entity
+  id: CentCommBusinessCard
+  name: CentComm business card
+  parent: Paper
+  description: A green card with Central Command's logo. There's something written on the back.
+  components:
+    - type: Sprite
+      sprite: Objects/Misc/bureaucracy.rsi
+      layers:
+        - state: centcomm_card
+        - state: centcomm_card
+          map: ["enum.PaperVisualLayers.Writing"]
+          visible: false
+        - state: paper_stamp-generic
+          map: ["enum.PaperVisualLayers.Stamp"]
+          visible: false
+    - type: Paper
+      content: "[bolditalic]                       [color=#ba883c]Stellar Vanguard Solutions[/color][/bolditalic]"
+    - type: PaperVisuals
+      headerImagePath: "/Textures/_SpL/Interface/Paper/paper_heading_centcomm_logo_gold.svg.96dpi.png"
+      headerMargin: 0.0, 0.0, 0.0, 2.0
+      backgroundImagePath: "/Textures/_SpL/Interface/Paper/paper_background_cc_green.svg.96dpi.png"
+      backgroundPatchMargin: 16.0, 16.0, 16.0, 16.0
+      contentMargin: 4.0, 4.0, 4.0, 4.0
+      maxWritableArea: 400.0, 256.0
+      
+- type: entity
+  id: GSLBusinessCard
+  name: GSL business card
+  parent: Paper
+  description: A white card with Gemini Stellar Logistics' logo. There's something written on the back.
+  components:
+    - type: Sprite
+      sprite: Objects/Misc/bureaucracy.rsi
+      layers:
+        - state: gsl_card
+        - state: gsl_card
+          map: ["enum.PaperVisualLayers.Writing"]
+          visible: false
+        - state: paper_stamp-generic
+          map: ["enum.PaperVisualLayers.Stamp"]
+          visible: false
+    - type: Paper
+      content: " "
+    - type: PaperVisuals
+      headerImagePath: "/Textures/_SpL/Interface/Paper/paper_heading_gsl_logo.svg.96dpi.png"
+      headerMargin: 0.0, 0.0, 0.0, 2.0
+      backgroundImagePath: "/Textures/_SpL/Interface/Paper/paper_background_gsl_white.svg.96dpi.png"
+      backgroundPatchMargin: 16.0, 16.0, 16.0, 16.0
+      contentMargin: 4.0, 4.0, 4.0, 4.0
+      maxWritableArea: 400.0, 256.0
