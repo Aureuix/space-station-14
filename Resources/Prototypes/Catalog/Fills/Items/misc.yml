@@ -116,10 +116,10 @@
     containers:
       storagebase: !type:AllSelector
         children:
-        - id: BriefDocumentRevs
+        # - id: BriefDocumentRevs # SpL- we don't run you
         - id: BriefDocumentLings
         - id: BriefDocumentBrightEyes
-        - id: BriefDocumentVampires
+        # - id: BriefDocumentVampires # SpL- I'll do this one later
         - id: BriefDocumentSyndicate
-        - id: BriefDocumentWizard
-        - id: BriefDocumentXorgs
+        # - id: BriefDocumentWizard # SpL- I don't like you.
+        # - id: BriefDocumentXorgs # SpL- not yet
