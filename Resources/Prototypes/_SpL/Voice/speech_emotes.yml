@@ -1,0 +1,49 @@
+﻿- type: emote
+  id: GritTeeth
+  name: chat-emote-name-grit-teeth
+  category: General
+  icon: Interface/Emotes/scream.png
+  whitelist:
+    components:
+      - MobState
+  chatMessages: ["chat-emote-msg-grit-teeth"]
+  
+- type: emote
+  id: Wince
+  name: chat-emote-name-wince
+  category: General
+  icon: Interface/Emotes/scream.png
+  whitelist:
+    components:
+      - MobState
+  chatMessages: ["chat-emote-msg-wince"]
+  
+- type: emote
+  id: Stagger
+  name: chat-emote-name-stagger
+  category: General
+  icon: Interface/Emotes/scream.png
+  whitelist:
+    components:
+      - MobState
+  chatMessages: ["chat-emote-msg-stagger"]
+  
+- type: emote
+  id: Stumble
+  name: chat-emote-name-stumble
+  category: General
+  icon: Interface/Emotes/scream.png
+  whitelist:
+    components:
+      - MobState
+  chatMessages: ["chat-emote-msg-stumble"]
+  
+- type: emote
+  id: Flinch
+  name: chat-emote-name-flinch
+  category: General
+  icon: Interface/Emotes/scream.png
+  whitelist:
+    components:
+      - MobState
+  chatMessages: ["chat-emote-msg-flinch"]

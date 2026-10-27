@@ -409,6 +409,8 @@
         - RequiredForLmgTag
     - type: ToggleableClothing
       clothingPrototype: ClothingHeadHelmetHardsuitSecurityExperimental
+    - type: Item
+      size: Ginormous # SpL
 
 #Spationaut Lead Hardsuit
 - type: entity
@@ -631,6 +633,8 @@
           variation: 0.025
     - type: ToggleableClothing
       clothingPrototype: ClothingHeadHelmetHardsuitNTSF
+    - type: Item
+      size: Ginormous # SpL
     - type: Tag
       tags:
         - BlacklistChameleon # SpL
@@ -682,6 +686,8 @@
           variation: 0.025
     - type: ToggleableClothing
       clothingPrototype: ClothingHeadHelmetHardsuitNTSFPrimus
+    - type: Item
+      size: Ginormous # SpL
     - type: Tag
       tags:
         - BlacklistChameleon # SpL
@@ -733,6 +739,8 @@
           variation: 0.025
     - type: ToggleableClothing
       clothingPrototype: ClothingHeadHelmetHardsuitNTSFSecundus
+    - type: Item
+      size: Ginormous # SpL
     - type: Tag
       tags:
         - BlacklistChameleon # SpL
@@ -797,6 +805,8 @@
       interfaces:
        enum.StorageUiKey.Key:
          type: StorageBoundUserInterface
+    - type: Item
+      size: Ginormous # SpL
     - type: Tag
       tags:
         - BlacklistChameleon # SpL
@@ -848,6 +858,8 @@
           variation: 0.025
     - type: ToggleableClothing
       clothingPrototype: ClothingHeadHelmetHardsuitNTSFQuartus
+    - type: Item
+      size: Ginormous # SpL
     - type: Tag
       tags:
         - BlacklistChameleon # SpL
@@ -899,6 +911,8 @@
           variation: 0.025
     - type: ToggleableClothing
       clothingPrototype: ClothingHeadHelmetHardsuitNTSFQuintus
+    - type: Item
+      size: Ginormous # SpL
     - type: Tag
       tags:
         - BlacklistChameleon # SpL
@@ -927,6 +941,7 @@
       damageCoefficient: 0.0 # 100% stamina resistance
     - type: Pierceable
       level: Rock
+    - type: WizardClothes
     - type: Armor
       modifiers:
         coefficients:
@@ -950,6 +965,8 @@
           variation: 0.025
     - type: ToggleableClothing
       clothingPrototype: ClothingHeadHelmetHardsuitNTSFSextus
+    - type: Item
+      size: Ginormous # SpL
     - type: Tag
       tags:
         - BlacklistChameleon # SpL
@@ -1001,6 +1018,8 @@
           variation: 0.025
     - type: ToggleableClothing
       clothingPrototype: ClothingHeadHelmetHardsuitNTSFSeptimus
+    - type: Item
+      size: Ginormous # SpL
     - type: Tag
       tags:
         - BlacklistChameleon # SpL
@@ -1052,6 +1071,8 @@
           variation: 0.025
     - type: ToggleableClothing
       clothingPrototype: ClothingHeadHelmetHardsuitNTSFOctavius
+    - type: Item
+      size: Ginormous # SpL
     - type: Tag
       tags:
         - BlacklistChameleon # SpL
@@ -1138,6 +1159,8 @@
           volume: -30
           pitch: 0.7
           variation: 0.025
+    - type: Item
+      size: Ginormous # SpL
     - type: ToggleableClothing
       clothingPrototype: ClothingHeadHelmetHardsuitNTSFNonus
     
@@ -1189,6 +1212,8 @@
           variation: 0.025
     - type: ToggleableClothing
       clothingPrototype: ClothingHeadHelmetHardsuitDecimus
+    - type: Item
+      size: Ginormous # SpL
     - type: Tag
       tags:
         - BlacklistChameleon # SpL
@@ -1225,6 +1250,8 @@
           variation: 0.09
     - type: ToggleableClothing
       clothingPrototype: ClothingHeadHelmetHardsuitTSFMARSOC
+    - type: Item
+      size: Ginormous # SpL
     - type: Tag
       tags:
         - BlacklistChameleon # SpL
@@ -1253,6 +1280,8 @@
     - type: FootstepModifier
       footstepSoundCollection:
         collection: FootstepFloor
+    - type: Item
+      size: Ginormous # SpL
     - type: ToggleableClothing
       clothingPrototype: ClothingHeadHelmetHardsuitTSFPhantom
     - type: Tag
@@ -1300,6 +1329,8 @@
     - type: HeldSpeedModifier
     - type: ToggleableClothing
       clothingPrototype: ClothingHeadHelmetHardsuitThanatos
+    - type: Item
+      size: Ginormous # SpL
     - type: Tag
       tags:
         - CorgiWearable

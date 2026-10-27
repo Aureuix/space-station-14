@@ -10,8 +10,8 @@
     stock: 3
 
 - type: listing
-  id: VendorPlushieSharkGrey
-  productEntity: PlushieSharkGrey
+  id: PlushieSharkBlue # SpL
+  productEntity: PlushieSharkBlue # SpL
   cost:
     NTCredit: 20
   categories:
@@ -19,6 +19,17 @@
   conditions:
   - !type:ListingLimitedStockCondition
     stock: 3
+
+- type: listing # SpL start
+  id: PlushieSharkGrey
+  productEntity: PlushieSharkGrey
+  cost:
+    NTCredit: 25
+  categories:
+    - SLPlushies
+  conditions:
+    - !type:ListingLimitedStockCondition
+      stock: 3 # SpL end
 
 - type: listing
   id: VendorPlushieSharkPink
@@ -65,10 +76,10 @@
     stock: 3
 
 - type: listing
-  id: VendorPlushieVika
-  productEntity: VikaPviPlushie
+  id: PlushieCosmicCult # SpL
+  productEntity: PlushieCosmicCult # SpL
   cost:
-    NTCredit: 16
+    NTCredit: 66
   categories:
   - SLPlushies
   conditions:
@@ -352,16 +363,16 @@
   - !type:ListingLimitedStockCondition
     stock: 1
 
-- type: listing
-  id: VendorCatEars
-  productEntity: ClothingHeadHatWhiteCatEars
-  cost:
-    NTCredit: 1666
-  categories:
-  - SLSpecies
-  conditions:
-  - !type:ListingLimitedStockCondition
-    stock: 1
+#- type: listing
+#  id: VendorCatEars
+#  productEntity: ClothingHeadHatWhiteCatEars
+#  cost:
+#    NTCredit: 1666
+#  categories:
+#  - SLSpecies
+#  conditions:
+#  - !type:ListingLimitedStockCondition
+#    stock: 1
 
 - type: listing
   id: VendorPlushieShadekin

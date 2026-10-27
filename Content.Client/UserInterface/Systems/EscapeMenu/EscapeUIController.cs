@@ -68,7 +68,7 @@ public sealed class EscapeUIController : UIController, IOnStateEntered<GameplayS
         _escapeWindow.OnOpen += ActivateButton;
 
         // NullLink start
-        _escapeWindow.DiscordButton.OnPressed += _ =>
+        /*_escapeWindow.DiscordButton.OnPressed += _ =>
         {
             if(_playerRoles.GetDiscordLink() is string link)
                 _uri.OpenUri(link);
@@ -79,13 +79,27 @@ public sealed class EscapeUIController : UIController, IOnStateEntered<GameplayS
         {
             CloseEscapeWindow();
             _changelog.ToggleWindow();
-        };
+        };*/ // SpL
 
         _escapeWindow.RulesButton.OnPressed += _ =>
         {
             CloseEscapeWindow();
             _info.OpenWindow();
         };
+        
+        // SpL start
+        _escapeWindow.SSDButton.OnPressed += _ =>
+        {
+            CloseEscapeWindow();
+            _console.ExecuteCommand("ssd");
+        };
+
+        _escapeWindow.GhostButton.OnPressed += _ =>
+        {
+            CloseEscapeWindow();
+            _console.ExecuteCommand("ghost");
+        };
+        // SpL end
 
         _escapeWindow.DisconnectButton.OnPressed += _ =>
         {
@@ -105,10 +119,10 @@ public sealed class EscapeUIController : UIController, IOnStateEntered<GameplayS
             _console.ExecuteCommand("quit");
         };
 
-        _escapeWindow.WikiButton.OnPressed += _ =>
+        /*_escapeWindow.WikiButton.OnPressed += _ =>
         {
             _uri.OpenUri(_cfg.GetCVar(CCVars.InfoLinksWiki));
-        };
+        }; */ // SpL
 
         _escapeWindow.GuidebookButton.OnPressed += _ =>
         {
@@ -116,12 +130,12 @@ public sealed class EscapeUIController : UIController, IOnStateEntered<GameplayS
         };
 
         // Hide wiki button if we don't have a link for it.
-        _escapeWindow.WikiButton.Visible = _cfg.GetCVar(CCVars.InfoLinksWiki) != "";
+        /* _escapeWindow.WikiButton.Visible = _cfg.GetCVar(CCVars.InfoLinksWiki) != "";
 
         CommandBinds.Builder
             .Bind(EngineKeyFunctions.EscapeMenu,
                 InputCmdHandler.FromDelegate(_ => ToggleWindow()))
-            .Register<EscapeUIController>();
+            .Register<EscapeUIController>(); */ // SpL
     }
 
     public void OnStateExited(GameplayState state)

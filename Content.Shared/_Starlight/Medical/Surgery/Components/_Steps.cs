@@ -23,6 +23,11 @@ public sealed partial class SurgeryStepEmoteEffectComponent : Component
     [DataField, AutoNetworkedField]
     public ProtoId<EmotePrototype> Emote = "Scream";
 }
+public sealed partial class SurgeryStepEmoteEffectComponent : Component // SpL start
+{
+    [DataField, AutoNetworkedField]
+    public ProtoId<EmotePrototype> EmoteMuted = "GritTeeth";
+} // SpL end 
 
 [RegisterComponent, NetworkedComponent, AutoGenerateComponentState, Access(typeof(SharedSurgerySystem))]
 public sealed partial class SurgeryStepSpawnEffectComponent : Component

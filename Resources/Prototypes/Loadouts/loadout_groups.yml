@@ -258,6 +258,8 @@
   - CaptainGlasses
   - CaptainHud
   - PrescriptionCapGlasses # SpL
+  - JamjarCapGlasses # SpL
+  - CaptainVisor
 
 - type: loadoutGroup
   id: CaptainJobTrinkets
@@ -273,14 +275,6 @@
   loadouts:
   - HoPHead
   - HopHeadFormal # Delta V
-
-- type: loadoutGroup # SpL Start
-  id: HoPEyewear
-  name: loadout-group-hop-eyewear
-  loadouts:
-    - CaptainGlasses
-    - CaptainHud
-    - PrescriptionCapGlasses # SpL End
 
 - type: loadoutGroup
   id: HoPJumpsuit

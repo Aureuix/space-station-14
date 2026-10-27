@@ -2,7 +2,7 @@
   id: BorgChassisSelectable
   parent: BaseBorgChassisNT
   components:
-  - type: TextToSpeech
+  # - type: TextToSpeech # SpL
   - type: Sprite
     layers:
     - state: borg
@@ -100,7 +100,7 @@
   name: syndicate assault cyborg
   description: A lean, mean killing machine with access to a variety of deadly modules.
   components:
-    - type: TextToSpeech
+    # - type: TextToSpeech # SpL
     - type: Sprite
       sprite: Mobs/Silicon/Chassis/synd_sec.rsi
       layers:
@@ -134,7 +134,7 @@
   name: syndicate medical cyborg
   description: A combat medical cyborg. Has limited offensive potential, but makes more than up for it with its support capabilities.
   components:
-    - type: TextToSpeech
+    # - type: TextToSpeech # SpL
     - type: Sprite
       sprite: Mobs/Silicon/Chassis/synd_medical.rsi
       layers:
@@ -187,7 +187,7 @@
   name: syndicate saboteur cyborg
   description: A streamlined engineering cyborg, equipped with covert modules. Its chameleon projector lets it disguise itself as a NanoTrasen cyborg.
   components:
-    - type: TextToSpeech
+    # - type: TextToSpeech # SpL
     - type: Sprite
       sprite: Mobs/Silicon/Chassis/synd_eng.rsi
       layers:

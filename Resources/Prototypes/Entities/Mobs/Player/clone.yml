@@ -59,7 +59,7 @@
   - LanguageSpeaker
   - ForeignerTrait
     # TTS - Starlight
-  - TextToSpeech
+  # - TextToSpeech # SpL
   eventComponents: 
   - LanguageKnowledge #Clone languages via event so if they get changed you dont suddently re-learn languages.
 

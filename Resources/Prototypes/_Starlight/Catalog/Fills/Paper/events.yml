@@ -116,7 +116,7 @@
         - MindRoleGhostRoleFreeAgent
     - type: ShowMindShieldIcons # gotta know your targets.
     - type: Speech
-    - type: TextToSpeech
+    # - type: TextToSpeech # SpL
     - type: GhostTakeoverAvailable
     - type: MobState
     - type: Examiner # allow inspecting stuff and using verbs (you still dont have hands though)

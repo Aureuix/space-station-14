@@ -111,7 +111,7 @@
   name: NTNC cyborg chassis
   description: An advanced cyborg chassis used by the NanoTrasen Navy Corps on ship operations.
   components:
-    - type: TextToSpeech
+    # - type: TextToSpeech # SpL
     - type: Sprite
       sprite: _Starlight/Mobs/Silicon/Chassis/tallborgs/tallborgs-peace/sfmeka_peace.rsi
       layers:

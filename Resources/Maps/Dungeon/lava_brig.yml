@@ -7343,7 +7343,7 @@ entities:
     - type: Transform
       pos: 18.47467,24.458666
       parent: 588
-- proto: ClothingOuterCoatDetectiveLoadout
+- proto: ClothingOuterCoatDetectiveUnarmored
   entities:
   - uid: 574
     components:

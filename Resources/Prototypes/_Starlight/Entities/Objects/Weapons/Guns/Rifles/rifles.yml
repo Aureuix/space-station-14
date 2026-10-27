@@ -146,10 +146,10 @@
   # SpL end
 
 - type: entity
-  name: Aussec Armory ARG assault rifle # SpL
+  name: Aussec Armory ARG battle rifle # SpL
   parent: [BaseTSFContraband, BaseWeaponRifle]
   id: WeaponRifleARG
-  description: An old galactic standard assault rifle, used by both TSF forces and paramilitary groups alike. Uses 7.62x51mm rifle ammo. # SpL
+  description: An old galactic standard battle rifle, used by both TSF forces and paramilitary groups alike. Feeds from 7.62x51mm magazines. # SpL
   components:
   - type: Sprite
     sprite: _Starlight/Objects/Weapons/Guns/Rifles/arg.rsi
@@ -200,10 +200,10 @@
     zeroVisible: true
 
 - type: entity
-  name: Aussec Armory M-52 battle rifle # SpL
+  name: Aussec Armory M-52 assault rifle # SpL
   parent: [BaseTSFContraband, WeaponRifleLecter]
   id: WeaponRifleM52
-  description: One of the last surviving fully-chambered rifle models, nevertheless still widely used by TSF forces. It has impressive firepower. # SpL
+  description: One of the last surviving pre-Lecter assault rifle models, it is nevertheless still widely used by TSF forces across the entire federation and beyond. Feeds from 5.56x45mm magazines. # SpL
   components:
   - type: Sprite
     sprite: _Starlight/Objects/Weapons/Guns/Rifles/m-52.rsi
@@ -243,7 +243,7 @@
   name: SA-G48M 'Leikha' assault rifle # SpL
   parent: [ BaseWeaponRifle, BaseSecurityContraband ]
   id: WeaponRifleLeikha
-  description: A high end military grade assault rifle built on the Lecter platform. This one has been retrofitted with a scope and a burst receiver. Uses 5.56x45mm ammo. # SpL
+  description: A high end military grade assault rifle built on the Lecter platform. This one has been retrofitted with a scope and a burst receiver. Feeds from 5.56x45mm magazines. # SpL
   components:
   - type: Sprite
     sprite: _Starlight/Objects/Weapons/Guns/Rifles/m16a4.rsi
@@ -302,7 +302,7 @@
   name: SA-L10CS 'Watchdog' DMR # SpL
   parent: [ BaseWeaponRifle, BaseSecurityContraband ]
   id: WeaponRifleL10
-  description: A scoped marksman rifle for mid to long range engagements, designed for accuracy at distance. Uses .45 ACP ammo. # SpL
+  description: A scoped marksman rifle for mid to long range engagements, designed for accuracy at distance. Feeds from .45 ACP DMR magazines. # SpL
   components:
   - type: Sprite
     sprite: _Starlight/Objects/Weapons/Guns/Rifles/L10.rsi
@@ -370,7 +370,7 @@
   name: C-91br 'Pitbull' battle rifle # SpL
   parent: [ BaseWeaponRifle, BaseSyndicateContraband ]
   id: WeaponRiflePitbull
-  description: A large bullpup rifle with a low rate of fire but excellent accuracy, designed to excel in protracted firefights. Uses 7.62x51mm ammo. # Spectralight: .30 -> 7.62x51mm
+  description: A large bullpup rifle with a low rate of fire but excellent accuracy, designed to excel in protracted firefights. Feeds from 7.62x51mm magazines. # Spectralight: .30 -> 7.62x51mm
   components:
   - type: Sprite
     sprite: _Starlight/Objects/Weapons/Guns/Rifles/pitbull.rsi
@@ -416,7 +416,7 @@
   name: NT-Mk60 'Peacemaker' assault rifle # SpL
   parent: [ BaseWeaponRifle, BaseSecurityContraband ]
   id: WeaponRiflePeacemaker
-  description: A homegrown NanoTrasen rifle design, the Peacemaker is likely to be either the best or worst thing you'll ever see, depending if it's pointed at you or not. Uses 5.56x45mm ammo. # SpL
+  description: A homegrown NanoTrasen rifle design, the Peacemaker is likely to be either the best or worst thing you'll ever see, depending if it's pointed at you or not. Feeds from 5.56x45mm magazines. # SpL
   components:
   - type: Sprite
     sprite: _Starlight/Objects/Weapons/Guns/Rifles/ert.rsi
@@ -464,7 +464,7 @@
   name: AO-M18 'Militant' assault rifle # SpL
   parent: [BaseWeaponRifle, BaseSalvageContraband]
   id: WeaponRifleM18
-  description: Aged yet dependable, this old-world assault rifle is renowned for its reliability and ease of maintenance even in the harshest environments. It remains a staple among NanoTrasen’s merce- salvage forces. Uses 5.56x45mm ammo. # Spectralight: .20 -> 5.56x45mm
+  description: Aged yet dependable, this old-world assault rifle is renowned for its reliability and ease of maintenance even in the harshest environments. It remains a staple among NanoTrasen’s merce- salvage forces. Feeds from 5.56x45mm magazines. # Spectralight: .20 -> 5.56x45mm
   components:
     - type: Sprite
       sprite: _Starlight/Objects/Weapons/Guns/Rifles/m16.rsi
@@ -478,8 +478,8 @@
     - type: Wieldable
       unwieldOnUse: false
     - type: GunWieldBonus
-      minAngle: -13
-      maxAngle: -10
+      minAngle: -18 # SpL
+      maxAngle: -24 # SpL
     - type: Gun
       minAngle: 21
       maxAngle: 32

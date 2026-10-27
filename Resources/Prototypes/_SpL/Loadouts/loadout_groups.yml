@@ -1,4 +1,14 @@
 ﻿- type: loadoutGroup
+  id: NTCard
+  name: loadout-group-nt-card
+  hidden: true
+  minLimit: 1
+  defaultSelected: 1
+  maxLimit: 1
+  loadouts:
+    - NTBusinessCard
+
+- type: loadoutGroup
   id: HeadofSecuritySidearm
   name: loadout-group-hos-sidearm
   hidden: true

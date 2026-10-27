@@ -1,8 +1,8 @@
 - type: entity
   id: SyndicateBusinessCard
-  name: syndicate business card
+  name: Syndicate business card
   parent: [ Paper, BaseMinorContraband ] #SL Edit Syndie > Minor Contra
-  description: A black card with the syndicate's logo. There's something written on the back.
+  description: A black card with the Syndicate's logo. There's something written on the back.
   components:
     - type: Sprite
       sprite: Objects/Misc/bureaucracy.rsi

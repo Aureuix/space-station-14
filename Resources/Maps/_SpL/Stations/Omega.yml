@@ -36981,7 +36981,7 @@ entities:
     - type: Transform
       pos: -30.486824,-12.450464
       parent: 2
-- proto: ClothingOuterCoatDetectiveLoadout
+- proto: ClothingOuterCoatDetectiveUnarmored
   entities:
   - uid: 5769
     components:

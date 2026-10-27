@@ -1,7 +1,7 @@
 {
   "version": 1,
   "license": "CC-BY-SA-3.0",
-  "copyright": "made by Vonte for StarlightMRP",
+  "copyright": "Sprited by Taro Varne, recoloured by nykaestra",
   "size": {
     "x": 32,
     "y": 32
@@ -11,7 +11,7 @@
       "name": "icon"
     },
     {
-      "name": "equipped-NECK",
+      "name": "equipped-EYES",
       "directions": 4
     },
     {
@@ -19,9 +19,12 @@
       "directions": 4
     },
     {
+      "name": "equipped-EYES-on",
+      "directions": 4
+    },
+    {
       "name": "inhand-right",
       "directions": 4
-    
     }
   ]
 }

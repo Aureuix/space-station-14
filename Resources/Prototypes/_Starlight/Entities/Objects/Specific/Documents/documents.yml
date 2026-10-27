@@ -239,7 +239,7 @@
   id: BriefDocumentLings
   name: Changeling Secure Briefing
   suffix: Do Not Map
-  description: A set of classified documents to inform new members of Security on the existance of Changelings.
+  description: A set of classified documents to inform new members of Security on the existence of Changelings, and returning ones of their status in this sector. # SpL
   parent: [ ImportantDocumentGeneric, BaseGrandTheftContraband ]
   components:
     - type: Item
@@ -251,9 +251,9 @@
 
 - type: entity
   id: BriefDocumentBrightEyes
-  name: Bright-Eyes Secure Briefing
+  name: Lighthouse Secure Briefing
   suffix: Do Not Map
-  description: A set of classified documents to inform new members of Security on the existance of Bright-Eyes.
+  description: A set of classified documents to inform new members of Security on the existence of the Lighthouse. # SpL
   parent: [ ImportantDocumentGeneric, BaseGrandTheftContraband ]
   components:
     - type: Item
@@ -279,9 +279,9 @@
 
 - type: entity
   id: BriefDocumentSyndicate
-  name: Syndicate Agent Secure Briefing
+  name: Syndicate Secure Briefing
   suffix: Do Not Map
-  description: A set of classified documents to inform new members of Security on the existance of Syndicate Agents.
+  description: A set of classified documents to inform new members of Security on the scale of Syndicate activity in the sector. # SpL
   parent: [ ImportantDocumentGeneric, BaseGrandTheftContraband ]
   components:
     - type: Item
