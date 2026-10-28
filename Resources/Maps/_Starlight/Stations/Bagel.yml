@@ -64030,7 +64030,7 @@ entities:
     - type: Transform
       pos: 9.573504,-55.474518
       parent: 2
-- proto: ClothingOuterCoatDetectiveLoadout
+- proto: ClothingOuterCoatDetectiveUnarmored
   entities:
   - uid: 9951
     components:

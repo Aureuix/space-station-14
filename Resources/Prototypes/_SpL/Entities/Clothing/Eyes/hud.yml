@@ -33,6 +33,17 @@
     - type: Appearance
 
 - type: entity
+  parent: ClothingEyesHudDiagnostic
+  id: VisorDiagnostic
+  name: diagnostic visor
+  description: Visored goggles capable of analyzing the integrity and status of robotics and exosuits. They do not come with any other special functions.
+  components:
+    - type: Sprite
+      sprite: _Goobstation/Clothing/Eyes/Glasses/diag.rsi
+    - type: Clothing
+      sprite: _Goobstation/Clothing/Eyes/Glasses/diag.rsi
+
+- type: entity
   parent: [ ClothingEyesHudSecurity, BaseToggleableVisor ]
   id: VisorSecurity
   name: security visor
@@ -53,6 +64,17 @@
       sprite: _Goobstation/Clothing/Eyes/Glasses/brigmed.rsi
     - type: Clothing
       sprite: _Goobstation/Clothing/Eyes/Glasses/brigmed.rsi
+      
+- type: entity
+  parent: [ ClothingEyesHudCommand, BaseToggleableVisor ]
+  id: VisorCommand
+  name: command visor
+  description: Visored goggles with toggleable flash protection and an integrated augmented reality display that automatically attaches administrative data to visible humanoids.
+  components:
+    - type: Sprite
+      sprite: _Goobstation/Clothing/Eyes/Glasses/command.rsi
+    - type: Clothing
+      sprite: _Goobstation/Clothing/Eyes/Glasses/command.rsi
       
 - type: entity
   parent: [ ClothingEyesHudBlueShield, BaseToggleableVisor ]

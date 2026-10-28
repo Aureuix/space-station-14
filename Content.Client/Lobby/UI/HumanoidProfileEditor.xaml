@@ -150,17 +150,6 @@
                                 <Control HorizontalExpand="True" />
                                 <OptionButton Name="SpawnPriorityButton" HorizontalAlignment="Right" />
                             </BoxContainer>
-                            <!--  Starlight Start: Voice Selectors  -->
-                            <BoxContainer HorizontalExpand="True">
-                                <Label Text="{Loc 'humanoid-profile-editor-voice-label'}" />
-                                <Control HorizontalExpand="True" />
-                                <Button Name="VoiceButton" Text="{Loc 'humanoid-profile-editor-voice-select'}" />
-                            </BoxContainer>
-                            <BoxContainer HorizontalExpand="True">
-                                <Label Text="{Loc 'humanoid-profile-editor-silicon-voice-label'}" />
-                                <Control HorizontalExpand="True" />
-                                <Button Name="SiliconVoiceButton" Text="{Loc 'humanoid-profile-editor-silicon-voice-select'}" />
-                            </BoxContainer>
                             <!--Far Horizons species loadouts-->
                             <BoxContainer HorizontalExpand="True" Name="CSpeciesLoadout">
                                 <Label Text="{Loc 'humanoid-profile-editor-species-loadout'}" />

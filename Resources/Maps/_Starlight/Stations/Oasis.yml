@@ -94854,7 +94854,7 @@ entities:
           priority: 0
           component: Armor
         title: null
-- proto: ClothingOuterCoatDetectiveLoadout
+- proto: ClothingOuterCoatDetectiveUnarmored
   entities:
   - uid: 10571
     components:

@@ -337,4 +337,4 @@
   name: maintenance access
   components:
   - type: Sprite
-    sprite: _Starlight/Structures/Doors/Airlocks/Standard/centcomm_maints.rsi
+    sprite: _SpL/Structures/Doors/Airlocks/Standard/centcomm_maints.rsi

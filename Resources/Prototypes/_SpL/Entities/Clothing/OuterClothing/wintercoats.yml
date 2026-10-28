@@ -25,6 +25,8 @@
     - type: ExplosionResistance
       damageCoefficient: 0.80
     - type: Item
+    - type: ZombificationResistance
+      zombificationResistanceCoefficient: 0.75
 
 - type: entity
   parent: [ClothingOuterStorageBase, ClothingOuterColdBase, BaseCommandContraband]
@@ -48,6 +50,8 @@
     - type: TemperatureProtection
       heatingCoefficient: 1.2
       coolingCoefficient: 0.2
+    - type: ZombificationResistance
+      zombificationResistanceCoefficient: 0.75
       
 # DV stuff
 - type: entity

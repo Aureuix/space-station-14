@@ -232,6 +232,9 @@
   loadouts:
   - RoboticistWeldingGoggles
   - RoboticistDiagnosticsHud
+  - RoboticistDiagnosticsGlasses # SpL
+  - RoboticistDiagnosticsVisor # SpL
+  - GlassesJensen # SpL
 
 - type: loadoutGroup
   id: RoboticistBackpack
@@ -1044,6 +1047,7 @@
   - LaceupShoes
   - Heels
   - LeatherShoes
+  - HighHeelBootsFilled # SpL
 
 - type: loadoutGroup
   id: NanotrasenCareerTrainerEyewear

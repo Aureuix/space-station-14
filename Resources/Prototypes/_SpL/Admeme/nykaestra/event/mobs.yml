@@ -810,6 +810,66 @@
     - WeaponPulseCarbine
 
 - type: startingGear
+  id: NPCERTSquadGearPeacemakerPatrol
+  equipment:
+    head: ClothingHeadHelmetERTSecurity
+    jumpsuit: ClothingUniformJumpsuitERTSecurity
+    back: ClothingBackpackERTSecurity
+    shoes: ClothingShoesBootsCombatConcreteFilled
+    mask: ClothingMaskGasERT
+    eyes: ClothingEyesGlassesCentComm
+    gloves: ClothingHandsGlovesCombat
+    outerClothing: ClothingOuterHardsuitERTSecurity
+    id: ERTSecurityPDA
+    belt: ClothingBeltMilitaryWebbingERT
+    suitStorage: WeaponRiflePeacemaker
+
+- type: startingGear
+  id: NPCERTSquadGearWT550Patrol
+  equipment:
+    head: ClothingHeadHelmetERTSecurity
+    jumpsuit: ClothingUniformJumpsuitERTSecurity
+    back: ClothingBackpackERTSecurity
+    shoes: ClothingShoesBootsCombatConcreteFilled
+    mask: ClothingMaskGasERT
+    eyes: ClothingEyesGlassesCentComm
+    gloves: ClothingHandsGlovesCombat
+    outerClothing: ClothingOuterHardsuitERTSecurity
+    id: ERTSecurityPDA
+    belt: ClothingBeltMilitaryWebbingERT
+    suitStorage: WeaponSubMachineGunWt550
+
+- type: startingGear
+  id: NPCERTSquadGearIK60Patrol
+  equipment:
+    head: ClothingHeadHelmetERTSecurity
+    jumpsuit: ClothingUniformJumpsuitERTSecurity
+    back: ClothingBackpackERTSecurity
+    shoes: ClothingShoesBootsCombatConcreteFilled
+    mask: ClothingMaskGasERT
+    eyes: ClothingEyesGlassesCentComm
+    gloves: ClothingHandsGlovesCombat
+    outerClothing: ClothingOuterHardsuitERTSecurity
+    id: ERTSecurityPDA
+    belt: ClothingBeltMilitaryWebbingERT
+    suitStorage: WeaponIK60
+
+- type: startingGear
+  id: NPCERTSquadGearLeaderPatrol
+  equipment:
+    head: ClothingHeadHelmetERTLeader
+    jumpsuit: ClothingUniformJumpsuitERTLeader
+    back: ClothingBackpackERTLeader
+    shoes: ClothingShoesBootsCombatLeadFilled
+    mask: ClothingMaskGasERT
+    eyes: ClothingEyesGlassesCentComm
+    gloves: ClothingHandsGlovesCombat
+    outerClothing: ClothingOuterHardsuitERTLeader
+    id: ERTLeaderPDA
+    belt: ClothingBeltMilitaryWebbingERT
+    suitStorage: WeaponPulseCarbine
+
+- type: startingGear
   id: NPCERTSquadGearMedicArmed
   equipment:
     head: ClothingHeadHelmetERTMedic
@@ -862,7 +922,7 @@
 
     - type: Loadout
       prototypes:
-        - NPCERTSquadGearIK60
+        - NPCERTSquadGearIK60Patrol
 
 
 - type: entity
@@ -899,14 +959,14 @@
 
     - type: Loadout
       prototypes:
-        - NPCERTSquadGearPeacemaker
+        - NPCERTSquadGearPeacemakerPatrol
 
 
 - type: entity
   parent: BaseMobERTShooter
   id: MobNPCERTGuardWT550
   name: Emergency Security Officer
-  suffix: ADMEME
+  suffix: ADMEME, Stationary
   components:
     - type: HTN
       rootTask:
@@ -936,7 +996,7 @@
 
     - type: Loadout
       prototypes:
-        - NPCERTSquadGearWT550
+        - NPCERTSquadGearWT550Patrol
 
    
 - type: entity
@@ -973,7 +1033,7 @@
 
     - type: Loadout
       prototypes:
-        - NPCERTSquadGearPeacemaker
+        - NPCERTSquadGearPeacemakerPatrol
 
 
 - type: entity
@@ -1010,7 +1070,7 @@
 
     - type: Loadout
       prototypes:
-        - NPCERTSquadGearWT550
+        - NPCERTSquadGearWT550Patrol
 
 
 - type: entity
@@ -1045,7 +1105,7 @@
 
     - type: Loadout
       prototypes:
-        - NPCERTSquadGearLeader
+        - NPCERTSquadGearLeaderPatrol
     - type: RandomMetadata
       nameSegments:
         - NamesMilitaryFirstLeader
