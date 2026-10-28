@@ -172,7 +172,7 @@
   name: meat bun
   parent: FoodBakedBase
   id: FoodBakedBunMeat
-  description: Has the potential to not be dog.
+  description: It's meat and it's bun, what more could you ask for?
   components:
   - type: Sprite
     state: bun-meat

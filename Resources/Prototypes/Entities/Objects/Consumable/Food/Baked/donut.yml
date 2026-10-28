@@ -112,7 +112,7 @@
   name: meat donut
   parent: FoodDonutBase
   id: FoodDonutMeat
-  description: Tastes as gross as it looks.
+  description: Finally, the carnivores of the station can enjoy the beauty that is the humble donut.
   components:
   - type: FlavorProfile
     flavors:
