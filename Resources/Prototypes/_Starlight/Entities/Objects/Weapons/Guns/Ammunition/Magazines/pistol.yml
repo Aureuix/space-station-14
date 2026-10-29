@@ -900,6 +900,7 @@
 - type: entity
   id: MagazinePistolSubMachineGunUzi
   name: 9mm Uzi magazine # Spectralight: .35 -> 9mm
+  description: A unique compact magazine designed to hold 9mm ammunition. It is only compatible with Auto-Ordinance's Uzi line of firearm. # SpL
   parent: BaseMagazinePistolSubMachineGun
   components:
   - type: BallisticAmmoProvider

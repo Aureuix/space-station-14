@@ -71,6 +71,7 @@
     sprite: Objects/Specific/Medical/implanter.rsi
     heldPrefix: implanter
     size: Small
+    storedRotation: 90 # SpL
   - type: Appearance
   - type: GenericVisualizer
     visuals:

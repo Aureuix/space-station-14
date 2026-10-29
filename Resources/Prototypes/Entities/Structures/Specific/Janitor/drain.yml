@@ -1,6 +1,7 @@
 - type: entity
   id: FloorDrain
   name: drain
+  parent: SocialInteractionReceiverSimple # SpL
   description: Drains puddles around it. Useful for dumping mop buckets or keeping certain rooms clean.
   placement:
     mode: SnapgridCenter

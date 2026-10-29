@@ -592,7 +592,7 @@
 - type: entity
   parent: [ClothingNeckMantleCMO, BaseCentcommContraband]
   id: ClothingNeckCloakCMDMantle
-  name: Central Medical Division mantle
+  name: central medical division mantle
   description: No ailment or wound can hide from the gaze of the one draped in this mantle.
   components:
   - type: Sprite

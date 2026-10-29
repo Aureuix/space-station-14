@@ -822,7 +822,7 @@
     outerClothing: ClothingOuterHardsuitERTSecurity
     id: ERTSecurityPDA
     belt: ClothingBeltMilitaryWebbingERT
-    suitStorage: WeaponRiflePeacemaker
+    suitstorage: WeaponRiflePeacemaker
 
 - type: startingGear
   id: NPCERTSquadGearWT550Patrol
@@ -837,7 +837,7 @@
     outerClothing: ClothingOuterHardsuitERTSecurity
     id: ERTSecurityPDA
     belt: ClothingBeltMilitaryWebbingERT
-    suitStorage: WeaponSubMachineGunWt550
+    suitstorage: WeaponSubMachineGunWt550
 
 - type: startingGear
   id: NPCERTSquadGearIK60Patrol
@@ -852,7 +852,7 @@
     outerClothing: ClothingOuterHardsuitERTSecurity
     id: ERTSecurityPDA
     belt: ClothingBeltMilitaryWebbingERT
-    suitStorage: WeaponIK60
+    suitstorage: WeaponIK60
 
 - type: startingGear
   id: NPCERTSquadGearLeaderPatrol
@@ -867,7 +867,7 @@
     outerClothing: ClothingOuterHardsuitERTLeader
     id: ERTLeaderPDA
     belt: ClothingBeltMilitaryWebbingERT
-    suitStorage: WeaponPulseCarbine
+    suitstorage: WeaponPulseCarbine
 
 - type: startingGear
   id: NPCERTSquadGearMedicArmed
