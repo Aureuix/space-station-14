@@ -1038,7 +1038,6 @@
     addAction: false
     addVerb: false
     canUse: false
-    canUseInteractKeys: false
     turnOffSound: /Audio/Machines/energyshield_down.ogg
   - type: ComponentToggler 
     parent: true
