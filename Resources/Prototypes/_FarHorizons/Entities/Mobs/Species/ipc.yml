@@ -296,7 +296,7 @@
         maxDistance: 5
       path: /Audio/_FarHorizons/Effects/Alerts/healthpanel-alert.ogg
     damagedThreshold:
-      min: 85
+      min: 100 # SpL- modified
   - type: Repairable # So welder is just a special little snowflake in the code. I tried making healing with welder work through ConditionalHealing component, but it would require too many changes in too many places. So we will keep on the trend and have brute healing defined here. /shrug
     doAfterDelay: 2 # A bit slower than conventional topicals, but heals for more.
     allowSelfRepair: true

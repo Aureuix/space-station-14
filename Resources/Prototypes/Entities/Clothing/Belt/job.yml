@@ -490,6 +490,7 @@
       - DoorRemote
       - Whistle
       - BalloonPopper
+      - EnergySword # SpL
   - type: ItemMapper
     sprite: *BeltOverlay
     mapLayers:

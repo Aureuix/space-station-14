@@ -21,6 +21,8 @@ using Content.Shared.Damage.Components;
 using Content.Shared.StatusEffectNew.Components;
 using Content.Shared.StatusEffectNew;
 using Robust.Shared.Prototypes;
+using Content.Shared.Speech.Muting;
+using Content.Server._SpL.Traits.Components;
 
 namespace Content.Server.Starlight.Medical.Surgery;
 // Based on the RMC14.
@@ -173,7 +175,15 @@ public sealed partial class SurgerySystem : SharedSurgerySystem
         EntProtoId numbnessEffect = "StatusEffectPainNumbness";
         EntityUid? effect = new EntityUid();
         if (_statusSystem.TryGetStatusEffect(args.Body, numbnessTrait, out effect) ||
-            _statusSystem.TryGetStatusEffect(args.Body, numbnessEffect, out effect)){
+            _statusSystem.TryGetStatusEffect(args.Body, numbnessEffect, out effect)) {
+            return;
+        }
+        
+        EntProtoId muteEffect = "StatusEffectMuted";
+        if (_statusSystem.TryGetStatusEffect(args.Body, muteEffect, out effect) ||
+            HasComp<PainDulledComponent>(args.Body) ||
+            HasComp<MutedComponent>(args.Body) ) {
+            _chat.TryEmoteWithChat(args.Body, ent.Comp.EmoteMuted);
             return;
         }
         _chat.TryEmoteWithChat(args.Body, ent.Comp.Emote); //@screams!

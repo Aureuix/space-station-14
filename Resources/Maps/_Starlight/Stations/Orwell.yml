@@ -71965,7 +71965,7 @@ entities:
       parent: 11876
     - type: Physics
       canCollide: False
-- proto: ClothingOuterCoatDetectiveLoadoutGrey
+- proto: ClothingOuterCoatDetectiveUnarmoredGrey
   entities:
   - uid: 11880
     components:

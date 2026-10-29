@@ -1,0 +1,107 @@
+﻿# rules
+- type: guideEntry
+  id: RuleSpL1
+  name: guide-entry-spl-rules
+  ruleEntry: true
+  priority: 1
+  text: "/ServerInfo/Guidebook/ServerRules/RulesSpL/CoreRules/RuleSpL1.xml"
+  
+- type: guideEntry
+  id: RuleSpL2
+  name: guide-entry-spl-rules
+  ruleEntry: true
+  priority: 2
+  text: "/ServerInfo/Guidebook/ServerRules/RulesSpL/CoreRules/RuleSpL2.xml"
+  
+- type: guideEntry
+  id: RuleSpL3
+  name: guide-entry-spl-rules
+  ruleEntry: true
+  priority: 3
+  text: "/ServerInfo/Guidebook/ServerRules/RulesSpL/CoreRules/RuleSpL3.xml"
+  
+- type: guideEntry
+  id: RuleSpL4
+  name: guide-entry-spl-rules
+  ruleEntry: true
+  priority: 4
+  text: "/ServerInfo/Guidebook/ServerRules/RulesSpL/CoreRules/RuleSpL4.xml"
+
+- type: guideEntry
+  id: RuleSpL5
+  name: guide-entry-spl-rules
+  ruleEntry: true
+  priority: 5
+  text: "/ServerInfo/Guidebook/ServerRules/RulesSpL/CoreRules/RuleSpL5.xml"
+
+# expectations
+- type: guideEntry
+  id: RPSpL1
+  name: guide-entry-spl-expectations
+  ruleEntry: true
+  priority: 1
+  text: "/ServerInfo/Guidebook/ServerRules/RulesSpL/Expectations/RPSpL1.xml"
+
+- type: guideEntry
+  id: RPSpL2
+  name: guide-entry-spl-expectations
+  ruleEntry: true
+  priority: 2
+  text: "/ServerInfo/Guidebook/ServerRules/RulesSpL/Expectations/RPSpL2.xml"
+
+- type: guideEntry
+  id: RPSpL3
+  name: guide-entry-spl-expectations
+  ruleEntry: true
+  priority: 3
+  text: "/ServerInfo/Guidebook/ServerRules/RulesSpL/Expectations/RPSpL3.xml"
+
+- type: guideEntry
+  id: RPSpL4
+  name: guide-entry-spl-expectations
+  ruleEntry: true
+  priority: 4
+  text: "/ServerInfo/Guidebook/ServerRules/RulesSpL/Expectations/RPSpL4.xml"
+
+- type: guideEntry
+  id: RPSpL5
+  name: guide-entry-spl-expectations
+  ruleEntry: true
+  priority: 5
+  text: "/ServerInfo/Guidebook/ServerRules/RulesSpL/Expectations/RPSpL5.xml"
+  
+# clauses
+- type: guideEntry
+  id: ClauseSpL1
+  name: guide-entry-spl-expectations
+  ruleEntry: true
+  priority: 1
+  text: "/ServerInfo/Guidebook/ServerRules/RulesSpL/Clauses/ClauseSpL1.xml"
+
+- type: guideEntry
+  id: ClauseSpL2
+  name: guide-entry-spl-expectations
+  ruleEntry: true
+  priority: 2
+  text: "/ServerInfo/Guidebook/ServerRules/RulesSpL/Clauses/ClauseSpL2.xml"
+
+- type: guideEntry
+  id: ClauseSpL3
+  name: guide-entry-spl-expectations
+  ruleEntry: true
+  priority: 3
+  text: "/ServerInfo/Guidebook/ServerRules/RulesSpL/Clauses/ClauseSpL3.xml"
+
+- type: guideEntry
+  id: ClauseSpL4
+  name: guide-entry-spl-expectations
+  ruleEntry: true
+  priority: 4
+  text: "/ServerInfo/Guidebook/ServerRules/RulesSpL/Clauses/ClauseSpL4.xml"
+  
+- type: guideEntry
+  id: ClauseSpL5
+  name: guide-entry-spl-expectations
+  ruleEntry: true
+  priority: 5
+  text: "/ServerInfo/Guidebook/ServerRules/RulesSpL/Clauses/ClauseSpL5.xml"

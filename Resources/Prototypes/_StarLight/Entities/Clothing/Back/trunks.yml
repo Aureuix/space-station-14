@@ -68,6 +68,6 @@
     - type: MovementSpeedModifier
       baseWalkSpeed: 0
       baseSprintSpeed: 0
-    - type: TextToSpeech
-      voice: karma
+    #- type: TextToSpeech # SpL
+    #  voice: karma
 # Fashion-O-Mat END

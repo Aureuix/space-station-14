@@ -208,7 +208,7 @@
             32:
               sprite: _Starlight/Admeme/neomoth/xenomoproach-displacements.rsi
               state: ears
-    - type: TextToSpeech
+    # - type: TextToSpeech # SpL
     - type: DamageOnHighSpeedImpact
       damage:
         types:

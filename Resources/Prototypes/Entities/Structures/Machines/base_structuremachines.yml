@@ -58,6 +58,7 @@
 
 - type: entity
   abstract: true
+  parent: SocialInteractionReceiverSimple # SpL
   id: ConstructibleMachine
   components:
   - type: Animateable

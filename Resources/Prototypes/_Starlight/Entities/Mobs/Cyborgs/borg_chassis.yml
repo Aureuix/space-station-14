@@ -3,7 +3,7 @@
   parent: BaseBorgChassisSyndicate
   name: syndicate stealth cyborg
   components:
-  - type: TextToSpeech
+  # - type: TextToSpeech # SpL
   - type: Sprite
     sprite: _Starlight/Mobs/Silicon/Chassis/synd_stealth.rsi
     layers:
@@ -57,7 +57,7 @@
   parent: BorgChassisSelectable
   name: purrfus cyborg
   components:
-  - type: TextToSpeech
+  # - type: TextToSpeech # SpL
   - type: BorgSwitchableType
     selectedBorgType: purrfus
 
@@ -66,7 +66,7 @@
   parent: BorgChassisSelectable
   name: cargo cyborg
   components:
-  - type: TextToSpeech
+  # - type: TextToSpeech # SpL
   - type: BorgSwitchableType
     selectedBorgType: cargo
 
@@ -131,7 +131,7 @@
   description: A purpose built assault silicon used by the TSMC.
   abstract: true
   components:
-  - type: TextToSpeech
+  # - type: TextToSpeech # SpL
   - type: Sprite
     sprite: _Starlight/Mobs/Silicon/Chassis/tsmc.rsi
     layers:

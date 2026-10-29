@@ -888,6 +888,8 @@
         volume: -6
         pitch: 0.7
         variation: 0.025
+  - type: Item
+    size: Ginormous # SpL
   - type: ToggleableClothing
     clothingPrototype: ClothingHeadHelmetHardsuitCybersun
   - type: Tag

@@ -22,3 +22,19 @@
     - !type:AddCompsEffect
       components:
         - type: NoObjectiveTarget
+          
+- type: trait
+  id: PainDulled
+  name: trait-pain-dulled-name
+  description: trait-pain-dulled-desc
+  category: Quirks
+  cost: 0
+  effects:
+    - !type:AddCompsEffect
+      components:
+        - type: PainDulled
+  requirements:
+    - !type:SpeciesRequirement
+      species:
+        - IPC
+      inverted: true

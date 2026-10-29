@@ -101,6 +101,11 @@
   - type: Tag
     tags:
     - WhitelistChameleon
+  - type: ShowHealthBars # SpL start- funny
+    damageContainers:
+      - Inorganic
+      - Silicon
+      - IPC # SpL end
 
 - type: entity
   parent: ClothingEyesBase

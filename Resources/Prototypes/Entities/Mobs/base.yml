@@ -44,7 +44,7 @@
   - type: RequireProjectileTarget
     active: False
   - type: StunVisuals
-  - type: TextToSpeech
+  # - type: TextToSpeech # SpL
   - type: CollectiveMind
   - type: CustomLimbVisualizer
     displacements:

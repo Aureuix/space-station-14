@@ -128,7 +128,7 @@ namespace Content.Client.Lobby.UI
 
         private readonly ISawmill _sawmill;
 
-        #region Starlight
+        /*#region Starlight
 
         private List<VoicePrototype> _voices = [];
 
@@ -138,7 +138,7 @@ namespace Content.Client.Lobby.UI
 
         private VoiceSelectorWindow _voiceSiliconSelectorWindow;
 
-        #endregion
+        #endregion */ // SpL
 
         // Cosmatic Drift Record System-start
         private readonly RecordEditorGui _recordsTab; // Tracks CD records UI state
@@ -562,7 +562,7 @@ namespace Content.Client.Lobby.UI
             IsDirty = false;
 
             //🌟Starlight🌟
-            _voices = [.. _prototypeManager
+            /*_voices = [.. _prototypeManager
                 .EnumeratePrototypes<VoicePrototype>()
                 .Where(o => !o.Silicon)];
 
@@ -593,9 +593,9 @@ namespace Content.Client.Lobby.UI
             _voiceSiliconSelectorWindow.OnPreviewRequested
                 += () => _entManager.System<TextToSpeechSystem>().RequestPreviewTts(Profile?.SiliconVoice ?? "");
 
-            SiliconVoiceButton.OnPressed += _ => _voiceSiliconSelectorWindow.OpenCentered();
+            SiliconVoiceButton.OnPressed += _ => _voiceSiliconSelectorWindow.OpenCentered(); */ // SpL
 
-            SetupTabs();
+            SetupTabs(); 
 
             // Cosmatic Drift Record System-start
             _recordsTab = CreateRecordEditorTab(); // Instantiate the CD record editor UI
@@ -604,7 +604,7 @@ namespace Content.Client.Lobby.UI
             RefreshCharacterInfo();
             // 🌟Starlight🌟 end
         }
-        private void UpdateVoicesControls()
+        /*private void UpdateVoicesControls()
         {
             if (Profile is null)
                 return;
@@ -623,7 +623,7 @@ namespace Content.Client.Lobby.UI
             var voiceChoice = _voices.FirstOrDefault(x => x.ID == Profile.Voice);
             if (voiceChoice != default)
                 _voiceSelectorWindow.SelectVoice(voiceChoice);
-        }
+        }*/ // SpL
         // 🌟Starlight🌟 Start
 
         private void SetupTabs()
@@ -654,7 +654,7 @@ namespace Content.Client.Lobby.UI
         }
         // Cosmatic Drift Record System-end
 
-        private void UpdateSiliconVoicesControls()
+        /*private void UpdateSiliconVoicesControls()
         {
             if (Profile is null)
                 return;
@@ -674,7 +674,7 @@ namespace Content.Client.Lobby.UI
             var siliconVoiceChoice = _siliconVoices.FirstOrDefault(x => x.ID == Profile.SiliconVoice);
             if (siliconVoiceChoice != default)
                 _voiceSiliconSelectorWindow.SelectVoice(siliconVoiceChoice);
-        }
+        }*/ // SpL
 
 
         private void SetupInfoEditors()
@@ -1138,8 +1138,8 @@ namespace Content.Client.Lobby.UI
             UpdateHairPickers();
             UpdateCMarkingsHair();
             UpdateCMarkingsFacialHair();
-            UpdateVoicesControls();
-            UpdateSiliconVoicesControls(); // 🌟Starlight🌟
+            // UpdateVoicesControls(); // SpL
+            // UpdateSiliconVoicesControls(); // 🌟Starlight🌟 // SpL
             UpdateCybernetics(); // Starlight
             UpdateSpeciesLoadout(); // Far Horizons
 
@@ -1642,8 +1642,8 @@ namespace Content.Client.Lobby.UI
             UpdateGenderControls();
             Markings.SetSex(newSex);
             ReloadPreview();
-            UpdateVoicesControls();
-            UpdateSiliconVoicesControls(); // 🌟Starlight🌟
+            // UpdateVoicesControls(); // SpL
+            // UpdateSiliconVoicesControls(); // 🌟Starlight🌟 // SpL
         }
 
         private void SetGender(Gender newGender)

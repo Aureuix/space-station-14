@@ -63,7 +63,7 @@ public sealed partial class AudioTab : Control
 
         // Starlight start
 
-        Control.AddOptionPercentSlider(
+        /*Control.AddOptionPercentSlider(
             StarlightCCVars.TTSVolume,
             SliderTts,
             scale: ContentAudioSystem.TtsMultiplier);
@@ -81,7 +81,7 @@ public sealed partial class AudioTab : Control
         Control.AddOptionPercentSlider(
             StarlightCCVars.TTSChimeVolume,
             SliderTtsChime,
-            scale: ContentAudioSystem.TtsMultiplier);
+            scale: ContentAudioSystem.TtsMultiplier);*/ // SpL
 
         // Starlight end
 
@@ -91,8 +91,8 @@ public sealed partial class AudioTab : Control
         Control.AddOptionCheckBox(CCVars.AdminSoundsEnabled, AdminSoundsCheckBox);
         Control.AddOptionCheckBox(CCVars.BwoinkSoundEnabled, BwoinkSoundCheckBox);
         Control.AddOptionCheckBox(StarlightCCVars.RadioChimeMuted, RadioChimeMuteCheckBox);
-        Control.AddOptionCheckBox(StarlightCCVars.TTSClientEnabled, TtsClientCheckBox);
-        Control.AddOptionCheckBox(StarlightCCVars.TTSRadioQueueEnabled, TtsRadioQueueCheckBox);
+        // Control.AddOptionCheckBox(StarlightCCVars.TTSClientEnabled, TtsClientCheckBox); // SpL
+        // Control.AddOptionCheckBox(StarlightCCVars.TTSRadioQueueEnabled, TtsRadioQueueCheckBox); // SpL
 
         Control.Initialize();
     }

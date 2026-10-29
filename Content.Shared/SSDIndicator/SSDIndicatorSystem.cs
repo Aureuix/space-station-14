@@ -23,7 +23,7 @@ namespace Content.Shared.SSDIndicator;
 public sealed class SSDIndicatorSystem : EntitySystem
 {
     public static readonly EntProtoId StatusEffectSSDSleeping = "StatusEffectSSDSleeping";
-    private static readonly TimeSpan SsdDoAfterDelay = TimeSpan.FromSeconds(10);
+    private static readonly TimeSpan SsdDoAfterDelay = TimeSpan.FromSeconds(1); // SpL- reduced ssd time
 
     [Dependency] private readonly IConfigurationManager _cfg = default!;
     [Dependency] private readonly IGameTiming _timing = default!;
@@ -144,7 +144,7 @@ public sealed class SSDIndicatorSystem : EntitySystem
         if (_icSsdSleep)
         {
             // If sleepDelayOverride is provided, use that instead of the config value. This allows /ssd to apply SSD immediately without waiting for the usual delay.
-            var sleepDelay = sleepDelayOverride ?? TimeSpan.FromSeconds(_icSsdSleepTime);
+            var sleepDelay = sleepDelayOverride ?? TimeSpan.FromMinutes(_icSsdSleepTime);
             component.FallAsleepTime = _timing.CurTime + sleepDelay;
             component.NextUpdate = component.FallAsleepTime; // same reason as OnMapInit, first check should happen when sleep can apply.
         }

@@ -1,0 +1,9 @@
+﻿- type: loadout
+  id: RoboticistDiagnosticsGlasses
+  equipment:
+    eyes: ClothingEyesGlassesDiagnostic
+    
+- type: loadout
+  id: RoboticistDiagnosticsVisor
+  equipment:
+    eyes: VisorDiagnostic

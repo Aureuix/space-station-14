@@ -1,31 +1,49 @@
-[head=1][color=#009100]────────────────────[/color][/head]
-[color=#cc0000]█▀▀ █▀▀ █▀▀▄[/color] [head=3]   [color=#cc0000]CENTRAL SECURITY DIVISION [/color][/head]
-[color=#cc0000]█░░ ▀▀█ █░░█[/color][bolditalic]     [color=#cc0000]Eradicating the enemies of Nanotrasen[/color][/bolditalic]
-[color=#cc0000]▀▀▀ ▀▀▀ ▀▀▀░[/color]   [color=#aaaaaa][italic]OFFICIAL CSD OFFICE DOCUMENT[/italic][/color]
-[head=1][color=#009100]────────────────────[/color][/head]
-[head=1][color=#cc0000]Classified Secure Document[/color][/head]
-[head=1][color=#009100]────────────────────[/color][/head]
-[mono]
-[bold]Subject:[/bold] Syndicate Agents
+          [color=#1f75bb][italic][head=3]OFFICIAL CENTCOMM DOCUMENTATION[/head][/italic][/color]
+▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬
+  ▪  ▪  ▪  ▪  ▪  ▪  ▪  ▪  ▪  ▪  ▪  ▪  ▪  ▪  ▪  ▪  ▪  ▪  ▪  ▪  ▪  ▪  ▪  ▪  ▪  ▪  ▪  ▪  ▪  ▪  ▪  ▪ 
+[color=#CC0000]█▀▀ █▀▀ █▀▀▄[/color] [head=3]   [color=#CC0000FF]CENTRAL SECURITY DIVISION[/color][/head]
+[color=#CC0000]█░░ ▀▀█ █░░█[/color][bolditalic]   [color=#CC0000FF] Peacekeeping and enforcement[/color][/bolditalic]
+[color=#CC0000]▀▀▀ ▀▀▀ ▀▀▀░[/color]   [color=#aaaaaa][italic]OFFICIAL SECURITY OFFICE DOCUMENT[/italic][/color]
+  ▪  ▪  ▪  ▪  ▪  ▪  ▪  ▪  ▪  ▪  ▪  ▪  ▪  ▪  ▪  ▪  ▪  ▪  ▪  ▪  ▪  ▪  ▪  ▪  ▪  ▪  ▪  ▪  ▪  ▪  ▪  ▪ 
+▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬
+[mono]▌ICD−SVS10F - ▌ENC128247 - ▌UID: CV7477
+▌AUTH: SEC-E4+[/mono]
 
-[mono]The information contained in this document is restricted from common crew as only your superior emotional intelligence has been judged to be capable of handing the truth without becoming ineffectual in your duties. As such, sharing of any of this information with those outside of security is considered Treason unless authorized to by the HOS, Captain, or local NanoTrasen Representative. This information could cause the crew to panic, not trust one-another, and lead to station inefficiency and lost profits.
+[bold]CENTRAL SECURITY DIVISION – SECURE BRIEFING[/bold]
+[mono][bold]Subject:[/bold] The Syndicate
 
-If you hear any of these facts discussed with or around common crew, they are to be discredited. If an audience is listening and seems to be believing them, they are to be immediately detained for Sedition and Disturbance. Command should be informed of the situation where they shall handle the rest of the situation.[/mono]
-[head=1][color=#009100]────────────────────[/color][/head]
-As you are aware from news reports, Syndicate agents are commonly dispatched to disrupt NanoTrasen Station operations. They often utilize certain tools in their craft, some of which date back to the Podwar era.
+The information contained within this document is restricted to Security personnel and should be issued to officers on a need-to-know basis.
 
-Common tools: Podwar era soft and hard suits, web vests and chest rigs, Syndicate tool boxes, and Syndicate welding masks. These items are still commonly found by spacers and make their way onto stations in ways that do not necessarily indicate Syndicate activity.
+The details within will cover standard modus operandi of the potential threat, as well as operating procedures in relation to and countermeasures in case of hostilities with the aforementioned threat.
+═════════════════════════════════════════════
+[bold]Preface[/bold]
+It is no secret that NanoTrasen, and by extension her subordinates and allies, have many enemies both corporate and extrajudicial. It is also no secret that less than a century ago, a major corporate conflict was fought between all these parties in which NanoTrasen emerged victorious. What is perhaps lesser known, however, is the reality that the war never truly ended– it has merely gone cold.
 
-Less common tools: EMAG, Access breaker, Jaws of death, and Radio jammers. These items are high end Syndicate equipment that are well guarded by agents. These items do sometimes turn up on black markets, but their presence on a station is strong evidence that some form of Syndicate activity is occurring. These tools are frequently sold after missions into the black market where other neerdowells may get their hands on them.
+[bold]Briefing[/bold]
+The Syndicate is a loose conglomerate of NanoTrasen's enemies, comprising corporations, interest groups, cult sects, radical activists, and glorified pirates. They are united by their rallying cry and shared goal: "Death to  NanoTrasen".
 
-Advanced tools: Syndicate weapons, energy swords, implants, and uplinks. Syndicate weapons are rarely found on the black market and thus are generally sure signs that someone found in possession and use of these is very likely a Syndicate agent of terrorism.
+Syndicate assets come in many forms and faces. Common aggressors include infiltrated agents, swayed contractors, and civilians employed to facilitate tactical operations. However, there has also been an alarming increasing frequency in armed terror attacks by the Gorlex Marauder arm of their coalition, the results of which involve rivers of pointlessly spilled blood and emptied cartridges.
 
-It is known that members of the Syndicate produce various implants for their agents, though they are too varied and customized to fully document. Some notable examples include implants that allow an agent to slip from cuffs, communicate on hidden comms, and concealed pockets. It is impossible to validate the existence of the implants directly without immense risk; improper use of implant extractors carry the risk of grave bodily harm to the user, and should only be done when evidence is certain. Implant removal is a very painful process, and if conducted improperly may classify as prisoner abuse.
+The Syndicate continues to grow bolder with every passing day, but the strength to resist their aggression follows suit. We will not bend. We will not break. We will not yield. 
 
-It is known that Syndicate agents possess a tool called 'Uplinks' that can be used to redspace Syndicate tools to agents in the field. How this 'uplink' is accessed or used is not known to NanoTrasen. Any intelligence on uplinks should be reported to CC in extreme detail.
+Glory to NanoTrasen.
 
-Manufacturers of this equipment seem to be Cybersun, Waffle Co., and Interdyne; though definitive proof linking these corporations to the Syndicate is difficult to acquire.
+[bold]Procedures[/bold]
+All Syndicate assets are humanoids whose subterfuge is conducted through conventional and generally mundane means. There are no protocols for containing conventional Syndicate agents besides adherence to standard operating procedures, although operatives infiltrating from deep space rather than via civilian ranks tend to be heavily armed and beyond negotiating with. 
 
-From decades of experience, it is known that the Syndicate targets specific high end NanoTrasen equipment. It is presumed that this stolen equipment is used in the production of their advanced equipment. This commonly includes: CE's mag boots, the Captain's Antique laser pistol, the RD's hand teleporter and hardsuit, the CMO's hypospray and Portable Crew Monitor, etc. 
+Keep in mind that any individual who formally declares themselves a Syndicate Operative (especially if they adopt the moniker of "Nuclear Operative") is to be considered an Enemy of the Corporation under section 5-10 of NanoTrasen corporate law, and either detained and transferred to Central Command holding cells following crew change or executed outright provided the levying two or more other capital crimes.
 
-[head=1][color=#009100]────────────────────[/color][/head]
+[bold]Countermeasures[/bold]
+Simple deterrence against Syndicate activity involves having a well organized security department and a competent commanding team. Officers should seek to ensure the safety and productivity of station personnel and integrity of assets, while heads should work to keep operations coordinated and smooth. In the case of breaches, investigations and swift application of justice should be applied as with any other criminal activity.
+
+Countermeasures against Syndicate Operatives is even simpler: overwhelming, unrelenting, superior firepower. They are not here to negotiate, so do not bother with pleasantries or non-lethal options. Turn every operative who dares to strike one of our stations into an example for the next one.
+
+[bold]Glory to NanoTrasen.[/bold]
+═════════════════════════════════════════════
+[/mono][italic]Addendum: Keep in mind that many Syndicate Agents work on a contract basis, often due to financial hardship, and thus should not be considered corporate enemies on the basis of their livery alone.[/italic]
+
+
+
+
+
+

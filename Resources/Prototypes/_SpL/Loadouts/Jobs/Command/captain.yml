@@ -38,6 +38,18 @@
   equipment:
     eyes: ClothingEyesGlassesCommandPrescription
 
+- type: loadout
+  id: JamjarCapGlasses
+  dummyEntity: ClothingEyesGlassesCommandJamjar
+  equipment:
+    eyes: ClothingEyesGlassesCommandJamjar
+    
+- type: loadout
+  id: CaptainVisor
+  dummyEntity: VisorCommand
+  equipment:
+    eyes: VisorCommand
+
 # Neck 
 - type: loadout
   id: CapHalfCloak

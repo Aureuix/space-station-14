@@ -101,7 +101,7 @@
   parent: [ ClothingOuterHardsuitBase, AllowSuitStorageClothing, BaseToggleClothing, BaseUnknownContraband ]
   id: ClothingOuterHardsuitVoxRaider
   name: ARK infiltration suit
-  description: A strange, lightweight and ominous looking hardsuit with camoflauging capabilities. It seems fitted specifically to vox proportions.
+  description: A strange, lightweight and ominous looking hardsuit with camouflaging capabilities. It seems fitted specifically to vox proportions.
   components:
     - type: Sprite
       sprite: _Goobstation/Clothing/OuterClothing/Hardsuits/vox-raiders-stealth.rsi
@@ -235,7 +235,7 @@
           volume: -6
           variation: 0.09
     - type: Item
-      size: Huge
+      size: Ginormous
     - type: ClothingSpeedModifier
       walkModifier: 1
       sprintModifier: 0.9

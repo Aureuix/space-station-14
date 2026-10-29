@@ -1,0 +1,6 @@
+﻿- type: loadout
+  id: NTBusinessCard
+  dummyEntity: NanoTrasenBusinessCard
+  storage:
+    back:
+      - NanoTrasenBusinessCard

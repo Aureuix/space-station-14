@@ -3,7 +3,7 @@
 
 Every round of SS14 is a [bold]self-contained shift[/bold] that takes place on one of many different stations.
 
-Rounds typically last from [color=cyan]45 to 90 minutes[/color], but players are free to leave and join at any point during a round.
+Rounds typically last from [color=cyan]90 to 180 minutes[/color], but players are free to leave and join at any point during a round.
 
 ## Shuttle Terminal
 If you join in the middle of a shift, you will likely spawn on the [color=lime]shuttle terminal[/color].
@@ -12,7 +12,13 @@ Here you can grab drinks, converse with other players, and wait for the shuttle 
 Screens on the walls will give you an ETA for the shuttle.
 When it arrives, simply walk on to be transported to the station.
 
-Make sure to stay inside the terminal and to not stand in the shuttle landing zone. [color=#EB2D3A][bold]You can be crushed by shuttles flying in[/bold][/color]
+Make sure to stay inside the terminal and to not stand in the shuttle landing zone. [color=#EB2D3A][bold]You can be crushed by shuttles flying in![/bold][/color]
+    
+## Cryostorage
+If you do not spawn on the shuttle, you'll be in the cryogenic storage room of the station. 
+Simply step out of your cryogenic sleep unit, get your bearings, and figure out where to go from there.
+    
+Regardless of how you arrive, it's good to let the station know you've clocked on over the radio.
 
 ## Navigation
 Every station has a wide variety of locations to visit.
@@ -32,7 +38,8 @@ At the end of the shift [color=gray](barring a [color=red][bold]nuclear disaster
 When it's called, an announcement will play on the station alerting the crew and signaling its [color=cyan]arrival in 10 minutes.[/color]
 Once it arrives, you'll need to make your way over to it, board it, and then survive the trip to [bold]Central Command[/bold].
 
-The round doesn't officially end until you reach [bold]Central Command[/bold]
+The round doesn't officially end until you reach [bold]Central Command[/bold]. 
+Post-round is set aside as extra time for roleplay and winding down, and you should stay in character until you leave or the round restarts.
 
 <Box>
   <GuideEntityEmbed Entity="CryogenicSleepUnit"/>

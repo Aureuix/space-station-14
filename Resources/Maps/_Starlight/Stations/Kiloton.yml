@@ -83087,7 +83087,7 @@ entities:
     - type: Transform
       pos: -43.607117,47.5414
       parent: 2
-- proto: ClothingOuterCoatDetectiveLoadoutGrey
+- proto: ClothingOuterCoatDetectiveUnarmoredGrey
   entities:
   - uid: 12710
     components:

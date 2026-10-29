@@ -667,6 +667,9 @@
     layers:
     - state: syndicate
     - state: icon-syndicate
+  - type: Tag
+    tags:
+      - BorgModuleGeneric
   - type: ItemBorgModule
     hands:
     - item: ChameleonProjector

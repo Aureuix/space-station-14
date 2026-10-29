@@ -42,6 +42,6 @@
     speechSounds: Alto
   - type: AACTablet
   # Starlight Start: TTS
-  - type: TextToSpeech
-    voice: johnson
+  # - type: TextToSpeech # SpL
+  #   voice: johnson
   # Starlight End: TTS

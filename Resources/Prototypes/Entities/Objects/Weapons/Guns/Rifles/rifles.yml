@@ -140,7 +140,7 @@
   name: SA-G48 'Lecter' assault rifle # SpL
   parent: [ BaseWeaponRifle, BaseSecurityContraband ]
   id: WeaponRifleLecter
-  description: A popular gas-operated combat rifle used heavily by NanoTrasen and SolGov. Operating in semi or fully automatic, its accuracy, stopping power, and reliability make it excel in all manner of environments. Feeds from 5.56x45mm rifle magazines. # Spectralight: .20 -> 5.56x45mm
+  description: A popular gas-operated combat rifle used heavily by NanoTrasen and SolGov. With semi and fully automatic firemodes, its accuracy, stopping power, and reliability make it excel in all manner of environments. Feeds from 5.56x45mm rifle magazines. # Spectralight: .20 -> 5.56x45mm
   components:
   - type: Sprite
     sprite: Objects/Weapons/Guns/Rifles/lecter.rsi

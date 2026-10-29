@@ -32,6 +32,7 @@
   - Pins
   - LuxuryPens
   - GroupSpeciesBreathTool
+  - NTCard # SpL
 
 
 - type: roleLoadout
@@ -70,6 +71,7 @@
   - NTRPens
   - Survival
   - GroupSpeciesBreathTool
+  - NTCard # SpL
 
 - type: roleLoadout
   id: JobIAA
@@ -85,6 +87,7 @@
   - LuxuryPens
   - Survival
   - GroupSpeciesBreathTool
+  - NTCard # SpL
 
 - type: roleLoadout
   id: JobBlueShield
@@ -105,6 +108,7 @@
   - Pens
   - SurvivalExtended # Starlight
   - GroupSpeciesBreathToolSecurity
+  - NTCard # SpL
 
 - type: roleLoadout
   id: JobMiningSpecialist
@@ -293,3 +297,4 @@
   - Pins
   - Pens
   - GroupSpeciesBreathTool
+  - NTCard # SpL

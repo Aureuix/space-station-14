@@ -34,12 +34,17 @@
     back:
       - PowerCellMicroreactor
       - PowerCellMicroreactor
-      - BoxStampsCCAdministrative
+      - RubberStampCentcom
+      - RubberStampAcknowledged
+      - RubberStampApproved
+      - RubberStampDenied
+      - RubberStampMissingStamps
       - BodyBagCCFolded
       - DoorRemoteAll
       - ClothingMaskGasCentcom
       - ToolDebug
       - MedkitAdvancedFilled
+      - CentCommBusinessCard
 
 - type: loadout
   id: CentCommHeadsetAlt
@@ -50,12 +55,17 @@
     back:
       - PowerCellMicroreactor
       - PowerCellMicroreactor
-      - BoxStampsCCAdministrative
+      - RubberStampCentcom
+      - RubberStampAcknowledged
+      - RubberStampApproved
+      - RubberStampDenied
+      - RubberStampMissingStamps
       - BodyBagCCFolded
       - DoorRemoteAll
       - ClothingMaskGasCentcom
       - ToolDebug
       - MedkitAdvancedFilled
+      - CentCommBusinessCard
 
 ## Jumpsuits
 - type: loadout
@@ -227,7 +237,7 @@
 - type: loadout
   id: CentCommJackbootsERT
   equipment:
-    shoes: ClothingShoesBootsJack
+    shoes: ClothingShoesBootsJackFilledVibro
 
 - type: loadout
   id: CentCommMagbootsERT
