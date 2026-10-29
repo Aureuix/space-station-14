@@ -127,6 +127,42 @@
       interactFailureString: petting-failure-syndicate-cyborg
       interactSuccessSound:
         path: /Audio/Ambience/Objects/periodic_beep.ogg
+    - type: MobThresholds
+      thresholds: #SpL: There's no reason the assault cyborg should crumple like wet paper with the default thresholds.
+        0: Alive
+        180: Critical
+        300: Dead
+      stateAlertDict:
+        Alive: BorgHealth
+        Critical: BorgCrit
+        Dead: BorgDead
+      showOverlays: false
+      allowRevives: true
+    - type: Destructible
+      thresholds:
+        - trigger:
+            !type:DamageTrigger
+            damage: 160
+          behaviors:
+            - !type:PlaySoundBehavior
+              sound:
+                path: /Audio/Machines/warning_buzzer.ogg
+                params:
+                  volume: 5
+        - trigger:
+            !type:DamageTrigger
+            damage: 500
+          behaviors:
+            - !type:PlaySoundBehavior
+              sound:
+                collection: MetalBreak
+            - !type:EmptyContainersBehaviour
+              containers:
+                - borg_brain
+                - borg_module
+                - cell_slot
+            - !type:DoActsBehavior
+              acts: [ "Destruction" ]
 
 - type: entity
   id: BorgChassisSyndicateMedical
