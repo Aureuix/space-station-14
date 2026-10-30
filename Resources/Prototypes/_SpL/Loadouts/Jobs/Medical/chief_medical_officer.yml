@@ -1,4 +1,9 @@
 ﻿- type: loadout
+  id: CMOCap
+  equipment:
+    head: ClothingHeadHatCMOsoft
+
+- type: loadout
   id: LongcoatCMO
   equipment:
     outerClothing: ClothingOuterCoatLongCMO

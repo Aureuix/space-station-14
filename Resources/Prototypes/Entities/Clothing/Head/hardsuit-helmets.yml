@@ -1037,6 +1037,7 @@
     sprite: Clothing/Head/Hardsuits/ERThelmets/ertchaplain.rsi
   - type: PointLight
     color: "#ffffff"
+  - type: WizardClothes # SpL
 #Starlight
   - type: Tag
     tags:

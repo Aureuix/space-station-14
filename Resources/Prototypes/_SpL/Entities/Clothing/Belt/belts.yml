@@ -1,0 +1,46 @@
+﻿- type: entity
+  parent: ClothingBeltMedicalEMT
+  id: ClothingBeltCMO
+  name: chief medical officer's belt
+  description: An incredibly deep-storage belt capable of holding just about anything to do with medicine, and some things that don't too.
+  components:
+    - type: Sprite
+      sprite: _SpL/Clothing/Belt/cmomedicalbelt.rsi
+    - type: Clothing
+      sprite: _SpL/Clothing/Belt/cmomedicalbelt.rsi
+    - type: Storage
+      maxItemSize: Large
+      defaultStorageOrientation: Vertical
+      grid:
+        - 0,0,9,1
+      whitelist:
+        tags:
+          - BrigmedicBeltEquip
+          - CigPack
+          - Wrench
+          - Bottle
+          - Spray
+          - Brutepack
+          - Bloodpack
+          - Gauze
+          - Hypospray
+          - Ointment
+          - PillCanister
+          - Radio
+          - DiscreteHealthAnalyzer
+          - SurgeryTool
+          - Dropper
+          - Truncheon
+          - Medkit
+          - BodyBag 
+          - ParaKnife
+          - JawsOfLife
+          - BoneGel
+          - Vial
+          - Patch
+          - PatchPack
+          - AutoMender
+        components:
+          - Injector
+          - Pill
+          - HandLabeler

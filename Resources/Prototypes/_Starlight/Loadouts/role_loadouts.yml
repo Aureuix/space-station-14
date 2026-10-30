@@ -91,6 +91,7 @@
 
 - type: roleLoadout
   id: JobBlueShield
+  canCustomizeName: true # SpL
   groups:
   - BlueShieldHead
   - BlueShieldNeck

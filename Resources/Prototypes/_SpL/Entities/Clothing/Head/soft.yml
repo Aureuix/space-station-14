@@ -1,4 +1,29 @@
 ﻿- type: entity
+  parent: [ClothingHeadHeadHatBaseFlippable, BaseCommandContraband]
+  id: ClothingHeadHatCMOsoft
+  name: chief medical officer's cap
+  description: The cross on it's green. That must mean it's extra good news.
+  components:
+    - type: Sprite
+      sprite: _SpL/Clothing/Head/Soft/cmosoft.rsi
+    - type: Clothing
+      sprite: _SpL/Clothing/Head/Soft/cmosoft.rsi
+    - type: Tag
+      tags:
+        - ClothMade
+        - Recyclable
+
+- type: entity
+  parent: [ClothingHeadHeadHatBaseFlipped, ClothingHeadHatCMOsoft]
+  id: ClothingHeadHatCMOsoftFlipped
+  name: chief medical officer's cap
+  components:
+    - type: Tag
+      tags:
+        - ClothMade
+        - Recyclable
+
+- type: entity
   parent: [ClothingHeadHeadHatBaseFlippable, BaseGSLOwnedContraband]
   id: ClothingHeadHatCargoGSLsoft
   name: GSL cargo cap
