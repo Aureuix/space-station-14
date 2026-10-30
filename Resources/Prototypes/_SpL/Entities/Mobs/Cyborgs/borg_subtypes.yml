@@ -161,6 +161,7 @@
         - Service
         - Supply
         - Law
+        - NanoTrasen
     - type: ActiveRadio
       channels:
         - Binary
@@ -174,6 +175,7 @@
         - Service
         - Supply
         - Law
+        - NanoTrasen
     - type: SiliconLawProvider
       laws: NTNCLawset
     - type: ShowHealthBars
