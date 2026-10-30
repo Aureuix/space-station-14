@@ -173,6 +173,7 @@
     interactSuccessSound:
       path: /Audio/Ambience/Objects/periodic_beep.ogg
   - type: Vocalizer
+    hideChat: true # SpL
   - type: DatasetVocalizer
     dataset: FirebotAd
 
@@ -189,6 +190,7 @@
       collection: BikeHorn
       params:
         variation: 0.125
+        volume: -4 # SpL
   - type: Sprite
     sprite: Mobs/Silicon/Bots/honkbot.rsi
     state: honkbot
@@ -328,6 +330,7 @@
       path: /Audio/Ambience/Objects/periodic_beep.ogg
   #region starlight
   - type: Vocalizer
+    hideChat: true # SpL
   - type: DatasetVocalizer
     dataset: CleanbotAds
   - type: WiresPanel
@@ -387,6 +390,7 @@
     interactSuccessSound:
       path: /Audio/Ambience/Objects/periodic_beep.ogg
   - type: Vocalizer
+    hideChat: true # SpL
   - type: DatasetVocalizer
     dataset: MedibotAds
   - type: Inventory
