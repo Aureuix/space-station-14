@@ -186929,13 +186929,6 @@ entities:
     - type: Transform
       pos: -10.599952,13.772495
       parent: 2
-- proto: WeaponPistolStechkin
-  entities:
-  - uid: 28654
-    components:
-    - type: Transform
-      pos: 16.416153,-7.4960833
-      parent: 2
 - proto: WeaponRevolverDispatcher
   entities:
   - uid: 28655
