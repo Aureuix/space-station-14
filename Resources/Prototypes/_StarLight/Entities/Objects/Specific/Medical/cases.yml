@@ -57,9 +57,6 @@
         - bottle7
         - bottle8
     - type: Appearance
-    - type: Tag
-      tags:
-        - BrigmedicBeltEquip # SpL
 
 - type: entity
   abstract: true
