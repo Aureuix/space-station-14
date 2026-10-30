@@ -1,4 +1,18 @@
 ﻿- type: entity
+  id: ClothingBeltCMOFilled
+  parent: ClothingBeltCMO
+  suffix: Filled
+  components:
+    - type: EntityTableContainerFill
+      containers:
+        storagebase: !type:AllSelector
+          children:
+            - id: DefibrillatorCompact
+            - id: MedkitAdvancedFilled
+            - id: RescueKnife
+            - id: CombatMedipen
+
+- type: entity
   id: ClothingBeltHolsterFilledStechkin
   parent: ClothingBeltHolster
   suffix: Filled

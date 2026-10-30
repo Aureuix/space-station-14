@@ -97823,13 +97823,6 @@ entities:
     - type: DeviceList
       devices:
       - 14952
-- proto: WeaponPistolStechkin
-  entities:
-  - uid: 14954
-    components:
-    - type: Transform
-      pos: -34.478767,16.279465
-      parent: 2
 - proto: WeaponSniperMosin
   entities:
   - uid: 1352

@@ -578,13 +578,14 @@
   - GroupTankHarness
   - ChiefMedicalOfficerHead
   - ChiefMedicalOfficerNeck
+  - ChiefMedicalOfficerEyewear # SpL
   - MedicalMask
   - ChiefMedicalOfficerJumpsuit
   - MedicalGloves
   - MedicalBackpack
   - ChiefMedicalOfficerOuterClothing
   - ChiefMedicalOfficerShoes
-  - MedicalEyewear
+  # - MedicalEyewear # SpL
   - SurvivalMedical
   - Trinkets
   - Scarves # Starlight

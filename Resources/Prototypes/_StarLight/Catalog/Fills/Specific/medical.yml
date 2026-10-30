@@ -8,8 +8,10 @@
         storagebase: !type:AllSelector
           children:
             - id: ChemistryBottleInaprovaline
-              amount: 2
+            - id: ChemistryBottleEpinephrine # SpL
             - id: ChemistryBottleIpecac
             - id: ChemistryBottleCharcoal
             - id: ChemistryBottleHaloperidol
             - id: ChemistryBottleEthylredoxrazine
+            - id: ChemistryBottleLidocaine # SpL
+            - id: ChemistryBottleTranexamicAcid # SpL

@@ -15,6 +15,18 @@
         - IPC
     - type: ShowAccessReaderSettings
     - type: VisionCorrection
+      
+- type: entity
+  parent: ClothingEyeGlassesMedicalPrescription
+  id: ClothingEyesGlassesMedchem
+  name: medchem glasses
+  description: A pair of prescription glasses that can scan solutions and identify crew vitals at a glance. Central Command assures that these are not just brigmedic glasses with the polarising scratched off.
+  components:
+    - type: Sprite
+      sprite: _SpL/Clothing/Eyes/Glasses/medchemglasses.rsi
+    - type: Clothing
+      sprite: _SpL/Clothing/Eyes/Glasses/medchemglasses.rsi
+    - type: SolutionScanner
 
 - type: entity
   parent: [ClothingEyesBase, BaseCommandContraband]

@@ -2,6 +2,7 @@
 
 loadout-group-hos-sidearm = Head of Security sidearm
 loadout-group-detective-sidearm = Detective sidearm
+loadout-group-cmo-eyewear = Chief Medical Officer eyewear
 loadout-group-surgeon-pda = If you're seeing this ping nykaestra on discord
 
 loadout-group-head-cc = CentComm headwear

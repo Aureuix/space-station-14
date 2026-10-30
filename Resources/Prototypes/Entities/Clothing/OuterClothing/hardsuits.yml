@@ -1094,6 +1094,7 @@
     sprite: Clothing/OuterClothing/Hardsuits/ERTSuits/ertchaplain.rsi
   - type: ToggleableClothing
     clothingPrototype: ClothingHeadHelmetHardsuitERTChaplain
+  - type: WizardClothes # SpL
 #Starlight
   - type: Tag
     tags:

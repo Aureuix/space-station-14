@@ -50,7 +50,7 @@ public sealed partial class EnergyDomeGeneratorComponent : Component
     /// (via in-hand interaction)
     /// </summary>
     [DataField]
-    public bool CanUseInteractKeys = true; // SpL
+    public bool CanUseInteractKeys = false; // SpL
     
     /// <summary>
     /// Whether or not the dome can be toggled via standard interactions

@@ -195,7 +195,7 @@
   parent: DrinkCanBaseFull
   id: DrinkRootBeerCan
   name: root beer can
-  description: Some of that tasty root beer goodness, now in a portable can!
+  description: Some of that tasty root beer goodness, now in a portable can! The packaging has a smiling bear on it. # SpL
   components:
   - type: SolutionContainerManager
     solutions:

@@ -81,6 +81,9 @@
     - type: PhysicalComposition
       materialComposition:
         Cloth: 100
+    - type: Tag
+      tags:
+        - BrigmedicBeltEquip # SpL
 
 - type: entity
   abstract: true

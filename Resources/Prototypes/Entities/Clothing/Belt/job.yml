@@ -313,10 +313,12 @@
         - Vial # SpL
         - PatchPack # SpL
         - AutoMender # SpL
+        - BrigmedicBeltEquip # SpL
       components:
         - Injector
         - Pill
         - HandLabeler #Starlight end
+        - Defibrillator # SpL
 
 - type: entity
   parent: ClothingBeltStorageBase
