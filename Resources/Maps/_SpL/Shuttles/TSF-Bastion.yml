@@ -13903,7 +13903,7 @@ entities:
     - type: Transform
       pos: 0.5,-1.5
       parent: 1
-- proto: WeaponShotgunSentielRubber
+- proto: WeaponShotgunRiotRubber
   entities:
   - uid: 2095
     components:
