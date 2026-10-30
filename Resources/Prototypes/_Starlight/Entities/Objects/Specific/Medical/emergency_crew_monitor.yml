@@ -51,3 +51,6 @@
     stealGroup: CrewMonitorCollection
   - type: PowerCellDraw
     useCharge: 15
+  - type: Tag
+    tags:
+      - BrigmedicBeltEquip # SpL

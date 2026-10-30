@@ -9,6 +9,20 @@
     - NTBusinessCard
 
 - type: loadoutGroup
+  id: ChiefMedicalOfficerEyewear
+  name: loadout-group-cmo-eyewear
+  minLimit: 0
+  defaultSelected: 1
+  maxLimit: 1
+  loadouts:
+    - CMOMedChemHUD
+    - CMOMedChemGlasses
+    - CMOMedChemVisor
+    - MedicalHud
+    - MedicalEyePatchHud
+    - MedicalGlassesPrescription
+
+- type: loadoutGroup
   id: HeadofSecuritySidearm
   name: loadout-group-hos-sidearm
   hidden: true

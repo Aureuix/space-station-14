@@ -52,6 +52,9 @@
     range: 500
   - type: StealTarget
     stealGroup: CrewMonitorCollection
+  - type: Tag
+    tags:
+      - BrigmedicBeltEquip # SpL
 
 - type: entity
   id: HandheldBSOCrewMonitorEmpty

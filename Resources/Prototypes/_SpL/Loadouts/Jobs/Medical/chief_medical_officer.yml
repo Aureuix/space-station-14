@@ -1,13 +1,35 @@
-﻿- type: loadout
+﻿# Head
+- type: loadout
   id: CMOCap
   equipment:
     head: ClothingHeadHatCMOsoft
 
+# Glasses
+- type: loadout
+  id: CMOMedChemGlasses
+  dummyEntity: ClothingEyesGlassesMedchem
+  equipment:
+    eyes: ClothingEyesGlassesMedchem
+
+- type: loadout
+  id: CMOMedChemHUD
+  dummyEntity: ClothingEyesHudMedchem
+  equipment:
+    eyes: ClothingEyesHudMedchem
+
+- type: loadout
+  id: CMOMedChemVisor
+  dummyEntity: VisorMedchem
+  equipment:
+    eyes: VisorMedchem
+
+# Outer
 - type: loadout
   id: LongcoatCMO
   equipment:
     outerClothing: ClothingOuterCoatLongCMO
     
+# Neck
 - type: loadout
   id: CMOAgedCloak
   equipment:

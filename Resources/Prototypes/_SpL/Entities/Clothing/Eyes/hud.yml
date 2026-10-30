@@ -42,6 +42,30 @@
       sprite: _Goobstation/Clothing/Eyes/Glasses/diag.rsi
     - type: Clothing
       sprite: _Goobstation/Clothing/Eyes/Glasses/diag.rsi
+      
+- type: entity
+  parent: ClothingEyesHudMedical
+  id: ClothingEyesHudMedchem
+  name: medchem hud
+  description: A heads-up display that scans the humanoids in view, provides accurate data about their health status, and identifies the reagent makeup of solutions.
+  components:
+    - type: Sprite
+      sprite: _SpL/Clothing/Eyes/Hud/medchemhud.rsi
+    - type: Clothing
+      sprite: _SpL/Clothing/Eyes/Hud/medchemhud.rsi
+    - type: SolutionScanner
+      
+- type: entity
+  parent: ClothingEyesHudMedical
+  id: VisorMedchem
+  name: medchem visor
+  description: Visored goggles capable of analyzing solution data and crew vitals at a glance. They do not come with any other special functions.
+  components:
+    - type: Sprite
+      sprite: _Goobstation/Clothing/Eyes/Glasses/medchem.rsi
+    - type: Clothing
+      sprite: _Goobstation/Clothing/Eyes/Glasses/medchem.rsi
+    - type: SolutionScanner
 
 - type: entity
   parent: [ ClothingEyesHudSecurity, BaseToggleableVisor ]
