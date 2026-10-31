@@ -20,7 +20,7 @@ namespace Content.Server.Construction.Completions;
 [UsedImplicitly, DataDefinition]
 public sealed partial class TransformMech : IGraphAction
 {
-    [DataField("mechPrototype", required: true, customTypeSerializer: typeof(PrototypeIdSerializer<EntityPrototype>))]
+    [DataField("mechPrototype", required: true, customTypeSerializer: typeof(ProtoId<EntityPrototype>))]
     public string MechPrototype = string.Empty;
 
     [DataField("batteryContainer")]

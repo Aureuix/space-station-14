@@ -1,6 +1,6 @@
 ﻿using Robust.Shared.GameStates;
 using Robust.Shared.Serialization;
-using Robust.Shared.Serialization.TypeSerializers.Implementations.Custom.Prototype.List;
+
 
 namespace Content.Shared.CollectiveMind;
 

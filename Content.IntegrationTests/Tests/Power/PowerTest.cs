@@ -180,7 +180,7 @@ namespace Content.IntegrationTests.Tests.Power
             await server.WaitAssertion(() =>
             {
                 var map = mapSys.CreateMap(out var mapId);
-                var grid = mapManager.CreateGridEntity(mapId);
+                var grid = mapSys.CreateGridEntity(mapId);
 
                 // Power only works when anchored
                 for (var i = 0; i < 3; i++)
@@ -242,7 +242,7 @@ namespace Content.IntegrationTests.Tests.Power
             await server.WaitAssertion(() =>
             {
                 var map = mapSys.CreateMap(out var mapId);
-                var grid = mapManager.CreateGridEntity(mapId);
+                var grid = mapSys.CreateGridEntity(mapId);
 
                 // Power only works when anchored
                 for (var i = 0; i < 3; i++)
@@ -299,7 +299,7 @@ namespace Content.IntegrationTests.Tests.Power
             await server.WaitAssertion(() =>
             {
                 var map = mapSys.CreateMap(out var mapId);
-                var grid = mapManager.CreateGridEntity(mapId);
+                var grid = mapSys.CreateGridEntity(mapId);
 
                 // Power only works when anchored
                 for (var i = 0; i < 3; i++)
@@ -393,7 +393,7 @@ namespace Content.IntegrationTests.Tests.Power
             await server.WaitAssertion(() =>
             {
                 var map = mapSys.CreateMap(out var mapId);
-                var grid = mapManager.CreateGridEntity(mapId);
+                var grid = mapSys.CreateGridEntity(mapId);
 
                 // Power only works when anchored
                 for (var i = 0; i < 3; i++)
@@ -499,7 +499,7 @@ namespace Content.IntegrationTests.Tests.Power
             await server.WaitAssertion(() =>
             {
                 var map = mapSys.CreateMap(out var mapId);
-                var grid = mapManager.CreateGridEntity(mapId);
+                var grid = mapSys.CreateGridEntity(mapId);
 
                 // Power only works when anchored
                 for (var i = 0; i < 3; i++)
@@ -593,7 +593,7 @@ namespace Content.IntegrationTests.Tests.Power
             await server.WaitAssertion(() =>
             {
                 var map = mapSys.CreateMap(out var mapId);
-                var grid = mapManager.CreateGridEntity(mapId);
+                var grid = mapSys.CreateGridEntity(mapId);
 
                 // Power only works when anchored
                 for (var i = 0; i < 3; i++)
@@ -656,7 +656,7 @@ namespace Content.IntegrationTests.Tests.Power
             await server.WaitAssertion(() =>
             {
                 var map = mapSys.CreateMap(out var mapId);
-                var grid = mapManager.CreateGridEntity(mapId);
+                var grid = mapSys.CreateGridEntity(mapId);
 
                 // Power only works when anchored
                 for (var i = 0; i < 4; i++)
@@ -738,7 +738,7 @@ namespace Content.IntegrationTests.Tests.Power
             await server.WaitAssertion(() =>
             {
                 var map = mapSys.CreateMap(out var mapId);
-                var grid = mapManager.CreateGridEntity(mapId);
+                var grid = mapSys.CreateGridEntity(mapId);
 
                 // Power only works when anchored
                 for (var i = 0; i < 4; i++)
@@ -815,7 +815,7 @@ namespace Content.IntegrationTests.Tests.Power
             await server.WaitAssertion(() =>
             {
                 var map = mapSys.CreateMap(out var mapId);
-                var grid = mapManager.CreateGridEntity(mapId);
+                var grid = mapSys.CreateGridEntity(mapId);
 
                 // Map layout here is
                 // C - consumer
@@ -917,7 +917,7 @@ namespace Content.IntegrationTests.Tests.Power
             await server.WaitAssertion(() =>
             {
                 var map = mapSys.CreateMap(out var mapId);
-                var grid = mapManager.CreateGridEntity(mapId);
+                var grid = mapSys.CreateGridEntity(mapId);
 
                 // Layout is two generators, two batteries, and one load. As to why two: because previously this test
                 // would fail ONLY if there were more than two batteries present, because each of them tries to supply
@@ -1011,7 +1011,7 @@ namespace Content.IntegrationTests.Tests.Power
             await server.WaitAssertion(() =>
             {
                 var map = mapSys.CreateMap(out var mapId);
-                var grid = mapManager.CreateGridEntity(mapId);
+                var grid = mapSys.CreateGridEntity(mapId);
 
                 // Map layout here is
                 // C - consumer
@@ -1099,7 +1099,7 @@ namespace Content.IntegrationTests.Tests.Power
             await server.WaitPost(() =>
             {
                 var map = mapSys.CreateMap(out var mapId);
-                var grid = mapManager.CreateGridEntity(mapId);
+                var grid = mapSys.CreateGridEntity(mapId);
 
                 // Power only works when anchored
                 for (var i = 0; i < 4; i++)
@@ -1185,7 +1185,7 @@ namespace Content.IntegrationTests.Tests.Power
             await server.WaitAssertion(() =>
             {
                 var map = mapSys.CreateMap(out var mapId);
-                var grid = mapManager.CreateGridEntity(mapId);
+                var grid = mapSys.CreateGridEntity(mapId);
 
                 // Power only works when anchored
                 for (var i = 0; i < 4; i++)
@@ -1252,7 +1252,7 @@ namespace Content.IntegrationTests.Tests.Power
             await server.WaitAssertion(() =>
             {
                 var map = mapSys.CreateMap(out var mapId);
-                var grid = mapManager.CreateGridEntity(mapId);
+                var grid = mapSys.CreateGridEntity(mapId);
 
                 // Power only works when anchored
                 for (var i = 0; i < 3; i++)
@@ -1311,7 +1311,7 @@ namespace Content.IntegrationTests.Tests.Power
             await server.WaitAssertion(() =>
             {
                 var map = mapSys.CreateMap(out var mapId);
-                var grid = mapManager.CreateGridEntity(mapId);
+                var grid = mapSys.CreateGridEntity(mapId);
 
                 const int range = 5;
 

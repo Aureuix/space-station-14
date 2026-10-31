@@ -3,7 +3,6 @@ using Robust.Shared.Audio;
 using Robust.Shared.GameStates;
 using Robust.Shared.Prototypes;
 using Robust.Shared.Serialization;
-using Robust.Shared.Serialization.TypeSerializers.Implementations.Custom.Prototype;
 
 namespace Content.Shared.Teleportation.Components;
 
@@ -14,11 +13,11 @@ namespace Content.Shared.Teleportation.Components;
 [RegisterComponent, NetworkedComponent, AutoGenerateComponentState]
 public sealed partial class HandTeleporterComponent : Component
 {
-    [ViewVariables, DataField, AutoNetworkedField]
-    public EntityUid? FirstPortal = null;
+    [DataField, AutoNetworkedField]
+    public EntityUid? FirstPortal;
 
-    [ViewVariables, DataField, AutoNetworkedField]
-    public EntityUid? SecondPortal = null;
+    [DataField, AutoNetworkedField]
+    public EntityUid? SecondPortal;
 
     /// <summary>
     ///     Should the portals be able to be placed across grids?
@@ -32,10 +31,10 @@ public sealed partial class HandTeleporterComponent : Component
     [DataField]
     public bool AllowPortalsOnDifferentMaps;
 
-    [DataField("firstPortalPrototype", customTypeSerializer: typeof(PrototypeIdSerializer<EntityPrototype>))]
+    [DataField("firstPortalPrototype", customTypeSerializer: typeof(ProtoId<EntityPrototype>))]
     public string FirstPortalPrototype = "PortalRed";
 
-    [DataField("secondPortalPrototype", customTypeSerializer: typeof(PrototypeIdSerializer<EntityPrototype>))]
+    [DataField("secondPortalPrototype", customTypeSerializer: typeof(ProtoId<EntityPrototype>))]
     public string SecondPortalPrototype = "PortalBlue";
 
     [DataField("newPortalSound")] public SoundSpecifier NewPortalSound =

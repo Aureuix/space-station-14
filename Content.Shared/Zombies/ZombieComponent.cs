@@ -9,7 +9,6 @@ using Robust.Shared.Audio;
 using Robust.Shared.GameStates;
 using Robust.Shared.Prototypes;
 using Robust.Shared.Serialization.TypeSerializers.Implementations.Custom;
-using Robust.Shared.Serialization.TypeSerializers.Implementations.Custom.Prototype;
 
 namespace Content.Shared.Zombies;
 
@@ -66,13 +65,13 @@ public sealed partial class ZombieComponent : Component
     /// <summary>
     /// The attack arc of the zombie
     /// </summary>
-    [DataField("attackArc", customTypeSerializer: typeof(PrototypeIdSerializer<EntityPrototype>))]
+    [DataField("attackArc", customTypeSerializer: typeof(ProtoId<EntityPrototype>))]
     public string AttackAnimation = "WeaponArcBite";
 
     /// <summary>
     /// The role prototype of the zombie antag role
     /// </summary>
-    [DataField("zombieRoleId", customTypeSerializer: typeof(PrototypeIdSerializer<AntagPrototype>))]
+    [DataField("zombieRoleId", customTypeSerializer: typeof(ProtoId<AntagPrototype>))]
     public string ZombieRoleId = "Zombie";
 
     /// <summary>
@@ -96,7 +95,7 @@ public sealed partial class ZombieComponent : Component
     [DataField("emoteId")]
     public ProtoId<EmoteSoundsPrototype>? EmoteSoundsId = "Zombie";
 
-    [DataField("nextTick", customTypeSerializer:typeof(TimeOffsetSerializer))]
+    [DataField(customTypeSerializer:typeof(TimeOffsetSerializer))]
     public TimeSpan NextTick;
 
     [DataField("zombieStatusIcon")]
@@ -105,7 +104,7 @@ public sealed partial class ZombieComponent : Component
     /// <summary>
     /// Healing each second
     /// </summary>
-    [DataField("passiveHealing")]
+    [DataField]
     public DamageSpecifier PassiveHealing = new()
     {
         DamageDict = new ()
@@ -121,13 +120,13 @@ public sealed partial class ZombieComponent : Component
     /// <summary>
     /// A multiplier applied to <see cref="PassiveHealing"/> when the entity is in critical condition.
     /// </summary>
-    [DataField("passiveHealingCritMultiplier")]
+    [DataField]
     public float PassiveHealingCritMultiplier = 2f;
 
     /// <summary>
     /// Healing given when a zombie bites a living being.
     /// </summary>
-    [DataField("healingOnBite")]
+    [DataField]
     public DamageSpecifier HealingOnBite = new()
     {
         DamageDict = new()
@@ -174,7 +173,7 @@ public sealed partial class ZombieComponent : Component
     /// <summary>
     ///     Path to antagonist alert sound.
     /// </summary>
-    [DataField("greetSoundNotification")]
+    [DataField]
     public SoundSpecifier GreetSoundNotification = new SoundPathSpecifier("/Audio/Ambience/Antag/zombie_start.ogg");
 
     /// <summary>
@@ -186,12 +185,12 @@ public sealed partial class ZombieComponent : Component
     /// <summary>
     /// The blood reagents of the humanoid to restore in case of cloning
     /// </summary>
-    [DataField("beforeZombifiedBloodReagents")]
+    [DataField]
     public Solution BeforeZombifiedBloodReagents = new();
 
     /// <summary>
     /// The blood reagents to give the zombie. In case you want zombies that bleed milk, or something.
     /// </summary>
-    [DataField("newBloodReagents")]
+    [DataField]
     public Solution NewBloodReagents = new([new("ZombieBlood", 1)]);
 }

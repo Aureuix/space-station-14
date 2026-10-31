@@ -15,7 +15,7 @@ public sealed partial class EmoteSoundsPrototype : IPrototype, IInheritingProtot
     public string ID { get; private set; } = default!;
 
     /// <inheritdoc/>
-    [ParentDataField(typeof(AbstractPrototypeIdArraySerializer<EmoteSoundsPrototype>))]
+    [ParentDataField(typeof(ProtoId<EmoteSoundsPrototype>))]
     public string[]? Parents { get; private set; }
 
     /// <inheritdoc/>

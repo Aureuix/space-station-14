@@ -29,6 +29,7 @@ namespace Content.Server.Light.EntitySystems
         [Dependency] private readonly SharedAppearanceSystem _appearance = default!;
         [Dependency] private readonly StackSystem _stackSystem = default!;
         [Dependency] private readonly NameModifierSystem _nameModifier = default!;
+        [Dependency] private readonly PointLightSystem _pointLight = default!;
 
         private static readonly ProtoId<TagPrototype> TrashTag = "Trash";
 
@@ -176,6 +177,8 @@ namespace Content.Server.Light.EntitySystems
                 return;
 
             _appearance.SetData(ent, ExpendableLightVisuals.State, component.CurrentState, appearance);
+
+            _pointLight.SetEnabled(ent, component.CurrentState is ExpendableLightState.Lit or ExpendableLightState.Fading); // Starlight-edit
 
             switch (component.CurrentState)
             {

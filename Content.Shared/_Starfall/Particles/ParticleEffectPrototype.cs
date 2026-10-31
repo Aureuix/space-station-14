@@ -64,7 +64,7 @@ public sealed partial class ParticleEffectPrototype : IPrototype, IInheritingPro
     [IdDataField] public string ID { get; private set; } = default!;
 
     /// <inheritdoc/>
-    [ParentDataField(typeof(AbstractPrototypeIdArraySerializer<ParticleEffectPrototype>))]
+    [ParentDataField(typeof(ProtoId<ParticleEffectPrototype>))]
     public string[]? Parents { get; private set; }
 
     /// <inheritdoc/>

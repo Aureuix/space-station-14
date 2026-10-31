@@ -176,7 +176,7 @@ public sealed class DamageVisualsSystem : VisualizerSystem<DamageVisualsComponen
             // See if that group is in our entity's damage container.
             else if (!damageVisComp.Overlay && damageVisComp.DamageGroup != null)
             {
-                if (!damageContainer.SupportedGroups.Contains(damageVisComp.DamageGroup))
+                if (!damageContainer.SupportedGroups.Contains(damageVisComp.DamageGroup.Value))
                 {
                     Log.Error($"Damage keys were invalid for entity {entity}.");
                     damageVisComp.Valid = false;
@@ -515,7 +515,7 @@ public sealed class DamageVisualsSystem : VisualizerSystem<DamageVisualsComponen
     ///     according to the list of damage groups
     ///     passed into it.
     /// </summary>
-    private void UpdateDamageVisuals(List<string> delta, Entity<DamageableComponent, SpriteComponent, DamageVisualsComponent> entity)
+    private void UpdateDamageVisuals(List<ProtoId<DamageGroupPrototype>> delta, Entity<DamageableComponent, SpriteComponent, DamageVisualsComponent> entity)
     {
         var damageComponent = entity.Comp1;
         var spriteComponent = entity.Comp2;
@@ -592,7 +592,7 @@ public sealed class DamageVisualsSystem : VisualizerSystem<DamageVisualsComponen
         }
         else if (damageVisComp.DamageGroup != null)
         {
-            UpdateDamageVisuals(new List<string>() { damageVisComp.DamageGroup }, entity);
+            UpdateDamageVisuals(new List<ProtoId<DamageGroupPrototype>>() { damageVisComp.DamageGroup.Value }, entity);
         }
         else if (damageVisComp.DamageOverlay != null)
         {

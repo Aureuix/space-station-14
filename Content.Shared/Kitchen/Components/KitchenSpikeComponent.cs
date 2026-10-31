@@ -1,4 +1,5 @@
 using Content.Shared.Damage;
+using Content.Shared.Damage.Prototypes;
 using Content.Shared.FixedPoint;
 using Content.Shared.Nutrition.Components;
 using Robust.Shared.Audio;
@@ -58,7 +59,7 @@ public sealed partial class KitchenSpikeComponent : Component
     [DataField, AutoNetworkedField]
     public DamageSpecifier SpikeDamage = new()
     {
-        DamageDict = new Dictionary<string, FixedPoint2>
+        DamageDict = new Dictionary<ProtoId<DamageTypePrototype>, FixedPoint2>
         {
             { "Piercing", 10 },
         },
@@ -70,7 +71,7 @@ public sealed partial class KitchenSpikeComponent : Component
     [DataField, AutoNetworkedField]
     public DamageSpecifier ButcherDamage = new()
     {
-        DamageDict = new Dictionary<string, FixedPoint2>
+        DamageDict = new Dictionary<ProtoId<DamageTypePrototype>, FixedPoint2>
         {
             { "Slash", 20 },
         },
@@ -82,7 +83,7 @@ public sealed partial class KitchenSpikeComponent : Component
     [DataField, AutoNetworkedField]
     public DamageSpecifier TimeDamage = new()
     {
-        DamageDict = new Dictionary<string, FixedPoint2>
+        DamageDict = new Dictionary<ProtoId<DamageTypePrototype>, FixedPoint2>
         {
             { "Blunt", 1 }, // Mobs are only gibbed from blunt (at least for now).
         },

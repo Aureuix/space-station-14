@@ -6,7 +6,7 @@ namespace Content.Shared._Moffstation.Cards.Prototypes;
 [Prototype]
 public sealed partial class PlayingCardSuitPrototype : IPrototype, IInheritingPrototype
 {
-    [ParentDataField(typeof(AbstractPrototypeIdArraySerializer<PlayingCardSuitPrototype>))]
+    [ParentDataField(typeof(ProtoId<PlayingCardSuitPrototype>))]
     public string[]? Parents { get; private set; }
 
     [ViewVariables]

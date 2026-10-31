@@ -17,7 +17,7 @@ public sealed partial class QuickPhrasePrototype : IPrototype, IInheritingProtot
     /// The prototype we inherit from.
     /// </summary>
     [ViewVariables]
-    [ParentDataField(typeof(AbstractPrototypeIdArraySerializer<QuickPhrasePrototype>))]
+    [ParentDataField(typeof(ProtoId<QuickPhrasePrototype>))]
     public string[]? Parents { get; private set; } // Starlight Edit: Added Setter
 
     [ViewVariables]

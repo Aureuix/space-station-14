@@ -5,7 +5,6 @@ using Content.Shared.Store;
 using Content.Shared.Whitelist;
 using Robust.Shared.GameStates;
 using Robust.Shared.Prototypes;
-using Robust.Shared.Serialization.TypeSerializers.Implementations.Custom.Prototype;
 
 namespace Content.Shared.Revenant.Components;
 
@@ -21,13 +20,13 @@ public sealed partial class RevenantComponent : Component
     [AutoNetworkedField]
     public FixedPoint2 Essence = 75;
 
-    [DataField("stolenEssenceCurrencyPrototype", customTypeSerializer: typeof(PrototypeIdSerializer<CurrencyPrototype>))]
+    [DataField("stolenEssenceCurrencyPrototype", customTypeSerializer: typeof(ProtoId<CurrencyPrototype>))]
     public string StolenEssenceCurrencyPrototype = "StolenEssence";
 
     /// <summary>
     /// Prototype to spawn when the entity dies.
     /// </summary>
-    [DataField("spawnOnDeathPrototype", customTypeSerializer:typeof(PrototypeIdSerializer<EntityPrototype>))]
+    [DataField("spawnOnDeathPrototype", customTypeSerializer:typeof(ProtoId<EntityPrototype>))]
     public string SpawnOnDeathPrototype = "Ectoplasm";
 
     /// <summary>
@@ -61,7 +60,7 @@ public sealed partial class RevenantComponent : Component
     /// <summary>
     /// The duration of the soul search
     /// </summary>
-    [DataField("soulSearchDuration")]
+    [DataField]
     public float SoulSearchDuration = 2.5f;
 
     /// <summary>
@@ -69,13 +68,13 @@ public sealed partial class RevenantComponent : Component
     /// the first float corresponds to amount of time the entity is stunned.
     /// the second corresponds to the amount of time the entity is made solid.
     /// </summary>
-    [DataField("harvestDebuffs")]
+    [DataField]
     public Vector2 HarvestDebuffs = new(5, 5);
 
     /// <summary>
     /// The amount that is given to the revenant each time it's max essence is upgraded.
     /// </summary>
-    [ViewVariables(VVAccess.ReadWrite), DataField("maxEssenceUpgradeAmount")]
+    [DataField]
     public float MaxEssenceUpgradeAmount = 10;
     #endregion
 
@@ -85,7 +84,7 @@ public sealed partial class RevenantComponent : Component
     /// <summary>
     /// The amount of essence that is needed to use the ability.
     /// </summary>
-    [ViewVariables(VVAccess.ReadWrite), DataField("defileCost")]
+    [DataField]
     public FixedPoint2 DefileCost = 30;
 
     /// <summary>
@@ -93,26 +92,26 @@ public sealed partial class RevenantComponent : Component
     /// the first float corresponds to amount of time the entity is stunned.
     /// the second corresponds to the amount of time the entity is made solid.
     /// </summary>
-    [DataField("defileDebuffs")]
+    [DataField]
     public Vector2 DefileDebuffs = new(1, 4);
 
     /// <summary>
     /// The radius around the user that this ability affects
     /// </summary>
-    [ViewVariables(VVAccess.ReadWrite), DataField("defileRadius")]
+    [DataField]
     public float DefileRadius = 3.5f;
 
     /// <summary>
     /// The amount of tiles that are uprooted by the ability
     /// </summary>
-    [ViewVariables(VVAccess.ReadWrite), DataField("defileTilePryAmount")]
+    [DataField]
     public int DefileTilePryAmount = 15;
 
     /// <summary>
     /// The chance that an individual entity will have any of the effects
     /// happen to it.
     /// </summary>
-    [ViewVariables(VVAccess.ReadWrite), DataField("defileEffectChance")]
+    [DataField]
     public float DefileEffectChance = 0.5f;
     #endregion
 
@@ -120,7 +119,7 @@ public sealed partial class RevenantComponent : Component
     /// <summary>
     /// The amount of essence that is needed to use the ability.
     /// </summary>
-    [ViewVariables(VVAccess.ReadWrite), DataField("overloadCost")]
+    [DataField]
     public FixedPoint2 OverloadCost = 40;
 
     /// <summary>
@@ -128,19 +127,19 @@ public sealed partial class RevenantComponent : Component
     /// the first float corresponds to amount of time the entity is stunned.
     /// the second corresponds to the amount of time the entity is made solid.
     /// </summary>
-    [DataField("overloadDebuffs")]
+    [DataField]
     public Vector2 OverloadDebuffs = new(3, 8);
 
     /// <summary>
     /// The radius around the user that this ability affects
     /// </summary>
-    [ViewVariables(VVAccess.ReadWrite), DataField("overloadRadius")]
+    [DataField]
     public float OverloadRadius = 5f;
 
     /// <summary>
     /// How close to the light the entity has to be in order to be zapped.
     /// </summary>
-    [ViewVariables(VVAccess.ReadWrite), DataField("overloadZapRadius")]
+    [DataField]
     public float OverloadZapRadius = 2f;
     #endregion
 
@@ -148,7 +147,7 @@ public sealed partial class RevenantComponent : Component
     /// <summary>
     /// The amount of essence that is needed to use the ability.
     /// </summary>
-    [ViewVariables(VVAccess.ReadWrite), DataField("blightCost")]
+    [DataField]
     public float BlightCost = 50;
 
     /// <summary>
@@ -156,13 +155,13 @@ public sealed partial class RevenantComponent : Component
     /// the first float corresponds to amount of time the entity is stunned.
     /// the second corresponds to the amount of time the entity is made solid.
     /// </summary>
-    [DataField("blightDebuffs")]
+    [DataField]
     public Vector2 BlightDebuffs = new(2, 5);
 
     /// <summary>
     /// The radius around the user that this ability affects
     /// </summary>
-    [ViewVariables(VVAccess.ReadWrite), DataField("blightRadius")]
+    [DataField]
     public float BlightRadius = 3.5f;
     #endregion
 
@@ -170,7 +169,7 @@ public sealed partial class RevenantComponent : Component
     /// <summary>
     /// The amount of essence that is needed to use the ability.
     /// </summary>
-    [ViewVariables(VVAccess.ReadWrite), DataField("malfunctionCost")]
+    [DataField]
     public FixedPoint2 MalfunctionCost = 60;
 
     /// <summary>
@@ -178,13 +177,13 @@ public sealed partial class RevenantComponent : Component
     /// the first float corresponds to amount of time the entity is stunned.
     /// the second corresponds to the amount of time the entity is made solid.
     /// </summary>
-    [DataField("malfunctionDebuffs")]
+    [DataField]
     public Vector2 MalfunctionDebuffs = new(2, 8);
 
     /// <summary>
     /// The radius around the user that this ability affects
     /// </summary>
-    [ViewVariables(VVAccess.ReadWrite), DataField("malfunctionRadius")]
+    [DataField]
     public float MalfunctionRadius = 3.5f;
 
     /// <summary>

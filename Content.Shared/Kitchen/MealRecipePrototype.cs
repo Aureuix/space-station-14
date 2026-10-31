@@ -3,7 +3,7 @@ using Content.Shared.Kitchen.Components;
 using Content.Shared.FixedPoint;
 using Robust.Shared.Prototypes;
 using Robust.Shared.Serialization.TypeSerializers.Implementations.Custom.Prototype;
-using Robust.Shared.Serialization.TypeSerializers.Implementations.Custom.Prototype.Dictionary;
+
 
 namespace Content.Shared.Kitchen
 {
@@ -29,13 +29,13 @@ namespace Content.Shared.Kitchen
         [DataField("deviceType")]
         public CookingDeviceType DeviceType = CookingDeviceType.Microwave;
 
-        [DataField("reagents", customTypeSerializer:typeof(PrototypeIdDictionarySerializer<FixedPoint2, ReagentPrototype>))]
+        [DataField("reagents", customTypeSerializer:typeof(ProtoId<ReagentPrototype>))]
         private Dictionary<string, FixedPoint2> _ingsReagents = new();
 
-        [DataField("solids", customTypeSerializer: typeof(PrototypeIdDictionarySerializer<FixedPoint2, EntityPrototype>))]
+        [DataField("solids", customTypeSerializer: typeof(ProtoId<EntityPrototype>))]
         private Dictionary<string, FixedPoint2> _ingsSolids = new ();
 
-        [DataField("result", customTypeSerializer: typeof(PrototypeIdSerializer<EntityPrototype>))]
+        [DataField("result", customTypeSerializer: typeof(ProtoId<EntityPrototype>))]
         public string Result { get; private set; } = string.Empty;
 
         [DataField("time")]

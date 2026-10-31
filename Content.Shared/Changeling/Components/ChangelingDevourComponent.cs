@@ -99,7 +99,7 @@ public sealed partial class ChangelingDevourComponent : Component
     [DataField, AutoNetworkedField]
     public DamageSpecifier DamagePerTick = new()
     {
-        DamageDict = new Dictionary<string, FixedPoint2>
+        DamageDict = new Dictionary<ProtoId<DamageTypePrototype>, FixedPoint2>
         {
             #region Starlight. reduce blunts to add some genetic back into the mix
             { "Slash", 4.8},

@@ -17,7 +17,7 @@ namespace Content.Shared.Roles
         [IdDataField]
         public string ID { get; private set; } = default!;
 
-        [DataField(required: true, customTypeSerializer: typeof(PrototypeIdSerializer<PlayTimeTrackerPrototype>))]
+        [DataField(required: true, customTypeSerializer: typeof(ProtoId<PlayTimeTrackerPrototype>))]
         public string PlayTimeTracker { get; private set; } = string.Empty;
 
         /// <summary>
@@ -126,7 +126,7 @@ namespace Content.Shared.Roles
         /// Starting gear will be ignored.
         /// If you want to just add special attributes to a humanoid, use AddComponentSpecial instead.
         /// </summary>
-        [DataField(customTypeSerializer: typeof(PrototypeIdSerializer<EntityPrototype>))]
+        [DataField(customTypeSerializer: typeof(ProtoId<EntityPrototype>))]
         public string? JobEntity = null;
 
         /// <summary>

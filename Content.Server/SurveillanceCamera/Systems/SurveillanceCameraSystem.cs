@@ -204,9 +204,9 @@ public sealed class SurveillanceCameraSystem : SharedSurveillanceCameraSystem
 
         if (camera.AvailableNetworks.Count == 0)
         {
-            if (deviceNet.ReceiveFrequencyId != null)
+            if (deviceNet.ReceiveFrequencyId is { } recvFreq)
             {
-                camera.AvailableNetworks.Add(deviceNet.ReceiveFrequencyId);
+                camera.AvailableNetworks.Add(recvFreq);
             }
             else if (!camera.NetworkSet)
             {

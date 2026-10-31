@@ -1,7 +1,7 @@
 using Robust.Shared.Audio;
 using Content.Shared.Damage.Prototypes;
 using Robust.Shared.Serialization.TypeSerializers.Implementations.Custom;
-using Robust.Shared.Serialization.TypeSerializers.Implementations.Custom.Prototype.List;
+
 using Robust.Shared.Prototypes; //FarHorizons
 using Content.Shared.Actions;//FarHorizons
 
@@ -87,7 +87,7 @@ public sealed partial class HealthAnalyzerComponent : Component
     [DataField]
     public bool Silent;
     
-    [DataField("damageContainers", customTypeSerializer: typeof(PrototypeIdListSerializer<DamageContainerPrototype>))]
+    [DataField("damageContainers", customTypeSerializer: typeof(ProtoId<DamageContainerPrototype>))]
     public List<string>? DamageContainers;
     
     # region Starlight

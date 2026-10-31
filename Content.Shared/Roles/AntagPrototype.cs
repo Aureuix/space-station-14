@@ -81,7 +81,7 @@ public sealed partial class AntagPrototype : IPrototype
     /// <summary>
     /// Which playtime tracker this role should contribute towards.
     /// </summary>
-    [DataField(customTypeSerializer: typeof(PrototypeIdSerializer<PlayTimeTrackerPrototype>))]
+    [DataField(customTypeSerializer: typeof(ProtoId<PlayTimeTrackerPrototype>))]
     public string? PlayTimeTracker { get; private set; } = default!;
     // Starlight end
 }
