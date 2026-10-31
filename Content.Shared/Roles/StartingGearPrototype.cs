@@ -12,7 +12,7 @@ public sealed partial class StartingGearPrototype : IPrototype, IInheritingProto
     public string ID { get; private set; } = string.Empty;
 
     /// <inheritdoc/>
-    [ParentDataField(typeof(AbstractPrototypeIdArraySerializer<StartingGearPrototype>))]
+    [ParentDataField(typeof(ProtoId<StartingGearPrototype>))]
     public string[]? Parents { get; private set; }
 
     /// <inheritdoc/>

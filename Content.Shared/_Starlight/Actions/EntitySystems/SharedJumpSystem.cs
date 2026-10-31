@@ -21,11 +21,12 @@ public abstract class SharedJumpSystem : EntitySystem
     [Dependency] private readonly SharedActionsSystem _action = default!;
     [Dependency] private readonly ThrowingSystem _throwing = default!;
     [Dependency] private readonly SharedTransformSystem _transform = default!;
-    [Dependency] private readonly IMapManager _mapMan = default!;
+    
     [Dependency] private readonly SharedAudioSystem _audio = default!;
     [Dependency] private readonly ActionContainerSystem _actionContainer = default!;
     [Dependency] private readonly SharedStunSystem _stun = default!;
     [Dependency] private readonly SharedChargesSystem _chargesSystem = default!;
+    [Dependency] private readonly SharedMapSystem _map = default!;
 
     public override void Initialize()
     {
@@ -104,7 +105,7 @@ public abstract class SharedJumpSystem : EntitySystem
         var userTransform = Transform(target);
         var userMapCoords = _transform.GetMapCoordinates(userTransform);
 
-        if (args.FromGrid && !_mapMan.TryFindGridAt(userMapCoords, out _, out _)) return;
+        if (args.FromGrid && !_map.TryFindGridAt(userMapCoords, out _, out _)) return;
 
         TryJump(performer, targetCoords, args, target, 15f, args.ToPointer, args.Sound, args.Distance);
     }

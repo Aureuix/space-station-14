@@ -13,7 +13,7 @@ public sealed partial class LoadoutGroupPrototype : IPrototype, IInheritingProto
     public string ID { get; private set; } = string.Empty;
 
     /// <inheritdoc />
-    [ParentDataField(typeof(AbstractPrototypeIdArraySerializer<LoadoutGroupPrototype>))]
+    [ParentDataField(typeof(ProtoId<LoadoutGroupPrototype>))]
     public string[]? Parents { get; private set; }
 
     /// <inheritdoc />

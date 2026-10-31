@@ -14,7 +14,7 @@ public sealed partial class RandomSpawnRuleComponent : Component
     /// <summary>
     /// The entity to be spawned.
     /// </summary>
-    [DataField("prototype", required: true, customTypeSerializer: typeof(PrototypeIdSerializer<EntityPrototype>))]
+    [DataField("prototype", required: true, customTypeSerializer: typeof(ProtoId<EntityPrototype>))]
     public string Prototype = string.Empty;
 
     // Moffstation - Start - Syndicate dead drop

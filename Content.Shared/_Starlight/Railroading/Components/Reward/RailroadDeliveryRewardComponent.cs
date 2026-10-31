@@ -9,7 +9,7 @@ namespace Content.Shared._Starlight.Railroading;
 [RegisterComponent]
 public sealed partial class RailroadDeliveryRewardComponent : Component
 {
-    [DataField("delivery", customTypeSerializer: typeof(PrototypeIdSerializer<EntityPrototype>))]
+    [DataField("delivery", customTypeSerializer: typeof(ProtoId<EntityPrototype>))]
     public string Delivery;
     
     [DataField]

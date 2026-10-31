@@ -31,7 +31,7 @@ namespace Content.Client._Starlight.Weapons.Gunnery;
 /// </summary>
 public sealed class GunneryRadarControl : BaseShuttleControl
 {
-    [Dependency] private readonly IMapManager _mapManager = default!;
+    
 
     private readonly SharedShuttleSystem  _shuttles;
     private readonly SharedTransformSystem _transform;

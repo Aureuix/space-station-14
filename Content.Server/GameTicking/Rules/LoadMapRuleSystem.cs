@@ -23,7 +23,7 @@ public sealed class LoadMapRuleSystem : StationEventSystem<LoadMapRuleComponent>
     [Dependency] private readonly TransformSystem _transform = default!;
     [Dependency] private readonly GridPreloaderSystem _gridPreloader = default!;
     #region Starlight
-    [Dependency] private readonly IMapManager _maps = default!;
+    [Dependency] private readonly SharedMapSystem _maps = default!;
     [Dependency] private readonly TagSystem _tag = default!;
     [Dependency] private readonly EntityManager _entMan = default!;
     [Dependency] private readonly DynamicRuleSystem _dynamicRule = default!;

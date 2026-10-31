@@ -15,7 +15,7 @@ namespace Content.Shared.VendingMachines
         /// PrototypeID for the vending machine's inventory, see <see cref="VendingMachineInventoryPrototype"/>
         /// </summary>
         // Okay so not using ProtoId here is load-bearing because the ProtoId serializer will log errors if the prototype doesn't exist.
-        [DataField("pack", customTypeSerializer: typeof(PrototypeIdSerializer<VendingMachineInventoryPrototype>), required: true)]
+        [DataField("pack", customTypeSerializer: typeof(ProtoId<VendingMachineInventoryPrototype>), required: true)]
         public string PackPrototypeId = string.Empty;
 
         /// <summary>

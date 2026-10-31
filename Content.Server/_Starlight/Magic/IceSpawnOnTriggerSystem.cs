@@ -20,7 +20,7 @@ namespace Content.Server._Starlight.Magic;
 public sealed class IceSpawnOnTriggerSystem : EntitySystem
 {
     // Starlight: System dependencies
-    [Dependency] private readonly IMapManager _mapManager = default!;
+    
     [Dependency] private readonly SharedMapSystem _mapSystem = default!;
     [Dependency] private readonly AtmosphereSystem _atmosphereSystem = default!;
     [Dependency] private readonly SharedTransformSystem _transformSystem = default!;

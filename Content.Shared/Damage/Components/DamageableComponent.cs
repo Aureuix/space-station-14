@@ -56,7 +56,7 @@ public sealed partial class DamageableComponent : Component
     ///     Groups which have no members that are supported by this component will not be present in this
     ///     dictionary.
     /// </remarks>
-    [ViewVariables] public Dictionary<string, FixedPoint2> DamagePerGroup = new();
+    [ViewVariables] public Dictionary<ProtoId<DamageGroupPrototype>, FixedPoint2> DamagePerGroup = new();
 
     /// <summary>
     ///     The sum of all damages in the DamageableComponent.
@@ -93,13 +93,13 @@ public sealed partial class DamageableComponent : Component
 
 [Serializable, NetSerializable]
 public sealed class DamageableComponentState(
-    Dictionary<string, FixedPoint2> damageDict,
+    Dictionary<ProtoId<DamageTypePrototype>, FixedPoint2> damageDict,
     ProtoId<DamageContainerPrototype>? damageContainerId,
     ProtoId<DamageModifierSetPrototype>? modifierSetId,
     FixedPoint2? healthBarThreshold)
     : ComponentState
 {
-    public readonly Dictionary<string, FixedPoint2> DamageDict = damageDict;
+    public readonly Dictionary<ProtoId<DamageTypePrototype>, FixedPoint2> DamageDict = damageDict;
     public readonly ProtoId<DamageContainerPrototype>? DamageContainerId = damageContainerId;
     public readonly ProtoId<DamageModifierSetPrototype>? ModifierSetId = modifierSetId;
     public readonly FixedPoint2? HealthBarThreshold = healthBarThreshold;

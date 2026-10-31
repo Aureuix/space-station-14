@@ -78,7 +78,7 @@ public sealed class StationAiSystem : SharedStationAiSystem
     [Dependency] private readonly MobStateSystem _mobState = default!;
     [Dependency] private readonly SharedAppearanceSystem _appearance = default!;
     // Starlight Start
-    [Dependency] private readonly IMapManager _map = default!;
+    [Dependency] private readonly SharedMapSystem _map = default!;
     [Dependency] private readonly SuitSensorSystem _suitSensors = default!;
     [Dependency] private readonly FollowerSystem _followerSystem = default!;
     [Dependency] private readonly StationAiVisionSystem _aiVision = default!;

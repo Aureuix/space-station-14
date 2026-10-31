@@ -19,7 +19,7 @@ public sealed partial class InjectorModePrototype : IPrototype, IInheritingProto
     public string ID { get; private set; } = default!;
 
     /// <inheritdoc/>
-    [ParentDataField(typeof(AbstractPrototypeIdArraySerializer<InjectorModePrototype>))]
+    [ParentDataField(typeof(ProtoId<InjectorModePrototype>))]
     public string[]? Parents { get; private set; }
 
     /// <inheritdoc/>

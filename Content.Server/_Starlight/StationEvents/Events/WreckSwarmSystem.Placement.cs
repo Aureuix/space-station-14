@@ -16,7 +16,7 @@ namespace Content.Server._Starlight.StationEvents.Events;
 
 public sealed partial class WreckSwarmSystem
 {
-    [Dependency] private readonly IMapManager _mapManager = default!;
+    
     #region Constants
 
     private const int PlacementAttempts = 32;

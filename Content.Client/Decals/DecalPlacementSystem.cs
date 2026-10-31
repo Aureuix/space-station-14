@@ -49,7 +49,7 @@ public sealed class DecalPlacementSystem : EntitySystem
     public override void Initialize()
     {
         base.Initialize();
-        _overlay.AddOverlay(new DecalPlacementOverlay(this, _transform, _sprite));
+        _overlay.AddOverlay(new DecalPlacementOverlay(this, _maps, _transform, _sprite));
 
         CommandBinds.Builder.Bind(EngineKeyFunctions.EditorPlaceObject, new PointerStateInputCmdHandler(
             (session, coords, uid) =>

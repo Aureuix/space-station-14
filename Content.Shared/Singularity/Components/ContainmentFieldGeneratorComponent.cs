@@ -3,19 +3,18 @@ using Content.Shared.Tag;
 using Robust.Shared.GameStates;
 using Robust.Shared.Prototypes;
 using Robust.Shared.Serialization;
-using Robust.Shared.Serialization.TypeSerializers.Implementations.Custom.Prototype;
 
 namespace Content.Shared.Singularity.Components;
 
 [RegisterComponent, NetworkedComponent]
 public sealed partial class ContainmentFieldGeneratorComponent : Component
 {
-        private int _powerBuffer;
+    private int _powerBuffer;
 
     /// <summary>
     /// Store power with a cap. Decrease over time if not being powered from source.
     /// </summary>
-    [DataField("powerBuffer")]
+    [DataField]
     public int PowerBuffer
     {
         get => _powerBuffer;
@@ -66,7 +65,7 @@ public sealed partial class ContainmentFieldGeneratorComponent : Component
     /// It really shouldn't be anything but an emitter bolt but it's here for fun.
     /// </summary>
     [ViewVariables(VVAccess.ReadWrite)]
-    [DataField("idTag", customTypeSerializer: typeof(PrototypeIdSerializer<TagPrototype>))]
+    [DataField("idTag", customTypeSerializer: typeof(ProtoId<TagPrototype>))]
     public string IDTag = "EmitterBolt";
 
     /// <summary>
@@ -85,13 +84,13 @@ public sealed partial class ContainmentFieldGeneratorComponent : Component
     /// <summary>
     /// Is this generator connected to fields?
     /// </summary>
-    [ViewVariables(VVAccess.ReadWrite)]
+    [DataField]
     public bool IsConnected;
 
     /// <summary>
     /// The masks the raycast should not go through
     /// </summary>
-    [DataField("collisionMask")]
+    [DataField]
     public int CollisionMask = (int) (CollisionGroup.MobMask | CollisionGroup.Impassable | CollisionGroup.MachineMask | CollisionGroup.Opaque);
 
     /// <summary>
@@ -105,7 +104,7 @@ public sealed partial class ContainmentFieldGeneratorComponent : Component
     /// What fields should this spawn?
     /// </summary>
     [ViewVariables(VVAccess.ReadWrite)]
-    [DataField("createdField", customTypeSerializer: typeof(PrototypeIdSerializer<EntityPrototype>))]
+    [DataField("createdField", customTypeSerializer: typeof(ProtoId<EntityPrototype>))]
     public string CreatedField = "ContainmentField";
 }
 

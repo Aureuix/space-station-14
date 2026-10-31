@@ -7,7 +7,7 @@ using Content.Shared.Humanoid.Prototypes;
 using Content.Shared.Mind;
 using Content.Shared.Store;
 using Robust.Shared.Prototypes;
-using Robust.Shared.Serialization.TypeSerializers.Implementations.Custom.Prototype.Set;
+
 
 namespace Content.Shared._Starlight.Abstract.Conditions;
 

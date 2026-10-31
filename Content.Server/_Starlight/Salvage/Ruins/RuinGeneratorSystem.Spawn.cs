@@ -44,7 +44,7 @@ public sealed partial class RuinGeneratorSystem
     [Dependency] private SharedMapSystem _mapSystem = default!;
     [Dependency] private SharedPhysicsSystem _physics = default!;
     [Dependency] private SharedTransformSystem _transform = default!;
-    [Dependency] private readonly IMapManager _mapManager = default!;
+    
 
     #endregion
 

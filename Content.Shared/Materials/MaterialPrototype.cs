@@ -13,7 +13,7 @@ namespace Content.Shared.Materials
     public sealed partial class MaterialPrototype : IPrototype, IInheritingPrototype
     {
         [ViewVariables]
-        [ParentDataField(typeof(AbstractPrototypeIdArraySerializer<MaterialPrototype>))]
+        [ParentDataField(typeof(ProtoId<MaterialPrototype>))]
         public string[]? Parents { get; private set; }
 
         [ViewVariables]

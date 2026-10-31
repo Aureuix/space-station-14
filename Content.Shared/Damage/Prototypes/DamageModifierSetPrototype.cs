@@ -17,7 +17,7 @@ public sealed partial class DamageModifierSetPrototype : DamageModifierSet, IPro
     [IdDataField]
     public string ID { get; private set; } = default!;
         
-    [ParentDataField(typeof(AbstractPrototypeIdArraySerializer<DamageModifierSetPrototype>))]
+    [ParentDataField(typeof(ProtoId<DamageModifierSetPrototype>))]
     public string[]? Parents { get; private set; }
         
     [NeverPushInheritance]

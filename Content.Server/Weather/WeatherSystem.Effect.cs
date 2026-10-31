@@ -17,7 +17,7 @@ namespace Content.Server.Weather;
 public sealed partial class WeatherSystem
 {
     [Dependency] private readonly IConfigurationManager _cfg = default!;
-    [Dependency] private readonly IMapManager _mapManager = default!;
+    
     [Dependency] private readonly EntityLookupSystem _lookup = default!;
     [Dependency] private readonly MapSystem _mapSystem = default!;
     [Dependency] private readonly IRobustRandom _random = default!;

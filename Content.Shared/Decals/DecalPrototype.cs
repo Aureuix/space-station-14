@@ -35,7 +35,7 @@ namespace Content.Shared.Decals
         [DataField]
         public bool DefaultSnap = true;
 
-        [ParentDataField(typeof(AbstractPrototypeIdArraySerializer<DecalPrototype>))]
+        [ParentDataField(typeof(ProtoId<DecalPrototype>))]
         public string[]? Parents { get; private set; }
 
         [NeverPushInheritance]

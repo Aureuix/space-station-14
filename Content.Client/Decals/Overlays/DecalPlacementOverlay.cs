@@ -13,7 +13,7 @@ public class DecalPlacementOverlay : Overlay
 {
     [Dependency] private readonly IEyeManager _eyeManager = default!;
     [Dependency] private readonly IInputManager _inputManager = default!;
-    [Dependency] private readonly IMapManager _mapManager = default!;
+    
     private readonly DecalPlacementSystem _placement;
     private readonly SharedTransformSystem _transform;
     private readonly SpriteSystem _sprite;
@@ -53,7 +53,7 @@ public class DecalPlacementOverlay : Overlay
             return;
 
         // No map support for decals
-        if (!_mapManager.TryFindGridAt(mousePos, out var gridUid, out var grid))
+        if (!_maps.TryFindGridAt(mousePos, out var gridUid, out var grid))
         {
             return;
         }

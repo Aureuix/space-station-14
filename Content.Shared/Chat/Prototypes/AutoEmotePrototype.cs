@@ -1,5 +1,4 @@
 using Robust.Shared.Prototypes;
-using Robust.Shared.Serialization.TypeSerializers.Implementations.Custom.Prototype;
 
 namespace Content.Shared.Chat.Prototypes;
 
@@ -13,7 +12,7 @@ public sealed partial class AutoEmotePrototype : IPrototype
     /// <summary>
     /// The ID of the emote prototype.
     /// </summary>
-    [DataField("emote", required: true, customTypeSerializer: typeof(PrototypeIdSerializer<EmotePrototype>))]
+    [DataField("emote", required: true, customTypeSerializer: typeof(ProtoId<EmotePrototype>))]
     public string EmoteId = string.Empty;
 
     /// <summary>
@@ -25,7 +24,7 @@ public sealed partial class AutoEmotePrototype : IPrototype
     /// <summary>
     /// Probability of performing the emote each interval.
     /// </summary>
-    [DataField("chance")]
+    [DataField]
     public float Chance = 1;
 
     /// <summary>

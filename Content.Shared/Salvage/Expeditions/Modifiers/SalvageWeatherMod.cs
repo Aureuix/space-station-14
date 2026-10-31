@@ -13,7 +13,7 @@ public sealed partial class SalvageWeatherMod : IPrototype, IBiomeSpecificMod
     [DataField("desc")] public LocId Description { get; private set; } = string.Empty;
 
     /// <inheritdoc/>
-    [DataField("cost")]
+    [DataField]
     public float Cost { get; private set; } = 0f;
 
     /// <inheritdoc/>

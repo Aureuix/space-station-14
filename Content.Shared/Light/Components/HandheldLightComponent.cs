@@ -2,7 +2,6 @@ using Robust.Shared.Audio;
 using Robust.Shared.GameStates;
 using Robust.Shared.Prototypes;
 using Robust.Shared.Serialization;
-using Robust.Shared.Serialization.TypeSerializers.Implementations.Custom.Prototype;
 
 namespace Content.Shared.Light.Components;
 
@@ -40,7 +39,7 @@ public sealed partial class HandheldLightComponent : Component
     [DataField("addPrefix")]
     public bool AddPrefix = false;
 
-    [DataField("toggleAction", customTypeSerializer: typeof(PrototypeIdSerializer<EntityPrototype>))]
+    [DataField("toggleAction", customTypeSerializer: typeof(ProtoId<EntityPrototype>))]
     public string ToggleAction = "ActionToggleLight";
 
     /// <summary>
@@ -61,13 +60,13 @@ public sealed partial class HandheldLightComponent : Component
     /// <summary>
     /// Specify the ID of the light behaviour to use when the state of the light is Dying
     /// </summary>
-    [DataField("blinkingBehaviourId")]
+    [DataField]
     public string BlinkingBehaviourId { get; set; } = string.Empty;
 
     /// <summary>
     /// Specify the ID of the light behaviour to use when the state of the light is LowPower
     /// </summary>
-    [DataField("radiatingBehaviourId")]
+    [DataField]
     public string RadiatingBehaviourId { get; set; } = string.Empty;
 
     [Serializable, NetSerializable]

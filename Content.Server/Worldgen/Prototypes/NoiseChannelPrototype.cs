@@ -8,8 +8,8 @@ namespace Content.Server.Worldgen.Prototypes;
 /// <summary>
 ///     This is a config for noise channels, used by worldgen.
 /// </summary>
-[Virtual]
-public class NoiseChannelConfig
+[Virtual, DataDefinition]
+public partial class NoiseChannelConfig
 {
     /// <summary>
     ///     The noise type used by the noise generator.
@@ -83,7 +83,7 @@ public class NoiseChannelConfig
 public sealed partial class NoiseChannelPrototype : NoiseChannelConfig, IPrototype, IInheritingPrototype
 {
     /// <inheritdoc />
-    [ParentDataField(typeof(AbstractPrototypeIdArraySerializer<NoiseChannelPrototype>))]
+    [ParentDataField(typeof(ProtoId<NoiseChannelPrototype>))]
     public string[]? Parents { get; private set; }
 
     /// <inheritdoc />

@@ -21,7 +21,7 @@ public sealed partial class DeepFryingRecipePrototype : IPrototype
     [DataField("time")]
     public uint CookTime { get; private set; } = 5;
 
-    [DataField("result", customTypeSerializer: typeof(PrototypeIdSerializer<EntityPrototype>))]
+    [DataField("result", customTypeSerializer: typeof(ProtoId<EntityPrototype>))]
     public string Result { get; private set; } = string.Empty;
 
     [DataField("ingredient")]

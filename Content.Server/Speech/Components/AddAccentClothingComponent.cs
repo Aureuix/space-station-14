@@ -1,4 +1,5 @@
 ﻿using Content.Server.Speech.Prototypes;
+using Robust.Shared.Prototypes;
 using Robust.Shared.Serialization.TypeSerializers.Implementations.Custom.Prototype;
 
 namespace Content.Server.Speech.Components;
@@ -19,7 +20,7 @@ public sealed partial class AddAccentClothingComponent : Component
     ///     What <see cref="ReplacementAccentPrototype"/> to use.
     ///     Will be applied only with <see cref="ReplacementAccentComponent"/>.
     /// </summary>
-    [DataField("replacement", customTypeSerializer: typeof(PrototypeIdSerializer<ReplacementAccentPrototype>))]
+    [DataField("replacement", customTypeSerializer: typeof(ProtoId<ReplacementAccentPrototype>))]
     public string? ReplacementPrototype;
 
     /// <summary>

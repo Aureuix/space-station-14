@@ -3,6 +3,7 @@ using Robust.Shared.Prototypes;
 
 namespace Content.Shared._Starlight.Magic.Events;
 
+[DataDefinition]
 public sealed partial class SpawnItemInHandEvent : InstantActionEvent
 {
     /// <summary>
@@ -21,6 +22,8 @@ public sealed partial class SpawnItemInHandEvent : InstantActionEvent
 /// <summary>
 ///     Raised after an entity was spawned in someones hand.
 /// </summary>
+/// 
+[DataDefinition]
 public sealed partial class AfterSpawnItemInHandEvent
 {
     /// <summary>

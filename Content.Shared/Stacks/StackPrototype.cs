@@ -15,7 +15,7 @@ public sealed partial class StackPrototype : IPrototype, IInheritingPrototype
     public string ID { get; private set; } = default!;
 
     ///  <inheritdoc />
-    [ParentDataField(typeof(AbstractPrototypeIdArraySerializer<StackPrototype>))]
+    [ParentDataField(typeof(ProtoId<StackPrototype>))]
     public string[]? Parents { get; private set; }
 
     ///  <inheritdoc />

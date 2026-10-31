@@ -15,7 +15,7 @@ public sealed partial class PolymorphPrototype : IPrototype, IInheritingPrototyp
     [IdDataField]
     public string ID { get; private set; } = default!;
 
-    [ParentDataField(typeof(AbstractPrototypeIdArraySerializer<PolymorphPrototype>))]
+    [ParentDataField(typeof(ProtoId<PolymorphPrototype>))]
     public string[]? Parents { get; private set; }
 
     [NeverPushInheritance]

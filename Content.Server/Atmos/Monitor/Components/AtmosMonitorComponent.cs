@@ -1,7 +1,8 @@
 using Content.Shared.Atmos;
 using Content.Shared.Atmos.Monitor;
+using Robust.Shared.Prototypes;
 using Robust.Shared.Serialization.TypeSerializers.Implementations.Custom.Prototype;
-using Robust.Shared.Serialization.TypeSerializers.Implementations.Custom.Prototype.Dictionary;
+
 
 namespace Content.Server.Atmos.Monitor.Components;
 
@@ -22,13 +23,13 @@ public sealed partial class AtmosMonitorComponent : Component
     [DataField("netEnabled")]
     public bool NetEnabled = true;
 
-    [DataField("temperatureThresholdId", customTypeSerializer: (typeof(PrototypeIdSerializer<AtmosAlarmThresholdPrototype>)))]
+    [DataField("temperatureThresholdId", customTypeSerializer: (typeof(ProtoId<AtmosAlarmThresholdPrototype>)))]
     public string? TemperatureThresholdId;
 
     [DataField("temperatureThreshold")]
     public AtmosAlarmThreshold? TemperatureThreshold;
 
-    [DataField("pressureThresholdId", customTypeSerializer: (typeof(PrototypeIdSerializer<AtmosAlarmThresholdPrototype>)))]
+    [DataField("pressureThresholdId", customTypeSerializer: (typeof(ProtoId<AtmosAlarmThresholdPrototype>)))]
     public string? PressureThresholdId;
 
     [DataField("pressureThreshold")]
@@ -42,7 +43,7 @@ public sealed partial class AtmosMonitorComponent : Component
     public bool MonitorFire = false;
 
     [DataField("gasThresholdPrototypes",
-        customTypeSerializer:typeof(PrototypeIdValueDictionarySerializer<Gas, AtmosAlarmThresholdPrototype>))]
+        customTypeSerializer:typeof(ProtoId<AtmosAlarmThresholdPrototype>))]
     public Dictionary<Gas, string>? GasThresholdPrototypes;
 
     [DataField("gasThresholds")]
@@ -55,17 +56,17 @@ public sealed partial class AtmosMonitorComponent : Component
     public GasMixture? TileGas;
 
     // Stores the last alarm state of this alarm.
-    [DataField("lastAlarmState")]
+    [DataField]
     public AtmosAlarmType LastAlarmState = AtmosAlarmType.Normal;
 
-    [DataField("trippedThresholds")]
+    [DataField]
     public AtmosMonitorThresholdTypeFlags TrippedThresholds;
 
     /// <summary>
     ///     Registered devices in this atmos monitor. Alerts will be sent directly
     ///     to these devices.
     /// </summary>
-    [DataField("registeredDevices")]
+    [DataField]
     public HashSet<string> RegisteredDevices = new();
 
     /// <summary>

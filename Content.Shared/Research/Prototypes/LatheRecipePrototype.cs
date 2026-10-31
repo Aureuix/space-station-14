@@ -16,7 +16,7 @@ namespace Content.Shared.Research.Prototypes
         public string ID { get; private set; } = default!;
 
         /// <inheritdoc/>
-        [ParentDataField(typeof(AbstractPrototypeIdArraySerializer<LatheRecipePrototype>))]
+        [ParentDataField(typeof(ProtoId<LatheRecipePrototype>))]
         public string[]? Parents { get; private set; }
 
         /// <inheritdoc />

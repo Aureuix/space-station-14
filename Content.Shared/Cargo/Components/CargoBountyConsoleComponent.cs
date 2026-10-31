@@ -2,7 +2,6 @@ using Robust.Shared.Audio;
 using Robust.Shared.Prototypes;
 using Robust.Shared.Serialization;
 using Robust.Shared.Serialization.TypeSerializers.Implementations.Custom;
-using Robust.Shared.Serialization.TypeSerializers.Implementations.Custom.Prototype;
 
 namespace Content.Shared.Cargo.Components;
 
@@ -12,7 +11,7 @@ public sealed partial class CargoBountyConsoleComponent : Component
     /// <summary>
     /// The id of the label entity spawned by the print label button.
     /// </summary>
-    [DataField("bountyLabelId", customTypeSerializer: typeof(PrototypeIdSerializer<EntityPrototype>))]
+    [DataField("bountyLabelId", customTypeSerializer: typeof(ProtoId<EntityPrototype>))]
     public string BountyLabelId = "PaperCargoBountyManifest";
 
     /// <summary>
@@ -24,25 +23,25 @@ public sealed partial class CargoBountyConsoleComponent : Component
     /// <summary>
     /// The time between prints.
     /// </summary>
-    [DataField("printDelay")]
+    [DataField]
     public TimeSpan PrintDelay = TimeSpan.FromSeconds(5);
 
     /// <summary>
     /// The sound made when printing occurs
     /// </summary>
-    [DataField("printSound")]
+    [DataField]
     public SoundSpecifier PrintSound = new SoundPathSpecifier("/Audio/Machines/printer.ogg");
 
     /// <summary>
     /// The sound made when the bounty is skipped.
     /// </summary>
-    [DataField("skipSound")]
+    [DataField]
     public SoundSpecifier SkipSound = new SoundPathSpecifier("/Audio/Effects/Cargo/ping.ogg");
 
     /// <summary>
     /// The sound made when bounty skipping is denied due to lacking access.
     /// </summary>
-    [DataField("denySound")]
+    [DataField]
     public SoundSpecifier DenySound = new SoundPathSpecifier("/Audio/Effects/Cargo/buzz_two.ogg");
 
     /// <summary>
