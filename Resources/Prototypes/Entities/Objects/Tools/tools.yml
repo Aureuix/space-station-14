@@ -310,7 +310,8 @@
           path: /Audio/Items/drill_use.ogg
         changeSound:
           path: /Audio/Items/change_drill.ogg
-      - behavior: Anchoring
+      - behavior:
+        - Anchoring
         sprite:
           sprite: Objects/Tools/drill.rsi
           state: drill_bolt
