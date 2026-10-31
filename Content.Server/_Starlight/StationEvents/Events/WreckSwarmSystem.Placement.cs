@@ -16,7 +16,7 @@ namespace Content.Server._Starlight.StationEvents.Events;
 
 public sealed partial class WreckSwarmSystem
 {
-    [Dependency] private readonly IMapManager _mapManager = default!;
+    
     #region Constants
 
     private const int PlacementAttempts = 32;
@@ -403,7 +403,7 @@ public sealed partial class WreckSwarmSystem
             }
 
             _intersectingGrids.Clear();
-            _mapManager.FindGridsIntersecting(mapId, child.Bounds, ref _intersectingGrids, approx: false, includeMap: false);
+            _mapSystem.FindGridsIntersecting(mapId, child.Bounds, ref _intersectingGrids, approx: false, includeMap: false);
             if (_intersectingGrids.Count > 0)
                 return true;
         }
@@ -431,7 +431,7 @@ public sealed partial class WreckSwarmSystem
         }
 
         _intersectingGrids.Clear();
-        _mapManager.FindGridsIntersecting(mapId, corridor, ref _intersectingGrids, approx: false, includeMap: false);
+        _mapSystem.FindGridsIntersecting(mapId, corridor, ref _intersectingGrids, approx: false, includeMap: false);
         foreach (var grid in _intersectingGrids)
         {
             if (!stationGrids.Contains(grid.Owner))

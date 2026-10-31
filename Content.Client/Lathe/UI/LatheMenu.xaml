@@ -118,12 +118,8 @@
                             Text="✖"
                             SetSize="38 32"
                             HorizontalAlignment="Right"
-                            ToolTip="{Loc 'lathe-menu-delete-fabricating-tooltip'}">
-                            <Button.StyleClasses>
-                                <system:String>Caution</system:String>
-                                <system:String>OpenLeft</system:String>
-                            </Button.StyleClasses>
-                        </Button>
+                            StyleClasses="Caution OpenLeft"
+                            ToolTip="{Loc 'lathe-menu-delete-fabricating-tooltip'}" />
                     </PanelContainer>
                 </BoxContainer>
                 <ScrollContainer VerticalExpand="True" HScrollEnabled="False">

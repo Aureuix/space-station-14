@@ -233,7 +233,8 @@
     speedModifier: 1.75
     useSound:
       collection: Welder
-    qualities: Welding
+    qualities:
+    - Welding
   - type: Welder
   - type: PointLight
     enabled: false
@@ -910,7 +911,8 @@
   - type: MultipleTool
     statusShowBehavior: true
     entries:
-      - behavior: Screwing
+      - behavior:
+        - Screwing
         sprite:
           sprite: _Starlight/Objects/Tools/cyberling.rsi
           state: drill_screw
@@ -918,7 +920,8 @@
           path: /Audio/Items/drill_use.ogg
         changeSound:
           path: /Audio/Items/change_drill.ogg
-      - behavior: Anchoring
+      - behavior:
+        - Anchoring
         sprite:
           sprite: _Starlight/Objects/Tools/cyberling.rsi
           state: drill_bolt
@@ -942,13 +945,15 @@
   - type: MultipleTool
     statusShowBehavior: true
     entries:
-      - behavior: Prying
+      - behavior:
+        - Prying
         sprite:
           sprite: _Starlight/Objects/Tools/cyberling.rsi
           state: jaws_pry
         useSound: /Audio/Items/jaws_pry.ogg
         changeSound: /Audio/Items/change_jaws.ogg
-      - behavior: Cutting
+      - behavior:
+        - Cutting
         sprite:
           sprite: _Starlight/Objects/Tools/cyberling.rsi
           state: jaws_cutter

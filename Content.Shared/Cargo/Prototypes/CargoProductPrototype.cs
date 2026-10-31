@@ -9,7 +9,7 @@ namespace Content.Shared.Cargo.Prototypes
     public sealed partial class CargoProductPrototype : IPrototype, IInheritingPrototype
     {
         /// <inheritdoc />
-        [ParentDataField(typeof(AbstractPrototypeIdArraySerializer<CargoProductPrototype>))]
+        [ParentDataField(typeof(ProtoId<CargoProductPrototype>))]
         public string[]? Parents { get; private set; }
 
         /// <inheritdoc />

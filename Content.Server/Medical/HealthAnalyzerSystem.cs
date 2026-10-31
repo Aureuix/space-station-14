@@ -382,7 +382,7 @@ public sealed class HealthAnalyzerSystem : EntitySystem
             status = HealthAnalyzerFormatting.GetStatusText(mobStateComponent.CurrentState);
 
         var damageable = Comp<DamageableComponent>(patient);
-        IReadOnlyDictionary<string, FixedPoint2> damagePerType = damageable.Damage.DamageDict;
+        IReadOnlyDictionary<ProtoId<DamageTypePrototype>, FixedPoint2> damagePerType = damageable.Damage.DamageDict;
         var groupedInjuries = damageable.DamagePerGroup
             .OrderBy(group => HealthAnalyzerFormatting.GetDamageGroupSortKey(group.Key))
             .ThenBy(group => group.Key)
@@ -406,7 +406,7 @@ public sealed class HealthAnalyzerSystem : EntitySystem
     private HealthAnalyzerDamageGroupSnapshot? BuildDamageGroupSnapshot(
         string damageGroupId,
         FixedPoint2 damageAmount,
-        IReadOnlyDictionary<string, FixedPoint2> damagePerType)
+        IReadOnlyDictionary<ProtoId<DamageTypePrototype>, FixedPoint2> damagePerType)
     {
         if (!_prototypeManager.TryIndex<DamageGroupPrototype>(damageGroupId, out var groupPrototype))
             return null;

@@ -27,7 +27,7 @@ namespace Content.Shared.Kitchen.Components // Starlight-edit: moved from server
         [DataField("objectHeatMultiplier"), ViewVariables(VVAccess.ReadWrite)]
         public float ObjectHeatMultiplier = 100;
 
-        [DataField("failureResult", customTypeSerializer: typeof(PrototypeIdSerializer<EntityPrototype>))]
+        [DataField("failureResult", customTypeSerializer: typeof(ProtoId<EntityPrototype>))]
         public string BadRecipeEntityId = "FoodBadRecipe";
 
         #region  audio

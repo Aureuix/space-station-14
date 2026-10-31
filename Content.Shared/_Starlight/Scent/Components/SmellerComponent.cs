@@ -21,21 +21,21 @@ public sealed partial class SmellerComponent : Component
     [DataField, AutoNetworkedField]
     public string? TrackedScentId;
 
-    [DataField("toggleAction", customTypeSerializer: typeof(PrototypeIdSerializer<EntityPrototype>))]
+    [DataField("toggleAction", customTypeSerializer: typeof(ProtoId<EntityPrototype>))]
     public string ToggleAction = "ActionToggleSniff";
 
     [DataField]
     public EntityUid? ToggleActionEntity;
 
     // Granted alongside TrackedScentId. Only exists while there's something to sneeze away.
-    [DataField("sneezeAction", customTypeSerializer: typeof(PrototypeIdSerializer<EntityPrototype>))]
+    [DataField("sneezeAction", customTypeSerializer: typeof(ProtoId<EntityPrototype>))]
     public string SneezeAction = "ActionSneeze";
 
     [DataField]
     public EntityUid? SneezeActionEntity;
 
     // Granted alongside Sniffing. Only usable while scent-vision is on.
-    [DataField("sniffObjectAction", customTypeSerializer: typeof(PrototypeIdSerializer<EntityPrototype>))]
+    [DataField("sniffObjectAction", customTypeSerializer: typeof(ProtoId<EntityPrototype>))]
     public string SniffObjectAction = "ActionSniffObject";
 
     [DataField]

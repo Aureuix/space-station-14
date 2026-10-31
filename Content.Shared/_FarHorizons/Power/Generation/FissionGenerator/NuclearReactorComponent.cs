@@ -318,13 +318,13 @@ public sealed partial class NuclearReactorComponent : Component
     /// <summary>
     /// The proto ID of the "Retract Control Rods" sink port
     /// </summary>
-    [DataField("controlRodRetractPort", customTypeSerializer: typeof(PrototypeIdSerializer<SinkPortPrototype>))]
+    [DataField("controlRodRetractPort", customTypeSerializer: typeof(ProtoId<SinkPortPrototype>))]
     public string ControlRodRetractPort = "RetractControlRods";
 
     /// <summary>
     /// The proto ID of the "Insert Control Rods" sink port
     /// </summary>
-    [DataField("controlRodInsertPort", customTypeSerializer: typeof(PrototypeIdSerializer<SinkPortPrototype>))]
+    [DataField("controlRodInsertPort", customTypeSerializer: typeof(ProtoId<SinkPortPrototype>))]
     public string ControlRodInsertPort = "InsertControlRods";
 
     /// <summary>

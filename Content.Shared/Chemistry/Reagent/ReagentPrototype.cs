@@ -36,7 +36,7 @@ namespace Content.Shared.Chemistry.Reagent
         [DataField]
         public string Group { get; private set; } = "Unknown";
 
-        [ParentDataField(typeof(AbstractPrototypeIdArraySerializer<ReagentPrototype>))]
+        [ParentDataField(typeof(ProtoId<ReagentPrototype>))]
         public string[]? Parents { get; private set; }
 
         [NeverPushInheritance]

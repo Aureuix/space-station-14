@@ -6,6 +6,7 @@ using Content.Shared.Inventory;
 using Content.Shared.Radiation.Events;
 using Content.Shared.Rejuvenate;
 using Robust.Shared.GameStates;
+using Robust.Shared.Prototypes;
 
 namespace Content.Shared.Damage.Systems;
 
@@ -190,7 +191,7 @@ public sealed partial class DamageableSystem
         ent.Comp.HealthBarThreshold = state.HealthBarThreshold;
 
         // Has the damage actually changed?
-        DamageSpecifier newDamage = new() { DamageDict = new Dictionary<string, FixedPoint2>(state.DamageDict) };
+        DamageSpecifier newDamage = new() { DamageDict = new Dictionary<ProtoId<DamageTypePrototype>, FixedPoint2>(state.DamageDict) };
         var delta = newDamage - ent.Comp.Damage;
         delta.TrimZeros();
 

@@ -100,6 +100,7 @@ public interface IEntityConditionRaiser
 /// Used to store an <see cref="EntityCondition"/> so it can be raised without losing the type of the condition.
 /// </summary>
 /// <typeparam name="T">The Condition wer are raising.</typeparam>
+[ImplicitDataDefinitionForInheritors]
 public abstract partial class EntityConditionBase<T> : EntityCondition where T : EntityConditionBase<T>
 {
     public override bool RaiseEvent(EntityUid target, IEntityConditionRaiser raiser)
@@ -137,7 +138,8 @@ public abstract partial class EntityCondition
 /// </summary>
 /// <param name="Condition">The Condition we're checking</param>
 [ByRefEvent]
-public record struct EntityConditionEvent<T>(T Condition) where T : EntityConditionBase<T>
+[DataRecord]
+public partial record struct EntityConditionEvent<T>(T Condition) where T : EntityConditionBase<T>
 {
     /// <summary>
     /// The result of our check, defaults to false if nothing handles it.

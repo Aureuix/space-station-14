@@ -14,7 +14,7 @@ namespace Content.Server._Starlight.Magic;
 public sealed class IceTrailSystem : EntitySystem
 {
     // Starlight: System dependencies
-    [Dependency] private readonly IMapManager _mapManager = default!;
+    
     [Dependency] private readonly SharedMapSystem _mapSystem = default!;
     [Dependency] private readonly SharedTransformSystem _transformSystem = default!;
     [Dependency] private readonly AtmosphereSystem _atmosphereSystem = default!;
@@ -59,7 +59,7 @@ public sealed class IceTrailSystem : EntitySystem
             var coords = _transformSystem.GetMapCoordinates(uid, xform);
 
             // Starlight: Try to find the grid at this position
-            if (!_mapManager.TryFindGridAt(coords, out var gridUid, out var grid))
+            if (!_mapSystem.TryFindGridAt(coords, out var gridUid, out var grid))
                 continue; // Starlight: No grid found, can't spawn ice
 
             // Starlight: Convert map coordinates to tile indices

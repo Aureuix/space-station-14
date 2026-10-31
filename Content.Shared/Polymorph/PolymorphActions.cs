@@ -6,7 +6,7 @@ namespace Content.Shared.Polymorph;
 //Starlight begin
 public abstract partial class BasePolymorphActionEvent : InstantActionEvent
 {
-    public PolymorphConfiguration Config;
+    public virtual PolymorphConfiguration Config { get; set; } = default!;
 }
 
 public sealed partial class PolymorphActionEvent : BasePolymorphActionEvent
@@ -16,15 +16,22 @@ public sealed partial class PolymorphActionEvent : BasePolymorphActionEvent
     ///     the specific polymorph.
     /// </summary>
     [DataField]
-    public ProtoId<PolymorphPrototype>? ProtoId
+    public ProtoId<PolymorphPrototype>? ProtoId { get; set; }
+
+    public override PolymorphConfiguration Config
     {
-        get;
-        set
+        get
         {
-            field = value;
-            if (IoCManager.Resolve<IPrototypeManager>().Resolve(value, out var proto))
-                Config = proto.Configuration;
+            var config = base.Config;
+            if (ProtoId is { } id && IoCManager.Resolve<IPrototypeManager>().Resolve(id, out var proto))
+            {
+                config = proto.Configuration;
+                base.Config = config;
+            }
+
+            return config!;
         }
+        set => base.Config = value;
     }
 
     public PolymorphActionEvent(ProtoId<PolymorphPrototype> protoId) : this()

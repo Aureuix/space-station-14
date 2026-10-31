@@ -16,7 +16,7 @@ public sealed partial class WireLayoutPrototype : IPrototype, IInheritingPrototy
     [IdDataField]
     public string ID { get; private set; } = default!;
 
-    [ParentDataField(typeof(AbstractPrototypeIdArraySerializer<WireLayoutPrototype>))]
+    [ParentDataField(typeof(ProtoId<WireLayoutPrototype>))]
     public string[]? Parents { get; private set; }
 
     [AbstractDataField]

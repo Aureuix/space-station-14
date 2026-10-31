@@ -1,3 +1,4 @@
+using Robust.Shared.Prototypes;
 using Robust.Shared.Serialization.TypeSerializers.Implementations.Custom.Prototype;
 
 namespace Content.Server.NPC.Queries;
@@ -17,7 +18,7 @@ public sealed partial class UtilityService
     /// <summary>
     /// Prototype of the utility query.
     /// </summary>
-    [DataField("proto", required: true, customTypeSerializer:typeof(PrototypeIdSerializer<UtilityQueryPrototype>))]
+    [DataField("proto", required: true, customTypeSerializer:typeof(ProtoId<UtilityQueryPrototype>))]
     public string Prototype = string.Empty;
 
     [DataField("minCooldown")]

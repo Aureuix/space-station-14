@@ -88,6 +88,8 @@ public partial class StatusIconData : IComparable<StatusIconData>
 /// <summary>
 /// <see cref="StatusIconData"/> but in new convenient prototype form!
 /// </summary>
+
+[DataDefinition]
 public abstract partial class StatusIconPrototype : StatusIconData, IPrototype
 {
     /// <inheritdoc/>
@@ -102,7 +104,7 @@ public abstract partial class StatusIconPrototype : StatusIconData, IPrototype
 public sealed partial class JobIconPrototype : StatusIconPrototype, IInheritingPrototype
 {
     /// <inheritdoc />
-    [ParentDataField(typeof(AbstractPrototypeIdArraySerializer<JobIconPrototype>))]
+    [ParentDataField(typeof(ProtoId<JobIconPrototype>))]
     public string[]? Parents { get; private set; }
 
     /// <inheritdoc />
@@ -139,7 +141,7 @@ public sealed partial class JobIconPrototype : StatusIconPrototype, IInheritingP
 public sealed partial class HealthIconPrototype : StatusIconPrototype, IInheritingPrototype
 {
     /// <inheritdoc />
-    [ParentDataField(typeof(AbstractPrototypeIdArraySerializer<HealthIconPrototype>))]
+    [ParentDataField(typeof(ProtoId<HealthIconPrototype>))]
     public string[]? Parents { get; private set; }
 
     /// <inheritdoc />
@@ -155,7 +157,7 @@ public sealed partial class HealthIconPrototype : StatusIconPrototype, IInheriti
 public sealed partial class SatiationIconPrototype : StatusIconPrototype, IInheritingPrototype
 {
     /// <inheritdoc />
-    [ParentDataField(typeof(AbstractPrototypeIdArraySerializer<SatiationIconPrototype>))]
+    [ParentDataField(typeof(ProtoId<SatiationIconPrototype>))]
     public string[]? Parents { get; private set; }
 
     /// <inheritdoc />
@@ -171,7 +173,7 @@ public sealed partial class SatiationIconPrototype : StatusIconPrototype, IInher
 public sealed partial class SecurityIconPrototype : StatusIconPrototype, IInheritingPrototype
 {
     /// <inheritdoc />
-    [ParentDataField(typeof(AbstractPrototypeIdArraySerializer<SecurityIconPrototype>))]
+    [ParentDataField(typeof(ProtoId<SecurityIconPrototype>))]
     public string[]? Parents { get; private set; }
 
     /// <inheritdoc />
@@ -187,7 +189,7 @@ public sealed partial class SecurityIconPrototype : StatusIconPrototype, IInheri
 public sealed partial class FactionIconPrototype : StatusIconPrototype, IInheritingPrototype
 {
     /// <inheritdoc />
-    [ParentDataField(typeof(AbstractPrototypeIdArraySerializer<FactionIconPrototype>))]
+    [ParentDataField(typeof(ProtoId<FactionIconPrototype>))]
     public string[]? Parents { get; private set; }
 
     /// <inheritdoc />
@@ -203,7 +205,7 @@ public sealed partial class FactionIconPrototype : StatusIconPrototype, IInherit
 public sealed partial class DebugIconPrototype : StatusIconPrototype, IInheritingPrototype
 {
     /// <inheritdoc />
-    [ParentDataField(typeof(AbstractPrototypeIdArraySerializer<DebugIconPrototype>))]
+    [ParentDataField(typeof(ProtoId<DebugIconPrototype>))]
     public string[]? Parents { get; private set; }
 
     /// <inheritdoc />
@@ -219,7 +221,7 @@ public sealed partial class DebugIconPrototype : StatusIconPrototype, IInheritin
 public sealed partial class SsdIconPrototype : StatusIconPrototype, IInheritingPrototype
 {
     /// <inheritdoc />
-    [ParentDataField(typeof(AbstractPrototypeIdArraySerializer<SsdIconPrototype>))]
+    [ParentDataField(typeof(ProtoId<SsdIconPrototype>))]
     public string[]? Parents { get; private set; }
 
     /// <inheritdoc />

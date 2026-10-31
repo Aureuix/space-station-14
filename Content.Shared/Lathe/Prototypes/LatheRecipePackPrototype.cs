@@ -15,7 +15,7 @@ public sealed partial class LatheRecipePackPrototype : IPrototype, IInheritingPr
     [IdDataField]
     public string ID { get; private set; } = default!;
 
-    [ParentDataField(typeof(AbstractPrototypeIdArraySerializer<LatheRecipePackPrototype>))]
+    [ParentDataField(typeof(ProtoId<LatheRecipePackPrototype>))]
     public string[]? Parents { get; private set; }
 
     [NeverPushInheritance]

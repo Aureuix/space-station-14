@@ -3,6 +3,7 @@ using Content.Shared.Random.Helpers;
 using Content.Shared.Whitelist;
 using Content.Shared.Xenoarchaeology.Artifact.Components;
 using Content.Shared.Xenoarchaeology.Artifact.Prototypes;
+using Robust.Shared.Prototypes;
 using Robust.Shared.Random;
 
 namespace Content.Server.Xenoarchaeology.Artifact;

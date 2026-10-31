@@ -1,4 +1,5 @@
 using Content.Shared.DeviceNetwork.Systems;
+using Robust.Shared.Prototypes;
 using Robust.Shared.Serialization.TypeSerializers.Implementations.Custom.Prototype;
 
 namespace Content.Shared.DeviceNetwork.Components
@@ -34,7 +35,7 @@ namespace Content.Shared.DeviceNetwork.Components
         ///     frequency prototype. Used to select a default frequency to listen to on. Used when the map is
         ///     initialized.
         /// </summary>
-        [DataField("receiveFrequencyId", customTypeSerializer: typeof(PrototypeIdSerializer<DeviceFrequencyPrototype>))]
+        [DataField("receiveFrequencyId", customTypeSerializer: typeof(ProtoId<DeviceFrequencyPrototype>))]
         public string? ReceiveFrequencyId;
 
         /// <summary>
@@ -48,7 +49,7 @@ namespace Content.Shared.DeviceNetwork.Components
         ///     frequency prototype. Used to select a default frequency to transmit on. Used when the map is
         ///     initialized.
         /// </summary>
-        [DataField("transmitFrequencyId", customTypeSerializer: typeof(PrototypeIdSerializer<DeviceFrequencyPrototype>))]
+        [DataField("transmitFrequencyId", customTypeSerializer: typeof(ProtoId<DeviceFrequencyPrototype>))]
         public string? TransmitFrequencyId;
 
         /// <summary>

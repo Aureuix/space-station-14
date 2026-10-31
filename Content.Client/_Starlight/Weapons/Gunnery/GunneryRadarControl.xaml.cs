@@ -31,8 +31,7 @@ namespace Content.Client._Starlight.Weapons.Gunnery;
 /// </summary>
 public sealed class GunneryRadarControl : BaseShuttleControl
 {
-    [Dependency] private readonly IMapManager _mapManager = default!;
-
+    private readonly SharedMapSystem _mapManager;
     private readonly SharedShuttleSystem  _shuttles;
     private readonly SharedTransformSystem _transform;
 
@@ -78,8 +77,9 @@ public sealed class GunneryRadarControl : BaseShuttleControl
     public GunneryRadarControl() : base(64f, 512f, 256f)
     {
         RobustXamlLoader.Load(this);
-        _shuttles  = EntManager.System<SharedShuttleSystem>();
-        _transform = EntManager.System<SharedTransformSystem>();
+        _shuttles  =  EntManager.System<SharedShuttleSystem>();
+        _transform =  EntManager.System<SharedTransformSystem>();
+        _mapManager = EntManager.System<SharedMapSystem>();
     }
 
     // ── Public API ─────────────────────────────────────────────────────────

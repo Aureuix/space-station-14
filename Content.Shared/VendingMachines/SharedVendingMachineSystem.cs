@@ -88,7 +88,7 @@ public abstract partial class SharedVendingMachineSystem : EntitySystem
 
         if (item == null)
             return;
-        var theItem = new Dictionary<string, uint>();
+        var theItem = new Dictionary<EntProtoId, uint>();
         theItem.Add(item, 1);
 
         AddInventoryFromPrototype(uid, theItem, InventoryType.Regular, component);
@@ -464,7 +464,7 @@ public abstract partial class SharedVendingMachineSystem : EntitySystem
         return GetAllInventory(uid, component).Where(_ => _.Amount > 0).ToList();
     }
 
-    private void AddInventoryFromPrototype(EntityUid uid, Dictionary<string, uint>? entries,
+    private void AddInventoryFromPrototype(EntityUid uid, Dictionary<EntProtoId, uint>? entries,
         InventoryType type,
         VendingMachineComponent? component = null, float restockQuality = 1.0f)
     {

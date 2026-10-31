@@ -40,7 +40,7 @@ public sealed partial class BloodReagentCondition : EntityConditionBase<BloodRea
     [DataField]
     public FixedPoint2 Max = FixedPoint2.MaxValue;
 
-    [DataField(customTypeSerializer: typeof(PrototypeIdSerializer<ReagentPrototype>), required: true)]
+    [DataField(customTypeSerializer: typeof(ProtoId<ReagentPrototype>), required: true)]
     public string Reagent = string.Empty;
 
     public override string EntityConditionGuidebookText(IPrototypeManager prototype)

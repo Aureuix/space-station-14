@@ -208,26 +208,26 @@ public sealed partial class ShadekinSystem : EntitySystem
             var attenuation = 1 - (denom * denom);
             var calculatedLight = 0f;
 
-            if (light.Comp.MaskPath is not null)
-            {
-                var angleToTarget = GetAngle(light, light.Comp, uid);
-                foreach (var cone in lightMasks[light.Comp.MaskPath])
-                {
-                    var coneLight = 0f;
-                    var angleAttenuation = (float)Math.Min((float)Math.Max(cone.OuterWidth - angleToTarget, 0f), cone.InnerWidth) / cone.OuterWidth;
-
-                    if (angleToTarget.Degrees - cone.Direction > cone.OuterWidth)
-                        continue;
-                    else if (angleToTarget.Degrees - cone.Direction > cone.InnerWidth
-                        && angleToTarget.Degrees - cone.Direction < cone.OuterWidth)
-                        coneLight = light.Comp.Energy * attenuation * attenuation * angleAttenuation;
-                    else
-                        coneLight = light.Comp.Energy * attenuation * attenuation;
-
-                    calculatedLight = Math.Max(calculatedLight, coneLight);
-                }
-            }
-            else
+            // if (light.Comp.MaskPath is not null)
+            // {
+            //     var angleToTarget = GetAngle(light, light.Comp, uid);
+            //     foreach (var cone in lightMasks[light.Comp.MaskPath])
+            //     {
+            //         var coneLight = 0f;
+            //         var angleAttenuation = (float)Math.Min((float)Math.Max(cone.OuterWidth - angleToTarget, 0f), cone.InnerWidth) / cone.OuterWidth;
+            //
+            //         if (angleToTarget.Degrees - cone.Direction > cone.OuterWidth)
+            //             continue;
+            //         else if (angleToTarget.Degrees - cone.Direction > cone.InnerWidth
+            //             && angleToTarget.Degrees - cone.Direction < cone.OuterWidth)
+            //             coneLight = light.Comp.Energy * attenuation * attenuation * angleAttenuation;
+            //         else
+            //             coneLight = light.Comp.Energy * attenuation * attenuation;
+            //
+            //         calculatedLight = Math.Max(calculatedLight, coneLight);
+            //     }
+            // }
+            // else
                 calculatedLight = light.Comp.Energy * attenuation * attenuation;
 
             illumination += calculatedLight; //Math.Max(illumination, calculatedLight);

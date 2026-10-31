@@ -78,7 +78,7 @@ public sealed partial class EmergencyShuttleSystem : SharedEmergencyShuttleSyste
     [Dependency] private readonly TransformSystem _transformSystem = default!;
     [Dependency] private readonly UserInterfaceSystem _uiSystem = default!;
     // Starlight Start
-    [Dependency] private readonly IMapManager _mapManager = default!;
+    
     [Dependency] private readonly IPrototypeManager _protoManager = default!;
     [Dependency] private readonly BiomeSystem _biomes = default!;
     [Dependency] private readonly DungeonSystem _dungeon = default!;

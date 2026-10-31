@@ -6,7 +6,7 @@ using Content.Shared.Weapons.Ranged.Components;
 using Content.Shared.Weapons.Ranged.Systems;
 using Content.Shared._Starlight.Weapons.Ranged.Components;
 using Robust.Shared.Prototypes;
-using Robust.Shared.Serialization.TypeSerializers.Implementations.Custom.Prototype.Set;
+
 using Robust.Shared.Serialization;
 using Robust.Shared.Player;
 

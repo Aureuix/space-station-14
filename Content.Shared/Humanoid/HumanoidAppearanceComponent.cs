@@ -125,7 +125,7 @@ public sealed partial class HumanoidAppearanceComponent : Component
         {Sex.Female, "Amina"},
         {Sex.Unsexed, "Charlotte"}
     };
-    [DataField("voice", customTypeSerializer: typeof(PrototypeIdSerializer<VoicePrototype>))]
+    [DataField("voice", customTypeSerializer: typeof(ProtoId<VoicePrototype>))]
     public string? Voice { get; set; }
 
     /// <summary>

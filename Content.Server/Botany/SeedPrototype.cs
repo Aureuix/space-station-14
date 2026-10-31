@@ -126,7 +126,7 @@ public partial class SeedData
     /// <summary>
     ///     The entity prototype that is spawned when this type of seed is extracted from produce using a seed extractor.
     /// </summary>
-    [DataField("packetPrototype", customTypeSerializer: typeof(PrototypeIdSerializer<EntityPrototype>))]
+    [DataField("packetPrototype", customTypeSerializer: typeof(ProtoId<EntityPrototype>))]
     public string PacketPrototype = "SeedBase";
 
     /// <summary>
@@ -227,7 +227,7 @@ public partial class SeedData
 
     [DataField("screaming")] public bool CanScream;
 
-    [DataField(customTypeSerializer: typeof(PrototypeIdSerializer<EntityPrototype>))] public string KudzuPrototype = "WeakKudzu";
+    [DataField(customTypeSerializer: typeof(ProtoId<EntityPrototype>))] public string KudzuPrototype = "WeakKudzu";
 
     [DataField] public bool TurnIntoKudzu;
     [DataField] public string? SplatPrototype { get; set; }
