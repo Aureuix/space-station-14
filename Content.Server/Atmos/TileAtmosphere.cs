@@ -9,8 +9,8 @@ namespace Content.Server.Atmos;
 /// You should not be using these directly outside of <see cref="AtmosphereSystem"/>.
 /// Use the public APIs in <see cref="AtmosphereSystem"/> instead.
 /// </summary>
-[Access(typeof(AtmosphereSystem), typeof(GasTileOverlaySystem), typeof(AtmosDebugOverlaySystem))]
-public sealed class TileAtmosphere : IGasMixtureHolder
+[Access(typeof(AtmosphereSystem), typeof(GasTileOverlaySystem), typeof(AtmosDebugOverlaySystem)), DataDefinition]
+public sealed partial class TileAtmosphere : IGasMixtureHolder
 {
     /// <summary>
     /// The last cycle this tile's air was archived into <see cref="AirArchived"/>.

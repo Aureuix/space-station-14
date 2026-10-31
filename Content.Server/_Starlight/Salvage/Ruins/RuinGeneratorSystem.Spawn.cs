@@ -56,7 +56,7 @@ public sealed partial class RuinGeneratorSystem
     /// </summary>
     public EntityUid? SpawnRuinGrid(MapId mapId, RuinResult result, int seed)
     {
-        var ruinGrid = _mapManager.CreateGridEntity(mapId);
+        var ruinGrid = _mapSystem.CreateGridEntity(mapId);
         _mapSystem.SetTiles(ruinGrid.Owner, ruinGrid.Comp, result.FloorTiles);
 
         foreach (var (wallPos, wallProto) in result.WallEntities)

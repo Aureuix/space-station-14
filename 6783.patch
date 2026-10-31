@@ -1,0 +1,2203 @@
+From 6f6fcbc7930d4182d9f75228ece4a650e0ac01c0 Mon Sep 17 00:00:00 2001
+From: Rinary <rinary.super@gmail.com>
+Date: Tue, 20 Oct 2026 22:49:09 +0300
+Subject: [PATCH 1/4] init
+
+---
+ .../_Starlight/Light/IlluminationSystem.cs    |  31 +
+ Content.Server/Entry/EntryPoint.cs            |   3 -
+ .../EntitySystems/ExpendableLightSystem.cs    |   7 +-
+ .../_Starlight/Light/IlluminationSystem.cs    | 538 ++++++++++++++++++
+ .../_Starlight/Light/LightMaskReader.cs       | 122 ++++
+ .../_Starlight/Shadekin/ShadegenSystem.cs     |  12 +-
+ .../Interaction/SharedInteractionSystem.cs    |  11 +-
+ .../FaceAwayWhenDroppedComponent.cs           |   6 +
+ .../Light/FaceAwayWhenDroppedSystem.cs        |  51 ++
+ .../Light/SharedIlluminationSystem.cs         |  56 ++
+ .../_Starlight/Shadekin/ShadekinSystem.cs     | 140 +----
+ .../Mobs/Species/Neocyte/shadekin.yml         |   8 +-
+ .../Entities/Mobs/Species/shadekin.yml        |   8 +-
+ .../Entities/Objects/Tools/flashlights.yml    |   1 +
+ .../_Starlight/Traits/disabilities.yml        |  16 +-
+ 15 files changed, 856 insertions(+), 154 deletions(-)
+ create mode 100644 Content.Client/_Starlight/Light/IlluminationSystem.cs
+ create mode 100644 Content.Server/_Starlight/Light/IlluminationSystem.cs
+ create mode 100644 Content.Server/_Starlight/Light/LightMaskReader.cs
+ create mode 100644 Content.Shared/_Starlight/Light/Components/FaceAwayWhenDroppedComponent.cs
+ create mode 100644 Content.Shared/_Starlight/Light/FaceAwayWhenDroppedSystem.cs
+ create mode 100644 Content.Shared/_Starlight/Light/SharedIlluminationSystem.cs
+
+diff --git a/Content.Client/_Starlight/Light/IlluminationSystem.cs b/Content.Client/_Starlight/Light/IlluminationSystem.cs
+new file mode 100644
+index 000000000000..5a4a686f27c9
+--- /dev/null
++++ b/Content.Client/_Starlight/Light/IlluminationSystem.cs
+@@ -0,0 +1,31 @@
++using Content.Shared._Starlight.Light;
++using Robust.Shared.Map;
++
++namespace Content.Client._Starlight.Light;
++
++public sealed partial class IlluminationSystem : SharedIlluminationSystem
++{
++    public override void GetLightSources(MapCoordinates point, List<LightContribution> results, IlluminationQuery query = default)
++    {
++    }
++
++    public override void GetLightSources(EntityUid uid, List<LightContribution> results, IlluminationQuery query = default)
++    {
++    }
++
++    public override void GetLightsInRange(MapCoordinates center, float range, List<Entity<SharedPointLightComponent, TransformComponent>> results)
++    {
++    }
++
++    public override bool TryGetLightColor(MapCoordinates point, out Color color, IlluminationQuery query = default)
++    {
++        color = default;
++        return false;
++    }
++
++    public override bool TryGetLightColor(EntityUid uid, out Color color, IlluminationQuery query = default)
++    {
++        color = default;
++        return false;
++    }
++}
+diff --git a/Content.Server/Entry/EntryPoint.cs b/Content.Server/Entry/EntryPoint.cs
+index db3baa85596a..5310e6312bfd 100644
+--- a/Content.Server/Entry/EntryPoint.cs
++++ b/Content.Server/Entry/EntryPoint.cs
+@@ -37,7 +37,6 @@
+ using Content.Shared.Localizations;
+ using Robust.Server;
+ using Robust.Server.ServerStatus;
+-using Robust.Shared;
+ using Robust.Shared.Configuration;
+ using Robust.Shared.ContentPack;
+ using Robust.Shared.Prototypes;
+@@ -124,8 +123,6 @@ public override void Init()
+             Dependencies.BuildGraph();
+             Dependencies.InjectDependencies(this);
+ 
+-            _cfg.OverrideDefault(CVars.LookupEnableServerLightTree, true); // Starlight - ShadekinSystem needs the light tree
+-
+             LoadConfigPresets(_cfg, _res, _log.GetSawmill("configpreset"));
+ 
+             var aczProvider = new ContentMagicAczProvider(Dependencies);
+diff --git a/Content.Server/Light/EntitySystems/ExpendableLightSystem.cs b/Content.Server/Light/EntitySystems/ExpendableLightSystem.cs
+index de5f6ddc47cf..7cccbff1045f 100644
+--- a/Content.Server/Light/EntitySystems/ExpendableLightSystem.cs
++++ b/Content.Server/Light/EntitySystems/ExpendableLightSystem.cs
+@@ -1,5 +1,5 @@
+-using Content.Shared.Botany.Components; // Starlight Edit
+-using Content.Shared.Botany.Items.Components; // Starlight Edit
++using Content.Shared.Botany.Components;
++using Content.Shared.Botany.Items.Components;
+ using Content.Server.Light.Components;
+ using Content.Server.Stack;
+ using Content.Shared.Clothing.Components;
+@@ -31,6 +31,7 @@ public sealed partial class ExpendableLightSystem : EntitySystem
+         [Dependency] private SharedAppearanceSystem _appearance = default!;
+         [Dependency] private StackSystem _stackSystem = default!;
+         [Dependency] private NameModifierSystem _nameModifier = default!;
++        [Dependency] private SharedPointLightSystem _pointLight = default!; // Starlight
+ 
+         private static readonly ProtoId<TagPrototype> TrashTag = "Trash";
+ 
+@@ -188,6 +189,8 @@ private void UpdateVisualizer(Entity<ExpendableLightComponent> ent, AppearanceCo
+ 
+             _appearance.SetData(ent, ExpendableLightVisuals.State, component.CurrentState, appearance);
+ 
++            _pointLight.SetEnabled(ent, component.CurrentState is ExpendableLightState.Lit or ExpendableLightState.Fading); // Starlight-edit
++
+             switch (component.CurrentState)
+             {
+                 case ExpendableLightState.Lit:
+diff --git a/Content.Server/_Starlight/Light/IlluminationSystem.cs b/Content.Server/_Starlight/Light/IlluminationSystem.cs
+new file mode 100644
+index 000000000000..2e71ff84ef30
+--- /dev/null
++++ b/Content.Server/_Starlight/Light/IlluminationSystem.cs
+@@ -0,0 +1,538 @@
++using System.Diagnostics.CodeAnalysis;
++using System.IO;
++using System.Numerics;
++using Content.Shared._Starlight.Light;
++using Robust.Server.GameObjects;
++using Robust.Shared;
++using Robust.Shared.Configuration;
++using Robust.Shared.Containers;
++using Robust.Shared.Map;
++using Robust.Shared.Map.Components;
++using Robust.Shared.Physics;
++using Robust.Shared.ContentPack;
++using Robust.Shared.Prototypes;
++
++namespace Content.Server._Starlight.Light;
++
++/// <summary>
++/// Server side light index, kept without the engine light tree.
++/// </summary>
++public sealed partial class IlluminationSystem : SharedIlluminationSystem
++{
++    [Dependency] private IConfigurationManager _cfg = default!;
++    [Dependency] private IPrototypeManager _proto = default!;
++    [Dependency] private IResourceManager _resources = default!;
++    [Dependency] private SharedTransformSystem _transform = default!;
++    [Dependency] private SharedMapSystem _map = default!;
++    [Dependency] private SharedContainerSystem _container = default!;
++    [Dependency] private OccluderSystem _occluder = default!;
++
++    [Dependency] private EntityQuery<PointLightComponent> _lightQuery = default!;
++    [Dependency] private EntityQuery<ContainerManagerComponent> _containerManagerQuery = default!;
++    [Dependency] private EntityQuery<MapComponent> _mapQuery = default!;
++    [Dependency] private EntityQuery<MapLightComponent> _mapLightQuery = default!;
++
++    #region Smth smth useful hardcode
++    private const int ChunkSize = 16;
++    private const float LightHeight = 1f;
++    private const float OffsetMargin = 1f;
++    private const float OwnOccluderTolerance = 0.05f;
++    #endregion
++
++    private float _maxLightRadius;
++
++    private readonly Dictionary<(EntityUid Grid, Vector2i Chunk), List<Entity<SharedPointLightComponent, TransformComponent>>> _anchored = new();
++    private readonly Dictionary<EntityUid, (EntityUid Grid, Vector2i Chunk)> _anchoredIndex = new();
++
++    private readonly List<Entity<SharedPointLightComponent, TransformComponent>> _loose = new();
++    private readonly Dictionary<EntityUid, int> _looseIndex = new();
++
++    private readonly List<Candidate> _candidates = new();
++    private readonly List<Entity<SharedPointLightComponent, TransformComponent>> _misplaced = new();
++    private readonly List<LightContribution> _sources = new();
++    private readonly List<RayCastResults> _occluderHits = new();
++    private List<Entity<MapGridComponent>> _grids = new();
++
++    private readonly Dictionary<string, MaskImage?> _masks = new();
++
++    public override void Initialize()
++    {
++        base.Initialize();
++
++        Subs.CVar(_cfg, CVars.MaxLightRadius, value => _maxLightRadius = value, true);
++        SubscribeLocalEvent<PrototypesReloadedEventArgs>(OnPrototypesReloaded);
++    }
++
++    private void OnPrototypesReloaded(PrototypesReloadedEventArgs args)
++    {
++        if (args.WasModified<LightMaskPrototype>())
++            _masks.Clear();
++    }
++
++    public override void Shutdown()
++    {
++        base.Shutdown();
++
++        _anchored.Clear();
++        _anchoredIndex.Clear();
++        _loose.Clear();
++        _looseIndex.Clear();
++    }
++
++    #region Index
++
++    [SubscribeLocalEvent]
++    private void OnLightInit(Entity<PointLightComponent> ent, ref ComponentInit _)
++        => AddLight((ent, ent.Comp, Transform(ent)));
++
++    [SubscribeLocalEvent]
++    private void OnLightRemove(Entity<PointLightComponent> ent, ref ComponentRemove _)
++        => RemoveLight(ent);
++
++    [SubscribeLocalEvent]
++    private void OnAnchorChanged(Entity<PointLightComponent> ent, ref AnchorStateChangedEvent args)
++        => Relocate((ent, ent.Comp, args.Transform));
++
++    [SubscribeLocalEvent]
++    private void OnReAnchor(Entity<PointLightComponent> ent, ref ReAnchorEvent args)
++        => Relocate((ent, ent.Comp, args.Xform));
++
++    private void Relocate(Entity<SharedPointLightComponent, TransformComponent> light)
++    {
++        RemoveLight(light);
++
++        if (light.Comp1.LifeStage <= ComponentLifeStage.Running)
++            AddLight(light);
++    }
++
++    private void AddLight(Entity<SharedPointLightComponent, TransformComponent> light)
++    {
++        if (IsAnchoredToGrid(light.Comp2, out var grid))
++        {
++            var key = (grid, ChunkOf(light.Comp2.LocalPosition));
++            if (!_anchored.TryGetValue(key, out var bucket))
++            {
++                bucket = new();
++                _anchored[key] = bucket;
++            }
++
++            bucket.Add(light);
++            _anchoredIndex[light] = key;
++            return;
++        }
++
++        _looseIndex[light] = _loose.Count;
++        _loose.Add(light);
++    }
++
++    private void RemoveLight(EntityUid uid)
++    {
++        if (_anchoredIndex.Remove(uid, out var key))
++        {
++            var bucket = _anchored[key];
++            for (var i = 0; i < bucket.Count; i++)
++            {
++                if (bucket[i].Owner != uid)
++                    continue;
++
++                bucket[i] = bucket[^1];
++                bucket.RemoveAt(bucket.Count - 1);
++                break;
++            }
++
++            if (bucket.Count == 0)
++                _anchored.Remove(key);
++            return;
++        }
++
++        if (!_looseIndex.Remove(uid, out var index))
++            return;
++
++        var last = _loose[^1];
++        _loose.RemoveAt(_loose.Count - 1);
++        if (last.Owner == uid)
++            return;
++
++        _loose[index] = last;
++        _looseIndex[last] = index;
++    }
++
++    private static bool IsAnchoredToGrid(TransformComponent xform, out EntityUid grid)
++    {
++        grid = xform.GridUid ?? default;
++        return xform.Anchored && xform.GridUid != null && xform.ParentUid == grid;
++    }
++
++    private static Vector2i ChunkOf(Vector2 local)
++        => new((int) MathF.Floor(local.X / ChunkSize), (int) MathF.Floor(local.Y / ChunkSize));
++
++    #endregion
++
++    #region Queries
++
++    public override void GetLightSources(MapCoordinates point, List<LightContribution> results, IlluminationQuery query = default)
++    {
++        if (point.MapId == MapId.Nullspace)
++            return;
++
++        CollectCandidates(point, _maxLightRadius + OffsetMargin);
++
++        foreach (var candidate in _candidates)
++        {
++            if (TryEvaluate(candidate, point.Position, query, out var contribution)
++                && (!contribution.Light.Comp1.CastShadows || !IsOccluded(point.MapId, contribution.Position, point.Position)))
++                results.Add(contribution);
++        }
++    }
++
++    public override void GetLightSources(EntityUid uid, List<LightContribution> results, IlluminationQuery query = default)
++    {
++        if (TryGetSealingContainer(uid, out var container))
++        {
++            GetLightsInContainer(container, _transform.GetWorldPosition(uid), results, query);
++            return;
++        }
++
++        GetLightSources(_transform.GetMapCoordinates(uid), results, query);
++    }
++
++    public override void GetLightsInRange(MapCoordinates center, float range, List<Entity<SharedPointLightComponent, TransformComponent>> results)
++    {
++        if (center.MapId == MapId.Nullspace)
++            return;
++
++        CollectCandidates(center, range);
++
++        foreach (var candidate in _candidates)
++        {
++            results.Add(candidate.Light);
++        }
++    }
++
++    public override bool TryGetLightColor(MapCoordinates point, out Color color, IlluminationQuery query = default)
++    {
++        if (!TryGetAmbient(point.MapId, out var ambient, out var lightingEnabled))
++        {
++            color = default;
++            return false;
++        }
++
++        if (!lightingEnabled)
++        {
++            color = Color.White;
++            return true;
++        }
++
++        _sources.Clear();
++        GetLightSources(point, _sources, query);
++        color = SumColor(query.IgnoreAmbient ? Vector4.Zero : ambient.RGBA);
++        return true;
++    }
++
++    public override bool TryGetLightColor(EntityUid uid, out Color color, IlluminationQuery query = default)
++    {
++        if (!TryGetSealingContainer(uid, out _))
++            return TryGetLightColor(_transform.GetMapCoordinates(uid), out color, query);
++
++        _sources.Clear();
++        GetLightSources(uid, _sources, query);
++        color = SumColor(Vector4.Zero);
++        return true;
++    }
++
++    private Color SumColor(Vector4 color)
++    {
++        foreach (var source in _sources)
++        {
++            color += source.Light.Comp1.Color.RGBA * source.Intensity;
++        }
++
++        return new Color(color);
++    }
++
++    private void CollectCandidates(MapCoordinates point, float range)
++    {
++        _candidates.Clear();
++        _misplaced.Clear();
++
++        var rangeSquared = range * range;
++        var bounds = new Box2(point.Position, point.Position).Enlarged(range);
++
++        _grids.Clear();
++        _map.FindGridsIntersecting(point.MapId, bounds, ref _grids, approx: true, includeMap: true);
++
++        foreach (var grid in _grids)
++        {
++            var (_, gridRot, gridMatrix) = _transform.GetWorldPositionRotationMatrix(grid.Owner);
++            var local = Vector2.Transform(point.Position, _transform.GetInvWorldMatrix(grid.Owner));
++            var min = ChunkOf(local - new Vector2(range));
++            var max = ChunkOf(local + new Vector2(range));
++
++            for (var x = min.X; x <= max.X; x++)
++            {
++                for (var y = min.Y; y <= max.Y; y++)
++                {
++                    if (!_anchored.TryGetValue((grid.Owner, new Vector2i(x, y)), out var bucket))
++                        continue;
++
++                    foreach (var light in bucket)
++                    {
++                        var xform = light.Comp2;
++
++                        if (!IsAnchoredToGrid(xform, out var lightGrid)
++                            || lightGrid != grid.Owner
++                            || ChunkOf(xform.LocalPosition) != new Vector2i(x, y))
++                        {
++                            _misplaced.Add(light);
++                            TryAddLoose(light, point, rangeSquared);
++                            continue;
++                        }
++
++                        if (!light.Comp1.Enabled)
++                            continue;
++
++                        var position = Vector2.Transform(xform.LocalPosition, gridMatrix);
++                        if ((position - point.Position).LengthSquared() > rangeSquared)
++                            continue;
++
++                        _candidates.Add(new(light, position, gridRot + xform.LocalRotation));
++                    }
++                }
++            }
++        }
++
++        foreach (var light in _loose)
++        {
++            if (light.Comp1.Enabled && IsAnchoredToGrid(light.Comp2, out _))
++                _misplaced.Add(light);
++
++            TryAddLoose(light, point, rangeSquared);
++        }
++
++        foreach (var light in _misplaced)
++        {
++            Relocate(light);
++        }
++    }
++
++    private void TryAddLoose(Entity<SharedPointLightComponent, TransformComponent> light, MapCoordinates point, float rangeSquared)
++    {
++        if (!light.Comp1.Enabled || light.Comp2.MapID != point.MapId)
++            return;
++
++        var (position, rotation) = _transform.GetWorldPositionRotation(light.Comp2);
++        if ((position - point.Position).LengthSquared() > rangeSquared)
++            return;
++
++        if (IsHiddenInContainer(light))
++            return;
++
++        _candidates.Add(new(light, position, rotation));
++    }
++
++    private bool TryEvaluate(Candidate candidate, Vector2 target, IlluminationQuery query, out LightContribution contribution)
++    {
++        contribution = default;
++        var light = candidate.Light.Comp1;
++
++        if (light.Energy == 0f || light.Radius <= 0f)
++            return false;
++
++        if (query.Ignore?.Invoke(candidate.Light) == true)
++            return false;
++
++        var position = candidate.Position + candidate.Rotation.RotateVec(light.Offset);
++        var delta = target - position;
++        var radius = MathF.Min(light.Radius, _maxLightRadius);
++        var distanceSquared = delta.LengthSquared();
++        if (distanceSquared > radius * radius)
++            return false;
++
++        var mask = GetMaskFactor(light, delta, candidate.Rotation);
++        if (mask <= 0f)
++            return false;
++
++        var intensity = GetFalloff(light, distanceSquared, radius) * light.Energy * mask;
++        if (intensity == 0f)
++            return false;
++
++        contribution = new(candidate.Light, position, MathF.Sqrt(distanceSquared), radius, mask, intensity);
++        return true;
++    }
++
++    private static float GetFalloff(SharedPointLightComponent light, float distanceSquared, float radius)
++    {
++        var s = Math.Clamp(MathF.Sqrt(distanceSquared + LightHeight) / radius, 0f, 1f);
++        var s2 = s * s;
++        var curve = MathHelper.Lerp(s, s2, Math.Clamp(light.CurveFactor, 0f, 1f));
++        return Math.Clamp((1f - s2) * (1f - s2) / (1f + (light.Falloff * curve)), 0f, 1f);
++    }
++
++    private float GetMaskFactor(SharedPointLightComponent light, Vector2 delta, Angle worldRotation)
++    {
++        if (light.LightMask is not { } maskId || !_proto.TryIndex(maskId, out var mask))
++            return 1f;
++
++        var maskRotation = SharedPointLightSystem.GetMaskWorldRotation(light, worldRotation);
++
++        if (GetMaskImage(mask) is { } image)
++        {
++            var local = (-maskRotation).RotateVec(delta) / light.Radius;
++            var u = (local.X + 1f) * 0.5f;
++            var v = (local.Y + 1f) * 0.5f;
++            if (u < 0f || u >= 1f || v < 0f || v >= 1f)
++                return 0f;
++
++            return image.Values[((int) (v * image.Height) * image.Width) + (int) (u * image.Width)] / 255f;
++        }
++
++        var relativeAngle = MathHelper.CloseTo(delta.LengthSquared(), 0f)
++            ? Angle.Zero
++            : Angle.FromWorldVec(delta) - maskRotation;
++
++        var factor = 0d;
++        foreach (var cone in mask.LightCones)
++        {
++            var offset = Math.Abs(Angle.ShortestDistance(relativeAngle, cone.Direction));
++            if (offset > cone.OuterWidth)
++                continue;
++
++            if (offset < cone.InnerWidth)
++                return 1f;
++
++            factor = Math.Max(factor, (cone.OuterWidth - offset) / (cone.OuterWidth - cone.InnerWidth));
++        }
++
++        return MathF.Min(1f, (float) factor);
++    }
++
++    private MaskImage? GetMaskImage(LightMaskPrototype mask)
++    {
++        if (_masks.TryGetValue(mask.ID, out var cached))
++            return cached;
++
++        MaskImage? image = null;
++        try
++        {
++            if (_resources.TryContentFileRead(mask.MaskPath, out var stream))
++            {
++                using var buffer = new MemoryStream();
++                using (stream)
++                    stream.CopyTo(buffer);
++
++                buffer.Position = 0;
++                if (LightMaskReader.TryRead(buffer, out var width, out var height, out var values))
++                    image = new MaskImage(width, height, values);
++                else
++                    Log.Warning($"Light mask {mask.ID} texture {mask.MaskPath} isn't a plain 8-bit PNG, falling back to its cones.");
++            }
++            else
++            {
++                Log.Warning($"Light mask {mask.ID} texture {mask.MaskPath} not found, falling back to its cones.");
++            }
++        }
++        catch (Exception e)
++        {
++            Log.Error($"Failed to read light mask {mask.ID} texture {mask.MaskPath}, falling back to its cones: {e}");
++        }
++
++        _masks[mask.ID] = image;
++        return image;
++    }
++
++    private bool IsOccluded(MapId map, Vector2 from, Vector2 to)
++    {
++        var delta = to - from;
++        var length = delta.Length();
++        if (MathHelper.CloseTo(length, 0f))
++            return false;
++
++        _occluderHits.Clear();
++        _occluder.IntersectRay(_occluderHits, map, new Ray(to, -delta / length), length);
++
++        foreach (var hit in _occluderHits)
++        {
++            if (hit.Distance < length - OwnOccluderTolerance)
++                return true;
++        }
++
++        return false;
++    }
++
++    private bool TryGetAmbient(MapId mapId, out Color color, out bool lightingEnabled)
++    {
++        color = default;
++        lightingEnabled = false;
++
++        if (!_map.TryGetMap(mapId, out var mapUid) || !_mapQuery.TryComp(mapUid, out var map))
++            return false;
++
++        lightingEnabled = map.LightingEnabled;
++        color = _mapLightQuery.CompOrNull(mapUid.Value)?.AmbientLightColor ?? MapLightComponent.DefaultColor;
++        return true;
++    }
++
++    #endregion
++
++    #region Containers
++
++    private bool IsHiddenInContainer(EntityUid uid)
++    {
++        var current = uid;
++        while (_container.TryGetContainingContainer(current, out var container))
++        {
++            if (container.OccludesLight)
++                return true;
++
++            current = container.Owner;
++        }
++
++        return false;
++    }
++
++    private bool TryGetSealingContainer(EntityUid uid, [NotNullWhen(true)] out BaseContainer? sealing)
++    {
++        var current = uid;
++        while (_container.TryGetContainingContainer(current, out sealing))
++        {
++            if (sealing.OccludesLight)
++                return true;
++
++            current = sealing.Owner;
++        }
++
++        return false;
++    }
++
++    private void GetLightsInContainer(BaseContainer container, Vector2 target, List<LightContribution> results, IlluminationQuery query)
++    {
++        foreach (var contained in container.ContainedEntities)
++        {
++            if (_lightQuery.TryComp(contained, out var light) && light.Enabled)
++            {
++                var xform = Transform(contained);
++                var (position, rotation) = _transform.GetWorldPositionRotation(xform);
++                if (TryEvaluate(new((contained, light, xform), position, rotation), target, query, out var contribution))
++                    results.Add(contribution);
++            }
++
++            if (!_containerManagerQuery.TryComp(contained, out var manager))
++                continue;
++
++            foreach (var inner in manager.Containers.Values)
++            {
++                if (!inner.OccludesLight)
++                    GetLightsInContainer(inner, target, results, query);
++            }
++        }
++    }
++
++    #endregion
++
++    private sealed record MaskImage(int Width, int Height, byte[] Values);
++
++    private readonly record struct Candidate(
++        Entity<SharedPointLightComponent, TransformComponent> Light,
++        Vector2 Position,
++        Angle Rotation);
++}
+diff --git a/Content.Server/_Starlight/Light/LightMaskReader.cs b/Content.Server/_Starlight/Light/LightMaskReader.cs
+new file mode 100644
+index 000000000000..cefde3a7e669
+--- /dev/null
++++ b/Content.Server/_Starlight/Light/LightMaskReader.cs
+@@ -0,0 +1,122 @@
++using System.Buffers.Binary;
++using System.IO;
++using System.IO.Compression;
++
++namespace Content.Server._Starlight.Light;
++
++/// <summary>
++/// Reads the first channel of a light mask PNG.
++/// </summary>
++public static class LightMaskReader
++{
++    private static ReadOnlySpan<byte> s_signature => [0x89, 0x50, 0x4E, 0x47, 0x0D, 0x0A, 0x1A, 0x0A];
++
++    public static bool TryRead(Stream stream, out int width, out int height, out byte[] values)
++    {
++        width = height = 0;
++        values = [];
++
++        using var reader = new BinaryReader(stream);
++        if (!reader.ReadBytes(8).AsSpan().SequenceEqual(s_signature))
++            return false;
++
++        var channels = 0;
++        using var compressed = new MemoryStream();
++
++        while (stream.Position < stream.Length)
++        {
++            var length = BinaryPrimitives.ReadInt32BigEndian(reader.ReadBytes(4));
++            var type = System.Text.Encoding.ASCII.GetString(reader.ReadBytes(4));
++            var data = reader.ReadBytes(length);
++            reader.ReadBytes(4); // CRC
++
++            switch (type)
++            {
++                case "IHDR":
++                    width = BinaryPrimitives.ReadInt32BigEndian(data.AsSpan(0, 4));
++                    height = BinaryPrimitives.ReadInt32BigEndian(data.AsSpan(4, 4));
++                    var bitDepth = data[8];
++                    var colorType = data[9];
++                    var interlace = data[12];
++                    channels = colorType switch
++                    {
++                        0 => 1, // grayscale
++                        2 => 3, // RGB
++                        4 => 2, // grayscale + alpha
++                        6 => 4, // RGBA
++                        _ => 0,
++                    };
++
++                    if (bitDepth != 8 || interlace != 0 || channels == 0)
++                        return false;
++                    break;
++                case "IDAT":
++                    compressed.Write(data);
++                    break;
++                case "IEND":
++                    return channels != 0 && TryUnfilter(compressed, width, height, channels, out values);
++            }
++        }
++
++        return false;
++    }
++
++    private static bool TryUnfilter(MemoryStream compressed, int width, int height, int channels, out byte[] values)
++    {
++        values = new byte[width * height];
++
++        compressed.Position = 0;
++        using var zlib = new ZLibStream(compressed, CompressionMode.Decompress);
++
++        var stride = width * channels;
++        var previous = new byte[stride];
++        var current = new byte[stride];
++
++        for (var y = 0; y < height; y++)
++        {
++            var filter = zlib.ReadByte();
++            if (filter < 0)
++                return false;
++
++            zlib.ReadExactly(current);
++
++            for (var i = 0; i < stride; i++)
++            {
++                var left = i >= channels ? current[i - channels] : 0;
++                var up = previous[i];
++                var upLeft = i >= channels ? previous[i - channels] : 0;
++
++                current[i] = (byte) (current[i] + filter switch
++                {
++                    1 => left,
++                    2 => up,
++                    3 => (left + up) / 2,
++                    4 => Paeth(left, up, upLeft),
++                    _ => 0,
++                });
++            }
++
++            for (var x = 0; x < width; x++)
++            {
++                values[y * width + x] = current[x * channels];
++            }
++
++            (previous, current) = (current, previous);
++        }
++
++        return true;
++    }
++
++    private static int Paeth(int a, int b, int c)
++    {
++        var p = a + b - c;
++        var pa = Math.Abs(p - a);
++        var pb = Math.Abs(p - b);
++        var pc = Math.Abs(p - c);
++
++        if (pa <= pb && pa <= pc)
++            return a;
++
++        return pb <= pc ? b : c;
++    }
++}
+diff --git a/Content.Server/_Starlight/Shadekin/ShadegenSystem.cs b/Content.Server/_Starlight/Shadekin/ShadegenSystem.cs
+index 6f3be018d931..b2fde94c9026 100644
+--- a/Content.Server/_Starlight/Shadekin/ShadegenSystem.cs
++++ b/Content.Server/_Starlight/Shadekin/ShadegenSystem.cs
+@@ -1,9 +1,9 @@
++using Content.Shared._Starlight.Light;
+ using Content.Shared._Starlight.Railroading.Components.Tasks;
+ using Content.Shared._Starlight.Shadekin.Components;
+ using Content.Shared.Light;
+ using Content.Shared.Light.Components;
+ using Content.Shared.Light.EntitySystems;
+-using Robust.Shared.ComponentTrees;
+ using Robust.Shared.Map;
+ using Robust.Shared.Timing;
+ 
+@@ -14,7 +14,7 @@ public sealed partial class ShadegenSystem : EntitySystem
+     [Dependency] private IGameTiming _timing = default!;
+     [Dependency] private SharedPoweredLightSystem _light = default!;
+     [Dependency] private SharedHandheldLightSystem _handheldLight = default!;
+-    [Dependency] private SharedLightTreeSystem _lightTree = default!;
++    [Dependency] private SharedIlluminationSystem _illumination = default!;
+     [Dependency] private SharedTransformSystem _transform = default!;
+ 
+     [Dependency] private EntityQuery<DarkLightComponent> _darkLightQuery = default!;
+@@ -74,20 +74,14 @@ private void RefreshAffectedLights()
+             if (coords.MapId == MapId.Nullspace)
+                 continue;
+ 
+-            var bounds = new Box2(coords.Position, coords.Position).Enlarged(shadegen.Range);
+-
+             _lightsInRange.Clear();
+-            _lightTree.QueryAabb(_lightsInRange, coords.MapId, bounds);
++            _illumination.GetLightsInRange(coords, shadegen.Range, _lightsInRange);
+ 
+             foreach (var light in _lightsInRange)
+             {
+                 if (_darkLightQuery.HasComp(light.Owner) || TerminatingOrDeleted(light.Owner))
+                     continue;
+ 
+-                // Tree bounds are enlarged by each light's own radius, so drop the ones really out of range.
+-                if ((_transform.GetWorldPosition(light.Comp2) - coords.Position).LengthSquared() > shadegen.Range * shadegen.Range)
+-                    continue;
+-
+                 _affected.Add(light.Owner);
+ 
+                 if (TryComp<HandheldLightComponent>(light.Owner, out var handheldcomp) && handheldcomp.Activated)
+diff --git a/Content.Shared/Interaction/SharedInteractionSystem.cs b/Content.Shared/Interaction/SharedInteractionSystem.cs
+index 10a0a7eb9ff9..8ed4df194d65 100644
+--- a/Content.Shared/Interaction/SharedInteractionSystem.cs
++++ b/Content.Shared/Interaction/SharedInteractionSystem.cs
+@@ -1,4 +1,5 @@
+-﻿using System.Diagnostics.CodeAnalysis;
++﻿using Content.Shared._Starlight.Light;
++using System.Diagnostics.CodeAnalysis;
+ using System.Linq;
+ using Content.Shared._ST.Interaction;
+ using Content.Shared._FarHorizons.Util;
+@@ -31,7 +32,7 @@
+ using Content.Shared.UserInterface;
+ using Content.Shared.Verbs;
+ using Content.Shared.Wall;
+-using Content.Shared.Inventory.VirtualItem; // Stellar - interaction particles
++using Content.Shared.Inventory.VirtualItem;
+ using JetBrains.Annotations;
+ using Robust.Shared.Containers;
+ using Robust.Shared.Input;
+@@ -1347,6 +1348,12 @@ public void DroppedInteraction(EntityUid user, EntityUid item)
+                 rotation = mover.TargetRelativeRotation;
+             }
+ 
++            // Starlight-start
++            var rotationEv = new DropRotationEvent(user, rotation);
++            RaiseLocalEvent(item, ref rotationEv);
++            rotation = rotationEv.Rotation;
++            // Starlight-end
++
+             Transform(item).LocalRotation = rotation;
+         }
+         #endregion
+diff --git a/Content.Shared/_Starlight/Light/Components/FaceAwayWhenDroppedComponent.cs b/Content.Shared/_Starlight/Light/Components/FaceAwayWhenDroppedComponent.cs
+new file mode 100644
+index 000000000000..0f5f3d0a9794
+--- /dev/null
++++ b/Content.Shared/_Starlight/Light/Components/FaceAwayWhenDroppedComponent.cs
+@@ -0,0 +1,6 @@
++using Robust.Shared.GameStates;
++
++namespace Content.Shared._Starlight.Light.Components;
++
++[RegisterComponent, NetworkedComponent]
++public sealed partial class FaceAwayWhenDroppedComponent : Component;
+diff --git a/Content.Shared/_Starlight/Light/FaceAwayWhenDroppedSystem.cs b/Content.Shared/_Starlight/Light/FaceAwayWhenDroppedSystem.cs
+new file mode 100644
+index 000000000000..e8602bb81d0d
+--- /dev/null
++++ b/Content.Shared/_Starlight/Light/FaceAwayWhenDroppedSystem.cs
+@@ -0,0 +1,51 @@
++using Content.Shared._Starlight.Light.Components;
++using Content.Shared.Throwing;
++using Robust.Shared.Physics.Components;
++using Robust.Shared.Physics.Systems;
++
++namespace Content.Shared._Starlight.Light;
++
++[ByRefEvent]
++public record struct DropRotationEvent(EntityUid User, Angle Rotation);
++
++public sealed partial class FaceAwayWhenDroppedSystem : EntitySystem
++{
++    [Dependency] private SharedTransformSystem _transform = default!;
++    [Dependency] private SharedPhysicsSystem _physics = default!;
++
++    [SubscribeLocalEvent]
++    private void OnDropRotation(Entity<FaceAwayWhenDroppedComponent> ent, ref DropRotationEvent args)
++    {
++        var parent = Transform(ent).ParentUid;
++        args.Rotation = _transform.GetWorldRotation(args.User) - _transform.GetWorldRotation(parent);
++    }
++
++    [SubscribeLocalEvent]
++    private void OnLand(Entity<FaceAwayWhenDroppedComponent> ent, ref LandEvent args)
++        => FaceAwayFrom(ent, args.User);
++
++    [SubscribeLocalEvent]
++    private void OnStopThrow(Entity<FaceAwayWhenDroppedComponent> ent, ref StopThrowEvent args)
++        => FaceAwayFrom(ent, args.User);
++
++    private void FaceAwayFrom(EntityUid uid, EntityUid? user)
++    {
++        if (user is not { } thrower || TerminatingOrDeleted(thrower))
++            return;
++
++        var xform = Transform(uid);
++        var userXform = Transform(thrower);
++        if (xform.MapID != userXform.MapID)
++            return;
++
++        var direction = _transform.GetWorldPosition(xform) - _transform.GetWorldPosition(userXform);
++        if (direction.LengthSquared() < 0.01f)
++            return;
++
++        if (TryComp<PhysicsComponent>(uid, out var physics))
++            _physics.SetAngularVelocity(uid, 0f, body: physics);
++
++        // Angle zero looks south, same as ToWorldAngle.
++        _transform.SetWorldRotation(xform, direction.ToWorldAngle());
++    }
++}
+diff --git a/Content.Shared/_Starlight/Light/SharedIlluminationSystem.cs b/Content.Shared/_Starlight/Light/SharedIlluminationSystem.cs
+new file mode 100644
+index 000000000000..028d944c5291
+--- /dev/null
++++ b/Content.Shared/_Starlight/Light/SharedIlluminationSystem.cs
+@@ -0,0 +1,56 @@
++using System.Numerics;
++using Robust.Shared.Map;
++
++namespace Content.Shared._Starlight.Light;
++
++/// <summary>
++/// Tells how lit a point of the world is, so gameplay can react to light without a client.
++/// </summary>
++public abstract partial class SharedIlluminationSystem : EntitySystem
++{
++    /// <summary>
++    /// Collects every light reaching point, already checked for range, mask and shadows.
++    /// </summary>
++    public abstract void GetLightSources(MapCoordinates point, List<LightContribution> results, IlluminationQuery query = default);
++
++    /// <summary>
++    /// Collects every light reaching entity.
++    /// </summary>
++    public abstract void GetLightSources(EntityUid uid, List<LightContribution> results, IlluminationQuery query = default);
++
++    /// <summary>
++    /// Collects every enabled light that isn't hidden in a container and stands within range of center, no matter how far it shines.
++    /// </summary>
++    public abstract void GetLightsInRange(MapCoordinates center, float range, List<Entity<SharedPointLightComponent, TransformComponent>> results);
++
++    /// <summary>
++    /// Additive light color at <paramref name="point"/>, computed the same way the light shader does.
++    /// </summary>
++    public abstract bool TryGetLightColor(MapCoordinates point, out Color color, IlluminationQuery query = default);
++
++    /// <inheritdoc cref="TryGetLightColor(MapCoordinates, out Color, IlluminationQuery)"/>
++    public abstract bool TryGetLightColor(EntityUid uid, out Color color, IlluminationQuery query = default);
++
++    /// <summary>
++    /// Brightness at point, as the luminance of <see cref="TryGetLightColor(MapCoordinates, out Color, IlluminationQuery)"/>.
++    /// </summary>
++    public float GetLightLevel(MapCoordinates point, IlluminationQuery query = default)
++        => TryGetLightColor(point, out var color, query) ? ColorToLevel(color) : 0f;
++
++    /// <inheritdoc cref="GetLightLevel(MapCoordinates, IlluminationQuery)"/>
++    public float GetLightLevel(EntityUid uid, IlluminationQuery query = default)
++        => TryGetLightColor(uid, out var color, query) ? ColorToLevel(color) : 0f;
++
++    public static float ColorToLevel(Color color)
++        => MathF.Max(0f, (0.2126f * color.R) + (0.7152f * color.G) + (0.0722f * color.B));
++}
++
++public readonly record struct IlluminationQuery(bool IgnoreAmbient = false, Func<EntityUid, bool>? Ignore = null);
++
++public readonly record struct LightContribution(
++    Entity<SharedPointLightComponent, TransformComponent> Light,
++    Vector2 Position,
++    float Distance,
++    float Radius,
++    float Mask,
++    float Intensity);
+diff --git a/Content.Shared/_Starlight/Shadekin/ShadekinSystem.cs b/Content.Shared/_Starlight/Shadekin/ShadekinSystem.cs
+index 55e722628440..f934176a08c5 100644
+--- a/Content.Shared/_Starlight/Shadekin/ShadekinSystem.cs
++++ b/Content.Shared/_Starlight/Shadekin/ShadekinSystem.cs
+@@ -25,7 +25,7 @@
+ using Robust.Shared.Map;
+ using Robust.Shared.Map.Components;
+ using Content.Shared._Starlight.Medical.Body.Events;
+-using Robust.Shared.Containers;
++using Content.Shared._Starlight.Light;
+ using Content.Shared._Starlight.Shadekin.Components;
+ using Content.Shared._Starlight.Overlay.Components;
+ using Content.Shared._Starlight.NullSpace.Components;
+@@ -36,12 +36,7 @@
+ using Content.Shared.GameTicking;
+ using Content.Shared.GameTicking.Components;
+ using Content.Shared.Stunnable;
+-using Robust.Shared;
+ using Robust.Shared.Network;
+-using Robust.Shared.ComponentTrees;
+-using Robust.Shared.Configuration;
+-using Robust.Shared.Physics;
+-using System.Numerics;
+ 
+ namespace Content.Shared._Starlight.Shadekin;
+ 
+@@ -68,14 +63,9 @@ public sealed partial class ShadekinSystem : EntitySystem
+     [Dependency] private SharedAudioSystem _audio = default!;
+     [Dependency] private StatusEffectsSystem _status = default!;
+     [Dependency] private SharedGameTicker _gameTicker = default!;
+-    [Dependency] private SharedContainerSystem _container = default!;
+-    [Dependency] private ExamineSystemShared _examine = default!;
+     [Dependency] private SharedLanguageSystem _language = default!;
+     [Dependency] private INetManager _net = default!;
+-    [Dependency] private IPrototypeManager _prototype = default!;
+-    [Dependency] private SharedLightTreeSystem _lightTree = default!;
+-    [Dependency] private SharedPointLightSystem _pointLight = default!;
+-    [Dependency] private IConfigurationManager _cfg = default!;
++    [Dependency] private SharedIlluminationSystem _illumination = default!;
+ 
+     [Dependency] private EntityQuery<DarkLightComponent> _darkLightQuery = default!;
+     [Dependency] private EntityQuery<ShadegenAffectedComponent> _shadegenAffected = default!;
+@@ -91,20 +81,23 @@ public sealed partial class ShadekinSystem : EntitySystem
+     private TimeSpan _nextUpdate = TimeSpan.Zero;
+     private readonly TimeSpan _updateCooldown = TimeSpan.FromSeconds(1f);
+ 
+-    private float _maxLightRadius;
+-
+-    private readonly List<Entity<SharedPointLightComponent, TransformComponent>> _lightsInRange = new();
++    private readonly List<LightContribution> _lightSources = new();
+     private readonly HashSet<EntityUid> _theDarkMaps = new();
+ 
+     private bool _hadTheDarkMaps;
+ 
++    private IlluminationQuery _lightQuery;
++
+     public override void Initialize()
+     {
+         base.Initialize();
+ 
+-        Subs.CVar(_cfg, CVars.MaxLightRadius, value => _maxLightRadius = value, true);
++        _lightQuery = new IlluminationQuery(Ignore: IsIgnoredLight);
+     }
+ 
++    private bool IsIgnoredLight(EntityUid light)
++        => _darkLightQuery.HasComp(light) || _shadegenAffected.HasComp(light);
++
+     [SubscribeLocalEvent]
+     private void OnDamageChanged(Entity<ShadekinComponent> _, ref BeforeDamageChangedEvent args)
+         => args.Damage.DamageDict["Asphyxiation"] = 0;
+@@ -162,12 +155,11 @@ public void UpdateAlert(EntityUid uid, ShadekinComponent component, short state)
+ 
+     /// <summary>
+     /// Return an illumination float value with is how many "energy" of light is hitting our ent.
+-    /// WARNING: This function might be expensive, Avoid calling it too much and CACHE THE RESULT!
++    /// Server only, the client has no light index and always gets 0.
+     /// </summary>
+     /// <remarks>
+-    /// Lights come from the engine light tree, so <c>lookup.enable_server_light_tree</c> has to stay on.
+-    /// Not using LightLevelSystem itself: it returns a clamped 0-1 luminance that doesn't match our
+-    /// thresholds, and it can't ignore dark/shadegen lights, nor see the ones shut in a container with us.
++    /// Keeps the shadekin falloff (energy * (1 - (d/r)^2)^2) instead of the shader one,
++    /// our thresholds are tuned for it. Lights come from <see cref="SharedIlluminationSystem"/>.
+     /// </remarks>
+     public float GetLightExposure(EntityUid uid, float cap = float.MaxValue)
+     {
+@@ -189,67 +181,17 @@ public float GetLightExposure(EntityUid uid, float cap = float.MaxValue)
+                 return illumination;
+         }
+ 
+-        _lightsInRange.Clear();
++        _lightSources.Clear();
++        _illumination.GetLightSources(uid, _lightSources, _lightQuery);
+ 
+-        // Nothing outside an occluding container reaches us, but a light shut in here with us still does.
+-        // Those are kept out of the light tree, so they have to come from the container itself.
+-        if (_container.TryGetContainingContainer(uid, out var targetContainer) && targetContainer.OccludesLight)
+-            GetLightsInContainer(targetContainer, _lightsInRange);
+-        else
+-            GetLightsAt(targetCoords, _lightsInRange);
+-
+-        // Cheapest checks first, the occlusion raycast is done last and only for lights that would actually add something.
+-        foreach (var light in _lightsInRange)
++        foreach (var source in _lightSources)
+         {
+-            if (_darkLightQuery.HasComp(light.Owner) || _shadegenAffected.HasComp(light.Owner))
+-                continue;
+-
+-            var lightComp = light.Comp1;
+-            if (!lightComp.Enabled || lightComp.Radius < 1 || lightComp.Energy <= 0)
++            if (source.Radius < 1f)
+                 continue;
+ 
+-            var (lightPos, lightRot) = _transform.GetWorldPositionRotation(light.Comp2);
+-            var dist = (targetCoords.Position - lightPos).Length();
+-
+-            // Same range check InRangeUnOccluded does.
+-            if (dist > lightComp.Radius + 0.01f)
+-                continue;
+-
+-            var denom = dist / lightComp.Radius;
++            var denom = source.Distance / source.Radius;
+             var attenuation = 1 - (denom * denom);
+-            var calculatedLight = 0f;
+-
+-            if (_prototype.TryIndex(lightComp.LightMask, out var mask))
+-            {
+-                var angleToTarget = GetAngleToTarget(lightComp, lightPos, lightRot, targetCoords.Position);
+-                foreach (var cone in mask.LightCones)
+-                {
+-                    var angleOffset = Math.Abs(Angle.ShortestDistance(angleToTarget, cone.Direction));
+-
+-                    if (angleOffset > cone.OuterWidth)
+-                        continue;
+-
+-                    var coneLight = lightComp.Energy * attenuation * attenuation;
+-                    if (angleOffset > cone.InnerWidth)
+-                    {
+-                        var angleAttenuation = (float) ((cone.OuterWidth - angleOffset) /
+-                            (cone.OuterWidth - cone.InnerWidth));
+-                        coneLight *= angleAttenuation;
+-                    }
+-
+-                    calculatedLight = Math.Max(calculatedLight, coneLight);
+-                }
+-            }
+-            else
+-                calculatedLight = lightComp.Energy * attenuation * attenuation;
+-
+-            if (calculatedLight <= 0f)
+-                continue;
+-
+-            if (!_examine.InRangeUnOccluded(new MapCoordinates(lightPos, targetCoords.MapId), targetCoords, lightComp.Radius, null))
+-                continue;
+-
+-            illumination += calculatedLight;
++            illumination += source.Light.Comp1.Energy * attenuation * attenuation * source.Mask;
+ 
+             if (illumination >= cap)
+                 break;
+@@ -258,52 +200,6 @@ public float GetLightExposure(EntityUid uid, float cap = float.MaxValue)
+         return illumination;
+     }
+ 
+-    /// <summary>
+-    /// Collect every light whose radius covers <paramref name="coords"/>, straight out of the engine light tree.
+-    /// </summary>
+-    private void GetLightsAt(MapCoordinates coords, List<Entity<SharedPointLightComponent, TransformComponent>> lights)
+-    {
+-        // The area we want lights for is a single point, but lights on trees further away can still reach it.
+-        var treeBounds = new Box2(coords.Position, coords.Position).Enlarged(_maxLightRadius);
+-
+-        foreach (var (tree, treeComp) in _lightTree.GetIntersectingTrees(coords.MapId, treeBounds))
+-        {
+-            var localPos = Vector2.Transform(coords.Position, _transform.GetInvWorldMatrix(tree));
+-            treeComp.Tree.QueryPoint(ref lights, LightQueryCallback, localPos, true);
+-        }
+-    }
+-
+-    /// <summary>
+-    /// Collect the lights sharing an occluding container with us, which the light tree leaves out.
+-    /// </summary>
+-    private void GetLightsInContainer(BaseContainer container, List<Entity<SharedPointLightComponent, TransformComponent>> lights)
+-    {
+-        foreach (var contained in container.ContainedEntities)
+-        {
+-            if (_pointLight.TryGetLight(contained, out var light))
+-                lights.Add((contained, light, Transform(contained)));
+-        }
+-    }
+-
+-    private static bool LightQueryCallback(
+-        ref List<Entity<SharedPointLightComponent, TransformComponent>> lights,
+-        in ComponentTreeEntry<SharedPointLightComponent> entry)
+-    {
+-        lights.Add(entry);
+-        return true;
+-    }
+-
+-    private static Angle GetAngleToTarget(SharedPointLightComponent lightComp, Vector2 lightPos, Angle lightRot, Vector2 targetPos)
+-    {
+-        var mapDiff = targetPos - (lightPos + lightRot.RotateVec(lightComp.Offset));
+-
+-        if (MathHelper.CloseTo(mapDiff.LengthSquared(), 0f))
+-            return Angle.Zero;
+-
+-        var maskRotation = SharedPointLightSystem.GetMaskWorldRotation(lightComp, lightRot);
+-        return mapDiff.ToWorldAngle() - maskRotation;
+-    }
+-
+     private void SetPassiveBuff(EntityUid uid, ShadekinState shadekinState)
+     {
+         if (!TryComp<PassiveDamageComponent>(uid, out var passive))
+diff --git a/Resources/Prototypes/_Starlight/Entities/Mobs/Species/Neocyte/shadekin.yml b/Resources/Prototypes/_Starlight/Entities/Mobs/Species/Neocyte/shadekin.yml
+index 40fe7138341c..377a72ff563c 100644
+--- a/Resources/Prototypes/_Starlight/Entities/Mobs/Species/Neocyte/shadekin.yml
++++ b/Resources/Prototypes/_Starlight/Entities/Mobs/Species/Neocyte/shadekin.yml
+@@ -30,10 +30,10 @@
+           Slash: -8
+     - type: Shadekin
+       thresholds:
+-        0.8: Low
+-        5: Annoying
+-        10: High
+-        15: Extreme
++        0.5: Low
++        2: Annoying
++        3.5: High
++        5: Extreme
+     - type: Absorbable
+     - type: Hunger
+     - type: Thirst
+diff --git a/Resources/Prototypes/_Starlight/Entities/Mobs/Species/shadekin.yml b/Resources/Prototypes/_Starlight/Entities/Mobs/Species/shadekin.yml
+index eb3e1be76283..6359b10b12e0 100644
+--- a/Resources/Prototypes/_Starlight/Entities/Mobs/Species/shadekin.yml
++++ b/Resources/Prototypes/_Starlight/Entities/Mobs/Species/shadekin.yml
+@@ -23,10 +23,10 @@
+     speciesId: shadekin
+   - type: Shadekin
+     thresholds:
+-      0.8: Low
+-      5: Annoying
+-      10: High
+-      15: Extreme
++      0.5: Low
++      2: Annoying
++      3.5: High
++      5: Extreme
+   - type: Absorbable
+   - type: Hunger
+   - type: Thirst
+diff --git a/Resources/Prototypes/_Starlight/Partials/Entities/Objects/Tools/flashlights.yml b/Resources/Prototypes/_Starlight/Partials/Entities/Objects/Tools/flashlights.yml
+index 0b474a65c691..5f78d509a237 100644
+--- a/Resources/Prototypes/_Starlight/Partials/Entities/Objects/Tools/flashlights.yml
++++ b/Resources/Prototypes/_Starlight/Partials/Entities/Objects/Tools/flashlights.yml
+@@ -18,6 +18,7 @@
+   - type: PointLight
+     mask: !Remove
+     lightMask: SLCurve
++  - type: FaceAwayWhenDropped
+   # Vending Machines Prices
+   - type: ItemPrice
+     fallbackPrice: 12
+diff --git a/Resources/Prototypes/_Starlight/Traits/disabilities.yml b/Resources/Prototypes/_Starlight/Traits/disabilities.yml
+index f46367b6c69e..f8a6151854cf 100644
+--- a/Resources/Prototypes/_Starlight/Traits/disabilities.yml
++++ b/Resources/Prototypes/_Starlight/Traits/disabilities.yml
+@@ -153,10 +153,10 @@
+       components:
+         - type: Shadekin
+           thresholds:
+-            0.7: Low
+-            0.8: Annoying
+-            5: High
+-            10: Extreme
++            0.4: Low
++            1.5: Annoying
++            2.5: High
++            4: Extreme
+   requirements:
+     - !type:SpeciesRequirement
+       species:
+@@ -176,10 +176,10 @@
+       components:
+         - type: Shadekin
+           thresholds:
+-            0.6: Low
+-            0.7: Annoying
+-            0.8: High
+-            5: Extreme
++            0.3: Low
++            0.5: Annoying
++            1: High
++            3: Extreme
+   requirements:
+     - !type:SpeciesRequirement
+       species:
+
+From 1f963ca1b120ef25305112642909e77a1a30bd43 Mon Sep 17 00:00:00 2001
+From: Rinary <rinary.super@gmail.com>
+Date: Tue, 20 Oct 2026 22:51:39 +0300
+Subject: [PATCH 2/4] tests time
+
+---
+ .../Light/IlluminationSystemTests.cs          | 286 ++++++++++++++++++
+ 1 file changed, 286 insertions(+)
+ create mode 100644 Content.IntegrationTests/Tests/_Starlight/Light/IlluminationSystemTests.cs
+
+diff --git a/Content.IntegrationTests/Tests/_Starlight/Light/IlluminationSystemTests.cs b/Content.IntegrationTests/Tests/_Starlight/Light/IlluminationSystemTests.cs
+new file mode 100644
+index 000000000000..1c681ba5abb9
+--- /dev/null
++++ b/Content.IntegrationTests/Tests/_Starlight/Light/IlluminationSystemTests.cs
+@@ -0,0 +1,286 @@
++using Content.IntegrationTests.Fixtures;
++using Content.Server._Starlight.Light;
++using Content.Shared._Starlight.Light;
++using Robust.Shared;
++using Robust.Shared.Configuration;
++using Robust.Shared.Containers;
++using Robust.Shared.GameObjects;
++using Robust.Shared.ContentPack;
++using Robust.Shared.Map;
++using Robust.Shared.Prototypes;
++using System.IO;
++using System.Numerics;
++
++namespace Content.IntegrationTests.Tests._Starlight.Light;
++
++[TestFixture]
++[TestOf(typeof(IlluminationSystem))]
++public sealed class IlluminationSystemTests : GameTest
++{
++
++    [Test]
++    public async Task CarriedLightFollowsHolder()
++    {
++        var server = Pair.Server;
++        var map = await Pair.CreateTestMap();
++
++        var illumination = server.System<SharedIlluminationSystem>();
++        var pointLight = server.System<SharedPointLightSystem>();
++        var containers = server.System<SharedContainerSystem>();
++        var transform = server.System<SharedTransformSystem>();
++
++        EntityUid holder = default;
++        EntityUid light = default;
++        var query = new IlluminationQuery(IgnoreAmbient: true);
++
++        await server.WaitAssertion(() =>
++        {
++            holder = server.EntMan.Spawn(null, new MapCoordinates(100, 100, map.MapId));
++            light = server.EntMan.Spawn(null, new MapCoordinates(100, 100, map.MapId));
++
++            var lightComp = pointLight.EnsureLight(light);
++            pointLight.SetRadius(light, 5f, lightComp);
++            pointLight.SetEnergy(light, 2f, lightComp);
++            pointLight.SetEnabled(light, true, lightComp);
++
++            var hand = containers.EnsureContainer<Container>(holder, "hand");
++            hand.OccludesLight = false;
++            Assert.That(containers.Insert(light, hand, force: true), Is.True);
++        });
++
++        await server.WaitRunTicks(1);
++
++        await server.WaitAssertion(() =>
++        {
++            Assert.That(illumination.GetLightLevel(new MapCoordinates(102, 100, map.MapId), query), Is.GreaterThan(0f),
++                "A light in a hand should shine around its holder.");
++
++            transform.SetMapCoordinates(holder, new MapCoordinates(150, 100, map.MapId));
++
++            Assert.Multiple(() =>
++            {
++                Assert.That(illumination.GetLightLevel(new MapCoordinates(102, 100, map.MapId), query), Is.Zero,
++                    "The light should have left with its holder.");
++                Assert.That(illumination.GetLightLevel(new MapCoordinates(152, 100, map.MapId), query), Is.GreaterThan(0f),
++                    "The light should shine where its holder went.");
++            });
++
++            var hand = containers.GetContainer(holder, "hand");
++            hand.OccludesLight = true;
++            Assert.That(illumination.GetLightLevel(new MapCoordinates(152, 100, map.MapId), query), Is.Zero,
++                "A light shut in a container that blocks light shouldn't shine.");
++
++            server.EntMan.DeleteEntity(holder);
++        });
++    }
++
++    [Test]
++    public async Task AnchoredLightFollowsUnanchor()
++    {
++        var server = Pair.Server;
++        var map = await Pair.CreateTestMap();
++
++        var illumination = server.System<SharedIlluminationSystem>();
++        var pointLight = server.System<SharedPointLightSystem>();
++        var transform = server.System<SharedTransformSystem>();
++
++        EntityUid light = default;
++        var query = new IlluminationQuery(IgnoreAmbient: true);
++        var near = map.GridCoords.Offset(new Vector2(1, 0));
++
++        await server.WaitAssertion(() =>
++        {
++            light = server.EntMan.SpawnAtPosition(null, map.GridCoords);
++
++            var lightComp = pointLight.EnsureLight(light);
++            pointLight.SetRadius(light, 5f, lightComp);
++            pointLight.SetEnergy(light, 2f, lightComp);
++            pointLight.SetEnabled(light, true, lightComp);
++
++            Assert.That(transform.AnchorEntity(light), Is.True);
++        });
++
++        await server.WaitRunTicks(1);
++
++        await server.WaitAssertion(() =>
++        {
++            Assert.That(illumination.GetLightLevel(transform.ToMapCoordinates(near), query), Is.GreaterThan(0f),
++                "An anchored light should shine next to it.");
++
++            transform.Unanchor(light);
++            transform.SetMapCoordinates(light, new MapCoordinates(200, 200, map.MapId));
++
++            Assert.Multiple(() =>
++            {
++                Assert.That(illumination.GetLightLevel(transform.ToMapCoordinates(near), query), Is.Zero,
++                    "An unanchored light shouldn't stay stuck where it was anchored.");
++                Assert.That(illumination.GetLightLevel(new MapCoordinates(201, 200, map.MapId), query), Is.GreaterThan(0f),
++                    "An unanchored light should shine where it went.");
++            });
++
++            server.EntMan.DeleteEntity(light);
++        });
++    }
++
++    [Test]
++    public async Task OccludersBlockShadowCastingLights()
++    {
++        var server = Pair.Server;
++        var map = await Pair.CreateTestMap();
++
++        var illumination = server.System<SharedIlluminationSystem>();
++        var pointLight = server.System<SharedPointLightSystem>();
++
++        EntityUid light = default;
++        EntityUid wall = default;
++        var query = new IlluminationQuery(IgnoreAmbient: true);
++        var target = new MapCoordinates(302, 300, map.MapId);
++
++        await server.WaitAssertion(() =>
++        {
++            light = server.EntMan.Spawn(null, new MapCoordinates(300, 300, map.MapId));
++            wall = server.EntMan.Spawn(null, new MapCoordinates(301, 300, map.MapId));
++            server.EntMan.AddComponent<OccluderComponent>(wall);
++
++            var lightComp = pointLight.EnsureLight(light);
++            pointLight.SetRadius(light, 5f, lightComp);
++            pointLight.SetEnergy(light, 2f, lightComp);
++            pointLight.SetEnabled(light, true, lightComp);
++            pointLight.SetCastShadows(light, true, lightComp);
++        });
++
++        await server.WaitRunTicks(1);
++
++        await server.WaitAssertion(() =>
++        {
++            Assert.Multiple(() =>
++            {
++                Assert.That(illumination.GetLightLevel(target, query), Is.Zero, "The wall should shade us.");
++                Assert.That(illumination.GetLightLevel(new MapCoordinates(300, 302, map.MapId), query), Is.GreaterThan(0f),
++                    "Nothing stands between the light and this side.");
++            });
++
++            pointLight.SetCastShadows(light, false);
++            Assert.That(illumination.GetLightLevel(target, query), Is.GreaterThan(0f),
++                "A light that casts no shadows goes through walls, same as on the client.");
++
++            server.EntMan.DeleteEntity(light);
++            server.EntMan.DeleteEntity(wall);
++        });
++    }
++
++    [Test]
++    public async Task AllLightMasksReadable()
++    {
++        var server = Pair.Server;
++
++        await server.WaitAssertion(() =>
++        {
++            var resources = server.ResolveDependency<IResourceManager>();
++            var protos = server.ResolveDependency<IPrototypeManager>();
++
++            Assert.Multiple(() =>
++            {
++                foreach (var mask in protos.EnumeratePrototypes<LightMaskPrototype>())
++                {
++                    using var stream = new MemoryStream();
++                    using (var file = resources.ContentFileRead(mask.MaskPath))
++                        file.CopyTo(stream);
++                    stream.Position = 0;
++
++                    Assert.That(LightMaskReader.TryRead(stream, out var width, out _, out var values), Is.True,
++                        $"Light mask {mask.ID} ({mask.MaskPath}) can't be read on the server.");
++
++                    if (mask.ID != "SLCurve")
++                        continue;
++
++                    // Sampled with PIL from cone_curve.png.
++                    Assert.That(values[128 * width + 256], Is.EqualTo(255), "Middle of the beam.");
++                    Assert.That(values[243 * width + 256], Is.EqualTo(132), "Right at the bulb.");
++                    Assert.That(values[256 * width + 384], Is.Zero, "Beside the bulb.");
++                }
++            });
++        });
++    }
++
++    [Test]
++    public async Task FlashlightMaskShinesSouthUnrotated()
++    {
++        var server = Pair.Server;
++        var map = await Pair.CreateTestMap();
++
++        var illumination = server.System<SharedIlluminationSystem>();
++        var pointLight = server.System<SharedPointLightSystem>();
++
++        EntityUid light = default;
++        var query = new IlluminationQuery(IgnoreAmbient: true);
++
++        await server.WaitAssertion(() =>
++        {
++            light = server.EntMan.Spawn("FlashlightLantern", new MapCoordinates(500, 500, map.MapId));
++            pointLight.SetEnabled(light, true);
++        });
++
++        await server.WaitRunTicks(1);
++
++        await server.WaitAssertion(() =>
++        {
++            Assert.Multiple(() =>
++            {
++                Assert.That(illumination.GetLightLevel(new MapCoordinates(500, 497, map.MapId), query), Is.GreaterThan(0f),
++                    "The beam should go south.");
++                Assert.That(illumination.GetLightLevel(new MapCoordinates(500, 503, map.MapId), query), Is.Zero,
++                    "Nothing should come out the back.");
++                Assert.That(illumination.GetLightLevel(new MapCoordinates(503, 500, map.MapId), query), Is.Zero,
++                    "Nothing should come out the side.");
++            });
++
++            server.EntMan.DeleteEntity(light);
++        });
++    }
++
++    [Test]
++    public async Task LightInsideOccluderStillShinesOut()
++    {
++        var server = Pair.Server;
++        var map = await Pair.CreateTestMap();
++
++        var illumination = server.System<SharedIlluminationSystem>();
++        var pointLight = server.System<SharedPointLightSystem>();
++
++        EntityUid light = default;
++        EntityUid wall = default;
++        var query = new IlluminationQuery(IgnoreAmbient: true);
++
++        await server.WaitAssertion(() =>
++        {
++            wall = server.EntMan.Spawn(null, new MapCoordinates(400, 400, map.MapId));
++            server.EntMan.AddComponent<OccluderComponent>(wall);
++
++            // Same offset as the Starlight wall lights, leaving the light just inside the wall.
++            light = server.EntMan.Spawn(null, new MapCoordinates(400, 400, map.MapId));
++            var lightComp = pointLight.EnsureLight(light);
++            lightComp.Offset = new Vector2(0, -0.495f);
++            pointLight.SetRadius(light, 10f, lightComp);
++            pointLight.SetEnergy(light, 0.8f, lightComp);
++            pointLight.SetEnabled(light, true, lightComp);
++            pointLight.SetCastShadows(light, true, lightComp);
++        });
++
++        await server.WaitRunTicks(1);
++
++        await server.WaitAssertion(() =>
++        {
++            Assert.Multiple(() =>
++            {
++                Assert.That(illumination.GetLightLevel(new MapCoordinates(400, 397, map.MapId), query), Is.GreaterThan(0f),
++                    "The wall the light is mounted in shouldn't shade the room.");
++                Assert.That(illumination.GetLightLevel(new MapCoordinates(400, 402, map.MapId), query), Is.Zero,
++                    "The light shouldn't leak through its own wall to the other side.");
++            });
++
++            server.EntMan.DeleteEntity(light);
++            server.EntMan.DeleteEntity(wall);
++        });
++    }
++}
+
+From dc0201e187fb9421e0f0370561cd7d484545c419 Mon Sep 17 00:00:00 2001
+From: Rinary <rinary.super@gmail.com>
+Date: Wed, 21 Oct 2026 16:16:07 +0300
+Subject: [PATCH 3/4] better perf
+
+---
+ .../_Starlight/Light/IlluminationSystem.cs    | 163 ++++++++++++++----
+ 1 file changed, 134 insertions(+), 29 deletions(-)
+
+diff --git a/Content.Server/_Starlight/Light/IlluminationSystem.cs b/Content.Server/_Starlight/Light/IlluminationSystem.cs
+index 2e71ff84ef30..9ba5158b782f 100644
+--- a/Content.Server/_Starlight/Light/IlluminationSystem.cs
++++ b/Content.Server/_Starlight/Light/IlluminationSystem.cs
+@@ -4,6 +4,7 @@
+ using Content.Shared._Starlight.Light;
+ using Robust.Server.GameObjects;
+ using Robust.Shared;
++using Robust.Shared.ComponentTrees;
+ using Robust.Shared.Configuration;
+ using Robust.Shared.Containers;
+ using Robust.Shared.Map;
+@@ -11,6 +12,7 @@
+ using Robust.Shared.Physics;
+ using Robust.Shared.ContentPack;
+ using Robust.Shared.Prototypes;
++using Robust.Shared.Timing;
+ 
+ namespace Content.Server._Starlight.Light;
+ 
+@@ -22,6 +24,7 @@ public sealed partial class IlluminationSystem : SharedIlluminationSystem
+     [Dependency] private IConfigurationManager _cfg = default!;
+     [Dependency] private IPrototypeManager _proto = default!;
+     [Dependency] private IResourceManager _resources = default!;
++    [Dependency] private IGameTiming _timing = default!;
+     [Dependency] private SharedTransformSystem _transform = default!;
+     [Dependency] private SharedMapSystem _map = default!;
+     [Dependency] private SharedContainerSystem _container = default!;
+@@ -46,11 +49,16 @@ public sealed partial class IlluminationSystem : SharedIlluminationSystem
+ 
+     private readonly List<Entity<SharedPointLightComponent, TransformComponent>> _loose = new();
+     private readonly Dictionary<EntityUid, int> _looseIndex = new();
++    private readonly HashSet<EntityUid> _dormant = new();
++
++    private float _maxReach;
++    private TimeSpan _nextReachUpdate;
++    private static readonly TimeSpan ReachUpdateInterval = TimeSpan.FromSeconds(2);
+ 
+     private readonly List<Candidate> _candidates = new();
+     private readonly List<Entity<SharedPointLightComponent, TransformComponent>> _misplaced = new();
+     private readonly List<LightContribution> _sources = new();
+-    private readonly List<RayCastResults> _occluderHits = new();
++    private readonly List<OccluderTree> _occluderTrees = new();
+     private List<Entity<MapGridComponent>> _grids = new();
+ 
+     private readonly Dictionary<string, MaskImage?> _masks = new();
+@@ -77,6 +85,34 @@ public override void Shutdown()
+         _anchoredIndex.Clear();
+         _loose.Clear();
+         _looseIndex.Clear();
++        _dormant.Clear();
++    }
++
++    public override void Update(float frameTime)
++    {
++        base.Update(frameTime);
++
++        if (_timing.CurTime < _nextReachUpdate)
++            return;
++
++        _nextReachUpdate = _timing.CurTime + ReachUpdateInterval;
++
++        var reach = 0f;
++        foreach (var bucket in _anchored.Values)
++        {
++            foreach (var light in bucket)
++            {
++                if (light.Comp1.Enabled)
++                    reach = MathF.Max(reach, Reach(light.Comp1));
++            }
++        }
++
++        foreach (var light in _loose)
++        {
++            reach = MathF.Max(reach, Reach(light.Comp1));
++        }
++
++        _maxReach = reach;
+     }
+ 
+     #region Index
+@@ -93,6 +129,10 @@ private void OnLightRemove(Entity<PointLightComponent> ent, ref ComponentRemove
+     private void OnAnchorChanged(Entity<PointLightComponent> ent, ref AnchorStateChangedEvent args)
+         => Relocate((ent, ent.Comp, args.Transform));
+ 
++    [SubscribeLocalEvent]
++    private void OnToggle(Entity<PointLightComponent> ent, ref PointLightToggleEvent _)
++        => Relocate((ent, ent.Comp, Transform(ent)));
++
+     [SubscribeLocalEvent]
+     private void OnReAnchor(Entity<PointLightComponent> ent, ref ReAnchorEvent args)
+         => Relocate((ent, ent.Comp, args.Xform));
+@@ -107,6 +147,9 @@ private void Relocate(Entity<SharedPointLightComponent, TransformComponent> ligh
+ 
+     private void AddLight(Entity<SharedPointLightComponent, TransformComponent> light)
+     {
++        if (light.Comp1.Enabled)
++            _maxReach = MathF.Max(_maxReach, Reach(light.Comp1));
++
+         if (IsAnchoredToGrid(light.Comp2, out var grid))
+         {
+             var key = (grid, ChunkOf(light.Comp2.LocalPosition));
+@@ -121,6 +164,12 @@ private void AddLight(Entity<SharedPointLightComponent, TransformComponent> ligh
+             return;
+         }
+ 
++        if (!light.Comp1.Enabled)
++        {
++            _dormant.Add(light);
++            return;
++        }
++
+         _looseIndex[light] = _loose.Count;
+         _loose.Add(light);
+     }
+@@ -145,7 +194,7 @@ private void RemoveLight(EntityUid uid)
+             return;
+         }
+ 
+-        if (!_looseIndex.Remove(uid, out var index))
++        if (_dormant.Remove(uid) || !_looseIndex.Remove(uid, out var index))
+             return;
+ 
+         var last = _loose[^1];
+@@ -175,13 +224,29 @@ public override void GetLightSources(MapCoordinates point, List<LightContributio
+         if (point.MapId == MapId.Nullspace)
+             return;
+ 
+-        CollectCandidates(point, _maxLightRadius + OffsetMargin);
++        CollectCandidates(point, MathF.Min(_maxReach, _maxLightRadius + OffsetMargin), byReach: true);
++
++        _occluderTrees.Clear();
++        var treesReady = false;
+ 
+         foreach (var candidate in _candidates)
+         {
+-            if (TryEvaluate(candidate, point.Position, query, out var contribution)
+-                && (!contribution.Light.Comp1.CastShadows || !IsOccluded(point.MapId, contribution.Position, point.Position)))
+-                results.Add(contribution);
++            if (!TryEvaluate(candidate, point.Position, query, out var contribution))
++                continue;
++
++            if (contribution.Light.Comp1.CastShadows)
++            {
++                if (!treesReady)
++                {
++                    PrepareOccluderTrees(point);
++                    treesReady = true;
++                }
++
++                if (IsOccluded(contribution.Position, point.Position))
++                    continue;
++            }
++
++            results.Add(contribution);
+         }
+     }
+ 
+@@ -201,7 +266,7 @@ public override void GetLightsInRange(MapCoordinates center, float range, List<E
+         if (center.MapId == MapId.Nullspace)
+             return;
+ 
+-        CollectCandidates(center, range);
++        CollectCandidates(center, range, byReach: false);
+ 
+         foreach (var candidate in _candidates)
+         {
+@@ -250,7 +315,7 @@ private Color SumColor(Vector4 color)
+         return new Color(color);
+     }
+ 
+-    private void CollectCandidates(MapCoordinates point, float range)
++    private void CollectCandidates(MapCoordinates point, float range, bool byReach)
+     {
+         _candidates.Clear();
+         _misplaced.Clear();
+@@ -263,8 +328,8 @@ private void CollectCandidates(MapCoordinates point, float range)
+ 
+         foreach (var grid in _grids)
+         {
+-            var (_, gridRot, gridMatrix) = _transform.GetWorldPositionRotationMatrix(grid.Owner);
+-            var local = Vector2.Transform(point.Position, _transform.GetInvWorldMatrix(grid.Owner));
++            var (_, gridRot, gridMatrix, gridInvMatrix) = _transform.GetWorldPositionRotationMatrixWithInv(grid.Owner);
++            var local = Vector2.Transform(point.Position, gridInvMatrix);
+             var min = ChunkOf(local - new Vector2(range));
+             var max = ChunkOf(local + new Vector2(range));
+ 
+@@ -272,30 +337,31 @@ private void CollectCandidates(MapCoordinates point, float range)
+             {
+                 for (var y = min.Y; y <= max.Y; y++)
+                 {
+-                    if (!_anchored.TryGetValue((grid.Owner, new Vector2i(x, y)), out var bucket))
++                    var chunk = new Vector2i(x, y);
++                    if (!_anchored.TryGetValue((grid.Owner, chunk), out var bucket))
+                         continue;
+ 
+                     foreach (var light in bucket)
+                     {
++                        if (!light.Comp1.Enabled)
++                            continue;
++
+                         var xform = light.Comp2;
+ 
+                         if (!IsAnchoredToGrid(xform, out var lightGrid)
+                             || lightGrid != grid.Owner
+-                            || ChunkOf(xform.LocalPosition) != new Vector2i(x, y))
++                            || ChunkOf(xform.LocalPosition) != chunk)
+                         {
+                             _misplaced.Add(light);
+-                            TryAddLoose(light, point, rangeSquared);
++                            TryAddLoose(light, point, rangeSquared, byReach);
+                             continue;
+                         }
+ 
+-                        if (!light.Comp1.Enabled)
++                        var distanceSquared = (xform.LocalPosition - local).LengthSquared();
++                        if (distanceSquared > rangeSquared || byReach && distanceSquared > ReachSquared(light.Comp1))
+                             continue;
+ 
+-                        var position = Vector2.Transform(xform.LocalPosition, gridMatrix);
+-                        if ((position - point.Position).LengthSquared() > rangeSquared)
+-                            continue;
+-
+-                        _candidates.Add(new(light, position, gridRot + xform.LocalRotation));
++                        _candidates.Add(new(light, Vector2.Transform(xform.LocalPosition, gridMatrix), gridRot + xform.LocalRotation));
+                     }
+                 }
+             }
+@@ -306,7 +372,7 @@ private void CollectCandidates(MapCoordinates point, float range)
+             if (light.Comp1.Enabled && IsAnchoredToGrid(light.Comp2, out _))
+                 _misplaced.Add(light);
+ 
+-            TryAddLoose(light, point, rangeSquared);
++            TryAddLoose(light, point, rangeSquared, byReach);
+         }
+ 
+         foreach (var light in _misplaced)
+@@ -315,13 +381,14 @@ private void CollectCandidates(MapCoordinates point, float range)
+         }
+     }
+ 
+-    private void TryAddLoose(Entity<SharedPointLightComponent, TransformComponent> light, MapCoordinates point, float rangeSquared)
++    private void TryAddLoose(Entity<SharedPointLightComponent, TransformComponent> light, MapCoordinates point, float rangeSquared, bool byReach)
+     {
+         if (!light.Comp1.Enabled || light.Comp2.MapID != point.MapId)
+             return;
+ 
+         var (position, rotation) = _transform.GetWorldPositionRotation(light.Comp2);
+-        if ((position - point.Position).LengthSquared() > rangeSquared)
++        var distanceSquared = (position - point.Position).LengthSquared();
++        if (distanceSquared > rangeSquared || byReach && distanceSquared > ReachSquared(light.Comp1))
+             return;
+ 
+         if (IsHiddenInContainer(light))
+@@ -330,6 +397,15 @@ private void TryAddLoose(Entity<SharedPointLightComponent, TransformComponent> l
+         _candidates.Add(new(light, position, rotation));
+     }
+ 
++    private float ReachSquared(SharedPointLightComponent light)
++    {
++        var reach = Reach(light);
++        return reach * reach;
++    }
++
++    private float Reach(SharedPointLightComponent light)
++        => MathF.Min(light.Radius, _maxLightRadius) + light.Offset.Length();
++
+     private bool TryEvaluate(Candidate candidate, Vector2 target, IlluminationQuery query, out LightContribution contribution)
+     {
+         contribution = default;
+@@ -440,25 +516,50 @@ private float GetMaskFactor(SharedPointLightComponent light, Vector2 delta, Angl
+         return image;
+     }
+ 
+-    private bool IsOccluded(MapId map, Vector2 from, Vector2 to)
++    private void PrepareOccluderTrees(MapCoordinates point)
++    {
++        var bounds = new Box2(point.Position, point.Position).Enlarged(_maxLightRadius + OffsetMargin);
++        foreach (var (uid, tree) in _occluder.GetIntersectingTrees(point.MapId, bounds))
++        {
++            var invMatrix = _transform.GetInvWorldMatrix(uid);
++            _occluderTrees.Add(new(tree, invMatrix));
++        }
++    }
++
++    private bool IsOccluded(Vector2 from, Vector2 to)
+     {
+-        var delta = to - from;
++        var delta = from - to;
+         var length = delta.Length();
+         if (MathHelper.CloseTo(length, 0f))
+             return false;
+ 
+-        _occluderHits.Clear();
+-        _occluder.IntersectRay(_occluderHits, map, new Ray(to, -delta / length), length);
+-
+-        foreach (var hit in _occluderHits)
++        foreach (var tree in _occluderTrees)
+         {
+-            if (hit.Distance < length - OwnOccluderTolerance)
++            var start = Vector2.Transform(to, tree.InvMatrix);
++            var end = Vector2.Transform(from, tree.InvMatrix);
++            var state = new OcclusionState(new Ray(start, (end - start) / length), length - OwnOccluderTolerance);
++
++            tree.Tree.Tree.QueryAabb(ref state, OcclusionCallback, new Box2(Vector2.Min(start, end), Vector2.Max(start, end)), approx: true);
++            if (state.Hit)
+                 return true;
+         }
+ 
+         return false;
+     }
+ 
++    private static bool OcclusionCallback(ref OcclusionState state, in ComponentTreeEntry<OccluderComponent> entry)
++    {
++        var position = entry.Transform.LocalPosition;
++        var bounds = new Box2Rotated(entry.Component.LocalBounds.Translated(position), entry.Transform.LocalRotation, position)
++            .CalcBoundingBox();
++
++        if (!state.Ray.Intersects(bounds, out var distance, out _) || distance >= state.MaxDistance)
++            return true;
++
++        state.Hit = true;
++        return false;
++    }
++
+     private bool TryGetAmbient(MapId mapId, out Color color, out bool lightingEnabled)
+     {
+         color = default;
+@@ -529,6 +630,10 @@ private void GetLightsInContainer(BaseContainer container, Vector2 target, List<
+ 
+     #endregion
+ 
++    private record struct OcclusionState(Ray Ray, float MaxDistance, bool Hit = false);
++
++    private readonly record struct OccluderTree(OccluderTreeComponent Tree, Matrix3x2 InvMatrix);
++
+     private sealed record MaskImage(int Width, int Height, byte[] Values);
+ 
+     private readonly record struct Candidate(
+
+From 8d8a7665736955db0e9a61b01628e2363ea9ffec Mon Sep 17 00:00:00 2001
+From: Rinary <rinary.super@gmail.com>
+Date: Thu, 22 Oct 2026 17:49:40 +0300
+Subject: [PATCH 4/4] fix reviewdog
+
+---
+ .../Light/IlluminationSystemTests.cs          | 32 +++++++--------
+ .../_Starlight/Light/IlluminationSystem.cs    | 41 +++++++++----------
+ .../_Starlight/Light/LightMaskReader.cs       |  7 +---
+ 3 files changed, 37 insertions(+), 43 deletions(-)
+
+diff --git a/Content.IntegrationTests/Tests/_Starlight/Light/IlluminationSystemTests.cs b/Content.IntegrationTests/Tests/_Starlight/Light/IlluminationSystemTests.cs
+index 1c681ba5abb9..6da7d3774a48 100644
+--- a/Content.IntegrationTests/Tests/_Starlight/Light/IlluminationSystemTests.cs
++++ b/Content.IntegrationTests/Tests/_Starlight/Light/IlluminationSystemTests.cs
+@@ -1,8 +1,6 @@
+ using Content.IntegrationTests.Fixtures;
+ using Content.Server._Starlight.Light;
+ using Content.Shared._Starlight.Light;
+-using Robust.Shared;
+-using Robust.Shared.Configuration;
+ using Robust.Shared.Containers;
+ using Robust.Shared.GameObjects;
+ using Robust.Shared.ContentPack;
+@@ -57,13 +55,13 @@ await server.WaitAssertion(() =>
+ 
+             transform.SetMapCoordinates(holder, new MapCoordinates(150, 100, map.MapId));
+ 
+-            Assert.Multiple(() =>
++            using (Assert.EnterMultipleScope())
+             {
+                 Assert.That(illumination.GetLightLevel(new MapCoordinates(102, 100, map.MapId), query), Is.Zero,
+                     "The light should have left with its holder.");
+                 Assert.That(illumination.GetLightLevel(new MapCoordinates(152, 100, map.MapId), query), Is.GreaterThan(0f),
+                     "The light should shine where its holder went.");
+-            });
++            }
+ 
+             var hand = containers.GetContainer(holder, "hand");
+             hand.OccludesLight = true;
+@@ -110,13 +108,13 @@ await server.WaitAssertion(() =>
+             transform.Unanchor(light);
+             transform.SetMapCoordinates(light, new MapCoordinates(200, 200, map.MapId));
+ 
+-            Assert.Multiple(() =>
++            using (Assert.EnterMultipleScope())
+             {
+                 Assert.That(illumination.GetLightLevel(transform.ToMapCoordinates(near), query), Is.Zero,
+                     "An unanchored light shouldn't stay stuck where it was anchored.");
+                 Assert.That(illumination.GetLightLevel(new MapCoordinates(201, 200, map.MapId), query), Is.GreaterThan(0f),
+                     "An unanchored light should shine where it went.");
+-            });
++            }
+ 
+             server.EntMan.DeleteEntity(light);
+         });
+@@ -153,12 +151,12 @@ await server.WaitAssertion(() =>
+ 
+         await server.WaitAssertion(() =>
+         {
+-            Assert.Multiple(() =>
++            using (Assert.EnterMultipleScope())
+             {
+                 Assert.That(illumination.GetLightLevel(target, query), Is.Zero, "The wall should shade us.");
+                 Assert.That(illumination.GetLightLevel(new MapCoordinates(300, 302, map.MapId), query), Is.GreaterThan(0f),
+                     "Nothing stands between the light and this side.");
+-            });
++            }
+ 
+             pointLight.SetCastShadows(light, false);
+             Assert.That(illumination.GetLightLevel(target, query), Is.GreaterThan(0f),
+@@ -179,7 +177,7 @@ await server.WaitAssertion(() =>
+             var resources = server.ResolveDependency<IResourceManager>();
+             var protos = server.ResolveDependency<IPrototypeManager>();
+ 
+-            Assert.Multiple(() =>
++            using (Assert.EnterMultipleScope())
+             {
+                 foreach (var mask in protos.EnumeratePrototypes<LightMaskPrototype>())
+                 {
+@@ -195,11 +193,11 @@ await server.WaitAssertion(() =>
+                         continue;
+ 
+                     // Sampled with PIL from cone_curve.png.
+-                    Assert.That(values[128 * width + 256], Is.EqualTo(255), "Middle of the beam.");
+-                    Assert.That(values[243 * width + 256], Is.EqualTo(132), "Right at the bulb.");
+-                    Assert.That(values[256 * width + 384], Is.Zero, "Beside the bulb.");
++                    Assert.That(values[(128 * width) + 256], Is.EqualTo(255), "Middle of the beam.");
++                    Assert.That(values[(243 * width) + 256], Is.EqualTo(132), "Right at the bulb.");
++                    Assert.That(values[(256 * width) + 384], Is.Zero, "Beside the bulb.");
+                 }
+-            });
++            }
+         });
+     }
+ 
+@@ -225,7 +223,7 @@ await server.WaitAssertion(() =>
+ 
+         await server.WaitAssertion(() =>
+         {
+-            Assert.Multiple(() =>
++            using (Assert.EnterMultipleScope())
+             {
+                 Assert.That(illumination.GetLightLevel(new MapCoordinates(500, 497, map.MapId), query), Is.GreaterThan(0f),
+                     "The beam should go south.");
+@@ -233,7 +231,7 @@ await server.WaitAssertion(() =>
+                     "Nothing should come out the back.");
+                 Assert.That(illumination.GetLightLevel(new MapCoordinates(503, 500, map.MapId), query), Is.Zero,
+                     "Nothing should come out the side.");
+-            });
++            }
+ 
+             server.EntMan.DeleteEntity(light);
+         });
+@@ -271,13 +269,13 @@ await server.WaitAssertion(() =>
+ 
+         await server.WaitAssertion(() =>
+         {
+-            Assert.Multiple(() =>
++            using (Assert.EnterMultipleScope())
+             {
+                 Assert.That(illumination.GetLightLevel(new MapCoordinates(400, 397, map.MapId), query), Is.GreaterThan(0f),
+                     "The wall the light is mounted in shouldn't shade the room.");
+                 Assert.That(illumination.GetLightLevel(new MapCoordinates(400, 402, map.MapId), query), Is.Zero,
+                     "The light shouldn't leak through its own wall to the other side.");
+-            });
++            }
+ 
+             server.EntMan.DeleteEntity(light);
+             server.EntMan.DeleteEntity(wall);
+diff --git a/Content.Server/_Starlight/Light/IlluminationSystem.cs b/Content.Server/_Starlight/Light/IlluminationSystem.cs
+index 9ba5158b782f..b8501a15a0fa 100644
+--- a/Content.Server/_Starlight/Light/IlluminationSystem.cs
++++ b/Content.Server/_Starlight/Light/IlluminationSystem.cs
+@@ -44,33 +44,33 @@ public sealed partial class IlluminationSystem : SharedIlluminationSystem
+ 
+     private float _maxLightRadius;
+ 
+-    private readonly Dictionary<(EntityUid Grid, Vector2i Chunk), List<Entity<SharedPointLightComponent, TransformComponent>>> _anchored = new();
+-    private readonly Dictionary<EntityUid, (EntityUid Grid, Vector2i Chunk)> _anchoredIndex = new();
++    private readonly Dictionary<(EntityUid Grid, Vector2i Chunk), List<Entity<SharedPointLightComponent, TransformComponent>>> _anchored = [];
++    private readonly Dictionary<EntityUid, (EntityUid Grid, Vector2i Chunk)> _anchoredIndex = [];
+ 
+-    private readonly List<Entity<SharedPointLightComponent, TransformComponent>> _loose = new();
+-    private readonly Dictionary<EntityUid, int> _looseIndex = new();
+-    private readonly HashSet<EntityUid> _dormant = new();
++    private readonly List<Entity<SharedPointLightComponent, TransformComponent>> _loose = [];
++    private readonly Dictionary<EntityUid, int> _looseIndex = [];
++    private readonly HashSet<EntityUid> _dormant = [];
+ 
+     private float _maxReach;
+     private TimeSpan _nextReachUpdate;
+-    private static readonly TimeSpan ReachUpdateInterval = TimeSpan.FromSeconds(2);
++    private static readonly TimeSpan _reachUpdateInterval = TimeSpan.FromSeconds(2);
+ 
+-    private readonly List<Candidate> _candidates = new();
+-    private readonly List<Entity<SharedPointLightComponent, TransformComponent>> _misplaced = new();
+-    private readonly List<LightContribution> _sources = new();
+-    private readonly List<OccluderTree> _occluderTrees = new();
+-    private List<Entity<MapGridComponent>> _grids = new();
++    private readonly List<Candidate> _candidates = [];
++    private readonly List<Entity<SharedPointLightComponent, TransformComponent>> _misplaced = [];
++    private readonly List<LightContribution> _sources = [];
++    private readonly List<OccluderTree> _occluderTrees = [];
++    private List<Entity<MapGridComponent>> _grids = [];
+ 
+-    private readonly Dictionary<string, MaskImage?> _masks = new();
++    private readonly Dictionary<string, MaskImage?> _masks = [];
+ 
+     public override void Initialize()
+     {
+         base.Initialize();
+ 
+         Subs.CVar(_cfg, CVars.MaxLightRadius, value => _maxLightRadius = value, true);
+-        SubscribeLocalEvent<PrototypesReloadedEventArgs>(OnPrototypesReloaded);
+     }
+ 
++    [SubscribeLocalEvent]
+     private void OnPrototypesReloaded(PrototypesReloadedEventArgs args)
+     {
+         if (args.WasModified<LightMaskPrototype>())
+@@ -95,7 +95,7 @@ public override void Update(float frameTime)
+         if (_timing.CurTime < _nextReachUpdate)
+             return;
+ 
+-        _nextReachUpdate = _timing.CurTime + ReachUpdateInterval;
++        _nextReachUpdate = _timing.CurTime + _reachUpdateInterval;
+ 
+         var reach = 0f;
+         foreach (var bucket in _anchored.Values)
+@@ -155,7 +155,7 @@ private void AddLight(Entity<SharedPointLightComponent, TransformComponent> ligh
+             var key = (grid, ChunkOf(light.Comp2.LocalPosition));
+             if (!_anchored.TryGetValue(key, out var bucket))
+             {
+-                bucket = new();
++                bucket = [];
+                 _anchored[key] = bucket;
+             }
+ 
+@@ -358,7 +358,7 @@ private void CollectCandidates(MapCoordinates point, float range, bool byReach)
+                         }
+ 
+                         var distanceSquared = (xform.LocalPosition - local).LengthSquared();
+-                        if (distanceSquared > rangeSquared || byReach && distanceSquared > ReachSquared(light.Comp1))
++                        if (distanceSquared > rangeSquared || (byReach && distanceSquared > ReachSquared(light.Comp1)))
+                             continue;
+ 
+                         _candidates.Add(new(light, Vector2.Transform(xform.LocalPosition, gridMatrix), gridRot + xform.LocalRotation));
+@@ -388,7 +388,7 @@ private void TryAddLoose(Entity<SharedPointLightComponent, TransformComponent> l
+ 
+         var (position, rotation) = _transform.GetWorldPositionRotation(light.Comp2);
+         var distanceSquared = (position - point.Position).LengthSquared();
+-        if (distanceSquared > rangeSquared || byReach && distanceSquared > ReachSquared(light.Comp1))
++        if (distanceSquared > rangeSquared || (byReach && distanceSquared > ReachSquared(light.Comp1)))
+             return;
+ 
+         if (IsHiddenInContainer(light))
+@@ -456,10 +456,9 @@ private float GetMaskFactor(SharedPointLightComponent light, Vector2 delta, Angl
+             var local = (-maskRotation).RotateVec(delta) / light.Radius;
+             var u = (local.X + 1f) * 0.5f;
+             var v = (local.Y + 1f) * 0.5f;
+-            if (u < 0f || u >= 1f || v < 0f || v >= 1f)
+-                return 0f;
+-
+-            return image.Values[((int) (v * image.Height) * image.Width) + (int) (u * image.Width)] / 255f;
++            return u < 0f || u >= 1f || v < 0f || v >= 1f
++                ? 0f
++                : image.Values[((int) (v * image.Height) * image.Width) + (int) (u * image.Width)] / 255f;
+         }
+ 
+         var relativeAngle = MathHelper.CloseTo(delta.LengthSquared(), 0f)
+diff --git a/Content.Server/_Starlight/Light/LightMaskReader.cs b/Content.Server/_Starlight/Light/LightMaskReader.cs
+index cefde3a7e669..75e01549daa3 100644
+--- a/Content.Server/_Starlight/Light/LightMaskReader.cs
++++ b/Content.Server/_Starlight/Light/LightMaskReader.cs
+@@ -98,7 +98,7 @@ private static bool TryUnfilter(MemoryStream compressed, int width, int height,
+ 
+             for (var x = 0; x < width; x++)
+             {
+-                values[y * width + x] = current[x * channels];
++                values[(y * width) + x] = current[x * channels];
+             }
+ 
+             (previous, current) = (current, previous);
+@@ -114,9 +114,6 @@ private static int Paeth(int a, int b, int c)
+         var pb = Math.Abs(p - b);
+         var pc = Math.Abs(p - c);
+ 
+-        if (pa <= pb && pa <= pc)
+-            return a;
+-
+-        return pb <= pc ? b : c;
++        return pa <= pb && pa <= pc ? a : pb <= pc ? b : c;
+     }
+ }

@@ -1,0 +1,58 @@
+From 3ff8c1033f434615c1d5266a7501d6596ddc970e Mon Sep 17 00:00:00 2001
+From: sleepyyapril <flyingkarii@gmail.com>
+Date: Thu, 9 Jul 2026 02:27:51 -0300
+Subject: [PATCH] content side of making TryFromHex based
+
+---
+ Content.Server/Administration/Commands/SetAdminOOC.cs  | 7 +++----
+ Content.Server/Sandbox/Commands/ColorNetworkCommand.cs | 5 ++---
+ 2 files changed, 5 insertions(+), 7 deletions(-)
+
+diff --git a/Content.Server/Administration/Commands/SetAdminOOC.cs b/Content.Server/Administration/Commands/SetAdminOOC.cs
+index f889ddc15d7c1..d2087f2b57536 100644
+--- a/Content.Server/Administration/Commands/SetAdminOOC.cs
++++ b/Content.Server/Administration/Commands/SetAdminOOC.cs
+@@ -28,8 +28,7 @@ public override void Execute(IConsoleShell shell, string argStr, string[] args)
+             if (string.IsNullOrEmpty(colorArg))
+                 return;
+ 
+-            var color = Color.TryFromHex(colorArg);
+-            if (!color.HasValue)
++            if (!Color.TryFromHex(colorArg, out var color))
+             {
+                 shell.WriteError(Loc.GetString("shell-invalid-color-hex"));
+                 return;
+@@ -37,10 +36,10 @@ public override void Execute(IConsoleShell shell, string argStr, string[] args)
+ 
+             var userId = shell.Player.UserId;
+             // Save the DB
+-            _dbManager.SaveAdminOOCColorAsync(userId, color.Value);
++            _dbManager.SaveAdminOOCColorAsync(userId, color);
+             // Update the cached preference
+             var prefs = _preferenceManager.GetPreferences(userId);
+-            prefs.AdminOOCColor = color.Value;
++            prefs.AdminOOCColor = color;
+         }
+     }
+ }
+diff --git a/Content.Server/Sandbox/Commands/ColorNetworkCommand.cs b/Content.Server/Sandbox/Commands/ColorNetworkCommand.cs
+index 98e72b6a05a2c..a7e3efb0832a8 100644
+--- a/Content.Server/Sandbox/Commands/ColorNetworkCommand.cs
++++ b/Content.Server/Sandbox/Commands/ColorNetworkCommand.cs
+@@ -56,14 +56,13 @@ public override void Execute(IConsoleShell shell, string argStr, string[] args)
+                 return;
+             }
+ 
+-            var color = Color.TryFromHex(args[2]);
+-            if (!color.HasValue)
++            if (!Color.TryFromHex(args[2], out var color))
+             {
+                 shell.WriteError(Loc.GetString("shell-invalid-color-hex"));
+                 return;
+             }
+ 
+-            PaintNodes(nodeContainerComponent, nodeGroupId, color.Value);
++            PaintNodes(nodeContainerComponent, nodeGroupId, color);
+         }
+ 
+         private void PaintNodes(NodeContainerComponent nodeContainerComponent, NodeGroupID nodeGroupId, Color color)

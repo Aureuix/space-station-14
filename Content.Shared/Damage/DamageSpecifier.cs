@@ -28,12 +28,12 @@ namespace Content.Shared.Damage
 
         // These exist solely so the wiki works. Please do not touch them or use them.
         [JsonPropertyName("types")]
-        [DataField("types", customTypeSerializer: typeof(ProtoId<DamageTypePrototype>))]
+        // [DataField("types", customTypeSerializer: typeof(ProtoId<DamageTypePrototype>))]
         [UsedImplicitly]
         private Dictionary<ProtoId<DamageTypePrototype>, FixedPoint2>? _damageTypeDictionary;
 
         [JsonPropertyName("groups")]
-        [DataField("groups", customTypeSerializer: typeof(ProtoId<DamageGroupPrototype>))]
+        // [DataField("groups", customTypeSerializer: typeof(ProtoId<DamageGroupPrototype>))]
         [UsedImplicitly]
         private Dictionary<ProtoId<DamageTypePrototype>, FixedPoint2>? _damageGroupDictionary;
 
@@ -168,7 +168,7 @@ namespace Content.Shared.Damage
                     newValue = Math.Max(0f, newValue - (reduction - (reduction * armorPenetration))); // flat reductions can't heal you
 
                 // ??Starlight?? start
-                if (canHeal)  
+                if (canHeal)
                 {
                     if (modifierSet.Coefficients.TryGetValue(key, out var coefficient))
                         newValue *= (coefficient + ((1f - coefficient) * armorPenetration)); // coefficients can heal you, e.g. cauterizing bleeding, Starlight change: removed maximum coefficent allowing for weaknesses

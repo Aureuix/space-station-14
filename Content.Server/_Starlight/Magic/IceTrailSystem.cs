@@ -59,7 +59,7 @@ public sealed class IceTrailSystem : EntitySystem
             var coords = _transformSystem.GetMapCoordinates(uid, xform);
 
             // Starlight: Try to find the grid at this position
-            if (!_mapManager.TryFindGridAt(coords, out var gridUid, out var grid))
+            if (!_mapSystem.TryFindGridAt(coords, out var gridUid, out var grid))
                 continue; // Starlight: No grid found, can't spawn ice
 
             // Starlight: Convert map coordinates to tile indices

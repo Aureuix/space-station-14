@@ -64,7 +64,7 @@ public sealed class IceSpawnOnTriggerSystem : EntitySystem
         var targetCoords = _transformSystem.GetMapCoordinates(targetXform);
 
         // Starlight: Try to get the grid at the target's position
-        if (!_mapManager.TryFindGridAt(targetCoords, out var gridUid, out var grid))
+        if (!_mapSystem.TryFindGridAt(targetCoords, out var gridUid, out var grid))
             return; // Starlight: No grid found, can't spawn ice entities
 
         // Starlight: Calculate which tiles are within the radius of the impact point

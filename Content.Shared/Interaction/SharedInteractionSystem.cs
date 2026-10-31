@@ -1,6 +1,7 @@
 ﻿using System.Diagnostics.CodeAnalysis;
 using System.Linq;
 using Content.Shared._FarHorizons.Util;
+using Content.Shared._Starlight.Light;
 using Content.Shared.ActionBlocker;
 using Content.Shared.Administration.Logs;
 using Content.Shared.CCVar;
@@ -1302,6 +1303,12 @@ namespace Content.Shared.Interaction
             {
                 rotation = mover.TargetRelativeRotation;
             }
+
+            // Starlight-start
+            var rotationEv = new DropRotationEvent(user, rotation);
+            RaiseLocalEvent(item, ref rotationEv);
+            rotation = rotationEv.Rotation;
+            // Starlight-end
 
             Transform(item).LocalRotation = rotation;
         }
