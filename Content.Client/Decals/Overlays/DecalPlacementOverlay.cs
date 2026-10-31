@@ -13,7 +13,8 @@ public class DecalPlacementOverlay : Overlay
 {
     [Dependency] private readonly IEyeManager _eyeManager = default!;
     [Dependency] private readonly IInputManager _inputManager = default!;
-    [Dependency] private readonly SharedMapSystem _maps = default!;
+    [Dependency] private readonly IEntityManager _entManager = default!;
+    private readonly SharedMapSystem _maps = default!;
     
     private readonly DecalPlacementSystem _placement;
     private readonly SharedTransformSystem _transform;
@@ -29,6 +30,7 @@ public class DecalPlacementOverlay : Overlay
     public DecalPlacementOverlay(DecalPlacementSystem placement, SharedTransformSystem transform, SpriteSystem sprite)
     {
         IoCManager.InjectDependencies(this);
+        _maps = _entManager.System<SharedMapSystem>();
         _placement = placement;
         _transform = transform;
         _sprite = sprite;

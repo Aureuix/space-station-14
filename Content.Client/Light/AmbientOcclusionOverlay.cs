@@ -25,6 +25,8 @@ public sealed class AmbientOcclusionOverlay : Overlay
     [Dependency] private readonly IEntityManager _entManager = default!;
     
     [Dependency] private readonly IPrototypeManager _proto = default!;
+    private List<Entity<MapGridComponent>> _cachedGrids = new();
+    private readonly List<Entity<OccluderComponent, TransformComponent>> _cachedOccluders = new();
 
     public override OverlaySpace Space => OverlaySpace.WorldSpaceBelowEntities;
 

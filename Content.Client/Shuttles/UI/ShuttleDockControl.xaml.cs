@@ -17,6 +17,7 @@ namespace Content.Client.Shuttles.UI;
 [GenerateTypedNameReferences]
 public sealed partial class ShuttleDockControl : BaseShuttleControl
 {
+    private readonly SharedMapSystem _maps;
     [Dependency] private readonly IGameTiming _timing = default!;
     
     private readonly DockingSystem _dockSystem;

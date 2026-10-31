@@ -18,8 +18,9 @@ public sealed class SunShadowOverlay : Overlay
 
     [Dependency] private readonly IClyde _clyde = default!;
     [Dependency] private readonly IEntityManager _entManager = default!;
-    
     [Dependency] private readonly IPrototypeManager _protoManager = default!;
+
+    private readonly SharedMapSystem _mapSys;
     private readonly EntityLookupSystem _lookup;
     private readonly SharedTransformSystem _xformSys;
 
