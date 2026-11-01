@@ -1134,8 +1134,10 @@
       path: /Audio/Animals/cat_hiss.ogg
     hidden: true
     damage:
-      groups:
-        Brute: 1
+      types: # SpL start
+        Piercing: 0.3
+        Blunt: 0.3
+        Slash: 0.3 # SpL end
 
 # Suppermatter
 # I can't figure out where to put this. It kind of acts like a cake I guess?

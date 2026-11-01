@@ -8,13 +8,21 @@
     delay: 10.0
   - type: Bible
     damage:
-      groups:
-        Brute: -15
-        Burn: -15
+      types: # SpL start
+        Piercing: -8
+        Blunt: -8
+        Slash: -8
+        Heat: -8
+        Cold: -8
+        Shock: -8
+        Caustic: -8 # SpL end
     damageOnFail:
-      groups:
-        Brute: 15
-        Airloss: 15
+      types: # SpL start
+        Piercing: 5
+        Blunt: 5
+        Slash: 5
+        Asphyxiation: 8
+        Bloodloss: 8 # SpL end
     damageOnUntrainedUse: ## What a non-chaplain takes when attempting to heal someone
       types:
         Heat: 10
@@ -74,11 +82,14 @@
   - type: Bible
     damage:
       types:
-        Caustic: 20 ## ~15 dps
+        Caustic: 20 # ~15 dps
     damageOnFail:
-      groups:
-        Brute: 15
-        Airloss: 25
+      types: # SpL start
+        Piercing: 5
+        Blunt: 5
+        Slash: 5
+        Asphyxiation: 12
+        Bloodloss: 12 # SpL end
     damageOnUntrainedUse:
       types:
         Caustic: 50

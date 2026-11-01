@@ -112,11 +112,16 @@
         - MobLayer
   - type: FloorOcclusion
   - type: RangedDamageSound
-    soundGroups:
-      Brute:
+    soundTypes:
+      Piercing: # SpL start
         collection:
           MeatBulletImpact
-    soundTypes:
+      Blunt:
+        collection:
+          MeatBulletImpact
+      Slash:
+        collection:
+          MeatBulletImpact # SpL end
       Heat:
         collection:
           MeatLaserImpact
@@ -318,9 +323,11 @@
     damageCap: 20
     damage:
       types:
-        Heat: -0.07
-      groups:
-        Brute: -0.07
+        Heat: -0.07 
+        Cold: -0.04 # SpL start
+        Piercing: -0.04
+        Blunt: -0.04
+        Slash: -0.04 # SpL end
   - type: Fingerprint
   - type: Blindable
   - type: DarkenedVision

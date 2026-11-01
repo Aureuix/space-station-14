@@ -496,8 +496,10 @@
   components:
   - type: MeleeWeapon
     damage:
-      groups:
-        Brute: 15
+      types:
+        Piercing: 5 # SpL
+        Blunt: 5 # SpL
+        Slash: 5 # SpL
   - type: Sprite
     sprite: Objects/Specific/Medical/Surgery/scissors.rsi # Starlight
     state: advanced-setter
@@ -583,8 +585,10 @@
       path: /Audio/_Starlight/Medical/Surgery/bone_saw.ogg
   - type: MeleeWeapon # SpL Start
     damage:
-      groups:
-        Brute: 6 # SpL End
+      types:
+        Piercing: 2 
+        Blunt: 2 
+        Slash: 2 # SpL end
 
 # No melee for regular saw because have you ever seen someone use a band saw as a weapon? It's dumb. # SpL- and why not? it will suck, but someone's gonna try
 
@@ -601,8 +605,10 @@
     heldPrefix: improv
   - type: MeleeWeapon
     damage:
-      groups:
-        Brute: 10
+      types:
+        Piercing: 3 # SpL
+        Blunt: 3 # SpL
+        Slash: 3 # SpL
     soundHit:
       path: /Audio/Weapons/bladeslice.ogg
   - type: Tool
@@ -624,8 +630,10 @@
     heldPrefix: electric
   - type: MeleeWeapon
     damage:
-      groups:
-        Brute: 15
+      types:
+        Piercing: 5 # SpL
+        Blunt: 5 # SpL
+        Slash: 5 # SpL
     soundHit:
       path: /Audio/Items/drill_hit.ogg
   - type: Tool
@@ -718,8 +726,10 @@
     sprintModifier: 0.9
   - type: MeleeWeapon
     damage:
-      groups:
-        Brute: 0
+      types:
+        Piercing: 0 # SpL
+        Blunt: 0 # SpL
+        Slash: 0 # SpL
   - type: Tag
     tags:
       - CyberHandItem

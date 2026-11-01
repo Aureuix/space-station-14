@@ -999,8 +999,10 @@
       path: /Audio/Animals/dog_bark1.ogg
     hidden: true
     damage:
-      groups:
-        Brute: 1
+      types: # SpL start
+        Piercing: 0.3
+        Blunt: 0.3
+        Slash: 0.3 # SpL end
 
 - type: entity
   parent: FoodBreadBase

@@ -184,8 +184,10 @@
     delay: 2
   - type: LeechOnMarker
     leech:
-      groups:
-        Brute: -10
+      types:
+        Piercing: -4 # SpL
+        Blunt: -4 # SpL
+        Slash: -4 # SpL
   - type: Gun
     projectileSpeed: 15
     soundGunshot: /Audio/_ST/CosmicCult/projectile_razor.ogg

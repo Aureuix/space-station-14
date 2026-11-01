@@ -137,8 +137,10 @@
     soundHit:
       collection: MetalThud
     damage:
-      groups:
-        Brute: 6
+      types:
+        Piercing: 2 # SpL
+        Blunt: 2 # SpL
+        Slash: 2 # SpL
   - type: PassiveDamage # Need it here to disable it.
     allowedStates:
     - Alive

@@ -2,6 +2,7 @@
   id: MobSkubmoth
   parent: MobMoth
   suffix: Admeme
+  categories: [ HideSpawnMenu ] # SpL
   name: skubmoth
   description: Huh, skub.
   components:

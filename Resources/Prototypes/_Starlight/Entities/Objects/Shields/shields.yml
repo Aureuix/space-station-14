@@ -69,11 +69,15 @@
                   max: 13
     - type: Repairable # Negative values represent healing
       damage:
-        groups:
-          Brute: -60 # 20 of each Brute Type - 20% of a basic shield HP
-        types:
-          Heat: -20
-      fuelCost: 10 # 1/2 of a Welder for a full repair
+        types: # SpL start
+          Piercing: -40
+          Blunt: -40
+          Slash: -40
+          Heat: -40
+          Cold: -40
+          Shock: -40
+          Caustic: -40  # SpL end
+      fuelCost: 10 # 1/2 of a Welder for a full repair # SpL- can't do the math on this one since damage groups are depreciated
       doAfterDelay: 5
       allowSelfRepair: false
 
