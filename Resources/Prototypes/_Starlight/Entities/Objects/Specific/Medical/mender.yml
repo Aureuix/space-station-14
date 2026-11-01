@@ -61,7 +61,10 @@
 #      - Biological # SpL- needed to let kitsune use automenders
     damage:
       groups:
-        Brute: -2
+        types:
+          Blunt: -1.5 # SpL
+          Piercing: -1.5 # SpL
+          Slash: -1.5 # SpL
     healingBeginSound:
       path: "/Audio/_Starlight/Items/Medical/mender.ogg"
     healingEndSound:
