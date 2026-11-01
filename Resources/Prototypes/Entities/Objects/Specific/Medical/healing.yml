@@ -141,9 +141,9 @@
     delay: 1.6 # STARLIGHT
     damage:
       types:
-        Blunt: 5 # SpL
-        Piercing: 5 # SpL
-        Slash: 5 # SpL
+        Blunt: -5 # SpL
+        Piercing: -5 # SpL
+        Slash: -5 # SpL
     healingBeginSound:
       path: "/Audio/Items/Medical/brutepack_begin.ogg"
       params:
@@ -191,9 +191,9 @@
     delay: 1.6 # STARLIGHT
     damage:
       types:
-        Blunt: 10 # SpL
-        Piercing: 10 # SpL
-        Slash: 10 # SpL
+        Blunt: -10 # SpL
+        Piercing: -10 # SpL
+        Slash: -10 # SpL
     bloodlossModifier: -10 # a suture should stop ongoing bleeding
     healingBeginSound:
       path: "/Audio/Items/Medical/brutepack_begin.ogg"

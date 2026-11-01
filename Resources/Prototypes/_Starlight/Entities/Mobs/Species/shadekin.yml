@@ -92,14 +92,14 @@
         - Alive
       damageCap: 20
       damage:
-      types: # SpL start
-        Piercing: -0.03
-        Blunt: -0.03
-        Slash: -0.03
-        Heat: -0.02
-        Cold: -0.02
-        Shock: -0.02
-        Caustic: -0.02 # SpL end
+        types: # SpL start
+          Piercing: -0.03
+          Blunt: -0.03
+          Slash: -0.03
+          Heat: -0.02
+          Cold: -0.02
+          Shock: -0.02
+          Caustic: -0.02 # SpL end
     - type: Deathgasp
       damageType: Cold # SpL
     - type: Destructible
