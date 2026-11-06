@@ -78,6 +78,35 @@ public sealed class DoorSystem : SharedDoorSystem
         };
     }
 
+    private void OnAnimationCompleted(Entity<DoorComponent> ent, ref AnimationCompletedEvent args)
+    {
+        if (args.Key != DoorComponent.OpenKey && args.Key != DoorComponent.CloseKey)
+            return;
+
+        if (!TryComp<SpriteComponent>(ent, out var sprite))
+            return;
+
+        switch (ent.Comp.State)
+        {
+            case DoorState.Open:
+
+                foreach (var (layer, layerState) in ent.Comp.OpenSpriteStates)
+                {
+                    _sprite.LayerSetRsiState((ent.Owner, sprite), layer, layerState);
+                }
+
+                break;
+            case DoorState.Closed:
+
+                foreach (var (layer, layerState) in ent.Comp.ClosedSpriteStates)
+                {
+                    _sprite.LayerSetRsiState((ent.Owner, sprite), layer, layerState);
+                }
+
+                break;
+        }
+    }
+
     private void OnAppearanceChange(Entity<DoorComponent> entity, ref AppearanceChangeEvent args)
     {
         if (args.Sprite == null)

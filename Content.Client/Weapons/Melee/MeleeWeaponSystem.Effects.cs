@@ -110,6 +110,10 @@ public sealed partial class MeleeWeaponSystem
         }
     }
 
+    /// <summary>
+    /// Makes the sprite move in a slash motion around the player.
+    /// For example for wide swing animations.
+    /// </summary>
     private Animation GetSlashAnimation(Entity<SpriteComponent> sprite, Angle arc, Angle spriteRotation, float length, float offset)
     {
         var startRotation = sprite.Comp.Rotation + (arc * 0.5f);
@@ -121,7 +125,6 @@ public sealed partial class MeleeWeaponSystem
 
         startRotation += spriteRotation;
         endRotation += spriteRotation;
-        sprite.Comp.NoRotation = true;
 
         return new Animation()
         {
@@ -209,6 +212,7 @@ public sealed partial class MeleeWeaponSystem
 
     /// <summary>
     /// Get the sprite offset animation to use for mob lunges.
+    /// This is applied to the attacker to show who is attacking.
     /// </summary>
     private Animation GetLungeAnimation(Vector2 direction)
     {
@@ -319,7 +323,7 @@ public sealed partial class MeleeWeaponSystem
             if (arcComponent.User == null || EntityManager.Deleted(arcComponent.User))
                 continue;
 
-            Vector2 targetPos = TransformSystem.GetWorldPosition(arcComponent.User.Value);
+            var targetPos = TransformSystem.GetWorldPosition(arcComponent.User.Value);
 
             if (arcComponent.Offset != Vector2.Zero)
             {

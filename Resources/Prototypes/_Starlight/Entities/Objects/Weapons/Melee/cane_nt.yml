@@ -32,13 +32,13 @@
       types:
         Blunt: 0
   - type: MeleeWeapon
-    wideAnimationRotation: -135
+    wideAnimationRotation: 60
     damage:
       types:
         Blunt: 10
     bluntStaminaDamageFactor: 2.0
-    angle: 60
-    animation: WeaponArcSlash
+    angle: 65
+    animation: WeaponArcThrust
   - type: StaminaDamageOnHit
     damage: 40
     sound: /Audio/Weapons/egloves.ogg
