@@ -67,12 +67,13 @@ public sealed class ProjectileSystem : SharedProjectileSystem
                 _color.RaiseEffect(Color.Red, new List<EntityUid> { target }, Filter.Pvs(target, entityManager: EntityManager));
             }
 
+            component.ProjectileSpent = !TryPenetrateByType((uid, component), damage, damageRequired); // Starlight
+
             if (Exists(component.Shooter)) // Starlight
                 _adminLogger.Add(LogType.BulletHit,
                     LogImpact.Medium,
                     $"Projectile {ToPrettyString(uid):projectile} shot by {ToPrettyString(component.Shooter!.Value):user} hit {otherName:target} and dealt {damage.GetTotal()} damage"); // Starlight
 
-            component.ProjectileSpent = !TryPenetrateByType((uid, component), damage, damageRequired); // Starlight
         }
         else if (component.ProjectileType == ProjectileType.Solid) // Starlight: Solid projectiles are spent on first collision, even if dmg fails.
         {
