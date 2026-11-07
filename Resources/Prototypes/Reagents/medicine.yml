@@ -1080,7 +1080,7 @@
           groups:
             Brute: -1
           types:
-            Poison: -0.5 ##Should be about what it was when it healed the toxin group
+            Poison: -0.5 # Should be about what it was when it healed the toxin group
             Heat: -0.33
             Shock: -0.33
             Cold: -0.33

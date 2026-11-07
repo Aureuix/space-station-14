@@ -20,11 +20,18 @@
           Quantity: 0.25
       delay: 0.25
       damage:
-        groups:
-          Burn: -2
-          Toxin: -2
-          Airloss: -2
-          Brute: -2
+        types:
+          Piercing: -1.5
+          Blunt: -1.5
+          Slash: -1.5
+          Heat: -1.5
+          Cold: -1.5
+          Shock: -1.5
+          Caustic: -1.5
+          Poison: -1.5
+          Radiation: -1.5
+          Asphyxiaton: -1.5
+          Bloodloss: -1.5
       healingBeginSound:
         path: "/Audio/_Starlight/Items/Medical/mender.ogg"
       healingEndSound:

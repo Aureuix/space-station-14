@@ -82,8 +82,10 @@
      collection: AlienClaw
     animation: WeaponArcBite
     damage:
-      groups:
-        Brute: 20 
+      types:
+        Piercing: 7 # SpL
+        Blunt: 7 # SpL
+        Slash: 7 # SpL
   - type: DamageStateVisuals
     states:
       Alive:
@@ -144,8 +146,10 @@
     baseSprintSpeed: 6.0
   - type: MeleeWeapon
     damage:
-     groups:
-       Brute: 15
+      types:
+        Piercing: 5 # SpL
+        Blunt: 5 # SpL
+        Slash: 5 # SpL
   - type: Fixtures
     fixtures:
       fix1:
@@ -281,8 +285,10 @@
         120: 0.7
     - type: MeleeWeapon
       damage:
-        groups:
-          Brute: 12
+        types:
+          Piercing: 4 # SpL
+          Blunt: 4 # SpL
+          Slash: 4 # SpL
     - type: MovementSpeedModifier
       baseSprintSpeed: 4.5
     - type: Fixtures
@@ -355,8 +361,10 @@
       baseSprintSpeed: 5
     - type: MeleeWeapon
       damage:
-        groups:
-          Brute: 25
+        types:
+          Piercing: 9 # SpL
+          Blunt: 9 # SpL
+          Slash: 9 # SpL
     - type: Fixtures
       fixtures:
         fix1:

@@ -97,8 +97,11 @@
       types:
         Heat: -0.07
         Poison: -0.2 # needs to be less than the PendingZombieComponent does or they never become zombies by the disease.
-      groups:
-        Brute: -0.07
+        Piercing: -0.04 # SpL start
+        Blunt: -0.04
+        Slash: -0.04
+        Cold: -0.04
+        Caustic: -0.02 # SpL end - we'll give a little caustic healing as a soft buff
   - type: DamageVisuals
     damageOverlayGroups:
       Brute:

@@ -140,8 +140,10 @@
       - BiologicalMetaphysicalKitsune
     delay: 1.6 # STARLIGHT
     damage:
-      groups:
-        Brute: -15 # 5 for each type in the group
+      types:
+        Blunt: -5 # SpL
+        Piercing: -5 # SpL
+        Slash: -5 # SpL
     healingBeginSound:
       path: "/Audio/Items/Medical/brutepack_begin.ogg"
       params:
@@ -188,8 +190,10 @@
       - BiologicalMetaphysicalKitsune
     delay: 1.6 # STARLIGHT
     damage:
-      groups:
-        Brute: -30 # 10 for each type in the group
+      types:
+        Blunt: -10 # SpL
+        Piercing: -10 # SpL
+        Slash: -10 # SpL
     bloodlossModifier: -10 # a suture should stop ongoing bleeding
     healingBeginSound:
       path: "/Audio/Items/Medical/brutepack_begin.ogg"
@@ -376,7 +380,8 @@
   id: HealingToolbox
   name: healing toolbox
   description: A powerful toolbox imbued with robust energy. It can heal your wounds and fill you with murderous intent.
-  categories: [ DoNotMap ]
+  categories: [ DoNotMap, HideSpawnMenu ] # SpL
+  suffix: BROKEN # SpL
   components:
   - type: Sprite
     sprite: Objects/Specific/Medical/healing_toolbox.rsi

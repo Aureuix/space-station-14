@@ -255,8 +255,10 @@
       amount: 1
   - type: MeleeWeapon
     damage:
-      groups:
-        Brute: 12
+      types: # SpL start
+        Piercing: 4
+        Blunt: 4
+        Slash: 4 # SpL end
 
 - type: entity
   parent: BaseAction
