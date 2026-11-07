@@ -70,7 +70,7 @@ public sealed class ProjectileSystem : SharedProjectileSystem
             if (Exists(component.Shooter)) // Starlight
                 _adminLogger.Add(LogType.BulletHit,
                     LogImpact.Medium,
-                    $"Projectile {ToPrettyString(uid):projectile} shot by {ToPrettyString(component.Shooter!.Value):user} hit {otherName:target} and dealt {damage:damage} damage"); // Starlight
+                    $"Projectile {ToPrettyString(uid):projectile} shot by {ToPrettyString(component.Shooter!.Value):user} hit {otherName:target} and dealt {damage.GetTotal()} damage"); // Starlight
 
             component.ProjectileSpent = !TryPenetrateByType((uid, component), damage, damageRequired); // Starlight
         }
