@@ -16,13 +16,16 @@
         params:
           volume: -3
       damage:
-        groups:
-          Brute: 6
+        types: # SpL start
+          Piercing: 2
+          Blunt: 2
+          Slash: 2 # SpL end
     - type: IncreaseDamageOnWield
       damage:
-        groups:
-          Brute: 12
         types:
+          Piercing: 4 # SpL
+          Blunt: 4 # SpL
+          Slash: 4 # SpL
           Structural: 50
     - type: Item
       size: Normal

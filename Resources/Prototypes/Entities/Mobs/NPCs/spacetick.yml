@@ -78,8 +78,10 @@
     angle: 0
     animation: WeaponArcBite
     damage:
-      groups:
-        Brute: 2
+      types: # SpL start
+        Piercing: 0.6
+        Blunt: 0.6
+        Slash: 0.6 # SpL end
   - type: SolutionContainerManager
     solutions:
       melee:

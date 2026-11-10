@@ -219,8 +219,10 @@
     soundHit:
       collection: MetalThud
     damage:
-      groups:
-        Brute: 5
+      types: # SpL start
+        Piercing: 2
+        Blunt: 2
+        Slash: 2 # SpL end
 
 # Used for mobs that are affected by atmospherics, pressure, and heat
 - type: entity

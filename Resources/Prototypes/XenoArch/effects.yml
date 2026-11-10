@@ -1297,9 +1297,14 @@
       components:
       - MobState
     damage:
-      groups:
-        Brute: -300
-        Burn: -300
+      types: # SpL start
+        Piercing: -200
+        Blunt: -200
+        Slash: -200
+        Heat: -200
+        Cold: -200
+        Shock: -100
+        Caustic: -100 # SpL end
 
 - type: entity
   id: XenoArtifactTesla

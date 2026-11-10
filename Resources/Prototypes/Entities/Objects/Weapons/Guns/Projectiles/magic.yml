@@ -246,11 +246,19 @@
       color: white
   - type: Projectile
     damage:
-      groups: # good enough. Maybe make it call the rejuvenate command later.
-        Brute: -900
-        Burn: -900
-        Airloss: -600
-        Toxin: -600
+      types: # covers all non-metaphys types
+        Piercing: -900 # SpL
+        Blunt: -900 # SpL
+        Slash: -900 # SpL
+        Heat: -900 # SpL
+        Cold: -900 # SpL
+        Shock: -900 # SpL
+        Caustic: -900 # SpL
+        Poison: -900 # SpL
+        Radiation: -900 # SpL
+        Asphyxiaton: -900 # SpL
+        Bloodloss: -900 # SpL
+        Cellular: -900 # SpL
     ignoreResistances: true
 
 - type: entity
