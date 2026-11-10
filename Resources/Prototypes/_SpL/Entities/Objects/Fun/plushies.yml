@@ -396,7 +396,7 @@
       radius: 2
       energy: 2
       color: white
-      mask: /Textures/Effects/LightMasks/cone.png
+      lightMask: ConeSingle
       autoRot: true
       netsync: false
     - type: ToggleableVisuals
