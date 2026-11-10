@@ -62,7 +62,7 @@
       spriteLayer: light-overlay
     - type: PointLight
       enabled: false
-      mask: /Textures/_Starlight/Effects/LightMasks/cone_curve.png
+      lightMask: SLCurve
       color: "#adffdb"
       radius: 9
       energy: 3
