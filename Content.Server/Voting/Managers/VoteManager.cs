@@ -411,9 +411,9 @@ namespace Content.Server.Voting.Managers
                 v.Dirty = true;
                 var args = new VoteFinishedEventArgs(winners.Length == 1 ? winners[0] : null, winners, voteTally);
                 v.OnFinished?.Invoke(_voteHandles[v.Id], args);
-                DirtyCanCallVoteAll();
-            } // Sometimes `First()` can be null
+            } // Sometimes `First()` can throw
             catch (InvalidOperationException) {}
+            DirtyCanCallVoteAll();
         }
 
         private void CancelVote(VoteReg v)
