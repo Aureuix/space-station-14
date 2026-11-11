@@ -362,17 +362,28 @@ public sealed partial class ProfilePreviewSpriteView
     /// <summary>
     /// Extracts cybernetics IDs from humanoid profile, returns all their visual layers
     /// </summary>
-    private Dictionary<HumanoidVisualLayers, CustomBaseLayerInfo> GetCyberneticsLayers(HumanoidCharacterProfile humanoid) => humanoid.Cybernetics.Select(p =>
+    private Dictionary<HumanoidVisualLayers, CustomBaseLayerInfo> GetCyberneticsLayers(HumanoidCharacterProfile humanoid)
     {
-        var _cyberneticEnt = _prototypeManager.Index<EntityPrototype>(p);
-        if (_cyberneticEnt.TryGetComponent<BodyPartComponent>(out var part, EntMan.ComponentFactory) &&
-           _cyberneticEnt.TryGetComponent<BaseLayerIdComponent>(out var layer, EntMan.ComponentFactory))
+        var result = new Dictionary<HumanoidVisualLayers, CustomBaseLayerInfo>();
+
+        foreach (var cyberneticEnt in humanoid.Cybernetics.Select(id => _prototypeManager.Index<EntityPrototype>(id)))
         {
-            return (CyberneticImplant.LayerFromBodypart(part), new(
-                !layer.Layers.TryGetValue(humanoid.Species, out var baseLayer) ? // Get layer value by species
-                !layer.Layers.TryGetValue("Default", out baseLayer) ? null : baseLayer : baseLayer // Fall back to default, if it exists and species is undefined
-                ));
+            if (!cyberneticEnt.TryGetComponent<BodyPartComponent>(out var part, EntMan.ComponentFactory) ||
+                !cyberneticEnt.TryGetComponent<BaseLayerIdComponent>(out var layer, EntMan.ComponentFactory))
+                continue;
+
+            var visualLayer = CyberneticImplant.LayerFromBodypart(part);
+            if (visualLayer == HumanoidVisualLayers.Special)
+                continue;
+
+            // Get layer value by species, falling back to default if it exists
+            if (!layer.Layers.TryGetValue(humanoid.Species, out var baseLayer))
+                layer.Layers.TryGetValue("Default", out baseLayer);
+
+            // Indexer assignment overwrites instead of throwing on duplicates (last one wins)
+            result[visualLayer] = new CustomBaseLayerInfo(baseLayer);
         }
-        else { return (HumanoidVisualLayers.Special, new CustomBaseLayerInfo()); }
-    }).Where(p => p.Item1 != HumanoidVisualLayers.Special).ToDictionary();
+
+        return result;
+    }
 }
