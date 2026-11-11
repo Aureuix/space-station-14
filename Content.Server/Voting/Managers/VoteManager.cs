@@ -396,24 +396,24 @@ namespace Content.Server.Voting.Managers
             }
 
             // Find winner or stalemate.
-            var winners = v.Entries
-                .GroupBy(e => e.Votes)
-                .OrderByDescending(g => g.Key)
-                .First()
-                .Select(e => e.Data)
-                .ToImmutableArray();
-            // Store all votes in order for webhooks
-            var voteTally = new List<int>();
-            foreach(var entry in v.Entries)
+            try
             {
-                voteTally.Add(entry.Votes);
-            }
+                var winners = v.Entries
+                    .GroupBy(e => e.Votes)
+                    .OrderByDescending(g => g.Key)
+                    .First()
+                    .Select(e => e.Data)
+                    .ToImmutableArray();
+                // Store all votes in order for webhooks
+                var voteTally = v.Entries.Select(entry => entry.Votes).ToList();
 
-            v.Finished = true;
-            v.Dirty = true;
-            var args = new VoteFinishedEventArgs(winners.Length == 1 ? winners[0] : null, winners, voteTally);
-            v.OnFinished?.Invoke(_voteHandles[v.Id], args);
-            DirtyCanCallVoteAll();
+                v.Finished = true;
+                v.Dirty = true;
+                var args = new VoteFinishedEventArgs(winners.Length == 1 ? winners[0] : null, winners, voteTally);
+                v.OnFinished?.Invoke(_voteHandles[v.Id], args);
+                DirtyCanCallVoteAll();
+            } // Sometimes `First()` can be null
+            catch (InvalidOperationException) {}
         }
 
         private void CancelVote(VoteReg v)
