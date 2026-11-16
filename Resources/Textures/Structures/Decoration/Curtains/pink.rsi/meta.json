@@ -1,7 +1,7 @@
 {
   "version": 1,
   "license": "CC-BY-SA-3.0",
-  "copyright": "Created by TheShuEd (github) for Space Station14",
+  "copyright": "Created by TheShuEd (github) for Space Station14. Modified for animation by Chrysopoeia.",
   "size": {
     "x": 32,
     "y": 32
@@ -10,6 +10,28 @@
     {
       "name": "open",
       "directions": 1
+    },
+    {
+        "name": "closing",
+        "delays": [
+            [
+                0.1,
+                0.1,
+                0.1,
+                0.1
+            ]
+        ]
+    },
+    {
+        "name": "opening",
+        "delays": [
+            [
+                0.1,
+                0.1,
+                0.1,
+                0.1
+            ]
+        ]
     },
     {
       "name": "closed",

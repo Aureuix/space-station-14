@@ -29,6 +29,8 @@
     closeTimeTwo: 0.1
     openTimeOne: 0.5
     openTimeTwo: 0.1
+    openingAnimationTime: 0.5
+    closingAnimationTime: 0.5
     openSound:
       path: /Audio/Effects/curtain_openclose.ogg
     closeSound:
