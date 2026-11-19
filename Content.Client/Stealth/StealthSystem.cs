@@ -8,7 +8,7 @@ using Robust.Shared.Prototypes;
 
 namespace Content.Client.Stealth;
 
-public sealed class StealthSystem : SharedStealthSystem
+public sealed partial class StealthSystem : SharedStealthSystem
 {
     private static readonly ProtoId<ShaderPrototype> Shader = "Stealth";
 
@@ -57,15 +57,18 @@ public sealed class StealthSystem : SharedStealthSystem
             _sprite.RemovePostShader((uid, sprite), ContentPostShaderIds.Stealth);
         }
 
-        if (!enabled)
+        if (enabled)
+        {
+            component.HadOutline = RemCompDeferred<InteractionOutlineComponent>(uid);
+        }
+        else
         {
             if (component.HadOutline && !TerminatingOrDeleted(uid))
+            {
                 EnsureComp<InteractionOutlineComponent>(uid);
-            return;
+                component.HadOutline = false;
+            }
         }
-
-        if (HasComp<InteractionOutlineComponent>(uid))
-            component.HadOutline = true;
     }
 
     private void OnStartup(EntityUid uid, StealthComponent component, ComponentStartup args)
