@@ -1,9 +1,11 @@
 using System.IO;
+using System.Text;
+using Content.Shared.Administration;
 using Content.Shared.Chat;
 using JetBrains.Annotations;
 using Robust.Client.UserInterface;
 using Robust.Shared.Console;
-using Content.Shared.Administration;
+using static Content.Shared.Administration.Notes.AdminMessageEuiState;
 
 namespace Content.Client.UserInterface.Systems.Chat;
 
@@ -70,15 +72,22 @@ public sealed class ExportChatCommand : LocalizedCommands
 
         _sawmill = _logManager.GetSawmill("SpL");
 
+        var messages = 0;
+
+        var export = new StringBuilder();
+
         try
         {
             ChatUIController _controller = _userInterfaceManager.GetUIController<ChatUIController>();
-            await using var writer = new StreamWriter(file.Value.fileStream, bufferSize: 4096);
+            await using var writer = new StreamWriter(file.Value.fileStream, bufferSize: 8192);
             foreach ((var time, ChatMessage msg) in _controller.History)
             {
-                string message = msg.WrappedMessage.Replace("\n", "\\n").Replace("\r", "\\r");
-                await writer.WriteLineAsync($"{time.Value}:{msg.Channel}\n{message}");
+                var body = msg.WrappedMessage.Replace("\n", "\\n").Replace("\r", "\\r");
+                export.AppendLine($"{time.Value}:{msg.Channel}\n{body}\n");
+                messages++;
             }
+            await writer.WriteLineAsync($"{export}");
+            _sawmill.Info($"Successfully saved {messages} messages of chat history. Log viewer to use these files is coming soon!");
         }
         catch (Exception exc)
         {
@@ -90,7 +99,6 @@ public sealed class ExportChatCommand : LocalizedCommands
         {
             await file.Value.fileStream.DisposeAsync();
             _currentlyExportingLogs = false;
-            _sawmill.Info($"Successfully saved all chat history. Log viewer to use these files is coming soon!");
         }
     }
 }
