@@ -35,13 +35,19 @@ namespace Content.Shared.Damage
         [JsonPropertyName("groups")]
         // [DataField("groups", customTypeSerializer: typeof(ProtoId<DamageGroupPrototype>))]
         [UsedImplicitly]
-        private Dictionary<ProtoId<DamageTypePrototype>, FixedPoint2>? _damageGroupDictionary;
+        private Dictionary<ProtoId<DamageGroupPrototype>, FixedPoint2>? _damageGroupDictionary;
 
         /// <summary>
         ///     Main DamageSpecifier dictionary. Most DamageSpecifier functions exist to somehow modifying this.
         /// </summary>
         [DataField("types")]
         public Dictionary<ProtoId<DamageTypePrototype>, FixedPoint2> DamageDict { get; set; } = new();
+
+        /// <summary>
+        ///     SpL: Backward compatibility for the Wizden #43049 DamageGroups obsolescence. 
+        /// </summary>
+        [DataField("groups")]
+        public Dictionary<ProtoId<DamageGroupPrototype>, FixedPoint2> DamageGroups { get; set; } = new();
 
         /// <summary>
         ///     Returns a sum of the damage values.
@@ -57,6 +63,10 @@ namespace Content.Shared.Damage
             {
                 total += value;
             }
+            //foreach ((var key, var value) in DamageGroups)
+            //{
+            //    total += value;
+            //}
             return total;
         }
 

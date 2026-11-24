@@ -283,6 +283,30 @@ public sealed partial class DamageableSystem
 
         return ChangeDamage(ent, damageChange, true, false, origin);
     }
+    public DamageSpecifier DamageEvenly(
+        Entity<DamageableComponent?> ent,
+        FixedPoint2 amount,
+        ProtoId<DamageGroupPrototype>? group = null,
+        EntityUid? origin = null)
+    {
+        var damageChange = new DamageSpecifier();
+
+        if (!_damageableQuery.Resolve(ent, ref ent.Comp, false))
+            return damageChange;
+
+        if (!_prototypeManager.Resolve(group, out var groupProto))
+            return damageChange;
+
+        var damage = new DamageSpecifier();
+
+        foreach (var damageId in groupProto.DamageTypes)
+        {
+            damageChange.DamageDict.Add(damageId, FixedPoint2.Zero);
+            damageChange.DamageDict[damageId] += amount / groupProto.DamageTypes.Count;
+        }
+
+        return ChangeDamage(ent, damageChange, true, false, origin);
+    }
 
     /// <summary>
     /// Will reduce the damage on the entity exactly by <see cref="amount"/> distributed by weight among all damage types the entity has.
