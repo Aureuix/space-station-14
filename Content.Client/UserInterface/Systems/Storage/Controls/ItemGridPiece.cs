@@ -1,11 +1,13 @@
 using System.Numerics;
 using Content.Client.Items.Systems;
+using Content.Shared._Starlight.Utility;
 using Content.Shared.Item;
 using Content.Shared.Storage;
 using Robust.Client.GameObjects;
 using Robust.Client.Graphics;
 using Robust.Client.UserInterface;
 using Robust.Client.UserInterface.CustomControls;
+using Robust.Shared.Utility;
 
 namespace Content.Client.UserInterface.Systems.Storage.Controls;
 
@@ -71,10 +73,16 @@ public sealed class ItemGridPiece : Control, IEntityControl
         if (_storageController.IsDragging)
             return null;
 
-        return new Tooltip
-        {
-            Text = _entityManager.GetComponent<MetaDataComponent>(Entity).EntityName
-        };
+        var name = _entityManager.GetComponent<MetaDataComponent>(Entity).EntityName;
+
+        var formatted = FormattedMessage.FromMarkupPermissive(name).SanitizeWhitelist(FormattedMessageSanitizer.ItemLabelTags);
+
+        var tooltip = new Tooltip();
+
+        tooltip.SetMessage(formatted);
+
+        return tooltip;
+        
     }
 
     protected override void OnThemeUpdated()

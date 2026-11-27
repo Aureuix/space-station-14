@@ -19,8 +19,8 @@ hand-labeler-successfully-removed = Removed label successfully
 hand-labeler-has-label = This object has a label on it, which reads '{$label}'
 
 # Verb text
-hand-labeler-remove-label-text = Remove label
-hand-labeler-add-label-text = Apply label
+hand-labeler-remove-label-text = Remove
+hand-labeler-add-label-text = Apply
 
 # Shown when the labeler is examined
 hand-labeler-examine-blank = The label text is blank.
