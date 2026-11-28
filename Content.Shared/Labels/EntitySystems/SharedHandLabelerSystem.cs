@@ -13,14 +13,16 @@ using Robust.Shared.Utility;
 
 namespace Content.Shared.Labels.EntitySystems;
 
-public abstract partial class SharedHandLabelerSystem : EntitySystem
+public abstract partial class SharedHandLabelerSystem : EntitySystem // Kin Bin
 {
+    // Kin Bin Begin
     [Dependency] protected SharedUserInterfaceSystem UserInterfaceSystem = default!;
     [Dependency] private SharedPopupSystem _popupSystem = default!;
     [Dependency] private LabelSystem _labelSystem = default!;
     [Dependency] private ISharedAdminLogManager _adminLogger = default!;
     [Dependency] private INetManager _netManager = default!;
     [Dependency] private EntityWhitelistSystem _whitelistSystem = default!;
+    // Kin Bin End
 
     public override void Initialize()
     {
@@ -70,7 +72,7 @@ public abstract partial class SharedHandLabelerSystem : EntitySystem
         }
 
         if (_netManager.IsServer)
-            _labelSystem.Label(target, ent.Comp.AssignedLabel + "[/color][/b][/i][/u]");
+            _labelSystem.Label(target, ent.Comp.AssignedLabel + "[/color][/b][/i][/u]"); // Kin Bin
 
         _popupSystem.PopupClient(Loc.GetString("hand-labeler-successfully-applied"), user, user);
 

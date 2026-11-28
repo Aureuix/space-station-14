@@ -1,13 +1,13 @@
 using System.Numerics;
 using Content.Client.Items.Systems;
-using Content.Shared._Starlight.Utility;
+using Content.Shared._Starlight.Utility; // Kin Bin
 using Content.Shared.Item;
 using Content.Shared.Storage;
 using Robust.Client.GameObjects;
 using Robust.Client.Graphics;
 using Robust.Client.UserInterface;
 using Robust.Client.UserInterface.CustomControls;
-using Robust.Shared.Utility;
+using Robust.Shared.Utility; // Kin Bin
 
 namespace Content.Client.UserInterface.Systems.Storage.Controls;
 
@@ -72,7 +72,7 @@ public sealed class ItemGridPiece : Control, IEntityControl
     {
         if (_storageController.IsDragging)
             return null;
-
+        // Kin Bin Begin
         var name = _entityManager.GetComponent<MetaDataComponent>(Entity).EntityName;
 
         var formatted = FormattedMessage.FromMarkupPermissive(name).SanitizeWhitelist(FormattedMessageSanitizer.ItemLabelTags);
@@ -82,7 +82,7 @@ public sealed class ItemGridPiece : Control, IEntityControl
         tooltip.SetMessage(formatted);
 
         return tooltip;
-        
+        // Kin Bin End
     }
 
     protected override void OnThemeUpdated()
