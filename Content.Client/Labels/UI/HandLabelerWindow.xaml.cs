@@ -248,7 +248,7 @@ public sealed partial class HandLabelerWindow : DefaultWindow
         };
         ViewUpdate();
     }
-    // Can merge these two v^
+    // Todo for P2: "can merge these two v^" (but I don't remember what my plan was)
     public void ViewSort() => _savedLabelsSorted = _sortingState switch
     {
         LabelSortingType.Alphabetical => _savedLabels[_currentTab].tab.OrderBy(x => x).ToList(),
@@ -258,7 +258,6 @@ public sealed partial class HandLabelerWindow : DefaultWindow
     };
     private void LoadCVar()
     {
-        // More awkward than a unified 
         var tabsRaw = new List<string>(_cfg.GetCVar(StarlightCCVars.HandLabelerSavedLabels).Split("\u0085Tab: "));
 
         for (int i = 0; i < tabsRaw.Count; i++)
